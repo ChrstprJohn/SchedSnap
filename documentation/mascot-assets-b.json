@@ -1,0 +1,128 @@
+[
+  {
+    "id": "lion",
+    "file": "public/wallpapers/mascots/lion.png",
+    "animal": "lion",
+    "corner": "lower-right",
+    "colors": [
+      "#DEA748",
+      "#523B2D"
+    ],
+    "prompt": "Use case: logo-brand. Asset type: transparent mascot cutout for a clean flat schedule wallpaper footer. One full 1:1 square of one extremely simplified cute baby lion, upright emerging from the lower-right corner. 4–7 large chunky basic shapes, one continuous thick rounded silhouette, both paired defining features visible, two dot eyes and tiny mouth if needed. Two semantic color families, reuse dark color for face; no details or repeated fur/feathers, just one distinguishing feature. Color palette and distinguishing feature: ochre #DEA748 + cocoa #523B2D, one broad rounded mane. TRUE flat graphic illustration in solid color fills. No gradients, shadows, 3D, shiny materials, paper texture, grain, scenery, props, lettering, schedules, numbers, borders or watermark. Actual transparent background, preserve alpha.",
+    "provider": "built-in imagegen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10107-9da2-7ad3-b630-a1c601ba6114\\exec-53b12530-22cf-47fc-9dc8-13a08304f3f3.png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "observations": "Transparent cutout with no baked schedule or lettering. Simple chunky shapes; slight incidental generated shading/texture remains."
+  },
+  {
+    "id": "koala",
+    "file": "public/wallpapers/mascots/koala.png",
+    "animal": "koala",
+    "corner": "lower-left",
+    "colors": [
+      "#B9C2BC",
+      "#38483D"
+    ],
+    "prompt": "Use case: logo-brand. Asset type: transparent mascot cutout for a clean flat schedule wallpaper footer. One full 1:1 square of one extremely simplified cute baby koala, upright emerging from the lower-left corner. 4–7 large chunky basic shapes, one continuous thick rounded silhouette, both paired defining features visible, two dot eyes and tiny mouth if needed. Two semantic color families, reuse dark color for face; no details or repeated fur/feathers, just one distinguishing feature. Color palette and distinguishing feature: warm gray #B9C2BC + charcoal #38483D, both huge rounded ears. TRUE flat graphic illustration in solid color fills. No gradients, shadows, 3D, shiny materials, paper texture, grain, scenery, props, lettering, schedules, numbers, borders or watermark. Actual transparent background, preserve alpha.",
+    "provider": "built-in imagegen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10107-9da2-7ad3-b630-a1c601ba6114\\exec-8445a172-c596-4907-9cc6-b13fcc9842f1.png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "observations": "Transparent cutout with no baked schedule or lettering. Simple chunky shapes; slight incidental generated shading/texture remains."
+  },
+  {
+    "id": "otter",
+    "file": "public/wallpapers/mascots/otter.png",
+    "animal": "otter",
+    "corner": "lower-right",
+    "colors": [
+      "#A77452",
+      "#F3DFC3"
+    ],
+    "prompt": "Use case: logo-brand. Asset type: transparent mascot cutout for a clean flat schedule wallpaper footer. One full 1:1 square of one extremely simplified cute baby otter, upright emerging from the lower-right corner. 4–7 large chunky basic shapes, one continuous thick rounded silhouette, both paired defining features visible, two dot eyes and tiny mouth if needed. Two semantic color families, reuse dark color for face; no details or repeated fur/feathers, just one distinguishing feature. Color palette and distinguishing feature: brown #A77452 + cream #F3DFC3, tiny rounded ears and single broad cream muzzle. TRUE flat graphic illustration in solid color fills. No gradients, shadows, 3D, shiny materials, paper texture, grain, scenery, props, lettering, schedules, numbers, borders or watermark. Actual transparent background, preserve alpha.",
+    "provider": "built-in imagegen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10107-9da2-7ad3-b630-a1c601ba6114\\exec-85f5cd87-9db7-41a3-a4ae-f6caca1c2505.png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "observations": "Transparent cutout with no baked schedule or lettering. Simple chunky shapes; slight incidental generated shading/texture remains."
+  },
+  {
+    "id": "penguin",
+    "file": "public/wallpapers/mascots/penguin.png",
+    "animal": "penguin",
+    "corner": "lower-left",
+    "colors": [
+      "#223C56",
+      "#F7F4E9"
+    ],
+    "prompt": "Use case: logo-brand. Asset type: transparent mascot cutout for a clean flat schedule wallpaper footer. One full 1:1 square of one extremely simplified cute baby penguin, upright emerging from the lower-left corner. 4–7 large chunky basic shapes, one continuous thick rounded silhouette, both paired defining features visible, two dot eyes and tiny mouth if needed. Two semantic color families, reuse dark color for face; no details or repeated fur/feathers, just one distinguishing feature. Color palette and distinguishing feature: ink navy #223C56 + white #F7F4E9, oval white belly and broad flippers. TRUE flat graphic illustration in solid color fills. No gradients, shadows, 3D, shiny materials, paper texture, grain, scenery, props, lettering, schedules, numbers, borders or watermark. Actual transparent background, preserve alpha.",
+    "provider": "built-in imagegen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10107-9da2-7ad3-b630-a1c601ba6114\\exec-7feac9d9-9730-47cb-a47b-aaa3d19430aa.png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "observations": "Transparent cutout with no baked schedule or lettering. Simple chunky shapes; slight incidental generated shading/texture remains."
+  },
+  {
+    "id": "owl",
+    "file": "public/wallpapers/mascots/owl.png",
+    "animal": "owl",
+    "corner": "lower-right",
+    "colors": [
+      "#B4A0CB",
+      "#4B365F"
+    ],
+    "prompt": "Use case: logo-brand. Asset type: transparent mascot cutout for a clean flat schedule wallpaper footer. One full 1:1 square of one extremely simplified cute baby owl, upright emerging from the lower-right corner. 4–7 large chunky basic shapes, one continuous thick rounded silhouette, both paired defining features visible, two dot eyes and tiny mouth if needed. Two semantic color families, reuse dark color for face; no details or repeated fur/feathers, just one distinguishing feature. Color palette and distinguishing feature: muted lavender #B4A0CB + eggplant #4B365F, two broad circular eye regions, no feather detail. TRUE flat graphic illustration in solid color fills. No gradients, shadows, 3D, shiny materials, paper texture, grain, scenery, props, lettering, schedules, numbers, borders or watermark. Actual transparent background, preserve alpha.",
+    "provider": "built-in imagegen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10107-9da2-7ad3-b630-a1c601ba6114\\exec-5bafbd08-e384-4ded-be7c-bdab38197061.png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "observations": "Transparent cutout with no baked schedule or lettering. Simple chunky shapes; slight incidental generated shading/texture remains."
+  },
+  {
+    "id": "duck",
+    "file": "public/wallpapers/mascots/duck.png",
+    "animal": "duck",
+    "corner": "lower-left",
+    "colors": [
+      "#E9C655",
+      "#31553D"
+    ],
+    "prompt": "Use case: logo-brand. Asset type: transparent mascot cutout for a clean flat schedule wallpaper footer. One full 1:1 square of one extremely simplified cute baby duck, upright emerging from the lower-left corner. 4–7 large chunky basic shapes, one continuous thick rounded silhouette, both paired defining features visible, two dot eyes and tiny mouth if needed. Two semantic color families, reuse dark color for face; no details or repeated fur/feathers, just one distinguishing feature. Color palette and distinguishing feature: butter yellow #E9C655 + deep green #31553D, broad rounded bill. TRUE flat graphic illustration in solid color fills. No gradients, shadows, 3D, shiny materials, paper texture, grain, scenery, props, lettering, schedules, numbers, borders or watermark. Actual transparent background, preserve alpha.",
+    "provider": "built-in imagegen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10107-9da2-7ad3-b630-a1c601ba6114\\exec-31d59601-357b-4863-be4f-6ada77909c92.png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "observations": "Transparent cutout with no baked schedule or lettering. Simple chunky shapes; slight incidental generated shading/texture remains."
+  },
+  {
+    "id": "chick",
+    "file": "public/wallpapers/mascots/chick.png",
+    "animal": "chick",
+    "corner": "lower-right",
+    "colors": [
+      "#F5DC85",
+      "#775332"
+    ],
+    "prompt": "Use case: logo-brand. Asset type: transparent mascot cutout for a clean flat schedule wallpaper footer. One full 1:1 square of one extremely simplified cute baby chick, upright emerging from the lower-right corner. 4–7 large chunky basic shapes, one continuous thick rounded silhouette, both paired defining features visible, two dot eyes and tiny mouth if needed. Two semantic color families, reuse dark color for face; no details or repeated fur/feathers, just one distinguishing feature. Color palette and distinguishing feature: pale butter #F5DC85 + warm brown #775332, rounded oval chick and blunt broad little beak. TRUE flat graphic illustration in solid color fills. No gradients, shadows, 3D, shiny materials, paper texture, grain, scenery, props, lettering, schedules, numbers, borders or watermark. Actual transparent background, preserve alpha.",
+    "provider": "built-in imagegen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10107-9da2-7ad3-b630-a1c601ba6114\\exec-540c6ddd-95ba-4892-9fb9-3f3083aaf830.png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "observations": "Transparent cutout with no baked schedule or lettering. Simple chunky shapes; slight incidental generated shading/texture remains."
+  }
+]
