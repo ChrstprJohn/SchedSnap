@@ -35,6 +35,11 @@
   .service-row:hover .service-action svg { transform: translate(3px, -3px); }
   .service-row:hover .service-action { background: #334155; }
   .service-row:focus-visible { border-radius: 4px; }
+  .coming-soon-tools { display: flex; align-items: center; gap: 24px; margin-top: 48px; padding: 32px; border: 1px dashed var(--color-line); border-radius: 16px; background: var(--color-soft); }
+  .coming-soon-icon { display: grid; flex-shrink: 0; width: 56px; height: 56px; place-items: center; border: 1px solid var(--color-line); border-radius: 12px; background: var(--color-paper); color: var(--color-muted); }
+  .coming-soon-copy { min-width: 0; }
+  .coming-soon-heading { font-size: 1.375rem; line-height: 1.3; font-weight: 500; letter-spacing: -0.025em; }
+  .coming-soon-description { max-width: 52ch; margin-top: 8px; font-size: 0.875rem; line-height: 1.6; color: var(--color-muted); }
   .landing-footer { border-top: 1px solid var(--color-line); }
 }
 
@@ -60,4 +65,7 @@
   .service-row { grid-template-columns: minmax(0, 1fr); gap: 24px; padding-bottom: 0; }
   .service-preview { padding: 32px 20px 16px; }
   .service-action { margin-top: 20px; }
+  .coming-soon-tools { align-items: flex-start; gap: 16px; margin-top: 32px; padding: 24px 20px; }
+  .coming-soon-icon { width: 40px; height: 40px; border-radius: 10px; }
+  .coming-soon-heading { font-size: 1.125rem; }
 }
