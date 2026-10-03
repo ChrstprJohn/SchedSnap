@@ -19,7 +19,7 @@ export default function StatsBanner({ visits = sampleVisits, sample = true }) {
           <div key={label} className="stats-item">
             <dt className="stats-label">{label}{isSample && <span className="stats-sample">Sample</span>}</dt>
             <dd className="stats-value" aria-label={value === null ? 'Unavailable' : undefined}>
-              {value === null ? '—' : numberFormat.format(value)}
+              {value === null ? '—' : `${numberFormat.format(value)}+`}
             </dd>
           </div>
         ))}
