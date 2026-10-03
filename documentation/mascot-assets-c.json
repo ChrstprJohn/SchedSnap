@@ -1,0 +1,104 @@
+[
+  {
+    "id": "frog",
+    "file": "/wallpapers/mascots/frog.png",
+    "animal": "frog",
+    "corner": "lower-left",
+    "colors": [
+      "#A8CB83",
+      "#294B38"
+    ],
+    "prompt": "Use case: logo-brand. Asset: transparent mascot cutout for a clean student schedule template. One full 1:1 square of a single extremely simple adorable baby frog, upright emerging from the lower-left corner, 4–7 broad chunky geometric shapes, continuous soft rounded silhouette, both paired identifying features visible, dot eyes, tiny friendly mouth only if helpful. broad rounded head with paired bulb eyes. Exactly two color families #A8CB83 and #294B38 organized into broad purposeful regions; reuse dark color for face. True flat solid-color vector-like illustration. NO gradients, texture, paper grain, highlights, shading, external shadows, 3D, gloss, detailed fur/scales, thin lines, sharp tips, props, other animals, scenery, letters, numbers, timetable or watermark. Transparent background.",
+    "provider": "built-in imagegen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10107-f7cb-7612-b86e-3bc7b4276268\\exec-7f241494-fc98-41b7-bdce-cf0403fb4625.png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    }
+  },
+  {
+    "id": "turtle",
+    "file": "/wallpapers/mascots/turtle.png",
+    "animal": "turtle",
+    "corner": "lower-right",
+    "colors": [
+      "#B7D8B5",
+      "#295346"
+    ],
+    "prompt": "Use case: logo-brand. Asset: transparent mascot cutout for a clean student schedule template. One full 1:1 square of a single extremely simple adorable baby turtle, upright emerging from the lower-right corner, 4–7 broad chunky geometric shapes, continuous soft rounded silhouette, both paired identifying features visible, dot eyes, tiny friendly mouth only if helpful. broad smooth shell (no repeated plates) with rounded head and visible front flippers. Exactly two color families #B7D8B5 and #295346 organized into broad purposeful regions; reuse dark color for face. True flat solid-color vector-like illustration. NO gradients, texture, paper grain, highlights, shading, external shadows, 3D, gloss, detailed fur/scales, thin lines, sharp tips, props, other animals, scenery, letters, numbers, timetable or watermark. Transparent background.",
+    "provider": "built-in imagegen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10107-f7cb-7612-b86e-3bc7b4276268\\exec-bdc78546-8e99-443c-88dc-95e3eeaf66c7.png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    }
+  },
+  {
+    "id": "capybara",
+    "file": "/wallpapers/mascots/capybara.png",
+    "animal": "capybara",
+    "corner": "lower-left",
+    "colors": [
+      "#C39A70",
+      "#604633"
+    ],
+    "prompt": "Use case: logo-brand. Asset: transparent mascot cutout for a clean student schedule template. One full 1:1 square of a single extremely simple adorable baby capybara, upright emerging from the lower-left corner, 4–7 broad chunky geometric shapes, continuous soft rounded silhouette, both paired identifying features visible, dot eyes, tiny friendly mouth only if helpful. broad blunt rounded muzzle and tiny ears. Exactly two color families #C39A70 and #604633 organized into broad purposeful regions; reuse dark color for face. True flat solid-color vector-like illustration. NO gradients, texture, paper grain, highlights, shading, external shadows, 3D, gloss, detailed fur/scales, thin lines, sharp tips, props, other animals, scenery, letters, numbers, timetable or watermark. Transparent background.",
+    "provider": "built-in imagegen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10107-f7cb-7612-b86e-3bc7b4276268\\exec-2b162631-54f9-4571-a15b-3c66afeacaa3.png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    }
+  },
+  {
+    "id": "hamster",
+    "file": "/wallpapers/mascots/hamster.png",
+    "animal": "hamster",
+    "corner": "lower-right",
+    "colors": [
+      "#E6B180",
+      "#654633"
+    ],
+    "prompt": "Use case: logo-brand. Asset: transparent mascot cutout for a clean student schedule template. One full 1:1 square of a single extremely simple adorable baby hamster, upright emerging from the lower-right corner, 4–7 broad chunky geometric shapes, continuous soft rounded silhouette, both paired identifying features visible, dot eyes, tiny friendly mouth only if helpful. round cheeks and both ears. Exactly two color families #E6B180 and #654633 organized into broad purposeful regions; reuse dark color for face. True flat solid-color vector-like illustration. NO gradients, texture, paper grain, highlights, shading, external shadows, 3D, gloss, detailed fur/scales, thin lines, sharp tips, props, other animals, scenery, letters, numbers, timetable or watermark. Transparent background.",
+    "provider": "built-in imagegen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10107-f7cb-7612-b86e-3bc7b4276268\\exec-7ecfaf60-738d-4a2d-bda5-e824102ca872.png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    }
+  },
+  {
+    "id": "seal",
+    "file": "/wallpapers/mascots/seal.png",
+    "animal": "seal",
+    "corner": "lower-left",
+    "colors": [
+      "#C2DFE5",
+      "#345365"
+    ],
+    "prompt": "Use case: logo-brand. Asset: transparent mascot cutout for a clean student schedule template. One full 1:1 square of a single extremely simple adorable baby seal, upright emerging from the lower-left corner, 4–7 broad chunky geometric shapes, continuous soft rounded silhouette, both paired identifying features visible, dot eyes, tiny friendly mouth only if helpful. rounded seal head and paired short broad flippers. Exactly two color families #C2DFE5 and #345365 organized into broad purposeful regions; reuse dark color for face. True flat solid-color vector-like illustration. NO gradients, texture, paper grain, highlights, shading, external shadows, 3D, gloss, detailed fur/scales, thin lines, sharp tips, props, other animals, scenery, letters, numbers, timetable or watermark. Transparent background.",
+    "provider": "built-in imagegen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10107-f7cb-7612-b86e-3bc7b4276268\\exec-bfe1f8e2-408f-423a-af5d-463f07ccb419.png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    }
+  },
+  {
+    "id": "whale",
+    "file": "/wallpapers/mascots/whale.png",
+    "animal": "whale",
+    "corner": "lower-right",
+    "colors": [
+      "#809DC5",
+      "#2C4569"
+    ],
+    "prompt": "Use case: logo-brand. Asset: transparent mascot cutout for a clean student schedule template. One full 1:1 square of a single extremely simple adorable baby whale, upright emerging from the lower-right corner, 4–7 broad chunky geometric shapes, continuous soft rounded silhouette, both paired identifying features visible, dot eyes, tiny friendly mouth only if helpful. rounded smiling whale with broad flipper and blunt tail, no water splash. Exactly two color families #809DC5 and #2C4569 organized into broad purposeful regions; reuse dark color for face. True flat solid-color vector-like illustration. NO gradients, texture, paper grain, highlights, shading, external shadows, 3D, gloss, detailed fur/scales, thin lines, sharp tips, props, other animals, scenery, letters, numbers, timetable or watermark. Transparent background.",
+    "provider": "built-in imagegen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10107-f7cb-7612-b86e-3bc7b4276268\\exec-7378b6a9-6013-46ac-b17a-05b179b9759c.png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    }
+  }
+]

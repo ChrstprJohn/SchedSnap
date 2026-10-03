@@ -1,0 +1,142 @@
+[
+  {
+    "id": "bear",
+    "file": "/wallpapers/mascots/bear.png",
+    "animal": "bear",
+    "corner": "lower-left",
+    "colors": [
+      "#F7EBCB",
+      "#D77A45"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: transparent PNG animal mascot cutout for a student schedule wallpaper footer. Primary request: one complete 1:1 square image of an extremely simplified adorable bear character, upright emerging from lower-left corner, a dominant continuous chunky rounded silhouette from 4–7 large shapes, paired ears fully visible, dot eyes, tiny friendly mouth only if needed, baby proportions. round paired ears. Use burnt orange for face marks. Exactly two semantic colors #F7EBCB and #D77A45, reuse darker color for facial marks; broad regions, no tiny textures or thin lines. Truly flat solid-color vector-like illustration. Character comfortably fits square aside natural bottom-side crop; no sharp tips. Background truly transparent with alpha. No gradients, 3D, shading, paper texture, gloss, shadows, props, letters, numbers, schedule, watermark or frames.",
+    "provider": "built-in imagegen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10107-3ce3-7e12-8385-3433383b1c84\\exec-fcdf4b5d-2b6a-4141-9f11-82ab1f5d892a.png",
+    "dimensions": {
+      "id": "bear",
+      "width": 1254,
+      "height": 1254,
+      "colorType": 6,
+      "size": 734150
+    }
+  },
+  {
+    "id": "bunny",
+    "file": "/wallpapers/mascots/bunny.png",
+    "animal": "bunny",
+    "corner": "lower-right",
+    "colors": [
+      "#FFF3E1",
+      "#71394D"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: transparent PNG animal mascot cutout for a student schedule wallpaper footer. Primary request: one complete 1:1 square image of an extremely simplified adorable bunny character, upright emerging from lower-right corner, a dominant continuous chunky rounded silhouette from 4–7 large shapes, paired ears fully visible, dot eyes, tiny friendly mouth only if needed, baby proportions. two fully visible rounded long ears. Exactly two semantic colors #FFF3E1 and #71394D, reuse darker color for facial marks; broad regions, no tiny textures or thin lines. Truly flat solid-color vector-like illustration. Character comfortably fits square aside natural bottom-side crop; no sharp tips. Background truly transparent with alpha. No gradients, 3D, shading, paper texture, gloss, shadows, props, letters, numbers, schedule, watermark or frames.",
+    "provider": "built-in imagegen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10107-3ce3-7e12-8385-3433383b1c84\\exec-f83bbef2-6736-401a-97dd-ff1f697548ad.png",
+    "dimensions": {
+      "id": "bunny",
+      "width": 1254,
+      "height": 1254,
+      "colorType": 6,
+      "size": 645722
+    }
+  },
+  {
+    "id": "panda",
+    "file": "/wallpapers/mascots/panda.png",
+    "animal": "panda",
+    "corner": "lower-left",
+    "colors": [
+      "#F4F0E5",
+      "#292D2C"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: transparent PNG animal mascot cutout for a student schedule wallpaper footer. Primary request: one complete 1:1 square image of an extremely simplified adorable panda character, upright emerging from lower-left corner, a dominant continuous chunky rounded silhouette from 4–7 large shapes, paired ears fully visible, dot eyes, tiny friendly mouth only if needed, baby proportions. two rounded ears and broad charcoal eye patches. Exactly two semantic colors #F4F0E5 and #292D2C, reuse darker color for facial marks; broad regions, no tiny textures or thin lines. Truly flat solid-color vector-like illustration. Character comfortably fits square aside natural bottom-side crop; no sharp tips. Background truly transparent with alpha. No gradients, 3D, shading, paper texture, gloss, shadows, props, letters, numbers, schedule, watermark or frames.",
+    "provider": "built-in imagegen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10107-3ce3-7e12-8385-3433383b1c84\\exec-1052766b-6e83-4882-a09a-b6ec5c2a47e4.png",
+    "dimensions": {
+      "id": "panda",
+      "width": 1254,
+      "height": 1254,
+      "colorType": 6,
+      "size": 591972
+    }
+  },
+  {
+    "id": "cat",
+    "file": "/wallpapers/mascots/cat.png",
+    "animal": "cat",
+    "corner": "lower-right",
+    "colors": [
+      "#FFF6E8",
+      "#493359"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: transparent PNG animal mascot cutout for a student schedule wallpaper footer. Primary request: one complete 1:1 square image of an extremely simplified adorable cat character, upright emerging from lower-right corner, a dominant continuous chunky rounded silhouette from 4–7 large shapes, paired ears fully visible, dot eyes, tiny friendly mouth only if needed, baby proportions. blunt paired triangle ears. Exactly two semantic colors #FFF6E8 and #493359, reuse darker color for facial marks; broad regions, no tiny textures or thin lines. Truly flat solid-color vector-like illustration. Character comfortably fits square aside natural bottom-side crop; no sharp tips. Background truly transparent with alpha. No gradients, 3D, shading, paper texture, gloss, shadows, props, letters, numbers, schedule, watermark or frames.",
+    "provider": "built-in imagegen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10107-3ce3-7e12-8385-3433383b1c84\\exec-fa922e07-5bbb-4694-bdfd-92732028141f.png",
+    "dimensions": {
+      "id": "cat",
+      "width": 1254,
+      "height": 1254,
+      "colorType": 6,
+      "size": 621967
+    }
+  },
+  {
+    "id": "dog",
+    "file": "/wallpapers/mascots/dog.png",
+    "animal": "dog",
+    "corner": "lower-left",
+    "colors": [
+      "#C68B53",
+      "#4B3024"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: transparent PNG animal mascot cutout for a student schedule wallpaper footer. Primary request: one complete 1:1 square image of an extremely simplified adorable dog character, upright emerging from lower-left corner, a dominant continuous chunky rounded silhouette from 4–7 large shapes, paired ears fully visible, dot eyes, tiny friendly mouth only if needed, baby proportions. paired floppy ears. Exactly two semantic colors #C68B53 and #4B3024, reuse darker color for facial marks; broad regions, no tiny textures or thin lines. Truly flat solid-color vector-like illustration. Character comfortably fits square aside natural bottom-side crop; no sharp tips. Background truly transparent with alpha. No gradients, 3D, shading, paper texture, gloss, shadows, props, letters, numbers, schedule, watermark or frames.",
+    "provider": "built-in imagegen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10107-3ce3-7e12-8385-3433383b1c84\\exec-d6b2e665-f952-4559-b987-7bf8c58c9af7.png",
+    "dimensions": {
+      "id": "dog",
+      "width": 1254,
+      "height": 1254,
+      "colorType": 6,
+      "size": 773624
+    }
+  },
+  {
+    "id": "fox",
+    "file": "/wallpapers/mascots/fox.png",
+    "animal": "fox",
+    "corner": "lower-right",
+    "colors": [
+      "#FFF1D8",
+      "#B95C35"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: transparent PNG animal mascot cutout for a student schedule wallpaper footer. Primary request: one complete 1:1 square image of an extremely simplified adorable fox character, upright emerging from lower-right corner, a dominant continuous chunky rounded silhouette from 4–7 large shapes, paired ears fully visible, dot eyes, tiny friendly mouth only if needed, baby proportions. blunt paired ears. Exactly two semantic colors #FFF1D8 and #B95C35, reuse darker color for facial marks; broad regions, no tiny textures or thin lines. Truly flat solid-color vector-like illustration. Character comfortably fits square aside natural bottom-side crop; no sharp tips. Background truly transparent with alpha. No gradients, 3D, shading, paper texture, gloss, shadows, props, letters, numbers, schedule, watermark or frames.",
+    "provider": "built-in imagegen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10107-3ce3-7e12-8385-3433383b1c84\\exec-a1c81d97-7e69-4bb2-ade3-b2653e425210.png",
+    "dimensions": {
+      "id": "fox",
+      "width": 1254,
+      "height": 1254,
+      "colorType": 6,
+      "size": 809790
+    }
+  },
+  {
+    "id": "tiger",
+    "file": "/wallpapers/mascots/tiger.png",
+    "animal": "tiger",
+    "corner": "lower-left",
+    "colors": [
+      "#E89B55",
+      "#553624"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: transparent PNG animal mascot cutout for a student schedule wallpaper footer. Primary request: one complete 1:1 square image of an extremely simplified adorable tiger character, upright emerging from lower-left corner, a dominant continuous chunky rounded silhouette from 4–7 large shapes, paired ears fully visible, dot eyes, tiny friendly mouth only if needed, baby proportions. two broad cheek marks, no many stripes. Exactly two semantic colors #E89B55 and #553624, reuse darker color for facial marks; broad regions, no tiny textures or thin lines. Truly flat solid-color vector-like illustration. Character comfortably fits square aside natural bottom-side crop; no sharp tips. Background truly transparent with alpha. No gradients, 3D, shading, paper texture, gloss, shadows, props, letters, numbers, schedule, watermark or frames.",
+    "provider": "built-in imagegen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10107-3ce3-7e12-8385-3433383b1c84\\exec-ebfe7339-4ac4-4be0-8dc9-c6fa21776b1f.png",
+    "dimensions": {
+      "id": "tiger",
+      "width": 1254,
+      "height": 1254,
+      "colorType": 6,
+      "size": 727394
+    }
+  }
+]

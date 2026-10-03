@@ -1,6 +1,6 @@
 # UniToolbox — Initial Project Plan
 
-Status: Initial proposal for discussion. No website implementation yet.
+Status: MVP implemented locally, with deployment pending. See [technical setup](TECH_STACK.md) for the selected stack, verification, and current scope.
 
 ## 1. Product idea
 
@@ -41,11 +41,11 @@ Turn a student's class schedule into a readable phone wallpaper using predefined
 ### Planned student workflow
 
 1. Open the service from its landing-page card.
-2. Upload an image of a registration form containing the class schedule.
-3. Have AI extract the relevant schedule details.
-4. Review and edit the extracted details, including any missing or unclear information.
-5. Choose a predefined phone wallpaper template.
-6. Preview the wallpaper with the confirmed schedule filled into the template.
+2. Choose a predefined phone wallpaper template.
+3. Upload an image of a registration form containing the class schedule.
+4. Have AI extract the relevant schedule details.
+5. Review and edit the extracted details in the live wallpaper preview, including any missing or unclear information.
+6. Confirm the schedule is correct.
 7. Download the generated wallpaper for use on a phone.
 
 The uploaded form supplies the schedule data; the selected template provides the wallpaper layout and appearance.
@@ -72,9 +72,7 @@ The exact fields and their display order will be confirmed using sample registra
 
 ### AI integration direction
 
-AI-assisted extraction is planned for a later implementation step. Gemini API access, ideally using an available free tier, is an initial candidate to investigate.
-
-The provider, model, costs, usage limits, and integration approach are not decided yet. The review-and-edit step should allow students to correct extraction mistakes before generating the wallpaper.
+AI-assisted extraction now runs through the server API using the Google Gen AI SDK. The verified model is `gemini-3.1-flash-lite`; `GEMINI_MODEL` can select another compatible model. The review-and-edit step lets students correct extraction mistakes before generating the wallpaper. Free-tier quota depends on the configured Google project.
 
 ### Registration-form handling
 
@@ -106,17 +104,13 @@ Additional services, accounts, saved schedule history, payments, and a custom te
 5. **Validation and polish:** verify the complete flow with representative forms, schedules, phone sizes, and extraction failures.
 6. **Expansion:** introduce additional services through new cards and dedicated pages.
 
-## 7. Technology decisions to discuss later
+## 7. Selected technology direction
 
-No technology stack is selected in this plan. The next discussion should cover:
+The requested setup uses React with Vite, Tailwind CSS, Lucide, Axios, and GSAP. Vercel Node.js functions will proxy Gemini through `@google/genai`; the API key stays server-side. React Router provides dedicated service routes, Zod defines the schedule contract, and HTML5 Canvas is the planned wallpaper renderer.
 
-- Frontend framework and styling approach.
-- Backend needs and hosting.
-- AI provider and secure API-key handling.
-- Image upload support and processing.
-- Wallpaper rendering and export method.
-- Whether any storage or database is needed for the initial version.
-- Testing and deployment approach.
+The implementation follows the proposed JavaScript/JSX structure. The landing page, template-first workflow, image extraction, editing, 42 templates, modal previews, and PNG download are implemented. The collection includes 20 new animal editions before the 16 original templates. The interface retains its clean white/slate theme. Output is 1080 × 2400 mobile portrait only; device and orientation controls have been removed. Steps appear within the page, outside the main navigation. Step 2 contains upload, class review, and confirmation; step 3 contains the actual wallpaper preview and download. Deployment remains open. See [TECH_STACK.md](TECH_STACK.md) and [WALLPAPER_TEMPLATES.md](WALLPAPER_TEMPLATES.md).
+
+The completed animal extension follows the selected direction: 20 cute mascot editions with flexible timetables. Transparent cutouts sit on uniform Canvas backgrounds. All 42 templates share a Class Schedule title, growing day cards, centered circular weekday initials, and aligned times with minutes and AM/PM. Course codes lead smaller centered subjects, with a separate room column. Every actual meeting remains, long subjects wrap, and empty days are skipped. Body type fits within 28–42px; animals retain a fixed 620px maximum occupied dimension in a reserved footer, and overflow blocks export. Gallery previews show one neutral meeting each Monday–Friday; assets load near the viewport. All 20 assets and generation provenance are documented. Subtle shading in some cutouts is an output limitation despite flat-color constraints. The full 23-test suite, lint, and production build pass.
 
 ## 8. Open product decisions
 
@@ -140,4 +134,4 @@ No technology stack is selected in this plan. The next discussion should cover:
 
 ## 10. Current repository milestone
 
-Create the initial project documentation and publish it to the `main` branch of the UniToolbox GitHub repository. Website implementation starts after the next planning discussion.
+The initial planning documentation was published to `main`. The setup and first service MVP are implemented locally. Validation covers the API boundary, live extraction of a synthetic form, editable preview, and PNG export. Hosting and future services remain subsequent milestones.
