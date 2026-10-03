@@ -1,0 +1,9 @@
+# Service assets
+
+`templates.js` combines 42 mobile Canvas styles: 20 animal editions from `mascotTemplates.js`, six patterns from `patternTemplates.js`, and the 16 originals. Gallery and modal previews show Monday–Friday with one neutral Subject name and time each. `sampleSchedule.js` contains illustrative classes for the optional sample flow.
+
+The renderer in `src/utils/canvasHelpers.js` draws actual class details separately from template artwork. Mascot cutouts live in `public/wallpapers/mascots/`, contain no timetable or edition text, and preserve their generated transparency. Canvas supplies a uniform mascot background and edition footer. All templates use the same Class Schedule title, growing day cards, centered circular weekday initials, and consistent time/subject columns in DM Sans Variable. Times include minutes and AM/PM and center beside their meeting's subject/details block. Historical heading and row-style preset fields are unused by the shared renderer.
+
+Weekday groups expand for every meeting and wrapped long subject name, skip empty days, and fit body type within 28–42px. Mascot occupied alpha bounds normalize to a fixed 620px maximum dimension in a protected footer; density never resizes the animal. Overflow blocks export. Generated original backgrounds remain in `public/wallpapers/`; `src/utils/wallpaperAssets.js` loads and caches art and fonts before drawing. Gallery canvases load their assets near the viewport. Output is 1080 × 2400, portrait only. See `documentation/WALLPAPER_TEMPLATES.md` for the collection, prompts, and links to `mascot-assets-a.json`, `mascot-assets-b.json`, and `mascot-assets-c.json` provenance.
+
+Do not commit real registration forms or student records. The upload test fixture contains only synthetic data.
