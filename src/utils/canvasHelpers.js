@@ -205,7 +205,9 @@ function drawHeading(ctx, template) {
   ctx.save();
   ctx.fillStyle = template.ink; ctx.textAlign = 'center';
   font(ctx, 88, 750, template.fontFamily);
-  ctx.fillText('Class Schedule', 540, 570);
+  const title = template.scheduleTitle?.trim() || 'Class Schedule';
+  for (let size = 86; size >= 24 && ctx.measureText(title).width > 924; size -= 2) font(ctx, size, 750, template.fontFamily);
+  ctx.fillText(title, 540, 570, 924);
   ctx.restore();
 }
 

@@ -1,0 +1,44 @@
+[
+  {
+    "label": "01",
+    "animal": "Waving ginger cat",
+    "accessories": "Navy graduation cap and gold tassel",
+    "source": "C:/Users/picar/.codex/generated_images/01a1049f-7bfc-7102-b37d-414851bd8f68/exec-b42c0698-53d5-4b80-b3f4-7d3a774d173f.png",
+    "output": "C:/Users/picar/.codex/generated_images/01a104ab-6679-7310-a30e-1de4b4f61dde/exec-9180735d-9bda-4a8a-9d4d-91aa99cf2a23.png",
+    "prompt": "Use case: precise-object-edit. Image 1 is the edit target. Add a small balanced navy graduation cap with a short gold tassel to this waving ginger cat, positioned between the ears so both ears remain visible. Preserve this exact cat identity, ginger peach and cream natural colors, waving pose, tail, full body proportions, open eyes and visible pupils, centered composition, background and soft matte 3D style. Use simple broad readable accessory shapes. Keep the complete body, both ears, feet, tail and cap fully inside the square canvas with even padding; scale the whole character slightly if necessary to accommodate the cap. Constraints: one animal only, no text, no watermark, no extra props or scenery, no crop.",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "provider": "built-in image_gen",
+    "constraintDelivery": "main-prompt constraints"
+  },
+  {
+    "label": "02",
+    "animal": "Seated brown bear",
+    "accessories": "Navy round glasses and cream scarf",
+    "source": "C:/Users/picar/.codex/generated_images/01a1049f-7bfc-7102-b37d-414851bd8f68/exec-f83d6a57-e25c-4436-b161-13de8ca67b89.png",
+    "output": "C:/Users/picar/.codex/generated_images/01a104ab-6679-7310-a30e-1de4b4f61dde/exec-dbef5dd8-1f9d-47f0-9e88-f64acf07a419.png",
+    "prompt": "Use case: precise-object-edit. Image 1 is the edit target. Add round navy student glasses with clear lenses and a simple cream scarf to this seated brown bear. Keep both eyes open, visible and expressive through the glasses; glasses frames do not cover pupils. Scarf has broad smooth shapes without knit texture. Preserve this exact bear identity, natural warm brown and cream colors, seated pose, full body proportions, open eyes and visible pupils, centered composition, background and soft matte 3D style. Use simple broad readable accessory shapes. Keep the complete body, both ears and feet fully inside the square canvas with even padding. Constraints: one animal only, no text, no watermark, no extra props or scenery, no crop.",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "provider": "built-in image_gen",
+    "constraintDelivery": "main-prompt constraints"
+  },
+  {
+    "label": "03",
+    "animal": "Hopping ivory rabbit",
+    "accessories": "Navy graduation cap and gold tassel",
+    "source": "C:/Users/picar/.codex/generated_images/01a1049f-7bfc-7102-b37d-414851bd8f68/exec-565a3fc4-c2ff-4f05-a529-ebac70d3cdec.png",
+    "output": "C:/Users/picar/.codex/generated_images/01a104ab-6679-7310-a30e-1de4b4f61dde/exec-1c2c080e-7770-4de5-9cd6-a803601af329.png",
+    "prompt": "Use case: precise-object-edit. Image 1 is the edit target. Add a small navy graduation cap with a short gold tassel to this hopping ivory rabbit. Position the cap between the long ears so both ears stay fully visible. Preserve this exact rabbit identity, natural ivory cream and soft pink colors, hopping pose, tail, full body proportions, open eyes and visible pupils, centered composition, background and soft matte 3D style. Use simple broad readable accessory shapes. Keep the complete body, both ears, feet, tail and cap fully inside the square canvas with even padding; scale the whole character slightly if necessary to accommodate the cap. Constraints: one animal only, no text, no watermark, no extra props or scenery, no crop.",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "provider": "built-in image_gen",
+    "constraintDelivery": "main-prompt constraints"
+  }
+]

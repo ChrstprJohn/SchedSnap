@@ -4,6 +4,7 @@ import { readFileSync } from 'node:fs';
 import { sampleSchedule } from '../src/assets/sampleSchedule.js';
 import { mascotTemplateSchedule, mobileResolution, templateSchedule, wallpaperTemplates } from '../src/assets/templates.js';
 import { mascotTemplates } from '../src/assets/mascotTemplates.js';
+import { littleFriendsTemplates } from '../src/assets/littleFriendsTemplates.js';
 import { patternTemplates } from '../src/assets/patternTemplates.js';
 import { drawWallpaper, findOverlaps, formatTime, formatWallpaperTime, groupSchedule, layoutSchedule, wrapText } from '../src/utils/canvasHelpers.js';
 import { getScheduleIssues } from '../shared/scheduleSchema.js';
@@ -12,9 +13,12 @@ import { colorInputValue, customizeWallpaperTemplate } from '../src/utils/wallpa
 const measurementContext = { font: '', measureText(text) { const size = Number(this.font.match(/(\d+(\.\d+)?)px/)?.[1] || 36); return { width: text.length * size * 0.52 }; } };
 
 test('groups repeated class meetings by weekday, preserving all occurrences', () => {
-  const groups = groupSchedule(sampleSchedule);
+  const repeated = structuredClone(sampleSchedule);
+  repeated.classes[0].meetings.push({ ...repeated.classes[0].meetings[0], day: 'Wednesday' });
+  const groups = groupSchedule(repeated);
   assert.deepEqual(groups.map((group) => group.day), ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']);
-  assert.equal(groups.reduce((sum, group) => sum + group.entries.length, 0), 5);
+  assert.equal(groups.reduce((sum, group) => sum + group.entries.length, 0), 6);
+  assert.equal(groups.find((group) => group.day === 'Wednesday').entries.length, 2);
   assert.equal(formatTime('13:00'), '1:00 PM');
   assert.equal(formatTime('00:05'), '12:05 AM');
   assert.equal(formatWallpaperTime('07:00'), '7:00 AM');
@@ -43,9 +47,13 @@ test('all templates fit sample data and dense data is explicitly rejected', () =
   }
 });
 
-test('the collection has twenty animals, six editable patterns and sixteen originals', () => {
-  assert.equal(wallpaperTemplates.length, 42);
-  assert.equal(new Set(wallpaperTemplates.map((template) => template.id)).size, 42);
+test('the collection has twenty little friends, twenty animals, six editable patterns and sixteen originals', () => {
+  assert.equal(wallpaperTemplates.length, 62);
+  assert.equal(new Set(wallpaperTemplates.map((template) => template.id)).size, 62);
+  assert.equal(littleFriendsTemplates.length, 20);
+  assert.equal(new Set(littleFriendsTemplates.map((template) => template.mascot)).size, 20);
+  assert.equal(littleFriendsTemplates.filter((template) => template.mascotSide === 'left').length, 10);
+  assert.equal(littleFriendsTemplates.filter((template) => template.mascotSide === 'right').length, 10);
   assert.equal(mascotTemplates.length, 20);
   assert.equal(new Set(mascotTemplates.map((template) => template.mascot)).size, 20);
   assert.equal(patternTemplates.length, 6);
@@ -73,6 +81,35 @@ test('every mobile template renders real class details inside the canvas', () =>
       assert.ok(entry.subjectLines[0] === entry.subject || entry.subjectLines[0].endsWith('…'));
       assert.equal(entry.timeLines.join(''), `${formatWallpaperTime(entry.startTime)}–${formatWallpaperTime(entry.endTime)}`);
     }
+  }
+});
+
+test('a new editor renders artwork without example classes and blocks empty export', () => {
+  const schedule = { classes: [], warnings: [] };
+  assert.ok(getScheduleIssues(schedule).length > 0);
+  for (const template of wallpaperTemplates) {
+    const text = [];
+    const context = { ...measurementContext, scale() {}, fillRect() {}, beginPath() {}, roundRect() {}, fill() {}, stroke() {}, arc() {}, moveTo() {}, lineTo() {}, bezierCurveTo() {}, save() {}, restore() {}, createLinearGradient() { return { addColorStop() {} }; }, fillText(value) { text.push(value); } };
+    const canvas = { getContext() { return context; } };
+    const layout = drawWallpaper(canvas, { schedule, template });
+    assert.equal(layout.overflow, false, template.name);
+    assert.equal(layout.plans.length, 0, template.name);
+    assert.ok(text.includes('Class Schedule'), template.name);
+    assert.equal(text.includes('Subject name'), false, template.name);
+    assert.equal(text.includes('Subject needed'), false, template.name);
+  }
+});
+
+test('custom schedule titles render once and fit within the wallpaper heading area', () => {
+  for (const scheduleTitle of ['Semester 1', 'A very long schedule title for the new school year', '   ']) {
+    const headings = [];
+    const context = { ...measurementContext, scale() {}, fillRect() {}, beginPath() {}, roundRect() {}, fill() {}, stroke() {}, arc() {}, moveTo() {}, lineTo() {}, bezierCurveTo() {}, save() {}, restore() {}, createLinearGradient() { return { addColorStop() {} }; }, fillText(value, x, y, maxWidth) { if (y === 570) headings.push({ value, x, maxWidth, measured: this.measureText(value).width }); } };
+    drawWallpaper({ getContext() { return context; } }, { schedule: sampleSchedule, template: { ...wallpaperTemplates[0], scheduleTitle } });
+    assert.equal(headings.length, 1);
+    assert.equal(headings[0].value, scheduleTitle.trim() || 'Class Schedule');
+    assert.equal(headings[0].x, 540);
+    assert.equal(headings[0].maxWidth, 924);
+    assert.ok(headings[0].measured <= 924);
   }
 });
 
@@ -235,7 +272,7 @@ test('actual mascot schedules grow Monday, fit subjects on one line and omit emp
     { subject: 'Long subject name that wraps onto another line', courseCode: 'CS 101', meetings: [{ day: 'Monday', startTime: '08:00', endTime: '09:30', room: 'Lab 2' }] },
     { subject: 'Another subject', courseCode: null, meetings: [{ day: 'Monday', startTime: '10:00', endTime: '11:30' }, { day: 'Tuesday', startTime: '13:00', endTime: '14:30' }, { day: 'Wednesday', startTime: '08:00', endTime: '09:30' }, { day: 'Friday', startTime: '10:00', endTime: '12:00' }] },
   ] };
-  for (const template of mascotTemplates) {
+  for (const template of [...mascotTemplates, ...littleFriendsTemplates]) {
     const layout = layoutSchedule(measurementContext, actual, template);
     assert.equal(layout.overflow, false, template.name);
     assert.deepEqual(layout.plans.map((plan) => plan.day), ['Monday', 'Tuesday', 'Wednesday', 'Friday']);
@@ -257,7 +294,7 @@ test('mascots keep a fixed size below every meeting, including denser schedules'
     const first = course.meetings[0];
     course.meetings.push({ ...first, startTime: '10:00', endTime: '11:30' }, { ...first, startTime: '13:00', endTime: '14:30' });
   }
-  for (const template of mascotTemplates) {
+  for (const template of [...mascotTemplates, ...littleFriendsTemplates]) {
     const image = { width: 1254, height: 1254, mascotBounds: { x: 80, y: 120, width: 920, height: 1100 } };
     const render = (schedule) => {
       const drawn = [], text = [];
@@ -276,8 +313,8 @@ test('mascots keep a fixed size below every meeting, including denser schedules'
   }
 });
 
-test('every animal template references a real square RGBA PNG asset', () => {
-  for (const template of mascotTemplates) {
+test('every mascot template references a real square RGBA PNG asset', () => {
+  for (const template of [...mascotTemplates, ...littleFriendsTemplates]) {
     const bytes = readFileSync(new URL(`../public${template.image}`, import.meta.url));
     assert.equal(bytes.subarray(1, 4).toString(), 'PNG', template.name);
     assert.equal(bytes.readUInt32BE(16), bytes.readUInt32BE(20));

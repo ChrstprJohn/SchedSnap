@@ -27,10 +27,12 @@ api/analyze.js                       Gemini extraction and error handling
 development/apiPlugin.js            Local Vite adapter for the same API handler
 shared/scheduleSchema.js             Validated class/meeting data contract
 shared/uploadLimits.js               Shared source/payload size limits
-src/assets/                         Thirty-six presets, neutral preview data, sample schedule
+src/assets/                         Sixty-two presets, neutral preview data, sample schedule
 src/assets/mascotTemplates.js        Twenty animal edition definitions
+src/assets/littleFriendsTemplates.js Twenty Chiikawa-inspired character editions
 public/wallpapers/                  Original background art without schedule text
 public/wallpapers/mascots/           Twenty transparent animal cutouts without baked text
+public/wallpapers/little-friends/    Twenty transparent reference-inspired character cutouts
 src/components/                     Navbar, Hero, ServiceCard, Footer
 src/config/services.js              Service card registry
 src/lib/api.js                      Axios client
@@ -57,11 +59,13 @@ Axios uses the same-origin `/api` path in both local runtimes and in production.
 
 ## Student workflow
 
-1. Browse 42 templates: 20 mascot editions and six editable patterns appear before the 16 originals. Clicking one opens a native modal preview showing Monday–Friday with one neutral subject and time each. **Use template** immediately opens step 2. Switching styles returns to step 3 when the existing schedule is already confirmed. There is no Continue button or sticky action footer, and no device, size, or orientation controls.
-2. Upload a JPG/PNG/WebP registration-form image and select **Read image**. Review and edit subjects and meetings within step 2. Class sections, the uploaded image, and review notes have rotating disclosure chevrons. Confirm **Details are correct**, then select **Preview wallpaper**. Editing class details resets confirmation and blocks step 3 until confirmed again. Date/date range and wallpaper title are not editor inputs; dates extracted from the form are preserved.
-3. View the large actual wallpaper and download its PNG. This step contains no editor or confirmation form.
+1. Browse the 62 designs. Clicking one opens a native dialog preview. **Use this design** opens Classes. When changing a design from Download, selection returns to that screen with the existing classes. Gallery previews show actual classes when available, otherwise sample classes.
+2. Upload a JPG/PNG/WebP image and select **Import classes**, enter classes manually, or try a sample. Review editable class summaries and resolve marked missing or invalid details. **Continue to preview** opens Download once classes are valid. Desktop review shows the live wallpaper beside the form; phones focus on the class list. There is no separate confirmation checkbox. Extracted date ranges remain preserved.
+3. **Download wallpaper** creates a 1080 × 2400 PNG. **Edit classes**, **Change design**, and the optional **Customize appearance** disclosure provide flexible editing. Mobile customization keeps a small live preview visible. Missing details, asset failures, and overflowing layouts explain why export is blocked and provide recovery actions.
 
-Manual entry and sample data are available in the upload step without calling Gemini. All edits are in React memory and are lost on refresh. The app does not save forms or schedule history.
+Template selection uses the existing wildcard route. The `step=preview` query identifies the final screen; gallery `return` and `step` parameters retain the return destination. React state owns classes, the selected image, and per-design appearance settings across tool navigation and browser Back/Forward. Refresh clears them.
+
+Manual entry and a five-class sample with one meeting each Monday–Friday are available in the upload step without calling Gemini. All edits are in React memory and are lost on refresh. The app does not save forms or schedule history.
 
 Output is fixed to a mobile portrait PNG at 1080 × 2400. All templates share a Class Schedule title, separate growing day cards, and consistent time/subject columns in DM Sans Variable. Circular weekday initials stay centered within each card for any meeting count. Times include minutes and AM/PM, e.g. 7:00 AM–10:00 AM, and center vertically beside their meeting's subject/details block. Every meeting is preserved, long subjects wrap, and empty days are skipped. Body type adjusts from 42px down to 28px. Historical preset heading/row fields are unused; palettes and background artwork still vary. Overflow, unreadable days/times, and reverse ranges block export. Overlapping meetings appear as review notes.
 
@@ -115,7 +119,7 @@ Import the repository into Vercel using its Vite preset. Build with `npm run bui
 
 Run `npm run lint`, `npm test`, and `npm run build`. Automated checks cover methods, configuration, upload validation, provider error mapping, structured data validation, all meeting occurrences, time validation, overlap detection, long text, and overflow behavior.
 
-The full automated suite has 23 passing tests covering the API and wallpaper behavior, including all 42 templates, 20 real RGBA mascot assets, every meeting, neutral weekday examples, long names, a 15-meeting week, fixed footer art, and overflow rejection. A dedicated alignment check covers centered day badges and times with one or three meetings. Lint and production build pass. The actual-data browser capture is `documentation/previews/mascot-clean-actual.jpg`; mobile and gallery captures are also under `documentation/previews/`. Tablet and orientation handling remain outside scope.
+The full automated suite has 24 passing tests covering the API and wallpaper behavior, including all 62 templates, 20 real RGBA mascot assets, every meeting, neutral weekday examples, long names, a 15-meeting week, fixed footer art, and overflow rejection. A dedicated alignment check covers centered day badges and times with one or three meetings. Lint and production build pass. The actual-data browser capture is `documentation/previews/mascot-clean-actual.jpg`; mobile and gallery captures are also under `documentation/previews/`. Tablet and orientation handling remain outside scope.
 
 MVP verification used `tests/fixtures/sample-registration.png`, which contains synthetic subjects without student data. The real Gemini request extracted three subjects and five meetings. Browser checks covered template-first navigation, image selection, extraction, live edits, template/size changes, and confirmation reset. A Midnight PNG was downloaded and inspected at 1080 × 1920 with the edited subject and all five meetings. The server key was confirmed absent from built browser JavaScript. No deployment was tested.
 

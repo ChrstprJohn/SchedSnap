@@ -1,0 +1,72 @@
+{
+  "assets": [
+    {
+      "id": "white-sleep",
+      "file": "/wallpapers/little-friends/white-sleep.png",
+      "subject": "Chiikawa white friend sleeping",
+      "corner": "lower-left",
+      "prompt": "Reference images are style and character identity anchors. Create ONE transparent standalone Chiikawa-inspired mascot very closely matching the WHITE LITTLE CHARACTER IN IMAGE 1: enormous gently rounded white head, two very tiny round ear bumps, sparse short black eye/mouth strokes, oval pink cheeks with three dark blush ticks, white stubby compact body and tiny hands. Pose: peacefully sleeping with closed curved eyes and paws held gently together. Keep unmistakable actual Chiikawa proportions and face, not a generic animal, not big glossy eyes. Flat solid-color hand-drawn sticker, thick near-black smooth outlines, absolutely no gradients/shadows/texture/3D. Square >=1024. Lower-left corner emergence, head and both tiny ears completely visible, dominant 80–90% frame. Fully transparent alpha background outside silhouette. Only ONE character, no text, props, zzz letters, scenery, grid or watermark.",
+      "provider": "built-in image_gen",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b2-d9a8-7842-b023-04b0b4b2c10d\\exec-aa147fa4-2e22-4642-b458-5c686ec845a2.png",
+      "constraintDelivery": "main-prompt constraints",
+      "transparentBackground": true
+    },
+    {
+      "id": "white-hello",
+      "file": "/wallpapers/little-friends/white-hello.png",
+      "subject": "Chiikawa white friend tiny wave",
+      "corner": "lower-right",
+      "prompt": "Repair this character cutout image only: remove the gray noisy damaged patch on its lower chest and replace that area with the same uniform pure white fill as the surrounding body. Preserve the entire character identity, black contours, expression, pink cheeks, pose, paws, proportions, size and transparent background unchanged. No new elements. The repaired body must be clean white without noise or a gray patch. Keep genuine transparent background.",
+      "provider": "built-in image_gen",
+      "source": "C:/Users/picar/.codex/generated_images/01a101ad-93ee-7683-b089-04107cb62539/exec-d2209aac-193e-4600-956e-f3c08fdbb7fb.png",
+      "constraintDelivery": "main-prompt constraints",
+      "transparentBackground": true,
+      "originalCorruptedSource": "C:\\Users\\picar\\.codex\\generated_images\\01a101b2-d9a8-7842-b023-04b0b4b2c10d\\exec-0f3010bd-1b61-4033-ac63-ba58a55659fc.png",
+      "originalPrompt": "Use the attached references to anchor exact recognizable Chiikawa-style identity, especially IMAGE 1 WHITE tiny round-eared character. Create ONE original pose: white little Chiikawa-like friend with ONE tiny hand waving at side, happy closed eye curves and tiny w-shaped smile, huge rounded white head, TWO tiny rounded ear bumps, pink oval blush cheeks with three thin black ticks each, stubby white compact body. Match reference's thin slightly imperfect hand-drawn BLACK outline and sparse black face strokes, not heavy outlines, not big glossy eyes. Flat solid white/pink fills with no texture, shading, shadows, gradients, 3D. Square >=1024 transparent PNG web mascot, character dominant 80–90% frame emerging from LOWER RIGHT corner, entire head and both ears inside frame. Genuine transparent alpha outside silhouette. No text, props, scene, watermark, multiple characters or grid."
+    },
+    {
+      "id": "kitten-excited",
+      "file": "/wallpapers/little-friends/kitten-excited.png",
+      "subject": "Hachiware blue-crown white kitten excited paws",
+      "corner": "lower-left",
+      "prompt": "Use references as style/identity anchors: generate ONE recognizable Chiikawa-inspired Hachiware-like BLUE CROWN WHITE KITTEN from image 2, standalone transparent mascot. Huge white rounded head with small triangular cat ears BOTH visible, pastel sky-blue two-lobed crown fur patch covering ear tops, tiny sparse black oval eyes and curved mouth, thin whisker strokes, pink oval cheek blush with three black ticks. Pose: excited with both tiny paws raised near chest, joyful small open smile. Compact white body, head much larger than body. Match thin black hand-drawn outline of actual reference, flat simple white/blue/pink fills, avoid glossy eyes, heavy outlines or generic animal style. Square >=1024, 80–90% frame dominance, lower-left emergence, head and both ears complete. Genuine transparent alpha backdrop outside silhouette. No shadows, gradients, shading, texture, 3D, props, text, grid, watermark, extra characters.",
+      "provider": "built-in image_gen",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b2-d9a8-7842-b023-04b0b4b2c10d\\exec-2c65125d-729f-4e5e-9863-4c82abbae005.png",
+      "constraintDelivery": "main-prompt constraints",
+      "transparentBackground": true
+    },
+    {
+      "id": "kitten-shy",
+      "file": "/wallpapers/little-friends/kitten-shy.png",
+      "subject": "Hachiware blue-crown white kitten shy",
+      "corner": "lower-right",
+      "prompt": "Use attached images as identity/style reference: ONE recognizable Hachiware-inspired character like blue-crown WHITE KITTEN in reference 2. White very round huge head, both small triangular cat ears fully visible, light sky-blue crown fur over tops, tiny short black oval eyes glancing shyly, tiny w smile, two thin whiskers each side, pink oval cheeks three short blush ticks. Pose: shy hands clasped at chest and head slightly tilted, compact white body. Preserve actual Chiikawa series proportions and minimal flat drawing, thin imperfect BLACK outline, sparse face. No generic big glossy eyes, no heavy brown stroke. Transparent PNG square >=1024, character 80–90% frame, lower-right corner emerging with entire ears/head visible. Genuine transparent alpha outside character. Solid white/blue/pink fills, no gradients, texture, shadows, shading, 3D, props, text, watermark, grid, extra characters.",
+      "provider": "built-in image_gen",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b2-d9a8-7842-b023-04b0b4b2c10d\\exec-06ddf1c4-e5ac-4a66-a3c3-3ad98bb0d204.png",
+      "constraintDelivery": "main-prompt constraints",
+      "transparentBackground": true
+    },
+    {
+      "id": "bunny-hooray",
+      "file": "/wallpapers/little-friends/bunny-hooray.png",
+      "subject": "Usagi cream bunny cheering",
+      "corner": "lower-left",
+      "prompt": "Use supplied references to closely anchor Chiikawa series identity: generate ONE Usagi-inspired cream bunny like long-eared rabbit TOP of IMAGE 2. Very large round pale yellow cream head, TWO LONG upright ears with pink interior BOTH fully visible, tiny sparse black oval eyes and mischievous tiny curved smile, pink cheeks with three black ticks, compact stubby cream body with muted round beige belly patch. Pose: cheering with both tiny hands lifted sideways. Recognizable actual Usagi/Chiikawa proportions, thin hand-drawn BLACK outline, flat solid simple fills, no glossy animal eyes. Square >=1024 transparent PNG web mascot. Dominant 80–90% frame emerging from lower LEFT; all of head and BOTH complete ears with small clear top margin. Genuine transparent alpha everywhere outside silhouette. No gradients, shading, shadows, texture, 3D, text, props, watermark, extra characters, grid.",
+      "provider": "built-in image_gen",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b2-d9a8-7842-b023-04b0b4b2c10d\\exec-9eb9cea8-62b0-4ab8-8b40-09a0869f0f77.png",
+      "constraintDelivery": "main-prompt constraints",
+      "transparentBackground": true
+    },
+    {
+      "id": "bunny-sleep",
+      "file": "/wallpapers/little-friends/bunny-sleep.png",
+      "subject": "Usagi cream bunny sleepy",
+      "corner": "lower-right",
+      "prompt": "Use attached references to anchor actual Chiikawa identity: ONE Usagi-inspired pale cream bunny very similar to long-ear character top of IMAGE 2. Enormous round cream head, TWO LONG rounded upright ears pink interior BOTH entirely in frame, sparse tiny BLACK facial strokes, CLOSED sleepy eye curves and peaceful little w mouth, pink oval cheeks with three black blush ticks each, stubby compact cream body, beige circular belly patch. Pose: sleepy seated with both paws tucked softly under chin and slight head tilt. Use actual reference's thin hand-drawn black outlines and flat minimalist solid fills; not generic realistic rabbit, not huge glossy eyes, no heavy brown outline. Transparent PNG square >=1024. Lower-right emerging composition dominating80–90% frame with whole head and both ears complete. Genuinely transparent alpha everywhere outside silhouette. No text, zzz marks, props, scenes, shadow, gradients, shading, texture, 3D, grids, watermark or other characters.",
+      "provider": "built-in image_gen",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b2-d9a8-7842-b023-04b0b4b2c10d\\exec-82c4ad2f-0df5-4667-a6f1-07ca148a047c.png",
+      "constraintDelivery": "main-prompt constraints",
+      "transparentBackground": true
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "user_override": "Natural animal colors requested after first two outputs; full body centered and soft 3D style also explicitly requested.",
+  "items": [
+    {
+      "label": "07",
+      "animal": "Elephant",
+      "pose": "Seated three-quarter, trunk curled up",
+      "original_path": "C:/Users/picar/.codex/generated_images/01a104a0-11f6-7162-b31d-5759d9c40ed8/exec-4b266487-789e-4b34-9d08-98252653e64d.png",
+      "final_path": "C:/Users/picar/.codex/generated_images/01a104a0-11f6-7162-b31d-5759d9c40ed8/exec-9f914f56-f806-456e-a6f1-a512824b8cb3.png",
+      "original_prompt": "Create one complete 1:1 square image, approximately 1536 × 1536. The supplied owl image is a STYLE REFERENCE ONLY. Generate a NEW animal; do not retain owl anatomy. Match its exact cute soft matte rounded 3D aesthetic, broad smooth forms, baby proportions with a large head and compact complete body, gentle depth and soft restrained shading. Simplify to a few heavy rounded shapes, readable at 32 × 32. Show two large clear OPEN eye areas with distinct dark navy pupils, easy to separate for future blinking and pupil movement. Use two semantic subject color families and the single specified background color; reuse subject colors for eye areas, pupils and facial marks. Keep every tip blunt. Entire animal must be visible including all essential limbs and feet. Center the complete body with even breathing room, filling 75–82% of the square, no cropping. Background is one entirely uniform solid color filling all open space and corners. Constraints: one animal only; no props, clothing, text, watermarks, borders, outlines, extra subjects, scenery, thin lines, tiny anatomical or fur details, glossy hotspots or external cast shadows. Square outer corners.\nSubject and pose: a lovable baby ELEPHANT sitting in a gentle three-quarter pose, both broad rounded ears visible, short thick trunk curled gently upward, both front feet and both hind feet visible. Broad sage #A3B9A5 body and navy #0F172A accent masses and pupils; eye areas reuse sage. Background: solid pale blue #DDE7ED. Keep it calm and friendly.",
+      "prompt": "Edit the supplied elephant image only in its coloration. Preserve the exact soft matte rounded 3D style, full body, proportions, seated three-quarter pose, trunk curl, both ears and all four feet, center framing, gentle depth and pale solid blue background. Give the elephant NATURAL animal-appropriate colors: warm soft gray skin, softly pink inner ears, ivory eye whites and dark charcoal pupils. Recolor the dark foot pads to natural soft gray with only gentle tonal depth, no large dark pad spots. No green or lavender skin. Keep two large OPEN eyes. No new props, clothing, text, outlines, scene or external cast shadow. One whole animal, uncropped square image.",
+      "palette": {
+        "skin": "warm soft gray",
+        "ears": "soft pink",
+        "eyes": "ivory/charcoal",
+        "background": "#DDE7ED"
+      },
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "source": "C:/Users/picar/.codex/generated_images/01a10496-5cb0-7600-9ff4-dd00f3914ab0/exec-2131795d-0f32-4db7-b3ee-d9d55b3e6f8b.png",
+      "composition": "centered complete body",
+      "provider": "built-in image_gen",
+      "constraint_delivery": "main-prompt constraints"
+    },
+    {
+      "label": "08",
+      "animal": "Puppy",
+      "pose": "Play bow, all four paws visible",
+      "original_path": "C:/Users/picar/.codex/generated_images/01a104a0-11f6-7162-b31d-5759d9c40ed8/exec-d035e2de-5baf-4562-a392-2529625e7dce.png",
+      "final_path": "C:/Users/picar/.codex/generated_images/01a104a0-11f6-7162-b31d-5759d9c40ed8/exec-c2d0e68f-d6b5-4a0b-9196-164c9f7547b9.png",
+      "original_prompt": "Create one complete 1:1 square image, approximately 1536 × 1536. The supplied owl image is a STYLE REFERENCE ONLY. Generate a NEW animal; do not retain owl anatomy. Match its exact cute soft matte rounded 3D aesthetic, broad smooth forms, baby proportions with a large head and compact complete body, gentle depth and soft restrained shading. Simplify to a few heavy rounded shapes, readable at 32 × 32. Show two large clear OPEN eye areas with distinct dark navy pupils, easy to separate for future blinking and pupil movement. Use two semantic subject color families and the single specified background color; reuse subject colors for eye areas, pupils and facial marks. Keep every tip blunt. Entire animal must be visible including all essential limbs and feet. Center the complete body with even breathing room, filling 75–82% of the square, no cropping. Background is one entirely uniform solid color filling all open space and corners. Constraints: one animal only; no props, clothing, text, watermarks, borders, outlines, extra subjects, scenery, thin lines, tiny anatomical or fur details, glossy hotspots or external cast shadows. Square outer corners.\nSubject and pose: a lovable baby PUPPY in a playful bow, front paws low, hindquarters raised, head facing forward toward the viewer, both broad round floppy ears visible, all four feet visible. Keep the bow clear and the whole compact body in frame. Cream #F3E5CA body and eye areas, navy #0F172A broad ear masses and pupils. Background: solid warm cream #F5F2E9. Let the navy broad masses give clear silhouette separation; keep the nose minimal and rounded.",
+      "prompt": "Edit the supplied puppy image only in its coloration. Preserve the exact soft matte rounded 3D style, whole body, proportions, playful bow, forward face, both floppy ears, all four feet and upright curled tail, center framing and gentle depth and solid pale warm cream background. Give the puppy NATURAL animal-appropriate colors: golden tan fur, cream muzzle and chest, cream eye whites, brown ears and nose, dark brown pupils. Tail tip naturally brown rather than blue. Keep two large OPEN eyes. No new props, clothing, text, outlines, scene or external cast shadow. One whole animal, uncropped square image.",
+      "palette": {
+        "fur": "golden tan",
+        "muzzle_chest_eyes": "cream",
+        "ears_nose": "brown",
+        "pupils": "dark brown",
+        "background": "#F5F2E9"
+      },
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "source": "C:/Users/picar/.codex/generated_images/01a10496-5cb0-7600-9ff4-dd00f3914ab0/exec-2131795d-0f32-4db7-b3ee-d9d55b3e6f8b.png",
+      "composition": "centered complete body",
+      "provider": "built-in image_gen",
+      "constraint_delivery": "main-prompt constraints"
+    },
+    {
+      "label": "09",
+      "animal": "Frog",
+      "pose": "Crouched cheering, both arms raised",
+      "final_path": "C:/Users/picar/.codex/generated_images/01a104a0-11f6-7162-b31d-5759d9c40ed8/exec-8279f0f2-33d1-4e79-a357-eb6167b8f35c.png",
+      "prompt": "Create one complete 1:1 square image, approximately 1536 × 1536. The supplied owl image is a STYLE REFERENCE ONLY. Generate a NEW animal; do not retain owl anatomy. Match its exact cute soft matte rounded 3D aesthetic, broad smooth forms, baby proportions with a large head and compact complete body, gentle depth and soft restrained shading. Simplify to a few heavy rounded shapes, readable at 32 × 32. Show two large clear OPEN eye areas with distinct dark pupils, easy to separate for future blinking and pupil movement. Use the requested natural animal coloration with necessary pale eye whites and dark pupils. Keep every tip blunt. Entire animal must be visible including all essential limbs and feet. Center the complete body with even breathing room, filling 75–82% of the square, no cropping. Background is one entirely uniform solid color filling all open space and corners. Constraints: one animal only; no props, clothing, text, watermarks, borders, outlines, extra subjects, scenery, thin lines, tiny anatomical or fur details, glossy hotspots or external cast shadows. Square outer corners.\nSubject and pose: a lovable baby FROG crouching with both short arms raised in a little cheerful celebration, both broad hind feet visible, large wide-open eyes on two broad round bumps. No extra arms or legs. Natural fresh leaf green body, pale yellow-green belly, creamy eye whites with dark brown pupils. Background: solid restrained pale sage #E3EAE2. Warm friendly expression; omit tiny spots, scales and toe details.",
+      "palette": {
+        "body": "fresh leaf green",
+        "belly": "pale yellow-green",
+        "eyes": "cream",
+        "pupils": "dark brown",
+        "background": "#E3EAE2"
+      },
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "source": "C:/Users/picar/.codex/generated_images/01a10496-5cb0-7600-9ff4-dd00f3914ab0/exec-2131795d-0f32-4db7-b3ee-d9d55b3e6f8b.png",
+      "composition": "centered complete body",
+      "provider": "built-in image_gen",
+      "constraint_delivery": "main-prompt constraints"
+    }
+  ]
+}

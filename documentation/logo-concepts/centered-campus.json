@@ -1,0 +1,31 @@
+{
+  "direction": "Student buddy: college audience",
+  "composition": "Centered horizontally and vertically, complete silhouette with modest even padding; explicit user request overrides corner emergence.",
+  "provider": "Built-in image_gen; model identifier not disclosed",
+  "constraint_delivery": "main-prompt constraints",
+  "postprocessing": "none",
+  "outputs": [
+    {
+      "label": "A1",
+      "source_path": "C:/Users/picar/.codex/generated_images/01a10482-3113-78c1-9c8d-8b1eb669caab/exec-882721f1-3b1e-446a-b4f1-76f9d2ff0c9d.png",
+      "saved_path": "C:/Users/picar/.codex/generated_images/01a10487-12ac-71a0-a81e-c96e5c111010/exec-2ada1268-80dc-48f6-970d-5359ef097878.png",
+      "subject_colors": [
+        "Ivory #F3E5CA",
+        "Navy #0F172A"
+      ],
+      "background": "Pale blue #DDE7ED",
+      "prompt": "Edit the supplied image. Preserve this exact cute ivory student character wearing its dark navy rounded graduation cap, its two navy dot eyes, simple shapes, calm expression, color families, and clean graphic style. Change only composition: place the complete upright character in the exact horizontal and vertical center of the square. Reconstruct the cropped lower face as one smooth round closed silhouette, keeping the same character identity. Show the entire cap and entire round head within the frame, with modest even background padding on all sides, approximately 12% minimum edge clearance. Keep solid pale blue #DDE7ED background filling the entire square. Character colors remain ivory #F3E5CA and navy #0F172A, reused for facial marks. Direct 1:1 square, approximately 1536 × 1536. Add an extremely, extremely subtle, almost imperceptible sense of depth through a barely-there neo-skeuomorphic treatment. Constraints: one character only; no text, watermarks, scenery, borders, frames, extra details, sharp tips, external cast shadows or strong dimensional rendering. Do not crop the character or place it in a corner."
+    },
+    {
+      "label": "A2",
+      "source_path": "C:/Users/picar/.codex/generated_images/01a10482-3113-78c1-9c8d-8b1eb669caab/exec-bc3d129b-eb2a-4486-933d-6e59e542753a.png",
+      "saved_path": "C:/Users/picar/.codex/generated_images/01a10487-12ac-71a0-a81e-c96e5c111010/exec-a02bb731-e5cf-498d-871f-40b889e49372.png",
+      "subject_colors": [
+        "Teal #81B4AD",
+        "Navy #0F172A"
+      ],
+      "background": "Cream #F5F2E9",
+      "prompt": "Edit the supplied image. Preserve this exact cute teal student character wearing its dark navy chunky rounded graduation cap, its two navy dot eyes, simple shapes, calm expression, color families, and clean graphic style. Change only composition: place the complete upright character in the exact horizontal and vertical center of the square. Reconstruct the cropped lower face as one smooth round closed silhouette, keeping the same character identity. Show the entire cap and entire round head within the frame, with modest even background padding on all sides, approximately 12% minimum edge clearance. Keep solid cream #F5F2E9 background filling the entire square. Character colors remain teal #81B4AD and navy #0F172A, reused for facial marks. Direct 1:1 square, approximately 1536 × 1536. Add an extremely, extremely subtle, almost imperceptible sense of depth through a barely-there neo-skeuomorphic treatment. Constraints: one character only; no text, watermarks, scenery, borders, frames, extra details, sharp tips, external cast shadows or strong dimensional rendering. Do not crop the character or place it in a corner."
+    }
+  ]
+}

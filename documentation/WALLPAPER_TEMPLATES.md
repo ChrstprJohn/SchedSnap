@@ -1,10 +1,16 @@
 # Mobile wallpaper collection
 
-The collection has 42 presets: 20 mascot editions, six native pattern templates, and the 16 original styles that replaced the previous eight palette-based templates. Export is 1080 × 2400 portrait. Artwork contains no schedule information: the Canvas renderer supplies weekdays, times, subjects, and optional course codes and rooms from the current editor state. Only the preset heading appears; there is no custom title input. Choosing, reviewing, and downloading remain the three workflow steps.
+## Little Friends
+
+Twenty Chiikawa-inspired editions use the supplied white round-eared character and blue/white kitten and cream bunny references, with distinct poses and expressions. They appear first in All templates and have a dedicated Chiikawa inspired filter. Artwork is a transparent PNG in `public/wallpapers/little-friends/`; pastel backgrounds belong to Canvas and remain editable. Existing mascots and originals remain available.
+
+`src/assets/littleFriendsTemplates.js` registers the editions. They use the existing alpha-bound sizing, protected mascot footer, appearance controls, real schedule rendering and 1080 × 2400 PNG export. Ten editions face each footer side. Exact prompts and source paths are preserved in `little-friends-assets-a.json` through `little-friends-assets-e.json`. Initial generic-animal drafts were superseded after the user clarified the Chiikawa direction; only the reference-based character editions are integrated.
+
+The collection has 62 presets: 20 Little Friends editions, 20 mascot editions, six native pattern templates, and the 16 original styles that replaced the previous eight palette-based templates. Export is 1080 × 2400 portrait. Artwork contains no schedule information: the Canvas renderer supplies weekdays, times, subjects, and optional course codes and rooms from the current editor state. Only the preset heading appears; there is no custom title input. Choosing, reviewing, and downloading remain the three workflow steps.
 
 ## Mascot editions
 
-The table follows `src/assets/mascotTemplates.js`. Palettes and animals vary; all 42 templates share the same DM Sans Class Schedule title and timetable presentation.
+The table follows `src/assets/mascotTemplates.js`. Palettes and animals vary; all 62 templates share the same DM Sans Class Schedule title and timetable presentation.
 
 | Edition | Template | Animal | Palette | Footer side |
 | --- | --- | --- | --- | --- |
@@ -66,7 +72,7 @@ Six templates in `src/assets/patternTemplates.js` use native geometry instead of
 | Butter Check | Butter-yellow checks with a script heading |
 | Rose Letter | Rose stationery with burgundy serif type |
 
-Gallery and modal previews show Monday–Friday with one neutral Subject name and example time each. Uploaded or manually entered data replaces these examples in the final preview and PNG, preserving actual meeting counts and subjects. Fonts and artwork load before drawing and are cached. Gallery canvases load art near the viewport using IntersectionObserver with a 400px margin and render at 270 × 600; the final PNG renders at full resolution. The automated suite has 23 passing tests, including centered day badges and times with one or three meetings, all 42 templates, long subjects, 15 meetings, fixed mascot size, and real RGBA assets. Lint and production build pass. Latest actual-data capture: `documentation/previews/mascot-clean-actual.jpg`.
+Gallery and modal previews show Monday–Friday with one neutral Subject name and example time each. Uploaded or manually entered data replaces these examples in the final preview and PNG, preserving actual meeting counts and subjects. Fonts and artwork load before drawing and are cached. Gallery canvases load art near the viewport using IntersectionObserver with a 400px margin and render at 270 × 600; the final PNG renders at full resolution. The automated suite has 24 passing tests, including centered day badges and times with one or three meetings, all 62 templates, long subjects, 15 meetings, fixed mascot size, and real RGBA assets. Lint and production build pass. Latest actual-data capture: `documentation/previews/mascot-clean-actual.jpg`.
 
 ## Background artwork
 
@@ -74,7 +80,7 @@ Gallery and modal previews show Monday–Friday with one neutral Subject name an
 
 Each meeting centers a large bold course code above a smaller subject name; room text is separate on the right. Missing codes use the subject as the main label. Long codes, subjects, rooms and date details wrap without losing information. Gallery examples include CLASS 101, Subject name and Room 101, one meeting per weekday.
 
-The template modal has a left appearance panel on desktop and collapsible controls on phones. Background, day-container, text and separator colors offer swatches and a custom picker. Font choices are DM Sans, DM Serif Display and Georgia. Changes are drafts until Use template; close discards edits and Reset appearance restores the preset. Applied settings are retained separately for each template in page memory and used by gallery cards, actual previews and PNG exports. Existing schedules appear in the template modal instead of example classes. Image backgrounds stay fixed; native patterns and mascot backgrounds have editable colors. The full suite now contains 23 passing tests, including code hierarchy and appearance rendering.
+The template modal has a left appearance panel on desktop and collapsible controls on phones. Background, day-container, text and separator colors offer swatches and a custom picker. Font choices are DM Sans, DM Serif Display and Georgia. Changes are drafts until Use template; close discards edits and Reset appearance restores the preset. Applied settings are retained separately for each template in page memory and used by gallery cards, actual previews and PNG exports. Existing schedules appear in the template modal instead of example classes. Image backgrounds stay fixed; native patterns and mascot backgrounds have editable colors. The full suite now contains 24 passing tests, including code hierarchy and appearance rendering.
 
 Original background art was generated with the built-in ImageGen tool, then copied into the repository. Original outputs are preserved under the Codex generated-images folder. The three original background assets are:
 
@@ -97,3 +103,5 @@ Use case: stylized-concept. Create a finished portrait smartphone wallpaper BACK
 ### pink
 
 Use case: stylized-concept. Create a finished portrait smartphone wallpaper BACKGROUND ONLY, 1080:2400 aspect ratio. Playful softly warped large checkerboard of blush pink and light peach, matte paper texture. One small sculptural puffy five-point chrome star with soft pink reflections at the upper right edge around 26 percent down, star is shiny three-dimensional with rounded inflated edges. Keep the entire central 80 percent of the wallpaper otherwise clear of objects so a generic student timetable can be overlaid later. No central panel; just the background and corner star. Absolutely NO words, letters, numbers, schedules, UI, panels, logos or watermark. Edge to edge.
+
+Little Friends integration verification: all 20 square PNG files preserve real transparent pixels, all 20 render through the shared Canvas export at 1080 × 2400 without overflow, the collection filter and modal work, and desktop/mobile gallery captures are in `documentation/previews/little-friends-desktop.png` and `little-friends-mobile.png`. Generation corruption was repaired in the affected assets while retaining source provenance.

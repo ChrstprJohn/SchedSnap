@@ -1,0 +1,98 @@
+{
+  "provider": "Built-in image_gen",
+  "model": "not exposed by runtime",
+  "constraintDelivery": "main-prompt constraints",
+  "source": "C:/Users/picar/.codex/generated_images/01a10496-5cb0-7600-9ff4-dd00f3914ab0/exec-2131795d-0f32-4db7-b3ee-d9d55b3e6f8b.png",
+  "requestedDimensions": [
+    1536,
+    1536
+  ],
+  "composition": "Centered full body",
+  "candidates": [
+    {
+      "label": "01",
+      "animal": "Kitten",
+      "pose": "Standing upright and waving one front paw; the other paw relaxed down, both rounded ears, feet and short thick curled tail visible.",
+      "originalPrompt": "Create one complete square 1:1 image, approximately 1536 x 1536. The input owl is a STYLE REFERENCE ONLY: generate a NEW animal, not an owl edit. Match its soft matte rounded 3D aesthetic, lovable oversized head, compact body, smooth broad forms and gentle depth. Center a single entire animal with even padding, occupying about 75–82% of the canvas. Show the complete body including essential limbs and both feet, no cropping. Both eyes are clearly open with broad light eye areas and distinct dark navy pupils so the gaze reads clearly. Use only 4–7 large rounded shapes, two broad subject color families, with the same colors reused for eyes. Blunt rounded features, no sharp tips. Constraints: Only one animal. No props, text, watermark, borders, outlines, texture, detailed fur, scenery, glossy hotspots or external cast shadows. Solid uniform background without vignette or lighting variation.\nSubject: extremely cute baby Kitten. Pose: Standing upright and waving one front paw; the other paw relaxed down, both rounded ears, feet and short thick curled tail visible.\nSubject colors: #F3E5CA and #0F172A in broad purposeful masses. Fill the entire background with solid pale blue #DDE7ED.",
+      "originalPalette": {
+        "subject": [
+          "#F3E5CA",
+          "#0F172A"
+        ],
+        "background": "#DDE7ED"
+      },
+      "originalPath": "C:/Users/picar/.codex/generated_images/01a1049f-7bfc-7102-b37d-414851bd8f68/exec-56d9d581-7524-4d01-91ce-fcdbd1442c6e.png",
+      "finalPrompt": "Recolor only the provided animal image. Preserve precisely its identity, silhouette, pose, full-body centered framing, both open eyes and distinct pupils, facial expression, rounded smooth shapes and soft matte 3D render style. Preserve every limb, both feet and even padding. Keep broad purposeful color regions and clear eye whites/pupils, without extra detail. Constraints: no props, text, watermark, borders, outlines, glossy hotspots or external cast shadows. Uniform solid background, no vignette. Square 1:1, approximately 1536 x 1536.\nNew kitten colors: soft peach body #E6B09A, cream muzzle/belly and eye whites #F5E7CC, warm cocoa ears, paws and tail #81604E, dark pupils #352B32. Muted pale blue background #DDE7ED.",
+      "finalPalette": {
+        "body": "#E6B09A",
+        "light": "#F5E7CC",
+        "accent": "#81604E",
+        "pupil": "#352B32",
+        "background": "#DDE7ED"
+      },
+      "finalPath": "C:/Users/picar/.codex/generated_images/01a1049f-7bfc-7102-b37d-414851bd8f68/exec-b42c0698-53d5-4b80-b3f4-7d3a774d173f.png",
+      "outputHint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a1049f-7bfc-7102-b37d-414851bd8f68 as C:\\Users\\picar\\.codex\\generated_images\\01a1049f-7bfc-7102-b37d-414851bd8f68\\exec-b42c0698-53d5-4b80-b3f4-7d3a774d173f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "label": "02",
+      "animal": "Bear",
+      "pose": "Seated facing forward with both feet pointed forward and both paws resting on its round belly; round ears and complete feet visible.",
+      "originalPrompt": "Create one complete square 1:1 image, approximately 1536 x 1536. The input owl is a STYLE REFERENCE ONLY: generate a NEW animal, not an owl edit. Match its soft matte rounded 3D aesthetic, lovable oversized head, compact body, smooth broad forms and gentle depth. Center a single entire animal with even padding, occupying about 75–82% of the canvas. Show the complete body including essential limbs and both feet, no cropping. Both eyes are clearly open with broad light eye areas and distinct dark navy pupils so the gaze reads clearly. Use only 4–7 large rounded shapes, two broad subject color families, with the same colors reused for eyes. Blunt rounded features, no sharp tips. Constraints: Only one animal. No props, text, watermark, borders, outlines, texture, detailed fur, scenery, glossy hotspots or external cast shadows. Solid uniform background without vignette or lighting variation.\nSubject: extremely cute baby Bear. Pose: Seated facing forward with both feet pointed forward and both paws resting on its round belly; round ears and complete feet visible.\nSubject colors: sage #A3B9A5 and navy #0F172A in broad purposeful masses. Fill the entire background with solid cream #F5F2E9.",
+      "originalPalette": {
+        "subject": [
+          "#A3B9A5",
+          "#0F172A"
+        ],
+        "background": "#F5F2E9"
+      },
+      "originalPath": "C:/Users/picar/.codex/generated_images/01a1049f-7bfc-7102-b37d-414851bd8f68/exec-9c61a4c4-4b3a-4bdb-aa7e-71477054b7f9.png",
+      "finalPrompt": "Recolor only the provided animal image. Preserve precisely its identity, silhouette, pose, full-body centered framing, both open eyes and distinct pupils, facial expression, rounded smooth shapes and soft matte 3D render style. Preserve every limb, both feet and even padding. Keep broad purposeful color regions and clear eye whites/pupils, without extra detail. Constraints: no props, text, watermark, borders, outlines, glossy hotspots or external cast shadows. Uniform solid background, no vignette. Square 1:1, approximately 1536 x 1536.\nUse appropriate natural brown bear colors: warm brown fur #A77853, tan muzzle and belly #E0C49E, light cream eye whites #F5EBD7, cocoa inner ears, paws and feet #6F4C38, dark brown pupils and nose #302733. Solid muted pale sage background #E3EAE2. No sage or blue fur.",
+      "finalPalette": {
+        "body": "#A77853",
+        "light": "#E0C49E",
+        "eyewhite": "#F5EBD7",
+        "accent": "#6F4C38",
+        "pupil": "#302733",
+        "background": "#E3EAE2"
+      },
+      "finalPath": "C:/Users/picar/.codex/generated_images/01a1049f-7bfc-7102-b37d-414851bd8f68/exec-f83d6a57-e25c-4436-b161-13de8ca67b89.png",
+      "outputHint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a1049f-7bfc-7102-b37d-414851bd8f68 as C:\\Users\\picar\\.codex\\generated_images\\01a1049f-7bfc-7102-b37d-414851bd8f68\\exec-f83d6a57-e25c-4436-b161-13de8ca67b89.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "label": "03",
+      "animal": "Rabbit",
+      "pose": "Playful little mid-hop, both rounded long ears and both feet clearly visible, short rounded forepaws raised slightly; complete body suspended without cast shadow.",
+      "originalPrompt": "Create one complete square 1:1 image, approximately 1536 x 1536. The input owl is a STYLE REFERENCE ONLY: generate a NEW animal, not an owl edit. Match its soft matte rounded 3D aesthetic, lovable oversized head, compact body, smooth broad forms and gentle depth. Center a single entire animal with even padding, occupying about 75–82% of the canvas. Show the complete body including essential limbs and both feet, no cropping. Both eyes are clearly open with broad light eye areas and distinct dark navy pupils so the gaze reads clearly. Use only 4–7 large rounded shapes, two broad subject color families, with the same colors reused for eyes. Blunt rounded features, no sharp tips. Constraints: Only one animal. No props, text, watermark, borders, outlines, texture, detailed fur, scenery, glossy hotspots or external cast shadows. Solid uniform background without vignette or lighting variation.\nSubject: extremely cute baby Rabbit. Pose: Playful little mid-hop, both rounded long ears and both feet clearly visible, short rounded forepaws raised slightly; complete body suspended without cast shadow.\nSubject colors: ivory #F3E5CA and navy #0F172A in broad purposeful masses. Fill the entire background with solid muted sage #E3EAE2.",
+      "originalPalette": {
+        "subject": [
+          "#F3E5CA",
+          "#0F172A"
+        ],
+        "background": "#E3EAE2"
+      },
+      "originalPath": "C:/Users/picar/.codex/generated_images/01a1049f-7bfc-7102-b37d-414851bd8f68/exec-b310bbef-a915-4cb1-90b2-02aebb2072bb.png",
+      "finalPrompt": "Recolor only the provided animal image. Preserve precisely its identity, silhouette, pose, full-body centered framing, both open eyes and distinct pupils, facial expression, rounded smooth shapes and soft matte 3D render style. Preserve every limb, both feet and even padding. Keep broad purposeful color regions and clear eye whites/pupils, without extra detail. Constraints: no props, text, watermark, borders, outlines, glossy hotspots or external cast shadows. Uniform solid background, no vignette. Square 1:1, approximately 1536 x 1536.\nUse appropriate natural ivory rabbit colors: white/cream ivory fur #F3EBDD over ALL body, paws and feet, soft pink inner ears and nose #E0ADB8, light cream eye whites #FFFAF0, dark brown pupils and mouth #48342C. Solid muted pale sage background #E2E8E3, giving contrast to ivory body. No lavender, blue or dark navy fur.",
+      "finalPalette": {
+        "body": "#F3EBDD",
+        "light": "#FFFAF0",
+        "accent": "#E0ADB8",
+        "pupil": "#48342C",
+        "background": "#E2E8E3"
+      },
+      "finalPath": "C:/Users/picar/.codex/generated_images/01a1049f-7bfc-7102-b37d-414851bd8f68/exec-565a3fc4-c2ff-4f05-a529-ebac70d3cdec.png",
+      "outputHint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a1049f-7bfc-7102-b37d-414851bd8f68 as C:\\Users\\picar\\.codex\\generated_images\\01a1049f-7bfc-7102-b37d-414851bd8f68\\exec-565a3fc4-c2ff-4f05-a529-ebac70d3cdec.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    }
+  ]
+}

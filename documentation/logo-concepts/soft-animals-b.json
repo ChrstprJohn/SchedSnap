@@ -1,0 +1,42 @@
+{
+  "mode": "built-in image_gen",
+  "model": "not exposed by tool",
+  "constraint_delivery": "main-prompt constraints",
+  "reference": "C:/Users/picar/.codex/generated_images/01a10496-5cb0-7600-9ff4-dd00f3914ab0/exec-2131795d-0f32-4db7-b3ee-d9d55b3e6f8b.png",
+  "dimensions": {
+    "requested": "1536x1536 approximate",
+    "native": "1254x1254"
+  },
+  "placement": "centered full body",
+  "candidates": [
+    {
+      "label": "04",
+      "animal": "Fox",
+      "pose": "curious tilted-head upright lean",
+      "original_path": "C:/Users/picar/.codex/generated_images/01a1049f-c416-79d3-87e8-142060558cf2/exec-a1816eb2-a9ac-401b-b34a-1fd8238b66cb.png",
+      "original_prompt": "Create one full 1:1 square image approximately 1536 x 1536. Use the supplied owl image as STYLE REFERENCE ONLY. Create a NEW FOX character, not an owl or edit of the owl. Match its soft matte 3D dimensional feel, chunky round forms, baby-like big head, compact body and friendly wide open eyes. Center the entire full-body fox with even padding, occupying 75–82% of the square; no cropping. Pose: upright, leaning curiously a little toward the viewer with a gentle head tilt, both blunt rounded ears fully visible, rounded forepaws and both feet visible, one broad round tail resting beside the body. Keep the main canvas upright. Two very clear OPEN eye areas with visible navy pupils suitable for future gaze movement. Palette: exactly two subject semantic color families, terracotta #C8896D and navy #0F172A; use terracotta across broad body and eye areas, navy for pupils and one broad purposeful region, reuse these colors for facial marks. Uniform solid pale sage #E3EAE2 background. Build identity from 4–7 broad rounded shapes, smooth matte surfaces and minimal anatomy. Constraints: one animal only, no props, text, watermark, outlines, borders, scenery, fur texture, whiskers, tiny decorative details, sharp tips, glossy material or external cast shadow. Background stays solid and uniform.",
+      "final_path": "C:/Users/picar/.codex/generated_images/01a1049f-c416-79d3-87e8-142060558cf2/exec-3f740f08-29b0-49cf-802d-ec1d73fc74ff.png",
+      "final_prompt": "Recolor only this existing fox into natural appropriate fox colors. Preserve the exact full-body centered composition, curious tilted-head pose, large open eyes with visible pupils, all limbs, tail, proportions and soft matte 3D style. Body, outer ears and upper head warm orange/rust fur; continuous muzzle/chest area and broad tail tip creamy ivory; dark brown feet, nose and pupils; light creamy eye whites and subtle warm inner ears. Natural colors arranged in broad simple purposeful regions, no fur markings or texture. Preserve pale sage solid background. No props, text, outlines, borders or cast shadow. Keep complete fox without cropping. This is the user's explicit natural-color refinement.",
+      "palette": "Natural rust/orange, ivory muzzle chest tail tip, dark brown feet and pupils, ivory eyes; pale sage background"
+    },
+    {
+      "label": "05",
+      "animal": "Penguin",
+      "pose": "waddling foot forward flippers spread",
+      "original_path": "C:/Users/picar/.codex/generated_images/01a1049f-c416-79d3-87e8-142060558cf2/exec-75225695-fb23-4557-a476-71b9eae0ba0c.png",
+      "original_prompt": "Create one full 1:1 square image approximately 1536 x 1536. Supplied owl image is STYLE REFERENCE ONLY. Create a NEW PENGUIN character, not an owl or edit. Match its soft matte 3D dimensional feel, chunky round forms, baby-like big head, compact body and friendly wide open eyes. Center entire full-body penguin with even padding, occupying 75–82% of square; no cropping. Pose: waddling with one foot a little forward, both round feet fully visible, both short blunt flippers spread low in a welcoming stance, slight cheerful body lean. Canvas upright. Two very clear OPEN cream eye areas with visible navy pupils suitable for future gaze movement. Palette: exactly two subject semantic color families, navy #0F172A for broad body/pupils and cream #F3E5CA for broad continuous belly/face/feet. Reuse these colors for facial marks. Uniform solid pale blue #DDE7ED background. Reduce anatomy to 4–7 broad rounded forms, smooth matte surfaces, compact silhouette. Constraints: one animal only, no props, text, watermark, outlines, borders, scenery, feather texture, tiny decorative details, sharp tips, glossy materials or external cast shadow. Background stays solid and uniform.",
+      "final_path": "C:/Users/picar/.codex/generated_images/01a1049f-c416-79d3-87e8-142060558cf2/exec-cbcf6869-e7a3-4b4d-88b9-5d486ac4b3a5.png",
+      "final_prompt": "Recolor only this existing penguin into natural appropriate penguin colors. Preserve exact full-body centered composition, waddling pose with one foot forward and spread flippers, large open eyes with visible pupils, all limbs, proportions and soft matte 3D style. Head, back and flippers dark charcoal/navy; continuous face and belly creamy white; beak and both feet warm orange; eye whites creamy white and pupils dark charcoal. Natural colors arranged in broad simple purposeful regions, no feather texture. Preserve pale blue solid background. No props, text, outlines, borders or cast shadow. Keep complete penguin without cropping. This is the user's explicit natural-color refinement.",
+      "palette": "Natural charcoal/navy, creamy white belly face eyes, orange beak and feet; pale blue background"
+    },
+    {
+      "label": "06",
+      "animal": "Turtle",
+      "pose": "three-quarter strolling head toward viewer all four feet visible",
+      "aborted_note": "Initial call interrupted after 4 seconds, no returned output; natural-color generation followed",
+      "final_path": "C:/Users/picar/.codex/generated_images/01a1049f-c416-79d3-87e8-142060558cf2/exec-b6cec53a-6b8f-4695-9764-84f38f255013.png",
+      "final_prompt": "Create one full 1:1 square image approximately 1536 x 1536. Supplied owl image is STYLE REFERENCE ONLY. Create a NEW TURTLE character, not an owl or edit. Match its soft matte 3D dimensional feel, chunky round forms, baby-like big head, compact body and friendly wide open eyes. Center entire full-body turtle with even padding, occupying 75–82% of square; no cropping. Pose: strolling calmly at a three-quarter angle with head turned toward viewer, a cheerful forward lifted foot and all FOUR short rounded feet distinctly visible beneath the broad single shell. Canvas upright. Two very clear OPEN light eye areas with visible dark pupils suitable for future gaze movement. Natural appropriate turtle colors: olive green head and limbs, forest green shell, warm tan belly, creamy light eye whites, dark pupils. Use broad purposeful natural color regions, no tiny textures. Uniform solid cream #F5F2E9 background. Reduce anatomy to broad rounded forms, a single uninterrupted smooth domed shell and large endearing head; no segmented shell pattern. Constraints: one animal only, no props, text, watermark, outlines, borders, scenery, scales, shell details, texture, tiny decorative details, sharp tips, glossy material or external cast shadow. Background stays solid and uniform.",
+      "palette": "Natural olive head limbs, forest green shell, warm tan belly, creamy eyes dark pupils; cream background"
+    }
+  ]
+}
