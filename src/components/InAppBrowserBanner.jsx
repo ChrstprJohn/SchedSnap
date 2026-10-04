@@ -63,16 +63,13 @@ export default function InAppBrowserBanner() {
       <div className="iab-inner">
         <span className="iab-icon" aria-hidden="true">⚠️</span>
         <div className="iab-text">
-          {info.isIOS ? (
+        {info.isIOS ? (
             <>
-              <strong>You're in an in-app browser.</strong> Downloads won't work here.{' '}
-              Tap <strong>···</strong> or <strong>Share</strong> and choose{' '}
-              <strong>"Open in Safari"</strong> to save your wallpaper.
+              <strong>Downloads won't work here.</strong> Tap <strong>···</strong> → <strong>Open in Safari</strong>.
             </>
           ) : (
             <>
-              <strong>You're in an in-app browser.</strong> Downloads won't work here.{' '}
-              Tap below to open in Chrome.
+              <strong>Downloads won't work here.</strong> Open in your browser instead.
             </>
           )}
         </div>
@@ -83,7 +80,7 @@ export default function InAppBrowserBanner() {
               className="iab-open-btn"
               onClick={openInBrowser}
             >
-              Open in Chrome
+              Open in Browser
             </button>
           )}
           <button
