@@ -328,11 +328,9 @@
 
 /* ── In-app browser banner ───────────────────────────────────────────── */
 .iab-banner {
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
+  z-index: 40;
   background: #fef3c7;
   border-bottom: 1px solid #fcd34d;
   padding: 10px 16px;

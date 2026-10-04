@@ -21,7 +21,12 @@ function detectInAppBrowser() {
     // iOS WebView (has no "Safari" in UA)
     (isIOS && !/Safari/i.test(ua));
 
-  return { detected: inApp, isIOS, isAndroid };
+  const force = typeof window !== 'undefined' && window.location.search.includes('iab=1');
+  return {
+    detected: inApp || force,
+    isIOS: force ? false : isIOS,
+    isAndroid: force ? true : isAndroid,
+  };
 }
 
 /**
