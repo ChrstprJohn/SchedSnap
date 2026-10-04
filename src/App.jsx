@@ -3,6 +3,7 @@ import { Link, Route, Routes, useLocation } from 'react-router';
 import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
 import Home from './pages/Home.jsx';
+import InAppBrowserBanner from './components/InAppBrowserBanner.jsx';
 
 const ScheduleWallpaper = lazy(() => import('./pages/ScheduleWallpaper/Index.jsx'));
 
@@ -23,6 +24,7 @@ export default function App() {
     <div className="flex min-h-dvh flex-col">
       <a href="#main" className="skip-link">Skip to content</a>
       <Navbar />
+      <InAppBrowserBanner />
       <main id="main" className="flex-1" tabIndex={-1}>
         <Suspense fallback={<p className="page-wrap py-20" role="status">Opening tool…</p>}>
           <Routes>
