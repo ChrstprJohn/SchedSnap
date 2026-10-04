@@ -23,8 +23,8 @@ export default function App() {
   return (
     <div className="flex min-h-dvh flex-col">
       <a href="#main" className="skip-link">Skip to content</a>
-      <Navbar />
       <InAppBrowserBanner />
+      <Navbar />
       <main id="main" className="flex-1" tabIndex={-1}>
         <Suspense fallback={<p className="page-wrap py-20" role="status">Opening tool…</p>}>
           <Routes>
