@@ -1,0 +1,17 @@
+[
+  {
+    "id": "kitten-peek",
+    "file": "/wallpapers/little-friends/kitten-peek.png",
+    "subject": "Chiikawa-inspired blue-white kitten, curious peek",
+    "corner": "lower-right",
+    "prompt": "Create one square approximately1536x1536 transparent cutout of Hachiware-inspired blue-and-white kitten faithfully following the blue cap white kitten in reference2: white very round head and squat tiny white body, blue broad crown cap down both blunt triangle ears, tiny black outlined sparkling happy eyes, little w mouth, pink oval cheeks with three black blush strokes. Distinct pose: curious kitten peeking from lower-right, one small rounded paw raised beside face and the other at chest, upright. Both ears fully visible. Thin organic black hand-drawn contours, extremely simple flat fills exactly like the supplied Chiikawa illustrations. Reference1 also informs sparse face/proportions. Character80-90% frame. Transparent background, no black or colored backdrop/checkerboard. One character only no text props grid shadows shading gradients texture 3D gloss. This should clearly evoke the Chiikawa core blue-white cat rather than a generic squirrel.",
+    "provider": "built-in imagegen",
+    "source": "C:/Users/picar/.codex/generated_images/01a101ad-93ee-7683-b089-04107cb62539/exec-c322f7fe-7e02-4aa2-a410-f9720adec96d.png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  }
+]

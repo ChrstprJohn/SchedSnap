@@ -1,4 +1,5 @@
 import { mascotTemplates } from './mascotTemplates.js';
+import { littleFriendsTemplates } from './littleFriendsTemplates.js';
 import { patternTemplates } from './patternTemplates.js';
 
 export const mobileResolution = { id: 'mobile', width: 1080, height: 2400 };
@@ -6,6 +7,7 @@ export const mobileResolution = { id: 'mobile', width: 1080, height: 2400 };
 // Artwork and palette presets contain no student or course information.
 // Legacy heading/rows values remain as preset metadata; Canvas uses one shared layout.
 export const wallpaperTemplates = [
+  ...littleFriendsTemplates,
   ...mascotTemplates,
   ...patternTemplates,
   { id: 'window-light', name: 'Window Light', description: 'Soft daylight & script', background: '#dbdad5', image: '/wallpapers/window-light.png', ink: '#292926', muted: '#50504a', surface: 'rgba(255,255,255,0.84)', line: 'rgba(40,40,36,0.28)', heading: 'script', rows: 'capsule' },

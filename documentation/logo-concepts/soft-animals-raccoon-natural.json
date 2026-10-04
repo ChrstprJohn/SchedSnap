@@ -1,0 +1,21 @@
+{
+  "label": "10",
+  "animal": "Raccoon",
+  "pose": "Seated side-turn, head tilt, curled tail beside body",
+  "composition": "Centered full body",
+  "style": "Soft matte 3D, matched to selected owl",
+  "palette": {
+    "fur": "#A6A5A0",
+    "maskPaws": "#34383D",
+    "muzzleBelly": "#D8D6CE",
+    "eyeWhites": "#F6F0E3",
+    "background": "#E3EAE2"
+  },
+  "provider": "built-in image_gen.imagegen",
+  "model": "Undisclosed by runtime",
+  "constraint_delivery": "main-prompt constraints",
+  "path": "C:/Users/picar/.codex/generated_images/01a10481-9c80-7883-8f31-dfb11c990c1f/exec-2c79f946-a402-4c86-ab7c-a62f3bc3273a.png",
+  "source": "C:/Users/picar/.codex/generated_images/01a10481-9c80-7883-8f31-dfb11c990c1f/exec-03c011b7-f799-4c90-9ad8-9ee6889f6426.png",
+  "prompt": "Edit the supplied raccoon image by changing only its character colors to a natural raccoon palette. Preserve its exact adorable soft matte 3D sculptural style, large head, complete compact body, seated side-turn pose, head tilt, curled tail beside body, centered composition, open eyes and clean solid pale sage background.\nNatural colors: softly warm medium gray #A6A5A0 fur for the head and body; charcoal #34383D facial mask, inner ears, hands and feet; lighter warm gray #D8D6CE muzzle and belly; ivory #F6F0E3 eye whites with very dark charcoal pupils. Tail is broad soft gray with at most two large charcoal bands, never tiny stripes. Keep color regions broad and purposeful, with gentle matte dimensional shading in each natural color family.\nKeep both ears, hands, feet and entire tail visible inside the square with even padding. Use the original square dimensions.\nConstraints: preserve character identity and pose. One animal only. No text, watermark, scenery, props, border, frame, outline, glossy surface, dramatic lighting, external cast shadow or new accessories. Keep the background solid and uniform.",
+  "output_hint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a10481-9c80-7883-8f31-dfb11c990c1f as C:\\Users\\picar\\.codex\\generated_images\\01a10481-9c80-7883-8f31-dfb11c990c1f\\exec-2c79f946-a402-4c86-ab7c-a62f3bc3273a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

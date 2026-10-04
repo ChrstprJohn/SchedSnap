@@ -1,0 +1,38 @@
+{
+  "mode": "built-in image_gen",
+  "model": "built-in provider default (model not exposed by tool)",
+  "constraintDelivery": "main-prompt constraints",
+  "composition": "fully centered, no corner emergence, no cropping",
+  "outputs": [
+    {
+      "label": "B1",
+      "direction": "Cream compact pebble owl",
+      "rationale": "Learning and a wise academic companion",
+      "palette": {
+        "subject": [
+          "#F3E5CA",
+          "#0F172A"
+        ],
+        "background": "#E3EAE2"
+      },
+      "path": "C:/Users/picar/.codex/generated_images/01a10487-471b-7391-bc8e-29721ac2a341/exec-ff9767d5-a84b-47cd-934d-80dfadba2490.png",
+      "prompt": "Background: fill the full canvas with solid pale sage #E3EAE2. Character colors: exactly cream #F3E5CA and navy #0F172A. Make a compact rounded pebble-shaped plump cream owl body with a single broad navy face-mask region. Use the same navy and cream colors for its two tiny simple eyes. Exactly two broad subject color regions plus one background color; no additional semantic colors.\nCreate one complete full-bleed 1:1 square image, approximately 1536 × 1536 with normal square outer corners.\nSubject: one extremely simplified cute owl academic companion, using only 4–7 large basic shapes merged into one thick, rounded continuous silhouette. Show both broad soft wings. Two small simple eyes; no mouth needed. Keep readable at 32 × 32.\nComposition: the entire owl is centered horizontally and vertically, upright, fully visible with modest even padding on all four sides, occupying about 80% of the square. No corner emergence or cropping.\nStyle: large soft forms, compact proportions and lovable baby-like appeal, ultra-clean graphic treatment. Add an extremely, extremely subtle, almost imperceptible sense of depth through a barely-there neo-skeuomorphic treatment.\nConstraints: no text, watermark, borders, frames, cards, extra subjects, scenery, feather details, glasses, horns, sharp tips, thin fragile lines, outlines, decorations, glossy hotspots, strong three-dimensional rendering or external cast shadows. Background must remain solid and uniform without texture, vignette or lighting variation.",
+      "output_hint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a10487-471b-7391-bc8e-29721ac2a341 as C:\\Users\\picar\\.codex\\generated_images\\01a10487-471b-7391-bc8e-29721ac2a341\\exec-ff9767d5-a84b-47cd-934d-80dfadba2490.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "label": "B2",
+      "direction": "Teal broad softly squared owl",
+      "rationale": "Learning and a wise academic companion",
+      "palette": {
+        "subject": [
+          "#81B4AD",
+          "#0F172A"
+        ],
+        "background": "#F5F2E9"
+      },
+      "path": "C:/Users/picar/.codex/generated_images/01a10487-471b-7391-bc8e-29721ac2a341/exec-70f0c13c-5f5c-41d2-88f0-208ff843dc13.png",
+      "prompt": "Background: fill the full canvas with solid cream #F5F2E9. Character colors: exactly teal #81B4AD and navy #0F172A. Make a broad softly squared plump teal owl body with a single broad navy face-mask region. Use the same navy and teal colors for its two tiny simple eyes. Exactly two broad subject color regions plus one background color; no additional semantic colors.\nCreate one complete full-bleed 1:1 square image, approximately 1536 × 1536 with normal square outer corners.\nSubject: one extremely simplified cute owl academic companion, using only 4–7 large basic shapes merged into one thick, rounded continuous silhouette. Show both broad soft wings. Two small simple eyes; no mouth needed. Keep readable at 32 × 32.\nComposition: the entire owl is centered horizontally and vertically, upright, fully visible with modest even padding on all four sides, occupying about 80% of the square. No corner emergence or cropping.\nStyle: large soft forms, compact proportions and lovable baby-like appeal, ultra-clean graphic treatment. Add an extremely, extremely subtle, almost imperceptible sense of depth through a barely-there neo-skeuomorphic treatment.\nConstraints: no text, watermark, borders, frames, cards, extra subjects, scenery, feather details, glasses, horns, sharp tips, thin fragile lines, outlines, decorations, glossy hotspots, strong three-dimensional rendering or external cast shadows. Background must remain solid and uniform without texture, vignette or lighting variation.",
+      "output_hint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a10487-471b-7391-bc8e-29721ac2a341 as C:\\Users\\picar\\.codex\\generated_images\\01a10487-471b-7391-bc8e-29721ac2a341\\exec-70f0c13c-5f5c-41d2-88f0-208ff843dc13.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  ]
+}

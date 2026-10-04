@@ -1,6 +1,6 @@
 # Service assets
 
-`templates.js` combines 42 mobile Canvas styles: 20 animal editions from `mascotTemplates.js`, six patterns from `patternTemplates.js`, and the 16 originals. Gallery and modal previews show Monday–Friday with one neutral Subject name and time each. `sampleSchedule.js` contains illustrative classes for the optional sample flow.
+`templates.js` combines 62 mobile Canvas styles: 20 Little Friends editions from `littleFriendsTemplates.js`, 20 animal editions from `mascotTemplates.js`, six patterns from `patternTemplates.js`, and the 16 originals. Gallery and modal previews show Monday–Friday with one neutral Subject name and time each. `sampleSchedule.js` contains illustrative classes for the optional sample flow.
 
 The renderer in `src/utils/canvasHelpers.js` draws actual class details separately from template artwork. Mascot cutouts live in `public/wallpapers/mascots/`, contain no timetable or edition text, and preserve their generated transparency. Canvas supplies a uniform mascot background and edition footer. All templates use the same Class Schedule title, growing day cards, centered circular weekday initials, and consistent time/subject columns in DM Sans Variable. Times include minutes and AM/PM and center beside their meeting's subject/details block. Historical heading and row-style preset fields are unused by the shared renderer.
 

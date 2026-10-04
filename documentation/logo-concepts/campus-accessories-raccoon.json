@@ -1,0 +1,12 @@
+{
+  "label": "10",
+  "animal": "Raccoon",
+  "accessories": "Navy graduation cap, gold tassel, cream bow tie with navy knot",
+  "source": "C:/Users/picar/.codex/generated_images/01a10481-9c80-7883-8f31-dfb11c990c1f/exec-2c79f946-a402-4c86-ab7c-a62f3bc3273a.png",
+  "path": "C:/Users/picar/.codex/generated_images/01a10481-9c80-7883-8f31-dfb11c990c1f/exec-5d184d20-7d4a-46c8-b39e-5e06d4cfbbb4.png",
+  "provider": "built-in image_gen.imagegen",
+  "model": "Undisclosed by runtime",
+  "constraint_delivery": "main-prompt constraints",
+  "prompt": "Edit this raccoon image to add tasteful college accessories. Preserve the raccoon's exact gray and charcoal natural fur palette, facial mask, large open ivory eyes and dark pupils, seated side-turn pose, head tilt, complete body, curved striped tail, soft matte rounded 3D aesthetic and solid pale sage background.\nAdd one small deep navy graduation cap with a broad softly rounded square top and one short muted golden tassel. Place it on the head between the ears so BOTH rounded ears remain visible. Add a small simple cream academic bow tie with a navy center knot below the chin; keep both paws unobscured. Accessories should match the same soft matte sculptural 3D style, with thick simple shapes and minimal detail.\nKeep the complete character and accessories centered inside the square with comfortable padding and no cropping. Preserve the original square resolution.\nConstraints: one animal only, no text, badge lettering, watermark, scenery, props, border, frame, glossy materials or external cast shadows. Do not cover the eyes, change the pose, or recolor the animal.",
+  "output_hint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a10481-9c80-7883-8f31-dfb11c990c1f as C:\\Users\\picar\\.codex\\generated_images\\01a10481-9c80-7883-8f31-dfb11c990c1f\\exec-5d184d20-7d4a-46c8-b39e-5e06d4cfbbb4.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

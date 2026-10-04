@@ -1,0 +1,53 @@
+[
+  {
+    "id": "07",
+    "label": "Graduate elephant",
+    "source": "C:/Users/picar/.codex/generated_images/01a104a0-11f6-7162-b31d-5759d9c40ed8/exec-9f914f56-f806-456e-a6f1-a512824b8cb3.png",
+    "output": "C:\\Users\\picar\\.codex\\generated_images\\01a104ab-e79f-78e1-91cf-087e84da39d3\\exec-9033f712-d96c-4a59-8ae5-656f3ada0228.png",
+    "prompt": "Edit the supplied image. Keep this exact cute gray baby elephant, its natural gray skin and pink inner ears, large open eyes with distinct pupils, seated pose, upturned trunk, body proportions, soft matte rounded 3D style, and pale blue background. Add only a simple muted navy graduation cap perched on top of its head with a short rounded gold tassel. Keep both ears and entire trunk plainly visible. Match the new accessory to the same soft matte 3D rendering. Center the complete elephant with the complete cap and all feet inside a 1:1 square canvas, leaving comfortable even padding; scale the character down slightly if needed to fit the cap. Approximately 1536 by 1536. Constraints: one character only, no text, lettering, badges, watermark, border, scenery, intricate patterns, or extra props. Keep accessory shapes broad, simple and rounded.",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "provider": "built-in image_gen",
+    "constraint_delivery": "main-prompt constraints",
+    "metadata": {
+      "transparent_background": false,
+      "output_hint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a104ab-e79f-78e1-91cf-087e84da39d3 as C:\\Users\\picar\\.codex\\generated_images\\01a104ab-e79f-78e1-91cf-087e84da39d3\\exec-9033f712-d96c-4a59-8ae5-656f3ada0228.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  },
+  {
+    "id": "08",
+    "label": "Collegiate puppy",
+    "source": "C:/Users/picar/.codex/generated_images/01a104a0-11f6-7162-b31d-5759d9c40ed8/exec-c2d0e68f-d6b5-4a0b-9196-164c9f7547b9.png",
+    "output": "C:\\Users\\picar\\.codex\\generated_images\\01a104ab-e79f-78e1-91cf-087e84da39d3\\exec-0d096298-b66a-4f4c-bf81-c7bb059911de.png",
+    "prompt": "Edit the supplied image. Preserve this exact cute golden puppy, its golden fur, brown floppy ears and tail tip, cream muzzle and paws, large open eyes with distinct pupils, play-bow pose with raised rear and tail, proportions, soft matte rounded 3D style, and warm ivory background. Add only a muted navy collegiate neckband scarf with a simple rounded front knot and one broad cream stripe, tucked naturally around its neck. Keep both ears, face, all four paws and tail visible. Match the scarf to the same soft matte 3D rendering. Center the complete body and accessory inside a 1:1 square canvas with comfortable even padding; scale down slightly if needed. Approximately 1536 by 1536. Constraints: one character only, no text, lettering, badges, watermark, border, scenery, intricate patterns, or extra props. Use broad simple rounded accessory forms.",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "provider": "built-in image_gen",
+    "constraint_delivery": "main-prompt constraints",
+    "metadata": {
+      "transparent_background": false,
+      "output_hint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a104ab-e79f-78e1-91cf-087e84da39d3 as C:\\Users\\picar\\.codex\\generated_images\\01a104ab-e79f-78e1-91cf-087e84da39d3\\exec-0d096298-b66a-4f4c-bf81-c7bb059911de.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  },
+  {
+    "id": "09",
+    "label": "Graduate frog",
+    "source": "C:/Users/picar/.codex/generated_images/01a104a0-11f6-7162-b31d-5759d9c40ed8/exec-8279f0f2-33d1-4e79-a357-eb6167b8f35c.png",
+    "output": "C:\\Users\\picar\\.codex\\generated_images\\01a104ab-e79f-78e1-91cf-087e84da39d3\\exec-a15c2909-11f7-477e-a953-eac3d0e3c4c8.png",
+    "prompt": "Edit the supplied image. Preserve this exact cute green frog, natural green skin and pale yellow-green belly, big open eyes with distinct pupils, happy open mouth, cheering pose with both arms raised, proportions, soft matte rounded 3D style, and pale sage background. Add a simple muted navy graduation cap perched between and slightly above its eye bulges with a short rounded gold tassel, plus a small cream academic bow tie at the neck. Both eyes, both raised arms and hands, and both feet must remain plainly visible. Match accessories to the same soft matte 3D rendering. Center the entire body and complete cap within a 1:1 square canvas with comfortable even padding; scale down slightly if needed. Approximately 1536 by 1536. Constraints: one character only, no text, lettering, badges, watermark, border, scenery, intricate patterns, or extra props. Accessories must be broad simple rounded forms.",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "provider": "built-in image_gen",
+    "constraint_delivery": "main-prompt constraints",
+    "metadata": {
+      "transparent_background": false,
+      "output_hint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a104ab-e79f-78e1-91cf-087e84da39d3 as C:\\Users\\picar\\.codex\\generated_images\\01a104ab-e79f-78e1-91cf-087e84da39d3\\exec-a15c2909-11f7-477e-a953-eac3d0e3c4c8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "label": "10",
+  "animal": "Raccoon",
+  "pose": "Seated side turn with face looking toward viewer, tail curled beside body",
+  "composition": "Centered full body with even padding",
+  "palette": {
+    "subject": [
+      "#F3E5CA",
+      "#0F172A"
+    ],
+    "background": "#E3EAE2"
+  },
+  "provider": "built-in image_gen.imagegen",
+  "model": "Undisclosed by runtime",
+  "constraint_delivery": "main-prompt constraints",
+  "source": "C:/Users/picar/.codex/generated_images/01a10496-5cb0-7600-9ff4-dd00f3914ab0/exec-2131795d-0f32-4db7-b3ee-d9d55b3e6f8b.png",
+  "path": "C:/Users/picar/.codex/generated_images/01a10481-9c80-7883-8f31-dfb11c990c1f/exec-03c011b7-f799-4c90-9ad8-9ee6889f6426.png",
+  "prompt": "Create one complete full-bleed 1:1 square image, approximately 1536 × 1536.\nReference image: use the supplied owl ONLY as a STYLE reference for its soft matte rounded 3D forms, adorable proportions, and large expressive open eyes. Create a new raccoon character, not an owl.\nSubject: one extremely simple baby raccoon with a huge rounded head, tiny complete body, two round ears, broad navy face mask, and a single thick rounded tail without little stripes. The raccoon sits turned slightly to one side with its full face looking gently back toward the viewer; both hands and both feet remain visible. Make the pose endearing and distinct, with the tail curving visibly beside its body.\nEyes: two clearly open ivory eye areas with large distinct navy pupils, like the reference owl. Preserve a calm curious gaze suited to later blinking and eye motion.\nPalette: exactly two character color families, warm ivory #F3E5CA and deep navy #0F172A, arranged in broad simple continuous masses and reused for facial features. Fill every unoccupied area with one solid muted pale sage #E3EAE2 background.\nComposition: the complete character is centered horizontally and vertically, fully inside the square, filling about 78% of it with even comfortable padding. Show the whole body, both ears, hands, feet, and tail. No clipping or emergence from a corner.\nStyle: match the reference owl's softly rounded matte sculptural 3D appearance. Use very simple chunky shapes, soft dimensional shading, clean surfaces, no detailed fur. Keep the silhouette immediately readable at 32 × 32.\nConstraints: one animal only. No props, books, bags, scenery, text, watermarks, outlines, borders, frames, narrow fragile shapes, sharp tips, patterned fur, glossy material, dramatic bevels, or external cast shadows. Uniform solid background with no texture, vignette, or lighting variation.",
+  "output_hint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a10481-9c80-7883-8f31-dfb11c990c1f as C:\\Users\\picar\\.codex\\generated_images\\01a10481-9c80-7883-8f31-dfb11c990c1f\\exec-03c011b7-f799-4c90-9ad8-9ee6889f6426.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "white-peace",
+    "file": "/wallpapers/little-friends/white-peace.png",
+    "subject": "Chiikawa peace sign",
+    "corner": "lower-left",
+    "prompt": "Generate one clean transparent PNG of Chiikawa doing a peace sign. Reference image is only character/style reference: use the plain WHITE small round-eared character at bottom center of book image. Huge soft round white head with two tiny rounded ear bumps, thin clean hand-drawn black outline, tiny closed smiling eyes and tiny w mouth, pink blush cheeks with three black hatch marks. One little white paw raised making a V peace sign; other paw lowered. Entire character has simple flat solid opaque WHITE fill, especially a completely unbroken solid white chest and tummy. No objects on chest. Single character sits toward LOWER LEFT of square1024px or larger, head ears face fully visible, character occupies80-90%, complete clean lower body silhouette no edge truncation. Outside the character must be genuinely transparent alpha. Flat clean 2D minimalist drawing, no shading, no shadows, no texture, no gradients, no dimensional effects, no words, no book, no blue background, no extra objects or characters.",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b3-2106-7d80-ae34-921f2c3e7243\\exec-20a747e2-fe6d-47f9-821f-73ba723f324c.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "white-bashful",
+    "file": "/wallpapers/little-friends/white-bashful.png",
+    "subject": "Chiikawa bashful paws",
+    "corner": "lower-right",
+    "prompt": "Create transparent square PNG of Chiikawa closely matching the little WHITE round-eared character in provided references: huge soft round white head, tiny rounded ear bumps, compact little white body, thin black hand-drawn outline, tiny black dot eyes, tiny w shaped mouth and small pink blush circles with black hatching. Pose is bashful, both tiny paws brought together under chin, shy happy face. Lower RIGHT corner composition character occupies 80-90% square, fully visible ears/face with compact lower body touching bottom edge. Flat solid opaque white body including complete solid white chest and tummy, simple 2D drawing exactly like references. All surrounding space genuinely transparent alpha background. No holes inside body, no shading, no texture, no gradients, no props, no text, no book cover, no background or extra characters. Both inputs are character/style references only.",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b3-2106-7d80-ae34-921f2c3e7243\\exec-be5c297c-f81a-4938-98b0-ae8b006a853e.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "white-determined",
+    "file": "/wallpapers/little-friends/white-determined.png",
+    "subject": "Chiikawa determined",
+    "corner": "lower-left",
+    "prompt": "Create transparent square PNG of Chiikawa, exact white round-ear character recognizable from reference1: tiny two round ear bumps, enormous soft white rounded head, tiny dot eyes and w shaped mouth, pink cheeks with three black hatch marks, stubby white arms and compact body. Pose: determined face, tiny eyebrows slanted with determination, both little paws clenched in front, adorable courage. Flat 2D simple thin black hand-drawn outlines matching refs. Lower LEFT corner emerging character occupies80-90% square >=1024px. Ears face fully visible, bottom can meet lower edge. Solid opaque white uninterrupted chest and tummy. Genuine transparent empty space outside character. No shadows gradients texture glossy dimensional rendering props text background book cover grid extra character. Provided images are character/style references only.",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b3-2106-7d80-ae34-921f2c3e7243\\exec-10ced763-b112-4512-97a7-40a6af61a9a2.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "kitten-laugh",
+    "file": "/wallpapers/little-friends/kitten-laugh.png",
+    "subject": "Hachiware laughing",
+    "corner": "lower-right",
+    "prompt": "Create transparent square PNG of Hachiware, recognizable blue-crowned WHITE kitten from reference2 middle right: round white face, little pointed cat ears, pale blue cap across head and both ears, tiny cat whiskers, tiny black eyes and tiny w mouth, pink cheeks with three black hatch marks. Pose: laughing with closed upside down curved eyes, open tiny joyful mouth and one little paw resting on cheek. Same flat 2D thin black hand-drawn outline and simple pastel fills as provided Chiikawa refs. Single Hachiware emerges LOWER RIGHT corner occupying80-90% square >=1024px. Ears face fully visible compact body can meet bottom edge. Solid white opaque chest/tummy. All surrounding space genuinely transparent alpha. No shadows texture shading gradients gloss 3D props book cover text background grid or extra characters. Both input images are style/character references only.",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b3-2106-7d80-ae34-921f2c3e7243\\exec-9cd0915b-faac-419d-a273-d0a6cf33c7ad.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "bunny-surprise",
+    "file": "/wallpapers/little-friends/bunny-surprise.png",
+    "subject": "Usagi surprised",
+    "corner": "lower-left",
+    "prompt": "Create transparent square PNG of Usagi, recognizable pale creamy yellow long-ear rabbit from reference2 top: round cream face, two tall narrow rounded rabbit ears with blush pink insides, tiny black dot eyes, tiny w mouth and pink cheeks with three black hatching marks. Pose: surprised, tiny round o shaped mouth and both paws lifted beside cheeks. Same flat 2D simple thin black hand-drawn outlines and pastel fills as reference book character. Single Usagi emerging LOWER LEFT corner occupying80-90% square >=1024px. Whole ears and face fully visible, compact lower body can meet bottom edge. Solid opaque cream chest/tummy. All space outside character genuinely transparent alpha. No gradients shading shadows texture glossy 3D props words book cover background grid extra characters. Both inputs are style/character references only; one isolated Usagi.",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b3-2106-7d80-ae34-921f2c3e7243\\exec-d7fe683e-bb9b-479a-9adf-e1a896bb5ac2.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "bunny-wave",
+    "file": "/wallpapers/little-friends/bunny-wave.png",
+    "subject": "Usagi waving",
+    "corner": "lower-right",
+    "prompt": "Create transparent square PNG of Usagi recognizable pale creamy yellow long-ear rabbit from reference2 top: enormous soft round cream face, two tall narrow round-tip rabbit ears with pink interiors, tiny black eyes and w mouth, pink oval cheeks with three black hatch marks. Pose: smiling brightly with one tiny paw raised in a wave and other paw resting on round tummy. Same flat 2D thin black hand-drawn outlines and simple pastel solid fills as Chiikawa refs. Single Usagi emerging LOWER RIGHT corner occupying80-90% square>=1024px. Ears face entirely visible compact bottom body can meet bottom edge. Solid cream opaque uninterrupted chest/tummy. Space outside character genuinely transparent alpha. No gradients shadows shading texture gloss dimensional rendering props text book cover background grid extra characters. Both inputs reference character/style only; one isolated Usagi.",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b3-2106-7d80-ae34-921f2c3e7243\\exec-bedab6b2-7952-4e6c-bc72-e9552f283c13.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  }
+]

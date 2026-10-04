@@ -1,0 +1,36 @@
+[
+  {
+    "label": "C1",
+    "direction": "Pixel art campus cat",
+    "rationale": "Student graduation cue and expressive eyes for future character animation",
+    "composition": "Centered complete body",
+    "subjectColors": [
+      "#F3E5CA",
+      "#0F172A"
+    ],
+    "backgroundColor": "#DDE7ED",
+    "provider": "Built-in image_gen",
+    "constraintDelivery": "main-prompt constraints",
+    "prompt": "Create one complete 1:1 square image, approximately 1536 x 1536. Fill the entire background with uniform solid pale blue #DDE7ED. Show one extremely simple cute campus cat wearing a navy graduation cap, standing upright directly facing the viewer, centered horizontally and vertically. COMPLETE BODY: both blunt ears, the entire oversized head, compact torso, both short arms and hands, both separate feet, and one chunky curled tail must be clearly visible within the image. Full character occupies 75–82% of the square with even generous padding on all sides, no cropping or corner emergence. Huge head and small compact baby-like body, memorable simple silhouette built from 4–7 major shapes. Eyes: two large OPEN cream eye areas clearly enclosed by a thick navy rim, each containing one distinct navy pupil, symmetrical looking forward, clear eyelid shapes suitable for later blinking and eye movement; NOT two dots, NOT closed eyes. Use exactly two subject colors cream #F3E5CA and ink navy #0F172A, using navy for graduation cap, eye rims and pupils, cream for body and open eye interiors. Style: bold intentional LOW-RESOLUTION PIXEL ART, broad blocky pixels and stepped contours, playful compact retro game character with very few large readable blocks, flat fills, no anti-aliased curves, no pixel noise or dithering. Preserve a blunt chunky silhouette and short thick tail despite stepped edges. Constraints: One character only. No text, watermark, books, bags, whiskers, scenery, borders, frames, cards, external cast shadow, tiny decorations, textures, gradients, glossy lighting or extra semantic colors.",
+    "outputHint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a10496-9557-7a82-8744-5a1351b3e756 as C:\\Users\\picar\\.codex\\generated_images\\01a10496-9557-7a82-8744-5a1351b3e756\\exec-b1a13f66-8fe7-4991-9f9e-60e5e8c78edb.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "nativeDimensions": "1254 x 1254",
+    "savedPath": "C:/Users/picar/.codex/generated_images/01a10496-9557-7a82-8744-5a1351b3e756/exec-b1a13f66-8fe7-4991-9f9e-60e5e8c78edb.png"
+  },
+  {
+    "label": "C2",
+    "direction": "Sticker campus cat",
+    "rationale": "Student graduation cue and expressive eyes for future character animation",
+    "composition": "Centered complete body",
+    "subjectColors": [
+      "#C8896D",
+      "#0F172A"
+    ],
+    "backgroundColor": "#E3EAE2",
+    "provider": "Built-in image_gen",
+    "constraintDelivery": "main-prompt constraints",
+    "prompt": "Create one complete 1:1 square image, approximately 1536 x 1536. Fill the entire background with uniform solid pale sage #E3EAE2. Show one extremely simple cute campus cat wearing an ink navy graduation cap, standing upright directly facing the viewer, centered horizontally and vertically. COMPLETE BODY: both blunt rounded ears, the entire oversized head, compact torso, both short arms and hands, both separate feet, and one chunky curled tail must be clearly visible within the image. Full character occupies 75–82% of the square with even generous padding on all sides, no cropping or corner emergence. Huge head and small compact baby-like body, memorable simple silhouette built from 4–7 major shapes. Eyes: two large OPEN terracotta eye areas clearly enclosed by a thick navy rim, each containing one distinct navy pupil, symmetrical looking forward, clear eyelid shapes suitable for later blinking and eye movement; NOT two dots, NOT closed eyes. Use exactly two subject colors warm terracotta #C8896D and ink navy #0F172A, using navy for graduation cap, strong eye rims and pupils, terracotta for body and open eye interiors. Style: rounded STICKER CARTOON illustration, bold clean navy contour outlines, ultra-simple broad FLAT color fills, thick soft curves, upbeat friendly expression with tiny simple mouth. No white sticker border; the outline directly surrounds the character, there is no exterior offset border. Constraints: One character only. No text, watermark, books, bags, whiskers, scenery, borders, frames, cards, external cast shadow, tiny decorations, texture, gradients, glossy lighting or extra semantic colors.",
+    "outputHint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a10496-9557-7a82-8744-5a1351b3e756 as C:\\Users\\picar\\.codex\\generated_images\\01a10496-9557-7a82-8744-5a1351b3e756\\exec-8fe3e9cb-e578-464f-93c0-4654c436af41.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "nativeDimensions": "1254 x 1254",
+    "savedPath": "C:/Users/picar/.codex/generated_images/01a10496-9557-7a82-8744-5a1351b3e756/exec-8fe3e9cb-e578-464f-93c0-4654c436af41.png"
+  }
+]

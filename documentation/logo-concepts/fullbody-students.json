@@ -1,0 +1,37 @@
+{
+  "provider": "built-in image_gen",
+  "model": "not exposed by tool metadata",
+  "constraintDelivery": "main-prompt constraints",
+  "candidates": [
+    {
+      "label": "A1",
+      "direction": "Student graduate",
+      "rationale": "College student identity",
+      "style": "Flat geometric",
+      "composition": "Centered complete body",
+      "characterColors": [
+        "#F3E5CA",
+        "#0F172A"
+      ],
+      "background": "#DDE7ED",
+      "path": "C:/Users/picar/.codex/generated_images/01a10496-2719-71b3-8ab5-a1254c0da454/exec-59181968-6dd3-43c8-b440-b7d4a8b9a88b.png",
+      "prompt": "Create one complete full-bleed 1:1 square image, approximately 1536 by 1536.\nBackground: fill the entire square with solid muted pale blue #DDE7ED, uniform in all open areas.\nSubject: one extremely simple, adorable student graduate character, with a huge ivory rounded head wearing a broad navy graduation cap with softly blunt corners. Show the COMPLETE BODY: rounded navy clothing torso, both arms, two ivory mitten hands, both short legs and two rounded feet, all fully visible. No held objects.\nFace: two clearly visible large rounded ivory eye areas each containing one dark navy circular pupil, comfortably separated and calmly looking straight forward. Eyes must read as eyes with visible cream areas around the pupils, not tiny dots and not closed eyes. One tiny friendly navy mouth.\nComposition: front-facing neutral standing pose, entire figure precisely centered horizontally and vertically, filling about 78% of the square with evenly balanced generous empty padding. Cap, hands and both feet fully inside the image, no cropping. Keep arms slightly away from body and feet spaced enough to clearly see both.\nColor behavior: exactly two character colors, warm ivory #F3E5CA and deep navy #0F172A, in broad purposeful masses, reused for all eye and face details; plus the sole background color. Very compact baby-like proportions.\nStyle: pure FLAT geometric vector-like graphic art with crisp clean edges, merged circles and rounded rectangles, large unoutlined solid color shapes, absolutely zero shading, gradients or depth. Keep approximately 4–7 major shape groups, allowing only essential complete limbs and eyes. Make the form extremely simple, cute and recognizable at small sizes.\nConstraints: one character only; no text, watermark, scenery, objects, books, bags, eyebrows, decorative marks, glossy eye highlights, texture, fragile lines, sharp tips, borders, frames, cast shadows, gradients or lighting variation. Square outer corners.",
+      "dimensions": "1254x1254"
+    },
+    {
+      "label": "A2",
+      "direction": "Student graduate",
+      "rationale": "College student identity",
+      "style": "Bold rounded cartoon",
+      "composition": "Centered complete body",
+      "characterColors": [
+        "#F3E5CA",
+        "#0F172A"
+      ],
+      "background": "#F5F2E9",
+      "path": "C:/Users/picar/.codex/generated_images/01a10496-2719-71b3-8ab5-a1254c0da454/exec-9ec170bc-3e87-4bc3-b361-4ead4b8b989d.png",
+      "prompt": "Create one complete full-bleed 1:1 square image, approximately 1536 by 1536.\nBackground: fill the entire square with solid warm cream #F5F2E9, uniform in all open areas.\nSubject: one extremely simple, adorable student graduate character, with a huge ivory rounded head wearing a broad navy graduation cap with softly blunt corners. Show the COMPLETE BODY: compact rounded navy clothing torso, both arms, two ivory mitten hands, both short legs and two rounded feet, all fully visible. No held objects.\nFace: two clearly visible large rounded ivory eye areas each containing one dark navy circular pupil, comfortably separated and calmly looking straight forward. Eyes must read as eyes with visible cream areas around the pupils, not tiny dots and not closed eyes. One tiny friendly navy mouth.\nComposition: front-facing neutral standing pose, entire figure precisely centered horizontally and vertically, filling about 78% of the square with evenly balanced generous empty padding. Cap, hands and both feet fully inside the image, no cropping. Keep arms slightly away from body and feet spaced enough to clearly see both.\nColor behavior: exactly two character colors, warm ivory #F3E5CA and deep navy #0F172A, in broad purposeful masses, reused for all eye and face details; plus the sole background color. Navy clothes, cap and bold navy outline separate ivory head and hands from cream background.\nStyle: cheerful two-dimensional rounded CARTOON art with bold thick navy outlines, soft bouncy bean forms and chunky compact baby-like proportions. The outline must be smooth, consistent, heavy and rounded, with crisp clean color fills. No shading or depth. Keep approximately 4–7 major shape groups, allowing only essential complete limbs and eyes. Simplification, cuteness and instant readability should dominate.\nConstraints: one character only; no text, watermark, scenery, objects, books, bags, eyebrows, decorative marks, glossy eye highlights, texture, fragile lines, sharp tips, borders, frames, cast shadows, gradients or lighting variation. Square outer corners.",
+      "dimensions": "1254x1254"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "white-delight",
+    "file": "/wallpapers/little-friends/white-delight.png",
+    "subject": "Chiikawa-inspired white friend, delighted paws at cheeks",
+    "corner": "lower-left",
+    "prompt": "Using the two attached images as visual references, draw the little white round-eared Chiikawa character closely faithful to reference1, but a distinct new pose: both small rounded paws tucked against the cheeks and a delighted closed-eye smile. Keep tiny ears, broad squat white head merged with tiny white body, tiny black hand-drawn eyes and w mouth, pink oval cheeks with three simple black blush strokes, thin black organic outlines just like reference1. This must look Chiikawa-inspired specifically, not a generic animal or lamb. One upright character emerging from lower-left, both ears visible, square approximately1536x1536 with character80-90% frame. Genuine transparent background with no black backdrop, no scenery or colored background. Flat simple illustration with pure white body pink cheeks and black marks, no shading gradients texture glossy 3D shadows text props or grid.",
+    "provider": "built-in imagegen",
+    "source": "C:/Users/picar/.codex/generated_images/01a101ad-93ee-7683-b089-04107cb62539/exec-3071fa75-e015-438f-a49c-22e407fff716.png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "mode": "built-in image_gen",
+  "model": "built-in provider, model not exposed by tool schema",
+  "constraint_delivery": "main-prompt constraints",
+  "source_independent": true,
+  "candidates": [
+    {
+      "label": "C1",
+      "direction": "Campus cat — friendly student companion — round dumpling silhouette",
+      "composition": "centered",
+      "palette": {
+        "subject": [
+          "#F3E5CA",
+          "#0F172A"
+        ],
+        "background": "#DDE7ED"
+      },
+      "source": null,
+      "path": "C:\\Users\\picar\\.codex\\generated_images\\01a10487-80c3-7102-bb1f-3e6bbf3c0bad\\exec-c43447cf-ea34-42ec-bc74-dd77b970d37d.png",
+      "dimensions": "1254 × 1254",
+      "prompt": "Create one complete full-bleed 1:1 square image, approximately 1536 × 1536. Background: fill the entire square with solid muted pale blue #DDE7ED; visible evenly around the entire character. Subject: one extremely simplified cute campus cat companion wearing one broad graduation cap without a tassel or detail. The cat has a round dumpling silhouette, plump ivory #F3E5CA head and compact body, two broad rounded blunt ears both visible. Navy #0F172A forms the single broad graduation cap and two tiny simple eyes. Complexity: 4–7 large basic geometric shapes, no unnecessary features, readable at 32 × 32. Color: exactly two subject base colors ivory #F3E5CA and navy #0F172A plus the single solid pale blue #DDE7ED background. Composition: upright, precisely centered horizontally and vertically, entire character including ears and graduation cap fully visible, occupying approximately 80% of the square with modest even padding on every side, no corner emergence or cropping. Style: extremely simple cute lovable baby-like proportions, thick rounded contours, clean broad graphic color masses. Add an extremely, extremely subtle, almost imperceptible sense of depth through a barely-there neo-skeuomorphic treatment. Finish: only the character on the full-canvas solid background with normal square outer corners. Constraints: no text or watermark, borders, frames, cards, masks, extra subjects, scenery, whiskers, outlines, sharp tips, tassel, tiny details, decorations, fragile lines, glossy hotspots, photorealistic material, strong three-dimensional rendering, external cast shadows, texture, vignette, or lighting variation in the background.",
+      "output_hint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a10487-80c3-7102-bb1f-3e6bbf3c0bad as C:\\Users\\picar\\.codex\\generated_images\\01a10487-80c3-7102-bb1f-3e6bbf3c0bad\\exec-c43447cf-ea34-42ec-bc74-dd77b970d37d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "label": "C2",
+      "direction": "Campus cat — friendly student companion — softly squared head",
+      "composition": "centered",
+      "palette": {
+        "subject": [
+          "#C8896D",
+          "#0F172A"
+        ],
+        "background": "#E3EAE2"
+      },
+      "source": null,
+      "path": "C:\\Users\\picar\\.codex\\generated_images\\01a10487-80c3-7102-bb1f-3e6bbf3c0bad\\exec-3327992b-7ba2-4128-98d3-8e58051cffe5.png",
+      "dimensions": "1254 × 1254",
+      "prompt": "Create one complete full-bleed 1:1 square image, approximately 1536 × 1536. Background: fill the entire square with solid muted pale sage #E3EAE2; visible evenly around the entire character. Subject: one extremely simplified cute campus cat companion wearing one broad graduation cap without a tassel or detail. The cat has a broader softly squared head with deeply rounded corners, plump terracotta #C8896D head and compact body, two broad rounded blunt ears both visible. Navy #0F172A forms the single broad graduation cap and two tiny simple eyes. Complexity: 4–7 large basic geometric shapes, no unnecessary features, readable at 32 × 32. Color: exactly two subject base colors terracotta #C8896D and navy #0F172A plus the single solid pale sage #E3EAE2 background. Composition: upright, precisely centered horizontally and vertically, entire character including ears and graduation cap fully visible, occupying approximately 80% of the square with modest even padding on every side, no corner emergence or cropping. Style: extremely simple cute lovable baby-like proportions, thick rounded contours, clean broad graphic color masses. Add an extremely, extremely subtle, almost imperceptible sense of depth through a barely-there neo-skeuomorphic treatment. Finish: only the character on the full-canvas solid background with normal square outer corners. Constraints: no text or watermark, borders, frames, cards, masks, extra subjects, scenery, whiskers, outlines, sharp tips, tassel, tiny details, decorations, fragile lines, glossy hotspots, photorealistic material, strong three-dimensional rendering, external cast shadows, texture, vignette, or lighting variation in the background.",
+      "output_hint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a10487-80c3-7102-bb1f-3e6bbf3c0bad as C:\\Users\\picar\\.codex\\generated_images\\01a10487-80c3-7102-bb1f-3e6bbf3c0bad\\exec-3327992b-7ba2-4128-98d3-8e58051cffe5.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  ]
+}

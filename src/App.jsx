@@ -7,14 +7,17 @@ import Home from './pages/Home.jsx';
 const ScheduleWallpaper = lazy(() => import('./pages/ScheduleWallpaper/Index.jsx'));
 
 export default function App() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
+  const isWallpaperEditor = pathname.startsWith('/services/schedule-wallpaper');
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'instant' });
-    document.title = pathname === '/services/schedule-wallpaper'
+    const section = hash === '#services' ? document.getElementById('services') : null;
+    if (section) section.scrollIntoView({ behavior: 'instant' });
+    else window.scrollTo({ top: 0, behavior: 'instant' });
+    if (!isWallpaperEditor) document.title = pathname === '/services/schedule-wallpaper'
       ? 'Schedule wallpaper — UniToolbox'
       : 'UniToolbox — Tools for university life';
-  }, [pathname]);
+  }, [pathname, hash, isWallpaperEditor]);
 
   return (
     <div className="flex min-h-dvh flex-col">
@@ -24,7 +27,7 @@ export default function App() {
         <Suspense fallback={<p className="page-wrap py-20" role="status">Opening tool…</p>}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/services/schedule-wallpaper" element={<ScheduleWallpaper />} />
+            <Route path="/services/schedule-wallpaper/*" element={<ScheduleWallpaper />} />
             <Route path="*" element={
               <section className="page-wrap py-24">
                 <h1 className="text-4xl font-semibold">Page not found</h1>
@@ -35,7 +38,7 @@ export default function App() {
           </Routes>
         </Suspense>
       </main>
-      {pathname !== '/services/schedule-wallpaper' && <Footer />}
+      {!pathname.startsWith('/services/schedule-wallpaper') && <Footer />}
     </div>
   );
 }

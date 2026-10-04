@@ -1,0 +1,261 @@
+[
+  {
+    "id": "white-shy",
+    "subject": "white Chiikawa with tiny rounded ears, closed smiling eyes, one paw making a shy peace sign at its cheek",
+    "corner": "lower-left",
+    "prompt": "Generate a new transparent character mascot inspired very closely by the two supplied Chiikawa reference images. Both images are STYLE AND CHARACTER REFERENCES, not backgrounds to copy. Subject: white Chiikawa with tiny rounded ears, closed smiling eyes, one paw making a shy peace sign at its cheek. Match actual reference: almost circular white face, minuscule sparse simple black dot/arc facial marks, little w-shaped mouth, flat oval pink cheeks with three short black blush strokes, very tiny limbs. Thin friendly slightly irregular black hand-drawn outline, pale flat fills, no detailed shiny eyes. Use the exact simple understated Chiikawa drawing language, not generic kawaii clipart. Square >=1024, one large dominant character 85% frame oriented toward lower-left, ears fully visible, compact body near bottom. True transparent background, no scene, no text, no book, no props, no shadow, no texture, no gradients or 3D.",
+    "file": "/wallpapers/little-friends/white-shy.png",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b2-93cf-7132-bb14-cc23ce497b2f\\exec-06df370c-e97f-4780-aa3f-e40df2c3d0b0.png",
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "bunny-smile",
+    "subject": "cream Usagi-like bunny with long narrow rounded ears, tiny dot eyes, cheerful open mouth and both paws lifted",
+    "corner": "lower-right",
+    "prompt": "Generate a new transparent character mascot inspired very closely by the two supplied Chiikawa reference images. Both images are STYLE AND CHARACTER REFERENCES, not backgrounds to copy. Subject: cream Usagi-like bunny with long narrow rounded ears, tiny dot eyes, cheerful open mouth and both paws lifted. Match actual reference: big plump face, minuscule sparse simple black dot/arc facial marks, little w-shaped mouth, flat oval pink cheeks with three short black blush strokes, very tiny limbs. Thin friendly slightly irregular black hand-drawn outline, pale flat fills, no detailed shiny eyes. Use the exact simple understated Chiikawa drawing language, not generic kawaii clipart. Square >=1024, one large dominant character 85% frame oriented toward lower-right, ears fully visible, compact body near bottom. True transparent background, no scene, no text, no book, no props, no shadow, no texture, no gradients or 3D.",
+    "file": "/wallpapers/little-friends/bunny-smile.png",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b2-93cf-7132-bb14-cc23ce497b2f\\exec-16f36d20-8790-4646-8bca-c4fde617ff79.png",
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "kitten-snooze",
+    "subject": "white Hachiware-like kitten with broad sky-blue crown patch and rounded blue cat ears, relaxed closed eyes and tiny paws together",
+    "corner": "lower-left",
+    "prompt": "Generate a new transparent character mascot inspired very closely by the two supplied Chiikawa reference images. Both images are STYLE AND CHARACTER REFERENCES, not backgrounds to copy. Subject: white Hachiware-like kitten with broad sky-blue crown patch and rounded blue cat ears, relaxed closed eyes and tiny paws together. Match actual reference: big plump face, minuscule sparse simple black dot/arc facial marks, little w-shaped mouth, flat oval pink cheeks with three short black blush strokes, very tiny limbs. Thin friendly slightly irregular black hand-drawn outline, pale flat fills, no detailed shiny eyes. Use the exact simple understated Chiikawa drawing language, not generic kawaii clipart. Square >=1024, one large dominant character 85% frame oriented toward lower-left, ears fully visible, compact body near bottom. True transparent background, no scene, no text, no book, no props, no shadow, no texture, no gradients or 3D.",
+    "file": "/wallpapers/little-friends/kitten-snooze.png",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b2-93cf-7132-bb14-cc23ce497b2f\\exec-d4f45979-3c87-4946-9722-acad56c3e2fc.png",
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "white-paws",
+    "subject": "white Chiikawa with tiny rounded ears, wide nervous dot eyes and its little paws clasped together beneath its chin",
+    "corner": "lower-right",
+    "prompt": "Generate a new transparent character mascot inspired very closely by the two supplied Chiikawa reference images. Both images are STYLE AND CHARACTER REFERENCES, not backgrounds to copy. Subject: white Chiikawa with tiny rounded ears, wide nervous dot eyes and its little paws clasped together beneath its chin. Match actual reference: almost circular white face, minuscule sparse simple black dot/arc facial marks, little w-shaped mouth, flat oval pink cheeks with three short black blush strokes, very tiny limbs. Thin friendly slightly irregular black hand-drawn outline, pale flat fills, no detailed shiny eyes. Use the exact simple understated Chiikawa drawing language, not generic kawaii clipart. Square >=1024, one large dominant character 85% frame oriented toward lower-right, ears fully visible, compact body near bottom. True transparent background, no scene, no text, no book, no props, no shadow, no texture, no gradients or 3D.",
+    "file": "/wallpapers/little-friends/white-paws.png",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b2-93cf-7132-bb14-cc23ce497b2f\\exec-0041b555-5b02-422c-8d2d-4034d530d82e.png",
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "white-wave",
+    "subject": "white Chiikawa with tiny rounded ears, tiny dot eyes and one paw waving",
+    "corner": "lower-left",
+    "prompt": "Generate a clean transparent PNG of white Chiikawa waving one tiny paw, inspired closely by supplied Chiikawa character reference. Reference image is character/style guidance only. Single plump white round-eared character with almost circular face, minuscule sparse simple black dot eyes, little w-shaped mouth, pink oval cheeks with three short black blush strokes, tiny limbs. Simple slightly irregular black hand-drawn contour and completely clean uniform white flat fill throughout face and entire chest. Chest is entirely blank smooth white with no object, emblem, decoration or texture. Square at least1024, one dominant character85% frame lower-left emergence, fully visible tiny rounded ears and raised waving paw. True transparent alpha background. No text, props, background, shadow, noise, gradients, 3D, artifacts.",
+    "file": "/wallpapers/little-friends/white-wave.png",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b2-93cf-7132-bb14-cc23ce497b2f\\exec-c50de0ba-453c-42c2-a89e-f4d99d22728b.png",
+    "inspection": "Technical corruption recovered by fresh generation. Clean white body; no chest blemish.",
+    "originalCorruptedSource": "C:\\Users\\picar\\.codex\\generated_images\\01a101b2-93cf-7132-bb14-cc23ce497b2f\\exec-9636b665-3ccc-41df-9802-48397ef81349.png",
+    "referenceImages": [
+      "C:/Users/picar/AppData/Local/Temp/codex-clipboard-63c63167-b96d-4efa-b648-229503f50a78.png"
+    ],
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "bunny-cheer",
+    "subject": "cream Usagi-like bunny with long narrow rounded ears, playful winking expression and both tiny paws raised",
+    "corner": "lower-right",
+    "prompt": "Generate a new transparent character mascot inspired very closely by the two supplied Chiikawa reference images. Both images are STYLE AND CHARACTER REFERENCES, not backgrounds to copy. Subject: cream Usagi-like bunny with long narrow rounded ears, playful winking expression and both tiny paws raised. Match actual reference: big plump face, minuscule sparse simple black dot/arc facial marks, little w-shaped mouth, flat oval pink cheeks with three short black blush strokes, very tiny limbs. Thin friendly slightly irregular black hand-drawn outline, pale flat fills, no detailed shiny eyes. Use the exact simple understated Chiikawa drawing language, not generic kawaii clipart. Square >=1024, one large dominant character 85% frame oriented toward lower-right, ears fully visible, compact body near bottom. True transparent background, no scene, no text, no book, no props, no shadow, no texture, no gradients or 3D.",
+    "file": "/wallpapers/little-friends/bunny-cheer.png",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b2-93cf-7132-bb14-cc23ce497b2f\\exec-f46ed042-7ed0-445a-bc54-0e1faf671b19.png",
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "white-sleep",
+    "file": "/wallpapers/little-friends/white-sleep.png",
+    "subject": "Chiikawa white friend sleeping",
+    "corner": "lower-left",
+    "prompt": "Reference images are style and character identity anchors. Create ONE transparent standalone Chiikawa-inspired mascot very closely matching the WHITE LITTLE CHARACTER IN IMAGE 1: enormous gently rounded white head, two very tiny round ear bumps, sparse short black eye/mouth strokes, oval pink cheeks with three dark blush ticks, white stubby compact body and tiny hands. Pose: peacefully sleeping with closed curved eyes and paws held gently together. Keep unmistakable actual Chiikawa proportions and face, not a generic animal, not big glossy eyes. Flat solid-color hand-drawn sticker, thick near-black smooth outlines, absolutely no gradients/shadows/texture/3D. Square >=1024. Lower-left corner emergence, head and both tiny ears completely visible, dominant 80–90% frame. Fully transparent alpha background outside silhouette. Only ONE character, no text, props, zzz letters, scenery, grid or watermark.",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b2-d9a8-7842-b023-04b0b4b2c10d\\exec-aa147fa4-2e22-4642-b458-5c686ec845a2.png",
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "white-hello",
+    "file": "/wallpapers/little-friends/white-hello.png",
+    "subject": "Chiikawa white friend tiny wave",
+    "corner": "lower-right",
+    "prompt": "Repair this character cutout image only: remove the gray noisy damaged patch on its lower chest and replace that area with the same uniform pure white fill as the surrounding body. Preserve the entire character identity, black contours, expression, pink cheeks, pose, paws, proportions, size and transparent background unchanged. No new elements. The repaired body must be clean white without noise or a gray patch. Keep genuine transparent background.",
+    "provider": "built-in image_gen",
+    "source": "C:/Users/picar/.codex/generated_images/01a101ad-93ee-7683-b089-04107cb62539/exec-d2209aac-193e-4600-956e-f3c08fdbb7fb.png",
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true,
+    "originalCorruptedSource": "C:\\Users\\picar\\.codex\\generated_images\\01a101b2-d9a8-7842-b023-04b0b4b2c10d\\exec-0f3010bd-1b61-4033-ac63-ba58a55659fc.png",
+    "originalPrompt": "Use the attached references to anchor exact recognizable Chiikawa-style identity, especially IMAGE 1 WHITE tiny round-eared character. Create ONE original pose: white little Chiikawa-like friend with ONE tiny hand waving at side, happy closed eye curves and tiny w-shaped smile, huge rounded white head, TWO tiny rounded ear bumps, pink oval blush cheeks with three thin black ticks each, stubby white compact body. Match reference's thin slightly imperfect hand-drawn BLACK outline and sparse black face strokes, not heavy outlines, not big glossy eyes. Flat solid white/pink fills with no texture, shading, shadows, gradients, 3D. Square >=1024 transparent PNG web mascot, character dominant 80–90% frame emerging from LOWER RIGHT corner, entire head and both ears inside frame. Genuine transparent alpha outside silhouette. No text, props, scene, watermark, multiple characters or grid."
+  },
+  {
+    "id": "kitten-excited",
+    "file": "/wallpapers/little-friends/kitten-excited.png",
+    "subject": "Hachiware blue-crown white kitten excited paws",
+    "corner": "lower-left",
+    "prompt": "Use references as style/identity anchors: generate ONE recognizable Chiikawa-inspired Hachiware-like BLUE CROWN WHITE KITTEN from image 2, standalone transparent mascot. Huge white rounded head with small triangular cat ears BOTH visible, pastel sky-blue two-lobed crown fur patch covering ear tops, tiny sparse black oval eyes and curved mouth, thin whisker strokes, pink oval cheek blush with three black ticks. Pose: excited with both tiny paws raised near chest, joyful small open smile. Compact white body, head much larger than body. Match thin black hand-drawn outline of actual reference, flat simple white/blue/pink fills, avoid glossy eyes, heavy outlines or generic animal style. Square >=1024, 80–90% frame dominance, lower-left emergence, head and both ears complete. Genuine transparent alpha backdrop outside silhouette. No shadows, gradients, shading, texture, 3D, props, text, grid, watermark, extra characters.",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b2-d9a8-7842-b023-04b0b4b2c10d\\exec-2c65125d-729f-4e5e-9863-4c82abbae005.png",
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "kitten-shy",
+    "file": "/wallpapers/little-friends/kitten-shy.png",
+    "subject": "Hachiware blue-crown white kitten shy",
+    "corner": "lower-right",
+    "prompt": "Use attached images as identity/style reference: ONE recognizable Hachiware-inspired character like blue-crown WHITE KITTEN in reference 2. White very round huge head, both small triangular cat ears fully visible, light sky-blue crown fur over tops, tiny short black oval eyes glancing shyly, tiny w smile, two thin whiskers each side, pink oval cheeks three short blush ticks. Pose: shy hands clasped at chest and head slightly tilted, compact white body. Preserve actual Chiikawa series proportions and minimal flat drawing, thin imperfect BLACK outline, sparse face. No generic big glossy eyes, no heavy brown stroke. Transparent PNG square >=1024, character 80–90% frame, lower-right corner emerging with entire ears/head visible. Genuine transparent alpha outside character. Solid white/blue/pink fills, no gradients, texture, shadows, shading, 3D, props, text, watermark, grid, extra characters.",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b2-d9a8-7842-b023-04b0b4b2c10d\\exec-06ddf1c4-e5ac-4a66-a3c3-3ad98bb0d204.png",
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "bunny-hooray",
+    "file": "/wallpapers/little-friends/bunny-hooray.png",
+    "subject": "Usagi cream bunny cheering",
+    "corner": "lower-left",
+    "prompt": "Use supplied references to closely anchor Chiikawa series identity: generate ONE Usagi-inspired cream bunny like long-eared rabbit TOP of IMAGE 2. Very large round pale yellow cream head, TWO LONG upright ears with pink interior BOTH fully visible, tiny sparse black oval eyes and mischievous tiny curved smile, pink cheeks with three black ticks, compact stubby cream body with muted round beige belly patch. Pose: cheering with both tiny hands lifted sideways. Recognizable actual Usagi/Chiikawa proportions, thin hand-drawn BLACK outline, flat solid simple fills, no glossy animal eyes. Square >=1024 transparent PNG web mascot. Dominant 80–90% frame emerging from lower LEFT; all of head and BOTH complete ears with small clear top margin. Genuine transparent alpha everywhere outside silhouette. No gradients, shading, shadows, texture, 3D, text, props, watermark, extra characters, grid.",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b2-d9a8-7842-b023-04b0b4b2c10d\\exec-9eb9cea8-62b0-4ab8-8b40-09a0869f0f77.png",
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "bunny-sleep",
+    "file": "/wallpapers/little-friends/bunny-sleep.png",
+    "subject": "Usagi cream bunny sleepy",
+    "corner": "lower-right",
+    "prompt": "Use attached references to anchor actual Chiikawa identity: ONE Usagi-inspired pale cream bunny very similar to long-ear character top of IMAGE 2. Enormous round cream head, TWO LONG rounded upright ears pink interior BOTH entirely in frame, sparse tiny BLACK facial strokes, CLOSED sleepy eye curves and peaceful little w mouth, pink oval cheeks with three black blush ticks each, stubby compact cream body, beige circular belly patch. Pose: sleepy seated with both paws tucked softly under chin and slight head tilt. Use actual reference's thin hand-drawn black outlines and flat minimalist solid fills; not generic realistic rabbit, not huge glossy eyes, no heavy brown outline. Transparent PNG square >=1024. Lower-right emerging composition dominating80–90% frame with whole head and both ears complete. Genuinely transparent alpha everywhere outside silhouette. No text, zzz marks, props, scenes, shadow, gradients, shading, texture, 3D, grids, watermark or other characters.",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b2-d9a8-7842-b023-04b0b4b2c10d\\exec-82c4ad2f-0df5-4667-a6f1-07ca148a047c.png",
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "white-peace",
+    "file": "/wallpapers/little-friends/white-peace.png",
+    "subject": "Chiikawa peace sign",
+    "corner": "lower-left",
+    "prompt": "Generate one clean transparent PNG of Chiikawa doing a peace sign. Reference image is only character/style reference: use the plain WHITE small round-eared character at bottom center of book image. Huge soft round white head with two tiny rounded ear bumps, thin clean hand-drawn black outline, tiny closed smiling eyes and tiny w mouth, pink blush cheeks with three black hatch marks. One little white paw raised making a V peace sign; other paw lowered. Entire character has simple flat solid opaque WHITE fill, especially a completely unbroken solid white chest and tummy. No objects on chest. Single character sits toward LOWER LEFT of square1024px or larger, head ears face fully visible, character occupies80-90%, complete clean lower body silhouette no edge truncation. Outside the character must be genuinely transparent alpha. Flat clean 2D minimalist drawing, no shading, no shadows, no texture, no gradients, no dimensional effects, no words, no book, no blue background, no extra objects or characters.",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b3-2106-7d80-ae34-921f2c3e7243\\exec-20a747e2-fe6d-47f9-821f-73ba723f324c.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "white-bashful",
+    "file": "/wallpapers/little-friends/white-bashful.png",
+    "subject": "Chiikawa bashful paws",
+    "corner": "lower-right",
+    "prompt": "Create transparent square PNG of Chiikawa closely matching the little WHITE round-eared character in provided references: huge soft round white head, tiny rounded ear bumps, compact little white body, thin black hand-drawn outline, tiny black dot eyes, tiny w shaped mouth and small pink blush circles with black hatching. Pose is bashful, both tiny paws brought together under chin, shy happy face. Lower RIGHT corner composition character occupies 80-90% square, fully visible ears/face with compact lower body touching bottom edge. Flat solid opaque white body including complete solid white chest and tummy, simple 2D drawing exactly like references. All surrounding space genuinely transparent alpha background. No holes inside body, no shading, no texture, no gradients, no props, no text, no book cover, no background or extra characters. Both inputs are character/style references only.",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b3-2106-7d80-ae34-921f2c3e7243\\exec-be5c297c-f81a-4938-98b0-ae8b006a853e.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "white-determined",
+    "file": "/wallpapers/little-friends/white-determined.png",
+    "subject": "Chiikawa determined",
+    "corner": "lower-left",
+    "prompt": "Create transparent square PNG of Chiikawa, exact white round-ear character recognizable from reference1: tiny two round ear bumps, enormous soft white rounded head, tiny dot eyes and w shaped mouth, pink cheeks with three black hatch marks, stubby white arms and compact body. Pose: determined face, tiny eyebrows slanted with determination, both little paws clenched in front, adorable courage. Flat 2D simple thin black hand-drawn outlines matching refs. Lower LEFT corner emerging character occupies80-90% square >=1024px. Ears face fully visible, bottom can meet lower edge. Solid opaque white uninterrupted chest and tummy. Genuine transparent empty space outside character. No shadows gradients texture glossy dimensional rendering props text background book cover grid extra character. Provided images are character/style references only.",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b3-2106-7d80-ae34-921f2c3e7243\\exec-10ced763-b112-4512-97a7-40a6af61a9a2.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "kitten-laugh",
+    "file": "/wallpapers/little-friends/kitten-laugh.png",
+    "subject": "Hachiware laughing",
+    "corner": "lower-right",
+    "prompt": "Create transparent square PNG of Hachiware, recognizable blue-crowned WHITE kitten from reference2 middle right: round white face, little pointed cat ears, pale blue cap across head and both ears, tiny cat whiskers, tiny black eyes and tiny w mouth, pink cheeks with three black hatch marks. Pose: laughing with closed upside down curved eyes, open tiny joyful mouth and one little paw resting on cheek. Same flat 2D thin black hand-drawn outline and simple pastel fills as provided Chiikawa refs. Single Hachiware emerges LOWER RIGHT corner occupying80-90% square >=1024px. Ears face fully visible compact body can meet bottom edge. Solid white opaque chest/tummy. All surrounding space genuinely transparent alpha. No shadows texture shading gradients gloss 3D props book cover text background grid or extra characters. Both input images are style/character references only.",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b3-2106-7d80-ae34-921f2c3e7243\\exec-9cd0915b-faac-419d-a273-d0a6cf33c7ad.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "bunny-surprise",
+    "file": "/wallpapers/little-friends/bunny-surprise.png",
+    "subject": "Usagi surprised",
+    "corner": "lower-left",
+    "prompt": "Create transparent square PNG of Usagi, recognizable pale creamy yellow long-ear rabbit from reference2 top: round cream face, two tall narrow rounded rabbit ears with blush pink insides, tiny black dot eyes, tiny w mouth and pink cheeks with three black hatching marks. Pose: surprised, tiny round o shaped mouth and both paws lifted beside cheeks. Same flat 2D simple thin black hand-drawn outlines and pastel fills as reference book character. Single Usagi emerging LOWER LEFT corner occupying80-90% square >=1024px. Whole ears and face fully visible, compact lower body can meet bottom edge. Solid opaque cream chest/tummy. All space outside character genuinely transparent alpha. No gradients shading shadows texture glossy 3D props words book cover background grid extra characters. Both inputs are style/character references only; one isolated Usagi.",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b3-2106-7d80-ae34-921f2c3e7243\\exec-d7fe683e-bb9b-479a-9adf-e1a896bb5ac2.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "bunny-wave",
+    "file": "/wallpapers/little-friends/bunny-wave.png",
+    "subject": "Usagi waving",
+    "corner": "lower-right",
+    "prompt": "Create transparent square PNG of Usagi recognizable pale creamy yellow long-ear rabbit from reference2 top: enormous soft round cream face, two tall narrow round-tip rabbit ears with pink interiors, tiny black eyes and w mouth, pink oval cheeks with three black hatch marks. Pose: smiling brightly with one tiny paw raised in a wave and other paw resting on round tummy. Same flat 2D thin black hand-drawn outlines and simple pastel solid fills as Chiikawa refs. Single Usagi emerging LOWER RIGHT corner occupying80-90% square>=1024px. Ears face entirely visible compact bottom body can meet bottom edge. Solid cream opaque uninterrupted chest/tummy. Space outside character genuinely transparent alpha. No gradients shadows shading texture gloss dimensional rendering props text book cover background grid extra characters. Both inputs reference character/style only; one isolated Usagi.",
+    "provider": "built-in image_gen",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a101b3-2106-7d80-ae34-921f2c3e7243\\exec-bedab6b2-7952-4e6c-bc72-e9552f283c13.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "white-delight",
+    "file": "/wallpapers/little-friends/white-delight.png",
+    "subject": "Chiikawa-inspired white friend, delighted paws at cheeks",
+    "corner": "lower-left",
+    "prompt": "Using the two attached images as visual references, draw the little white round-eared Chiikawa character closely faithful to reference1, but a distinct new pose: both small rounded paws tucked against the cheeks and a delighted closed-eye smile. Keep tiny ears, broad squat white head merged with tiny white body, tiny black hand-drawn eyes and w mouth, pink oval cheeks with three simple black blush strokes, thin black organic outlines just like reference1. This must look Chiikawa-inspired specifically, not a generic animal or lamb. One upright character emerging from lower-left, both ears visible, square approximately1536x1536 with character80-90% frame. Genuine transparent background with no black backdrop, no scenery or colored background. Flat simple illustration with pure white body pink cheeks and black marks, no shading gradients texture glossy 3D shadows text props or grid.",
+    "provider": "built-in imagegen",
+    "source": "C:/Users/picar/.codex/generated_images/01a101ad-93ee-7683-b089-04107cb62539/exec-3071fa75-e015-438f-a49c-22e407fff716.png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  },
+  {
+    "id": "kitten-peek",
+    "file": "/wallpapers/little-friends/kitten-peek.png",
+    "subject": "Chiikawa-inspired blue-white kitten, curious peek",
+    "corner": "lower-right",
+    "prompt": "Create one square approximately1536x1536 transparent cutout of Hachiware-inspired blue-and-white kitten faithfully following the blue cap white kitten in reference2: white very round head and squat tiny white body, blue broad crown cap down both blunt triangle ears, tiny black outlined sparkling happy eyes, little w mouth, pink oval cheeks with three black blush strokes. Distinct pose: curious kitten peeking from lower-right, one small rounded paw raised beside face and the other at chest, upright. Both ears fully visible. Thin organic black hand-drawn contours, extremely simple flat fills exactly like the supplied Chiikawa illustrations. Reference1 also informs sparse face/proportions. Character80-90% frame. Transparent background, no black or colored backdrop/checkerboard. One character only no text props grid shadows shading gradients texture 3D gloss. This should clearly evoke the Chiikawa core blue-white cat rather than a generic squirrel.",
+    "provider": "built-in imagegen",
+    "source": "C:/Users/picar/.codex/generated_images/01a101ad-93ee-7683-b089-04107cb62539/exec-c322f7fe-7e02-4aa2-a410-f9720adec96d.png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "constraintDelivery": "main-prompt constraints",
+    "transparentBackground": true
+  }
+]

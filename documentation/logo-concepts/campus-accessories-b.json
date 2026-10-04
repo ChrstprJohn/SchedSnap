@@ -1,0 +1,32 @@
+[
+  {
+    "label": "04 — Fox",
+    "source": "C:/Users/picar/.codex/generated_images/01a1049f-c416-79d3-87e8-142060558cf2/exec-3f740f08-29b0-49cf-802d-ec1d73fc74ff.png",
+    "output": "C:/Users/picar/.codex/generated_images/01a104ab-a313-7713-ad38-4aec488829da/exec-0bfdc00f-a087-4461-9a69-b4263ee9d5eb.png",
+    "prompt": "Edit the supplied image (the sole edit target) to dress this curious orange fox in minimal college accessories: add a small deep navy graduation cap with rounded corners and a short muted gold tassel, and a simple cream academic collar. Preserve this exact fox identity, natural orange and cream colors with brown paws, large open eyes and visible pupils, cute expression, tilted curious pose, both ears, tail, hands and feet, and the soft matte rounded 3D style. Keep the whole body and all accessories centered inside a 1:1 square with even padding; scale down slightly only if needed to fit the cap. Preserve the pale mint background. Accessories are broad simple rounded toy forms, no tiny decorative details. Constraints: one animal only; no text, letters, watermark, scene, books, bags, borders or extra props. Eyes must stay completely unobscured.",
+    "dimensions": "1254 × 1254",
+    "provider": "built-in image_gen",
+    "constraint_delivery": "main-prompt constraints",
+    "composition": "centered, complete body"
+  },
+  {
+    "label": "05 — Penguin",
+    "source": "C:/Users/picar/.codex/generated_images/01a1049f-c416-79d3-87e8-142060558cf2/exec-cbcf6869-e7a3-4b4d-88b9-5d486ac4b3a5.png",
+    "output": "C:/Users/picar/.codex/generated_images/01a104ab-a313-7713-ad38-4aec488829da/exec-eb75d985-b95e-407f-8cdc-c5b53c2d5fd5.png",
+    "prompt": "Edit the supplied image (the sole edit target) to add minimal academic accessories to this cute waddling penguin: a small deep navy graduation cap with rounded edges and a short muted gold tassel, plus a small simple navy bow tie at the neck. Make the cap clearly distinct in silhouette from the dark head. Preserve this exact penguin identity, natural dark charcoal and ivory colors, orange beak and feet, large open eyes with visible pupils, expression, waddling pose, both flippers visible, and soft matte rounded 3D style. Keep the whole body and all accessories centered inside a 1:1 square with even padding; scale down slightly only if needed for the cap. Preserve the pale blue background. Accessories are broad rounded simple toy forms. Constraints: one animal only; no text, letters, watermark, scenes, books, bags, borders, extra props, fabric detail or tiny decorative marks. Keep both eyes completely unobscured.",
+    "dimensions": "1254 × 1254",
+    "provider": "built-in image_gen",
+    "constraint_delivery": "main-prompt constraints",
+    "composition": "centered, complete body"
+  },
+  {
+    "label": "06 — Turtle",
+    "source": "C:/Users/picar/.codex/generated_images/01a1049f-c416-79d3-87e8-142060558cf2/exec-b6cec53a-6b8f-4695-9764-84f38f255013.png",
+    "output": "C:/Users/picar/.codex/generated_images/01a104ab-a313-7713-ad38-4aec488829da/exec-aac56d70-bbd9-4108-9dd4-a3492d19a457.png",
+    "prompt": "Edit the supplied image (the sole edit target) to add minimal campus accessories to this strolling olive green turtle: a pair of large simple round navy glasses with completely clear lenses so both open eyes and pupils stay plainly visible, and a short simple deep navy scarf around the neck. Preserve this exact turtle identity, natural olive skin, dark green shell and warm cream belly, large eyes, happy expression, strolling pose, all feet and shell visible, and the soft matte rounded 3D style. Keep the shell unobscured and all accessories inside the centered full-body 1:1 composition with even padding. Preserve the warm ivory background. Accessories use broad rounded simple toy forms, smooth scarf without fabric detail or fringe. Constraints: one animal only; no text, letters, watermark, scenery, books, bags, borders or extra props. No tinted lenses or closed eyes.",
+    "dimensions": "1254 × 1254",
+    "provider": "built-in image_gen",
+    "constraint_delivery": "main-prompt constraints",
+    "composition": "centered, complete body"
+  }
+]

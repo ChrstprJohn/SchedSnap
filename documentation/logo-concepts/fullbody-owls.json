@@ -1,0 +1,39 @@
+{
+  "provider": "built-in image_gen",
+  "model": "built-in image generator (model selector not exposed)",
+  "constraint_delivery_mode": "main-prompt constraints",
+  "candidates": [
+    {
+      "label": "B1",
+      "native_dimensions": [1254, 1254],
+      "direction": "Paper-cut study owl",
+      "rationale": "Wise study companion",
+      "composition": "centered complete body",
+      "palette": {
+        "character": [
+          "#F3E5CA",
+          "#0F172A"
+        ],
+        "background": "#E3EAE2"
+      },
+      "path": "C:/Users/picar/.codex/generated_images/01a10496-5cb0-7600-9ff4-dd00f3914ab0/exec-fccf6503-e7fb-45bb-a19d-74106f38fc15.png",
+      "prompt": "Create one complete 1:1 square image, approximately 1536 by 1536, with square outer corners.\nSubject: one extremely simplified, cute, endearing baby owl, a wise study companion, facing forward, with its COMPLETE BODY visible: entire round body, BOTH rounded wings, and TWO short blunt rounded feet. A tiny blunt rounded beak. Two CLEAR OPEN eyes with large cream eye whites and separate navy circular pupils, clearly visible and forward-facing; not dots or closed eyes. Eyes are simple and readable for later pupil movement.\nComplexity: one weighty soft continuous silhouette, approximately 4–7 large basic shape groups, essential paired wings, feet, and eyes allowed. Two broad character color families only: cream #F3E5CA and deep navy #0F172A. Reuse navy for the face mask, pupils, beak, wings, and feet. Keep everything extremely simple, large and recognizable at 32 by 32.\nComposition: entire character precisely centered upright horizontally and vertically, filling about 78% of the square, with even generous padding around the full body. No cropping, no corner emergence.\nConstraints: one character only. No cap, books, bags, glasses, accessories, text, watermark, border, frame, scenery, external cast shadow, detailed feathers, tiny decorations, sharp tips, thin lines, glossy hotspots, photorealism. The background is uniform solid with no texture, vignette, lighting variation or gradients.\nBackground: muted sage #E3EAE2 fills the entire square.\nStyle: beautifully simple layered paper-cut graphic art with broad rounded flat paper shapes and very slight layer separation. Clean smooth cut edges, no tiny paper texture. Cheerful compact proportions, large eyes and warm expression. Only three semantic colors total including the background."
+    },
+    {
+      "label": "B2",
+      "native_dimensions": [1254, 1254],
+      "direction": "Soft 3D study owl",
+      "rationale": "Wise study companion",
+      "composition": "centered complete body",
+      "palette": {
+        "character": [
+          "#F3E5CA",
+          "#0F172A"
+        ],
+        "background": "#DDE7ED"
+      },
+      "path": "C:/Users/picar/.codex/generated_images/01a10496-5cb0-7600-9ff4-dd00f3914ab0/exec-2131795d-0f32-4db7-b3ee-d9d55b3e6f8b.png",
+      "prompt": "Create one complete 1:1 square image, approximately 1536 by 1536, with square outer corners.\nBackground: pale blue #DDE7ED fills the entire square, perfectly uniform solid.\nSubject: one extremely simplified, cute, endearing baby owl, a wise study companion, facing forward, with COMPLETE BODY visible: entire round body, BOTH rounded wings, and TWO short blunt rounded feet. A tiny blunt rounded beak. Two CLEAR OPEN eyes with large cream eye whites and separate navy circular pupils, clearly visible and forward-facing; not dots or closed eyes. Eyes are simple and readable for later pupil movement.\nComplexity: one weighty soft continuous silhouette, approximately 4–7 large basic shape groups, essential paired wings, feet, and eyes allowed. Two broad character color families only: cream #F3E5CA and deep navy #0F172A. Reuse navy for the face mask, pupils, beak, wings, and feet. Only three semantic colors total including the background. Keep everything extremely simple, large and recognizable at 32 by 32.\nComposition: entire character precisely centered upright horizontally and vertically, filling about 78% of the square, with even generous padding around the full body. No cropping, no corner emergence.\nStyle: soft rounded 3D matte sculptural treatment, smooth broad shapes with subtle soft shading, an adorable compact rounded form and warm expression. Broad shallow sculptural color masses. No glossy toy realism.\nConstraints: one character only. No cap, books, bags, glasses, accessories, text, watermark, border, frame, scenery, external cast shadow, detailed feathers, tiny decorations, sharp tips, thin lines, glossy hotspots, photorealism. The background is uniform solid with no texture, vignette, lighting variation or gradients."
+    }
+  ]
+}
