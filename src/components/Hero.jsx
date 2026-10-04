@@ -14,6 +14,16 @@ export default function Hero() {
     return () => media.revert();
   }, { scope: container });
 
+  const handleExploreClick = (e) => {
+    const target = document.getElementById('services');
+    if (target) {
+      e.preventDefault();
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+      window.history.pushState(null, '', '#services');
+    }
+  };
+
   return (
     <section ref={container} className="landing-hero" aria-labelledby="hero-heading">
       <img className="hero-background" src="/art/hero-study-desk.png" alt="" aria-hidden="true" fetchPriority="high" />
@@ -23,7 +33,12 @@ export default function Hero() {
             A little help for<br /> university life.
           </h1>
           <p data-hero-line className="hero-description">Student tools. Less busywork.</p>
-          <a data-hero-line href="#services" className="button-primary hero-action">
+          <a
+            data-hero-line
+            href="#services"
+            onClick={handleExploreClick}
+            className="button-primary hero-action"
+          >
             Explore tools <ArrowDown className="size-4" aria-hidden="true" />
           </a>
         </div>

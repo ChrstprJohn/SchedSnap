@@ -11,6 +11,7 @@
 }
 
 @layer base {
+  html { scroll-behavior: smooth; }
   body { margin: 0; background: var(--color-paper); color: var(--color-ink); }
   ::selection { background: #dbeafe; color: var(--color-ink); }
   :focus-visible { outline: 3px solid var(--color-accent); outline-offset: 5px; }
