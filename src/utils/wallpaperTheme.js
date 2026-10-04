@@ -25,7 +25,9 @@ export function customizeWallpaperTemplate(template, settings = {}) {
 }
 
 export function colorInputValue(value) {
-  if (/^#[0-9a-f]{6}/i.test(value)) return value.slice(0, 7);
+  if (!value) return '#ffffff';
+  if (/^#[0-9a-f]{6}/i.test(value)) return value.slice(0, 7).toLowerCase();
+  if (/^#[0-9a-f]{3}$/i.test(value)) return `#${value[1]}${value[1]}${value[2]}${value[2]}${value[3]}${value[3]}`.toLowerCase();
   const channels = value?.match(/^rgba?\(\s*(\d+)[,\s]+(\d+)[,\s]+(\d+)/i);
-  return channels ? `#${channels.slice(1).map((channel) => Number(channel).toString(16).padStart(2, '0')).join('')}` : '#ffffff';
+  return channels ? `#${channels.slice(1).map((channel) => Number(channel).toString(16).padStart(2, '0')).join('')}`.toLowerCase() : '#ffffff';
 }
