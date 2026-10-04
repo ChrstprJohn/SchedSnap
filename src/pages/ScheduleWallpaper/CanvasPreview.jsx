@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { Download, LayoutTemplate, Maximize2 } from 'lucide-react';
 import { canvasBlob, drawWallpaper } from '../../utils/canvasHelpers.js';
 import { prepareWallpaperAssets } from '../../utils/wallpaperAssets.js';
+import { downloadBlob } from '../../utils/downloadBlob.js';
 import WallpaperViewer from './WallpaperViewer.jsx';
 import Toast from '../../components/Toast.jsx';
 
@@ -56,18 +57,19 @@ export default function CanvasPreview({ schedule, template, resolution, confirme
       const rendered = drawWallpaper(output, { schedule, template, resolution, backgroundImage });
       if (rendered.overflow) throw new Error('This schedule does not fit. Shorten subject names or reduce optional details.');
       const blob = await canvasBlob(output);
-      const url = URL.createObjectURL(blob);
+      const filename = `unitoolbox-${template.id}-${resolution.width}x${resolution.height}.png`;
+      const { inApp } = downloadBlob(blob, filename);
+      // Keep a fresh object URL for the "Save again" link
       if (lastUrl.current) URL.revokeObjectURL(lastUrl.current);
+      const url = URL.createObjectURL(blob);
       lastUrl.current = url;
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = `unitoolbox-${template.id}-${resolution.width}x${resolution.height}.png`;
-      setExportResult({ url, filename: link.download, key: exportKey });
-      document.body.append(link);
-      link.click();
-      link.remove();
+      setExportResult({ url, filename, key: exportKey });
       setMessageKind('success');
-      setMessage('PNG ready. Download started.');
+      setMessage(
+        inApp
+          ? 'Image opened in a new tab — long-press it and tap Save to Photos / Download.'
+          : 'PNG ready. Download started.'
+      );
     } catch (error) { setMessageKind('error'); setMessage(error.message); }
     finally { setExporting(false); }
   }

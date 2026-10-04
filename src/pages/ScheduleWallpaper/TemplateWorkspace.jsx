@@ -4,6 +4,7 @@ import { getScheduleIssues } from '../../../shared/scheduleSchema.js';
 import { canvasBlob, drawWallpaper, findOverlaps } from '../../utils/canvasHelpers.js';
 import { prepareWallpaperAssets } from '../../utils/wallpaperAssets.js';
 import { mascotTemplateSchedule, templateSchedule } from '../../assets/templates.js';
+import { downloadBlob } from '../../utils/downloadBlob.js';
 import { WallpaperCanvas } from './CanvasPreview.jsx';
 import WallpaperViewer from './WallpaperViewer.jsx';
 import TemplateControls from './TemplateControls.jsx';
@@ -76,19 +77,19 @@ export default function TemplateWorkspace({ step, onStep, template, schedule, re
       if (rendered.overflow) throw new Error('Classes don’t fit. Shorten names or choose another design.');
       const blob = await canvasBlob(output);
       if (!active.current) return;
-      const url = URL.createObjectURL(blob);
-      if (lastUrl.current) URL.revokeObjectURL(lastUrl.current);
-      lastUrl.current = url;
       const filename = `unitoolbox-${template.id}-${resolution.width}x${resolution.height}.png`;
+      const { inApp } = downloadBlob(blob, filename);
+      // Keep a fresh object URL for the "Save again" link
+      if (lastUrl.current) URL.revokeObjectURL(lastUrl.current);
+      const url = URL.createObjectURL(blob);
+      lastUrl.current = url;
       setExportResult({ url, filename, key: exportKey });
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = filename;
-      document.body.append(link);
-      link.click();
-      link.remove();
       setMessageKind('success');
-      setMessage('Download started.');
+      setMessage(
+        inApp
+          ? 'Image opened in a new tab — long-press it and tap Save to Photos / Download.'
+          : 'Download started.'
+      );
     } catch (failure) { setMessageKind('error'); setMessage(failure.message); }
     finally { setExporting(false); }
   }
