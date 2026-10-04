@@ -1,4 +1,4 @@
-import { useEffect, useState, useSyncExternalStore } from 'react';
+import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { wallpaperTemplates } from '../assets/templates.js';
 import { designCollections } from '../config/collections.js';
 
@@ -20,27 +20,42 @@ function StatValue({ display, total }) {
 }
 
 export default function LandingStats() {
+  const sectionRef = useRef(null);
   const [progress, setProgress] = useState(0);
   const reducedMotion = useSyncExternalStore(subscribeToMotion, prefersReducedMotion, () => true);
 
   useEffect(() => {
-    if (reducedMotion) return;
-    let frame;
+    let frame = null;
     let startedAt;
+    let started = false;
     const countUp = (now) => {
+      frame = null;
+      if (prefersReducedMotion()) {
+        setProgress(1);
+        return;
+      }
       startedAt ??= now;
       const elapsed = Math.min((now - startedAt) / COUNT_DURATION, 1);
       setProgress(1 - (1 - elapsed) ** 3);
       if (elapsed < 1) frame = requestAnimationFrame(countUp);
     };
-    frame = requestAnimationFrame(countUp);
-    return () => cancelAnimationFrame(frame);
-  }, [reducedMotion]);
+    const observer = new IntersectionObserver(([entry]) => {
+      if (started || !entry.isIntersecting || entry.intersectionRatio < 0.25) return;
+      started = true;
+      observer.disconnect();
+      frame = requestAnimationFrame(countUp);
+    }, { threshold: 0.25 });
+    observer.observe(sectionRef.current);
+    return () => {
+      observer.disconnect();
+      if (frame !== null) cancelAnimationFrame(frame);
+    };
+  }, []);
 
   const displayedProgress = reducedMotion ? 1 : progress;
 
   return (
-    <section className="landing-stats" aria-label="SchedSnap in numbers">
+    <section ref={sectionRef} className="landing-stats" aria-label="SchedSnap in numbers">
       <dl className="page-wrap">
         <div className="landing-stat">
           <dt>Total visits</dt>
