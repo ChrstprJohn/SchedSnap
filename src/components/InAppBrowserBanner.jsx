@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 /**
  * Detects common in-app / WebView browsers where downloads are broken.
@@ -50,26 +50,43 @@ function openInBrowser() {
 export default function InAppBrowserBanner() {
   const [info, setInfo] = useState(null);
   const [dismissed, setDismissed] = useState(false);
+  const bannerRef = useRef(null);
 
   useEffect(() => {
     const result = detectInAppBrowser();
     if (result.detected) setInfo(result);
   }, []);
 
+  // Set --iab-h on <html> so .site-header can offset itself
+  useEffect(() => {
+    if (!info || dismissed) {
+      document.documentElement.style.removeProperty('--iab-h');
+      return;
+    }
+    const el = bannerRef.current;
+    if (!el) return;
+    const update = () =>
+      document.documentElement.style.setProperty('--iab-h', el.offsetHeight + 'px');
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    return () => { ro.disconnect(); document.documentElement.style.removeProperty('--iab-h'); };
+  }, [info, dismissed]);
+
   if (!info || dismissed) return null;
 
   return (
-    <div className="iab-banner" role="alert" aria-live="polite">
+    <div ref={bannerRef} className="iab-banner" role="alert" aria-live="polite">
       <div className="iab-inner">
         <span className="iab-icon" aria-hidden="true">⚠️</span>
         <div className="iab-text">
         {info.isIOS ? (
             <>
-              <strong>Downloads won't work here.</strong> Tap <strong>···</strong> → <strong>Open in Safari</strong>.
+              Downloads won't work here. Tap <strong>···</strong> → <strong>Open in Safari</strong>.
             </>
           ) : (
             <>
-              <strong>Downloads won't work here.</strong> Open in your browser instead.
+          Downloads won't work here.
             </>
           )}
         </div>
