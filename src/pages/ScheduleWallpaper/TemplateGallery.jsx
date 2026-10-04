@@ -3,18 +3,12 @@ import { ArrowRight, Check, X } from 'lucide-react';
 import { mascotTemplateSchedule, templateSchedule, wallpaperTemplates } from '../../assets/templates.js';
 import { WallpaperCanvas } from './CanvasPreview.jsx';
 import { customizeWallpaperTemplate } from '../../utils/wallpaperTheme.js';
+import { designCollections as collections } from '../../config/collections.js';
 const thumbnailResolution = { id: 'thumbnail', width: 270, height: 600 };
 const previewSchedule = (template) => template.layout === 'mascot' ? mascotTemplateSchedule : templateSchedule;
-const collections = [
-  { id: 'all', name: 'All designs' },
-  { id: 'little-friends', name: 'Chiikawa inspired' },
-  { id: 'mascot', name: 'Mascots' },
-  { id: 'pattern', name: 'Patterns & prints' },
-  { id: 'original', name: 'Originals' },
-];
 
-export default function TemplateGallery({ selectedId, settings = {}, schedule, scheduleTitle = 'Class Schedule', resolution, onSelect }) {
-  const [category, setCategory] = useState('all');
+export default function TemplateGallery({ selectedId, settings = {}, schedule, scheduleTitle = 'Class Schedule', resolution, onSelect, initialCategory = 'all' }) {
+  const [category, setCategory] = useState(() => collections.some((item) => item.id === initialCategory) ? initialCategory : 'all');
   const [preview, setPreview] = useState(null);
   const visibleTemplates = wallpaperTemplates.filter((item) => category === 'all' || (item.collection || 'original') === category);
   return <div>

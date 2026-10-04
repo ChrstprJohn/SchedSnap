@@ -1,0 +1,592 @@
+[
+  {
+    "art": {
+      "bottom": 750,
+      "height": 600,
+      "left": 688.1000366210938,
+      "right": 1277.2000732421875,
+      "top": 150,
+      "width": 589.1000366210938,
+      "x": 688.1000366210938,
+      "y": 150
+    },
+    "bottomPadding": "0px",
+    "copy": {
+      "bottom": 611.5625,
+      "height": 323.125,
+      "left": 157.1999969482422,
+      "right": 587.1999969482422,
+      "top": 288.4375,
+      "width": 430,
+      "x": 157.1999969482422,
+      "y": 288.4375
+    },
+    "headerHeight": 77,
+    "headerText": "SchedSnap",
+    "headingAlign": "start",
+    "height": 900,
+    "hero": {
+      "bottom": 900,
+      "height": 900,
+      "left": 0,
+      "right": 1434.4000244140625,
+      "top": 0,
+      "width": 1434.4000244140625,
+      "x": 0,
+      "y": 0
+    },
+    "images": [
+      {
+        "complete": true,
+        "naturalWidth": 1672
+      },
+      {
+        "complete": true,
+        "naturalWidth": 1448
+      }
+    ],
+    "noteAlign": "start",
+    "overflow": false,
+    "sectionBorders": [
+      "0px",
+      "0px",
+      "0px",
+      "0px",
+      "0px"
+    ],
+    "spaceBelowHeader": -77,
+    "statsTop": 900,
+    "width": 1440
+  },
+  {
+    "art": {
+      "bottom": 788,
+      "height": 446.1000061035156,
+      "left": 16,
+      "right": 353.6000061035156,
+      "top": 341.8999938964844,
+      "width": 337.6000061035156,
+      "x": 16,
+      "y": 341.8999938964844
+    },
+    "bottomPadding": "24px",
+    "copy": {
+      "bottom": 325.90000915527344,
+      "height": 244.90000915527344,
+      "left": 16,
+      "right": 353.6000061035156,
+      "top": 81,
+      "width": 337.6000061035156,
+      "x": 16,
+      "y": 81
+    },
+    "headerHeight": 57,
+    "headerText": "SchedSnap",
+    "headingAlign": "center",
+    "height": 812,
+    "hero": {
+      "bottom": 812,
+      "height": 812,
+      "left": 0,
+      "right": 369.6000061035156,
+      "top": 0,
+      "width": 369.6000061035156,
+      "x": 0,
+      "y": 0
+    },
+    "images": [
+      {
+        "complete": true,
+        "naturalWidth": 1672
+      },
+      {
+        "complete": true,
+        "naturalWidth": 1448
+      }
+    ],
+    "noteAlign": "center",
+    "overflow": false,
+    "sectionBorders": [
+      "0px",
+      "0px",
+      "0px",
+      "0px",
+      "0px"
+    ],
+    "spaceBelowHeader": 24,
+    "statsTop": 812,
+    "width": 375
+  },
+  {
+    "art": {
+      "bottom": 1000,
+      "height": 586.5,
+      "left": 24,
+      "right": 738.4000244140625,
+      "top": 413.5,
+      "width": 714.4000244140625,
+      "x": 24,
+      "y": 413.5
+    },
+    "bottomPadding": "24px",
+    "copy": {
+      "bottom": 397.5,
+      "height": 296.5,
+      "left": 24,
+      "right": 564,
+      "top": 101,
+      "width": 540,
+      "x": 24,
+      "y": 101
+    },
+    "headerHeight": 77,
+    "headerText": "SchedSnap",
+    "headingAlign": "start",
+    "height": 1024,
+    "hero": {
+      "bottom": 1024,
+      "height": 1024,
+      "left": 0,
+      "right": 762.4000244140625,
+      "top": 0,
+      "width": 762.4000244140625,
+      "x": 0,
+      "y": 0
+    },
+    "images": [
+      {
+        "complete": true,
+        "naturalWidth": 1672
+      },
+      {
+        "complete": true,
+        "naturalWidth": 1448
+      }
+    ],
+    "noteAlign": "start",
+    "overflow": false,
+    "sectionBorders": [
+      "0px",
+      "0px",
+      "0px",
+      "0px",
+      "0px"
+    ],
+    "spaceBelowHeader": 24,
+    "statsTop": 1024,
+    "width": 768
+  },
+  {
+    "art": {
+      "bottom": 340,
+      "height": 256,
+      "left": 340.6750183105469,
+      "right": 610.4000244140625,
+      "top": 84,
+      "width": 269.7250061035156,
+      "x": 340.6750183105469,
+      "y": 84
+    },
+    "bottomPadding": "20px",
+    "copy": {
+      "bottom": 312.70001220703125,
+      "height": 201.40000915527344,
+      "left": 24,
+      "right": 320.6750183105469,
+      "top": 111.3000030517578,
+      "width": 296.6750183105469,
+      "x": 24,
+      "y": 111.3000030517578
+    },
+    "headerHeight": 57,
+    "headerText": "SchedSnap",
+    "headingAlign": "center",
+    "height": 360,
+    "hero": {
+      "bottom": 360,
+      "height": 360,
+      "left": 0,
+      "right": 634.4000244140625,
+      "top": 0,
+      "width": 634.4000244140625,
+      "x": 0,
+      "y": 0
+    },
+    "images": [
+      {
+        "complete": true,
+        "naturalWidth": 1672
+      },
+      {
+        "complete": true,
+        "naturalWidth": 1448
+      }
+    ],
+    "noteAlign": "center",
+    "overflow": false,
+    "sectionBorders": [
+      "0px",
+      "0px",
+      "0px",
+      "0px",
+      "0px"
+    ],
+    "spaceBelowHeader": 27,
+    "statsTop": 360,
+    "width": 640
+  },
+  {
+    "art": {
+      "bottom": 643.2000122070312,
+      "height": 301.3000183105469,
+      "left": 16,
+      "right": 353.6000061035156,
+      "top": 341.8999938964844,
+      "width": 337.6000061035156,
+      "x": 16,
+      "y": 341.8999938964844
+    },
+    "bottomPadding": "24px",
+    "copy": {
+      "bottom": 325.90000915527344,
+      "height": 244.90000915527344,
+      "left": 16,
+      "right": 353.6000061035156,
+      "top": 81,
+      "width": 337.6000061035156,
+      "x": 16,
+      "y": 81
+    },
+    "headerHeight": 57,
+    "headerText": "SchedSnap",
+    "headingAlign": "center",
+    "height": 667,
+    "hero": {
+      "bottom": 667.2000122070312,
+      "height": 667.2000122070312,
+      "left": 0,
+      "right": 369.6000061035156,
+      "top": 0,
+      "width": 369.6000061035156,
+      "x": 0,
+      "y": 0
+    },
+    "images": [
+      {
+        "complete": true,
+        "naturalWidth": 1672
+      },
+      {
+        "complete": true,
+        "naturalWidth": 1448
+      }
+    ],
+    "noteAlign": "center",
+    "overflow": false,
+    "sectionBorders": [
+      "0px",
+      "0px",
+      "0px",
+      "0px",
+      "0px"
+    ],
+    "spaceBelowHeader": 24,
+    "statsTop": 667.2000122070312,
+    "width": 375
+  },
+  {
+    "art": {
+      "bottom": 544.0000152587891,
+      "height": 158.9250030517578,
+      "left": 16,
+      "right": 298.3999938964844,
+      "top": 385.0750122070313,
+      "width": 282.3999938964844,
+      "x": 16,
+      "y": 385.0750122070313
+    },
+    "bottomPadding": "24px",
+    "copy": {
+      "bottom": 369.0750122070313,
+      "height": 288.07501220703125,
+      "left": 16,
+      "right": 298.3999938964844,
+      "top": 81,
+      "width": 282.3999938964844,
+      "x": 16,
+      "y": 81
+    },
+    "headerHeight": 57,
+    "headerText": "SchedSnap",
+    "headingAlign": "center",
+    "height": 568,
+    "hero": {
+      "bottom": 568,
+      "height": 568,
+      "left": 0,
+      "right": 314.3999938964844,
+      "top": 0,
+      "width": 314.3999938964844,
+      "x": 0,
+      "y": 0
+    },
+    "images": [
+      {
+        "complete": true,
+        "naturalWidth": 1672
+      },
+      {
+        "complete": true,
+        "naturalWidth": 1448
+      }
+    ],
+    "noteAlign": "center",
+    "overflow": false,
+    "sectionBorders": [
+      "0px",
+      "0px",
+      "0px",
+      "0px",
+      "0px"
+    ],
+    "spaceBelowHeader": 24,
+    "statsTop": 568,
+    "width": 320
+  },
+  {
+    "art": {
+      "bottom": 1156,
+      "height": 735.75,
+      "left": 24,
+      "right": 790.4000244140625,
+      "top": 420.25,
+      "width": 766.4000244140625,
+      "x": 24,
+      "y": 420.25
+    },
+    "bottomPadding": "24px",
+    "copy": {
+      "bottom": 404.25,
+      "height": 303.25,
+      "left": 24,
+      "right": 564,
+      "top": 101,
+      "width": 540,
+      "x": 24,
+      "y": 101
+    },
+    "headerHeight": 77,
+    "headerText": "SchedSnap",
+    "headingAlign": "start",
+    "height": 1180,
+    "hero": {
+      "bottom": 1180,
+      "height": 1180,
+      "left": 0,
+      "right": 814.4000244140625,
+      "top": 0,
+      "width": 814.4000244140625,
+      "x": 0,
+      "y": 0
+    },
+    "images": [
+      {
+        "complete": true,
+        "naturalWidth": 1672
+      },
+      {
+        "complete": true,
+        "naturalWidth": 1448
+      }
+    ],
+    "noteAlign": "start",
+    "overflow": false,
+    "sectionBorders": [
+      "0px",
+      "0px",
+      "0px",
+      "0px",
+      "0px"
+    ],
+    "spaceBelowHeader": 24,
+    "statsTop": 1180,
+    "width": 820
+  },
+  {
+    "art": {
+      "bottom": 645.1124877929688,
+      "height": 522.2374877929688,
+      "left": 486.8999938964844,
+      "right": 994.3999938964844,
+      "top": 122.875,
+      "width": 507.5,
+      "x": 486.8999938964844,
+      "y": 122.875
+    },
+    "bottomPadding": "0px",
+    "copy": {
+      "bottom": 532.1750030517578,
+      "height": 296.3500061035156,
+      "left": 24,
+      "right": 384,
+      "top": 235.8249969482422,
+      "width": 360,
+      "x": 24,
+      "y": 235.8249969482422
+    },
+    "headerHeight": 77,
+    "headerText": "SchedSnap",
+    "headingAlign": "start",
+    "height": 768,
+    "hero": {
+      "bottom": 768,
+      "height": 768,
+      "left": 0,
+      "right": 1018.4000244140624,
+      "top": 0,
+      "width": 1018.4000244140624,
+      "x": 0,
+      "y": 0
+    },
+    "images": [
+      {
+        "complete": true,
+        "naturalWidth": 1672
+      },
+      {
+        "complete": true,
+        "naturalWidth": 1448
+      }
+    ],
+    "noteAlign": "start",
+    "overflow": false,
+    "sectionBorders": [
+      "0px",
+      "0px",
+      "0px",
+      "0px",
+      "0px"
+    ],
+    "spaceBelowHeader": -77,
+    "statsTop": 768,
+    "width": 1024
+  },
+  {
+    "art": {
+      "bottom": 672,
+      "height": 544,
+      "left": 608.1000366210938,
+      "right": 1197.2000732421875,
+      "top": 128,
+      "width": 589.1000366210938,
+      "x": 608.1000366210938,
+      "y": 128
+    },
+    "bottomPadding": "0px",
+    "copy": {
+      "bottom": 555.1625213623047,
+      "height": 310.32501220703125,
+      "left": 77.20000457763672,
+      "right": 507.2000045776367,
+      "top": 244.83750915527344,
+      "width": 430,
+      "x": 77.20000457763672,
+      "y": 244.83750915527344
+    },
+    "headerHeight": 77,
+    "headerText": "SchedSnap",
+    "headingAlign": "start",
+    "height": 800,
+    "hero": {
+      "bottom": 800,
+      "height": 800,
+      "left": 0,
+      "right": 1274.4000244140625,
+      "top": 0,
+      "width": 1274.4000244140625,
+      "x": 0,
+      "y": 0
+    },
+    "images": [
+      {
+        "complete": true,
+        "naturalWidth": 1672
+      },
+      {
+        "complete": true,
+        "naturalWidth": 1448
+      }
+    ],
+    "noteAlign": "start",
+    "overflow": false,
+    "sectionBorders": [
+      "0px",
+      "0px",
+      "0px",
+      "0px",
+      "0px"
+    ],
+    "spaceBelowHeader": -77,
+    "statsTop": 800,
+    "width": 1280
+  },
+  {
+    "art": {
+      "bottom": 840,
+      "height": 600,
+      "left": 928.1000366210938,
+      "right": 1517.2000732421875,
+      "top": 240,
+      "width": 589.1000366210938,
+      "x": 928.1000366210938,
+      "y": 240
+    },
+    "bottomPadding": "0px",
+    "copy": {
+      "bottom": 701.5625,
+      "height": 323.125,
+      "left": 397.2000122070313,
+      "right": 827.2000122070312,
+      "top": 378.4375,
+      "width": 430,
+      "x": 397.2000122070313,
+      "y": 378.4375
+    },
+    "headerHeight": 77,
+    "headerText": "SchedSnap",
+    "headingAlign": "start",
+    "height": 1080,
+    "hero": {
+      "bottom": 1080,
+      "height": 1080,
+      "left": 0,
+      "right": 1914.4000244140625,
+      "top": 0,
+      "width": 1914.4000244140625,
+      "x": 0,
+      "y": 0
+    },
+    "images": [
+      {
+        "complete": true,
+        "naturalWidth": 1672
+      },
+      {
+        "complete": true,
+        "naturalWidth": 1448
+      }
+    ],
+    "noteAlign": "start",
+    "overflow": false,
+    "sectionBorders": [
+      "0px",
+      "0px",
+      "0px",
+      "0px",
+      "0px"
+    ],
+    "spaceBelowHeader": -77,
+    "statsTop": 1080,
+    "width": 1920
+  }
+]

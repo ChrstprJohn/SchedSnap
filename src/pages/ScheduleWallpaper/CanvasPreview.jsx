@@ -57,7 +57,7 @@ export default function CanvasPreview({ schedule, template, resolution, confirme
       const rendered = drawWallpaper(output, { schedule, template, resolution, backgroundImage });
       if (rendered.overflow) throw new Error('This schedule does not fit. Shorten subject names or reduce optional details.');
       const blob = await canvasBlob(output);
-      const filename = `unitoolbox-${template.id}-${resolution.width}x${resolution.height}.png`;
+      const filename = `schedsnap-${template.id}-${resolution.width}x${resolution.height}.png`;
       const { inApp } = downloadBlob(blob, filename);
       // Keep a fresh object URL for the "Save again" link
       if (lastUrl.current) URL.revokeObjectURL(lastUrl.current);

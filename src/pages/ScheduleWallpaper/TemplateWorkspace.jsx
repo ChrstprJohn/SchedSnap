@@ -77,7 +77,7 @@ export default function TemplateWorkspace({ step, onStep, template, schedule, re
       if (rendered.overflow) throw new Error('Classes don’t fit. Shorten names or choose another design.');
       const blob = await canvasBlob(output);
       if (!active.current) return;
-      const filename = `unitoolbox-${template.id}-${resolution.width}x${resolution.height}.png`;
+      const filename = `schedsnap-${template.id}-${resolution.width}x${resolution.height}.png`;
       const { inApp } = downloadBlob(blob, filename);
       // Keep a fresh object URL for the "Save again" link
       if (lastUrl.current) URL.revokeObjectURL(lastUrl.current);

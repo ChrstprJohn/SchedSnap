@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-04T06:55:15.6905901Z",
+  "title": "Design System: SchedSnap",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Deep slate"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "White"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted slate"
+      },
+      "hero-cream": {
+        "role": "neutral",
+        "displayName": "Warm cream"
+      },
+      "hero-muted": {
+        "role": "neutral",
+        "displayName": "Warm muted copy"
+      },
+      "hero-outline": {
+        "role": "neutral",
+        "displayName": "Warm action outline"
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Section headline",
+        "purpose": "Homepage section headings."
+      },
+      "title": {
+        "displayName": "Editor title",
+        "purpose": "Design, Classes and Download page headings."
+      },
+      "label": {
+        "displayName": "Action label",
+        "purpose": "Buttons and common labels."
+      },
+      "display": {
+        "displayName": "Hero display",
+        "purpose": "Homepage headline."
+      },
+      "statistic": {
+        "displayName": "Statistic value",
+        "purpose": "Large tabular homepage counts."
+      }
+    },
+    "shadows": [
+      {
+        "name": "wallpaper-preview",
+        "value": "0 8px 24px rgb(15 23 42 / 10%)",
+        "purpose": "Editor wallpaper preview."
+      },
+      {
+        "name": "preview-controls",
+        "value": "0 2px 8px rgb(15 23 42 / 10%)",
+        "purpose": "Small preview-size controls."
+      },
+      {
+        "name": "mobile-class-actions",
+        "value": "0 -2px 6px rgb(15 23 42 / 3%)",
+        "purpose": "Fixed mobile class action row."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control-state",
+        "value": "160ms ease",
+        "purpose": "Buttons, filters and disclosures."
+      },
+      {
+        "name": "header-state",
+        "value": "180ms ease",
+        "purpose": "Header background and divider transition."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "hero-stack",
+        "value": "800px; portrait through 1100px"
+      },
+      {
+        "name": "mobile-center",
+        "value": "800px; portrait through 1100px"
+      },
+      {
+        "name": "compact",
+        "value": "480px"
+      },
+      {
+        "name": "stack-actions",
+        "value": "800px; portrait through 1100px"
+      },
+      {
+        "name": "short-landscape",
+        "value": "560–1100px width; landscape; max-height 600px"
+      },
+      {
+        "name": "collection-stack-and-mobile-art",
+        "value": "800px; portrait through 1100px"
+      }
+    ],
+    "focus": {
+      "value": "3px solid var(--color-accent); outline-offset: 5px",
+      "purpose": "Shared keyboard focus treatment."
+    },
+    "backdrops": [
+      {
+        "name": "design-preview",
+        "value": "rgb(15 23 42 / 45%)"
+      },
+      {
+        "name": "wallpaper-viewer",
+        "value": "rgb(15 23 42 / 65%)"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main action for creating, importing or downloading.",
+      "html": "<button class=\"ds-primary\">Create my wallpaper</button>",
+      "css": ".ds-primary{display:inline-flex;min-height:44px;align-items:center;justify-content:center;padding:12px 20px;border:0;border-radius:.75rem;background:var(--color-accent,#0f172a);color:white;font-size:.875rem;line-height:20px;font-weight:600;transition:background 160ms ease;font-family:'DM Sans Variable',sans-serif;}.ds-primary:hover:not(:disabled){background:#334155}.ds-primary:focus-visible{outline:3px solid var(--color-accent,#0f172a);outline-offset:5px;}.ds-primary:disabled{opacity:.5;cursor:not-allowed}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "A quieter editing, cancel or change action.",
+      "html": "<button class=\"ds-secondary\">Edit classes</button>",
+      "css": ".ds-secondary{display:inline-flex;min-height:44px;align-items:center;justify-content:center;padding:11px 16px;border:1px solid var(--color-line,#e2e8f0);border-radius:.75rem;background:var(--color-paper,#ffffff);color:var(--color-ink,#0f172a);font-size:.875rem;line-height:20px;font-weight:600;font-family:'DM Sans Variable',sans-serif;}.ds-secondary:hover:not(:disabled){background:var(--color-soft,#f8fafc)}.ds-secondary:focus-visible{outline:3px solid var(--color-accent,#0f172a);outline-offset:5px;}.ds-secondary:disabled{opacity:.5;cursor:not-allowed}"
+    },
+    {
+      "name": "Class Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "A labeled field from the class editor.",
+      "html": "<label class=\"ds-label\">Subject<input class=\"ds-field\" placeholder=\"Subject name\" /></label>",
+      "css": ".ds-label{display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:500;color:var(--color-ink,#0f172a);font-family:'DM Sans Variable',sans-serif;}.ds-field{min-width:0;min-height:44px;padding:8px 12px;border:1px solid var(--color-line,#e2e8f0);border-radius:.5rem;background:white;font-size:.875rem;color:var(--color-ink,#0f172a);font-family:'DM Sans Variable',sans-serif;}.ds-field::placeholder{color:var(--color-muted,#526074);opacity:1}.ds-field:focus-visible{outline:3px solid var(--color-accent,#0f172a);outline-offset:5px;}.ds-field[aria-invalid=true]{border-color:#923b2d}"
+    },
+    {
+      "name": "Collection Filter",
+      "kind": "chip",
+      "refersTo": "collection-filter",
+      "description": "The full gallery collection control.",
+      "html": "<button class=\"ds-filter\" aria-pressed=\"false\">Patterns &amp; prints</button>",
+      "css": ".ds-filter{min-height:44px;padding:10px 16px;border:0;border-radius:999px;background:var(--color-soft,#f8fafc);color:var(--color-muted,#526074);font-size:.875rem;line-height:1.5;font-weight:600;transition:background 160ms ease,color 160ms ease;font-family:'DM Sans Variable',sans-serif;}.ds-filter:hover{background:var(--color-line,#e2e8f0);color:var(--color-ink,#0f172a)}.ds-filter:focus-visible{outline:3px solid var(--color-accent,#0f172a);outline-offset:5px;}"
+    },
+    {
+      "name": "Selected Collection Filter",
+      "kind": "chip",
+      "refersTo": "collection-filter-selected",
+      "description": "The selected full-gallery collection.",
+      "html": "<button class=\"ds-selected-filter\" aria-pressed=\"true\">All designs</button>",
+      "css": ".ds-selected-filter{min-height:44px;padding:10px 16px;border:0;border-radius:999px;background:var(--color-ink,#0f172a);color:var(--color-paper,#ffffff);font-size:.875rem;line-height:1.5;font-weight:600;font-family:'DM Sans Variable',sans-serif;}.ds-selected-filter:focus-visible{outline:3px solid var(--color-accent,#0f172a);outline-offset:5px;}"
+    },
+    {
+      "name": "Home Navigation",
+      "kind": "nav",
+      "description": "Create wallpaper appears on home after scrolling beyond 8px at widths above 640px; hidden at the hero top and on mobile.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a class=\"ds-nav-create\" href=\"/services/schedule-wallpaper\">Create wallpaper <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M5 12h14m-7-7 7 7-7 7\"/></svg></a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;font-size:14px;font-weight:600;font-family:'DM Sans Variable',sans-serif}.ds-nav-create{display:inline-flex;min-height:44px;align-items:center;gap:10px;padding:10px 16px;border:1px solid #dedbd4;border-radius:10px;color:var(--color-ink,#0f172a);text-decoration:none}.ds-nav-create:hover{background:var(--color-soft,#f8fafc)}.ds-nav-create:focus-visible{outline:3px solid var(--color-accent,#0f172a);outline-offset:5px}"
+    },
+    {
+      "name": "Hero Secondary Action",
+      "kind": "button",
+      "refersTo": "hero-secondary",
+      "description": "Explore scrolls to the collection heading.",
+      "html": "<a class=\"ds-hero-secondary\" href=\"#designs\">Explore</a>",
+      "css": ".ds-hero-secondary{display:inline-flex;min-height:50px;align-items:center;justify-content:center;padding:12px 16px;border:1px solid #c9c2b6;border-radius:12px;background:rgb(255 255 255 / 35%);color:var(--color-ink,#0f172a);font:600 14px 'DM Sans Variable',sans-serif;text-decoration:none;transition:background 160ms ease,border-color 160ms ease}.ds-hero-secondary:hover{background:rgb(255 255 255 / 75%);border-color:#9c9487}.ds-hero-secondary:focus-visible{outline:3px solid var(--color-accent,#0f172a);outline-offset:5px}"
+    },
+    {
+      "name": "Landing Statistics",
+      "kind": "custom",
+      "description": "Unboxed three-column row below the hero. Visits remain unavailable until storage is connected.",
+      "html": "<dl class=\"ds-statistics\"><div><dt>Total visits</dt><dd>—</dd></div><div><dt>Total templates</dt><dd>62</dd></div><div><dt>Collections</dt><dd>4</dd></div></dl>",
+      "css": ".ds-statistics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;text-align:center;font-family:'DM Sans Variable',sans-serif}.ds-statistics div{display:flex;flex-direction:column-reverse;gap:8px}.ds-statistics dt{font-size:14px;color:var(--color-muted,#526074)}.ds-statistics dd{margin:0;font-size:clamp(2rem,3.5vw,2.75rem);font-weight:600;letter-spacing:-.04em;line-height:1.1;font-variant-numeric:tabular-nums;color:var(--color-ink,#0f172a)}"
+    }
+  ],
+  "narrative": {
+    "overview": "The established visual direction pairs a creamy product scene with a quiet white/slate application around colorful wallpapers. Concise DM Sans copy and generous spacing give students room to choose and review. A generated transparent navy abstract S mark is the shared brand signature.",
+    "keyCharacteristics": [
+      "White surfaces, slate actions and restrained dividers.",
+      "Independent cream ambient and transparent phone layers; white collection scenes blend into the page.",
+      "One automatically cycling collection showcase with subtle side chevrons, image-first mobile layouts and matching desktop artwork, clear form hierarchy and optional customization."
+    ],
+    "dos": [
+      "Do preserve the white/slate application palette while letting the selected wallpaper carry its own colors.",
+      "Do use the shared renderer for gallery, dialog, live preview and PNG export.",
+      "Do keep keyboard focus visible and honor reduced-motion preferences.",
+      "Do preserve every meeting and block export when the validated layout cannot fit."
+    ],
+    "donts": [
+      "Don't bake headings, timetable text or student information into mascot artwork.",
+      "Don't shrink body type below the established fit limits or grow mascots with schedule density.",
+      "Don't restore general-toolbox or future-service marketing."
+    ]
+  }
+}

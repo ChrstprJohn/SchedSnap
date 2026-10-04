@@ -1,0 +1,86 @@
+[
+  {
+    "customizationOpen": true,
+    "downloadDisabled": false,
+    "height": 740,
+    "overflow": false,
+    "preview": [
+      {
+        "displayWidth": 122.4000015258789,
+        "pixelHeight": 2400,
+        "pixelWidth": 1080
+      }
+    ],
+    "width": 320
+  },
+  {
+    "customizationOpen": true,
+    "downloadDisabled": false,
+    "height": 812,
+    "overflow": false,
+    "preview": [
+      {
+        "displayWidth": 123.20000457763672,
+        "pixelHeight": 2400,
+        "pixelWidth": 1080
+      }
+    ],
+    "width": 375
+  },
+  {
+    "customizationOpen": true,
+    "downloadDisabled": false,
+    "height": 360,
+    "overflow": false,
+    "preview": [
+      {
+        "displayWidth": 124.9000015258789,
+        "pixelHeight": 2400,
+        "pixelWidth": 1080
+      }
+    ],
+    "width": 640
+  },
+  {
+    "customizationOpen": true,
+    "downloadDisabled": false,
+    "height": 1024,
+    "overflow": false,
+    "preview": [
+      {
+        "displayWidth": 293.20001220703125,
+        "pixelHeight": 2400,
+        "pixelWidth": 1080
+      }
+    ],
+    "width": 768
+  },
+  {
+    "customizationOpen": true,
+    "downloadDisabled": false,
+    "height": 768,
+    "overflow": false,
+    "preview": [
+      {
+        "displayWidth": 340,
+        "pixelHeight": 2400,
+        "pixelWidth": 1080
+      }
+    ],
+    "width": 1024
+  },
+  {
+    "customizationOpen": true,
+    "downloadDisabled": false,
+    "height": 900,
+    "overflow": false,
+    "preview": [
+      {
+        "displayWidth": 340,
+        "pixelHeight": 2400,
+        "pixelWidth": 1080
+      }
+    ],
+    "width": 1440
+  }
+]

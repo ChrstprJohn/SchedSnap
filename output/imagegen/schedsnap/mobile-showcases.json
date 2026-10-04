@@ -1,0 +1,76 @@
+{
+  "tool": "Built-in image_gen",
+  "purpose": "Four shared desktop and mobile collection assets; original hero remains unchanged",
+  "assets": [
+    {
+      "id": "hero-phones-mobile",
+      "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-adc376ef-352e-49f2-a069-529328a16148.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/hero-phones-mobile.png",
+      "prompt": "Use case: product-mockup. Create a new mobile-specific photographic 3D smartphone composition using the attached image as wallpaper and phone-material reference. Preserve the referenced wallpaper colors, character drawings and clear Class Schedule UI with five neat rounded weekday rows. Modern dark slim metallic phone frames, realistic glass, restrained reflections, crisp studio quality. Full phone silhouettes must remain visible with 5 percent safe margins, no cut-off edges. Output ONLY the product artwork, no webpage, no headings/buttons outside screens, no new logo or watermark. Foreground for a creamy mobile landing hero. Use EXACTLY TWO phones in a compact offset pair, NOT a three-phone fan. A larger upright sunlit-beige schedule phone in front slightly right, a smaller navy bear schedule phone behind left with a subtle -8 degree lean. Keep both screens readable, preserve existing small cream-orange bear. Center the pair in a 4:3 landscape canvas with tight balanced margins. Genuine transparent alpha around and between phones; only a tiny neutral translucent contact shadow beneath. No white or cream background, no scenery, no leaf shadows outside screens.",
+      "reference": "C:/Users/picar/Desktop/random_project/UniToolbox/public/images/hero-phones.webp",
+      "webAsset": null,
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": true,
+      "status": "unused hero draft, not deployed"
+    },
+    {
+      "id": "little-friends-mobile",
+      "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-53b35c7a-5914-4729-accf-cea2b20e41e4.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/little-friends-mobile.png",
+      "prompt": "Use case: product-mockup. Create a new mobile-specific photographic 3D smartphone composition using the attached image as wallpaper and phone-material reference. Preserve the referenced wallpaper colors, character drawings and clear Class Schedule UI with five neat rounded weekday rows. Modern dark slim metallic phone frames, realistic glass, restrained reflections, crisp studio quality. Full phone silhouettes must remain visible with 5 percent safe margins, no cut-off edges. Output ONLY the product artwork, no webpage, no headings/buttons outside screens, no new logo or watermark. Little Friends mobile collection artwork. EXACTLY ONE large centered upright pink bunny schedule phone, front-on with a very slight natural perspective, fully visible, with the same adorable cream bunny at the bottom of its screen. Tall portrait 4:5 canvas. Clean pure WHITE #ffffff background edge-to-edge, no tint or scenery. Soft small neutral contact shadow immediately below. Do not include the other two phones. The single phone occupies about 85 percent of canvas height.",
+      "reference": "C:/Users/picar/Desktop/random_project/UniToolbox/public/images/collections/little-friends-white.webp",
+      "webAsset": "/images/collections/little-friends-mobile.webp",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "transparent": false,
+      "status": "active"
+    },
+    {
+      "id": "mascot-mobile",
+      "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-a107e3a5-74eb-4903-b267-532de9712a3b.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/mascot-mobile.png",
+      "prompt": "Use case: product-mockup. Create a new mobile-specific photographic 3D smartphone composition using the attached image as wallpaper and phone-material reference. Preserve the referenced wallpaper colors, character drawings and clear Class Schedule UI with five neat rounded weekday rows. Modern dark slim metallic phone frames, realistic glass, restrained reflections, crisp studio quality. Full phone silhouettes must remain visible with 5 percent safe margins, no cut-off edges. Output ONLY the product artwork, no webpage, no headings/buttons outside screens, no new logo or watermark. Mascots mobile collection artwork. EXACTLY TWO phones in a staggered diagonal pair. An ivory panda phone upright in the front at lower right, a smaller lilac cat phone higher behind at upper left tilted slightly -6 degrees. Distinct asymmetric composition, not a three-phone fan. Preserve the cute panda and purple cat art inside screens. Tall portrait 4:5 canvas, full phones visible with balanced safe margin. Pure WHITE #ffffff background edge-to-edge and soft tiny neutral contact shadows, no beige, no tint, no props.",
+      "reference": "C:/Users/picar/Desktop/random_project/UniToolbox/public/images/collections/mascot-white.webp",
+      "webAsset": "/images/collections/mascot-mobile.webp",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "transparent": false,
+      "status": "active"
+    },
+    {
+      "id": "pattern-mobile",
+      "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-9d786606-2cee-4dd2-ac6b-a95c45c54c01.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/pattern-mobile.png",
+      "prompt": "Use case: product-mockup. Create a new mobile-specific photographic 3D smartphone composition using the attached image as wallpaper and phone-material reference. Preserve the referenced wallpaper colors, character drawings and clear Class Schedule UI with five neat rounded weekday rows. Modern dark slim metallic phone frames, realistic glass, restrained reflections, crisp studio quality. Full phone silhouettes must remain visible with 5 percent safe margins, no cut-off edges. Output ONLY the product artwork, no webpage, no headings/buttons outside screens, no new logo or watermark. Patterns mobile collection artwork. EXACTLY TWO clean front-facing upright phones side by side, left a peach-and-cream checkerboard schedule, right a lilac dotted schedule. Left phone slightly higher than right, with slight inward angles of 3 degrees maximum. Full phones and all screen edges visible, close pair but minimal overlap, composition different from a fan or diagonal layering. Tall portrait 4:5 canvas. Pure WHITE #ffffff studio background edge-to-edge with delicate neutral contact shadows. No characters or props.",
+      "reference": "C:/Users/picar/Desktop/random_project/UniToolbox/public/images/collections/pattern-white.webp",
+      "webAsset": "/images/collections/pattern-mobile.webp",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "transparent": false,
+      "status": "active"
+    },
+    {
+      "id": "original-mobile",
+      "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-250e2445-9e07-4404-bec9-17e818042683.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/original-mobile.png",
+      "prompt": "Use case: product-mockup. Create a new mobile-specific photographic 3D smartphone composition using the attached image as wallpaper and phone-material reference. Preserve the referenced wallpaper colors, character drawings and clear Class Schedule UI with five neat rounded weekday rows. Modern dark slim metallic phone frames, realistic glass, restrained reflections, crisp studio quality. Full phone silhouettes must remain visible with 5 percent safe margins, no cut-off edges. Output ONLY the product artwork, no webpage, no headings/buttons outside screens, no new logo or watermark. Originals mobile collection artwork. EXACTLY ONE sophisticated frosted blue schedule phone, centered and leaning slightly 7 degrees clockwise with subtle realistic side-edge depth. Full phone visible and readable, minimal premium composition. Preserve the blue glass-like wallpaper and the schedule layout. Tall portrait 4:5 canvas, phone occupies about 83 percent height. Pure WHITE #ffffff studio background edge-to-edge, soft small neutral contact shadow, no scenery, no tinted backdrop, no characters or other phones.",
+      "reference": "C:/Users/picar/Desktop/random_project/UniToolbox/public/images/collections/original-white.webp",
+      "webAsset": "/images/collections/original-mobile.webp",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "transparent": false,
+      "status": "active"
+    }
+  ]
+}

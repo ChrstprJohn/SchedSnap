@@ -1,0 +1,20 @@
+[
+  {
+    "navDisplay": "flex",
+    "navPresent": true,
+    "scroll": 787.2000122070312,
+    "width": 1440
+  },
+  {
+    "navDisplay": "absent",
+    "navPresent": false,
+    "scroll": 0,
+    "width": 375
+  },
+  {
+    "navDisplay": "none",
+    "navPresent": true,
+    "scroll": 710.4000244140625,
+    "width": 375
+  }
+]

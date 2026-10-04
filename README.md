@@ -1,25 +1,25 @@
-# UniToolbox
+# SchedSnap
 
-A growing collection of useful tools and services for university students.
+A class schedule wallpaper creator for university students. Choose a look, add your classes, and save a phone wallpaper that keeps your week one glance away.
 
-The website will introduce UniToolbox with a hero section and a services section. Each service card will open its own dedicated page, so more tools can be added over time.
+The homepage opens with a static cream hero that fills the first viewport, layering a transparent phone foreground over a separate generated ambient background. Three stats below it show total visits, the actual template count and collection count, followed by four pure-white collection showcases: Little Friends, Mascots, Patterns and Originals. Each Create wallpaper action opens that collection in the template picker. The library contains 62 designs: 20 Chiikawa-inspired Little Friends editions, 20 animal mascots, six editable patterns and 16 originals. The existing `/services/schedule-wallpaper` URL remains compatible.
 
-The first service is a **Class Schedule Wallpaper Generator**: choose a mobile wallpaper template, upload and review your classes in step 2, then preview and download the wallpaper in step 3.
+The flow is **Design → Classes → Download**, guided by page headings and actions. Upload a registration-form image for Gemini extraction, enter classes manually, or try sample data. Review subjects, course codes, days, times and rooms before downloading a 1080 × 2400 PNG. Optional appearance controls edit colors, fonts and day-container styling. Missing or invalid details and schedules that cannot fit block export with a recovery action.
 
-## Project documentation
-
-- [Initial project plan](documentation/PROJECT_PLAN.md)
+Classes, images and per-design settings remain in browser memory until refresh. There is no account or saved schedule history. Uploaded images are sent to Google for analysis and are not stored by the application. The API key stays server-side. An optional Redis counter stores only the aggregate homepage visit total; it is not configured yet.
 
 ## Development
 
-Requires Node.js 22.12+ (Node.js 24 LTS recommended) and npm.
+Requires Node.js 22.12+ and npm.
 
 ```sh
 npm install
 npm run dev
 ```
 
-Copy `.env.example` to `.env.local` and add your Gemini key. An existing `.env` also works. `npm run dev` starts the frontend and a local API adapter, so image analysis works without a Vercel account. To test the Vercel runtime instead, use `npm run dev:full`; its CLI may ask you to sign in and link a project on first use.
+Copy `.env.example` to `.env.local` and set `GEMINI_API_KEY` and `GEMINI_MODEL`; an existing `.env` also works. The verified model configuration is `gemini-3.1-flash-lite`. `npm run dev` runs the frontend and local API adapter. `npm run dev:full` uses the Vercel runtime and may require login and project linking. Run servers in the foreground and stop them when finished.
+
+For real visit totals, set server-only `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN` using an existing Redis database, then restart the dev server (or configure those variables for deployment). Until connected, Total visits displays `—`. See [visit-counter setup and counting rules](documentation/VISIT_COUNTER.md).
 
 ```sh
 npm run lint
@@ -27,21 +27,19 @@ npm test
 npm run build
 ```
 
-## Stack and current scope
+React + Vite, Tailwind CSS, React Router, Lucide, Axios, GSAP, Zod and the Google Gen AI SDK support the application. HTML5 Canvas renders previews and PNG exports. Vercel configuration is present; deployment has not been performed.
 
-React + Vite, Tailwind CSS, React Router, Lucide, Axios, GSAP with `@gsap/react`, Zod, and the Google Gen AI SDK. Vercel hosts the frontend and Node.js functions. HTML5 Canvas renders wallpaper previews and PNG exports.
+The current automated suite passes all 36 tests. Lint and production build pass. The latest hero and stats geometry check covers ten phone, landscape, tablet and desktop sizes from 320 to 1920px. The final visual review returned ship with no material fixes. The earlier workflow audit also checked template selection, class editing, appearance controls and branded PNG generation. See [completion evidence](documentation/COMPLETION_AUDIT.md).
 
-The collection includes 62 mobile wallpaper templates: 20 Chiikawa-inspired Little Friends editions, 20 animal mascot editions, six editable patterns, and the 16 original editorial, frosted-glass, daylight, notebook, and checkerboard styles. The mascot editions range from bold navy, forest, and rust to soft blush, lilac, cream, and neutral everyday palettes. Click a template for an enlarged preview, select it, then upload and review your classes before downloading. Output is a 1080 × 2400 PNG; there are no device, size, or orientation filters. The workflow steps live within the page, separate from the main navigation. Missing or invalid times and layouts that cannot fit all classes block export. See [the template collection and artwork prompts](documentation/WALLPAPER_TEMPLATES.md).
+## Documentation
 
-Mascot artwork is a transparent animal cutout. Canvas paints its uniform background, heading, edition label, and actual timetable separately. All templates share a Class Schedule title, separate day cards, centered circular weekday initials, and aligned times formatted like 7:00 AM–10:00 AM. Cards expand for multiple meetings and wrapped subjects; empty days are skipped. Schedule type fits within 28–42px, mascots keep a fixed 620px maximum occupied dimension in a reserved footer, and overflowing schedules block download. Gallery examples show one neutral meeting per weekday; assets load near the viewport.
-
-The guided flow is **Design → Classes → Download**. Choose a design, upload or enter classes, review the details, then continue to the wallpaper. Desktop class review includes a live preview; phones focus on class entry. The download screen offers optional appearance controls for wallpaper colors, fonts, day-container fill, borders, and shape. Phones keep a small live preview visible while customizing. Going back or changing designs preserves classes and each design’s appearance settings until refresh. Invalid details and overflowing layouts show a visible explanation and recovery action.
-
-Patterns & prints adds six designs with editable background and pattern colors: checks, dots, stripes, diamonds, waves and notebook lines. Image-backed originals keep their background artwork fixed. Appearance controls live in the optional Customize appearance disclosure on the download screen.
-
-You can try sample data or enter classes manually without making an AI request. Form images and schedule edits stay in the current browser session; the app has no database or saved history. Uploaded images are sent to Google for analysis and are not stored by the application.
-
+- [Product behavior](PRODUCT.md)
+- [Design system](DESIGN.md)
+- [Landing page](documentation/LANDING_PAGE.md)
+- [Project status and completion criteria](documentation/PROJECT_PLAN.md)
 - [Technical setup and extension guide](documentation/TECH_STACK.md)
-- [.env.example](.env.example) — server environment variables; copy to `.env.local` for local work.
-
-The API key stays server-side. Use the API model ID `gemini-3.1-flash-lite`, which was verified with a synthetic registration form. A display name such as `Gemini 3.1 Flash Lite` is not a valid API model ID.
+- [Wallpaper templates, artwork prompts and provenance](documentation/WALLPAPER_TEMPLATES.md)
+- [Hero and generated-asset provenance](documentation/HERO_BACKGROUND.md)
+- [Exact generated asset prompts, history and source paths](output/imagegen/schedsnap/prompts.json)
+- [Image revisions](output/imagegen/schedsnap/revisions.json)
+- [Completion and responsive audit](documentation/COMPLETION_AUDIT.md)

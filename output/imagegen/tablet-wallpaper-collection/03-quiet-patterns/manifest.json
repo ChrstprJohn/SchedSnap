@@ -1,0 +1,224 @@
+{
+  "theme": "Quiet Patterns",
+  "date": "2026-10-04",
+  "generator": {
+    "mode": "built-in",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed by built-in tool schema",
+    "constraintDelivery": "main-prompt constraints"
+  },
+  "preservation": "All eight new one-pass generated PNGs copied byte-for-byte. Two previously generated transparent character PNGs reused byte-for-byte. No cropping, resampling, repair or post-processing.",
+  "summary": {
+    "newGeneratedImages": 8,
+    "reusedCharacters": 2,
+    "portraitNative": [
+      1086,
+      1448
+    ],
+    "landscapeNative": [
+      1448,
+      1086
+    ],
+    "allGeneratedRatiosMatch": true
+  },
+  "notes": [
+    "Requested target resolutions were 1536 × 2048 portrait and 2048 × 1536 landscape; built-in outputs returned 1086 × 1448 and 1448 × 1086 respectively. Exact 3:4 / 4:3 canvas ratios are retained.",
+    "Both transparent character assets retain native 1254 × 1254 resolution and alpha 0 at all four corners.",
+    "Combined variants use only the transparent character reference; backgrounds were described verbally to avoid importing narrow phone canvas proportions.",
+    "Character scale and faint pattern are imagegen approximations; all outputs preserved as returned."
+  ],
+  "candidates": [
+    {
+      "label": "C1",
+      "name": "Butter Dumpling",
+      "slug": "butter-dumpling",
+      "rationale": "A cozy study companion",
+      "assignedCorner": "lower-left",
+      "palette": {
+        "character": [
+          "#FFF0D3",
+          "#765445"
+        ],
+        "background": [
+          "#FBF4DD",
+          "#F3E8C5"
+        ]
+      },
+      "character": {
+        "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\03-quiet-patterns\\characters\\butter-dumpling.png",
+        "relativePath": "characters/butter-dumpling.png",
+        "sourcePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\03-quiet-patterns\\characters\\butter-dumpling.png",
+        "width": 1254,
+        "height": 1254,
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "assets": [
+        {
+          "orientation": "portrait",
+          "type": "background",
+          "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\03-quiet-patterns\\portrait\\backgrounds\\butter-dumpling.png",
+          "relativePath": "portrait/backgrounds/butter-dumpling.png",
+          "generatedOriginalPath": "C:\\Users\\picar\\.codex\\generated_images\\01a10551-5b77-7050-a519-388b0daf7dc7\\exec-28b5e792-9caf-4ba0-bf7b-f457a8959687.png",
+          "requestedWidth": 1536,
+          "requestedHeight": 2048,
+          "requestedRatio": "3:4",
+          "width": 1086,
+          "height": 1448,
+          "actualRatio": "3:4",
+          "ratioMatches": true,
+          "pixelFormat": "Format24bppRgb",
+          "prompt": "One single STRICT 3:4 portrait image, desired 1536 × 2048. Canvas orientation and proportion are the primary requirement; ignore any reference canvas ratio.\nBackground: Fill the entire canvas with butter cream #FBF4DD with a very faint large-scale gingham pattern #F3E8C5 made from broad flat horizontal and vertical bands with softly restrained contrast and roomy checks. Keep the pattern extremely faint, flat and clean, a quiet open writing surface for future drawings and a timetable. No objects or scenery.\nBackground-only image: the entire canvas is empty for drawing later. No character or other subject anywhere.\nConstraints: no timetable, text, lettering, UI, cards, fonts, frame, borders, watermark, device, mockup, extra objects, props, decorations, texture, grain, photorealistic materials, dramatic lighting or cast shadow. Keep the pattern evenly spread over all visible background.\nOne single STRICT 3:4 portrait image, desired 1536 × 2048. Canvas orientation and proportion are the primary requirement; ignore any reference canvas ratio."
+        },
+        {
+          "orientation": "portrait",
+          "type": "wallpaper",
+          "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\03-quiet-patterns\\portrait\\wallpapers\\butter-dumpling.png",
+          "relativePath": "portrait/wallpapers/butter-dumpling.png",
+          "generatedOriginalPath": "C:\\Users\\picar\\.codex\\generated_images\\01a10551-5b77-7050-a519-388b0daf7dc7\\exec-36d64eed-98c2-49fe-b93a-ee43e9e516f1.png",
+          "requestedWidth": 1536,
+          "requestedHeight": 2048,
+          "requestedRatio": "3:4",
+          "width": 1086,
+          "height": 1448,
+          "actualRatio": "3:4",
+          "ratioMatches": true,
+          "pixelFormat": "Format24bppRgb",
+          "prompt": "One single STRICT 3:4 portrait image, desired 1536 × 2048. Canvas orientation and proportion are the primary requirement; ignore any reference canvas ratio.\nBackground: Fill the entire canvas with butter cream #FBF4DD with a very faint large-scale gingham pattern #F3E8C5 made from broad flat horizontal and vertical bands with softly restrained contrast and roomy checks. Keep the pattern extremely faint, flat and clean, a quiet open writing surface for future drawings and a timetable. No objects or scenery.\nThe reference is ONLY a supporting character insert, Butter Dumpling, on a transparent square; ignore its square canvas ratio. Preserve the exact reference character identity, rounded silhouette, defining feature, facial expression and two character color families #FFF0D3 and #765445. Place this one upright character fully visible in the lower-left with a modest corner inset. Keep its entire body and all feet and defining feature visible. Character bounding box occupies only the bottom 24% maximum of the image height and maximum 38% of the image width. Keep the upper 74% and the center of the image completely open. Preserve the ultra-clean graphic style of the reference character. Do not redesign, add details or change colors.\nConstraints: no timetable, text, lettering, UI, cards, fonts, frame, borders, watermark, device, mockup, extra objects, props, decorations, texture, grain, photorealistic materials, dramatic lighting or cast shadow. Keep the pattern evenly spread over all visible background.\nOne single STRICT 3:4 portrait image, desired 1536 × 2048. Canvas orientation and proportion are the primary requirement; ignore any reference canvas ratio."
+        },
+        {
+          "orientation": "landscape",
+          "type": "background",
+          "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\03-quiet-patterns\\landscape\\backgrounds\\butter-dumpling.png",
+          "relativePath": "landscape/backgrounds/butter-dumpling.png",
+          "generatedOriginalPath": "C:\\Users\\picar\\.codex\\generated_images\\01a10551-5b77-7050-a519-388b0daf7dc7\\exec-fe41dcdc-c8b5-4c07-835a-ec93d18ed9c0.png",
+          "requestedWidth": 2048,
+          "requestedHeight": 1536,
+          "requestedRatio": "4:3",
+          "width": 1448,
+          "height": 1086,
+          "actualRatio": "4:3",
+          "ratioMatches": true,
+          "pixelFormat": "Format24bppRgb",
+          "prompt": "One single STRICT 4:3 landscape image, desired 2048 × 1536. Canvas orientation and proportion are the primary requirement; ignore any reference canvas ratio.\nBackground: Fill the entire canvas with butter cream #FBF4DD with a very faint large-scale gingham pattern #F3E8C5 made from broad flat horizontal and vertical bands with softly restrained contrast and roomy checks. Keep the pattern extremely faint, flat and clean, a quiet open writing surface for future drawings and a timetable. No objects or scenery.\nBackground-only image: the entire canvas is empty for drawing later. No character or other subject anywhere.\nConstraints: no timetable, text, lettering, UI, cards, fonts, frame, borders, watermark, device, mockup, extra objects, props, decorations, texture, grain, photorealistic materials, dramatic lighting or cast shadow. Keep the pattern evenly spread over all visible background.\nOne single STRICT 4:3 landscape image, desired 2048 × 1536. Canvas orientation and proportion are the primary requirement; ignore any reference canvas ratio."
+        },
+        {
+          "orientation": "landscape",
+          "type": "wallpaper",
+          "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\03-quiet-patterns\\landscape\\wallpapers\\butter-dumpling.png",
+          "relativePath": "landscape/wallpapers/butter-dumpling.png",
+          "generatedOriginalPath": "C:\\Users\\picar\\.codex\\generated_images\\01a10551-5b77-7050-a519-388b0daf7dc7\\exec-a4a493e9-69a4-4ca3-bd0b-6ae921f08b88.png",
+          "requestedWidth": 2048,
+          "requestedHeight": 1536,
+          "requestedRatio": "4:3",
+          "width": 1448,
+          "height": 1086,
+          "actualRatio": "4:3",
+          "ratioMatches": true,
+          "pixelFormat": "Format24bppRgb",
+          "prompt": "One single STRICT 4:3 landscape image, desired 2048 × 1536. Canvas orientation and proportion are the primary requirement; ignore any reference canvas ratio.\nBackground: Fill the entire canvas with butter cream #FBF4DD with a very faint large-scale gingham pattern #F3E8C5 made from broad flat horizontal and vertical bands with softly restrained contrast and roomy checks. Keep the pattern extremely faint, flat and clean, a quiet open writing surface for future drawings and a timetable. No objects or scenery.\nThe reference is ONLY a supporting character insert, Butter Dumpling, on a transparent square; ignore its square canvas ratio. Preserve the exact reference character identity, rounded silhouette, defining feature, facial expression and two character color families #FFF0D3 and #765445. Place this one upright character fully visible in the lower-left with a modest corner inset. Keep its entire body and all feet and defining feature visible. Character bounding box occupies only the bottom 26% maximum of the image height and maximum 22% of the image width. Keep the upper 74% and the center of the image completely open. Preserve the ultra-clean graphic style of the reference character. Do not redesign, add details or change colors.\nConstraints: no timetable, text, lettering, UI, cards, fonts, frame, borders, watermark, device, mockup, extra objects, props, decorations, texture, grain, photorealistic materials, dramatic lighting or cast shadow. Keep the pattern evenly spread over all visible background.\nOne single STRICT 4:3 landscape image, desired 2048 × 1536. Canvas orientation and proportion are the primary requirement; ignore any reference canvas ratio."
+        }
+      ]
+    },
+    {
+      "label": "C2",
+      "name": "Peach Buddy",
+      "slug": "peach-buddy",
+      "rationale": "Fresh energy for a new study day",
+      "assignedCorner": "lower-right",
+      "palette": {
+        "character": [
+          "#EDA899",
+          "#496B54"
+        ],
+        "background": [
+          "#F5E6DF",
+          "#E9D7D0"
+        ]
+      },
+      "character": {
+        "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\03-quiet-patterns\\characters\\peach-buddy.png",
+        "relativePath": "characters/peach-buddy.png",
+        "sourcePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\03-quiet-patterns\\characters\\peach-buddy.png",
+        "width": 1254,
+        "height": 1254,
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "assets": [
+        {
+          "orientation": "portrait",
+          "type": "background",
+          "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\03-quiet-patterns\\portrait\\backgrounds\\peach-buddy.png",
+          "relativePath": "portrait/backgrounds/peach-buddy.png",
+          "generatedOriginalPath": "C:\\Users\\picar\\.codex\\generated_images\\01a10551-5b77-7050-a519-388b0daf7dc7\\exec-5bbacf64-c066-40c3-9d3d-9a12683eaf5b.png",
+          "requestedWidth": 1536,
+          "requestedHeight": 2048,
+          "requestedRatio": "3:4",
+          "width": 1086,
+          "height": 1448,
+          "actualRatio": "3:4",
+          "ratioMatches": true,
+          "pixelFormat": "Format24bppRgb",
+          "prompt": "One single STRICT 3:4 portrait image, desired 1536 × 2048. Canvas orientation and proportion are the primary requirement; ignore any reference canvas ratio.\nBackground: Fill the entire canvas with soft rose cream #F5E6DF with an extremely faint broad evenly spaced notebook grid #E9D7D0, generous cells and subtle unobtrusive lines. Keep the pattern extremely faint, flat and clean, a quiet open writing surface for future drawings and a timetable. No objects or scenery.\nBackground-only image: the entire canvas is empty for drawing later. No character or other subject anywhere.\nConstraints: no timetable, text, lettering, UI, cards, fonts, frame, borders, watermark, device, mockup, extra objects, props, decorations, texture, grain, photorealistic materials, dramatic lighting or cast shadow. Keep the pattern evenly spread over all visible background.\nOne single STRICT 3:4 portrait image, desired 1536 × 2048. Canvas orientation and proportion are the primary requirement; ignore any reference canvas ratio."
+        },
+        {
+          "orientation": "portrait",
+          "type": "wallpaper",
+          "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\03-quiet-patterns\\portrait\\wallpapers\\peach-buddy.png",
+          "relativePath": "portrait/wallpapers/peach-buddy.png",
+          "generatedOriginalPath": "C:\\Users\\picar\\.codex\\generated_images\\01a10551-5b77-7050-a519-388b0daf7dc7\\exec-a7b5e16a-2eee-4aaa-b229-624c029de2e0.png",
+          "requestedWidth": 1536,
+          "requestedHeight": 2048,
+          "requestedRatio": "3:4",
+          "width": 1086,
+          "height": 1448,
+          "actualRatio": "3:4",
+          "ratioMatches": true,
+          "pixelFormat": "Format24bppRgb",
+          "prompt": "One single STRICT 3:4 portrait image, desired 1536 × 2048. Canvas orientation and proportion are the primary requirement; ignore any reference canvas ratio.\nBackground: Fill the entire canvas with soft rose cream #F5E6DF with an extremely faint broad evenly spaced notebook grid #E9D7D0, generous cells and subtle unobtrusive lines. Keep the pattern extremely faint, flat and clean, a quiet open writing surface for future drawings and a timetable. No objects or scenery.\nThe reference is ONLY a supporting character insert, Peach Buddy, on a transparent square; ignore its square canvas ratio. Preserve the exact reference character identity, rounded silhouette, defining feature, facial expression and two character color families #EDA899 and #496B54. Place this one upright character fully visible in the lower-right with a modest corner inset. Keep its entire body and all feet and defining feature visible. Character bounding box occupies only the bottom 24% maximum of the image height and maximum 38% of the image width. Keep the upper 74% and the center of the image completely open. Preserve the ultra-clean graphic style of the reference character. Do not redesign, add details or change colors.\nConstraints: no timetable, text, lettering, UI, cards, fonts, frame, borders, watermark, device, mockup, extra objects, props, decorations, texture, grain, photorealistic materials, dramatic lighting or cast shadow. Keep the pattern evenly spread over all visible background.\nOne single STRICT 3:4 portrait image, desired 1536 × 2048. Canvas orientation and proportion are the primary requirement; ignore any reference canvas ratio."
+        },
+        {
+          "orientation": "landscape",
+          "type": "background",
+          "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\03-quiet-patterns\\landscape\\backgrounds\\peach-buddy.png",
+          "relativePath": "landscape/backgrounds/peach-buddy.png",
+          "generatedOriginalPath": "C:\\Users\\picar\\.codex\\generated_images\\01a10551-5b77-7050-a519-388b0daf7dc7\\exec-8a1583cd-5ad8-435a-972f-2b9f95cdbbb6.png",
+          "requestedWidth": 2048,
+          "requestedHeight": 1536,
+          "requestedRatio": "4:3",
+          "width": 1448,
+          "height": 1086,
+          "actualRatio": "4:3",
+          "ratioMatches": true,
+          "pixelFormat": "Format24bppRgb",
+          "prompt": "One single STRICT 4:3 landscape image, desired 2048 × 1536. Canvas orientation and proportion are the primary requirement; ignore any reference canvas ratio.\nBackground: Fill the entire canvas with soft rose cream #F5E6DF with an extremely faint broad evenly spaced notebook grid #E9D7D0, generous cells and subtle unobtrusive lines. Keep the pattern extremely faint, flat and clean, a quiet open writing surface for future drawings and a timetable. No objects or scenery.\nBackground-only image: the entire canvas is empty for drawing later. No character or other subject anywhere.\nConstraints: no timetable, text, lettering, UI, cards, fonts, frame, borders, watermark, device, mockup, extra objects, props, decorations, texture, grain, photorealistic materials, dramatic lighting or cast shadow. Keep the pattern evenly spread over all visible background.\nOne single STRICT 4:3 landscape image, desired 2048 × 1536. Canvas orientation and proportion are the primary requirement; ignore any reference canvas ratio."
+        },
+        {
+          "orientation": "landscape",
+          "type": "wallpaper",
+          "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\03-quiet-patterns\\landscape\\wallpapers\\peach-buddy.png",
+          "relativePath": "landscape/wallpapers/peach-buddy.png",
+          "generatedOriginalPath": "C:\\Users\\picar\\.codex\\generated_images\\01a10551-5b77-7050-a519-388b0daf7dc7\\exec-d260e59f-e69d-41bc-9a6f-2479ea07882e.png",
+          "requestedWidth": 2048,
+          "requestedHeight": 1536,
+          "requestedRatio": "4:3",
+          "width": 1448,
+          "height": 1086,
+          "actualRatio": "4:3",
+          "ratioMatches": true,
+          "pixelFormat": "Format24bppRgb",
+          "prompt": "One single STRICT 4:3 landscape image, desired 2048 × 1536. Canvas orientation and proportion are the primary requirement; ignore any reference canvas ratio.\nBackground: Fill the entire canvas with soft rose cream #F5E6DF with an extremely faint broad evenly spaced notebook grid #E9D7D0, generous cells and subtle unobtrusive lines. Keep the pattern extremely faint, flat and clean, a quiet open writing surface for future drawings and a timetable. No objects or scenery.\nThe reference is ONLY a supporting character insert, Peach Buddy, on a transparent square; ignore its square canvas ratio. Preserve the exact reference character identity, rounded silhouette, defining feature, facial expression and two character color families #EDA899 and #496B54. Place this one upright character fully visible in the lower-right with a modest corner inset. Keep its entire body and all feet and defining feature visible. Character bounding box occupies only the bottom 26% maximum of the image height and maximum 22% of the image width. Keep the upper 74% and the center of the image completely open. Preserve the ultra-clean graphic style of the reference character. Do not redesign, add details or change colors.\nConstraints: no timetable, text, lettering, UI, cards, fonts, frame, borders, watermark, device, mockup, extra objects, props, decorations, texture, grain, photorealistic materials, dramatic lighting or cast shadow. Keep the pattern evenly spread over all visible background.\nOne single STRICT 4:3 landscape image, desired 2048 × 1536. Canvas orientation and proportion are the primary requirement; ignore any reference canvas ratio."
+        }
+      ]
+    }
+  ]
+}

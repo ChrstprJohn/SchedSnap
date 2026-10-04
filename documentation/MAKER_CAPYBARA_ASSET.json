@@ -1,0 +1,7 @@
+{
+  "mode": "built-in image_gen edit",
+  "source": "public/wallpapers/mascots/capybara.png",
+  "generated": "C:\\Users\\picar\\.codex\\generated_images\\01a105f6-2ddb-7de1-948e-286541713c71\\exec-5c9a9d2d-373e-4dbd-9393-cbd121e8d564.png",
+  "asset": "public/images/maker-capybara-base.webp",
+  "prompt": "Use case: precise-object-edit. Edit target: the supplied existing tan and brown capybara mascot on a transparent square canvas. Remove ONLY the two round dark brown eye dots: one is centered at approximately 31.5% image width / 46.8% height; the other at 51.5% width / 40.4% height. Fill those two eye spots seamlessly with the surrounding tan head color and shading. Keep the capybara's large brown muzzle, tiny nose/nostril marks, mouth, ears, body, legs, silhouette, pose, palette and subtle shading exactly unchanged. Keep the same complete square canvas and the character's exact original scale and location. Do not add any new eyes, details, text or props. Preserve genuine transparent background. This is the base artwork for adding independently animated white eye bases and brown pupils in HTML."
+}

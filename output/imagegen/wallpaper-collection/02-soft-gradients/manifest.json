@@ -1,0 +1,132 @@
+{
+  "collection": "02-soft-gradients",
+  "generation": {
+    "mode": "built-in image_gen",
+    "model": "Not exposed by the runtime tool",
+    "constraint_delivery_mode": "main-prompt constraints",
+    "requested_character_dimensions": [
+      1536,
+      1536
+    ],
+    "requested_portrait_dimensions": [
+      1080,
+      2400
+    ],
+    "one_pass": true,
+    "post_processing": "None; copied native outputs without resampling, cropping, repair or re-generation"
+  },
+  "assets": [
+    {
+      "label": "B1",
+      "name": "Lavender Cloud",
+      "slug": "lavender-cloud",
+      "rationale": "Relaxed companionship: a gentle cloud gives a calm friendly presence beside study plans.",
+      "assigned_corner": "lower-left",
+      "palette": {
+        "character": [
+          "#FFF3DC",
+          "#55536F"
+        ],
+        "background": [
+          "#DED4EB",
+          "#EEDCE5"
+        ]
+      },
+      "files": {
+        "character": {
+          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\characters\\lavender-cloud.png",
+          "relative_path": "output/imagegen/wallpaper-collection/02-soft-gradients/characters/lavender-cloud.png",
+          "dimensions": {
+            "width": 1254,
+            "height": 1254
+          },
+          "source_path": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-fb58-7ab3-9208-b06b4b73030a\\exec-0ead4804-ad27-4539-9ff9-f28f7a545a5e.png",
+          "exact_prompt": "Create one complete 1:1 square image approximately 1536 by 1536 with a genuinely transparent background. Subject: one extremely simplified, cute, endearing friendly cloud creature, one soft continuous silhouette with three large rounded upper lobes merging into one squat body and two stubby rounded arms, both arms fully visible. Use only 4–7 large merged rounded shapes. Color: warm ivory #FFF3DC body, deep indigo #55536F for two tiny widely spaced eyes and one tiny soft rounded mouth, exactly these two semantic color families. Character upright, tightly framed toward lower-left, filling 85–90% of square, fully intact body and arms with a little clear padding on all sides, never cropped. Style: compact baby-like proportions, thick rounded contours, ultra-clean simple graphic treatment readable at 32 by 32. Add an extremely, extremely subtle, almost imperceptible sense of depth through a barely-there neo-skeuomorphic treatment. Constraints: transparent surrounding area with real alpha, no visible background color, checkerboard, text, watermark, outlines, border, frame, card, scenery, props, decorative marks, extra subjects, glossy hotspots, strong 3D rendering, external cast shadow, texture, pointed shapes or fragile lines.",
+          "corner_alpha": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "background": {
+          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\backgrounds\\lavender-cloud.png",
+          "relative_path": "output/imagegen/wallpaper-collection/02-soft-gradients/backgrounds/lavender-cloud.png",
+          "dimensions": {
+            "width": 841,
+            "height": 1870
+          },
+          "source_path": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-fb58-7ab3-9208-b06b4b73030a\\exec-97192347-4792-45e8-b584-abe8d8403108.png",
+          "exact_prompt": "Create one complete portrait image in 9:20 aspect ratio, approximately 1080 by 2400 pixels. Fill the entire canvas with an exceptionally clean gentle smooth lavender #DED4EB at the top transitioning softly into pale blush #EEDCE5 at the bottom. Keep tones chromatic, light and gently muted; subtle elegant vertical gradient with no banding. Every area is clear empty space, calm unobtrusive color that can receive later drawings. Constraints: only the gradient color field; no characters, clouds, subjects, objects, scenery, drawings, text, UI, calendar, schedule, cards, borders, frames, grain, texture, speckles, vignette, halo, glow, spotlight or strong lighting variation. Preserve plain rectangular outer edges."
+        },
+        "wallpaper": {
+          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\wallpapers\\lavender-cloud.png",
+          "relative_path": "output/imagegen/wallpaper-collection/02-soft-gradients/wallpapers/lavender-cloud.png",
+          "dimensions": {
+            "width": 922,
+            "height": 1706
+          },
+          "source_path": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-fb58-7ab3-9208-b06b4b73030a\\exec-f3d565a3-44ea-4775-a700-5c70b60e5477.png",
+          "exact_prompt": "Compose the two provided images into one complete portrait image in 9:20 aspect ratio approximately 1080 by 2400 pixels. Image 1 is the cloud character insert; image 2 is the empty lavender-to-blush gradient background edit target. Preserve image 2's gentle clean lavender #DED4EB to blush #EEDCE5 color transition across the entire new portrait; preserve image 1's ivory #FFF3DC cloud silhouette, rounded lobes, two visible stubby arms, expression, indigo #55536F face colors and simple graphic style. Scale the cloud small, entirely within the bottom 22–25% of the portrait, upright in the LOWER-LEFT corner, with a little padding to keep the whole body intact. The upper 75% must be entirely empty clear gradient space. The character occupies only about 40–46% of the canvas width. Keep the exact character identity while merging its transparent surroundings cleanly onto the background. Constraints: no text, UI, schedule, calendar, grid, cards, drawings, decorative marks, scenery, props, extra subjects, frame, border, glossy highlights, texture, grain, cast shadows, sharp points, halo or glow; never move character to center."
+        }
+      },
+      "notes": "Native dimensions preserved. Portrait ratios vary from requested 9:20 because the built-in tool exposes no explicit size control. Character placement and clear drawing space are generation instructions; combined output proportions are approximate."
+    },
+    {
+      "label": "B2",
+      "name": "Blue Moon",
+      "slug": "blue-moon",
+      "rationale": "Restful evenings: a soft crescent moon adds an endearing quiet companion for planning and unwinding.",
+      "assigned_corner": "lower-right",
+      "palette": {
+        "character": [
+          "#F2D78E",
+          "#4A5B78"
+        ],
+        "background": [
+          "#CFDFEC",
+          "#D7ECE7"
+        ]
+      },
+      "files": {
+        "character": {
+          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\characters\\blue-moon.png",
+          "relative_path": "output/imagegen/wallpaper-collection/02-soft-gradients/characters/blue-moon.png",
+          "dimensions": {
+            "width": 1254,
+            "height": 1254
+          },
+          "source_path": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-fb58-7ab3-9208-b06b4b73030a\\exec-2e15a133-639d-4381-a3e3-10fa9b3c9067.png",
+          "exact_prompt": "Create one complete 1:1 square image approximately 1536 by 1536 with a genuinely transparent background. Subject: one extremely simplified cute endearing upright crescent moon creature; one broad chunky crescent continuous silhouette, both upper and lower tips visibly blunt and rounded, thick inner crescent, compact friendly baby-like proportions. Abstract into 4–7 large merged rounded geometric forms without introducing anatomy or decoration. Color: buttery yellow #F2D78E body and ink blue #4A5B78 for two tiny widely spaced simple eyes and one tiny rounded mouth; exactly these two semantic color families. Composition: upright, tightly framed toward lower-right, filling 85–90% of square, fully visible intact body with a little clear padding on every side, never cropped. Ultra-clean graphic treatment readable at 32 by 32, rounded weighty contours, calm companion. Add an extremely, extremely subtle, almost imperceptible sense of depth through a barely-there neo-skeuomorphic treatment. Constraints: transparent surrounding area with real alpha, no visible background color or checkerboard; no sharp tips, craters, stars, props, extra subjects, text, watermark, outlines, texture, decoration, borders, frames, cards, glossy hotspots, strong 3D rendering or external cast shadow.",
+          "corner_alpha": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "background": {
+          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\backgrounds\\blue-moon.png",
+          "relative_path": "output/imagegen/wallpaper-collection/02-soft-gradients/backgrounds/blue-moon.png",
+          "dimensions": {
+            "width": 922,
+            "height": 1706
+          },
+          "source_path": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-fb58-7ab3-9208-b06b4b73030a\\exec-10ba82c1-64f7-4a68-9c8b-73d1b0f11955.png",
+          "exact_prompt": "Create one complete portrait image in 9:20 aspect ratio, approximately 1080 by 2400 pixels. Fill the entire canvas with an exceptionally clean gentle smooth powder blue #CFDFEC at the top transitioning softly into pale aqua #D7ECE7 at the bottom. Keep tones chromatic, light and gently muted; subtle elegant vertical gradient with no banding. Every area is clear empty space, calm unobtrusive color that can receive later drawings. Constraints: only the gradient color field; no characters, moons, subjects, objects, stars, scenery, drawings, text, UI, calendar, schedule, cards, borders, frames, grain, texture, speckles, vignette, halo, glow, spotlight or strong lighting variation. Preserve plain rectangular outer edges."
+        },
+        "wallpaper": {
+          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\wallpapers\\blue-moon.png",
+          "relative_path": "output/imagegen/wallpaper-collection/02-soft-gradients/wallpapers/blue-moon.png",
+          "dimensions": {
+            "width": 922,
+            "height": 1706
+          },
+          "source_path": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-fb58-7ab3-9208-b06b4b73030a\\exec-f0422731-3316-4dd2-85b5-bb619071daf0.png",
+          "exact_prompt": "Compose the two provided images into one complete portrait image in 9:20 aspect ratio approximately 1080 by 2400 pixels. Image 1 is the moon character insert; image 2 is the empty powder-blue-to-aqua gradient background edit target. Preserve image 2's gentle clean powder blue #CFDFEC to pale aqua #D7ECE7 color transition across the entire new portrait; preserve image 1's buttery yellow #F2D78E broad chunky crescent silhouette, visibly rounded blunt tips, expression, ink blue #4A5B78 face colors and simple graphic style. Scale the moon small, entirely within the bottom 22–25% of the portrait, upright in the LOWER-RIGHT corner, with a little padding to keep the whole body intact. The upper 75% must be entirely empty clear gradient space. The character occupies only about 40–46% of the canvas width. Keep the exact character identity while merging its transparent surroundings cleanly onto the background. Constraints: no text, UI, schedule, calendar, grid, cards, drawings, stars, crater marks, decorative marks, scenery, props, extra subjects, frame, border, glossy highlights, texture, grain, cast shadows, sharp points, halo or glow; never move character to center."
+        }
+      },
+      "notes": "Native dimensions preserved. Portrait ratios vary from requested 9:20 because the built-in tool exposes no explicit size control. Character placement and clear drawing space are generation instructions; combined output proportions are approximate."
+    }
+  ]
+}

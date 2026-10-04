@@ -1,0 +1,158 @@
+{
+  "theme": "Quiet Patterns",
+  "date": "2026-10-04",
+  "generator": {
+    "mode": "built-in",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed by built-in tool schema",
+    "constraintDelivery": "main-prompt constraints"
+  },
+  "preservation": "All six one-pass generated PNGs copied byte-for-byte, no cropping, resampling, repairs or post-processing.",
+  "requestedDimensions": {
+    "character": [
+      1536,
+      1536
+    ],
+    "background": [
+      1080,
+      2400
+    ],
+    "wallpaper": [
+      1080,
+      2400
+    ]
+  },
+  "notes": [
+    "Transparent character assets retain native alpha; all four outer corner pixels have alpha 0.",
+    "Butter Dumpling combined wallpaper returned native 922 × 1706, a wider portrait aspect than the requested 9:20. Preserved as returned.",
+    "Backgrounds and combined images are RGB opaque canvases; both character bodies remain fully visible."
+  ],
+  "candidates": [
+    {
+      "label": "C1",
+      "name": "Butter Dumpling",
+      "slug": "butter-dumpling",
+      "rationale": "A cozy study companion",
+      "assignedCorner": "lower-left",
+      "palette": {
+        "character": [
+          "#FFF0D3",
+          "#765445"
+        ],
+        "background": [
+          "#FBF4DD",
+          "#F3E8C5"
+        ]
+      },
+      "assets": {
+        "character": {
+          "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\03-quiet-patterns\\characters\\butter-dumpling.png",
+          "relativePath": "characters/butter-dumpling.png",
+          "generatedOriginalPath": "C:\\Users\\picar\\.codex\\generated_images\\01a10551-5b77-7050-a519-388b0daf7dc7\\exec-3d61f3b3-8e84-43fb-8ee3-b6988c829ed7.png",
+          "width": 1254,
+          "height": 1254,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "background": {
+          "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\03-quiet-patterns\\backgrounds\\butter-dumpling.png",
+          "relativePath": "backgrounds/butter-dumpling.png",
+          "generatedOriginalPath": "C:\\Users\\picar\\.codex\\generated_images\\01a10551-5b77-7050-a519-388b0daf7dc7\\exec-554b5bb7-8a98-4d2a-a740-bb41a7cbe22c.png",
+          "width": 841,
+          "height": 1870,
+          "cornerAlpha": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "wallpaper": {
+          "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\03-quiet-patterns\\wallpapers\\butter-dumpling.png",
+          "relativePath": "wallpapers/butter-dumpling.png",
+          "generatedOriginalPath": "C:\\Users\\picar\\.codex\\generated_images\\01a10551-5b77-7050-a519-388b0daf7dc7\\exec-8572ef71-383a-4434-8db8-b44c5f08f6d9.png",
+          "width": 922,
+          "height": 1706,
+          "cornerAlpha": [
+            255,
+            255,
+            255,
+            255
+          ]
+        }
+      },
+      "prompts": {
+        "character": "Create one complete 1:1 square image, approximately 1536 × 1536, with a genuinely transparent empty background. Show one extremely simple cute baby-like character, fully visible upright with all body parts preserved, filling about 85% of the square and tucked close to the assigned lower corner with a small safe margin. Use one soft continuous silhouette built from 4–7 large broad rounded geometric forms and at most two broad internal color regions. Use only two tiny simple eyes and one tiny mouth. Keep it recognizable at 32 × 32. Use exactly two semantic character colors, reused for facial marks. Graphic clean rounded heavy forms, no outlines. Add an extremely, extremely subtle, almost imperceptible sense of depth through a barely-there neo-skeuomorphic treatment.\nSubject: one plump baby dumpling creature, one broad rounded dumpling body with a single very broad soft fold across its top and tiny rounded integrated feet. Its one defining feature is the broad soft fold; do not add repeated pleats. Colors: creamy vanilla #FFF0D3 for its plump body, cocoa #765445 for the broad fold, eyes and tiny mouth. Composition: assigned lower-left, near that corner, entire body and both feet visible.\nConstraints: no text, watermarks, frames, borders, cards, extra subjects, scenery, props, shadow on the empty background, sharp tips, fragile lines, detailed materials, gloss, texture, outlines, decorations, repeated pleats or anatomical detail. Keep the background genuinely transparent.",
+        "background": "Create one complete portrait 9:20 image, approximately 1080 × 2400. Fill the entire image with clean butter cream #FBF4DD and a barely visible large-scale gingham pattern #F3E8C5. The gingham uses broad flat horizontal and vertical bands with softly restrained contrast and roomy checks. Keep it so subtle that handwriting or a timetable can be drawn over the entire image later. Pattern evenly covers all open areas, clean flat surfaces, no objects. Constraints: background only; no characters, text, watermark, scenery, drawings, cards, panels, frames, dark lines, paper grain, textures, vignette, lighting effects or shadows.",
+        "wallpaper": "Create one complete portrait 9:20 image, approximately 1080 × 2400. Input image 1 is the supporting character insert: Butter Dumpling. Input image 2 is the edit target background. Preserve the exact friendly face, rounded silhouette, defining feature, character colors and visual identity from image 1. Preserve the background color, subtle pattern, spacing and quiet visual appearance from image 2 across the entire portrait. Compose only these two elements together. Place the upright, fully visible Butter Dumpling in the lower-left with a modest safe margin, occupying only the bottom 22–25% of the portrait height. Keep the upper 75% completely open so a timetable, handwriting and drawings can be added later. Entire character must remain visible including all feet and the defining feature. Character is a small gentle companion. Use the same clean softly dimensional graphic treatment as the character reference, with its own colors unchanged. Constraints: no text, schedule, UI, cards, panels, borders, watermark, other characters, props, scenery, additional decorative marks, dark shadows, dark outlines, grain, texture, dramatic lighting, character redesign or perspective. Keep the faint reference background pattern and clean writing space."
+      }
+    },
+    {
+      "label": "C2",
+      "name": "Peach Buddy",
+      "slug": "peach-buddy",
+      "rationale": "Fresh energy for a new study day",
+      "assignedCorner": "lower-right",
+      "palette": {
+        "character": [
+          "#EDA899",
+          "#496B54"
+        ],
+        "background": [
+          "#F5E6DF",
+          "#E9D7D0"
+        ]
+      },
+      "assets": {
+        "character": {
+          "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\03-quiet-patterns\\characters\\peach-buddy.png",
+          "relativePath": "characters/peach-buddy.png",
+          "generatedOriginalPath": "C:\\Users\\picar\\.codex\\generated_images\\01a10551-5b77-7050-a519-388b0daf7dc7\\exec-e7d4d03b-b003-4c60-9f31-4efadb530a9d.png",
+          "width": 1254,
+          "height": 1254,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "background": {
+          "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\03-quiet-patterns\\backgrounds\\peach-buddy.png",
+          "relativePath": "backgrounds/peach-buddy.png",
+          "generatedOriginalPath": "C:\\Users\\picar\\.codex\\generated_images\\01a10551-5b77-7050-a519-388b0daf7dc7\\exec-cd78d634-bae0-45ae-994b-633c6b25ec5e.png",
+          "width": 840,
+          "height": 1871,
+          "cornerAlpha": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "wallpaper": {
+          "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\03-quiet-patterns\\wallpapers\\peach-buddy.png",
+          "relativePath": "wallpapers/peach-buddy.png",
+          "generatedOriginalPath": "C:\\Users\\picar\\.codex\\generated_images\\01a10551-5b77-7050-a519-388b0daf7dc7\\exec-0a583591-a267-41fe-8966-94f71ba8c391.png",
+          "width": 841,
+          "height": 1870,
+          "cornerAlpha": [
+            255,
+            255,
+            255,
+            255
+          ]
+        }
+      },
+      "prompts": {
+        "character": "Create one complete 1:1 square image, approximately 1536 × 1536, with a genuinely transparent empty background. Show one extremely simple cute baby-like character, fully visible upright with all body parts preserved, filling about 85% of the square and tucked close to the assigned lower corner with a small safe margin. Use one soft continuous silhouette built from 4–7 large broad rounded geometric forms and at most two broad internal color regions. Use only two tiny simple eyes and one tiny mouth. Keep it recognizable at 32 × 32. Use exactly two semantic character colors, reused for facial marks. Graphic clean rounded heavy forms, no outlines. Add an extremely, extremely subtle, almost imperceptible sense of depth through a barely-there neo-skeuomorphic treatment.\nSubject: one personified rounded baby peach, a broad round body with a shallow blunt top cleft and ONE large rounded leaf, no narrow stem. Its one defining feature is the broad rounded leaf. Colors: coral peach #EDA899 for the broad body, deep sage #496B54 for the one large leaf and the tiny eyes and mouth. Composition: assigned lower-right, near that corner, entire body and leaf fully visible. Keep the leaf broad, blunt, rounded and simple.\nConstraints: no text, watermarks, frames, borders, cards, extra subjects, scenery, props, shadow on the empty background, sharp tips, fragile lines, detailed materials, gloss, texture, outlines, decorations or anatomical detail. Keep the background genuinely transparent.",
+        "background": "Create one complete portrait 9:20 image, approximately 1080 × 2400. Fill the entire image with clean soft rose cream #F5E6DF and an extremely faint broad notebook grid #E9D7D0. Grid cells are generous and evenly spaced; grid lines are softly restrained, unobtrusive and subtle. It should look like an almost empty gentle rosy canvas with a faint practical grid that handwriting or a timetable can be drawn on later. Clean flat surfaces, no objects. Constraints: background only; no characters, text, watermark, scenery, drawings, cards, panels, frames, dark lines, paper grain, textures, vignette, lighting effects or shadows.",
+        "wallpaper": "Create one complete portrait 9:20 image, approximately 1080 × 2400. Input image 1 is the supporting character insert: Peach Buddy. Input image 2 is the edit target background. Preserve the exact friendly face, rounded silhouette, defining feature, character colors and visual identity from image 1. Preserve the background color, subtle pattern, spacing and quiet visual appearance from image 2 across the entire portrait. Compose only these two elements together. Place the upright, fully visible Peach Buddy in the lower-right with a modest safe margin, occupying only the bottom 22–25% of the portrait height. Keep the upper 75% completely open so a timetable, handwriting and drawings can be added later. Entire character must remain visible including all feet and the defining feature. Character is a small gentle companion. Use the same clean softly dimensional graphic treatment as the character reference, with its own colors unchanged. Constraints: no text, schedule, UI, cards, panels, borders, watermark, other characters, props, scenery, additional decorative marks, dark shadows, dark outlines, grain, texture, dramatic lighting, character redesign or perspective. Keep the faint reference background pattern and clean writing space."
+      }
+    }
+  ]
+}

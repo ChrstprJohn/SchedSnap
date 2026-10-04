@@ -1,0 +1,188 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "id": "hero-phones",
+      "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-996857d8-9727-409a-a0dc-487f8c6cb5c1.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/hero-phones.png",
+      "prompt": "Use case: product-mockup foreground cutout. Edit target: the supplied SchedSnap mobile hero image. Isolate the THREE existing modern smartphone mockups as a SINGLE centered transparent-background foreground asset. Preserve ALL THREE phones, their full silhouettes, relative scale and overlapping arrangement, metallic dark frames, angled navy bear on left, upright sunlit beige schedule phone in center, angled ivory panda on right, their Class Schedule screen titles and five weekday schedule pill rows, and cute character graphics. Remove the entire cream studio environment and ALL leaf shadows/background scenery around the phones. Genuinely transparent alpha outside the phones, including between silhouettes; no solid white/beige rectangle and no checkerboard baked into pixels. Retain only a delicate soft neutral-gray translucent contact shadow immediately below the phone group if possible. Full phones visible with tight but comfortable 5 percent transparent margin around the centered group; no wide empty left half. High-resolution premium photorealistic 3D studio render. No website text, web layout, logo, buttons, extra phones, objects, watermark or scenery. Output landscape 4:3. The user's isolated white studio prompt is adapted to transparent output for clean web compositing, preserving only text already present inside the phone screens.",
+      "webAsset": "/images/hero-phones.webp",
+      "transparentBackground": true
+    },
+    {
+      "id": "hero-ambient",
+      "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-0a4c1220-20b7-462e-8165-84dca1199bde.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/hero-ambient.png",
+      "prompt": "Use case: architectural ambient website background layer. Minimalist warm ivory beige seamless architectural studio background with soft natural sunlight and subtle out-of-focus leaf shadows cast across a smooth matte surface. Clean creamy aesthetic, high resolution, soft focus, wide angle, completely EMPTY composition. Use a restrained light warm ivory palette around #faf6ef, quiet diffuse daylight, very faint warm leaf shadows mostly toward the upper right and lower right, left side nearly flat clear ivory for live website text. A smooth wall-to-floor transition without a distinct horizon line, no geometric arches or decorative props. No phones, no objects, no pedestals, no text, no letters, no buttons, no logos, no people, no website screenshot or layout, no watermark. Landscape 16:9 edge-to-edge image. This is ONLY an ambient background: the smartphones and all website typography will be layered separately in code.",
+      "webAsset": "/images/hero-ambient.webp",
+      "transparentBackground": false
+    },
+    {
+      "id": "logo",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10545-0bac-7bf3-8068-059100400688\\exec-8327a31c-06c9-4004-8268-e4d71e54d76b.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/logo.png",
+      "prompt": "Use case: logo-brand. Generate one extremely clean minimal abstract symbol for SchedSnap, a schedule-to-phone-wallpaper app. A single compact icon, centered and occupying most of a square frame, on a genuinely TRANSPARENT background. Symbol: a distinctive lowercase-style geometric S made from TWO staggered rounded horizontal schedule strips that join through negative space, suggesting a neatly snapped-together weekly schedule. Smooth confident rounded curves, optically balanced, simple modern vector-flat silhouette, dark midnight navy #0f172a ONLY. No phone outline, no calendar outline, no sparkles, no yellow accent, no mascot, no letters or wordmark outside the symbol, no fine lines, no gradients, no shading, no shadows, no 3D, no surrounding app tile. Must remain recognizable as one strong S symbol at 24 pixels. Clean transparent edges.",
+      "webAsset": "/brand/schedsnap-mark.webp"
+    },
+    {
+      "id": "little-friends-mobile",
+      "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-53b35c7a-5914-4729-accf-cea2b20e41e4.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/little-friends-mobile.png",
+      "prompt": "Use case: product-mockup. Create a new mobile-specific photographic 3D smartphone composition using the attached image as wallpaper and phone-material reference. Preserve the referenced wallpaper colors, character drawings and clear Class Schedule UI with five neat rounded weekday rows. Modern dark slim metallic phone frames, realistic glass, restrained reflections, crisp studio quality. Full phone silhouettes must remain visible with 5 percent safe margins, no cut-off edges. Output ONLY the product artwork, no webpage, no headings/buttons outside screens, no new logo or watermark. Little Friends mobile collection artwork. EXACTLY ONE large centered upright pink bunny schedule phone, front-on with a very slight natural perspective, fully visible, with the same adorable cream bunny at the bottom of its screen. Tall portrait 4:5 canvas. Clean pure WHITE #ffffff background edge-to-edge, no tint or scenery. Soft small neutral contact shadow immediately below. Do not include the other two phones. The single phone occupies about 85 percent of canvas height.",
+      "reference": "C:/Users/picar/Desktop/random_project/UniToolbox/public/images/collections/little-friends-white.webp",
+      "webAsset": "/images/collections/little-friends-mobile.webp",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "transparent": false
+    },
+    {
+      "id": "mascot-mobile",
+      "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-a107e3a5-74eb-4903-b267-532de9712a3b.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/mascot-mobile.png",
+      "prompt": "Use case: product-mockup. Create a new mobile-specific photographic 3D smartphone composition using the attached image as wallpaper and phone-material reference. Preserve the referenced wallpaper colors, character drawings and clear Class Schedule UI with five neat rounded weekday rows. Modern dark slim metallic phone frames, realistic glass, restrained reflections, crisp studio quality. Full phone silhouettes must remain visible with 5 percent safe margins, no cut-off edges. Output ONLY the product artwork, no webpage, no headings/buttons outside screens, no new logo or watermark. Mascots mobile collection artwork. EXACTLY TWO phones in a staggered diagonal pair. An ivory panda phone upright in the front at lower right, a smaller lilac cat phone higher behind at upper left tilted slightly -6 degrees. Distinct asymmetric composition, not a three-phone fan. Preserve the cute panda and purple cat art inside screens. Tall portrait 4:5 canvas, full phones visible with balanced safe margin. Pure WHITE #ffffff background edge-to-edge and soft tiny neutral contact shadows, no beige, no tint, no props.",
+      "reference": "C:/Users/picar/Desktop/random_project/UniToolbox/public/images/collections/mascot-white.webp",
+      "webAsset": "/images/collections/mascot-mobile.webp",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "transparent": false
+    },
+    {
+      "id": "pattern-mobile",
+      "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-9d786606-2cee-4dd2-ac6b-a95c45c54c01.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/pattern-mobile.png",
+      "prompt": "Use case: product-mockup. Create a new mobile-specific photographic 3D smartphone composition using the attached image as wallpaper and phone-material reference. Preserve the referenced wallpaper colors, character drawings and clear Class Schedule UI with five neat rounded weekday rows. Modern dark slim metallic phone frames, realistic glass, restrained reflections, crisp studio quality. Full phone silhouettes must remain visible with 5 percent safe margins, no cut-off edges. Output ONLY the product artwork, no webpage, no headings/buttons outside screens, no new logo or watermark. Patterns mobile collection artwork. EXACTLY TWO clean front-facing upright phones side by side, left a peach-and-cream checkerboard schedule, right a lilac dotted schedule. Left phone slightly higher than right, with slight inward angles of 3 degrees maximum. Full phones and all screen edges visible, close pair but minimal overlap, composition different from a fan or diagonal layering. Tall portrait 4:5 canvas. Pure WHITE #ffffff studio background edge-to-edge with delicate neutral contact shadows. No characters or props.",
+      "reference": "C:/Users/picar/Desktop/random_project/UniToolbox/public/images/collections/pattern-white.webp",
+      "webAsset": "/images/collections/pattern-mobile.webp",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "transparent": false
+    },
+    {
+      "id": "original-mobile",
+      "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-250e2445-9e07-4404-bec9-17e818042683.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/original-mobile.png",
+      "prompt": "Use case: product-mockup. Create a new mobile-specific photographic 3D smartphone composition using the attached image as wallpaper and phone-material reference. Preserve the referenced wallpaper colors, character drawings and clear Class Schedule UI with five neat rounded weekday rows. Modern dark slim metallic phone frames, realistic glass, restrained reflections, crisp studio quality. Full phone silhouettes must remain visible with 5 percent safe margins, no cut-off edges. Output ONLY the product artwork, no webpage, no headings/buttons outside screens, no new logo or watermark. Originals mobile collection artwork. EXACTLY ONE sophisticated frosted blue schedule phone, centered and leaning slightly 7 degrees clockwise with subtle realistic side-edge depth. Full phone visible and readable, minimal premium composition. Preserve the blue glass-like wallpaper and the schedule layout. Tall portrait 4:5 canvas, phone occupies about 83 percent height. Pure WHITE #ffffff studio background edge-to-edge, soft small neutral contact shadow, no scenery, no tinted backdrop, no characters or other phones.",
+      "reference": "C:/Users/picar/Desktop/random_project/UniToolbox/public/images/collections/original-white.webp",
+      "webAsset": "/images/collections/original-mobile.webp",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "transparent": false
+    }
+  ],
+  "history": [
+    {
+      "id": "hero",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10545-0bac-7bf3-8068-059100400688\\exec-cbc7c7e5-07da-4243-a692-79daadf81f4e.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/hero.png",
+      "prompt": "Use case: product-mockup. Edit target / composition reference: the attached three-phone class schedule image. Create a new polished wide 16:9 LANDSCAPE hero background for SchedSnap. Extend the reference into a warm creamy studio environment. The LEFT 48 PERCENT of the image must be entirely clean EMPTY warm ivory negative space, with no objects, phones, text, patterns or harsh shadows; this will hold website headline and buttons drawn separately. On the RIGHT HALF ONLY arrange the three realistic dimensional modern phones from the reference, large and elegant, slightly floating above a matte cream floor with soft physical shadows: upright sunlight-beige class schedule phone at center of the group, tilted midnight-navy cute hamster schedule phone behind on its left, tilted ivory panda schedule phone behind on its right. Closely preserve the wallpapers in the reference, their Class Schedule title, five neat weekday pill rows and cute animals; do not add decorative objects. All three phones entirely inside the frame with comfortable margins, group between x=53% and x=96%, and y=10% to y=90%. Realistic dark slim metallic edges, restrained natural reflections, soft warm diffused studio light, photoreal premium 3D product render. Quiet warm off-white #f7f3eb background with seamless floor, no visible horizon, no vignettes, no gray cast, no grain, no floating badges, no extra writing outside phones, no website mockup, no logo or watermark. The left is empty and flat creamy; the right is the dimensional product showcase.",
+      "webAsset": "/images/hero-schedsnap.webp"
+    },
+    {
+      "id": "little-friends",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10545-0bac-7bf3-8068-059100400688\\exec-60e679f3-73c7-4e7c-a5c8-c53481544da5.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/little-friends.png",
+      "prompt": "Use case: product-mockup. Asset type: SchedSnap Little Friends collection showcase image, wide 4:3 landscape. Input image 1 is the phone arrangement/product reference; any remaining input images are precise wallpaper artwork references. Generate a premium clean photoreal 3D studio product shot with THREE realistic modern slim phones arranged centrally, all entirely visible with generous 8% outer margin. Upright central phone in foreground, outer phones leaning slightly outward behind it, physical metallic edges and convincing screen perspective. Matte warm ivory creamy seamless studio background and floor, soft diffused daylight, soft offset floor shadows, no harsh gray background or horizon. Phones show Three soft pastel class-schedule wallpapers from the Little Friends collection: pink cream bunny, pale lilac blue-and-white sleepy kitten, powder blue small round white friend. Match the character art references faithfully, placing the cute character at the bottom of each wallpaper. Pastel pink, lilac and blue backgrounds, rounded white weekday schedule pills. Each screen has Class Schedule title and five clean weekday rows M, T, W, TH, F with small sample class codes/times/rooms, consistent readable layout like phone reference. Keep clock area above schedule open. No personal information, no desk objects, no badges, no text outside phone screens, no logo, no watermark. Make the actual wallpaper styles the centerpiece, harmonious colors, clean elegant composition matching the hero. This is one collection product image, not a website screenshot or contact sheet.",
+      "webAsset": "/images/collections/little-friends.webp"
+    },
+    {
+      "id": "mascot",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10545-0bac-7bf3-8068-059100400688\\exec-fcdfbd38-01f2-431d-958e-c85389aabab3.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/mascot.png",
+      "prompt": "Use case: product-mockup. Asset type: SchedSnap Mascots collection showcase image, wide 4:3 landscape. Input image 1 is the phone arrangement/product reference; any remaining input images are precise wallpaper artwork references. Generate a premium clean photoreal 3D studio product shot with THREE realistic modern slim phones arranged centrally, all entirely visible with generous 8% outer margin. Upright central phone in foreground, outer phones leaning slightly outward behind it, physical metallic edges and convincing screen perspective. Matte warm ivory creamy seamless studio background and floor, soft diffused daylight, soft offset floor shadows, no harsh gray background or horizon. Phones show Three animal class-schedule wallpapers: midnight navy with a cute warm cream bear, ivory with a cute black-and-white panda, lilac with a cute cream purple-marked cat. Match the supplied animal art references, and place each mascot at the bottom. White or translucent weekday schedule pills. Each screen has Class Schedule title and five clean weekday rows M, T, W, TH, F with small sample class codes/times/rooms, consistent readable layout like phone reference. Keep clock area above schedule open. No personal information, no desk objects, no badges, no text outside phone screens, no logo, no watermark. Make the actual wallpaper styles the centerpiece, harmonious colors, clean elegant composition matching the hero. This is one collection product image, not a website screenshot or contact sheet.",
+      "webAsset": "/images/collections/mascot.webp"
+    },
+    {
+      "id": "pattern",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10545-0bac-7bf3-8068-059100400688\\exec-92d3dcbb-4bd8-4bac-a150-75d0a1180325.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/pattern.png",
+      "prompt": "Use case: product-mockup. Asset type: SchedSnap Patterns collection showcase image, wide 4:3 landscape. Input image 1 is the phone arrangement/product reference; any remaining input images are precise wallpaper artwork references. Generate a premium clean photoreal 3D studio product shot with THREE realistic modern slim phones arranged centrally, all entirely visible with generous 8% outer margin. Upright central phone in foreground, outer phones leaning slightly outward behind it, physical metallic edges and convincing screen perspective. Matte warm ivory creamy seamless studio background and floor, soft diffused daylight, soft offset floor shadows, no harsh gray background or horizon. Phones show Three graphic class-schedule wallpapers: warm cream and peach broad checkerboard, pale lavender with fine dots, muted light blue with soft wide vertical stripes. No animal or characters in this collection. Centered simple dark Class Schedule heading, separate off-white rounded schedule pills over the pattern backgrounds. Each screen has Class Schedule title and five clean weekday rows M, T, W, TH, F with small sample class codes/times/rooms, consistent readable layout like phone reference. Keep clock area above schedule open. No personal information, no desk objects, no badges, no text outside phone screens, no logo, no watermark. Make the actual wallpaper styles the centerpiece, harmonious colors, clean elegant composition matching the hero. This is one collection product image, not a website screenshot or contact sheet.",
+      "webAsset": "/images/collections/pattern.webp"
+    },
+    {
+      "id": "original",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10545-0bac-7bf3-8068-059100400688\\exec-3d43b58a-dab9-447e-a947-e3499effbb06.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/original.png",
+      "prompt": "Use case: product-mockup. Asset type: SchedSnap Originals collection showcase image, wide 4:3 landscape. Input image 1 is the phone arrangement/product reference; any remaining input images are precise wallpaper artwork references. Generate a premium clean photoreal 3D studio product shot with THREE realistic modern slim phones arranged centrally, all entirely visible with generous 8% outer margin. Upright central phone in foreground, outer phones leaning slightly outward behind it, physical metallic edges and convincing screen perspective. Matte warm ivory creamy seamless studio background and floor, soft diffused daylight, soft offset floor shadows, no harsh gray background or horizon. Phones show Three sophisticated class-schedule wallpapers: cream sunlit window-shadow wallpaper with natural botanical shadows, frosted blue glass wallpaper with soft optical reflections, restrained dark olive green wallpaper. Match attached background-art references. No animals or characters. Rounded softly translucent weekday schedule pills, white typography on darker wallpaper, charcoal on beige. Each screen has Class Schedule title and five clean weekday rows M, T, W, TH, F with small sample class codes/times/rooms, consistent readable layout like phone reference. Keep clock area above schedule open. No personal information, no desk objects, no badges, no text outside phone screens, no logo, no watermark. Make the actual wallpaper styles the centerpiece, harmonious colors, clean elegant composition matching the hero. This is one collection product image, not a website screenshot or contact sheet.",
+      "webAsset": "/images/collections/original.webp"
+    },
+    {
+      "id": "hero-balanced",
+      "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-f9a49f55-70ae-4821-b546-eb5fda6de5d1.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/hero-balanced.png",
+      "prompt": "Use case: product-mockup. Edit the attached existing SchedSnap hero background. Keep the same landscape 16:9 aspect ratio, warm ivory cream seamless studio background, soft natural daylight, and the SAME three phone designs: navy cute cream bear schedule, sunlight beige schedule, ivory panda schedule. The current phones are MUCH TOO LARGE. Reduce the entire three-phone group to about 65 PERCENT of its current size, without zooming or cropping the canvas. Place the smaller three-phone arrangement entirely in the right portion: group bounds x=55% to x=91% of canvas width, y=23% to y=78% of canvas height. Phones centered near x=73%, y=50%; there must be generous cream space ABOVE, BELOW, and RIGHT of the phone group. Entire phones visible, natural slim edges, one central upright beige phone and two gently angled outer phones, same coherent shadows at the smaller scale. LEFT 52 PERCENT must stay empty and very clean for live website text, no objects or shadows behind copy. Preserve wallpaper characters, titles and neat five-row schedule graphics. Aim for balanced restrained product scale, quiet premium editorial landing-page composition, not a giant close-up. Soft matte cream floor blending into background, no horizon, no extra props, no writing outside phones, no website UI, no logo or watermark. Do not produce a website screenshot. Output ONLY the updated photographic hero background.",
+      "historical": true
+    },
+    {
+      "id": "hero",
+      "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-18ed1c29-0308-4498-b867-09701aa1be3a.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/hero-final.png",
+      "prompt": "Use case: product-mockup. Make a SMALL composition adjustment to this existing SchedSnap landscape hero background, preserving its 16:9 canvas. Keep the exact cream studio scene and ALL THREE existing phones, their current SMALL balanced size, schedule graphics, navy cream-bear / beige sunlight / ivory panda wallpapers, angles, and soft shadows. Move the entire phone group only slightly LEFT by 2 percent of canvas width, and DOWN by 2 percent of canvas height. Do not enlarge or shrink the group. Balance the empty space above and below the phones evenly, keeping ample breathing room. Keep left half clean empty cream for live website text. All phones fully visible. No other objects or text, no website UI, no watermark.",
+      "webAsset": "/images/hero-schedsnap-balanced.webp"
+    },
+    {
+      "id": "hero-mobile",
+      "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-e76a813e-6fff-40b3-ae77-dd91cff2ddad.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/hero-mobile.png",
+      "prompt": "Use case: product-mockup. Generate a dedicated MOBILE HERO showcase asset from the attached SchedSnap three-phone background. Output landscape 4:3, NOT 16:9. Same clean warm creamy seamless studio environment and soft light. Same exact three class-schedule wallpaper phones: upright beige sunlight phone centered in foreground; navy cream-bear phone angled slightly behind on left; ivory panda phone angled slightly behind on right. Preserve their schedule titles, weekday pill rows, cute art and modern metallic dark frames. Recompose the phones as a centered group at x=50%, occupying about 78 percent of image width and 74 percent of image height, leaving comfortable balanced margins all around. The entire three phones must be visible without clipping. This image will appear BELOW live headline and buttons on a mobile website, so there should NOT be a wide empty left half. Soft restrained contact shadows under phones, matte cream background matching original, no horizon, no props, no outside text, no logo, no website screenshot or interface. Premium clean photoreal product shot, balanced centered mobile showcase.",
+      "webAsset": "/images/hero-schedsnap-mobile.webp"
+    },
+    {
+      "id": "hero-phones-mobile",
+      "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-adc376ef-352e-49f2-a069-529328a16148.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/hero-phones-mobile.png",
+      "prompt": "Use case: product-mockup. Create a new mobile-specific photographic 3D smartphone composition using the attached image as wallpaper and phone-material reference. Preserve the referenced wallpaper colors, character drawings and clear Class Schedule UI with five neat rounded weekday rows. Modern dark slim metallic phone frames, realistic glass, restrained reflections, crisp studio quality. Full phone silhouettes must remain visible with 5 percent safe margins, no cut-off edges. Output ONLY the product artwork, no webpage, no headings/buttons outside screens, no new logo or watermark. Foreground for a creamy mobile landing hero. Use EXACTLY TWO phones in a compact offset pair, NOT a three-phone fan. A larger upright sunlit-beige schedule phone in front slightly right, a smaller navy bear schedule phone behind left with a subtle -8 degree lean. Keep both screens readable, preserve existing small cream-orange bear. Center the pair in a 4:3 landscape canvas with tight balanced margins. Genuine transparent alpha around and between phones; only a tiny neutral translucent contact shadow beneath. No white or cream background, no scenery, no leaf shadows outside screens.",
+      "reference": "C:/Users/picar/Desktop/random_project/UniToolbox/public/images/hero-phones.webp",
+      "webAsset": null,
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": true,
+      "status": "Unused mobile hero draft; original three-phone hero retained at user request"
+    },
+    {
+      "id": "little-friends",
+      "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-fa8b99d3-8331-4ee4-8240-b1073736ab92.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/little-friends-white.png",
+      "prompt": "Use case: product-mockup background edit. Edit this existing SchedSnap collection showcase photograph. Preserve all THREE phones EXACTLY: their positions, size, angles, metallic edges, wallpaper colors, schedule titles, five weekday rows, patterns and character artwork. Change ONLY the entire studio environment behind and around the phones to perfectly clean pure WHITE #FFFFFF, matching a white website page. The edges, corners, top and sides of the image MUST be pure neutral white, without warm beige, cream, gray, gradients, texture, vignette, sun beams or botanical shadow. Keep only a delicate neutral gray SOFT CONTACT SHADOW immediately beneath the phones, fading smoothly into pure white, to ground them naturally. No shadow cast over the outer background, no colored ambient tint. Seamless white product photography, no horizon, no props, no additional text, no watermark. Preserve 4:3 landscape aspect ratio and all phones entirely inside the image.",
+      "webAsset": "/images/collections/little-friends-white.webp",
+      "historical": true,
+      "status": "Retired desktop collection scene; portrait collection assets now used on all screen sizes"
+    },
+    {
+      "id": "mascot",
+      "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-10387a29-51db-4f95-a2b7-987ef1f47c2d.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/mascot-white.png",
+      "prompt": "Use case: product-mockup background edit. Edit this existing SchedSnap collection showcase photograph. Preserve all THREE phones EXACTLY: their positions, size, angles, metallic edges, wallpaper colors, schedule titles, five weekday rows, patterns and character artwork. Change ONLY the entire studio environment behind and around the phones to perfectly clean pure WHITE #FFFFFF, matching a white website page. The edges, corners, top and sides of the image MUST be pure neutral white, without warm beige, cream, gray, gradients, texture, vignette, sun beams or botanical shadow. Keep only a delicate neutral gray SOFT CONTACT SHADOW immediately beneath the phones, fading smoothly into pure white, to ground them naturally. No shadow cast over the outer background, no colored ambient tint. Seamless white product photography, no horizon, no props, no additional text, no watermark. Preserve 4:3 landscape aspect ratio and all phones entirely inside the image.",
+      "webAsset": "/images/collections/mascot-white.webp",
+      "historical": true,
+      "status": "Retired desktop collection scene; portrait collection assets now used on all screen sizes"
+    },
+    {
+      "id": "pattern",
+      "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-04e2f096-9e22-4f11-8cd9-2e90f731757b.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/pattern-white.png",
+      "prompt": "Use case: product-mockup background edit. Edit this existing SchedSnap collection showcase photograph. Preserve all THREE phones EXACTLY: their positions, size, angles, metallic edges, wallpaper colors, schedule titles, five weekday rows, patterns and character artwork. Change ONLY the entire studio environment behind and around the phones to perfectly clean pure WHITE #FFFFFF, matching a white website page. The edges, corners, top and sides of the image MUST be pure neutral white, without warm beige, cream, gray, gradients, texture, vignette, sun beams or botanical shadow. Keep only a delicate neutral gray SOFT CONTACT SHADOW immediately beneath the phones, fading smoothly into pure white, to ground them naturally. No shadow cast over the outer background, no colored ambient tint. Seamless white product photography, no horizon, no props, no additional text, no watermark. Preserve 4:3 landscape aspect ratio and all phones entirely inside the image.",
+      "webAsset": "/images/collections/pattern-white.webp",
+      "historical": true,
+      "status": "Retired desktop collection scene; portrait collection assets now used on all screen sizes"
+    },
+    {
+      "id": "original",
+      "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-93ef3942-6b40-41b6-a5d6-19a5ff525fcb.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/original-white.png",
+      "prompt": "Use case: product-mockup background edit. Edit this existing SchedSnap collection showcase photograph. Preserve all THREE phones EXACTLY: their positions, size, angles, metallic edges, wallpaper colors, schedule titles, five weekday rows, patterns and character artwork. Change ONLY the entire studio environment behind and around the phones to perfectly clean pure WHITE #FFFFFF, matching a white website page. The edges, corners, top and sides of the image MUST be pure neutral white, without warm beige, cream, gray, gradients, texture, vignette, sun beams or botanical shadow. Keep only a delicate neutral gray SOFT CONTACT SHADOW immediately beneath the phones, fading smoothly into pure white, to ground them naturally. No shadow cast over the outer background, no colored ambient tint. Seamless white product photography, no horizon, no props, no additional text, no watermark. Preserve 4:3 landscape aspect ratio and all phones entirely inside the image.",
+      "webAsset": "/images/collections/original-white.webp",
+      "historical": true,
+      "status": "Retired desktop collection scene; portrait collection assets now used on all screen sizes"
+    }
+  ]
+}

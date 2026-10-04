@@ -12,12 +12,10 @@ export default function App() {
   const isWallpaperEditor = pathname.startsWith('/services/schedule-wallpaper');
 
   useEffect(() => {
-    const section = hash === '#services' ? document.getElementById('services') : null;
+    const section = hash === '#designs' ? document.getElementById('designs') : null;
     if (section) section.scrollIntoView({ behavior: 'instant' });
     else window.scrollTo({ top: 0, behavior: 'instant' });
-    if (!isWallpaperEditor) document.title = pathname === '/services/schedule-wallpaper'
-      ? 'Schedule wallpaper — UniToolbox'
-      : 'UniToolbox — Tools for university life';
+    if (!isWallpaperEditor) document.title = pathname === '/' ? 'SchedSnap — Your class schedule, one glance away' : 'Page not found — SchedSnap';
   }, [pathname, hash, isWallpaperEditor]);
 
   return (
@@ -26,15 +24,15 @@ export default function App() {
       <InAppBrowserBanner />
       <Navbar />
       <main id="main" className="flex-1" tabIndex={-1}>
-        <Suspense fallback={<p className="page-wrap py-20" role="status">Opening tool…</p>}>
+        <Suspense fallback={<p className="page-wrap py-20" role="status">Opening wallpaper creator…</p>}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services/schedule-wallpaper/*" element={<ScheduleWallpaper />} />
             <Route path="*" element={
               <section className="page-wrap py-24">
                 <h1 className="text-4xl font-semibold">Page not found</h1>
-                <p className="mt-4 text-muted">Head back to the toolbox to find a service.</p>
-                <Link to="/" className="button-primary mt-8">Back to UniToolbox</Link>
+                <p className="mt-4 text-muted">Head back to SchedSnap to create your schedule wallpaper.</p>
+                <Link to="/" className="button-primary mt-8">Back to SchedSnap</Link>
               </section>
             } />
           </Routes>
