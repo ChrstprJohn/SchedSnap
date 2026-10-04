@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { ArrowRight, ChevronDown, Download, LayoutTemplate, Maximize2, Pencil, SlidersHorizontal } from 'lucide-react';
+import { ArrowRight, ChevronDown, Download, LayoutTemplate, Maximize2, Minus, Pencil, Plus, SlidersHorizontal } from 'lucide-react';
 import { getScheduleIssues } from '../../../shared/scheduleSchema.js';
 import { canvasBlob, drawWallpaper, findOverlaps } from '../../utils/canvasHelpers.js';
 import { prepareWallpaperAssets } from '../../utils/wallpaperAssets.js';
@@ -15,6 +15,7 @@ export default function TemplateWorkspace({ step, onStep, template, schedule, re
   const [enlarged, setEnlarged] = useState(false);
   const [customizing, setCustomizing] = useState(false);
   const [previewStuck, setPreviewStuck] = useState(false);
+  const [previewSizeLevel, setPreviewSizeLevel] = useState(2);
   const [reviewVersion, setReviewVersion] = useState(0);
   const [layout, setLayout] = useState(null);
   const [exporting, setExporting] = useState(false);
@@ -92,11 +93,17 @@ export default function TemplateWorkspace({ step, onStep, template, schedule, re
     finally { setExporting(false); }
   }
 
-  const preview = <div className="flow-preview-art">
+  const sizeClass = previewSizeLevel === 1 ? 'preview-size-sm' : previewSizeLevel === 3 ? 'preview-size-lg' : 'preview-size-md';
+  const preview = <div className={`flow-preview-art ${sizeClass}`}>
     <button type="button" aria-label="Enlarge wallpaper" aria-haspopup="dialog" onClick={() => setEnlarged(true)} className="flow-wallpaper">
       <WallpaperCanvas schedule={shownSchedule} template={template} resolution={resolution} onLayout={updateLayout} className="block h-auto w-full" label={`${template.name} ${hasSchedule ? 'with your classes' : 'with sample classes'}`} />
       <span className="preview-enlarge" aria-hidden="true"><Maximize2 size={16} /></span>
     </button>
+    <div className="preview-size-controls" aria-label="Preview size controls">
+      <button type="button" aria-label="Decrease preview size" disabled={previewSizeLevel <= 1} onClick={() => setPreviewSizeLevel((s) => Math.max(1, s - 1))} className="preview-size-btn"><Minus size={13} aria-hidden="true" /></button>
+      <span className="preview-size-label">{previewSizeLevel === 1 ? 'S' : previewSizeLevel === 2 ? 'M' : 'L'}</span>
+      <button type="button" aria-label="Increase preview size" disabled={previewSizeLevel >= 3} onClick={() => setPreviewSizeLevel((s) => Math.min(3, s + 1))} className="preview-size-btn"><Plus size={13} aria-hidden="true" /></button>
+    </div>
   </div>;
 
   return <>

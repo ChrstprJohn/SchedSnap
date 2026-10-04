@@ -82,7 +82,7 @@ export default function Editor({ schedule, onChange, onImport, preparingImage, v
     <section ref={editor} aria-labelledby="editor-heading" className="class-form rounded-xl border border-line bg-white">
       <div className="review-toolbar rounded-t-xl bg-soft px-4">
         <div className="schedule-title-control">{editingTitle ? <><label id="editor-heading" htmlFor="schedule-title" className="sr-only">Schedule title</label><input ref={titleInput} id="schedule-title" className="field-input" value={titleDraft} maxLength={48} onChange={(event) => setTitleDraft(event.target.value)} onBlur={saveTitle} onKeyDown={(event) => { if (event.key === 'Enter') { event.preventDefault(); saveTitle(); } else if (event.key === 'Escape') { event.preventDefault(); setEditingTitle(false); } }} /></> : <><h2 id="editor-heading" className="schedule-title">{scheduleTitle}</h2><button type="button" className="icon-button" aria-label="Edit schedule title" onClick={() => { setTitleDraft(scheduleTitle); setEditingTitle(true); }}><Pencil size={15} aria-hidden="true" /></button></>}</div>
-          {onImport && <button type="button" className="button-secondary" data-import-trigger disabled={preparingImage} onClick={onImport}><ImageUp size={16} aria-hidden="true" />{preparingImage ? 'Preparing…' : 'Upload image'}</button>}
+          {onImport && <button type="button" className="button-secondary" data-import-trigger disabled={preparingImage} onClick={onImport}><ImageUp size={16} aria-hidden="true" />{preparingImage ? 'Preparing…' : <>Upload<span className="hidden sm:inline">&nbsp;image</span></>}</button>}
       </div>
       <div className="border-t border-line">
         {schedule.classes.map((course, index) => {

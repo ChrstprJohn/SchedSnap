@@ -1,3 +1,4 @@
+import { ChevronDown } from 'lucide-react';
 import { colorInputValue, wallpaperFonts } from '../../utils/wallpaperTheme.js';
 
 const colorFields = {
@@ -10,14 +11,16 @@ const colorFields = {
 const editablePatterns = new Set(['checker', 'grid', 'ruled', 'circle', 'dots', 'stripes', 'diamonds', 'waves']);
 
 function AppearanceColor({ colorKey, template, onChange, toggleKey }) {
-  const { label, colors } = colorFields[colorKey];
-  const value = template[colorKey] || (colorKey === 'patternColor' ? template.pattern === 'circle' ? '#ad5b45' : template.line : '#ffffff');
+  const { label, colors: defaultColors } = colorFields[colorKey];
+  const rawValue = template[colorKey] || (colorKey === 'patternColor' ? (template.pattern === 'circle' ? '#ad5b45' : template.line) : '#ffffff');
+  const normalizedValue = colorInputValue(rawValue);
+  const colors = [normalizedValue, ...defaultColors.filter((color) => colorInputValue(color) !== normalizedValue)].slice(0, 3);
   const enabled = !toggleKey || template[toggleKey] !== false;
   return <div className="appearance-row">
     {toggleKey ? <label className="appearance-label appearance-switch"><input type="checkbox" checked={enabled} onChange={(event) => onChange(toggleKey, event.target.checked)} />{label}</label> : <span className="appearance-label">{label}</span>}
     <fieldset className="appearance-palette" aria-label={`${label} choices`} disabled={!enabled}>
-      {colors.map((color) => <button key={color} type="button" aria-label={`${label} ${color}`} aria-pressed={colorInputValue(value) === color} onClick={() => onChange(colorKey, color)} className="color-swatch" style={{ '--swatch': color }} />)}
-      <label className="custom-color" title={`Custom ${label.toLowerCase()}`}><span className="sr-only">Custom {label.toLowerCase()}</span><input type="color" aria-label={`Custom ${label.toLowerCase()}`} value={colorInputValue(value)} onChange={(event) => onChange(colorKey, event.target.value)} /></label>
+      {colors.map((color) => <button key={color} type="button" aria-label={`${label} ${color}`} aria-pressed={normalizedValue === colorInputValue(color)} onClick={() => onChange(colorKey, color)} className="color-swatch" style={{ '--swatch': color }} />)}
+      <label className="custom-color" title={`Custom ${label.toLowerCase()}`}><span className="sr-only">Custom {label.toLowerCase()}</span><input type="color" aria-label={`Custom ${label.toLowerCase()}`} value={normalizedValue} onChange={(event) => onChange(colorKey, event.target.value)} /></label>
     </fieldset>
   </div>;
 }
@@ -32,15 +35,33 @@ export default function TemplateControls({ template, onChange, onReset }) {
     </fieldset>
     <fieldset className="appearance-group">
       <legend>Day containers</legend>
-      <div className="appearance-row"><label className="appearance-label" htmlFor="appearance-shape">Shape</label><select id="appearance-shape" className="field-input appearance-select" value={template.containerShape || 'pill'} onChange={(event) => onChange('containerShape', event.target.value)}><option value="pill">Pill</option><option value="rounded">Rounded rectangle</option></select></div>
+      <div className="appearance-row">
+        <label className="appearance-label" htmlFor="appearance-shape">Shape</label>
+        <div className="field-select appearance-select">
+          <select id="appearance-shape" className="field-input" value={template.containerShape || 'pill'} onChange={(event) => onChange('containerShape', event.target.value)}>
+            <option value="pill">Pill</option>
+            <option value="rounded">Rounded rectangle</option>
+          </select>
+          <ChevronDown size={16} className="field-select-icon" aria-hidden="true" />
+        </div>
+      </div>
       <AppearanceColor colorKey="surface" template={template} onChange={onChange} toggleKey="containerFill" />
       <AppearanceColor colorKey="line" template={template} onChange={onChange} toggleKey="containerBorder" />
     </fieldset>
     <fieldset className="appearance-group">
       <legend>Schedule Text</legend>
-      <div className="appearance-row"><label className="appearance-label" htmlFor="appearance-font">Font family</label><select id="appearance-font" className="field-input appearance-select" value={template.fontFamily || 'DM Sans Variable'} onChange={(event) => onChange('fontFamily', event.target.value)}>{wallpaperFonts.map(({ value, label }) => <option key={value} value={value}>{label}</option>)}</select></div>
+      <div className="appearance-row">
+        <label className="appearance-label" htmlFor="appearance-font">Font family</label>
+        <div className="field-select appearance-select">
+          <select id="appearance-font" className="field-input" value={template.fontFamily || 'DM Sans Variable'} onChange={(event) => onChange('fontFamily', event.target.value)}>
+            {wallpaperFonts.map(({ value, label }) => <option key={value} value={value}>{label}</option>)}
+          </select>
+          <ChevronDown size={16} className="field-select-icon" aria-hidden="true" />
+        </div>
+      </div>
       <AppearanceColor colorKey="ink" template={template} onChange={onChange} />
     </fieldset>
     <button type="button" className="text-link appearance-reset" onClick={onReset}>Reset appearance</button>
   </aside>;
 }
+
