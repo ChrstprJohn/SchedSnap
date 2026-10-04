@@ -1,46 +1,29 @@
-import { useRef } from 'react';
-import { ArrowDown } from 'lucide-react';
-import { gsap, useGSAP } from '../lib/animation.js';
+import { Link } from 'react-router';
+import { ArrowRight } from 'lucide-react';
 
 export default function Hero() {
-  const container = useRef(null);
-
-  useGSAP(() => {
-    const media = gsap.matchMedia();
-    media.add('(prefers-reduced-motion: no-preference)', () => {
-      const entrance = gsap.timeline({ defaults: { ease: 'expo.out' } });
-      entrance.from('[data-hero-line]', { y: 18, duration: 0.85, stagger: 0.08 });
+  function exploreDesigns() {
+    document.getElementById('designs')?.scrollIntoView({
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+      block: 'start',
     });
-    return () => media.revert();
-  }, { scope: container });
-
-  const handleExploreClick = (e) => {
-    const target = document.getElementById('services');
-    if (target) {
-      e.preventDefault();
-      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth' });
-      window.history.pushState(null, '', '#services');
-    }
-  };
+  }
 
   return (
-    <section ref={container} className="landing-hero" aria-labelledby="hero-heading">
-      <img className="hero-background" src="/art/hero-study-desk.png" alt="" aria-hidden="true" fetchPriority="high" />
+    <section className="landing-hero" aria-labelledby="hero-heading">
+      <img className="hero-ambient" src="/images/hero-ambient.webp" alt="" aria-hidden="true" width="1672" height="941" decoding="async" />
       <div className="page-wrap hero-content">
         <div className="hero-copy">
-          <h1 id="hero-heading" data-hero-line className="hero-heading">
-            A little help for<br /> university life.
-          </h1>
-          <p data-hero-line className="hero-description">Student tools. Less busywork.</p>
-          <a
-            data-hero-line
-            href="#services"
-            onClick={handleExploreClick}
-            className="button-primary hero-action"
-          >
-            Explore tools <ArrowDown className="size-4" aria-hidden="true" />
-          </a>
+          <h1 id="hero-heading" className="hero-heading">Your schedule.<br />On your screen.</h1>
+          <p className="hero-description">Turn your class schedule into a phone wallpaper.</p>
+          <div className="hero-actions">
+            <Link to="/services/schedule-wallpaper" className="button-primary hero-action">Create wallpaper <ArrowRight size={18} aria-hidden="true" /></Link>
+            <button type="button" className="hero-browse" onClick={exploreDesigns}>Explore</button>
+          </div>
+          <p className="hero-note">No account needed.</p>
+        </div>
+        <div className="hero-art">
+          <img src="/images/hero-phones.webp" alt="Three phones with sunlit, navy bear, and ivory panda schedule wallpapers" width="1448" height="1086" fetchPriority="high" decoding="async" />
         </div>
       </div>
     </section>

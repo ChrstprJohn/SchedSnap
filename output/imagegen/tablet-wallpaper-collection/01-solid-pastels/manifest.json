@@ -1,0 +1,254 @@
+{
+  "theme": "01-solid-pastels",
+  "edition": "Tablet — 3:4 portrait and 4:3 landscape",
+  "tool": "built-in tools.image_gen__imagegen",
+  "model": "Unexposed by built-in tool schema",
+  "constraintDeliveryMode": "main-prompt constraints",
+  "workflow": "8 new images generated once; 2 original character PNGs reused by copying; no resampling, cropping, post-processing, retries or original-collection changes.",
+  "notes": [
+    "All 8 generated native canvases exactly match their requested aspect ratios.",
+    "Requested approximate dimensions were 1536 × 2048 portrait and 2048 × 1536 landscape; preserved native outputs are 1086 × 1448 and 1448 × 1086."
+  ],
+  "sets": [
+    {
+      "label": "A1",
+      "slug": "mint-jellyfish",
+      "name": "Mint jellyfish",
+      "rationale": "Aquatic calm — a gentle companion for a spacious study schedule.",
+      "assignedCorner": "lower-left",
+      "colors": {
+        "character": [
+          "#B8A5DA",
+          "#594466"
+        ],
+        "background": "#DCEDE4"
+      },
+      "character": {
+        "reused": true,
+        "sourcePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\01-solid-pastels\\characters\\mint-jellyfish.png",
+        "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\01-solid-pastels\\characters\\mint-jellyfish.png",
+        "relativePath": "01-solid-pastels/characters/mint-jellyfish.png",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        }
+      },
+      "layouts": {
+        "portrait": {
+          "targetRatio": "3:4",
+          "requestedDimensions": [
+            1536,
+            2048
+          ],
+          "assets": {
+            "background": {
+              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\01-solid-pastels\\portrait\\backgrounds\\mint-jellyfish.png",
+              "relativePath": "01-solid-pastels/portrait/backgrounds/mint-jellyfish.png",
+              "sourcePath": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-a3bd-7973-9b4d-2369ba8b6c5c\\exec-f6d9376e-a064-4b1d-b838-2fc0f308d795.png",
+              "dimensions": {
+                "width": 1086,
+                "height": 1448
+              },
+              "ratioCheck": {
+                "targetWidthDividedByHeight": 0.75,
+                "actualWidthDividedByHeight": 0.75,
+                "exactRatio": true,
+                "relativeError": 0
+              },
+              "prompt": "Create one single image with a strict 3:4 portrait canvas, desired 1536 × 2048. Use this output proportion rather than any reference image proportion.\nFill the entire canvas edge to edge with a completely uniform solid pale mint #DCEDE4. Keep the entire image clean and empty for later drawings and a schedule.\nConstraints: No text, lettering, watermark, schedules, cards, grids, UI, mock devices, fonts, borders, frames, props, scenery, decorative shapes, shadows, outlines, fragile lines or sharp tips. No characters, objects, texture, patterns, gradients, vignette or lighting variation.\nFinal canvas must be 3:4 portrait.",
+              "constraintText": "No text, lettering, watermark, schedules, cards, grids, UI, mock devices, fonts, borders, frames, props, scenery, decorative shapes, shadows, outlines, fragile lines or sharp tips. No characters, objects, texture, patterns, gradients, vignette or lighting variation.",
+              "referencedImagePaths": []
+            },
+            "wallpaper": {
+              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\01-solid-pastels\\portrait\\wallpapers\\mint-jellyfish.png",
+              "relativePath": "01-solid-pastels/portrait/wallpapers/mint-jellyfish.png",
+              "sourcePath": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-a3bd-7973-9b4d-2369ba8b6c5c\\exec-63b158e9-dea8-4982-b9c7-dc7087522bcd.png",
+              "dimensions": {
+                "width": 1086,
+                "height": 1448
+              },
+              "ratioCheck": {
+                "targetWidthDividedByHeight": 0.75,
+                "actualWidthDividedByHeight": 0.75,
+                "exactRatio": true,
+                "relativeError": 0
+              },
+              "prompt": "Create one single image with a strict 3:4 portrait canvas, desired 1536 × 2048. Use this output proportion rather than any reference image proportion.\nReference image 1 is only the supporting transparent character input; preserve its exact identity, rounded silhouette, two-color palette #B8A5DA and #594466, simple face and upright pose. Make the same mint jellyfish fully visible small near the lower-left corner. Fill all surrounding space with solid uniform #DCEDE4. The whole character including all features must occupy at most the bottom 24% of the canvas height and at most 38% of canvas width. Use a modest inset from both bottom and assigned side; preserve the whole body. Leave the upper 74% and the large central area completely empty and uninterrupted for drawings and a schedule. Keep the approved ultra-clean visual with rounded heavy forms and tiny simple facial marks.\nConstraints: No text, lettering, watermark, schedules, cards, grids, UI, mock devices, fonts, borders, frames, props, scenery, decorative shapes, shadows, outlines, fragile lines or sharp tips. Exactly one character, no new character features or extra subjects. No background texture, pattern, gradient, vignette or lighting variation. Do not copy the square reference canvas proportion; only reuse the character identity.\nFinal canvas must be 3:4 portrait.",
+              "constraintText": "No text, lettering, watermark, schedules, cards, grids, UI, mock devices, fonts, borders, frames, props, scenery, decorative shapes, shadows, outlines, fragile lines or sharp tips. Exactly one character, no new character features or extra subjects. No background texture, pattern, gradient, vignette or lighting variation. Do not copy the square reference canvas proportion; only reuse the character identity.",
+              "referencedImagePaths": [
+                "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\01-solid-pastels\\characters\\mint-jellyfish.png"
+              ]
+            }
+          }
+        },
+        "landscape": {
+          "targetRatio": "4:3",
+          "requestedDimensions": [
+            2048,
+            1536
+          ],
+          "assets": {
+            "background": {
+              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\01-solid-pastels\\landscape\\backgrounds\\mint-jellyfish.png",
+              "relativePath": "01-solid-pastels/landscape/backgrounds/mint-jellyfish.png",
+              "sourcePath": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-a3bd-7973-9b4d-2369ba8b6c5c\\exec-c7b99682-f3d5-41e3-b906-78b98b6ce900.png",
+              "dimensions": {
+                "width": 1448,
+                "height": 1086
+              },
+              "ratioCheck": {
+                "targetWidthDividedByHeight": 1.3333333333333333,
+                "actualWidthDividedByHeight": 1.3333333333333333,
+                "exactRatio": true,
+                "relativeError": 0
+              },
+              "prompt": "Create one single image with a strict 4:3 landscape canvas, desired 2048 × 1536. Use this output proportion rather than any reference image proportion.\nFill the entire canvas edge to edge with a completely uniform solid pale mint #DCEDE4. Keep the entire image clean and empty for later drawings and a schedule.\nConstraints: No text, lettering, watermark, schedules, cards, grids, UI, mock devices, fonts, borders, frames, props, scenery, decorative shapes, shadows, outlines, fragile lines or sharp tips. No characters, objects, texture, patterns, gradients, vignette or lighting variation.\nFinal canvas must be 4:3 landscape.",
+              "constraintText": "No text, lettering, watermark, schedules, cards, grids, UI, mock devices, fonts, borders, frames, props, scenery, decorative shapes, shadows, outlines, fragile lines or sharp tips. No characters, objects, texture, patterns, gradients, vignette or lighting variation.",
+              "referencedImagePaths": []
+            },
+            "wallpaper": {
+              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\01-solid-pastels\\landscape\\wallpapers\\mint-jellyfish.png",
+              "relativePath": "01-solid-pastels/landscape/wallpapers/mint-jellyfish.png",
+              "sourcePath": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-a3bd-7973-9b4d-2369ba8b6c5c\\exec-1fbaeefc-e860-4d6d-b74e-79270ac552da.png",
+              "dimensions": {
+                "width": 1448,
+                "height": 1086
+              },
+              "ratioCheck": {
+                "targetWidthDividedByHeight": 1.3333333333333333,
+                "actualWidthDividedByHeight": 1.3333333333333333,
+                "exactRatio": true,
+                "relativeError": 0
+              },
+              "prompt": "Create one single image with a strict 4:3 landscape canvas, desired 2048 × 1536. Use this output proportion rather than any reference image proportion.\nReference image 1 is only the supporting transparent character input; preserve its exact identity, rounded silhouette, two-color palette #B8A5DA and #594466, simple face and upright pose. Make the same mint jellyfish fully visible small near the lower-left corner. Fill all surrounding space with solid uniform #DCEDE4. The whole character including all features must occupy at most the bottom 26% of the canvas height and at most 22% of canvas width. Use a modest inset from both bottom and assigned side; preserve the whole body. Leave the upper 74% and the large central area completely empty and uninterrupted for drawings and a schedule. Keep the approved ultra-clean visual with rounded heavy forms and tiny simple facial marks.\nConstraints: No text, lettering, watermark, schedules, cards, grids, UI, mock devices, fonts, borders, frames, props, scenery, decorative shapes, shadows, outlines, fragile lines or sharp tips. Exactly one character, no new character features or extra subjects. No background texture, pattern, gradient, vignette or lighting variation. Do not copy the square reference canvas proportion; only reuse the character identity.\nFinal canvas must be 4:3 landscape.",
+              "constraintText": "No text, lettering, watermark, schedules, cards, grids, UI, mock devices, fonts, borders, frames, props, scenery, decorative shapes, shadows, outlines, fragile lines or sharp tips. Exactly one character, no new character features or extra subjects. No background texture, pattern, gradient, vignette or lighting variation. Do not copy the square reference canvas proportion; only reuse the character identity.",
+              "referencedImagePaths": [
+                "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\01-solid-pastels\\characters\\mint-jellyfish.png"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "label": "A2",
+      "slug": "peach-mushroom",
+      "name": "Peach mushroom",
+      "rationale": "Gentle growth — a soft mushroom companion for steady learning.",
+      "assignedCorner": "lower-right",
+      "colors": {
+        "character": [
+          "#A65C51",
+          "#FFE7C0"
+        ],
+        "background": "#F2D6CA"
+      },
+      "character": {
+        "reused": true,
+        "sourcePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\01-solid-pastels\\characters\\peach-mushroom.png",
+        "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\01-solid-pastels\\characters\\peach-mushroom.png",
+        "relativePath": "01-solid-pastels/characters/peach-mushroom.png",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        }
+      },
+      "layouts": {
+        "portrait": {
+          "targetRatio": "3:4",
+          "requestedDimensions": [
+            1536,
+            2048
+          ],
+          "assets": {
+            "background": {
+              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\01-solid-pastels\\portrait\\backgrounds\\peach-mushroom.png",
+              "relativePath": "01-solid-pastels/portrait/backgrounds/peach-mushroom.png",
+              "sourcePath": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-a3bd-7973-9b4d-2369ba8b6c5c\\exec-955e3f3d-07ca-42ac-a526-13b8c08d9c74.png",
+              "dimensions": {
+                "width": 1086,
+                "height": 1448
+              },
+              "ratioCheck": {
+                "targetWidthDividedByHeight": 0.75,
+                "actualWidthDividedByHeight": 0.75,
+                "exactRatio": true,
+                "relativeError": 0
+              },
+              "prompt": "Create one single image with a strict 3:4 portrait canvas, desired 1536 × 2048. Use this output proportion rather than any reference image proportion.\nFill the entire canvas edge to edge with a completely uniform solid muted peach #F2D6CA. Keep the entire image clean and empty for later drawings and a schedule.\nConstraints: No text, lettering, watermark, schedules, cards, grids, UI, mock devices, fonts, borders, frames, props, scenery, decorative shapes, shadows, outlines, fragile lines or sharp tips. No characters, objects, texture, patterns, gradients, vignette or lighting variation.\nFinal canvas must be 3:4 portrait.",
+              "constraintText": "No text, lettering, watermark, schedules, cards, grids, UI, mock devices, fonts, borders, frames, props, scenery, decorative shapes, shadows, outlines, fragile lines or sharp tips. No characters, objects, texture, patterns, gradients, vignette or lighting variation.",
+              "referencedImagePaths": []
+            },
+            "wallpaper": {
+              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\01-solid-pastels\\portrait\\wallpapers\\peach-mushroom.png",
+              "relativePath": "01-solid-pastels/portrait/wallpapers/peach-mushroom.png",
+              "sourcePath": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-a3bd-7973-9b4d-2369ba8b6c5c\\exec-f4e3867d-7492-4c13-bc28-26531d279b35.png",
+              "dimensions": {
+                "width": 1086,
+                "height": 1448
+              },
+              "ratioCheck": {
+                "targetWidthDividedByHeight": 0.75,
+                "actualWidthDividedByHeight": 0.75,
+                "exactRatio": true,
+                "relativeError": 0
+              },
+              "prompt": "Create one single image with a strict 3:4 portrait canvas, desired 1536 × 2048. Use this output proportion rather than any reference image proportion.\nReference image 1 is only the supporting transparent character input; preserve its exact identity, rounded silhouette, two-color palette #A65C51 and #FFE7C0, simple face and upright pose. Make the same peach mushroom fully visible small near the lower-right corner. Fill all surrounding space with solid uniform #F2D6CA. The whole character including all features must occupy at most the bottom 24% of the canvas height and at most 38% of canvas width. Use a modest inset from both bottom and assigned side; preserve the whole body. Leave the upper 74% and the large central area completely empty and uninterrupted for drawings and a schedule. Keep the approved ultra-clean visual with rounded heavy forms and tiny simple facial marks.\nConstraints: No text, lettering, watermark, schedules, cards, grids, UI, mock devices, fonts, borders, frames, props, scenery, decorative shapes, shadows, outlines, fragile lines or sharp tips. Exactly one character, no new character features or extra subjects. No background texture, pattern, gradient, vignette or lighting variation. Do not copy the square reference canvas proportion; only reuse the character identity.\nFinal canvas must be 3:4 portrait.",
+              "constraintText": "No text, lettering, watermark, schedules, cards, grids, UI, mock devices, fonts, borders, frames, props, scenery, decorative shapes, shadows, outlines, fragile lines or sharp tips. Exactly one character, no new character features or extra subjects. No background texture, pattern, gradient, vignette or lighting variation. Do not copy the square reference canvas proportion; only reuse the character identity.",
+              "referencedImagePaths": [
+                "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\01-solid-pastels\\characters\\peach-mushroom.png"
+              ]
+            }
+          }
+        },
+        "landscape": {
+          "targetRatio": "4:3",
+          "requestedDimensions": [
+            2048,
+            1536
+          ],
+          "assets": {
+            "background": {
+              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\01-solid-pastels\\landscape\\backgrounds\\peach-mushroom.png",
+              "relativePath": "01-solid-pastels/landscape/backgrounds/peach-mushroom.png",
+              "sourcePath": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-a3bd-7973-9b4d-2369ba8b6c5c\\exec-38b7ee70-0f9c-4e03-b839-c35d50827712.png",
+              "dimensions": {
+                "width": 1448,
+                "height": 1086
+              },
+              "ratioCheck": {
+                "targetWidthDividedByHeight": 1.3333333333333333,
+                "actualWidthDividedByHeight": 1.3333333333333333,
+                "exactRatio": true,
+                "relativeError": 0
+              },
+              "prompt": "Create one single image with a strict 4:3 landscape canvas, desired 2048 × 1536. Use this output proportion rather than any reference image proportion.\nFill the entire canvas edge to edge with a completely uniform solid muted peach #F2D6CA. Keep the entire image clean and empty for later drawings and a schedule.\nConstraints: No text, lettering, watermark, schedules, cards, grids, UI, mock devices, fonts, borders, frames, props, scenery, decorative shapes, shadows, outlines, fragile lines or sharp tips. No characters, objects, texture, patterns, gradients, vignette or lighting variation.\nFinal canvas must be 4:3 landscape.",
+              "constraintText": "No text, lettering, watermark, schedules, cards, grids, UI, mock devices, fonts, borders, frames, props, scenery, decorative shapes, shadows, outlines, fragile lines or sharp tips. No characters, objects, texture, patterns, gradients, vignette or lighting variation.",
+              "referencedImagePaths": []
+            },
+            "wallpaper": {
+              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\01-solid-pastels\\landscape\\wallpapers\\peach-mushroom.png",
+              "relativePath": "01-solid-pastels/landscape/wallpapers/peach-mushroom.png",
+              "sourcePath": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-a3bd-7973-9b4d-2369ba8b6c5c\\exec-060b3f7b-80b9-46f9-b3a1-68904cfa9c34.png",
+              "dimensions": {
+                "width": 1448,
+                "height": 1086
+              },
+              "ratioCheck": {
+                "targetWidthDividedByHeight": 1.3333333333333333,
+                "actualWidthDividedByHeight": 1.3333333333333333,
+                "exactRatio": true,
+                "relativeError": 0
+              },
+              "prompt": "Create one single image with a strict 4:3 landscape canvas, desired 2048 × 1536. Use this output proportion rather than any reference image proportion.\nReference image 1 is only the supporting transparent character input; preserve its exact identity, rounded silhouette, two-color palette #A65C51 and #FFE7C0, simple face and upright pose. Make the same peach mushroom fully visible small near the lower-right corner. Fill all surrounding space with solid uniform #F2D6CA. The whole character including all features must occupy at most the bottom 26% of the canvas height and at most 22% of canvas width. Use a modest inset from both bottom and assigned side; preserve the whole body. Leave the upper 74% and the large central area completely empty and uninterrupted for drawings and a schedule. Keep the approved ultra-clean visual with rounded heavy forms and tiny simple facial marks.\nConstraints: No text, lettering, watermark, schedules, cards, grids, UI, mock devices, fonts, borders, frames, props, scenery, decorative shapes, shadows, outlines, fragile lines or sharp tips. Exactly one character, no new character features or extra subjects. No background texture, pattern, gradient, vignette or lighting variation. Do not copy the square reference canvas proportion; only reuse the character identity.\nFinal canvas must be 4:3 landscape.",
+              "constraintText": "No text, lettering, watermark, schedules, cards, grids, UI, mock devices, fonts, borders, frames, props, scenery, decorative shapes, shadows, outlines, fragile lines or sharp tips. Exactly one character, no new character features or extra subjects. No background texture, pattern, gradient, vignette or lighting variation. Do not copy the square reference canvas proportion; only reuse the character identity.",
+              "referencedImagePaths": [
+                "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\01-solid-pastels\\characters\\peach-mushroom.png"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

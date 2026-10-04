@@ -1,4 +1,5 @@
 import { createAnalyzeHandler } from '../api/analyze.js';
+import { createVisitsHandler } from '../api/visits.js';
 import { MAX_BODY_BYTES } from '../shared/uploadLimits.js';
 
 // Runs only inside Vite's Node process. No credentials enter the browser bundle.
@@ -7,11 +8,14 @@ export function localApiPlugin(env) {
     name: 'unitoolbox-local-api',
     configureServer(server) {
       const analyze = createAnalyzeHandler({ env });
+      const visits = createVisitsHandler({ env });
       server.middlewares.use(async (request, response, next) => {
-        if (request.url?.split('?')[0] !== '/api/analyze') return next();
+        const path = request.url?.split('?')[0];
+        if (!['/api/analyze', '/api/visits'].includes(path)) return next();
         response.setHeader('Cache-Control', 'no-store');
         response.status = (code) => { response.statusCode = code; return response; };
         response.json = (body) => { response.setHeader('Content-Type', 'application/json'); response.end(JSON.stringify(body)); return response; };
+        if (path === '/api/visits') return visits(request, response);
         try {
           if (request.method === 'POST') {
             const chunks = [];

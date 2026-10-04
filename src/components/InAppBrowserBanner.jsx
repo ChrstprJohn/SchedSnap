@@ -53,14 +53,12 @@ function openInBrowser() {
 }
 
 export default function InAppBrowserBanner() {
-  const [info, setInfo] = useState(null);
+  const [info] = useState(() => {
+    const result = detectInAppBrowser();
+    return result.detected ? result : null;
+  });
   const [dismissed, setDismissed] = useState(false);
   const bannerRef = useRef(null);
-
-  useEffect(() => {
-    const result = detectInAppBrowser();
-    if (result.detected) setInfo(result);
-  }, []);
 
   // Set --iab-h on <html> so .site-header can offset itself
   useEffect(() => {

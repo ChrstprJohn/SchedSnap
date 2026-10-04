@@ -1,0 +1,174 @@
+{
+  "theme": "01-solid-pastels",
+  "tool": "built-in tools.image_gen__imagegen",
+  "model": "Unexposed by the built-in tool schema",
+  "constraintDeliveryMode": "main-prompt constraints",
+  "workflow": "One generation per asset; original outputs copied without resampling, cropping, repairs or other post-processing.",
+  "requestedDimensions": {
+    "character": [
+      1536,
+      1536
+    ],
+    "background": [
+      1080,
+      2400
+    ],
+    "wallpaper": [
+      1080,
+      2400
+    ]
+  },
+  "notes": [
+    "Generated native dimensions differ from requested approximate dimensions; each exact size is recorded per asset.",
+    "A1 combined wallpaper has a native 922 × 1706 canvas rather than the requested 9:20 ratio. Preserved as returned.",
+    "Both cutouts have real alpha: all four corner samples are 0 and central character samples are 253. Generated edge treatment is preserved as returned."
+  ],
+  "sets": [
+    {
+      "label": "A1",
+      "slug": "mint-jellyfish",
+      "name": "Mint jellyfish",
+      "rationale": "Aquatic calm — a gentle companion for a spacious study schedule.",
+      "assignedCorner": "lower-left",
+      "colors": {
+        "character": [
+          "#B8A5DA",
+          "#594466"
+        ],
+        "background": "#DCEDE4"
+      },
+      "assets": {
+        "character": {
+          "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\01-solid-pastels\\characters\\mint-jellyfish.png",
+          "relativePath": "01-solid-pastels/characters/mint-jellyfish.png",
+          "dimensions": {
+            "width": 1254,
+            "height": 1254
+          },
+          "pixelFormat": "Format32bppArgb",
+          "alphaSamplesCornersThenCenter": [
+            0,
+            0,
+            0,
+            0,
+            253
+          ],
+          "sourcePath": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-a3bd-7973-9b4d-2369ba8b6c5c\\exec-b40c2ad7-9e90-4118-b6d8-6f952b448ed0.png",
+          "prompt": "Create one complete 1:1 square image, approximately 1536 × 1536, of a single extremely simplified cute baby jellyfish: one broad domed lavender #B8A5DA body merged into exactly three broad blunt rounded tentacle lobes; deep plum #594466 for tiny widely spaced eyes and one tiny mouth. Show the whole upright character fully visible, closely framed toward the lower-left, dominant in the square with a modest inset that preserves its whole body. Keep the surroundings genuinely transparent. Complexity: use only 4–7 large basic rounded forms merged into a weighty continuous silhouette, at most two broad color regions, two tiny simple eyes and one tiny mouth. Remove nonessential lines and anatomical details; readable at 32 × 32. Color behavior: exactly two semantic character colors #B8A5DA and #594466, reused for facial marks. Style: endearing baby-like appeal, compact proportions, rounded blunt contours and ultra-clean graphic surfaces. Add an extremely, extremely subtle, almost imperceptible sense of depth through a barely-there neo-skeuomorphic treatment. Constraints: One character only. No text, watermark, borders, frames, cards, scenery, props, decorative marks, outlines, fragile lines, sharp tips, photorealistic materials, glossy hotspots, strong three-dimensional rendering or external cast shadow.",
+          "constraintText": "One character only. No text, watermark, borders, frames, cards, scenery, props, decorative marks, outlines, fragile lines, sharp tips, photorealistic materials, glossy hotspots, strong three-dimensional rendering or external cast shadow."
+        },
+        "background": {
+          "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\01-solid-pastels\\backgrounds\\mint-jellyfish.png",
+          "relativePath": "01-solid-pastels/backgrounds/mint-jellyfish.png",
+          "dimensions": {
+            "width": 841,
+            "height": 1870
+          },
+          "pixelFormat": "Format24bppRgb",
+          "alphaSamplesCornersThenCenter": [
+            255,
+            255,
+            255,
+            255,
+            255
+          ],
+          "sourcePath": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-a3bd-7973-9b4d-2369ba8b6c5c\\exec-ddf2f7d8-d5a3-4d09-9117-38ebd0904a1b.png",
+          "prompt": "Create one complete portrait image with a 9:20 aspect ratio, approximately 1080 × 2400. Fill the entire canvas edge to edge with perfectly uniform solid pale mint #DCEDE4. Keep it extremely clean, quiet and empty, with abundant uninterrupted space for later drawings. Constraints: Absolutely no characters, subjects, text, lettering, timetable, UI, cards, grids, borders, frames, scenery, shapes, objects, texture, patterns, gradients, vignette, shadows or lighting variations.",
+          "constraintText": "Absolutely no characters, subjects, text, lettering, timetable, UI, cards, grids, borders, frames, scenery, shapes, objects, texture, patterns, gradients, vignette, shadows or lighting variations."
+        },
+        "wallpaper": {
+          "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\01-solid-pastels\\wallpapers\\mint-jellyfish.png",
+          "relativePath": "01-solid-pastels/wallpapers/mint-jellyfish.png",
+          "dimensions": {
+            "width": 922,
+            "height": 1706
+          },
+          "pixelFormat": "Format24bppRgb",
+          "alphaSamplesCornersThenCenter": [
+            255,
+            255,
+            255,
+            255,
+            255
+          ],
+          "sourcePath": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-a3bd-7973-9b4d-2369ba8b6c5c\\exec-984b1c7d-01b3-4466-ab1f-d7591a7ef011.png",
+          "prompt": "Create one complete upright portrait 9:20 image, approximately 1080 × 2400. Reference image 1 is the supporting character input; reference image 2 is the full empty background input. Compose a clean portrait with the same mint jellyfish on the same solid #DCEDE4 background. Preserve the character's identity, simple silhouette, facial expression and two semantic colors #B8A5DA and #594466. Place the complete character small in the lower-left, fully visible with a modest inset from the bottom and side. Confine the whole character to the bottom 22–25% of the portrait; leave the upper 75% completely empty and uninterrupted for later drawings and a schedule. The character should occupy about 42–48% of canvas width. Keep the rest of the portrait filled uniformly by the reference background. Style: ultra-clean graphic surfaces with large rounded forms. Add an extremely, extremely subtle, almost imperceptible sense of depth through a barely-there neo-skeuomorphic treatment. Constraints: Exactly one character. No text, lettering, watermark, timetable, UI, grids, cards, borders, frames, props, scenery, texture, patterns, gradients, vignette, cast shadows, outlines, fragile lines, sharp tips or decorative marks.",
+          "constraintText": "Exactly one character. No text, lettering, watermark, timetable, UI, grids, cards, borders, frames, props, scenery, texture, patterns, gradients, vignette, cast shadows, outlines, fragile lines, sharp tips or decorative marks."
+        }
+      }
+    },
+    {
+      "label": "A2",
+      "slug": "peach-mushroom",
+      "name": "Peach mushroom",
+      "rationale": "Gentle growth — a soft mushroom companion for steady learning.",
+      "assignedCorner": "lower-right",
+      "colors": {
+        "character": [
+          "#A65C51",
+          "#FFE7C0"
+        ],
+        "background": "#F2D6CA"
+      },
+      "assets": {
+        "character": {
+          "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\01-solid-pastels\\characters\\peach-mushroom.png",
+          "relativePath": "01-solid-pastels/characters/peach-mushroom.png",
+          "dimensions": {
+            "width": 1254,
+            "height": 1254
+          },
+          "pixelFormat": "Format32bppArgb",
+          "alphaSamplesCornersThenCenter": [
+            0,
+            0,
+            0,
+            0,
+            253
+          ],
+          "sourcePath": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-a3bd-7973-9b4d-2369ba8b6c5c\\exec-31c9a1f7-89d6-4f8b-8698-f03b34dd64cb.png",
+          "prompt": "Create one complete 1:1 square image, approximately 1536 × 1536, of a single extremely simplified cute plump mushroom creature: one large rounded rust #A65C51 cap and one broad rounded cream #FFE7C0 stem body; reuse rust for tiny widely spaced eyes and one tiny mouth on the cream stem. Show the whole upright character fully visible, closely framed toward the lower-right, dominant in the square with a modest inset that preserves its whole body. Keep the surroundings genuinely transparent. Complexity: use only 4–7 large basic rounded forms merged into a weighty continuous silhouette, at most two broad color regions, two tiny simple eyes and one tiny mouth. Remove nonessential lines and anatomical details; readable at 32 × 32. Color behavior: exactly two semantic character colors #A65C51 and #FFE7C0, reused for facial marks. Style: endearing baby-like appeal, compact proportions, rounded blunt contours and ultra-clean graphic surfaces. Add an extremely, extremely subtle, almost imperceptible sense of depth through a barely-there neo-skeuomorphic treatment. Constraints: One character only. No text, watermark, borders, frames, cards, scenery, props, decorative marks, outlines, fragile lines, sharp tips, photorealistic materials, glossy hotspots, strong three-dimensional rendering or external cast shadow.",
+          "constraintText": "One character only. No text, watermark, borders, frames, cards, scenery, props, decorative marks, outlines, fragile lines, sharp tips, photorealistic materials, glossy hotspots, strong three-dimensional rendering or external cast shadow."
+        },
+        "background": {
+          "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\01-solid-pastels\\backgrounds\\peach-mushroom.png",
+          "relativePath": "01-solid-pastels/backgrounds/peach-mushroom.png",
+          "dimensions": {
+            "width": 841,
+            "height": 1870
+          },
+          "pixelFormat": "Format24bppRgb",
+          "alphaSamplesCornersThenCenter": [
+            255,
+            255,
+            255,
+            255,
+            255
+          ],
+          "sourcePath": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-a3bd-7973-9b4d-2369ba8b6c5c\\exec-2c1bd8b7-d032-4535-9403-2f744d7ada7b.png",
+          "prompt": "Create one complete portrait image with a 9:20 aspect ratio, approximately 1080 × 2400. Fill the entire canvas edge to edge with perfectly uniform solid pale muted peach #F2D6CA. Keep it extremely clean, quiet and empty, with abundant uninterrupted space for later drawings. Constraints: Absolutely no characters, subjects, text, lettering, timetable, UI, cards, grids, borders, frames, scenery, shapes, objects, texture, patterns, gradients, vignette, shadows or lighting variations.",
+          "constraintText": "Absolutely no characters, subjects, text, lettering, timetable, UI, cards, grids, borders, frames, scenery, shapes, objects, texture, patterns, gradients, vignette, shadows or lighting variations."
+        },
+        "wallpaper": {
+          "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\01-solid-pastels\\wallpapers\\peach-mushroom.png",
+          "relativePath": "01-solid-pastels/wallpapers/peach-mushroom.png",
+          "dimensions": {
+            "width": 841,
+            "height": 1870
+          },
+          "pixelFormat": "Format24bppRgb",
+          "alphaSamplesCornersThenCenter": [
+            255,
+            255,
+            255,
+            255,
+            255
+          ],
+          "sourcePath": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-a3bd-7973-9b4d-2369ba8b6c5c\\exec-539c8c91-93d5-49c9-9fa5-1f1d8fbbd60e.png",
+          "prompt": "Create one complete upright portrait 9:20 image, approximately 1080 × 2400. Reference image 1 is the supporting character input; reference image 2 is the full empty background input. Compose a clean portrait with the same peach mushroom on the same solid #F2D6CA background. Preserve the character's identity, simple silhouette, facial expression and two semantic colors #A65C51 and #FFE7C0. Place the complete character small in the lower-right, fully visible with a modest inset from the bottom and side. Confine the whole character to the bottom 22–25% of the portrait; leave the upper 75% completely empty and uninterrupted for later drawings and a schedule. The character should occupy about 42–48% of canvas width. Keep the rest of the portrait filled uniformly by the reference background. Style: ultra-clean graphic surfaces with large rounded forms. Add an extremely, extremely subtle, almost imperceptible sense of depth through a barely-there neo-skeuomorphic treatment. Constraints: Exactly one character. No text, lettering, watermark, timetable, UI, grids, cards, borders, frames, props, scenery, texture, patterns, gradients, vignette, cast shadows, outlines, fragile lines, sharp tips or decorative marks.",
+          "constraintText": "Exactly one character. No text, lettering, watermark, timetable, UI, grids, cards, borders, frames, props, scenery, texture, patterns, gradients, vignette, cast shadows, outlines, fragile lines, sharp tips or decorative marks."
+        }
+      }
+    }
+  ]
+}

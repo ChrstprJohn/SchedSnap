@@ -1,0 +1,32 @@
+{
+  "mode": "built-in image_gen",
+  "scope": "Preserve the How it works composition. Flat cards with actual product examples on all three; no green hue in revised choose artwork.",
+  "assets": [
+    {
+      "path": "public/images/how-it-works/choose-design.webp",
+      "source": "output/imagegen/how-it-works/choose-design-actual.png",
+      "prompt": "Use case: compositing. Asset type: SchedSnap How it works Choose a design illustration. Input image 1 is the EDIT TARGET and composition authority. Inputs 2,3,4 are supporting actual product wallpaper exports: Notebook Hours, Checker Study, Bear Mode. Preserve the beloved three fanned flat wallpaper sample cards, rounded corners, positions, overlaps, compact landscape arrangement, slim paper-card thickness, tactile matte paper, soft studio lighting and navy circular checkmark token on the right. USER'S FINAL DIRECTION: flat wallpaper cards, ABSOLUTELY NO PHONES, NO DEVICE FRAMES, NO BEZELS, NO NOTCHES. Replace the PRINTED DESIGN ON ALL THREE CARDS with the actual matching reference wallpapers, not just the front card. Back left print image 2: warm butter ruled Notebook Hours with Class Schedule and real white capsule weekday rows. Middle print image 3: warm ivory and peach Checker Study pattern with real Class Schedule title and white capsule rows; remove ALL the previous green/gingham design. Front right print image 4: midnight navy Bear Mode with cream Class Schedule heading, five thin pill weekday rows with M T W TH F circular badges and time/course/room columns, and exact cream-and-orange waving bear printed in the lower-left footer. Match each actual wallpaper's portrait arrangement, not a generic illustration. Keep real rows visibly printed on exposed rear cards; slightly separate the fan if needed to reveal them while maintaining the original composition. All designs printed FLAT flush on the card surfaces, bear is printed 2D artwork, not a protruding sculpture. No green hue ANYWHERE, no sage, no olive, no green lighting or color cast, no colored halo or luminous haze. True TRANSPARENT empty background and generous transparent margins, only very subtle neutral gray contact shadows immediately adjacent to objects, NO ambient glow, no background gradients or scenery. Palette cream, butter, warm peach and navy. No added objects, no people, no watermark. Landscape 3:2 canvas, entire group within frame.",
+      "referenceTemplateIds": [
+        "notebook-hours",
+        "check-study",
+        "mascot-bear"
+      ]
+    },
+    {
+      "path": "public/images/how-it-works/add-classes.webp",
+      "status": "unchanged",
+      "sha256": "2D6605A1D194F2C9E756728FED4BCC0EAE549D0BE397316F6AD9682FFE6CC8AE"
+    },
+    {
+      "path": "public/images/how-it-works/download-wallpaper.webp",
+      "source": "output/imagegen/how-it-works/download-wallpaper-actual.png",
+      "prompt": "Use case: compositing. Asset type: SchedSnap How it works Download wallpaper illustration. Input image 1 is the EDIT TARGET and absolute authority for composition; image 2 is the supporting insert, an actual Canvas export of the current Bear Mode wallpaper from the product. Change ONLY the wallpaper displayed inside the phone screen of input 1. Keep the EXACT navy phone body, its position, existing gentle three-quarter angle, dimensions, notch, rounded screen bounds, side buttons, matte clay rendering, soft light, shadows and small sage circular download token with navy arrow at lower right. Preserve all transparent outer space, keep the original portrait composition. Replace the old generic ivory screen with image 2's real midnight navy Bear Mode wallpaper: generous upper clock space, cream Class Schedule title, five slender navy translucent outlined pill rows with cream circular weekday badges M T W TH F, small real times, course codes and rooms in columns, and the exact big cream-and-orange waving bear from image 2 in the lower-left footer. Faithfully map the entire actual export inside the existing phone display in perspective. Keep the Class Schedule title readable at illustration scale, real row arrangement, bear likeness and original wallpaper proportions. Preserve the quiet illustration quality, no new objects, no interface buttons, no clock overlay, no additional background, no watermarks. Output genuine transparent background.",
+      "referenceTemplateIds": [
+        "mascot-bear"
+      ]
+    }
+  ],
+  "references": "Actual Canvas exports from the current template definitions and sampleSchedule, captured with drawWallpaper. Generated illustrations adapt these exports to the existing perspective.",
+  "encoding": "768x512 choose and 768x720 download; WebP quality 90 with alpha retained. Original assets backed up in output/imagegen/how-it-works/*-previous.webp.",
+  "verification": "output/imagegen/how-it-works/verification.json"
+}

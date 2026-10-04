@@ -1,0 +1,50 @@
+[
+  {
+    "name": "desktop",
+    "viewport": 1440,
+    "documentWidth": 1440,
+    "columns": "336px 336px 336px",
+    "images": [
+      {
+        "src": "/images/how-it-works/choose-design.webp",
+        "width": 768,
+        "height": 512
+      },
+      {
+        "src": "/images/how-it-works/add-classes.webp",
+        "width": 768,
+        "height": 512
+      },
+      {
+        "src": "/images/how-it-works/download-wallpaper.webp",
+        "width": 768,
+        "height": 720
+      }
+    ],
+    "errors": []
+  },
+  {
+    "name": "mobile",
+    "viewport": 390,
+    "documentWidth": 390,
+    "columns": "358px",
+    "images": [
+      {
+        "src": "/images/how-it-works/choose-design.webp",
+        "width": 768,
+        "height": 512
+      },
+      {
+        "src": "/images/how-it-works/add-classes.webp",
+        "width": 768,
+        "height": 512
+      },
+      {
+        "src": "/images/how-it-works/download-wallpaper.webp",
+        "width": 768,
+        "height": 720
+      }
+    ],
+    "errors": []
+  }
+]

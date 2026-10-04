@@ -98,15 +98,17 @@
 }
 
 /* Guided wallpaper flow: one task at a time. */
-.wallpaper-flow { --flow-gutter: 24px; padding-block: 24px 48px; }
-.tool-back { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-size: 14px; color: var(--color-muted); }
-.tool-back:hover { color: var(--color-ink); }
+.wallpaper-flow { --flow-gutter: 24px; --classes-preview-width: 340px; --classes-gap: 64px; padding-block: 24px 48px; }
+.tool-back { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0; border: 0; background: transparent; font-size: 14px; font-weight: 500; line-height: 1.5; color: var(--color-ink); }
+.tool-back:hover { color: var(--color-muted); }
+.tool-back > svg { width: 16px; height: 16px; flex-shrink: 0; }
 .wallpaper-flow-header { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin: 12px 0 32px; }
 .wallpaper-flow-header h1 { font-size: 30px; line-height: 1.2; font-weight: 650; letter-spacing: -0.025em; }
 .wallpaper-flow-header h1:focus { outline: none; }
-.wallpaper-flow-header[data-importing='true'] { flex-wrap: nowrap; }
+.wallpaper-flow-header[data-importing='true'] { flex-wrap: nowrap; max-width: calc(100% - var(--classes-preview-width) - var(--classes-gap)); }
 .wallpaper-flow-header[data-importing='true'] h1 { flex: 1; min-width: 0; }
 .wallpaper-flow-header .import-change { flex-shrink: 0; }
+.import-change-mobile { display: none; }
 .template-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
 .design-preview-dialog { width: min(440px, calc(100% - 24px)); max-height: calc(100dvh - 24px); margin: auto; padding: 0; border: 0; border-radius: 16px; color: var(--color-ink); background: white; overflow: auto; }
 .design-preview-dialog::backdrop { background: rgb(15 23 42 / 45%); }
@@ -115,7 +117,7 @@
 .design-preview-body { display: flex; justify-content: center; padding: 16px; background: var(--color-soft); }
 .design-preview-body canvas { width: auto; max-width: 100%; max-height: calc(100dvh - 220px); object-fit: contain; }
 .design-preview-dialog footer { position: sticky; bottom: 0; padding: 16px; background: white; }
-.classes-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 340px); align-items: start; gap: 64px; }
+.classes-layout { display: grid; grid-template-columns: minmax(0, 1fr) var(--classes-preview-width); align-items: start; gap: var(--classes-gap); }
 .classes-content { min-width: 0; container-type: inline-size; }
 .classes-design-preview { position: sticky; top: 88px; }
 .flow-preview-art { position: relative; display: flex; justify-content: center; background: var(--color-soft); padding: 24px; border-radius: 16px; }
@@ -154,13 +156,13 @@
 .import-replacement-warning svg { flex-shrink: 0; margin-top: 2px; }
 .review-notes { margin-top: 16px; border-block: 1px solid var(--color-line); font-size: 14px; }
 .review-notes ul { padding: 0 0 16px 20px; list-style: disc; color: var(--color-muted); }
-.flow-class-editor { margin-top: 16px; min-width: 0; }
+.flow-class-editor { margin-top: 0; min-width: 0; }
 .flow-class-editor .class-form { border: 0; border-radius: 0; }
 .flow-class-editor .review-toolbar { padding-inline: 0; background: white; }
 .flow-class-editor .review-toolbar { flex-wrap: nowrap; align-items: center; min-height: 44px; padding-block: 0 12px; }
 .flow-class-editor .review-toolbar .button-secondary { padding-inline: 12px; }
 .schedule-title-control { display: flex; align-items: center; min-width: 0; flex: 1; gap: 4px; }
-.schedule-title { min-width: 0; overflow-wrap: anywhere; font-size: 16px; font-weight: 650; }
+.schedule-title { min-width: 0; overflow-wrap: anywhere; font-size: 17px; font-weight: 650; }
 .schedule-title-control .icon-button { flex-shrink: 0; }
 .schedule-title-control .field-input { width: 100%; min-width: 0; }
 .add-class { width: 100%; margin-top: 16px; border-style: dashed; }
@@ -232,7 +234,7 @@
   .class-meeting-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 900px) {
-  .classes-layout { grid-template-columns: minmax(0, 1fr) 260px; gap: 32px; }
+  .wallpaper-flow { --classes-preview-width: 260px; --classes-gap: 32px; }
   .download-layout { gap: 32px; }
   .wallpaper-flow-header { flex-wrap: wrap; gap: 12px; }
   .class-meeting-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -240,6 +242,9 @@
 @media (max-width: 640px) {
   .wallpaper-flow { padding-top: 12px; }
   .wallpaper-flow-header { gap: 12px; margin: 8px 0 20px; }
+  .wallpaper-flow-header[data-importing='true'] { max-width: none; }
+  .import-change-desktop { display: none; }
+  .import-change-mobile { display: inline; }
   .wallpaper-flow-header h1 { font-size: 24px; }
   .template-filters { flex-wrap: nowrap; overflow-x: auto; gap: 8px; margin-bottom: 16px; scrollbar-width: none; }
   .template-filters::-webkit-scrollbar { display: none; }

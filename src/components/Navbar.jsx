@@ -1,6 +1,7 @@
 import { useSyncExternalStore } from 'react';
 import { Link, useLocation } from 'react-router';
-import { Blocks } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import BrandMark from './BrandMark.jsx';
 
 function subscribeToScroll(onChange) {
   window.addEventListener('scroll', onChange, { passive: true });
@@ -15,8 +16,11 @@ export default function Navbar() {
     <header className={`site-header${isHome ? ` site-header-home${!scrolled ? ' is-at-top' : ''}` : ''}`}>
       <div className="page-wrap site-header-inner">
         <Link to="/" className="site-brand">
-          <Blocks aria-hidden="true" /> UniToolbox
+          <BrandMark /> SchedSnap
         </Link>
+        {isHome && scrolled && <nav className="landing-nav" aria-label="Main navigation">
+          <Link className="nav-create" to="/services/schedule-wallpaper">Create wallpaper <ArrowRight size={16} aria-hidden="true" /></Link>
+        </nav>}
       </div>
     </header>
   );

@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite';
 import { localApiPlugin } from './development/apiPlugin.js';
 
 export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, process.cwd(), 'GEMINI_');
+  const env = loadEnv(mode, process.cwd(), ['GEMINI_', 'UPSTASH_']);
   return { plugins: [react(), tailwindcss(), localApiPlugin({ ...env, ...process.env })] };
 });

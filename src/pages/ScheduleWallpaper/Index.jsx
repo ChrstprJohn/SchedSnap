@@ -66,7 +66,7 @@ export default function ScheduleWallpaper() {
   }
   useEffect(() => () => request.current?.abort(), []);
   useEffect(() => {
-    document.title = template ? `${template.name} — Schedule wallpaper — UniToolbox` : 'Schedule wallpaper — UniToolbox';
+    document.title = template ? `${template.name} — SchedSnap` : 'Choose a design — SchedSnap';
   }, [template]);
 
   async function analyze() {
@@ -113,10 +113,10 @@ export default function ScheduleWallpaper() {
   </section>;
 
   return <section className="page-wrap wallpaper-flow">
-    {step === 'design' ? <Link to="/" className="tool-back"><ArrowLeft className="size-4" aria-hidden="true" />Toolbox</Link> : <button type="button" className="tool-back" onClick={goBack}><ArrowLeft className="size-4" aria-hidden="true" />{step === 'classes' && importOpen && schedule.classes.length ? 'Back to classes' : 'Back'}</button>}
+    {step === 'design' ? <Link to="/" className="tool-back"><ArrowLeft className="size-4" aria-hidden="true" />Back</Link> : <button type="button" className="tool-back" onClick={goBack}><ArrowLeft className="size-4" aria-hidden="true" />{step === 'classes' && importOpen && schedule.classes.length ? 'Back to classes' : 'Back'}</button>}
     <header className="wallpaper-flow-header" data-importing={choosingImage}>
       <h1 tabIndex={-1} ref={heading}>{step === 'design' ? 'Choose a design' : step === 'classes' ? 'Add your classes' : 'Your wallpaper'}</h1>
-      {choosingImage && <button type="button" className="button-secondary import-change" disabled={busy || preparingImage} onClick={() => imagePicker.current?.openPicker()}><ImageUp size={16} aria-hidden="true" />{preparingImage ? 'Preparing…' : 'Change image'}</button>}
+      {choosingImage && <button type="button" className="button-secondary import-change" aria-label={preparingImage ? 'Preparing image' : 'Change image'} disabled={busy || preparingImage} onClick={() => imagePicker.current?.openPicker()}><ImageUp size={16} aria-hidden="true" />{preparingImage ? 'Preparing…' : <><span className="import-change-desktop">Change image</span><span className="import-change-mobile">Change</span></>}</button>}
     </header>
     {template ? <TemplateWorkspace
       step={step} onStep={openStep}
@@ -133,7 +133,7 @@ export default function ScheduleWallpaper() {
       onError={(message) => { setError(message); setSuccess(''); }} onAnalyze={analyze}
       onSample={() => { setSchedule(structuredClone(sampleSchedule)); dismissNotification(); }}
     /> : <>
-      <TemplateGallery selectedId={selectedId} settings={templateSettings} schedule={schedule} scheduleTitle={scheduleTitle} resolution={mobileResolution} onSelect={selectTemplate} />
+      <TemplateGallery initialCategory={search.get('collection')} selectedId={selectedId} settings={templateSettings} schedule={schedule} scheduleTitle={scheduleTitle} resolution={mobileResolution} onSelect={selectTemplate} />
     </>}
     <Toast message={error || success} kind={error ? 'error' : 'success'} onClose={dismissNotification} />
   </section>;

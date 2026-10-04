@@ -1,0 +1,67 @@
+{
+  "mode": "built-in image_gen",
+  "model": "Not exposed by the tool",
+  "constraintDelivery": "main-prompt constraints",
+  "purpose": "Preview samples only; no templates changed. Character and background separation awaits user selection.",
+  "entries": [
+    {
+      "label": "A",
+      "name": "Axolotl / Mint Pond",
+      "corner": "lower-left",
+      "rationale": "Friendly companion with a quiet solid background for schedule readability.",
+      "colors": {
+        "character": [
+          "#EFA2AD",
+          "#653E55"
+        ],
+        "background": [
+          "#DCEDE4"
+        ]
+      },
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10548-82a8-7f52-8717-18a4b0eb2f1e\\exec-9de766b0-def0-4c1e-96bb-2812c79210cb.png",
+      "filename": "a-axolotl-mint.png",
+      "savedPath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-samples\\a-axolotl-mint.png",
+      "prompt": "Create one complete full-bleed portrait image, 9:20 mobile wallpaper proportions, approximately 1080 x 2400. This is a clean empty art background for later drawing; the upper 78% must be completely open and evenly colored, with no text, lettering, timetable, mock device, cards, borders or interface. Background: solid gently muted pale mint #DCEDE4 everywhere. Subject: one extremely simplified cute baby axolotl emerging from the lower-left corner, confined to the bottom 22% of the image, broad head and compact body, BOTH paired external gills visible, simplified to one blunt three-lobed rounded gill shape per side. Make a clear lovable silhouette using 4–7 large rounded shapes, no anatomical detail. Character uses exactly two semantic colors: warm coral pink #EFA2AD for its main body and deep mulberry #653E55 for the two tiny eyes and broad simple gill regions. No additional character colors, optional one tiny mouth in mulberry. Preserve both gills in the visible composition. Character fills most of the available footer width, emerging from left and bottom with gentle crop. Main drawing space remains wholly empty. Large soft forms, weighty rounded contour, ultra-clean graphic illustration, readable at thumbnail size. Add an extremely, extremely subtle, almost imperceptible sense of depth through a barely-there neo-skeuomorphic treatment. Constraints: only one character; no extra objects, scenery, floating motifs, outlines, fragile lines, sharp tips, decorative marks, texture, vignette, lighting variation in the background, glossy hotspots, dramatic 3D materials, cast shadows, text, labels, watermark, frame, grid or contact sheet. Generate this single image only."
+    },
+    {
+      "label": "B",
+      "name": "Ghost / Twilight",
+      "corner": "lower-right",
+      "rationale": "Sleepy study companion with a soft atmospheric background.",
+      "colors": {
+        "character": [
+          "#FFF1D6",
+          "#464466"
+        ],
+        "background": [
+          "#CFDDEB",
+          "#DFD5EA"
+        ]
+      },
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10548-82a8-7f52-8717-18a4b0eb2f1e\\exec-ab43e110-cf8a-4ad7-bae8-c2ef66ed5bac.png",
+      "filename": "b-ghost-twilight.png",
+      "savedPath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-samples\\b-ghost-twilight.png",
+      "prompt": "Create one complete full-bleed portrait image, 9:20 mobile wallpaper proportions, approximately 1080 x 2400. Clean empty background for adding drawing and a class schedule later. Leave the upper 78% entirely open: no text, timetable, UI, cards or objects. Background: a very gentle smooth vertical color wash from muted dusk blue #CFDDEB at the top to soft lavender #DFD5EA below, no grain, no cloud shapes, no harsh bands. Subject: one extremely simplified cute friendly sleepy ghost emerging upright from the lower-right corner, entirely confined to the bottom 22%. One broad rounded soft continuous silhouette with a large dome head, tiny integrated rounded arms and two blunt rounded lobes at the hem, no pointed tail or sharp scallops. Character uses exactly two semantic colors: warm vanilla cream #FFF1D6 for the body and deep indigo #464466 for widely spaced two tiny simple eyes and one very small oval sleepy mouth. Organize as a simple cream mass with indigo face, no extra detail. Use 4–7 large basic shapes at most, very lovable baby-like proportions. Fill most of the footer width with the ghost emerging from the right and bottom. Leave the center and all upper area wholly empty. Ultra-clean graphic treatment and thick soft rounded forms. Add an extremely, extremely subtle, almost imperceptible sense of depth through a barely-there neo-skeuomorphic treatment. Constraints: one character only, no moon, stars, sparkles, clouds, landscapes, props, repeated motifs, lettering, watermark, outlines, fragile lines, sharp tips, realistic fabric or glossy material, dramatic 3D rendering, external cast shadows, borders, frames, device mockup, multiple panels or contact sheet. Generate one single wallpaper image."
+    },
+    {
+      "label": "C",
+      "name": "Sprout / Butter Gingham",
+      "corner": "lower-left",
+      "rationale": "Growth and learning companion with a quiet notebook-inspired pattern.",
+      "colors": {
+        "character": [
+          "#83B690",
+          "#315C49"
+        ],
+        "background": [
+          "#FBF4DD",
+          "#F3E8C5"
+        ]
+      },
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10548-82a8-7f52-8717-18a4b0eb2f1e\\exec-43a44fcd-741f-4289-afb3-89f1304139ac.png",
+      "filename": "c-sprout-butter-gingham.png",
+      "savedPath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-samples\\c-sprout-butter-gingham.png",
+      "prompt": "Create one complete full-bleed portrait image, 9:20 mobile wallpaper proportions, approximately 1080 x 2400. An uncluttered art background on which drawing and a class schedule will be placed later. Background: buttery cream #FBF4DD with a very faint large-scale gingham pattern using pale butter yellow #F3E8C5; checks must be low contrast with no dark outlines, no texture, no faux paper folds. The upper 78% is otherwise wholly empty and calm, free of objects and artwork. Subject: one extremely simplified endearing baby sprout creature emerging from the lower-left corner and confined to the bottom 22%. A pudgy broad rounded pebble-shaped body with one pair of large blunt rounded leaves as its defining feature, both leaves fully visible, no thin stem, no root hairs or veins. Reduce to 4–7 large merged rounded geometric shapes. Exactly two character color families: lively soft leaf green #83B690 for the body and deep forest green #315C49 for two widely spaced tiny eyes and a broad two-leaf region. One tiny mouth optional in forest green. No cheek spots or other colors. Upright, compact baby-like proportions, weighty continuous silhouette occupying most of footer width, gently emerging from left and bottom. Keep all main schedule/drawing area clear. Ultra-clean simple graphic treatment. Add an extremely, extremely subtle, almost imperceptible sense of depth through a barely-there neo-skeuomorphic treatment. Constraints: one character only; no pots, flowers, garden scenery, objects, floating motifs, typography, labels, schedule, interface, cards, mock phone, watermark, frame, border, extra panels, contact sheet, thin lines, sharp tips, outlines, glossy hotspots, dramatic 3D or cast shadow. Produce this single image only."
+    }
+  ]
+}

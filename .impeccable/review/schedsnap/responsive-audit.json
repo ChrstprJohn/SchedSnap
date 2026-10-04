@@ -1,0 +1,258 @@
+[
+  {
+    "centerDifference": 75.89999084174633,
+    "copyLeft": 16,
+    "documentWidth": 314,
+    "height": 740,
+    "heroSource": "hero-schedsnap-mobile.webp",
+    "logoLeft": 16,
+    "overflow": false,
+    "rows": [
+      {
+        "imageLeft": 16,
+        "stacked": true,
+        "textLeft": 16
+      },
+      {
+        "imageLeft": 16,
+        "stacked": true,
+        "textLeft": 16
+      },
+      {
+        "imageLeft": 16,
+        "stacked": true,
+        "textLeft": 16
+      },
+      {
+        "imageLeft": 16,
+        "stacked": true,
+        "textLeft": 16
+      }
+    ],
+    "width": 320
+  },
+  {
+    "centerDifference": 96.60001067817213,
+    "copyLeft": 16,
+    "documentWidth": 370,
+    "height": 812,
+    "heroSource": "hero-schedsnap-mobile.webp",
+    "logoLeft": 16,
+    "overflow": false,
+    "rows": [
+      {
+        "imageLeft": 16,
+        "stacked": true,
+        "textLeft": 16
+      },
+      {
+        "imageLeft": 16,
+        "stacked": true,
+        "textLeft": 16
+      },
+      {
+        "imageLeft": 16,
+        "stacked": true,
+        "textLeft": 16
+      },
+      {
+        "imageLeft": 16,
+        "stacked": true,
+        "textLeft": 16
+      }
+    ],
+    "width": 375
+  },
+  {
+    "centerDifference": 195.9000061005354,
+    "copyLeft": 24,
+    "documentWidth": 634,
+    "height": 360,
+    "heroSource": "hero-schedsnap-mobile.webp",
+    "logoLeft": 24,
+    "overflow": false,
+    "rows": [
+      {
+        "imageLeft": 24,
+        "stacked": true,
+        "textLeft": 24
+      },
+      {
+        "imageLeft": 24,
+        "stacked": true,
+        "textLeft": 24
+      },
+      {
+        "imageLeft": 24,
+        "stacked": true,
+        "textLeft": 24
+      },
+      {
+        "imageLeft": 24,
+        "stacked": true,
+        "textLeft": 24
+      }
+    ],
+    "width": 640
+  },
+  {
+    "centerDifference": 164.53750304877758,
+    "copyLeft": 24,
+    "documentWidth": 762,
+    "height": 1024,
+    "heroSource": "hero-schedsnap-balanced.webp",
+    "logoLeft": 24,
+    "overflow": false,
+    "rows": [
+      {
+        "imageLeft": 24,
+        "stacked": false,
+        "textLeft": 445.1750183105469
+      },
+      {
+        "imageLeft": 357.2124938964844,
+        "stacked": false,
+        "textLeft": 24
+      },
+      {
+        "imageLeft": 24,
+        "stacked": false,
+        "textLeft": 445.1750183105469
+      },
+      {
+        "imageLeft": 357.2124938964844,
+        "stacked": false,
+        "textLeft": 24
+      }
+    ],
+    "width": 768
+  },
+  {
+    "centerDifference": 179.1687591522932,
+    "copyLeft": 24,
+    "documentWidth": 814,
+    "height": 1180,
+    "heroSource": "hero-schedsnap-balanced.webp",
+    "logoLeft": 24,
+    "overflow": false,
+    "rows": [
+      {
+        "imageLeft": 24,
+        "stacked": false,
+        "textLeft": 474.5625
+      },
+      {
+        "imageLeft": 379.8250122070313,
+        "stacked": false,
+        "textLeft": 24
+      },
+      {
+        "imageLeft": 24,
+        "stacked": false,
+        "textLeft": 474.5625
+      },
+      {
+        "imageLeft": 379.8250122070313,
+        "stacked": false,
+        "textLeft": 24
+      }
+    ],
+    "width": 820
+  },
+  {
+    "centerDifference": 0.00001220405101776123,
+    "copyLeft": 24,
+    "documentWidth": 1018,
+    "height": 768,
+    "heroSource": "hero-schedsnap-balanced.webp",
+    "logoLeft": 24,
+    "overflow": false,
+    "rows": [
+      {
+        "imageLeft": 24,
+        "stacked": false,
+        "textLeft": 607.2625122070312
+      },
+      {
+        "imageLeft": 491.125,
+        "stacked": false,
+        "textLeft": 24
+      },
+      {
+        "imageLeft": 24,
+        "stacked": false,
+        "textLeft": 607.2625122070312
+      },
+      {
+        "imageLeft": 491.125,
+        "stacked": false,
+        "textLeft": 24
+      }
+    ],
+    "width": 1024
+  },
+  {
+    "centerDifference": 0.00001220405101776123,
+    "copyLeft": 77.20000457763672,
+    "documentWidth": 1274,
+    "height": 800,
+    "heroSource": "hero-schedsnap-balanced.webp",
+    "logoLeft": 77.20000457763672,
+    "overflow": false,
+    "rows": [
+      {
+        "imageLeft": 77.20000457763672,
+        "stacked": false,
+        "textLeft": 745.0250244140625
+      },
+      {
+        "imageLeft": 609.3624877929688,
+        "stacked": false,
+        "textLeft": 77.20000457763672
+      },
+      {
+        "imageLeft": 77.20000457763672,
+        "stacked": false,
+        "textLeft": 745.0250244140625
+      },
+      {
+        "imageLeft": 609.3624877929688,
+        "stacked": false,
+        "textLeft": 77.20000457763672
+      }
+    ],
+    "width": 1280
+  },
+  {
+    "centerDifference": 0.00001220405101776123,
+    "copyLeft": 157.1999969482422,
+    "documentWidth": 1434,
+    "height": 900,
+    "heroSource": "hero-schedsnap-balanced.webp",
+    "logoLeft": 157.1999969482422,
+    "overflow": false,
+    "rows": [
+      {
+        "imageLeft": 157.1999969482422,
+        "stacked": false,
+        "textLeft": 825.0250244140625
+      },
+      {
+        "imageLeft": 689.3624877929688,
+        "stacked": false,
+        "textLeft": 157.1999969482422
+      },
+      {
+        "imageLeft": 157.1999969482422,
+        "stacked": false,
+        "textLeft": 825.0250244140625
+      },
+      {
+        "imageLeft": 689.3624877929688,
+        "stacked": false,
+        "textLeft": 157.1999969482422
+      }
+    ],
+    "width": 1440
+  }
+]

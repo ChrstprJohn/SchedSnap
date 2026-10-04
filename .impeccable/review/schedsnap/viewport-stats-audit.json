@@ -1,0 +1,254 @@
+[
+  {
+    "background": "rgba(0, 0, 0, 0)",
+    "brandLeft": 16,
+    "copyBottom": 405.0750122070313,
+    "copyLeft": 16,
+    "copyTop": 100,
+    "height": 568,
+    "heroBottom": 568,
+    "heroTop": 0,
+    "imageBottom": 548.0000152587891,
+    "imageTop": 421.0750122070313,
+    "overflow": false,
+    "sectionBorders": [
+      "0px",
+      "0px",
+      "0px",
+      "0px",
+      "0px"
+    ],
+    "source": "http://localhost:5173/images/hero-schedsnap-mobile.webp",
+    "statsLabels": [
+      "Total visits",
+      "Total templates",
+      "Collections"
+    ],
+    "statsTop": 568,
+    "width": 320
+  },
+  {
+    "background": "rgba(0, 0, 0, 0)",
+    "brandLeft": 16,
+    "copyBottom": 353.0749969482422,
+    "copyLeft": 16,
+    "copyTop": 100,
+    "height": 812,
+    "heroBottom": 812,
+    "heroTop": 0,
+    "imageBottom": 792.0000305175781,
+    "imageTop": 369.0750122070313,
+    "overflow": false,
+    "sectionBorders": [
+      "0px",
+      "0px",
+      "0px",
+      "0px",
+      "0px"
+    ],
+    "source": "http://localhost:5173/images/hero-schedsnap-mobile.webp",
+    "statsLabels": [
+      "Total visits",
+      "Total templates",
+      "Collections"
+    ],
+    "statsTop": 812,
+    "width": 375
+  },
+  {
+    "background": "rgba(0, 0, 0, 0)",
+    "brandLeft": 24,
+    "copyBottom": 285.40000915527344,
+    "copyLeft": 24,
+    "copyTop": 84,
+    "height": 360,
+    "heroBottom": 360,
+    "heroTop": 0,
+    "imageBottom": 344,
+    "imageTop": 76,
+    "overflow": false,
+    "sectionBorders": [
+      "0px",
+      "0px",
+      "0px",
+      "0px",
+      "0px"
+    ],
+    "source": "http://localhost:5173/images/hero-schedsnap-mobile.webp",
+    "statsLabels": [
+      "Total visits",
+      "Total templates",
+      "Collections"
+    ],
+    "statsTop": 360,
+    "width": 640
+  },
+  {
+    "background": "rgba(0, 0, 0, 0)",
+    "brandLeft": 24,
+    "copyBottom": 412.5,
+    "copyLeft": 24,
+    "copyTop": 116,
+    "height": 1024,
+    "heroBottom": 1024,
+    "heroTop": 0,
+    "imageBottom": 1000,
+    "imageTop": 428.5,
+    "overflow": false,
+    "sectionBorders": [
+      "0px",
+      "0px",
+      "0px",
+      "0px",
+      "0px"
+    ],
+    "source": "http://localhost:5173/images/hero-schedsnap-mobile.webp",
+    "statsLabels": [
+      "Total visits",
+      "Total templates",
+      "Collections"
+    ],
+    "statsTop": 1024,
+    "width": 768
+  },
+  {
+    "background": "rgba(0, 0, 0, 0)",
+    "brandLeft": 24,
+    "copyBottom": 419.25,
+    "copyLeft": 24,
+    "copyTop": 116,
+    "height": 1180,
+    "heroBottom": 1180,
+    "heroTop": 0,
+    "imageBottom": 1156,
+    "imageTop": 435.25,
+    "overflow": false,
+    "sectionBorders": [
+      "0px",
+      "0px",
+      "0px",
+      "0px",
+      "0px"
+    ],
+    "source": "http://localhost:5173/images/hero-schedsnap-mobile.webp",
+    "statsLabels": [
+      "Total visits",
+      "Total templates",
+      "Collections"
+    ],
+    "statsTop": 1180,
+    "width": 820
+  },
+  {
+    "background": "rgba(0, 0, 0, 0)",
+    "brandLeft": 24,
+    "copyBottom": 532.1750030517578,
+    "copyLeft": 24,
+    "copyTop": 235.8249969482422,
+    "height": 768,
+    "heroBottom": 768,
+    "heroTop": 0,
+    "imageBottom": 768,
+    "imageTop": 0,
+    "overflow": false,
+    "sectionBorders": [
+      "0px",
+      "0px",
+      "0px",
+      "0px",
+      "0px"
+    ],
+    "source": "http://localhost:5173/images/hero-schedsnap-balanced.webp",
+    "statsLabels": [
+      "Total visits",
+      "Total templates",
+      "Collections"
+    ],
+    "statsTop": 768,
+    "width": 1024
+  },
+  {
+    "background": "rgba(0, 0, 0, 0)",
+    "brandLeft": 77.20000457763672,
+    "copyBottom": 555.1625213623047,
+    "copyLeft": 77.20000457763672,
+    "copyTop": 244.83750915527344,
+    "height": 800,
+    "heroBottom": 800,
+    "heroTop": 0,
+    "imageBottom": 800,
+    "imageTop": 0,
+    "overflow": false,
+    "sectionBorders": [
+      "0px",
+      "0px",
+      "0px",
+      "0px",
+      "0px"
+    ],
+    "source": "http://localhost:5173/images/hero-schedsnap-balanced.webp",
+    "statsLabels": [
+      "Total visits",
+      "Total templates",
+      "Collections"
+    ],
+    "statsTop": 800,
+    "width": 1280
+  },
+  {
+    "background": "rgba(0, 0, 0, 0)",
+    "brandLeft": 157.1999969482422,
+    "copyBottom": 611.5625,
+    "copyLeft": 157.1999969482422,
+    "copyTop": 288.4375,
+    "height": 900,
+    "heroBottom": 900,
+    "heroTop": 0,
+    "imageBottom": 900,
+    "imageTop": 0,
+    "overflow": false,
+    "sectionBorders": [
+      "0px",
+      "0px",
+      "0px",
+      "0px",
+      "0px"
+    ],
+    "source": "http://localhost:5173/images/hero-schedsnap-balanced.webp",
+    "statsLabels": [
+      "Total visits",
+      "Total templates",
+      "Collections"
+    ],
+    "statsTop": 900,
+    "width": 1440
+  },
+  {
+    "background": "rgba(0, 0, 0, 0)",
+    "brandLeft": 397.2000122070313,
+    "copyBottom": 701.5625,
+    "copyLeft": 397.2000122070313,
+    "copyTop": 378.4375,
+    "height": 1080,
+    "heroBottom": 1080,
+    "heroTop": 0,
+    "imageBottom": 1080,
+    "imageTop": 0,
+    "overflow": false,
+    "sectionBorders": [
+      "0px",
+      "0px",
+      "0px",
+      "0px",
+      "0px"
+    ],
+    "source": "http://localhost:5173/images/hero-schedsnap-balanced.webp",
+    "statsLabels": [
+      "Total visits",
+      "Total templates",
+      "Collections"
+    ],
+    "statsTop": 1080,
+    "width": 1920
+  }
+]

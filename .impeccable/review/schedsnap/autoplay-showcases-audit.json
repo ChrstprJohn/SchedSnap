@@ -1,0 +1,1729 @@
+{
+  "checks": [
+    {
+      "requestedCss": {
+        "width": 320,
+        "height": 480
+      },
+      "states": [
+        {
+          "article": {
+            "bottom": 518.0000152587891,
+            "h": 389.2000122070313,
+            "right": 298.3999938964844,
+            "w": 282.3999938964844,
+            "x": 16,
+            "y": 128.8000030517578
+          },
+          "buttons": [
+            {
+              "bottom": 262.3000030517578,
+              "h": 44,
+              "label": "Previous collection",
+              "right": 60,
+              "w": 44,
+              "x": 16,
+              "y": 218.3000030517578
+            },
+            {
+              "bottom": 262.3000030517578,
+              "h": 44,
+              "label": "Next collection",
+              "right": 298.40000915527344,
+              "w": 44,
+              "x": 254.40000915527344,
+              "y": 218.3000030517578
+            }
+          ],
+          "complete": true,
+          "controls": {
+            "bottom": 373.8000183105469,
+            "h": 2,
+            "right": 298.3999938964844,
+            "w": 282.3999938964844,
+            "x": 16,
+            "y": 371.8000183105469
+          },
+          "copy": {
+            "bottom": 518.0000228881836,
+            "h": 124.20000457763672,
+            "right": 298.3999938964844,
+            "w": 282.3999938964844,
+            "x": 16,
+            "y": 393.8000183105469
+          },
+          "description": "Soft colors. Familiar little faces.",
+          "descriptionSize": "16px",
+          "figure": {
+            "bottom": 351.8000030517578,
+            "h": 223,
+            "right": 298.3999938964844,
+            "w": 282.3999938964844,
+            "x": 16,
+            "y": 128.8000030517578
+          },
+          "headingSize": "28px",
+          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "image": "http://localhost:5173/images/collections/little-friends-mobile.webp",
+          "link": "/services/schedule-wallpaper?collection=little-friends",
+          "naturalWidth": 1122,
+          "overflow": false,
+          "picture": {
+            "bottom": 351.8000030517578,
+            "h": 223,
+            "right": 246.40000915527344,
+            "w": 178.40000915527344,
+            "x": 68,
+            "y": 128.8000030517578
+          },
+          "playButton": false,
+          "progress": "Collection 1 of 4",
+          "title": "Little Friends",
+          "viewport": [
+            320,
+            480
+          ]
+        },
+        {
+          "article": {
+            "bottom": 518.0000152587891,
+            "h": 389.2000122070313,
+            "right": 298.3999938964844,
+            "w": 282.3999938964844,
+            "x": 16,
+            "y": 128.8000030517578
+          },
+          "buttons": [
+            {
+              "bottom": 262.3000030517578,
+              "h": 44,
+              "label": "Previous collection",
+              "right": 60,
+              "w": 44,
+              "x": 16,
+              "y": 218.3000030517578
+            },
+            {
+              "bottom": 262.3000030517578,
+              "h": 44,
+              "label": "Next collection",
+              "right": 298.40000915527344,
+              "w": 44,
+              "x": 254.40000915527344,
+              "y": 218.3000030517578
+            }
+          ],
+          "complete": true,
+          "controls": {
+            "bottom": 373.8000183105469,
+            "h": 2,
+            "right": 298.3999938964844,
+            "w": 282.3999938964844,
+            "x": 16,
+            "y": 371.8000183105469
+          },
+          "copy": {
+            "bottom": 518.0000228881836,
+            "h": 124.20000457763672,
+            "right": 298.3999938964844,
+            "w": 282.3999938964844,
+            "x": 16,
+            "y": 393.8000183105469
+          },
+          "description": "A study buddy for your lock screen.",
+          "descriptionSize": "16px",
+          "figure": {
+            "bottom": 351.8000030517578,
+            "h": 223,
+            "right": 298.3999938964844,
+            "w": 282.3999938964844,
+            "x": 16,
+            "y": 128.8000030517578
+          },
+          "headingSize": "28px",
+          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "image": "http://localhost:5173/images/collections/mascot-mobile.webp",
+          "link": "/services/schedule-wallpaper?collection=mascot",
+          "naturalWidth": 1122,
+          "overflow": false,
+          "picture": {
+            "bottom": 351.8000030517578,
+            "h": 223,
+            "right": 246.40000915527344,
+            "w": 178.40000915527344,
+            "x": 68,
+            "y": 128.8000030517578
+          },
+          "playButton": false,
+          "progress": "Collection 2 of 4",
+          "title": "Mascots",
+          "viewport": [
+            320,
+            480
+          ]
+        },
+        {
+          "article": {
+            "bottom": 518.0000152587891,
+            "h": 389.2000122070313,
+            "right": 298.3999938964844,
+            "w": 282.3999938964844,
+            "x": 16,
+            "y": 128.8000030517578
+          },
+          "buttons": [
+            {
+              "bottom": 262.3000030517578,
+              "h": 44,
+              "label": "Previous collection",
+              "right": 60,
+              "w": 44,
+              "x": 16,
+              "y": 218.3000030517578
+            },
+            {
+              "bottom": 262.3000030517578,
+              "h": 44,
+              "label": "Next collection",
+              "right": 298.40000915527344,
+              "w": 44,
+              "x": 254.40000915527344,
+              "y": 218.3000030517578
+            }
+          ],
+          "complete": true,
+          "controls": {
+            "bottom": 373.8000183105469,
+            "h": 2,
+            "right": 298.3999938964844,
+            "w": 282.3999938964844,
+            "x": 16,
+            "y": 371.8000183105469
+          },
+          "copy": {
+            "bottom": 518.0000228881836,
+            "h": 124.20000457763672,
+            "right": 298.3999938964844,
+            "w": 282.3999938964844,
+            "x": 16,
+            "y": 393.8000183105469
+          },
+          "description": "Checks, dots, and stripes.",
+          "descriptionSize": "16px",
+          "figure": {
+            "bottom": 351.8000030517578,
+            "h": 223,
+            "right": 298.3999938964844,
+            "w": 282.3999938964844,
+            "x": 16,
+            "y": 128.8000030517578
+          },
+          "headingSize": "28px",
+          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "image": "http://localhost:5173/images/collections/pattern-mobile.webp",
+          "link": "/services/schedule-wallpaper?collection=pattern",
+          "naturalWidth": 1122,
+          "overflow": false,
+          "picture": {
+            "bottom": 351.8000030517578,
+            "h": 223,
+            "right": 246.40000915527344,
+            "w": 178.40000915527344,
+            "x": 68,
+            "y": 128.8000030517578
+          },
+          "playButton": false,
+          "progress": "Collection 3 of 4",
+          "title": "Patterns",
+          "viewport": [
+            320,
+            480
+          ]
+        },
+        {
+          "article": {
+            "bottom": 518.0000152587891,
+            "h": 389.2000122070313,
+            "right": 298.3999938964844,
+            "w": 282.3999938964844,
+            "x": 16,
+            "y": 128.8000030517578
+          },
+          "buttons": [
+            {
+              "bottom": 262.3000030517578,
+              "h": 44,
+              "label": "Previous collection",
+              "right": 60,
+              "w": 44,
+              "x": 16,
+              "y": 218.3000030517578
+            },
+            {
+              "bottom": 262.3000030517578,
+              "h": 44,
+              "label": "Next collection",
+              "right": 298.40000915527344,
+              "w": 44,
+              "x": 254.40000915527344,
+              "y": 218.3000030517578
+            }
+          ],
+          "complete": true,
+          "controls": {
+            "bottom": 373.8000183105469,
+            "h": 2,
+            "right": 298.3999938964844,
+            "w": 282.3999938964844,
+            "x": 16,
+            "y": 371.8000183105469
+          },
+          "copy": {
+            "bottom": 518.0000228881836,
+            "h": 124.20000457763672,
+            "right": 298.3999938964844,
+            "w": 282.3999938964844,
+            "x": 16,
+            "y": 393.8000183105469
+          },
+          "description": "Soft light and quiet colors.",
+          "descriptionSize": "16px",
+          "figure": {
+            "bottom": 351.8000030517578,
+            "h": 223,
+            "right": 298.3999938964844,
+            "w": 282.3999938964844,
+            "x": 16,
+            "y": 128.8000030517578
+          },
+          "headingSize": "28px",
+          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "image": "http://localhost:5173/images/collections/original-mobile.webp",
+          "link": "/services/schedule-wallpaper?collection=original",
+          "naturalWidth": 1122,
+          "overflow": false,
+          "picture": {
+            "bottom": 351.8000030517578,
+            "h": 223,
+            "right": 246.40000915527344,
+            "w": 178.40000915527344,
+            "x": 68,
+            "y": 128.8000030517578
+          },
+          "playButton": false,
+          "progress": "Collection 4 of 4",
+          "title": "Originals",
+          "viewport": [
+            320,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "requestedCss": {
+        "width": 375,
+        "height": 667
+      },
+      "states": [
+        {
+          "article": {
+            "bottom": 645.4000091552734,
+            "h": 458.2000122070313,
+            "right": 353.6000061035156,
+            "w": 337.6000061035156,
+            "x": 16,
+            "y": 187.1999969482422
+          },
+          "buttons": [
+            {
+              "bottom": 355.20001220703125,
+              "h": 44,
+              "label": "Previous collection",
+              "right": 60,
+              "w": 44,
+              "x": 16,
+              "y": 311.20001220703125
+            },
+            {
+              "bottom": 355.20001220703125,
+              "h": 44,
+              "label": "Next collection",
+              "right": 353.6000061035156,
+              "w": 44,
+              "x": 309.6000061035156,
+              "y": 311.20001220703125
+            }
+          ],
+          "complete": true,
+          "controls": {
+            "bottom": 501.2000122070313,
+            "h": 2,
+            "right": 353.6000061035156,
+            "w": 337.6000061035156,
+            "x": 16,
+            "y": 499.2000122070313
+          },
+          "copy": {
+            "bottom": 645.400016784668,
+            "h": 124.20000457763672,
+            "right": 353.6000061035156,
+            "w": 337.6000061035156,
+            "x": 16,
+            "y": 521.2000122070312
+          },
+          "description": "Soft colors. Familiar little faces.",
+          "descriptionSize": "16px",
+          "figure": {
+            "bottom": 479.1999969482422,
+            "h": 292,
+            "right": 353.6000061035156,
+            "w": 337.6000061035156,
+            "x": 16,
+            "y": 187.1999969482422
+          },
+          "headingSize": "28px",
+          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "image": "http://localhost:5173/images/collections/little-friends-mobile.webp",
+          "link": "/services/schedule-wallpaper?collection=little-friends",
+          "naturalWidth": 1122,
+          "overflow": false,
+          "picture": {
+            "bottom": 479.1999969482422,
+            "h": 292,
+            "right": 301.6000061035156,
+            "w": 233.6000061035156,
+            "x": 68,
+            "y": 187.1999969482422
+          },
+          "playButton": false,
+          "progress": "Collection 1 of 4",
+          "title": "Little Friends",
+          "viewport": [
+            375,
+            667
+          ]
+        },
+        {
+          "article": {
+            "bottom": 645.4000091552734,
+            "h": 458.2000122070313,
+            "right": 353.6000061035156,
+            "w": 337.6000061035156,
+            "x": 16,
+            "y": 187.1999969482422
+          },
+          "buttons": [
+            {
+              "bottom": 355.20001220703125,
+              "h": 44,
+              "label": "Previous collection",
+              "right": 60,
+              "w": 44,
+              "x": 16,
+              "y": 311.20001220703125
+            },
+            {
+              "bottom": 355.20001220703125,
+              "h": 44,
+              "label": "Next collection",
+              "right": 353.6000061035156,
+              "w": 44,
+              "x": 309.6000061035156,
+              "y": 311.20001220703125
+            }
+          ],
+          "complete": true,
+          "controls": {
+            "bottom": 501.2000122070313,
+            "h": 2,
+            "right": 353.6000061035156,
+            "w": 337.6000061035156,
+            "x": 16,
+            "y": 499.2000122070313
+          },
+          "copy": {
+            "bottom": 645.400016784668,
+            "h": 124.20000457763672,
+            "right": 353.6000061035156,
+            "w": 337.6000061035156,
+            "x": 16,
+            "y": 521.2000122070312
+          },
+          "description": "A study buddy for your lock screen.",
+          "descriptionSize": "16px",
+          "figure": {
+            "bottom": 479.1999969482422,
+            "h": 292,
+            "right": 353.6000061035156,
+            "w": 337.6000061035156,
+            "x": 16,
+            "y": 187.1999969482422
+          },
+          "headingSize": "28px",
+          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "image": "http://localhost:5173/images/collections/mascot-mobile.webp",
+          "link": "/services/schedule-wallpaper?collection=mascot",
+          "naturalWidth": 1122,
+          "overflow": false,
+          "picture": {
+            "bottom": 479.1999969482422,
+            "h": 292,
+            "right": 301.6000061035156,
+            "w": 233.6000061035156,
+            "x": 68,
+            "y": 187.1999969482422
+          },
+          "playButton": false,
+          "progress": "Collection 2 of 4",
+          "title": "Mascots",
+          "viewport": [
+            375,
+            667
+          ]
+        },
+        {
+          "article": {
+            "bottom": 645.4000091552734,
+            "h": 458.2000122070313,
+            "right": 353.6000061035156,
+            "w": 337.6000061035156,
+            "x": 16,
+            "y": 187.1999969482422
+          },
+          "buttons": [
+            {
+              "bottom": 355.20001220703125,
+              "h": 44,
+              "label": "Previous collection",
+              "right": 60,
+              "w": 44,
+              "x": 16,
+              "y": 311.20001220703125
+            },
+            {
+              "bottom": 355.20001220703125,
+              "h": 44,
+              "label": "Next collection",
+              "right": 353.6000061035156,
+              "w": 44,
+              "x": 309.6000061035156,
+              "y": 311.20001220703125
+            }
+          ],
+          "complete": true,
+          "controls": {
+            "bottom": 501.2000122070313,
+            "h": 2,
+            "right": 353.6000061035156,
+            "w": 337.6000061035156,
+            "x": 16,
+            "y": 499.2000122070313
+          },
+          "copy": {
+            "bottom": 645.400016784668,
+            "h": 124.20000457763672,
+            "right": 353.6000061035156,
+            "w": 337.6000061035156,
+            "x": 16,
+            "y": 521.2000122070312
+          },
+          "description": "Checks, dots, and stripes.",
+          "descriptionSize": "16px",
+          "figure": {
+            "bottom": 479.1999969482422,
+            "h": 292,
+            "right": 353.6000061035156,
+            "w": 337.6000061035156,
+            "x": 16,
+            "y": 187.1999969482422
+          },
+          "headingSize": "28px",
+          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "image": "http://localhost:5173/images/collections/pattern-mobile.webp",
+          "link": "/services/schedule-wallpaper?collection=pattern",
+          "naturalWidth": 1122,
+          "overflow": false,
+          "picture": {
+            "bottom": 479.1999969482422,
+            "h": 292,
+            "right": 301.6000061035156,
+            "w": 233.6000061035156,
+            "x": 68,
+            "y": 187.1999969482422
+          },
+          "playButton": false,
+          "progress": "Collection 3 of 4",
+          "title": "Patterns",
+          "viewport": [
+            375,
+            667
+          ]
+        },
+        {
+          "article": {
+            "bottom": 645.4000091552734,
+            "h": 458.2000122070313,
+            "right": 353.6000061035156,
+            "w": 337.6000061035156,
+            "x": 16,
+            "y": 187.1999969482422
+          },
+          "buttons": [
+            {
+              "bottom": 355.20001220703125,
+              "h": 44,
+              "label": "Previous collection",
+              "right": 60,
+              "w": 44,
+              "x": 16,
+              "y": 311.20001220703125
+            },
+            {
+              "bottom": 355.20001220703125,
+              "h": 44,
+              "label": "Next collection",
+              "right": 353.6000061035156,
+              "w": 44,
+              "x": 309.6000061035156,
+              "y": 311.20001220703125
+            }
+          ],
+          "complete": true,
+          "controls": {
+            "bottom": 501.2000122070313,
+            "h": 2,
+            "right": 353.6000061035156,
+            "w": 337.6000061035156,
+            "x": 16,
+            "y": 499.2000122070313
+          },
+          "copy": {
+            "bottom": 645.400016784668,
+            "h": 124.20000457763672,
+            "right": 353.6000061035156,
+            "w": 337.6000061035156,
+            "x": 16,
+            "y": 521.2000122070312
+          },
+          "description": "Soft light and quiet colors.",
+          "descriptionSize": "16px",
+          "figure": {
+            "bottom": 479.1999969482422,
+            "h": 292,
+            "right": 353.6000061035156,
+            "w": 337.6000061035156,
+            "x": 16,
+            "y": 187.1999969482422
+          },
+          "headingSize": "28px",
+          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "image": "http://localhost:5173/images/collections/original-mobile.webp",
+          "link": "/services/schedule-wallpaper?collection=original",
+          "naturalWidth": 1122,
+          "overflow": false,
+          "picture": {
+            "bottom": 479.1999969482422,
+            "h": 292,
+            "right": 301.6000061035156,
+            "w": 233.6000061035156,
+            "x": 68,
+            "y": 187.1999969482422
+          },
+          "playButton": false,
+          "progress": "Collection 4 of 4",
+          "title": "Originals",
+          "viewport": [
+            375,
+            667
+          ]
+        }
+      ]
+    },
+    {
+      "requestedCss": {
+        "width": 985,
+        "height": 1086
+      },
+      "states": [
+        {
+          "article": {
+            "bottom": 1022.7749938964844,
+            "h": 759.7999877929688,
+            "right": 956,
+            "w": 932,
+            "x": 24,
+            "y": 262.9750061035156
+          },
+          "buttons": [
+            {
+              "bottom": 564.9750366210938,
+              "h": 44,
+              "label": "Previous collection",
+              "right": 244,
+              "w": 44,
+              "x": 200,
+              "y": 520.9750366210938
+            },
+            {
+              "bottom": 564.9750366210938,
+              "h": 44,
+              "label": "Next collection",
+              "right": 780,
+              "w": 44,
+              "x": 736,
+              "y": 520.9750366210938
+            }
+          ],
+          "complete": true,
+          "controls": {
+            "bottom": 854.5375366210938,
+            "h": 2,
+            "right": 956,
+            "w": 932,
+            "x": 24,
+            "y": 852.5375366210938
+          },
+          "copy": {
+            "bottom": 1022.7750396728516,
+            "h": 138.6750030517578,
+            "right": 770,
+            "w": 560,
+            "x": 210,
+            "y": 884.1000366210938
+          },
+          "description": "Soft colors. Familiar little faces.",
+          "descriptionSize": "16.9712px",
+          "figure": {
+            "bottom": 822.9750061035156,
+            "h": 560,
+            "right": 780,
+            "w": 580,
+            "x": 200,
+            "y": 262.9750061035156
+          },
+          "headingSize": "37.712px",
+          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "image": "http://localhost:5173/images/collections/little-friends-mobile.webp",
+          "link": "/services/schedule-wallpaper?collection=little-friends",
+          "naturalWidth": 1122,
+          "overflow": false,
+          "picture": {
+            "bottom": 822.9750061035156,
+            "h": 560,
+            "right": 728,
+            "w": 476,
+            "x": 252,
+            "y": 262.9750061035156
+          },
+          "playButton": false,
+          "progress": "Collection 1 of 4",
+          "title": "Little Friends",
+          "viewport": [
+            986,
+            1086
+          ]
+        },
+        {
+          "article": {
+            "bottom": 1022.7749938964844,
+            "h": 759.7999877929688,
+            "right": 956,
+            "w": 932,
+            "x": 24,
+            "y": 262.9750061035156
+          },
+          "buttons": [
+            {
+              "bottom": 564.9750366210938,
+              "h": 44,
+              "label": "Previous collection",
+              "right": 244,
+              "w": 44,
+              "x": 200,
+              "y": 520.9750366210938
+            },
+            {
+              "bottom": 564.9750366210938,
+              "h": 44,
+              "label": "Next collection",
+              "right": 780,
+              "w": 44,
+              "x": 736,
+              "y": 520.9750366210938
+            }
+          ],
+          "complete": true,
+          "controls": {
+            "bottom": 854.5375366210938,
+            "h": 2,
+            "right": 956,
+            "w": 932,
+            "x": 24,
+            "y": 852.5375366210938
+          },
+          "copy": {
+            "bottom": 1022.7750396728516,
+            "h": 138.6750030517578,
+            "right": 770,
+            "w": 560,
+            "x": 210,
+            "y": 884.1000366210938
+          },
+          "description": "A study buddy for your lock screen.",
+          "descriptionSize": "16.9712px",
+          "figure": {
+            "bottom": 822.9750061035156,
+            "h": 560,
+            "right": 780,
+            "w": 580,
+            "x": 200,
+            "y": 262.9750061035156
+          },
+          "headingSize": "37.712px",
+          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "image": "http://localhost:5173/images/collections/mascot-mobile.webp",
+          "link": "/services/schedule-wallpaper?collection=mascot",
+          "naturalWidth": 1122,
+          "overflow": false,
+          "picture": {
+            "bottom": 822.9750061035156,
+            "h": 560,
+            "right": 728,
+            "w": 476,
+            "x": 252,
+            "y": 262.9750061035156
+          },
+          "playButton": false,
+          "progress": "Collection 2 of 4",
+          "title": "Mascots",
+          "viewport": [
+            986,
+            1086
+          ]
+        },
+        {
+          "article": {
+            "bottom": 1022.7749938964844,
+            "h": 759.7999877929688,
+            "right": 956,
+            "w": 932,
+            "x": 24,
+            "y": 262.9750061035156
+          },
+          "buttons": [
+            {
+              "bottom": 564.9750366210938,
+              "h": 44,
+              "label": "Previous collection",
+              "right": 244,
+              "w": 44,
+              "x": 200,
+              "y": 520.9750366210938
+            },
+            {
+              "bottom": 564.9750366210938,
+              "h": 44,
+              "label": "Next collection",
+              "right": 780,
+              "w": 44,
+              "x": 736,
+              "y": 520.9750366210938
+            }
+          ],
+          "complete": true,
+          "controls": {
+            "bottom": 854.5375366210938,
+            "h": 2,
+            "right": 956,
+            "w": 932,
+            "x": 24,
+            "y": 852.5375366210938
+          },
+          "copy": {
+            "bottom": 1022.7750396728516,
+            "h": 138.6750030517578,
+            "right": 770,
+            "w": 560,
+            "x": 210,
+            "y": 884.1000366210938
+          },
+          "description": "Checks, dots, and stripes.",
+          "descriptionSize": "16.9712px",
+          "figure": {
+            "bottom": 822.9750061035156,
+            "h": 560,
+            "right": 780,
+            "w": 580,
+            "x": 200,
+            "y": 262.9750061035156
+          },
+          "headingSize": "37.712px",
+          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "image": "http://localhost:5173/images/collections/pattern-mobile.webp",
+          "link": "/services/schedule-wallpaper?collection=pattern",
+          "naturalWidth": 1122,
+          "overflow": false,
+          "picture": {
+            "bottom": 822.9750061035156,
+            "h": 560,
+            "right": 728,
+            "w": 476,
+            "x": 252,
+            "y": 262.9750061035156
+          },
+          "playButton": false,
+          "progress": "Collection 3 of 4",
+          "title": "Patterns",
+          "viewport": [
+            986,
+            1086
+          ]
+        },
+        {
+          "article": {
+            "bottom": 1022.7749938964844,
+            "h": 759.7999877929688,
+            "right": 956,
+            "w": 932,
+            "x": 24,
+            "y": 262.9750061035156
+          },
+          "buttons": [
+            {
+              "bottom": 564.9750366210938,
+              "h": 44,
+              "label": "Previous collection",
+              "right": 244,
+              "w": 44,
+              "x": 200,
+              "y": 520.9750366210938
+            },
+            {
+              "bottom": 564.9750366210938,
+              "h": 44,
+              "label": "Next collection",
+              "right": 780,
+              "w": 44,
+              "x": 736,
+              "y": 520.9750366210938
+            }
+          ],
+          "complete": true,
+          "controls": {
+            "bottom": 854.5375366210938,
+            "h": 2,
+            "right": 956,
+            "w": 932,
+            "x": 24,
+            "y": 852.5375366210938
+          },
+          "copy": {
+            "bottom": 1022.7750396728516,
+            "h": 138.6750030517578,
+            "right": 770,
+            "w": 560,
+            "x": 210,
+            "y": 884.1000366210938
+          },
+          "description": "Soft light and quiet colors.",
+          "descriptionSize": "16.9712px",
+          "figure": {
+            "bottom": 822.9750061035156,
+            "h": 560,
+            "right": 780,
+            "w": 580,
+            "x": 200,
+            "y": 262.9750061035156
+          },
+          "headingSize": "37.712px",
+          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "image": "http://localhost:5173/images/collections/original-mobile.webp",
+          "link": "/services/schedule-wallpaper?collection=original",
+          "naturalWidth": 1122,
+          "overflow": false,
+          "picture": {
+            "bottom": 822.9750061035156,
+            "h": 560,
+            "right": 728,
+            "w": 476,
+            "x": 252,
+            "y": 262.9750061035156
+          },
+          "playButton": false,
+          "progress": "Collection 4 of 4",
+          "title": "Originals",
+          "viewport": [
+            986,
+            1086
+          ]
+        }
+      ]
+    },
+    {
+      "requestedCss": {
+        "width": 1024,
+        "height": 768
+      },
+      "states": [
+        {
+          "article": {
+            "bottom": 627.4000110626221,
+            "h": 644.9500122070312,
+            "right": 994.4000244140624,
+            "w": 970.4000244140624,
+            "x": 24,
+            "y": -17.55000114440918
+          },
+          "buttons": [
+            {
+              "bottom": 627.4000244140625,
+              "h": 44,
+              "label": "Previous collection",
+              "right": 449.1875,
+              "w": 44,
+              "x": 405.1875,
+              "y": 583.4000244140625
+            },
+            {
+              "bottom": 627.4000244140625,
+              "h": 44,
+              "label": "Next collection",
+              "right": 613.1875,
+              "w": 44,
+              "x": 569.1875,
+              "y": 583.4000244140625
+            }
+          ],
+          "complete": true,
+          "controls": {
+            "bottom": 627.4000244140625,
+            "h": 44,
+            "right": 994.3875122070312,
+            "w": 970.3875122070312,
+            "x": 24,
+            "y": 583.4000244140625
+          },
+          "copy": {
+            "bottom": 334.4250183105469,
+            "h": 143.96250915527344,
+            "right": 994.3874816894532,
+            "w": 399.6499938964844,
+            "x": 594.7374877929688,
+            "y": 190.46250915527344
+          },
+          "description": "Soft colors. Familiar little faces.",
+          "descriptionSize": "17.048px",
+          "figure": {
+            "bottom": 542.4499988555908,
+            "h": 560,
+            "right": 543.5375366210938,
+            "w": 519.5375366210938,
+            "x": 24,
+            "y": -17.55000114440918
+          },
+          "headingSize": "38.4px",
+          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "image": "http://localhost:5173/images/collections/little-friends-mobile.webp",
+          "link": "/services/schedule-wallpaper?collection=little-friends",
+          "naturalWidth": 1122,
+          "overflow": false,
+          "picture": {
+            "bottom": 542.4499988555908,
+            "h": 560,
+            "right": 513.7625007629395,
+            "w": 460,
+            "x": 53.76250076293945,
+            "y": -17.55000114440918
+          },
+          "playButton": false,
+          "progress": "Collection 1 of 4",
+          "title": "Little Friends",
+          "viewport": [
+            1024,
+            768
+          ]
+        },
+        {
+          "article": {
+            "bottom": 627.4000110626221,
+            "h": 644.9500122070312,
+            "right": 994.4000244140624,
+            "w": 970.4000244140624,
+            "x": 24,
+            "y": -17.55000114440918
+          },
+          "buttons": [
+            {
+              "bottom": 627.4000244140625,
+              "h": 44,
+              "label": "Previous collection",
+              "right": 449.1875,
+              "w": 44,
+              "x": 405.1875,
+              "y": 583.4000244140625
+            },
+            {
+              "bottom": 627.4000244140625,
+              "h": 44,
+              "label": "Next collection",
+              "right": 613.1875,
+              "w": 44,
+              "x": 569.1875,
+              "y": 583.4000244140625
+            }
+          ],
+          "complete": true,
+          "controls": {
+            "bottom": 627.4000244140625,
+            "h": 44,
+            "right": 994.3875122070312,
+            "w": 970.3875122070312,
+            "x": 24,
+            "y": 583.4000244140625
+          },
+          "copy": {
+            "bottom": 334.4250183105469,
+            "h": 143.96250915527344,
+            "right": 994.3874816894532,
+            "w": 399.6499938964844,
+            "x": 594.7374877929688,
+            "y": 190.46250915527344
+          },
+          "description": "A study buddy for your lock screen.",
+          "descriptionSize": "17.048px",
+          "figure": {
+            "bottom": 542.4499988555908,
+            "h": 560,
+            "right": 543.5375366210938,
+            "w": 519.5375366210938,
+            "x": 24,
+            "y": -17.55000114440918
+          },
+          "headingSize": "38.4px",
+          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "image": "http://localhost:5173/images/collections/mascot-mobile.webp",
+          "link": "/services/schedule-wallpaper?collection=mascot",
+          "naturalWidth": 1122,
+          "overflow": false,
+          "picture": {
+            "bottom": 542.4499988555908,
+            "h": 560,
+            "right": 513.7625007629395,
+            "w": 460,
+            "x": 53.76250076293945,
+            "y": -17.55000114440918
+          },
+          "playButton": false,
+          "progress": "Collection 2 of 4",
+          "title": "Mascots",
+          "viewport": [
+            1024,
+            768
+          ]
+        },
+        {
+          "article": {
+            "bottom": 627.4000110626221,
+            "h": 644.9500122070312,
+            "right": 994.4000244140624,
+            "w": 970.4000244140624,
+            "x": 24,
+            "y": -17.55000114440918
+          },
+          "buttons": [
+            {
+              "bottom": 627.4000244140625,
+              "h": 44,
+              "label": "Previous collection",
+              "right": 449.1875,
+              "w": 44,
+              "x": 405.1875,
+              "y": 583.4000244140625
+            },
+            {
+              "bottom": 627.4000244140625,
+              "h": 44,
+              "label": "Next collection",
+              "right": 613.1875,
+              "w": 44,
+              "x": 569.1875,
+              "y": 583.4000244140625
+            }
+          ],
+          "complete": true,
+          "controls": {
+            "bottom": 627.4000244140625,
+            "h": 44,
+            "right": 994.3875122070312,
+            "w": 970.3875122070312,
+            "x": 24,
+            "y": 583.4000244140625
+          },
+          "copy": {
+            "bottom": 334.4250183105469,
+            "h": 143.96250915527344,
+            "right": 994.3874816894532,
+            "w": 399.6499938964844,
+            "x": 594.7374877929688,
+            "y": 190.46250915527344
+          },
+          "description": "Checks, dots, and stripes.",
+          "descriptionSize": "17.048px",
+          "figure": {
+            "bottom": 542.4499988555908,
+            "h": 560,
+            "right": 543.5375366210938,
+            "w": 519.5375366210938,
+            "x": 24,
+            "y": -17.55000114440918
+          },
+          "headingSize": "38.4px",
+          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "image": "http://localhost:5173/images/collections/pattern-mobile.webp",
+          "link": "/services/schedule-wallpaper?collection=pattern",
+          "naturalWidth": 1122,
+          "overflow": false,
+          "picture": {
+            "bottom": 542.4499988555908,
+            "h": 560,
+            "right": 513.7625007629395,
+            "w": 460,
+            "x": 53.76250076293945,
+            "y": -17.55000114440918
+          },
+          "playButton": false,
+          "progress": "Collection 3 of 4",
+          "title": "Patterns",
+          "viewport": [
+            1024,
+            768
+          ]
+        },
+        {
+          "article": {
+            "bottom": 627.4000110626221,
+            "h": 644.9500122070312,
+            "right": 994.4000244140624,
+            "w": 970.4000244140624,
+            "x": 24,
+            "y": -17.55000114440918
+          },
+          "buttons": [
+            {
+              "bottom": 627.4000244140625,
+              "h": 44,
+              "label": "Previous collection",
+              "right": 449.1875,
+              "w": 44,
+              "x": 405.1875,
+              "y": 583.4000244140625
+            },
+            {
+              "bottom": 627.4000244140625,
+              "h": 44,
+              "label": "Next collection",
+              "right": 613.1875,
+              "w": 44,
+              "x": 569.1875,
+              "y": 583.4000244140625
+            }
+          ],
+          "complete": true,
+          "controls": {
+            "bottom": 627.4000244140625,
+            "h": 44,
+            "right": 994.3875122070312,
+            "w": 970.3875122070312,
+            "x": 24,
+            "y": 583.4000244140625
+          },
+          "copy": {
+            "bottom": 334.4250183105469,
+            "h": 143.96250915527344,
+            "right": 994.3874816894532,
+            "w": 399.6499938964844,
+            "x": 594.7374877929688,
+            "y": 190.46250915527344
+          },
+          "description": "Soft light and quiet colors.",
+          "descriptionSize": "17.048px",
+          "figure": {
+            "bottom": 542.4499988555908,
+            "h": 560,
+            "right": 543.5375366210938,
+            "w": 519.5375366210938,
+            "x": 24,
+            "y": -17.55000114440918
+          },
+          "headingSize": "38.4px",
+          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "image": "http://localhost:5173/images/collections/original-mobile.webp",
+          "link": "/services/schedule-wallpaper?collection=original",
+          "naturalWidth": 1122,
+          "overflow": false,
+          "picture": {
+            "bottom": 542.4499988555908,
+            "h": 560,
+            "right": 513.7625007629395,
+            "w": 460,
+            "x": 53.76250076293945,
+            "y": -17.55000114440918
+          },
+          "playButton": false,
+          "progress": "Collection 4 of 4",
+          "title": "Originals",
+          "viewport": [
+            1024,
+            768
+          ]
+        }
+      ]
+    },
+    {
+      "requestedCss": {
+        "width": 1440,
+        "height": 900
+      },
+      "states": [
+        {
+          "article": {
+            "bottom": 743.5999984741211,
+            "h": 660,
+            "right": 1277.1999969482422,
+            "w": 1120,
+            "x": 157.1999969482422,
+            "y": 83.5999984741211
+          },
+          "buttons": [
+            {
+              "bottom": 743.6000366210938,
+              "h": 44,
+              "label": "Previous collection",
+              "right": 657.2000122070312,
+              "w": 44,
+              "x": 613.2000122070312,
+              "y": 699.6000366210938
+            },
+            {
+              "bottom": 743.6000366210938,
+              "h": 44,
+              "label": "Next collection",
+              "right": 821.2000122070312,
+              "w": 44,
+              "x": 777.2000122070312,
+              "y": 699.6000366210938
+            }
+          ],
+          "complete": true,
+          "controls": {
+            "bottom": 743.6000366210938,
+            "h": 44,
+            "right": 1277.1999969482422,
+            "w": 1120,
+            "x": 157.1999969482422,
+            "y": 699.6000366210938
+          },
+          "copy": {
+            "bottom": 439.0750274658203,
+            "h": 150.96250915527344,
+            "right": 1277.2000427246094,
+            "w": 455.6625061035156,
+            "x": 821.5375366210938,
+            "y": 288.1125183105469
+          },
+          "description": "Soft colors. Familiar little faces.",
+          "descriptionSize": "17.88px",
+          "figure": {
+            "bottom": 643.5999984741211,
+            "h": 560,
+            "right": 749.5375213623047,
+            "w": 592.3375244140625,
+            "x": 157.1999969482422,
+            "y": 83.5999984741211
+          },
+          "headingSize": "38.4px",
+          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "image": "http://localhost:5173/images/collections/little-friends-mobile.webp",
+          "link": "/services/schedule-wallpaper?collection=little-friends",
+          "naturalWidth": 1122,
+          "overflow": false,
+          "picture": {
+            "bottom": 643.5999984741211,
+            "h": 560,
+            "right": 683.3625030517578,
+            "w": 460,
+            "x": 223.3625030517578,
+            "y": 83.5999984741211
+          },
+          "playButton": false,
+          "progress": "Collection 1 of 4",
+          "title": "Little Friends",
+          "viewport": [
+            1440,
+            900
+          ]
+        },
+        {
+          "article": {
+            "bottom": 743.5999984741211,
+            "h": 660,
+            "right": 1277.1999969482422,
+            "w": 1120,
+            "x": 157.1999969482422,
+            "y": 83.5999984741211
+          },
+          "buttons": [
+            {
+              "bottom": 743.6000366210938,
+              "h": 44,
+              "label": "Previous collection",
+              "right": 657.2000122070312,
+              "w": 44,
+              "x": 613.2000122070312,
+              "y": 699.6000366210938
+            },
+            {
+              "bottom": 743.6000366210938,
+              "h": 44,
+              "label": "Next collection",
+              "right": 821.2000122070312,
+              "w": 44,
+              "x": 777.2000122070312,
+              "y": 699.6000366210938
+            }
+          ],
+          "complete": true,
+          "controls": {
+            "bottom": 743.6000366210938,
+            "h": 44,
+            "right": 1277.1999969482422,
+            "w": 1120,
+            "x": 157.1999969482422,
+            "y": 699.6000366210938
+          },
+          "copy": {
+            "bottom": 439.0750274658203,
+            "h": 150.96250915527344,
+            "right": 1277.2000427246094,
+            "w": 455.6625061035156,
+            "x": 821.5375366210938,
+            "y": 288.1125183105469
+          },
+          "description": "A study buddy for your lock screen.",
+          "descriptionSize": "17.88px",
+          "figure": {
+            "bottom": 643.5999984741211,
+            "h": 560,
+            "right": 749.5375213623047,
+            "w": 592.3375244140625,
+            "x": 157.1999969482422,
+            "y": 83.5999984741211
+          },
+          "headingSize": "38.4px",
+          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "image": "http://localhost:5173/images/collections/mascot-mobile.webp",
+          "link": "/services/schedule-wallpaper?collection=mascot",
+          "naturalWidth": 1122,
+          "overflow": false,
+          "picture": {
+            "bottom": 643.5999984741211,
+            "h": 560,
+            "right": 683.3625030517578,
+            "w": 460,
+            "x": 223.3625030517578,
+            "y": 83.5999984741211
+          },
+          "playButton": false,
+          "progress": "Collection 2 of 4",
+          "title": "Mascots",
+          "viewport": [
+            1440,
+            900
+          ]
+        },
+        {
+          "article": {
+            "bottom": 743.5999984741211,
+            "h": 660,
+            "right": 1277.1999969482422,
+            "w": 1120,
+            "x": 157.1999969482422,
+            "y": 83.5999984741211
+          },
+          "buttons": [
+            {
+              "bottom": 743.6000366210938,
+              "h": 44,
+              "label": "Previous collection",
+              "right": 657.2000122070312,
+              "w": 44,
+              "x": 613.2000122070312,
+              "y": 699.6000366210938
+            },
+            {
+              "bottom": 743.6000366210938,
+              "h": 44,
+              "label": "Next collection",
+              "right": 821.2000122070312,
+              "w": 44,
+              "x": 777.2000122070312,
+              "y": 699.6000366210938
+            }
+          ],
+          "complete": true,
+          "controls": {
+            "bottom": 743.6000366210938,
+            "h": 44,
+            "right": 1277.1999969482422,
+            "w": 1120,
+            "x": 157.1999969482422,
+            "y": 699.6000366210938
+          },
+          "copy": {
+            "bottom": 439.0750274658203,
+            "h": 150.96250915527344,
+            "right": 1277.2000427246094,
+            "w": 455.6625061035156,
+            "x": 821.5375366210938,
+            "y": 288.1125183105469
+          },
+          "description": "Checks, dots, and stripes.",
+          "descriptionSize": "17.88px",
+          "figure": {
+            "bottom": 643.5999984741211,
+            "h": 560,
+            "right": 749.5375213623047,
+            "w": 592.3375244140625,
+            "x": 157.1999969482422,
+            "y": 83.5999984741211
+          },
+          "headingSize": "38.4px",
+          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "image": "http://localhost:5173/images/collections/pattern-mobile.webp",
+          "link": "/services/schedule-wallpaper?collection=pattern",
+          "naturalWidth": 1122,
+          "overflow": false,
+          "picture": {
+            "bottom": 643.5999984741211,
+            "h": 560,
+            "right": 683.3625030517578,
+            "w": 460,
+            "x": 223.3625030517578,
+            "y": 83.5999984741211
+          },
+          "playButton": false,
+          "progress": "Collection 3 of 4",
+          "title": "Patterns",
+          "viewport": [
+            1440,
+            900
+          ]
+        },
+        {
+          "article": {
+            "bottom": 743.5999984741211,
+            "h": 660,
+            "right": 1277.1999969482422,
+            "w": 1120,
+            "x": 157.1999969482422,
+            "y": 83.5999984741211
+          },
+          "buttons": [
+            {
+              "bottom": 743.6000366210938,
+              "h": 44,
+              "label": "Previous collection",
+              "right": 657.2000122070312,
+              "w": 44,
+              "x": 613.2000122070312,
+              "y": 699.6000366210938
+            },
+            {
+              "bottom": 743.6000366210938,
+              "h": 44,
+              "label": "Next collection",
+              "right": 821.2000122070312,
+              "w": 44,
+              "x": 777.2000122070312,
+              "y": 699.6000366210938
+            }
+          ],
+          "complete": true,
+          "controls": {
+            "bottom": 743.6000366210938,
+            "h": 44,
+            "right": 1277.1999969482422,
+            "w": 1120,
+            "x": 157.1999969482422,
+            "y": 699.6000366210938
+          },
+          "copy": {
+            "bottom": 439.0750274658203,
+            "h": 150.96250915527344,
+            "right": 1277.2000427246094,
+            "w": 455.6625061035156,
+            "x": 821.5375366210938,
+            "y": 288.1125183105469
+          },
+          "description": "Soft light and quiet colors.",
+          "descriptionSize": "17.88px",
+          "figure": {
+            "bottom": 643.5999984741211,
+            "h": 560,
+            "right": 749.5375213623047,
+            "w": 592.3375244140625,
+            "x": 157.1999969482422,
+            "y": 83.5999984741211
+          },
+          "headingSize": "38.4px",
+          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "image": "http://localhost:5173/images/collections/original-mobile.webp",
+          "link": "/services/schedule-wallpaper?collection=original",
+          "naturalWidth": 1122,
+          "overflow": false,
+          "picture": {
+            "bottom": 643.5999984741211,
+            "h": 560,
+            "right": 683.3625030517578,
+            "w": 460,
+            "x": 223.3625030517578,
+            "y": 83.5999984741211
+          },
+          "playButton": false,
+          "progress": "Collection 4 of 4",
+          "title": "Originals",
+          "viewport": [
+            1440,
+            900
+          ]
+        }
+      ]
+    }
+  ],
+  "behavior": [
+    {
+      "test": "Five-second gradual fill, hover freeze and remaining-time resume",
+      "start": {
+        "duration": "5s",
+        "live": "off",
+        "playState": "running",
+        "title": "Little Friends",
+        "transform": "matrix(0.0478254, 0, 0, 1, 0, 0)"
+      },
+      "growing": {
+        "duration": "5s",
+        "live": "off",
+        "playState": "running",
+        "title": "Little Friends",
+        "transform": "matrix(0.494722, 0, 0, 1, 0, 0)"
+      },
+      "paused": {
+        "duration": "5s",
+        "live": "polite",
+        "playState": "paused",
+        "title": "Little Friends",
+        "transform": "matrix(0.501386, 0, 0, 1, 0, 0)"
+      },
+      "held": {
+        "duration": "5s",
+        "live": "polite",
+        "playState": "paused",
+        "title": "Little Friends",
+        "transform": "matrix(0.501386, 0, 0, 1, 0, 0)"
+      },
+      "advanced": {
+        "duration": "5s",
+        "live": "off",
+        "playState": "running",
+        "title": "Mascots",
+        "transform": "matrix(0.122752, 0, 0, 1, 0, 0)"
+      },
+      "passed": true
+    },
+    {
+      "test": "Forward/backward wrapping",
+      "forward": "Little Friends",
+      "backward": "Originals",
+      "passed": true
+    },
+    {
+      "test": "Control focus holds countdown for 5.2 seconds",
+      "before": {
+        "duration": "5s",
+        "live": "polite",
+        "playState": "paused",
+        "title": "Originals",
+        "transform": "matrix(0, 0, 0, 1, 0, 0)"
+      },
+      "after": {
+        "duration": "5s",
+        "live": "polite",
+        "playState": "paused",
+        "title": "Originals",
+        "transform": "matrix(0, 0, 0, 1, 0, 0)"
+      },
+      "passed": true
+    },
+    {
+      "test": "Offscreen holds countdown for 5.2 seconds after the pause frame settles",
+      "before": {
+        "duration": "5s",
+        "live": "polite",
+        "playState": "paused",
+        "title": "Patterns",
+        "transform": "matrix(0.0540344, 0, 0, 1, 0, 0)"
+      },
+      "after": {
+        "duration": "5s",
+        "live": "polite",
+        "playState": "paused",
+        "title": "Patterns",
+        "transform": "matrix(0.0540344, 0, 0, 1, 0, 0)"
+      },
+      "passed": true
+    }
+  ],
+  "heroUnchanged": true,
+  "appearance": {
+    "arrows": [
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px"
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px"
+      }
+    ],
+    "brands": [
+      {
+        "font": "21px",
+        "markHeight": "36px",
+        "markWidth": "36px"
+      },
+      {
+        "font": "21px",
+        "markHeight": "36px",
+        "markWidth": "36px"
+      }
+    ],
+    "footer": " SchedSnapCreated by .dcd",
+    "notePresent": false,
+    "progressHeight": 2,
+    "progressWidth": 80
+  },
+  "summary": {
+    "checksPassed": true,
+    "behaviorPassed": true,
+    "noteRemoved": true,
+    "footerBrandMatches": true,
+    "progressDimensions": [
+      80,
+      2
+    ],
+    "hiddenPageAndReducedMotion": "Source reviewed; not browser emulated",
+    "lint": "passed",
+    "build": "passed"
+  }
+}

@@ -1,0 +1,1631 @@
+[
+  {
+    "heroScale": "matrix(1.18, 0, 0, 1.18, 0, 0)",
+    "heroSource": "http://localhost:5173/images/hero-phones.webp",
+    "overflow": false,
+    "previousWrappedTo": "Originals",
+    "slideCount": 1,
+    "viewport": {
+      "height": 480,
+      "width": 320
+    },
+    "slides": [
+      {
+        "bodyFont": "16px",
+        "button": {
+          "bottom": 390.2000122070313,
+          "height": 44,
+          "right": 298.3999938964844,
+          "width": 282.3999938964844,
+          "x": 16,
+          "y": 346.20001220703125
+        },
+        "copy": {
+          "bottom": 390.1999969482422,
+          "height": 150.1999969482422,
+          "right": 298.3999938964844,
+          "width": 282.3999938964844,
+          "x": 16,
+          "y": 240
+        },
+        "description": "Soft colors and familiar little faces.",
+        "font": "28px",
+        "href": "/services/schedule-wallpaper?collection=little-friends",
+        "image": {
+          "bottom": 763.2000122070312,
+          "height": 353,
+          "right": 298.3999938964844,
+          "width": 282.3999938964844,
+          "x": 16,
+          "y": 410.2000122070313
+        },
+        "loadedSource": "http://localhost:5173/images/collections/little-friends-mobile.webp",
+        "position": "1 / 4",
+        "section": {
+          "bottom": 892.0000152587891,
+          "height": 808.2000122070312,
+          "right": 298.3999938964844,
+          "width": 282.3999938964844,
+          "x": 16,
+          "y": 83.80000305175781
+        },
+        "selectedSource": "/images/collections/little-friends-mobile.webp",
+        "title": "Little Friends"
+      },
+      {
+        "bodyFont": "16px",
+        "button": {
+          "bottom": 435.8000183105469,
+          "height": 44,
+          "right": 298.3999938964844,
+          "width": 282.3999938964844,
+          "x": 16,
+          "y": 391.8000183105469
+        },
+        "copy": {
+          "bottom": 435.8000030517578,
+          "height": 150.1999969482422,
+          "right": 298.3999938964844,
+          "width": 282.3999938964844,
+          "x": 16,
+          "y": 285.6000061035156
+        },
+        "description": "A study buddy for your lock screen.",
+        "font": "28px",
+        "href": "/services/schedule-wallpaper?collection=mascot",
+        "image": {
+          "bottom": 808.8000183105469,
+          "height": 353,
+          "right": 298.3999938964844,
+          "width": 282.3999938964844,
+          "x": 16,
+          "y": 455.8000183105469
+        },
+        "loadedSource": "http://localhost:5173/images/collections/mascot-mobile.webp",
+        "position": "2 / 4",
+        "section": {
+          "bottom": 937.6000213623048,
+          "height": 808.2000122070312,
+          "right": 298.3999938964844,
+          "width": 282.3999938964844,
+          "x": 16,
+          "y": 129.40000915527344
+        },
+        "selectedSource": "/images/collections/mascot-mobile.webp",
+        "title": "Mascots"
+      },
+      {
+        "bodyFont": "16px",
+        "button": {
+          "bottom": 435.8000183105469,
+          "height": 44,
+          "right": 298.3999938964844,
+          "width": 282.3999938964844,
+          "x": 16,
+          "y": 391.8000183105469
+        },
+        "copy": {
+          "bottom": 435.8000030517578,
+          "height": 150.1999969482422,
+          "right": 298.3999938964844,
+          "width": 282.3999938964844,
+          "x": 16,
+          "y": 285.6000061035156
+        },
+        "description": "Checks, dots, and stripes. Your kind of rhythm.",
+        "font": "28px",
+        "href": "/services/schedule-wallpaper?collection=pattern",
+        "image": {
+          "bottom": 808.8000183105469,
+          "height": 353,
+          "right": 298.3999938964844,
+          "width": 282.3999938964844,
+          "x": 16,
+          "y": 455.8000183105469
+        },
+        "loadedSource": "http://localhost:5173/images/collections/pattern-mobile.webp",
+        "position": "3 / 4",
+        "section": {
+          "bottom": 937.6000213623048,
+          "height": 808.2000122070312,
+          "right": 298.3999938964844,
+          "width": 282.3999938964844,
+          "x": 16,
+          "y": 129.40000915527344
+        },
+        "selectedSource": "/images/collections/pattern-mobile.webp",
+        "title": "Patterns"
+      },
+      {
+        "bodyFont": "16px",
+        "button": {
+          "bottom": 435.8000183105469,
+          "height": 44,
+          "right": 298.3999938964844,
+          "width": 282.3999938964844,
+          "x": 16,
+          "y": 391.8000183105469
+        },
+        "copy": {
+          "bottom": 435.8000030517578,
+          "height": 150.1999969482422,
+          "right": 298.3999938964844,
+          "width": 282.3999938964844,
+          "x": 16,
+          "y": 285.6000061035156
+        },
+        "description": "Soft light, quiet colors, clean schedules.",
+        "font": "28px",
+        "href": "/services/schedule-wallpaper?collection=original",
+        "image": {
+          "bottom": 808.8000183105469,
+          "height": 353,
+          "right": 298.3999938964844,
+          "width": 282.3999938964844,
+          "x": 16,
+          "y": 455.8000183105469
+        },
+        "loadedSource": "http://localhost:5173/images/collections/original-mobile.webp",
+        "position": "4 / 4",
+        "section": {
+          "bottom": 937.6000213623048,
+          "height": 808.2000122070312,
+          "right": 298.3999938964844,
+          "width": 282.3999938964844,
+          "x": 16,
+          "y": 129.40000915527344
+        },
+        "selectedSource": "/images/collections/original-mobile.webp",
+        "title": "Originals"
+      }
+    ]
+  },
+  {
+    "heroScale": "matrix(1.18, 0, 0, 1.18, 0, 0)",
+    "heroSource": "http://localhost:5173/images/hero-phones.webp",
+    "overflow": false,
+    "previousWrappedTo": "Originals",
+    "slideCount": 1,
+    "viewport": {
+      "height": 667,
+      "width": 375
+    },
+    "slides": [
+      {
+        "bodyFont": "16px",
+        "button": {
+          "bottom": 390.2000122070313,
+          "height": 44,
+          "right": 344.8000011444092,
+          "width": 320,
+          "x": 24.80000114440918,
+          "y": 346.20001220703125
+        },
+        "copy": {
+          "bottom": 390.1999969482422,
+          "height": 150.1999969482422,
+          "right": 353.6000061035156,
+          "width": 337.6000061035156,
+          "x": 16,
+          "y": 240
+        },
+        "description": "Soft colors and familiar little faces.",
+        "font": "28px",
+        "href": "/services/schedule-wallpaper?collection=little-friends",
+        "image": {
+          "bottom": 832.2000122070312,
+          "height": 422,
+          "right": 353.6000061035156,
+          "width": 337.6000061035156,
+          "x": 16,
+          "y": 410.2000122070313
+        },
+        "loadedSource": "http://localhost:5173/images/collections/little-friends-mobile.webp",
+        "position": "1 / 4",
+        "section": {
+          "bottom": 940.5999908447266,
+          "height": 856.7999877929688,
+          "right": 353.6000061035156,
+          "width": 337.6000061035156,
+          "x": 16,
+          "y": 83.80000305175781
+        },
+        "selectedSource": "/images/collections/little-friends-mobile.webp",
+        "title": "Little Friends"
+      },
+      {
+        "bodyFont": "16px",
+        "button": {
+          "bottom": 529.3999938964844,
+          "height": 44,
+          "right": 344.8000011444092,
+          "width": 320,
+          "x": 24.80000114440918,
+          "y": 485.3999938964844
+        },
+        "copy": {
+          "bottom": 529.4000091552734,
+          "height": 150.1999969482422,
+          "right": 353.6000061035156,
+          "width": 337.6000061035156,
+          "x": 16,
+          "y": 379.2000122070313
+        },
+        "description": "A study buddy for your lock screen.",
+        "font": "28px",
+        "href": "/services/schedule-wallpaper?collection=mascot",
+        "image": {
+          "bottom": 971.4000244140624,
+          "height": 422,
+          "right": 353.6000061035156,
+          "width": 337.6000061035156,
+          "x": 16,
+          "y": 549.4000244140625
+        },
+        "loadedSource": "http://localhost:5173/images/collections/mascot-mobile.webp",
+        "position": "2 / 4",
+        "section": {
+          "bottom": 1079.7999877929688,
+          "height": 856.7999877929688,
+          "right": 353.6000061035156,
+          "width": 337.6000061035156,
+          "x": 16,
+          "y": 223
+        },
+        "selectedSource": "/images/collections/mascot-mobile.webp",
+        "title": "Mascots"
+      },
+      {
+        "bodyFont": "16px",
+        "button": {
+          "bottom": 529.3999938964844,
+          "height": 44,
+          "right": 344.8000011444092,
+          "width": 320,
+          "x": 24.80000114440918,
+          "y": 485.3999938964844
+        },
+        "copy": {
+          "bottom": 529.4000091552734,
+          "height": 150.1999969482422,
+          "right": 353.6000061035156,
+          "width": 337.6000061035156,
+          "x": 16,
+          "y": 379.2000122070313
+        },
+        "description": "Checks, dots, and stripes. Your kind of rhythm.",
+        "font": "28px",
+        "href": "/services/schedule-wallpaper?collection=pattern",
+        "image": {
+          "bottom": 971.4000244140624,
+          "height": 422,
+          "right": 353.6000061035156,
+          "width": 337.6000061035156,
+          "x": 16,
+          "y": 549.4000244140625
+        },
+        "loadedSource": "http://localhost:5173/images/collections/pattern-mobile.webp",
+        "position": "3 / 4",
+        "section": {
+          "bottom": 1079.7999877929688,
+          "height": 856.7999877929688,
+          "right": 353.6000061035156,
+          "width": 337.6000061035156,
+          "x": 16,
+          "y": 223
+        },
+        "selectedSource": "/images/collections/pattern-mobile.webp",
+        "title": "Patterns"
+      },
+      {
+        "bodyFont": "16px",
+        "button": {
+          "bottom": 529.3999938964844,
+          "height": 44,
+          "right": 344.8000011444092,
+          "width": 320,
+          "x": 24.80000114440918,
+          "y": 485.3999938964844
+        },
+        "copy": {
+          "bottom": 529.4000091552734,
+          "height": 150.1999969482422,
+          "right": 353.6000061035156,
+          "width": 337.6000061035156,
+          "x": 16,
+          "y": 379.2000122070313
+        },
+        "description": "Soft light, quiet colors, clean schedules.",
+        "font": "28px",
+        "href": "/services/schedule-wallpaper?collection=original",
+        "image": {
+          "bottom": 971.4000244140624,
+          "height": 422,
+          "right": 353.6000061035156,
+          "width": 337.6000061035156,
+          "x": 16,
+          "y": 549.4000244140625
+        },
+        "loadedSource": "http://localhost:5173/images/collections/original-mobile.webp",
+        "position": "4 / 4",
+        "section": {
+          "bottom": 1079.7999877929688,
+          "height": 856.7999877929688,
+          "right": 353.6000061035156,
+          "width": 337.6000061035156,
+          "x": 16,
+          "y": 223
+        },
+        "selectedSource": "/images/collections/original-mobile.webp",
+        "title": "Originals"
+      }
+    ]
+  },
+  {
+    "heroScale": "matrix(1.18, 0, 0, 1.18, 0, 0)",
+    "heroSource": "http://localhost:5173/images/hero-phones.webp",
+    "overflow": false,
+    "previousWrappedTo": "Originals",
+    "slideCount": 1,
+    "viewport": {
+      "height": 932,
+      "width": 430
+    },
+    "slides": [
+      {
+        "bodyFont": "16px",
+        "button": {
+          "bottom": 390.2000122070313,
+          "height": 44,
+          "right": 372.4000015258789,
+          "width": 320,
+          "x": 52.400001525878906,
+          "y": 346.20001220703125
+        },
+        "copy": {
+          "bottom": 390.1999969482422,
+          "height": 150.1999969482422,
+          "right": 408.8000183105469,
+          "width": 392.8000183105469,
+          "x": 16,
+          "y": 240
+        },
+        "description": "Soft colors and familiar little faces.",
+        "font": "28px",
+        "href": "/services/schedule-wallpaper?collection=little-friends",
+        "image": {
+          "bottom": 901.2000122070312,
+          "height": 491,
+          "right": 408.8000183105469,
+          "width": 392.8000183105469,
+          "x": 16,
+          "y": 410.2000122070313
+        },
+        "loadedSource": "http://localhost:5173/images/collections/little-friends-mobile.webp",
+        "position": "1 / 4",
+        "section": {
+          "bottom": 1009.5999908447266,
+          "height": 925.7999877929688,
+          "right": 408.8000183105469,
+          "width": 392.8000183105469,
+          "x": 16,
+          "y": 83.80000305175781
+        },
+        "selectedSource": "/images/collections/little-friends-mobile.webp",
+        "title": "Little Friends"
+      },
+      {
+        "bodyFont": "16px",
+        "button": {
+          "bottom": 662.2000122070312,
+          "height": 44,
+          "right": 372.4000015258789,
+          "width": 320,
+          "x": 52.400001525878906,
+          "y": 618.2000122070312
+        },
+        "copy": {
+          "bottom": 662.1999969482422,
+          "height": 150.1999969482422,
+          "right": 408.8000183105469,
+          "width": 392.8000183105469,
+          "x": 16,
+          "y": 512
+        },
+        "description": "A study buddy for your lock screen.",
+        "font": "28px",
+        "href": "/services/schedule-wallpaper?collection=mascot",
+        "image": {
+          "bottom": 1173.2000122070312,
+          "height": 491,
+          "right": 408.8000183105469,
+          "width": 392.8000183105469,
+          "x": 16,
+          "y": 682.2000122070312
+        },
+        "loadedSource": "http://localhost:5173/images/collections/mascot-mobile.webp",
+        "position": "2 / 4",
+        "section": {
+          "bottom": 1281.6000061035156,
+          "height": 925.7999877929688,
+          "right": 408.8000183105469,
+          "width": 392.8000183105469,
+          "x": 16,
+          "y": 355.8000183105469
+        },
+        "selectedSource": "/images/collections/mascot-mobile.webp",
+        "title": "Mascots"
+      },
+      {
+        "bodyFont": "16px",
+        "button": {
+          "bottom": 662.2000122070312,
+          "height": 44,
+          "right": 372.4000015258789,
+          "width": 320,
+          "x": 52.400001525878906,
+          "y": 618.2000122070312
+        },
+        "copy": {
+          "bottom": 662.1999969482422,
+          "height": 150.1999969482422,
+          "right": 408.8000183105469,
+          "width": 392.8000183105469,
+          "x": 16,
+          "y": 512
+        },
+        "description": "Checks, dots, and stripes. Your kind of rhythm.",
+        "font": "28px",
+        "href": "/services/schedule-wallpaper?collection=pattern",
+        "image": {
+          "bottom": 1173.2000122070312,
+          "height": 491,
+          "right": 408.8000183105469,
+          "width": 392.8000183105469,
+          "x": 16,
+          "y": 682.2000122070312
+        },
+        "loadedSource": "http://localhost:5173/images/collections/pattern-mobile.webp",
+        "position": "3 / 4",
+        "section": {
+          "bottom": 1281.6000061035156,
+          "height": 925.7999877929688,
+          "right": 408.8000183105469,
+          "width": 392.8000183105469,
+          "x": 16,
+          "y": 355.8000183105469
+        },
+        "selectedSource": "/images/collections/pattern-mobile.webp",
+        "title": "Patterns"
+      },
+      {
+        "bodyFont": "16px",
+        "button": {
+          "bottom": 662.2000122070312,
+          "height": 44,
+          "right": 372.4000015258789,
+          "width": 320,
+          "x": 52.400001525878906,
+          "y": 618.2000122070312
+        },
+        "copy": {
+          "bottom": 662.1999969482422,
+          "height": 150.1999969482422,
+          "right": 408.8000183105469,
+          "width": 392.8000183105469,
+          "x": 16,
+          "y": 512
+        },
+        "description": "Soft light, quiet colors, clean schedules.",
+        "font": "28px",
+        "href": "/services/schedule-wallpaper?collection=original",
+        "image": {
+          "bottom": 1173.2000122070312,
+          "height": 491,
+          "right": 408.8000183105469,
+          "width": 392.8000183105469,
+          "x": 16,
+          "y": 682.2000122070312
+        },
+        "loadedSource": "http://localhost:5173/images/collections/original-mobile.webp",
+        "position": "4 / 4",
+        "section": {
+          "bottom": 1281.6000061035156,
+          "height": 925.7999877929688,
+          "right": 408.8000183105469,
+          "width": 392.8000183105469,
+          "x": 16,
+          "y": 355.8000183105469
+        },
+        "selectedSource": "/images/collections/original-mobile.webp",
+        "title": "Originals"
+      }
+    ]
+  },
+  {
+    "heroScale": "matrix(1.18, 0, 0, 1.18, 0, 0)",
+    "heroSource": "http://localhost:5173/images/hero-phones.webp",
+    "overflow": false,
+    "previousWrappedTo": "Originals",
+    "slideCount": 1,
+    "viewport": {
+      "height": 699,
+      "width": 718
+    },
+    "slides": [
+      {
+        "bodyFont": "16.4368px",
+        "button": {
+          "bottom": 415.6875,
+          "height": 44,
+          "right": 516.4000091552734,
+          "width": 320,
+          "x": 196.40000915527344,
+          "y": 371.6875
+        },
+        "copy": {
+          "bottom": 415.6875,
+          "height": 159.28750610351562,
+          "right": 636.4000015258789,
+          "width": 560,
+          "x": 76.4000015258789,
+          "y": 256.3999938964844
+        },
+        "description": "Soft colors and familiar little faces.",
+        "font": "32.368px",
+        "href": "/services/schedule-wallpaper?collection=little-friends",
+        "image": {
+          "bottom": 997.2375183105468,
+          "height": 560,
+          "right": 586.4000015258789,
+          "width": 460,
+          "x": 126.4000015258789,
+          "y": 437.2375183105469
+        },
+        "loadedSource": "http://localhost:5173/images/collections/little-friends-mobile.webp",
+        "position": "1 / 4",
+        "section": {
+          "bottom": 1105.6375045776367,
+          "height": 1005.4375,
+          "right": 688.7999877929688,
+          "width": 664.7999877929688,
+          "x": 24,
+          "y": 100.20000457763672
+        },
+        "selectedSource": "/images/collections/little-friends-mobile.webp",
+        "title": "Little Friends"
+      },
+      {
+        "bodyFont": "16.4368px",
+        "button": {
+          "bottom": 554.8875122070312,
+          "height": 44,
+          "right": 516.4000091552734,
+          "width": 320,
+          "x": 196.40000915527344,
+          "y": 510.8875122070313
+        },
+        "copy": {
+          "bottom": 554.8875122070312,
+          "height": 159.28750610351562,
+          "right": 636.4000015258789,
+          "width": 560,
+          "x": 76.4000015258789,
+          "y": 395.6000061035156
+        },
+        "description": "A study buddy for your lock screen.",
+        "font": "32.368px",
+        "href": "/services/schedule-wallpaper?collection=mascot",
+        "image": {
+          "bottom": 1136.4375,
+          "height": 560,
+          "right": 586.4000015258789,
+          "width": 460,
+          "x": 126.4000015258789,
+          "y": 576.4375
+        },
+        "loadedSource": "http://localhost:5173/images/collections/mascot-mobile.webp",
+        "position": "2 / 4",
+        "section": {
+          "bottom": 1244.8375091552734,
+          "height": 1005.4375,
+          "right": 688.7999877929688,
+          "width": 664.7999877929688,
+          "x": 24,
+          "y": 239.40000915527344
+        },
+        "selectedSource": "/images/collections/mascot-mobile.webp",
+        "title": "Mascots"
+      },
+      {
+        "bodyFont": "16.4368px",
+        "button": {
+          "bottom": 554.8875122070312,
+          "height": 44,
+          "right": 516.4000091552734,
+          "width": 320,
+          "x": 196.40000915527344,
+          "y": 510.8875122070313
+        },
+        "copy": {
+          "bottom": 554.8875122070312,
+          "height": 159.28750610351562,
+          "right": 636.4000015258789,
+          "width": 560,
+          "x": 76.4000015258789,
+          "y": 395.6000061035156
+        },
+        "description": "Checks, dots, and stripes. Your kind of rhythm.",
+        "font": "32.368px",
+        "href": "/services/schedule-wallpaper?collection=pattern",
+        "image": {
+          "bottom": 1136.4375,
+          "height": 560,
+          "right": 586.4000015258789,
+          "width": 460,
+          "x": 126.4000015258789,
+          "y": 576.4375
+        },
+        "loadedSource": "http://localhost:5173/images/collections/pattern-mobile.webp",
+        "position": "3 / 4",
+        "section": {
+          "bottom": 1244.8375091552734,
+          "height": 1005.4375,
+          "right": 688.7999877929688,
+          "width": 664.7999877929688,
+          "x": 24,
+          "y": 239.40000915527344
+        },
+        "selectedSource": "/images/collections/pattern-mobile.webp",
+        "title": "Patterns"
+      },
+      {
+        "bodyFont": "16.4368px",
+        "button": {
+          "bottom": 554.8875122070312,
+          "height": 44,
+          "right": 516.4000091552734,
+          "width": 320,
+          "x": 196.40000915527344,
+          "y": 510.8875122070313
+        },
+        "copy": {
+          "bottom": 554.8875122070312,
+          "height": 159.28750610351562,
+          "right": 636.4000015258789,
+          "width": 560,
+          "x": 76.4000015258789,
+          "y": 395.6000061035156
+        },
+        "description": "Soft light, quiet colors, clean schedules.",
+        "font": "32.368px",
+        "href": "/services/schedule-wallpaper?collection=original",
+        "image": {
+          "bottom": 1136.4375,
+          "height": 560,
+          "right": 586.4000015258789,
+          "width": 460,
+          "x": 126.4000015258789,
+          "y": 576.4375
+        },
+        "loadedSource": "http://localhost:5173/images/collections/original-mobile.webp",
+        "position": "4 / 4",
+        "section": {
+          "bottom": 1244.8375091552734,
+          "height": 1005.4375,
+          "right": 688.7999877929688,
+          "width": 664.7999877929688,
+          "x": 24,
+          "y": 239.40000915527344
+        },
+        "selectedSource": "/images/collections/original-mobile.webp",
+        "title": "Originals"
+      }
+    ]
+  },
+  {
+    "heroScale": "matrix(1.18, 0, 0, 1.18, 0, 0)",
+    "heroSource": "http://localhost:5173/images/hero-phones.webp",
+    "overflow": false,
+    "previousWrappedTo": "Originals",
+    "slideCount": 1,
+    "viewport": {
+      "height": 780,
+      "width": 800
+    },
+    "slides": [
+      {
+        "bodyFont": "16.6px",
+        "button": {
+          "bottom": 419.3000183105469,
+          "height": 44,
+          "right": 557.1999969482422,
+          "width": 320,
+          "x": 237.1999969482422,
+          "y": 375.3000183105469
+        },
+        "copy": {
+          "bottom": 419.3000030517578,
+          "height": 162.90000915527344,
+          "right": 677.2000045776367,
+          "width": 560,
+          "x": 117.20000457763672,
+          "y": 256.3999938964844
+        },
+        "description": "Soft colors and familiar little faces.",
+        "font": "34px",
+        "href": "/services/schedule-wallpaper?collection=little-friends",
+        "image": {
+          "bottom": 1003.3000183105468,
+          "height": 560,
+          "right": 627.1999969482422,
+          "width": 460,
+          "x": 167.1999969482422,
+          "y": 443.3000183105469
+        },
+        "loadedSource": "http://localhost:5173/images/collections/little-friends-mobile.webp",
+        "position": "1 / 4",
+        "section": {
+          "bottom": 1111.7000045776367,
+          "height": 1011.5,
+          "right": 770.4000244140625,
+          "width": 746.4000244140625,
+          "x": 24,
+          "y": 100.20000457763672
+        },
+        "selectedSource": "/images/collections/little-friends-mobile.webp",
+        "title": "Little Friends"
+      },
+      {
+        "bodyFont": "16.6px",
+        "button": {
+          "bottom": 598.5,
+          "height": 44,
+          "right": 557.1999969482422,
+          "width": 320,
+          "x": 237.1999969482422,
+          "y": 554.5
+        },
+        "copy": {
+          "bottom": 598.5000152587891,
+          "height": 162.90000915527344,
+          "right": 677.2000045776367,
+          "width": 560,
+          "x": 117.20000457763672,
+          "y": 435.6000061035156
+        },
+        "description": "A study buddy for your lock screen.",
+        "font": "34px",
+        "href": "/services/schedule-wallpaper?collection=mascot",
+        "image": {
+          "bottom": 1182.5,
+          "height": 560,
+          "right": 627.1999969482422,
+          "width": 460,
+          "x": 167.1999969482422,
+          "y": 622.5
+        },
+        "loadedSource": "http://localhost:5173/images/collections/mascot-mobile.webp",
+        "position": "2 / 4",
+        "section": {
+          "bottom": 1290.8999938964844,
+          "height": 1011.5,
+          "right": 770.4000244140625,
+          "width": 746.4000244140625,
+          "x": 24,
+          "y": 279.3999938964844
+        },
+        "selectedSource": "/images/collections/mascot-mobile.webp",
+        "title": "Mascots"
+      },
+      {
+        "bodyFont": "16.6px",
+        "button": {
+          "bottom": 598.5,
+          "height": 44,
+          "right": 557.1999969482422,
+          "width": 320,
+          "x": 237.1999969482422,
+          "y": 554.5
+        },
+        "copy": {
+          "bottom": 598.5000152587891,
+          "height": 162.90000915527344,
+          "right": 677.2000045776367,
+          "width": 560,
+          "x": 117.20000457763672,
+          "y": 435.6000061035156
+        },
+        "description": "Checks, dots, and stripes. Your kind of rhythm.",
+        "font": "34px",
+        "href": "/services/schedule-wallpaper?collection=pattern",
+        "image": {
+          "bottom": 1182.5,
+          "height": 560,
+          "right": 627.1999969482422,
+          "width": 460,
+          "x": 167.1999969482422,
+          "y": 622.5
+        },
+        "loadedSource": "http://localhost:5173/images/collections/pattern-mobile.webp",
+        "position": "3 / 4",
+        "section": {
+          "bottom": 1290.8999938964844,
+          "height": 1011.5,
+          "right": 770.4000244140625,
+          "width": 746.4000244140625,
+          "x": 24,
+          "y": 279.3999938964844
+        },
+        "selectedSource": "/images/collections/pattern-mobile.webp",
+        "title": "Patterns"
+      },
+      {
+        "bodyFont": "16.6px",
+        "button": {
+          "bottom": 598.5,
+          "height": 44,
+          "right": 557.1999969482422,
+          "width": 320,
+          "x": 237.1999969482422,
+          "y": 554.5
+        },
+        "copy": {
+          "bottom": 598.5000152587891,
+          "height": 162.90000915527344,
+          "right": 677.2000045776367,
+          "width": 560,
+          "x": 117.20000457763672,
+          "y": 435.6000061035156
+        },
+        "description": "Soft light, quiet colors, clean schedules.",
+        "font": "34px",
+        "href": "/services/schedule-wallpaper?collection=original",
+        "image": {
+          "bottom": 1182.5,
+          "height": 560,
+          "right": 627.1999969482422,
+          "width": 460,
+          "x": 167.1999969482422,
+          "y": 622.5
+        },
+        "loadedSource": "http://localhost:5173/images/collections/original-mobile.webp",
+        "position": "4 / 4",
+        "section": {
+          "bottom": 1290.8999938964844,
+          "height": 1011.5,
+          "right": 770.4000244140625,
+          "width": 746.4000244140625,
+          "x": 24,
+          "y": 279.3999938964844
+        },
+        "selectedSource": "/images/collections/original-mobile.webp",
+        "title": "Originals"
+      }
+    ]
+  },
+  {
+    "heroScale": "matrix(1.18, 0, 0, 1.18, 0, 0)",
+    "heroSource": "http://localhost:5173/images/hero-phones.webp",
+    "overflow": false,
+    "previousWrappedTo": "Originals",
+    "slideCount": 1,
+    "viewport": {
+      "height": 780,
+      "width": 802
+    },
+    "slides": [
+      {
+        "bodyFont": "16.6032px",
+        "button": {
+          "bottom": 505.0249938964844,
+          "height": 48,
+          "right": 645.4875183105469,
+          "width": 181.2875061035156,
+          "x": 464.2000122070313,
+          "y": 457.0249938964844
+        },
+        "copy": {
+          "bottom": 505.02500915527344,
+          "height": 166.9499969482422,
+          "right": 772.0000305175781,
+          "width": 307.8000183105469,
+          "x": 464.2000122070313,
+          "y": 338.07501220703125
+        },
+        "description": "Soft colors and familiar little faces.",
+        "font": "34.032px",
+        "href": "/services/schedule-wallpaper?collection=little-friends",
+        "image": {
+          "bottom": 571.6000061035156,
+          "height": 300.0874938964844,
+          "right": 424.125,
+          "width": 400.125,
+          "x": 24,
+          "y": 271.51251220703125
+        },
+        "loadedSource": "http://localhost:5173/images/collections/little-friends-white.webp",
+        "position": "1 / 4",
+        "section": {
+          "bottom": 680.0625457763672,
+          "height": 516.6625366210938,
+          "right": 772,
+          "width": 748,
+          "x": 24,
+          "y": 163.40000915527344
+        },
+        "selectedSource": "/images/collections/little-friends-white.webp",
+        "title": "Little Friends"
+      },
+      {
+        "bodyFont": "16.6032px",
+        "button": {
+          "bottom": 669.8250122070312,
+          "height": 48,
+          "right": 645.4875183105469,
+          "width": 181.2875061035156,
+          "x": 464.2000122070313,
+          "y": 621.8250122070312
+        },
+        "copy": {
+          "bottom": 669.8249969482422,
+          "height": 166.9499969482422,
+          "right": 772.0000305175781,
+          "width": 307.8000183105469,
+          "x": 464.2000122070313,
+          "y": 502.875
+        },
+        "description": "A study buddy for your lock screen.",
+        "font": "34.032px",
+        "href": "/services/schedule-wallpaper?collection=mascot",
+        "image": {
+          "bottom": 736.3999938964844,
+          "height": 300.0874938964844,
+          "right": 424.125,
+          "width": 400.125,
+          "x": 24,
+          "y": 436.3125
+        },
+        "loadedSource": "http://localhost:5173/images/collections/mascot-white.webp",
+        "position": "2 / 4",
+        "section": {
+          "bottom": 844.862548828125,
+          "height": 516.6625366210938,
+          "right": 772,
+          "width": 748,
+          "x": 24,
+          "y": 328.20001220703125
+        },
+        "selectedSource": "/images/collections/mascot-white.webp",
+        "title": "Mascots"
+      },
+      {
+        "bodyFont": "16.6032px",
+        "button": {
+          "bottom": 669.8250122070312,
+          "height": 48,
+          "right": 645.4875183105469,
+          "width": 181.2875061035156,
+          "x": 464.2000122070313,
+          "y": 621.8250122070312
+        },
+        "copy": {
+          "bottom": 669.8249969482422,
+          "height": 166.9499969482422,
+          "right": 772.0000305175781,
+          "width": 307.8000183105469,
+          "x": 464.2000122070313,
+          "y": 502.875
+        },
+        "description": "Checks, dots, and stripes. Your kind of rhythm.",
+        "font": "34.032px",
+        "href": "/services/schedule-wallpaper?collection=pattern",
+        "image": {
+          "bottom": 736.3999938964844,
+          "height": 300.0874938964844,
+          "right": 424.125,
+          "width": 400.125,
+          "x": 24,
+          "y": 436.3125
+        },
+        "loadedSource": "http://localhost:5173/images/collections/pattern-white.webp",
+        "position": "3 / 4",
+        "section": {
+          "bottom": 844.862548828125,
+          "height": 516.6625366210938,
+          "right": 772,
+          "width": 748,
+          "x": 24,
+          "y": 328.20001220703125
+        },
+        "selectedSource": "/images/collections/pattern-white.webp",
+        "title": "Patterns"
+      },
+      {
+        "bodyFont": "16.6032px",
+        "button": {
+          "bottom": 669.8250122070312,
+          "height": 48,
+          "right": 645.4875183105469,
+          "width": 181.2875061035156,
+          "x": 464.2000122070313,
+          "y": 621.8250122070312
+        },
+        "copy": {
+          "bottom": 669.8249969482422,
+          "height": 166.9499969482422,
+          "right": 772.0000305175781,
+          "width": 307.8000183105469,
+          "x": 464.2000122070313,
+          "y": 502.875
+        },
+        "description": "Soft light, quiet colors, clean schedules.",
+        "font": "34.032px",
+        "href": "/services/schedule-wallpaper?collection=original",
+        "image": {
+          "bottom": 736.3999938964844,
+          "height": 300.0874938964844,
+          "right": 424.125,
+          "width": 400.125,
+          "x": 24,
+          "y": 436.3125
+        },
+        "loadedSource": "http://localhost:5173/images/collections/original-white.webp",
+        "position": "4 / 4",
+        "section": {
+          "bottom": 844.862548828125,
+          "height": 516.6625366210938,
+          "right": 772,
+          "width": 748,
+          "x": 24,
+          "y": 328.20001220703125
+        },
+        "selectedSource": "/images/collections/original-white.webp",
+        "title": "Originals"
+      }
+    ]
+  },
+  {
+    "heroScale": "matrix(1.18, 0, 0, 1.18, 0, 0)",
+    "heroSource": "http://localhost:5173/images/hero-phones.webp",
+    "overflow": false,
+    "previousWrappedTo": "Originals",
+    "slideCount": 1,
+    "viewport": {
+      "height": 1086,
+      "width": 986
+    },
+    "slides": [
+      {
+        "bodyFont": "16.9712px",
+        "button": {
+          "bottom": 444.5500183105469,
+          "height": 44,
+          "right": 650,
+          "width": 320,
+          "x": 330,
+          "y": 400.5500183105469
+        },
+        "copy": {
+          "bottom": 444.5500183105469,
+          "height": 171.97500610351562,
+          "right": 770,
+          "width": 560,
+          "x": 210,
+          "y": 272.57501220703125
+        },
+        "description": "Soft colors and familiar little faces.",
+        "font": "37.712px",
+        "href": "/services/schedule-wallpaper?collection=little-friends",
+        "image": {
+          "bottom": 1034.1125183105469,
+          "height": 560,
+          "right": 720,
+          "width": 460,
+          "x": 260,
+          "y": 474.1125183105469
+        },
+        "loadedSource": "http://localhost:5173/images/collections/little-friends-mobile.webp",
+        "position": "1 / 4",
+        "section": {
+          "bottom": 1149.925048828125,
+          "height": 1050.175048828125,
+          "right": 956,
+          "width": 932,
+          "x": 24,
+          "y": 99.75
+        },
+        "selectedSource": "/images/collections/little-friends-mobile.webp",
+        "title": "Little Friends"
+      },
+      {
+        "bodyFont": "16.9712px",
+        "button": {
+          "bottom": 766.9500122070312,
+          "height": 44,
+          "right": 650,
+          "width": 320,
+          "x": 330,
+          "y": 722.9500122070312
+        },
+        "copy": {
+          "bottom": 766.9500427246094,
+          "height": 171.97500610351562,
+          "right": 770,
+          "width": 560,
+          "x": 210,
+          "y": 594.9750366210938
+        },
+        "description": "A study buddy for your lock screen.",
+        "font": "37.712px",
+        "href": "/services/schedule-wallpaper?collection=mascot",
+        "image": {
+          "bottom": 1356.5125122070312,
+          "height": 560,
+          "right": 720,
+          "width": 460,
+          "x": 260,
+          "y": 796.5125122070312
+        },
+        "loadedSource": "http://localhost:5173/images/collections/mascot-mobile.webp",
+        "position": "2 / 4",
+        "section": {
+          "bottom": 1472.3250427246094,
+          "height": 1050.175048828125,
+          "right": 956,
+          "width": 932,
+          "x": 24,
+          "y": 422.1499938964844
+        },
+        "selectedSource": "/images/collections/mascot-mobile.webp",
+        "title": "Mascots"
+      },
+      {
+        "bodyFont": "16.9712px",
+        "button": {
+          "bottom": 766.9625244140625,
+          "height": 44,
+          "right": 650,
+          "width": 320,
+          "x": 330,
+          "y": 722.9625244140625
+        },
+        "copy": {
+          "bottom": 766.9625396728516,
+          "height": 171.9875030517578,
+          "right": 770,
+          "width": 560,
+          "x": 210,
+          "y": 594.9750366210938
+        },
+        "description": "Checks, dots, and stripes. Your kind of rhythm.",
+        "font": "37.712px",
+        "href": "/services/schedule-wallpaper?collection=pattern",
+        "image": {
+          "bottom": 1356.5250244140625,
+          "height": 560,
+          "right": 720,
+          "width": 460,
+          "x": 260,
+          "y": 796.5250244140625
+        },
+        "loadedSource": "http://localhost:5173/images/collections/pattern-mobile.webp",
+        "position": "3 / 4",
+        "section": {
+          "bottom": 1472.3374938964844,
+          "height": 1050.1875,
+          "right": 956,
+          "width": 932,
+          "x": 24,
+          "y": 422.1499938964844
+        },
+        "selectedSource": "/images/collections/pattern-mobile.webp",
+        "title": "Patterns"
+      },
+      {
+        "bodyFont": "16.9712px",
+        "button": {
+          "bottom": 766.9500122070312,
+          "height": 44,
+          "right": 650,
+          "width": 320,
+          "x": 330,
+          "y": 722.9500122070312
+        },
+        "copy": {
+          "bottom": 766.9500427246094,
+          "height": 171.97500610351562,
+          "right": 770,
+          "width": 560,
+          "x": 210,
+          "y": 594.9750366210938
+        },
+        "description": "Soft light, quiet colors, clean schedules.",
+        "font": "37.712px",
+        "href": "/services/schedule-wallpaper?collection=original",
+        "image": {
+          "bottom": 1356.5125122070312,
+          "height": 560,
+          "right": 720,
+          "width": 460,
+          "x": 260,
+          "y": 796.5125122070312
+        },
+        "loadedSource": "http://localhost:5173/images/collections/original-mobile.webp",
+        "position": "4 / 4",
+        "section": {
+          "bottom": 1472.3250427246094,
+          "height": 1050.175048828125,
+          "right": 956,
+          "width": 932,
+          "x": 24,
+          "y": 422.1499938964844
+        },
+        "selectedSource": "/images/collections/original-mobile.webp",
+        "title": "Originals"
+      }
+    ]
+  },
+  {
+    "heroScale": "matrix(1.18, 0, 0, 1.18, 0, 0)",
+    "heroSource": "http://localhost:5173/images/hero-phones.webp",
+    "overflow": false,
+    "previousWrappedTo": "Originals",
+    "slideCount": 1,
+    "viewport": {
+      "height": 768,
+      "width": 1024
+    },
+    "slides": [
+      {
+        "bodyFont": "17.048px",
+        "button": {
+          "bottom": 509.2250061035156,
+          "height": 48,
+          "right": 776.0249938964844,
+          "width": 181.2875061035156,
+          "x": 594.7374877929688,
+          "y": 461.2250061035156
+        },
+        "copy": {
+          "bottom": 509.22499084472656,
+          "height": 177.7624969482422,
+          "right": 994.3874816894532,
+          "width": 399.6499938964844,
+          "x": 594.7374877929688,
+          "y": 331.4624938964844
+        },
+        "description": "Soft colors and familiar little faces.",
+        "font": "38.4px",
+        "href": "/services/schedule-wallpaper?collection=little-friends",
+        "image": {
+          "bottom": 615.1750030517578,
+          "height": 389.6499938964844,
+          "right": 543.5375366210938,
+          "width": 519.5375366210938,
+          "x": 24,
+          "y": 225.52500915527344
+        },
+        "loadedSource": "http://localhost:5173/images/collections/little-friends-white.webp",
+        "position": "1 / 4",
+        "section": {
+          "bottom": 733.4749908447266,
+          "height": 633.8624877929688,
+          "right": 994.4000244140624,
+          "width": 970.4000244140624,
+          "x": 24,
+          "y": 99.6125030517578
+        },
+        "selectedSource": "/images/collections/little-friends-white.webp",
+        "title": "Little Friends"
+      },
+      {
+        "bodyFont": "17.048px",
+        "button": {
+          "bottom": 720.4249877929688,
+          "height": 48,
+          "right": 776.0249938964844,
+          "width": 181.2875061035156,
+          "x": 594.7374877929688,
+          "y": 672.4249877929688
+        },
+        "copy": {
+          "bottom": 720.4250335693359,
+          "height": 177.7624969482422,
+          "right": 994.3874816894532,
+          "width": 399.6499938964844,
+          "x": 594.7374877929688,
+          "y": 542.6625366210938
+        },
+        "description": "A study buddy for your lock screen.",
+        "font": "38.4px",
+        "href": "/services/schedule-wallpaper?collection=mascot",
+        "image": {
+          "bottom": 826.375,
+          "height": 389.6499938964844,
+          "right": 543.5375366210938,
+          "width": 519.5375366210938,
+          "x": 24,
+          "y": 436.7250061035156
+        },
+        "loadedSource": "http://localhost:5173/images/collections/mascot-white.webp",
+        "position": "2 / 4",
+        "section": {
+          "bottom": 944.6749877929688,
+          "height": 633.8624877929688,
+          "right": 994.4000244140624,
+          "width": 970.4000244140624,
+          "x": 24,
+          "y": 310.8125
+        },
+        "selectedSource": "/images/collections/mascot-white.webp",
+        "title": "Mascots"
+      },
+      {
+        "bodyFont": "17.048px",
+        "button": {
+          "bottom": 720.4375,
+          "height": 48,
+          "right": 776.0249938964844,
+          "width": 181.2875061035156,
+          "x": 594.7374877929688,
+          "y": 672.4375
+        },
+        "copy": {
+          "bottom": 720.4375457763672,
+          "height": 177.77500915527344,
+          "right": 994.3874816894532,
+          "width": 399.6499938964844,
+          "x": 594.7374877929688,
+          "y": 542.6625366210938
+        },
+        "description": "Checks, dots, and stripes. Your kind of rhythm.",
+        "font": "38.4px",
+        "href": "/services/schedule-wallpaper?collection=pattern",
+        "image": {
+          "bottom": 826.375,
+          "height": 389.6499938964844,
+          "right": 543.5375366210938,
+          "width": 519.5375366210938,
+          "x": 24,
+          "y": 436.7250061035156
+        },
+        "loadedSource": "http://localhost:5173/images/collections/pattern-white.webp",
+        "position": "3 / 4",
+        "section": {
+          "bottom": 944.6749877929688,
+          "height": 633.8624877929688,
+          "right": 994.4000244140624,
+          "width": 970.4000244140624,
+          "x": 24,
+          "y": 310.8125
+        },
+        "selectedSource": "/images/collections/pattern-white.webp",
+        "title": "Patterns"
+      },
+      {
+        "bodyFont": "17.048px",
+        "button": {
+          "bottom": 720.4249877929688,
+          "height": 48,
+          "right": 776.0249938964844,
+          "width": 181.2875061035156,
+          "x": 594.7374877929688,
+          "y": 672.4249877929688
+        },
+        "copy": {
+          "bottom": 720.4250335693359,
+          "height": 177.7624969482422,
+          "right": 994.3874816894532,
+          "width": 399.6499938964844,
+          "x": 594.7374877929688,
+          "y": 542.6625366210938
+        },
+        "description": "Soft light, quiet colors, clean schedules.",
+        "font": "38.4px",
+        "href": "/services/schedule-wallpaper?collection=original",
+        "image": {
+          "bottom": 826.375,
+          "height": 389.6499938964844,
+          "right": 543.5375366210938,
+          "width": 519.5375366210938,
+          "x": 24,
+          "y": 436.7250061035156
+        },
+        "loadedSource": "http://localhost:5173/images/collections/original-white.webp",
+        "position": "4 / 4",
+        "section": {
+          "bottom": 944.6749877929688,
+          "height": 633.8624877929688,
+          "right": 994.4000244140624,
+          "width": 970.4000244140624,
+          "x": 24,
+          "y": 310.8125
+        },
+        "selectedSource": "/images/collections/original-white.webp",
+        "title": "Originals"
+      }
+    ]
+  },
+  {
+    "heroScale": "matrix(1.18, 0, 0, 1.18, 0, 0)",
+    "heroSource": "http://localhost:5173/images/hero-phones.webp",
+    "overflow": false,
+    "previousWrappedTo": "Originals",
+    "slideCount": 1,
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    },
+    "slides": [
+      {
+        "bodyFont": "17.88px",
+        "button": {
+          "bottom": 565.8125,
+          "height": 48,
+          "right": 1002.8250427246094,
+          "width": 181.2875061035156,
+          "x": 821.5375366210938,
+          "y": 517.8125
+        },
+        "copy": {
+          "bottom": 565.8125,
+          "height": 183.7875061035156,
+          "right": 1277.2000427246094,
+          "width": 455.6625061035156,
+          "x": 821.5375366210938,
+          "y": 382.0249938964844
+        },
+        "description": "Soft colors and familiar little faces.",
+        "font": "38.4px",
+        "href": "/services/schedule-wallpaper?collection=little-friends",
+        "image": {
+          "bottom": 696.0500030517578,
+          "height": 444.25,
+          "right": 749.5375213623047,
+          "width": 592.3375244140625,
+          "x": 157.1999969482422,
+          "y": 251.8000030517578
+        },
+        "loadedSource": "http://localhost:5173/images/collections/little-friends-white.webp",
+        "position": "1 / 4",
+        "section": {
+          "bottom": 844.4500274658203,
+          "height": 744.6500244140625,
+          "right": 1277.1999969482422,
+          "width": 1120,
+          "x": 157.1999969482422,
+          "y": 99.8000030517578
+        },
+        "selectedSource": "/images/collections/little-friends-white.webp",
+        "title": "Little Friends"
+      },
+      {
+        "bodyFont": "17.88px",
+        "button": {
+          "bottom": 821.8125,
+          "height": 48,
+          "right": 1002.8250427246094,
+          "width": 181.2875061035156,
+          "x": 821.5375366210938,
+          "y": 773.8125
+        },
+        "copy": {
+          "bottom": 821.8125305175781,
+          "height": 183.7875061035156,
+          "right": 1277.2000427246094,
+          "width": 455.6625061035156,
+          "x": 821.5375366210938,
+          "y": 638.0250244140625
+        },
+        "description": "A study buddy for your lock screen.",
+        "font": "38.4px",
+        "href": "/services/schedule-wallpaper?collection=mascot",
+        "image": {
+          "bottom": 952.0500183105468,
+          "height": 444.25,
+          "right": 749.5375213623047,
+          "width": 592.3375244140625,
+          "x": 157.1999969482422,
+          "y": 507.8000183105469
+        },
+        "loadedSource": "http://localhost:5173/images/collections/mascot-white.webp",
+        "position": "2 / 4",
+        "section": {
+          "bottom": 1100.4500427246094,
+          "height": 744.6500244140625,
+          "right": 1277.1999969482422,
+          "width": 1120,
+          "x": 157.1999969482422,
+          "y": 355.8000183105469
+        },
+        "selectedSource": "/images/collections/mascot-white.webp",
+        "title": "Mascots"
+      },
+      {
+        "bodyFont": "17.88px",
+        "button": {
+          "bottom": 821.8125,
+          "height": 48,
+          "right": 1002.8250427246094,
+          "width": 181.2875061035156,
+          "x": 821.5375366210938,
+          "y": 773.8125
+        },
+        "copy": {
+          "bottom": 821.8125305175781,
+          "height": 183.7875061035156,
+          "right": 1277.2000427246094,
+          "width": 455.6625061035156,
+          "x": 821.5375366210938,
+          "y": 638.0250244140625
+        },
+        "description": "Checks, dots, and stripes. Your kind of rhythm.",
+        "font": "38.4px",
+        "href": "/services/schedule-wallpaper?collection=pattern",
+        "image": {
+          "bottom": 952.0500183105468,
+          "height": 444.25,
+          "right": 749.5375213623047,
+          "width": 592.3375244140625,
+          "x": 157.1999969482422,
+          "y": 507.8000183105469
+        },
+        "loadedSource": "http://localhost:5173/images/collections/pattern-white.webp",
+        "position": "3 / 4",
+        "section": {
+          "bottom": 1100.4500427246094,
+          "height": 744.6500244140625,
+          "right": 1277.1999969482422,
+          "width": 1120,
+          "x": 157.1999969482422,
+          "y": 355.8000183105469
+        },
+        "selectedSource": "/images/collections/pattern-white.webp",
+        "title": "Patterns"
+      },
+      {
+        "bodyFont": "17.88px",
+        "button": {
+          "bottom": 821.8125,
+          "height": 48,
+          "right": 1002.8250427246094,
+          "width": 181.2875061035156,
+          "x": 821.5375366210938,
+          "y": 773.8125
+        },
+        "copy": {
+          "bottom": 821.8125305175781,
+          "height": 183.7875061035156,
+          "right": 1277.2000427246094,
+          "width": 455.6625061035156,
+          "x": 821.5375366210938,
+          "y": 638.0250244140625
+        },
+        "description": "Soft light, quiet colors, clean schedules.",
+        "font": "38.4px",
+        "href": "/services/schedule-wallpaper?collection=original",
+        "image": {
+          "bottom": 952.0500183105468,
+          "height": 444.25,
+          "right": 749.5375213623047,
+          "width": 592.3375244140625,
+          "x": 157.1999969482422,
+          "y": 507.8000183105469
+        },
+        "loadedSource": "http://localhost:5173/images/collections/original-white.webp",
+        "position": "4 / 4",
+        "section": {
+          "bottom": 1100.4500427246094,
+          "height": 744.6500244140625,
+          "right": 1277.1999969482422,
+          "width": 1120,
+          "x": 157.1999969482422,
+          "y": 355.8000183105469
+        },
+        "selectedSource": "/images/collections/original-white.webp",
+        "title": "Originals"
+      }
+    ]
+  }
+]
