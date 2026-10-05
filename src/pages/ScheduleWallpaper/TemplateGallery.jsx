@@ -4,6 +4,7 @@ import { mascotTemplateSchedule, templateSchedule, wallpaperTemplates } from '..
 import { WallpaperCanvas } from './CanvasPreview.jsx';
 import { customizeWallpaperTemplate } from '../../utils/wallpaperTheme.js';
 import { designCollections as collections } from '../../config/collections.js';
+import { templateProperties, trackEvent } from '../../lib/analytics.js';
 const thumbnailResolution = { id: 'thumbnail', width: 270, height: 600 };
 const previewSchedule = (template) => template.layout === 'mascot' ? mascotTemplateSchedule : templateSchedule;
 
@@ -13,10 +14,10 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
   const visibleTemplates = wallpaperTemplates.filter((item) => category === 'all' || (item.collection || 'original') === category);
   return <div>
     <div role="group" aria-label="Filter designs" className="template-filters">
-      {collections.map((collection) => <button type="button" key={collection.id} aria-pressed={category === collection.id} aria-controls="template-gallery" onClick={() => setCategory(collection.id)} className="template-category">{collection.name}</button>)}
+      {collections.map((collection) => <button type="button" key={collection.id} aria-pressed={category === collection.id} aria-controls="template-gallery" onClick={() => { if (category !== collection.id) { setCategory(collection.id); trackEvent('collection_filtered', { collection: collection.id }); } }} className="template-category">{collection.name}</button>)}
     </div>
     <div id="template-gallery" role="group" aria-label={`${collections.find((collection) => collection.id === category).name} gallery`} className="grid grid-cols-2 gap-x-4 gap-y-6 md:grid-cols-3 lg:grid-cols-5">
-      {visibleTemplates.map((original) => { const item = { ...customizeWallpaperTemplate(original, settings[original.id]), scheduleTitle }; return <button type="button" key={item.id} aria-label={`Preview ${item.name}`} aria-haspopup="dialog" onClick={() => setPreview(item)} className="template-option min-w-0 rounded-xl text-left">
+      {visibleTemplates.map((original) => { const item = { ...customizeWallpaperTemplate(original, settings[original.id]), scheduleTitle }; return <button type="button" key={item.id} aria-label={`Preview ${item.name}`} aria-haspopup="dialog" onClick={() => { setPreview(item); trackEvent('template_previewed', templateProperties(item)); }} className="template-option min-w-0 rounded-xl text-left">
         <div className={`template-art w-full overflow-hidden rounded-xl ${selectedId === item.id ? 'outline-2 -outline-offset-2 outline-ink' : ''}`}>
           <WallpaperCanvas lazy schedule={schedule?.classes.length ? schedule : previewSchedule(item)} template={item} resolution={thumbnailResolution} className="block h-auto w-full" label={`${item.name} with ${schedule?.classes.length ? 'your' : 'sample'} classes`} />
         </div>

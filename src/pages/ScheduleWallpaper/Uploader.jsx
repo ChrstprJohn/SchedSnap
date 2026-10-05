@@ -1,6 +1,7 @@
 import { useEffect, useImperativeHandle, useRef, useState } from 'react';
 import { ImageUp, ListChecks, LoaderCircle, Maximize2, Pencil, TriangleAlert } from 'lucide-react';
 import { prepareImage } from '../../utils/imageHelpers.js';
+import { trackEvent } from '../../lib/analytics.js';
 import WallpaperViewer from './WallpaperViewer.jsx';
 
 export default function Uploader({ image, onImage, onAnalyze, busy, onError, onManual, onSample, hasSchedule, pickerRef, onPreparing, onCancel }) {
@@ -20,10 +21,12 @@ export default function Uploader({ image, onImage, onAnalyze, busy, onError, onM
     setPreparing(true);
     onPreparing?.(true);
     onError('');
+    const properties = { file_type: ['image/jpeg', 'image/png', 'image/webp'].includes(file.type) ? file.type : 'other', file_size_bytes: file.size };
+    trackEvent('schedule_upload_started', properties);
     try {
       const prepared = await prepareImage(file);
-      if (id === requestId.current) onImage(prepared);
-    } catch (failure) { if (id === requestId.current) onError(failure.message); }
+      if (id === requestId.current) { onImage(prepared); trackEvent('schedule_upload_succeeded', properties); }
+    } catch (failure) { if (id === requestId.current) { onError(failure.message); trackEvent('schedule_upload_failed', { ...properties, error_type: 'image_preparation' }); } }
     finally { if (id === requestId.current) { setPreparing(false); onPreparing?.(false); } }
   }
 
