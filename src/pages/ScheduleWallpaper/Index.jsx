@@ -3,6 +3,7 @@ import { ArrowLeft, ImageUp } from 'lucide-react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router';
 import Toast from '../../components/Toast.jsx';
 import { api } from '../../lib/api.js';
+import { templateProperties, trackEvent } from '../../lib/analytics.js';
 import { mobileResolution, wallpaperTemplates } from '../../assets/templates.js';
 import { sampleSchedule } from '../../assets/sampleSchedule.js';
 import { scheduleSchema } from '../../../shared/scheduleSchema.js';
@@ -16,6 +17,7 @@ export default function ScheduleWallpaper() {
   const [search] = useSearchParams();
   const [templateSettings, setTemplateSettings] = useState({});
   const [schedule, setSchedule] = useState({ classes: [], warnings: [] });
+  const [scheduleSource, setScheduleSource] = useState('unknown');
   const [image, setImage] = useState(null);
   const [importOpen, setImportOpen] = useState(false);
   const [scheduleTitle, setScheduleTitle] = useState('Class Schedule');
@@ -27,6 +29,7 @@ export default function ScheduleWallpaper() {
   const request = useRef(null);
   const heading = useRef(null);
   const imagePicker = useRef(null);
+  const lastTrackedStep = useRef(null);
   const template = useMemo(() => {
     const preset = customizeWallpaperTemplate(wallpaperTemplates.find((item) => item.id === templateId), templateSettings[templateId]);
     return preset ? { ...preset, scheduleTitle } : undefined;
@@ -38,6 +41,15 @@ export default function ScheduleWallpaper() {
   const basePath = '/services/schedule-wallpaper';
   const choosingImage = step === 'classes' && !!image && (importOpen || !schedule.classes.length);
   const hasUnsavedChanges = schedule.classes.length > 0 || !!image || scheduleTitle !== 'Class Schedule' || Object.values(templateSettings).some((settings) => Object.keys(settings).length > 0);
+  useEffect(() => {
+    if (templateId && !template) return;
+    const key = `${step}:${templateId || ''}`;
+    if (lastTrackedStep.current === key) return;
+    lastTrackedStep.current = key;
+    const properties = { step, ...(template ? templateProperties(template) : {}), schedule_source: scheduleSource, class_count: schedule.classes.length };
+    trackEvent('wallpaper_step_viewed', properties);
+    if (step === 'preview') trackEvent('schedule_previewed', properties);
+  }, [step, templateId, template, scheduleSource, schedule.classes.length]);
   useEffect(() => {
     if (!hasUnsavedChanges) return;
     function confirmRefresh(event) {
@@ -62,6 +74,8 @@ export default function ScheduleWallpaper() {
 
   function selectTemplate(id) {
     if (busy) return;
+    const selected = wallpaperTemplates.find((item) => item.id === id);
+    if (selected) trackEvent('template_selected', templateProperties(selected));
     navigate(`${basePath}/${id}${previousTemplate && search.get('step') === 'preview' ? '?step=preview' : ''}`);
   }
   useEffect(() => () => request.current?.abort(), []);
@@ -76,15 +90,22 @@ export default function ScheduleWallpaper() {
     setBusy(true);
     setError('');
     setSuccess('');
+    const started = performance.now();
+    const properties = templateProperties(template);
+    trackEvent('schedule_import_started', properties);
     try {
       const { data } = await api.post('/analyze', { image: image.image, mimeType: image.mimeType }, { signal: controller.signal });
-      if (controller.signal.aborted) return;
+      if (controller.signal.aborted) { trackEvent('schedule_import_cancelled', properties); return; }
       const checked = scheduleSchema.safeParse(data.schedule);
       if (!checked.success) throw new Error('The schedule response was incomplete. Try another image.');
       setSchedule(checked.data);
+      setScheduleSource('image');
+      trackEvent('schedule_import_succeeded', { ...properties, class_count: checked.data.classes.length, warning_count: checked.data.warnings.length, duration_ms: Math.round(performance.now() - started) });
       setSuccess(`${checked.data.classes.length} ${checked.data.classes.length === 1 ? 'class' : 'classes'} found. Check the details.`);
       return true;
     } catch (failure) {
+      if (controller.signal.aborted) trackEvent('schedule_import_cancelled', properties);
+      else trackEvent('schedule_import_failed', { ...properties, http_status: failure.response?.status || 0, error_type: failure.code === 'ECONNABORTED' ? 'timeout' : failure.response ? 'server_error' : 'invalid_response_or_network', duration_ms: Math.round(performance.now() - started) });
       if (!controller.signal.aborted) setError(failure.response?.data?.error?.message || (failure.code === 'ECONNABORTED' ? 'The request took too long. Try again or enter your classes manually.' : failure.message || 'Could not read the image. Try again.'));
     } finally {
       if (request.current === controller) { setBusy(false); request.current = null; }
@@ -121,8 +142,9 @@ export default function ScheduleWallpaper() {
     {template ? <TemplateWorkspace
       step={step} onStep={openStep}
       template={template} schedule={schedule} resolution={mobileResolution} onScheduleChange={changeSchedule}
-      onAppearanceChange={(key, value) => setTemplateSettings((previous) => ({ ...previous, [templateId]: { ...previous[templateId], [key]: value } }))}
-      onResetAppearance={() => setTemplateSettings((previous) => ({ ...previous, [templateId]: {} }))}
+      scheduleSource={scheduleSource} onScheduleSourceChange={setScheduleSource}
+      onAppearanceChange={(key, value) => { setTemplateSettings((previous) => ({ ...previous, [templateId]: { ...previous[templateId], [key]: value } })); trackEvent('wallpaper_appearance_changed', { ...templateProperties(template), setting: key }); }}
+      onResetAppearance={() => { setTemplateSettings((previous) => ({ ...previous, [templateId]: {} })); trackEvent('wallpaper_appearance_reset', templateProperties(template)); }}
       image={image} busy={busy}
       importOpen={importOpen} onImportOpenChange={setImportOpen}
       onTitleChange={setScheduleTitle}
@@ -131,7 +153,7 @@ export default function ScheduleWallpaper() {
       imagePickerRef={imagePicker} preparingImage={preparingImage} onPreparingImageChange={setPreparingImage}
       onImage={(next) => { setImage(next); dismissNotification(); }}
       onError={(message) => { setError(message); setSuccess(''); }} onAnalyze={analyze}
-      onSample={() => { setSchedule(structuredClone(sampleSchedule)); dismissNotification(); }}
+      onSample={() => { setSchedule(structuredClone(sampleSchedule)); setScheduleSource('sample'); trackEvent('sample_schedule_loaded', templateProperties(template)); dismissNotification(); }}
     /> : <>
       <TemplateGallery initialCategory={search.get('collection')} selectedId={selectedId} settings={templateSettings} schedule={schedule} scheduleTitle={scheduleTitle} resolution={mobileResolution} onSelect={selectTemplate} />
     </>}

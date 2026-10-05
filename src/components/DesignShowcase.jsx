@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
+import { trackEvent } from '../lib/analytics.js';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const ROTATION_DELAY = 5000;
@@ -90,7 +91,7 @@ export default function DesignShowcase() {
             <div className="collection-copy">
               <h3 id="collection-title">{collection.name}</h3>
               <p>{collection.description}</p>
-              <Link to={'/services/schedule-wallpaper?collection=' + collection.id} className="button-primary collection-action" aria-label={'Create wallpaper with ' + collection.name + ' designs'}>Create wallpaper <ArrowRight size={18} aria-hidden="true" /></Link>
+              <Link to={'/services/schedule-wallpaper?collection=' + collection.id} className="button-primary collection-action" aria-label={'Create wallpaper with ' + collection.name + ' designs'} onClick={() => trackEvent('wallpaper_creation_started', { source: 'collection_showcase', collection: collection.id })}>Create wallpaper <ArrowRight size={18} aria-hidden="true" /></Link>
             </div>
         </article>
       </div>

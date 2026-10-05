@@ -20,6 +20,7 @@ import '@fontsource/dm-serif-display/400-italic.css';
 import '@fontsource/great-vibes/400.css';
 import './styles.css';
 import App from './App.jsx';
+import './lib/analytics.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

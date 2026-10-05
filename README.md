@@ -21,6 +21,8 @@ Copy `.env.example` to `.env.local` and set `GEMINI_API_KEY` and `GEMINI_MODEL`;
 
 For real visit totals, set server-only `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN` using an existing Redis database, then restart the dev server (or configure those variables for deployment). Until connected, Total visits displays `—`. See [visit-counter setup and counting rules](documentation/VISIT_COUNTER.md).
 
+PostHog is enabled when `VITE_POSTHOG_TOKEN` is configured in `.env.local` or the hosting build environment. Use a public project token and `VITE_POSTHOG_HOST` for this application's PostHog project. Events have `site_name: schedsnap` and `environment: production` or `development`; filter both properties on the production dashboard. Pageviews, clicks, design choices, imports, previews and download initiation are tracked. Session recording is disabled, DOM text/attributes are masked, and custom events omit schedule contents and image data. Location analytics use PostHog's approximate GeoIP without a browser permission prompt. See the [independent PostHog documentation](documentation/posthog/README.md) for setup, implementation, events and the dashboard prompt. Rebuild after setting deployment variables.
+
 ```sh
 npm run lint
 npm test
@@ -38,6 +40,7 @@ The current automated suite passes all 36 tests. Lint and production build pass.
 - [Landing page](documentation/LANDING_PAGE.md)
 - [Project status and completion criteria](documentation/PROJECT_PLAN.md)
 - [Technical setup and extension guide](documentation/TECH_STACK.md)
+- [PostHog analytics setup, implementation and dashboards](documentation/posthog/README.md)
 - [Wallpaper templates, artwork prompts and provenance](documentation/WALLPAPER_TEMPLATES.md)
 - [Hero and generated-asset provenance](documentation/HERO_BACKGROUND.md)
 - [Exact generated asset prompts, history and source paths](output/imagegen/schedsnap/prompts.json)

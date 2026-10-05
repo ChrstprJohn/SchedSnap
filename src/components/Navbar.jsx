@@ -2,6 +2,7 @@ import { useSyncExternalStore } from 'react';
 import { Link, useLocation } from 'react-router';
 import { ArrowRight } from 'lucide-react';
 import BrandMark from './BrandMark.jsx';
+import { trackEvent } from '../lib/analytics.js';
 
 function subscribeToScroll(onChange) {
   window.addEventListener('scroll', onChange, { passive: true });
@@ -19,7 +20,7 @@ export default function Navbar() {
           <BrandMark /> SchedSnap
         </Link>
         {isHome && scrolled && <nav className="landing-nav" aria-label="Main navigation">
-          <Link className="nav-create" to="/services/schedule-wallpaper">Create wallpaper <ArrowRight size={16} aria-hidden="true" /></Link>
+          <Link className="nav-create" to="/services/schedule-wallpaper" onClick={() => trackEvent('wallpaper_creation_started', { source: 'navbar' })}>Create wallpaper <ArrowRight size={16} aria-hidden="true" /></Link>
         </nav>}
       </div>
     </header>

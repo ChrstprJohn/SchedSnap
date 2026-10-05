@@ -5,6 +5,7 @@ import { canvasBlob, drawWallpaper, findOverlaps } from '../../utils/canvasHelpe
 import { prepareWallpaperAssets } from '../../utils/wallpaperAssets.js';
 import { mascotTemplateSchedule, templateSchedule } from '../../assets/templates.js';
 import { downloadBlob } from '../../utils/downloadBlob.js';
+import { templateProperties, trackEvent } from '../../lib/analytics.js';
 import { WallpaperCanvas } from './CanvasPreview.jsx';
 import WallpaperViewer from './WallpaperViewer.jsx';
 import TemplateControls from './TemplateControls.jsx';
@@ -12,7 +13,7 @@ import Editor from './Editor.jsx';
 import Uploader from './Uploader.jsx';
 import Toast from '../../components/Toast.jsx';
 
-export default function TemplateWorkspace({ step, onStep, template, schedule, resolution, onScheduleChange, onAppearanceChange, onResetAppearance, image, onImage, busy, onError, onAnalyze, onSample, importOpen, onImportOpenChange: setImportOpen, onTitleChange, canCancelEntry, onCancelEntryChange: setCanCancelEntry, onCancelImport, imagePickerRef: imagePicker, preparingImage, onPreparingImageChange: setPreparingImage }) {
+export default function TemplateWorkspace({ step, onStep, template, schedule, resolution, scheduleSource, onScheduleSourceChange, onScheduleChange, onAppearanceChange, onResetAppearance, image, onImage, busy, onError, onAnalyze, onSample, importOpen, onImportOpenChange: setImportOpen, onTitleChange, canCancelEntry, onCancelEntryChange: setCanCancelEntry, onCancelImport, imagePickerRef: imagePicker, preparingImage, onPreparingImageChange: setPreparingImage }) {
   const [enlarged, setEnlarged] = useState(false);
   const [customizing, setCustomizing] = useState(false);
   const [previewStuck, setPreviewStuck] = useState(false);
@@ -51,6 +52,8 @@ export default function TemplateWorkspace({ step, onStep, template, schedule, re
   }, [step, customizing]);
 
   function enterManually() {
+    onScheduleSourceChange('manual');
+    trackEvent('manual_schedule_started', templateProperties(template));
     setImportOpen(false);
     setCanCancelEntry(true);
     if (!hasSchedule) onScheduleChange({ classes: [{ subject: '', courseCode: null, meetings: [{ day: null, startTime: null, endTime: null, room: null, dateLabel: null }] }], warnings: [] });
@@ -60,6 +63,7 @@ export default function TemplateWorkspace({ step, onStep, template, schedule, re
     setCanCancelEntry(false);
     setImportOpen(false);
     onScheduleChange({ classes: [], warnings: [] });
+    onScheduleSourceChange('unknown');
     onImage(null);
     onError('');
     requestAnimationFrame(() => imagePicker.current?.focusUpload());
@@ -69,6 +73,10 @@ export default function TemplateWorkspace({ step, onStep, template, schedule, re
     if (!canDownload) return;
     setExporting(true);
     setMessage('');
+    const started = performance.now();
+    const properties = { ...templateProperties(template), schedule_source: scheduleSource, class_count: schedule.classes.length, width: resolution.width, height: resolution.height };
+    trackEvent('wallpaper_download_requested', properties);
+    let stage = 'render';
     try {
       const backgroundImage = await prepareWallpaperAssets(template);
       if (!active.current) return;
@@ -78,7 +86,9 @@ export default function TemplateWorkspace({ step, onStep, template, schedule, re
       const blob = await canvasBlob(output);
       if (!active.current) return;
       const filename = `schedsnap-${template.id}-${resolution.width}x${resolution.height}.png`;
+      stage = 'download';
       const { inApp } = downloadBlob(blob, filename);
+      trackEvent('wallpaper_download_started', { ...properties, download_method: inApp ? 'new_tab' : 'download_link', duration_ms: Math.round(performance.now() - started) });
       // Keep a fresh object URL for the "Save again" link
       if (lastUrl.current) URL.revokeObjectURL(lastUrl.current);
       const url = URL.createObjectURL(blob);
@@ -90,13 +100,13 @@ export default function TemplateWorkspace({ step, onStep, template, schedule, re
           ? 'Image opened in a new tab — long-press it and tap Save to Photos / Download.'
           : 'Download started.'
       );
-    } catch (failure) { setMessageKind('error'); setMessage(failure.message); }
+    } catch (failure) { trackEvent('wallpaper_download_failed', { ...properties, stage }); setMessageKind('error'); setMessage(failure.message); }
     finally { setExporting(false); }
   }
 
   const sizeClass = previewSizeLevel === 1 ? 'preview-size-sm' : previewSizeLevel === 3 ? 'preview-size-lg' : 'preview-size-md';
   const preview = <div className={`flow-preview-art ${sizeClass}`}>
-    <button type="button" aria-label="Enlarge wallpaper" aria-haspopup="dialog" onClick={() => setEnlarged(true)} className="flow-wallpaper">
+    <button type="button" aria-label="Enlarge wallpaper" aria-haspopup="dialog" onClick={() => { setEnlarged(true); trackEvent('wallpaper_preview_enlarged', templateProperties(template)); }} className="flow-wallpaper">
       <WallpaperCanvas schedule={shownSchedule} template={template} resolution={resolution} onLayout={updateLayout} className="block h-auto w-full" label={`${template.name} ${hasSchedule ? 'with your classes' : 'with sample classes'}`} />
       <span className="preview-enlarge" aria-hidden="true"><Maximize2 size={16} /></span>
     </button>
@@ -129,7 +139,7 @@ export default function TemplateWorkspace({ step, onStep, template, schedule, re
         <p className="download-meta">{schedule.classes.length} {schedule.classes.length === 1 ? 'class' : 'classes'} · {resolution.width} × {resolution.height} PNG</p>
         <button type="button" onClick={download} disabled={!canDownload} aria-describedby={exportStatus ? 'wallpaper-export-status' : undefined} className="button-primary download-wallpaper"><Download size={18} aria-hidden="true" />{exporting ? 'Creating PNG…' : 'Download wallpaper'}</button>
         {exportStatus && <div className="export-status" role="status" id="wallpaper-export-status"><p>{exportStatus}</p>{(issues.length > 0 || currentLayout?.overflow) && <button type="button" className="text-link" onClick={() => onStep('classes')}>Fix class details</button>}{currentLayout?.error && <button type="button" className="text-link" onClick={() => onStep('design')}>Change design</button>}</div>}
-        {exportResult?.key === exportKey && <a className="text-link save-again" href={exportResult.url} download={exportResult.filename}>Save PNG again</a>}
+        {exportResult?.key === exportKey && <a className="text-link save-again" href={exportResult.url} download={exportResult.filename} onClick={() => trackEvent('wallpaper_download_repeated', { ...templateProperties(template), schedule_source: scheduleSource })}>Save PNG again</a>}
         <div className="wallpaper-edit-actions"><button type="button" className="button-secondary" onClick={() => onStep('classes')}><Pencil size={16} aria-hidden="true" />Edit classes</button><button type="button" className="button-secondary" onClick={() => onStep('design')}><LayoutTemplate size={16} aria-hidden="true" />Change design</button></div>
         <details className="flow-customize" open={customizing} onToggle={(event) => { setCustomizing(event.currentTarget.open); setPreviewStuck(false); }}><summary className="disclosure-summary"><span><SlidersHorizontal size={16} aria-hidden="true" />Customize appearance</span><ChevronDown className="disclosure-icon size-4" aria-hidden="true" /></summary><TemplateControls template={template} onChange={onAppearanceChange} onReset={onResetAppearance} /></details>
       </section>
