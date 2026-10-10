@@ -1,0 +1,35 @@
+[
+  {
+    "name": "desktop",
+    "width": 1440,
+    "statesChecked": 12,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "name": "mobile",
+    "width": 390,
+    "statesChecked": 12,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "name": "tablet",
+    "width": 820,
+    "statesChecked": 12,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "name": "small-mobile",
+    "width": 320,
+    "statesChecked": 12,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "autoplayVisible": true,
+    "offscreenPaused": true,
+    "hoverPaused": true
+  }
+]

@@ -149,3 +149,43 @@
   .hero-content { height: auto; }
   .hero-art { min-height: 100px; }
 }
+
+/* Device showcases share one collection rhythm, with wider art for larger screens. */
+@layer components {
+  .device-showcase { margin-top: clamp(32px, 4vw, 48px); }
+  .device-showcase + .device-showcase { margin-top: clamp(64px, 8vw, 112px); }
+  .device-showcase-tablet .collection-image picture, .device-showcase-laptop .collection-image picture { max-width: 640px; aspect-ratio: 4 / 3; max-height: none; }
+}
+@media (max-width: 800px), (max-width: 1100px) and (orientation: portrait) {
+  .device-showcase-tablet .collection-showcase .collection-image, .device-showcase-laptop .collection-showcase .collection-image { width: min(100%, 720px); grid-template-columns: 36px minmax(0, 1fr) 36px; gap: 0; }
+  .device-showcase-tablet .showcase-image-arrow, .device-showcase-laptop .showcase-image-arrow { width: 44px; justify-self: center; }
+}
+
+@layer components {
+  .device-showcase-tablet .collection-showcase .collection-image { grid-column: 2; }
+  .device-showcase-tablet .collection-showcase .collection-copy { grid-column: 1; }
+  .device-showcase-tablet .collection-showcase { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); }
+  .device-showcase-tablet .collection-image picture { max-width: 460px; aspect-ratio: 4 / 5; max-height: 560px; }
+}
+@media (max-width: 800px), (max-width: 1100px) and (orientation: portrait) {
+  .device-showcase-tablet .collection-showcase { grid-template-columns: minmax(0, 1fr); }
+  .device-showcase-tablet .collection-showcase .collection-image, .device-showcase-tablet .collection-showcase .collection-copy { grid-column: 1; }
+}
+
+@layer components {
+  .device-gallery { padding-block: clamp(32px, 5vw, 64px) clamp(64px, 8vw, 112px); }
+  .device-gallery-back, .device-gallery-link { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-size: 14px; font-weight: 600; }
+  .device-gallery-back { color: var(--color-muted); }
+  .device-gallery-back:hover, .device-gallery-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .device-gallery h1 { margin-top: 24px; font-size: clamp(1.75rem, 3vw, 2.25rem); font-weight: 600; line-height: 1.15; letter-spacing: -0.03em; }
+  .device-gallery-note { margin-top: 12px; max-width: 60ch; color: var(--color-muted); font-size: 14px; line-height: 1.6; }
+  .device-gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(32px, 5vw, 64px); margin-top: 40px; }
+  .device-gallery-item { min-width: 0; text-align: center; }
+  .device-gallery-item img { display: block; width: 100%; height: auto; max-height: 560px; aspect-ratio: 4 / 5; object-fit: contain; }
+  .device-gallery-laptop .device-gallery-item img { aspect-ratio: 4 / 3; }
+  .device-gallery-item h2 { margin-top: 20px; font-size: 24px; font-weight: 600; line-height: 1.3; letter-spacing: -0.02em; }
+  .device-gallery-link { margin-top: 8px; }
+}
+@media (max-width: 640px) {
+  .device-gallery-grid { grid-template-columns: minmax(0, 1fr); margin-top: 28px; }
+}

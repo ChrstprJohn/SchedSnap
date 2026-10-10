@@ -63,7 +63,7 @@
             "y": 128.8000030517578
           },
           "headingSize": "28px",
-          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "hero": "http://localhost:5173/images/hero/hero-phones.webp",
           "image": "http://localhost:5173/images/collections/little-friends-mobile.webp",
           "link": "/services/schedule-wallpaper?collection=little-friends",
           "naturalWidth": 1122,
@@ -141,7 +141,7 @@
             "y": 128.8000030517578
           },
           "headingSize": "28px",
-          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "hero": "http://localhost:5173/images/hero/hero-phones.webp",
           "image": "http://localhost:5173/images/collections/mascot-mobile.webp",
           "link": "/services/schedule-wallpaper?collection=mascot",
           "naturalWidth": 1122,
@@ -219,7 +219,7 @@
             "y": 128.8000030517578
           },
           "headingSize": "28px",
-          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "hero": "http://localhost:5173/images/hero/hero-phones.webp",
           "image": "http://localhost:5173/images/collections/pattern-mobile.webp",
           "link": "/services/schedule-wallpaper?collection=pattern",
           "naturalWidth": 1122,
@@ -297,7 +297,7 @@
             "y": 128.8000030517578
           },
           "headingSize": "28px",
-          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "hero": "http://localhost:5173/images/hero/hero-phones.webp",
           "image": "http://localhost:5173/images/collections/original-mobile.webp",
           "link": "/services/schedule-wallpaper?collection=original",
           "naturalWidth": 1122,
@@ -383,7 +383,7 @@
             "y": 187.1999969482422
           },
           "headingSize": "28px",
-          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "hero": "http://localhost:5173/images/hero/hero-phones.webp",
           "image": "http://localhost:5173/images/collections/little-friends-mobile.webp",
           "link": "/services/schedule-wallpaper?collection=little-friends",
           "naturalWidth": 1122,
@@ -461,7 +461,7 @@
             "y": 187.1999969482422
           },
           "headingSize": "28px",
-          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "hero": "http://localhost:5173/images/hero/hero-phones.webp",
           "image": "http://localhost:5173/images/collections/mascot-mobile.webp",
           "link": "/services/schedule-wallpaper?collection=mascot",
           "naturalWidth": 1122,
@@ -539,7 +539,7 @@
             "y": 187.1999969482422
           },
           "headingSize": "28px",
-          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "hero": "http://localhost:5173/images/hero/hero-phones.webp",
           "image": "http://localhost:5173/images/collections/pattern-mobile.webp",
           "link": "/services/schedule-wallpaper?collection=pattern",
           "naturalWidth": 1122,
@@ -617,7 +617,7 @@
             "y": 187.1999969482422
           },
           "headingSize": "28px",
-          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "hero": "http://localhost:5173/images/hero/hero-phones.webp",
           "image": "http://localhost:5173/images/collections/original-mobile.webp",
           "link": "/services/schedule-wallpaper?collection=original",
           "naturalWidth": 1122,
@@ -703,7 +703,7 @@
             "y": 262.9750061035156
           },
           "headingSize": "37.712px",
-          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "hero": "http://localhost:5173/images/hero/hero-phones.webp",
           "image": "http://localhost:5173/images/collections/little-friends-mobile.webp",
           "link": "/services/schedule-wallpaper?collection=little-friends",
           "naturalWidth": 1122,
@@ -781,7 +781,7 @@
             "y": 262.9750061035156
           },
           "headingSize": "37.712px",
-          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "hero": "http://localhost:5173/images/hero/hero-phones.webp",
           "image": "http://localhost:5173/images/collections/mascot-mobile.webp",
           "link": "/services/schedule-wallpaper?collection=mascot",
           "naturalWidth": 1122,
@@ -859,7 +859,7 @@
             "y": 262.9750061035156
           },
           "headingSize": "37.712px",
-          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "hero": "http://localhost:5173/images/hero/hero-phones.webp",
           "image": "http://localhost:5173/images/collections/pattern-mobile.webp",
           "link": "/services/schedule-wallpaper?collection=pattern",
           "naturalWidth": 1122,
@@ -937,7 +937,7 @@
             "y": 262.9750061035156
           },
           "headingSize": "37.712px",
-          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "hero": "http://localhost:5173/images/hero/hero-phones.webp",
           "image": "http://localhost:5173/images/collections/original-mobile.webp",
           "link": "/services/schedule-wallpaper?collection=original",
           "naturalWidth": 1122,
@@ -1023,7 +1023,7 @@
             "y": -17.55000114440918
           },
           "headingSize": "38.4px",
-          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "hero": "http://localhost:5173/images/hero/hero-phones.webp",
           "image": "http://localhost:5173/images/collections/little-friends-mobile.webp",
           "link": "/services/schedule-wallpaper?collection=little-friends",
           "naturalWidth": 1122,
@@ -1101,7 +1101,7 @@
             "y": -17.55000114440918
           },
           "headingSize": "38.4px",
-          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "hero": "http://localhost:5173/images/hero/hero-phones.webp",
           "image": "http://localhost:5173/images/collections/mascot-mobile.webp",
           "link": "/services/schedule-wallpaper?collection=mascot",
           "naturalWidth": 1122,
@@ -1179,7 +1179,7 @@
             "y": -17.55000114440918
           },
           "headingSize": "38.4px",
-          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "hero": "http://localhost:5173/images/hero/hero-phones.webp",
           "image": "http://localhost:5173/images/collections/pattern-mobile.webp",
           "link": "/services/schedule-wallpaper?collection=pattern",
           "naturalWidth": 1122,
@@ -1257,7 +1257,7 @@
             "y": -17.55000114440918
           },
           "headingSize": "38.4px",
-          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "hero": "http://localhost:5173/images/hero/hero-phones.webp",
           "image": "http://localhost:5173/images/collections/original-mobile.webp",
           "link": "/services/schedule-wallpaper?collection=original",
           "naturalWidth": 1122,
@@ -1343,7 +1343,7 @@
             "y": 83.5999984741211
           },
           "headingSize": "38.4px",
-          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "hero": "http://localhost:5173/images/hero/hero-phones.webp",
           "image": "http://localhost:5173/images/collections/little-friends-mobile.webp",
           "link": "/services/schedule-wallpaper?collection=little-friends",
           "naturalWidth": 1122,
@@ -1421,7 +1421,7 @@
             "y": 83.5999984741211
           },
           "headingSize": "38.4px",
-          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "hero": "http://localhost:5173/images/hero/hero-phones.webp",
           "image": "http://localhost:5173/images/collections/mascot-mobile.webp",
           "link": "/services/schedule-wallpaper?collection=mascot",
           "naturalWidth": 1122,
@@ -1499,7 +1499,7 @@
             "y": 83.5999984741211
           },
           "headingSize": "38.4px",
-          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "hero": "http://localhost:5173/images/hero/hero-phones.webp",
           "image": "http://localhost:5173/images/collections/pattern-mobile.webp",
           "link": "/services/schedule-wallpaper?collection=pattern",
           "naturalWidth": 1122,
@@ -1577,7 +1577,7 @@
             "y": 83.5999984741211
           },
           "headingSize": "38.4px",
-          "hero": "http://localhost:5173/images/hero-phones.webp",
+          "hero": "http://localhost:5173/images/hero/hero-phones.webp",
           "image": "http://localhost:5173/images/collections/original-mobile.webp",
           "link": "/services/schedule-wallpaper?collection=original",
           "naturalWidth": 1122,

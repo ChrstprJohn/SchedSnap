@@ -3,6 +3,7 @@ import { Link, Route, Routes, useLocation } from 'react-router';
 import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
 import Home from './pages/Home.jsx';
+import DeviceGallery from './pages/DeviceGallery.jsx';
 import InAppBrowserBanner from './components/InAppBrowserBanner.jsx';
 
 const ScheduleWallpaper = lazy(() => import('./pages/ScheduleWallpaper/Index.jsx'));
@@ -15,7 +16,10 @@ export default function App() {
     const section = hash === '#designs' ? document.getElementById('designs') : null;
     if (section) section.scrollIntoView({ behavior: 'instant' });
     else window.scrollTo({ top: 0, behavior: 'instant' });
-    if (!isWallpaperEditor) document.title = pathname === '/' ? 'SchedSnap — Your class schedule, one glance away' : 'Page not found — SchedSnap';
+    if (!isWallpaperEditor) {
+      const galleryTitles = { '/wallpapers/mobile': 'Mobile wallpapers', '/wallpapers/tablet': 'Tablet wallpapers', '/wallpapers/laptop': 'Laptop wallpapers' };
+      document.title = pathname === '/' ? 'SchedSnap — Your class schedule, one glance away' : (galleryTitles[pathname] || 'Page not found') + ' — SchedSnap';
+    }
   }, [pathname, hash, isWallpaperEditor]);
 
   return (
@@ -27,6 +31,7 @@ export default function App() {
         <Suspense fallback={<p className="page-wrap py-20" role="status">Opening wallpaper creator…</p>}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/wallpapers/:device" element={<DeviceGallery />} />
             <Route path="/services/schedule-wallpaper/*" element={<ScheduleWallpaper />} />
             <Route path="*" element={
               <section className="page-wrap py-24">

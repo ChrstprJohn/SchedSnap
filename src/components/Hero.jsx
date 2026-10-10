@@ -13,7 +13,7 @@ export default function Hero() {
 
   return (
     <section className="landing-hero" aria-labelledby="hero-heading">
-      <img className="hero-ambient" src="/images/hero-ambient.webp" alt="" aria-hidden="true" width="1672" height="941" decoding="async" />
+      <img className="hero-ambient" src="/images/hero/hero-ambient.webp" alt="" aria-hidden="true" width="1672" height="941" decoding="async" />
       <div className="page-wrap hero-content">
         <div className="hero-copy">
           <h1 id="hero-heading" className="hero-heading">Your schedule.<br />On your screen.</h1>
@@ -25,7 +25,7 @@ export default function Hero() {
           <p className="hero-note">No account needed.</p>
         </div>
         <div className="hero-art">
-          <img src="/images/hero-phones.webp" alt="Three phones with sunlit, navy bear, and ivory panda schedule wallpapers" width="1448" height="1086" fetchPriority="high" decoding="async" />
+          <img src="/images/hero/hero-phones.webp" alt="Three phones with sunlit, navy bear, and ivory panda schedule wallpapers" width="1448" height="1086" fetchPriority="high" decoding="async" />
         </div>
       </div>
     </section>

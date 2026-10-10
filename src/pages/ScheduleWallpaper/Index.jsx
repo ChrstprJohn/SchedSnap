@@ -14,7 +14,18 @@ import TemplateWorkspace from './TemplateWorkspace.jsx';
 export default function ScheduleWallpaper() {
   const { '*': templateId } = useParams();
   const navigate = useNavigate();
-  const [search] = useSearchParams();
+  const [search, setSearch] = useSearchParams();
+  const device = ['mobile', 'tablet', 'laptop'].includes(search.get('device')) ? search.get('device') : 'mobile';
+  function changeDevice(next) {
+    setSearch((previous) => { const params = new URLSearchParams(previous); params.set('device', next); return params; });
+  }
+  function devicePath(path) {
+    const [pathname, query = ''] = path.split('?');
+    const params = new URLSearchParams(query);
+    params.set('device', device);
+    if (search.get('collection')) params.set('collection', search.get('collection'));
+    return `${pathname}?${params}`;
+  }
   const [templateSettings, setTemplateSettings] = useState({});
   const [schedule, setSchedule] = useState({ classes: [], warnings: [] });
   const [scheduleSource, setScheduleSource] = useState('unknown');
@@ -68,15 +79,15 @@ export default function ScheduleWallpaper() {
     if (next === step) return;
     setImportOpen(false);
     if (busy) { request.current?.abort(); setBusy(false); }
-    if (next === 'design') navigate(`${basePath}${selectedId ? `?return=${selectedId}&step=${step === 'preview' ? 'preview' : 'classes'}` : ''}`);
-    else if (selectedId) navigate(`${basePath}/${selectedId}${next === 'preview' ? '?step=preview' : ''}`);
+    if (next === 'design') navigate(devicePath(`${basePath}${selectedId ? `?return=${selectedId}&step=${step === 'preview' ? 'preview' : 'classes'}` : ''}`));
+    else if (selectedId) navigate(devicePath(`${basePath}/${selectedId}${next === 'preview' ? '?step=preview' : ''}`));
   }
 
   function selectTemplate(id) {
     if (busy) return;
     const selected = wallpaperTemplates.find((item) => item.id === id);
     if (selected) trackEvent('template_selected', templateProperties(selected));
-    navigate(`${basePath}/${id}${previousTemplate && search.get('step') === 'preview' ? '?step=preview' : ''}`);
+    navigate(devicePath(`${basePath}/${id}${previousTemplate && search.get('step') === 'preview' ? '?step=preview' : ''}`));
   }
   useEffect(() => () => request.current?.abort(), []);
   useEffect(() => {
@@ -155,7 +166,7 @@ export default function ScheduleWallpaper() {
       onError={(message) => { setError(message); setSuccess(''); }} onAnalyze={analyze}
       onSample={() => { setSchedule(structuredClone(sampleSchedule)); setScheduleSource('sample'); trackEvent('sample_schedule_loaded', templateProperties(template)); dismissNotification(); }}
     /> : <>
-      <TemplateGallery initialCategory={search.get('collection')} selectedId={selectedId} settings={templateSettings} schedule={schedule} scheduleTitle={scheduleTitle} resolution={mobileResolution} onSelect={selectTemplate} />
+      <TemplateGallery device={device} onDeviceChange={changeDevice} initialCategory={search.get('collection')} selectedId={selectedId} settings={templateSettings} schedule={schedule} scheduleTitle={scheduleTitle} resolution={mobileResolution} onSelect={selectTemplate} />
     </>}
     <Toast message={error || success} kind={error ? 'error' : 'success'} onClose={dismissNotification} />
   </section>;

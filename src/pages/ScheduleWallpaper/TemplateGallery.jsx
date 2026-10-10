@@ -8,11 +8,15 @@ import { templateProperties, trackEvent } from '../../lib/analytics.js';
 const thumbnailResolution = { id: 'thumbnail', width: 270, height: 600 };
 const previewSchedule = (template) => template.layout === 'mascot' ? mascotTemplateSchedule : templateSchedule;
 
-export default function TemplateGallery({ selectedId, settings = {}, schedule, scheduleTitle = 'Class Schedule', resolution, onSelect, initialCategory = 'all' }) {
+export default function TemplateGallery({ selectedId, settings = {}, schedule, scheduleTitle = 'Class Schedule', resolution, onSelect, initialCategory = 'all', device = 'mobile', onDeviceChange }) {
   const [category, setCategory] = useState(() => collections.some((item) => item.id === initialCategory) ? initialCategory : 'all');
   const [preview, setPreview] = useState(null);
   const visibleTemplates = wallpaperTemplates.filter((item) => category === 'all' || (item.collection || 'original') === category);
   return <div>
+    <div role="group" aria-label="Filter by device" className="device-filter-tabs">
+      {['mobile', 'tablet', 'laptop'].map((item) => <button type="button" key={item} aria-pressed={device === item} aria-controls="template-gallery" onClick={() => onDeviceChange(item)} className="device-filter-tab">{item === 'mobile' ? 'Mobile' : item === 'tablet' ? 'Tablet' : 'Laptop'}</button>)}
+    </div>
+    {device !== 'mobile' && <p className="mb-4 text-sm text-muted" role="status">These styles currently export in phone format. {device === 'tablet' ? 'Tablet' : 'Laptop'} sizing is not available yet.</p>}
     <div role="group" aria-label="Filter designs" className="template-filters">
       {collections.map((collection) => <button type="button" key={collection.id} aria-pressed={category === collection.id} aria-controls="template-gallery" onClick={() => { if (category !== collection.id) { setCategory(collection.id); trackEvent('collection_filtered', { collection: collection.id }); } }} className="template-category">{collection.name}</button>)}
     </div>

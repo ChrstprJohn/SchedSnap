@@ -49,9 +49,9 @@
         ]
       },
       "character": {
-        "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\characters\\lavender-cloud.png",
+        "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\characters\\lavender-cloud.png",
         "relative_path": "characters/lavender-cloud.png",
-        "reused_source": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\characters\\lavender-cloud.png",
+        "reused_source": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\characters\\lavender-cloud.png",
         "dimensions": {
           "width": 1254,
           "height": 1254
@@ -62,7 +62,7 @@
         {
           "orientation": "portrait",
           "kind": "background",
-          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\portrait\\backgrounds\\lavender-cloud.png",
+          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\portrait\\backgrounds\\lavender-cloud.png",
           "relative_path": "portrait/backgrounds/lavender-cloud.png",
           "source_path": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-fb58-7ab3-9208-b06b4b73030a\\exec-959340ff-ee51-4584-935d-c04249440093.png",
           "dimensions": {
@@ -78,7 +78,7 @@
         {
           "orientation": "portrait",
           "kind": "wallpaper",
-          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\portrait\\wallpapers\\lavender-cloud.png",
+          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\portrait\\wallpapers\\lavender-cloud.png",
           "relative_path": "portrait/wallpapers/lavender-cloud.png",
           "source_path": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-fb58-7ab3-9208-b06b4b73030a\\exec-90ec095b-6bbc-4a4a-a2e5-14c94711f176.png",
           "dimensions": {
@@ -89,12 +89,12 @@
           "native_width_height_ratio": 0.75,
           "aspect_adheres_exactly": true,
           "exact_prompt": "One single STRICT 3:4 portrait image desired 1536x2048; use this output proportion regardless of reference canvas.\nFill the complete rectangular canvas with an exceptionally clean gentle smooth lavender #DED4EB at top to pale blush #EEDCE5 at bottom. Chromatic light gently muted pastel tones with one simple subtle vertical gradient, smooth and no banding, calm clean open space for drawings added later.\nThe only provided image is the approved transparent character reference. Preserve that exact character identity, silhouette, rounded forms, expression, two semantic character colors and clean graphic finish: warm ivory #FFF3DC friendly cloud creature with deep indigo #55536F eyes and tiny mouth, three rounded upper cloud lobes merging into squat body, two stubby rounded arms. Place one copy upright at the lower-left corner with modest padding, the whole body fully visible. Scale the character to maximum 24% of total image height and 38% of total image width. Upper 74% of the image and the central drawing area must remain entirely empty. Do not center the character. Merge transparent surrounding area cleanly with the background.\nConstraints: no text, labels, watermark, UI, calendar, timetable, schedule, cards, border, frame, device, props, scenery, stars, floating clouds, extra moons, craters, extra characters, decoration, texture, grain, speckles, external cast shadows, halos, glow or sharp tips; no strong three-dimensional rendering or glossy hotspots. Plain rectangular canvas, no mockup.\nOne single STRICT 3:4 portrait image desired 1536x2048; use this output proportion regardless of reference canvas.",
-          "input_reference": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\characters\\lavender-cloud.png"
+          "input_reference": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\characters\\lavender-cloud.png"
         },
         {
           "orientation": "landscape",
           "kind": "background",
-          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\landscape\\backgrounds\\lavender-cloud.png",
+          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\landscape\\backgrounds\\lavender-cloud.png",
           "relative_path": "landscape/backgrounds/lavender-cloud.png",
           "source_path": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-fb58-7ab3-9208-b06b4b73030a\\exec-7d86cf9f-5e1b-40c4-9874-6c90431af018.png",
           "dimensions": {
@@ -110,7 +110,7 @@
         {
           "orientation": "landscape",
           "kind": "wallpaper",
-          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\landscape\\wallpapers\\lavender-cloud.png",
+          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\landscape\\wallpapers\\lavender-cloud.png",
           "relative_path": "landscape/wallpapers/lavender-cloud.png",
           "source_path": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-fb58-7ab3-9208-b06b4b73030a\\exec-a7eff27f-a54a-461d-8100-9eb5b0f7f08e.png",
           "dimensions": {
@@ -121,7 +121,7 @@
           "native_width_height_ratio": 1.3333333333333333,
           "aspect_adheres_exactly": true,
           "exact_prompt": "One single STRICT 4:3 landscape image desired 2048x1536; use this output proportion regardless of reference canvas.\nFill the complete rectangular canvas with an exceptionally clean gentle smooth lavender #DED4EB at top to pale blush #EEDCE5 at bottom. Chromatic light gently muted pastel tones with one simple subtle vertical gradient, smooth and no banding, calm clean open space for drawings added later.\nThe only provided image is the approved transparent character reference. Preserve that exact character identity, silhouette, rounded forms, expression, two semantic character colors and clean graphic finish: warm ivory #FFF3DC friendly cloud creature with deep indigo #55536F eyes and tiny mouth, three rounded upper cloud lobes merging into squat body, two stubby rounded arms. Place one copy upright at the lower-left corner with modest padding, the whole body fully visible. Scale the character to maximum 26% of total image height and 22% of total image width. Upper 74% of the image and the central drawing area must remain entirely empty. Do not center the character. Merge transparent surrounding area cleanly with the background.\nConstraints: no text, labels, watermark, UI, calendar, timetable, schedule, cards, border, frame, device, props, scenery, stars, floating clouds, extra moons, craters, extra characters, decoration, texture, grain, speckles, external cast shadows, halos, glow or sharp tips; no strong three-dimensional rendering or glossy hotspots. Plain rectangular canvas, no mockup.\nOne single STRICT 4:3 landscape image desired 2048x1536; use this output proportion regardless of reference canvas.",
-          "input_reference": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\characters\\lavender-cloud.png"
+          "input_reference": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\characters\\lavender-cloud.png"
         }
       ]
     },
@@ -142,9 +142,9 @@
         ]
       },
       "character": {
-        "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\characters\\blue-moon.png",
+        "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\characters\\blue-moon.png",
         "relative_path": "characters/blue-moon.png",
-        "reused_source": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\characters\\blue-moon.png",
+        "reused_source": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\characters\\blue-moon.png",
         "dimensions": {
           "width": 1254,
           "height": 1254
@@ -155,7 +155,7 @@
         {
           "orientation": "portrait",
           "kind": "background",
-          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\portrait\\backgrounds\\blue-moon.png",
+          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\portrait\\backgrounds\\blue-moon.png",
           "relative_path": "portrait/backgrounds/blue-moon.png",
           "source_path": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-fb58-7ab3-9208-b06b4b73030a\\exec-4102be96-c0ac-470c-ab25-50f5d717fd2a.png",
           "dimensions": {
@@ -171,7 +171,7 @@
         {
           "orientation": "portrait",
           "kind": "wallpaper",
-          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\portrait\\wallpapers\\blue-moon.png",
+          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\portrait\\wallpapers\\blue-moon.png",
           "relative_path": "portrait/wallpapers/blue-moon.png",
           "source_path": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-fb58-7ab3-9208-b06b4b73030a\\exec-b88104ca-8698-4667-b2b6-6d6affe294c9.png",
           "dimensions": {
@@ -182,12 +182,12 @@
           "native_width_height_ratio": 0.75,
           "aspect_adheres_exactly": true,
           "exact_prompt": "One single STRICT 3:4 portrait image desired 1536x2048; use this output proportion regardless of reference canvas.\nFill the complete rectangular canvas with an exceptionally clean gentle smooth powder blue #CFDFEC at top to pale aqua #D7ECE7 at bottom. Chromatic light gently muted pastel tones with one simple subtle vertical gradient, smooth and no banding, calm clean open space for drawings added later.\nThe only provided image is the approved transparent character reference. Preserve that exact character identity, silhouette, rounded forms, expression, two semantic character colors and clean graphic finish: buttery yellow #F2D78E broad chunky crescent moon creature with ink blue #4A5B78 eyes and tiny rounded mouth, visibly blunt rounded upper and lower crescent tips. Place one copy upright at the lower-right corner with modest padding, the whole body fully visible. Scale the character to maximum 24% of total image height and 38% of total image width. Upper 74% of the image and the central drawing area must remain entirely empty. Do not center the character. Merge transparent surrounding area cleanly with the background.\nConstraints: no text, labels, watermark, UI, calendar, timetable, schedule, cards, border, frame, device, props, scenery, stars, floating clouds, extra moons, craters, extra characters, decoration, texture, grain, speckles, external cast shadows, halos, glow or sharp tips; no strong three-dimensional rendering or glossy hotspots. Plain rectangular canvas, no mockup.\nOne single STRICT 3:4 portrait image desired 1536x2048; use this output proportion regardless of reference canvas.",
-          "input_reference": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\characters\\blue-moon.png"
+          "input_reference": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\characters\\blue-moon.png"
         },
         {
           "orientation": "landscape",
           "kind": "background",
-          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\landscape\\backgrounds\\blue-moon.png",
+          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\landscape\\backgrounds\\blue-moon.png",
           "relative_path": "landscape/backgrounds/blue-moon.png",
           "source_path": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-fb58-7ab3-9208-b06b4b73030a\\exec-6943ce6e-fa0f-4c3c-bb8a-80aaf4a24e21.png",
           "dimensions": {
@@ -203,7 +203,7 @@
         {
           "orientation": "landscape",
           "kind": "wallpaper",
-          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\landscape\\wallpapers\\blue-moon.png",
+          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\landscape\\wallpapers\\blue-moon.png",
           "relative_path": "landscape/wallpapers/blue-moon.png",
           "source_path": "C:\\Users\\picar\\.codex\\generated_images\\01a10550-fb58-7ab3-9208-b06b4b73030a\\exec-14700f20-3432-4342-a789-b6e654be4c47.png",
           "dimensions": {
@@ -214,7 +214,7 @@
           "native_width_height_ratio": 1.3333333333333333,
           "aspect_adheres_exactly": true,
           "exact_prompt": "One single STRICT 4:3 landscape image desired 2048x1536; use this output proportion regardless of reference canvas.\nFill the complete rectangular canvas with an exceptionally clean gentle smooth powder blue #CFDFEC at top to pale aqua #D7ECE7 at bottom. Chromatic light gently muted pastel tones with one simple subtle vertical gradient, smooth and no banding, calm clean open space for drawings added later.\nThe only provided image is the approved transparent character reference. Preserve that exact character identity, silhouette, rounded forms, expression, two semantic character colors and clean graphic finish: buttery yellow #F2D78E broad chunky crescent moon creature with ink blue #4A5B78 eyes and tiny rounded mouth, visibly blunt rounded upper and lower crescent tips. Place one copy upright at the lower-right corner with modest padding, the whole body fully visible. Scale the character to maximum 26% of total image height and 22% of total image width. Upper 74% of the image and the central drawing area must remain entirely empty. Do not center the character. Merge transparent surrounding area cleanly with the background.\nConstraints: no text, labels, watermark, UI, calendar, timetable, schedule, cards, border, frame, device, props, scenery, stars, floating clouds, extra moons, craters, extra characters, decoration, texture, grain, speckles, external cast shadows, halos, glow or sharp tips; no strong three-dimensional rendering or glossy hotspots. Plain rectangular canvas, no mockup.\nOne single STRICT 4:3 landscape image desired 2048x1536; use this output proportion regardless of reference canvas.",
-          "input_reference": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\characters\\blue-moon.png"
+          "input_reference": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\tablet-wallpaper-collection\\02-soft-gradients\\characters\\blue-moon.png"
         }
       ]
     }

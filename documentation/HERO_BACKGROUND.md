@@ -6,8 +6,8 @@ The latest hero uses two separately generated layers, following the user's suppl
 
 | Asset | Source original | Web asset | Dimensions | Conversion |
 | --- | --- | --- | --- | --- |
-| Phone foreground | `output/imagegen/schedsnap/hero-phones.png` | `public/images/hero-phones.webp` | 1448 × 1086 | Lossless WebP, RGBA transparency preserved |
-| Ambient background | `output/imagegen/schedsnap/hero-ambient.png` | `public/images/hero-ambient.webp` | 1672 × 941 | WebP quality 88 |
+| Phone foreground | `output/imagegen/schedsnap/hero/hero-phones.png` | `public/images/hero/hero-phones.webp` | 1448 × 1086 | Lossless WebP, RGBA transparency preserved |
+| Ambient background | `output/imagegen/schedsnap/hero/hero-ambient.png` | `public/images/hero/hero-ambient.webp` | 1672 × 941 | WebP quality 88 |
 
 The phone edit target was the previous generated `hero-mobile.png`; the existing three phones, screen content and characters were retained while the surrounding studio background was removed. The user's white-background isolation request was adapted to genuine transparent output for compositing. Alpha spans 0–255 and all four corners are transparent. No Photoshop action was required: the built-in image-generation tool generated both assets.
 
@@ -34,8 +34,8 @@ The former complete desktop scene and mobile composition remain available below 
 
 The original creamy three-phone studio scene was revised to reduce the phone group, then shift it slightly left and down. Live website text remains separate. The static full image uses contain sizing.
 
-- Web asset: `public/images/hero-schedsnap-balanced.webp` (1672 × 941).
-- Workspace original: `output/imagegen/schedsnap/hero-final.png`.
+- Web asset: `public/images/archive/landing/hero-schedsnap-balanced.webp` (1672 × 941).
+- Workspace original: `output/imagegen/schedsnap/archive/hero/hero-final.png`.
 - Generated source: `C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-18ed1c29-0308-4498-b867-09701aa1be3a.png`.
 - Conversion: WebP quality 88; original PNG retained.
 
@@ -47,8 +47,8 @@ Use case: product-mockup. Make a SMALL composition adjustment to this existing S
 
 A dedicated centered three-phone composition avoids the desktop scene's empty left half. Hero.jsx selects it through a picture source at 640px and below. Between 641px and 1000px, the full desktop image still appears below copy.
 
-- Web asset: `public/images/hero-schedsnap-mobile.webp` (1448 × 1086; 4:3).
-- Workspace original: `output/imagegen/schedsnap/hero-mobile.png`.
+- Web asset: `public/images/archive/landing/hero-schedsnap-mobile.webp` (1448 × 1086; 4:3).
+- Workspace original: `output/imagegen/schedsnap/archive/hero/hero-mobile.png`.
 - Generated source: `C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-e76a813e-6fff-40b3-ae77-dd91cff2ddad.png`.
 - Conversion: WebP quality 88; original PNG retained.
 
@@ -64,20 +64,20 @@ Exact prompts, generated source paths and workspace originals are recorded in [p
 
 | Generated original | Web asset |
 | --- | --- |
-| `output/imagegen/schedsnap/logo.png` | `public/brand/schedsnap-mark.webp` |
-| `output/imagegen/schedsnap/little-friends-white.png` | `public/images/collections/little-friends-white.webp` |
-| `output/imagegen/schedsnap/mascot-white.png` | `public/images/collections/mascot-white.webp` |
-| `output/imagegen/schedsnap/pattern-white.png` | `public/images/collections/pattern-white.webp` |
-| `output/imagegen/schedsnap/original-white.png` | `public/images/collections/original-white.webp` |
+| `output/imagegen/schedsnap/brand/logo.png` | `public/brand/schedsnap-mark.webp` |
+| `output/imagegen/schedsnap/archive/collections/little-friends-white.png` | `public/images/archive/collections/little-friends-white.webp` |
+| `output/imagegen/schedsnap/archive/collections/mascot-white.png` | `public/images/archive/collections/mascot-white.webp` |
+| `output/imagegen/schedsnap/archive/collections/pattern-white.png` | `public/images/archive/collections/pattern-white.webp` |
+| `output/imagegen/schedsnap/archive/collections/original-white.png` | `public/images/archive/collections/original-white.webp` |
 
-Collection scenes are illustrative marketing previews. Actual editor previews and downloads use the existing Canvas renderer and validated class data. The pre-existing `public/images/schedule-phone-preview.webp` remains a historical reference asset; its original prompt/provenance were not supplied and are not inferred.
+Collection scenes are illustrative marketing previews. Actual editor previews and downloads use the existing Canvas renderer and validated class data. The pre-existing `public/images/archive/landing/schedule-phone-preview.webp` remains a historical reference asset; its original prompt/provenance were not supplied and are not inferred.
 
 ## Historical SchedSnap generations
 
 The following exact prompts and originals are retained for provenance; they are superseded by the current assets above.
 ### hero
 
-Original: C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/hero.png
+Original: C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/schedsnap/archive/hero/hero.png
 
 Generated source: C:\Users\picar\.codex\generated_images\01a10545-0bac-7bf3-8068-059100400688\exec-cbc7c7e5-07da-4243-a692-79daadf81f4e.png
 
@@ -87,7 +87,7 @@ Use case: product-mockup. Edit target / composition reference: the attached thre
 
 ### little-friends
 
-Original: C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/little-friends.png
+Original: C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/schedsnap/archive/collections/little-friends.png
 
 Generated source: C:\Users\picar\.codex\generated_images\01a10545-0bac-7bf3-8068-059100400688\exec-60e679f3-73c7-4e7c-a5c8-c53481544da5.png
 
@@ -97,7 +97,7 @@ Use case: product-mockup. Asset type: SchedSnap Little Friends collection showca
 
 ### mascot
 
-Original: C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/mascot.png
+Original: C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/schedsnap/archive/collections/mascot.png
 
 Generated source: C:\Users\picar\.codex\generated_images\01a10545-0bac-7bf3-8068-059100400688\exec-fcdfbd38-01f2-431d-958e-c85389aabab3.png
 
@@ -107,7 +107,7 @@ Use case: product-mockup. Asset type: SchedSnap Mascots collection showcase imag
 
 ### pattern
 
-Original: C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/pattern.png
+Original: C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/schedsnap/archive/collections/pattern.png
 
 Generated source: C:\Users\picar\.codex\generated_images\01a10545-0bac-7bf3-8068-059100400688\exec-92d3dcbb-4bd8-4bac-a150-75d0a1180325.png
 
@@ -117,7 +117,7 @@ Use case: product-mockup. Asset type: SchedSnap Patterns collection showcase ima
 
 ### original
 
-Original: C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/original.png
+Original: C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/schedsnap/archive/collections/original.png
 
 Generated source: C:\Users\picar\.codex\generated_images\01a10545-0bac-7bf3-8068-059100400688\exec-3d43b58a-dab9-447e-a947-e3499effbb06.png
 
@@ -127,7 +127,7 @@ Use case: product-mockup. Asset type: SchedSnap Originals collection showcase im
 
 ### hero-balanced
 
-Original: C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/hero-balanced.png
+Original: C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/schedsnap/archive/hero/hero-balanced.png
 
 Generated source: C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-f9a49f55-70ae-4821-b546-eb5fda6de5d1.png
 
@@ -137,7 +137,7 @@ Use case: product-mockup. Edit the attached existing SchedSnap hero background. 
 
 ## Historical study-desk hero artwork
 
-Historical asset: `public/art/hero-study-desk.png`. This image is retained as an unused artifact of the earlier UniToolbox landing page.
+Historical asset: `public/images/archive/unitoolbox/hero-study-desk.png`. This image is retained as an unused artifact of the earlier UniToolbox landing page.
 
 Generated with the built-in image generation tool for the UniToolbox landing page. The former page displayed it decoratively with a responsive white overlay for headline readability. It contains no student data, writing, logos, or claims. The original generation output remains unchanged.
 
