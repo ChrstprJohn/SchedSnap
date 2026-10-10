@@ -54,7 +54,7 @@
           },
           "assets": {
             "character": {
-              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\01-solid-pastels\\characters\\mint-jellyfish.png",
+              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\01-solid-pastels\\characters\\mint-jellyfish.png",
               "relativePath": "01-solid-pastels/characters/mint-jellyfish.png",
               "dimensions": {
                 "width": 1254,
@@ -73,7 +73,7 @@
               "constraintText": "One character only. No text, watermark, borders, frames, cards, scenery, props, decorative marks, outlines, fragile lines, sharp tips, photorealistic materials, glossy hotspots, strong three-dimensional rendering or external cast shadow."
             },
             "background": {
-              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\01-solid-pastels\\backgrounds\\mint-jellyfish.png",
+              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\01-solid-pastels\\backgrounds\\mint-jellyfish.png",
               "relativePath": "01-solid-pastels/backgrounds/mint-jellyfish.png",
               "dimensions": {
                 "width": 841,
@@ -92,7 +92,7 @@
               "constraintText": "Absolutely no characters, subjects, text, lettering, timetable, UI, cards, grids, borders, frames, scenery, shapes, objects, texture, patterns, gradients, vignette, shadows or lighting variations."
             },
             "wallpaper": {
-              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\01-solid-pastels\\wallpapers\\mint-jellyfish.png",
+              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\01-solid-pastels\\wallpapers\\mint-jellyfish.png",
               "relativePath": "01-solid-pastels/wallpapers/mint-jellyfish.png",
               "dimensions": {
                 "width": 922,
@@ -127,7 +127,7 @@
           },
           "assets": {
             "character": {
-              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\01-solid-pastels\\characters\\peach-mushroom.png",
+              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\01-solid-pastels\\characters\\peach-mushroom.png",
               "relativePath": "01-solid-pastels/characters/peach-mushroom.png",
               "dimensions": {
                 "width": 1254,
@@ -146,7 +146,7 @@
               "constraintText": "One character only. No text, watermark, borders, frames, cards, scenery, props, decorative marks, outlines, fragile lines, sharp tips, photorealistic materials, glossy hotspots, strong three-dimensional rendering or external cast shadow."
             },
             "background": {
-              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\01-solid-pastels\\backgrounds\\peach-mushroom.png",
+              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\01-solid-pastels\\backgrounds\\peach-mushroom.png",
               "relativePath": "01-solid-pastels/backgrounds/peach-mushroom.png",
               "dimensions": {
                 "width": 841,
@@ -165,7 +165,7 @@
               "constraintText": "Absolutely no characters, subjects, text, lettering, timetable, UI, cards, grids, borders, frames, scenery, shapes, objects, texture, patterns, gradients, vignette, shadows or lighting variations."
             },
             "wallpaper": {
-              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\01-solid-pastels\\wallpapers\\peach-mushroom.png",
+              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\01-solid-pastels\\wallpapers\\peach-mushroom.png",
               "relativePath": "01-solid-pastels/wallpapers/peach-mushroom.png",
               "dimensions": {
                 "width": 841,
@@ -223,7 +223,7 @@
           },
           "files": {
             "character": {
-              "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\characters\\lavender-cloud.png",
+              "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\characters\\lavender-cloud.png",
               "relative_path": "output/imagegen/wallpaper-collection/02-soft-gradients/characters/lavender-cloud.png",
               "dimensions": {
                 "width": 1254,
@@ -239,7 +239,7 @@
               ]
             },
             "background": {
-              "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\backgrounds\\lavender-cloud.png",
+              "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\backgrounds\\lavender-cloud.png",
               "relative_path": "output/imagegen/wallpaper-collection/02-soft-gradients/backgrounds/lavender-cloud.png",
               "dimensions": {
                 "width": 841,
@@ -249,7 +249,7 @@
               "exact_prompt": "Create one complete portrait image in 9:20 aspect ratio, approximately 1080 by 2400 pixels. Fill the entire canvas with an exceptionally clean gentle smooth lavender #DED4EB at the top transitioning softly into pale blush #EEDCE5 at the bottom. Keep tones chromatic, light and gently muted; subtle elegant vertical gradient with no banding. Every area is clear empty space, calm unobtrusive color that can receive later drawings. Constraints: only the gradient color field; no characters, clouds, subjects, objects, scenery, drawings, text, UI, calendar, schedule, cards, borders, frames, grain, texture, speckles, vignette, halo, glow, spotlight or strong lighting variation. Preserve plain rectangular outer edges."
             },
             "wallpaper": {
-              "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\wallpapers\\lavender-cloud.png",
+              "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\wallpapers\\lavender-cloud.png",
               "relative_path": "output/imagegen/wallpaper-collection/02-soft-gradients/wallpapers/lavender-cloud.png",
               "dimensions": {
                 "width": 922,
@@ -279,7 +279,7 @@
           },
           "files": {
             "character": {
-              "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\characters\\blue-moon.png",
+              "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\characters\\blue-moon.png",
               "relative_path": "output/imagegen/wallpaper-collection/02-soft-gradients/characters/blue-moon.png",
               "dimensions": {
                 "width": 1254,
@@ -295,7 +295,7 @@
               ]
             },
             "background": {
-              "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\backgrounds\\blue-moon.png",
+              "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\backgrounds\\blue-moon.png",
               "relative_path": "output/imagegen/wallpaper-collection/02-soft-gradients/backgrounds/blue-moon.png",
               "dimensions": {
                 "width": 922,
@@ -305,7 +305,7 @@
               "exact_prompt": "Create one complete portrait image in 9:20 aspect ratio, approximately 1080 by 2400 pixels. Fill the entire canvas with an exceptionally clean gentle smooth powder blue #CFDFEC at the top transitioning softly into pale aqua #D7ECE7 at the bottom. Keep tones chromatic, light and gently muted; subtle elegant vertical gradient with no banding. Every area is clear empty space, calm unobtrusive color that can receive later drawings. Constraints: only the gradient color field; no characters, moons, subjects, objects, stars, scenery, drawings, text, UI, calendar, schedule, cards, borders, frames, grain, texture, speckles, vignette, halo, glow, spotlight or strong lighting variation. Preserve plain rectangular outer edges."
             },
             "wallpaper": {
-              "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\wallpapers\\blue-moon.png",
+              "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\wallpapers\\blue-moon.png",
               "relative_path": "output/imagegen/wallpaper-collection/02-soft-gradients/wallpapers/blue-moon.png",
               "dimensions": {
                 "width": 922,
@@ -367,7 +367,7 @@
           },
           "assets": {
             "character": {
-              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\03-quiet-patterns\\characters\\butter-dumpling.png",
+              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\03-quiet-patterns\\characters\\butter-dumpling.png",
               "relativePath": "characters/butter-dumpling.png",
               "generatedOriginalPath": "C:\\Users\\picar\\.codex\\generated_images\\01a10551-5b77-7050-a519-388b0daf7dc7\\exec-3d61f3b3-8e84-43fb-8ee3-b6988c829ed7.png",
               "width": 1254,
@@ -380,7 +380,7 @@
               ]
             },
             "background": {
-              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\03-quiet-patterns\\backgrounds\\butter-dumpling.png",
+              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\03-quiet-patterns\\backgrounds\\butter-dumpling.png",
               "relativePath": "backgrounds/butter-dumpling.png",
               "generatedOriginalPath": "C:\\Users\\picar\\.codex\\generated_images\\01a10551-5b77-7050-a519-388b0daf7dc7\\exec-554b5bb7-8a98-4d2a-a740-bb41a7cbe22c.png",
               "width": 841,
@@ -393,7 +393,7 @@
               ]
             },
             "wallpaper": {
-              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\03-quiet-patterns\\wallpapers\\butter-dumpling.png",
+              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\03-quiet-patterns\\wallpapers\\butter-dumpling.png",
               "relativePath": "wallpapers/butter-dumpling.png",
               "generatedOriginalPath": "C:\\Users\\picar\\.codex\\generated_images\\01a10551-5b77-7050-a519-388b0daf7dc7\\exec-8572ef71-383a-4434-8db8-b44c5f08f6d9.png",
               "width": 922,
@@ -430,7 +430,7 @@
           },
           "assets": {
             "character": {
-              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\03-quiet-patterns\\characters\\peach-buddy.png",
+              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\03-quiet-patterns\\characters\\peach-buddy.png",
               "relativePath": "characters/peach-buddy.png",
               "generatedOriginalPath": "C:\\Users\\picar\\.codex\\generated_images\\01a10551-5b77-7050-a519-388b0daf7dc7\\exec-e7d4d03b-b003-4c60-9f31-4efadb530a9d.png",
               "width": 1254,
@@ -443,7 +443,7 @@
               ]
             },
             "background": {
-              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\03-quiet-patterns\\backgrounds\\peach-buddy.png",
+              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\03-quiet-patterns\\backgrounds\\peach-buddy.png",
               "relativePath": "backgrounds/peach-buddy.png",
               "generatedOriginalPath": "C:\\Users\\picar\\.codex\\generated_images\\01a10551-5b77-7050-a519-388b0daf7dc7\\exec-cd78d634-bae0-45ae-994b-633c6b25ec5e.png",
               "width": 840,
@@ -456,7 +456,7 @@
               ]
             },
             "wallpaper": {
-              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\03-quiet-patterns\\wallpapers\\peach-buddy.png",
+              "absolutePath": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\03-quiet-patterns\\wallpapers\\peach-buddy.png",
               "relativePath": "wallpapers/peach-buddy.png",
               "generatedOriginalPath": "C:\\Users\\picar\\.codex\\generated_images\\01a10551-5b77-7050-a519-388b0daf7dc7\\exec-0a583591-a267-41fe-8966-94f71ba8c391.png",
               "width": 841,
@@ -664,7 +664,7 @@
         },
         "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10548-82a8-7f52-8717-18a4b0eb2f1e\\exec-9de766b0-def0-4c1e-96bb-2812c79210cb.png",
         "filename": "a-axolotl-mint.png",
-        "savedPath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-samples\\a-axolotl-mint.png",
+        "savedPath": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-samples\\a-axolotl-mint.png",
         "prompt": "Create one complete full-bleed portrait image, 9:20 mobile wallpaper proportions, approximately 1080 x 2400. This is a clean empty art background for later drawing; the upper 78% must be completely open and evenly colored, with no text, lettering, timetable, mock device, cards, borders or interface. Background: solid gently muted pale mint #DCEDE4 everywhere. Subject: one extremely simplified cute baby axolotl emerging from the lower-left corner, confined to the bottom 22% of the image, broad head and compact body, BOTH paired external gills visible, simplified to one blunt three-lobed rounded gill shape per side. Make a clear lovable silhouette using 4–7 large rounded shapes, no anatomical detail. Character uses exactly two semantic colors: warm coral pink #EFA2AD for its main body and deep mulberry #653E55 for the two tiny eyes and broad simple gill regions. No additional character colors, optional one tiny mouth in mulberry. Preserve both gills in the visible composition. Character fills most of the available footer width, emerging from left and bottom with gentle crop. Main drawing space remains wholly empty. Large soft forms, weighty rounded contour, ultra-clean graphic illustration, readable at thumbnail size. Add an extremely, extremely subtle, almost imperceptible sense of depth through a barely-there neo-skeuomorphic treatment. Constraints: only one character; no extra objects, scenery, floating motifs, outlines, fragile lines, sharp tips, decorative marks, texture, vignette, lighting variation in the background, glossy hotspots, dramatic 3D materials, cast shadows, text, labels, watermark, frame, grid or contact sheet. Generate this single image only."
       },
       {
@@ -684,7 +684,7 @@
         },
         "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10548-82a8-7f52-8717-18a4b0eb2f1e\\exec-ab43e110-cf8a-4ad7-bae8-c2ef66ed5bac.png",
         "filename": "b-ghost-twilight.png",
-        "savedPath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-samples\\b-ghost-twilight.png",
+        "savedPath": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-samples\\b-ghost-twilight.png",
         "prompt": "Create one complete full-bleed portrait image, 9:20 mobile wallpaper proportions, approximately 1080 x 2400. Clean empty background for adding drawing and a class schedule later. Leave the upper 78% entirely open: no text, timetable, UI, cards or objects. Background: a very gentle smooth vertical color wash from muted dusk blue #CFDDEB at the top to soft lavender #DFD5EA below, no grain, no cloud shapes, no harsh bands. Subject: one extremely simplified cute friendly sleepy ghost emerging upright from the lower-right corner, entirely confined to the bottom 22%. One broad rounded soft continuous silhouette with a large dome head, tiny integrated rounded arms and two blunt rounded lobes at the hem, no pointed tail or sharp scallops. Character uses exactly two semantic colors: warm vanilla cream #FFF1D6 for the body and deep indigo #464466 for widely spaced two tiny simple eyes and one very small oval sleepy mouth. Organize as a simple cream mass with indigo face, no extra detail. Use 4–7 large basic shapes at most, very lovable baby-like proportions. Fill most of the footer width with the ghost emerging from the right and bottom. Leave the center and all upper area wholly empty. Ultra-clean graphic treatment and thick soft rounded forms. Add an extremely, extremely subtle, almost imperceptible sense of depth through a barely-there neo-skeuomorphic treatment. Constraints: one character only, no moon, stars, sparkles, clouds, landscapes, props, repeated motifs, lettering, watermark, outlines, fragile lines, sharp tips, realistic fabric or glossy material, dramatic 3D rendering, external cast shadows, borders, frames, device mockup, multiple panels or contact sheet. Generate one single wallpaper image."
       },
       {
@@ -704,7 +704,7 @@
         },
         "source": "C:\\Users\\picar\\.codex\\generated_images\\01a10548-82a8-7f52-8717-18a4b0eb2f1e\\exec-43a44fcd-741f-4289-afb3-89f1304139ac.png",
         "filename": "c-sprout-butter-gingham.png",
-        "savedPath": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-samples\\c-sprout-butter-gingham.png",
+        "savedPath": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-samples\\c-sprout-butter-gingham.png",
         "prompt": "Create one complete full-bleed portrait image, 9:20 mobile wallpaper proportions, approximately 1080 x 2400. An uncluttered art background on which drawing and a class schedule will be placed later. Background: buttery cream #FBF4DD with a very faint large-scale gingham pattern using pale butter yellow #F3E8C5; checks must be low contrast with no dark outlines, no texture, no faux paper folds. The upper 78% is otherwise wholly empty and calm, free of objects and artwork. Subject: one extremely simplified endearing baby sprout creature emerging from the lower-left corner and confined to the bottom 22%. A pudgy broad rounded pebble-shaped body with one pair of large blunt rounded leaves as its defining feature, both leaves fully visible, no thin stem, no root hairs or veins. Reduce to 4–7 large merged rounded geometric shapes. Exactly two character color families: lively soft leaf green #83B690 for the body and deep forest green #315C49 for two widely spaced tiny eyes and a broad two-leaf region. One tiny mouth optional in forest green. No cheek spots or other colors. Upright, compact baby-like proportions, weighty continuous silhouette occupying most of footer width, gently emerging from left and bottom. Keep all main schedule/drawing area clear. Ultra-clean simple graphic treatment. Add an extremely, extremely subtle, almost imperceptible sense of depth through a barely-there neo-skeuomorphic treatment. Constraints: one character only; no pots, flowers, garden scenery, objects, floating motifs, typography, labels, schedule, interface, cards, mock phone, watermark, frame, border, extra panels, contact sheet, thin lines, sharp tips, outlines, glossy hotspots, dramatic 3D or cast shadow. Produce this single image only."
       }
     ]

@@ -41,8 +41,8 @@ src/lib/visits.js                   Session visit request sharing and refresh de
 src/lib/animation.js                 GSAP React registration
 src/pages/Home.jsx                  Viewport hero, three statistics and collection showcase
 src/landing.css                     Cream hero, responsive collection rows, shared header
-public/images/hero-ambient.webp      Generated decorative cream background
-public/images/hero-phones.webp       Transparent three-phone foreground
+public/images/hero/hero-ambient.webp      Generated decorative cream background
+public/images/hero/hero-phones.webp       Transparent three-phone foreground
 public/images/collections/          Four pure-white illustrative scenes named <id>-white.webp
 public/brand/schedsnap-mark.webp     Generated transparent navy S logo and favicon
 output/imagegen/schedsnap/           Original generated PNGs and exact prompt manifest

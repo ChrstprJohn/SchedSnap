@@ -35,6 +35,9 @@ The current automated suite passes all 36 tests. Lint and production build pass.
 
 ## Documentation
 
+- [Image asset organization and inventory](documentation/IMAGE_ASSETS.md)
+- [Mobile, tablet and laptop showcases](documentation/DEVICE_SHOWCASES.md)
+
 - [Product behavior](PRODUCT.md)
 - [Design system](DESIGN.md)
 - [Landing page](documentation/LANDING_PAGE.md)

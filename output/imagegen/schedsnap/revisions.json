@@ -4,51 +4,51 @@
     {
       "id": "hero-balanced",
       "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-f9a49f55-70ae-4821-b546-eb5fda6de5d1.png",
-      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/hero-balanced.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/schedsnap/archive/hero/hero-balanced.png",
       "prompt": "Use case: product-mockup. Edit the attached existing SchedSnap hero background. Keep the same landscape 16:9 aspect ratio, warm ivory cream seamless studio background, soft natural daylight, and the SAME three phone designs: navy cute cream bear schedule, sunlight beige schedule, ivory panda schedule. The current phones are MUCH TOO LARGE. Reduce the entire three-phone group to about 65 PERCENT of its current size, without zooming or cropping the canvas. Place the smaller three-phone arrangement entirely in the right portion: group bounds x=55% to x=91% of canvas width, y=23% to y=78% of canvas height. Phones centered near x=73%, y=50%; there must be generous cream space ABOVE, BELOW, and RIGHT of the phone group. Entire phones visible, natural slim edges, one central upright beige phone and two gently angled outer phones, same coherent shadows at the smaller scale. LEFT 52 PERCENT must stay empty and very clean for live website text, no objects or shadows behind copy. Preserve wallpaper characters, titles and neat five-row schedule graphics. Aim for balanced restrained product scale, quiet premium editorial landing-page composition, not a giant close-up. Soft matte cream floor blending into background, no horizon, no extra props, no writing outside phones, no website UI, no logo or watermark. Do not produce a website screenshot. Output ONLY the updated photographic hero background.",
       "historical": true
     },
     {
       "id": "hero",
       "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-18ed1c29-0308-4498-b867-09701aa1be3a.png",
-      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/hero-final.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/schedsnap/archive/hero/hero-final.png",
       "prompt": "Use case: product-mockup. Make a SMALL composition adjustment to this existing SchedSnap landscape hero background, preserving its 16:9 canvas. Keep the exact cream studio scene and ALL THREE existing phones, their current SMALL balanced size, schedule graphics, navy cream-bear / beige sunlight / ivory panda wallpapers, angles, and soft shadows. Move the entire phone group only slightly LEFT by 2 percent of canvas width, and DOWN by 2 percent of canvas height. Do not enlarge or shrink the group. Balance the empty space above and below the phones evenly, keeping ample breathing room. Keep left half clean empty cream for live website text. All phones fully visible. No other objects or text, no website UI, no watermark.",
-      "webAsset": "/images/hero-schedsnap-balanced.webp"
+      "webAsset": "/images/archive/landing/hero-schedsnap-balanced.webp"
     },
     {
       "id": "hero-mobile",
       "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-e76a813e-6fff-40b3-ae77-dd91cff2ddad.png",
-      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/hero-mobile.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/schedsnap/archive/hero/hero-mobile.png",
       "prompt": "Use case: product-mockup. Generate a dedicated MOBILE HERO showcase asset from the attached SchedSnap three-phone background. Output landscape 4:3, NOT 16:9. Same clean warm creamy seamless studio environment and soft light. Same exact three class-schedule wallpaper phones: upright beige sunlight phone centered in foreground; navy cream-bear phone angled slightly behind on left; ivory panda phone angled slightly behind on right. Preserve their schedule titles, weekday pill rows, cute art and modern metallic dark frames. Recompose the phones as a centered group at x=50%, occupying about 78 percent of image width and 74 percent of image height, leaving comfortable balanced margins all around. The entire three phones must be visible without clipping. This image will appear BELOW live headline and buttons on a mobile website, so there should NOT be a wide empty left half. Soft restrained contact shadows under phones, matte cream background matching original, no horizon, no props, no outside text, no logo, no website screenshot or interface. Premium clean photoreal product shot, balanced centered mobile showcase.",
-      "webAsset": "/images/hero-schedsnap-mobile.webp"
+      "webAsset": "/images/archive/landing/hero-schedsnap-mobile.webp"
     },
     {
       "id": "little-friends",
       "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-fa8b99d3-8331-4ee4-8240-b1073736ab92.png",
-      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/little-friends-white.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/schedsnap/archive/collections/little-friends-white.png",
       "prompt": "Use case: product-mockup background edit. Edit this existing SchedSnap collection showcase photograph. Preserve all THREE phones EXACTLY: their positions, size, angles, metallic edges, wallpaper colors, schedule titles, five weekday rows, patterns and character artwork. Change ONLY the entire studio environment behind and around the phones to perfectly clean pure WHITE #FFFFFF, matching a white website page. The edges, corners, top and sides of the image MUST be pure neutral white, without warm beige, cream, gray, gradients, texture, vignette, sun beams or botanical shadow. Keep only a delicate neutral gray SOFT CONTACT SHADOW immediately beneath the phones, fading smoothly into pure white, to ground them naturally. No shadow cast over the outer background, no colored ambient tint. Seamless white product photography, no horizon, no props, no additional text, no watermark. Preserve 4:3 landscape aspect ratio and all phones entirely inside the image.",
-      "webAsset": "/images/collections/little-friends-white.webp"
+      "webAsset": "/images/archive/collections/little-friends-white.webp"
     },
     {
       "id": "mascot",
       "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-10387a29-51db-4f95-a2b7-987ef1f47c2d.png",
-      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/mascot-white.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/schedsnap/archive/collections/mascot-white.png",
       "prompt": "Use case: product-mockup background edit. Edit this existing SchedSnap collection showcase photograph. Preserve all THREE phones EXACTLY: their positions, size, angles, metallic edges, wallpaper colors, schedule titles, five weekday rows, patterns and character artwork. Change ONLY the entire studio environment behind and around the phones to perfectly clean pure WHITE #FFFFFF, matching a white website page. The edges, corners, top and sides of the image MUST be pure neutral white, without warm beige, cream, gray, gradients, texture, vignette, sun beams or botanical shadow. Keep only a delicate neutral gray SOFT CONTACT SHADOW immediately beneath the phones, fading smoothly into pure white, to ground them naturally. No shadow cast over the outer background, no colored ambient tint. Seamless white product photography, no horizon, no props, no additional text, no watermark. Preserve 4:3 landscape aspect ratio and all phones entirely inside the image.",
-      "webAsset": "/images/collections/mascot-white.webp"
+      "webAsset": "/images/archive/collections/mascot-white.webp"
     },
     {
       "id": "pattern",
       "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-04e2f096-9e22-4f11-8cd9-2e90f731757b.png",
-      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/pattern-white.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/schedsnap/archive/collections/pattern-white.png",
       "prompt": "Use case: product-mockup background edit. Edit this existing SchedSnap collection showcase photograph. Preserve all THREE phones EXACTLY: their positions, size, angles, metallic edges, wallpaper colors, schedule titles, five weekday rows, patterns and character artwork. Change ONLY the entire studio environment behind and around the phones to perfectly clean pure WHITE #FFFFFF, matching a white website page. The edges, corners, top and sides of the image MUST be pure neutral white, without warm beige, cream, gray, gradients, texture, vignette, sun beams or botanical shadow. Keep only a delicate neutral gray SOFT CONTACT SHADOW immediately beneath the phones, fading smoothly into pure white, to ground them naturally. No shadow cast over the outer background, no colored ambient tint. Seamless white product photography, no horizon, no props, no additional text, no watermark. Preserve 4:3 landscape aspect ratio and all phones entirely inside the image.",
-      "webAsset": "/images/collections/pattern-white.webp"
+      "webAsset": "/images/archive/collections/pattern-white.webp"
     },
     {
       "id": "original",
       "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-93ef3942-6b40-41b6-a5d6-19a5ff525fcb.png",
-      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/original-white.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/schedsnap/archive/collections/original-white.png",
       "prompt": "Use case: product-mockup background edit. Edit this existing SchedSnap collection showcase photograph. Preserve all THREE phones EXACTLY: their positions, size, angles, metallic edges, wallpaper colors, schedule titles, five weekday rows, patterns and character artwork. Change ONLY the entire studio environment behind and around the phones to perfectly clean pure WHITE #FFFFFF, matching a white website page. The edges, corners, top and sides of the image MUST be pure neutral white, without warm beige, cream, gray, gradients, texture, vignette, sun beams or botanical shadow. Keep only a delicate neutral gray SOFT CONTACT SHADOW immediately beneath the phones, fading smoothly into pure white, to ground them naturally. No shadow cast over the outer background, no colored ambient tint. Seamless white product photography, no horizon, no props, no additional text, no watermark. Preserve 4:3 landscape aspect ratio and all phones entirely inside the image.",
-      "webAsset": "/images/collections/original-white.webp"
+      "webAsset": "/images/archive/collections/original-white.webp"
     }
   ]
 }

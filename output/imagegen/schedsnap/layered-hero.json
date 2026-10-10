@@ -4,17 +4,17 @@
     {
       "id": "hero-phones",
       "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-996857d8-9727-409a-a0dc-487f8c6cb5c1.png",
-      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/hero-phones.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/schedsnap/hero/hero-phones.png",
       "prompt": "Use case: product-mockup foreground cutout. Edit target: the supplied SchedSnap mobile hero image. Isolate the THREE existing modern smartphone mockups as a SINGLE centered transparent-background foreground asset. Preserve ALL THREE phones, their full silhouettes, relative scale and overlapping arrangement, metallic dark frames, angled navy bear on left, upright sunlit beige schedule phone in center, angled ivory panda on right, their Class Schedule screen titles and five weekday schedule pill rows, and cute character graphics. Remove the entire cream studio environment and ALL leaf shadows/background scenery around the phones. Genuinely transparent alpha outside the phones, including between silhouettes; no solid white/beige rectangle and no checkerboard baked into pixels. Retain only a delicate soft neutral-gray translucent contact shadow immediately below the phone group if possible. Full phones visible with tight but comfortable 5 percent transparent margin around the centered group; no wide empty left half. High-resolution premium photorealistic 3D studio render. No website text, web layout, logo, buttons, extra phones, objects, watermark or scenery. Output landscape 4:3. The user's isolated white studio prompt is adapted to transparent output for clean web compositing, preserving only text already present inside the phone screens.",
-      "webAsset": "/images/hero-phones.webp",
+      "webAsset": "/images/hero/hero-phones.webp",
       "transparentBackground": true
     },
     {
       "id": "hero-ambient",
       "source": "C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-0a4c1220-20b7-462e-8165-84dca1199bde.png",
-      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/UniToolbox/output/imagegen/schedsnap/hero-ambient.png",
+      "workspaceOriginal": "C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/schedsnap/hero/hero-ambient.png",
       "prompt": "Use case: architectural ambient website background layer. Minimalist warm ivory beige seamless architectural studio background with soft natural sunlight and subtle out-of-focus leaf shadows cast across a smooth matte surface. Clean creamy aesthetic, high resolution, soft focus, wide angle, completely EMPTY composition. Use a restrained light warm ivory palette around #faf6ef, quiet diffuse daylight, very faint warm leaf shadows mostly toward the upper right and lower right, left side nearly flat clear ivory for live website text. A smooth wall-to-floor transition without a distinct horizon line, no geometric arches or decorative props. No phones, no objects, no pedestals, no text, no letters, no buttons, no logos, no people, no website screenshot or layout, no watermark. Landscape 16:9 edge-to-edge image. This is ONLY an ambient background: the smartphones and all website typography will be layered separately in code.",
-      "webAsset": "/images/hero-ambient.webp",
+      "webAsset": "/images/hero/hero-ambient.webp",
       "transparentBackground": false
     }
   ]

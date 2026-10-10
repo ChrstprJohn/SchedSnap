@@ -45,13 +45,13 @@
         "complete": true,
         "fit": "cover",
         "naturalWidth": 1672,
-        "source": "http://localhost:5173/images/hero-ambient.webp"
+        "source": "http://localhost:5173/images/hero/hero-ambient.webp"
       },
       {
         "complete": true,
         "fit": "contain",
         "naturalWidth": 1448,
-        "source": "http://localhost:5173/images/hero-phones.webp"
+        "source": "http://localhost:5173/images/hero/hero-phones.webp"
       }
     ],
     "overflow": false,
@@ -109,13 +109,13 @@
         "complete": true,
         "fit": "cover",
         "naturalWidth": 1672,
-        "source": "http://localhost:5173/images/hero-ambient.webp"
+        "source": "http://localhost:5173/images/hero/hero-ambient.webp"
       },
       {
         "complete": true,
         "fit": "contain",
         "naturalWidth": 1448,
-        "source": "http://localhost:5173/images/hero-phones.webp"
+        "source": "http://localhost:5173/images/hero/hero-phones.webp"
       }
     ],
     "overflow": false,
@@ -173,13 +173,13 @@
         "complete": true,
         "fit": "cover",
         "naturalWidth": 1672,
-        "source": "http://localhost:5173/images/hero-ambient.webp"
+        "source": "http://localhost:5173/images/hero/hero-ambient.webp"
       },
       {
         "complete": true,
         "fit": "contain",
         "naturalWidth": 1448,
-        "source": "http://localhost:5173/images/hero-phones.webp"
+        "source": "http://localhost:5173/images/hero/hero-phones.webp"
       }
     ],
     "overflow": false,
@@ -237,13 +237,13 @@
         "complete": true,
         "fit": "cover",
         "naturalWidth": 1672,
-        "source": "http://localhost:5173/images/hero-ambient.webp"
+        "source": "http://localhost:5173/images/hero/hero-ambient.webp"
       },
       {
         "complete": true,
         "fit": "contain",
         "naturalWidth": 1448,
-        "source": "http://localhost:5173/images/hero-phones.webp"
+        "source": "http://localhost:5173/images/hero/hero-phones.webp"
       }
     ],
     "overflow": false,
@@ -301,13 +301,13 @@
         "complete": true,
         "fit": "cover",
         "naturalWidth": 1672,
-        "source": "http://localhost:5173/images/hero-ambient.webp"
+        "source": "http://localhost:5173/images/hero/hero-ambient.webp"
       },
       {
         "complete": true,
         "fit": "contain",
         "naturalWidth": 1448,
-        "source": "http://localhost:5173/images/hero-phones.webp"
+        "source": "http://localhost:5173/images/hero/hero-phones.webp"
       }
     ],
     "overflow": false,
@@ -365,13 +365,13 @@
         "complete": true,
         "fit": "cover",
         "naturalWidth": 1672,
-        "source": "http://localhost:5173/images/hero-ambient.webp"
+        "source": "http://localhost:5173/images/hero/hero-ambient.webp"
       },
       {
         "complete": true,
         "fit": "contain",
         "naturalWidth": 1448,
-        "source": "http://localhost:5173/images/hero-phones.webp"
+        "source": "http://localhost:5173/images/hero/hero-phones.webp"
       }
     ],
     "overflow": false,
@@ -429,13 +429,13 @@
         "complete": true,
         "fit": "cover",
         "naturalWidth": 1672,
-        "source": "http://localhost:5173/images/hero-ambient.webp"
+        "source": "http://localhost:5173/images/hero/hero-ambient.webp"
       },
       {
         "complete": true,
         "fit": "contain",
         "naturalWidth": 1448,
-        "source": "http://localhost:5173/images/hero-phones.webp"
+        "source": "http://localhost:5173/images/hero/hero-phones.webp"
       }
     ],
     "overflow": false,
@@ -493,13 +493,13 @@
         "complete": true,
         "fit": "cover",
         "naturalWidth": 1672,
-        "source": "http://localhost:5173/images/hero-ambient.webp"
+        "source": "http://localhost:5173/images/hero/hero-ambient.webp"
       },
       {
         "complete": true,
         "fit": "contain",
         "naturalWidth": 1448,
-        "source": "http://localhost:5173/images/hero-phones.webp"
+        "source": "http://localhost:5173/images/hero/hero-phones.webp"
       }
     ],
     "overflow": false,
@@ -557,13 +557,13 @@
         "complete": true,
         "fit": "cover",
         "naturalWidth": 1672,
-        "source": "http://localhost:5173/images/hero-ambient.webp"
+        "source": "http://localhost:5173/images/hero/hero-ambient.webp"
       },
       {
         "complete": true,
         "fit": "contain",
         "naturalWidth": 1448,
-        "source": "http://localhost:5173/images/hero-phones.webp"
+        "source": "http://localhost:5173/images/hero/hero-phones.webp"
       }
     ],
     "overflow": false,

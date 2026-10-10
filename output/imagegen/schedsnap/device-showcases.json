@@ -1,0 +1,261 @@
+{
+  "tool": "Built-in image_gen",
+  "purpose": "Four combined portrait/landscape tablet scenes and four laptop scenes for Find your style. Editor downloads remain phone format.",
+  "assets": [
+    {
+      "device": "laptop",
+      "orientation": "landscape",
+      "id": "little-friends",
+      "prompt": "Use case: product-mockup. Reference image is style and wallpaper reference ONLY. Generate a new premium photographic LAPTOP product showcase matching the reference phone scene's materials, typography, wallpaper palette and soft lighting. Pastel pink screen, the cream bunny character from the reference at the lower right. The device MUST be a modern open silver 14-inch laptop with widescreen 16:10 screen, slim dark bezel, a realistic attached keyboard base and trackpad. Display is almost front-on with a gentle natural perspective, viewed slightly above so the keyboard is visible below. No brand logo. Exact heading inside screen: \"Class Schedule\". Five neat white or softly translucent pill rows with circular M, T, W, TH, F weekday initials, small neutral example class times and course codes, arranged to the left with generous horizontal space; artwork occupies right side where applicable. Preserve simple clean schedule hierarchy; no website UI outside device. Single open laptop fully visible, centered, occupying about 86% of canvas width; no clipped edges. Landscape 4:3 output canvas, pure white #ffffff background edge-to-edge, delicate neutral contact shadow immediately below. No scenery, desk, hands, external keyboard, extra devices, props, watermark or text outside the screen. This is illustrative laptop concept artwork for SchedSnap's Find your style collection showcase.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a124f3-66e9-7141-a251-e38e92888312\\exec-e54ad9d5-e563-49d5-a766-3d80daec813b.png",
+      "reference": "public/images/collections/little-friends-mobile.webp",
+      "workspaceOriginal": "output/imagegen/schedsnap/collections/laptop/little-friends.png",
+      "webAsset": "/images/collections/laptop/little-friends.webp",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "status": "active concept preview"
+    },
+    {
+      "device": "laptop",
+      "orientation": "landscape",
+      "id": "mascot",
+      "prompt": "Use case: product-mockup. Use reference phone artwork only for wallpaper and studio style. Generate new SchedSnap LAPTOP collection product artwork. Two open silver laptops in an asymmetric offset pair. Rear laptop upper left angled 12 degrees away, lilac cat wallpaper. Larger front laptop lower right almost front-on, ivory panda wallpaper. Realistic keyboard bases, complete silhouettes, meaningful overlap without obscuring front screen. Modern silver laptops with 16:10 screens, slim black bezel and realistic keyboard bases, no logos. Exact \"Class Schedule\" heading inside screens, five neat rounded cards with M T W TH F, small neutral example class times and codes. Mascots occupy right side, schedule left. Full devices visible with safe margins, group fills about 85 percent of canvas width. Landscape 4:3 image. Pure white #ffffff studio background edge-to-edge, tiny soft neutral contact shadow beneath laptops. Premium photographic metallic realism and soft studio light matching reference. No props, desk, hands, additional devices, watermark or text outside screens.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a124f3-66e9-7141-a251-e38e92888312\\exec-50cd9ff5-4893-4df4-a514-6a447d78c5a6.png",
+      "reference": "public/images/collections/mascot-mobile.webp",
+      "workspaceOriginal": "output/imagegen/schedsnap/collections/laptop/mascot.png",
+      "webAsset": "/images/collections/laptop/mascot.webp",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "status": "active concept preview"
+    },
+    {
+      "device": "laptop",
+      "orientation": "landscape",
+      "id": "pattern",
+      "prompt": "Use case: product-mockup edit. Preserve the supplied laptop image EXACTLY: angled laptop silhouette, realistic keyboard and trackpad, perspective, white studio background, metal edges, peach checkerboard wallpaper, Class Schedule heading and five weekday schedule cards. Remove ALL rabbits, bears, cats, chicks, animals, characters and cartoon decorations from the screen. Fill the removed area seamlessly with the existing peach checkerboard pattern. Patterns collection contains NO character illustration. Add nothing. Keep full laptop silhouette and pose unchanged.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a124f3-66e9-7141-a251-e38e92888312\\exec-15a395fa-46b4-4de9-920a-bec61088d275.png",
+      "reference": "public/images/collections/pattern-mobile.webp",
+      "workspaceOriginal": "output/imagegen/schedsnap/collections/laptop/pattern.png",
+      "webAsset": "/images/collections/laptop/pattern.webp",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "status": "active concept preview"
+    },
+    {
+      "device": "laptop",
+      "orientation": "landscape",
+      "id": "original",
+      "prompt": "Use case: product-mockup. Reference image is style and wallpaper reference ONLY. Generate a new premium photographic LAPTOP product showcase matching the reference phone scene's materials, typography, wallpaper palette and soft lighting. Deep frosted-blue photographic glass wallpaper from the reference. No animal. The device MUST be a modern open silver 14-inch laptop with widescreen 16:10 screen, slim dark bezel, a realistic attached keyboard base and trackpad. Display is almost front-on with a gentle natural perspective, viewed slightly above so the keyboard is visible below. No brand logo. Exact heading inside screen: \"Class Schedule\". Five neat white or softly translucent pill rows with circular M, T, W, TH, F weekday initials, small neutral example class times and course codes, arranged to the left with generous horizontal space; artwork occupies right side where applicable. Preserve simple clean schedule hierarchy; no website UI outside device. Single open laptop fully visible, centered, occupying about 86% of canvas width; no clipped edges. Landscape 4:3 output canvas, pure white #ffffff background edge-to-edge, delicate neutral contact shadow immediately below. No scenery, desk, hands, external keyboard, extra devices, props, watermark or text outside the screen. This is illustrative laptop concept artwork for SchedSnap's Find your style collection showcase.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a124f3-66e9-7141-a251-e38e92888312\\exec-a8653276-0857-4639-ac1d-9df2c075907c.png",
+      "reference": "public/images/collections/original-mobile.webp",
+      "workspaceOriginal": "output/imagegen/schedsnap/collections/laptop/original.png",
+      "webAsset": "/images/collections/laptop/original.webp",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "status": "active concept preview"
+    },
+    {
+      "id": "little-friends",
+      "pose": "A portrait pink bunny tablet upright at upper left behind a landscape pale-blue kitten tablet at lower right, tilted 6 degrees. Match the cream bunny from reference; the kitten is a simple cream and blue cute character.",
+      "ref": "little-friends",
+      "prompt": "Use case: product-mockup. Reference is wallpaper and photographic material style reference ONLY. Create one SchedSnap collection image containing EXACTLY TWO modern 11-inch TABLETS: ONE portrait with screen 3:4 and ONE landscape with screen 4:3. A portrait pink bunny tablet upright at upper left behind a landscape pale-blue kitten tablet at lower right, tilted 6 degrees. Match the cream bunny from reference; the kitten is a simple cream and blue cute character. Both complete tablet silhouettes visible, tasteful asymmetric overlapping composition, full-device safe margins and clear physical difference between tablet orientations. Do not crop device corners. Devices have slim uniform black bezel, small camera in bezel, silver metallic edges, rounded corners; NO dynamic island, no brand logo. Inside each screen exact heading \"Class Schedule\"; five neat rounded white or softly translucent schedule rows with M T W TH F, small neutral example class times and codes. Characters where specified occupy free lower or side area without covering schedule. The TWO-device group fills about 85 percent of canvas width and 82 percent of canvas height, centered. Output PORTRAIT 4:5 canvas matching the reference collection image canvas. Pure WHITE #ffffff background edge-to-edge, delicate neutral contact shadows, soft realistic premium studio lighting. No desk, scenery, hands, stylus, keyboard, extra devices, watermark or text outside screens. Varied poses and different wallpapers on the two tablets, not duplicated artwork.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a124f3-66e9-7141-a251-e38e92888312\\exec-567c06bc-29db-4434-a8e4-c3362961df81.png",
+      "reference": "public/images/collections/little-friends-mobile.webp",
+      "device": "tablet",
+      "orientation": "mixed portrait and landscape",
+      "workspaceOriginal": "output/imagegen/schedsnap/collections/tablet/little-friends.png",
+      "webAsset": "/images/collections/tablet/little-friends.webp",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "status": "active concept preview"
+    },
+    {
+      "id": "mascot",
+      "pose": "A portrait lilac cat tablet at upper right, tilted 8 degrees behind a landscape ivory panda tablet at lower left, tilted -5 degrees. Match the reference cat and panda.",
+      "prompt": "Use case: product-mockup. Reference is wallpaper and photographic material style reference ONLY. Create one SchedSnap collection image containing EXACTLY TWO modern 11-inch TABLETS: ONE portrait with screen 3:4 and ONE landscape with screen 4:3. A portrait lilac cat tablet at upper right, tilted 8 degrees behind a landscape ivory panda tablet at lower left, tilted -5 degrees. Match the reference cat and panda. Both complete tablet silhouettes visible, tasteful asymmetric overlapping composition, full-device safe margins and clear physical difference between tablet orientations. Do not crop device corners. Devices have slim uniform black bezel, small camera in bezel, silver metallic edges, rounded corners; NO dynamic island, no brand logo. Inside each screen exact heading \"Class Schedule\"; five neat rounded white or softly translucent schedule rows with M T W TH F, small neutral example class times and codes. Characters where specified occupy free lower or side area without covering schedule. The TWO-device group fills about 85 percent of canvas width and 82 percent of canvas height, centered. Output PORTRAIT 4:5 canvas matching the reference collection image canvas. Pure WHITE #ffffff background edge-to-edge, delicate neutral contact shadows, soft realistic premium studio lighting. No desk, scenery, hands, stylus, keyboard, extra devices, watermark or text outside screens. Varied poses and different wallpapers on the two tablets, not duplicated artwork.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a124f3-66e9-7141-a251-e38e92888312\\exec-8bee584f-6ced-4bdf-b3de-f0189c848f85.png",
+      "reference": "public/images/collections/mascot-mobile.webp",
+      "device": "tablet",
+      "orientation": "mixed portrait and landscape",
+      "workspaceOriginal": "output/imagegen/schedsnap/collections/tablet/mascot.png",
+      "webAsset": "/images/collections/tablet/mascot.webp",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "status": "active concept preview"
+    },
+    {
+      "id": "pattern",
+      "pose": "A portrait lavender polka-dot tablet upper left tilted -9 degrees, behind a landscape peach checkerboard tablet lower right angled 8 degrees. Geometric wallpaper only: absolutely NO animals, characters, mascots, books, hearts or illustrations.",
+      "prompt": "Use case: product-mockup. Reference is wallpaper and photographic material style reference ONLY. Create one SchedSnap collection image containing EXACTLY TWO modern 11-inch TABLETS: ONE portrait with screen 3:4 and ONE landscape with screen 4:3. A portrait lavender polka-dot tablet upper left tilted -9 degrees, behind a landscape peach checkerboard tablet lower right angled 8 degrees. Geometric wallpaper only: absolutely NO animals, characters, mascots, books, hearts or illustrations. Both complete tablet silhouettes visible, tasteful asymmetric overlapping composition, full-device safe margins and clear physical difference between tablet orientations. Do not crop device corners. Devices have slim uniform black bezel, small camera in bezel, silver metallic edges, rounded corners; NO dynamic island, no brand logo. Inside each screen exact heading \"Class Schedule\"; five neat rounded white or softly translucent schedule rows with M T W TH F, small neutral example class times and codes. Characters where specified occupy free lower or side area without covering schedule. The TWO-device group fills about 85 percent of canvas width and 82 percent of canvas height, centered. Output PORTRAIT 4:5 canvas matching the reference collection image canvas. Pure WHITE #ffffff background edge-to-edge, delicate neutral contact shadows, soft realistic premium studio lighting. No desk, scenery, hands, stylus, keyboard, extra devices, watermark or text outside screens. Varied poses and different wallpapers on the two tablets, not duplicated artwork.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a124f3-66e9-7141-a251-e38e92888312\\exec-ee128ec6-8364-4ca4-8791-77a860c30531.png",
+      "reference": "public/images/collections/pattern-mobile.webp",
+      "device": "tablet",
+      "orientation": "mixed portrait and landscape",
+      "workspaceOriginal": "output/imagegen/schedsnap/collections/tablet/pattern.png",
+      "webAsset": "/images/collections/tablet/pattern.webp",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "status": "active concept preview"
+    },
+    {
+      "id": "original",
+      "pose": "A portrait frosted-blue glass tablet at upper right tilted 10 degrees, behind a landscape warm sunlit ivory wallpaper tablet at lower left with a natural slight three-quarter perspective. Photographic wallpaper only, NO animals, characters or illustrations.",
+      "prompt": "Use case: product-mockup. Reference is wallpaper and photographic material style reference ONLY. Create one SchedSnap collection image containing EXACTLY TWO modern 11-inch TABLETS: ONE portrait with screen 3:4 and ONE landscape with screen 4:3. A portrait frosted-blue glass tablet at upper right tilted 10 degrees, behind a landscape warm sunlit ivory wallpaper tablet at lower left with a natural slight three-quarter perspective. Photographic wallpaper only, NO animals, characters or illustrations. Both complete tablet silhouettes visible, tasteful asymmetric overlapping composition, full-device safe margins and clear physical difference between tablet orientations. Do not crop device corners. Devices have slim uniform black bezel, small camera in bezel, silver metallic edges, rounded corners; NO dynamic island, no brand logo. Inside each screen exact heading \"Class Schedule\"; five neat rounded white or softly translucent schedule rows with M T W TH F, small neutral example class times and codes. Characters where specified occupy free lower or side area without covering schedule. The TWO-device group fills about 85 percent of canvas width and 82 percent of canvas height, centered. Output PORTRAIT 4:5 canvas matching the reference collection image canvas. Pure WHITE #ffffff background edge-to-edge, delicate neutral contact shadows, soft realistic premium studio lighting. No desk, scenery, hands, stylus, keyboard, extra devices, watermark or text outside screens. Varied poses and different wallpapers on the two tablets, not duplicated artwork.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a124f3-66e9-7141-a251-e38e92888312\\exec-654fa784-9c86-4121-9e3f-23173f7173cb.png",
+      "reference": "public/images/collections/original-mobile.webp",
+      "device": "tablet",
+      "orientation": "mixed portrait and landscape",
+      "workspaceOriginal": "output/imagegen/schedsnap/collections/tablet/original.png",
+      "webAsset": "/images/collections/tablet/original.webp",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "status": "active concept preview"
+    }
+  ],
+  "archivedAssets": [
+    {
+      "device": "tablet",
+      "orientation": "portrait",
+      "id": "little-friends",
+      "prompt": "Use case: product-mockup. Reference is wallpaper and visual style reference, not an edit target. Create new premium photographic PORTRAIT TABLET showcase for SchedSnap. EXACTLY ONE large upright portrait tablet, nearly front-on, centered. Pink bunny wallpaper. Calm straight composition. These are modern 11-inch tablets, their screens have portrait 3:4 proportions, broader than phones, slim uniform black bezels with tiny camera in bezel, silver metal edges, NO dynamic island, no logo. Preserve wallpaper palettes and character artwork from the phone reference. Inside each screen exact heading \"Class Schedule\", five neat rounded weekday cards labeled M T W TH F, small neutral example times and course codes, generous breathing room. Characters sit below schedule, not covering rows. Output tall 4:5 canvas, all tablets fully visible with balanced safe margins. Device group occupies 85 percent of canvas height. Pure WHITE #ffffff studio background edge-to-edge, tiny soft neutral contact shadow below. Match soft realistic studio light and metallic materials of reference. No scenery, props, hands, stylus, keyboard, brand marks, watermark or text outside devices. Distinct illustrative product artwork, not website screenshot.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a124f3-66e9-7141-a251-e38e92888312\\exec-790d8742-2063-4879-8549-2614dcd37868.png",
+      "reference": "public/images/collections/little-friends-mobile.webp",
+      "workspaceOriginal": "output/imagegen/schedsnap/archive/tablet/portrait/little-friends.png",
+      "webAsset": null,
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "status": "superseded separate-orientation draft",
+      "archivePreview": "output/imagegen/schedsnap/archive/tablet/portrait/little-friends.webp"
+    },
+    {
+      "device": "tablet",
+      "orientation": "portrait",
+      "id": "mascot",
+      "prompt": "Use case: product-mockup. Reference is wallpaper and visual style reference, not an edit target. Create new premium photographic PORTRAIT TABLET showcase for SchedSnap. EXACTLY TWO portrait tablets in a staggered pair: smaller lilac cat tablet at upper left, tilted -8 degrees, behind a larger ivory panda tablet at lower right. Both complete silhouettes visible. These are modern 11-inch tablets, their screens have portrait 3:4 proportions, broader than phones, slim uniform black bezels with tiny camera in bezel, silver metal edges, NO dynamic island, no logo. Preserve wallpaper palettes and character artwork from the phone reference. Inside each screen exact heading \"Class Schedule\", five neat rounded weekday cards labeled M T W TH F, small neutral example times and course codes, generous breathing room. Characters sit below schedule, not covering rows. Output tall 4:5 canvas, all tablets fully visible with balanced safe margins. Device group occupies 85 percent of canvas height. Pure WHITE #ffffff studio background edge-to-edge, tiny soft neutral contact shadow below. Match soft realistic studio light and metallic materials of reference. No scenery, props, hands, stylus, keyboard, brand marks, watermark or text outside devices. Distinct illustrative product artwork, not website screenshot.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a124f3-66e9-7141-a251-e38e92888312\\exec-28a4b964-fa68-41e2-8150-d45c525f425a.png",
+      "reference": "public/images/collections/mascot-mobile.webp",
+      "workspaceOriginal": "output/imagegen/schedsnap/archive/tablet/portrait/mascot.png",
+      "webAsset": null,
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "status": "superseded separate-orientation draft",
+      "archivePreview": "output/imagegen/schedsnap/archive/tablet/portrait/mascot.webp"
+    },
+    {
+      "device": "tablet",
+      "orientation": "portrait",
+      "id": "pattern",
+      "prompt": "Use case: product-mockup edit. Preserve the supplied image EXACTLY: tablet silhouettes, device orientation, composition, perspective, white studio background, metal edges, pastel peach checkerboard and lavender polka-dot wallpaper backgrounds, Class Schedule headings and five weekday schedule cards. Remove ALL cats, dogs, animals, characters, hearts, books and cartoon decorations from both tablet screens. Fill those removed areas seamlessly with the existing wallpaper pattern behind them. The Patterns collection is purely geometric and contains NO character illustration. Do not add anything. Keep all tablet devices and their full silhouettes unchanged.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a124f3-66e9-7141-a251-e38e92888312\\exec-845f6c7f-7f64-4d29-a202-2dc7455fc38b.png",
+      "reference": "public/images/collections/pattern-mobile.webp",
+      "workspaceOriginal": "output/imagegen/schedsnap/archive/tablet/portrait/pattern.png",
+      "webAsset": null,
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "status": "superseded separate-orientation draft",
+      "archivePreview": "output/imagegen/schedsnap/archive/tablet/portrait/pattern.webp"
+    },
+    {
+      "device": "tablet",
+      "orientation": "portrait",
+      "id": "original",
+      "prompt": "Use case: product-mockup. Reference is wallpaper and visual style reference, not an edit target. Create new premium photographic PORTRAIT TABLET showcase for SchedSnap. EXACTLY ONE portrait tablet with frosted deep-blue photographic glass wallpaper, slight clockwise 10-degree tilt and natural three-quarter perspective. Full silhouette visible. These are modern 11-inch tablets, their screens have portrait 3:4 proportions, broader than phones, slim uniform black bezels with tiny camera in bezel, silver metal edges, NO dynamic island, no logo. Preserve wallpaper palettes and character artwork from the phone reference. Inside each screen exact heading \"Class Schedule\", five neat rounded weekday cards labeled M T W TH F, small neutral example times and course codes, generous breathing room. Characters sit below schedule, not covering rows. Output tall 4:5 canvas, all tablets fully visible with balanced safe margins. Device group occupies 85 percent of canvas height. Pure WHITE #ffffff studio background edge-to-edge, tiny soft neutral contact shadow below. Match soft realistic studio light and metallic materials of reference. No scenery, props, hands, stylus, keyboard, brand marks, watermark or text outside devices. Distinct illustrative product artwork, not website screenshot.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a124f3-66e9-7141-a251-e38e92888312\\exec-5ffeabbe-2fb0-4168-a12a-5a0514b90407.png",
+      "reference": "public/images/collections/original-mobile.webp",
+      "workspaceOriginal": "output/imagegen/schedsnap/archive/tablet/portrait/original.png",
+      "webAsset": null,
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "status": "superseded separate-orientation draft",
+      "archivePreview": "output/imagegen/schedsnap/archive/tablet/portrait/original.webp"
+    },
+    {
+      "device": "tablet",
+      "orientation": "landscape",
+      "id": "little-friends",
+      "prompt": "Use case: product-mockup. Reference image is style and wallpaper reference ONLY. Generate a new premium photographic tablet product showcase matching the reference phone scene's materials, typography, wallpaper palette and soft lighting. One landscape tablet, nearly front-on with a gentle 8 degree perspective. Pastel pink screen, the cream bunny character from the reference at the lower right. The device MUST be a modern 11-inch landscape TABLET with physical screen aspect ratio 4:3, uniform slim dark bezel and rounded corners, brushed silver edges, tiny camera in bezel; no phone-shaped screens, no dynamic island, no Apple logo. Tablet is wide horizontally. Exact heading inside screen: \"Class Schedule\". Five neat white or softly translucent pill rows with circular M, T, W, TH, F weekday initials, small neutral example class times and course codes, arranged to the left with comfortable horizontal space; artwork occupies right side where applicable. Preserve simple clean schedule hierarchy; no website UI outside device. Single tablet fully visible, centered, occupying about 86% of canvas width; no clipped edges. Landscape 4:3 output canvas, pure white #ffffff background edge-to-edge, delicate neutral contact shadow immediately below. No scenery, desk, hands, stylus, keyboard, extra devices, props, watermark or text outside the screen. This is illustrative tablet concept artwork for SchedSnap's Find your style collection showcase.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a124f3-66e9-7141-a251-e38e92888312\\exec-76d1379d-a61d-4612-a56a-2f92519586aa.png",
+      "reference": "public/images/collections/little-friends-mobile.webp",
+      "workspaceOriginal": "output/imagegen/schedsnap/archive/tablet/landscape/little-friends.png",
+      "webAsset": null,
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "status": "superseded separate-orientation draft",
+      "archivePreview": "output/imagegen/schedsnap/archive/tablet/landscape/little-friends.webp"
+    },
+    {
+      "device": "tablet",
+      "orientation": "landscape",
+      "id": "mascot",
+      "prompt": "Use case: product-mockup. Reference is wallpaper and material style reference ONLY. New SchedSnap landscape tablet collection artwork. EXACTLY TWO landscape tablets in a staggered arrangement. Foreground ivory panda tablet lower right, rear lavender cat tablet upper left tilted -8 degrees. Complete device silhouettes, realistic overlap, distinct sizes. Modern 11-inch TABLETS with landscape physical screen ratio 4:3, rounded corners, slim uniform black bezels, silver metal edges, tiny camera in bezel, no logo, no phone dynamic island. Preserve palette and characters from reference. Each screen exact heading \"Class Schedule\", five rounded white or softly translucent cards labeled M T W TH F, small neutral example times and class codes, arranged to left; mascot sits at right where applicable. Full tablets visible with comfortable safe margin, device group fills 86 percent of output width. Output landscape 4:3 canvas, pure WHITE #ffffff edge-to-edge background, small soft neutral contact shadows, premium photographic studio light. No desk, scenery, hands, stylus, keyboard, extra devices, watermark or text outside screens.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a124f3-66e9-7141-a251-e38e92888312\\exec-04a9d867-1fe8-4283-b1dd-37c955169184.png",
+      "reference": "public/images/collections/mascot-mobile.webp",
+      "workspaceOriginal": "output/imagegen/schedsnap/archive/tablet/landscape/mascot.png",
+      "webAsset": null,
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "status": "superseded separate-orientation draft",
+      "archivePreview": "output/imagegen/schedsnap/archive/tablet/landscape/mascot.webp"
+    },
+    {
+      "device": "tablet",
+      "orientation": "landscape",
+      "id": "pattern",
+      "prompt": "Use case: product-mockup edit. Preserve the supplied image EXACTLY: tablet silhouettes, device orientation, composition, perspective, white studio background, metal edges, pastel peach checkerboard and lavender polka-dot wallpaper backgrounds, Class Schedule headings and five weekday schedule cards. Remove ALL cats, dogs, animals, characters, hearts, books and cartoon decorations from both tablet screens. Fill those removed areas seamlessly with the existing wallpaper pattern behind them. The Patterns collection is purely geometric and contains NO character illustration. Do not add anything. Keep all tablet devices and their full silhouettes unchanged.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a124f3-66e9-7141-a251-e38e92888312\\exec-c42b3b37-8e69-441f-ba20-61c013b09433.png",
+      "reference": "public/images/collections/pattern-mobile.webp",
+      "workspaceOriginal": "output/imagegen/schedsnap/archive/tablet/landscape/pattern.png",
+      "webAsset": null,
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "status": "superseded separate-orientation draft",
+      "archivePreview": "output/imagegen/schedsnap/archive/tablet/landscape/pattern.webp"
+    },
+    {
+      "device": "tablet",
+      "orientation": "landscape",
+      "id": "original",
+      "prompt": "Use case: product-mockup. Reference image is style and wallpaper reference ONLY. Generate a new premium photographic tablet product showcase matching the reference phone scene's materials, typography, wallpaper palette and soft lighting. One landscape tablet at a gentle 8 degree perspective. Deep frosted-blue photographic glass wallpaper from the reference. No animal. The device MUST be a modern 11-inch landscape TABLET with physical screen aspect ratio 4:3, uniform slim dark bezel and rounded corners, brushed silver edges, tiny camera in bezel; no phone-shaped screens, no dynamic island, no Apple logo. Tablet is wide horizontally. Exact heading inside screen: \"Class Schedule\". Five neat white or softly translucent pill rows with circular M, T, W, TH, F weekday initials, small neutral example class times and course codes, arranged to the left with comfortable horizontal space; artwork occupies right side where applicable. Preserve simple clean schedule hierarchy; no website UI outside device. Single tablet fully visible, centered, occupying about 86% of canvas width; no clipped edges. Landscape 4:3 output canvas, pure white #ffffff background edge-to-edge, delicate neutral contact shadow immediately below. No scenery, desk, hands, stylus, keyboard, extra devices, props, watermark or text outside the screen. This is illustrative tablet concept artwork for SchedSnap's Find your style collection showcase.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a124f3-66e9-7141-a251-e38e92888312\\exec-856dc756-b0c0-414b-aade-a403cb7f03d7.png",
+      "reference": "public/images/collections/original-mobile.webp",
+      "workspaceOriginal": "output/imagegen/schedsnap/archive/tablet/landscape/original.png",
+      "webAsset": null,
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "status": "superseded separate-orientation draft",
+      "archivePreview": "output/imagegen/schedsnap/archive/tablet/landscape/original.webp"
+    }
+  ]
+}

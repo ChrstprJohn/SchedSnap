@@ -34,7 +34,7 @@
       },
       "files": {
         "character": {
-          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\characters\\lavender-cloud.png",
+          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\characters\\lavender-cloud.png",
           "relative_path": "output/imagegen/wallpaper-collection/02-soft-gradients/characters/lavender-cloud.png",
           "dimensions": {
             "width": 1254,
@@ -50,7 +50,7 @@
           ]
         },
         "background": {
-          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\backgrounds\\lavender-cloud.png",
+          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\backgrounds\\lavender-cloud.png",
           "relative_path": "output/imagegen/wallpaper-collection/02-soft-gradients/backgrounds/lavender-cloud.png",
           "dimensions": {
             "width": 841,
@@ -60,7 +60,7 @@
           "exact_prompt": "Create one complete portrait image in 9:20 aspect ratio, approximately 1080 by 2400 pixels. Fill the entire canvas with an exceptionally clean gentle smooth lavender #DED4EB at the top transitioning softly into pale blush #EEDCE5 at the bottom. Keep tones chromatic, light and gently muted; subtle elegant vertical gradient with no banding. Every area is clear empty space, calm unobtrusive color that can receive later drawings. Constraints: only the gradient color field; no characters, clouds, subjects, objects, scenery, drawings, text, UI, calendar, schedule, cards, borders, frames, grain, texture, speckles, vignette, halo, glow, spotlight or strong lighting variation. Preserve plain rectangular outer edges."
         },
         "wallpaper": {
-          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\wallpapers\\lavender-cloud.png",
+          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\wallpapers\\lavender-cloud.png",
           "relative_path": "output/imagegen/wallpaper-collection/02-soft-gradients/wallpapers/lavender-cloud.png",
           "dimensions": {
             "width": 922,
@@ -90,7 +90,7 @@
       },
       "files": {
         "character": {
-          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\characters\\blue-moon.png",
+          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\characters\\blue-moon.png",
           "relative_path": "output/imagegen/wallpaper-collection/02-soft-gradients/characters/blue-moon.png",
           "dimensions": {
             "width": 1254,
@@ -106,7 +106,7 @@
           ]
         },
         "background": {
-          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\backgrounds\\blue-moon.png",
+          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\backgrounds\\blue-moon.png",
           "relative_path": "output/imagegen/wallpaper-collection/02-soft-gradients/backgrounds/blue-moon.png",
           "dimensions": {
             "width": 922,
@@ -116,7 +116,7 @@
           "exact_prompt": "Create one complete portrait image in 9:20 aspect ratio, approximately 1080 by 2400 pixels. Fill the entire canvas with an exceptionally clean gentle smooth powder blue #CFDFEC at the top transitioning softly into pale aqua #D7ECE7 at the bottom. Keep tones chromatic, light and gently muted; subtle elegant vertical gradient with no banding. Every area is clear empty space, calm unobtrusive color that can receive later drawings. Constraints: only the gradient color field; no characters, moons, subjects, objects, stars, scenery, drawings, text, UI, calendar, schedule, cards, borders, frames, grain, texture, speckles, vignette, halo, glow, spotlight or strong lighting variation. Preserve plain rectangular outer edges."
         },
         "wallpaper": {
-          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\UniToolbox\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\wallpapers\\blue-moon.png",
+          "absolute_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\output\\imagegen\\wallpaper-collection\\02-soft-gradients\\wallpapers\\blue-moon.png",
           "relative_path": "output/imagegen/wallpaper-collection/02-soft-gradients/wallpapers/blue-moon.png",
           "dimensions": {
             "width": 922,

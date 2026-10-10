@@ -1,7 +1,7 @@
 [
   {
     "heroScale": "matrix(1.18, 0, 0, 1.18, 0, 0)",
-    "heroSource": "http://localhost:5173/images/hero-phones.webp",
+    "heroSource": "http://localhost:5173/images/hero/hero-phones.webp",
     "overflow": false,
     "previousWrappedTo": "Originals",
     "slideCount": 1,
@@ -182,7 +182,7 @@
   },
   {
     "heroScale": "matrix(1.18, 0, 0, 1.18, 0, 0)",
-    "heroSource": "http://localhost:5173/images/hero-phones.webp",
+    "heroSource": "http://localhost:5173/images/hero/hero-phones.webp",
     "overflow": false,
     "previousWrappedTo": "Originals",
     "slideCount": 1,
@@ -363,7 +363,7 @@
   },
   {
     "heroScale": "matrix(1.18, 0, 0, 1.18, 0, 0)",
-    "heroSource": "http://localhost:5173/images/hero-phones.webp",
+    "heroSource": "http://localhost:5173/images/hero/hero-phones.webp",
     "overflow": false,
     "previousWrappedTo": "Originals",
     "slideCount": 1,
@@ -544,7 +544,7 @@
   },
   {
     "heroScale": "matrix(1.18, 0, 0, 1.18, 0, 0)",
-    "heroSource": "http://localhost:5173/images/hero-phones.webp",
+    "heroSource": "http://localhost:5173/images/hero/hero-phones.webp",
     "overflow": false,
     "previousWrappedTo": "Originals",
     "slideCount": 1,
@@ -725,7 +725,7 @@
   },
   {
     "heroScale": "matrix(1.18, 0, 0, 1.18, 0, 0)",
-    "heroSource": "http://localhost:5173/images/hero-phones.webp",
+    "heroSource": "http://localhost:5173/images/hero/hero-phones.webp",
     "overflow": false,
     "previousWrappedTo": "Originals",
     "slideCount": 1,
@@ -906,7 +906,7 @@
   },
   {
     "heroScale": "matrix(1.18, 0, 0, 1.18, 0, 0)",
-    "heroSource": "http://localhost:5173/images/hero-phones.webp",
+    "heroSource": "http://localhost:5173/images/hero/hero-phones.webp",
     "overflow": false,
     "previousWrappedTo": "Originals",
     "slideCount": 1,
@@ -944,7 +944,7 @@
           "x": 24,
           "y": 271.51251220703125
         },
-        "loadedSource": "http://localhost:5173/images/collections/little-friends-white.webp",
+        "loadedSource": "http://localhost:5173/images/archive/collections/little-friends-white.webp",
         "position": "1 / 4",
         "section": {
           "bottom": 680.0625457763672,
@@ -954,7 +954,7 @@
           "x": 24,
           "y": 163.40000915527344
         },
-        "selectedSource": "/images/collections/little-friends-white.webp",
+        "selectedSource": "/images/archive/collections/little-friends-white.webp",
         "title": "Little Friends"
       },
       {
@@ -986,7 +986,7 @@
           "x": 24,
           "y": 436.3125
         },
-        "loadedSource": "http://localhost:5173/images/collections/mascot-white.webp",
+        "loadedSource": "http://localhost:5173/images/archive/collections/mascot-white.webp",
         "position": "2 / 4",
         "section": {
           "bottom": 844.862548828125,
@@ -996,7 +996,7 @@
           "x": 24,
           "y": 328.20001220703125
         },
-        "selectedSource": "/images/collections/mascot-white.webp",
+        "selectedSource": "/images/archive/collections/mascot-white.webp",
         "title": "Mascots"
       },
       {
@@ -1028,7 +1028,7 @@
           "x": 24,
           "y": 436.3125
         },
-        "loadedSource": "http://localhost:5173/images/collections/pattern-white.webp",
+        "loadedSource": "http://localhost:5173/images/archive/collections/pattern-white.webp",
         "position": "3 / 4",
         "section": {
           "bottom": 844.862548828125,
@@ -1038,7 +1038,7 @@
           "x": 24,
           "y": 328.20001220703125
         },
-        "selectedSource": "/images/collections/pattern-white.webp",
+        "selectedSource": "/images/archive/collections/pattern-white.webp",
         "title": "Patterns"
       },
       {
@@ -1070,7 +1070,7 @@
           "x": 24,
           "y": 436.3125
         },
-        "loadedSource": "http://localhost:5173/images/collections/original-white.webp",
+        "loadedSource": "http://localhost:5173/images/archive/collections/original-white.webp",
         "position": "4 / 4",
         "section": {
           "bottom": 844.862548828125,
@@ -1080,14 +1080,14 @@
           "x": 24,
           "y": 328.20001220703125
         },
-        "selectedSource": "/images/collections/original-white.webp",
+        "selectedSource": "/images/archive/collections/original-white.webp",
         "title": "Originals"
       }
     ]
   },
   {
     "heroScale": "matrix(1.18, 0, 0, 1.18, 0, 0)",
-    "heroSource": "http://localhost:5173/images/hero-phones.webp",
+    "heroSource": "http://localhost:5173/images/hero/hero-phones.webp",
     "overflow": false,
     "previousWrappedTo": "Originals",
     "slideCount": 1,
@@ -1268,7 +1268,7 @@
   },
   {
     "heroScale": "matrix(1.18, 0, 0, 1.18, 0, 0)",
-    "heroSource": "http://localhost:5173/images/hero-phones.webp",
+    "heroSource": "http://localhost:5173/images/hero/hero-phones.webp",
     "overflow": false,
     "previousWrappedTo": "Originals",
     "slideCount": 1,
@@ -1306,7 +1306,7 @@
           "x": 24,
           "y": 225.52500915527344
         },
-        "loadedSource": "http://localhost:5173/images/collections/little-friends-white.webp",
+        "loadedSource": "http://localhost:5173/images/archive/collections/little-friends-white.webp",
         "position": "1 / 4",
         "section": {
           "bottom": 733.4749908447266,
@@ -1316,7 +1316,7 @@
           "x": 24,
           "y": 99.6125030517578
         },
-        "selectedSource": "/images/collections/little-friends-white.webp",
+        "selectedSource": "/images/archive/collections/little-friends-white.webp",
         "title": "Little Friends"
       },
       {
@@ -1348,7 +1348,7 @@
           "x": 24,
           "y": 436.7250061035156
         },
-        "loadedSource": "http://localhost:5173/images/collections/mascot-white.webp",
+        "loadedSource": "http://localhost:5173/images/archive/collections/mascot-white.webp",
         "position": "2 / 4",
         "section": {
           "bottom": 944.6749877929688,
@@ -1358,7 +1358,7 @@
           "x": 24,
           "y": 310.8125
         },
-        "selectedSource": "/images/collections/mascot-white.webp",
+        "selectedSource": "/images/archive/collections/mascot-white.webp",
         "title": "Mascots"
       },
       {
@@ -1390,7 +1390,7 @@
           "x": 24,
           "y": 436.7250061035156
         },
-        "loadedSource": "http://localhost:5173/images/collections/pattern-white.webp",
+        "loadedSource": "http://localhost:5173/images/archive/collections/pattern-white.webp",
         "position": "3 / 4",
         "section": {
           "bottom": 944.6749877929688,
@@ -1400,7 +1400,7 @@
           "x": 24,
           "y": 310.8125
         },
-        "selectedSource": "/images/collections/pattern-white.webp",
+        "selectedSource": "/images/archive/collections/pattern-white.webp",
         "title": "Patterns"
       },
       {
@@ -1432,7 +1432,7 @@
           "x": 24,
           "y": 436.7250061035156
         },
-        "loadedSource": "http://localhost:5173/images/collections/original-white.webp",
+        "loadedSource": "http://localhost:5173/images/archive/collections/original-white.webp",
         "position": "4 / 4",
         "section": {
           "bottom": 944.6749877929688,
@@ -1442,14 +1442,14 @@
           "x": 24,
           "y": 310.8125
         },
-        "selectedSource": "/images/collections/original-white.webp",
+        "selectedSource": "/images/archive/collections/original-white.webp",
         "title": "Originals"
       }
     ]
   },
   {
     "heroScale": "matrix(1.18, 0, 0, 1.18, 0, 0)",
-    "heroSource": "http://localhost:5173/images/hero-phones.webp",
+    "heroSource": "http://localhost:5173/images/hero/hero-phones.webp",
     "overflow": false,
     "previousWrappedTo": "Originals",
     "slideCount": 1,
@@ -1487,7 +1487,7 @@
           "x": 157.1999969482422,
           "y": 251.8000030517578
         },
-        "loadedSource": "http://localhost:5173/images/collections/little-friends-white.webp",
+        "loadedSource": "http://localhost:5173/images/archive/collections/little-friends-white.webp",
         "position": "1 / 4",
         "section": {
           "bottom": 844.4500274658203,
@@ -1497,7 +1497,7 @@
           "x": 157.1999969482422,
           "y": 99.8000030517578
         },
-        "selectedSource": "/images/collections/little-friends-white.webp",
+        "selectedSource": "/images/archive/collections/little-friends-white.webp",
         "title": "Little Friends"
       },
       {
@@ -1529,7 +1529,7 @@
           "x": 157.1999969482422,
           "y": 507.8000183105469
         },
-        "loadedSource": "http://localhost:5173/images/collections/mascot-white.webp",
+        "loadedSource": "http://localhost:5173/images/archive/collections/mascot-white.webp",
         "position": "2 / 4",
         "section": {
           "bottom": 1100.4500427246094,
@@ -1539,7 +1539,7 @@
           "x": 157.1999969482422,
           "y": 355.8000183105469
         },
-        "selectedSource": "/images/collections/mascot-white.webp",
+        "selectedSource": "/images/archive/collections/mascot-white.webp",
         "title": "Mascots"
       },
       {
@@ -1571,7 +1571,7 @@
           "x": 157.1999969482422,
           "y": 507.8000183105469
         },
-        "loadedSource": "http://localhost:5173/images/collections/pattern-white.webp",
+        "loadedSource": "http://localhost:5173/images/archive/collections/pattern-white.webp",
         "position": "3 / 4",
         "section": {
           "bottom": 1100.4500427246094,
@@ -1581,7 +1581,7 @@
           "x": 157.1999969482422,
           "y": 355.8000183105469
         },
-        "selectedSource": "/images/collections/pattern-white.webp",
+        "selectedSource": "/images/archive/collections/pattern-white.webp",
         "title": "Patterns"
       },
       {
@@ -1613,7 +1613,7 @@
           "x": 157.1999969482422,
           "y": 507.8000183105469
         },
-        "loadedSource": "http://localhost:5173/images/collections/original-white.webp",
+        "loadedSource": "http://localhost:5173/images/archive/collections/original-white.webp",
         "position": "4 / 4",
         "section": {
           "bottom": 1100.4500427246094,
@@ -1623,7 +1623,7 @@
           "x": 157.1999969482422,
           "y": 355.8000183105469
         },
-        "selectedSource": "/images/collections/original-white.webp",
+        "selectedSource": "/images/archive/collections/original-white.webp",
         "title": "Originals"
       }
     ]

@@ -2,6 +2,6 @@
   "mode": "built-in image_gen edit",
   "source": "public/wallpapers/mascots/bear.png",
   "generated": "C:\\Users\\picar\\.codex\\generated_images\\01a105f6-2ddb-7de1-948e-286541713c71\\exec-c394970f-f4fe-41d4-884f-7b69e77dd18e.png",
-  "asset": "public/images/maker-bear-base.webp",
+  "asset": "public/images/archive/maker/maker-bear-base.webp",
   "prompt": "Use case: precise-object-edit. Edit target: the provided existing transparent cream-and-orange waving bear mascot. Remove ONLY the two small circular orange eyes from the face. The left eye is centered approximately at 30.6% of image width and 49.4% of image height; the right eye at 54.1% width and 44.5% height. Fill those two circles seamlessly with the surrounding cream face color and subtle shading, making the face blank ONLY in those two eye spots. Keep the orange nose, mouth, cheeks, ears, paws, body, raised arm, silhouette, pose, original subtle shading and every other detail exactly unchanged. Keep the same full square canvas composition, scale and placement. Do not add new eyes or facial details. Preserve transparent background with genuine alpha. This is a production base layer for adding the original eyes as animated HTML dots."
 }

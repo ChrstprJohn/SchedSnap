@@ -1,0 +1,1474 @@
+{
+  "description": "Project-owned image inventory; build output and dependencies excluded. Hashes verify original image contents were preserved.",
+  "assets": [
+    {
+      "path": ".impeccable/review/desktop-preview.jpg",
+      "sha256": "0aac29eb35cf1d0159c22b48930563577f767cdc75be20aaf1c72deb85c14213"
+    },
+    {
+      "path": ".impeccable/review/desktop.jpg",
+      "sha256": "ac200d6a2b354411b1eca13cd02cfd68589ff4cd3f7eb66c9024654e33c57c32"
+    },
+    {
+      "path": ".impeccable/review/desktop.png",
+      "sha256": "0bd92e4ffa3b2131a28a1573449fb98fe2edd6eaf24780e516953099532df963"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/desktop-laptop-gallery.png",
+      "sha256": "afd6f795197aa18e69cf4c59648fec63b6931fe9c79ef68250c4f06bd2b2db57"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/desktop-laptop.png",
+      "sha256": "74934d04a7ba685e764b7306272994cb77ad3a10b72d5773230db4617175a639"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/desktop-mobile-gallery.png",
+      "sha256": "05409aee80a30651dc2340c2296778dd2f9b56a9e88350edea37fbbf29f69d30"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/desktop-mobile.png",
+      "sha256": "3a542e574f7fe07e5d213aa70492a2c6048646b0c1d3c14ef1aad8481b95ebb9"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/desktop-tablet-gallery.png",
+      "sha256": "673ddd3f282d26561bb157aada375fab0905e679f2623e6f9d0581c9f90f9bcd"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/desktop-tablet-little-friends.png",
+      "sha256": "58a069385fefe9b1854a6b48458d2f8003e41d555af6814eae0d71e1ebd0937d"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/desktop-tablet-mascot.png",
+      "sha256": "14962385d738cc243453a6f79e371fab03477cfca969f906f69b504874155e9e"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/desktop-tablet-original.png",
+      "sha256": "c928df953fdba150ed3398ab7603d3bb44189ff14945a66dda081db7c30c10e3"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/desktop-tablet-pattern.png",
+      "sha256": "6c44bfbda54a4891b0c562747a98f8c689f72401ce33babfd5054db1531ec93e"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/desktop-tablet.png",
+      "sha256": "fd2796139e0ea1e71cd953d31f23adda7e54ecfafda08da1268d829603c03862"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/desktop.png",
+      "sha256": "b3233509bf69a1cb1db15505d37469360d43c32d5bf4474bf503da22662e7b15"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/mobile-laptop-gallery.png",
+      "sha256": "a109825a9c1751d8589fca5d11b3ddf10881708ae664daafc871b5336cf8b892"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/mobile-laptop.png",
+      "sha256": "378d41db81212cae861a9bc657a95615f965c3dd86a4fc4ed7502f999e4078c6"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/mobile-mobile-gallery.png",
+      "sha256": "90a12f9dd6f9cb40124892f06e03b695634219d00b136f3a082f37e85d64fec1"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/mobile-mobile.png",
+      "sha256": "805248574caf05658ef11b19419ea56ed54e8cbc8abedb3d15456b2a07f71c18"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/mobile-tablet-gallery.png",
+      "sha256": "6bcbb62762ebea72c92d021ce7ac7968c51f71069da2c5e1c384ea1a3a596a7e"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/mobile-tablet-little-friends.png",
+      "sha256": "4135b4d51e354616ac3e0d5b2ca31a6ff2af919bd3bf3c08cf8e4dfdba1d049d"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/mobile-tablet-mascot.png",
+      "sha256": "f34555ceb4a6b9259865852b5d19aeda9e3fe5915c2c1ab6499e0dce71462b62"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/mobile-tablet-original.png",
+      "sha256": "415880f099459dfbffa930caa08f0d6f9de748f7e6fcbad968ea90a8fc0710c8"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/mobile-tablet-pattern.png",
+      "sha256": "8aa666e58f981487ad0325b2fe0c0a601d10ec9334662ed9db088e706f2d8bdd"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/mobile-tablet.png",
+      "sha256": "5e15876d93ac428d9b42ee708339859c0e4b50714d8f3846c885d467efb4fe15"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/mobile.png",
+      "sha256": "c1d31e585df43a58324dca3577d14ffb2b294ad23589511da19d221eae177e59"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/small-mobile-laptop-gallery.png",
+      "sha256": "fdaaf5839bf113b6a424e876331025f1c63288524fde4f8842564bb18fb18726"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/small-mobile-laptop.png",
+      "sha256": "3179ac5eec6c369eeaa1ee10758ee74e542412153f9d92459a36d168002734d4"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/small-mobile-mobile-gallery.png",
+      "sha256": "7f89ece28c207afb66db496a33b83883a534b50303f4063dceda0fcf77ec5a92"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/small-mobile-mobile.png",
+      "sha256": "b1ca4feae87d756ed064bd4e686ae31170519543214de909a5db6f37e09280db"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/small-mobile-tablet-gallery.png",
+      "sha256": "3813fc00d84f429cc89ba66a590c70a2a6af72282ad2b0fff8263420ff31277f"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/small-mobile-tablet-little-friends.png",
+      "sha256": "0577ee89560dc9feb80db4f67f45bac47e508829bfbdbc62fad44bf1c6dbf7fb"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/small-mobile-tablet-mascot.png",
+      "sha256": "321520334109034d46a9b34908279860bcb46f2b1e58c9617a7524710c4d1e12"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/small-mobile-tablet-original.png",
+      "sha256": "5cce0c0539ccafbe6158242c8491b4f1e6228311fa0c7aabbf809b7f219fdc69"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/small-mobile-tablet-pattern.png",
+      "sha256": "85a53cd1e6b28ee7061c5cc65b0c2f68842c9fa1751e43b0247e422246a9dee1"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/small-mobile-tablet.png",
+      "sha256": "3f802de533e54c580bc59e57a13e4a40a45c4734ad806b6ac7cb0283432d0c2b"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/small-mobile.png",
+      "sha256": "49574932fa17123bc6d24f392c10c653c1d41e9cb4a529b36ad28dc979fb0607"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/tablet-laptop-gallery.png",
+      "sha256": "949dff623a77d1180888b58943fb3479540d33351ff3b59f09876fa2e2102cdb"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/tablet-laptop.png",
+      "sha256": "bdf088c24a9c13ebb7ccae9fadf74754df70731a7db5429b6b6a603d57bd83f8"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/tablet-mobile-gallery.png",
+      "sha256": "faea9162243558fd6f677496fc0fa7475ab7d4ceb46a3d23fbdf7751872c45d8"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/tablet-mobile.png",
+      "sha256": "a83cd2f6e7f738d197d6d1db0105b46256fc76b68884001fee9915c48efab12c"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/tablet-tablet-gallery.png",
+      "sha256": "374f34c792b8138ca2c7eeee9e6f7fef35c5d26bd4d6f5d43e61eb231676cd1c"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/tablet-tablet-little-friends.png",
+      "sha256": "b5cf3a8e80332e4d624366e77265440c2050ed9fa6d54a4b65e86fd0cf7352b9"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/tablet-tablet-mascot.png",
+      "sha256": "04574b4ccf541b63a90e4ff443d9de0792fa6a65c8b33534ee738206e81c1210"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/tablet-tablet-original.png",
+      "sha256": "330a6549f76c499d61a42068c194e07c5828e58505500524b25bcd0b26a81f81"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/tablet-tablet-pattern.png",
+      "sha256": "3a449a717a4fce13d2c5e53afd8a7fce55345c9135413886cafc78f01097e509"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/tablet-tablet.png",
+      "sha256": "467745cbfecf7ae9e8808e56e79e846471dc8727fdb6c650e38080c6a9059e16"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/tablet.png",
+      "sha256": "69192ebd4ef9136b43f1f36e53f52aaec49a017c4f2a1c4aeb0900a9f246819c"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/classes-top-alignment-1440.png",
+      "sha256": "a78f9c468d1f3fad93597af40e89d7a3c4b80b05eac52d8eabb628bed6306d0b"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/classes-top-alignment-390.png",
+      "sha256": "fac45ed021e5ce08860c04fbf9e1310a5125127f0b4c316b42bb18320f665fa4"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/classes-top-alignment-800.png",
+      "sha256": "3b7b561de507e82478f28639d588fc4afed7c4c77fa7c12749d6f353f5d9e415"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/desktop-seam.png",
+      "sha256": "52265cbbf7937e84d6d2052329de45cf04ae58b376b613cca94ceffdaa4ad848"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/desktop-section.png",
+      "sha256": "72a5348ae64bc7c9823ba697de3dded2cc85c18836bd0b223ad0ab80554f5201"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/desktop.png",
+      "sha256": "31122592292404a8ae8cf0586d5fdd883a0a016d536ea64565a3934840429aaf"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/editor-back-1440.png",
+      "sha256": "fbfd04639e6d6152ce67e71761ff1d42404f453dc21b088dceb527450fa5deb8"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/editor-back-390.png",
+      "sha256": "4cd17ce6c03173e8d957a01132e53cefb5dc6058274daaca0beee5640c32b26d"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/import-change-1440.png",
+      "sha256": "fe13066008b37c0ea8e94e3a3079c856abedab1417ef5749822981d3f7cd3ea3"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/import-change-390.png",
+      "sha256": "f10704f63963ee269aa1d0dfbbe5b9249928fdbc091c6d1c40089c26d4222563"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/maker-capybara-desktop.png",
+      "sha256": "1d35b573e1ba530dad7fc37171a1e1b3a442fa90a1e656320ea1e28852a663d9"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/maker-capybara-mobile.png",
+      "sha256": "5ab425dffcc3b8bdb1d8f527faad661cb91844c4199c40f977e95a60b48600bd"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/maker-capybara-reduced.png",
+      "sha256": "2d31e82e3e088aaa796d0d0df46bf04994088a5cee46afb3151342cf9d37a719"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/maker-capybara-static-desktop.png",
+      "sha256": "c09e1bf8f58a0778d24b042415284ef77fc480e00b2dccdaf22156ecefa6c7fc"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/maker-capybara-static-mobile.png",
+      "sha256": "c2a133d306e05dadc2c6d514dc4be377778af22f0ae750d5f152049fa4f3d305"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/maker-desktop.png",
+      "sha256": "e87b42c115771919c9502724c7bcfaab046b48a36f4de74370766f760e4f5645"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/maker-eyes-desktop.png",
+      "sha256": "3ef52833beb5f4748dae1f50c8f65bd8daace1fbb2bc03165c423a81cce27a2f"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/maker-eyes-mobile.png",
+      "sha256": "1f434e0020660b46e2c0d4df5d965c36fe241b366c271d3a774a7a734956f240"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/maker-eyes-reduced.png",
+      "sha256": "01ade3b3ef3e481b24e515245a9e5a9ee14122d2d45d397e44121e56454534a7"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/maker-mobile.png",
+      "sha256": "6b5e8edf9ef837ac5e1175a541e9d12f09769033cbbd53dee533a2438081b8ed"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/maker-reduced.png",
+      "sha256": "99eb65db47be72823d6227cab0e149f19fd1a6f0db42fd7c2e31783d0ac8decc"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/mobile-seam.png",
+      "sha256": "40d40b706954e561e4aae01293184fe829a3f81e196335ac09c4b9b86674e560"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/mobile-section.png",
+      "sha256": "31dc6e354a0c0143c3581aa9bcd9a734236c74270fa4dcb8e67a7f40cafc826e"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/mobile.png",
+      "sha256": "bfdf5df350581a5b0f7fcad98d20246723b9dc07f9137b98a890411a7ca19334"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/stats-desktop.png",
+      "sha256": "17d8f4f04976c4a6751469caff3be4765a9579b3c4507067bf1bf9a2a5bf0ce4"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/stats-how-fade-desktop.png",
+      "sha256": "09f361b898956cfe9e9d15a3aae794ede83b29824a0915c99e99f8818ac3ec03"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/stats-how-fade-mobile.png",
+      "sha256": "543a2e5b5b72dad380dd45785a620d903a70d2c4fc07c4bbe6cead02dd7ca011"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/stats-how-fade-reduced.png",
+      "sha256": "09f361b898956cfe9e9d15a3aae794ede83b29824a0915c99e99f8818ac3ec03"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/stats-mobile.png",
+      "sha256": "6d68bfc4efad5f46e1226d9838e77e845f4dba1c09e9b1e150ef2d11c9fa16ee"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/stats-reduced.png",
+      "sha256": "17d8f4f04976c4a6751469caff3be4765a9579b3c4507067bf1bf9a2a5bf0ce4"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/tablet-seam.png",
+      "sha256": "606701ccde8de85e8d966a05205acf0e3e05388f7cf91148020975fa1a573111"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/tablet-section.png",
+      "sha256": "b89aeb99493cf1e205be314efa455b565839cf79c401106533ca8d7e9f373657"
+    },
+    {
+      "path": ".impeccable/review/how-it-works/tablet.png",
+      "sha256": "4e939b9b7cff6e1e421619764b3f8c3bf54f77c2c38806ee09fd2543a4f84b07"
+    },
+    {
+      "path": ".impeccable/review/mobile-hero.png",
+      "sha256": "7c2b4afc7b00ffb3e6c6d1d7ebe5f928086c1ce09a9ea59a2b39a8fe73621a4a"
+    },
+    {
+      "path": ".impeccable/review/mobile.jpg",
+      "sha256": "6591ea417e2d2d86d062348c9ad1d271cc5114fce80fc8dd431c309414cdd21f"
+    },
+    {
+      "path": ".impeccable/review/mobile.png",
+      "sha256": "6e2ff64d76b2bf72fe8808f58e041c87962cd79804a7ca1de358267598c9b41f"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/collection-carousel-desktop.png",
+      "sha256": "9622181b70189d10a4cd91e140ac82245e68fbd09a84ed71ddc683929075b64f"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/collection-carousel-mobile.png",
+      "sha256": "85c4c02e696af07d1865354ffd8f7e76aad240d842e0fb17d9d50a04e45b0c54"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/desktop-collections-bottom.jpg",
+      "sha256": "63ba1ce0082057d170738aee8203fd895661e5138138d4b3171c85445c750aaa"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/desktop-collections-middle.jpg",
+      "sha256": "340f46f7865c5230656e465359b33ef7f66bb180a181d71aab9d033659d1ffcb"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/desktop-collections.jpg",
+      "sha256": "6ce24676c2c963f5e7a655f06764dd7f651d81ab58396efc1ff5476126a5e6c1"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/desktop-hero.jpg",
+      "sha256": "f6c8aec348509f2bcdd28ac4d42488c7573e99462709fb104ce6a75dc60bc002"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/desktop.jpg",
+      "sha256": "f6c8aec348509f2bcdd28ac4d42488c7573e99462709fb104ce6a75dc60bc002"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/editor-320.jpg",
+      "sha256": "b5c64dd89ea7993195aa6993ea12e8595daf7ae1cd941a54981e7598053ec861"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/editor-768.jpg",
+      "sha256": "943f4b3cb95d6b11103d3734f2ce3cc8d4765387631308f30ffea54e7838eaf1"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/fluid-mobile-375.png",
+      "sha256": "b9464472d292af41885aa2b53b0c0b1c1a83cb22ec3a30766d9089be3dac53d3"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/fluid-mobile-short.png",
+      "sha256": "6dfa302dd5c95b5f5a4cd5b8fb162ed19bed33d4ebcb6d249cda32179786b710"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/fluid-tablet-718.png",
+      "sha256": "d5077d0b54de1dd6b0669e112e89c8f5092b4a42e1910ea7be542b61bd197892"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/fluid-tablet-landscape.png",
+      "sha256": "c9a347a3c0dec518d5956582f76c4d009fbcf9abfce98d31f6a050b7d1879104"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/fluid-tablet-portrait.png",
+      "sha256": "3325da6591883897dcda550aa1a97a7baa8d5b311be94e283efe9c262dc06a95"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/landing-stats-desktop.jpg",
+      "sha256": "181f101a00ef4b3f2b5d7c73cec1b5b2dd17814b791f41f2a82005b28118ad2b"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/landing-stats-mobile.jpg",
+      "sha256": "64ad417cb41be06fdcf16c7478afb5ed8c5aae4fe871a347d42fb547fe5ea10b"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/layered-hero-desktop.png",
+      "sha256": "88c080488e321c21d0c2bb1b078db3e1646e0102145d4bb3a51991ae1743dd6d"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/layered-hero-landscape.png",
+      "sha256": "98a34c080ba1d36d5dc591dd9388fc4cf7e3fc2f7c54e10cefe0b82bed5b3064"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/layered-hero-mobile.png",
+      "sha256": "6ca015f974ca0d67c6d133a8af69861e859aa0cc48bd0115afb158032603aeba"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/layered-hero-tablet.png",
+      "sha256": "4143289840ee988d050b5edd25e774e6d5ee5c4adc14d50519a908a45035dbfb"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/layered-stats-desktop.png",
+      "sha256": "cdbe781c9e4123a17c4203b096b8374f00463b888086132720404a42f56adbc1"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/layered-stats-mobile.png",
+      "sha256": "27d557a99347b7a4c5b07339b276a49cab7b8c3a9aca21e4db1c176d94736fcf"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/mobile-320.jpg",
+      "sha256": "ff2417dc703705425e03b9454c167267110e05ae146760a398081ea657ab3cd1"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/mobile-art-hero.png",
+      "sha256": "a1d9a42856455ce051674f298680b8a01372880230eb7429ecf7f22efbaecc25"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/mobile-art-little-friends.png",
+      "sha256": "c6407fd40c06a285d015f23bc17ca5e26a426a0f0b90d38d1d2163946e8d7bbb"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/mobile-art-mascots.png",
+      "sha256": "a1d9a42856455ce051674f298680b8a01372880230eb7429ecf7f22efbaecc25"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/mobile-hero-final.png",
+      "sha256": "fb4499bca2116753da97e71d2bc2c98da2e5f50a6c6cf8aeb11322295d8fddf5"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/mobile.jpg",
+      "sha256": "9ce4639b7c46d06096b19261c9c17b106bafddca0bf0c5e23bf2376052a2b1f9"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/showcase-layout-desktop.png",
+      "sha256": "a12b93ceb591ad9befa6ca1b947546a8a39813013c05d0d07bce6b5ff94fed48"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/showcase-layout-mobile.png",
+      "sha256": "bf5a8b695341fbc67a25412a53673fcbd91d5f5a3307b52c0cf62da1ae296ad5"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/user-874.jpg",
+      "sha256": "48c799e326de49da496dc3d18dd0be2b306b474f0fa88135dadd6fb65d8afbb8"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/viewport-hero-desktop.jpg",
+      "sha256": "ac08ae71a7a92b0b2637da3c515771a76eeecf206f7cafbf46262aa1c5bc4e03"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/viewport-hero-landscape.jpg",
+      "sha256": "60ded5086063fba32300a96eae50457fc4f9b0f1a5eface7ed8702b8b47fe140"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/viewport-hero-mobile.jpg",
+      "sha256": "b0e9ec1f6559b0389458fcd9ad78b6aa64014c245fc2ed8eddcdab5f515b4832"
+    },
+    {
+      "path": ".impeccable/review/schedsnap/viewport-hero-tablet.jpg",
+      "sha256": "8cf2b507b6f80b4fa34921eb1417b0c1ccd2f5de2cd4452804d894a8ad1400f1"
+    },
+    {
+      "path": ".impeccable/review/template-editor/data-empty-current.jpg",
+      "sha256": "b73067b4830c3394a26a784733fe6dfc5a61c386d6cdd3051fd8874f88039b34"
+    },
+    {
+      "path": ".impeccable/review/template-editor/desktop-categorized-final.jpg",
+      "sha256": "3eb9087451b7c04bf3b04e9545a5b58d6ffb90041e6e9a9948e98d4b0e72c44e"
+    },
+    {
+      "path": ".impeccable/review/template-editor/desktop-empty-current.jpg",
+      "sha256": "413323d04c8e716d91e40145b82a6d8fef564816c8d4d6ca0d63447e95b50db5"
+    },
+    {
+      "path": ".impeccable/review/template-editor/desktop-empty.jpg",
+      "sha256": "34df2ae48f5a83a657f3ad0ed63f5e283c90415c0066e8768c77a8b8fab5cf8f"
+    },
+    {
+      "path": ".impeccable/review/template-editor/desktop-filled.jpg",
+      "sha256": "7425b28d59abbc817df002f691bbdd92b0d27d8cbdda0764a0924c963aa06372"
+    },
+    {
+      "path": ".impeccable/review/template-editor/desktop-final.jpg",
+      "sha256": "4c70adb331eb8361bfd2b2cfcbdc4845e1a73054410370e9e8f19bade6a343e0"
+    },
+    {
+      "path": ".impeccable/review/template-editor/desktop-inline-final.jpg",
+      "sha256": "ccb0a9569009da993219bd0a582b60fb0e53a1cea3943d93187d95f8322f08d0"
+    },
+    {
+      "path": ".impeccable/review/template-editor/desktop-inline-zoom.jpg",
+      "sha256": "1a59c54e359c8abfe2226ce01da616723e915a82ff7a0c6dbd915100d3d0f345"
+    },
+    {
+      "path": ".impeccable/review/template-editor/mobile-appearance-final.jpg",
+      "sha256": "6e6d10558bc49023b52cf8c8404b96bd8bd9b2f5625725855feb2d41482bcc27"
+    },
+    {
+      "path": ".impeccable/review/template-editor/mobile-appearance.jpg",
+      "sha256": "918ae438e77e33655809284afee65ec33584e0587e98e9988a3c08c94ac2e9b6"
+    },
+    {
+      "path": ".impeccable/review/template-editor/mobile-canvas-final.jpg",
+      "sha256": "197cd3a0431871345f8c1f809e8c77923eb956a01a17e39de3880168beca960f"
+    },
+    {
+      "path": ".impeccable/review/template-editor/mobile-categorized-final.jpg",
+      "sha256": "7899d71a4c85727474850cce51467f6b0dab58402c9f1921d6dce2ec5225b1ba"
+    },
+    {
+      "path": ".impeccable/review/template-editor/mobile-data-current.jpg",
+      "sha256": "78111bb5214b1b6cb7c33a1da687f8137afc5e2b17cc73c40fee31e014092ba0"
+    },
+    {
+      "path": ".impeccable/review/template-editor/mobile-data-final.jpg",
+      "sha256": "64742f57a66cf0ab1ba45c5ea0687a6aef3584dd2646bba637406384089431cf"
+    },
+    {
+      "path": ".impeccable/review/template-editor/mobile-data.jpg",
+      "sha256": "847e8ef896ed5eddecb75dbf52e2f7e3880be9174e372b69395ced794d2fa291"
+    },
+    {
+      "path": ".impeccable/review/template-editor/mobile-preview-final.jpg",
+      "sha256": "1482f943e3a910ed9f904f86d8d6135ab9ab5b5ef8b02406c9ed5214f4e99d6f"
+    },
+    {
+      "path": ".impeccable/review/template-editor/mobile-preview.jpg",
+      "sha256": "c5efb4ac587fd898f73b94415242b9fa8bbaf11c277cee6b0eb28003a18c3d8e"
+    },
+    {
+      "path": "documentation/previews/aligned-builder-desktop.jpg",
+      "sha256": "ebb4164da79c05482bab34d86a70b57bf8a240353592043c4f8adc17316a1175"
+    },
+    {
+      "path": "documentation/previews/aligned-builder-mobile.jpg",
+      "sha256": "b9bcc6de05e14220bed24b36a951425e8c36d207311b0b2b27e8d2ed10d104c3"
+    },
+    {
+      "path": "documentation/previews/appearance-labels-mobile.jpg",
+      "sha256": "0307624bf1c9ef4470105f8cb09eb87b01cb84d244cc066d41ac2aac76e20cee"
+    },
+    {
+      "path": "documentation/previews/appearance-rows-mobile.jpg",
+      "sha256": "3131d363efd59d4b95eaba86458f71be5a8cc8ca8c608cca654570620bb26bce"
+    },
+    {
+      "path": "documentation/previews/class-builder-desktop.jpg",
+      "sha256": "b3f860cdf41a2267def5a6346d4b4a9a82b3291935798b7d436924f918df67b6"
+    },
+    {
+      "path": "documentation/previews/class-title-cancel-mobile.jpg",
+      "sha256": "60823bb4344fc13dbfc39ad38beac40756bcf935a6c2cc359ca0233d5db7d3c2"
+    },
+    {
+      "path": "documentation/previews/compact-review-desktop.jpg",
+      "sha256": "cdedac034fc03a51ae82be12f442e4ffe97278e1f271ed921c817858f31a18b6"
+    },
+    {
+      "path": "documentation/previews/compact-review-mobile.jpg",
+      "sha256": "ac4b61fef41a98912601e7d012cf8905a5094b5c76650e6e7c0374725202e7a8"
+    },
+    {
+      "path": "documentation/previews/consistent-class-inputs-desktop.jpg",
+      "sha256": "33cbb6c9d3a91043cfa8c4c63685c57f0a36b6ace78f0073127c059d00c70afb"
+    },
+    {
+      "path": "documentation/previews/day-dropdown-room-mobile.jpg",
+      "sha256": "7394fbb0612533c88fbb80411a843eb3904a81d3ee09e4b321b3c324b4fae434"
+    },
+    {
+      "path": "documentation/previews/extracted-window-light.png",
+      "sha256": "576131337cb1a682bfe06d3d53dbaafd3b23384e6b214fff77b01df0dc6a8ca3"
+    },
+    {
+      "path": "documentation/previews/guided-appearance-mobile.jpg",
+      "sha256": "5cdb788283693a557a56d234dc7d3736c9f60da895ecfbb3c631e6d507f1c5a2"
+    },
+    {
+      "path": "documentation/previews/guided-class-form-desktop.jpg",
+      "sha256": "5d7a78a9a14f19297bee3a4bdb9a13ea0b8e2926d09937f1317e96cbe647d9fa"
+    },
+    {
+      "path": "documentation/previews/import-cancel-warning-mobile.jpg",
+      "sha256": "48f1aca49fe6a94a25fde0881d32d102d4fabfbbc30c481db2cbfc14d54af4c1"
+    },
+    {
+      "path": "documentation/previews/import-footer-desktop.jpg",
+      "sha256": "800ba9b64d7dd32b59e3640e6711b78b50ac69608af1e7482da3bb94544e015e"
+    },
+    {
+      "path": "documentation/previews/large-wallpaper-preview.jpg",
+      "sha256": "749d33b7c4afa5dedde7e881d5a7423693a4753694362f9169a61190184ba588"
+    },
+    {
+      "path": "documentation/previews/little-friends-desktop.png",
+      "sha256": "8ad6b6233eb99a8c094a56e3162eb918914acf95fb98991575914f0af79dab90"
+    },
+    {
+      "path": "documentation/previews/little-friends-mobile.png",
+      "sha256": "086577c33501e72322fcb5f5b28fe311903f852ee0a27c21b692beecefb54016"
+    },
+    {
+      "path": "documentation/previews/mascot-clean-actual.jpg",
+      "sha256": "be1e5e0336b1eb0c1f9854662dffdb1630bc852dfb8e022ff836a2e6c5d5d3f2"
+    },
+    {
+      "path": "documentation/previews/mascot-clean-mobile.jpg",
+      "sha256": "6591ea417e2d2d86d062348c9ad1d271cc5114fce80fc8dd431c309414cdd21f"
+    },
+    {
+      "path": "documentation/previews/mascot-clean-preview.jpg",
+      "sha256": "ac200d6a2b354411b1eca13cd02cfd68589ff4cd3f7eb66c9024654e33c57c32"
+    },
+    {
+      "path": "documentation/previews/mobile-class-builder.jpg",
+      "sha256": "edddc454bbac6d5462f6cd85022afb84ed80a809012e3965eabceeaed1301e72"
+    },
+    {
+      "path": "documentation/previews/mobile-classes-clean.jpg",
+      "sha256": "59936351aece675abe76b1bbee1e5124bfde0f5cb5dbd67d57f12be52cd3c9f3"
+    },
+    {
+      "path": "documentation/previews/mobile-preview-viewer.jpg",
+      "sha256": "0b4b8eb1080a1f7bb2f4736b93bdfa0e33f098c9752c0b4eee37159f6c663136"
+    },
+    {
+      "path": "documentation/previews/mobile-sticky-preview.jpg",
+      "sha256": "51afa853a72d1adb8a6cfe15654d1f31ffcc1d8a0900bd4261c461719b4e352c"
+    },
+    {
+      "path": "documentation/previews/mobile-upload-start.jpg",
+      "sha256": "ec336d2f5a80c9af5ac71ca9bf067391dd39d493b47309ac6546d2b443faf58d"
+    },
+    {
+      "path": "documentation/previews/pattern-customization-desktop.jpg",
+      "sha256": "b468a7891733e3d875a21c84d6e76086eeec6344daa10ef24c3e7cad19ca3dfd"
+    },
+    {
+      "path": "documentation/previews/pattern-preview-mobile.jpg",
+      "sha256": "237f2a40803b7833cd0ab407a97fe486b1c1b4de5006edaa94f75059e54e92a9"
+    },
+    {
+      "path": "documentation/previews/phone-mockup-desktop.png",
+      "sha256": "9bb709b156bc6fe39c4aa1cd369cf7e047bf9e4e0d30949c8cfb35818990cdbf"
+    },
+    {
+      "path": "documentation/previews/phone-mockup-mobile.png",
+      "sha256": "0abc937563e4a0e6dba40bfd643adab4804919bdd96a06af3146e8e4b7568cd6"
+    },
+    {
+      "path": "documentation/previews/template-customization-desktop.jpg",
+      "sha256": "09a504e8ff4a74c2e06e573cf9952c08f9e50e9d93f8dddfdf1353791760d8d3"
+    },
+    {
+      "path": "documentation/previews/template-customization-mobile.jpg",
+      "sha256": "0c7a045ddd3af3f84dba96e4c09e3adc5f6d14314c35bccac6ada443fce3883e"
+    },
+    {
+      "path": "documentation/previews/template-gallery.jpg",
+      "sha256": "c7894e16667e82657ea565885569e11f13039faa1a1292225503ad82df01e791"
+    },
+    {
+      "path": "documentation/previews/template-modal.jpg",
+      "sha256": "cf5c59e6f90f49b282e5903d2875340b7f36590808bf9b91993dcd525c8163ff"
+    },
+    {
+      "path": "documentation/previews/upload-dropzone-desktop.jpg",
+      "sha256": "1462e5de465801d5a4511a6072d2ec9e9b692a71c6af9a5b6043a09cf7a4fa07"
+    },
+    {
+      "path": "output/imagegen/how-it-works/check-study-actual.png",
+      "sha256": "b126ba0c19b5effc04ceb674bc2f4cfbe1b8465e43ccd52a043fb7685b9b2831"
+    },
+    {
+      "path": "output/imagegen/how-it-works/choose-design-actual.png",
+      "sha256": "c1406cd6bee8d90f88dd33b532221b976434ce2c241f03f2ff506c833455120c"
+    },
+    {
+      "path": "output/imagegen/how-it-works/choose-design-previous.webp",
+      "sha256": "05d78d3db9f6e2283cf0f20fc011a074b065e36c3788713d1aa554e311f3b23d"
+    },
+    {
+      "path": "output/imagegen/how-it-works/desktop-final.png",
+      "sha256": "63d09ba5080bb4230ce050a4c4bbdeff05a4c2ce8e50cc1963d38726a5a98493"
+    },
+    {
+      "path": "output/imagegen/how-it-works/diamond-days-actual.png",
+      "sha256": "d97873826e9aee3b49482783a3d540dd66545e1e6ada50e39ad5bd6d9574f016"
+    },
+    {
+      "path": "output/imagegen/how-it-works/download-wallpaper-actual.png",
+      "sha256": "5a3ed04f803bbbc7a638ec2ec6ee6a9534449ad605e74d2d903d89fe99cb12b0"
+    },
+    {
+      "path": "output/imagegen/how-it-works/download-wallpaper-previous.webp",
+      "sha256": "d42531488b7b1ee90dfe7adbdeb0c6972bc9a90455f9d64d9bf31a19c1b465dc"
+    },
+    {
+      "path": "output/imagegen/how-it-works/mascot-bear-actual.png",
+      "sha256": "ed4ce0e37e35adf136cd920d9f24064faaef63c9ea9f958bb73c7ebcc8b762cb"
+    },
+    {
+      "path": "output/imagegen/how-it-works/mobile-final.png",
+      "sha256": "d4cb5e3d5ed86c627ee3b6bc0ff3cc333a674b643f02c7765e71239217be8c92"
+    },
+    {
+      "path": "output/imagegen/how-it-works/notebook-hours-actual.png",
+      "sha256": "b6e7b7c864c2bf842010c28b99ad2669b0a3bc882d30aa7b50543f2d9408126f"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/collections/little-friends-white.png",
+      "sha256": "566eb9a2b67f7152f0f7a657331833348055d74b98bfb8fa4b4b2ef49c660e6b"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/collections/little-friends.png",
+      "sha256": "d9f3595c3c814711052e41ac0ad662a6ce3a29de9aaa742197ec3ec79e502543"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/collections/mascot-white.png",
+      "sha256": "3742494ed82b8fa7f2c76fe09260580693f80287197d2cb6551a24fb4932bb6b"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/collections/mascot.png",
+      "sha256": "933a874090d58fb5284b36e5bc7078a25c3d68569f98ef2de1408a1f3c966b52"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/collections/original-white.png",
+      "sha256": "61e4048b68adf9e3fc296a4242a1a3d1a6b687c4c6fb06efcb47c229fccc89a3"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/collections/original.png",
+      "sha256": "2ae419d20202861c8ebcc987f271976ab2bc106d4f10c0aa537262194fbed40d"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/collections/pattern-white.png",
+      "sha256": "ba9f3bb086d04e10f36fc7beb99672b4c725ec17bd455d4de77f81f4f2d7c34b"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/collections/pattern.png",
+      "sha256": "7962795d982597d2ba5952b0ca69638d760e5fd62f2df360fbf67c5a7883c528"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/hero/hero-balanced.png",
+      "sha256": "7cc149c932c73cb4be7e330a776f815da4a13bd4cd7a03d67e53be4824adb115"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/hero/hero-final.png",
+      "sha256": "6dee8c3bdfe11b26b110010a5a020b5ad57e6dd9f3236bc80348245271ecc16a"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/hero/hero-mobile.png",
+      "sha256": "81fddeead4cf71c4a31208bcf6f8eaa25cff8e38a2fabce33c1a8397c577da7a"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/hero/hero-phones-mobile.png",
+      "sha256": "92ac00a8eddf61220947b42048a50454dde1c63d4508d21e21b1d2887c7df50c"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/hero/hero.png",
+      "sha256": "8716ec4a21d821898383df6e82d8cf7fbe116a3cb7627702331f4af66650c62b"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/tablet/landscape/little-friends.png",
+      "sha256": "b9343ab825bd2dcaecb35cec7f0f2071a81fe008b7e1f1098ade30552a412a54"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/tablet/landscape/little-friends.webp",
+      "sha256": "2724eb52466790c067db5b397cd67842be1974803eb49e0a4e916503766fb68f"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/tablet/landscape/mascot.png",
+      "sha256": "d26dc9738f3ff83f448a259e5307861648bf3aa19d2681e9fef81ba7e9a7ff32"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/tablet/landscape/mascot.webp",
+      "sha256": "a8e23a372078715a2fb5ddba9a122245894a8f7b782e527f12492723c548f90b"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/tablet/landscape/original.png",
+      "sha256": "917804acde63ba0f96a97249e8592fcc0cc2acc94586d5a33f148f42e3ece878"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/tablet/landscape/original.webp",
+      "sha256": "51d9c96e57f39fc76924d67edb1c642fd184e543560e2c3ec1fcd5127c0c4a35"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/tablet/landscape/pattern.png",
+      "sha256": "206f2263a15bc078c553d4edb94b478506828076589ba712b4dbeb230683f302"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/tablet/landscape/pattern.webp",
+      "sha256": "f00f4a71fcdc393dbf443cb5c86e507dd6d46bf862376f60ad3e1d96e50eafff"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/tablet/portrait/little-friends.png",
+      "sha256": "411b8d411fac6f2941a107627dff847946b16e118070fb9031b3a2e5ee1d8379"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/tablet/portrait/little-friends.webp",
+      "sha256": "c712c5775191494cae387af4811e158073e245e3c9c8a2e144e33b4d757f390e"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/tablet/portrait/mascot.png",
+      "sha256": "245a660ac3dc06f855a764e860b22857f92e42a7280b5fb98a90144e71320557"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/tablet/portrait/mascot.webp",
+      "sha256": "70618331d0885112b6dafa71fb6dddb793762645384e1c8cd574a9b93651bdbd"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/tablet/portrait/original.png",
+      "sha256": "a1db2cec00eb38a5f4b0fb5c73d5de7f72c2f11d4dd77007b09ae6a9063ca313"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/tablet/portrait/original.webp",
+      "sha256": "002e8fdbdf6667b65ae26bdf3790b8a32cba56634cf0b9829f5e439d399d86ad"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/tablet/portrait/pattern.png",
+      "sha256": "fed9a38f3c2a8020628cf2d0699e669998a808f4549752bbbb25b9769dc8e8b7"
+    },
+    {
+      "path": "output/imagegen/schedsnap/archive/tablet/portrait/pattern.webp",
+      "sha256": "70b33c3fdfb5b9f2a5cf8441a7b7963e9ea0d7cfabf91b412494eb941207da0e"
+    },
+    {
+      "path": "output/imagegen/schedsnap/brand/logo.png",
+      "sha256": "01916efee2adf24a85cf83f68729ddc0ae02e901ff17c2cbead8177c590636c8"
+    },
+    {
+      "path": "output/imagegen/schedsnap/collections/laptop/little-friends.png",
+      "sha256": "106cca8b4ac15cae7b670ac6282169ebea1d5e67cd0a4229a194351736eb707a"
+    },
+    {
+      "path": "output/imagegen/schedsnap/collections/laptop/mascot.png",
+      "sha256": "6b8d22f7c465f5b4c0c13edeb09f1b81158ea1d8c07a710b2a13a9b1651cef68"
+    },
+    {
+      "path": "output/imagegen/schedsnap/collections/laptop/original.png",
+      "sha256": "d3303423c5e075ce32e4f613345e19b2b58b092babe96f1581b24630bc3a53f2"
+    },
+    {
+      "path": "output/imagegen/schedsnap/collections/laptop/pattern.png",
+      "sha256": "879bdbbfe835fb7e27dddc035dd6326f86629ba9bf300a7770d7b300724f0b00"
+    },
+    {
+      "path": "output/imagegen/schedsnap/collections/little-friends-mobile.png",
+      "sha256": "25f652f4f3d382dfbdddd1afe990ef6bf230ce8076242af7e874a5106552542e"
+    },
+    {
+      "path": "output/imagegen/schedsnap/collections/mascot-mobile.png",
+      "sha256": "0bd18b869db62594c2586246577a012e474053e41aafff305cec7a1279c4c5b2"
+    },
+    {
+      "path": "output/imagegen/schedsnap/collections/original-mobile.png",
+      "sha256": "5038484fff2c7e18346637261b711dd24df09acfa68cefef0005e2f51e25aa8b"
+    },
+    {
+      "path": "output/imagegen/schedsnap/collections/pattern-mobile.png",
+      "sha256": "5301cc3ba748490ac130c1f666f87f2fd83c171d6842d98a2bb1dc0b84c5d445"
+    },
+    {
+      "path": "output/imagegen/schedsnap/collections/tablet/little-friends.png",
+      "sha256": "97dcfcc70caf314728231b896c4eceec149e5cfe1e7a8c5e815875b7d33535c9"
+    },
+    {
+      "path": "output/imagegen/schedsnap/collections/tablet/mascot.png",
+      "sha256": "f73d5ba8c1f2229488b33357d3cb3d1a2e0326345a9229ac4e584827c418e239"
+    },
+    {
+      "path": "output/imagegen/schedsnap/collections/tablet/original.png",
+      "sha256": "9c1074903e60d5872175c30e105a210ad3b657471b5556b7a68cf2fd3b24933b"
+    },
+    {
+      "path": "output/imagegen/schedsnap/collections/tablet/pattern.png",
+      "sha256": "5d26f894d3bde9c05367ffd7e6bbdbb76d5104e2b0af9040137a04b2310108d7"
+    },
+    {
+      "path": "output/imagegen/schedsnap/hero/hero-ambient.png",
+      "sha256": "38f6725ef11b419237e7c7fc178d01caeeab5d8ed86e2fd171987603d1add245"
+    },
+    {
+      "path": "output/imagegen/schedsnap/hero/hero-phones.png",
+      "sha256": "868d01ca8cac95b30abb01a7b583758a491a9858d4c17f1c0c9129f50675b44f"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/01-solid-pastels/characters/mint-jellyfish.png",
+      "sha256": "00a1456ddfda854053939958d8e5a03c54ac6354bfc0b06801813a0e837423f1"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/01-solid-pastels/characters/peach-mushroom.png",
+      "sha256": "1322d3e7ea8f3df44df036ce394391f51ce0b1d565d69a09c4773e4a815a3c67"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/01-solid-pastels/landscape/backgrounds/mint-jellyfish.png",
+      "sha256": "48f15853a81e5b57ac9f87cb98c1a9576f963d7960484179966a62fa5ff8714b"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/01-solid-pastels/landscape/backgrounds/peach-mushroom.png",
+      "sha256": "c27cd8d856c7d25f9f843525b69d1da59e5035e84ea2b1fbdc66fd9ff69d9c8d"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/01-solid-pastels/landscape/wallpapers/mint-jellyfish.png",
+      "sha256": "d4d5935a350199de06bfb8fbba175583049c0ae35c54100804fdb76e7a6f4ccf"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/01-solid-pastels/landscape/wallpapers/peach-mushroom.png",
+      "sha256": "d3b26644ffb85de89494e113174b59bf294634755a026f8331e0d370a69a736b"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/01-solid-pastels/portrait/backgrounds/mint-jellyfish.png",
+      "sha256": "22f386508107b88dfee597d46e9392440652ade7d56fa5c5b02b0385d8ca93f6"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/01-solid-pastels/portrait/backgrounds/peach-mushroom.png",
+      "sha256": "f146a872f347dbf952871729cf97185095e5f5dbc1e81442239ad5206490afc1"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/01-solid-pastels/portrait/wallpapers/mint-jellyfish.png",
+      "sha256": "03610b1611a5e07d8d8150c749d2534174f8b3a6c1e9fbf20fd2bb28d47e4d58"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/01-solid-pastels/portrait/wallpapers/peach-mushroom.png",
+      "sha256": "8eebe9172d31e5bb8c5801059225fa51f6f6aad436be338f3deee09b6903b9f9"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/02-soft-gradients/characters/blue-moon.png",
+      "sha256": "b09983454fe18d2e7b75b6b89c7cf798adad0240fc46604b948d3e119d7f6b3d"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/02-soft-gradients/characters/lavender-cloud.png",
+      "sha256": "ed95f64f59638d5a202b015491c3fcca7dd5ace664821de958c9e33e0111f31f"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/02-soft-gradients/landscape/backgrounds/blue-moon.png",
+      "sha256": "43df61f5b069d409ede97ae5f12c3624f25eeb4d8f217b3df2447d2d7a778e78"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/02-soft-gradients/landscape/backgrounds/lavender-cloud.png",
+      "sha256": "22e3e23523e2adedc7fb67ecd8c1a47e9e2c434b10854f41fdf488f0f2500ac3"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/02-soft-gradients/landscape/wallpapers/blue-moon.png",
+      "sha256": "cb2ec686737cff298475e0ccea8375159aa464403e627c3d88350825e480d2d5"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/02-soft-gradients/landscape/wallpapers/lavender-cloud.png",
+      "sha256": "ae3d5e9883f4f5fe476d3f615d2059c92533f71783e2fe572e8e589d4097ab43"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/02-soft-gradients/portrait/backgrounds/blue-moon.png",
+      "sha256": "f94ec11a3f6290a310054b79cc109ec29ffbe71591a5379dad36ed8a766fdfdd"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/02-soft-gradients/portrait/backgrounds/lavender-cloud.png",
+      "sha256": "028d81757b6ca12165ef091fa44ecbe070c03c237667eda6da9a8237f778fbe1"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/02-soft-gradients/portrait/wallpapers/blue-moon.png",
+      "sha256": "37cd7389f3969ad54a13670e041121fc5d3a1142e99fc9f409250e5885b861a1"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/02-soft-gradients/portrait/wallpapers/lavender-cloud.png",
+      "sha256": "acff6c3504b9675535bbae4c61bf45c41969d4f2eefbf16a0aee27a50c04a781"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/03-quiet-patterns/characters/butter-dumpling.png",
+      "sha256": "27a378937e44cf548bf832428aba43751f83db5ab9a95563c9d65d94381dacef"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/03-quiet-patterns/characters/peach-buddy.png",
+      "sha256": "a3d1ce0bd5a8160638a07ca2e28542e4459f487a9ea4b88930b66cb7cee996e9"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/03-quiet-patterns/landscape/backgrounds/butter-dumpling.png",
+      "sha256": "5fe6e95e2b228394a5ade288eec57bedc8a377b761b65d7eabf867b0d1cc9f7b"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/03-quiet-patterns/landscape/backgrounds/peach-buddy.png",
+      "sha256": "7686d4b77dce7bf73382ebbb8144b2fcbc67736cf26747c1ff199f080f0ed868"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/03-quiet-patterns/landscape/wallpapers/butter-dumpling.png",
+      "sha256": "4901378f7ef6ae2877dee234d830e89b718367a8c8d5f7b8407463fa1545209c"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/03-quiet-patterns/landscape/wallpapers/peach-buddy.png",
+      "sha256": "4c5dc70857ba18222de3015f902bcbee2e334b6e184f62ef0c3da3ab7ddf2a5b"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/03-quiet-patterns/portrait/backgrounds/butter-dumpling.png",
+      "sha256": "81a282e53ffe7af3963a219390ac99201812ebc47f79b6c322aa7e7c50775be6"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/03-quiet-patterns/portrait/backgrounds/peach-buddy.png",
+      "sha256": "56ec6d27a26204af966ed348cde96c16341d771cf3d60093efee96aa2e36aaba"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/03-quiet-patterns/portrait/wallpapers/butter-dumpling.png",
+      "sha256": "a06d82597c07029bf97deca348de8b147206ef4f6f008b779882fd0ad47fc612"
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/03-quiet-patterns/portrait/wallpapers/peach-buddy.png",
+      "sha256": "2dfbb5484d1ca5a4c1c624c52e8cdb119e7f335226b7b40805d4b5091b788435"
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/00-approved-samples/axolotl-mint.png",
+      "sha256": "8d450ad27b5c63cdd120ca8a8bf4d16338a4ca74e5ddae0e191111f2da644344"
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/00-approved-samples/ghost-twilight.png",
+      "sha256": "ea19fbe0bb29de8b5b826fb38f631bda4f62ed0960d0dcd964c0369c316a3b40"
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/00-approved-samples/sprout-butter-gingham.png",
+      "sha256": "9b6c35161c1b4315233fec4cc630fee95091303bf7e33aece5747c99cc342cf3"
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/01-solid-pastels/backgrounds/mint-jellyfish.png",
+      "sha256": "b095aa82cd79be79145f0716ca2f5deffc101e05f869286e50e51420c4d4f8fd"
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/01-solid-pastels/backgrounds/peach-mushroom.png",
+      "sha256": "95ce512354b761292ea55629fb8b4738fabddc15e67b577dc2b46af8332fdbd9"
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/01-solid-pastels/characters/mint-jellyfish.png",
+      "sha256": "00a1456ddfda854053939958d8e5a03c54ac6354bfc0b06801813a0e837423f1"
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/01-solid-pastels/characters/peach-mushroom.png",
+      "sha256": "1322d3e7ea8f3df44df036ce394391f51ce0b1d565d69a09c4773e4a815a3c67"
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/01-solid-pastels/wallpapers/mint-jellyfish.png",
+      "sha256": "c573df1309afa3c4e302690499f34aa5d7bca9ae21080118569b46ce673ce838"
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/01-solid-pastels/wallpapers/peach-mushroom.png",
+      "sha256": "995078f485939fccc26333f2c8e1bfd3e2db56a414cbc6e1aac68bd182204e5a"
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/02-soft-gradients/backgrounds/blue-moon.png",
+      "sha256": "eb7b866d3308c01ec9dda74837caaf64feae4a7cf6ac7c210ea291fd21226122"
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/02-soft-gradients/backgrounds/lavender-cloud.png",
+      "sha256": "5201ef270ef2f8b81368b7fb9551d8f12a427e769db0ff0e5934486570767c56"
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/02-soft-gradients/characters/blue-moon.png",
+      "sha256": "b09983454fe18d2e7b75b6b89c7cf798adad0240fc46604b948d3e119d7f6b3d"
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/02-soft-gradients/characters/lavender-cloud.png",
+      "sha256": "ed95f64f59638d5a202b015491c3fcca7dd5ace664821de958c9e33e0111f31f"
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/02-soft-gradients/wallpapers/blue-moon.png",
+      "sha256": "25f5cdd057be1d9cfc8d2fc28fad13deb7933afd1daf2c6a0e3d0dcdd894eea0"
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/02-soft-gradients/wallpapers/lavender-cloud.png",
+      "sha256": "b55f2b9849fd796df80cc66c842ffd32827fddb3187b7ebd798de636cad72d0d"
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/03-quiet-patterns/backgrounds/butter-dumpling.png",
+      "sha256": "556b538e0594ebc49203411638b9dde3878e18b840990008a71acc10fd49723f"
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/03-quiet-patterns/backgrounds/peach-buddy.png",
+      "sha256": "b05f907e049ef626d905fef1aa7aaa931bb0c081246a1cabc968eb7c43f4ca90"
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/03-quiet-patterns/characters/butter-dumpling.png",
+      "sha256": "27a378937e44cf548bf832428aba43751f83db5ab9a95563c9d65d94381dacef"
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/03-quiet-patterns/characters/peach-buddy.png",
+      "sha256": "a3d1ce0bd5a8160638a07ca2e28542e4459f487a9ea4b88930b66cb7cee996e9"
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/03-quiet-patterns/wallpapers/butter-dumpling.png",
+      "sha256": "db8e55576e24769002d26a0eb224803935bc27000b5e326a19056d2fef4f38b6"
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/03-quiet-patterns/wallpapers/peach-buddy.png",
+      "sha256": "8021f307e5286d416b1f7ca852847bb03b6fb0e40b793cfe38a8271ca56d585b"
+    },
+    {
+      "path": "output/imagegen/wallpaper-samples/a-axolotl-mint.png",
+      "sha256": "8d450ad27b5c63cdd120ca8a8bf4d16338a4ca74e5ddae0e191111f2da644344"
+    },
+    {
+      "path": "output/imagegen/wallpaper-samples/b-ghost-twilight.png",
+      "sha256": "ea19fbe0bb29de8b5b826fb38f631bda4f62ed0960d0dcd964c0369c316a3b40"
+    },
+    {
+      "path": "output/imagegen/wallpaper-samples/c-sprout-butter-gingham.png",
+      "sha256": "9b6c35161c1b4315233fec4cc630fee95091303bf7e33aece5747c99cc342cf3"
+    },
+    {
+      "path": "public/brand/schedsnap-mark.webp",
+      "sha256": "0b11016e1483edbcd778cb22096ce3e2aec047fe8984002bf3392c410bce9d8b"
+    },
+    {
+      "path": "public/images/archive/collections/little-friends-white.webp",
+      "sha256": "3eede99e13072195c73d5f17f5c14d60e5d432aa21988c1fcd071e4b99dfbfe8"
+    },
+    {
+      "path": "public/images/archive/collections/little-friends.webp",
+      "sha256": "3eede99e13072195c73d5f17f5c14d60e5d432aa21988c1fcd071e4b99dfbfe8"
+    },
+    {
+      "path": "public/images/archive/collections/mascot-white.webp",
+      "sha256": "62f5c0e71919eb763603cb87e967595b60004110f9d3e388cf4ce2af364e7bdf"
+    },
+    {
+      "path": "public/images/archive/collections/mascot.webp",
+      "sha256": "62f5c0e71919eb763603cb87e967595b60004110f9d3e388cf4ce2af364e7bdf"
+    },
+    {
+      "path": "public/images/archive/collections/original-white.webp",
+      "sha256": "950546d778ac307d3a208ff02bff492f438fb81856a70afee8453ac074973e58"
+    },
+    {
+      "path": "public/images/archive/collections/original.webp",
+      "sha256": "950546d778ac307d3a208ff02bff492f438fb81856a70afee8453ac074973e58"
+    },
+    {
+      "path": "public/images/archive/collections/pattern-white.webp",
+      "sha256": "45ffe8c949beac1520c9f03b10b026f61dd9e1f5706a311f7116b32e2cec2ead"
+    },
+    {
+      "path": "public/images/archive/collections/pattern.webp",
+      "sha256": "45ffe8c949beac1520c9f03b10b026f61dd9e1f5706a311f7116b32e2cec2ead"
+    },
+    {
+      "path": "public/images/archive/landing/hero-schedsnap-balanced.webp",
+      "sha256": "02955c92b6e44a03c70d07a78612082942fa8656cf99e9508dd15464d281e8a2"
+    },
+    {
+      "path": "public/images/archive/landing/hero-schedsnap-mobile.webp",
+      "sha256": "3f93c2e04735c8427926fe91edbcfa63be9a5e10801849e318da1be436af3448"
+    },
+    {
+      "path": "public/images/archive/landing/hero-schedsnap.webp",
+      "sha256": "4404de75c097be1cb887afce33b68799d60187c4c04f607a7821a24f8d41ba77"
+    },
+    {
+      "path": "public/images/archive/landing/schedule-phone-preview.webp",
+      "sha256": "294bd820d9f7c0b9665f8d9d9ad5bf5cfd0eb01587f5dea295971cfc5671a28f"
+    },
+    {
+      "path": "public/images/archive/maker/maker-bear-base.webp",
+      "sha256": "2f606ca00cd702bfdd7ef26dc8ca1a94928c0aab13ef3e5461d3feee85e0bd14"
+    },
+    {
+      "path": "public/images/archive/maker/maker-capybara-base.webp",
+      "sha256": "bb47969bbaa7df75f6b351e6bbfa35241f2a9946cd2c4150ec90c30c9ca6e52d"
+    },
+    {
+      "path": "public/images/archive/unitoolbox/hero-study-desk.png",
+      "sha256": "655270ac72d313e17fbd34fe3b8cdd61928ded9a917f1e5da2e1fc5da39c8e8a"
+    },
+    {
+      "path": "public/images/archive/unitoolbox/toolbox-pattern.svg",
+      "sha256": "44969e294ddf83072e2516085e2ea13980641d3edd72977cf86b5e2a6b89baca"
+    },
+    {
+      "path": "public/images/collections/laptop/little-friends.webp",
+      "sha256": "9244a6f0948b9109cecbf6bb1a793f62244891e4f329a9fa5c63ed442ca8b6a1"
+    },
+    {
+      "path": "public/images/collections/laptop/mascot.webp",
+      "sha256": "ebe05131e24394b181a4bf277d2db3724e01c6daeb5ee8fdf051d3004829f5e4"
+    },
+    {
+      "path": "public/images/collections/laptop/original.webp",
+      "sha256": "e0c6a0368f8cba4a0f75778620fc14e49debc507008db68fc58384803e3e6eaf"
+    },
+    {
+      "path": "public/images/collections/laptop/pattern.webp",
+      "sha256": "321b78839989bb1bb568f00b82925a743e414ea898556dd569d1da03fab348a3"
+    },
+    {
+      "path": "public/images/collections/little-friends-mobile.webp",
+      "sha256": "0dcb4a3877db241de549f9674d707c353801364a42cf5c5f292a16189ddefa08"
+    },
+    {
+      "path": "public/images/collections/mascot-mobile.webp",
+      "sha256": "93554b3db5b0594b0e356fb08b34b0e9aa76ed53bc1fc33e2169d9e55690f4e7"
+    },
+    {
+      "path": "public/images/collections/original-mobile.webp",
+      "sha256": "062179da14e6404a07d4c0d6680bc73291b80ce66e7d90d4cafa75aab839bc34"
+    },
+    {
+      "path": "public/images/collections/pattern-mobile.webp",
+      "sha256": "ed8312f07d387478f3588ac559b90f54f52482ce68c9623a9868f328683d4e3e"
+    },
+    {
+      "path": "public/images/collections/tablet/little-friends.webp",
+      "sha256": "43092169d054b2b033bfe16b0790a2793db0b3982f96e2dc088171ae58e584fa"
+    },
+    {
+      "path": "public/images/collections/tablet/mascot.webp",
+      "sha256": "0a74684a59ddd50670d5c52e6d71750b20b67e830554a4db05a6ae8b93d5ed5e"
+    },
+    {
+      "path": "public/images/collections/tablet/original.webp",
+      "sha256": "3e2a53a28d0780227dca05f48087af4812d65f2f241b0a9c42eae5450f70c54c"
+    },
+    {
+      "path": "public/images/collections/tablet/pattern.webp",
+      "sha256": "a651a6aac787c36ce7952429994a5fd24fcc41455a47327f6a68f0d547a70795"
+    },
+    {
+      "path": "public/images/hero/hero-ambient.webp",
+      "sha256": "de1a9f58e6cbb98a369b5940f4f3829a1d506f55eab2e7e03ecd99459beb3628"
+    },
+    {
+      "path": "public/images/hero/hero-phones.webp",
+      "sha256": "8201b7f8ee24e48d307a636b7370f513999e584fe7ae8629bf04d264309a61d1"
+    },
+    {
+      "path": "public/images/how-it-works/add-classes.webp",
+      "sha256": "2d6605a1d194f2c9e756728fed4bcc0eae549d0be397316f6ad9682ffe6cc8ae"
+    },
+    {
+      "path": "public/images/how-it-works/choose-design.webp",
+      "sha256": "7fa9dcdc6b08915c4bc7f8fc485f746ba881572e064ad97b79bc31ff4c481500"
+    },
+    {
+      "path": "public/images/how-it-works/download-wallpaper.webp",
+      "sha256": "970bd45cbbaae8e0acdd2f2ae8a5c3cd06462a31ebaef5aa873b59d73e61ffb6"
+    },
+    {
+      "path": "public/images/maker/maker-capybara-static.png",
+      "sha256": "fce892564a474af534d814ac47848e89d66bbb66f3037b6d4ed36a95b6b5c4f0"
+    },
+    {
+      "path": "public/wallpapers/blue-glass.png",
+      "sha256": "7b43f954048efcb4f331b3a8a55bcf9c4c561373a1c4644e56af2bcfc0e6c446"
+    },
+    {
+      "path": "public/wallpapers/little-friends/bunny-cheer.png",
+      "sha256": "7f0139e6bc4a1db84beab77c599807f69ae16e2aaef3ae710d553b0b5888d512"
+    },
+    {
+      "path": "public/wallpapers/little-friends/bunny-hooray.png",
+      "sha256": "4f4f6b61012e088b245356bc9c21bd71d7db4c756c56bc5e6dd4c2059aa33b6a"
+    },
+    {
+      "path": "public/wallpapers/little-friends/bunny-sleep.png",
+      "sha256": "40c01692127bac878d8360adff32edf909c482e1b1a92a7506de63726b7fd676"
+    },
+    {
+      "path": "public/wallpapers/little-friends/bunny-smile.png",
+      "sha256": "9746331c103eb2e748d9e40421859920d636c99e6a9c793949857cdef9c69b36"
+    },
+    {
+      "path": "public/wallpapers/little-friends/bunny-surprise.png",
+      "sha256": "713d3b6a3c4326f92114bc98ad9db97374017bea8ba6fcc2f269fe0b13e86faf"
+    },
+    {
+      "path": "public/wallpapers/little-friends/bunny-wave.png",
+      "sha256": "a93921e5a9110b1d3a31d12d62048395fa50733f479c44b92971ff9e406c651d"
+    },
+    {
+      "path": "public/wallpapers/little-friends/kitten-excited.png",
+      "sha256": "868c21f453996aec41ac06a7a7b22ab337a77585d66490805f1d4ada5ba4034f"
+    },
+    {
+      "path": "public/wallpapers/little-friends/kitten-laugh.png",
+      "sha256": "1f7725567e172392d98bf0428fd3746479e9a01dc5a146ed8a6256bcf1838042"
+    },
+    {
+      "path": "public/wallpapers/little-friends/kitten-peek.png",
+      "sha256": "1b740d47b454acdefd01809cd41090cd324a31e6ff4479e23da7b665819c3f64"
+    },
+    {
+      "path": "public/wallpapers/little-friends/kitten-shy.png",
+      "sha256": "53eccf3c74b682ff4314e59f025c63c5c1e34d8d46a3ef348ccd51f69a5c6785"
+    },
+    {
+      "path": "public/wallpapers/little-friends/kitten-snooze.png",
+      "sha256": "3768f0d7bc8e3c775ae751eafc8f54949e14e39203cbf062f4090e3388fc7e94"
+    },
+    {
+      "path": "public/wallpapers/little-friends/white-bashful.png",
+      "sha256": "f0a11ab7aebc836612f878b8ca2a11edab8ff2fed9470b5a5fb07c07e6ab4cda"
+    },
+    {
+      "path": "public/wallpapers/little-friends/white-delight.png",
+      "sha256": "e34d5cc1d428e939ed06e01a3fe1cfd5f04ad7905b71ab5eaf0c01bd796231ae"
+    },
+    {
+      "path": "public/wallpapers/little-friends/white-determined.png",
+      "sha256": "58a784fc36854012ee5525c30a8b85ac80f7c0ccf2bb3f29cd011571adeff12e"
+    },
+    {
+      "path": "public/wallpapers/little-friends/white-hello.png",
+      "sha256": "53cce3249f7ed00aff6fa1a3e71eb79452c48cfa7d01a1a68b71690605abff3b"
+    },
+    {
+      "path": "public/wallpapers/little-friends/white-paws.png",
+      "sha256": "9d3a639adffa8770c6295b6938e834a35b06e2d2b3c49ad25ba8cd94436e26ac"
+    },
+    {
+      "path": "public/wallpapers/little-friends/white-peace.png",
+      "sha256": "0fe167119b5773ab4a041cbc4c413144b5fc8a21eb52ed46b82e13a8efd9a22a"
+    },
+    {
+      "path": "public/wallpapers/little-friends/white-shy.png",
+      "sha256": "5cb04b3170f59464a2ced0f93b4448d8d9ac077840a5f426f842de3e2b780033"
+    },
+    {
+      "path": "public/wallpapers/little-friends/white-sleep.png",
+      "sha256": "a8ea1da71045a6bb3f4e4833892ec00d3a7ecc0adc6da4b25d56e2e6a97307d2"
+    },
+    {
+      "path": "public/wallpapers/little-friends/white-wave.png",
+      "sha256": "2314374292f20322d0a701fd29b3150cd43df9f2615e9ce133dacad9c56b540d"
+    },
+    {
+      "path": "public/wallpapers/mascots/bear.png",
+      "sha256": "0e7877ab4362b824294e186b4b92bb4cc91812f37d6d3224dd899acebc0abd1e"
+    },
+    {
+      "path": "public/wallpapers/mascots/bunny.png",
+      "sha256": "fa0556aefabea023fd7193e679b313d8ceefdd8b062685657b058b4f845ed339"
+    },
+    {
+      "path": "public/wallpapers/mascots/capybara.png",
+      "sha256": "666f51ef7abdf1c3a03138c10528a4915bd44d358d9604cf866eaa1d8a4f35d8"
+    },
+    {
+      "path": "public/wallpapers/mascots/cat.png",
+      "sha256": "db551bee370c2a6ba2e2b77238cfac3d1a70b2823e8887750b7bb508a0b58203"
+    },
+    {
+      "path": "public/wallpapers/mascots/chick.png",
+      "sha256": "2fff6318786d84b4a60376269cd7979aca8e83992d1423002c45e5df4bafca68"
+    },
+    {
+      "path": "public/wallpapers/mascots/dog.png",
+      "sha256": "e92954f3ee5e68ca5e913ffd828e1994b390e3deb8ae58816956de5ccd42e53d"
+    },
+    {
+      "path": "public/wallpapers/mascots/duck.png",
+      "sha256": "086531a7b21cecb906e2666eec3bb89c9027373e4a2a86b278fadda6665d7ece"
+    },
+    {
+      "path": "public/wallpapers/mascots/fox.png",
+      "sha256": "3f154f486a091d844bbc661c7f8a66e9689f7303b2368eb9f6f5308683e701d0"
+    },
+    {
+      "path": "public/wallpapers/mascots/frog.png",
+      "sha256": "13b72930b25e2103d52baf1dbfd6f2dcf0dccca33311d579066bb20aa010091d"
+    },
+    {
+      "path": "public/wallpapers/mascots/hamster.png",
+      "sha256": "854f8f69935c9ce9b4b55c83ab6a38024ff2d732d0eaec5c7919e1ee784277e9"
+    },
+    {
+      "path": "public/wallpapers/mascots/koala.png",
+      "sha256": "44b28d343285d69e9d0b3460f301b91a3622e1bc23ddaedddb96a401cba8dcfe"
+    },
+    {
+      "path": "public/wallpapers/mascots/lion.png",
+      "sha256": "c86e0dd6fcc6c1f93eed9064da94d706ef456bdd4d925d677df327e58c111167"
+    },
+    {
+      "path": "public/wallpapers/mascots/otter.png",
+      "sha256": "a43fcab3bc6a89cf7c959c4b429da828cf00fa6c9182c15e7eed9fb18d1e0cd6"
+    },
+    {
+      "path": "public/wallpapers/mascots/owl.png",
+      "sha256": "3984b363e56a3527d92884b142aef44b87d9b076a83cbd6d2303122af0bb85ce"
+    },
+    {
+      "path": "public/wallpapers/mascots/panda.png",
+      "sha256": "c520f61bed029e4871a8bacedde295004d36c4a1216234536232235b137ba96d"
+    },
+    {
+      "path": "public/wallpapers/mascots/penguin.png",
+      "sha256": "61eec410bd8dae4f3cf82e3b4bb3d0809c659745259df29617f43b5161e7982e"
+    },
+    {
+      "path": "public/wallpapers/mascots/seal.png",
+      "sha256": "ec498fa042821408773522b420797e2a0882ddcf8de4892b5934558e3ea15e34"
+    },
+    {
+      "path": "public/wallpapers/mascots/tiger.png",
+      "sha256": "841c46e0cf097632b659e203fbe02835c49bba7c40c8ff59352f847c5cb56bae"
+    },
+    {
+      "path": "public/wallpapers/mascots/turtle.png",
+      "sha256": "a7302376e093b4b171cb3abcc43af91f77f5c6d2f32c956414f64df21bdade89"
+    },
+    {
+      "path": "public/wallpapers/mascots/whale.png",
+      "sha256": "7fd10dd8e62c33a5b1795fe27dbb06a1098cc1efc991b9f91af5cdf73f77638a"
+    },
+    {
+      "path": "public/wallpapers/pink-check.png",
+      "sha256": "e9b61357a46af6f5e43c7a8b957e6c6dc65d9a9a836312c73d36db9d3fd77c44"
+    },
+    {
+      "path": "public/wallpapers/window-light.png",
+      "sha256": "941a62a1b089e7f806872c31e793b5268ccf68d00a855e682f5d4932dc69a347"
+    },
+    {
+      "path": "tests/fixtures/sample-registration.png",
+      "sha256": "ece2962de38d087a246f430d0d3e5ef35aabbd5d5d35650c73182e2b8fb7b75f"
+    }
+  ],
+  "moves": {
+    "output/imagegen/schedsnap/hero-ambient.png": "output/imagegen/schedsnap/hero/hero-ambient.png",
+    "output/imagegen/schedsnap/hero-balanced.png": "output/imagegen/schedsnap/archive/hero/hero-balanced.png",
+    "output/imagegen/schedsnap/hero-final.png": "output/imagegen/schedsnap/archive/hero/hero-final.png",
+    "output/imagegen/schedsnap/hero-mobile.png": "output/imagegen/schedsnap/archive/hero/hero-mobile.png",
+    "output/imagegen/schedsnap/hero-phones-mobile.png": "output/imagegen/schedsnap/archive/hero/hero-phones-mobile.png",
+    "output/imagegen/schedsnap/hero-phones.png": "output/imagegen/schedsnap/hero/hero-phones.png",
+    "output/imagegen/schedsnap/hero.png": "output/imagegen/schedsnap/archive/hero/hero.png",
+    "output/imagegen/schedsnap/little-friends-mobile.png": "output/imagegen/schedsnap/collections/little-friends-mobile.png",
+    "output/imagegen/schedsnap/little-friends-white.png": "output/imagegen/schedsnap/archive/collections/little-friends-white.png",
+    "output/imagegen/schedsnap/little-friends.png": "output/imagegen/schedsnap/archive/collections/little-friends.png",
+    "output/imagegen/schedsnap/logo.png": "output/imagegen/schedsnap/brand/logo.png",
+    "output/imagegen/schedsnap/mascot-mobile.png": "output/imagegen/schedsnap/collections/mascot-mobile.png",
+    "output/imagegen/schedsnap/mascot-white.png": "output/imagegen/schedsnap/archive/collections/mascot-white.png",
+    "output/imagegen/schedsnap/mascot.png": "output/imagegen/schedsnap/archive/collections/mascot.png",
+    "output/imagegen/schedsnap/original-mobile.png": "output/imagegen/schedsnap/collections/original-mobile.png",
+    "output/imagegen/schedsnap/original-white.png": "output/imagegen/schedsnap/archive/collections/original-white.png",
+    "output/imagegen/schedsnap/original.png": "output/imagegen/schedsnap/archive/collections/original.png",
+    "output/imagegen/schedsnap/pattern-mobile.png": "output/imagegen/schedsnap/collections/pattern-mobile.png",
+    "output/imagegen/schedsnap/pattern-white.png": "output/imagegen/schedsnap/archive/collections/pattern-white.png",
+    "output/imagegen/schedsnap/pattern.png": "output/imagegen/schedsnap/archive/collections/pattern.png",
+    "public/art/hero-study-desk.png": "public/images/archive/unitoolbox/hero-study-desk.png",
+    "public/art/toolbox-pattern.svg": "public/images/archive/unitoolbox/toolbox-pattern.svg",
+    "public/images/collections/little-friends-white.webp": "public/images/archive/collections/little-friends-white.webp",
+    "public/images/collections/little-friends.webp": "public/images/archive/collections/little-friends.webp",
+    "public/images/collections/mascot-white.webp": "public/images/archive/collections/mascot-white.webp",
+    "public/images/collections/mascot.webp": "public/images/archive/collections/mascot.webp",
+    "public/images/collections/original-white.webp": "public/images/archive/collections/original-white.webp",
+    "public/images/collections/original.webp": "public/images/archive/collections/original.webp",
+    "public/images/collections/pattern-white.webp": "public/images/archive/collections/pattern-white.webp",
+    "public/images/collections/pattern.webp": "public/images/archive/collections/pattern.webp",
+    "public/images/hero-ambient.webp": "public/images/hero/hero-ambient.webp",
+    "public/images/hero-phones.webp": "public/images/hero/hero-phones.webp",
+    "public/images/hero-schedsnap-balanced.webp": "public/images/archive/landing/hero-schedsnap-balanced.webp",
+    "public/images/hero-schedsnap-mobile.webp": "public/images/archive/landing/hero-schedsnap-mobile.webp",
+    "public/images/hero-schedsnap.webp": "public/images/archive/landing/hero-schedsnap.webp",
+    "public/images/maker-bear-base.webp": "public/images/archive/maker/maker-bear-base.webp",
+    "public/images/maker-capybara-base.webp": "public/images/archive/maker/maker-capybara-base.webp",
+    "public/images/maker-capybara-static.png": "public/images/maker/maker-capybara-static.png",
+    "public/images/schedule-phone-preview.webp": "public/images/archive/landing/schedule-phone-preview.webp"
+  }
+}
