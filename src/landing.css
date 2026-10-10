@@ -130,7 +130,7 @@
   .showcase-image-previous { grid-column: 1; }
   .showcase-image-next { grid-column: 3; }
   .collection-copy p { margin-inline: auto; text-wrap: balance; }
-  .collection-action { width: min(100%, 320px); min-height: 44px; }
+  .collection-action { width: auto; min-width: 152px; max-width: 100%; padding-inline: 24px; min-height: 44px; }
 }
 @media (max-height: 600px) and (min-width: 560px) and (max-width: 1100px) and (orientation: landscape) {
   .hero-content { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); align-items: center; gap: 20px; }
@@ -188,4 +188,19 @@
 }
 @media (max-width: 640px) {
   .device-gallery-grid { grid-template-columns: minmax(0, 1fr); margin-top: 28px; }
+}
+
+
+/* Larger screens use the same image-side arrows and indicators as mobile. */
+@media (min-width: 1101px), (min-width: 801px) and (orientation: landscape) {
+  .device-showcase .collection-showcase { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); column-gap: clamp(24px, 4vw, 56px); row-gap: 12px; }
+  .device-showcase-tablet .collection-showcase { grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); }
+  .device-showcase .collection-showcase .collection-image { display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; align-items: center; gap: 8px; width: min(100%, 664px); justify-self: center; }
+  .device-showcase .collection-image picture { grid-column: 2; grid-row: 1; width: 100%; max-width: 560px; aspect-ratio: 4 / 3; max-height: none; }
+  .device-showcase .showcase-image-arrow { display: inline-flex; grid-row: 1; }
+  .device-showcase .showcase-image-previous { grid-column: 1; }
+  .device-showcase .showcase-image-next { grid-column: 3; }
+  .device-showcase .showcase-desktop-arrow { display: none; }
+  .device-showcase .showcase-controls { grid-column: 1; grid-row: 2; }
+  .device-showcase-tablet .showcase-controls { grid-column: 2; }
 }

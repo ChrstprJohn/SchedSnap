@@ -25,4 +25,4 @@ Keep images grouped by their role. Preserve original generated files and prompt 
 
 Prompt manifests remain at their existing locations, with image paths updated. Archive folders retain drafts for provenance and comparison. Generated dist/ files and dependency images are build products and are not manually organized.
 
-[Image inventory and SHA-256 hashes](IMAGE_ASSETS.json) includes all 357 project images and the 39 old-to-new paths. The original image assets were preserved; later additions are included in the inventory. Update code, documentation, and prompt manifests together when moving an asset.
+[Image inventory and SHA-256 hashes](IMAGE_ASSETS.json) includes all 389 project images and the 39 old-to-new paths. The original image assets were preserved; later additions are included in the inventory. Update code, documentation, and prompt manifests together when moving an asset.

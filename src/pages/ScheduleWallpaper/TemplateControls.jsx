@@ -1,3 +1,5 @@
+import { particleStyles } from '../../utils/wallpaperParticles.js';
+import { schedulePosition } from '../../utils/canvasHelpers.js';
 import { ChevronDown } from 'lucide-react';
 import { colorInputValue, wallpaperFonts } from '../../utils/wallpaperTheme.js';
 
@@ -30,11 +32,23 @@ export default function TemplateControls({ template, onChange, onReset }) {
   return <aside aria-label="Template appearance" className="template-settings">
     <fieldset className="appearance-group">
       <legend>Wallpaper</legend>
+      {template.device && template.device !== 'mobile' && (template.device !== 'laptop' || template.layout === 'mascot') && <div className="appearance-row">
+        <label className="appearance-label" htmlFor="schedule-position">Schedule position</label>
+        <div className="field-select appearance-select"><select id="schedule-position" className="field-input" value={schedulePosition(template)} onChange={(event) => onChange('schedulePosition', event.target.value)}><option value="left">Left</option>{template.device !== 'laptop' && <option value="center">Center</option>}<option value="right">Right</option></select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>
+      </div>}
+      {template.device === 'tablet' && <div className="appearance-row">
+        <label className="appearance-label" htmlFor="tablet-orientation">Orientation</label>
+        <div className="field-select appearance-select"><select id="tablet-orientation" className="field-input" value={template.orientation || 'portrait'} onChange={(event) => onChange('orientation', event.target.value)}><option value="portrait">Portrait</option><option value="landscape">Landscape</option></select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>
+      </div>}
       {fixedBackground ? <p className="text-xs leading-relaxed text-muted">Background artwork stays fixed.</p> : <AppearanceColor colorKey="background" template={template} onChange={onChange} />}
       {editablePatterns.has(template.pattern) && <AppearanceColor colorKey="patternColor" template={template} onChange={onChange} />}
     </fieldset>
     <fieldset className="appearance-group">
       <legend>Day containers</legend>
+      <div className="appearance-row">
+        <label className="appearance-label" htmlFor="container-style">Finish</label>
+        <div className="field-select appearance-select"><select id="container-style" className="field-input" value={template.containerStyle || 'glass'} onChange={(event) => onChange('containerStyle', event.target.value)}><option value="glass">Frosted glass</option><option value="solid">Solid</option></select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>
+      </div>
       <div className="appearance-row">
         <label className="appearance-label" htmlFor="appearance-shape">Shape</label>
         <div className="field-select appearance-select">
@@ -61,6 +75,18 @@ export default function TemplateControls({ template, onChange, onReset }) {
       </div>
       <AppearanceColor colorKey="ink" template={template} onChange={onChange} />
     </fieldset>
+    {template.layout === 'mascot' && <fieldset className="appearance-group">
+      <legend>Decorations</legend>
+      <div className="appearance-row">
+        <label className="appearance-label" htmlFor="particle-style">Particles</label>
+        <div className="field-select appearance-select">
+          <select id="particle-style" className="field-input" value={template.particleStyle || 'auto'} onChange={(event) => onChange('particleStyle', event.target.value)}>
+            {particleStyles.map(({ value, label }) => <option key={value} value={value}>{label}</option>)}
+          </select>
+          <ChevronDown size={16} className="field-select-icon" aria-hidden="true" />
+        </div>
+      </div>
+    </fieldset>}
     <button type="button" className="text-link appearance-reset" onClick={onReset}>Reset appearance</button>
   </aside>;
 }
