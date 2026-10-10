@@ -19,7 +19,8 @@ function mascotBounds(image) {
   return right >= left ? { x: left, y: top, width: right - left + 1, height: bottom - top + 1 } : undefined;
 }
 
-export async function prepareWallpaperAssets(template) {
+export async function prepareWallpaperAssets(template, resolution) {
+  const imagePath = template.deviceImages?.[resolution?.id || 'mobile'] || template.image;
   fonts ||= Promise.all([
     document.fonts.load('400 100px "Great Vibes"'),
     document.fonts.load('400 100px "DM Serif Display"'),
@@ -32,17 +33,17 @@ export async function prepareWallpaperAssets(template) {
   if (template.fontFamily) await Promise.all([400, 500, 600, 650, 750].map((weight) =>
     document.fonts.load(`${weight} 100px "${template.fontFamily}"`),
   ));
-  if (!template.image) return undefined;
-  if (!images.has(template.image)) images.set(template.image, new Promise((resolve, reject) => {
+  if (!imagePath) return undefined;
+  if (!images.has(imagePath)) images.set(imagePath, new Promise((resolve, reject) => {
     const image = new Image();
     image.onload = () => {
       try {
         if (template.layout === 'mascot') image.mascotBounds = mascotBounds(image);
         resolve(image);
-      } catch { images.delete(template.image); reject(new Error('The mascot artwork could not load. Retry or choose another template.')); }
+      } catch { images.delete(imagePath); reject(new Error('The mascot artwork could not load. Retry or choose another template.')); }
     };
-    image.onerror = () => { images.delete(template.image); reject(new Error('The template artwork could not load. Retry or choose another template.')); };
-    image.src = template.image;
+    image.onerror = () => { images.delete(imagePath); reject(new Error('The template artwork could not load. Retry or choose another template.')); };
+    image.src = imagePath;
   }));
-  return images.get(template.image);
+  return images.get(imagePath);
 }

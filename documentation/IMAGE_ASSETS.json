@@ -14,6 +14,42 @@
       "sha256": "0bd92e4ffa3b2131a28a1573449fb98fe2edd6eaf24780e516953099532df963"
     },
     {
+      "path": ".impeccable/review/device-showcases/chooser-laptop-1440-sharp.png",
+      "sha256": "0341eaa5ef1b194819ebc749838b62221163a12584893708ba38229bf5e49c86"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/chooser-laptop-390-sharp.png",
+      "sha256": "662061d134b910524968c74536ada11b7df07e3842bfb5b286190e397d838a54"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/chooser-laptop.png",
+      "sha256": "415846e374f96b29795f099bef824205d9f30c6985d5d723cf36af14366a416c"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/chooser-mobile-1440-sharp.png",
+      "sha256": "e4994373edd867fa9fb1345a22364b16e5cf02ba996b872115dc3e3a7fa8c5c8"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/chooser-mobile-390-sharp.png",
+      "sha256": "02815e7c61e2b62e0ccf725c27623998afee463c14f2e3fecc3fe0ee690d0521"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/chooser-mobile.png",
+      "sha256": "eca3022576e279aa5f0b8f6d057ee14e51e4a0fcc7abcfc2bacba747af665ae7"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/chooser-tablet-1440-sharp.png",
+      "sha256": "9c5c531d874d5881a768eb7534ea0821eda4b34bdc6cbd389cb7a3f050d6a74c"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/chooser-tablet-390-sharp.png",
+      "sha256": "e02808ecad3d3cd4999a9c00b4dfd43029fd4dea975c4287cf31deed9d233be4"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/chooser-tablet.png",
+      "sha256": "51548485137a0e138cac50c596b9f6e345749a5aa66f164e6ff92242c3a88cfd"
+    },
+    {
       "path": ".impeccable/review/device-showcases/desktop-laptop-gallery.png",
       "sha256": "afd6f795197aa18e69cf4c59648fec63b6931fe9c79ef68250c4f06bd2b2db57"
     },
@@ -144,6 +180,14 @@
     {
       "path": ".impeccable/review/device-showcases/small-mobile.png",
       "sha256": "49574932fa17123bc6d24f392c10c653c1d41e9cb4a529b36ad28dc979fb0607"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/tablet-appearance-mobile.png",
+      "sha256": "d10c372e887db90cf1e7539fa2c87d2a442e4cc448892f0844eabfda9b4a65ff"
+    },
+    {
+      "path": ".impeccable/review/device-showcases/tablet-landscape-download.png",
+      "sha256": "11a7c4dbb6c456f26f94737591b3f5cc78a0f0ee017cfc4d7afad0c12e167c96"
     },
     {
       "path": ".impeccable/review/device-showcases/tablet-laptop-gallery.png",
@@ -1256,6 +1300,90 @@
     {
       "path": "public/wallpapers/blue-glass.png",
       "sha256": "7b43f954048efcb4f331b3a8a55bcf9c4c561373a1c4644e56af2bcfc0e6c446"
+    },
+    {
+      "path": "public/wallpapers/device-examples/laptop-left-default-bunny-v2.png",
+      "sha256": "6715ea0d1daba032d72228dd492b3b6d7077bf772edf37982d7107f42f916e25"
+    },
+    {
+      "path": "public/wallpapers/device-examples/laptop-left-default-bunny.png",
+      "sha256": "6d24693457b89b6428e6e129b2dfc0c374f5b1b3e045a4be244bb97dc7877e9b"
+    },
+    {
+      "path": "public/wallpapers/device-examples/laptop-linen-letter.png",
+      "sha256": "f38ed914a0650d0f58ddd90d7590febf696aac81e26688d899983d152d7435d9"
+    },
+    {
+      "path": "public/wallpapers/device-examples/laptop-right-default-bunny-v2.png",
+      "sha256": "79b8dc23004fdf22ba57ad9012fbe6633954563e58df090dfc884dbab59a494f"
+    },
+    {
+      "path": "public/wallpapers/device-examples/laptop-right-default-bunny.png",
+      "sha256": "8984bd6ede90c114b6825377bc52249894e54ed4bb74309c0b5f0ef4ea4aed8e"
+    },
+    {
+      "path": "public/wallpapers/device-examples/mobile-left-default-bunny-v2.png",
+      "sha256": "4e5cc1560248404ee84df51cc8432c9a47b1caa5ad52c36635becb6296a3d82a"
+    },
+    {
+      "path": "public/wallpapers/device-examples/mobile-left-default-bunny.png",
+      "sha256": "4e5cc1560248404ee84df51cc8432c9a47b1caa5ad52c36635becb6296a3d82a"
+    },
+    {
+      "path": "public/wallpapers/device-examples/mobile-linen-letter.png",
+      "sha256": "e68c4919e4c51f54f3004e5bcb487f8c9504b23e0d57f2d7e4e9d4792aa250ac"
+    },
+    {
+      "path": "public/wallpapers/device-examples/tablet-center-landscape-bunny-v2.png",
+      "sha256": "74d6024a2ac148f36b31085f586b2c48162750109b3ee7731f2cb2ff64647a01"
+    },
+    {
+      "path": "public/wallpapers/device-examples/tablet-center-landscape-bunny.png",
+      "sha256": "f6383c5ada1f2728cfd9db710cf19095446e075a0be07bc1e0d2fdda262f8156"
+    },
+    {
+      "path": "public/wallpapers/device-examples/tablet-center-portrait-bunny-v2.png",
+      "sha256": "8ba333e6fc804342bb3d9cf9b8d22722f13ab76260ee0f884a325127e59919d8"
+    },
+    {
+      "path": "public/wallpapers/device-examples/tablet-center-portrait-bunny.png",
+      "sha256": "c80ad3ceeeaa84341ca24f9eed14cfc8e54cc5bac65c858227b7531bdcce349f"
+    },
+    {
+      "path": "public/wallpapers/device-examples/tablet-left-landscape-bunny-v2.png",
+      "sha256": "c60fa0d00b32859e40005d32f750d3500700ffbe05e2c99cbb901acda5a6117a"
+    },
+    {
+      "path": "public/wallpapers/device-examples/tablet-left-landscape-bunny.png",
+      "sha256": "39aa1bc19fcac37099364f0a6eaaa69a203adc6fa9ae2a5fd2fd52983c0a3351"
+    },
+    {
+      "path": "public/wallpapers/device-examples/tablet-left-portrait-bunny-v2.png",
+      "sha256": "8ba333e6fc804342bb3d9cf9b8d22722f13ab76260ee0f884a325127e59919d8"
+    },
+    {
+      "path": "public/wallpapers/device-examples/tablet-left-portrait-bunny.png",
+      "sha256": "c80ad3ceeeaa84341ca24f9eed14cfc8e54cc5bac65c858227b7531bdcce349f"
+    },
+    {
+      "path": "public/wallpapers/device-examples/tablet-linen-letter.png",
+      "sha256": "f0acaa988151a02ec8ab2c1d7bfa65bfdc5fbd1415a321f840bf14ac0f506b7d"
+    },
+    {
+      "path": "public/wallpapers/device-examples/tablet-right-landscape-bunny-v2.png",
+      "sha256": "47b6e0f2a43993f58a06849318c36489300d0ab9844d40fb967d89dba46de89b"
+    },
+    {
+      "path": "public/wallpapers/device-examples/tablet-right-landscape-bunny.png",
+      "sha256": "9a8770fb380592214dfa041142546ee76f917b03fbac5f511233b64c193a3dcb"
+    },
+    {
+      "path": "public/wallpapers/device-examples/tablet-right-portrait-bunny-v2.png",
+      "sha256": "772cb95e41eb78aeeee10c1bf58c8d78e9dc0d5f14195e9a6bd334d0fbe8be04"
+    },
+    {
+      "path": "public/wallpapers/device-examples/tablet-right-portrait-bunny.png",
+      "sha256": "a1a8fd762b25da41513301c48f8b7e4912fe92d144917fa22c46bf62c4331536"
     },
     {
       "path": "public/wallpapers/little-friends/bunny-cheer.png",

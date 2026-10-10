@@ -78,7 +78,7 @@ export default function TemplateWorkspace({ step, onStep, template, schedule, re
     trackEvent('wallpaper_download_requested', properties);
     let stage = 'render';
     try {
-      const backgroundImage = await prepareWallpaperAssets(template);
+      const backgroundImage = await prepareWallpaperAssets(template, resolution);
       if (!active.current) return;
       const output = document.createElement('canvas');
       const rendered = drawWallpaper(output, { schedule, template, resolution, backgroundImage });

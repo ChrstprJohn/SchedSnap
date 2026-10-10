@@ -1,0 +1,122 @@
+[
+  {
+    "width": 1440,
+    "device": "mobile",
+    "cols": 5,
+    "pixels": 540,
+    "cssWidth": 211.1875,
+    "ratio": 0.45,
+    "cssRatio": 0.4500083236224405,
+    "overflow": false
+  },
+  {
+    "width": 1440,
+    "device": "tablet",
+    "cols": 4,
+    "pixels": 768,
+    "cssWidth": 268,
+    "ratio": 0.75,
+    "cssRatio": 0.7500109318291136,
+    "overflow": false
+  },
+  {
+    "width": 1440,
+    "device": "laptop",
+    "cols": 3,
+    "pixels": 960,
+    "cssWidth": 362.65625,
+    "ratio": 1.7777777777777777,
+    "cssRatio": 1.777862887782459,
+    "overflow": false
+  },
+  {
+    "width": 820,
+    "device": "mobile",
+    "cols": 3,
+    "pixels": 540,
+    "cssWidth": 246.65625,
+    "ratio": 0.45,
+    "cssRatio": 0.45,
+    "overflow": false
+  },
+  {
+    "width": 820,
+    "device": "tablet",
+    "cols": 3,
+    "pixels": 768,
+    "cssWidth": 246.65625,
+    "ratio": 0.75,
+    "cssRatio": 0.75,
+    "overflow": false
+  },
+  {
+    "width": 820,
+    "device": "laptop",
+    "cols": 2,
+    "pixels": 960,
+    "cssWidth": 378,
+    "ratio": 1.7777777777777777,
+    "cssRatio": 1.7777777777777777,
+    "overflow": false
+  },
+  {
+    "width": 390,
+    "device": "mobile",
+    "cols": 2,
+    "pixels": 540,
+    "cssWidth": 171,
+    "ratio": 0.45,
+    "cssRatio": 0.45,
+    "overflow": false
+  },
+  {
+    "width": 390,
+    "device": "tablet",
+    "cols": 2,
+    "pixels": 768,
+    "cssWidth": 171,
+    "ratio": 0.75,
+    "cssRatio": 0.75,
+    "overflow": false
+  },
+  {
+    "width": 390,
+    "device": "laptop",
+    "cols": 1,
+    "pixels": 960,
+    "cssWidth": 358,
+    "ratio": 1.7777777777777777,
+    "cssRatio": 1.7777777777777777,
+    "overflow": false
+  },
+  {
+    "width": 320,
+    "device": "mobile",
+    "cols": 2,
+    "pixels": 540,
+    "cssWidth": 136,
+    "ratio": 0.45,
+    "cssRatio": 0.4500051700961638,
+    "overflow": false
+  },
+  {
+    "width": 320,
+    "device": "tablet",
+    "cols": 2,
+    "pixels": 768,
+    "cssWidth": 136,
+    "ratio": 0.75,
+    "cssRatio": 0.7500215424386041,
+    "overflow": false
+  },
+  {
+    "width": 320,
+    "device": "laptop",
+    "cols": 1,
+    "pixels": 960,
+    "cssWidth": 288,
+    "ratio": 1.7777777777777777,
+    "cssRatio": 1.7777777777777777,
+    "overflow": false
+  }
+]

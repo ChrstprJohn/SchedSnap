@@ -6,7 +6,8 @@ import { mascotTemplateSchedule, mobileResolution, templateSchedule, wallpaperTe
 import { mascotTemplates } from '../src/assets/mascotTemplates.js';
 import { littleFriendsTemplates } from '../src/assets/littleFriendsTemplates.js';
 import { patternTemplates } from '../src/assets/patternTemplates.js';
-import { drawWallpaper, findOverlaps, formatTime, formatWallpaperTime, groupSchedule, layoutSchedule, wrapText } from '../src/utils/canvasHelpers.js';
+import { scenicTemplates } from '../src/assets/scenicTemplates.js';
+import { drawWallpaper, findOverlaps, formatTime, formatWallpaperTime, groupSchedule, layoutSchedule, schedulePosition, wrapText } from '../src/utils/canvasHelpers.js';
 import { getScheduleIssues } from '../shared/scheduleSchema.js';
 import { colorInputValue, customizeWallpaperTemplate } from '../src/utils/wallpaperTheme.js';
 
@@ -47,9 +48,10 @@ test('all templates fit sample data and dense data is explicitly rejected', () =
   }
 });
 
-test('the collection has twenty little friends, twenty animals, six editable patterns and sixteen originals', () => {
-  assert.equal(wallpaperTemplates.length, 62);
-  assert.equal(new Set(wallpaperTemplates.map((template) => template.id)).size, 62);
+test('the existing collections are preserved alongside device-specific illustrated designs', () => {
+  assert.equal(wallpaperTemplates.length, 62 + scenicTemplates.length);
+  assert.equal(new Set(wallpaperTemplates.map((template) => template.id)).size, wallpaperTemplates.length);
+  assert.equal(wallpaperTemplates.filter((template) => template.collection === 'scenic').length, scenicTemplates.length);
   assert.equal(littleFriendsTemplates.length, 20);
   assert.equal(new Set(littleFriendsTemplates.map((template) => template.mascot)).size, 20);
   assert.equal(littleFriendsTemplates.filter((template) => template.mascotSide === 'left').length, 10);
@@ -103,7 +105,7 @@ test('a new editor renders artwork without example classes and blocks empty expo
 test('custom schedule titles render once and fit within the wallpaper heading area', () => {
   for (const scheduleTitle of ['Semester 1', 'A very long schedule title for the new school year', '   ']) {
     const headings = [];
-    const context = { ...measurementContext, scale() {}, fillRect() {}, beginPath() {}, roundRect() {}, fill() {}, stroke() {}, arc() {}, moveTo() {}, lineTo() {}, bezierCurveTo() {}, save() {}, restore() {}, createLinearGradient() { return { addColorStop() {} }; }, fillText(value, x, y, maxWidth) { if (y === 570) headings.push({ value, x, maxWidth, measured: this.measureText(value).width }); } };
+    const context = { ...measurementContext, scale() {}, fillRect() {}, beginPath() {}, roundRect() {}, fill() {}, stroke() {}, arc() {}, moveTo() {}, lineTo() {}, bezierCurveTo() {}, save() {}, restore() {}, createLinearGradient() { return { addColorStop() {} }; }, fillText(value, x, y, maxWidth) { if (y === 650) headings.push({ value, x, maxWidth, measured: this.measureText(value).width }); } };
     drawWallpaper({ getContext() { return context; } }, { schedule: sampleSchedule, template: { ...wallpaperTemplates[0], scheduleTitle } });
     assert.equal(headings.length, 1);
     assert.equal(headings[0].value, scheduleTitle.trim() || 'Class Schedule');
@@ -306,7 +308,8 @@ test('mascots keep a fixed size below every meeting, including denser schedules'
       assert.ok(y >= layout.bottom + 39.99, template.name);
       assert.ok(x >= 0 && x + width <= 1080 && y + height <= 2400);
       assert.equal(Math.max(width, height), 620);
-      assert.ok(text.includes(`EDITION ${template.edition}`));
+      assert.ok(!text.some((value) => value.startsWith('EDITION ')));
+      assert.ok(!text.includes(template.name.toUpperCase()));
       return width;
     };
     assert.equal(render(busy), render(mascotTemplateSchedule), template.name);
@@ -348,4 +351,113 @@ test('appearance settings preserve image artwork and patterns and drive the shar
   assert.equal(fills[0], settings.background);
   assert.ok(fills.includes(settings.surface));
   assert.ok(text.every(({ font, color }) => font.includes('"Georgia"') && color === settings.ink));
+});
+
+
+test('tablet and laptop schedules preserve every meeting, fit the screen and stay clear of characters', () => {
+  const image = { width: 1254, height: 1254, mascotBounds: { x: 80, y: 120, width: 920, height: 1100 } };
+  for (const resolution of [{ id: 'tablet', width: 1600, height: 2560 }, { id: 'tablet', width: 2560, height: 1600 }, { id: 'laptop', width: 1920, height: 1080 }]) {
+    for (const schedulePosition of ['left', 'center', 'right']) {
+      const labels = [];
+      const ctx = { ...measurementContext, scale() {}, translate() {}, fillRect() {}, beginPath() {}, roundRect() {}, arc() {}, fill() {}, stroke() {}, moveTo() {}, lineTo() {}, bezierCurveTo() {}, save() {}, restore() {}, fillText(value) { labels.push(value); }, drawImage() {} };
+      const canvas = { getContext() { return ctx; } };
+      const template = { ...littleFriendsTemplates[1], schedulePosition };
+      const layout = drawWallpaper(canvas, { schedule: templateSchedule, template, resolution, backgroundImage: image });
+      assert.equal(layout.overflow, false);
+      if (resolution.id === 'laptop') assert.ok(['left', 'right'].includes(layout.position));
+      assert.equal(layout.plans.flatMap((plan) => plan.entries).length, 5);
+      assert.equal(canvas.width, resolution.width);
+      assert.equal(canvas.height, resolution.height);
+      const { scheduleBounds: bounds, art } = layout;
+      const height = 1920 * resolution.height / resolution.width;
+      assert.ok(bounds.x >= 0 && bounds.x + bounds.width <= 1920);
+      assert.ok(bounds.y >= 0 && bounds.y + bounds.height <= height);
+      assert.ok(art.x + art.width <= bounds.x || art.x >= bounds.x + bounds.width || art.y >= bounds.y + bounds.height || art.y + art.height <= bounds.y);
+      assert.ok(!labels.some((label) => label.startsWith('EDITION ')));
+      assert.ok(!labels.includes(template.name.toUpperCase()));
+      const busy = structuredClone(templateSchedule);
+      for (const course of busy.classes) course.meetings.push({ ...course.meetings[0], startTime: '10:00', endTime: '11:30' }, { ...course.meetings[0], startTime: '13:00', endTime: '14:30' });
+      const denseLayout = drawWallpaper(canvas, { schedule: busy, template, resolution, backgroundImage: image });
+      assert.equal(denseLayout.overflow, false);
+      assert.equal(denseLayout.plans.flatMap((plan) => plan.entries).length, 15);
+    }
+  }
+});
+
+
+test('laptop patterns and backgrounds center the schedule while characters use the opposite side', () => {
+  for (const template of wallpaperTemplates) {
+    const laptop = { ...template, device: 'laptop' };
+    if (template.layout !== 'mascot') {
+      for (const position of ['left', 'center', 'right']) assert.equal(schedulePosition({ ...laptop, schedulePosition: position }), 'center');
+    } else {
+      assert.equal(schedulePosition(laptop), template.mascotSide === 'left' ? 'right' : 'left');
+      for (const position of ['left', 'right']) assert.equal(schedulePosition({ ...laptop, schedulePosition: position }), position);
+    }
+  }
+});
+
+
+test('visible weekday glyph bounds are centered inside badges for every device', () => {
+  for (const resolution of [mobileResolution, { id: 'tablet', width: 1600, height: 2560 }, { id: 'laptop', width: 1920, height: 1080 }]) {
+    const badges = [], glyphs = [];
+    const context = { ...measurementContext, scale() {}, translate() {}, fillRect() {}, beginPath() {}, roundRect() {}, fill() {}, stroke() {}, save() {}, restore() {},
+      arc(x, y) { badges.push({ x, y }); },
+      measureText(text) { const measured = measurementContext.measureText.call(this, text); return { ...measured, actualBoundingBoxLeft: -2, actualBoundingBoxRight: measured.width - 4, actualBoundingBoxAscent: 30, actualBoundingBoxDescent: 2 }; },
+      fillText(value, x, y) { if (['M', 'T', 'W', 'TH', 'F'].includes(value)) { const metrics = this.measureText(value); glyphs.push({ x: x + (metrics.actualBoundingBoxRight - metrics.actualBoundingBoxLeft) / 2, y: y - (metrics.actualBoundingBoxAscent - metrics.actualBoundingBoxDescent) / 2 }); } },
+    };
+    drawWallpaper({ getContext() { return context; } }, { schedule: templateSchedule, template: { ...mascotTemplates[0], containerStyle: 'solid' }, resolution });
+    assert.equal(glyphs.length, 5);
+    for (let index = 0; index < glyphs.length; index++) {
+      assert.ok(Math.abs(glyphs[index].x - badges[index].x) < 0.001);
+      assert.ok(Math.abs(glyphs[index].y - badges[index].y) < 0.001);
+    }
+  }
+});
+
+
+test('tablet and laptop badge size and leading spacing match mobile row proportions', () => {
+  const resolutions = [mobileResolution, { id: 'tablet', width: 1600, height: 2560 }, { id: 'tablet', width: 2560, height: 1600 }, { id: 'laptop', width: 1920, height: 1080 }];
+  let mobile;
+  for (const resolution of resolutions) {
+    const badges = [];
+    const context = { ...measurementContext, scale() {}, translate() {}, fillRect() {}, beginPath() {}, roundRect() {}, fill() {}, stroke() {}, save() {}, restore() {}, fillText() {},
+      arc(x, y, radius) { badges.push({ x, y, radius }); },
+    };
+    const layout = drawWallpaper({ getContext() { return context; } }, { schedule: templateSchedule, template: { ...mascotTemplates[0], containerStyle: 'solid' }, resolution });
+    assert.equal(layout.overflow, false);
+    assert.equal(badges.length, 5);
+    for (const [index, plan] of layout.plans.entries()) {
+      const badge = badges[index];
+      const proportions = {
+        inset: (badge.x - badge.radius - plan.x) / plan.height,
+        diameter: badge.radius * 2 / plan.height,
+        timeStart: (plan.timeX - plan.x) / plan.height,
+      };
+      if (!mobile) {
+        mobile = proportions;
+        assert.equal(badge.x - plan.x, 94);
+        assert.equal(badge.radius, 65);
+      }
+      for (const key of Object.keys(mobile)) assert.ok(Math.abs(proportions[key] - mobile[key]) < 0.001, `${resolution.id}: ${key}`);
+      assert.equal(badge.y, plan.y + plan.height / 2);
+      assert.ok(badge.x + badge.radius < plan.timeX);
+    }
+  }
+});
+
+
+test('tablet and laptop characters anchor to the bottom corner without overlapping schedules', () => {
+  const image = { width: 1254, height: 1254, mascotBounds: { x: 80, y: 120, width: 920, height: 1100 } };
+  for (const resolution of [{ id: 'tablet', width: 1600, height: 2560 }, { id: 'tablet', width: 2560, height: 1600 }, { id: 'laptop', width: 1920, height: 1080 }]) {
+    for (const mascotSide of ['left', 'right']) for (const schedulePosition of ['left', 'center', 'right']) {
+      const ctx = { ...measurementContext, scale() {}, translate() {}, fillRect() {}, beginPath() {}, roundRect() {}, arc() {}, fill() {}, stroke() {}, moveTo() {}, lineTo() {}, bezierCurveTo() {}, save() {}, restore() {}, fillText() {}, drawImage() {} };
+      const { art, scheduleBounds: bounds, position } = drawWallpaper({ getContext() { return ctx; } }, { schedule: templateSchedule, template: { ...mascotTemplates[0], mascotSide, schedulePosition }, resolution, backgroundImage: image });
+      const height = 1920 * resolution.height / resolution.width;
+      assert.ok(Math.abs(art.y + art.height - height) < 0.001);
+      const right = resolution.width > resolution.height ? position === 'left' || (position === 'center' && mascotSide === 'right') : mascotSide === 'right';
+      assert.ok(Math.abs(right ? art.x + art.width - 1920 : art.x) < 0.001);
+      assert.ok(art.x + art.width <= bounds.x || art.x >= bounds.x + bounds.width || art.y >= bounds.y + bounds.height || art.y + art.height <= bounds.y);
+    }
+  }
 });

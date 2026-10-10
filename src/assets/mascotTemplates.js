@@ -1,5 +1,5 @@
 // Generated animals contain no timetable content. Canvas paints the background,
-// heading, edition and every actual meeting separately at export time.
+// heading and every actual meeting separately at export time.
 const editions = [
   ['bear', 'Bear Mode', 'Midnight navy & bold type', '#182b43', '#f7ebcb', '#d77a45', 'bold', 'ledger', 'left'],
   ['bunny', 'Bunny Bloom', 'Blush & berry', '#eec8cb', '#71394d', '#71394d', 'soft', 'cards', 'right'],

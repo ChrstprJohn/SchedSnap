@@ -4,7 +4,7 @@ import { Link, useNavigate, useParams, useSearchParams } from 'react-router';
 import Toast from '../../components/Toast.jsx';
 import { api } from '../../lib/api.js';
 import { templateProperties, trackEvent } from '../../lib/analytics.js';
-import { mobileResolution, wallpaperTemplates } from '../../assets/templates.js';
+import { deviceResolutions, tabletLandscapeResolution, wallpaperTemplates } from '../../assets/templates.js';
 import { sampleSchedule } from '../../assets/sampleSchedule.js';
 import { scheduleSchema } from '../../../shared/scheduleSchema.js';
 import { customizeWallpaperTemplate } from '../../utils/wallpaperTheme.js';
@@ -27,6 +27,7 @@ export default function ScheduleWallpaper() {
     return `${pathname}?${params}`;
   }
   const [templateSettings, setTemplateSettings] = useState({});
+  const resolution = device === 'tablet' && templateSettings[templateId]?.orientation === 'landscape' ? tabletLandscapeResolution : deviceResolutions[device];
   const [schedule, setSchedule] = useState({ classes: [], warnings: [] });
   const [scheduleSource, setScheduleSource] = useState('unknown');
   const [image, setImage] = useState(null);
@@ -43,8 +44,8 @@ export default function ScheduleWallpaper() {
   const lastTrackedStep = useRef(null);
   const template = useMemo(() => {
     const preset = customizeWallpaperTemplate(wallpaperTemplates.find((item) => item.id === templateId), templateSettings[templateId]);
-    return preset ? { ...preset, scheduleTitle } : undefined;
-  }, [templateId, templateSettings, scheduleTitle]);
+    return preset ? { ...preset, scheduleTitle, device } : undefined;
+  }, [templateId, templateSettings, scheduleTitle, device]);
   const returnId = search.get('return');
   const previousTemplate = wallpaperTemplates.find((item) => item.id === returnId);
   const selectedId = template?.id || previousTemplate?.id;
@@ -144,7 +145,7 @@ export default function ScheduleWallpaper() {
     <Link to="/services/schedule-wallpaper" className="button-primary mt-6">Choose template</Link>
   </section>;
 
-  return <section className="page-wrap wallpaper-flow">
+  return <section className="page-wrap wallpaper-flow" data-device={device} style={{ '--wallpaper-ratio': `${resolution.width} / ${resolution.height}`, '--wallpaper-ratio-value': resolution.width / resolution.height }}>
     {step === 'design' ? <Link to="/" className="tool-back"><ArrowLeft className="size-4" aria-hidden="true" />Back</Link> : <button type="button" className="tool-back" onClick={goBack}><ArrowLeft className="size-4" aria-hidden="true" />{step === 'classes' && importOpen && schedule.classes.length ? 'Back to classes' : 'Back'}</button>}
     <header className="wallpaper-flow-header" data-importing={choosingImage}>
       <h1 tabIndex={-1} ref={heading}>{step === 'design' ? 'Choose a design' : step === 'classes' ? 'Add your classes' : 'Your wallpaper'}</h1>
@@ -152,7 +153,7 @@ export default function ScheduleWallpaper() {
     </header>
     {template ? <TemplateWorkspace
       step={step} onStep={openStep}
-      template={template} schedule={schedule} resolution={mobileResolution} onScheduleChange={changeSchedule}
+      template={template} schedule={schedule} resolution={resolution} onScheduleChange={changeSchedule}
       scheduleSource={scheduleSource} onScheduleSourceChange={setScheduleSource}
       onAppearanceChange={(key, value) => { setTemplateSettings((previous) => ({ ...previous, [templateId]: { ...previous[templateId], [key]: value } })); trackEvent('wallpaper_appearance_changed', { ...templateProperties(template), setting: key }); }}
       onResetAppearance={() => { setTemplateSettings((previous) => ({ ...previous, [templateId]: {} })); trackEvent('wallpaper_appearance_reset', templateProperties(template)); }}
@@ -166,7 +167,7 @@ export default function ScheduleWallpaper() {
       onError={(message) => { setError(message); setSuccess(''); }} onAnalyze={analyze}
       onSample={() => { setSchedule(structuredClone(sampleSchedule)); setScheduleSource('sample'); trackEvent('sample_schedule_loaded', templateProperties(template)); dismissNotification(); }}
     /> : <>
-      <TemplateGallery device={device} onDeviceChange={changeDevice} initialCategory={search.get('collection')} selectedId={selectedId} settings={templateSettings} schedule={schedule} scheduleTitle={scheduleTitle} resolution={mobileResolution} onSelect={selectTemplate} />
+      <TemplateGallery device={device} onDeviceChange={changeDevice} initialCategory={search.get('collection')} selectedId={selectedId} settings={templateSettings} schedule={schedule} scheduleTitle={scheduleTitle} resolution={resolution} onSelect={selectTemplate} />
     </>}
     <Toast message={error || success} kind={error ? 'error' : 'success'} onClose={dismissNotification} />
   </section>;

@@ -11,7 +11,7 @@ export function WallpaperCanvas({ schedule, template, resolution, className = ''
   const [failure, setFailure] = useState('');
   useEffect(() => {
     let cancelled = false;
-    const render = () => prepareWallpaperAssets(template).then((backgroundImage) => {
+    const render = () => prepareWallpaperAssets(template, resolution).then((backgroundImage) => {
       if (cancelled) return;
       try {
         const layout = drawWallpaper(canvas.current, { schedule, template, resolution, backgroundImage });
@@ -52,7 +52,7 @@ export default function CanvasPreview({ schedule, template, resolution, confirme
     setExporting(true);
     setMessage('');
     try {
-      const backgroundImage = await prepareWallpaperAssets(template);
+      const backgroundImage = await prepareWallpaperAssets(template, resolution);
       const output = document.createElement('canvas');
       const rendered = drawWallpaper(output, { schedule, template, resolution, backgroundImage });
       if (rendered.overflow) throw new Error('This schedule does not fit. Shorten subject names or reduce optional details.');
