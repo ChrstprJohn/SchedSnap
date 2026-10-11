@@ -27,8 +27,8 @@ const devices = [
   { id: 'laptop', title: 'For laptop.', label: 'Laptop', description: 'A wider view of your week, with room to make it yours.' },
 ];
 const assetPath = (device, collection) => device === 'mobile'
-  ? `/images/collections/mobile/${collection}.webp`
-  : device === 'tablet' ? `/images/collections/tablet/${collection}.webp`
+  ? `/images/collections/refreshed/mobile/${collection}.png`
+  : device === 'tablet' ? `/images/collections/refreshed/tablet/${collection}.png`
     : `/images/collections/laptop/${collection}.webp`;
 
 function DeviceShowcase({ device }) {
@@ -82,7 +82,7 @@ function DeviceShowcase({ device }) {
           <figure className="collection-image">
             <button type="button" className="showcase-arrow showcase-image-arrow showcase-image-previous" aria-label={`Previous ${device.label.toLowerCase()} collection`} aria-controls={previewId} onClick={() => changeCollection(-1)}><ChevronLeft size={24} strokeWidth={1.5} aria-hidden="true" /></button>
             <picture key={collection.id}>
-              <img src={assetPath(device.id, collection.id)} alt={`${device.label}${device.id === 'tablet' ? ' portrait and landscape' : ''} wallpaper preview of ${collection.artwork}`} width={isPortrait ? 1122 : 1448} height={isPortrait ? 1402 : 1086} loading="lazy" decoding="async" />
+              <img src={assetPath(device.id, collection.id)} alt={`${device.label}${device.id === 'tablet' ? ' portrait and landscape' : ''} schedule wallpaper preview in the ${collection.name} collection`} width={isPortrait ? 1122 : 1448} height={isPortrait ? 1402 : 1086} loading="lazy" decoding="async" />
             </picture>
             <button type="button" className="showcase-arrow showcase-image-arrow showcase-image-next" aria-label={`Next ${device.label.toLowerCase()} collection`} aria-controls={previewId} onClick={() => changeCollection(1)}><ChevronRight size={24} strokeWidth={1.5} aria-hidden="true" /></button>
           </figure>

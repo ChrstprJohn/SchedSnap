@@ -25,7 +25,7 @@ export default function Hero() {
           <p className="hero-note">No account needed.</p>
         </div>
         <div className="hero-art">
-          <img src="/images/hero/hero-phones.webp" alt="Three phones with sunlit, navy bear, and ivory panda schedule wallpapers" width="1448" height="1086" fetchPriority="high" decoding="async" />
+          <img src="/images/hero/hero-phones-refreshed.png" alt="Three iPhones with soft bear, alpine dawn, and doodle capybara schedule wallpapers" width="1448" height="1086" fetchPriority="high" decoding="async" />
         </div>
       </div>
     </section>
