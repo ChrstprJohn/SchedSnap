@@ -4,7 +4,8 @@ import { Link, useNavigate, useParams, useSearchParams } from 'react-router';
 import Toast from '../../components/Toast.jsx';
 import { api } from '../../lib/api.js';
 import { templateProperties, trackEvent } from '../../lib/analytics.js';
-import { deviceResolutions, tabletLandscapeResolution, wallpaperTemplates } from '../../assets/templates.js';
+import { deviceResolutions, tabletLandscapeResolution } from '../../assets/templates.js';
+import { useTemplates, useCatalogStatus } from '../../lib/catalogContext.js';
 import { sampleSchedule } from '../../assets/sampleSchedule.js';
 import { scheduleSchema } from '../../../shared/scheduleSchema.js';
 import { customizeWallpaperTemplate } from '../../utils/wallpaperTheme.js';
@@ -12,6 +13,8 @@ import TemplateGallery from './TemplateGallery.jsx';
 import TemplateWorkspace from './TemplateWorkspace.jsx';
 
 export default function ScheduleWallpaper() {
+  const wallpaperTemplates = useTemplates();
+  const catalogStatus = useCatalogStatus();
   const { '*': templateId } = useParams();
   const navigate = useNavigate();
   const [search, setSearch] = useSearchParams();
@@ -45,7 +48,7 @@ export default function ScheduleWallpaper() {
   const template = useMemo(() => {
     const preset = customizeWallpaperTemplate(wallpaperTemplates.find((item) => item.id === templateId), templateSettings[templateId]);
     return preset ? { ...preset, scheduleTitle, device } : undefined;
-  }, [templateId, templateSettings, scheduleTitle, device]);
+  }, [templateId, templateSettings, scheduleTitle, device, wallpaperTemplates]);
   const returnId = search.get('return');
   const previousTemplate = wallpaperTemplates.find((item) => item.id === returnId);
   const selectedId = template?.id || previousTemplate?.id;
@@ -139,6 +142,8 @@ export default function ScheduleWallpaper() {
     } else openStep(step === 'classes' ? 'design' : 'classes');
   }
 
+  if (catalogStatus.loading) return <section className="page-wrap py-12" role="status">Loading designs…</section>;
+  if (catalogStatus.error && !wallpaperTemplates.length) return <section className="page-wrap py-12"><p role="alert">{catalogStatus.error}</p><button className="button-primary mt-6" onClick={() => window.location.reload()}>Try again</button></section>;
   if (templateId && !template) return <section className="page-wrap py-12">
     <h1 className="text-2xl font-semibold">Template not found</h1>
     <p className="mt-3 text-muted">Choose a template from the collection to start editing.</p>

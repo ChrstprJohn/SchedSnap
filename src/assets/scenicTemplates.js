@@ -475,16 +475,268 @@ export const scenicTemplates = [
     "description": "Purple cosmos beneath a spacious painterly blue sky.",
     "family": "floral-skies",
     "image": "/wallpapers/scenic/meadow-skies/mobile.png",
-    "deviceImages": {
-      "mobile": "/wallpapers/scenic/meadow-skies/mobile.png",
-      "tablet": "/wallpapers/scenic/meadow-skies/tablet.png",
-      "laptop": "/wallpapers/scenic/meadow-skies/laptop.png"
-    },
     "background": "#DCECF6",
     "ink": "#213D46",
     "muted": "#557079",
     "surface": "#F8FBFD",
     "line": "#B5CDD5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/meadow-skies/mobile.png",
+      "tablet": "/wallpapers/scenic/meadow-skies/tablet.png",
+      "laptop": "/wallpapers/scenic/meadow-skies/laptop.png"
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "cosmos-breeze",
+    "name": "Cosmos Breeze",
+    "description": "Dusty pink cosmos and mint meadow under pale aquamarine sky.",
+    "family": "floral-skies",
+    "image": "/wallpapers/scenic/cosmos-breeze/mobile.png",
+    "background": "#D7EFF0",
+    "ink": "#253D45",
+    "muted": "#526C74",
+    "surface": "#FAFCFD",
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/cosmos-breeze/mobile.png",
+      "tablet": "/wallpapers/scenic/cosmos-breeze/tablet.png",
+      "laptop": "/wallpapers/scenic/cosmos-breeze/laptop.png"
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "daisy-morning",
+    "name": "Daisy Morning",
+    "description": "White daisies with warm yellow centers, dew-soft green meadow, powder blue morning sky.",
+    "family": "floral-skies",
+    "image": "/wallpapers/scenic/daisy-morning/mobile.png",
+    "background": "#DBEDF6",
+    "ink": "#253D45",
+    "muted": "#526C74",
+    "surface": "#FAFCFD",
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/daisy-morning/mobile.png",
+      "tablet": "/wallpapers/scenic/daisy-morning/tablet.png",
+      "laptop": "/wallpapers/scenic/daisy-morning/laptop.png"
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "lavender-horizon",
+    "name": "Lavender Horizon",
+    "description": "Slender lavender at lower corners, distant soft lilac hills below wide blush-lilac sky.",
+    "family": "floral-skies",
+    "image": "/wallpapers/scenic/lavender-horizon/mobile.png",
+    "background": "#ECE3F6",
+    "ink": "#253D45",
+    "muted": "#526C74",
+    "surface": "#FAFCFD",
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/lavender-horizon/mobile.png",
+      "tablet": "/wallpapers/scenic/lavender-horizon/tablet.png",
+      "laptop": "/wallpapers/scenic/lavender-horizon/laptop.png"
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "sunflower-afternoon",
+    "name": "Sunflower Afternoon",
+    "description": "Tiny golden sunflowers lower edges, sage meadow, pale warm cream afternoon sky.",
+    "family": "floral-skies",
+    "image": "/wallpapers/scenic/sunflower-afternoon/mobile.png",
+    "background": "#F6ECD4",
+    "ink": "#253D45",
+    "muted": "#526C74",
+    "surface": "#FAFCFD",
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/sunflower-afternoon/mobile.png",
+      "tablet": "/wallpapers/scenic/sunflower-afternoon/tablet.png",
+      "laptop": "/wallpapers/scenic/sunflower-afternoon/laptop.png"
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "alpine-dawn",
+    "name": "Alpine Dawn",
+    "description": "Layered slate-blue alpine mountain silhouettes low at footer, peach dawn atmosphere, vast pale peach sky.",
+    "family": "alpine-landscapes",
+    "image": "/wallpapers/scenic/alpine-dawn/mobile.png",
+    "background": "#F2DCCB",
+    "ink": "#253D45",
+    "muted": "#526C74",
+    "surface": "#FAFCFD",
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/alpine-dawn/mobile.png",
+      "tablet": "/wallpapers/scenic/alpine-dawn/tablet.png",
+      "laptop": "/wallpapers/scenic/alpine-dawn/laptop.png"
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "glacier-lake",
+    "name": "Glacier Lake",
+    "description": "Turquoise mountain lake low at footer, pale teal distant peaks, misty cream-blue sky.",
+    "family": "alpine-landscapes",
+    "image": "/wallpapers/scenic/glacier-lake/mobile.png",
+    "background": "#E1EDF0",
+    "ink": "#253D45",
+    "muted": "#526C74",
+    "surface": "#FAFCFD",
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/glacier-lake/mobile.png",
+      "tablet": "/wallpapers/scenic/glacier-lake/tablet.png",
+      "laptop": "/wallpapers/scenic/glacier-lake/laptop.png"
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "snowy-summit",
+    "name": "Snowy Summit",
+    "description": "Minimal icy snowy peaks and sparse evergreen trees low at footer, vast light icy lavender sky.",
+    "family": "alpine-landscapes",
+    "image": "/wallpapers/scenic/snowy-summit/mobile.png",
+    "background": "#ECEEF8",
+    "ink": "#253D45",
+    "muted": "#526C74",
+    "surface": "#FAFCFD",
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/snowy-summit/mobile.png",
+      "tablet": "/wallpapers/scenic/snowy-summit/tablet.png",
+      "laptop": "/wallpapers/scenic/snowy-summit/laptop.png"
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "amber-ridge",
+    "name": "Amber Ridge",
+    "description": "Terracotta foothills and layered indigo ridges low at footer, warm pale apricot sunset sky.",
+    "family": "alpine-landscapes",
+    "image": "/wallpapers/scenic/amber-ridge/mobile.png",
+    "background": "#F1DECD",
+    "ink": "#253D45",
+    "muted": "#526C74",
+    "surface": "#FAFCFD",
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/amber-ridge/mobile.png",
+      "tablet": "/wallpapers/scenic/amber-ridge/tablet.png",
+      "laptop": "/wallpapers/scenic/amber-ridge/laptop.png"
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "highland-meadow",
+    "name": "Highland Meadow",
+    "description": "Green rolling highland meadow below low blue mountain ridge, light buttercream sky, tiny wildflowers.",
+    "family": "alpine-landscapes",
+    "image": "/wallpapers/scenic/highland-meadow/mobile.png",
+    "background": "#F2EFDC",
+    "ink": "#253D45",
+    "muted": "#526C74",
+    "surface": "#FAFCFD",
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/highland-meadow/mobile.png",
+      "tablet": "/wallpapers/scenic/highland-meadow/tablet.png",
+      "laptop": "/wallpapers/scenic/highland-meadow/laptop.png"
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "cloud-voyager",
+    "name": "Cloud Voyager",
+    "description": "Tiny original turquoise balloon airship at lower-central footer above low sea of soft clouds, dreamy pale blue sky.",
+    "family": "anime-adventures",
+    "image": "/wallpapers/scenic/cloud-voyager/mobile.png",
+    "background": "#E2EFF7",
+    "ink": "#253D45",
+    "muted": "#526C74",
+    "surface": "#FAFCFD",
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/cloud-voyager/mobile.png",
+      "tablet": "/wallpapers/scenic/cloud-voyager/tablet.png",
+      "laptop": "/wallpapers/scenic/cloud-voyager/laptop.png"
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "fox-trail",
+    "name": "Fox Trail",
+    "description": "Tiny original traveler in green cloak with tiny orange fox walking low grassy footer path, gentle cream sky.",
+    "family": "anime-adventures",
+    "image": "/wallpapers/scenic/fox-trail/mobile.png",
+    "background": "#F5EEDC",
+    "ink": "#253D45",
+    "muted": "#526C74",
+    "surface": "#FAFCFD",
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/fox-trail/mobile.png",
+      "tablet": "/wallpapers/scenic/fox-trail/tablet.png",
+      "laptop": "/wallpapers/scenic/fox-trail/laptop.png"
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "moonlit-camp",
+    "name": "Moonlit Camp",
+    "description": "Tiny original rounded tent and small cute white animal companion low at footer among distant violet hills, quiet pale lavender twilight sky.",
+    "family": "anime-adventures",
+    "image": "/wallpapers/scenic/moonlit-camp/mobile.png",
+    "background": "#E6DEF3",
+    "ink": "#253D45",
+    "muted": "#526C74",
+    "surface": "#FAFCFD",
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/moonlit-camp/mobile.png",
+      "tablet": "/wallpapers/scenic/moonlit-camp/tablet.png",
+      "laptop": "/wallpapers/scenic/moonlit-camp/laptop.png"
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "island-postcard",
+    "name": "Island Postcard",
+    "description": "Tiny original young traveler silhouette with round backpack and cute small bird at lower-central footer, distant low turquoise island, very light cyan sky.",
+    "family": "anime-adventures",
+    "image": "/wallpapers/scenic/island-postcard/mobile.png",
+    "background": "#E2F2EF",
+    "ink": "#253D45",
+    "muted": "#526C74",
+    "surface": "#FAFCFD",
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/island-postcard/mobile.png",
+      "tablet": "/wallpapers/scenic/island-postcard/tablet.png",
+      "laptop": "/wallpapers/scenic/island-postcard/laptop.png"
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "windmill-journey",
+    "name": "Windmill Journey",
+    "description": "Tiny original traveler and cute fluffy dog on lower-central grass footer with a very tiny distant rustic windmill, quiet pale warm blue sky.",
+    "family": "anime-adventures",
+    "image": "/wallpapers/scenic/windmill-journey/mobile.png",
+    "background": "#E6EFF0",
+    "ink": "#253D45",
+    "muted": "#526C74",
+    "surface": "#FAFCFD",
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/windmill-journey/mobile.png",
+      "tablet": "/wallpapers/scenic/windmill-journey/tablet.png",
+      "laptop": "/wallpapers/scenic/windmill-journey/laptop.png"
+    },
     "collection": "scenic"
   },
   {
@@ -507,6 +759,426 @@ export const scenicTemplates = [
       "#685479",
       "#dac0d5",
       "#41354e"
+    ],
+    "style": "Flat hand drawn gouache illustration with restrained paper texture",
+    "safeArea": {
+      "x": 0.15,
+      "y": 0.15,
+      "width": 0.7,
+      "height": 0.7
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "silver-sakura",
+    "name": "Silver Sakura",
+    "description": "Silver moon and white cherry flowers at corners, misty slate blue sky and subdued silver hills footer.",
+    "family": "moonlit-blossoms",
+    "image": "/wallpapers/scenic/silver-sakura/mobile.png",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/silver-sakura/mobile.png",
+      "tablet": "/wallpapers/scenic/silver-sakura/tablet.png",
+      "laptop": "/wallpapers/scenic/silver-sakura/laptop.png"
+    },
+    "background": "#46566d",
+    "ink": "#fff9f1",
+    "muted": "#e2dce8",
+    "surface": "rgba(24, 28, 43, 0.80)",
+    "line": "rgba(255, 255, 255, 0.22)",
+    "palette": [
+      "#46566d",
+      "#aebbc7",
+      "#e5dce3"
+    ],
+    "style": "Flat hand drawn gouache illustration with restrained paper texture",
+    "safeArea": {
+      "x": 0.15,
+      "y": 0.15,
+      "width": 0.7,
+      "height": 0.7
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "plum-lantern-moon",
+    "name": "Plum Lantern Moon",
+    "description": "Deep plum sky, small amber lantern hanging extreme upper corner, blossom twig lower corner, tiny moon upper edge.",
+    "family": "moonlit-blossoms",
+    "image": "/wallpapers/scenic/plum-lantern-moon/mobile.png",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/plum-lantern-moon/mobile.png",
+      "tablet": "/wallpapers/scenic/plum-lantern-moon/tablet.png",
+      "laptop": "/wallpapers/scenic/plum-lantern-moon/laptop.png"
+    },
+    "background": "#4b304f",
+    "ink": "#fff9f1",
+    "muted": "#e2dce8",
+    "surface": "rgba(24, 28, 43, 0.80)",
+    "line": "rgba(255, 255, 255, 0.22)",
+    "palette": [
+      "#4b304f",
+      "#bd7494",
+      "#efc488"
+    ],
+    "style": "Flat hand drawn gouache illustration with restrained paper texture",
+    "safeArea": {
+      "x": 0.15,
+      "y": 0.15,
+      "width": 0.7,
+      "height": 0.7
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "misty-blossom",
+    "name": "Misty Blossom",
+    "description": "Soft dusty mauve dawn mist, pale pink blossoms at bottom outer corners, faint mountain foothills footer.",
+    "family": "moonlit-blossoms",
+    "image": "/wallpapers/scenic/misty-blossom/mobile.png",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/misty-blossom/mobile.png",
+      "tablet": "/wallpapers/scenic/misty-blossom/tablet.png",
+      "laptop": "/wallpapers/scenic/misty-blossom/laptop.png"
+    },
+    "background": "#b9a3b7",
+    "ink": "#27333c",
+    "muted": "#525e67",
+    "surface": "rgba(255, 250, 242, 0.88)",
+    "line": "rgba(40, 50, 60, 0.20)",
+    "palette": [
+      "#b9a3b7",
+      "#e9cad0",
+      "#746985"
+    ],
+    "style": "Flat hand drawn gouache illustration with restrained paper texture",
+    "safeArea": {
+      "x": 0.15,
+      "y": 0.15,
+      "width": 0.7,
+      "height": 0.7
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "blue-petal-night",
+    "name": "Blue Petal Night",
+    "description": "Midnight blue sky, small crescent upper edge, powder blue and pink petals on cherry branch extreme lower corners.",
+    "family": "moonlit-blossoms",
+    "image": "/wallpapers/scenic/blue-petal-night/mobile.png",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/blue-petal-night/mobile.png",
+      "tablet": "/wallpapers/scenic/blue-petal-night/tablet.png",
+      "laptop": "/wallpapers/scenic/blue-petal-night/laptop.png"
+    },
+    "background": "#243e62",
+    "ink": "#fff9f1",
+    "muted": "#e2dce8",
+    "surface": "rgba(24, 28, 43, 0.80)",
+    "line": "rgba(255, 255, 255, 0.22)",
+    "palette": [
+      "#243e62",
+      "#7996ba",
+      "#e0b8d0"
+    ],
+    "style": "Flat hand drawn gouache illustration with restrained paper texture",
+    "safeArea": {
+      "x": 0.15,
+      "y": 0.15,
+      "width": 0.7,
+      "height": 0.7
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "sunset-traveler",
+    "name": "Sunset Traveler",
+    "description": "Warm apricot sunset sky, layered blue mountains only bottom edge, tiny anonymous cloaked traveler at bottom center on narrow path.",
+    "family": "sunset-travelers",
+    "image": "/wallpapers/scenic/sunset-traveler/mobile.png",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/sunset-traveler/mobile.png",
+      "tablet": "/wallpapers/scenic/sunset-traveler/tablet.png",
+      "laptop": "/wallpapers/scenic/sunset-traveler/laptop.png"
+    },
+    "background": "#e6b493",
+    "ink": "#27333c",
+    "muted": "#525e67",
+    "surface": "rgba(255, 250, 242, 0.88)",
+    "line": "rgba(40, 50, 60, 0.20)",
+    "palette": [
+      "#e6b493",
+      "#375d70",
+      "#182e44"
+    ],
+    "style": "Flat hand drawn gouache illustration with restrained paper texture",
+    "safeArea": {
+      "x": 0.15,
+      "y": 0.15,
+      "width": 0.7,
+      "height": 0.7
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "saffron-trail",
+    "name": "Saffron Trail",
+    "description": "Golden saffron sky, burnt sienna distant desert dunes only footer, tiny anonymous straw hat traveler on lower edge.",
+    "family": "sunset-travelers",
+    "image": "/wallpapers/scenic/saffron-trail/mobile.png",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/saffron-trail/mobile.png",
+      "tablet": "/wallpapers/scenic/saffron-trail/tablet.png",
+      "laptop": "/wallpapers/scenic/saffron-trail/laptop.png"
+    },
+    "background": "#eac578",
+    "ink": "#27333c",
+    "muted": "#525e67",
+    "surface": "rgba(255, 250, 242, 0.88)",
+    "line": "rgba(40, 50, 60, 0.20)",
+    "palette": [
+      "#eac578",
+      "#b8774d",
+      "#553c40"
+    ],
+    "style": "Flat hand drawn gouache illustration with restrained paper texture",
+    "safeArea": {
+      "x": 0.15,
+      "y": 0.15,
+      "width": 0.7,
+      "height": 0.7
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "indigo-wanderer",
+    "name": "Indigo Wanderer",
+    "description": "Deep indigo twilight sky, lavender hills footer, tiny anonymous cloaked traveler looking toward small moon upper edge.",
+    "family": "sunset-travelers",
+    "image": "/wallpapers/scenic/indigo-wanderer/mobile.png",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/indigo-wanderer/mobile.png",
+      "tablet": "/wallpapers/scenic/indigo-wanderer/tablet.png",
+      "laptop": "/wallpapers/scenic/indigo-wanderer/laptop.png"
+    },
+    "background": "#373b63",
+    "ink": "#fff9f1",
+    "muted": "#e2dce8",
+    "surface": "rgba(24, 28, 43, 0.80)",
+    "line": "rgba(255, 255, 255, 0.22)",
+    "palette": [
+      "#373b63",
+      "#7e729b",
+      "#c5b5d2"
+    ],
+    "style": "Flat hand drawn gouache illustration with restrained paper texture",
+    "safeArea": {
+      "x": 0.15,
+      "y": 0.15,
+      "width": 0.7,
+      "height": 0.7
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "jade-valley-walk",
+    "name": "Jade Valley Walk",
+    "description": "Muted pale jade hazy sky, jade green valley mountains only lower edge, tiny straw hat traveler with walking stick at footer.",
+    "family": "sunset-travelers",
+    "image": "/wallpapers/scenic/jade-valley-walk/mobile.png",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/jade-valley-walk/mobile.png",
+      "tablet": "/wallpapers/scenic/jade-valley-walk/tablet.png",
+      "laptop": "/wallpapers/scenic/jade-valley-walk/laptop.png"
+    },
+    "background": "#bed0c0",
+    "ink": "#27333c",
+    "muted": "#525e67",
+    "surface": "rgba(255, 250, 242, 0.88)",
+    "line": "rgba(40, 50, 60, 0.20)",
+    "palette": [
+      "#bed0c0",
+      "#507d70",
+      "#294940"
+    ],
+    "style": "Flat hand drawn gouache illustration with restrained paper texture",
+    "safeArea": {
+      "x": 0.15,
+      "y": 0.15,
+      "width": 0.7,
+      "height": 0.7
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "rose-horizon",
+    "name": "Rose Horizon",
+    "description": "Dusty rose sunset sky, mauve coastline and grasses confined footer, tiny anonymous cloaked traveler at lower corner.",
+    "family": "sunset-travelers",
+    "image": "/wallpapers/scenic/rose-horizon/mobile.png",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/rose-horizon/mobile.png",
+      "tablet": "/wallpapers/scenic/rose-horizon/tablet.png",
+      "laptop": "/wallpapers/scenic/rose-horizon/laptop.png"
+    },
+    "background": "#d3a7ac",
+    "ink": "#27333c",
+    "muted": "#525e67",
+    "surface": "rgba(255, 250, 242, 0.88)",
+    "line": "rgba(40, 50, 60, 0.20)",
+    "palette": [
+      "#d3a7ac",
+      "#987b92",
+      "#514965"
+    ],
+    "style": "Flat hand drawn gouache illustration with restrained paper texture",
+    "safeArea": {
+      "x": 0.15,
+      "y": 0.15,
+      "width": 0.7,
+      "height": 0.7
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "cozy-city",
+    "name": "Cozy City",
+    "description": "Warm illustrated cafe street with plants and small amber windows along extreme bottom corners, broad warm cream hazy sky center.",
+    "family": "cozy-city",
+    "image": "/wallpapers/scenic/cozy-city/mobile.png",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/cozy-city/mobile.png",
+      "tablet": "/wallpapers/scenic/cozy-city/tablet.png",
+      "laptop": "/wallpapers/scenic/cozy-city/laptop.png"
+    },
+    "background": "#e7d9c5",
+    "ink": "#27333c",
+    "muted": "#525e67",
+    "surface": "rgba(255, 250, 242, 0.88)",
+    "line": "rgba(40, 50, 60, 0.20)",
+    "palette": [
+      "#e7d9c5",
+      "#a07855",
+      "#536859"
+    ],
+    "style": "Flat hand drawn gouache illustration with restrained paper texture",
+    "safeArea": {
+      "x": 0.15,
+      "y": 0.15,
+      "width": 0.7,
+      "height": 0.7
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "rain-window",
+    "name": "Rain Window",
+    "description": "Blue grey rainy train window scene, window frame only outer edges, small landscape below, sparse rain at perimeter, quiet blue grey middle.",
+    "family": "cozy-city",
+    "image": "/wallpapers/scenic/rain-window/mobile.png",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/rain-window/mobile.png",
+      "tablet": "/wallpapers/scenic/rain-window/tablet.png",
+      "laptop": "/wallpapers/scenic/rain-window/laptop.png"
+    },
+    "background": "#899eae",
+    "ink": "#fff9f1",
+    "muted": "#e2dce8",
+    "surface": "rgba(24, 28, 43, 0.80)",
+    "line": "rgba(255, 255, 255, 0.22)",
+    "palette": [
+      "#899eae",
+      "#334b5e",
+      "#d6bd97"
+    ],
+    "style": "Flat hand drawn gouache illustration with restrained paper texture",
+    "safeArea": {
+      "x": 0.15,
+      "y": 0.15,
+      "width": 0.7,
+      "height": 0.7
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "lantern-alley",
+    "name": "Lantern Alley",
+    "description": "Warm amber dusk, small illustrated lantern alley shops tightly confined bottom and outer corners, broad cinnamon haze sky center.",
+    "family": "cozy-city",
+    "image": "/wallpapers/scenic/lantern-alley/mobile.png",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/lantern-alley/mobile.png",
+      "tablet": "/wallpapers/scenic/lantern-alley/tablet.png",
+      "laptop": "/wallpapers/scenic/lantern-alley/laptop.png"
+    },
+    "background": "#c69a78",
+    "ink": "#27333c",
+    "muted": "#525e67",
+    "surface": "rgba(255, 250, 242, 0.88)",
+    "line": "rgba(40, 50, 60, 0.20)",
+    "palette": [
+      "#c69a78",
+      "#755045",
+      "#ebc899"
+    ],
+    "style": "Flat hand drawn gouache illustration with restrained paper texture",
+    "safeArea": {
+      "x": 0.15,
+      "y": 0.15,
+      "width": 0.7,
+      "height": 0.7
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "midnight-cafe",
+    "name": "Midnight Cafe",
+    "description": "Navy night sky, small warm lit cafe and terracotta plants at bottom edge, tiny stars upper perimeter, quiet muted navy middle.",
+    "family": "cozy-city",
+    "image": "/wallpapers/scenic/midnight-cafe/mobile.png",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/midnight-cafe/mobile.png",
+      "tablet": "/wallpapers/scenic/midnight-cafe/tablet.png",
+      "laptop": "/wallpapers/scenic/midnight-cafe/laptop.png"
+    },
+    "background": "#243746",
+    "ink": "#fff9f1",
+    "muted": "#e2dce8",
+    "surface": "rgba(24, 28, 43, 0.80)",
+    "line": "rgba(255, 255, 255, 0.22)",
+    "palette": [
+      "#243746",
+      "#bd8261",
+      "#e5bc85"
+    ],
+    "style": "Flat hand drawn gouache illustration with restrained paper texture",
+    "safeArea": {
+      "x": 0.15,
+      "y": 0.15,
+      "width": 0.7,
+      "height": 0.7
+    },
+    "collection": "scenic"
+  },
+  {
+    "id": "morning-tram",
+    "name": "Morning Tram",
+    "description": "Muted butter yellow morning sky, illustrated small teal tram and quiet pastel street rooftops confined footer corners.",
+    "family": "cozy-city",
+    "image": "/wallpapers/scenic/morning-tram/mobile.png",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/morning-tram/mobile.png",
+      "tablet": "/wallpapers/scenic/morning-tram/tablet.png",
+      "laptop": "/wallpapers/scenic/morning-tram/laptop.png"
+    },
+    "background": "#e7d6ad",
+    "ink": "#27333c",
+    "muted": "#525e67",
+    "surface": "rgba(255, 250, 242, 0.88)",
+    "line": "rgba(40, 50, 60, 0.20)",
+    "palette": [
+      "#e7d6ad",
+      "#648d8c",
+      "#b18b78"
     ],
     "style": "Flat hand drawn gouache illustration with restrained paper texture",
     "safeArea": {

@@ -1,3 +1,5 @@
+import { cloudinaryAssetUrl } from './cloudinaryAssets.js';
+
 const images = new Map();
 let fonts;
 
@@ -20,7 +22,8 @@ function mascotBounds(image) {
 }
 
 export async function prepareWallpaperAssets(template, resolution) {
-  const imagePath = template.deviceImages?.[resolution?.id || 'mobile'] || template.image;
+  const sourcePath = template.deviceImages?.[resolution?.id || 'mobile'] || template.image;
+  const imagePath = cloudinaryAssetUrl(sourcePath, resolution);
   fonts ||= Promise.all([
     document.fonts.load('400 100px "Great Vibes"'),
     document.fonts.load('400 100px "DM Serif Display"'),
@@ -36,6 +39,7 @@ export async function prepareWallpaperAssets(template, resolution) {
   if (!imagePath) return undefined;
   if (!images.has(imagePath)) images.set(imagePath, new Promise((resolve, reject) => {
     const image = new Image();
+    image.crossOrigin = 'anonymous';
     image.onload = () => {
       try {
         if (template.layout === 'mascot') image.mascotBounds = mascotBounds(image);

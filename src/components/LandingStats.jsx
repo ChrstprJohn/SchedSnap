@@ -1,10 +1,9 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
-import { wallpaperTemplates } from '../assets/templates.js';
+import { useTemplates } from '../lib/catalogContext.js';
 import { designCollections } from '../config/collections.js';
 
 // Mock display value until the landing page uses live visit totals.
 const MOCK_VISITS = 12000;
-const TEMPLATE_COUNT = wallpaperTemplates.length;
 const COLLECTION_COUNT = designCollections.filter(({ id }) => id !== 'all').length;
 const COUNT_DURATION = 1200;
 const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -20,6 +19,7 @@ function StatValue({ display, total }) {
 }
 
 export default function LandingStats() {
+  const TEMPLATE_COUNT = useTemplates().length;
   const sectionRef = useRef(null);
   const [progress, setProgress] = useState(0);
   const reducedMotion = useSyncExternalStore(subscribeToMotion, prefersReducedMotion, () => true);

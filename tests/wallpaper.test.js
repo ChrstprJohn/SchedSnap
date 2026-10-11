@@ -2,16 +2,34 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { sampleSchedule } from '../src/assets/sampleSchedule.js';
-import { mascotTemplateSchedule, mobileResolution, templateSchedule, wallpaperTemplates } from '../src/assets/templates.js';
+import { deviceResolutions, mascotTemplateSchedule, mobileResolution, templateSchedule, wallpaperTemplates } from '../src/assets/templates.js';
 import { mascotTemplates } from '../src/assets/mascotTemplates.js';
 import { littleFriendsTemplates } from '../src/assets/littleFriendsTemplates.js';
 import { patternTemplates } from '../src/assets/patternTemplates.js';
 import { scenicTemplates } from '../src/assets/scenicTemplates.js';
+import { scenicFamilies } from '../src/config/collections.js';
 import { drawWallpaper, findOverlaps, formatTime, formatWallpaperTime, groupSchedule, layoutSchedule, schedulePosition, wrapText } from '../src/utils/canvasHelpers.js';
 import { getScheduleIssues } from '../shared/scheduleSchema.js';
 import { colorInputValue, customizeWallpaperTemplate } from '../src/utils/wallpaperTheme.js';
 
 const measurementContext = { font: '', measureText(text) { const size = Number(this.font.match(/(\d+(\.\d+)?)px/)?.[1] || 36); return { width: text.length * size * 0.52 }; } };
+
+test('every illustrated variant has three correctly sized device assets and every theme has at least three variants', () => {
+  assert.equal(scenicTemplates.length, 55);
+  const devices = Object.fromEntries(Object.values(deviceResolutions).map(({ id, width, height }) => [id, [width, height]]));
+  for (const family of scenicFamilies) assert.ok(scenicTemplates.filter((template) => template.family === family.id).length >= 3, family.id);
+  for (const template of scenicTemplates) {
+    assert.ok(!/kittens|sentinel|ranger|violet-watch/.test(template.id), template.id);
+    for (const [device, [width, height]] of Object.entries(devices)) {
+      const expected = `/wallpapers/scenic/${template.id}/${device}.png`;
+      assert.equal(template.deviceImages[device], expected);
+      const png = readFileSync(new URL(`../public${expected}`, import.meta.url));
+      assert.equal(png.subarray(1, 4).toString(), 'PNG');
+      assert.equal(png.readUInt32BE(16), width, `${template.id}/${device} width`);
+      assert.equal(png.readUInt32BE(20), height, `${template.id}/${device} height`);
+    }
+  }
+});
 
 test('groups repeated class meetings by weekday, preserving all occurrences', () => {
   const repeated = structuredClone(sampleSchedule);
@@ -49,7 +67,9 @@ test('all templates fit sample data and dense data is explicitly rejected', () =
 });
 
 test('the existing collections are preserved alongside device-specific illustrated designs', () => {
-  assert.equal(wallpaperTemplates.length, 62 + scenicTemplates.length);
+  assert.equal(wallpaperTemplates.length, 58 + scenicTemplates.length);
+  assert.ok(wallpaperTemplates.filter(template => template.image && template.layout !== 'mascot')
+    .every(template => ['mobile', 'tablet', 'laptop'].every(device => template.deviceImages?.[device])));
   assert.equal(new Set(wallpaperTemplates.map((template) => template.id)).size, wallpaperTemplates.length);
   assert.equal(wallpaperTemplates.filter((template) => template.collection === 'scenic').length, scenicTemplates.length);
   assert.equal(littleFriendsTemplates.length, 20);
@@ -61,7 +81,7 @@ test('the existing collections are preserved alongside device-specific illustrat
   assert.equal(patternTemplates.length, 6);
   assert.equal(new Set(patternTemplates.map((template) => template.pattern)).size, 6);
   assert.ok(patternTemplates.every((template) => !template.image && template.patternColor));
-  const removed = ['paper', 'sage', 'midnight', 'lilac', 'slate', 'peach', 'ocean', 'charcoal'];
+  const removed = ['paper', 'sage', 'midnight', 'lilac', 'slate', 'peach', 'ocean', 'charcoal', 'window-light', 'blue-hour', 'blush-club', 'after-hours'];
   assert.ok(wallpaperTemplates.every((template) => !removed.includes(template.id)));
   assert.ok(templateSchedule.classes.every((course) => course.subject === 'Subject name'));
 });
@@ -334,7 +354,7 @@ test('appearance settings preserve image artwork and patterns and drive the shar
   assert.equal(customized.muted, settings.ink);
   assert.notEqual(base.background, settings.background);
   assert.equal(customizeWallpaperTemplate(base, {}), base);
-  const originalBase = wallpaperTemplates.find(({ id }) => id === 'after-hours');
+  const originalBase = { ...wallpaperTemplates.find(({ id }) => id === 'blue-contours'), overlay: 'rgba(10,19,38,0.65)' };
   const original = customizeWallpaperTemplate(originalBase, settings);
   assert.equal(original.image, originalBase.image);
   assert.equal(original.overlay, originalBase.overlay);

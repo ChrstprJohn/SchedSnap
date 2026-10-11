@@ -1,4 +1,4 @@
-/* global __dirname, process, console, Buffer */
+/* global __dirname, process, console, Buffer, document, innerWidth */
 const fs = require('node:fs');
 const path = require('node:path');
 const { chromium } = require('C:/Users/picar/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
@@ -23,7 +23,7 @@ async function main() {
     }
     const rendered = await page.evaluate(async () => {
       const { scenicTemplates } = await import('/src/assets/scenicTemplates.js');
-      const { deviceResolutions } = await import('/src/assets/templates.js');
+      const { deviceResolutions, wallpaperTemplates, mascotTemplateSchedule, templateSchedule } = await import('/src/assets/templates.js');
       const { sampleSchedule } = await import('/src/assets/sampleSchedule.js');
       const { drawWallpaper } = await import('/src/utils/canvasHelpers.js');
       const { prepareWallpaperAssets } = await import('/src/utils/wallpaperAssets.js');
@@ -39,11 +39,21 @@ async function main() {
         thumb.getContext('2d').drawImage(canvas, 0, 0, thumb.width, thumb.height);
         result.push({ id: template.id, family: template.family, device: resolution.id, width: canvas.width, height: canvas.height, overflow: layout.overflow, png: thumb.toDataURL('image/png') });
       }
-      return result;
+      const sharedRenders = [];
+      for (const template of wallpaperTemplates.filter((item) => item.collection !== 'scenic')) for (const resolution of Object.values(deviceResolutions)) {
+        const image = await prepareWallpaperAssets(template, resolution);
+        const canvas = document.createElement('canvas');
+        const layout = drawWallpaper(canvas, { schedule: template.layout === 'mascot' ? mascotTemplateSchedule : templateSchedule, template, resolution, backgroundImage: image });
+        if (layout.overflow) throw new Error(`${template.id}/${resolution.id}: schedule overflow`);
+        if (!canvas.toDataURL('image/png').startsWith('data:image/png')) throw new Error(`${template.id}: PNG export failed`);
+        sharedRenders.push({ id: template.id, device: resolution.id, width: canvas.width, height: canvas.height });
+      }
+      return { scenic: result, sharedRenders };
     });
-    const families = [...new Set(rendered.map((item) => item.family))];
+    const scenicRendered = rendered.scenic;
+    const families = [...new Set(scenicRendered.map((item) => item.family))];
     for (const family of families) {
-      const items = rendered.filter((item) => item.family === family);
+      const items = scenicRendered.filter((item) => item.family === family);
       const rows = Math.ceil(items.length / 3), tileWidth = 310, tileHeight = 670;
       const layers = [];
       for (let i = 0; i < items.length; i++) {
@@ -54,7 +64,7 @@ async function main() {
       }
       await sharp({ create: { width: tileWidth * 3, height: tileHeight * rows, channels: 3, background: '#edf0f3' } }).composite(layers).png().toFile(path.join(out, `${family}.png`));
     }
-    const report = { templates: rendered.length / 3, images: rendered.length, families, errors, renders: rendered.map(({ png, ...item }) => item) };
+    const report = { templates: scenicRendered.length / 3, images: scenicRendered.length, families, errors, sharedRenders: rendered.sharedRenders, renders: scenicRendered.map(({ id, family, device, width, height, overflow }) => ({ id, family, device, width, height, overflow })) };
     fs.writeFileSync(path.join(out, 'verification.json'), JSON.stringify(report, null, 2));
     if (errors.length) throw new Error(errors.join('\n'));
     console.log(JSON.stringify({ templates: report.templates, images: report.images, families: families.length, errors }));

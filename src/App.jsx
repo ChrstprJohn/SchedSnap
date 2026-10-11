@@ -5,12 +5,15 @@ import Footer from './components/Footer.jsx';
 import Home from './pages/Home.jsx';
 import DeviceGallery from './pages/DeviceGallery.jsx';
 import InAppBrowserBanner from './components/InAppBrowserBanner.jsx';
+import { CatalogProvider } from './lib/catalog.jsx';
 
 const ScheduleWallpaper = lazy(() => import('./pages/ScheduleWallpaper/Index.jsx'));
+const Admin = lazy(() => import('./pages/Admin.jsx'));
 
 export default function App() {
   const { pathname, hash } = useLocation();
   const isWallpaperEditor = pathname.startsWith('/services/schedule-wallpaper');
+  const isAdmin = pathname === '/admin' || pathname.startsWith('/admin/');
 
   useEffect(() => {
     const section = hash === '#designs' ? document.getElementById('designs') : null;
@@ -22,14 +25,15 @@ export default function App() {
     }
   }, [pathname, hash, isWallpaperEditor]);
 
-  return (
+  return (<CatalogProvider>
     <div className="flex min-h-dvh flex-col">
       <a href="#main" className="skip-link">Skip to content</a>
-      <InAppBrowserBanner />
-      <Navbar />
+      {!isAdmin && <InAppBrowserBanner />}
+      {!isAdmin && <Navbar />}
       <main id="main" className="flex-1" tabIndex={-1}>
         <Suspense fallback={<p className="page-wrap py-20" role="status">Opening wallpaper creator…</p>}>
           <Routes>
+            <Route path="/admin/*" element={<Admin />} />
             <Route path="/" element={<Home />} />
             <Route path="/wallpapers/:device" element={<DeviceGallery />} />
             <Route path="/services/schedule-wallpaper/*" element={<ScheduleWallpaper />} />
@@ -43,7 +47,7 @@ export default function App() {
           </Routes>
         </Suspense>
       </main>
-      {!pathname.startsWith('/services/schedule-wallpaper') && <Footer />}
+      {!isAdmin && !pathname.startsWith('/services/schedule-wallpaper') && <Footer />}
     </div>
-  );
+  </CatalogProvider>);
 }

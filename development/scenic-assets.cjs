@@ -7,9 +7,10 @@ const sharp = require(process.env.SCHEDSNAP_NODE_PACKAGES
   ? path.join(process.env.SCHEDSNAP_NODE_PACKAGES, 'sharp')
   : 'C:/Users/picar/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp');
 const root = path.resolve(__dirname, '..');
-const devices = { mobile: [1080, 2400], tablet: [1536, 2048], laptop: [1920, 1080] };
 const manifests = ['scenic-root.json', 'scenic-blue.json', 'scenic-meadow.json', 'scenic-moon.json'];
 async function main() {
+  const { deviceResolutions } = await import('../src/assets/templates.js');
+  const devices = Object.fromEntries(Object.values(deviceResolutions).map(({ id, width, height }) => [id, [width, height]]));
   const templates = manifests.flatMap((name) => {
     const file = path.join(root, 'documentation', name);
     return fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : [];

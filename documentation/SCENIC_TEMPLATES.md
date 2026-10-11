@@ -1,18 +1,51 @@
-# Scenery & stationery
+# Illustrated templates
 
-Three original imagegen families, with nine independently generated backgrounds.
+55 original variants across 13 themes, with 165 separate device compositions.
+The eight newer reference families contain five variants each. Tropical botanicals,
+paper & stationery, mountain dawn, blossom clouds and colorful paper contours contain
+three each. Rejected kittens and masked heroes are excluded; square masters were removed.
 Artwork: public/wallpapers/scenic/<theme>/<device>.png.
 Definitions: src/assets/scenicTemplates.js.
 
-| Theme | Mobile | Tablet | Laptop |
-| --- | --- | --- | --- |
-| Tropical Margin | 9:20 portrait | 3:4 portrait | 16:9 landscape |
-| Paper Notes | 9:20 portrait | 3:4 portrait | 16:9 landscape |
-| Mountain Dawn | 9:20 portrait | 3:4 portrait | 16:9 landscape |
+| Device | Final asset size | Composition |
+| --- | --- | --- |
+| Mobile | 1080 × 2400 | 9:20 portrait |
+| Tablet | 1600 × 2560 | 5:8 portrait |
+| Laptop | 1920 × 1080 | 16:9 landscape |
 
 These are background assets, not finished data-bearing wallpapers. The existing renderer adds actual class details and opaque white day cards. Future attendance features should use live text or cards, never baked-in image data. No attendance tracking feature is implemented by this asset pack.
 
-The asset loader selects deviceImages by resolution.id; image remains the mobile fallback. Export resolutions are 1080 x 2400, 1536 x 2048 and 1920 x 1080. Source image dimensions may differ; the renderer scales to cover. Tablet artwork is designed for portrait; landscape uses a crop.
+The asset loader selects deviceImages by resolution.id; image remains the mobile fallback.
+Each file is a separately generated aspect-specific composition, then resampled to its
+exact final export pixels. Wrong-aspect mobile outputs were regenerated with taller sky,
+rather than cropping off their illustration. Tablet artwork is designed for portrait;
+the existing optional tablet landscape control uses the shared renderer's cover crop.
+
+Illustrated collection and theme filters use pills. The same Canvas renderer supplies
+actual class data to gallery examples, modal previews and downloads. Each theme has a
+stable ID, palette, and device-image map in scenicTemplates.js. Folder paths follow
+public/wallpapers/scenic/<variant-id>/{mobile,tablet,laptop}.png.
+
+## Prompt archives and maintenance
+
+Final tablet compositions use 5:8. Earlier 3:4 tablet prompts below and in the
+archives are superseded by root-tablet-corrections.json,
+meadow-tablet-corrections.json and moon-tablet-corrections.json. These edits
+extend quiet sky or paper while retaining the original footer artwork.
+
+- SCENIC_ROOT_PROMPTS.md: botanicals, stationery, mountains, clouds and colorful contours.
+- BLUE_CONTOURS_PROMPTS.md: blue abstract waves and comic graphics.
+- MEADOW_SKIES_PROMPTS.md: floral skies, alpine landscapes and illustrated adventures.
+- MOONLIT_BLOSSOMS_PROMPTS.md: moonlit blossoms, sunset travelers and cozy city.
+- meadow-mobile-corrections.json: exact prompts and provenance of the four aspect corrections.
+
+All were generated with the built-in imagegen tool. Earlier square prompts in the archives
+are source history, not delivered device assets. The four scenic-*.json manifests provide
+reusable palettes and IDs; the source module is assembled from them after all devices exist.
+Run node development/scenic-assets.cjs --normalize --assemble to validate ratios, standardize
+pixels and rebuild the definitions. It refuses incomplete device sets and wrong aspect ratios.
+Run node development/verify-scenic.cjs with the foreground local dev server running to capture
+all 165 wallpapers with real sample classes and the gallery at phone, tablet and laptop widths.
 
 Keep decorations at the edges/footer and retain the high-opacity day-card surface for legibility with dense schedules. Uploaded student details must stay outside artwork and saved generation prompts.
 

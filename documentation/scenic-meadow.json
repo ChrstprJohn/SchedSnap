@@ -4,184 +4,254 @@
     "name": "Meadow Skies",
     "description": "Purple cosmos beneath a spacious painterly blue sky.",
     "family": "floral-skies",
-    "image": "/wallpapers/scenic/meadow-skies/laptop.png",
-    "deviceImages": {
-      "mobile": "/wallpapers/scenic/meadow-skies/mobile.png",
-      "tablet": "/wallpapers/scenic/meadow-skies/tablet.png",
-      "laptop": "/wallpapers/scenic/meadow-skies/laptop.png"
-    },
+    "image": "/wallpapers/scenic/meadow-skies/mobile.png",
     "background": "#DCECF6",
     "ink": "#213D46",
     "muted": "#557079",
     "surface": "#F8FBFD",
-    "line": "#B5CDD5"
+    "line": "#B5CDD5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/meadow-skies/mobile.png",
+      "tablet": "/wallpapers/scenic/meadow-skies/tablet.png",
+      "laptop": "/wallpapers/scenic/meadow-skies/laptop.png"
+    }
   },
   {
     "id": "cosmos-breeze",
     "name": "Cosmos Breeze",
     "description": "Dusty pink cosmos and mint meadow under pale aquamarine sky.",
     "family": "floral-skies",
-    "image": "/wallpapers/scenic/cosmos-breeze/master.png",
+    "image": "/wallpapers/scenic/cosmos-breeze/mobile.png",
     "background": "#D7EFF0",
     "ink": "#253D45",
     "muted": "#526C74",
     "surface": "#FAFCFD",
-    "line": "#BCD0D5"
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/cosmos-breeze/mobile.png",
+      "tablet": "/wallpapers/scenic/cosmos-breeze/tablet.png",
+      "laptop": "/wallpapers/scenic/cosmos-breeze/laptop.png"
+    }
   },
   {
     "id": "daisy-morning",
     "name": "Daisy Morning",
     "description": "White daisies with warm yellow centers, dew-soft green meadow, powder blue morning sky.",
     "family": "floral-skies",
-    "image": "/wallpapers/scenic/daisy-morning/master.png",
+    "image": "/wallpapers/scenic/daisy-morning/mobile.png",
     "background": "#DBEDF6",
     "ink": "#253D45",
     "muted": "#526C74",
     "surface": "#FAFCFD",
-    "line": "#BCD0D5"
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/daisy-morning/mobile.png",
+      "tablet": "/wallpapers/scenic/daisy-morning/tablet.png",
+      "laptop": "/wallpapers/scenic/daisy-morning/laptop.png"
+    }
   },
   {
     "id": "lavender-horizon",
     "name": "Lavender Horizon",
     "description": "Slender lavender at lower corners, distant soft lilac hills below wide blush-lilac sky.",
     "family": "floral-skies",
-    "image": "/wallpapers/scenic/lavender-horizon/master.png",
+    "image": "/wallpapers/scenic/lavender-horizon/mobile.png",
     "background": "#ECE3F6",
     "ink": "#253D45",
     "muted": "#526C74",
     "surface": "#FAFCFD",
-    "line": "#BCD0D5"
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/lavender-horizon/mobile.png",
+      "tablet": "/wallpapers/scenic/lavender-horizon/tablet.png",
+      "laptop": "/wallpapers/scenic/lavender-horizon/laptop.png"
+    }
   },
   {
     "id": "sunflower-afternoon",
     "name": "Sunflower Afternoon",
     "description": "Tiny golden sunflowers lower edges, sage meadow, pale warm cream afternoon sky.",
     "family": "floral-skies",
-    "image": "/wallpapers/scenic/sunflower-afternoon/master.png",
+    "image": "/wallpapers/scenic/sunflower-afternoon/mobile.png",
     "background": "#F6ECD4",
     "ink": "#253D45",
     "muted": "#526C74",
     "surface": "#FAFCFD",
-    "line": "#BCD0D5"
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/sunflower-afternoon/mobile.png",
+      "tablet": "/wallpapers/scenic/sunflower-afternoon/tablet.png",
+      "laptop": "/wallpapers/scenic/sunflower-afternoon/laptop.png"
+    }
   },
   {
     "id": "alpine-dawn",
     "name": "Alpine Dawn",
     "description": "Layered slate-blue alpine mountain silhouettes low at footer, peach dawn atmosphere, vast pale peach sky.",
     "family": "alpine-landscapes",
-    "image": "/wallpapers/scenic/alpine-dawn/master.png",
+    "image": "/wallpapers/scenic/alpine-dawn/mobile.png",
     "background": "#F2DCCB",
     "ink": "#253D45",
     "muted": "#526C74",
     "surface": "#FAFCFD",
-    "line": "#BCD0D5"
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/alpine-dawn/mobile.png",
+      "tablet": "/wallpapers/scenic/alpine-dawn/tablet.png",
+      "laptop": "/wallpapers/scenic/alpine-dawn/laptop.png"
+    }
   },
   {
     "id": "glacier-lake",
     "name": "Glacier Lake",
     "description": "Turquoise mountain lake low at footer, pale teal distant peaks, misty cream-blue sky.",
     "family": "alpine-landscapes",
-    "image": "/wallpapers/scenic/glacier-lake/master.png",
+    "image": "/wallpapers/scenic/glacier-lake/mobile.png",
     "background": "#E1EDF0",
     "ink": "#253D45",
     "muted": "#526C74",
     "surface": "#FAFCFD",
-    "line": "#BCD0D5"
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/glacier-lake/mobile.png",
+      "tablet": "/wallpapers/scenic/glacier-lake/tablet.png",
+      "laptop": "/wallpapers/scenic/glacier-lake/laptop.png"
+    }
   },
   {
     "id": "snowy-summit",
     "name": "Snowy Summit",
     "description": "Minimal icy snowy peaks and sparse evergreen trees low at footer, vast light icy lavender sky.",
     "family": "alpine-landscapes",
-    "image": "/wallpapers/scenic/snowy-summit/master.png",
+    "image": "/wallpapers/scenic/snowy-summit/mobile.png",
     "background": "#ECEEF8",
     "ink": "#253D45",
     "muted": "#526C74",
     "surface": "#FAFCFD",
-    "line": "#BCD0D5"
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/snowy-summit/mobile.png",
+      "tablet": "/wallpapers/scenic/snowy-summit/tablet.png",
+      "laptop": "/wallpapers/scenic/snowy-summit/laptop.png"
+    }
   },
   {
     "id": "amber-ridge",
     "name": "Amber Ridge",
     "description": "Terracotta foothills and layered indigo ridges low at footer, warm pale apricot sunset sky.",
     "family": "alpine-landscapes",
-    "image": "/wallpapers/scenic/amber-ridge/master.png",
+    "image": "/wallpapers/scenic/amber-ridge/mobile.png",
     "background": "#F1DECD",
     "ink": "#253D45",
     "muted": "#526C74",
     "surface": "#FAFCFD",
-    "line": "#BCD0D5"
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/amber-ridge/mobile.png",
+      "tablet": "/wallpapers/scenic/amber-ridge/tablet.png",
+      "laptop": "/wallpapers/scenic/amber-ridge/laptop.png"
+    }
   },
   {
     "id": "highland-meadow",
     "name": "Highland Meadow",
     "description": "Green rolling highland meadow below low blue mountain ridge, light buttercream sky, tiny wildflowers.",
     "family": "alpine-landscapes",
-    "image": "/wallpapers/scenic/highland-meadow/master.png",
+    "image": "/wallpapers/scenic/highland-meadow/mobile.png",
     "background": "#F2EFDC",
     "ink": "#253D45",
     "muted": "#526C74",
     "surface": "#FAFCFD",
-    "line": "#BCD0D5"
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/highland-meadow/mobile.png",
+      "tablet": "/wallpapers/scenic/highland-meadow/tablet.png",
+      "laptop": "/wallpapers/scenic/highland-meadow/laptop.png"
+    }
   },
   {
     "id": "cloud-voyager",
     "name": "Cloud Voyager",
     "description": "Tiny original turquoise balloon airship at lower-central footer above low sea of soft clouds, dreamy pale blue sky.",
     "family": "anime-adventures",
-    "image": "/wallpapers/scenic/cloud-voyager/master.png",
+    "image": "/wallpapers/scenic/cloud-voyager/mobile.png",
     "background": "#E2EFF7",
     "ink": "#253D45",
     "muted": "#526C74",
     "surface": "#FAFCFD",
-    "line": "#BCD0D5"
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/cloud-voyager/mobile.png",
+      "tablet": "/wallpapers/scenic/cloud-voyager/tablet.png",
+      "laptop": "/wallpapers/scenic/cloud-voyager/laptop.png"
+    }
   },
   {
     "id": "fox-trail",
     "name": "Fox Trail",
     "description": "Tiny original traveler in green cloak with tiny orange fox walking low grassy footer path, gentle cream sky.",
     "family": "anime-adventures",
-    "image": "/wallpapers/scenic/fox-trail/master.png",
+    "image": "/wallpapers/scenic/fox-trail/mobile.png",
     "background": "#F5EEDC",
     "ink": "#253D45",
     "muted": "#526C74",
     "surface": "#FAFCFD",
-    "line": "#BCD0D5"
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/fox-trail/mobile.png",
+      "tablet": "/wallpapers/scenic/fox-trail/tablet.png",
+      "laptop": "/wallpapers/scenic/fox-trail/laptop.png"
+    }
   },
   {
     "id": "moonlit-camp",
     "name": "Moonlit Camp",
     "description": "Tiny original rounded tent and small cute white animal companion low at footer among distant violet hills, quiet pale lavender twilight sky.",
     "family": "anime-adventures",
-    "image": "/wallpapers/scenic/moonlit-camp/master.png",
+    "image": "/wallpapers/scenic/moonlit-camp/mobile.png",
     "background": "#E6DEF3",
     "ink": "#253D45",
     "muted": "#526C74",
     "surface": "#FAFCFD",
-    "line": "#BCD0D5"
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/moonlit-camp/mobile.png",
+      "tablet": "/wallpapers/scenic/moonlit-camp/tablet.png",
+      "laptop": "/wallpapers/scenic/moonlit-camp/laptop.png"
+    }
   },
   {
     "id": "island-postcard",
     "name": "Island Postcard",
     "description": "Tiny original young traveler silhouette with round backpack and cute small bird at lower-central footer, distant low turquoise island, very light cyan sky.",
     "family": "anime-adventures",
-    "image": "/wallpapers/scenic/island-postcard/master.png",
+    "image": "/wallpapers/scenic/island-postcard/mobile.png",
     "background": "#E2F2EF",
     "ink": "#253D45",
     "muted": "#526C74",
     "surface": "#FAFCFD",
-    "line": "#BCD0D5"
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/island-postcard/mobile.png",
+      "tablet": "/wallpapers/scenic/island-postcard/tablet.png",
+      "laptop": "/wallpapers/scenic/island-postcard/laptop.png"
+    }
   },
   {
     "id": "windmill-journey",
     "name": "Windmill Journey",
     "description": "Tiny original traveler and cute fluffy dog on lower-central grass footer with a very tiny distant rustic windmill, quiet pale warm blue sky.",
     "family": "anime-adventures",
-    "image": "/wallpapers/scenic/windmill-journey/master.png",
+    "image": "/wallpapers/scenic/windmill-journey/mobile.png",
     "background": "#E6EFF0",
     "ink": "#253D45",
     "muted": "#526C74",
     "surface": "#FAFCFD",
-    "line": "#BCD0D5"
+    "line": "#BCD0D5",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/windmill-journey/mobile.png",
+      "tablet": "/wallpapers/scenic/windmill-journey/tablet.png",
+      "laptop": "/wallpapers/scenic/windmill-journey/laptop.png"
+    }
   }
 ]

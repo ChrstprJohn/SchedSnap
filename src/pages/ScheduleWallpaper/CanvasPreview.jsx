@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Download, LayoutTemplate, Maximize2 } from 'lucide-react';
 import { canvasBlob, drawWallpaper } from '../../utils/canvasHelpers.js';
 import { prepareWallpaperAssets } from '../../utils/wallpaperAssets.js';
@@ -9,16 +9,24 @@ import Toast from '../../components/Toast.jsx';
 export function WallpaperCanvas({ schedule, template, resolution, className = '', label = 'Schedule wallpaper preview', onLayout, lazy = false }) {
   const canvas = useRef(null);
   const [failure, setFailure] = useState('');
+  const [readyKey, setReadyKey] = useState('');
+  const renderResolution = useMemo(() => {
+    const scale = Math.min(1, 960 / resolution.width, 1200 / resolution.height);
+    return { ...resolution, width: Math.round(resolution.width * scale), height: Math.round(resolution.height * scale) };
+  }, [resolution]);
+  const renderKey = JSON.stringify([schedule, template, renderResolution]);
+  const pending = readyKey !== renderKey;
   useEffect(() => {
     let cancelled = false;
-    const render = () => prepareWallpaperAssets(template, resolution).then((backgroundImage) => {
+    const render = () => prepareWallpaperAssets(template, renderResolution).then((backgroundImage) => {
       if (cancelled) return;
       try {
-        const layout = drawWallpaper(canvas.current, { schedule, template, resolution, backgroundImage });
+        const layout = drawWallpaper(canvas.current, { schedule, template, resolution: renderResolution, backgroundImage });
+        setReadyKey(renderKey);
         setFailure('');
         onLayout?.({ overflow: layout.overflow, error: '', ready: true });
-      } catch (error) { setFailure(error.message); onLayout?.({ overflow: true, error: error.message, ready: true }); }
-    }).catch((error) => { if (!cancelled) { setFailure(error.message); onLayout?.({ overflow: true, error: error.message, ready: true }); } });
+      } catch (error) { setReadyKey(renderKey); setFailure(error.message); onLayout?.({ overflow: true, error: error.message, ready: true }); }
+    }).catch((error) => { if (!cancelled) { setReadyKey(renderKey); setFailure(error.message); onLayout?.({ overflow: true, error: error.message, ready: true }); } });
     let observer;
     if (lazy && typeof IntersectionObserver !== 'undefined') {
       observer = new IntersectionObserver((entries) => {
@@ -27,8 +35,8 @@ export function WallpaperCanvas({ schedule, template, resolution, className = ''
       observer.observe(canvas.current);
     } else render();
     return () => { cancelled = true; observer?.disconnect(); };
-  }, [schedule, template, resolution, onLayout, lazy]);
-  return <><canvas ref={canvas} width={resolution.width} height={resolution.height} role="img" aria-label={label} className={className} style={{ backgroundColor: template.background }} />{failure && <span role="alert" className="text-xs text-muted">{failure}</span>}</>;
+  }, [schedule, template, renderResolution, renderKey, onLayout, lazy]);
+  return <><canvas ref={canvas} width={renderResolution.width} height={renderResolution.height} role="img" aria-label={pending ? `Loading ${label}` : label} aria-busy={pending} className={`${className} ${pending ? 'wallpaper-skeleton' : ''}`} style={{ backgroundColor: template.background }} />{!pending && failure && <span role="alert" className="text-xs text-muted">{failure}</span>}</>;
 }
 
 export default function CanvasPreview({ schedule, template, resolution, confirmed, issues, onChangeTemplate }) {

@@ -249,8 +249,10 @@
   .import-change-desktop { display: none; }
   .import-change-mobile { display: inline; }
   .wallpaper-flow-header h1 { font-size: 24px; }
-  .template-filters { flex-wrap: nowrap; overflow-x: auto; gap: 8px; margin-bottom: 16px; scrollbar-width: none; }
-  .template-filters::-webkit-scrollbar { display: none; }
+  .template-filters { flex-wrap: nowrap; overflow-x: auto; gap: 8px; margin-bottom: 16px; padding-bottom: 6px; scrollbar-width: thin; scrollbar-color: #94a3b8 #f1f5f9; }
+  .template-filters::-webkit-scrollbar { height: 4px; }
+  .template-filters::-webkit-scrollbar-track { background: #f1f5f9; }
+  .template-filters::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 999px; }
   .template-filters .template-category:focus-visible { outline-offset: -4px; }
   .template-filters .template-category[aria-pressed='true']:focus-visible { outline-color: white; }
   .template-filters .template-category { flex-shrink: 0; min-height: 44px; padding: 8px 14px; border-radius: 999px; font-size: 12px; }
@@ -409,3 +411,9 @@
   .wallpaper-flow:not([data-device='mobile']) .flow-preview-art.preview-size-sm { --preview-frame-height: max(180px, 26svh); }
   .wallpaper-flow:not([data-device='mobile']) .flow-preview-art.preview-size-lg { --preview-frame-height: max(340px, 56svh); }
 }
+
+.wallpaper-skeleton { background-image: linear-gradient(100deg, #e8edf0 25%, #f5f7f8 45%, #e8edf0 65%); background-size: 200% 100%; animation: wallpaper-loading 1.4s ease-in-out infinite; }
+.gallery-card-skeleton { aspect-ratio: 1080 / 2400; border-radius: 12px; }
+.gallery-load-more { display: flex; justify-content: center; padding: 24px 0; }
+@keyframes wallpaper-loading { to { background-position: -200% 0; } }
+@media (prefers-reduced-motion: reduce) { .wallpaper-skeleton { animation: none; } }

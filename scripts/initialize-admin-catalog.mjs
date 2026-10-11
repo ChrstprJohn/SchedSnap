@@ -1,0 +1,12 @@
+import process from 'node:process';
+import { existsSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { createCatalogStore } from '../server/catalogStore.js';
+const root = resolve(import.meta.dirname, '..');
+for (const file of ['.env.local', '.env']) if (existsSync(resolve(root, file))) process.loadEnvFile(resolve(root, file));
+const store = createCatalogStore(process.env);
+let catalog = await store.read(true);
+if (catalog.revision === 'seed') catalog = await store.write(catalog);
+const verified = await createCatalogStore(process.env).read(true);
+if (verified.revision !== catalog.revision) throw new Error('Catalog verification failed.');
+console.log(`Private catalog ready: ${verified.templates.length} designs. No credentials printed.`);
