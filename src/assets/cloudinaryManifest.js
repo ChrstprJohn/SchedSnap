@@ -1372,4 +1372,18 @@ export default {
     "width": 1080,
     "height": 2400
   },
-  
+  "/wallpapers/scenic/sunflower-afternoon/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sunflower-afternoon/laptop-ef9a065695e4c14e",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791683021/schedsnap/wallpapers/scenic/sunflower-afternoon/laptop-ef9a065695e4c14e.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/sunflower-afternoon/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sunflower-afternoon/tablet-9f1971e3253de8c9",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791683022/schedsnap/wallpapers/scenic/sunflower-afternoon/tablet-9f1971e3253de8c9.png",
+    "width": 1600,
+    "height": 2560
+  }
+};

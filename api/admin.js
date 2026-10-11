@@ -25,7 +25,9 @@ export function createAdminHandler({ env = process.env, store = createCatalogSto
         if (!embedUrl) return response.status(200).json({ embedUrl: '' });
         try {
           const url = new URL(embedUrl);
-          if (url.protocol !== 'https:' || !url.hostname.endsWith('.posthog.com') || !url.pathname.startsWith('/embedded/')) throw new Error('Invalid embed URL');
+          const isPostHogHost = url.hostname === 'posthog.com' || url.hostname.endsWith('.posthog.com');
+          const isDashboardPath = url.pathname.startsWith('/embedded/') || url.pathname.startsWith('/shared/');
+          if (url.protocol !== 'https:' || !isPostHogHost || !isDashboardPath) throw new Error('Invalid dashboard URL');
           return response.status(200).json({ embedUrl: url.href });
         } catch { return fail(503, 'Set a valid PostHog dashboard embed URL in the server environment.'); }
       }
