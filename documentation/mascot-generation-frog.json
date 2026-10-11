@@ -1,0 +1,16 @@
+[
+  {
+    "name": "frog",
+    "prompt": "Use case: stylized-concept. Asset type: transparent cutout mascot for SchedSnap responsive website decorative backgrounds. Primary request: one extremely cute mint green round frog, sitting with a plump oval body, two rounded eye bumps, tiny dark plum dot eyes, a tiny happy smile, cream lower tummy, blush cheeks, small stubby arms and round feet. Style: premium soft matte 3D rounded plush clay forms, gently velvety surface, softly lit from upper left, like a friendly sleepy cream ghost mascot. Front three-quarter view, full body centered in square canvas, generous 12% margins. Genuine transparent alpha background, no backdrop, no ground plane, no cast shadow outside subject, no outline, no text, no watermark, no accessories, no extra objects.",
+    "source": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a12a75-c9d9-7bc0-92b8-fb22919c71cb as C:\\Users\\picar\\.codex\\generated_images\\01a12a75-c9d9-7bc0-92b8-fb22919c71cb\\exec-76ab72f5-1cac-426e-87a4-365a7483d817.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "tool": "built-in image_gen",
+    "transparent_background": true
+  },
+  {
+    "name": "penguin",
+    "prompt": "Use case: stylized-concept. Asset type: transparent cutout mascot for SchedSnap responsive website decorative backgrounds. Primary request: one extremely cute periwinkle purple baby penguin with a large plump rounded body, warm cream face and tummy, tiny dark plum dot eyes, a tiny warm yellow beak, blush cheeks, small rounded flippers and small yellow rounded feet. Style: premium soft matte 3D rounded plush clay forms, gently velvety surface, softly lit from upper left, like a friendly sleepy cream ghost mascot. Front three-quarter view, full body centered in square canvas, generous 12% margins. Genuine transparent alpha background, no backdrop, no ground plane, no cast shadow outside subject, no outline, no text, no watermark, no accessories, no extra objects.",
+    "source": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a12a75-c9d9-7bc0-92b8-fb22919c71cb as C:\\Users\\picar\\.codex\\generated_images\\01a12a75-c9d9-7bc0-92b8-fb22919c71cb\\exec-c01be212-be32-49ae-814b-d3026c341f9c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "tool": "built-in image_gen",
+    "transparent_background": true
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "mode": "built-in image_gen",
+  "transparent_background": true,
+  "styleReference": "C:/Users/picar/AppData/Local/Temp/codex-clipboard-e487f4a4-7c46-4b56-874f-5cd75d4d1160.png",
+  "assets": [
+    {
+      "name": "pixel-calico-cat",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent pixel art mascot sprite for SchedSnap\nPrimary request: one cute calico kitten with cream chest and face, charcoal gray and muted apricot patches, upright ears and curled tail, full character sitting centered with generous clear margins. Tiny expressive square dark eyes and small face. Image reference is STYLE GUIDANCE only: match its chunky square pixel clusters, warm muted low-saturation palette, limited stepped shading, retro game sprite craftsmanship.\nStyle: authentic low-resolution pixel art with approximately 64 by 64 logical pixels enlarged using crisp nearest-neighbor square blocks. Edges follow a clearly visible square pixel grid. Each shape built from large square clusters. Limited flat color palette, 2-3 shades per material.\nScene: genuinely transparent alpha background. Single isolated full-body character.\nAvoid: rounded background card, black background, ground, cast shadow, text, props, border, 3D render, clay, soft shading, smooth curves, blur, antialiasing, outlines made of smooth lines.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a12a73-b431-7300-bc08-28f51a45a8a4\\exec-b455a892-0b7a-4ef7-a24f-9ffd2173efa1.png",
+      "destination": "public/images/pixel-mascots/masters/pixel-calico-cat.png",
+      "visuallyInspected": true
+    },
+    {
+      "name": "pixel-fox",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent pixel art mascot sprite for SchedSnap\nPrimary request: one cute small orange fox with muted terracotta fur, cream muzzle and belly, large pointed ears and bushy cream-tipped tail, full character sitting centered with generous clear margins. Tiny expressive square dark eyes and small face. Image reference is STYLE GUIDANCE only: match its chunky square pixel clusters, warm muted low-saturation palette, limited stepped shading, retro game sprite craftsmanship.\nStyle: authentic low-resolution pixel art with approximately 64 by 64 logical pixels enlarged using crisp nearest-neighbor square blocks. Edges follow a clearly visible square pixel grid. Each shape built from large square clusters. Limited flat color palette, 2-3 shades per material.\nScene: genuinely transparent alpha background. Single isolated full-body character.\nAvoid: rounded background card, black background, ground, cast shadow, text, props, border, 3D render, clay, soft shading, smooth curves, blur, antialiasing, outlines made of smooth lines.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a12a73-b431-7300-bc08-28f51a45a8a4\\exec-ba21608f-4864-4b4f-9a82-94005ad9fe47.png",
+      "destination": "public/images/pixel-mascots/masters/pixel-fox.png",
+      "visuallyInspected": true
+    },
+    {
+      "name": "pixel-frog",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent pixel art mascot sprite for SchedSnap\nPrimary request: one cute little sage green frog with wide squat body, stubby legs and two large raised eyes, full character sitting centered with generous clear margins. Tiny expressive square dark eyes and small face. Image reference is STYLE GUIDANCE only: match its chunky square pixel clusters, warm muted low-saturation palette, limited stepped shading, retro game sprite craftsmanship.\nStyle: authentic low-resolution pixel art with approximately 64 by 64 logical pixels enlarged using crisp nearest-neighbor square blocks. Edges follow a clearly visible square pixel grid. Each shape built from large square clusters. Limited flat color palette, 2-3 shades per material.\nScene: genuinely transparent alpha background. Single isolated full-body character.\nAvoid: rounded background card, black background, ground, cast shadow, text, props, border, 3D render, clay, soft shading, smooth curves, blur, antialiasing, outlines made of smooth lines.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a12a73-b431-7300-bc08-28f51a45a8a4\\exec-506a9180-9ba2-4ac4-8420-87b3e3abda55.png",
+      "destination": "public/images/pixel-mascots/masters/pixel-frog.png",
+      "visuallyInspected": true
+    },
+    {
+      "name": "pixel-bunny",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent pixel art mascot sprite for SchedSnap\nPrimary request: one cute cream bunny with long upright ears, muted peach ear interiors, stubby legs and tiny round tail, full character sitting centered with generous clear margins. Tiny expressive square dark eyes and small face. Image reference is STYLE GUIDANCE only: match its chunky square pixel clusters, warm muted low-saturation palette, limited stepped shading, retro game sprite craftsmanship.\nStyle: authentic low-resolution pixel art with approximately 64 by 64 logical pixels enlarged using crisp nearest-neighbor square blocks. Edges follow a clearly visible square pixel grid. Each shape built from large square clusters. Limited flat color palette, 2-3 shades per material.\nScene: genuinely transparent alpha background. Single isolated full-body character.\nAvoid: rounded background card, black background, ground, cast shadow, text, props, border, 3D render, clay, soft shading, smooth curves, blur, antialiasing, outlines made of smooth lines.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a12a73-b431-7300-bc08-28f51a45a8a4\\exec-5da78e4f-7496-4480-8f67-43dafe7176ab.png",
+      "destination": "public/images/pixel-mascots/masters/pixel-bunny.png",
+      "visuallyInspected": true
+    }
+  ]
+}

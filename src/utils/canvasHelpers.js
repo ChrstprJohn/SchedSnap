@@ -1,6 +1,6 @@
 import { days } from '../../shared/scheduleSchema.js';
 import { mobileResolution } from '../assets/templates.js';
-import { colorInputValue } from './wallpaperTheme.js';
+import { colorInputValue, mascotPosition } from './wallpaperTheme.js';
 import { drawParticles } from './wallpaperParticles.js';
 
 export function formatTime(value) {
@@ -184,6 +184,13 @@ function drawBackground(ctx, template, image, width = 1080, height = 2400) {
     ctx.stroke(); ctx.restore();
   }
   if (template.pattern === 'circle') { ctx.fillStyle = template.patternColor || '#ad5b45'; ctx.beginPath(); ctx.arc(width - 30, 200, 420, 0, Math.PI * 2); ctx.fill(); }
+  if (template.pattern === 'frame') {
+    const inset = Math.min(width, height) * 0.035;
+    ctx.save(); ctx.strokeStyle = template.patternColor; ctx.lineWidth = 5;
+    ctx.beginPath(); ctx.moveTo(inset, inset); ctx.lineTo(width - inset, inset);
+    ctx.lineTo(width - inset, height - inset); ctx.lineTo(inset, height - inset); ctx.lineTo(inset, inset);
+    ctx.stroke(); ctx.restore();
+  }
   if (template.pattern === 'dots') {
     ctx.fillStyle = template.patternColor;
     for (let y = 36; y < height; y += 72) for (let x = 36; x < width; x += 72) {
@@ -229,8 +236,11 @@ function drawMascotFooter(ctx, template, image) {
     const bounds = image.mascotBounds || { x: 0, y: 0, width: image.width, height: image.height };
     const scale = 620 / Math.max(bounds.width, bounds.height);
     const width = bounds.width * scale, height = bounds.height * scale;
-    const x = template.mascotSide === 'right' ? 1080 - width : 0;
+    const placement = mascotPosition(template);
+    const x = placement === 'center' ? (1080 - width) / 2 : placement === 'right' ? 1080 - width : 0;
+    ctx.save(); ctx.imageSmoothingEnabled = !template.pixelArt;
     ctx.drawImage(image, bounds.x, bounds.y, bounds.width, bounds.height, x, 2400 - height, width, height);
+    ctx.restore();
     return { x, y: 2400 - height, width, height };
   }
 
@@ -340,6 +350,8 @@ export function schedulePosition(template) {
   if (template.device === 'laptop') {
     if (template.layout !== 'mascot') return 'center';
     if (['left', 'right'].includes(template.schedulePosition)) return template.schedulePosition;
+    if (template.mascotPosition === 'center') return 'center';
+    if (template.mascotPosition) return mascotPosition(template) === 'left' ? 'right' : 'left';
     return template.mascotSide === 'left' ? 'right' : 'left';
   }
   if (['left', 'center', 'right'].includes(template.schedulePosition)) return template.schedulePosition;
@@ -359,8 +371,11 @@ function drawDeviceWallpaper(canvas, { schedule, template, resolution, backgroun
   const landscape = width > height;
   const hasCharacter = template.layout === 'mascot';
   const position = schedulePosition({ ...template, device: resolution.id });
+  const placement = mascotPosition(template);
+  // Explicit placements sharing the schedule column use a protected footer.
+  const footerCharacter = hasCharacter && (placement === 'center' || (template.mascotPosition && ((placement === 'left' && position !== 'right') || (placement === 'right' && position !== 'left'))));
   const columnWidth = width * (landscape ? 0.65 : 0.9);
-  const availableHeight = height * (landscape ? 0.88 : hasCharacter ? 0.62 : 0.82);
+  const availableHeight = height * (landscape ? footerCharacter ? 0.6 : 0.88 : hasCharacter ? 0.62 : 0.82);
   const count = groupSchedule(schedule).length;
   const designWidth = 1400;
   const layoutOptions = { top: 180, width: 1244, timeWidth: 310, roomWidth: 210, minCardHeight: 130 };
@@ -377,7 +392,7 @@ function drawDeviceWallpaper(canvas, { schedule, template, resolution, backgroun
   const margin = width * 0.05;
   const columnX = position === 'left' ? margin : position === 'right' ? width - columnWidth - margin : (width - columnWidth) / 2;
   const x = columnX + (columnWidth - designWidth * scale) / 2;
-  const y = landscape ? (height - contentHeight) / 2 : height * 0.16;
+  const y = landscape ? footerCharacter ? height * 0.06 : (height - contentHeight) / 2 : height * 0.16;
   const scheduleBounds = { x: x + 78 * scale, y, width: layoutOptions.width * scale, height: contentHeight };
   ctx.save(); ctx.translate(x, y); ctx.scale(scale, scale);
   drawHeading(ctx, template, 100, designWidth);
@@ -387,19 +402,23 @@ function drawDeviceWallpaper(canvas, { schedule, template, resolution, backgroun
   let art;
   if (hasCharacter && backgroundImage && !layout.overflow) {
     const bounds = backgroundImage.mascotBounds || { x: 0, y: 0, width: backgroundImage.width, height: backgroundImage.height };
-    const maxWidth = width * (landscape ? position === 'center' ? 0.14 : 0.23 : 0.5);
-    const maxHeight = landscape ? height * 0.58 : Math.min(height * 0.32, height * 0.965 - (scheduleBounds.y + scheduleBounds.height) - height * 0.025);
+    const maxWidth = width * (landscape ? footerCharacter ? 0.3 : position === 'center' ? 0.14 : 0.23 : 0.5);
+    const belowSchedule = height - (scheduleBounds.y + scheduleBounds.height) - height * 0.025;
+    const maxHeight = Math.max(0, landscape ? footerCharacter ? Math.min(height * 0.32, belowSchedule) : height * 0.58 : Math.min(height * 0.32, height * 0.965 - (scheduleBounds.y + scheduleBounds.height) - height * 0.025));
+    if (maxHeight <= 0) return { ...layout, scheduleBounds, art, position };
     const artScale = Math.min(maxWidth / bounds.width, maxHeight / bounds.height);
     const artWidth = bounds.width * artScale, artHeight = bounds.height * artScale;
     // Portrait artwork follows its mobile corner; landscape artwork sits
     // opposite the schedule. Anchor occupied bounds to the canvas edges.
-    const right = landscape
+    const right = template.mascotPosition ? placement === 'right' : landscape
       ? position === 'left' || (position === 'center' && template.mascotSide === 'right')
       : template.mascotSide === 'right';
-    const artX = right ? width - artWidth : 0;
+    const artX = placement === 'center' ? (width - artWidth) / 2 : right ? width - artWidth : 0;
     const artY = height - artHeight;
     art = { x: artX, y: artY, width: artWidth, height: artHeight };
+    ctx.save(); ctx.imageSmoothingEnabled = !template.pixelArt;
     ctx.drawImage(backgroundImage, bounds.x, bounds.y, bounds.width, bounds.height, artX, artY, artWidth, artHeight);
+    ctx.restore();
     drawParticles(ctx, template, art, scheduleBounds, width, height);
   }
   return { ...layout, scheduleBounds, art, position };

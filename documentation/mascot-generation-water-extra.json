@@ -1,0 +1,67 @@
+{
+  "mode": "built-in image_gen",
+  "transparent_background": true,
+  "generated_date": "2026-10-11",
+  "assets": [
+    {
+      "name": "capybara-oat",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent decorative mascot for SchedSnap responsive website\nPrimary request: one extremely cute oat beige capybara with a plump oval body, tiny rounded ears, short legs, broad gentle muzzle and tiny dark smiling eyes. One single full character, minimal details, calm charming expression.\nStyle/medium: polished soft matte 3D clay/plush mascot, smooth soft rounded heavy forms, tiny dark facial features, gentle studio highlights.\nComposition/framing: full body centered, front three-quarter view, square image with generous transparent margins.\nScene/backdrop: genuinely transparent alpha background, isolated cutout.\nConstraints: no outlines, no text, no logos, no watermark, no ground plane, no pedestal, no background, no cast shadow outside body. Clean transparent edges.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a12a73-b431-7300-bc08-28f51a45a8a4\\exec-218992aa-0785-4036-876c-ed5edecca1f9.png",
+      "destination": "public/images/mascots/masters/capybara-oat.png",
+      "validation": {
+        "width": 1254,
+        "height": 1254,
+        "cornerAlpha": 1,
+        "visuallyInspected": true
+      }
+    },
+    {
+      "name": "duck-butter",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent decorative mascot for SchedSnap responsive website\nPrimary request: one extremely cute butter yellow duckling with plump round body, tiny wings, small peach orange bill and feet, tiny dark smiling eyes. One single full character, minimal details, calm charming expression.\nStyle/medium: polished soft matte 3D clay/plush mascot, smooth soft rounded heavy forms, tiny dark facial features, gentle studio highlights.\nComposition/framing: full body centered, front three-quarter view, square image with generous transparent margins.\nScene/backdrop: genuinely transparent alpha background, isolated cutout.\nConstraints: no outlines, no text, no logos, no watermark, no ground plane, no pedestal, no background, no cast shadow outside body. Clean transparent edges.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a12a73-b431-7300-bc08-28f51a45a8a4\\exec-1e6a1221-4a4e-4ac0-85e9-7570af0460b7.png",
+      "destination": "public/images/mascots/masters/duck-butter.png",
+      "validation": {
+        "width": 1254,
+        "height": 1254,
+        "cornerAlpha": 0,
+        "visuallyInspected": true
+      }
+    },
+    {
+      "name": "whale-sky",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent decorative mascot for SchedSnap responsive website\nPrimary request: one extremely cute pastel sky blue whale with plump rounded body, small side flippers and rounded upward tail, tiny dark eyes and small happy smile. One single full character, minimal details, calm charming expression.\nStyle/medium: polished soft matte 3D clay/plush mascot, smooth soft rounded heavy forms, tiny dark facial features, gentle studio highlights.\nComposition/framing: full body centered, front three-quarter view, square image with generous transparent margins.\nScene/backdrop: genuinely transparent alpha background, isolated cutout.\nConstraints: no outlines, no text, no logos, no watermark, no ground plane, no pedestal, no background, no cast shadow outside body. Clean transparent edges.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a12a73-b431-7300-bc08-28f51a45a8a4\\exec-2dbaece6-08d4-4de0-9feb-bfb5050e3fff.png",
+      "destination": "public/images/mascots/masters/whale-sky.png",
+      "validation": {
+        "width": 1254,
+        "height": 1254,
+        "cornerAlpha": 0,
+        "visuallyInspected": true
+      }
+    },
+    {
+      "name": "seal-cream",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent decorative mascot for SchedSnap responsive website\nPrimary request: one extremely cute warm cream baby seal with plump rounded body, tiny flippers, small dark nose and tiny happy dark eyes, delicate peach cheeks. One single full character, minimal details, calm charming expression.\nStyle/medium: polished soft matte 3D clay/plush mascot, smooth soft rounded heavy forms, tiny dark facial features, gentle studio highlights.\nComposition/framing: full body centered, front three-quarter view, square image with generous transparent margins.\nScene/backdrop: genuinely transparent alpha background, isolated cutout.\nConstraints: no outlines, no text, no logos, no watermark, no ground plane, no pedestal, no background, no cast shadow outside body. Clean transparent edges.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a12a73-b431-7300-bc08-28f51a45a8a4\\exec-9e229581-2ff0-4ebd-b6bb-180c6e267dd3.png",
+      "destination": "public/images/mascots/masters/seal-cream.png",
+      "validation": {
+        "width": 1254,
+        "height": 1254,
+        "cornerAlpha": 0,
+        "visuallyInspected": true
+      }
+    },
+    {
+      "name": "turtle-sage",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent decorative mascot for SchedSnap responsive website\nPrimary request: one extremely cute sage green baby turtle with softly domed muted mint shell, plump rounded head, four stubby flippers and tiny dark smiling eyes. One single full character, minimal details, calm charming expression.\nStyle/medium: polished soft matte 3D clay/plush mascot, smooth soft rounded heavy forms, tiny dark facial features, gentle studio highlights.\nComposition/framing: full body centered, front three-quarter view, square image with generous transparent margins.\nScene/backdrop: genuinely transparent alpha background, isolated cutout.\nConstraints: no outlines, no text, no logos, no watermark, no ground plane, no pedestal, no background, no cast shadow outside body. Clean transparent edges.",
+      "source": "C:/Users/picar/.codex/generated_images/01a12a73-b431-7300-bc08-28f51a45a8a4/exec-da991e3c-3a6c-4f89-af2f-89faf368478c.png",
+      "destination": "public/images/mascots/masters/turtle-sage.png",
+      "validation": {
+        "width": 1254,
+        "height": 1254,
+        "cornerAlpha": 0,
+        "visuallyInspected": true
+      }
+    }
+  ]
+}

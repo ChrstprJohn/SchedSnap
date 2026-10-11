@@ -1,0 +1,23 @@
+{
+  "mode": "built-in image_gen",
+  "transparent_background": true,
+  "assets": [
+    {
+      "name": "black-cat-wide-eyes",
+      "path": "public/images/doodle-mascots/masters/black-cat-wide-eyes.png",
+      "prompt": "Use case: illustration-story\nAsset type: transparent hand-drawn doodle mascot cutout.\nSubject: original adorable black cat with exaggerated huge white oval eyes and tiny black pupils, tall uneven triangular ears, tiny white triangular nose, small thin whiskers, long simple pear-shaped body, two tiny paws and curled tail. A goofy surprised curious expression. Entire full body visible. Make an original character rather than a known cartoon character.\nStyle: loose charming hand-drawn ink doodle with slightly wobbly dark outlines, flat warm black fill, off-white eyes, minimal subtle handmade texture. Simple playful editorial cartoon, no 3D, no smooth glossy rendering.\nComposition: one centered character with generous transparent safe margins including whiskers and tail.\nBackground: true transparent alpha, no paper background, no card, no scenery, no floor, no cast shadow, no text, no UI, no watermark.",
+      "source_hint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd as C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd\\exec-50f06cf2-6cd1-460e-be11-87edac58c428.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "repair": {
+        "prompt": "Edit target: the supplied transparent hand-drawn black cat mascot. Change only framing and the clipped top ear tuft. Zoom out so the entire character including every whisker, ear tuft, tail and feet occupies at most 80 percent of canvas height and width, with at least 10 percent completely transparent margin on EVERY side. Reconstruct the tiny clipped top ear tuft naturally. Preserve exact original loose ink-and-colored-pencil doodle style, huge ivory oval eyes, small pupils, face, tilted head, sitting pose, curled tail, black and warm-gray colors, and all other details. Actual transparent alpha background; no background, floor, shadow, text or additional objects.",
+        "source_hint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd as C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd\\exec-e7b61184-11c6-48e8-8194-ce7cc21c1f9c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "inspection": "Clipped ear tuft reconstructed and clear of frame; entire character preserved with transparent surrounding area. Generated framing retains tighter bottom margin; responsive padding should normalize to >=10%."
+      }
+    },
+    {
+      "name": "frog-wave",
+      "path": "public/images/doodle-mascots/masters/frog-wave.png",
+      "prompt": "Use case: illustration-story\nAsset type: transparent hand-drawn doodle mascot cutout.\nSubject: original adorable squat sage-green frog standing on tiny splayed feet, bulbous eyes with small dark pupils, broad goofy smile and one short arm waving hello with three round fingers, cream belly, subtle peach cheeks. Entire full body visible.\nStyle: loose charming hand-drawn ink doodle with slightly wobbly dark charcoal outlines, flat muted warm sage-green and ivory fills, minimal subtle handmade colored-pencil texture. Simple playful editorial cartoon, no 3D, no glossy rendering.\nComposition: one centered character with generous transparent safe margins including waving hand and feet.\nBackground: true transparent alpha, no paper background, no card, no scenery, no floor, no cast shadow, no text, no UI, no watermark.",
+      "source_hint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd as C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd\\exec-9ba82108-65c1-4adf-a222-1fc3c7e96a36.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  ]
+}

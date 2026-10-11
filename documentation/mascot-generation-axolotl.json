@@ -1,0 +1,24 @@
+{
+  "mode": "built-in image_gen",
+  "transparent_background": true,
+  "generated_date": "2026-10-11",
+  "assets": [
+    {
+      "filename": "axolotl-smile.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent decorative mascot for SchedSnap responsive website\nPrimary request: one extremely cute coral pink axolotl mascot, cheerful smile, plump rounded pear-shaped body, tiny short arms and feet, three soft berry pink external gills on each side of its head, little tail visible at one side. Tiny dark round eyes and tiny curved smile, subtle peach blush.\nStyle/medium: polished soft matte 3D clay/plush character, smooth rounded heavy forms, minimal details, soft studio highlights.\nComposition/framing: full body centered, front view with slight three-quarter depth, square image with generous transparent margins, one character only.\nScene/backdrop: genuinely transparent alpha background, isolated cutout.\nConstraints: no outlines, no text, no logos, no watermark, no ground plane, no pedestal, no background, no cast shadow outside the body. Preserve clean transparent edges.",
+      "source": "C:/Users/picar/.codex/generated_images/01a12a73-b431-7300-bc08-28f51a45a8a4/exec-a36051de-c4b6-450d-9c21-e4846dfac95e.png",
+      "validation": {
+        "width": 1254,
+        "height": 1254,
+        "pixelFormat": "Format32bppArgb",
+        "cornerAlpha": 0,
+        "visual": "Full body coral axolotl with berry gills and transparent cutout; smile and feet clearly visible."
+      }
+    },
+    {
+      "filename": "star-butter.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent decorative mascot for SchedSnap responsive website\nPrimary request: one extremely cute butter yellow five-point star character, all five points very rounded and chubby, slightly tilted happy pose, tiny dark round eyes and tiny curved smile, delicate peach blush on cheeks. One simple star body only, no additional objects.\nStyle/medium: polished soft matte 3D clay/plush character, smooth soft rounded heavy forms, minimal details, soft studio highlights, charming calm expression.\nComposition/framing: full character centered, mostly front view with subtle dimensional depth, square image with generous transparent margins.\nScene/backdrop: genuinely transparent alpha background, isolated cutout.\nConstraints: no outlines, no text, no logos, no watermark, no ground plane, no pedestal, no background, no cast shadow outside the body. Preserve clean transparent edges.",
+      "source": "C:/Users/picar/.codex/generated_images/01a12a73-b431-7300-bc08-28f51a45a8a4/exec-d16b4d1b-480f-4d53-adf8-9551a39d28a6.png"
+    }
+  ]
+}

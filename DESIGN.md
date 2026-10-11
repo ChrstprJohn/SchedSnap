@@ -172,6 +172,8 @@ Little Friends extends the mascot gallery with 20 Chiikawa-inspired poses of the
 
 ## Do's and Don'ts
 
+The mascot release adds 61 transparent cutouts, grouped by visual style: 3D (soft characters and reactions), Pixel art, Doodles, and the existing Flat art. Style pills reuse the collection filter treatment. New designs carry a compact top-right badge for seven days after first publication. Its pale sage surface is #f0f6df, dark sage text #344522, and border #d7e5be, with 11px bold text. Editing or republishing does not reset the date. The same single cutout is positioned by Canvas for every device; pixel art disables smoothing. No device-sized transparent asset copies are needed.
+
 - **Do** preserve the white/slate application palette while letting the selected wallpaper carry its own colors.
 - **Do** use the shared renderer for gallery, dialog, live preview and PNG export.
 - **Do** keep keyboard focus visible and honor reduced-motion preferences.

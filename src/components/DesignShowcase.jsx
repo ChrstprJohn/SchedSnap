@@ -20,7 +20,6 @@ const collections = [
   { id: 'little-friends', name: 'Little Friends', description: 'Soft colors. Familiar little faces.', artwork: 'a cream bunny on a pastel pink schedule' },
   { id: 'mascot', name: 'Mascots', description: 'A study buddy for your screen.', artwork: 'a panda mascot on an ivory schedule' },
   { id: 'pattern', name: 'Patterns', description: 'Checks, dots, and stripes.', artwork: 'a peach checkerboard schedule' },
-  { id: 'original', name: 'Originals', description: 'Soft light and quiet colors.', artwork: 'a class schedule on a frosted blue wallpaper' },
 ];
 const devices = [
   { id: 'mobile', title: 'For mobile.', label: 'Phone', description: 'Keep your week close, right on your lock screen.' },

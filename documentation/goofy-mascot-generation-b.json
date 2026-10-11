@@ -1,0 +1,18 @@
+{
+  "mode": "built-in image_gen",
+  "transparent_background": true,
+  "assets": [
+    {
+      "name": "black-cat-peek",
+      "path": "public/images/goofy-mascots/masters/black-cat-peek.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent goofy reaction mascot cutout.\nSubject: original adorable tiny round black kitten with oversized golden amber eyes peeking curiously upward, head tilted, two front paws held close to chest, stubby feet and curled tail. Entire full body visible. Comical wide-eyed slightly suspicious expression.\nStyle: polished 3D animation character, soft plush black fur, round sculpted form, minimal details, warm studio highlights only on subject. Inspired by expressive cute animal reaction art.\nComposition: single character centered square canvas with generous transparent margins around ears, feet and tail.\nBackground: genuine transparent alpha, no floor, no shadows outside character, no scenery, no UI, no text, no watermark.",
+      "source_hint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd as C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd\\exec-e7f4049e-3b6a-4657-9516-251818081b94.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "name": "banana-worried",
+      "path": "public/images/goofy-mascots/masters/banana-worried.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent goofy reaction mascot cutout.\nSubject: original adorable chubby upright yellow banana character, gentle crescent curve, brown stem, huge worried dark eyebrows, two tiny round dark eyes and tiny wobbly mouth, short rounded arms with hands nervously clasped and two stubby feet. Comically anxious but very cute. Entire full body visible.\nStyle: polished smooth matte 3D clay animation character, pillowy shapes, buttery yellow material, simple sculpted facial features, warm studio highlights only on subject.\nComposition: single character centered square canvas with generous transparent margins around all body parts.\nBackground: genuine transparent alpha, no floor, no shadows outside character, no scenery, no UI, no text, no watermark.",
+      "source_hint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd as C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd\\exec-b379a0e7-fb2e-4a33-8848-5282bc12a85b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  ]
+}

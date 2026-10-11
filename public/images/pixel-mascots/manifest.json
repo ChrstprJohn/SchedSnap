@@ -1,0 +1,175 @@
+{
+  "provider": "built-in imagegen",
+  "background": "transparent",
+  "cloudinaryStatus": "uploaded",
+  "assets": [
+    {
+      "id": "pixel-bunny",
+      "master": "/images/pixel-mascots/masters/pixel-bunny.png",
+      "masterSize": [
+        1261,
+        1247
+      ],
+      "alphaBounds": [
+        35,
+        41,
+        1093,
+        1207
+      ]
+    },
+    {
+      "id": "pixel-cactus",
+      "master": "/images/pixel-mascots/masters/pixel-cactus.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        71,
+        53,
+        1250,
+        1230
+      ]
+    },
+    {
+      "id": "pixel-calico-cat",
+      "master": "/images/pixel-mascots/masters/pixel-calico-cat.png",
+      "masterSize": [
+        1278,
+        1230
+      ],
+      "alphaBounds": [
+        0,
+        56,
+        1256,
+        1192
+      ]
+    },
+    {
+      "id": "pixel-coffee",
+      "master": "/images/pixel-mascots/masters/pixel-coffee.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        214,
+        1125,
+        1196
+      ]
+    },
+    {
+      "id": "pixel-fox",
+      "master": "/images/pixel-mascots/masters/pixel-fox.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        33,
+        23,
+        1228,
+        1231
+      ]
+    },
+    {
+      "id": "pixel-frog",
+      "master": "/images/pixel-mascots/masters/pixel-frog.png",
+      "masterSize": [
+        1365,
+        1152
+      ],
+      "alphaBounds": [
+        0,
+        25,
+        1341,
+        1129
+      ]
+    },
+    {
+      "id": "pixel-ghost",
+      "master": "/images/pixel-mascots/masters/pixel-ghost.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        25,
+        101,
+        1206,
+        1166
+      ]
+    },
+    {
+      "id": "pixel-mushroom",
+      "master": "/images/pixel-mascots/masters/pixel-mushroom.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        57,
+        25,
+        1236,
+        1254
+      ]
+    },
+    {
+      "id": "pixel-robot",
+      "master": "/images/pixel-mascots/masters/pixel-robot.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        101,
+        1224,
+        1254
+      ]
+    },
+    {
+      "id": "pixel-sprout",
+      "master": "/images/pixel-mascots/masters/pixel-sprout.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        57,
+        1222,
+        1179
+      ]
+    },
+    {
+      "id": "pixel-star",
+      "master": "/images/pixel-mascots/masters/pixel-star.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        33,
+        25,
+        1234,
+        1220
+      ]
+    },
+    {
+      "id": "pixel-sunflower",
+      "master": "/images/pixel-mascots/masters/pixel-sunflower.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        65,
+        8,
+        1202,
+        1224
+      ]
+    }
+  ]
+}

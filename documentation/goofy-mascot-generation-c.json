@@ -1,0 +1,17 @@
+{
+  "mode": "built-in image_gen",
+  "transparent_background": true,
+  "reference": "C:/Users/picar/AppData/Local/Temp/codex-clipboard-1f774174-13a7-4285-8897-d4a21ebdccea.png",
+  "assets": [
+    {
+      "filename": "blob-side-eye.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent comedic reaction mascot cutout.\nSubject: one small lavender blob creature with smooth plump pear-shaped clay body, short stubby arms and feet, enormous bulging cream eyeballs with dark pupils dramatically looking sideways, one raised eyebrow and a tiny skeptical crooked smile. Funny, cute side-eye reaction, charming awkward posture.\nStyle: polished simple smooth matte 3D clay toy, soft diffuse shading, minimal rounded forms, expressive comedic face inspired by a goofy clay frog with protruding eyes.\nComposition: full single character centered with generous clear margins, no cropping.\nConstraints: genuinely transparent alpha background, no floor, ground shadow, backdrop, text, UI, symbols, props or extra characters.",
+      "source": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a12a73-9bc6-7253-9b69-5a96368d0cc3 as C:\\Users\\picar\\.codex\\generated_images\\01a12a73-9bc6-7253-9b69-5a96368d0cc3\\exec-b68f2fdf-c0bf-4216-8a5b-631b2ee384f2.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "filename": "turtle-shy.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent comedic reaction mascot cutout.\nSubject: one small adorable sage-green turtle with smooth clay head and stubby limbs, muted olive dome shell, enormous bulging cream eyeballs with dark pupils looking shyly upward, bashful crooked smile, hands pressed together under its chin in a nervous cute pose. Funny shy reaction, charming awkward posture.\nStyle: polished simple smooth matte 3D clay toy, soft diffuse shading, minimal rounded forms, expressive comedic face inspired by a goofy clay frog with protruding eyes.\nComposition: full single character centered with generous clear margins, entire shell, hands and feet visible, no cropping.\nConstraints: genuinely transparent alpha background, no floor, ground shadow, backdrop, text, UI, symbols, props or extra characters.",
+      "source": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a12a73-9bc6-7253-9b69-5a96368d0cc3 as C:\\Users\\picar\\.codex\\generated_images\\01a12a73-9bc6-7253-9b69-5a96368d0cc3\\exec-df6dcc2a-0010-422a-9f54-b03146eec6e7.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  ]
+}

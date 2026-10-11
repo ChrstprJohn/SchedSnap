@@ -23,7 +23,8 @@ function mascotBounds(image) {
 
 export async function prepareWallpaperAssets(template, resolution) {
   const sourcePath = template.deviceImages?.[resolution?.id || 'mobile'] || template.image;
-  const imagePath = cloudinaryAssetUrl(sourcePath, resolution);
+  // Pixel masters stay lossless and unscaled until the nearest-neighbor Canvas draw.
+  const imagePath = cloudinaryAssetUrl(sourcePath, template.pixelArt ? undefined : resolution);
   fonts ||= Promise.all([
     document.fonts.load('400 100px "Great Vibes"'),
     document.fonts.load('400 100px "DM Serif Display"'),

@@ -1,15 +1,19 @@
 import { z } from 'zod';
+import { generatedMasterUrl } from './generatedArtwork.js';
 const color = z.string().max(60).regex(/^(#[a-f0-9]{3,8}|rgba?\([\d.,%\s]+\))$/i);
-const artwork = z.string().max(500).refine(value => /^\/wallpapers\/[a-z0-9/_.-]+$/i.test(value) || /^https:\/\/res\.cloudinary\.com\/[a-z0-9_-]+\/image\/upload\/(?:v\d+\/)?schedsnap\/admin\/artwork\/[a-z0-9_-]+\.(png|jpg|webp)$/i.test(value), 'Use uploaded artwork.');
+const artwork = z.string().max(500).refine(value => /^\/wallpapers\/[a-z0-9/_.-]+$/i.test(value) || /^\/images\/(mascots|pixel-mascots|goofy-mascots|doodle-mascots)\/masters\/[a-z0-9_-]+\.png$/i.test(value) || generatedMasterUrl.test(value) || /^https:\/\/res\.cloudinary\.com\/[a-z0-9_-]+\/image\/upload\/(?:v\d+\/)?schedsnap\/admin\/artwork\/[a-z0-9_-]+\.(png|jpg|webp)$/i.test(value), 'Use uploaded artwork.');
 export const templateSchema = z.object({
   id: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).max(80),
   name: z.string().trim().min(1, 'Enter a title for this design.').max(80), description: z.string().max(240).optional(),
   status: z.enum(['draft', 'published', 'hidden']),
+  createdAt: z.iso.datetime().optional(), publishedAt: z.iso.datetime().optional(),
   collection: z.enum(['scenic', 'mascot', 'little-friends', 'pattern', 'original']).optional(),
   family: z.string().max(80).optional(),
   background: color, ink: color, muted: color, surface: color, line: color,
   image: artwork.optional(), deviceImages: z.object({ mobile: artwork.optional(), tablet: artwork.optional(), laptop: artwork.optional() }).optional(),
   layout: z.literal('mascot').optional(), mascot: z.string().max(80).optional(), mascotSide: z.enum(['left', 'right']).optional(),
+  mascotStyle: z.enum(['soft', 'pixel', 'goofy', 'doodle']).optional(), pixelArt: z.boolean().optional(),
+  mascotPosition: z.enum(['left', 'center', 'right']).optional(),
   edition: z.union([z.number(), z.string().max(30)]).optional(),
   pattern: z.enum(['checker', 'grid', 'ruled', 'circle', 'dots', 'stripes', 'diamonds', 'waves', 'frame']).optional(),
   patternColor: color.optional(), gradient: z.array(color).min(2).max(6).optional(), overlay: color.optional(),

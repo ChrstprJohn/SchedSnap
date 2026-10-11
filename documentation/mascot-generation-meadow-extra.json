@@ -1,0 +1,37 @@
+[
+  {
+    "name": "bee-butter",
+    "prompt": "Use case: stylized-concept. Asset type: SchedSnap transparent decorative mascot. Create one extremely cute a butter yellow plump baby bee with two soft charcoal stripes on its rounded abdomen, little cream wings, short rounded antennae, tiny feet, tiny dark plum dot eyes and tiny smile, blush cheeks. Premium soft matte 3D rounded plush clay forms, gently velvety texture, softly lit upper left. Full body in gentle three-quarter view centered in square canvas with generous 12% margin. Genuine alpha transparency. No background, ground plane, external cast shadow, outline, text, watermark, accessories or extra objects.",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a12a75-c9d9-7bc0-92b8-fb22919c71cb\\exec-1cc42bba-e578-4d0d-b85f-579f5ed57d30.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true
+  },
+  {
+    "name": "snail-lavender",
+    "prompt": "Use case: stylized-concept. Asset type: SchedSnap transparent decorative mascot. Create one extremely cute a lavender round snail with a large rounded pastel lilac spiral shell and soft warm cream plump body, two stubby rounded eye stalks, tiny dark plum dot eyes and tiny smile, blush cheeks. Premium soft matte 3D rounded plush clay forms, gently velvety texture, softly lit upper left. Full body in gentle three-quarter view centered in square canvas with generous 12% margin. Genuine alpha transparency. No background, ground plane, external cast shadow, outline, text, watermark, accessories or extra objects.",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a12a75-c9d9-7bc0-92b8-fb22919c71cb\\exec-01943a86-8fe2-4f36-b3ab-4c86d1c30951.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true
+  },
+  {
+    "name": "chick-lemon",
+    "prompt": "Use case: stylized-concept. Asset type: SchedSnap transparent decorative mascot. Create one extremely cute a pale lemon yellow plump baby chick with a tiny warm apricot beak, tiny rounded wings, short apricot feet, little rounded tuft, tiny dark plum dot eyes, blush cheeks. Premium soft matte 3D rounded plush clay forms, gently velvety texture, softly lit upper left. Full body in gentle three-quarter view centered in square canvas with generous 12% margin. Genuine alpha transparency. No background, ground plane, external cast shadow, outline, text, watermark, accessories or extra objects.",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a12a75-c9d9-7bc0-92b8-fb22919c71cb\\exec-acd82a8d-f7fe-4b59-9e7c-8d18b2903860.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true
+  },
+  {
+    "name": "otter-caramel",
+    "prompt": "Use case: stylized-concept. Asset type: SchedSnap transparent decorative mascot. Create one extremely cute a light caramel brown plump baby otter sitting upright with warm cream muzzle and tummy, tiny round ears, small paws gently meeting over tummy, rounded feet and small thick tail, tiny dark plum dot eyes, dark button nose and tiny smile, blush cheeks. Premium soft matte 3D rounded plush clay forms, gently velvety texture, softly lit upper left. Full body in gentle three-quarter view centered in square canvas with generous 12% margin. Genuine alpha transparency. No background, ground plane, external cast shadow, outline, text, watermark, accessories or extra objects.",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a12a75-c9d9-7bc0-92b8-fb22919c71cb\\exec-b2e9a4ed-cac4-458e-b98b-b0c88a773b0f.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true
+  },
+  {
+    "name": "puppy-oat",
+    "prompt": "Use case: stylized-concept. Asset type: SchedSnap transparent decorative mascot. Create one extremely cute a warm oatmeal cream plump puppy sitting with soft tan floppy rounded ears, tiny round paws, thick little tail, tiny dark plum dot eyes, dark button nose and tiny smile, blush cheeks. Premium soft matte 3D rounded plush clay forms, gently velvety texture, softly lit upper left. Full body in gentle three-quarter view centered in square canvas with generous 12% margin. Genuine alpha transparency. No background, ground plane, external cast shadow, outline, text, watermark, accessories or extra objects.",
+    "source": "C:\\Users\\picar\\.codex\\generated_images\\01a12a75-c9d9-7bc0-92b8-fb22919c71cb\\exec-fc3f133d-b4df-45aa-a487-73de6be20ea8.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true
+  }
+]

@@ -11,8 +11,28 @@ import { scenicFamilies } from '../src/config/collections.js';
 import { drawWallpaper, findOverlaps, formatTime, formatWallpaperTime, groupSchedule, layoutSchedule, schedulePosition, wrapText } from '../src/utils/canvasHelpers.js';
 import { getScheduleIssues } from '../shared/scheduleSchema.js';
 import { colorInputValue, customizeWallpaperTemplate } from '../src/utils/wallpaperTheme.js';
+import { isNewTemplate, NEW_TEMPLATE_WINDOW_MS } from '../src/utils/templateFreshness.js';
 
 const measurementContext = { font: '', measureText(text) { const size = Number(this.font.match(/(\d+(\.\d+)?)px/)?.[1] || 36); return { width: text.length * size * 0.52 }; } };
+
+test('new pattern variants cover all supported prints and expire their New badge after seven days', () => {
+  const variants = patternTemplates.slice(6);
+  assert.equal(variants.length, 18);
+  for (const pattern of ['checker', 'grid', 'ruled', 'circle', 'dots', 'stripes', 'diamonds', 'waves', 'frame']) {
+    assert.equal(variants.filter(template => template.pattern === pattern).length, 2, pattern);
+  }
+  for (const template of variants) {
+    const created = Date.parse(template.createdAt);
+    assert.ok(Number.isFinite(created));
+    assert.ok(isNewTemplate(template, created));
+    assert.ok(isNewTemplate(template, created + NEW_TEMPLATE_WINDOW_MS - 1));
+    assert.equal(isNewTemplate(template, created + NEW_TEMPLATE_WINDOW_MS), false);
+    const customized = customizeWallpaperTemplate(template, { patternColor: '#809f88' });
+    assert.equal(customized.pattern, template.pattern);
+    assert.equal(customized.patternColor, '#809f88');
+    assert.equal(template.collection, 'pattern');
+  }
+});
 
 test('every illustrated variant has three correctly sized device assets and every theme has at least three variants', () => {
   assert.equal(scenicTemplates.length, 55);
@@ -67,7 +87,7 @@ test('all templates fit sample data and dense data is explicitly rejected', () =
 });
 
 test('the existing collections are preserved alongside device-specific illustrated designs', () => {
-  assert.equal(wallpaperTemplates.length, 58 + scenicTemplates.length);
+  assert.equal(wallpaperTemplates.length, 40 + patternTemplates.length + scenicTemplates.length + 61);
   assert.ok(wallpaperTemplates.filter(template => template.image && template.layout !== 'mascot')
     .every(template => ['mobile', 'tablet', 'laptop'].every(device => template.deviceImages?.[device])));
   assert.equal(new Set(wallpaperTemplates.map((template) => template.id)).size, wallpaperTemplates.length);
@@ -78,8 +98,9 @@ test('the existing collections are preserved alongside device-specific illustrat
   assert.equal(littleFriendsTemplates.filter((template) => template.mascotSide === 'right').length, 10);
   assert.equal(mascotTemplates.length, 20);
   assert.equal(new Set(mascotTemplates.map((template) => template.mascot)).size, 20);
-  assert.equal(patternTemplates.length, 6);
-  assert.equal(new Set(patternTemplates.map((template) => template.pattern)).size, 6);
+  assert.equal(patternTemplates.length, 24);
+  assert.equal(new Set(patternTemplates.map((template) => template.id)).size, 24);
+  assert.deepEqual([...new Set(patternTemplates.map((template) => template.pattern))].sort(), ['checker', 'circle', 'diamonds', 'dots', 'frame', 'grid', 'ruled', 'stripes', 'waves']);
   assert.ok(patternTemplates.every((template) => !template.image && template.patternColor));
   const removed = ['paper', 'sage', 'midnight', 'lilac', 'slate', 'peach', 'ocean', 'charcoal', 'window-light', 'blue-hour', 'blush-club', 'after-hours'];
   assert.ok(wallpaperTemplates.every((template) => !removed.includes(template.id)));
@@ -405,13 +426,14 @@ test('tablet and laptop schedules preserve every meeting, fit the screen and sta
 });
 
 
-test('laptop patterns and backgrounds center the schedule while characters use the opposite side', () => {
+test('laptop backgrounds center the schedule and character presets reserve the opposite side or center footer', () => {
   for (const template of wallpaperTemplates) {
     const laptop = { ...template, device: 'laptop' };
     if (template.layout !== 'mascot') {
       for (const position of ['left', 'center', 'right']) assert.equal(schedulePosition({ ...laptop, schedulePosition: position }), 'center');
     } else {
-      assert.equal(schedulePosition(laptop), template.mascotSide === 'left' ? 'right' : 'left');
+      const characterPosition = template.mascotPosition || template.mascotSide || 'left';
+      assert.equal(schedulePosition(laptop), characterPosition === 'center' ? 'center' : characterPosition === 'left' ? 'right' : 'left');
       for (const position of ['left', 'right']) assert.equal(schedulePosition({ ...laptop, schedulePosition: position }), position);
     }
   }
@@ -480,4 +502,30 @@ test('tablet and laptop characters anchor to the bottom corner without overlappi
       assert.ok(art.x + art.width <= bounds.x || art.x >= bounds.x + bounds.width || art.y >= bounds.y + bounds.height || art.y + art.height <= bounds.y);
     }
   }
+});
+
+test('explicit mascot placements preserve positive bounds and avoid schedules on each device', () => {
+  const image = { width: 1254, height: 1254, mascotBounds: { x: 80, y: 120, width: 920, height: 1100 } };
+  for (const resolution of [{ id: 'mobile', width: 1080, height: 2400 }, { id: 'tablet', width: 1600, height: 2560 }, { id: 'tablet', width: 2560, height: 1600 }, { id: 'laptop', width: 1920, height: 1080 }]) {
+    for (const mascotPosition of ['left', 'center', 'right']) for (const schedulePosition of ['left', 'center', 'right']) {
+      const images = [];
+      const ctx = { ...measurementContext, scale() {}, translate() {}, fillRect() {}, beginPath() {}, roundRect() {}, arc() {}, fill() {}, stroke() {}, moveTo() {}, lineTo() {}, bezierCurveTo() {}, save() {}, restore() {}, fillText() {}, drawImage(...args) { images.push(args); } };
+      const layout = drawWallpaper({ getContext() { return ctx; } }, { schedule: templateSchedule, template: { ...mascotTemplates[0], mascotPosition, schedulePosition }, resolution, backgroundImage: image });
+      const logicalWidth = resolution.id === 'mobile' ? 1080 : 1920;
+      const logicalHeight = logicalWidth * resolution.height / resolution.width;
+      const art = layout.art || { x: images[0][5], y: images[0][6], width: images[0][7], height: images[0][8] };
+      const bounds = layout.scheduleBounds || { x: 78, y: 460, width: 924, height: layout.bottom - 460 };
+      assert.ok(art.width > 0 && art.height > 0);
+      assert.ok(Math.abs(art.y + art.height - logicalHeight) < .001);
+      if (mascotPosition === 'center') assert.ok(Math.abs(art.x + art.width / 2 - logicalWidth / 2) < .001);
+      else assert.ok(Math.abs(mascotPosition === 'right' ? art.x + art.width - logicalWidth : art.x) < .001);
+      assert.ok(art.x + art.width <= bounds.x || art.x >= bounds.x + bounds.width || art.y >= bounds.y + bounds.height || art.y + art.height <= bounds.y, `${resolution.id}/${mascotPosition}/${schedulePosition}`);
+    }
+  }
+});
+
+test('character placement customizations preserve template defaults without mutating them', () => {
+  const template = { ...mascotTemplates[0], mascotPosition: 'center' };
+  const customized = customizeWallpaperTemplate(template, { mascotPosition: 'right' });
+  assert.equal(customized.mascotPosition, 'right'); assert.equal(template.mascotPosition, 'center');
 });

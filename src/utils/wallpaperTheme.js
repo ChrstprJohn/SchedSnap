@@ -11,6 +11,10 @@ export const wallpaperFonts = [
   { value: 'Georgia', label: 'Georgia' },
 ];
 
+export function mascotPosition(template) {
+  return ['left', 'center', 'right'].includes(template.mascotPosition) ? template.mascotPosition : template.mascotSide === 'right' ? 'right' : 'left';
+}
+
 export function customizeWallpaperTemplate(template, settings = {}) {
   if (!template || !Object.keys(settings).length) return template;
   const customized = { ...template, ...settings };

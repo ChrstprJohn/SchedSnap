@@ -1434,5 +1434,432 @@ export default {
     "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791691270/schedsnap/wallpapers/scenic/windmill-journey/mobile-5332b60348108818.png",
     "width": 1080,
     "height": 2400
+  },
+  "/images/doodle-mascots/masters/black-cat-book.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/doodle-mascots/masters/black-cat-book-9c685bb47e5a40fc",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715658/schedsnap/images/doodle-mascots/masters/black-cat-book-9c685bb47e5a40fc.png",
+    "width": 1148,
+    "height": 1371
+  },
+  "/images/doodle-mascots/masters/black-cat-wide-eyes.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/doodle-mascots/masters/black-cat-wide-eyes-c0e35f837627b167",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715659/schedsnap/images/doodle-mascots/masters/black-cat-wide-eyes-c0e35f837627b167.png",
+    "width": 1148,
+    "height": 1371
+  },
+  "/images/doodle-mascots/masters/black-cat-wave.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/doodle-mascots/masters/black-cat-wave-a2fb0ef998acb32c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715660/schedsnap/images/doodle-mascots/masters/black-cat-wave-a2fb0ef998acb32c.png",
+    "width": 1148,
+    "height": 1371
+  },
+  "/images/doodle-mascots/masters/black-cat-wink.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/doodle-mascots/masters/black-cat-wink-0fdc32788e8441db",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715660/schedsnap/images/doodle-mascots/masters/black-cat-wink-0fdc32788e8441db.png",
+    "width": 1148,
+    "height": 1371
+  },
+  "/images/doodle-mascots/masters/bunny-grin.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/doodle-mascots/masters/bunny-grin-38943bf653e37bff",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715660/schedsnap/images/doodle-mascots/masters/bunny-grin-38943bf653e37bff.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/doodle-mascots/masters/bunny-hug.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/doodle-mascots/masters/bunny-hug-b7ffbeedd033c5a4",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715660/schedsnap/images/doodle-mascots/masters/bunny-hug-b7ffbeedd033c5a4.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/doodle-mascots/masters/capybara-peace.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/doodle-mascots/masters/capybara-peace-0ef7eec9b071698e",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715661/schedsnap/images/doodle-mascots/masters/capybara-peace-0ef7eec9b071698e.png",
+    "width": 1180,
+    "height": 1333
+  },
+  "/images/doodle-mascots/masters/capybara-heart-hands.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/doodle-mascots/masters/capybara-heart-hands-826eb9f16a362789",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715661/schedsnap/images/doodle-mascots/masters/capybara-heart-hands-826eb9f16a362789.png",
+    "width": 1180,
+    "height": 1333
+  },
+  "/images/doodle-mascots/masters/capybara-mug.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/doodle-mascots/masters/capybara-mug-2e85f7edfdb5d16a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715661/schedsnap/images/doodle-mascots/masters/capybara-mug-2e85f7edfdb5d16a.png",
+    "width": 1180,
+    "height": 1333
+  },
+  "/images/doodle-mascots/masters/bunny-stretch.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/doodle-mascots/masters/bunny-stretch-b5fe9dbcedd23a22",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715661/schedsnap/images/doodle-mascots/masters/bunny-stretch-b5fe9dbcedd23a22.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/doodle-mascots/masters/dog-backpack.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/doodle-mascots/masters/dog-backpack-5a47600cac0278c5",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715662/schedsnap/images/doodle-mascots/masters/dog-backpack-5a47600cac0278c5.png",
+    "width": 1180,
+    "height": 1333
+  },
+  "/images/doodle-mascots/masters/capybara-wave.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/doodle-mascots/masters/capybara-wave-7b61c1816f565917",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715662/schedsnap/images/doodle-mascots/masters/capybara-wave-7b61c1816f565917.png",
+    "width": 1180,
+    "height": 1333
+  },
+  "/images/doodle-mascots/masters/frog-scarf.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/doodle-mascots/masters/frog-scarf-8c6865585bbea9ee",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715663/schedsnap/images/doodle-mascots/masters/frog-scarf-8c6865585bbea9ee.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/doodle-mascots/masters/frog-wave.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/doodle-mascots/masters/frog-wave-09597eabc7447a43",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715664/schedsnap/images/doodle-mascots/masters/frog-wave-09597eabc7447a43.png",
+    "width": 1312,
+    "height": 1199
+  },
+  "/images/doodle-mascots/masters/dog-cheeky.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/doodle-mascots/masters/dog-cheeky-aa8e0bab1cde6820",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715663/schedsnap/images/doodle-mascots/masters/dog-cheeky-aa8e0bab1cde6820.png",
+    "width": 1237,
+    "height": 1272
+  },
+  "/images/doodle-mascots/masters/frog-flower.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/doodle-mascots/masters/frog-flower-8b444087206ff5d1",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715664/schedsnap/images/doodle-mascots/masters/frog-flower-8b444087206ff5d1.png",
+    "width": 1312,
+    "height": 1199
+  },
+  "/images/doodle-mascots/masters/sprout-notebook.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/doodle-mascots/masters/sprout-notebook-df8012fb8402bc45",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715665/schedsnap/images/doodle-mascots/masters/sprout-notebook-df8012fb8402bc45.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/doodle-mascots/masters/sprout-proud.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/doodle-mascots/masters/sprout-proud-299bcb3cb8cccea7",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715665/schedsnap/images/doodle-mascots/masters/sprout-proud-299bcb3cb8cccea7.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/goofy-mascots/masters/banana-worried.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/banana-worried-4a287fc8e177942d",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715820/schedsnap/images/goofy-mascots/masters/banana-worried-4a287fc8e177942d.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/goofy-mascots/masters/black-cat-peek.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/black-cat-peek-39d02a39decea154",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715821/schedsnap/images/goofy-mascots/masters/black-cat-peek-39d02a39decea154.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/goofy-mascots/masters/frog-heart-hands.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/frog-heart-hands-7f072e056a3fc4ac",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715821/schedsnap/images/goofy-mascots/masters/frog-heart-hands-7f072e056a3fc4ac.png",
+    "width": 1312,
+    "height": 1199
+  },
+  "/images/goofy-mascots/masters/blob-side-eye.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/blob-side-eye-05d03104472a4378",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715821/schedsnap/images/goofy-mascots/masters/blob-side-eye-05d03104472a4378.png",
+    "width": 1245,
+    "height": 1263
+  },
+  "/images/goofy-mascots/masters/goose-confused.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/goose-confused-9de1378d9564c545",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715823/schedsnap/images/goofy-mascots/masters/goose-confused-9de1378d9564c545.png",
+    "width": 1141,
+    "height": 1379
+  },
+  "/images/goofy-mascots/masters/turtle-shy.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/turtle-shy-37ced91c0985d2ba",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715823/schedsnap/images/goofy-mascots/masters/turtle-shy-37ced91c0985d2ba.png",
+    "width": 1230,
+    "height": 1278
+  },
+  "/images/mascots/masters/axolotl-smile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/axolotl-smile-351a17a29b52be47",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715846/schedsnap/images/mascots/masters/axolotl-smile-351a17a29b52be47.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/bear-honey.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/bear-honey-f8612b44ab657bb5",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715847/schedsnap/images/mascots/masters/bear-honey-f8612b44ab657bb5.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/bee-butter.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/bee-butter-b50dd58c7f1472a4",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715847/schedsnap/images/mascots/masters/bee-butter-b50dd58c7f1472a4.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/capybara-oat.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/capybara-oat-51fe704f768007f6",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715848/schedsnap/images/mascots/masters/capybara-oat-51fe704f768007f6.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/chick-lemon.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/chick-lemon-0cb659f2350acf69",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715849/schedsnap/images/mascots/masters/chick-lemon-0cb659f2350acf69.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/cat-peach.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/cat-peach-090507ff377f7e68",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715850/schedsnap/images/mascots/masters/cat-peach-090507ff377f7e68.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/blue-bunny.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/blue-bunny-7d794a023af667b8",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715850/schedsnap/images/mascots/masters/blue-bunny-7d794a023af667b8.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/cloud-happy.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/cloud-happy-ddcd75cc23531e30",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715851/schedsnap/images/mascots/masters/cloud-happy-ddcd75cc23531e30.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/duck-butter.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/duck-butter-69c509a0f9c80e43",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715853/schedsnap/images/mascots/masters/duck-butter-69c509a0f9c80e43.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/fox-apricot.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/fox-apricot-9c9522f6dfc3069f",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715853/schedsnap/images/mascots/masters/fox-apricot-9c9522f6dfc3069f.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/ghost-sleepy.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/ghost-sleepy-193658ac6e18c65c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715853/schedsnap/images/mascots/masters/ghost-sleepy-193658ac6e18c65c.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/hamster-peach.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/hamster-peach-b4e774f12437a296",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715854/schedsnap/images/mascots/masters/hamster-peach-b4e774f12437a296.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/frog-mint.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/frog-mint-5d9ccb5fa49af954",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715855/schedsnap/images/mascots/masters/frog-mint-5d9ccb5fa49af954.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/koala-lilac.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/koala-lilac-5ac8afb967a0bfa5",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715855/schedsnap/images/mascots/masters/koala-lilac-5ac8afb967a0bfa5.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/otter-caramel.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/otter-caramel-87e2cd8f51dd5441",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715855/schedsnap/images/mascots/masters/otter-caramel-87e2cd8f51dd5441.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/mushroom-blush.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/mushroom-blush-c3691f1e0ec9e2a8",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715855/schedsnap/images/mascots/masters/mushroom-blush-c3691f1e0ec9e2a8.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/penguin-periwinkle.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/penguin-periwinkle-628a4b2cbd423bc3",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715856/schedsnap/images/mascots/masters/penguin-periwinkle-628a4b2cbd423bc3.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/panda-soft.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/panda-soft-e5a7d5b1b65c92dd",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715857/schedsnap/images/mascots/masters/panda-soft-e5a7d5b1b65c92dd.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/seal-cream.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/seal-cream-2f5c1c0699b58ee3",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715947/schedsnap/images/mascots/masters/seal-cream-2f5c1c0699b58ee3.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/snail-lavender.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/snail-lavender-66eb703e497ee9df",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715948/schedsnap/images/mascots/masters/snail-lavender-66eb703e497ee9df.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/sprout-cheerful.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/sprout-cheerful-3abf889a562851ff",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715949/schedsnap/images/mascots/masters/sprout-cheerful-3abf889a562851ff.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/star-butter.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/star-butter-7ae6a6a960a5548a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715949/schedsnap/images/mascots/masters/star-butter-7ae6a6a960a5548a.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/turtle-sage.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/turtle-sage-8e0be4c4f51a373c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715949/schedsnap/images/mascots/masters/turtle-sage-8e0be4c4f51a373c.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/whale-sky.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/whale-sky-52247a885c450867",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715949/schedsnap/images/mascots/masters/whale-sky-52247a885c450867.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/mascots/masters/puppy-oat.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/mascots/masters/puppy-oat-a5f219de7a3556d1",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715857/schedsnap/images/mascots/masters/puppy-oat-a5f219de7a3556d1.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/pixel-mascots/masters/pixel-bunny.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/pixel-mascots/masters/pixel-bunny-157862e74fa18cd4",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715979/schedsnap/images/pixel-mascots/masters/pixel-bunny-157862e74fa18cd4.png",
+    "width": 1261,
+    "height": 1247
+  },
+  "/images/pixel-mascots/masters/pixel-cactus.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/pixel-mascots/masters/pixel-cactus-7c4c98be67b8734c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715979/schedsnap/images/pixel-mascots/masters/pixel-cactus-7c4c98be67b8734c.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/pixel-mascots/masters/pixel-coffee.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/pixel-mascots/masters/pixel-coffee-222479e287cdc41c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715980/schedsnap/images/pixel-mascots/masters/pixel-coffee-222479e287cdc41c.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/pixel-mascots/masters/pixel-fox.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/pixel-mascots/masters/pixel-fox-a7c390e3c9d5fa8c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715980/schedsnap/images/pixel-mascots/masters/pixel-fox-a7c390e3c9d5fa8c.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/pixel-mascots/masters/pixel-calico-cat.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/pixel-mascots/masters/pixel-calico-cat-c718a8e1c8762e0e",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715980/schedsnap/images/pixel-mascots/masters/pixel-calico-cat-c718a8e1c8762e0e.png",
+    "width": 1278,
+    "height": 1230
+  },
+  "/images/pixel-mascots/masters/pixel-frog.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/pixel-mascots/masters/pixel-frog-8813df6f4d261863",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715980/schedsnap/images/pixel-mascots/masters/pixel-frog-8813df6f4d261863.png",
+    "width": 1365,
+    "height": 1152
+  },
+  "/images/pixel-mascots/masters/pixel-ghost.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/pixel-mascots/masters/pixel-ghost-02a8358ce804ed2b",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715981/schedsnap/images/pixel-mascots/masters/pixel-ghost-02a8358ce804ed2b.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/pixel-mascots/masters/pixel-mushroom.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/pixel-mascots/masters/pixel-mushroom-83a423e35594b182",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715981/schedsnap/images/pixel-mascots/masters/pixel-mushroom-83a423e35594b182.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/pixel-mascots/masters/pixel-robot.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/pixel-mascots/masters/pixel-robot-6dc7c099ccb181e2",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715981/schedsnap/images/pixel-mascots/masters/pixel-robot-6dc7c099ccb181e2.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/pixel-mascots/masters/pixel-sprout.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/pixel-mascots/masters/pixel-sprout-314690a44c43d82e",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715981/schedsnap/images/pixel-mascots/masters/pixel-sprout-314690a44c43d82e.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/pixel-mascots/masters/pixel-star.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/pixel-mascots/masters/pixel-star-8d8ff5597b66b5cb",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715981/schedsnap/images/pixel-mascots/masters/pixel-star-8d8ff5597b66b5cb.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/pixel-mascots/masters/pixel-sunflower.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/pixel-mascots/masters/pixel-sunflower-d2d29dee9002038a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715982/schedsnap/images/pixel-mascots/masters/pixel-sunflower-d2d29dee9002038a.png",
+    "width": 1254,
+    "height": 1254
   }
 };

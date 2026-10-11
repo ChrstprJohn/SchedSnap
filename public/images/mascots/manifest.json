@@ -1,0 +1,357 @@
+{
+  "provider": "built-in imagegen",
+  "background": "transparent",
+  "cloudinaryStatus": "uploaded",
+  "assets": [
+    {
+      "id": "axolotl-smile",
+      "master": "/images/mascots/masters/axolotl-smile.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        41,
+        1224,
+        1166
+      ]
+    },
+    {
+      "id": "bear-honey",
+      "master": "/images/mascots/masters/bear-honey.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        17,
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "bee-butter",
+      "master": "/images/mascots/masters/bee-butter.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1240,
+        1254
+      ]
+    },
+    {
+      "id": "blue-bunny",
+      "master": "/images/mascots/masters/blue-bunny.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        33,
+        9,
+        1234,
+        1229
+      ]
+    },
+    {
+      "id": "capybara-oat",
+      "master": "/images/mascots/masters/capybara-oat.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1216,
+        1254
+      ]
+    },
+    {
+      "id": "cat-peach",
+      "master": "/images/mascots/masters/cat-peach.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        7,
+        1206,
+        1254
+      ]
+    },
+    {
+      "id": "chick-lemon",
+      "master": "/images/mascots/masters/chick-lemon.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1244,
+        1207
+      ]
+    },
+    {
+      "id": "cloud-happy",
+      "master": "/images/mascots/masters/cloud-happy.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        31,
+        1232,
+        1254
+      ]
+    },
+    {
+      "id": "duck-butter",
+      "master": "/images/mascots/masters/duck-butter.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        21,
+        1253,
+        1214
+      ]
+    },
+    {
+      "id": "fox-apricot",
+      "master": "/images/mascots/masters/fox-apricot.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1253,
+        1254
+      ]
+    },
+    {
+      "id": "frog-mint",
+      "master": "/images/mascots/masters/frog-mint.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1240,
+        1254
+      ]
+    },
+    {
+      "id": "ghost-sleepy",
+      "master": "/images/mascots/masters/ghost-sleepy.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        31,
+        1246,
+        1254
+      ]
+    },
+    {
+      "id": "hamster-peach",
+      "master": "/images/mascots/masters/hamster-peach.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        4,
+        1253,
+        1254
+      ]
+    },
+    {
+      "id": "koala-lilac",
+      "master": "/images/mascots/masters/koala-lilac.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1253,
+        1254
+      ]
+    },
+    {
+      "id": "mushroom-blush",
+      "master": "/images/mascots/masters/mushroom-blush.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        23,
+        1182,
+        1190
+      ]
+    },
+    {
+      "id": "otter-caramel",
+      "master": "/images/mascots/masters/otter-caramel.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        19,
+        1236,
+        1254
+      ]
+    },
+    {
+      "id": "panda-soft",
+      "master": "/images/mascots/masters/panda-soft.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        15,
+        1240,
+        1236
+      ]
+    },
+    {
+      "id": "penguin-periwinkle",
+      "master": "/images/mascots/masters/penguin-periwinkle.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        54,
+        1236,
+        1228
+      ]
+    },
+    {
+      "id": "puppy-oat",
+      "master": "/images/mascots/masters/puppy-oat.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        19,
+        1240,
+        1254
+      ]
+    },
+    {
+      "id": "seal-cream",
+      "master": "/images/mascots/masters/seal-cream.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        21,
+        1242,
+        1254
+      ]
+    },
+    {
+      "id": "snail-lavender",
+      "master": "/images/mascots/masters/snail-lavender.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        9,
+        1216,
+        1254
+      ]
+    },
+    {
+      "id": "sprout-cheerful",
+      "master": "/images/mascots/masters/sprout-cheerful.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        19,
+        1245,
+        1254
+      ]
+    },
+    {
+      "id": "star-butter",
+      "master": "/images/mascots/masters/star-butter.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        52,
+        55,
+        1238,
+        1254
+      ]
+    },
+    {
+      "id": "turtle-sage",
+      "master": "/images/mascots/masters/turtle-sage.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        9,
+        1253,
+        1254
+      ]
+    },
+    {
+      "id": "whale-sky",
+      "master": "/images/mascots/masters/whale-sky.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        21,
+        0,
+        1242,
+        1254
+      ]
+    }
+  ]
+}

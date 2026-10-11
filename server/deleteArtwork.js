@@ -1,5 +1,6 @@
 import manifest from '../src/assets/cloudinaryManifest.js';
 import { signCloud } from './catalogStore.js';
+import { generatedMasterId, generatedMasterUrl } from '../shared/generatedArtwork.js';
 
 export function artworkIds(template, env) {
   return [...new Set([template.image, ...Object.values(template.deviceImages || {})].filter(Boolean).map(path => {
@@ -13,13 +14,13 @@ export function artworkIds(template, env) {
     const prefix = `/${env.CLOUDINARY_CLOUD_NAME}/image/upload/`;
     if (!url.pathname.startsWith(prefix)) throw new Error('Artwork belongs to another account.');
     const id = url.pathname.slice(prefix.length).replace(/^v\d+\//, '').replace(/\.(png|jpg|webp)$/i, '');
-    if (!/^schedsnap\/admin\/artwork\/[a-z0-9_-]+$/i.test(id)) throw new Error('Unexpected artwork identifier.');
+    if (!/^schedsnap\/admin\/artwork\/[a-z0-9_-]+$/i.test(id) && !(generatedMasterId.test(id) && generatedMasterUrl.test(path))) throw new Error('Unexpected artwork identifier.');
     return id;
   }))];
 }
 export function createArtworkDeleter(env, fetcher = fetch) {
   return async publicId => {
-    if (!/^schedsnap\/wallpapers\/[a-z0-9/_-]+$/i.test(publicId) && !/^schedsnap\/admin\/artwork\/[a-z0-9_-]+$/i.test(publicId)) throw new Error('Deletion outside wallpaper library is forbidden.');
+    if (!/^schedsnap\/wallpapers\/[a-z0-9/_-]+$/i.test(publicId) && !/^schedsnap\/admin\/artwork\/[a-z0-9_-]+$/i.test(publicId) && !generatedMasterId.test(publicId)) throw new Error('Deletion outside wallpaper library is forbidden.');
     const parameters = { public_id: publicId, invalidate: 'true', timestamp: String(Math.floor(Date.now() / 1000)) };
     const body = new URLSearchParams({ ...parameters, api_key: env.CLOUDINARY_API_KEY, signature: signCloud(parameters, env) });
     const response = await fetcher(`https://api.cloudinary.com/v1_1/${env.CLOUDINARY_CLOUD_NAME}/image/destroy`, { method: 'POST', body, signal: AbortSignal.timeout(10000) });

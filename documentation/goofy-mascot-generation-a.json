@@ -1,0 +1,21 @@
+{
+  "mode": "built-in image_gen",
+  "transparent_background": true,
+  "styleReference": "C:/Users/picar/AppData/Local/Temp/codex-clipboard-1f774174-13a7-4285-8897-d4a21ebdccea.png",
+  "assets": [
+    {
+      "name": "frog-heart-hands",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent goofy reaction mascot cutout\nPrimary request: a cute mint sage green frog with comically bulbous creamy eyes, small dark pupils gazing up to one side, sly affectionate smile, both hands held in front of chest forming a recognizable heart shape with fingers. Clean bust including head, shoulders, both complete arms and hands; graceful rounded lower cutout. Screenshot reference is pose and clay-style guidance only, ignore its UI and scene.\nStyle: smooth soft matte 3D clay character with simple rounded forms, humorous expressive face, subtle studio lighting, muted green palette.\nComposition: single frog centered, all fingers visible, generous transparent margin.\nScene: genuinely transparent alpha background.\nAvoid: text, symbols, question marks, hearts floating outside body, background, card, floor, shadows outside body, cropped hands, UI, watermark.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a12a73-b431-7300-bc08-28f51a45a8a4\\exec-a87e69dc-b92f-4f8d-87ce-58d8fcfbdc3e.png",
+      "destination": "public/images/goofy-mascots/masters/frog-heart-hands.png",
+      "visuallyInspected": true
+    },
+    {
+      "name": "goose-confused",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent goofy reaction mascot cutout\nPrimary request: a cute cream white goose with long gently bent neck, rounded head, soft orange yellow bill, tiny uneven dark oval eyes and perplexed face, head tilted slightly. Full chubby body with small wings and both orange feet visible. Screenshot reference is facial simplicity and reaction mood guidance only, ignore its UI and scene.\nStyle: smooth soft matte 3D clay character with simple rounded forms, humorous expressive face, subtle studio lighting, cream and muted orange palette.\nComposition: single goose centered, entire body visible, generous transparent margin.\nScene: genuinely transparent alpha background.\nAvoid: text, symbols, question marks, background, card, floor, shadows outside body, cropped feet, UI, watermark.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a12a73-b431-7300-bc08-28f51a45a8a4\\exec-53ad5976-4705-42ff-939f-517d97e76d77.png",
+      "destination": "public/images/goofy-mascots/masters/goose-confused.png",
+      "visuallyInspected": true
+    }
+  ]
+}

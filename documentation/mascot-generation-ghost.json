@@ -1,0 +1,19 @@
+{
+  "mode": "built-in image_gen",
+  "transparent_background": true,
+  "inspection": "Both full-body mascots visually inspected; matching matte 3D style, transparent margins, no text or ground plane.",
+  "assets": [
+    {
+      "name": "ghost-sleepy",
+      "path": "public/images/mascots/masters/ghost-sleepy.png",
+      "prompt": "Use case: stylized-concept\nAsset type: responsive website mascot cutout\nPrimary request: one adorable cream sleepy ghost mascot for SchedSnap.\nSubject: a single plump rounded warm ivory ghost with a soft domed head, short chubby arms hugging its belly, gently scalloped floating hem, tiny closed dark-purple curved eyes, tiny mouth and subtle peach cheeks. Peaceful sleepy expression.\nStyle/medium: polished soft matte 3D plush-clay render with smooth pillowy forms, minimal detail.\nComposition/framing: full body centered in a square image, generous transparent margins around every edge, front three-quarter view.\nLighting/mood: soft diffused studio lighting contained on the character.\nScene/backdrop: genuinely transparent alpha background.\nConstraints: no backdrop, no floor, no ground plane, no cast shadow outside the character, no text, no outlines, no watermark, no extra objects or characters.",
+      "source_hint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd as C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd\\exec-495dbc48-5a72-49fb-8716-b1651ed211b0.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "name": "cloud-happy",
+      "path": "public/images/mascots/masters/cloud-happy.png",
+      "prompt": "Use case: stylized-concept\nAsset type: responsive website mascot cutout\nPrimary request: one adorable lavender happy cloud mascot for SchedSnap.\nSubject: a single compact pillowy cloud made from five rounded joined lobes, pale lavender main body, tiny dark-purple dot eyes, tiny joyful curved smile, subtle pink cheeks, two very short rounded waving arms and two small stubby feet. Charming peaceful cheerful expression.\nStyle/medium: polished soft matte 3D plush-clay render with smooth inflated rounded forms and minimal detail, consistent with a cream ghost mascot family.\nComposition/framing: full body centered square image with generous transparent margins all edges, front three-quarter view.\nLighting/mood: soft diffused studio lighting contained on subject.\nScene/backdrop: genuinely transparent alpha background.\nConstraints: no backdrop, no floor, no ground plane, no cast shadow outside subject, no text, no outlines, no watermark, no extra objects or characters.",
+      "source_hint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd as C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd\\exec-de165c29-0046-4808-9f60-7372481d317a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  ]
+}

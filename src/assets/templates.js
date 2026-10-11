@@ -2,6 +2,7 @@ import { mascotTemplates } from './mascotTemplates.js';
 import { littleFriendsTemplates } from './littleFriendsTemplates.js';
 import { patternTemplates } from './patternTemplates.js';
 import { scenicTemplates } from './scenicTemplates.js';
+import { generatedMascotTemplates } from './generatedMascotTemplates.js';
 
 export const mobileResolution = { id: 'mobile', width: 1080, height: 2400 };
 export const deviceResolutions = { mobile: mobileResolution, tablet: { id: 'tablet', width: 1600, height: 2560 }, laptop: { id: 'laptop', width: 1920, height: 1080 } };
@@ -10,22 +11,11 @@ export const tabletLandscapeResolution = { ...deviceResolutions.tablet, width: d
 // Artwork and palette presets contain no student or course information.
 // Legacy heading/rows values remain as preset metadata; Canvas uses one shared layout.
 export const wallpaperTemplates = [
+  ...generatedMascotTemplates,
   ...scenicTemplates,
   ...littleFriendsTemplates,
   ...mascotTemplates,
   ...patternTemplates,
-  { id: 'olive-script', name: 'Olive Script', description: 'Olive, oversized lettering', background: '#4d4d3f', ink: '#fffdf4', muted: '#eeede1', surface: '#656554', line: '#9d9d85', heading: 'stack', rows: 'capsule' },
-  { id: 'linen-letter', name: 'Linen Letter', description: 'Cream & editorial serif', background: '#eee9df', ink: '#443c32', muted: '#6b6051', surface: '#faf7f0', line: '#bfb4a4', heading: 'editorial', rows: 'rule', pattern: 'frame' },
-  { id: 'violet-notes', name: 'Violet Notes', description: 'Lilac graph-paper journal', background: '#e9e0f3', ink: '#493852', muted: '#665274', surface: '#f9f4fc', line: '#b8a4c7', heading: 'serif', rows: 'tile', pattern: 'grid' },
-  { id: 'mono-print', name: 'Mono Print', description: 'Sharp black & white', background: '#f5f4f0', ink: '#1e1f20', muted: '#505254', surface: '#ffffff', line: '#797b7d', heading: 'editorial', rows: 'rule' },
-  { id: 'sunset-study', name: 'Sunset Study', description: 'Peach sunset, quiet rows', background: '#edb99d', ink: '#432e29', muted: '#65483f', surface: 'rgba(255,248,231,0.88)', line: '#b68169', heading: 'script', rows: 'capsule', gradient: ['#ecd3b3', '#e79c88', '#bb98b4'] },
-  { id: 'green-room', name: 'Green Room', description: 'Forest green & round badges', background: '#193c32', ink: '#f7f5df', muted: '#e2e4d1', surface: '#2b5145', line: '#8caa96', heading: 'split', rows: 'badge', pattern: 'frame' },
-  { id: 'candy-check', name: 'Candy Check', description: 'Pastel checkerboard', background: '#f1d8e4', ink: '#563845', muted: '#755263', surface: 'rgba(255,248,247,0.94)', line: '#b990a5', heading: 'serif', rows: 'panel', pattern: 'checker', patternColor: '#f9f0c9' },
-  { id: 'mint-journal', name: 'Mint Journal', description: 'A ruled mint notebook', background: '#e6ece0', ink: '#33483b', muted: '#586b5b', surface: '#f7faf2', line: '#a6b5a1', heading: 'serif', rows: 'tile', pattern: 'ruled' },
-  { id: 'clay-studio', name: 'Clay Studio', description: 'Terracotta & graphic type', background: '#c67557', ink: '#fff8e8', muted: '#fff0d3', surface: '#99503b', line: '#ecc0a2', heading: 'stack', rows: 'tile', pattern: 'circle' },
-  { id: 'cloud-nine', name: 'Cloud Nine', description: 'Periwinkle, soft color fields', background: '#c7cdf1', ink: '#343751', muted: '#555a7c', surface: 'rgba(248,247,255,0.9)', line: '#9299c3', heading: 'split', rows: 'capsule', gradient: ['#c1cfec', '#ddcfed', '#eef0fa'] },
-  { id: 'butter-check', name: 'Butter Check', description: 'Butter-yellow checks', background: '#edd890', ink: '#514321', muted: '#746237', surface: '#fff8dd', line: '#b5a164', heading: 'script', rows: 'panel', pattern: 'checker', patternColor: '#fff0ba' },
-  { id: 'rose-letter', name: 'Rose Letter', description: 'Rose paper & burgundy ink', background: '#e9d3d1', ink: '#63313e', muted: '#83525c', surface: '#f8ebe7', line: '#b98c96', heading: 'serif', rows: 'rule', pattern: 'frame' },
 ];
 
 // Gallery examples show one neutral class per weekday; actual uploads are never

@@ -8,6 +8,7 @@ export function cloudinaryAssetUrl(path, resolution) {
   const preview = width < 1080 && height < 2400;
   // Fit within the target dimensions without cropping or stretching artwork.
   // Keep full-size output as PNG, preserving transparency and avoiding lossy encoding.
-  const transformation = `c_limit,w_${width},h_${height}/${preview ? 'f_auto,q_auto:good' : 'f_png'}`;
+  const transformation = Number.isFinite(width) && Number.isFinite(height)
+    ? `c_limit,w_${width},h_${height}/${preview ? 'f_auto,q_auto:good' : 'f_png'}` : 'f_png';
   return asset.url.replace('/image/upload/', `/image/upload/${transformation}/`);
 }

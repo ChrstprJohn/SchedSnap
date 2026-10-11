@@ -1,0 +1,20 @@
+{
+  "mode": "built-in image_gen",
+  "transparent_background": true,
+  "assets": [
+    {
+      "filename": "sprout-cheerful.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent mascot decoration for responsive SchedSnap website\nPrimary request: one extremely cute cheerful sage-green sprout creature with two dark green rounded leaves on its head, a plump bean-shaped body, tiny stubby arms and feet, two tiny dark eyes and a simple joyful smile.\nStyle/medium: polished soft matte 3D plush/clay rendering, heavy rounded forms, smooth velvety surfaces, restrained detail.\nComposition/framing: square canvas, entire single character centered, ample clear margins around all leaves and feet, gentle three-quarter pose with one little arm waving.\nLighting/mood: soft diffused studio illumination, adorable warm friendly mood.\nScene/backdrop: actual transparent alpha background, isolated cutout.\nConstraints: no outlines, text, logos, extra characters, background, ground plane, cast shadow, props or checkerboard drawn into image. Preserve genuine transparency.",
+      "source": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a12a73-9bc6-7253-9b69-5a96368d0cc3 as C:\\Users\\picar\\.codex\\generated_images\\01a12a73-9bc6-7253-9b69-5a96368d0cc3\\exec-65cec3a8-4ee4-484d-bb2d-4f7f1ae0f7d1.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "revision": {
+        "source": "C:/Users/picar/.codex/generated_images/01a12a6f-71c3-7bd2-9257-155b5be80c10/exec-4aa20c3f-cfde-441c-8437-c0ba4b00d599.png",
+        "prompt": "Edit target: supplied sprout mascot. Clean production transparent cutout. Remove ALL bright yellow/green edge specks, white fringes, and fuzzy fur texture. Use smooth matte softly shaded clay like reference wallpaper characters, keep sage round body and two dark green leaves and friendly happy expression but use tiny dark green dot eyes and a tiny u smile. Full body centered with safe margins. No floor, no shadows outside silhouette, no background. Genuine alpha transparency, exceptionally clean antialiased edges. Save full image."
+      }
+    },
+    {
+      "filename": "cat-peach.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent mascot decoration for responsive SchedSnap website\nPrimary request: one extremely cute peach-colored round cat creature, a spherical plump body with small rounded triangular ears, tiny stubby paws and feet, a short curved tail, two tiny dark eyes, tiny smiling cat mouth and subtle rosy cheeks.\nStyle/medium: polished soft matte 3D plush/clay rendering, heavy rounded forms, smooth velvety surfaces, restrained detail.\nComposition/framing: square canvas, entire single character centered with generous margins, gentle three-quarter seated pose, one small paw lifted in greeting.\nLighting/mood: soft diffused studio illumination, adorable warm friendly mood.\nColor palette: light peach body, softly deeper peach ear interiors, dark espresso facial features.\nScene/backdrop: actual transparent alpha background, isolated cutout.\nConstraints: no outlines, text, logos, extra characters, background, ground plane, cast shadow, props or checkerboard drawn into image. Preserve genuine transparency.",
+      "source": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a12a73-9bc6-7253-9b69-5a96368d0cc3 as C:\\Users\\picar\\.codex\\generated_images\\01a12a73-9bc6-7253-9b69-5a96368d0cc3\\exec-c89a5134-5e6d-4176-89c9-7c57878aaa5b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  ]
+}

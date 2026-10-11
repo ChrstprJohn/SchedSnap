@@ -1,0 +1,21 @@
+{
+  "mode": "built-in image_gen",
+  "transparent_background": true,
+  "styleReference": "C:/Users/picar/AppData/Local/Temp/codex-clipboard-2ad3669c-92d4-4699-9775-7eb8ea3f169e.png",
+  "assets": [
+    {
+      "name": "capybara-peace",
+      "prompt": "Use case: illustration-story\nAsset type: transparent hand-drawn mascot cutout\nPrimary request: a cheeky cute tan capybara with tiny rounded ears, long rounded muzzle, eyes scrunched shut happily, small pink tongue sticking out, one paw raised in a two-finger peace sign. Full squat rounded body and feet visible. Screenshot reference is drawing style and expression guidance only; ignore its background and UI.\nStyle: charming loose hand-drawn dark brown slightly wobbly outlines, warm tan flat fills with subtle colored-pencil texture and a little muted brown shading. Simple minimal 2D sticker doodle, playful imperfect lines.\nComposition: one full capybara centered, clear margins, raised peace gesture entirely visible.\nScene: genuinely transparent alpha background.\nAvoid: background, colored card, floor, shadow, text, symbols, props, UI, photorealism, 3D, glossy render, white sticker border.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a12a73-b431-7300-bc08-28f51a45a8a4\\exec-5d308ffe-806c-4c89-9a8d-cb6c1d4332e2.png",
+      "destination": "public/images/doodle-mascots/masters/capybara-peace.png",
+      "visuallyInspected": true
+    },
+    {
+      "name": "dog-cheeky",
+      "prompt": "Use case: illustration-story\nAsset type: transparent hand-drawn mascot cutout\nPrimary request: a cheeky cute warm honey tan puppy with floppy ears, cream muzzle and belly, one eye closed in a wink, small pink tongue sticking out to one side, one paw raised in a playful wave. Full squat rounded body and feet visible. Screenshot reference is drawing style and cheeky expression guidance only; ignore its background and UI.\nStyle: charming loose hand-drawn dark brown slightly wobbly outlines, warm flat fills with subtle colored-pencil texture and a little muted brown shading. Simple minimal 2D sticker doodle, playful imperfect lines.\nComposition: one full puppy centered, clear margins, waving paw entirely visible.\nScene: genuinely transparent alpha background.\nAvoid: background, colored card, floor, shadow, text, symbols, props, UI, photorealism, 3D, glossy render, white sticker border.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a12a73-b431-7300-bc08-28f51a45a8a4\\exec-899a0583-939e-4962-b214-5f603b0a8566.png",
+      "destination": "public/images/doodle-mascots/masters/dog-cheeky.png",
+      "visuallyInspected": true
+    }
+  ]
+}

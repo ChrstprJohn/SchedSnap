@@ -1,0 +1,30 @@
+{
+  "mode": "built-in image_gen edit",
+  "transparent_background": true,
+  "assets": [
+    {
+      "name": "black-cat-wave",
+      "path": "public/images/doodle-mascots/masters/black-cat-wave.png",
+      "prompt": "Edit target: supplied original hand-drawn black cat mascot. Create a waving gesture variant: same black cat identity, huge ivory oval eyes and tiny dark pupils, white triangular nose, tall uneven ears, warm-gray ear interiors, long rounded seated body, curled tail. Raise one small front paw beside its face waving hello, friendly curious expression. Preserve loose dark pencil outlines and warm textured crayon fills, simple charming drawing style. Entire silhouette including ear tufts, whiskers, waving paw, tail and feet centered and occupies at most 70% canvas height and width; 15% completely clear transparent margin on ALL sides. Genuine transparent alpha, no background, floor, cast shadow, text or extra objects.",
+      "source_hint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd as C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd\\exec-c012feef-5072-492c-b0ca-b6d3a007ecd3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "name": "black-cat-wink",
+      "path": "public/images/doodle-mascots/masters/black-cat-wink.png",
+      "prompt": "Edit target: supplied original hand-drawn black cat mascot. Create playful winking gesture variant: same black cat identity, one huge ivory oval eye and tiny dark pupil, other eye closed in cheeky wink, white triangular nose, tall uneven ears, warm-gray ear interiors, long rounded seated body, curled tail. Head playfully tilted and one small paw raised in a cute friendly gesture. Preserve loose dark pencil outlines and warm textured crayon fills, simple charming drawing style. Entire silhouette including ear tufts, whiskers, paws, tail and feet centered and occupies at most 70% canvas height and width; 15% completely clear transparent margin on ALL sides. Genuine transparent alpha, no background, floor, cast shadow, text or extra objects.",
+      "source_hint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd as C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd\\exec-f8f8eac8-cdb4-4063-9078-444fa150e4e1.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "name": "black-cat-book",
+      "path": "public/images/doodle-mascots/masters/black-cat-book.png",
+      "prompt": "Edit target: supplied original hand-drawn black cat mascot. Create cute notebook gesture variant: same black cat identity, huge ivory oval eyes and tiny dark pupils, white triangular nose, tall uneven ears, warm-gray ear interiors, long rounded seated body, curled tail. Both small front paws gently holding one little closed muted ochre notebook against its belly. Notebook cover completely blank, no writing. Friendly studious curious expression. Preserve loose dark pencil outlines and warm textured crayon fills, simple charming drawing style. Entire silhouette including ear tufts, whiskers, paws, tail and feet centered and occupies at most 70% canvas height and width; 15% completely clear transparent margin on ALL sides. Genuine transparent alpha, no background, floor, cast shadow, text or additional objects.",
+      "source_hint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd as C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd\\exec-879bd54e-652a-4873-8c1a-6e19a88e5f30.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "name": "frog-flower",
+      "path": "public/images/doodle-mascots/masters/frog-flower.png",
+      "prompt": "Edit target: supplied original hand-drawn sage-green frog mascot. Create flower gesture variant: same plump sage-green frog, bulging ivory eyes, dark pupils, big cheerful smile, peach cheeks, ivory belly, tiny splayed feet. One hand gently holds one simple little ivory daisy with muted ochre center and thin green stem; other hand gives friendly thumbs-up if anatomically clear. Preserve loose dark pencil outlines and warm textured crayon fills, simple charming drawing style. Entire silhouette including eyes, flower, hands and feet centered and occupies at most 70% canvas height and width; 15% completely clear transparent margin on ALL sides. Genuine transparent alpha, no background, floor, cast shadow, text or extra objects.",
+      "source_hint": "Generated images are saved to C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd as C:\\Users\\picar\\.codex\\generated_images\\01a12a73-8139-7122-82aa-bdbfd93c5bdd\\exec-1d388eef-6dfc-475f-adad-3c28542354b2.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  ]
+}

@@ -76,6 +76,13 @@ export function createAdminHandler({ env = process.env, store = createCatalogSto
         if (paths.some(path => path.startsWith('/') ? !existingPaths.has(path) : !path.startsWith(`https://res.cloudinary.com/${env.CLOUDINARY_CLOUD_NAME}/image/upload/`))) return fail(400, 'Artwork must belong to this library.');
         const index = catalog.templates.findIndex(t => t.id === template.id);
         if (catalog.templates[index]?.deletionPending) return fail(409, 'This design is being deleted. Finish deletion before editing.');
+        const previous = catalog.templates[index];
+        // Dates are server-owned: editing or re-publishing must not renew New.
+        delete template.createdAt; delete template.publishedAt;
+        if (previous?.createdAt) template.createdAt = previous.createdAt;
+        if (previous?.publishedAt) template.publishedAt = previous.publishedAt;
+        if (index < 0) template.createdAt = new Date(now()).toISOString();
+        if (template.status === 'published' && !template.publishedAt && (index < 0 || (previous?.status === 'draft' && previous.createdAt))) template.publishedAt = new Date(now()).toISOString();
         if (index < 0) catalog.templates.unshift(template); else catalog.templates[index] = template;
       } else if (action === 'visibility') {
         const template = catalog.templates.find(t => t.id === body.id);
@@ -86,6 +93,7 @@ export function createAdminHandler({ env = process.env, store = createCatalogSto
           const parsed = templateSchema.safeParse({ ...template, status: 'published' });
           if (!parsed.success) return fail(422, 'This design needs artwork before publishing. Open Edit to add the missing device images.');
         }
+        if (body.status === 'published' && template.status === 'draft' && template.createdAt && !template.publishedAt) template.publishedAt = new Date(now()).toISOString();
         template.status = body.status;
       } else if (action === 'delete') {
         const template = catalog.templates.find(t => t.id === body.id);

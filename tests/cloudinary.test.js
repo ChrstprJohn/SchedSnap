@@ -15,3 +15,8 @@ test('mapped previews are resized without cropping; export artwork stays PNG', (
   assert.match(cloudinaryAssetUrl(path, { width: 1080, height: 2400 }), /c_limit,w_1080,h_2400\/f_png\//);
   assert.match(cloudinaryAssetUrl(path, { width: 1920, height: 1080 }), /f_png\//);
 });
+
+test('direct Cloudinary pixel masters without dimensions remain lossless and unscaled', () => {
+  const url = 'https://res.cloudinary.com/example/image/upload/v123/schedsnap/images/pixel-mascots/masters/pixel-cat-0123456789abcdef.png';
+  assert.equal(cloudinaryAssetUrl(url), url.replace('/image/upload/', '/image/upload/f_png/'));
+});

@@ -1,0 +1,35 @@
+{
+  "mode": "built-in image_gen",
+  "transparent_background": true,
+  "styleReference": "public/images/doodle-mascots/masters/capybara-peace.png",
+  "assets": [
+    {
+      "name": "capybara-heart-hands",
+      "prompt": "Use case: illustration-story\nAsset type: transparent hand-drawn mascot cutout\nPrimary request: a cute warm tan capybara standing with BOTH front paws together at chest height, fingers and thumbs making a clear heart-shaped opening, happy closed smiling eyes and tiny pink cheeks. Use reference only for exact drawing style: loose dark brown pencil outlines and warm muted crayon fills, simple round heavy proportions, adorable expressive face. Entire character including feet, ears, hands and gesture visible.\nStyle: flat 2D hand-drawn doodle, wobbly imperfect dark pencil outline, subtle warm textured crayon fill, minimal shading. Match existing capybara reference closely.\nComposition: single full character centered, smaller within canvas so there is at least 15% fully transparent empty margin on EVERY side.\nScene: genuinely transparent alpha background.\nAvoid: background, floor, ground, shadow, text, letters, symbols, floating hearts outside hands, props, sticker border, 3D, glossy render, cropped extremities.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a12a73-b431-7300-bc08-28f51a45a8a4\\exec-4c49f7f2-f253-44b1-afc6-89b30673ccf2.png",
+      "destination": "public/images/doodle-mascots/masters/capybara-heart-hands.png",
+      "visuallyInspected": true
+    },
+    {
+      "name": "capybara-wave",
+      "prompt": "Use case: illustration-story\nAsset type: transparent hand-drawn mascot cutout\nPrimary request: a cute warm tan capybara wearing a small muted sage green neck scarf, standing with one front paw raised high in a friendly wave, other paw down, open tiny dark eyes and small happy smile. Use reference only for exact drawing style: loose dark brown pencil outlines and warm muted crayon fills, simple round heavy proportions, adorable expressive face. Entire character including feet, ears, hands and gesture visible.\nStyle: flat 2D hand-drawn doodle, wobbly imperfect dark pencil outline, subtle warm textured crayon fill, minimal shading. Match existing capybara reference closely. Accessories clean and minimal.\nComposition: single full character centered, smaller within canvas so there is at least 15% fully transparent empty margin on EVERY side.\nScene: genuinely transparent alpha background.\nAvoid: background, floor, ground, shadow, text, letters, symbols, floating decorations, extra props, sticker border, 3D, glossy render, cropped extremities.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a12a73-b431-7300-bc08-28f51a45a8a4\\exec-21476d7a-93a5-47c2-9bd1-c9628268a6f7.png",
+      "destination": "public/images/doodle-mascots/masters/capybara-wave.png",
+      "visuallyInspected": true
+    },
+    {
+      "name": "capybara-mug",
+      "prompt": "Use case: illustration-story\nAsset type: transparent hand-drawn mascot cutout\nPrimary request: a cute warm tan capybara seated cozily holding one simple small cream ceramic mug with BOTH paws in front of belly, calm smiling eyes, no markings or text on mug. Use reference only for exact drawing style: loose dark brown pencil outlines and warm muted crayon fills, simple round heavy proportions, adorable expressive face. Entire character including feet, ears, hands and mug visible.\nStyle: flat 2D hand-drawn doodle, wobbly imperfect dark pencil outline, subtle warm textured crayon fill, minimal shading. Match existing capybara reference closely. Accessories clean and minimal.\nComposition: single full character centered, smaller within canvas so there is at least 15% fully transparent empty margin on EVERY side.\nScene: genuinely transparent alpha background.\nAvoid: background, floor, ground, shadow, text, letters, symbols, floating decorations, extra props, sticker border, 3D, glossy render, cropped extremities.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a12a73-b431-7300-bc08-28f51a45a8a4\\exec-2cd1c51a-19da-4127-a165-8e7156dafade.png",
+      "destination": "public/images/doodle-mascots/masters/capybara-mug.png",
+      "visuallyInspected": true
+    },
+    {
+      "name": "dog-backpack",
+      "prompt": "Use case: illustration-story\nAsset type: transparent hand-drawn mascot cutout\nPrimary request: a cute warm honey tan puppy with floppy ears and cream muzzle and belly, wearing one tiny muted sage green backpack with simple shoulder straps, standing with one paw lifted in an enthusiastic greeting, happy face and tiny tongue peeking out. Use reference only for drawing style: loose dark brown pencil outlines and warm muted crayon fills, simple round heavy proportions, adorable expressive face. Entire character including feet, ears, paws and backpack visible, slightly three-quarter view so small backpack can be seen.\nStyle: flat 2D hand-drawn doodle, wobbly imperfect dark pencil outline, subtle warm textured crayon fill, minimal shading. Match existing capybara reference drawing style closely, but subject is puppy. Accessories clean and minimal.\nComposition: single full character centered, smaller within canvas so there is at least 15% fully transparent empty margin on EVERY side.\nScene: genuinely transparent alpha background.\nAvoid: background, floor, ground, shadow, text, letters, symbols, floating decorations, extra props, sticker border, 3D, glossy render, cropped extremities.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a12a73-b431-7300-bc08-28f51a45a8a4\\exec-bb769659-0ec6-4145-83d0-5bc8eff72170.png",
+      "destination": "public/images/doodle-mascots/masters/dog-backpack.png",
+      "visuallyInspected": true
+    }
+  ]
+}

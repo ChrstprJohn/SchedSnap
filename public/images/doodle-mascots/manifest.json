@@ -1,0 +1,259 @@
+{
+  "provider": "built-in imagegen",
+  "background": "transparent",
+  "cloudinaryStatus": "uploaded",
+  "assets": [
+    {
+      "id": "black-cat-book",
+      "master": "/images/doodle-mascots/masters/black-cat-book.png",
+      "masterSize": [
+        1148,
+        1371
+      ],
+      "alphaBounds": [
+        33,
+        57,
+        1102,
+        1331
+      ]
+    },
+    {
+      "id": "black-cat-wave",
+      "master": "/images/doodle-mascots/masters/black-cat-wave.png",
+      "masterSize": [
+        1148,
+        1371
+      ],
+      "alphaBounds": [
+        31,
+        35,
+        1069,
+        1323
+      ]
+    },
+    {
+      "id": "black-cat-wide-eyes",
+      "master": "/images/doodle-mascots/masters/black-cat-wide-eyes.png",
+      "masterSize": [
+        1148,
+        1371
+      ],
+      "alphaBounds": [
+        80,
+        39,
+        1061,
+        1331
+      ]
+    },
+    {
+      "id": "black-cat-wink",
+      "master": "/images/doodle-mascots/masters/black-cat-wink.png",
+      "masterSize": [
+        1148,
+        1371
+      ],
+      "alphaBounds": [
+        0,
+        52,
+        1108,
+        1282
+      ]
+    },
+    {
+      "id": "bunny-grin",
+      "master": "/images/doodle-mascots/masters/bunny-grin.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1198,
+        1230
+      ]
+    },
+    {
+      "id": "bunny-hug",
+      "master": "/images/doodle-mascots/masters/bunny-hug.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        21,
+        1240,
+        1254
+      ]
+    },
+    {
+      "id": "bunny-stretch",
+      "master": "/images/doodle-mascots/masters/bunny-stretch.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1216,
+        1228
+      ]
+    },
+    {
+      "id": "capybara-heart-hands",
+      "master": "/images/doodle-mascots/masters/capybara-heart-hands.png",
+      "masterSize": [
+        1180,
+        1333
+      ],
+      "alphaBounds": [
+        25,
+        9,
+        1144,
+        1324
+      ]
+    },
+    {
+      "id": "capybara-mug",
+      "master": "/images/doodle-mascots/masters/capybara-mug.png",
+      "masterSize": [
+        1180,
+        1333
+      ],
+      "alphaBounds": [
+        0,
+        14,
+        1166,
+        1333
+      ]
+    },
+    {
+      "id": "capybara-peace",
+      "master": "/images/doodle-mascots/masters/capybara-peace.png",
+      "masterSize": [
+        1180,
+        1333
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1168,
+        1333
+      ]
+    },
+    {
+      "id": "capybara-wave",
+      "master": "/images/doodle-mascots/masters/capybara-wave.png",
+      "masterSize": [
+        1180,
+        1333
+      ],
+      "alphaBounds": [
+        33,
+        19,
+        1144,
+        1333
+      ]
+    },
+    {
+      "id": "dog-backpack",
+      "master": "/images/doodle-mascots/masters/dog-backpack.png",
+      "masterSize": [
+        1180,
+        1333
+      ],
+      "alphaBounds": [
+        0,
+        9,
+        1142,
+        1317
+      ]
+    },
+    {
+      "id": "dog-cheeky",
+      "master": "/images/doodle-mascots/masters/dog-cheeky.png",
+      "masterSize": [
+        1237,
+        1272
+      ],
+      "alphaBounds": [
+        0,
+        9,
+        1229,
+        1272
+      ]
+    },
+    {
+      "id": "frog-flower",
+      "master": "/images/doodle-mascots/masters/frog-flower.png",
+      "masterSize": [
+        1312,
+        1199
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1288,
+        1177
+      ]
+    },
+    {
+      "id": "frog-scarf",
+      "master": "/images/doodle-mascots/masters/frog-scarf.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        17,
+        24,
+        1216,
+        1254
+      ]
+    },
+    {
+      "id": "frog-wave",
+      "master": "/images/doodle-mascots/masters/frog-wave.png",
+      "masterSize": [
+        1312,
+        1199
+      ],
+      "alphaBounds": [
+        0,
+        41,
+        1286,
+        1183
+      ]
+    },
+    {
+      "id": "sprout-notebook",
+      "master": "/images/doodle-mascots/masters/sprout-notebook.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        41,
+        19,
+        1224,
+        1254
+      ]
+    },
+    {
+      "id": "sprout-proud",
+      "master": "/images/doodle-mascots/masters/sprout-proud.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        41,
+        23,
+        1224,
+        1235
+      ]
+    }
+  ]
+}

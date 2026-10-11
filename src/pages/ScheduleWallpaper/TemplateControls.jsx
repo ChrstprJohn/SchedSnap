@@ -1,7 +1,7 @@
 import { particleStyles } from '../../utils/wallpaperParticles.js';
 import { schedulePosition } from '../../utils/canvasHelpers.js';
 import { ChevronDown } from 'lucide-react';
-import { colorInputValue, wallpaperFonts } from '../../utils/wallpaperTheme.js';
+import { colorInputValue, wallpaperFonts, mascotPosition } from '../../utils/wallpaperTheme.js';
 
 const colorFields = {
   background: { label: 'Background', colors: ['#dce8cb', '#f5daca', '#d8cbef', '#192f4b'] },
@@ -10,7 +10,7 @@ const colorFields = {
   ink: { label: 'Text', colors: ['#294b38', '#0f172a', '#71394d', '#fffdf4'] },
   line: { label: 'Border', colors: ['#a6b5a1', '#e2e8f0', '#b98c96', '#8caa96'] },
 };
-const editablePatterns = new Set(['checker', 'grid', 'ruled', 'circle', 'dots', 'stripes', 'diamonds', 'waves']);
+const editablePatterns = new Set(['checker', 'grid', 'ruled', 'circle', 'dots', 'stripes', 'diamonds', 'waves', 'frame']);
 
 function AppearanceColor({ colorKey, template, onChange, toggleKey }) {
   const { label, colors: defaultColors } = colorFields[colorKey];
@@ -32,6 +32,10 @@ export default function TemplateControls({ template, onChange, onReset }) {
   return <aside aria-label="Template appearance" className="template-settings">
     <fieldset className="appearance-group">
       <legend>Wallpaper</legend>
+      {template.layout === 'mascot' && <div className="appearance-row">
+        <label className="appearance-label" htmlFor="mascot-position">Character position</label>
+        <div className="field-select appearance-select"><select id="mascot-position" className="field-input" value={mascotPosition(template)} onChange={(event) => onChange('mascotPosition', event.target.value)}><option value="left">Left</option><option value="center">Center</option><option value="right">Right</option></select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>
+      </div>}
       {template.device && template.device !== 'mobile' && (template.device !== 'laptop' || template.layout === 'mascot') && <div className="appearance-row">
         <label className="appearance-label" htmlFor="schedule-position">Schedule position</label>
         <div className="field-select appearance-select"><select id="schedule-position" className="field-input" value={schedulePosition(template)} onChange={(event) => onChange('schedulePosition', event.target.value)}><option value="left">Left</option>{template.device !== 'laptop' && <option value="center">Center</option>}<option value="right">Right</option></select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>

@@ -1,0 +1,91 @@
+{
+  "provider": "built-in imagegen",
+  "background": "transparent",
+  "cloudinaryStatus": "uploaded",
+  "assets": [
+    {
+      "id": "banana-worried",
+      "master": "/images/goofy-mascots/masters/banana-worried.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1240,
+        1239
+      ]
+    },
+    {
+      "id": "black-cat-peek",
+      "master": "/images/goofy-mascots/masters/black-cat-peek.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        5,
+        1240,
+        1254
+      ]
+    },
+    {
+      "id": "blob-side-eye",
+      "master": "/images/goofy-mascots/masters/blob-side-eye.png",
+      "masterSize": [
+        1245,
+        1263
+      ],
+      "alphaBounds": [
+        0,
+        23,
+        1233,
+        1223
+      ]
+    },
+    {
+      "id": "frog-heart-hands",
+      "master": "/images/goofy-mascots/masters/frog-heart-hands.png",
+      "masterSize": [
+        1312,
+        1199
+      ],
+      "alphaBounds": [
+        0,
+        23,
+        1292,
+        1199
+      ]
+    },
+    {
+      "id": "goose-confused",
+      "master": "/images/goofy-mascots/masters/goose-confused.png",
+      "masterSize": [
+        1141,
+        1379
+      ],
+      "alphaBounds": [
+        47,
+        47,
+        1111,
+        1379
+      ]
+    },
+    {
+      "id": "turtle-shy",
+      "master": "/images/goofy-mascots/masters/turtle-shy.png",
+      "masterSize": [
+        1230,
+        1278
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1208,
+        1221
+      ]
+    }
+  ]
+}
