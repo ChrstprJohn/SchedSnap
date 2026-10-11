@@ -23,7 +23,7 @@ const denseSchedule = { ...sampleSchedule, classes: sampleSchedule.classes.map(c
 export default function Admin() {
   const [authenticated, setAuthenticated] = useState(null);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
-  const [section, setSection] = useState('library');
+  const [section, setSection] = useState('dashboard');
   useEffect(() => {
     const dismissProfiles = event => {
       document.querySelectorAll('.admin-profile[open]').forEach(profile => {
@@ -114,8 +114,8 @@ export default function Admin() {
   }
   return <div className={`admin-shell ${sidebarCollapsed ? 'admin-sidebar-collapsed' : ''}`}>
     <aside id="admin-sidebar" className="admin-sidebar"><button type="button" className="admin-icon-action admin-sidebar-toggle" aria-label={sidebarCollapsed ? 'Expand sidebar' : 'Collapse sidebar'} title={sidebarCollapsed ? 'Expand sidebar' : 'Collapse sidebar'} aria-expanded={!sidebarCollapsed} aria-controls="admin-sidebar" onClick={() => setSidebarCollapsed(value => !value)}>{sidebarCollapsed ? <ChevronRight size={18} aria-hidden="true" /> : <ChevronLeft size={18} aria-hidden="true" />}</button><Link to="/" className="site-brand" target="_blank" rel="noopener noreferrer" aria-label="SchedSnap website (opens in a new tab)"><BrandMark /><span className="admin-sidebar-label">SchedSnap</span></Link><nav aria-label="Admin navigation"><button className="admin-nav-item" aria-label="Dashboard" title="Dashboard" aria-current={section === 'dashboard' ? 'page' : undefined} onClick={() => { if (editorDirty && !window.confirm('Discard your unsaved changes?')) return; setEditor(null); setEditorDirty(false); setSection('dashboard'); }}><LayoutDashboard size={18} aria-hidden="true" /><span className="admin-sidebar-label">Dashboard</span></button><button className="admin-nav-item" aria-label="Template library" title="Template library" aria-current={section === 'library' && !editor ? 'page' : undefined} onClick={openLibrary}><PanelsTopLeft size={18} aria-hidden="true" /><span className="admin-sidebar-label">Template library</span></button></nav><details className="admin-profile"><summary aria-label="Profile actions"><UserRound size={20} aria-hidden="true" /><span className="admin-sidebar-label">Administrator</span></summary><div className="admin-profile-menu"><Link to="/" target="_blank" rel="noopener noreferrer" onClick={event => { event.currentTarget.closest('details').open = false; }}><ExternalLink size={16} aria-hidden="true" />View website<span className="sr-only"> (opens in a new tab)</span></Link><button disabled={busy} onClick={logout}><LogOut size={16} aria-hidden="true" />Sign out</button></div></details></aside>
-    <div className="admin-content">
-    <header className="admin-header admin-search-header"><label className="admin-search"><Search size={18} aria-hidden="true" /><span className="sr-only">Search designs</span><input type="search" placeholder="Search designs" value={query} disabled={Boolean(editor) || section !== 'library'} onChange={e => setQuery(e.target.value)} /></label><details className="admin-profile admin-header-profile"><summary aria-label="Admin profile actions"><UserRound size={20} aria-hidden="true" /><span>Admin</span></summary><div className="admin-profile-menu"><span>Administrator</span><Link to="/" target="_blank" rel="noopener noreferrer" onClick={event => { event.currentTarget.closest('details').open = false; }}><ExternalLink size={16} aria-hidden="true" />View website<span className="sr-only"> (opens in a new tab)</span></Link><button disabled={busy} onClick={logout}><LogOut size={16} aria-hidden="true" />Sign out</button></div></details></header>
+    <div className={`admin-content ${section === 'dashboard' ? 'admin-content-dashboard' : ''}`}>
+    <header className="admin-header admin-search-header"><label className="admin-search"><Search size={18} aria-hidden="true" /><span className="sr-only">Search designs</span><input type="search" placeholder="Search designs" value={query} disabled={Boolean(editor) || section !== 'library'} onChange={e => setQuery(e.target.value)} /></label><details className="admin-profile admin-header-profile"><summary aria-label="Admin profile actions"><UserRound size={20} aria-hidden="true" /></summary><div className="admin-profile-menu"><span>Administrator</span><Link to="/" target="_blank" rel="noopener noreferrer" onClick={event => { event.currentTarget.closest('details').open = false; }}><ExternalLink size={16} aria-hidden="true" />View website<span className="sr-only"> (opens in a new tab)</span></Link><button disabled={busy} onClick={logout}><LogOut size={16} aria-hidden="true" />Sign out</button></div></details></header>
     {error && <div className="admin-error" role="alert">{error} {catalog && reloadNeeded && <button className="text-link" disabled={busy} onClick={load}>Reload library</button>}</div>}
     {notice && <p className="admin-notice" role="status">{notice}</p>}
     {section === 'dashboard' ? <AdminDashboard /> : editor ? <DesignEditor key={editor.key} initial={editor.template} isNew={editor.isNew} existingIds={catalog.templates.map(t => t.id)} busy={busy} onDirty={setEditorDirty} onBack={() => { setEditor(null); setEditorDirty(false); }} onSave={async template => {
@@ -158,9 +158,20 @@ function AdminDashboard() {
     request('dashboard').then(data => { if (!cancelled) setDashboard(data); }).catch(error => { if (!cancelled) setError(error.message); });
     return () => { cancelled = true; };
   }, []);
-  return <section aria-label="Analytics dashboard"><div className="admin-title-row"><div><h1>Dashboard</h1><p>Your website analytics from PostHog.</p></div>{dashboard?.embedUrl && <a className="button-secondary" href={dashboard.embedUrl} target="_blank" rel="noopener noreferrer">Open in PostHog<ExternalLink size={16} aria-hidden="true" /></a>}</div>
-    {error ? <p className="admin-error" role="alert">{error}</p> : !dashboard ? <div className="admin-analytics-skeleton wallpaper-skeleton" role="status" aria-label="Loading analytics" /> : dashboard.embedUrl ? <div className="admin-analytics-frame">{!loaded && <p role="status">Loading analytics…</p>}<iframe title="PostHog analytics dashboard" src={dashboard.embedUrl} onLoad={() => setLoaded(true)} referrerPolicy="no-referrer" /></div> : <div className="admin-analytics-empty"><LayoutDashboard size={32} aria-hidden="true" /><h2>Connect your PostHog dashboard</h2><p>Your analytics will appear here once the shared dashboard embed link is configured.</p></div>}
+  return <section className="admin-dashboard" aria-label="Analytics dashboard">
+    {error ? <p className="admin-error" role="alert">{error}</p> : !dashboard ? <AnalyticsSkeleton /> : dashboard.embedUrl ? <div className="admin-analytics-frame">{!loaded && <p role="status">Loading analytics…</p>}<iframe title="PostHog analytics dashboard" src={dashboard.embedUrl} onLoad={() => setLoaded(true)} referrerPolicy="no-referrer" /></div> : <div className="admin-analytics-empty"><LayoutDashboard size={32} aria-hidden="true" /><h2>Connect your PostHog dashboard</h2><p>Your analytics will appear here once the shared dashboard embed link is configured.</p></div>}
   </section>;
+}
+
+function AnalyticsSkeleton() {
+  return <div className="admin-analytics-skeleton" role="status" aria-label="Loading analytics">
+    <div className="analytics-skeleton-toolbar"><span /><span /><span /></div>
+    <div className="analytics-skeleton-metrics">{Array.from({ length: 4 }, (_, index) => <div className="analytics-skeleton-card" key={index}><span /><strong /><small /></div>)}</div>
+    <div className="analytics-skeleton-grid">
+      <div className="analytics-skeleton-panel analytics-skeleton-chart"><span className="analytics-skeleton-panel-title" /><div className="analytics-skeleton-chart-lines"><i /><i /><i /><i /></div><div className="analytics-skeleton-axis"><i /><i /><i /><i /><i /></div></div>
+      <div className="analytics-skeleton-panel"><span className="analytics-skeleton-panel-title" /><div className="analytics-skeleton-list">{Array.from({ length: 5 }, (_, index) => <i key={index} />)}</div></div>
+    </div>
+  </div>;
 }
 
 function HideDesignDialog({ template, busy, onClose, onConfirm }) {
