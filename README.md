@@ -36,6 +36,7 @@ The current automated suite passes all 36 tests. Lint and production build pass.
 ## Documentation
 
 - [Image asset organization and inventory](documentation/IMAGE_ASSETS.md)
+- [Artwork generation and Cloudinary upload skill for contributors and AI agents](documentation/skills/schedsnap-artwork/SKILL.md)
 - [Mobile, tablet and laptop showcases](documentation/DEVICE_SHOWCASES.md)
 - [Mobile, tablet and laptop showcases](documentation/DEVICE_SHOWCASES.md)
 
