@@ -1,11 +1,12 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router';
-import { Plus, LogOut, ArrowLeft, X, Menu, CheckCircle2, Pencil, Eye, EyeOff, Trash2, RotateCcw, MoreVertical, UserRound, LayoutDashboard, PanelsTopLeft, ExternalLink, ChevronLeft, ChevronRight, Search } from 'lucide-react';
+import { Plus, LogOut, ArrowLeft, X, Menu, CheckCircle2, Pencil, Eye, EyeOff, Trash2, RotateCcw, MoreVertical, UserRound, LayoutDashboard, PanelsTopLeft, ExternalLink, ChevronLeft, ChevronRight, ChevronDown, Search, Save, Send, Minus, Maximize2 } from 'lucide-react';
 import { deviceResolutions, tabletLandscapeResolution } from '../assets/templates.js';
 import { sampleSchedule } from '../assets/sampleSchedule.js';
-import { designCollections, scenicFamilies } from '../config/collections.js';
+import { designCollections } from '../config/collections.js';
 import { WallpaperCanvas } from './ScheduleWallpaper/CanvasPreview.jsx';
 import TemplateControls from './ScheduleWallpaper/TemplateControls.jsx';
+import WallpaperViewer from './ScheduleWallpaper/WallpaperViewer.jsx';
 import { templateSchema } from '../../shared/templateSchema.js';
 import { generateDesignId } from '../../shared/designId.js';
 import './admin.css';
@@ -14,13 +15,12 @@ import DevicePicker from '../components/DevicePicker.jsx';
 import useInfiniteGallery from '../lib/useInfiniteGallery.js';
 
 async function request(action, body) {
-  const response = await fetch(`/api/admin?action=${action}`, { method: body ? 'POST' : 'GET', headers: body ? { 'Content-Type': 'application/json' } : {}, body: body ? JSON.stringify(body) : undefined });
+  const response = await fetch(`/api/admin?action=${action}`, { method: body ? 'POST' : 'GET', headers: body ? { 'Content-Type': 'application/json' } : {}, body: body ? JSON.stringify(body) : undefined, signal: AbortSignal.timeout(60000) });
   const data = await response.json().catch(() => ({}));
   if (!response.ok) { const error = new Error(data.error?.message || 'Request failed. Please retry.'); error.status = response.status; error.catalog = data.catalog; throw error; }
   return data;
 }
 const blankTemplate = () => ({ id: '', name: '', description: '', collection: 'scenic', status: 'draft', background: '#eef2f6', ink: '#203e36', muted: '#486258', surface: '#ffffff', line: '#a5b9a7', fontFamily: 'DM Sans Variable', containerStyle: 'glass' });
-const denseSchedule = { ...sampleSchedule, classes: sampleSchedule.classes.map(c => ({ ...c, meetings: [0, 1, 2].map(i => ({ ...c.meetings[0], startTime: `${String(8 + i * 3).padStart(2, '0')}:00`, endTime: `${String(9 + i * 3).padStart(2, '0')}:30` })) })) };
 export default function Admin() {
   const [authenticated, setAuthenticated] = useState(null);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
@@ -137,9 +137,9 @@ export default function Admin() {
   }
   return <div className={`admin-shell ${sidebarCollapsed ? 'admin-sidebar-collapsed' : ''} ${mobileSidebarOpen ? 'admin-mobile-sidebar-open' : ''}`}>
     <button type="button" className="admin-mobile-backdrop" aria-label="Close navigation" onClick={() => setMobileSidebarOpen(false)} />
-    <aside id="admin-sidebar" className="admin-sidebar"><button type="button" className="admin-icon-action admin-sidebar-toggle" aria-label={sidebarCollapsed ? 'Expand sidebar' : 'Collapse sidebar'} title={sidebarCollapsed ? 'Expand sidebar' : 'Collapse sidebar'} aria-expanded={!sidebarCollapsed} aria-controls="admin-sidebar" onClick={() => setSidebarCollapsed(value => !value)}>{sidebarCollapsed ? <ChevronRight size={18} aria-hidden="true" /> : <ChevronLeft size={18} aria-hidden="true" />}</button><Link to="/" className="site-brand" target="_blank" rel="noopener noreferrer" aria-label="SchedSnap website (opens in a new tab)"><BrandMark /><span className="admin-sidebar-label">SchedSnap</span></Link><nav aria-label="Admin navigation"><button className="admin-nav-item" aria-label="Website analytics" title="Website analytics" aria-current={section === 'dashboard' ? 'page' : undefined} onClick={() => { if (editorDirty && !window.confirm('Discard your unsaved changes?')) return; setEditor(null); setEditorDirty(false); setSection('dashboard'); setMobileSidebarOpen(false); }}><LayoutDashboard size={18} aria-hidden="true" /><span className="admin-sidebar-label">Website analytics</span></button><button className="admin-nav-item" aria-label="Template library" title="Template library" aria-current={section === 'library' && !editor ? 'page' : undefined} onClick={() => { openLibrary(); setMobileSidebarOpen(false); }}><PanelsTopLeft size={18} aria-hidden="true" /><span className="admin-sidebar-label">Template library</span></button></nav><details className="admin-profile admin-sidebar-account"><summary aria-label="Administrator profile actions"><span className="admin-sidebar-account-icon"><UserRound size={17} aria-hidden="true" /></span><span className="admin-sidebar-label">Administrator</span></summary><div className="admin-profile-menu"><Link to="/" target="_blank" rel="noopener noreferrer" onClick={event => { event.currentTarget.closest('details').open = false; }}><ExternalLink size={16} aria-hidden="true" />View website<span className="sr-only"> (opens in a new tab)</span></Link><button disabled={busy} onClick={logout}><LogOut size={16} aria-hidden="true" />Sign out</button></div></details></aside>
+    <aside id="admin-sidebar" className="admin-sidebar"><button type="button" className="admin-icon-action admin-sidebar-toggle" aria-label={sidebarCollapsed ? 'Expand sidebar' : 'Collapse sidebar'} title={sidebarCollapsed ? 'Expand sidebar' : 'Collapse sidebar'} aria-expanded={!sidebarCollapsed} aria-controls="admin-sidebar" onClick={() => setSidebarCollapsed(value => !value)}>{sidebarCollapsed ? <ChevronRight size={18} aria-hidden="true" /> : <ChevronLeft size={18} aria-hidden="true" />}</button><Link to="/" className="site-brand" target="_blank" rel="noopener noreferrer" aria-label="SchedSnap website (opens in a new tab)"><BrandMark /><span className="admin-sidebar-label">SchedSnap</span></Link><nav aria-label="Admin navigation"><button className="admin-nav-item" aria-label="Website analytics" title="Website analytics" aria-current={section === 'dashboard' ? 'page' : undefined} onClick={() => { if (editorDirty && !window.confirm('Discard your unsaved changes?')) return; setEditor(null); setEditorDirty(false); setSection('dashboard'); setMobileSidebarOpen(false); }}><LayoutDashboard size={18} aria-hidden="true" /><span className="admin-sidebar-label">Website analytics</span></button><button className="admin-nav-item" aria-label="Template library" title="Template library" aria-current={section === 'library' && !editor ? 'page' : undefined} onClick={() => { openLibrary(); setMobileSidebarOpen(false); }}><PanelsTopLeft size={18} aria-hidden="true" /><span className="admin-sidebar-label">Template library</span></button></nav><details className="admin-profile admin-sidebar-account"><summary aria-label="Administrator profile actions"><span className="admin-sidebar-account-icon"><UserRound size={17} aria-hidden="true" /></span><span className="admin-sidebar-label">Administrator</span><ChevronDown className="admin-account-chevron admin-sidebar-label" size={16} aria-hidden="true" /></summary><div className="admin-profile-menu"><Link to="/" target="_blank" rel="noopener noreferrer" onClick={event => { event.currentTarget.closest('details').open = false; }}><ExternalLink size={16} aria-hidden="true" />View website<span className="sr-only"> (opens in a new tab)</span></Link><button disabled={busy} onClick={logout}><LogOut size={16} aria-hidden="true" />Sign out</button></div></details></aside>
     <div className={`admin-content ${section === 'dashboard' ? 'admin-content-dashboard' : ''}`}>
-    {!editor && <header className="admin-topbar"><button type="button" className="admin-mobile-menu-button" aria-label="Open navigation" aria-expanded={mobileSidebarOpen} aria-controls="admin-sidebar" onClick={() => setMobileSidebarOpen(true)}><Menu size={20} aria-hidden="true" /></button><div className="admin-topbar-copy"><h1>{section === 'dashboard' ? 'Website analytics' : 'Template library'}</h1><p><span className="admin-topbar-description-full">{section === 'dashboard' ? 'Track how your templates are being used.' : 'Upload artwork, preview every device, and choose what goes live.'}</span><span className="admin-topbar-description-short">{section === 'dashboard' ? 'Template usage overview.' : 'Manage your designs.'}</span></p></div><details className="admin-profile admin-topbar-profile"><summary aria-label="Profile actions"><UserRound size={20} aria-hidden="true" /></summary><div className="admin-profile-menu"><Link to="/" target="_blank" rel="noopener noreferrer" onClick={event => { event.currentTarget.closest('details').open = false; }}><ExternalLink size={16} aria-hidden="true" />View website<span className="sr-only"> (opens in a new tab)</span></Link><button disabled={busy} onClick={logout}><LogOut size={16} aria-hidden="true" />Sign out</button></div></details></header>}
+    <header className="admin-topbar"><button type="button" className="admin-mobile-menu-button" aria-label="Open navigation" aria-expanded={mobileSidebarOpen} aria-controls="admin-sidebar" onClick={() => setMobileSidebarOpen(true)}><Menu size={20} aria-hidden="true" /></button><div className="admin-topbar-copy"><h1>{editor ? (editor.isNew ? 'New design' : editor.template.name) : section === 'dashboard' ? 'Website analytics' : 'Template library'}</h1><p><span className="admin-topbar-description-full">{editor ? 'Set the artwork and appearance, then check your preview.' : section === 'dashboard' ? 'Track how your templates are being used.' : 'Upload artwork, preview every device, and choose what goes live.'}</span><span className="admin-topbar-description-short">{editor ? 'Artwork, appearance, and preview.' : section === 'dashboard' ? 'Template usage overview.' : 'Manage your designs.'}</span></p></div><details className="admin-profile admin-topbar-profile"><summary aria-label="Profile actions"><UserRound size={20} aria-hidden="true" /></summary><div className="admin-profile-menu"><Link to="/" target="_blank" rel="noopener noreferrer" onClick={event => { event.currentTarget.closest('details').open = false; }}><ExternalLink size={16} aria-hidden="true" />View website<span className="sr-only"> (opens in a new tab)</span></Link><button disabled={busy} onClick={logout}><LogOut size={16} aria-hidden="true" />Sign out</button></div></details></header>
     {error && <div className="admin-error" role="alert">{error} {catalog && reloadNeeded && <button className="text-link" disabled={busy} onClick={load}>Reload library</button>}</div>}
     {notice && <div className="admin-toast" role="status" aria-live="polite"><CheckCircle2 size={18} aria-hidden="true" /><span>{notice}</span><button type="button" className="admin-toast-close" aria-label="Dismiss notification" onClick={() => setNotice('')}><X size={16} aria-hidden="true" /></button></div>}
     {section === 'dashboard' ? <AdminDashboard /> : editor ? <DesignEditor key={editor.key} initial={editor.template} isNew={editor.isNew} existingIds={catalog.templates.map(t => t.id)} busy={busy} onDirty={setEditorDirty} onBack={() => { setEditor(null); setEditorDirty(false); }} onSave={async template => {
@@ -261,20 +261,38 @@ function DesignEditor({ initial, isNew, existingIds, busy, onSave, onBack, onDir
   const [template, setTemplate] = useState(initial);
   const [kind, setKind] = useState(initial.layout === 'mascot' ? 'mascot' : initial.image || initial.collection === 'scenic' ? 'background' : 'pattern');
   const [device, setDevice] = useState('mobile');
-  const [dense, setDense] = useState(false);
+  const [previewStuck, setPreviewStuck] = useState(false);
+  const [previewSize, setPreviewSize] = useState(2);
+  const [enlarged, setEnlarged] = useState(false);
+  const previewAnchor = useRef(null);
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      setPreviewStuck(!entry.isIntersecting && entry.boundingClientRect.top < 56);
+    }, { rootMargin: '-56px 0px 0px 0px' });
+    observer.observe(previewAnchor.current);
+    return () => observer.disconnect();
+  }, []);
   const [uploading, setUploading] = useState('');
+  const [savingAction, setSavingAction] = useState('');
+  const savingRef = useRef(false);
+  const [openSections, setOpenSections] = useState({ details: true, artwork: false, appearance: false });
   const [error, setError] = useState('');
   const [errorSection, setErrorSection] = useState('details');
   const [layout, setLayout] = useState({ ready: false });
   const dirty = JSON.stringify(initial) !== JSON.stringify(template);
   useEffect(() => { onDirty(dirty); }, [dirty, onDirty]);
-  const blocked = busy || Boolean(uploading);
+  const blocked = busy || Boolean(uploading) || Boolean(savingAction);
   useEffect(() => {
     if (!dirty) return;
     const warn = e => { e.preventDefault(); e.returnValue = ''; };
     window.addEventListener('beforeunload', warn);
     return () => window.removeEventListener('beforeunload', warn);
   }, [dirty]);
+  function showEditorError(section, message) {
+    setErrorSection(section);
+    setError(message);
+    if (section !== 'preview') setOpenSections(sections => ({ ...sections, [section]: true }));
+  }
   function change(key, value) { setTemplate(t => ({ ...t, [key]: value, ...(key === 'ink' ? { muted: value } : {}) })); }
   function changeKind(value) {
     setKind(value); setTemplate(t => ({ ...t, image: undefined, deviceImages: undefined, layout: value === 'mascot' ? 'mascot' : undefined, mascot: value === 'mascot' ? t.id || 'custom' : undefined, pattern: value === 'pattern' ? 'checker' : undefined, patternColor: value === 'pattern' ? '#dce8cb' : undefined, collection: value === 'background' ? 'scenic' : value, mascotSide: value === 'mascot' ? 'right' : undefined }));
@@ -305,33 +323,36 @@ function DesignEditor({ initial, isNew, existingIds, busy, onSave, onBack, onDir
       const asset = await response.json();
       if (!response.ok || !asset.secure_url) throw new Error('Artwork could not upload. Please retry.');
       setTemplate(t => kind === 'mascot' ? { ...t, image: asset.secure_url } : { ...t, deviceImages: { ...t.deviceImages, [target]: asset.secure_url }, ...(target === 'mobile' ? { image: asset.secure_url } : {}) });
-    } catch (e) { setError(e.message); }
+    } catch (e) { showEditorError('artwork', e.message); }
     finally { setUploading(''); }
   }
   async function save(status) {
+    if (savingRef.current || blocked) return;
     setError('');
     const next = { ...template, id: isNew ? generateDesignId(template.name, existingIds) : template.id, status };
     const result = templateSchema.safeParse(next);
-    if (!result.success) { const issue = result.error.issues[0]; setErrorSection(['image', 'deviceImages'].includes(issue.path[0]) ? 'artwork' : 'details'); setError(issue.message); return; }
-    if (status === 'published' && (layout.fingerprint !== fingerprint || !layout.ready || layout.overflow || layout.error)) { setErrorSection('preview'); setError('Wait for the preview to finish loading before publishing.'); return; }
-    await onSave(next);
+    if (!result.success) { const issue = result.error.issues[0]; showEditorError(['image', 'deviceImages'].includes(issue.path[0]) ? 'artwork' : 'details', issue.message); return; }
+    if (status === 'published' && (layout.fingerprint !== fingerprint || !layout.ready || layout.overflow || layout.error)) { showEditorError('preview', 'Wait for the preview to finish loading before publishing.'); return; }
+    savingRef.current = true;
+    setSavingAction(status === 'published' ? 'publish' : 'draft');
+    try { await onSave(next); }
+    catch (e) { showEditorError('details', e.message || 'Could not save the design. Please retry.'); }
+    finally { savingRef.current = false; setSavingAction(''); }
   }
   const resolution = device === 'tablet' && template.orientation === 'landscape' ? tabletLandscapeResolution : deviceResolutions[device];
   const previewTemplate = useMemo(() => ({ ...template, device, id: template.id || 'preview' }), [template, device]);
-  const fingerprint = JSON.stringify([previewTemplate, dense]);
+  const fingerprint = JSON.stringify(previewTemplate);
   const recordLayout = useCallback(value => setLayout({ ...value, fingerprint }), [fingerprint]);
   return <>
-    <button className="text-link admin-back" disabled={blocked} onClick={() => { if (!dirty || window.confirm('Discard your unsaved design changes? Uploaded artwork will remain in Cloudinary.')) onBack(); }}><ArrowLeft size={16} /><span className="admin-sidebar-label">Template library</span></button>
-    <div className="admin-title-row"><div><h1>{isNew ? 'New design' : template.name}</h1><p>Set the artwork and appearance, then check your preview.</p></div><div className="admin-save-actions"><button className="button-secondary" disabled={blocked} onClick={() => save(template.status === 'hidden' ? 'hidden' : 'draft')}>{busy ? 'Saving…' : 'Save draft'}</button><button className="button-primary" disabled={blocked} onClick={() => save('published')}>{busy ? 'Saving…' : 'Publish design'}</button></div></div>
-    <div className="admin-editor"><div className="admin-editor-fields"><fieldset disabled={blocked}>
-      <legend>Design details</legend>
+    <div className="admin-editor-toolbar"><button className="tool-back admin-back" disabled={blocked} onClick={() => { if (!dirty || window.confirm('Discard your unsaved design changes? Uploaded artwork will remain in Cloudinary.')) onBack(); }}><ArrowLeft size={16} /><span>Back</span></button></div>
+    <div className="admin-editor" data-preview-stuck={previewStuck}><div className="admin-preview-toolbar admin-preview-mobile-heading"><h2>Live preview</h2><DevicePicker value={device} onChange={setDevice} label="Preview device" /></div><div ref={previewAnchor} className="admin-preview-anchor" aria-hidden="true" /><div className="admin-save-actions"><div className="admin-design-summary"><h2>{template.name || 'New design'}</h2><p>{resolution.width} × {resolution.height} PNG</p></div><button className="button-secondary" disabled={blocked} onClick={() => save(template.status === 'hidden' ? 'hidden' : 'draft')}><Save size={16} aria-hidden="true" />{savingAction === 'draft' ? 'Saving draft…' : 'Save draft'}</button><button className="button-primary" disabled={blocked} onClick={() => save('published')}><Send size={16} aria-hidden="true" />{savingAction === 'publish' ? 'Publishing…' : 'Publish design'}</button></div><div className="admin-editor-fields"><EditorSection title="Design details" description="Title, collection, and artwork type" open={openSections.details} onToggle={open => setOpenSections(s => ({ ...s, details: open }))}><fieldset disabled={blocked}>
+      <legend className="sr-only">Design details</legend>
       {error && errorSection === 'details' && <p className="admin-error" role="alert">{error}</p>}
       <label htmlFor="admin-design-title">Title<input id="admin-design-title" aria-describedby="admin-title-help" className="field-input" value={template.name} maxLength={80} onChange={e => { const name = e.target.value; setError(''); setTemplate(t => ({ ...t, name, ...(isNew ? { id: generateDesignId(name, existingIds) } : {}) })); }} /></label>
       <p id="admin-title-help" className="admin-title-help">{isNew ? 'Your design link is generated automatically from this title.' : 'Changing the title keeps the existing design link.'}</p>
       <label>Artwork type<select className="field-input" value={kind} onChange={e => changeKind(e.target.value)}><option value="background">Background · three devices</option><option value="mascot">Mascot · transparent cutout</option><option value="pattern">Pattern or solid color</option></select></label>
       <label>Collection<select className="field-input" value={template.collection || 'original'} onChange={e => change('collection', e.target.value)}>{designCollections.filter(c => c.id !== 'all').map(c => <option key={c.id} value={c.id}>{c.name}</option>)}</select></label>
-      {template.collection === 'scenic' && <label>Theme<select className="field-input" value={template.family || ''} onChange={e => change('family', e.target.value)}><option value="">No theme</option>{scenicFamilies.map(f => <option key={f.id} value={f.id}>{f.name}</option>)}</select></label>}
-    </fieldset><fieldset disabled={blocked}><legend>Artwork</legend>
+    </fieldset></EditorSection><EditorSection title="Artwork" description={kind === 'pattern' ? 'Pattern and background' : kind === 'mascot' ? 'Character cutout' : 'Mobile, tablet, and laptop images'} open={openSections.artwork} onToggle={open => setOpenSections(s => ({ ...s, artwork: open }))}><fieldset disabled={blocked}><legend className="sr-only">Artwork</legend>
       {error && errorSection === 'artwork' && <p className="admin-error" role="alert">{error}</p>}
       {kind === 'pattern' ? <label>Pattern<select className="field-input" value={template.pattern || ''} onChange={e => change('pattern', e.target.value || undefined)}><option value="">Solid color</option>{['checker', 'grid', 'ruled', 'circle', 'dots', 'stripes', 'diamonds', 'waves', 'frame'].map(p => <option key={p} value={p}>{p}</option>)}</select></label> : (kind === 'mascot' ? ['character'] : ['mobile', 'tablet', 'laptop']).map(target => {
         const image = target === 'character' ? template.image : template.deviceImages?.[target];
@@ -339,7 +360,16 @@ function DesignEditor({ initial, isNew, existingIds, busy, onSave, onBack, onDir
       })}
       {kind === 'mascot' && <label>Character corner<select className="field-input" value={template.mascotSide || 'right'} onChange={e => change('mascotSide', e.target.value)}><option value="left">Left</option><option value="right">Right</option></select></label>}
       <p className="text-muted">Uploads are stored in Cloudinary. Saving a draft keeps the design out of the public gallery.</p>
-    </fieldset><fieldset disabled={blocked}><legend>Default appearance</legend><TemplateControls template={previewTemplate} onChange={change} onReset={() => setTemplate(t => ({ ...initial, id: t.id, name: t.name, image: t.image, deviceImages: t.deviceImages, status: t.status, collection: t.collection, layout: t.layout, pattern: t.pattern }))} /></fieldset></div>
-    <aside className="admin-preview"><h2>Live preview</h2>{error && errorSection === 'preview' && <p className="admin-error" role="alert">{error}</p>}<DevicePicker value={device} onChange={setDevice} label="Preview device" /><label className="admin-density"><input type="checkbox" checked={dense} onChange={e => setDense(e.target.checked)} />Preview a busy week</label><div className={`admin-preview-canvas admin-preview-${device}`}><WallpaperCanvas schedule={dense ? denseSchedule : sampleSchedule} template={previewTemplate} resolution={resolution} onLayout={recordLayout} className="block w-full h-auto" label={`${template.name || 'New design'} ${device} preview`} /></div>{layout.fingerprint === fingerprint && layout.overflow && <p className="admin-error" role="alert">This schedule does not fit. Adjust the design before publishing.</p>}<p className="text-muted">Sample classes. Uses the same renderer as the downloaded wallpaper.</p></aside></div>
+    </fieldset></EditorSection><EditorSection title="Default appearance" description="Colors, day containers, and typography" open={openSections.appearance} onToggle={open => setOpenSections(s => ({ ...s, appearance: open }))}><fieldset disabled={blocked}><legend className="sr-only">Default appearance</legend><TemplateControls template={previewTemplate} onChange={change} onReset={() => setTemplate(t => ({ ...initial, id: t.id, name: t.name, image: t.image, deviceImages: t.deviceImages, status: t.status, collection: t.collection, layout: t.layout, pattern: t.pattern }))} /></fieldset></EditorSection></div>
+    <aside className="admin-preview"><div className="admin-preview-toolbar admin-preview-desktop-heading"><h2>Live preview</h2><DevicePicker value={device} onChange={setDevice} label="Preview device" /></div>{error && errorSection === 'preview' && <p className="admin-error" role="alert">{error}</p>}<div className={`admin-preview-canvas flow-preview-art admin-preview-${device} admin-preview-size-${previewSize} ${previewSize === 1 ? 'preview-size-sm' : previewSize === 3 ? 'preview-size-lg' : 'preview-size-md'}`} style={{ '--admin-wallpaper-ratio': resolution.width / resolution.height }}><button type="button" className="admin-preview-wallpaper flow-wallpaper" aria-label="Enlarge wallpaper preview" aria-haspopup="dialog" onClick={() => setEnlarged(true)}><WallpaperCanvas schedule={sampleSchedule} template={previewTemplate} resolution={resolution} onLayout={recordLayout} className="block w-full h-auto" label={`${template.name || 'New design'} ${device} preview`} /><span className="preview-enlarge" aria-hidden="true"><Maximize2 size={16} /></span></button><div className="preview-size-controls" role="group" aria-label="Preview size controls"><button type="button" className="preview-size-btn" aria-label="Decrease preview size" disabled={previewSize === 1} onClick={() => setPreviewSize(size => size - 1)}><Minus size={13} aria-hidden="true" /></button><span className="preview-size-label">{['S', 'M', 'L'][previewSize - 1]}</span><button type="button" className="preview-size-btn" aria-label="Increase preview size" disabled={previewSize === 3} onClick={() => setPreviewSize(size => size + 1)}><Plus size={13} aria-hidden="true" /></button></div></div>{layout.fingerprint === fingerprint && layout.overflow && <p className="admin-error" role="alert">This schedule does not fit. Adjust the design before publishing.</p>}<p className="text-muted">Sample classes. Uses the same renderer as the downloaded wallpaper.</p></aside></div>
+    {enlarged && <WallpaperViewer resolution={resolution} onClose={() => setEnlarged(false)}><WallpaperCanvas schedule={sampleSchedule} template={previewTemplate} resolution={resolution} className="block h-auto w-full" label={`${template.name || 'New design'} enlarged preview`} /></WallpaperViewer>}
   </>;
+}
+
+function EditorSection({ title, description, open, onToggle, children }) {
+  const panelId = `admin-section-${title.toLowerCase().replaceAll(' ', '-')}`;
+  return <section className="admin-editor-section" data-open={open}>
+    <h2><button type="button" className="admin-section-toggle disclosure-summary" aria-expanded={open} aria-controls={panelId} onClick={() => onToggle(!open)}><span><strong>{title}</strong>{description && <small>{description}</small>}</span><ChevronDown size={18} aria-hidden="true" /></button></h2>
+    <div id={panelId} className="admin-editor-section-body" hidden={!open}>{children}</div>
+  </section>;
 }
