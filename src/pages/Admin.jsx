@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Link } from 'react-router';
-import { Plus, LogOut, ArrowLeft, Search, X, Pencil, Eye, EyeOff, Trash2, RotateCcw, MoreVertical, UserRound, LayoutDashboard, PanelsTopLeft, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Link, useSearchParams } from 'react-router';
+import { Plus, LogOut, ArrowLeft, X, Menu, CheckCircle2, Pencil, Eye, EyeOff, Trash2, RotateCcw, MoreVertical, UserRound, LayoutDashboard, PanelsTopLeft, ExternalLink, ChevronLeft, ChevronRight, Search } from 'lucide-react';
 import { deviceResolutions, tabletLandscapeResolution } from '../assets/templates.js';
 import { sampleSchedule } from '../assets/sampleSchedule.js';
 import { designCollections, scenicFamilies } from '../config/collections.js';
@@ -10,6 +10,7 @@ import { templateSchema } from '../../shared/templateSchema.js';
 import { generateDesignId } from '../../shared/designId.js';
 import './admin.css';
 import BrandMark from '../components/BrandMark.jsx';
+import DevicePicker from '../components/DevicePicker.jsx';
 import useInfiniteGallery from '../lib/useInfiniteGallery.js';
 
 async function request(action, body) {
@@ -23,7 +24,16 @@ const denseSchedule = { ...sampleSchedule, classes: sampleSchedule.classes.map(c
 export default function Admin() {
   const [authenticated, setAuthenticated] = useState(null);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
-  const [section, setSection] = useState('dashboard');
+  const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
+  const [adminParams, setAdminParams] = useSearchParams();
+  const section = adminParams.get('section') === 'library' ? 'library' : 'dashboard';
+  function setSection(next) {
+    setAdminParams(previous => {
+      const params = new URLSearchParams(previous);
+      params.set('section', next);
+      return params;
+    });
+  }
   useEffect(() => {
     const dismissProfiles = event => {
       document.querySelectorAll('.admin-profile[open]').forEach(profile => {
@@ -41,6 +51,14 @@ export default function Admin() {
     document.addEventListener('keydown', closeProfiles);
     return () => { document.removeEventListener('pointerdown', dismissProfiles); document.removeEventListener('keydown', closeProfiles); };
   }, []);
+  useEffect(() => {
+    if (!mobileSidebarOpen) return undefined;
+    const close = event => {
+      if (event.key === 'Escape') setMobileSidebarOpen(false);
+    };
+    document.addEventListener('keydown', close);
+    return () => document.removeEventListener('keydown', close);
+  }, [mobileSidebarOpen]);
   const [catalog, setCatalog] = useState(null);
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -48,8 +66,8 @@ export default function Admin() {
   const [busy, setBusy] = useState(false);
   const [editor, setEditor] = useState(null);
   const [editorDirty, setEditorDirty] = useState(false);
-  const [query, setQuery] = useState('');
   const [collection, setCollection] = useState('all');
+  const [searchQuery, setSearchQuery] = useState('');
   const [device, setDevice] = useState('mobile');
   const [deleting, setDeleting] = useState(null);
   const [hiding, setHiding] = useState(null);
@@ -62,6 +80,11 @@ export default function Admin() {
     document.addEventListener('keydown', escape);
     return () => { document.removeEventListener('pointerdown', dismiss); document.removeEventListener('keydown', escape); };
   }, [actionMenu]);
+  useEffect(() => {
+    if (!notice) return;
+    const timeout = window.setTimeout(() => setNotice(''), 5000);
+    return () => window.clearTimeout(timeout);
+  }, [notice]);
   const [reloadNeeded, setReloadNeeded] = useState(false);
   const load = useCallback(async () => {
     setError('');
@@ -93,39 +116,49 @@ export default function Admin() {
     catch (e) { setError(e.message); }
     finally { setBusy(false); }
   }
-  const filtered = catalog?.templates.filter(t => (collection === 'all' || (t.collection || 'original') === collection) && `${t.name} ${t.collection || 'original'}`.toLowerCase().includes(query.toLowerCase())) || [];
-  const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(filtered.length, `${collection}:${device}:${query}:${Boolean(editor)}`);
+  const normalizedSearch = searchQuery.trim().toLowerCase();
+  const filtered = catalog?.templates.filter(t => (collection === 'all' || (t.collection || 'original') === collection) && (!normalizedSearch || [t.name, t.description, t.collection].some(value => value?.toLowerCase().includes(normalizedSearch)))) || [];
+  const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(filtered.length, `${collection}:${device}:${normalizedSearch}:${Boolean(editor)}`);
   if (authenticated === null) return <div className="admin-login" role="status">Opening admin…</div>;
-  if (!authenticated) return <section className="admin-login">
+  if (!authenticated) return <div className="admin-auth-shell"><section className="admin-login" aria-labelledby="admin-login-title">
     <Link to="/" className="site-brand"><BrandMark /> SchedSnap</Link>
-    <h1>Admin sign in</h1><p>Manage designs and wallpaper artwork.</p>
+    <h1 id="admin-login-title">Admin sign in</h1>
     <form onSubmit={login}>
       <label htmlFor="admin-password">Password</label>
       <input id="admin-password" className="field-input" type="password" autoComplete="current-password" value={password} onChange={e => setPassword(e.target.value)} required maxLength={256} />
       {error && <p className="admin-error" role="alert">{error}</p>}
       <button className="button-primary" disabled={busy || !password}>{busy ? 'Signing in…' : 'Sign in'}</button>
     </form>
-    <Link to="/" className="text-link">Back to SchedSnap</Link>
-  </section>;
+  </section></div>;
   const visible = filtered.slice(0, galleryCount);
   function openLibrary() {
     if (editorDirty && !window.confirm('Discard your unsaved changes?')) return;
     setEditor(null); setEditorDirty(false); setSection('library');
   }
-  return <div className={`admin-shell ${sidebarCollapsed ? 'admin-sidebar-collapsed' : ''}`}>
-    <aside id="admin-sidebar" className="admin-sidebar"><button type="button" className="admin-icon-action admin-sidebar-toggle" aria-label={sidebarCollapsed ? 'Expand sidebar' : 'Collapse sidebar'} title={sidebarCollapsed ? 'Expand sidebar' : 'Collapse sidebar'} aria-expanded={!sidebarCollapsed} aria-controls="admin-sidebar" onClick={() => setSidebarCollapsed(value => !value)}>{sidebarCollapsed ? <ChevronRight size={18} aria-hidden="true" /> : <ChevronLeft size={18} aria-hidden="true" />}</button><Link to="/" className="site-brand" target="_blank" rel="noopener noreferrer" aria-label="SchedSnap website (opens in a new tab)"><BrandMark /><span className="admin-sidebar-label">SchedSnap</span></Link><nav aria-label="Admin navigation"><button className="admin-nav-item" aria-label="Dashboard" title="Dashboard" aria-current={section === 'dashboard' ? 'page' : undefined} onClick={() => { if (editorDirty && !window.confirm('Discard your unsaved changes?')) return; setEditor(null); setEditorDirty(false); setSection('dashboard'); }}><LayoutDashboard size={18} aria-hidden="true" /><span className="admin-sidebar-label">Dashboard</span></button><button className="admin-nav-item" aria-label="Template library" title="Template library" aria-current={section === 'library' && !editor ? 'page' : undefined} onClick={openLibrary}><PanelsTopLeft size={18} aria-hidden="true" /><span className="admin-sidebar-label">Template library</span></button></nav><details className="admin-profile"><summary aria-label="Profile actions"><UserRound size={20} aria-hidden="true" /><span className="admin-sidebar-label">Administrator</span></summary><div className="admin-profile-menu"><Link to="/" target="_blank" rel="noopener noreferrer" onClick={event => { event.currentTarget.closest('details').open = false; }}><ExternalLink size={16} aria-hidden="true" />View website<span className="sr-only"> (opens in a new tab)</span></Link><button disabled={busy} onClick={logout}><LogOut size={16} aria-hidden="true" />Sign out</button></div></details></aside>
+  return <div className={`admin-shell ${sidebarCollapsed ? 'admin-sidebar-collapsed' : ''} ${mobileSidebarOpen ? 'admin-mobile-sidebar-open' : ''}`}>
+    <button type="button" className="admin-mobile-backdrop" aria-label="Close navigation" onClick={() => setMobileSidebarOpen(false)} />
+    <aside id="admin-sidebar" className="admin-sidebar"><button type="button" className="admin-icon-action admin-sidebar-toggle" aria-label={sidebarCollapsed ? 'Expand sidebar' : 'Collapse sidebar'} title={sidebarCollapsed ? 'Expand sidebar' : 'Collapse sidebar'} aria-expanded={!sidebarCollapsed} aria-controls="admin-sidebar" onClick={() => setSidebarCollapsed(value => !value)}>{sidebarCollapsed ? <ChevronRight size={18} aria-hidden="true" /> : <ChevronLeft size={18} aria-hidden="true" />}</button><Link to="/" className="site-brand" target="_blank" rel="noopener noreferrer" aria-label="SchedSnap website (opens in a new tab)"><BrandMark /><span className="admin-sidebar-label">SchedSnap</span></Link><nav aria-label="Admin navigation"><button className="admin-nav-item" aria-label="Website analytics" title="Website analytics" aria-current={section === 'dashboard' ? 'page' : undefined} onClick={() => { if (editorDirty && !window.confirm('Discard your unsaved changes?')) return; setEditor(null); setEditorDirty(false); setSection('dashboard'); setMobileSidebarOpen(false); }}><LayoutDashboard size={18} aria-hidden="true" /><span className="admin-sidebar-label">Website analytics</span></button><button className="admin-nav-item" aria-label="Template library" title="Template library" aria-current={section === 'library' && !editor ? 'page' : undefined} onClick={() => { openLibrary(); setMobileSidebarOpen(false); }}><PanelsTopLeft size={18} aria-hidden="true" /><span className="admin-sidebar-label">Template library</span></button></nav><details className="admin-profile admin-sidebar-account"><summary aria-label="Administrator profile actions"><span className="admin-sidebar-account-icon"><UserRound size={17} aria-hidden="true" /></span><span className="admin-sidebar-label">Administrator</span></summary><div className="admin-profile-menu"><Link to="/" target="_blank" rel="noopener noreferrer" onClick={event => { event.currentTarget.closest('details').open = false; }}><ExternalLink size={16} aria-hidden="true" />View website<span className="sr-only"> (opens in a new tab)</span></Link><button disabled={busy} onClick={logout}><LogOut size={16} aria-hidden="true" />Sign out</button></div></details></aside>
     <div className={`admin-content ${section === 'dashboard' ? 'admin-content-dashboard' : ''}`}>
-    <header className="admin-header admin-search-header"><label className="admin-search"><Search size={18} aria-hidden="true" /><span className="sr-only">Search designs</span><input type="search" placeholder="Search designs" value={query} disabled={Boolean(editor) || section !== 'library'} onChange={e => setQuery(e.target.value)} /></label><details className="admin-profile admin-header-profile"><summary aria-label="Admin profile actions"><UserRound size={20} aria-hidden="true" /></summary><div className="admin-profile-menu"><span>Administrator</span><Link to="/" target="_blank" rel="noopener noreferrer" onClick={event => { event.currentTarget.closest('details').open = false; }}><ExternalLink size={16} aria-hidden="true" />View website<span className="sr-only"> (opens in a new tab)</span></Link><button disabled={busy} onClick={logout}><LogOut size={16} aria-hidden="true" />Sign out</button></div></details></header>
+    {!editor && <header className="admin-topbar"><button type="button" className="admin-mobile-menu-button" aria-label="Open navigation" aria-expanded={mobileSidebarOpen} aria-controls="admin-sidebar" onClick={() => setMobileSidebarOpen(true)}><Menu size={20} aria-hidden="true" /></button><div className="admin-topbar-copy"><h1>{section === 'dashboard' ? 'Website analytics' : 'Template library'}</h1><p><span className="admin-topbar-description-full">{section === 'dashboard' ? 'Track how your templates are being used.' : 'Upload artwork, preview every device, and choose what goes live.'}</span><span className="admin-topbar-description-short">{section === 'dashboard' ? 'Template usage overview.' : 'Manage your designs.'}</span></p></div><details className="admin-profile admin-topbar-profile"><summary aria-label="Profile actions"><UserRound size={20} aria-hidden="true" /></summary><div className="admin-profile-menu"><Link to="/" target="_blank" rel="noopener noreferrer" onClick={event => { event.currentTarget.closest('details').open = false; }}><ExternalLink size={16} aria-hidden="true" />View website<span className="sr-only"> (opens in a new tab)</span></Link><button disabled={busy} onClick={logout}><LogOut size={16} aria-hidden="true" />Sign out</button></div></details></header>}
     {error && <div className="admin-error" role="alert">{error} {catalog && reloadNeeded && <button className="text-link" disabled={busy} onClick={load}>Reload library</button>}</div>}
-    {notice && <p className="admin-notice" role="status">{notice}</p>}
+    {notice && <div className="admin-toast" role="status" aria-live="polite"><CheckCircle2 size={18} aria-hidden="true" /><span>{notice}</span><button type="button" className="admin-toast-close" aria-label="Dismiss notification" onClick={() => setNotice('')}><X size={16} aria-hidden="true" /></button></div>}
     {section === 'dashboard' ? <AdminDashboard /> : editor ? <DesignEditor key={editor.key} initial={editor.template} isNew={editor.isNew} existingIds={catalog.templates.map(t => t.id)} busy={busy} onDirty={setEditorDirty} onBack={() => { setEditor(null); setEditorDirty(false); }} onSave={async template => {
       if (await mutate('save', { template, create: editor.isNew })) { setEditor(null); setEditorDirty(false); setNotice(template.status === 'published' ? 'Design published. Allow a few minutes for the public gallery to refresh.' : 'Design saved.'); return true; }
       return false;
     }} /> : <>
-      <div className="admin-title-row"><div><h1>Template library</h1><p>Upload artwork, preview every device, and choose what goes live.</p></div><button className="button-primary" disabled={busy || !catalog} onClick={() => setEditor({ key: crypto.randomUUID(), template: blankTemplate(), isNew: true })}><Plus size={18} />New design</button></div>
-      <div className="device-filter-tabs" role="group" aria-label="Filter by device">{['mobile', 'tablet', 'laptop'].map(item => <button key={item} className="device-filter-tab" aria-pressed={device === item} onClick={() => setDevice(item)}>{item === 'mobile' ? 'Mobile' : item === 'tablet' ? 'Tablet' : 'Laptop'}</button>)}</div>
-      <div className="template-filters" role="group" aria-label="Filter designs">{designCollections.map(item => <button key={item.id} className="template-category" aria-pressed={collection === item.id} onClick={() => setCollection(item.id)}>{item.name}</button>)}</div>
-      {!catalog ? error ? <button className="button-secondary" onClick={load}>Retry loading library</button> : <div className={`admin-design-grid admin-grid-${device}`} aria-label="Loading designs" aria-busy="true">{Array.from({ length: 10 }, (_, i) => <div key={i} className="gallery-card-skeleton wallpaper-skeleton" aria-hidden="true" />)}</div> : visible.length === 0 ? <p className="admin-empty">No designs match your search.</p> : <div className={`admin-design-grid admin-grid-${device}`}>{visible.map(template => {
+      <div className="admin-library-search">
+        <div className="admin-library-search-field">
+          <Search size={17} aria-hidden="true" />
+          <label className="sr-only" htmlFor="admin-template-search">Search templates</label>
+          <input id="admin-template-search" type="search" value={searchQuery} onChange={event => setSearchQuery(event.target.value)} placeholder="Search templates" />
+        </div>
+        <button className="button-primary admin-library-cta" disabled={busy || !catalog} onClick={() => setEditor({ key: crypto.randomUUID(), template: blankTemplate(), isNew: true })}><Plus size={18} />New design</button>
+      </div>
+      <div className="admin-filter-row">
+        <DevicePicker value={device} onChange={setDevice} label="Filter by device" />
+        <div className="template-filters" role="group" aria-label="Filter designs"><div className="template-category-list">{designCollections.map(item => <button key={item.id} className="template-category" aria-pressed={collection === item.id} onClick={() => setCollection(item.id)}>{item.name}</button>)}</div></div>
+      </div>
+      {!catalog ? error ? <button className="button-secondary" onClick={load}>Retry loading library</button> : <div className={`admin-design-grid admin-grid-${device}`} aria-label="Loading designs" aria-busy="true">{Array.from({ length: 10 }, (_, i) => <div key={i} className="gallery-card-skeleton wallpaper-skeleton" aria-hidden="true" />)}</div> : visible.length === 0 ? <p className="admin-empty">No designs available.</p> : <div className={`admin-design-grid admin-grid-${device}`}>{visible.map(template => {
         return <article key={template.id} className="admin-design">
           <div className="admin-design-artwork">
           <button className={`admin-design-preview admin-art-${device}`} aria-label={`Edit ${template.name}`} disabled={busy} onClick={() => setEditor({ key: template.id, template, isNew: false })}><WallpaperCanvas lazy schedule={sampleSchedule} template={{ ...template, device }} resolution={{ id: device, width: device === 'laptop' ? 480 : 270, height: Math.round((device === 'laptop' ? 480 : 270) * (device === 'tablet' && template.orientation === 'landscape' ? tabletLandscapeResolution : deviceResolutions[device]).height / (device === 'tablet' && template.orientation === 'landscape' ? tabletLandscapeResolution : deviceResolutions[device]).width) }} className="block w-full h-auto" label={`${template.name} preview`} /></button>
@@ -150,16 +183,31 @@ export default function Admin() {
 }
 
 function AdminDashboard() {
+  const frame = useRef(null);
+  const [height, setHeight] = useState(900);
   const [dashboard, setDashboard] = useState(null);
   const [error, setError] = useState('');
   const [loaded, setLoaded] = useState(false);
+  const embedUrl = dashboard?.embedUrl?.replace('/shared/', '/embedded/');
+  useEffect(() => {
+    if (!embedUrl) return;
+    const origin = new URL(embedUrl).origin;
+    const resize = event => {
+      if (event.origin !== origin || event.source !== frame.current?.contentWindow) return;
+      if (event.data?.event !== 'posthog:dimensions' || event.data.name !== 'SchedSnapAnalytics') return;
+      const next = Number(event.data.height);
+      if (Number.isFinite(next) && next > 0 && next < 100000) setHeight(Math.ceil(next));
+    };
+    window.addEventListener('message', resize);
+    return () => window.removeEventListener('message', resize);
+  }, [embedUrl]);
   useEffect(() => {
     let cancelled = false;
     request('dashboard').then(data => { if (!cancelled) setDashboard(data); }).catch(error => { if (!cancelled) setError(error.message); });
     return () => { cancelled = true; };
   }, []);
   return <section className="admin-dashboard" aria-label="Analytics dashboard">
-    {error ? <p className="admin-error" role="alert">{error}</p> : !dashboard ? <AnalyticsSkeleton /> : dashboard.embedUrl ? <div className="admin-analytics-frame">{!loaded && <p role="status">Loading analytics…</p>}<iframe title="PostHog analytics dashboard" src={dashboard.embedUrl} onLoad={() => setLoaded(true)} referrerPolicy="no-referrer" /></div> : <div className="admin-analytics-empty"><LayoutDashboard size={32} aria-hidden="true" /><h2>Connect your PostHog dashboard</h2><p>Your analytics will appear here once the shared dashboard embed link is configured.</p></div>}
+    {error ? <p className="admin-error" role="alert">{error}</p> : !dashboard ? <AnalyticsSkeleton /> : dashboard.embedUrl ? <div className="admin-analytics-frame">{!loaded && <p role="status">Loading analytics…</p>}<div className="admin-analytics-viewport" style={{ '--analytics-content-height': `${height}px` }}><iframe ref={frame} name="SchedSnapAnalytics" title="PostHog analytics dashboard" src={embedUrl} style={{ height }} onLoad={() => setLoaded(true)} referrerPolicy="no-referrer" scrolling="no" /></div></div> : <div className="admin-analytics-empty"><LayoutDashboard size={32} aria-hidden="true" /><h2>Connect your PostHog dashboard</h2><p>Your analytics will appear here once the shared dashboard embed link is configured.</p></div>}
   </section>;
 }
 
@@ -292,6 +340,6 @@ function DesignEditor({ initial, isNew, existingIds, busy, onSave, onBack, onDir
       {kind === 'mascot' && <label>Character corner<select className="field-input" value={template.mascotSide || 'right'} onChange={e => change('mascotSide', e.target.value)}><option value="left">Left</option><option value="right">Right</option></select></label>}
       <p className="text-muted">Uploads are stored in Cloudinary. Saving a draft keeps the design out of the public gallery.</p>
     </fieldset><fieldset disabled={blocked}><legend>Default appearance</legend><TemplateControls template={previewTemplate} onChange={change} onReset={() => setTemplate(t => ({ ...initial, id: t.id, name: t.name, image: t.image, deviceImages: t.deviceImages, status: t.status, collection: t.collection, layout: t.layout, pattern: t.pattern }))} /></fieldset></div>
-    <aside className="admin-preview"><h2>Live preview</h2>{error && errorSection === 'preview' && <p className="admin-error" role="alert">{error}</p>}<div className="device-filter-tabs" role="group" aria-label="Preview device">{['mobile', 'tablet', 'laptop'].map(d => <button key={d} className="device-filter-tab" aria-pressed={device === d} onClick={() => setDevice(d)}>{d}</button>)}</div><label className="admin-density"><input type="checkbox" checked={dense} onChange={e => setDense(e.target.checked)} />Preview a busy week</label><div className={`admin-preview-canvas admin-preview-${device}`}><WallpaperCanvas schedule={dense ? denseSchedule : sampleSchedule} template={previewTemplate} resolution={resolution} onLayout={recordLayout} className="block w-full h-auto" label={`${template.name || 'New design'} ${device} preview`} /></div>{layout.fingerprint === fingerprint && layout.overflow && <p className="admin-error" role="alert">This schedule does not fit. Adjust the design before publishing.</p>}<p className="text-muted">Sample classes. Uses the same renderer as the downloaded wallpaper.</p></aside></div>
+    <aside className="admin-preview"><h2>Live preview</h2>{error && errorSection === 'preview' && <p className="admin-error" role="alert">{error}</p>}<DevicePicker value={device} onChange={setDevice} label="Preview device" /><label className="admin-density"><input type="checkbox" checked={dense} onChange={e => setDense(e.target.checked)} />Preview a busy week</label><div className={`admin-preview-canvas admin-preview-${device}`}><WallpaperCanvas schedule={dense ? denseSchedule : sampleSchedule} template={previewTemplate} resolution={resolution} onLayout={recordLayout} className="block w-full h-auto" label={`${template.name || 'New design'} ${device} preview`} /></div>{layout.fingerprint === fingerprint && layout.overflow && <p className="admin-error" role="alert">This schedule does not fit. Adjust the design before publishing.</p>}<p className="text-muted">Sample classes. Uses the same renderer as the downloaded wallpaper.</p></aside></div>
   </>;
 }

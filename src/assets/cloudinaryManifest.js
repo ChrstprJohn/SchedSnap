@@ -800,10 +800,10 @@ export default {
   },
   "/wallpapers/scenic/tropical-margin/tablet.png": {
     "cloud": "djfyq0jyz",
-    "publicId": "schedsnap/wallpapers/scenic/tropical-margin/tablet-f03d350c6eb42c7f",
-    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791676755/schedsnap/wallpapers/scenic/tropical-margin/tablet-f03d350c6eb42c7f.png",
-    "width": 1536,
-    "height": 2048
+    "publicId": "schedsnap/wallpapers/scenic/tropical-margin/tablet-0a007b4e5cfdecab",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791691258/schedsnap/wallpapers/scenic/tropical-margin/tablet-0a007b4e5cfdecab.png",
+    "width": 1600,
+    "height": 2560
   },
   "/wallpapers/scenic/twilight-ribbon/laptop.png": {
     "cloud": "djfyq0jyz",
@@ -821,10 +821,10 @@ export default {
   },
   "/wallpapers/scenic/twilight-ribbon/tablet.png": {
     "cloud": "djfyq0jyz",
-    "publicId": "schedsnap/wallpapers/scenic/twilight-ribbon/tablet-8d57b33da60a0fde",
-    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791676763/schedsnap/wallpapers/scenic/twilight-ribbon/tablet-8d57b33da60a0fde.png",
-    "width": 1536,
-    "height": 2048
+    "publicId": "schedsnap/wallpapers/scenic/twilight-ribbon/tablet-5f66ee9988b60384",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791691259/schedsnap/wallpapers/scenic/twilight-ribbon/tablet-5f66ee9988b60384.png",
+    "width": 1600,
+    "height": 2560
   },
   "/wallpapers/scenic/violet-pop/laptop.png": {
     "cloud": "djfyq0jyz",
@@ -842,10 +842,10 @@ export default {
   },
   "/wallpapers/scenic/violet-pop/tablet.png": {
     "cloud": "djfyq0jyz",
-    "publicId": "schedsnap/wallpapers/scenic/violet-pop/tablet-37ca598750e5cff5",
-    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791676772/schedsnap/wallpapers/scenic/violet-pop/tablet-37ca598750e5cff5.png",
-    "width": 1536,
-    "height": 2048
+    "publicId": "schedsnap/wallpapers/scenic/violet-pop/tablet-856161cf7bce4d1b",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791691260/schedsnap/wallpapers/scenic/violet-pop/tablet-856161cf7bce4d1b.png",
+    "width": 1600,
+    "height": 2560
   },
   "/wallpapers/scenic/alpine-dawn/laptop.png": {
     "cloud": "djfyq0jyz",
@@ -1385,5 +1385,54 @@ export default {
     "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791683022/schedsnap/wallpapers/scenic/sunflower-afternoon/tablet-9f1971e3253de8c9.png",
     "width": 1600,
     "height": 2560
+  },
+  "/wallpapers/scenic/sunset-traveler/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sunset-traveler/mobile-d3f6ab9fff4ac7bd",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791683047/schedsnap/wallpapers/scenic/sunset-traveler/mobile-d3f6ab9fff4ac7bd.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/sunset-traveler/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sunset-traveler/tablet-3088a144f9a4575a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791683045/schedsnap/wallpapers/scenic/sunset-traveler/tablet-3088a144f9a4575a.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/sunset-traveler/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sunset-traveler/laptop-e59bc0ee5517eb8f",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791683033/schedsnap/wallpapers/scenic/sunset-traveler/laptop-e59bc0ee5517eb8f.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/snowy-summit/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snowy-summit/tablet-18ba4ee8c30be9a4",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791683035/schedsnap/wallpapers/scenic/snowy-summit/tablet-18ba4ee8c30be9a4.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/windmill-journey/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/windmill-journey/laptop-bece01a25547929a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791691261/schedsnap/wallpapers/scenic/windmill-journey/laptop-bece01a25547929a.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/windmill-journey/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/windmill-journey/tablet-65d183b85c115f7a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791691261/schedsnap/wallpapers/scenic/windmill-journey/tablet-65d183b85c115f7a.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/windmill-journey/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/windmill-journey/mobile-5332b60348108818",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791691270/schedsnap/wallpapers/scenic/windmill-journey/mobile-5332b60348108818.png",
+    "width": 1080,
+    "height": 2400
   }
 };

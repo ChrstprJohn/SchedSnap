@@ -16,13 +16,13 @@ function AppearanceColor({ colorKey, template, onChange, toggleKey }) {
   const { label, colors: defaultColors } = colorFields[colorKey];
   const rawValue = template[colorKey] || (colorKey === 'patternColor' ? (template.pattern === 'circle' ? '#ad5b45' : template.line) : '#ffffff');
   const normalizedValue = colorInputValue(rawValue);
-  const colors = [normalizedValue, ...defaultColors.filter((color) => colorInputValue(color) !== normalizedValue)].slice(0, 3);
+  const colors = defaultColors.slice(0, 3);
   const enabled = !toggleKey || template[toggleKey] !== false;
   return <div className="appearance-row">
     {toggleKey ? <label className="appearance-label appearance-switch"><input type="checkbox" checked={enabled} onChange={(event) => onChange(toggleKey, event.target.checked)} />{label}</label> : <span className="appearance-label">{label}</span>}
     <fieldset className="appearance-palette" aria-label={`${label} choices`} disabled={!enabled}>
       {colors.map((color) => <button key={color} type="button" aria-label={`${label} ${color}`} aria-pressed={normalizedValue === colorInputValue(color)} onClick={() => onChange(colorKey, color)} className="color-swatch" style={{ '--swatch': color }} />)}
-      <label className="custom-color" title={`Custom ${label.toLowerCase()}`}><span className="sr-only">Custom {label.toLowerCase()}</span><input type="color" aria-label={`Custom ${label.toLowerCase()}`} value={normalizedValue} onChange={(event) => onChange(colorKey, event.target.value)} /></label>
+      <label className="custom-color" data-active={!colors.some(color => colorInputValue(color) === normalizedValue)} title={`Custom ${label.toLowerCase()}`}><span className="sr-only">Custom {label.toLowerCase()}</span><input type="color" aria-label={`Custom ${label.toLowerCase()}${!colors.some(color => colorInputValue(color) === normalizedValue) ? ', selected' : ''}`} value={normalizedValue} onChange={(event) => onChange(colorKey, event.target.value)} /></label>
     </fieldset>
   </div>;
 }

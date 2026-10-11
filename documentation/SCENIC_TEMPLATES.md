@@ -7,6 +7,30 @@ three each. Rejected kittens and masked heroes are excluded; square masters were
 Artwork: public/wallpapers/scenic/<theme>/<device>.png.
 Definitions: src/assets/scenicTemplates.js.
 
+## Asset contract and verification
+
+The full catalogue contains 113 templates. Its 55 illustrated variants provide
+165 independent background files, one for each device below. The other 58 templates
+combine 40 shared transparent character cutouts and 18 code-drawn presets with the
+device-aware Canvas renderer. Their mobile, tablet and laptop exports do not require
+duplicate cutout bitmaps: the renderer positions the same transparent artwork within
+each device's layout.
+
+Cloudinary contains all 205 referenced image assets (165 backgrounds and 40 cutouts).
+The final asset audit matched every local content hash and pixel dimension to its
+Cloudinary record, with zero uploads pending. The generated-art pack contains no
+rejected kitten or masked-hero variants, and no square master files.
+The 27 previously uploaded 1536 × 2048 tablet copies were removed with CDN
+invalidation requested after checking that each had a current 1600 × 2560
+replacement. The remote scenic folder now contains exactly 165 current files.
+
+Validation: 60 tests pass; the production build and lint checks for the changed
+implementation files pass. The completed browser audit rendered and exported all
+113 templates at all three device sizes: 339 successful exports, covering the 165
+illustrated backgrounds and 174 other template exports, with zero errors. The
+[verification report](../.impeccable/review/scenic/verification.json) records the
+device dimensions, renderer results and all 13 illustrated families.
+
 | Device | Final asset size | Composition |
 | --- | --- | --- |
 | Mobile | 1080 × 2400 | 9:20 portrait |

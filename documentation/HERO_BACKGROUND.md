@@ -1,17 +1,19 @@
 # Hero and generated-asset provenance
 
+> Asset cleanup, October 11, 2026: active sources are organized under output/imagegen/marketing. Historical archive and draft images mentioned below were deleted; their prompt text remains provenance. See IMAGE_ASSETS.md for the current inventory.
+
 ## Current split hero assets
 
 The latest hero uses two separately generated layers, following the user's supplied foreground and ambient-background prompts. The ambient scene fills the viewport; a transparent phone cutout is sized independently inside the layout. Website copy, logo and buttons are live HTML. The hero remains static. The foreground uses contain sizing with every phone visible; only the decorative background uses cover sizing.
 
 | Asset | Source original | Web asset | Dimensions | Conversion |
 | --- | --- | --- | --- | --- |
-| Phone foreground | `output/imagegen/schedsnap/hero/hero-phones.png` | `public/images/hero/hero-phones.webp` | 1448 × 1086 | Lossless WebP, RGBA transparency preserved |
-| Ambient background | `output/imagegen/schedsnap/hero/hero-ambient.png` | `public/images/hero/hero-ambient.webp` | 1672 × 941 | WebP quality 88 |
+| Phone foreground | `output/imagegen/marketing/landing/hero/hero-phones.png` | `public/images/hero/hero-phones.webp` | 1448 × 1086 | Lossless WebP, RGBA transparency preserved |
+| Ambient background | `output/imagegen/marketing/landing/hero/hero-ambient.png` | `public/images/hero/hero-ambient.webp` | 1672 × 941 | WebP quality 88 |
 
 The phone edit target was the previous generated `hero-mobile.png`; the existing three phones, screen content and characters were retained while the surrounding studio background was removed. The user's white-background isolation request was adapted to genuine transparent output for compositing. Alpha spans 0–255 and all four corners are transparent. No Photoshop action was required: the built-in image-generation tool generated both assets.
 
-Exact current prompts, original tool output paths and workspace paths are recorded in [layered-hero.json](../output/imagegen/schedsnap/layered-hero.json) and the active [asset manifest](../output/imagegen/schedsnap/prompts.json).
+Exact current prompts, original tool output paths and workspace paths are recorded in [layered-hero.json](../output/imagegen/marketing/landing/layered-hero.json) and the active [asset manifest](../output/imagegen/marketing/landing/prompts.json).
 
 ### Phone foreground prompt
 
@@ -23,7 +25,7 @@ Use case: architectural ambient website background layer. Minimalist warm ivory 
 
 ## Dedicated mobile art direction
 
-The original transparent three-phone foreground remains unchanged on all screen sizes. Four dedicated portrait collection assets vary between single and paired phones. An unused two-phone hero draft is retained in the manifest history and workspace PNGs, without a deployed file. Exact new prompts and paths are in [mobile-showcases.json](../output/imagegen/schedsnap/mobile-showcases.json); layout rules are in [MOBILE_SHOWCASES.md](MOBILE_SHOWCASES.md).
+The original transparent three-phone foreground remains unchanged on all screen sizes. Four dedicated portrait collection assets vary between single and paired phones. An unused two-phone hero draft is retained in the manifest history and workspace PNGs, without a deployed file. Exact new prompts and paths are in [mobile-showcases.json](../output/imagegen/marketing/landing/mobile-showcases.json); layout rules are in [MOBILE_SHOWCASES.md](MOBILE_SHOWCASES.md).
 
 ## Historical combined scenes
 
@@ -35,7 +37,7 @@ The former complete desktop scene and mobile composition remain available below 
 The original creamy three-phone studio scene was revised to reduce the phone group, then shift it slightly left and down. Live website text remains separate. The static full image uses contain sizing.
 
 - Web asset: `public/images/archive/landing/hero-schedsnap-balanced.webp` (1672 × 941).
-- Workspace original: `output/imagegen/schedsnap/archive/hero/hero-final.png`.
+- Workspace original: `output/imagegen/marketing/landing/archive/hero/hero-final.png`.
 - Generated source: `C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-18ed1c29-0308-4498-b867-09701aa1be3a.png`.
 - Conversion: WebP quality 88; original PNG retained.
 
@@ -48,7 +50,7 @@ Use case: product-mockup. Make a SMALL composition adjustment to this existing S
 A dedicated centered three-phone composition avoids the desktop scene's empty left half. Hero.jsx selects it through a picture source at 640px and below. Between 641px and 1000px, the full desktop image still appears below copy.
 
 - Web asset: `public/images/archive/landing/hero-schedsnap-mobile.webp` (1448 × 1086; 4:3).
-- Workspace original: `output/imagegen/schedsnap/archive/hero/hero-mobile.png`.
+- Workspace original: `output/imagegen/marketing/landing/archive/hero/hero-mobile.png`.
 - Generated source: `C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-e76a813e-6fff-40b3-ae77-dd91cff2ddad.png`.
 - Conversion: WebP quality 88; original PNG retained.
 
@@ -60,15 +62,15 @@ Use case: product-mockup. Generate a dedicated MOBILE HERO showcase asset from t
 
 The current manifest lists seven active assets: ambient background, original transparent phone foreground, logo and four shared portrait collection images. It also preserves earlier generations in history; this is not a count of all generation calls.
 
-Exact prompts, generated source paths and workspace originals are recorded in [prompts.json](../output/imagegen/schedsnap/prompts.json) and [revisions.json](../output/imagegen/schedsnap/revisions.json). The transparent navy S logo uses lossless WebP. The four collection scenes use quality-88 WebP and were regenerated on pure white with soft neutral contact shadows to blend into the white page; their containers have no rounded card frame.
+Exact prompts, generated source paths and workspace originals are recorded in [prompts.json](../output/imagegen/marketing/landing/prompts.json) and [revisions.json](../output/imagegen/marketing/landing/revisions.json). The transparent navy S logo uses lossless WebP. The four collection scenes use quality-88 WebP and were regenerated on pure white with soft neutral contact shadows to blend into the white page; their containers have no rounded card frame.
 
 | Generated original | Web asset |
 | --- | --- |
-| `output/imagegen/schedsnap/brand/logo.png` | `public/brand/schedsnap-mark.webp` |
-| `output/imagegen/schedsnap/archive/collections/little-friends-white.png` | `public/images/archive/collections/little-friends-white.webp` |
-| `output/imagegen/schedsnap/archive/collections/mascot-white.png` | `public/images/archive/collections/mascot-white.webp` |
-| `output/imagegen/schedsnap/archive/collections/pattern-white.png` | `public/images/archive/collections/pattern-white.webp` |
-| `output/imagegen/schedsnap/archive/collections/original-white.png` | `public/images/archive/collections/original-white.webp` |
+| `output/imagegen/marketing/landing/brand/logo.png` | `public/brand/schedsnap-mark.webp` |
+| `output/imagegen/marketing/landing/archive/collections/little-friends-white.png` | `public/images/archive/collections/little-friends-white.webp` |
+| `output/imagegen/marketing/landing/archive/collections/mascot-white.png` | `public/images/archive/collections/mascot-white.webp` |
+| `output/imagegen/marketing/landing/archive/collections/pattern-white.png` | `public/images/archive/collections/pattern-white.webp` |
+| `output/imagegen/marketing/landing/archive/collections/original-white.png` | `public/images/archive/collections/original-white.webp` |
 
 Collection scenes are illustrative marketing previews. Actual editor previews and downloads use the existing Canvas renderer and validated class data. The pre-existing `public/images/archive/landing/schedule-phone-preview.webp` remains a historical reference asset; its original prompt/provenance were not supplied and are not inferred.
 
@@ -77,7 +79,7 @@ Collection scenes are illustrative marketing previews. Actual editor previews an
 The following exact prompts and originals are retained for provenance; they are superseded by the current assets above.
 ### hero
 
-Original: C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/schedsnap/archive/hero/hero.png
+Original: C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/marketing/landing/archive/hero/hero.png
 
 Generated source: C:\Users\picar\.codex\generated_images\01a10545-0bac-7bf3-8068-059100400688\exec-cbc7c7e5-07da-4243-a692-79daadf81f4e.png
 
@@ -87,7 +89,7 @@ Use case: product-mockup. Edit target / composition reference: the attached thre
 
 ### little-friends
 
-Original: C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/schedsnap/archive/collections/little-friends.png
+Original: C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/marketing/landing/archive/collections/little-friends.png
 
 Generated source: C:\Users\picar\.codex\generated_images\01a10545-0bac-7bf3-8068-059100400688\exec-60e679f3-73c7-4e7c-a5c8-c53481544da5.png
 
@@ -97,7 +99,7 @@ Use case: product-mockup. Asset type: SchedSnap Little Friends collection showca
 
 ### mascot
 
-Original: C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/schedsnap/archive/collections/mascot.png
+Original: C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/marketing/landing/archive/collections/mascot.png
 
 Generated source: C:\Users\picar\.codex\generated_images\01a10545-0bac-7bf3-8068-059100400688\exec-fcdfbd38-01f2-431d-958e-c85389aabab3.png
 
@@ -107,7 +109,7 @@ Use case: product-mockup. Asset type: SchedSnap Mascots collection showcase imag
 
 ### pattern
 
-Original: C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/schedsnap/archive/collections/pattern.png
+Original: C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/marketing/landing/archive/collections/pattern.png
 
 Generated source: C:\Users\picar\.codex\generated_images\01a10545-0bac-7bf3-8068-059100400688\exec-92d3dcbb-4bd8-4bac-a150-75d0a1180325.png
 
@@ -117,7 +119,7 @@ Use case: product-mockup. Asset type: SchedSnap Patterns collection showcase ima
 
 ### original
 
-Original: C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/schedsnap/archive/collections/original.png
+Original: C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/marketing/landing/archive/collections/original.png
 
 Generated source: C:\Users\picar\.codex\generated_images\01a10545-0bac-7bf3-8068-059100400688\exec-3d43b58a-dab9-447e-a947-e3499effbb06.png
 
@@ -127,7 +129,7 @@ Use case: product-mockup. Asset type: SchedSnap Originals collection showcase im
 
 ### hero-balanced
 
-Original: C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/schedsnap/archive/hero/hero-balanced.png
+Original: C:/Users/picar/Desktop/random_project/SchedSnap/output/imagegen/marketing/landing/archive/hero/hero-balanced.png
 
 Generated source: C:/Users/picar/.codex/generated_images/01a10545-0bac-7bf3-8068-059100400688/exec-f9a49f55-70ae-4821-b546-eb5fda6de5d1.png
 

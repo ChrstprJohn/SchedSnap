@@ -45,7 +45,7 @@ public/images/hero/hero-ambient.webp      Generated decorative cream background
 public/images/hero/hero-phones.webp       Transparent three-phone foreground
 public/images/collections/          Four pure-white illustrative scenes named <id>-white.webp
 public/brand/schedsnap-mark.webp     Generated transparent navy S logo and favicon
-output/imagegen/schedsnap/           Original generated PNGs and exact prompt manifest
+output/imagegen/marketing/landing/           Original generated PNGs and exact prompt manifest
 src/pages/ScheduleWallpaper/        Template selection, upload, editor, preview/download
 src/utils/canvasHelpers.js          Layout, text wrapping, rendering, and export
 src/utils/imageHelpers.js           Image decoding and compression

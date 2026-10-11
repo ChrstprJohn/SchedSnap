@@ -1,0 +1,307 @@
+{
+  "date": "2026-10-11",
+  "reason": "Removed obsolete wallpaper packs without complete mobile/tablet/laptop variants",
+  "removed": [
+    {
+      "path": "output/imagegen/wallpaper-samples/a-axolotl-mint.png",
+      "bytes": 892149
+    },
+    {
+      "path": "output/imagegen/wallpaper-samples/b-ghost-twilight.png",
+      "bytes": 974411
+    },
+    {
+      "path": "output/imagegen/wallpaper-samples/c-sprout-butter-gingham.png",
+      "bytes": 930450
+    },
+    {
+      "path": "output/imagegen/wallpaper-samples/prompts.json",
+      "bytes": 7546
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/00-approved-samples/axolotl-mint.png",
+      "bytes": 892149
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/00-approved-samples/ghost-twilight.png",
+      "bytes": 974411
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/00-approved-samples/original-prompts.json",
+      "bytes": 7546
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/00-approved-samples/sprout-butter-gingham.png",
+      "bytes": 930450
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/01-solid-pastels/backgrounds/mint-jellyfish.png",
+      "bytes": 782113
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/01-solid-pastels/backgrounds/peach-mushroom.png",
+      "bytes": 819674
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/01-solid-pastels/characters/mint-jellyfish.png",
+      "bytes": 787414
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/01-solid-pastels/characters/peach-mushroom.png",
+      "bytes": 858975
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/01-solid-pastels/manifest.json",
+      "bytes": 13683
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/01-solid-pastels/wallpapers/mint-jellyfish.png",
+      "bytes": 854588
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/01-solid-pastels/wallpapers/peach-mushroom.png",
+      "bytes": 879915
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/02-soft-gradients/backgrounds/blue-moon.png",
+      "bytes": 834764
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/02-soft-gradients/backgrounds/lavender-cloud.png",
+      "bytes": 836519
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/02-soft-gradients/characters/blue-moon.png",
+      "bytes": 831517
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/02-soft-gradients/characters/lavender-cloud.png",
+      "bytes": 869230
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/02-soft-gradients/manifest.json",
+      "bytes": 11999
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/02-soft-gradients/wallpapers/blue-moon.png",
+      "bytes": 965730
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/02-soft-gradients/wallpapers/lavender-cloud.png",
+      "bytes": 994392
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/03-quiet-patterns/backgrounds/butter-dumpling.png",
+      "bytes": 828004
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/03-quiet-patterns/backgrounds/peach-buddy.png",
+      "bytes": 829410
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/03-quiet-patterns/characters/butter-dumpling.png",
+      "bytes": 818865
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/03-quiet-patterns/characters/peach-buddy.png",
+      "bytes": 713979
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/03-quiet-patterns/manifest.json",
+      "bytes": 12183
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/03-quiet-patterns/wallpapers/butter-dumpling.png",
+      "bytes": 917348
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/03-quiet-patterns/wallpapers/peach-buddy.png",
+      "bytes": 904960
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/catalog-assets/dm-sans.woff2",
+      "bytes": 36932
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/catalog-assets/FONT-LICENSE.txt",
+      "bytes": 4502
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/catalog.json",
+      "bytes": 52077
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/index.html",
+      "bytes": 8884
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection/README.md",
+      "bytes": 4346
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/01-solid-pastels/characters/mint-jellyfish.png",
+      "bytes": 787414
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/01-solid-pastels/characters/peach-mushroom.png",
+      "bytes": 858975
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/01-solid-pastels/landscape/backgrounds/mint-jellyfish.png",
+      "bytes": 818246
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/01-solid-pastels/landscape/backgrounds/peach-mushroom.png",
+      "bytes": 854732
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/01-solid-pastels/landscape/wallpapers/mint-jellyfish.png",
+      "bytes": 858757
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/01-solid-pastels/landscape/wallpapers/peach-mushroom.png",
+      "bytes": 893346
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/01-solid-pastels/manifest.json",
+      "bytes": 22131
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/01-solid-pastels/portrait/backgrounds/mint-jellyfish.png",
+      "bytes": 782727
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/01-solid-pastels/portrait/backgrounds/peach-mushroom.png",
+      "bytes": 841088
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/01-solid-pastels/portrait/wallpapers/mint-jellyfish.png",
+      "bytes": 870553
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/01-solid-pastels/portrait/wallpapers/peach-mushroom.png",
+      "bytes": 895535
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/02-soft-gradients/characters/blue-moon.png",
+      "bytes": 831517
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/02-soft-gradients/characters/lavender-cloud.png",
+      "bytes": 869230
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/02-soft-gradients/landscape/backgrounds/blue-moon.png",
+      "bytes": 850392
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/02-soft-gradients/landscape/backgrounds/lavender-cloud.png",
+      "bytes": 856312
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/02-soft-gradients/landscape/wallpapers/blue-moon.png",
+      "bytes": 927523
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/02-soft-gradients/landscape/wallpapers/lavender-cloud.png",
+      "bytes": 945684
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/02-soft-gradients/manifest.json",
+      "bytes": 20691
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/02-soft-gradients/portrait/backgrounds/blue-moon.png",
+      "bytes": 852045
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/02-soft-gradients/portrait/backgrounds/lavender-cloud.png",
+      "bytes": 870055
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/02-soft-gradients/portrait/wallpapers/blue-moon.png",
+      "bytes": 910337
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/02-soft-gradients/portrait/wallpapers/lavender-cloud.png",
+      "bytes": 965178
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/03-quiet-patterns/characters/butter-dumpling.png",
+      "bytes": 818865
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/03-quiet-patterns/characters/peach-buddy.png",
+      "bytes": 713979
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/03-quiet-patterns/landscape/backgrounds/butter-dumpling.png",
+      "bytes": 862969
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/03-quiet-patterns/landscape/backgrounds/peach-buddy.png",
+      "bytes": 877142
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/03-quiet-patterns/landscape/wallpapers/butter-dumpling.png",
+      "bytes": 919089
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/03-quiet-patterns/landscape/wallpapers/peach-buddy.png",
+      "bytes": 926236
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/03-quiet-patterns/manifest.json",
+      "bytes": 20409
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/03-quiet-patterns/portrait/backgrounds/butter-dumpling.png",
+      "bytes": 851057
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/03-quiet-patterns/portrait/backgrounds/peach-buddy.png",
+      "bytes": 862780
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/03-quiet-patterns/portrait/wallpapers/butter-dumpling.png",
+      "bytes": 905294
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/03-quiet-patterns/portrait/wallpapers/peach-buddy.png",
+      "bytes": 922342
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/catalog-assets/dm-sans.woff2",
+      "bytes": 36932
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/catalog-assets/FONT-LICENSE.txt",
+      "bytes": 4502
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/catalog.json",
+      "bytes": 76235
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/index.html",
+      "bytes": 9480
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection/README.md",
+      "bytes": 5482
+    },
+    {
+      "path": "output/imagegen/wallpaper-collection.zip",
+      "bytes": 17895896
+    },
+    {
+      "path": "output/imagegen/tablet-wallpaper-collection.zip",
+      "bytes": 25653294
+    }
+  ],
+  "retainedTemplateDirectory": "public/wallpapers/scenic",
+  "retainedMarketingSources": [
+    "output/imagegen/schedsnap",
+    "output/imagegen/how-it-works"
+  ]
+}

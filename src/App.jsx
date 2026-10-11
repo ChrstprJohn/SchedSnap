@@ -9,6 +9,7 @@ import { CatalogProvider } from './lib/catalog.jsx';
 
 const ScheduleWallpaper = lazy(() => import('./pages/ScheduleWallpaper/Index.jsx'));
 const Admin = lazy(() => import('./pages/Admin.jsx'));
+const Legal = lazy(() => import('./pages/Legal.jsx'));
 
 export default function App() {
   const { pathname, hash } = useLocation();
@@ -20,7 +21,7 @@ export default function App() {
     if (section) section.scrollIntoView({ behavior: 'instant' });
     else window.scrollTo({ top: 0, behavior: 'instant' });
     if (!isWallpaperEditor) {
-      const galleryTitles = { '/wallpapers/mobile': 'Mobile wallpapers', '/wallpapers/tablet': 'Tablet wallpapers', '/wallpapers/laptop': 'Laptop wallpapers' };
+      const galleryTitles = { '/terms': 'Terms of Use', '/privacy': 'Privacy Policy', '/wallpapers/mobile': 'Mobile wallpapers', '/wallpapers/tablet': 'Tablet wallpapers', '/wallpapers/laptop': 'Laptop wallpapers' };
       document.title = pathname === '/' ? 'SchedSnap — Your class schedule, one glance away' : (galleryTitles[pathname] || 'Page not found') + ' — SchedSnap';
     }
   }, [pathname, hash, isWallpaperEditor]);
@@ -34,6 +35,8 @@ export default function App() {
         <Suspense fallback={<p className="page-wrap py-20" role="status">Opening wallpaper creator…</p>}>
           <Routes>
             <Route path="/admin/*" element={<Admin />} />
+            <Route path="/terms" element={<Legal kind="terms" />} />
+            <Route path="/privacy" element={<Legal kind="privacy" />} />
             <Route path="/" element={<Home />} />
             <Route path="/wallpapers/:device" element={<DeviceGallery />} />
             <Route path="/services/schedule-wallpaper/*" element={<ScheduleWallpaper />} />

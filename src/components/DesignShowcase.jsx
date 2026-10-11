@@ -28,7 +28,7 @@ const devices = [
   { id: 'laptop', title: 'For laptop.', label: 'Laptop', description: 'A wider view of your week, with room to make it yours.' },
 ];
 const assetPath = (device, collection) => device === 'mobile'
-  ? `/images/collections/${collection}-mobile.webp`
+  ? `/images/collections/mobile/${collection}.webp`
   : device === 'tablet' ? `/images/collections/tablet/${collection}.webp`
     : `/images/collections/laptop/${collection}.webp`;
 

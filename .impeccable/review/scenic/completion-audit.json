@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-11",
+  "templates": 113,
+  "scenicVariants": 55,
+  "families": [
+    {
+      "id": "tropical-botanical",
+      "variants": 3
+    },
+    {
+      "id": "paper-stationery",
+      "variants": 3
+    },
+    {
+      "id": "mountain-dawn",
+      "variants": 3
+    },
+    {
+      "id": "abstract-waves",
+      "variants": 5
+    },
+    {
+      "id": "comic-graphics",
+      "variants": 5
+    },
+    {
+      "id": "moonlit-blossoms",
+      "variants": 5
+    },
+    {
+      "id": "sunset-travelers",
+      "variants": 5
+    },
+    {
+      "id": "cozy-city",
+      "variants": 5
+    },
+    {
+      "id": "floral-skies",
+      "variants": 5
+    },
+    {
+      "id": "alpine-landscapes",
+      "variants": 5
+    },
+    {
+      "id": "anime-adventures",
+      "variants": 5
+    },
+    {
+      "id": "blossom-clouds",
+      "variants": 3
+    },
+    {
+      "id": "color-contours",
+      "variants": 3
+    }
+  ],
+  "deviceResolutions": {
+    "mobile": {
+      "id": "mobile",
+      "width": 1080,
+      "height": 2400
+    },
+    "tablet": {
+      "id": "tablet",
+      "width": 1600,
+      "height": 2560
+    },
+    "laptop": {
+      "id": "laptop",
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "backgroundFiles": 165,
+  "referencedUploadedFiles": 205,
+  "verifiedDeviceExports": 339,
+  "themePillChecks": 39,
+  "visualReview": "ship; all13family sheets and3gallery viewports inspected",
+  "supersededCloudinaryTabletsRemoved": 27,
+  "errors": []
+}

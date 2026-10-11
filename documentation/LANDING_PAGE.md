@@ -1,5 +1,7 @@
 # SchedSnap landing page
 
+> Asset cleanup, October 11, 2026: active sources are organized under output/imagegen/marketing. Historical archive and draft images mentioned below were deleted; their prompt text remains provenance. See IMAGE_ASSETS.md for the current inventory.
+
 The `/` page shows the wallpaper outcome in a viewport-height hero, then three statistics, a How it works section, three independent device showcases and a simple footer. Copy stays concise. There are no landing tabs, individual-template grid or final CTA block.
 
 ## Hero and header
@@ -35,9 +37,9 @@ View more opens /wallpapers/mobile, /wallpapers/tablet or /wallpapers/laptop. Ea
 See [device artwork, layout and verification](DEVICE_SHOWCASES.md) and [mobile artwork provenance](MOBILE_SHOWCASES.md).
 ## Sources and provenance
 
-Implementation: `src/pages/Home.jsx`, `src/components/Hero.jsx`, `LandingStats.jsx`, `Navbar.jsx`, `BrandMark.jsx`, `DesignShowcase.jsx`, `Footer.jsx` and `src/landing.css`. The former SchedulePreview component and SVG favicon were removed. Source prompts, generated originals and web paths are in [the image-generation manifest](../output/imagegen/schedsnap/prompts.json). [HERO_BACKGROUND.md](HERO_BACKGROUND.md) records current and historical prompts.
+Implementation: `src/pages/Home.jsx`, `src/components/Hero.jsx`, `LandingStats.jsx`, `Navbar.jsx`, `BrandMark.jsx`, `DesignShowcase.jsx`, `Footer.jsx` and `src/landing.css`. The former SchedulePreview component and SVG favicon were removed. Source prompts, generated originals and web paths are in [the image-generation manifest](../output/imagegen/marketing/landing/prompts.json). [HERO_BACKGROUND.md](HERO_BACKGROUND.md) records current and historical prompts.
 
-New tablet/laptop artwork uses [device-showcases.json](../output/imagegen/schedsnap/device-showcases.json), with originals preserved and superseded tablet orientation drafts archived. The built-in image generation tool produced and revised the base scenes; the original landing manifest records seven base assets: ambient background, original transparent phone foreground, logo and four shared portrait collection scenes. Four earlier desktop collection scenes join the history. Thirteen earlier scenes and hero revisions remain in its history. Workspace PNG originals remain under `output/imagegen/schedsnap/`; deployed images are WebP, lossless for the logo and transparent phone cutout, quality 88 for backgrounds and collection scenes. The earlier pre-existing phone preview and study-desk image remain historical assets; no origin or generation prompt is invented for the former.
+New tablet/laptop artwork uses [device-showcases.json](../output/imagegen/marketing/landing/device-showcases.json), with originals preserved and superseded tablet orientation drafts archived. The built-in image generation tool produced and revised the base scenes; the original landing manifest records seven base assets: ambient background, original transparent phone foreground, logo and four shared portrait collection scenes. Four earlier desktop collection scenes join the history. Thirteen earlier scenes and hero revisions remain in its history. Workspace PNG originals remain under `output/imagegen/marketing/landing/`; deployed images are WebP, lossless for the logo and transparent phone cutout, quality 88 for backgrounds and collection scenes. The earlier pre-existing phone preview and study-desk image remain historical assets; no origin or generation prompt is invented for the former.
 
 ## Verification status
 

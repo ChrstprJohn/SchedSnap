@@ -1,5 +1,7 @@
 # Device showcases
 
+> Asset cleanup, October 11, 2026: active sources are organized under output/imagegen/marketing. Historical archive and draft images mentioned below were deleted; their prompt text remains provenance. See IMAGE_ASSETS.md for the current inventory.
+
 
 
 Find your style contains three independent four-style carousels in mobile, tablet and laptop order. Each rotates Little Friends, Mascots, Patterns and Originals. Desktop alternates artwork left/copy right, copy left/artwork right, then artwork left/copy right. Screens through 800px and portrait tablets through 1100px stack each row. Copy stays at For mobile., For tablet. and For laptop., one concise description and View more. There is no orientation toggle.
@@ -26,7 +28,7 @@ Each row rotates at five-second intervals while at least 25% visible. Hover, con
 
 
 
-Mobile originals retain [their existing manifest](../output/imagegen/schedsnap/mobile-showcases.json). New tablet/laptop generated originals, exact prompts and provenance are recorded in [device-showcases.json](../output/imagegen/schedsnap/device-showcases.json). Active WebP files are public/images/collections/tablet/{little-friends,mascot,pattern,original}.webp and the equivalent laptop directory. Superseded separate tablet-orientation drafts are archived under output/imagegen/schedsnap/archive/tablet and are not active carousel states.
+Mobile originals retain [their existing manifest](../output/imagegen/marketing/landing/mobile-showcases.json). New tablet/laptop generated originals, exact prompts and provenance are recorded in [device-showcases.json](../output/imagegen/marketing/landing/device-showcases.json). Active WebP files are public/images/collections/tablet/{little-friends,mascot,pattern,original}.webp and the equivalent laptop directory. Superseded separate tablet-orientation drafts are archived under output/imagegen/marketing/landing/archive/tablet and are not active carousel states.
 
 
 

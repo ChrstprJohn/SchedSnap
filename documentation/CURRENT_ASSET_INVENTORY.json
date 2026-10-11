@@ -1,0 +1,1207 @@
+[
+  {
+    "path": "public/brand/schedsnap-mark.webp",
+    "bytes": 281110,
+    "sha256": "0b11016e1483edbcd778cb22096ce3e2aec047fe8984002bf3392c410bce9d8b"
+  },
+  {
+    "path": "public/images/collections/laptop/little-friends.webp",
+    "bytes": 75128,
+    "sha256": "9244a6f0948b9109cecbf6bb1a793f62244891e4f329a9fa5c63ed442ca8b6a1"
+  },
+  {
+    "path": "public/images/collections/laptop/mascot.webp",
+    "bytes": 85898,
+    "sha256": "ebe05131e24394b181a4bf277d2db3724e01c6daeb5ee8fdf051d3004829f5e4"
+  },
+  {
+    "path": "public/images/collections/laptop/original.webp",
+    "bytes": 113942,
+    "sha256": "e0c6a0368f8cba4a0f75778620fc14e49debc507008db68fc58384803e3e6eaf"
+  },
+  {
+    "path": "public/images/collections/laptop/pattern.webp",
+    "bytes": 101052,
+    "sha256": "321b78839989bb1bb568f00b82925a743e414ea898556dd569d1da03fab348a3"
+  },
+  {
+    "path": "public/images/collections/mobile/little-friends.webp",
+    "bytes": 56396,
+    "sha256": "0dcb4a3877db241de549f9674d707c353801364a42cf5c5f292a16189ddefa08"
+  },
+  {
+    "path": "public/images/collections/mobile/mascot.webp",
+    "bytes": 85750,
+    "sha256": "93554b3db5b0594b0e356fb08b34b0e9aa76ed53bc1fc33e2169d9e55690f4e7"
+  },
+  {
+    "path": "public/images/collections/mobile/original.webp",
+    "bytes": 92318,
+    "sha256": "062179da14e6404a07d4c0d6680bc73291b80ce66e7d90d4cafa75aab839bc34"
+  },
+  {
+    "path": "public/images/collections/mobile/pattern.webp",
+    "bytes": 88584,
+    "sha256": "ed8312f07d387478f3588ac559b90f54f52482ce68c9623a9868f328683d4e3e"
+  },
+  {
+    "path": "public/images/collections/tablet/little-friends.webp",
+    "bytes": 88860,
+    "sha256": "43092169d054b2b033bfe16b0790a2793db0b3982f96e2dc088171ae58e584fa"
+  },
+  {
+    "path": "public/images/collections/tablet/mascot.webp",
+    "bytes": 89568,
+    "sha256": "0a74684a59ddd50670d5c52e6d71750b20b67e830554a4db05a6ae8b93d5ed5e"
+  },
+  {
+    "path": "public/images/collections/tablet/original.webp",
+    "bytes": 108204,
+    "sha256": "3e2a53a28d0780227dca05f48087af4812d65f2f241b0a9c42eae5450f70c54c"
+  },
+  {
+    "path": "public/images/collections/tablet/pattern.webp",
+    "bytes": 94658,
+    "sha256": "a651a6aac787c36ce7952429994a5fd24fcc41455a47327f6a68f0d547a70795"
+  },
+  {
+    "path": "public/images/hero/hero-ambient.webp",
+    "bytes": 23060,
+    "sha256": "de1a9f58e6cbb98a369b5940f4f3829a1d506f55eab2e7e03ecd99459beb3628"
+  },
+  {
+    "path": "public/images/hero/hero-phones.webp",
+    "bytes": 827368,
+    "sha256": "8201b7f8ee24e48d307a636b7370f513999e584fe7ae8629bf04d264309a61d1"
+  },
+  {
+    "path": "public/images/how-it-works/add-classes.webp",
+    "bytes": 43632,
+    "sha256": "2d6605a1d194f2c9e756728fed4bcc0eae549d0be397316f6ad9682ffe6cc8ae"
+  },
+  {
+    "path": "public/images/how-it-works/choose-design.webp",
+    "bytes": 62352,
+    "sha256": "7fa9dcdc6b08915c4bc7f8fc485f746ba881572e064ad97b79bc31ff4c481500"
+  },
+  {
+    "path": "public/images/how-it-works/download-wallpaper.webp",
+    "bytes": 53286,
+    "sha256": "970bd45cbbaae8e0acdd2f2ae8a5c3cd06462a31ebaef5aa873b59d73e61ffb6"
+  },
+  {
+    "path": "public/images/maker/maker-capybara-static.png",
+    "bytes": 835072,
+    "sha256": "fce892564a474af534d814ac47848e89d66bbb66f3037b6d4ed36a95b6b5c4f0"
+  },
+  {
+    "path": "public/wallpapers/little-friends/bunny-cheer.png",
+    "bytes": 797657,
+    "sha256": "7f0139e6bc4a1db84beab77c599807f69ae16e2aaef3ae710d553b0b5888d512"
+  },
+  {
+    "path": "public/wallpapers/little-friends/bunny-hooray.png",
+    "bytes": 765712,
+    "sha256": "4f4f6b61012e088b245356bc9c21bd71d7db4c756c56bc5e6dd4c2059aa33b6a"
+  },
+  {
+    "path": "public/wallpapers/little-friends/bunny-sleep.png",
+    "bytes": 723420,
+    "sha256": "40c01692127bac878d8360adff32edf909c482e1b1a92a7506de63726b7fd676"
+  },
+  {
+    "path": "public/wallpapers/little-friends/bunny-smile.png",
+    "bytes": 753448,
+    "sha256": "9746331c103eb2e748d9e40421859920d636c99e6a9c793949857cdef9c69b36"
+  },
+  {
+    "path": "public/wallpapers/little-friends/bunny-surprise.png",
+    "bytes": 772645,
+    "sha256": "713d3b6a3c4326f92114bc98ad9db97374017bea8ba6fcc2f269fe0b13e86faf"
+  },
+  {
+    "path": "public/wallpapers/little-friends/bunny-wave.png",
+    "bytes": 742661,
+    "sha256": "a93921e5a9110b1d3a31d12d62048395fa50733f479c44b92971ff9e406c651d"
+  },
+  {
+    "path": "public/wallpapers/little-friends/kitten-excited.png",
+    "bytes": 905510,
+    "sha256": "868c21f453996aec41ac06a7a7b22ab337a77585d66490805f1d4ada5ba4034f"
+  },
+  {
+    "path": "public/wallpapers/little-friends/kitten-laugh.png",
+    "bytes": 711283,
+    "sha256": "1f7725567e172392d98bf0428fd3746479e9a01dc5a146ed8a6256bcf1838042"
+  },
+  {
+    "path": "public/wallpapers/little-friends/kitten-peek.png",
+    "bytes": 799949,
+    "sha256": "1b740d47b454acdefd01809cd41090cd324a31e6ff4479e23da7b665819c3f64"
+  },
+  {
+    "path": "public/wallpapers/little-friends/kitten-shy.png",
+    "bytes": 725567,
+    "sha256": "53eccf3c74b682ff4314e59f025c63c5c1e34d8d46a3ef348ccd51f69a5c6785"
+  },
+  {
+    "path": "public/wallpapers/little-friends/kitten-snooze.png",
+    "bytes": 828441,
+    "sha256": "3768f0d7bc8e3c775ae751eafc8f54949e14e39203cbf062f4090e3388fc7e94"
+  },
+  {
+    "path": "public/wallpapers/little-friends/white-bashful.png",
+    "bytes": 571430,
+    "sha256": "f0a11ab7aebc836612f878b8ca2a11edab8ff2fed9470b5a5fb07c07e6ab4cda"
+  },
+  {
+    "path": "public/wallpapers/little-friends/white-delight.png",
+    "bytes": 767126,
+    "sha256": "e34d5cc1d428e939ed06e01a3fe1cfd5f04ad7905b71ab5eaf0c01bd796231ae"
+  },
+  {
+    "path": "public/wallpapers/little-friends/white-determined.png",
+    "bytes": 700044,
+    "sha256": "58a784fc36854012ee5525c30a8b85ac80f7c0ccf2bb3f29cd011571adeff12e"
+  },
+  {
+    "path": "public/wallpapers/little-friends/white-hello.png",
+    "bytes": 648028,
+    "sha256": "53cce3249f7ed00aff6fa1a3e71eb79452c48cfa7d01a1a68b71690605abff3b"
+  },
+  {
+    "path": "public/wallpapers/little-friends/white-paws.png",
+    "bytes": 764031,
+    "sha256": "9d3a639adffa8770c6295b6938e834a35b06e2d2b3c49ad25ba8cd94436e26ac"
+  },
+  {
+    "path": "public/wallpapers/little-friends/white-peace.png",
+    "bytes": 708893,
+    "sha256": "0fe167119b5773ab4a041cbc4c413144b5fc8a21eb52ed46b82e13a8efd9a22a"
+  },
+  {
+    "path": "public/wallpapers/little-friends/white-shy.png",
+    "bytes": 732059,
+    "sha256": "5cb04b3170f59464a2ced0f93b4448d8d9ac077840a5f426f842de3e2b780033"
+  },
+  {
+    "path": "public/wallpapers/little-friends/white-sleep.png",
+    "bytes": 762430,
+    "sha256": "a8ea1da71045a6bb3f4e4833892ec00d3a7ecc0adc6da4b25d56e2e6a97307d2"
+  },
+  {
+    "path": "public/wallpapers/little-friends/white-wave.png",
+    "bytes": 768365,
+    "sha256": "2314374292f20322d0a701fd29b3150cd43df9f2615e9ce133dacad9c56b540d"
+  },
+  {
+    "path": "public/wallpapers/mascots/bear.png",
+    "bytes": 734150,
+    "sha256": "0e7877ab4362b824294e186b4b92bb4cc91812f37d6d3224dd899acebc0abd1e"
+  },
+  {
+    "path": "public/wallpapers/mascots/bunny.png",
+    "bytes": 645722,
+    "sha256": "fa0556aefabea023fd7193e679b313d8ceefdd8b062685657b058b4f845ed339"
+  },
+  {
+    "path": "public/wallpapers/mascots/capybara.png",
+    "bytes": 455601,
+    "sha256": "666f51ef7abdf1c3a03138c10528a4915bd44d358d9604cf866eaa1d8a4f35d8"
+  },
+  {
+    "path": "public/wallpapers/mascots/cat.png",
+    "bytes": 621967,
+    "sha256": "db551bee370c2a6ba2e2b77238cfac3d1a70b2823e8887750b7bb508a0b58203"
+  },
+  {
+    "path": "public/wallpapers/mascots/chick.png",
+    "bytes": 407971,
+    "sha256": "2fff6318786d84b4a60376269cd7979aca8e83992d1423002c45e5df4bafca68"
+  },
+  {
+    "path": "public/wallpapers/mascots/dog.png",
+    "bytes": 773624,
+    "sha256": "e92954f3ee5e68ca5e913ffd828e1994b390e3deb8ae58816956de5ccd42e53d"
+  },
+  {
+    "path": "public/wallpapers/mascots/duck.png",
+    "bytes": 426434,
+    "sha256": "086531a7b21cecb906e2666eec3bb89c9027373e4a2a86b278fadda6665d7ece"
+  },
+  {
+    "path": "public/wallpapers/mascots/fox.png",
+    "bytes": 809790,
+    "sha256": "3f154f486a091d844bbc661c7f8a66e9689f7303b2368eb9f6f5308683e701d0"
+  },
+  {
+    "path": "public/wallpapers/mascots/frog.png",
+    "bytes": 476797,
+    "sha256": "13b72930b25e2103d52baf1dbfd6f2dcf0dccca33311d579066bb20aa010091d"
+  },
+  {
+    "path": "public/wallpapers/mascots/hamster.png",
+    "bytes": 557061,
+    "sha256": "854f8f69935c9ce9b4b55c83ab6a38024ff2d732d0eaec5c7919e1ee784277e9"
+  },
+  {
+    "path": "public/wallpapers/mascots/koala.png",
+    "bytes": 488412,
+    "sha256": "44b28d343285d69e9d0b3460f301b91a3622e1bc23ddaedddb96a401cba8dcfe"
+  },
+  {
+    "path": "public/wallpapers/mascots/lion.png",
+    "bytes": 539498,
+    "sha256": "c86e0dd6fcc6c1f93eed9064da94d706ef456bdd4d925d677df327e58c111167"
+  },
+  {
+    "path": "public/wallpapers/mascots/otter.png",
+    "bytes": 442543,
+    "sha256": "a43fcab3bc6a89cf7c959c4b429da828cf00fa6c9182c15e7eed9fb18d1e0cd6"
+  },
+  {
+    "path": "public/wallpapers/mascots/owl.png",
+    "bytes": 388921,
+    "sha256": "3984b363e56a3527d92884b142aef44b87d9b076a83cbd6d2303122af0bb85ce"
+  },
+  {
+    "path": "public/wallpapers/mascots/panda.png",
+    "bytes": 591972,
+    "sha256": "c520f61bed029e4871a8bacedde295004d36c4a1216234536232235b137ba96d"
+  },
+  {
+    "path": "public/wallpapers/mascots/penguin.png",
+    "bytes": 392362,
+    "sha256": "61eec410bd8dae4f3cf82e3b4bb3d0809c659745259df29617f43b5161e7982e"
+  },
+  {
+    "path": "public/wallpapers/mascots/seal.png",
+    "bytes": 517750,
+    "sha256": "ec498fa042821408773522b420797e2a0882ddcf8de4892b5934558e3ea15e34"
+  },
+  {
+    "path": "public/wallpapers/mascots/tiger.png",
+    "bytes": 727394,
+    "sha256": "841c46e0cf097632b659e203fbe02835c49bba7c40c8ff59352f847c5cb56bae"
+  },
+  {
+    "path": "public/wallpapers/mascots/turtle.png",
+    "bytes": 511918,
+    "sha256": "a7302376e093b4b171cb3abcc43af91f77f5c6d2f32c956414f64df21bdade89"
+  },
+  {
+    "path": "public/wallpapers/mascots/whale.png",
+    "bytes": 576005,
+    "sha256": "7fd10dd8e62c33a5b1795fe27dbb06a1098cc1efc991b9f91af5cdf73f77638a"
+  },
+  {
+    "path": "public/wallpapers/scenic/alpine-dawn/laptop.png",
+    "bytes": 2560047,
+    "sha256": "a27dfbaebb7ff1b4b4e6005baefa7195d2d93986fcf32da6e0b685b028bda729"
+  },
+  {
+    "path": "public/wallpapers/scenic/alpine-dawn/mobile.png",
+    "bytes": 2913679,
+    "sha256": "99e496dedaa8914a684aae3a549ad835b17cf9382de75961997c0484be9fed46"
+  },
+  {
+    "path": "public/wallpapers/scenic/alpine-dawn/tablet.png",
+    "bytes": 3950755,
+    "sha256": "955d25b13e5488b223ca747a4c0a89074adffddf4fb115fe6a8822c9af4a4622"
+  },
+  {
+    "path": "public/wallpapers/scenic/amber-canyon/laptop.png",
+    "bytes": 3312320,
+    "sha256": "8de2c69401fb898e8fc6fd26b9cf25136a7c3b61704c234d3648925cfb5f8431"
+  },
+  {
+    "path": "public/wallpapers/scenic/amber-canyon/mobile.png",
+    "bytes": 3713957,
+    "sha256": "ccc9428f883a8ec3334cf9fe9c9484bdcafd2d0343f53d02d8a5bef5e54c5618"
+  },
+  {
+    "path": "public/wallpapers/scenic/amber-canyon/tablet.png",
+    "bytes": 5350272,
+    "sha256": "4e1df4633de3214472fef5ad4dd3ddea5b7d8104a4acbb1900d1a7312aed13bc"
+  },
+  {
+    "path": "public/wallpapers/scenic/amber-ridge/laptop.png",
+    "bytes": 2644778,
+    "sha256": "a229a1b8c6d73ffe9b2c2301c2184492f57bf78abd26459b5c737bd5db71e971"
+  },
+  {
+    "path": "public/wallpapers/scenic/amber-ridge/mobile.png",
+    "bytes": 2973122,
+    "sha256": "5503770f9b2fffdad600daadfcb19b52de77bbe8b8859a352b749c7548e79f85"
+  },
+  {
+    "path": "public/wallpapers/scenic/amber-ridge/tablet.png",
+    "bytes": 3732750,
+    "sha256": "ec9658741f393eec3ff86ff63bd75ce7a5703c1a6f3c238af34db8084bf465e2"
+  },
+  {
+    "path": "public/wallpapers/scenic/blue-contours/laptop.png",
+    "bytes": 1847147,
+    "sha256": "78d80f42aeee716e73ae0176661bbdbe46caa098b1dfa23f55009457e2428a53"
+  },
+  {
+    "path": "public/wallpapers/scenic/blue-contours/mobile.png",
+    "bytes": 1587807,
+    "sha256": "f16453838c47b7af87f57a32e02ff5a94291f56a959defb645b0c0adcbf0ce7c"
+  },
+  {
+    "path": "public/wallpapers/scenic/blue-contours/tablet.png",
+    "bytes": 2709808,
+    "sha256": "44ccc9b29d739e02e9a10d9bfc7db09f9985cc36155575c856b23a25b068ab5a"
+  },
+  {
+    "path": "public/wallpapers/scenic/blue-petal-night/laptop.png",
+    "bytes": 3257042,
+    "sha256": "1420f801da563f14bb2d0f85199cd66473cb4ba6e3d7236332fe9e4667a50c77"
+  },
+  {
+    "path": "public/wallpapers/scenic/blue-petal-night/mobile.png",
+    "bytes": 3721027,
+    "sha256": "6ba2658abf437a576b6d148b6e43c9be9b88020dceb140472a03b07167ce5a3c"
+  },
+  {
+    "path": "public/wallpapers/scenic/blue-petal-night/tablet.png",
+    "bytes": 5747143,
+    "sha256": "62b7ca06596a2f1371a54f5d1efc4886a21eb870f75b8ae8f0fb2bbb97a72465"
+  },
+  {
+    "path": "public/wallpapers/scenic/cloud-voyager/laptop.png",
+    "bytes": 2954743,
+    "sha256": "cc57ee95093c9a52e6af83e6c70ee4b136104ec3e66bba8c093b4cb60efa363d"
+  },
+  {
+    "path": "public/wallpapers/scenic/cloud-voyager/mobile.png",
+    "bytes": 3205011,
+    "sha256": "392d534a2a45c04191d2c0b42cf24d8d0c70f6a25fa783218c8e22fc743877dd"
+  },
+  {
+    "path": "public/wallpapers/scenic/cloud-voyager/tablet.png",
+    "bytes": 5025247,
+    "sha256": "330a50275df445beed759df974439d0701f70b53a76c83582eb4f532c49e5b71"
+  },
+  {
+    "path": "public/wallpapers/scenic/cobalt-speed/laptop.png",
+    "bytes": 2465369,
+    "sha256": "1e6bf443fcbabd789640f64a721f7d9d3720a185932ea519a7cecacb64b0e4df"
+  },
+  {
+    "path": "public/wallpapers/scenic/cobalt-speed/mobile.png",
+    "bytes": 2971618,
+    "sha256": "bc4a269743a773bf12f964fd78b031fffb263fed1bc4e306b028916b7e46fedd"
+  },
+  {
+    "path": "public/wallpapers/scenic/cobalt-speed/tablet.png",
+    "bytes": 4285058,
+    "sha256": "49286ceb86527cc2a5713e8a281697ad3dd3ae0cd494807f5b0f90a74bd897bb"
+  },
+  {
+    "path": "public/wallpapers/scenic/coral-cloud-morning/laptop.png",
+    "bytes": 2979091,
+    "sha256": "3d13ccda219013f80f5bf8a9c53a504881652d76e91bf2b5d1019f082710f224"
+  },
+  {
+    "path": "public/wallpapers/scenic/coral-cloud-morning/mobile.png",
+    "bytes": 3478368,
+    "sha256": "41c86ce130e0f24ddfa5b5cf63699d01ee44ad82c2e07a0647d1bdb0684016aa"
+  },
+  {
+    "path": "public/wallpapers/scenic/coral-cloud-morning/tablet.png",
+    "bytes": 4588519,
+    "sha256": "fdc2c8095e90c1e5fe2f318d6930b73b110b4f04356d596307ead173cff99366"
+  },
+  {
+    "path": "public/wallpapers/scenic/cosmos-breeze/laptop.png",
+    "bytes": 3126415,
+    "sha256": "c496e94806c846b7631bd682570e24209e23444ed68bd2f54090052a75322f6e"
+  },
+  {
+    "path": "public/wallpapers/scenic/cosmos-breeze/mobile.png",
+    "bytes": 3418468,
+    "sha256": "7084055feff361ba393405a49e15ac218879ce6dc025984c25c3e506418ee134"
+  },
+  {
+    "path": "public/wallpapers/scenic/cosmos-breeze/tablet.png",
+    "bytes": 4453402,
+    "sha256": "81c84fc2e24b11dac1c6d04e227eb4b3ecc550a607265060e199fc5ba41ba890"
+  },
+  {
+    "path": "public/wallpapers/scenic/cozy-city/laptop.png",
+    "bytes": 2877095,
+    "sha256": "23d747d4f617983f38f366010c8bc66034d5bbd2af738307cefa70e1cd2699eb"
+  },
+  {
+    "path": "public/wallpapers/scenic/cozy-city/mobile.png",
+    "bytes": 3089439,
+    "sha256": "42e08c6e9f70b30c2378118998808d5f5150be011e486c9e85d35c0f672972e5"
+  },
+  {
+    "path": "public/wallpapers/scenic/cozy-city/tablet.png",
+    "bytes": 4446612,
+    "sha256": "4108fde51ece07b9443820dfd2af2cce769a6e59109de35da197e0ac142406f0"
+  },
+  {
+    "path": "public/wallpapers/scenic/crimson-halftone/laptop.png",
+    "bytes": 2580579,
+    "sha256": "362a8ad7defd64fb958a4b697a5d13b99e57f16f12124926b552f56310f08174"
+  },
+  {
+    "path": "public/wallpapers/scenic/crimson-halftone/mobile.png",
+    "bytes": 2845935,
+    "sha256": "0f7a07967591203aa36f6da9708fc981f8b401d551bd03c95e1a8ec9be7008f4"
+  },
+  {
+    "path": "public/wallpapers/scenic/crimson-halftone/tablet.png",
+    "bytes": 3867455,
+    "sha256": "7b53ad27bdde944299dc2fcd89f86cb54da3795e26343ec415f0212e0a3b8f25"
+  },
+  {
+    "path": "public/wallpapers/scenic/daisy-morning/laptop.png",
+    "bytes": 3040151,
+    "sha256": "edca4d0a7d781cca928e7e2ff75dd6588db46176b79883825fc9ed8426248916"
+  },
+  {
+    "path": "public/wallpapers/scenic/daisy-morning/mobile.png",
+    "bytes": 3499697,
+    "sha256": "26d08137b08ad0a215151691a41dd3926f4a2e33b5fe69268c395d5523939100"
+  },
+  {
+    "path": "public/wallpapers/scenic/daisy-morning/tablet.png",
+    "bytes": 5098249,
+    "sha256": "52c0d98b9ba82765ea848ea5d6e48b11f770e84c657316c3a41595f4b1c937a2"
+  },
+  {
+    "path": "public/wallpapers/scenic/fox-trail/laptop.png",
+    "bytes": 2801595,
+    "sha256": "4586521b200cc53d8aa4eea1d4ea6963596e9b4de14741731741f85a37151c5c"
+  },
+  {
+    "path": "public/wallpapers/scenic/fox-trail/mobile.png",
+    "bytes": 2960404,
+    "sha256": "489537ca8551f181c14c0fe56d507a6334c26833fa116e9fac8a29bc85d85a89"
+  },
+  {
+    "path": "public/wallpapers/scenic/fox-trail/tablet.png",
+    "bytes": 4452382,
+    "sha256": "e7de254b4bb95e9d9a2955cff19713b7800e1bb1a94916cafb735009437460a2"
+  },
+  {
+    "path": "public/wallpapers/scenic/glacier-lake/laptop.png",
+    "bytes": 3137014,
+    "sha256": "7d70e2c82133860f8fd56cd3b915e9bb426dd7d60c9a9829c2147611d3b9bfab"
+  },
+  {
+    "path": "public/wallpapers/scenic/glacier-lake/mobile.png",
+    "bytes": 3431157,
+    "sha256": "2064013bb66c95e7a438e5bffc3d2769eaf226b0fba524d0a27a64a1431af7d3"
+  },
+  {
+    "path": "public/wallpapers/scenic/glacier-lake/tablet.png",
+    "bytes": 5105444,
+    "sha256": "a1d2d3af1d07ab402b856d6c356190c299b00bf2744e5d0d44f8e7795595d8d0"
+  },
+  {
+    "path": "public/wallpapers/scenic/golden-panels/laptop.png",
+    "bytes": 2564305,
+    "sha256": "0959d59f055586b6024f54e86c001d700edef6609dd9a78bc47c9517578536a5"
+  },
+  {
+    "path": "public/wallpapers/scenic/golden-panels/mobile.png",
+    "bytes": 2924582,
+    "sha256": "e776923b42866d02b46c31fc4f4fa9c5b280ab8c7dbf2b9de608d34e7cb33e33"
+  },
+  {
+    "path": "public/wallpapers/scenic/golden-panels/tablet.png",
+    "bytes": 3754101,
+    "sha256": "be83305e4a79a484a54912b579f2684d080fcd2b8f83d9378cd0a09cf854a416"
+  },
+  {
+    "path": "public/wallpapers/scenic/hibiscus-notes/laptop.png",
+    "bytes": 2495775,
+    "sha256": "4b44722cc5aeccfc6923e1af9cb006efada0fb27c79d7d11f7a3fc38970d2f25"
+  },
+  {
+    "path": "public/wallpapers/scenic/hibiscus-notes/mobile.png",
+    "bytes": 2747844,
+    "sha256": "f3dd294b3b1d89fc2e5ca837e5be4ec9f2b25a07e987e23a908cc6872bad771e"
+  },
+  {
+    "path": "public/wallpapers/scenic/hibiscus-notes/tablet.png",
+    "bytes": 4086833,
+    "sha256": "a4b19ab393b84edcc3aac77e05156b2788a61c00cc630cc9e8c0c24c12cf30fd"
+  },
+  {
+    "path": "public/wallpapers/scenic/highland-meadow/laptop.png",
+    "bytes": 2734819,
+    "sha256": "2b4e1b85c3615c3b60ec794773c0d12976d49c8b75c4f5777d5cc6f7c40ca1ce"
+  },
+  {
+    "path": "public/wallpapers/scenic/highland-meadow/mobile.png",
+    "bytes": 2929532,
+    "sha256": "af4fe0f4a755cfa042c65b9fe9c1cdb1733fdb540083e45406a253dba7ce7852"
+  },
+  {
+    "path": "public/wallpapers/scenic/highland-meadow/tablet.png",
+    "bytes": 4629657,
+    "sha256": "24cf0ee92c22610528f7d6ad2dec3f3cd76689151fc5d53a2a808bb04cdc48aa"
+  },
+  {
+    "path": "public/wallpapers/scenic/ice-current/laptop.png",
+    "bytes": 2065084,
+    "sha256": "c5a9322e416723f450bb479d4a5cb5a2a7dc7d01b38a7f9be11d0c4f2952bbc4"
+  },
+  {
+    "path": "public/wallpapers/scenic/ice-current/mobile.png",
+    "bytes": 2398417,
+    "sha256": "ef9959cac66fc9b1d13d6451f580a902e6c86a97b60dbb5bffd455043c2adb22"
+  },
+  {
+    "path": "public/wallpapers/scenic/ice-current/tablet.png",
+    "bytes": 3423727,
+    "sha256": "4088e6cc6b189999f219b052d76bb6a0e81fbd7a7e73084831b80e361a602779"
+  },
+  {
+    "path": "public/wallpapers/scenic/indigo-fold/laptop.png",
+    "bytes": 2302277,
+    "sha256": "a7b87528267db5beff633f5619a16f0fa3fd941767973b693cc490bc3ce5b50f"
+  },
+  {
+    "path": "public/wallpapers/scenic/indigo-fold/mobile.png",
+    "bytes": 2551821,
+    "sha256": "b668f3aefcbaa79deeaf0fe9e1099e990d39f37925195eef530da564c3220ca0"
+  },
+  {
+    "path": "public/wallpapers/scenic/indigo-fold/tablet.png",
+    "bytes": 3383568,
+    "sha256": "8d15c4f8e4fe4ea9de914dc3e9589a8e4524aa3da5779863c096fe5868a81642"
+  },
+  {
+    "path": "public/wallpapers/scenic/indigo-wanderer/laptop.png",
+    "bytes": 3428839,
+    "sha256": "f04dfb7727fb9040d60e8a5e671b6aa7632a88eaeb01e40ba619ebd32bdfb55a"
+  },
+  {
+    "path": "public/wallpapers/scenic/indigo-wanderer/mobile.png",
+    "bytes": 3951067,
+    "sha256": "4d6435f43a56995bb57e9d8db2d0dcf8ad1991749a03ebdf900848531fc5ce2e"
+  },
+  {
+    "path": "public/wallpapers/scenic/indigo-wanderer/tablet.png",
+    "bytes": 6101748,
+    "sha256": "9e992c4435189e1e95f9bc30ecf7ee35775df4a8daf005a9bf5b30a448db9164"
+  },
+  {
+    "path": "public/wallpapers/scenic/island-postcard/laptop.png",
+    "bytes": 2786138,
+    "sha256": "8036a4b45edd27b3f2701086a9edeedbef68b5ede08cf8ca5a6c0ac76229e51a"
+  },
+  {
+    "path": "public/wallpapers/scenic/island-postcard/mobile.png",
+    "bytes": 2712876,
+    "sha256": "a06bd01ef9c0464214ce93f8a81eef05a63569610ff90664b93b3682f3dff060"
+  },
+  {
+    "path": "public/wallpapers/scenic/island-postcard/tablet.png",
+    "bytes": 4686726,
+    "sha256": "e9006ba03d3cd1ea3e52dde01a33cfee7b3a77d6f4d184042dd15466d72edf22"
+  },
+  {
+    "path": "public/wallpapers/scenic/jade-valley-walk/laptop.png",
+    "bytes": 3289368,
+    "sha256": "e24475e8f65d33e529c34a8130e422dff84ffdbaac0b040389ac9d883307d08a"
+  },
+  {
+    "path": "public/wallpapers/scenic/jade-valley-walk/mobile.png",
+    "bytes": 3933658,
+    "sha256": "d7bad44190cb427b5792bab0f7b9a1b710ace0e4cb09b006d81382e5d955d105"
+  },
+  {
+    "path": "public/wallpapers/scenic/jade-valley-walk/tablet.png",
+    "bytes": 5729725,
+    "sha256": "6cae710e3505ed79383d868a532674a6749d1eca959fd70b21b3434df3d859b4"
+  },
+  {
+    "path": "public/wallpapers/scenic/lagoon-layers/laptop.png",
+    "bytes": 3894178,
+    "sha256": "39cb924add7c2dae6e6289d4e1ed2c2e0036f68d20613f3dd5df0f4447477979"
+  },
+  {
+    "path": "public/wallpapers/scenic/lagoon-layers/mobile.png",
+    "bytes": 4880000,
+    "sha256": "07fdf1317d7817123c9a1916dbf1d533c2c82d0b733391ae5ba187c3930e494c"
+  },
+  {
+    "path": "public/wallpapers/scenic/lagoon-layers/tablet.png",
+    "bytes": 6398508,
+    "sha256": "a7e8bc0b2b9cdba04770c99121c665153084970f669c21ffdcbd0a61aa8194bf"
+  },
+  {
+    "path": "public/wallpapers/scenic/lantern-alley/laptop.png",
+    "bytes": 2785169,
+    "sha256": "a7429d7e44860fd43bf52f041e2ee6dde5d002c554263c4b8ca35723981940e4"
+  },
+  {
+    "path": "public/wallpapers/scenic/lantern-alley/mobile.png",
+    "bytes": 2953104,
+    "sha256": "8b6229b320a4a557a364b962c18df04ce432652688e3c3c0beba60b252275d4f"
+  },
+  {
+    "path": "public/wallpapers/scenic/lantern-alley/tablet.png",
+    "bytes": 4216356,
+    "sha256": "4f5c8f4cff1ec20c45feac079da5258f59a85e29ec7f56fccfa73ead264005c6"
+  },
+  {
+    "path": "public/wallpapers/scenic/lavender-horizon/laptop.png",
+    "bytes": 3077749,
+    "sha256": "5515fefa3f567e0e692409aca6e72535c9565b71afcb70d58f7c0107251639ed"
+  },
+  {
+    "path": "public/wallpapers/scenic/lavender-horizon/mobile.png",
+    "bytes": 3096895,
+    "sha256": "39e36419671dff829f0ca0fa4a783d34134473e7a89003ddca73d69733016829"
+  },
+  {
+    "path": "public/wallpapers/scenic/lavender-horizon/tablet.png",
+    "bytes": 4814038,
+    "sha256": "7970f476583effd6a7a76ed13ef400ad638635c756ea1bf0318dd31453d45f38"
+  },
+  {
+    "path": "public/wallpapers/scenic/lilac-cloud-garden/laptop.png",
+    "bytes": 3321955,
+    "sha256": "36fcb85f5a54bc3b08e60011cbf07aaf75a8da6ddb46f85f1486cc52fd4e77a3"
+  },
+  {
+    "path": "public/wallpapers/scenic/lilac-cloud-garden/mobile.png",
+    "bytes": 3005080,
+    "sha256": "0a6493b598036c574f978e0a2572a9226215fa377b68f9bbe71d984a3ec46561"
+  },
+  {
+    "path": "public/wallpapers/scenic/lilac-cloud-garden/tablet.png",
+    "bytes": 5079333,
+    "sha256": "24fb59c147249a8fc0c2e8785931b8248d10b6e5903c041823625adf93767ff0"
+  },
+  {
+    "path": "public/wallpapers/scenic/meadow-skies/laptop.png",
+    "bytes": 3003021,
+    "sha256": "5611da7fdd651326178ac79192e60dea5a120ecfbf5adb6b2f2e447037c9ea84"
+  },
+  {
+    "path": "public/wallpapers/scenic/meadow-skies/mobile.png",
+    "bytes": 3262408,
+    "sha256": "1056c769fdecc9fdfdd893cd3f439336d4a2304b3baddcb62b76f38a810da89e"
+  },
+  {
+    "path": "public/wallpapers/scenic/meadow-skies/tablet.png",
+    "bytes": 4496324,
+    "sha256": "38a9260156f63e85b0e08d94552db08af74e2f96f25e5c26ad9d9eaf167ec9d7"
+  },
+  {
+    "path": "public/wallpapers/scenic/midnight-cafe/laptop.png",
+    "bytes": 2665998,
+    "sha256": "b4b59de5848046e3d268275a4895f3a4ff989fe7691fc75f3bc0ca7b82880e88"
+  },
+  {
+    "path": "public/wallpapers/scenic/midnight-cafe/mobile.png",
+    "bytes": 2904678,
+    "sha256": "39381831d4162fa2fd3be4848f4f8fb2e6db96702a364009aa49eae282e4503e"
+  },
+  {
+    "path": "public/wallpapers/scenic/midnight-cafe/tablet.png",
+    "bytes": 4749178,
+    "sha256": "01ab1b4dd591cdf21501666ee048417d9f87dc0edf80c45491c949c6a90e0968"
+  },
+  {
+    "path": "public/wallpapers/scenic/mint-ink/laptop.png",
+    "bytes": 2800007,
+    "sha256": "9a5ca8e42296a90a1abb36f305952c90b6440fc4e5200af1ef21cb323ea98193"
+  },
+  {
+    "path": "public/wallpapers/scenic/mint-ink/mobile.png",
+    "bytes": 2974195,
+    "sha256": "46234adf7aa7d5e8fa6c75c09ac33fce796a7528ff695089b3e908acde66897c"
+  },
+  {
+    "path": "public/wallpapers/scenic/mint-ink/tablet.png",
+    "bytes": 4038930,
+    "sha256": "2d0b70b6e4d6a33d22c291b4a7628714e81bfdf20ad671855bad78d8fb3fd275"
+  },
+  {
+    "path": "public/wallpapers/scenic/mist-valley/laptop.png",
+    "bytes": 1368516,
+    "sha256": "7c70be1dfbc69d777c660ad59fe7c4bcdb674c8bc5ef8987e46d2325af2d5acc"
+  },
+  {
+    "path": "public/wallpapers/scenic/mist-valley/mobile.png",
+    "bytes": 1552936,
+    "sha256": "ca96a0e4653245ad423c151503223ed378eda9b0548ea72d9f537a63cde4f9d5"
+  },
+  {
+    "path": "public/wallpapers/scenic/mist-valley/tablet.png",
+    "bytes": 2217025,
+    "sha256": "60e96bd52e92988874a38b4127b9c8cd287f51278590264b6e180c7dde943c91"
+  },
+  {
+    "path": "public/wallpapers/scenic/misty-blossom/laptop.png",
+    "bytes": 3114463,
+    "sha256": "004c70d8af3dea120ad35127d6c0ac55ec35055596a388b56ef28fc7f0677a24"
+  },
+  {
+    "path": "public/wallpapers/scenic/misty-blossom/mobile.png",
+    "bytes": 3358284,
+    "sha256": "dfa6928b3cccbcdb64102ca4f1007ac3ee3fc2ef1c4c1fa530bfed3ed7264f4e"
+  },
+  {
+    "path": "public/wallpapers/scenic/misty-blossom/tablet.png",
+    "bytes": 4631379,
+    "sha256": "be13d6d7627d856538e9a6577e475b82f1ac38c1759111e159f4825e96137cab"
+  },
+  {
+    "path": "public/wallpapers/scenic/moonlit-blossoms/laptop.png",
+    "bytes": 2730799,
+    "sha256": "f8c07086108d9129671faa7a7a2e59dce7aa78ccf8f0f72ad3747e19b5b20465"
+  },
+  {
+    "path": "public/wallpapers/scenic/moonlit-blossoms/mobile.png",
+    "bytes": 3023066,
+    "sha256": "6050566b7f395af3782bab3667c5639742476a7e397bada73961d4a7ed26e4ea"
+  },
+  {
+    "path": "public/wallpapers/scenic/moonlit-blossoms/tablet.png",
+    "bytes": 4802121,
+    "sha256": "777028c6f6d201ee7dac1e572ddc99dccbf74e0697584277947415ae812644c7"
+  },
+  {
+    "path": "public/wallpapers/scenic/moonlit-camp/laptop.png",
+    "bytes": 3259951,
+    "sha256": "0a66100c39f45c41126e1009ac0d6b7a6c16a39c18c3f0355c43473a33317a28"
+  },
+  {
+    "path": "public/wallpapers/scenic/moonlit-camp/mobile.png",
+    "bytes": 3443650,
+    "sha256": "466a3b9e2bc31a2c8917794f4e9324dcbca69cfa09571a99cb4d0b73f7cc1f24"
+  },
+  {
+    "path": "public/wallpapers/scenic/moonlit-camp/tablet.png",
+    "bytes": 5251536,
+    "sha256": "ba70ef34c09b0d077aaa0f24ae3b3fdb1eb5c94163b9c9bcc820e0c0d48df0c7"
+  },
+  {
+    "path": "public/wallpapers/scenic/morning-tram/laptop.png",
+    "bytes": 2235368,
+    "sha256": "cdf4460d802255f561d04d6d6c96ca7df4ce447593dc44cf627887a30a256079"
+  },
+  {
+    "path": "public/wallpapers/scenic/morning-tram/mobile.png",
+    "bytes": 2698603,
+    "sha256": "80cb92614789f2cbc09ee33a991d156686943fd9fe862e3844fd91306e3022f4"
+  },
+  {
+    "path": "public/wallpapers/scenic/morning-tram/tablet.png",
+    "bytes": 4225730,
+    "sha256": "35751890aedbf19dec28809147cded802b19c71b2d16891496f734dff6d7588a"
+  },
+  {
+    "path": "public/wallpapers/scenic/mountain-dawn/laptop.png",
+    "bytes": 1561951,
+    "sha256": "8d67f0095078e3bafaf88ecf65924d297c63b985c277a0f63fbbafee959544d0"
+  },
+  {
+    "path": "public/wallpapers/scenic/mountain-dawn/mobile.png",
+    "bytes": 1755035,
+    "sha256": "83eec0b46a1cef0582576072224cb0e6ef868889b9caaae1448db4263f7444f1"
+  },
+  {
+    "path": "public/wallpapers/scenic/mountain-dawn/tablet.png",
+    "bytes": 2528900,
+    "sha256": "46fc7f6d344b553d98d9c99ee056a9a2e082a4d276fa00b8eca98b5c1f953de0"
+  },
+  {
+    "path": "public/wallpapers/scenic/ocean-topography/laptop.png",
+    "bytes": 2448058,
+    "sha256": "fb076abd6097d686f007212ec5feb4922cde984939a87e3f436449d83e589a6a"
+  },
+  {
+    "path": "public/wallpapers/scenic/ocean-topography/mobile.png",
+    "bytes": 2766106,
+    "sha256": "b914e4fcd64688958b780b268b930b3522d5c66ca0d320ddf6b3a339388b4eda"
+  },
+  {
+    "path": "public/wallpapers/scenic/ocean-topography/tablet.png",
+    "bytes": 3959472,
+    "sha256": "ea12dd0df362b891a630e5e25f329148dc3890935e4a11e2a83a9bf10b428a71"
+  },
+  {
+    "path": "public/wallpapers/scenic/palm-study/laptop.png",
+    "bytes": 2181627,
+    "sha256": "f8602c09a72d8f872caac89ddbbcd57120852b72fdd2b3da5eb48cf9bf02ee3d"
+  },
+  {
+    "path": "public/wallpapers/scenic/palm-study/mobile.png",
+    "bytes": 2501413,
+    "sha256": "8eccac7e04954a77d134a99b29d7ae51e0576f11011834ab697b3cdc165cd4ad"
+  },
+  {
+    "path": "public/wallpapers/scenic/palm-study/tablet.png",
+    "bytes": 3878892,
+    "sha256": "0b911937893ffa8603613ec8fbd10e477235ba683744e7f7f6036880a3e8a7e5"
+  },
+  {
+    "path": "public/wallpapers/scenic/paper-notes/laptop.png",
+    "bytes": 2775751,
+    "sha256": "a08ed4104afb664dde98818e10ef594dd9ccb5b9089bd866e0219b0dd1ae49a4"
+  },
+  {
+    "path": "public/wallpapers/scenic/paper-notes/mobile.png",
+    "bytes": 3842753,
+    "sha256": "b209e5cf2d38bbbc9bef9612feaa8d0e3a6e165c860e3611abd2895e9f9204d1"
+  },
+  {
+    "path": "public/wallpapers/scenic/paper-notes/tablet.png",
+    "bytes": 5009252,
+    "sha256": "b6c73aea92ace7e2118f33b834fe6e053f7bee34293b8a74c52ef85efe4f7913"
+  },
+  {
+    "path": "public/wallpapers/scenic/peach-paper/laptop.png",
+    "bytes": 2964518,
+    "sha256": "88cb704b41a2e90c986e85327c463e69590bb37b2437240ca1ceb266526ff51d"
+  },
+  {
+    "path": "public/wallpapers/scenic/peach-paper/mobile.png",
+    "bytes": 3220906,
+    "sha256": "e7910fa4f2ff6a27f14e50ee96b79ab71170d6066fa24c2f0c590f6263d33ac3"
+  },
+  {
+    "path": "public/wallpapers/scenic/peach-paper/tablet.png",
+    "bytes": 4659609,
+    "sha256": "c9cc5e1084845f1b5a02790fa99946e5d01508b276f0889520689851461e8616"
+  },
+  {
+    "path": "public/wallpapers/scenic/plum-lantern-moon/laptop.png",
+    "bytes": 2751808,
+    "sha256": "e6a8658d6b6c5d709be05b072791939beaf29203f10260506ea2351c6de64c5f"
+  },
+  {
+    "path": "public/wallpapers/scenic/plum-lantern-moon/mobile.png",
+    "bytes": 3150697,
+    "sha256": "40700807e266906566de0b480dd3cf033795d5ecfbdefbac47c6e1e0d9b36dfe"
+  },
+  {
+    "path": "public/wallpapers/scenic/plum-lantern-moon/tablet.png",
+    "bytes": 3967639,
+    "sha256": "f8a4ac965f631dd6255b181eae270bacbff035c354c3e8e702013c23dc148c16"
+  },
+  {
+    "path": "public/wallpapers/scenic/prismatic-paper/laptop.png",
+    "bytes": 3392258,
+    "sha256": "a295e0a581ea4dc3f1d64a47153d1fe58d7e175b6346c6ccdabdd17ddc780462"
+  },
+  {
+    "path": "public/wallpapers/scenic/prismatic-paper/mobile.png",
+    "bytes": 4139673,
+    "sha256": "228b7ae9404bd9fb3c34e71f90b505815485843f906d124b535b88c99fb1b46e"
+  },
+  {
+    "path": "public/wallpapers/scenic/prismatic-paper/tablet.png",
+    "bytes": 5514944,
+    "sha256": "758db9ebe0c9bbd333d39e6ab200233c5e89a62d40df81a92515aeb5a23e6cd1"
+  },
+  {
+    "path": "public/wallpapers/scenic/rain-window/laptop.png",
+    "bytes": 2779068,
+    "sha256": "9a1599e1afb4335b99baa6c55530d8c04948e5c924fe0428127f397e3f4c6298"
+  },
+  {
+    "path": "public/wallpapers/scenic/rain-window/mobile.png",
+    "bytes": 3022142,
+    "sha256": "1dc923a0ac7e793eaf8e411fbc54597e7aca8c2dc4b824645a6be841bd40d9eb"
+  },
+  {
+    "path": "public/wallpapers/scenic/rain-window/tablet.png",
+    "bytes": 4498050,
+    "sha256": "a453969aa01fd0dd4183bc72dcd64ac1a2af483e5a1fafce661188c050f2c3c5"
+  },
+  {
+    "path": "public/wallpapers/scenic/rose-cloud-dusk/laptop.png",
+    "bytes": 2777009,
+    "sha256": "d7ee411dac76bd3f0d2414fd1eaed05ad60163b7c53128a7919b9f1f27126c70"
+  },
+  {
+    "path": "public/wallpapers/scenic/rose-cloud-dusk/mobile.png",
+    "bytes": 3358158,
+    "sha256": "b505b0d851c5de799080758477eb9a4849c7d357de9a53596ef45b46c46c100d"
+  },
+  {
+    "path": "public/wallpapers/scenic/rose-cloud-dusk/tablet.png",
+    "bytes": 4665809,
+    "sha256": "c95200902fb6cd57008de19eb57fee5d065737c6ffd6575959c94de6c6b2c222"
+  },
+  {
+    "path": "public/wallpapers/scenic/rose-horizon/laptop.png",
+    "bytes": 2882256,
+    "sha256": "4fcc293c6d275af1100f71a23fad842977257066d93470ebbad9f725571b2a3e"
+  },
+  {
+    "path": "public/wallpapers/scenic/rose-horizon/mobile.png",
+    "bytes": 3206027,
+    "sha256": "2ae16bbc43f29e6ca532e02b7d4ba115a2b4a4dca0f623946bb3385929bff60e"
+  },
+  {
+    "path": "public/wallpapers/scenic/rose-horizon/tablet.png",
+    "bytes": 4721091,
+    "sha256": "df35a96a7967fad2e4ca0d4c5ed7d0111570bd1a2a0b57fcbe012b31b0b9e523"
+  },
+  {
+    "path": "public/wallpapers/scenic/rose-ridge/laptop.png",
+    "bytes": 1229539,
+    "sha256": "8542b18bb51ad0dadfbde4f622aa43a5ed197d09a7c28cc700cfdd91831283b8"
+  },
+  {
+    "path": "public/wallpapers/scenic/rose-ridge/mobile.png",
+    "bytes": 1414422,
+    "sha256": "e9bf2b78f73605a644a7343c1ac0b0d6b5dc38bd7ede8e03dc258803f1b3757e"
+  },
+  {
+    "path": "public/wallpapers/scenic/rose-ridge/tablet.png",
+    "bytes": 1947870,
+    "sha256": "b063d16c1a5c6d491737f771767d1b6332622c3914871bfa523e253154e12f27"
+  },
+  {
+    "path": "public/wallpapers/scenic/saffron-trail/laptop.png",
+    "bytes": 3148340,
+    "sha256": "d8e4894e58a56eeccd3bf40bce6c2be6368d8685922e76e2c322cc6cf469802e"
+  },
+  {
+    "path": "public/wallpapers/scenic/saffron-trail/mobile.png",
+    "bytes": 3528282,
+    "sha256": "e661b2491493ad3221cf66a8b07a1c950e4c48ab2f165d1ed13fd7dd99173596"
+  },
+  {
+    "path": "public/wallpapers/scenic/saffron-trail/tablet.png",
+    "bytes": 4564298,
+    "sha256": "908920f634b65a5b55677b6931dbbed2ee7bd339e800d9d80e7ca394dde7ff6f"
+  },
+  {
+    "path": "public/wallpapers/scenic/sage-scraps/laptop.png",
+    "bytes": 3032310,
+    "sha256": "dfcccc117bd4ad83bb88e79271a5618f706d5f1b80c32431388df9ac8d3635ed"
+  },
+  {
+    "path": "public/wallpapers/scenic/sage-scraps/mobile.png",
+    "bytes": 4104128,
+    "sha256": "972a172a64e6a1f4d9eebf73d34325705bd7c468b303c64599bfc88d30403db0"
+  },
+  {
+    "path": "public/wallpapers/scenic/sage-scraps/tablet.png",
+    "bytes": 5140793,
+    "sha256": "4650517b065291c22d1248150be9ff5bfff19e3d8a77baa56899e92296b3ffee"
+  },
+  {
+    "path": "public/wallpapers/scenic/silver-sakura/laptop.png",
+    "bytes": 3584372,
+    "sha256": "ea68b7bf557805e5dd5592d85d496b28188cfd52aa5fea2cf013f4cc31b4762b"
+  },
+  {
+    "path": "public/wallpapers/scenic/silver-sakura/mobile.png",
+    "bytes": 4076778,
+    "sha256": "8de5ed21cc2155489013918fa5ab3a0a3e1c3ceb0d4a7b3937a7fdd301e0a813"
+  },
+  {
+    "path": "public/wallpapers/scenic/silver-sakura/tablet.png",
+    "bytes": 6582904,
+    "sha256": "0204e8e76105caf708159a54cdc7d11ce65dacc8b08feec05e8a77605b0172fb"
+  },
+  {
+    "path": "public/wallpapers/scenic/snowy-summit/laptop.png",
+    "bytes": 2930060,
+    "sha256": "6dd3366f43ff65a7ec8e1783500803bec1018cbce8099379c1a9439eb244c69b"
+  },
+  {
+    "path": "public/wallpapers/scenic/snowy-summit/mobile.png",
+    "bytes": 3355869,
+    "sha256": "cc429ca621e1a5c3c6defa7d189948b0f0c3bcfc5427abdb65ccd42d1f589dd9"
+  },
+  {
+    "path": "public/wallpapers/scenic/snowy-summit/tablet.png",
+    "bytes": 4960675,
+    "sha256": "18ba4ee8c30be9a4f17f083204e4184963872e33df899a5e9936a3556a20feab"
+  },
+  {
+    "path": "public/wallpapers/scenic/sunflower-afternoon/laptop.png",
+    "bytes": 2734687,
+    "sha256": "ef9a065695e4c14e36f0fcb76c9923f81fff7d8aeb074c054c7a14ae12f9499c"
+  },
+  {
+    "path": "public/wallpapers/scenic/sunflower-afternoon/mobile.png",
+    "bytes": 2751505,
+    "sha256": "07570b4bc576f71e97e31e6a1de22a5fe4f6f737df30e7853de807534bbe3a86"
+  },
+  {
+    "path": "public/wallpapers/scenic/sunflower-afternoon/tablet.png",
+    "bytes": 3987521,
+    "sha256": "9f1971e3253de8c94cac112a1f451c7b4a46bbb7dbcfee71fd48b1420ca8795d"
+  },
+  {
+    "path": "public/wallpapers/scenic/sunset-traveler/laptop.png",
+    "bytes": 3228704,
+    "sha256": "e59bc0ee5517eb8f1121fb5631284df532df844f3e80bd8b57850f28bef2fa3f"
+  },
+  {
+    "path": "public/wallpapers/scenic/sunset-traveler/mobile.png",
+    "bytes": 3803623,
+    "sha256": "d3f6ab9fff4ac7bdf43e7a1a1e831c3320efc7f2c89ef29f4bee687db6101d7e"
+  },
+  {
+    "path": "public/wallpapers/scenic/sunset-traveler/tablet.png",
+    "bytes": 4816808,
+    "sha256": "3088a144f9a4575ac3e67dab46f7a5dc41513dc1a1d407d90e7ef2037ac385f7"
+  },
+  {
+    "path": "public/wallpapers/scenic/tropical-margin/laptop.png",
+    "bytes": 2115736,
+    "sha256": "13b27fd6cd8b1f53275527106a80450c5678bfad575c0fd9cf0da74d287f975c"
+  },
+  {
+    "path": "public/wallpapers/scenic/tropical-margin/mobile.png",
+    "bytes": 2351450,
+    "sha256": "b1ffef4786a4ea131cb1049ddfc8d6b229643736060ceed05ad57a9787cb7593"
+  },
+  {
+    "path": "public/wallpapers/scenic/tropical-margin/tablet.png",
+    "bytes": 4020191,
+    "sha256": "0a007b4e5cfdecab4cd58a25c7726e39cb6864bb39b486fc6eba1173d53614be"
+  },
+  {
+    "path": "public/wallpapers/scenic/twilight-ribbon/laptop.png",
+    "bytes": 2113772,
+    "sha256": "f4625d7a84345adcedb9a38f0072a6262e52e058bf61afbc71161eac2950488a"
+  },
+  {
+    "path": "public/wallpapers/scenic/twilight-ribbon/mobile.png",
+    "bytes": 2220599,
+    "sha256": "82f45b210a3eaf69a50a4b8a08e3b21d6289669f924d0d6d3b0154d7cd02090f"
+  },
+  {
+    "path": "public/wallpapers/scenic/twilight-ribbon/tablet.png",
+    "bytes": 2748785,
+    "sha256": "5f66ee9988b6038406f750f8994bb928074e50dc4979b1fe58f7ea4b337e22a5"
+  },
+  {
+    "path": "public/wallpapers/scenic/violet-pop/laptop.png",
+    "bytes": 2387107,
+    "sha256": "58e76e4323fd8d2d0ff25b01bc1abd0c1ce1f001e9ca0162998d1745b4068a2a"
+  },
+  {
+    "path": "public/wallpapers/scenic/violet-pop/mobile.png",
+    "bytes": 2714162,
+    "sha256": "da05272c5fe69926a11f5268de746e376cbfac0adfc13937f4b3bb3d676d976c"
+  },
+  {
+    "path": "public/wallpapers/scenic/violet-pop/tablet.png",
+    "bytes": 3662770,
+    "sha256": "856161cf7bce4d1bb27ebf9949f34b69ab6e1cf5198a9ef24bc564972d6de0a6"
+  },
+  {
+    "path": "public/wallpapers/scenic/windmill-journey/laptop.png",
+    "bytes": 2908137,
+    "sha256": "bece01a25547929a02851bfc25008d534c56c7ad5d4af5d9726831f53664427f"
+  },
+  {
+    "path": "public/wallpapers/scenic/windmill-journey/mobile.png",
+    "bytes": 2941576,
+    "sha256": "5332b60348108818310e130e7ddcf93018daa873f6f60b50a497c0cfd1c311aa"
+  },
+  {
+    "path": "public/wallpapers/scenic/windmill-journey/tablet.png",
+    "bytes": 4801647,
+    "sha256": "65d183b85c115f7ad998ec3a1b9975aea7e86c244d4498cf6b06fb700c5009bc"
+  },
+  {
+    "path": "output/imagegen/marketing/how-it-works/choose-design-actual.png",
+    "bytes": 1910600,
+    "sha256": "c1406cd6bee8d90f88dd33b532221b976434ce2c241f03f2ff506c833455120c"
+  },
+  {
+    "path": "output/imagegen/marketing/how-it-works/download-wallpaper-actual.png",
+    "bytes": 824363,
+    "sha256": "5a3ed04f803bbbc7a638ec2ec6ee6a9534449ad605e74d2d903d89fe99cb12b0"
+  },
+  {
+    "path": "output/imagegen/marketing/landing/brand/logo.png",
+    "bytes": 460573,
+    "sha256": "01916efee2adf24a85cf83f68729ddc0ae02e901ff17c2cbead8177c590636c8"
+  },
+  {
+    "path": "output/imagegen/marketing/landing/collections/laptop/little-friends.png",
+    "bytes": 1426175,
+    "sha256": "106cca8b4ac15cae7b670ac6282169ebea1d5e67cd0a4229a194351736eb707a"
+  },
+  {
+    "path": "output/imagegen/marketing/landing/collections/laptop/mascot.png",
+    "bytes": 1436528,
+    "sha256": "6b8d22f7c465f5b4c0c13edeb09f1b81158ea1d8c07a710b2a13a9b1651cef68"
+  },
+  {
+    "path": "output/imagegen/marketing/landing/collections/laptop/original.png",
+    "bytes": 1690841,
+    "sha256": "d3303423c5e075ce32e4f613345e19b2b58b092babe96f1581b24630bc3a53f2"
+  },
+  {
+    "path": "output/imagegen/marketing/landing/collections/laptop/pattern.png",
+    "bytes": 1735122,
+    "sha256": "879bdbbfe835fb7e27dddc035dd6326f86629ba9bf300a7770d7b300724f0b00"
+  },
+  {
+    "path": "output/imagegen/marketing/landing/collections/mobile/little-friends.png",
+    "bytes": 977753,
+    "sha256": "25f652f4f3d382dfbdddd1afe990ef6bf230ce8076242af7e874a5106552542e"
+  },
+  {
+    "path": "output/imagegen/marketing/landing/collections/mobile/mascot.png",
+    "bytes": 1171921,
+    "sha256": "0bd18b869db62594c2586246577a012e474053e41aafff305cec7a1279c4c5b2"
+  },
+  {
+    "path": "output/imagegen/marketing/landing/collections/mobile/original.png",
+    "bytes": 1362930,
+    "sha256": "5038484fff2c7e18346637261b711dd24df09acfa68cefef0005e2f51e25aa8b"
+  },
+  {
+    "path": "output/imagegen/marketing/landing/collections/mobile/pattern.png",
+    "bytes": 1329454,
+    "sha256": "5301cc3ba748490ac130c1f666f87f2fd83c171d6842d98a2bb1dc0b84c5d445"
+  },
+  {
+    "path": "output/imagegen/marketing/landing/collections/tablet/little-friends.png",
+    "bytes": 1372962,
+    "sha256": "97dcfcc70caf314728231b896c4eceec149e5cfe1e7a8c5e815875b7d33535c9"
+  },
+  {
+    "path": "output/imagegen/marketing/landing/collections/tablet/mascot.png",
+    "bytes": 1362982,
+    "sha256": "f73d5ba8c1f2229488b33357d3cb3d1a2e0326345a9229ac4e584827c418e239"
+  },
+  {
+    "path": "output/imagegen/marketing/landing/collections/tablet/original.png",
+    "bytes": 1602594,
+    "sha256": "9c1074903e60d5872175c30e105a210ad3b657471b5556b7a68cf2fd3b24933b"
+  },
+  {
+    "path": "output/imagegen/marketing/landing/collections/tablet/pattern.png",
+    "bytes": 1406980,
+    "sha256": "5d26f894d3bde9c05367ffd7e6bbdbb76d5104e2b0af9040137a04b2310108d7"
+  },
+  {
+    "path": "output/imagegen/marketing/landing/hero/hero-ambient.png",
+    "bytes": 1193081,
+    "sha256": "38f6725ef11b419237e7c7fc178d01caeeab5d8ed86e2fd171987603d1add245"
+  },
+  {
+    "path": "output/imagegen/marketing/landing/hero/hero-phones.png",
+    "bytes": 1258168,
+    "sha256": "868d01ca8cac95b30abb01a7b583758a491a9858d4c17f1c0c9129f50675b44f"
+  }
+]
