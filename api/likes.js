@@ -29,7 +29,7 @@ export function createLikesHandler({ env = process.env, store = createCatalogSto
       }
       const catalog = cloudConfigured(env) ? await store.read() : seedCatalog();
       const ids = catalog.templates.filter(t => t.status === 'published').map(t => t.id);
-      if (request.method === 'GET') return response.status(200).json({ likes: await likes.read(ids, visitor), identified: Boolean(visitor) });
+      if (request.method === 'GET') return response.status(200).json({ likes: await likes.read(ids, visitor, catalog.templates.map(t => t.id)), identified: Boolean(visitor) });
       const { id, liked } = request.body;
       if (!ids.includes(id)) return fail(404, 'This design is no longer available.');
       return response.status(200).json({ id, ...await likes.write(id, visitor, liked) });

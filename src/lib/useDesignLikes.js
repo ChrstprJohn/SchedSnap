@@ -1,6 +1,29 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { api } from './api.js';
 
+const CACHE_MS = 60000;
+let cached;
+let expires = 0;
+let reading;
+let cacheRevision = 0;
+
+async function loadLikes(force = false) {
+  if (reading) return reading;
+  if (!force && cached && expires > Date.now()) return cached;
+  const revision = cacheRevision;
+  reading = api.get('/likes', { timeout: 15000 }).then(({ data }) => {
+    if (revision === cacheRevision) { cached = data; expires = Date.now() + CACHE_MS; }
+    return data;
+  });
+  try { return await reading; }
+  finally { reading = null; }
+}
+
+function rememberLike(id, vote) {
+  cacheRevision++;
+  if (cached) cached = { ...cached, identified: true, likes: { ...cached.likes, [id]: vote } };
+}
+
 export default function useDesignLikes() {
   const [likes, setLikes] = useState({});
   const [pending, setPending] = useState(0);
@@ -12,11 +35,11 @@ export default function useDesignLikes() {
   const version = useRef(0);
   const mounted = useRef(false);
 
-  const refresh = useCallback(async () => {
+  const refresh = useCallback(async (force = false) => {
     if (saving.current.size) return;
     const revision = ++version.current;
     try {
-      const { data } = await api.get('/likes', { timeout: 15000 });
+      const data = await loadLikes(force === true);
       if (!mounted.current || version.current !== revision) return;
       identified.current = data.identified;
       currentLikes.current = data.likes;
@@ -62,10 +85,11 @@ export default function useDesignLikes() {
       while (entry.confirmed.liked !== entry.desired) {
         const { data } = await api.post('/likes', { id, liked: entry.desired }, { timeout: 15000 });
         entry.confirmed = { count: data.count, liked: data.liked };
+        rememberLike(id, entry.confirmed);
         publish({ count: data.count + Number(entry.desired) - Number(data.liked), liked: entry.desired });
       }
     } catch (failure) {
-      if (failure.response?.status === 428) identified.current = false;
+      if (failure.response?.status === 428) { identified.current = false; cacheRevision++; cached = null; expires = 0; }
       publish(entry.confirmed);
       if (mounted.current) setError(failure.response?.data?.error?.message || 'Your like could not save. Try again.');
     } finally {

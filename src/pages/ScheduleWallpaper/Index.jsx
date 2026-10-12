@@ -51,19 +51,7 @@ export default function ScheduleWallpaper() {
   const [busy, setBusy] = useState(false);
   const [importUsage, setImportUsage] = useState(null);
   const [usageUnavailable, setUsageUnavailable] = useState(false);
-  useEffect(() => {
-    let active = true;
-    async function refreshUsage() {
-      try {
-        const { data } = await api.get('/analyze');
-        if (active) { setImportUsage(data.usage); setUsageUnavailable(false); }
-      } catch { if (active) setUsageUnavailable(true); }
-    }
-    refreshUsage();
-    window.addEventListener('focus', refreshUsage);
-    const timer = window.setInterval(refreshUsage, 60_000);
-    return () => { active = false; window.removeEventListener('focus', refreshUsage); window.clearInterval(timer); };
-  }, []);
+  const usageRead = useRef(null);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   const request = useRef(null);
@@ -80,6 +68,32 @@ export default function ScheduleWallpaper() {
   const step = template ? search.get('step') === 'preview' ? 'preview' : 'classes' : 'design';
   const basePath = '/services/schedule-wallpaper';
   const choosingImage = step === 'classes' && !!image && (importOpen || !schedule.classes.length);
+  const showingImport = step === 'classes' && (importOpen || !schedule.classes.length);
+  useEffect(() => {
+    if (!showingImport) return;
+    let active = true;
+    let checking = false;
+    let checkedAt = 0;
+    let resetTimer;
+    async function refreshUsage() {
+      if (checking || document.hidden || Date.now() - checkedAt < 60000) return;
+      checking = true;
+      try {
+        usageRead.current ||= api.get('/analyze').finally(() => { usageRead.current = null; });
+        const { data } = await usageRead.current;
+        checkedAt = Date.now();
+        if (active) {
+          setImportUsage(data.usage); setUsageUnavailable(false);
+          window.clearTimeout(resetTimer);
+          resetTimer = window.setTimeout(() => { checkedAt = 0; refreshUsage(); }, Math.max(1000, data.usage.resetsAt - Date.now()));
+        }
+      } catch { if (active) setUsageUnavailable(true); }
+      finally { checking = false; }
+    }
+    refreshUsage();
+    window.addEventListener('focus', refreshUsage);
+    return () => { active = false; window.clearTimeout(resetTimer); window.removeEventListener('focus', refreshUsage); };
+  }, [showingImport]);
   const hasUnsavedChanges = schedule.classes.length > 0 || !!image || scheduleTitle !== 'Class Schedule' || Object.values(templateSettings).some((settings) => Object.keys(settings).length > 0);
   useEffect(() => {
     if (templateId && !template) return;

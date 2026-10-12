@@ -15,8 +15,10 @@ async function browser(identified = true) {
   let effect;
   let registered = false;
   let reads = 0;
+  let clock = 1000;
   const context = {
     window: new EventTarget(), queueMicrotask,
+    Date: { now: () => clock },
     useCallback: fn => fn,
     useEffect(fn) { if (!registered) { registered = true; effect = fn; } },
     useRef(value) { const index = cursor++; slots[index] ||= { current: value }; return slots[index]; },
@@ -30,12 +32,12 @@ async function browser(identified = true) {
       post: (_url, body) => new Promise((resolve, reject) => requests.push({ body, resolve: data => resolve({ data }), reject })),
     },
   };
-  runInNewContext(source.replace(/^import .*;\r?$/gm, '').replace('export default ', '') + '\nglobalThis.useHook = useDesignLikes;', context);
+  runInNewContext(source.replace(/^import .*;\r?$/gm, '').replace('export default ', '') + '\nglobalThis.useHook = useDesignLikes; globalThis.loadLikes = loadLikes;', context);
   function render() { cursor = 0; hook = context.useHook(); }
   render();
   const unmount = effect();
   await settle();
-  return { hook: () => hook, requests, reads: () => reads, unmount };
+  return { hook: () => hook, requests, reads: () => reads, unmount, api: context.api, load: context.loadLikes, advance: ms => { clock += ms; } };
 }
 
 test('hearts and counts change before any network response, including first-cookie setup', async () => {
@@ -104,5 +106,45 @@ test('failed saves restore the last confirmed state and show the server recovery
   assert.equal(page.hook().likes.first.count, 8);
   assert.equal(page.hook().error, 'Try again in a minute.');
   assert.equal(page.hook().pending, 0);
+  page.unmount();
+});
+
+test('repeat focus events and gallery remount reads reuse the minute cache; Retry bypasses it', async () => {
+  const page = await browser();
+  await Promise.all([page.load(), page.load(), page.hook().refresh(), page.hook().refresh()]);
+  assert.equal(page.reads(), 1);
+  page.advance(60000);
+  await Promise.all([page.load(), page.load()]);
+  assert.equal(page.reads(), 2);
+  await page.hook().refresh(true);
+  assert.equal(page.reads(), 3);
+  page.unmount();
+});
+
+test('confirmed likes stay in the shared cache when returning to the gallery', async () => {
+  const page = await browser();
+  const saving = page.hook().toggle('first');
+  page.requests[0].resolve({ count: 8, liked: true });
+  await saving;
+  await page.hook().refresh();
+  assert.equal(page.hook().likes.first.liked, true);
+  assert.equal(page.hook().likes.first.count, 8);
+  assert.equal(page.reads(), 1);
+  page.unmount();
+});
+
+test('an older read cannot replace a newly confirmed like in the UI or shared cache', async () => {
+  const page = await browser();
+  let release;
+  page.api.get = () => new Promise(resolve => { release = resolve; });
+  const refreshing = page.hook().refresh(true);
+  const saving = page.hook().toggle('first');
+  page.requests[0].resolve({ count: 8, liked: true });
+  await saving;
+  release({ data: { identified: true, likes: { first: { count: 7, liked: false } } } });
+  await refreshing;
+  await page.hook().refresh();
+  assert.equal(page.hook().likes.first.liked, true);
+  assert.equal(page.hook().likes.first.count, 8);
   page.unmount();
 });
