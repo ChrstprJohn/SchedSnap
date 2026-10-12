@@ -10,6 +10,8 @@ for (const path of Object.keys(SEO_PAGES)) {
   assert.equal((html.match(/rel="canonical"/g) || []).length, 1, path);
   assert.ok(html.includes(`href="${SITE_URL}${path}"`), path);
   assert.ok(html.includes('content="index, follow"'), path);
+  assert.ok(html.includes('type="image/png" sizes="96x96" href="/favicon.png"'), path);
+  assert.ok(!html.includes('rel="icon" type="image/webp"'), path);
   if (path !== CREATOR_PATH) assert.ok(html.includes('<h1'), path);
   if (path === '/') {
     assert.ok(html.includes('Your schedule.'));
@@ -31,6 +33,9 @@ assert.ok(!sitemap.includes('/admin'));
 for (const [, url] of sitemap.matchAll(/<loc>(.*?)<\/loc>/g)) assert.ok(!url.includes('?'));
 assert.ok(!sitemap.includes('/wallpapers/'));
 const robots = await readFile('dist/robots.txt', 'utf8');
+for (const file of ['favicon.png', 'favicon.ico', 'apple-touch-icon.png']) {
+  assert.deepEqual(await readFile(resolve('dist', file)), await readFile(resolve('public', file)));
+}
 assert.ok(robots.includes(`Sitemap: ${SITE_URL}/sitemap.xml`));
 assert.equal(await readFile('dist/google82dfedb9e6c18663.html', 'utf8'), await readFile('public/google82dfedb9e6c18663.html', 'utf8'));
 console.log('SEO checks passed: public HTML, links/assets, canonical URLs, sitemap, robots, noindex shells, and Google verification.');

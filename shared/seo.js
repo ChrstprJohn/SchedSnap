@@ -3,7 +3,7 @@ export const CREATOR_PATH = '/services/schedule-wallpaper';
 export const SEO_PAGES = {
   '/': {
     title: 'SchedSnap — Class Schedule Wallpaper Maker',
-    description: 'Turn your class schedule into a wallpaper for your phone, tablet, or laptop. Choose a design, add your classes, and download a PNG. No account needed.',
+    description: 'SchedSnap is a class schedule wallpaper maker for students. Choose a design, add classes, and download a PNG for your phone, tablet, or laptop.',
   },
   [CREATOR_PATH]: {
     title: 'Create a Class Schedule Wallpaper — SchedSnap',
