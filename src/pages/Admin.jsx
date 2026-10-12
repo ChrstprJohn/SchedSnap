@@ -4,6 +4,7 @@ import { Plus, LogOut, ArrowLeft, X, Menu, CheckCircle2, Pencil, Eye, EyeOff, Tr
 import { deviceResolutions, tabletLandscapeResolution } from '../assets/templates.js';
 import { sampleSchedule } from '../assets/sampleSchedule.js';
 import { designCollections } from '../config/collections.js';
+import { getMascotStyle, mascotStyles } from '../config/mascotStyles.js';
 import { WallpaperCanvas } from './ScheduleWallpaper/CanvasPreview.jsx';
 import TemplateControls from './ScheduleWallpaper/TemplateControls.jsx';
 import WallpaperViewer from './ScheduleWallpaper/WallpaperViewer.jsx';
@@ -22,6 +23,7 @@ async function request(action, body) {
   return data;
 }
 const blankTemplate = () => ({ id: '', name: '', description: '', collection: 'scenic', status: 'draft', background: '#eef2f6', ink: '#203e36', muted: '#486258', surface: '#ffffff', line: '#a5b9a7', fontFamily: 'DM Sans Variable', containerStyle: 'glass' });
+const galleryCategories = [...designCollections, ...mascotStyles.filter(style => style.id !== 'all').map(style => ({ id: `style-${style.id}`, name: style.name }))];
 export default function Admin() {
   const [authenticated, setAuthenticated] = useState(null);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
@@ -118,7 +120,7 @@ export default function Admin() {
     finally { setBusy(false); }
   }
   const normalizedSearch = searchQuery.trim().toLowerCase();
-  const filtered = catalog?.templates.filter(t => (collection === 'all' || (t.collection || 'original') === collection) && (!normalizedSearch || [t.name, t.description, t.collection].some(value => value?.toLowerCase().includes(normalizedSearch)))) || [];
+  const filtered = catalog?.templates.filter(t => (collection === 'all' || (collection.startsWith('style-') ? getMascotStyle(t) === collection.slice(6) : (t.collection || 'original') === collection)) && (!normalizedSearch || [t.name, t.description, t.collection].some(value => value?.toLowerCase().includes(normalizedSearch)))) || [];
   const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(filtered.length, `${collection}:${device}:${normalizedSearch}:${Boolean(editor)}`);
   if (authenticated === null || !authenticated) return <AdminSignIn checking={authenticated === null} password={password} onPasswordChange={setPassword} onSubmit={login} busy={busy} error={error} />;
   const visible = filtered.slice(0, galleryCount);
@@ -147,7 +149,7 @@ export default function Admin() {
       </div>
       <div className="admin-filter-row">
         <DevicePicker value={device} onChange={setDevice} label="Filter by device" />
-        <div className="template-filters" role="group" aria-label="Filter designs"><div className="template-category-list">{designCollections.map(item => <button key={item.id} className="template-category" aria-pressed={collection === item.id} onClick={() => setCollection(item.id)}>{item.name}</button>)}</div></div>
+        <div className="template-filters" role="group" aria-label="Filter designs"><div className="template-category-list">{galleryCategories.map(item => <button key={item.id} className="template-category" aria-pressed={collection === item.id} onClick={() => setCollection(item.id)}>{item.name}</button>)}</div></div>
       </div>
       {!catalog ? error ? <button className="button-secondary" onClick={load}>Retry loading library</button> : <div className={`admin-design-grid admin-grid-${device}`} aria-label="Loading designs" aria-busy="true">{Array.from({ length: 10 }, (_, i) => <div key={i} className="gallery-card-skeleton wallpaper-skeleton" aria-hidden="true" />)}</div> : visible.length === 0 ? <p className="admin-empty">No designs available.</p> : <div className={`admin-design-grid admin-grid-${device}`}>{visible.map(template => {
         return <article key={template.id} className="admin-design">
