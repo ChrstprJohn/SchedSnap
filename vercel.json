@@ -3,7 +3,7 @@
   "framework": "vite",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "functions": { "api/analyze.js": { "maxDuration": 60 }, "api/admin.js": { "maxDuration": 60 } },
+  "functions": { "api/analyze.js": { "maxDuration": 60 }, "api/admin.js": { "maxDuration": 60 }, "api/likes.js": { "maxDuration": 60 } },
   "redirects": [
     { "source": "/wallpapers/mobile", "destination": "/services/schedule-wallpaper?device=mobile", "permanent": true },
     { "source": "/wallpapers/tablet", "destination": "/services/schedule-wallpaper?device=tablet", "permanent": true },

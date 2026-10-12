@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowRight, Check, X } from 'lucide-react';
+import { ArrowRight, Check, Heart, X } from 'lucide-react';
+import { Link } from 'react-router';
 import { deviceResolutions, tabletLandscapeResolution, mascotTemplateSchedule, templateSchedule } from '../../assets/templates.js';
 import useInfiniteGallery from '../../lib/useInfiniteGallery.js';
 import { useCatalogStatus } from '../../lib/catalogContext.js';
@@ -10,6 +11,7 @@ import { templateProperties, trackEvent } from '../../lib/analytics.js';
 import DevicePicker from '../../components/DevicePicker.jsx';
 import { isNewTemplate } from '../../utils/templateFreshness.js';
 import { mascotStyles, getMascotStyle } from '../../config/mascotStyles.js';
+import useDesignLikes from '../../lib/useDesignLikes.js';
 
 const previewSchedule = (template) => template.layout === 'mascot' ? mascotTemplateSchedule : templateSchedule;
 const galleryCategories = [...collections, ...mascotStyles.filter(style => style.id !== 'all').map(style => ({ id: `style-${style.id}`, name: style.name }))];
@@ -20,6 +22,7 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
   const designResolution = (item) => device === 'tablet' && item.orientation === 'landscape' ? tabletLandscapeResolution : deviceResolutions[device];
   const [category, setCategory] = useState(() => galleryCategories.some((item) => item.id === initialCategory) ? initialCategory : 'all');
   const [preview, setPreview] = useState(null);
+  const { likes, pending, error: likeError, refresh: refreshLikes, toggle: toggleLike } = useDesignLikes();
   const visibleTemplates = wallpaperTemplates.filter((item) =>
     (category === 'all' || (category.startsWith('style-') ? getMascotStyle(item) === category.slice(6) : (item.collection || 'original') === category)));
   const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(visibleTemplates.length, `${category}:${device}`);
@@ -30,15 +33,24 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
         {galleryCategories.map((collection) => <button type="button" key={collection.id} aria-pressed={category === collection.id} aria-controls="template-gallery" onClick={() => { if (category !== collection.id) { setCategory(collection.id); trackEvent('collection_filtered', { collection: collection.id }); } }} className="template-category">{collection.name}</button>)}
       </div>
     </div>
+    <p className="gallery-like-note">Heart a design you love. Liking saves a cookie to remember your likes. <Link to="/cookies">Learn more</Link></p>
+    {likeError && <div className="gallery-like-error" role="alert"><span>{likeError}</span><button type="button" className="text-link" onClick={refreshLikes} disabled={!!pending}>Retry</button></div>}
     <div id="template-gallery" role="group" aria-label={`${galleryCategories.find((collection) => collection.id === category).name} gallery`} className={`template-grid template-grid-${device}`}>
       {loading && Array.from({ length: 10 }, (_, i) => <div key={`skeleton-${i}`} className="gallery-card-skeleton wallpaper-skeleton" aria-hidden="true" />)}
-      {visibleTemplates.slice(0, galleryCount).map((original) => { const item = { ...customizeWallpaperTemplate(original, settings[original.id]), scheduleTitle, device }; const isNew = isNewTemplate(original); const fullResolution = designResolution(item); const thumbnailResolution = { ...fullResolution, width: thumbnailWidth, height: Math.round(thumbnailWidth * fullResolution.height / fullResolution.width) }; return <button type="button" key={item.id} aria-label={`Preview ${item.name}${isNew ? ', New design' : ''}`} aria-haspopup="dialog" onClick={() => { setPreview(item); trackEvent('template_previewed', templateProperties(item)); }} className="template-option min-w-0 rounded-xl text-left">
+      {visibleTemplates.slice(0, galleryCount).map((original) => { const item = { ...customizeWallpaperTemplate(original, settings[original.id]), scheduleTitle, device }; const isNew = isNewTemplate(original); const fullResolution = designResolution(item); const thumbnailResolution = { ...fullResolution, width: thumbnailWidth, height: Math.round(thumbnailWidth * fullResolution.height / fullResolution.width) }; const vote = likes[item.id]; const openPreview = () => { setPreview(item); trackEvent('template_previewed', templateProperties(item)); }; return <div key={item.id} className="template-card min-w-0">
+        <button type="button" aria-label={`Preview ${item.name}${isNew ? ', New design' : ''}`} aria-haspopup="dialog" onClick={openPreview} className="template-option block w-full rounded-xl text-left">
         <div className={`template-art w-full overflow-hidden rounded-xl ${selectedId === item.id ? 'outline-2 -outline-offset-2 outline-ink' : ''}`}>
           <WallpaperCanvas lazy schedule={schedule?.classes.length ? schedule : previewSchedule(item)} template={item} resolution={thumbnailResolution} className="block h-auto w-full" label={`${item.name} with ${schedule?.classes.length ? 'your' : 'sample'} classes`} />
           {isNew && <span className="template-new-badge">New</span>}
         </div>
-        <div className="mt-2 flex items-center justify-between gap-2"><span className="text-sm font-semibold">{item.name}</span>{selectedId === item.id && <Check className="size-4" aria-label="Selected" />}</div>
-      </button>; })}
+        </button>
+        <div className="template-card-caption">
+          <button type="button" className="template-card-name" aria-haspopup="dialog" onClick={openPreview}>{item.name}{selectedId === item.id && <Check size={16} aria-label="Selected" />}</button>
+          <button type="button" className="template-heart" aria-pressed={vote?.liked || false} aria-label={`${vote?.liked ? 'Unlike' : 'Like'} ${item.name}${vote ? `, ${vote.count} ${vote.count === 1 ? 'like' : 'likes'}` : ', likes unavailable'}`} aria-busy={pending === item.id} disabled={!vote || !!pending} onClick={() => toggleLike(item.id)}>
+            <Heart size={18} fill={vote?.liked ? 'currentColor' : 'none'} aria-hidden="true" /><span aria-hidden="true">{vote ? vote.count.toLocaleString() : '—'}</span>
+          </button>
+        </div>
+      </div>; })}
     </div>
     {loading && <p role="status" className="sr-only">Loading designs…</p>}
     {!loading && error && <p role="alert">{error}</p>}

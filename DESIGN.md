@@ -181,3 +181,5 @@ The mascot release adds 61 transparent cutouts, grouped by visual style: 3D (sof
 - **Don't** bake headings, timetable text or student information into mascot artwork.
 - **Don't** shrink body type below the established fit limits or grow mascots with schedule density.
 - **Don't** restore general-toolbox or future-service marketing.
+
+Public hearts sit below gallery artwork, beside the design title, as independent 44px minimum controls. Outlined hearts use the muted slate token; liked and hovered hearts use rose #be123c with hover surface #fff1f2. Counts and the cookie explanation use 13px text; counts have tabular numerals. The error treatment reuses #783c2e. Pending requests disable hearts until the server confirms; unavailable counts show an em dash and an inline retry action. Existing preview buttons and New badges retain their behavior. Reduced motion disables heart transitions.
