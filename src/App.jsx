@@ -7,6 +7,7 @@ import DeviceGallery from './pages/DeviceGallery.jsx';
 import InAppBrowserBanner from './components/InAppBrowserBanner.jsx';
 import { CatalogProvider } from './lib/catalog.jsx';
 import PageSeo from './components/PageSeo.jsx';
+import CookieBanner from './components/CookieBanner.jsx';
 
 const ScheduleWallpaper = lazy(() => import('./pages/ScheduleWallpaper/Index.jsx'));
 const Admin = lazy(() => import('./pages/Admin.jsx'));
@@ -17,6 +18,8 @@ export default function App() {
   const isAdmin = pathname === '/admin' || pathname.startsWith('/admin/');
 
   useEffect(() => {
+    // The lazy-loaded policy scrolls to its cookie section after it mounts.
+    if (pathname === '/privacy' && hash === '#cookies') return;
     const section = hash === '#designs' ? document.getElementById('designs') : null;
     if (section) section.scrollIntoView({ behavior: 'instant' });
     else window.scrollTo({ top: 0, behavior: 'instant' });
@@ -48,6 +51,7 @@ export default function App() {
         </Suspense>
       </main>
       {!isAdmin && !pathname.startsWith('/services/schedule-wallpaper') && <Footer />}
+      {!isAdmin && <CookieBanner />}
     </div>
   </CatalogProvider>);
 }

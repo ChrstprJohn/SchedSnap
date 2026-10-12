@@ -1,15 +1,29 @@
-import { Link } from 'react-router';
+import { useEffect, useSyncExternalStore } from 'react';
+import { Link, useLocation } from 'react-router';
+import { analyticsEnabled } from '../lib/analytics.js';
+import { getCookieConsent, getServerCookieConsent, setCookieConsent, subscribeCookieConsent } from '../lib/cookieConsent.js';
 import './legal.css';
 
 export default function Legal({ kind }) {
   const privacy = kind === 'privacy';
+  const { hash } = useLocation();
+  const consent = useSyncExternalStore(subscribeCookieConsent, getCookieConsent, getServerCookieConsent);
+  useEffect(() => {
+    if (privacy && hash === '#cookies') document.getElementById('cookies')?.scrollIntoView({ behavior: 'instant' });
+  }, [privacy, hash]);
   return <article className="legal-page">
-    <header><p className="legal-eyebrow">SchedSnap</p><h1>{privacy ? 'Privacy Policy' : 'Terms of Use'}</h1><p className="text-muted">Updated October 11, 2026</p></header>
+    <header><p className="legal-eyebrow">SchedSnap</p><h1>{privacy ? 'Privacy Policy' : 'Terms of Use'}</h1><p className="text-muted">Updated October {privacy ? '12' : '11'}, 2026</p></header>
     <nav aria-label="Legal pages"><Link to="/terms" aria-current={!privacy ? 'page' : undefined}>Terms of Use</Link><Link to="/privacy" aria-current={privacy ? 'page' : undefined}>Privacy Policy</Link></nav>
     {privacy ? <>
       <section><h2>Schedule images and classes</h2><p>Choosing an image prepares a preview in your browser. Clicking Import classes sends the image through our server to Google Gemini to extract schedule details. SchedSnap does not intentionally save uploaded schedule images or extracted classes to its application storage. Your current schedule stays in the page’s memory and is cleared when you reload or leave it.</p><p>Before uploading, crop out names, student IDs, contact details, grades, and other personal or confidential information. You can enter classes manually instead, without sending a schedule image to Gemini.</p></section>
       <section><h2>Google Gemini processing</h2><p>Google handles submitted images and responses under its own terms. For unpaid API services, Google may use inputs and outputs to improve its products, and human reviewers may review them. Paid API services have different data-use rules and may retain data for safety and security purposes. SchedSnap’s statement that it does not save images does not describe Google’s retention.</p><p><a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener noreferrer">Read Google Gemini’s data-use terms</a>.</p></section>
-      <section><h2>Website analytics</h2><p>When configured, we use PostHog to measure page visits and actions such as selecting a template, importing classes, and downloading a wallpaper. Events can include template IDs, device type, class counts, file type and size, and technical information. PostHog may use browser storage or cookies for identifiers. Session recording is disabled, and automatically collected page text and element attributes are masked.</p><p>Our analytics events do not intentionally include uploaded image contents, class names, or room details. Hosting and service providers may also process IP addresses and request metadata for delivery, security, and operation.</p></section>
+      <section><h2>Website analytics</h2><p>When configured and you accept analytics, we use PostHog to measure page visits and actions such as selecting a template, importing classes, and downloading a wallpaper. Events can include template IDs, device type, class counts, file type and size, and technical information. PostHog may use browser storage or cookies for identifiers. Session recording is disabled, and automatically collected page text and element attributes are masked.</p><p>Our analytics events do not intentionally include uploaded image contents, class names, or room details. Hosting and service providers may also process IP addresses and request metadata for delivery, security, and operation.</p></section>
+      <section id="cookies"><h2>Cookies and browser storage</h2><p>Optional PostHog analytics cookies and browser identifiers are enabled only after you accept analytics. Rejecting them leaves the wallpaper creator available. You can change your choice below; rejecting after accepting stops analytics and clears the active analytics identifiers.</p><p>We remember your choice in local storage under <code>schedsnap-cookie-consent-v1</code> so the notice does not appear again in this browser. Clearing site data or using another browser shows it again. If browser storage is blocked, your choice lasts only for the current visit.</p><p>The administrator sign-in uses an essential <code>schedsnap_admin</code> session cookie to secure access to the admin area. It is separate from optional analytics.</p>
+        {analyticsEnabled ? <>
+          <p role="status">{consent === 'granted' ? 'Analytics are allowed in this browser.' : consent === 'denied' ? 'Analytics are rejected in this browser.' : 'Analytics are off until you choose to allow them.'}</p>
+          <div className="legal-cookie-actions"><button type="button" className="button-secondary" aria-pressed={consent === 'denied'} onClick={() => setCookieConsent('denied')}>Reject analytics</button><button type="button" className="button-secondary" aria-pressed={consent === 'granted'} onClick={() => setCookieConsent('granted')}>Accept analytics</button></div>
+        </> : <p>Optional analytics are not configured on this site.</p>}
+      </section>
       <section><h2>Artwork and downloads</h2><p>Cloudinary hosts template artwork and catalog data. Public artwork requests are handled by Cloudinary. Wallpapers are rendered in your browser and downloaded to your device; downloading does not upload the finished wallpaper to our application storage.</p></section>
       <section><h2>Your choices</h2><p>Use manual entry if you do not want to submit an image to Google. Remove unnecessary information before importing, and close or reload the creator to clear its current schedule. Your downloaded files remain on your device until you delete them. Third-party services apply their own privacy and retention policies.</p></section>
     </> : <>

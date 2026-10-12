@@ -2,9 +2,11 @@
 
 ## Entry Point and SDK Lifecycle
 
-[main.jsx](../../src/main.jsx) imports [analytics.js](../../src/lib/analytics.js) before rendering the React application. Initialization runs at module load, outside React components, so React StrictMode does not initialize another client on each effect replay.
+[main.jsx](../../src/main.jsx) imports [analytics.js](../../src/lib/analytics.js) before rendering the React application. The SDK initializes only after cookie consent is granted, immediately if acceptance was remembered from an earlier visit. Initialization remains outside React components, so React StrictMode does not initialize another client on each effect replay.
 
 `analytics.js` reads `VITE_POSTHOG_TOKEN` and `VITE_POSTHOG_HOST`. A missing token skips initialization. The host falls back to `https://us.i.posthog.com`. SDK initialization and custom capture calls are wrapped in error handling so tracking failures do not interrupt the wallpaper creator.
+
+[cookieConsent.js](../../src/lib/cookieConsent.js) stores `granted` or `denied` in `schedsnap-cookie-consent-v1` local storage and synchronizes changes across tabs. Missing or invalid choices leave analytics off. Blocked storage remembers the current visit only. The public cookie notice appears until either choice is made; `/privacy#cookies` provides persistent settings. Withdrawal opts out of SDK capture and persistence, and `before_send` drops events while consent is absent. Reacceptance reuses the initialized client and records the current pageview. The essential admin sign-in cookie is independent.
 
 | Configuration | Current behavior |
 | --- | --- |
@@ -13,8 +15,10 @@
 | `disable_session_recording: true` | No session replay |
 | `mask_all_text: true` | Autocapture omits DOM text |
 | `mask_all_element_attributes: true` | Autocapture omits element attributes |
-| `loaded` callback | Registers `site_name` and `environment` as shared event properties |
-| `before_send` callback | Applies those tags to SDK events, including automatic events |
+| `opt_out_capturing_by_default: true` | Capturing stays off until the consent-aware loaded callback opts in |
+| `opt_out_persistence_by_default: true` | Withdrawal disables and clears SDK-managed analytics persistence |
+| `loaded` callback | Checks current consent, opts in, and registers `site_name` and `environment` |
+| `before_send` callback | Drops events without consent and applies tags to allowed events |
 
 `environment` comes from `import.meta.env.MODE`, with `development` as the fallback. Custom Vite modes therefore use their own mode name, rather than always being tagged `production`.
 
@@ -30,7 +34,7 @@ flowchart LR
     Ingest --> Dashboard["SchedSnap dashboard"]
 ```
 
-Automatic events use the SDK directly. UI handlers call `trackEvent(event, properties)`, which skips capture if analytics is disabled or the visitor has opted out. Delivery uses the browser SDK; this application has no PostHog server-side endpoint or backend analytics SDK.
+Automatic events use the SDK directly after acceptance. UI handlers call `trackEvent(event, properties)`, which skips capture if analytics is disabled, not initialized, or consent is absent. Delivery uses the browser SDK; this application has no PostHog server-side endpoint or backend analytics SDK.
 
 `templateProperties(template)` returns only the design's `template_id` and `collection`. It defaults a missing collection to `original`; it does not serialize the full template or schedule.
 

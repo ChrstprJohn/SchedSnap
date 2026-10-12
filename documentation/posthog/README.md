@@ -36,7 +36,7 @@ The analytics integration works with its own PostHog project. It can also share 
 
 ## Verify Delivery
 
-1. Open the configured application and choose a design.
+1. Open the configured application, accept analytics in the cookie notice (or Cookie settings), and choose a design.
 2. Load sample data, enter classes, or import an image.
 3. Preview and download the wallpaper.
 4. Open PostHog's live events and filter `site_name = schedsnap`.
