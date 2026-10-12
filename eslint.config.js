@@ -7,7 +7,7 @@ export default [
   { ignores: ['dist/**', 'node_modules/**', '.vercel/**'] },
   js.configs.recommended,
   {
-    files: ['**/*.{js,jsx}'],
+    files: ['**/*.{js,jsx,mjs}'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
@@ -15,6 +15,11 @@ export default [
       globals: { ...globals.browser, ...globals.node },
     },
     rules: { 'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }] },
+  },
+  {
+    files: ['**/*.mjs'],
+    // Existing scripts explicitly declare their globals in ESLint comments.
+    rules: { 'no-redeclare': ['error', { builtinGlobals: false }] },
   },
   {
     files: ['src/**/*.{js,jsx}'],

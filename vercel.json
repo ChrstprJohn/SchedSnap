@@ -4,10 +4,23 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "functions": { "api/analyze.js": { "maxDuration": 60 }, "api/admin.js": { "maxDuration": 60 } },
+  "redirects": [
+    { "source": "/wallpapers/mobile", "destination": "/services/schedule-wallpaper?device=mobile", "permanent": true },
+    { "source": "/wallpapers/tablet", "destination": "/services/schedule-wallpaper?device=tablet", "permanent": true },
+    { "source": "/wallpapers/laptop", "destination": "/services/schedule-wallpaper?device=laptop", "permanent": true }
+  ],
+  "headers": [
+    { "source": "/admin/:path*", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] },
+    { "source": "/api/:path*", "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }] },
+    { "source": "/services/schedule-wallpaper/:path+", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
+    { "source": "/app.html", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
+    { "source": "/admin.html", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }
+  ],
   "rewrites": [
-    { "source": "/terms", "destination": "/index.html" },
-    { "source": "/privacy", "destination": "/index.html" },
-    { "source": "/admin/:path*", "destination": "/index.html" },
-    { "source": "/services/:path*", "destination": "/index.html" }
+    { "source": "/terms", "destination": "/terms/index.html" },
+    { "source": "/privacy", "destination": "/privacy/index.html" },
+    { "source": "/services/schedule-wallpaper", "destination": "/services/schedule-wallpaper/index.html" },
+    { "source": "/admin/:path*", "destination": "/admin.html" },
+    { "source": "/services/schedule-wallpaper/:path+", "destination": "/app.html" }
   ]
 }

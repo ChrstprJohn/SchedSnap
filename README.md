@@ -6,7 +6,7 @@ The homepage opens with a static cream hero that fills the first viewport, layer
 
 The flow is **Design → Classes → Download**, guided by page headings and actions. Upload a registration-form image for Gemini extraction, enter classes manually, or try sample data. Review subjects, course codes, days, times and rooms before downloading a 1080 × 2400 PNG. Optional appearance controls edit colors, fonts and day-container styling. Missing or invalid details and schedules that cannot fit block export with a recovery action.
 
-Classes, images and per-design settings remain in browser memory until refresh. There is no account or saved schedule history. Uploaded images are sent to Google for analysis and are not stored by the application. The API key stays server-side. An optional Redis counter stores only the aggregate homepage visit total; it is not configured yet.
+Classes, images and per-design settings remain in browser memory until refresh. There is no account or saved schedule history. Uploaded images are sent to Google for analysis and are not stored by the application. The API key stays server-side. The homepage reads its aggregate visit total from PostHog through a server API when query credentials are configured.
 
 ## Development
 
@@ -19,7 +19,7 @@ npm run dev
 
 Copy `.env.example` to `.env.local` and set `GEMINI_API_KEY` and `GEMINI_MODEL`; an existing `.env` also works. The verified model configuration is `gemini-3.1-flash-lite`. `npm run dev` runs the frontend and local API adapter. `npm run dev:full` uses the Vercel runtime and may require login and project linking. Run servers in the foreground and stop them when finished.
 
-For real visit totals, set server-only `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN` using an existing Redis database, then restart the dev server (or configure those variables for deployment). Until connected, Total visits displays `—`. See [visit-counter setup and counting rules](documentation/VISIT_COUNTER.md).
+For real visit totals, set server-only `POSTHOG_PROJECT_ID` (643035), `POSTHOG_PERSONAL_API_KEY`, and optionally `POSTHOG_API_HOST` in development and deployment. Until connected, Total visits displays `—`. See [PostHog visit-count setup and counting rules](documentation/VISIT_COUNTER.md).
 
 PostHog is enabled when `VITE_POSTHOG_TOKEN` is configured in `.env.local` or the hosting build environment. Use a public project token and `VITE_POSTHOG_HOST` for this application's PostHog project. Events have `site_name: schedsnap` and `environment: production` or `development`; filter both properties on the production dashboard. Pageviews, clicks, design choices, imports, previews and download initiation are tracked. Session recording is disabled, DOM text/attributes are masked, and custom events omit schedule contents and image data. Location analytics use PostHog's approximate GeoIP without a browser permission prompt. See the [independent PostHog documentation](documentation/posthog/README.md) for setup, implementation, events and the dashboard prompt. Rebuild after setting deployment variables.
 
@@ -27,11 +27,14 @@ PostHog is enabled when `VITE_POSTHOG_TOKEN` is configured in `.env.local` or th
 npm run lint
 npm test
 npm run build
+node scripts/check-seo.mjs
 ```
 
-React + Vite, Tailwind CSS, React Router, Lucide, Axios, GSAP, Zod and the Google Gen AI SDK support the application. HTML5 Canvas renders previews and PNG exports. Vercel configuration is present; deployment has not been performed.
+React + Vite, Tailwind CSS, React Router, Lucide, Axios, GSAP, Zod and the Google Gen AI SDK support the application. HTML5 Canvas renders previews and PNG exports. The public deployment uses Vercel.
 
-The current automated suite passes all 36 tests. Lint and production build pass. The latest hero and stats geometry check covers ten phone, landscape, tablet and desktop sizes from 320 to 1920px. The final visual review returned ship with no material fixes. The earlier workflow audit also checked template selection, class editing, appearance controls and branded PNG generation. See [completion evidence](documentation/COMPLETION_AUDIT.md).
+The production build prerenders homepage and legal content, generates public-page metadata, sitemap.xml, and robots.txt, and keeps admin/editor sessions out of search results. See [search visibility setup and content priorities](documentation/SEO.md).
+
+The current automated suite passes all 79 tests. Lint and production build pass. The latest hero and stats geometry check covers ten phone, landscape, tablet and desktop sizes from 320 to 1920px. The final visual review returned ship with no material fixes. The earlier workflow audit also checked template selection, class editing, appearance controls and branded PNG generation. See [completion evidence](documentation/COMPLETION_AUDIT.md).
 
 ## Documentation
 

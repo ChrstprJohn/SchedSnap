@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createVisitsHandler } from '../api/visits.js';
 
-const env = { UPSTASH_REDIS_REST_URL: 'https://counter.example/', UPSTASH_REDIS_REST_TOKEN: 'server-secret' };
+const env = { POSTHOG_PROJECT_ID: '643035', POSTHOG_PERSONAL_API_KEY: 'server-secret' };
 function responseStub() {
   return {
     headers: {},
@@ -11,98 +11,134 @@ function responseStub() {
     json(body) { this.body = body; return this; },
   };
 }
-
-test('visits refuses unsupported methods and disables response caching', async () => {
+const payloadResponse = results => ({ ok: true, json: async () => ({ results }) });
+async function read(handler) {
   const response = responseStub();
-  await createVisitsHandler({ env: {} })({ method: 'DELETE' }, response);
-  assert.equal(response.statusCode, 405);
-  assert.equal(response.headers.Allow, 'GET, POST');
-  assert.equal(response.headers['Cache-Control'], 'no-store');
-});
+  await handler({ method: 'GET' }, response);
+  return response;
+}
 
-test('unconfigured visits are unavailable rather than a fabricated zero', async () => {
-  const response = responseStub();
-  await createVisitsHandler({ env: {}, fetcher: () => assert.fail('Must not contact storage') })({ method: 'POST' }, response);
-  assert.equal(response.statusCode, 503);
-  assert.deepEqual(response.body, { visits: null });
-});
-
-test('POST increments the shared counter while GET only reads it; credentials stay server-side', async () => {
-  const commands = [];
-  const handler = createVisitsHandler({ env, fetcher: async (url, options) => {
-    assert.equal(url, 'https://counter.example');
-    assert.equal(options.headers.Authorization, 'Bearer server-secret');
-    commands.push(JSON.parse(options.body));
-    return { ok: true, json: async () => ({ result: '42' }) };
-  } });
-  for (const method of ['POST', 'GET']) {
+test('visits only supports GET and cannot increment or accept a public query', async () => {
+  const handler = createVisitsHandler({ env, fetcher: () => assert.fail('Must not query') });
+  for (const method of ['POST', 'DELETE', 'PUT']) {
     const response = responseStub();
-    await handler({ method }, response);
-    assert.equal(response.statusCode, 200);
-    assert.deepEqual(response.body, { visits: 42 });
-    assert.ok(!JSON.stringify(response.body).includes(env.UPSTASH_REDIS_REST_TOKEN));
+    await handler({ method, body: { query: 'SELECT * FROM persons' } }, response);
+    assert.equal(response.statusCode, 405);
+    assert.equal(response.headers.Allow, 'GET');
+    assert.equal(response.headers['Cache-Control'], 'no-store');
   }
-  assert.deepEqual(commands, [['INCR', 'schedsnap:visits'], ['GET', 'schedsnap:visits']]);
 });
 
-test('GET returns zero only when configured storage has no counter yet', async () => {
-  const response = responseStub();
-  await createVisitsHandler({ env, fetcher: async () => ({ ok: true, json: async () => ({ result: null }) }) })({ method: 'GET' }, response);
-  assert.deepEqual(response.body, { visits: 0 });
-  assert.equal(response.statusCode, 200);
-});
-
-test('storage outages and malformed counter values stay unavailable without exposing provider errors', async () => {
-  const fetchers = [
-    async () => { throw new Error('server-secret'); },
-    async () => ({ ok: false }),
-    ...[{}, { error: 'server-secret' }, { result: -1 }, { result: 2.5 }, { result: false }, { result: [] }, { result: '' }, { result: 'bad' }, { result: Number.MAX_SAFE_INTEGER + 1 }].map((payload) => async () => ({ ok: true, json: async () => payload })),
-  ];
-  for (const fetcher of fetchers) {
-    const response = responseStub();
-    await createVisitsHandler({ env, fetcher })({ method: 'GET' }, response);
+test('missing or invalid PostHog configuration returns unavailable without making a request', async () => {
+  for (const settings of [{}, { POSTHOG_PROJECT_ID: '643035' }, { ...env, POSTHOG_PROJECT_ID: '123/path' }, { ...env, POSTHOG_API_HOST: 'http://us.posthog.com' }, { ...env, POSTHOG_API_HOST: 'https://user:password@us.posthog.com' }]) {
+    const response = await read(createVisitsHandler({ env: settings, fetcher: () => assert.fail('Must not query') }));
     assert.equal(response.statusCode, 503);
     assert.deepEqual(response.body, { visits: null });
   }
 });
 
-async function browserCounter(t, values, fetcher, suffix) {
-  const descriptor = Object.getOwnPropertyDescriptor(globalThis, 'sessionStorage');
-  Object.defineProperty(globalThis, 'sessionStorage', { configurable: true, value: {
-    getItem: (key) => values.get(key), setItem: (key, value) => values.set(key, value),
-  } });
-  t.after(() => {
-    if (descriptor) Object.defineProperty(globalThis, 'sessionStorage', descriptor);
-    else delete globalThis.sessionStorage;
-  });
-  t.mock.method(globalThis, 'fetch', fetcher);
-  return (await import(`../src/lib/visits.js?test=${suffix}`)).loadVisitCount;
-}
-
-test('StrictMode mounts and repeated navigation share one increment request', async (t) => {
-  let calls = 0;
-  const storage = new Map();
-  const load = await browserCounter(t, storage, async (_url, options) => {
-    calls++;
+test('queries only recorded SchedSnap production sessions and exposes only the aggregate', async () => {
+  const response = await read(createVisitsHandler({ env, fetcher: async (url, options) => {
+    assert.equal(url, 'https://us.posthog.com/api/projects/643035/query/');
+    assert.equal(options.headers.Authorization, 'Bearer server-secret');
     assert.equal(options.method, 'POST');
-    return { ok: true, json: async () => ({ visits: 5 }) };
-  }, 'first');
-  assert.deepEqual(await Promise.all([load(), load(), load()]), [5, 5, 5]);
+    assert.equal(options.redirect, 'error');
+    const { query } = JSON.parse(options.body);
+    assert.equal(query.kind, 'HogQLQuery');
+    assert.match(query.query, /count\(DISTINCT properties\.\$session_id\)/);
+    assert.match(query.query, /event = '\$pageview'/);
+    assert.match(query.query, /properties\.site_name = 'schedsnap'/);
+    assert.match(query.query, /properties\.environment = 'production'/);
+    assert.match(query.query, /properties\.\$session_id IS NOT NULL/);
+    return payloadResponse([['42']]);
+  } }));
+  assert.equal(response.statusCode, 200);
+  assert.deepEqual(response.body, { visits: 42 });
+  assert.match(response.headers['Cache-Control'], /s-maxage=300/);
+  assert.ok(!JSON.stringify(response.body).includes('server-secret'));
+});
+
+test('the EU ingestion host maps to the private EU query host', async () => {
+  const response = await read(createVisitsHandler({ env: { ...env, VITE_POSTHOG_HOST: 'https://eu.i.posthog.com' }, fetcher: async url => {
+    assert.equal(url, 'https://eu.posthog.com/api/projects/643035/query/');
+    return payloadResponse([[0]]);
+  } }));
+  assert.equal(response.statusCode, 200);
+  assert.deepEqual(response.body, { visits: 0 });
+});
+
+test('concurrent requests and cached reads share one query, then refresh after five minutes', async () => {
+  let calls = 0;
+  let clock = 1000;
+  const handler = createVisitsHandler({ env, now: () => clock, fetcher: async () => {
+    calls++;
+    return payloadResponse([[calls]]);
+  } });
+  const responses = await Promise.all([read(handler), read(handler), read(handler)]);
+  assert.deepEqual(responses.map(response => response.body.visits), [1, 1, 1]);
+  assert.equal((await read(handler)).body.visits, 1);
   assert.equal(calls, 1);
-  assert.equal(storage.get('schedsnap:visit-counted'), '1');
+  clock += 300001;
+  assert.equal((await read(handler)).body.visits, 2);
+  assert.equal(calls, 2);
 });
 
-test('refresh in a counted session reads the total without incrementing', async (t) => {
-  const load = await browserCounter(t, new Map([['schedsnap:visit-counted', '1']]), async (_url, options) => {
+test('provider errors, unfinished queries, and malformed totals stay unavailable without secrets', async () => {
+  const fetchers = [
+    async () => { throw new Error('server-secret'); },
+    async () => ({ ok: false }),
+    ...[null, [], [[null]], [[false]], [[-1]], [[2.5]], [['']], [['bad']], [[Number.MAX_SAFE_INTEGER + 1]], [[1, 2]], [[1], [2]]].map(results => async () => payloadResponse(results)),
+    async () => ({ ok: true, json: async () => ({ query_status: { complete: false } }) }),
+    async () => ({ ok: true, json: async () => ({ error: 'server-secret', results: [[3]] }) }),
+  ];
+  for (const fetcher of fetchers) {
+    const response = await read(createVisitsHandler({ env, fetcher }));
+    assert.equal(response.statusCode, 503);
+    assert.deepEqual(response.body, { visits: null });
+    assert.equal(response.headers['Cache-Control'], 'no-store');
+  }
+});
+
+test('failed queries back off for 30 seconds before recovering', async () => {
+  let calls = 0;
+  let clock = 1000;
+  const handler = createVisitsHandler({ env, now: () => clock, fetcher: async () => {
+    calls++;
+    if (calls === 1) throw new Error('Unavailable');
+    return payloadResponse([[9]]);
+  } });
+  assert.equal((await read(handler)).statusCode, 503);
+  assert.equal((await read(handler)).statusCode, 503);
+  assert.equal(calls, 1);
+  clock += 30001;
+  assert.equal((await read(handler)).body.visits, 9);
+});
+
+test('browser StrictMode mounts and navigation share a read-only request', async t => {
+  let calls = 0;
+  t.mock.method(globalThis, 'fetch', async (url, options) => {
+    calls++;
+    assert.equal(url, '/api/visits');
     assert.equal(options.method, 'GET');
-    return { ok: true, json: async () => ({ visits: 6 }) };
-  }, 'refresh');
-  assert.equal(await load(), 6);
+    return { ok: true, json: async () => ({ visits: 5 }) };
+  });
+  const { loadVisitCount } = await import('../src/lib/visits.js?test=sharing');
+  assert.deepEqual(await Promise.all([loadVisitCount(), loadVisitCount(), loadVisitCount()]), [5, 5, 5]);
+  assert.equal(calls, 1);
 });
 
-test('a failed visit request keeps the session uncounted and leaves the number unavailable', async (t) => {
-  const storage = new Map();
-  const load = await browserCounter(t, storage, async () => ({ ok: false }), 'failure');
-  assert.equal(await load(), null);
-  assert.equal(storage.size, 0);
+test('browser failures return unavailable, then retry after the short backoff', async t => {
+  let calls = 0;
+  let clock = 1000;
+  t.mock.method(Date, 'now', () => clock);
+  t.mock.method(globalThis, 'fetch', async () => {
+    calls++;
+    return calls === 1 ? { ok: false } : { ok: true, json: async () => ({ visits: 0 }) };
+  });
+  const { loadVisitCount } = await import('../src/lib/visits.js?test=recovery');
+  assert.equal(await loadVisitCount(), null);
+  assert.equal(await loadVisitCount(), null);
+  assert.equal(calls, 1);
+  clock += 30001;
+  assert.equal(await loadVisitCount(), 0);
 });

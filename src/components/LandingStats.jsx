@@ -1,9 +1,8 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { useTemplates } from '../lib/catalogContext.js';
 import { designCollections } from '../config/collections.js';
+import { loadVisitCount } from '../lib/visits.js';
 
-// Mock display value until the landing page uses live visit totals.
-const MOCK_VISITS = 12000;
 const COLLECTION_COUNT = designCollections.filter(({ id }) => id !== 'all').length;
 const COUNT_DURATION = 1200;
 const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -14,15 +13,22 @@ function subscribeToMotion(onChange) {
   return () => query.removeEventListener('change', onChange);
 }
 
-function StatValue({ display, total }) {
-  return <dd><span aria-hidden="true">{display}+</span><span className="sr-only">{total.toLocaleString('en-US')} or more</span></dd>;
+function StatValue({ display, total, exact = false }) {
+  return <dd><span aria-hidden="true">{display}{exact ? '' : '+'}</span><span className="sr-only">{total.toLocaleString('en-US')}{exact ? ' recorded sessions' : ' or more'}</span></dd>;
 }
 
 export default function LandingStats() {
   const TEMPLATE_COUNT = useTemplates().length;
   const sectionRef = useRef(null);
   const [progress, setProgress] = useState(0);
+  const [visits, setVisits] = useState(null);
   const reducedMotion = useSyncExternalStore(subscribeToMotion, prefersReducedMotion, () => true);
+
+  useEffect(() => {
+    let active = true;
+    loadVisitCount().then(count => { if (active) setVisits(count); });
+    return () => { active = false; };
+  }, []);
 
   useEffect(() => {
     let frame = null;
@@ -59,7 +65,7 @@ export default function LandingStats() {
       <dl className="page-wrap">
         <div className="landing-stat">
           <dt>Total visits</dt>
-          <StatValue display={`${Math.round(MOCK_VISITS * displayedProgress / 1000)}K`} total={MOCK_VISITS} />
+          {visits === null ? <dd><span aria-hidden="true">—</span><span className="sr-only">Visit count unavailable</span></dd> : <StatValue display={new Intl.NumberFormat('en-US', { notation: 'compact', maximumFractionDigits: 1 }).format(Math.round(visits * displayedProgress))} total={visits} exact />}
         </div>
         <div className="landing-stat"><dt>Total templates</dt><StatValue display={Math.round(TEMPLATE_COUNT * displayedProgress)} total={TEMPLATE_COUNT} /></div>
         <div className="landing-stat"><dt>Collections</dt><StatValue display={Math.round(COLLECTION_COUNT * displayedProgress)} total={COLLECTION_COUNT} /></div>

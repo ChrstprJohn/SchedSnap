@@ -6,6 +6,7 @@ import Home from './pages/Home.jsx';
 import DeviceGallery from './pages/DeviceGallery.jsx';
 import InAppBrowserBanner from './components/InAppBrowserBanner.jsx';
 import { CatalogProvider } from './lib/catalog.jsx';
+import PageSeo from './components/PageSeo.jsx';
 
 const ScheduleWallpaper = lazy(() => import('./pages/ScheduleWallpaper/Index.jsx'));
 const Admin = lazy(() => import('./pages/Admin.jsx'));
@@ -13,20 +14,16 @@ const Legal = lazy(() => import('./pages/Legal.jsx'));
 
 export default function App() {
   const { pathname, hash } = useLocation();
-  const isWallpaperEditor = pathname.startsWith('/services/schedule-wallpaper');
   const isAdmin = pathname === '/admin' || pathname.startsWith('/admin/');
 
   useEffect(() => {
     const section = hash === '#designs' ? document.getElementById('designs') : null;
     if (section) section.scrollIntoView({ behavior: 'instant' });
     else window.scrollTo({ top: 0, behavior: 'instant' });
-    if (!isWallpaperEditor) {
-      const galleryTitles = { '/terms': 'Terms of Use', '/privacy': 'Privacy Policy', '/wallpapers/mobile': 'Mobile wallpapers', '/wallpapers/tablet': 'Tablet wallpapers', '/wallpapers/laptop': 'Laptop wallpapers' };
-      document.title = pathname === '/' ? 'SchedSnap — Your class schedule, one glance away' : (galleryTitles[pathname] || 'Page not found') + ' — SchedSnap';
-    }
-  }, [pathname, hash, isWallpaperEditor]);
+  }, [pathname, hash]);
 
   return (<CatalogProvider>
+    <PageSeo />
     <div className="flex min-h-dvh flex-col">
       <a href="#main" className="skip-link">Skip to content</a>
       {!isAdmin && <InAppBrowserBanner />}

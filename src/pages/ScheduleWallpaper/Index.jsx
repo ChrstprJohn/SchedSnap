@@ -95,7 +95,7 @@ export default function ScheduleWallpaper() {
   }
   useEffect(() => () => request.current?.abort(), []);
   useEffect(() => {
-    document.title = template ? `${template.name} — SchedSnap` : 'Choose a design — SchedSnap';
+    if (template) document.title = `${template.name} — SchedSnap`;
   }, [template]);
 
   async function analyze() {

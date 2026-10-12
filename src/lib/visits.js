@@ -1,24 +1,24 @@
-const sessionKey = 'schedsnap:visit-counted';
 let visitRequest;
+let expires = 0;
 
-// Share the request across StrictMode mounts and homepage navigation.
+// PostHog captures visits; this loader only reads the cached aggregate.
 export function loadVisitCount() {
-  if (visitRequest) return visitRequest;
+  if (visitRequest && expires > Date.now()) return visitRequest;
+  expires = Date.now() + 5 * 60 * 1000;
   visitRequest = (async () => {
-    let counted = false;
-    try { counted = sessionStorage.getItem(sessionKey) === '1'; } catch { /* Storage can be disabled. */ }
     try {
       const response = await fetch('/api/visits', {
-        method: counted ? 'GET' : 'POST',
-        cache: 'no-store',
-        signal: AbortSignal.timeout(6000),
+        method: 'GET',
+        signal: AbortSignal.timeout(10000),
       });
-      if (!response.ok) return null;
+      if (!response.ok) throw new Error('Visits unavailable');
       const { visits } = await response.json();
-      if (!Number.isSafeInteger(visits) || visits < 0) return null;
-      try { sessionStorage.setItem(sessionKey, '1'); } catch { /* The shared request still avoids repeat counts. */ }
+      if (!Number.isSafeInteger(visits) || visits < 0) throw new Error('Invalid visits');
       return visits;
-    } catch { return null; }
+    } catch {
+      expires = Date.now() + 30000;
+      return null;
+    }
   })();
   return visitRequest;
 }

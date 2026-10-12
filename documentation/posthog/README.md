@@ -44,9 +44,9 @@ The analytics integration works with its own PostHog project. It can also share 
 
 Ad blockers, capture opt-out, network problems, and an incorrect token/host can prevent delivery. If local data works but deployed data does not, verify the hosting variables and rebuild. Browser-generated `duration_ms` values are milliseconds. A download event confirms initiation, not that the image was saved or installed as wallpaper.
 
-## Separate Homepage Counter
+## Homepage Visit Count
 
-The optional homepage Redis visit counter uses its own API, storage, and counting rules. It is separate from PostHog and may report different totals. See [visit counter documentation](../VISIT_COUNTER.md).
+The homepage reads the all-time number of recorded SchedSnap production sessions from this same PostHog project. The server uses a personal API key to run a fixed aggregate query; only the integer count is public. Results are cached for five minutes. Missing configuration or query failures display an unavailable count. See [visit-count configuration and counting rules](../VISIT_COUNTER.md).
 
 ## References
 

@@ -1,30 +1,33 @@
-# Homepage visit counter
+# PostHog homepage visits
 
-The homepage currently shows the requested mock visits as **12K+**, labeled **Total visits** without a visible sample marker. The three statistics count up on mount over 1.2 seconds, with immediate final values for reduced motion and stable full-number text for screen readers. Templates and collections still derive from actual definitions and display **62+** and **4+**. `LandingStats.jsx` does not call the visit API in this presentation. The server counter and browser loader remain available for a future live integration; the setup and counting rules below describe that preserved implementation.
+“Total visits” reads all-time recorded production sessions from PostHog project **643035**. There is no mock count, Redis increment, browser storage flag, or separate source of visits.
 
 ## Setup
 
-Use an existing Upstash Redis database and set these **server-only** environment variables in `.env.local` for development or the hosting environment for deployment:
+Set these server-only variables in Vercel project settings (Production, and Preview if needed) and in `.env.local` for local API checks:
 
 ```env
-UPSTASH_REDIS_REST_URL=https://your-database.upstash.io
-UPSTASH_REDIS_REST_TOKEN=your-write-capable-token
+POSTHOG_PROJECT_ID=643035
+POSTHOG_PERSONAL_API_KEY=your_personal_api_key
+POSTHOG_API_HOST=https://us.posthog.com
 ```
 
-Restart the foreground dev server after changing environment variables. Never prefix credentials with `VITE_`. A write-capable token is required for increments. Use separate development and production databases to keep testing out of the public total. No account, database or credentials were created by this implementation; connecting storage remains pending.
+Use `https://eu.posthog.com` for EU projects. Without an explicit API host, the server chooses EU when the existing ingestion host is `eu.i.posthog.com`, otherwise US. Self-hosted projects may supply their HTTPS application origin.
 
-`api/visits.js` uses the documented [Upstash Redis REST API](https://upstash.com/docs/redis/features/restapi), sending `INCR` or `GET` for the fixed `schedsnap:visits` key. Atomic increments persist across server restarts and function instances. No new npm dependency is required. The Vite adapter exposes the same endpoint locally, and Vercel serves the root API function on deployment.
+Create the personal API key in PostHog account settings with `query:read` access restricted to this project. Keep it server-side; do not put it in any `VITE_` variable. The public `VITE_POSTHOG_TOKEN` captures events and cannot read analytics. The dashboard embed link also does not provide credentials for this query.
 
-## Counting rules
+Restart local development after changing environment variables, and redeploy after changing Vercel variables. No personal API key was available during implementation, so live PostHog querying remains pending that credential.
 
-- When live counting is connected through `loadVisitCount`, the first homepage visit in a browser tab session sends `POST /api/visits`, incrementing the shared total once.
-- A sessionStorage flag is written only after a successful response. Refreshing the same tab reads the latest count through `GET /api/visits` without incrementing.
-- A shared in-flight request avoids extra increments from React StrictMode and navigation back to home. The displayed total is a snapshot, not a live subscription.
-- If sessionStorage is disabled, refreshes can count as new visits. New tabs can also count separately. This is a session visit total, not a count of unique people, and does not identify or filter bots.
-- Missing credentials, storage outages, invalid responses or timeouts cause the browser loader to return `null`; a live UI must handle the unavailable state. This does not affect the current mock display. A configured empty counter reads as zero; the first increment starts at one.
+## Definition and data flow
 
-Only one aggregate integer is persisted. The counter stores no names, IP addresses, images, classes, schedule data or visitor identifiers. The browser stores only a session flag. Storage credentials and provider errors never enter responses or the frontend bundle. Counting begins when storage is connected; earlier visits cannot be reconstructed.
+`GET /api/visits` runs a fixed HogQL query: count distinct nonempty `$session_id` values in `$pageview` events with `site_name = schedsnap` and `environment = production`. It covers all retained history in the project, not only homepage visits, and matches an all-time session count using those filters. PostHog sessions can include multiple pageviews and tabs; this is not a unique-person count. Events without the required tags/session ID are excluded. Tracking blockers, opt-out, retention, ingestion delays, and the selected dashboard date range can explain differences from other totals.
 
-## Checks
+The server returns only `{ visits: number }`. Credentials, query details, and provider errors stay server-side. Calls are read-only: the browser never increments a counter. Successful results are cached in the function and at Vercel's CDN for five minutes, with stale-while-revalidate allowed for another five minutes. Simultaneous calls in one function share a query. Failures back off for 30 seconds and are not cached at the CDN.
 
-`tests/visits.test.js` covers supported methods, missing configuration, increment/read semantics, empty storage, provider failures, malformed totals, credential secrecy, StrictMode request sharing and refresh deduplication. Live storage verification is pending credentials; tests use mocked provider responses.
+The homepage shows `—` while loading or unavailable and actual zero only after a successful zero result. Loaded counts retain compact formatting and the existing scroll-triggered count animation. Reduced-motion users see the final value immediately; assistive technology receives the exact recorded-session count. The browser shares requests across StrictMode mounts and homepage navigation and refreshes an expired snapshot on a later mount. The counter is not a live subscription.
+
+## Verification
+
+`tests/visits.test.js` checks method restrictions, fixed site/environment/session filtering, credential secrecy, US/EU routing, real zero, malformed payloads, concurrent request sharing, caching, failure backoff, and browser retries. Tests use mocked PostHog responses; a live check requires the configured personal API key.
+
+References: [PostHog API and authentication](https://posthog.com/docs/api), [SQL query endpoint](https://posthog.com/docs/data-warehouse/query), [session definitions](https://posthog.com/docs/data/sessions).
