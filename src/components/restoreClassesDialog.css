@@ -1,0 +1,8 @@
+.restore-classes-dialog { width: min(460px, calc(100% - 32px)); max-height: calc(100dvh - 32px); margin: auto; padding: clamp(20px, 5vw, 28px); overflow: auto; border: 1px solid var(--color-line); border-radius: 16px; background: white; color: var(--color-ink); }
+.restore-classes-dialog::backdrop { background: rgb(15 23 42 / 45%); }
+.restore-classes-dialog h2 { font-size: 22px; font-weight: 650; line-height: 1.3; }
+.restore-classes-dialog p { margin-top: 14px; font-size: 15px; line-height: 1.6; color: var(--color-muted); }
+.restore-classes-dialog .restore-classes-note { font-size: 13px; }
+.restore-classes-actions { display: flex; gap: 12px; margin-top: 24px; }
+.restore-classes-actions button { flex: 1; min-height: 44px; }
+@media (max-width: 380px) { .restore-classes-actions { flex-direction: column-reverse; } }

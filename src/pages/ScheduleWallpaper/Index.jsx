@@ -2,6 +2,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowLeft, ImageUp } from 'lucide-react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router';
 import Toast from '../../components/Toast.jsx';
+import RestoreClassesDialog from '../../components/RestoreClassesDialog.jsx';
+import { readDraft, saveDraft } from '../../lib/scheduleDraft.js';
 import { api } from '../../lib/api.js';
 import { templateProperties, trackEvent } from '../../lib/analytics.js';
 import { deviceResolutions, tabletLandscapeResolution } from '../../assets/templates.js';
@@ -36,6 +38,14 @@ export default function ScheduleWallpaper() {
   const [image, setImage] = useState(null);
   const [importOpen, setImportOpen] = useState(false);
   const [scheduleTitle, setScheduleTitle] = useState('Class Schedule');
+  const [pendingDraft, setPendingDraft] = useState(() => {
+    try { return readDraft(window.sessionStorage); } catch { return null; }
+  });
+  useEffect(() => {
+    if (pendingDraft) return;
+    try { saveDraft(window.sessionStorage, schedule, scheduleTitle); }
+    catch { /* The unload guard remains active when storage is unavailable. */ }
+  }, [schedule, scheduleTitle, pendingDraft]);
   const [canCancelEntry, setCanCancelEntry] = useState(false);
   const [preparingImage, setPreparingImage] = useState(false);
   const [busy, setBusy] = useState(false);
@@ -81,14 +91,18 @@ export default function ScheduleWallpaper() {
     if (step === 'preview') trackEvent('schedule_previewed', properties);
   }, [step, templateId, template, scheduleSource, schedule.classes.length]);
   useEffect(() => {
+    const unsavedAppearance = Object.values(templateSettings).some(settings => Object.keys(settings).length > 0);
     if (!hasUnsavedChanges) return;
     function confirmRefresh(event) {
+      try {
+        if (!pendingDraft && saveDraft(window.sessionStorage, schedule, scheduleTitle) && (schedule.classes.length > 0 || (!image && !unsavedAppearance && scheduleTitle === 'Class Schedule'))) return;
+      } catch { /* Warn before losing edits when storage is unavailable. */ }
       event.preventDefault();
       event.returnValue = '';
     }
     window.addEventListener('beforeunload', confirmRefresh);
     return () => window.removeEventListener('beforeunload', confirmRefresh);
-  }, [hasUnsavedChanges]);
+  }, [hasUnsavedChanges, pendingDraft, image, templateSettings, schedule, scheduleTitle]);
   useEffect(() => {
     heading.current?.focus({ preventScroll: true });
     window.scrollTo({ top: 0, behavior: 'instant' });
@@ -168,6 +182,14 @@ export default function ScheduleWallpaper() {
   </section>;
 
   return <section className="page-wrap wallpaper-flow" data-device={device} style={{ '--wallpaper-ratio': `${resolution.width} / ${resolution.height}`, '--wallpaper-ratio-value': resolution.width / resolution.height }}>
+    {pendingDraft && <RestoreClassesDialog count={pendingDraft.schedule.classes.length} onRestore={() => {
+      setSchedule(pendingDraft.schedule);
+      setScheduleTitle(pendingDraft.title);
+      setScheduleSource('draft');
+      setPendingDraft(null);
+      if (template) navigate(devicePath(`${basePath}/${template.id}`), { replace: true });
+      requestAnimationFrame(() => heading.current?.focus());
+    }} onDiscard={() => { setPendingDraft(null); requestAnimationFrame(() => heading.current?.focus()); }} />}
     {step === 'design' ? <Link to="/" className="tool-back"><ArrowLeft className="size-4" aria-hidden="true" />Back</Link> : <button type="button" className="tool-back" onClick={goBack}><ArrowLeft className="size-4" aria-hidden="true" />{step === 'classes' && importOpen && schedule.classes.length ? 'Back to classes' : 'Back'}</button>}
     <header className="wallpaper-flow-header" data-importing={choosingImage}>
       <h1 tabIndex={-1} ref={heading}>{step === 'design' ? 'Choose a design' : step === 'classes' ? 'Add your classes' : 'Your wallpaper'}</h1>
