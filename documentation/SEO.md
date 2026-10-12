@@ -1,6 +1,6 @@
 # Search visibility
 
-The canonical site is `https://schedsnap.vercel.app`. Change `SITE_URL` in `shared/seo.js` when moving to a custom domain, and redirect the old domain to the new one.
+The canonical site is `https://schedsnap.chrbuilds.dev`. Change `SITE_URL` in `shared/seo.js` when moving to a custom domain, and redirect the old domain to the new one.
 
 ## Implemented
 
@@ -14,7 +14,7 @@ The canonical site is `https://schedsnap.vercel.app`. Change `SITE_URL` in `shar
 
 ## After deployment
 
-1. Open `https://schedsnap.vercel.app/sitemap.xml` and confirm XML appears.
+1. Open `https://schedsnap.chrbuilds.dev/sitemap.xml` and confirm XML appears.
 2. In the verified Search Console property, open **Sitemaps**, submit `sitemap.xml`, and check its status.
 3. Inspect the homepage and creator URL. Use **Test live URL** and review the rendered HTML before requesting indexing.
 4. Monitor the Pages report for crawl/indexing problems and the Performance report for impressions, queries, and clicks.

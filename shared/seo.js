@@ -1,4 +1,4 @@
-export const SITE_URL = 'https://schedsnap.vercel.app';
+export const SITE_URL = 'https://schedsnap.chrbuilds.dev';
 export const CREATOR_PATH = '/services/schedule-wallpaper';
 export const SEO_PAGES = {
   '/': {
