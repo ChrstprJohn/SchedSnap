@@ -13,6 +13,7 @@ import AdminSignIn from './components/AdminSignIn.jsx';
 const ScheduleWallpaper = lazy(() => import('./pages/ScheduleWallpaper/Index.jsx'));
 const Admin = lazy(() => import('./pages/Admin.jsx'));
 const Legal = lazy(() => import('./pages/Legal.jsx'));
+const ScheduleGuide = lazy(() => import('./pages/ScheduleGuide.jsx'));
 
 export default function App() {
   const { pathname, hash } = useLocation();
@@ -33,6 +34,7 @@ export default function App() {
       <main id="main" className="flex-1" tabIndex={-1}>
         <Suspense fallback={isAdmin ? <AdminSignIn checking /> : <p className="page-wrap py-20" role="status">Opening wallpaper creator…</p>}>
           <Routes>
+            <Route path="/guides/class-schedule-wallpaper" element={<ScheduleGuide />} />
             <Route path="/admin/*" element={<Admin />} />
             <Route path="/terms" element={<Legal kind="terms" />} />
             <Route path="/privacy" element={<Legal kind="privacy" />} />

@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import Home from '../pages/Home.jsx';
 import Legal from '../pages/Legal.jsx';
+import ScheduleGuide from '../pages/ScheduleGuide.jsx';
 import ScheduleWallpaper from '../pages/ScheduleWallpaper/Index.jsx';
 import { CatalogProvider } from '../lib/catalog.jsx';
 
@@ -18,7 +19,7 @@ export function renderPage(path) {
           <a href="#main" className="skip-link">Skip to content</a>
           <Navbar />
           <main id="main" className="flex-1" tabIndex={-1}>
-            {path === '/' ? <Home /> : creator ? <ScheduleWallpaper /> : <Legal kind={path.slice(1)} />}
+            {path === '/' ? <Home /> : creator ? <ScheduleWallpaper /> : path === '/guides/class-schedule-wallpaper' ? <ScheduleGuide /> : <Legal kind={path.slice(1)} />}
           </main>
           {!creator && <Footer />}
         </div>

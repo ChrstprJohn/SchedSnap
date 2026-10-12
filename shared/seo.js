@@ -1,6 +1,10 @@
 export const SITE_URL = 'https://schedsnap.chrbuilds.dev';
 export const CREATOR_PATH = '/services/schedule-wallpaper';
 export const SEO_PAGES = {
+  '/guides/class-schedule-wallpaper': {
+    title: 'How to Make a Class Schedule Wallpaper — SchedSnap',
+    description: 'Learn how to choose a wallpaper design, enter or import classes, check your timetable, and download a schedule wallpaper for your phone, tablet, or laptop.',
+  },
   '/': {
     title: 'SchedSnap — Class Schedule Wallpaper Maker',
     description: 'SchedSnap is a class schedule wallpaper maker for students. Choose a design, add classes, and download a PNG for your phone, tablet, or laptop.',

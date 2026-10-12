@@ -17,6 +17,7 @@
     { "source": "/admin.html", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }
   ],
   "rewrites": [
+    { "source": "/guides/class-schedule-wallpaper", "destination": "/guides/class-schedule-wallpaper/index.html" },
     { "source": "/terms", "destination": "/terms/index.html" },
     { "source": "/privacy", "destination": "/privacy/index.html" },
     { "source": "/cookies", "destination": "/cookies/index.html" },

@@ -6,7 +6,7 @@ The canonical site is `https://schedsnap.chrbuilds.dev`. Change `SITE_URL` in `s
 
 - `npm run build` renders the existing homepage and legal components into HTML. The browser still mounts the interactive app. The creator initially shows its normal catalog-loading state; its designs continue to load from the API.
 - Public pages have distinct titles/descriptions, preferred canonical URLs, and Open Graph/Twitter sharing metadata. The homepage supplies factual `WebSite` JSON-LD without ratings, fabricated reviews, or unsupported rich-result claims.
-- The build generates `dist/sitemap.xml` and `dist/robots.txt`. The sitemap lists the homepage, creator, terms, and privacy pages, without editor sessions, device filters, admin, or API URLs.
+- The build generates `dist/sitemap.xml` and `dist/robots.txt`. The sitemap lists six canonical pages: homepage, creator, schedule wallpaper guide, terms, privacy, and cookies. Editor sessions, device filters, redirects, admin, and API URLs are excluded.
 - Vercel serves separate HTML for each public page. Admin/editor routes receive `noindex` metadata and HTTP headers. Crawling stays allowed so search engines can read those rules; these rules are not access controls.
 - The old mobile/tablet/laptop gallery aliases permanently redirect to the creator's matching device filter.
 - `PageSeo` updates metadata on client navigation. Editor sessions keep the main creator canonical, and unknown client routes receive `noindex`.
@@ -19,6 +19,7 @@ The canonical site is `https://schedsnap.chrbuilds.dev`. Change `SITE_URL` in `s
 3. Inspect the homepage and creator URL. Use **Test live URL** and review the rendered HTML before requesting indexing.
 4. Monitor the Pages report for crawl/indexing problems and the Performance report for impressions, queries, and clicks.
 5. After favicon or site-name updates, request homepage indexing and allow Google time to recrawl. Browser tabs can show the new icon before Google Search updates its stored presentation. The existing homepage WebSite schema and og:site_name identify the site as SchedSnap; Google chooses the displayed site name automatically.
+6. Submit the sitemap and indexing requests in the `schedsnap.chrbuilds.dev` property. Keep the old Vercel property for monitoring, keep its permanent redirects, and use Settings > Change of address to report the move if the tool is available for that property.
 
 ## AI search visibility
 
