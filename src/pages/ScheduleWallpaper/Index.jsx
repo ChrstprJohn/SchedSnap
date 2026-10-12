@@ -39,6 +39,21 @@ export default function ScheduleWallpaper() {
   const [canCancelEntry, setCanCancelEntry] = useState(false);
   const [preparingImage, setPreparingImage] = useState(false);
   const [busy, setBusy] = useState(false);
+  const [importUsage, setImportUsage] = useState(null);
+  const [usageUnavailable, setUsageUnavailable] = useState(false);
+  useEffect(() => {
+    let active = true;
+    async function refreshUsage() {
+      try {
+        const { data } = await api.get('/analyze');
+        if (active) { setImportUsage(data.usage); setUsageUnavailable(false); }
+      } catch { if (active) setUsageUnavailable(true); }
+    }
+    refreshUsage();
+    window.addEventListener('focus', refreshUsage);
+    const timer = window.setInterval(refreshUsage, 60_000);
+    return () => { active = false; window.removeEventListener('focus', refreshUsage); window.clearInterval(timer); };
+  }, []);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   const request = useRef(null);
@@ -110,6 +125,7 @@ export default function ScheduleWallpaper() {
     trackEvent('schedule_import_started', properties);
     try {
       const { data } = await api.post('/analyze', { image: image.image, mimeType: image.mimeType }, { signal: controller.signal });
+      if (data.usage) setImportUsage(data.usage);
       if (controller.signal.aborted) { trackEvent('schedule_import_cancelled', properties); return; }
       const checked = scheduleSchema.safeParse(data.schedule);
       if (!checked.success) throw new Error('The schedule response was incomplete. Try another image.');
@@ -119,6 +135,7 @@ export default function ScheduleWallpaper() {
       setSuccess(`${checked.data.classes.length} ${checked.data.classes.length === 1 ? 'class' : 'classes'} found. Check the details.`);
       return true;
     } catch (failure) {
+      if (failure.response?.data?.usage) setImportUsage(failure.response.data.usage);
       if (controller.signal.aborted) trackEvent('schedule_import_cancelled', properties);
       else trackEvent('schedule_import_failed', { ...properties, http_status: failure.response?.status || 0, error_type: failure.code === 'ECONNABORTED' ? 'timeout' : failure.response ? 'server_error' : 'invalid_response_or_network', duration_ms: Math.round(performance.now() - started) });
       if (!controller.signal.aborted) setError(failure.response?.data?.error?.message || (failure.code === 'ECONNABORTED' ? 'The request took too long. Try again or enter your classes manually.' : failure.message || 'Could not read the image. Try again.'));
@@ -171,7 +188,7 @@ export default function ScheduleWallpaper() {
       onCancelImport={cancelImport}
       imagePickerRef={imagePicker} preparingImage={preparingImage} onPreparingImageChange={setPreparingImage}
       onImage={(next) => { setImage(next); dismissNotification(); }}
-      onError={(message) => { setError(message); setSuccess(''); }} onAnalyze={analyze}
+      onError={(message) => { setError(message); setSuccess(''); }} onAnalyze={analyze} importUsage={importUsage} usageUnavailable={usageUnavailable}
       onSample={() => { setSchedule(structuredClone(sampleSchedule)); setScheduleSource('sample'); trackEvent('sample_schedule_loaded', templateProperties(template)); dismissNotification(); }}
     /> : <>
       <TemplateGallery device={device} onDeviceChange={changeDevice} initialCategory={search.get('collection')} selectedId={selectedId} settings={templateSettings} schedule={schedule} scheduleTitle={scheduleTitle} resolution={resolution} onSelect={selectTemplate} />

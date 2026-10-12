@@ -1,5 +1,7 @@
 # SchedSnap
 
+AI imports are limited to 10 attempts per public IP per Philippine calendar day. Each valid import attempt counts once, including failed/cancelled attempts and regardless of Gemini key fallback. `GET /api/analyze` returns usage without consuming an attempt. Configure `UPSTASH_REDIS_REST_URL`, `UPSTASH_REDIS_REST_TOKEN`, and `IMPORT_LIMIT_SECRET` (a private random secret) in Vercel before deploying. Atomic Redis reservations enforce the limit across instances; production blocks AI imports when storage is unavailable. Local development uses memory when Redis is unconfigured. Shared Wi-Fi shares the allowance; changing networks changes the allowance. Manual entry remains unlimited.
+
 A class schedule wallpaper creator for university students. Choose a look, add your classes, and save a phone wallpaper that keeps your week one glance away.
 
 The homepage opens with a static cream hero that fills the first viewport, layering a transparent phone foreground over a separate generated ambient background. Three stats below it show total pageviews, the actual template count and collection count, followed by four pure-white collection showcases: Little Friends, Mascots, Patterns and Originals. Each Create wallpaper action opens that collection in the template picker. The library contains 62 designs: 20 Chiikawa-inspired Little Friends editions, 20 animal mascots, six editable patterns and 16 originals. The existing `/services/schedule-wallpaper` URL remains compatible.
@@ -17,7 +19,7 @@ npm install
 npm run dev
 ```
 
-Copy `.env.example` to `.env.local` and set `GEMINI_API_KEY` and `GEMINI_MODEL`; an existing `.env` also works. The verified model configuration is `gemini-3.1-flash-lite`. `npm run dev` runs the frontend and local API adapter. `npm run dev:full` uses the Vercel runtime and may require login and project linking. Run servers in the foreground and stop them when finished.
+Copy `.env.example` to `.env.local` and set `GEMINI_API_KEY` and `GEMINI_MODEL`; an existing `.env` also works. The verified model configuration is `gemini-3.1-flash-lite`. Set server-only `GEMINI_API_KEYS=key1,key2,key3` in development and Vercel to configure any number of keys. Each import starts with the first key and advances on quota/rate-limit errors (429), trying each unique key at most once within a shared 45-second request budget. Blank entries and duplicate keys are ignored. Existing `GEMINI_API_KEY` and `GEMINI_FALLBACK_API_KEY` remain supported and come before the list when set. All keys use the same model; other errors stop rotation. Keys in the same Google Cloud project share quota; the backup project must have available quota and access to the configured model. Restart development or redeploy after changing keys. `npm run dev` runs the frontend and local API adapter. `npm run dev:full` uses the Vercel runtime and may require login and project linking. Run servers in the foreground and stop them when finished.
 
 For real pageview totals, set server-only `POSTHOG_PROJECT_ID` (643035), `POSTHOG_PERSONAL_API_KEY`, and optionally `POSTHOG_API_HOST` in development and deployment. Until connected, Total pageviews displays `—`. See [PostHog visit-count setup and counting rules](documentation/VISIT_COUNTER.md).
 

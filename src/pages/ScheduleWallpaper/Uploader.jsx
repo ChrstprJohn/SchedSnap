@@ -5,7 +5,8 @@ import { prepareImage } from '../../utils/imageHelpers.js';
 import { trackEvent } from '../../lib/analytics.js';
 import WallpaperViewer from './WallpaperViewer.jsx';
 
-export default function Uploader({ image, onImage, onAnalyze, busy, onError, onManual, onSample, hasSchedule, pickerRef, onPreparing, onCancel }) {
+export default function Uploader({ image, onImage, onAnalyze, busy, importUsage, usageUnavailable, onError, onManual, onSample, hasSchedule, pickerRef, onPreparing, onCancel }) {
+  const importBlocked = !importUsage || usageUnavailable || importUsage.used >= importUsage.limit;
   const input = useRef(null);
   const uploadButton = useRef(null);
   const requestId = useRef(0);
@@ -38,11 +39,12 @@ export default function Uploader({ image, onImage, onAnalyze, busy, onError, onM
   };
 
   return <section id="schedule-import" aria-label="Import your schedule" className="schedule-import">
+    <p id="daily-import-usage" className="upload-privacy" role="status">{usageUnavailable ? 'AI imports are temporarily unavailable. You can enter classes manually.' : importUsage ? `${importUsage.used}/${importUsage.limit} AI imports used today · Shared by this internet connection. Resets at midnight Philippine time.${importUsage.used >= importUsage.limit ? ' Daily limit reached. You can enter classes manually.' : ''}` : 'Checking daily AI import allowance…'}</p>
     <input ref={input} type="file" accept="image/jpeg,image/png,image/webp" className="sr-only" tabIndex={-1} aria-label="Schedule image" onChange={(event) => { choose(event.target.files[0]); event.target.value = ''; }} disabled={busy || preparing} />
     {image ? <>
       <button type="button" className={`schedule-image-preview ${dragging ? 'is-dragging' : ''}`} aria-label="Enlarge uploaded schedule" aria-haspopup="dialog" onClick={() => setEnlarged(true)} {...dropEvents}><img src={image.preview} alt="Selected schedule" onLoad={(event) => setImageSize({ width: event.currentTarget.naturalWidth, height: event.currentTarget.naturalHeight })} /><span className="preview-enlarge" aria-hidden="true"><Maximize2 size={16} /></span></button>
       {hasSchedule && <p id="import-replacement-warning" className="import-replacement-warning"><TriangleAlert size={16} aria-hidden="true" />Importing replaces your current classes and edits.</p>}
-      <div className="import-footer"><p id="upload-data-disclosure" className="upload-privacy">Processed by Gemini. Not stored here. <Link to="/terms" target="_blank" rel="noopener noreferrer">Terms</Link> · <Link to="/privacy" target="_blank" rel="noopener noreferrer">Privacy</Link></p><div className="import-submit-actions"><button type="button" className="button-secondary import-cancel" disabled={preparing} onClick={onCancel}>Cancel</button><button type="button" disabled={busy || preparing} aria-describedby={hasSchedule ? 'upload-data-disclosure import-replacement-warning' : 'upload-data-disclosure'} onClick={onAnalyze} className="button-primary">{busy && <LoaderCircle size={16} className="motion-safe:animate-spin" aria-hidden="true" />}{busy ? 'Importing…' : 'Import classes'}</button></div></div>
+      <div className="import-footer"><p id="upload-data-disclosure" className="upload-privacy">Processed by Gemini. Not stored here. <Link to="/terms" target="_blank" rel="noopener noreferrer">Terms</Link> · <Link to="/privacy" target="_blank" rel="noopener noreferrer">Privacy</Link></p><div className="import-submit-actions"><button type="button" className="button-secondary import-cancel" disabled={preparing} onClick={onCancel}>Cancel</button><button type="button" disabled={busy || preparing || importBlocked} aria-describedby={hasSchedule ? 'daily-import-usage upload-data-disclosure import-replacement-warning' : 'daily-import-usage upload-data-disclosure'} onClick={onAnalyze} className="button-primary">{busy && <LoaderCircle size={16} className="motion-safe:animate-spin" aria-hidden="true" />}{busy ? 'Importing…' : 'Import classes'}</button></div></div>
     </> : <>
       <button ref={uploadButton} type="button" className={`schedule-dropzone ${dragging ? 'is-dragging' : ''}`} disabled={busy || preparing} onClick={() => input.current.click()} {...dropEvents}>
         <ImageUp size={32} strokeWidth={1.5} aria-hidden="true" />

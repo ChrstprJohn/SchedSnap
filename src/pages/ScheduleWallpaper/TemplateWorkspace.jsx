@@ -13,7 +13,7 @@ import Editor from './Editor.jsx';
 import Uploader from './Uploader.jsx';
 import Toast from '../../components/Toast.jsx';
 
-export default function TemplateWorkspace({ step, onStep, template, schedule, resolution, scheduleSource, onScheduleSourceChange, onScheduleChange, onAppearanceChange, onResetAppearance, image, onImage, busy, onError, onAnalyze, onSample, importOpen, onImportOpenChange: setImportOpen, onTitleChange, canCancelEntry, onCancelEntryChange: setCanCancelEntry, onCancelImport, imagePickerRef: imagePicker, preparingImage, onPreparingImageChange: setPreparingImage }) {
+export default function TemplateWorkspace({ step, onStep, template, schedule, resolution, scheduleSource, onScheduleSourceChange, onScheduleChange, onAppearanceChange, onResetAppearance, image, onImage, busy, onError, onAnalyze, importUsage, usageUnavailable, onSample, importOpen, onImportOpenChange: setImportOpen, onTitleChange, canCancelEntry, onCancelEntryChange: setCanCancelEntry, onCancelImport, imagePickerRef: imagePicker, preparingImage, onPreparingImageChange: setPreparingImage }) {
   const [enlarged, setEnlarged] = useState(false);
   const [showClock, setShowClock] = useState(true);
   const [customizing, setCustomizing] = useState(false);
@@ -126,7 +126,7 @@ export default function TemplateWorkspace({ step, onStep, template, schedule, re
   return <>
     {step === 'classes' ? <div className="classes-layout">
       <section className="classes-content" aria-label="Add and review classes">
-        <div hidden={hasSchedule && !importOpen}><Uploader pickerRef={imagePicker} image={image} onImage={(next) => { onImage(next); setImportOpen(true); }} onPreparing={setPreparingImage} onCancel={onCancelImport} onAnalyze={async () => { if (await onAnalyze()) { setCanCancelEntry(false); setImportOpen(false); setReviewVersion((value) => value + 1); } }} busy={busy} onError={onError} hasSchedule={hasSchedule} onManual={enterManually} onSample={() => { onSample(); setCanCancelEntry(true); setImportOpen(false); }} /></div>
+        <div hidden={hasSchedule && !importOpen}><Uploader importUsage={importUsage} usageUnavailable={usageUnavailable} pickerRef={imagePicker} image={image} onImage={(next) => { onImage(next); setImportOpen(true); }} onPreparing={setPreparingImage} onCancel={onCancelImport} onAnalyze={async () => { if (await onAnalyze()) { setCanCancelEntry(false); setImportOpen(false); setReviewVersion((value) => value + 1); } }} busy={busy} onError={onError} hasSchedule={hasSchedule} onManual={enterManually} onSample={() => { onSample(); setCanCancelEntry(true); setImportOpen(false); }} /></div>
         {hasSchedule && <div hidden={importOpen}>
           <fieldset disabled={busy} aria-busy={busy} className="flow-class-editor"><Editor validationRef={classEditor} key={reviewVersion} schedule={schedule} scheduleTitle={template.scheduleTitle} onTitleChange={onTitleChange} onChange={onScheduleChange} onImport={() => imagePicker.current?.openPicker()} preparingImage={preparingImage} /></fieldset>
           {!!warnings.length && <details className="review-notes"><summary className="disclosure-summary">Review notes ({warnings.length})<ChevronDown className="disclosure-icon size-4" aria-hidden="true" /></summary><ul>{warnings.map((warning, index) => <li key={index}>{warning}</li>)}</ul></details>}
