@@ -5,7 +5,7 @@ import { localApiPlugin } from './development/apiPlugin.js';
 import { replaceSeoHead } from './scripts/seo-html.mjs';
 
 export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, process.cwd(), ['GEMINI_', 'UPSTASH_', 'ADMIN_', 'CLOUDINARY_', 'POSTHOG_']);
+  const env = loadEnv(mode, process.cwd(), ['GEMINI_', 'ADMIN_', 'CLOUDINARY_', 'POSTHOG_', 'VITE_POSTHOG_HOST']);
   return {
     plugins: [react(), tailwindcss(), localApiPlugin({ ...env, ...process.env }), {
       name: 'page-seo',
