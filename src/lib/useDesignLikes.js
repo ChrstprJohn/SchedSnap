@@ -3,20 +3,23 @@ import { api } from './api.js';
 
 export default function useDesignLikes() {
   const [likes, setLikes] = useState({});
-  const [pending, setPending] = useState('');
+  const [pending, setPending] = useState(0);
   const [error, setError] = useState('');
   const identified = useRef(false);
-  const busy = useRef(false);
+  const initializing = useRef(null);
+  const saving = useRef(new Map());
+  const currentLikes = useRef({});
   const version = useRef(0);
   const mounted = useRef(false);
 
   const refresh = useCallback(async () => {
-    if (busy.current) return;
+    if (saving.current.size) return;
     const revision = ++version.current;
     try {
       const { data } = await api.get('/likes', { timeout: 15000 });
       if (!mounted.current || version.current !== revision) return;
       identified.current = data.identified;
+      currentLikes.current = data.likes;
       setLikes(data.likes);
       setError('');
     } catch {
@@ -32,22 +35,42 @@ export default function useDesignLikes() {
   }, [refresh]);
 
   async function toggle(id) {
-    if (busy.current || !likes[id]) return;
-    busy.current = true;
+    const previous = currentLikes.current[id];
+    if (!previous) return;
     version.current++;
-    setPending(id);
+    const existing = saving.current.get(id);
+    const entry = existing || { confirmed: previous, desired: !previous.liked };
+    entry.desired = !previous.liked;
+    saving.current.set(id, entry);
+    const publish = value => {
+      currentLikes.current = { ...currentLikes.current, [id]: value };
+      if (mounted.current) setLikes(currentLikes.current);
+    };
+    publish({ count: previous.count + (entry.desired ? 1 : -1), liked: entry.desired });
     setError('');
+    if (existing) return;
+    setPending(saving.current.size);
     try {
-      if (!identified.current) await api.post('/likes', { action: 'identify' }, { timeout: 15000 });
-      const { data } = await api.post('/likes', { id, liked: !likes[id].liked }, { timeout: 15000 });
-      identified.current = true;
-      if (mounted.current) setLikes(previous => ({ ...previous, [id]: { count: data.count, liked: data.liked } }));
+      if (!identified.current) {
+        // Share cookie creation when several different hearts are clicked at once.
+        initializing.current ||= api.post('/likes', { action: 'identify' }, { timeout: 15000 });
+        const initialization = initializing.current;
+        try { await initialization; identified.current = true; }
+        finally { if (initializing.current === initialization) initializing.current = null; }
+      }
+      // Keep each design's requests ordered and send the latest click state.
+      while (entry.confirmed.liked !== entry.desired) {
+        const { data } = await api.post('/likes', { id, liked: entry.desired }, { timeout: 15000 });
+        entry.confirmed = { count: data.count, liked: data.liked };
+        publish({ count: data.count + Number(entry.desired) - Number(data.liked), liked: entry.desired });
+      }
     } catch (failure) {
       if (failure.response?.status === 428) identified.current = false;
+      publish(entry.confirmed);
       if (mounted.current) setError(failure.response?.data?.error?.message || 'Your like could not save. Try again.');
     } finally {
-      busy.current = false;
-      if (mounted.current) setPending('');
+      saving.current.delete(id);
+      if (mounted.current) setPending(saving.current.size);
     }
   }
 

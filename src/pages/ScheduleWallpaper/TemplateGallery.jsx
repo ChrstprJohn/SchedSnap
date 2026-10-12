@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, Check, Heart, X } from 'lucide-react';
-import { Link } from 'react-router';
 import { deviceResolutions, tabletLandscapeResolution, mascotTemplateSchedule, templateSchedule } from '../../assets/templates.js';
 import useInfiniteGallery from '../../lib/useInfiniteGallery.js';
 import { useCatalogStatus } from '../../lib/catalogContext.js';
@@ -33,7 +32,6 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
         {galleryCategories.map((collection) => <button type="button" key={collection.id} aria-pressed={category === collection.id} aria-controls="template-gallery" onClick={() => { if (category !== collection.id) { setCategory(collection.id); trackEvent('collection_filtered', { collection: collection.id }); } }} className="template-category">{collection.name}</button>)}
       </div>
     </div>
-    <p className="gallery-like-note">Heart a design you love. Liking saves a cookie to remember your likes. <Link to="/cookies">Learn more</Link></p>
     {likeError && <div className="gallery-like-error" role="alert"><span>{likeError}</span><button type="button" className="text-link" onClick={refreshLikes} disabled={!!pending}>Retry</button></div>}
     <div id="template-gallery" role="group" aria-label={`${galleryCategories.find((collection) => collection.id === category).name} gallery`} className={`template-grid template-grid-${device}`}>
       {loading && Array.from({ length: 10 }, (_, i) => <div key={`skeleton-${i}`} className="gallery-card-skeleton wallpaper-skeleton" aria-hidden="true" />)}
@@ -46,7 +44,7 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
         </button>
         <div className="template-card-caption">
           <button type="button" className="template-card-name" aria-haspopup="dialog" onClick={openPreview}>{item.name}{selectedId === item.id && <Check size={16} aria-label="Selected" />}</button>
-          <button type="button" className="template-heart" aria-pressed={vote?.liked || false} aria-label={`${vote?.liked ? 'Unlike' : 'Like'} ${item.name}${vote ? `, ${vote.count} ${vote.count === 1 ? 'like' : 'likes'}` : ', likes unavailable'}`} aria-busy={pending === item.id} disabled={!vote || !!pending} onClick={() => toggleLike(item.id)}>
+          <button type="button" className="template-heart" aria-pressed={vote?.liked || false} aria-label={`${vote?.liked ? 'Unlike' : 'Like'} ${item.name}${vote ? `, ${vote.count} ${vote.count === 1 ? 'like' : 'likes'}` : ', likes unavailable'}`} disabled={!vote} onClick={() => toggleLike(item.id)}>
             <Heart size={18} fill={vote?.liked ? 'currentColor' : 'none'} aria-hidden="true" /><span aria-hidden="true">{vote ? vote.count.toLocaleString() : '—'}</span>
           </button>
         </div>
