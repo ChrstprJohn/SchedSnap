@@ -5,6 +5,7 @@ import Toast from '../../components/Toast.jsx';
 import RestoreClassesDialog from '../../components/RestoreClassesDialog.jsx';
 import { readDraft, saveDraft } from '../../lib/scheduleDraft.js';
 import { api } from '../../lib/api.js';
+import { loadImportUsage, rememberImportUsage } from '../../lib/importUsage.js';
 import { templateProperties, trackEvent } from '../../lib/analytics.js';
 import { deviceResolutions, tabletLandscapeResolution } from '../../assets/templates.js';
 import { useTemplates, useCatalogStatus } from '../../lib/catalogContext.js';
@@ -51,7 +52,6 @@ export default function ScheduleWallpaper() {
   const [busy, setBusy] = useState(false);
   const [importUsage, setImportUsage] = useState(null);
   const [usageUnavailable, setUsageUnavailable] = useState(false);
-  const usageRead = useRef(null);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   const request = useRef(null);
@@ -73,19 +73,16 @@ export default function ScheduleWallpaper() {
     if (!showingImport) return;
     let active = true;
     let checking = false;
-    let checkedAt = 0;
     let resetTimer;
     async function refreshUsage() {
-      if (checking || document.hidden || Date.now() - checkedAt < 60000) return;
+      if (checking || document.hidden) return;
       checking = true;
       try {
-        usageRead.current ||= api.get('/analyze').finally(() => { usageRead.current = null; });
-        const { data } = await usageRead.current;
-        checkedAt = Date.now();
+        const usage = await loadImportUsage();
         if (active) {
-          setImportUsage(data.usage); setUsageUnavailable(false);
+          setImportUsage(usage); setUsageUnavailable(false);
           window.clearTimeout(resetTimer);
-          resetTimer = window.setTimeout(() => { checkedAt = 0; refreshUsage(); }, Math.max(1000, data.usage.resetsAt - Date.now()));
+          resetTimer = window.setTimeout(refreshUsage, Math.max(1000, usage.resetsAt - Date.now()));
         }
       } catch { if (active) setUsageUnavailable(true); }
       finally { checking = false; }
@@ -153,7 +150,7 @@ export default function ScheduleWallpaper() {
     trackEvent('schedule_import_started', properties);
     try {
       const { data } = await api.post('/analyze', { image: image.image, mimeType: image.mimeType }, { signal: controller.signal });
-      if (data.usage) setImportUsage(data.usage);
+      if (data.usage) { rememberImportUsage(data.usage); setImportUsage(data.usage); setUsageUnavailable(false); }
       if (controller.signal.aborted) { trackEvent('schedule_import_cancelled', properties); return; }
       const checked = scheduleSchema.safeParse(data.schedule);
       if (!checked.success) throw new Error('The schedule response was incomplete. Try another image.');
@@ -163,7 +160,8 @@ export default function ScheduleWallpaper() {
       setSuccess(`${checked.data.classes.length} ${checked.data.classes.length === 1 ? 'class' : 'classes'} found. Check the details.`);
       return true;
     } catch (failure) {
-      if (failure.response?.data?.usage) setImportUsage(failure.response.data.usage);
+      if (failure.response?.data?.usage) { rememberImportUsage(failure.response.data.usage); setImportUsage(failure.response.data.usage); setUsageUnavailable(false); }
+      else rememberImportUsage(null);
       if (controller.signal.aborted) trackEvent('schedule_import_cancelled', properties);
       else trackEvent('schedule_import_failed', { ...properties, http_status: failure.response?.status || 0, error_type: failure.code === 'ECONNABORTED' ? 'timeout' : failure.response ? 'server_error' : 'invalid_response_or_network', duration_ms: Math.round(performance.now() - started) });
       if (!controller.signal.aborted) setError(failure.response?.data?.error?.message || (failure.code === 'ECONNABORTED' ? 'The request took too long. Try again or enter your classes manually.' : failure.message || 'Could not read the image. Try again.'));

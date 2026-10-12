@@ -7,7 +7,7 @@ const OFFSET = 8 * 3600000;
 const reserveScript = `local count = tonumber(redis.call('GET', KEYS[1]) or '0')
 if count >= 10 then return {count, 0} end
 count = redis.call('INCR', KEYS[1])
-redis.call('EXPIREAT', KEYS[1], ARGV[1])
+if count == 1 then redis.call('EXPIREAT', KEYS[1], ARGV[1]) end
 return {count, 1}`;
 
 export function createImportUsage({ env = process.env, fetcher = fetch, now = () => Date.now() } = {}) {

@@ -38,6 +38,7 @@ test('Redis reserves atomically with daily expiry and stores a hash rather than 
   assert.equal(result.allowed, false);
   assert.equal(command[0], 'EVAL');
   assert.ok(command[1].includes('EXPIREAT'));
+  assert.match(command[1], /if count == 1 then redis.call\('EXPIREAT'/);
   assert.ok(!JSON.stringify(command).includes('203.0.113.1'));
   assert.equal(command[4], String(result.resetsAt / 1000));
 });
