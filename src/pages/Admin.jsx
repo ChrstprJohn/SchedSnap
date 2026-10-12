@@ -13,6 +13,7 @@ import './admin.css';
 import BrandMark from '../components/BrandMark.jsx';
 import DevicePicker from '../components/DevicePicker.jsx';
 import useInfiniteGallery from '../lib/useInfiniteGallery.js';
+import AdminSignIn from '../components/AdminSignIn.jsx';
 
 async function request(action, body) {
   const response = await fetch(`/api/admin?action=${action}`, { method: body ? 'POST' : 'GET', headers: body ? { 'Content-Type': 'application/json' } : {}, body: body ? JSON.stringify(body) : undefined, signal: AbortSignal.timeout(60000) });
@@ -119,17 +120,7 @@ export default function Admin() {
   const normalizedSearch = searchQuery.trim().toLowerCase();
   const filtered = catalog?.templates.filter(t => (collection === 'all' || (t.collection || 'original') === collection) && (!normalizedSearch || [t.name, t.description, t.collection].some(value => value?.toLowerCase().includes(normalizedSearch)))) || [];
   const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(filtered.length, `${collection}:${device}:${normalizedSearch}:${Boolean(editor)}`);
-  if (authenticated === null) return <div className="admin-login" role="status">Opening admin…</div>;
-  if (!authenticated) return <div className="admin-auth-shell"><section className="admin-login" aria-labelledby="admin-login-title">
-    <Link to="/" className="site-brand"><BrandMark /> SchedSnap</Link>
-    <h1 id="admin-login-title">Admin sign in</h1>
-    <form onSubmit={login}>
-      <label htmlFor="admin-password">Password</label>
-      <input id="admin-password" className="field-input" type="password" autoComplete="current-password" value={password} onChange={e => setPassword(e.target.value)} required maxLength={256} />
-      {error && <p className="admin-error" role="alert">{error}</p>}
-      <button className="button-primary" disabled={busy || !password}>{busy ? 'Signing in…' : 'Sign in'}</button>
-    </form>
-  </section></div>;
+  if (authenticated === null || !authenticated) return <AdminSignIn checking={authenticated === null} password={password} onPasswordChange={setPassword} onSubmit={login} busy={busy} error={error} />;
   const visible = filtered.slice(0, galleryCount);
   function openLibrary() {
     if (editorDirty && !window.confirm('Discard your unsaved changes?')) return;

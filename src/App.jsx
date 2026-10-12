@@ -8,6 +8,7 @@ import InAppBrowserBanner from './components/InAppBrowserBanner.jsx';
 import { CatalogProvider } from './lib/catalog.jsx';
 import PageSeo from './components/PageSeo.jsx';
 import CookieBanner from './components/CookieBanner.jsx';
+import AdminSignIn from './components/AdminSignIn.jsx';
 
 const ScheduleWallpaper = lazy(() => import('./pages/ScheduleWallpaper/Index.jsx'));
 const Admin = lazy(() => import('./pages/Admin.jsx'));
@@ -30,7 +31,7 @@ export default function App() {
       {!isAdmin && <InAppBrowserBanner />}
       {!isAdmin && <Navbar />}
       <main id="main" className="flex-1" tabIndex={-1}>
-        <Suspense fallback={<p className="page-wrap py-20" role="status">Opening wallpaper creator…</p>}>
+        <Suspense fallback={isAdmin ? <AdminSignIn checking /> : <p className="page-wrap py-20" role="status">Opening wallpaper creator…</p>}>
           <Routes>
             <Route path="/admin/*" element={<Admin />} />
             <Route path="/terms" element={<Legal kind="terms" />} />

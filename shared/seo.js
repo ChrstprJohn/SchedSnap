@@ -40,6 +40,7 @@ export const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'SchedSnap',
+  alternateName: 'Sched Snap',
   url: `${SITE_URL}/`,
   description: SEO_PAGES['/'].description,
 };

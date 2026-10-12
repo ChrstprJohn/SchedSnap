@@ -14,6 +14,9 @@ for (const path of Object.keys(SEO_PAGES)) {
   assert.ok(!html.includes('rel="icon" type="image/webp"'), path);
   if (path !== CREATOR_PATH) assert.ok(html.includes('<h1'), path);
   if (path === '/') {
+    const schema = JSON.parse(html.match(/id="website-schema" type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
+    assert.equal(schema.alternateName, 'Sched Snap');
+    assert.ok(html.includes('SchedSnap (Sched Snap) turns your class schedule'));
     assert.ok(html.includes('Your schedule.'));
     assert.ok(html.includes('href="/services/schedule-wallpaper"'));
     assert.ok(html.includes('How it works'));

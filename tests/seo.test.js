@@ -35,5 +35,7 @@ test('static route HTML replaces homepage metadata instead of accumulating dupli
   assert.ok(!creator.includes('website-schema'));
   const schema = JSON.parse(home.match(/type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
   assert.equal(schema['@type'], 'WebSite');
+  assert.equal(schema.name, 'SchedSnap');
+  assert.equal(schema.alternateName, 'Sched Snap');
   assert.equal(schema.url, `${SITE_URL}/`);
 });

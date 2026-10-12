@@ -26,7 +26,7 @@
 .admin-filter-row .template-filters { min-width: 0; flex: 1; margin-bottom: 0; }
 .admin-content .device-filter-tabs { margin-bottom: 12px; }
 .admin-content .device-filter-tab { margin-bottom: 0; }
-.admin-title-row h1, .admin-login h1 { font-size: clamp(26px, 3vw, 34px); font-weight: 650; letter-spacing: -.03em; line-height: 1.2; }
+.admin-title-row h1 { font-size: clamp(26px, 3vw, 34px); font-weight: 650; letter-spacing: -.03em; line-height: 1.2; }
 .admin-title-row p { margin-top: 10px; color: var(--color-muted); max-width: 65ch; }
 .admin-library-tools { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; flex-wrap: wrap; }
 .admin-design-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 18px 16px; }
@@ -71,31 +71,6 @@
 .admin-toast-close:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
 @keyframes admin-toast-in { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
 .admin-empty { padding: 48px 0; color: var(--color-muted); }
-.admin-login { width: min(100% - 40px, 380px); margin: max(64px, 12vh) auto; }
-.admin-login h1 { margin-top: 48px; }
-.admin-login > p { margin: 12px 0 28px; color: var(--color-muted); }
-.admin-login form { display: grid; gap: 12px; margin-bottom: 24px; }
-.admin-login form label { font-size: 14px; font-weight: 600; }
-.admin-login form .button-primary { margin-top: 8px; }
-.admin-auth-shell { min-height: 100svh; display: grid; place-items: center; padding: 32px 20px; background: var(--color-paper); box-sizing: border-box; }
-.admin-auth-shell .admin-login { width: 100%; max-width: 420px; margin: 0; padding: 32px; border: 1px solid var(--color-line); border-radius: 16px; background: var(--color-paper); box-sizing: border-box; }
-.admin-auth-shell .site-brand { font-size: 23px; }
-.admin-auth-shell .admin-login h1 { margin-top: 32px; font-size: 28px; }
-.admin-auth-shell .admin-login > p { font-size: 14px; line-height: 1.6; margin: 10px 0 24px; }
-.admin-auth-shell .field-input { width: 100%; min-height: 48px; font-size: 16px; }
-.admin-auth-shell .button-primary { width: 100%; min-height: 48px; }
-.admin-auth-shell .admin-login > .text-link { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; }
-.admin-auth-shell .admin-login { max-width: 360px; padding: 28px; border-radius: 12px; }
-.admin-auth-shell .site-brand { font-size: 21px; }
-.admin-auth-shell .brand-mark { width: 28px; height: 28px; }
-.admin-auth-shell .admin-login h1 { font-size: 24px; margin: 24px 0 20px; }
-.admin-auth-shell .admin-login form { gap: 8px; margin-bottom: 0; }
-.admin-auth-shell .admin-login form .button-primary { margin-top: 8px; }
-@media (max-width: 480px) {
-  .admin-auth-shell { padding: 24px 16px; }
-  .admin-auth-shell .admin-login { padding: 24px; border-radius: 12px; }
-  .admin-auth-shell .admin-login h1 { font-size: 24px; margin-top: 24px; }
-}
 .admin-back { display: inline-flex; gap: 8px; align-items: center; min-height: 44px; margin-bottom: 16px; }
 .admin-save-actions { display: flex; gap: 12px; flex-shrink: 0; }
 .admin-editor { display: grid; grid-template-columns: minmax(320px, 420px) minmax(0, 1fr); gap: 56px; align-items: start; }
@@ -294,13 +269,6 @@
   .admin-topbar-profile summary { width: 44px; height: 44px; padding: 0; }
 }
 
-.admin-auth-shell .admin-login { max-width: 340px; padding: 24px; }
-.admin-auth-shell .site-brand { font-size: 20px; }
-.admin-auth-shell .brand-mark { width: 26px; height: 26px; }
-.admin-auth-shell .admin-login h1 { font-size: 20px; margin: 20px 0 16px; }
-.admin-auth-shell .admin-login form label { font-size: 13px; }
-.admin-auth-shell .field-input, .admin-auth-shell .button-primary { min-height: 44px; }
-@media (max-width: 480px) { .admin-auth-shell .admin-login { padding: 22px; } }
 
 .admin-editor-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; margin-bottom: 20px; border-bottom: 1px solid var(--color-line); }
 .admin-editor-toolbar .admin-back { margin: 0; text-decoration: none; }

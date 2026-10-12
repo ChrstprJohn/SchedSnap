@@ -1,0 +1,40 @@
+.admin-signin-shell { min-height: 100dvh; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); background: var(--color-paper); }
+.admin-signin-panel { display: grid; grid-template-rows: 76px 1fr; min-width: 0; }
+.admin-signin-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-inline: 32px; border-bottom: 1px solid var(--color-line); }
+.admin-signin-brand { font-size: 24px; gap: 10px; }
+.admin-signin-brand .brand-mark { width: 30px; height: 30px; }
+.admin-signin-form { width: min(380px, calc(100% - 64px)); margin: auto; padding: 64px 0; }
+.admin-signin-form h1 { font-size: 32px; font-weight: 650; letter-spacing: -.03em; line-height: 1.2; }
+.admin-signin-form > p { margin: 12px 0 32px; color: var(--color-muted); font-size: 16px; line-height: 1.6; }
+.admin-signin-form form { display: grid; gap: 12px; }
+.admin-signin-form label { font-size: 14px; font-weight: 600; }
+.admin-signin-password { position: relative; }
+.admin-signin-password .field-input { width: 100%; min-height: 52px; padding-right: 52px; font-size: 16px; }
+.admin-signin-reveal { position: absolute; right: 4px; top: 4px; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 8px; color: var(--color-muted); }
+.admin-signin-reveal:hover:not(:disabled) { background: var(--color-soft); color: var(--color-ink); }
+.admin-signin-reveal:focus-visible, .admin-signin-back:focus-visible { outline: 2px solid var(--color-ink); outline-offset: 3px; }
+.admin-signin-form .button-primary { width: 100%; min-height: 52px; margin-top: 12px; }
+.admin-signin-error { color: var(--color-error, #923b2d); font-size: 14px; line-height: 1.6; overflow-wrap: anywhere; }
+.admin-signin-back { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; flex-shrink: 0; font-size: 14px; color: var(--color-muted); }
+.admin-signin-back:hover { color: var(--color-ink); }
+.admin-signin-art { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 0; background: var(--color-soft); padding: 48px 24px; text-align: center; }
+.admin-signin-art img { display: block; width: 100%; max-width: 620px; height: auto; }
+.admin-signin-art h2 { margin-top: 24px; font-size: 24px; font-weight: 600; letter-spacing: -.025em; line-height: 1.25; }
+.admin-signin-art p { margin-top: 12px; color: var(--color-muted); line-height: 1.6; }
+@media (max-width: 767px) {
+  .admin-signin-shell { grid-template-columns: minmax(0, 1fr); }
+  .admin-signin-panel { grid-template-rows: 56px 1fr; }
+  .admin-signin-nav { padding-inline: 20px; gap: 8px; }
+  .admin-signin-brand { font-size: 20px; gap: 8px; }
+  .admin-signin-brand .brand-mark { width: 26px; height: 26px; }
+  .admin-signin-back { font-size: 12px; gap: 6px; }
+  .admin-signin-form { width: min(380px, calc(100% - 48px)); }
+  .admin-signin-form { padding: 56px 0; }
+  .admin-signin-form h1 { font-size: 28px; }
+  .admin-signin-art { display: none; }
+}
+@media (max-height: 540px) and (min-width: 768px) {
+  .admin-signin-form { padding: 32px 0; }
+  .admin-signin-art { padding: 24px; }
+  .admin-signin-art img { max-width: 340px; }
+}
