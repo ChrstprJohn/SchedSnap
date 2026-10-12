@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import { existsSync } from 'node:fs';
+import { createCatalogStore } from '../server/catalogStore.js';
+import { galleryCategories } from '../src/config/collections.js';
+for (const file of ['.env.local', '.env']) if (existsSync(file)) process.loadEnvFile(file);
+const store = createCatalogStore(process.env);
+const catalog = await store.read(true);
+if (catalog.revision === 'seed') throw new Error('No existing Cloudinary catalog found.');
+const latest = await store.read(true);
+assert.equal(latest.revision, catalog.revision, 'Catalog changed; retry the update.');
+const saved = await store.write({ ...latest, categories: galleryCategories });
+const verified = await createCatalogStore(process.env).read(true);
+assert.equal(verified.revision, saved.revision);
+assert.deepEqual(verified.templates, catalog.templates, 'Design records must remain unchanged.');
+assert.deepEqual(verified.categories, galleryCategories);
+console.log(`Verified Cloudinary catalog: ${verified.templates.length} unchanged designs, ${verified.categories.length - 1} category filters plus All designs.`);

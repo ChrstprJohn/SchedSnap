@@ -1,3 +1,5 @@
+import { mascotStyles, getMascotStyle } from './mascotStyles.js';
+
 export const designCollections = [
   { id: 'all', name: 'All designs' },
   { id: 'scenic', name: 'Illustrated' },
@@ -23,3 +25,12 @@ export const scenicFamilies = [
   { id: 'blossom-clouds', name: 'Blossom clouds' },
   { id: 'color-contours', name: 'Colorful paper contours' },
 ];
+
+// Styles are gallery filters; stored designs retain their parent collection.
+export const galleryCategories = [...designCollections, ...mascotStyles.filter(style => style.id !== 'all').map(style => ({ id: `style-${style.id}`, name: style.name }))];
+
+export function matchesGalleryCategory(template, category) {
+  return category === 'all' || (category.startsWith('style-')
+    ? getMascotStyle(template) === category.slice(6)
+    : getTemplateCollection(template) === category);
+}

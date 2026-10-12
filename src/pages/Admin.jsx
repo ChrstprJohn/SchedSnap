@@ -3,8 +3,8 @@ import { Link, useSearchParams } from 'react-router';
 import { Plus, LogOut, ArrowLeft, X, Menu, CheckCircle2, Pencil, Eye, EyeOff, Trash2, RotateCcw, MoreVertical, UserRound, LayoutDashboard, PanelsTopLeft, ExternalLink, ChevronLeft, ChevronRight, ChevronDown, Search, Save, Send, Minus, Maximize2 } from 'lucide-react';
 import { deviceResolutions, tabletLandscapeResolution } from '../assets/templates.js';
 import { sampleSchedule } from '../assets/sampleSchedule.js';
-import { designCollections } from '../config/collections.js';
-import { getMascotStyle, mascotStyles } from '../config/mascotStyles.js';
+import { designCollections, galleryCategories, matchesGalleryCategory } from '../config/collections.js';
+
 import { WallpaperCanvas } from './ScheduleWallpaper/CanvasPreview.jsx';
 import TemplateControls from './ScheduleWallpaper/TemplateControls.jsx';
 import WallpaperViewer from './ScheduleWallpaper/WallpaperViewer.jsx';
@@ -23,7 +23,6 @@ async function request(action, body) {
   return data;
 }
 const blankTemplate = () => ({ id: '', name: '', description: '', collection: 'scenic', status: 'draft', background: '#eef2f6', ink: '#203e36', muted: '#486258', surface: '#ffffff', line: '#a5b9a7', fontFamily: 'DM Sans Variable', containerStyle: 'glass' });
-const galleryCategories = [...designCollections, ...mascotStyles.filter(style => style.id !== 'all').map(style => ({ id: `style-${style.id}`, name: style.name }))];
 export default function Admin() {
   const [authenticated, setAuthenticated] = useState(null);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
@@ -120,7 +119,7 @@ export default function Admin() {
     finally { setBusy(false); }
   }
   const normalizedSearch = searchQuery.trim().toLowerCase();
-  const filtered = catalog?.templates.filter(t => (collection === 'all' || (collection.startsWith('style-') ? getMascotStyle(t) === collection.slice(6) : (t.collection || 'original') === collection)) && (!normalizedSearch || [t.name, t.description, t.collection].some(value => value?.toLowerCase().includes(normalizedSearch)))) || [];
+  const filtered = catalog?.templates.filter(t => matchesGalleryCategory(t, collection) && (!normalizedSearch || [t.name, t.description, t.collection].some(value => value?.toLowerCase().includes(normalizedSearch)))) || [];
   const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(filtered.length, `${collection}:${device}:${normalizedSearch}:${Boolean(editor)}`);
   if (authenticated === null || !authenticated) return <AdminSignIn checking={authenticated === null} password={password} onPasswordChange={setPassword} onSubmit={login} busy={busy} error={error} />;
   const visible = filtered.slice(0, galleryCount);

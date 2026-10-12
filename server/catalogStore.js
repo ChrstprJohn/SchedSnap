@@ -1,8 +1,9 @@
 import { createHash, randomUUID } from 'node:crypto';
 import { wallpaperTemplates } from '../src/assets/templates.js';
+import { galleryCategories } from '../src/config/collections.js';
 
 const catalogId = 'schedsnap/admin/catalog.json';
-export const seedCatalog = () => ({ revision: 'seed', templates: wallpaperTemplates.map(t => ({ ...t, status: 'published' })) });
+export const seedCatalog = () => ({ revision: 'seed', categories: galleryCategories, templates: wallpaperTemplates.map(t => ({ ...t, status: 'published' })) });
 export function cloudConfigured(env) {
   return /^[a-z0-9_-]+$/i.test(env.CLOUDINARY_CLOUD_NAME || '') && Boolean(env.CLOUDINARY_API_KEY && env.CLOUDINARY_API_SECRET);
 }
@@ -41,7 +42,7 @@ export function createCatalogStore(env, fetcher = fetch) {
       return structuredClone(catalog);
     },
     async write(catalog) {
-      const next = { ...catalog, revision: randomUUID() };
+      const next = { ...catalog, categories: galleryCategories, revision: randomUUID() };
       const params = { public_id: catalogId, type: 'authenticated', overwrite: 'true', invalidate: 'true', timestamp: String(Math.floor(Date.now() / 1000)) };
       const body = new FormData();
       for (const [key, value] of Object.entries(params)) body.set(key, value);

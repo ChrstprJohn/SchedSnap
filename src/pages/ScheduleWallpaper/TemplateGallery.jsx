@@ -5,15 +5,13 @@ import useInfiniteGallery from '../../lib/useInfiniteGallery.js';
 import { useCatalogStatus } from '../../lib/catalogContext.js';
 import { WallpaperCanvas } from './CanvasPreview.jsx';
 import { customizeWallpaperTemplate } from '../../utils/wallpaperTheme.js';
-import { designCollections as collections } from '../../config/collections.js';
+import { galleryCategories, matchesGalleryCategory } from '../../config/collections.js';
 import { templateProperties, trackEvent } from '../../lib/analytics.js';
 import DevicePicker from '../../components/DevicePicker.jsx';
 import { isNewTemplate } from '../../utils/templateFreshness.js';
-import { mascotStyles, getMascotStyle } from '../../config/mascotStyles.js';
 import useDesignLikes from '../../lib/useDesignLikes.js';
 
 const previewSchedule = (template) => template.layout === 'mascot' ? mascotTemplateSchedule : templateSchedule;
-const galleryCategories = [...collections, ...mascotStyles.filter(style => style.id !== 'all').map(style => ({ id: `style-${style.id}`, name: style.name }))];
 
 export default function TemplateGallery({ selectedId, settings = {}, schedule, scheduleTitle = 'Class Schedule', onSelect, initialCategory = 'all', device = 'mobile', onDeviceChange, showDeviceFilter = true }) {
   const { templates: wallpaperTemplates, loading, error } = useCatalogStatus();
@@ -23,7 +21,7 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
   const [preview, setPreview] = useState(null);
   const { likes, pending, error: likeError, refresh: refreshLikes, toggle: toggleLike } = useDesignLikes();
   const visibleTemplates = wallpaperTemplates.filter((item) =>
-    (category === 'all' || (category.startsWith('style-') ? getMascotStyle(item) === category.slice(6) : (item.collection || 'original') === category)));
+    matchesGalleryCategory(item, category));
   const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(visibleTemplates.length, `${category}:${device}`);
   return <div>
     <div role="group" aria-label="Filter designs" className="template-filters">
