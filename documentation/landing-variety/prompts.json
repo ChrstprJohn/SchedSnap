@@ -1,0 +1,42 @@
+{
+  "mode": "built-in ImageGen edit",
+  "jobs": [
+    {
+      "key": "mobile-featured",
+      "target": "mobile/little-friends",
+      "refs": [
+        "landing-variety/mobile-featured-1"
+      ],
+      "mapping": "The single iPhone screen must show image 2, the illustrated island postcard wallpaper.",
+      "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the already approved Apple device mockup. The single iPhone screen must show image 2, the illustrated island postcard wallpaper. Subsequent images are exact exported wallpaper screenshots from SchedSnap, supporting screen insert references. Replace ONLY the pixels within the existing display opening(s) with the complete screenshot(s), accurately perspective fitted. Faithfully preserve the supplied illustration, character shape, color palette, artwork positioning and proportional scale, typography, title, five weekday schedule rows and all text. Do not invent or reinterpret any wallpaper. Keep image 1's device hardware EXACTLY: Apple design, metallic chassis, black bezels, dynamic island/camera/notch, side buttons, keyboard/trackpad where present, thickness, device count, pose, tilt, orientation, position, overlaps, scale, perspective, lighting, shadows, framing, white background and whitespace. Only screen contents change. No new or repositioned device, no new objects, no background redesign. Same original canvas dimensions and composition."
+    },
+    {
+      "key": "tablet-featured",
+      "target": "tablet/little-friends",
+      "refs": [
+        "landing-variety/tablet-featured-1",
+        "landing-variety/tablet-featured-2"
+      ],
+      "mapping": "The BACK LEFT PORTRAIT iPad screen must show image 2 (yellow soft bee). The FRONT RIGHT LANDSCAPE iPad screen must show image 3 (purple moonlit blossoms).",
+      "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the already approved Apple device mockup. The BACK LEFT PORTRAIT iPad screen must show image 2 (yellow soft bee). The FRONT RIGHT LANDSCAPE iPad screen must show image 3 (purple moonlit blossoms). Subsequent images are exact exported wallpaper screenshots from SchedSnap, supporting screen insert references. Replace ONLY the pixels within the existing display opening(s) with the complete screenshot(s), accurately perspective fitted. Faithfully preserve the supplied illustration, character shape, color palette, artwork positioning and proportional scale, typography, title, five weekday schedule rows and all text. Do not invent or reinterpret any wallpaper. Keep image 1's device hardware EXACTLY: Apple design, metallic chassis, black bezels, dynamic island/camera/notch, side buttons, keyboard/trackpad where present, thickness, device count, pose, tilt, orientation, position, overlaps, scale, perspective, lighting, shadows, framing, white background and whitespace. Only screen contents change. No new or repositioned device, no new objects, no background redesign. Same original canvas dimensions and composition."
+    },
+    {
+      "key": "laptop-featured",
+      "target": "laptop/little-friends",
+      "refs": [
+        "landing-variety/laptop-featured-1"
+      ],
+      "mapping": "The single frontal MacBook screen must show image 2 (warm illustrated cozy city).",
+      "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the already approved Apple device mockup. The single frontal MacBook screen must show image 2 (warm illustrated cozy city). Subsequent images are exact exported wallpaper screenshots from SchedSnap, supporting screen insert references. Replace ONLY the pixels within the existing display opening(s) with the complete screenshot(s), accurately perspective fitted. Faithfully preserve the supplied illustration, character shape, color palette, artwork positioning and proportional scale, typography, title, five weekday schedule rows and all text. Do not invent or reinterpret any wallpaper. Keep image 1's device hardware EXACTLY: Apple design, metallic chassis, black bezels, dynamic island/camera/notch, side buttons, keyboard/trackpad where present, thickness, device count, pose, tilt, orientation, position, overlaps, scale, perspective, lighting, shadows, framing, white background and whitespace. Only screen contents change. No new or repositioned device, no new objects, no background redesign. Same original canvas dimensions and composition."
+    },
+    {
+      "key": "laptop-pattern",
+      "target": "laptop/pattern",
+      "refs": [
+        "landing-screen-references/laptop-pattern-2"
+      ],
+      "mapping": "The single angled MacBook screen must show image 2 (blue blueprint grid).",
+      "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the already approved Apple device mockup. The single angled MacBook screen must show image 2 (blue blueprint grid). Subsequent images are exact exported wallpaper screenshots from SchedSnap, supporting screen insert references. Replace ONLY the pixels within the existing display opening(s) with the complete screenshot(s), accurately perspective fitted. Faithfully preserve the supplied illustration, character shape, color palette, artwork positioning and proportional scale, typography, title, five weekday schedule rows and all text. Do not invent or reinterpret any wallpaper. Keep image 1's device hardware EXACTLY: Apple design, metallic chassis, black bezels, dynamic island/camera/notch, side buttons, keyboard/trackpad where present, thickness, device count, pose, tilt, orientation, position, overlaps, scale, perspective, lighting, shadows, framing, white background and whitespace. Only screen contents change. No new or repositioned device, no new objects, no background redesign. Same original canvas dimensions and composition."
+    }
+  ]
+}

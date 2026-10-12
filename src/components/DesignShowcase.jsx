@@ -17,7 +17,7 @@ function subscribeToVisibility(onChange) {
 }
 
 const collections = [
-  { id: 'little-friends', name: 'Little Friends', description: 'Soft colors. Familiar little faces.', artwork: 'a cream bunny on a pastel pink schedule' },
+  { id: 'featured', name: 'Illustrated and scenic styles' },
   { id: 'mascot', name: 'Mascots', description: 'A study buddy for your screen.', artwork: 'a panda mascot on an ivory schedule' },
   { id: 'pattern', name: 'Patterns', description: 'Checks, dots, and stripes.', artwork: 'a peach checkerboard schedule' },
 ];
@@ -26,7 +26,7 @@ const devices = [
   { id: 'tablet', title: 'For tablet.', label: 'Tablet', description: 'Your favorite styles, in portrait and landscape.' },
   { id: 'laptop', title: 'For laptop.', label: 'Laptop', description: 'A wider view of your week, with room to make it yours.' },
 ];
-const assetPath = (device, collection) => `/images/collections/refreshed/${device}/${collection}.png`;
+const assetPath = (device, collection) => `/images/collections/refreshed/${device}/${device === 'laptop' && collection === 'pattern' ? 'pattern-blue' : collection}.png`;
 
 function DeviceShowcase({ device }) {
   const slides = collections;
