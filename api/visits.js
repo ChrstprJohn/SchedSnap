@@ -1,12 +1,10 @@
 const CACHE_MS = 5 * 60 * 1000;
 const RETRY_MS = 30 * 1000;
-const VISITS_QUERY = `SELECT count(DISTINCT properties.$session_id) AS visits
+const VISITS_QUERY = `SELECT count() AS visits
 FROM events
 WHERE event = '$pageview'
   AND properties.site_name = 'schedsnap'
-  AND properties.environment = 'production'
-  AND properties.$session_id IS NOT NULL
-  AND properties.$session_id != ''`;
+  AND properties.environment = 'production'`;
 
 // The public endpoint returns only one aggregate; it never accepts a client query.
 export function createVisitsHandler({ env = process.env, fetcher = fetch, now = () => Date.now() } = {}) {

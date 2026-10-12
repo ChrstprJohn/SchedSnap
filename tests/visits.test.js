@@ -37,7 +37,7 @@ test('missing or invalid PostHog configuration returns unavailable without makin
   }
 });
 
-test('queries only recorded SchedSnap production sessions and exposes only the aggregate', async () => {
+test('counts every SchedSnap production pageview without deduplicating sessions', async () => {
   const response = await read(createVisitsHandler({ env, fetcher: async (url, options) => {
     assert.equal(url, 'https://us.posthog.com/api/projects/643035/query/');
     assert.equal(options.headers.Authorization, 'Bearer server-secret');
@@ -45,11 +45,12 @@ test('queries only recorded SchedSnap production sessions and exposes only the a
     assert.equal(options.redirect, 'error');
     const { query } = JSON.parse(options.body);
     assert.equal(query.kind, 'HogQLQuery');
-    assert.match(query.query, /count\(DISTINCT properties\.\$session_id\)/);
+    assert.match(query.query, /SELECT count\(\) AS visits/);
     assert.match(query.query, /event = '\$pageview'/);
     assert.match(query.query, /properties\.site_name = 'schedsnap'/);
     assert.match(query.query, /properties\.environment = 'production'/);
-    assert.match(query.query, /properties\.\$session_id IS NOT NULL/);
+    assert.ok(!query.query.includes('$session_id'));
+    assert.ok(!query.query.includes('DISTINCT'));
     return payloadResponse([['42']]);
   } }));
   assert.equal(response.statusCode, 200);

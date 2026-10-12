@@ -14,7 +14,7 @@ function subscribeToMotion(onChange) {
 }
 
 function StatValue({ display, total, exact = false }) {
-  return <dd><span aria-hidden="true">{display}{exact ? '' : '+'}</span><span className="sr-only">{total.toLocaleString('en-US')}{exact ? ' recorded sessions' : ' or more'}</span></dd>;
+  return <dd><span aria-hidden="true">{display}{exact ? '' : '+'}</span><span className="sr-only">{total.toLocaleString('en-US')}{exact ? ' recorded pageviews' : ' or more'}</span></dd>;
 }
 
 export default function LandingStats() {
@@ -64,8 +64,8 @@ export default function LandingStats() {
     <section ref={sectionRef} className="landing-stats" aria-label="SchedSnap in numbers">
       <dl className="page-wrap">
         <div className="landing-stat">
-          <dt>Total visits</dt>
-          {visits === null ? <dd><span aria-hidden="true">—</span><span className="sr-only">Visit count unavailable</span></dd> : <StatValue display={new Intl.NumberFormat('en-US', { notation: 'compact', maximumFractionDigits: 1 }).format(Math.round(visits * displayedProgress))} total={visits} exact />}
+          <dt>Total pageviews</dt>
+          {visits === null ? <dd><span aria-hidden="true">—</span><span className="sr-only">Pageview count unavailable</span></dd> : <StatValue display={new Intl.NumberFormat('en-US', { notation: 'compact', maximumFractionDigits: 1 }).format(Math.round(visits * displayedProgress))} total={visits} exact />}
         </div>
         <div className="landing-stat"><dt>Total templates</dt><StatValue display={Math.round(TEMPLATE_COUNT * displayedProgress)} total={TEMPLATE_COUNT} /></div>
         <div className="landing-stat"><dt>Collections</dt><StatValue display={Math.round(COLLECTION_COUNT * displayedProgress)} total={COLLECTION_COUNT} /></div>
