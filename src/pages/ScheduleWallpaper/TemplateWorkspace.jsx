@@ -15,6 +15,7 @@ import Toast from '../../components/Toast.jsx';
 
 export default function TemplateWorkspace({ step, onStep, template, schedule, resolution, scheduleSource, onScheduleSourceChange, onScheduleChange, onAppearanceChange, onResetAppearance, image, onImage, busy, onError, onAnalyze, onSample, importOpen, onImportOpenChange: setImportOpen, onTitleChange, canCancelEntry, onCancelEntryChange: setCanCancelEntry, onCancelImport, imagePickerRef: imagePicker, preparingImage, onPreparingImageChange: setPreparingImage }) {
   const [enlarged, setEnlarged] = useState(false);
+  const [showClock, setShowClock] = useState(true);
   const [customizing, setCustomizing] = useState(false);
   const [previewStuck, setPreviewStuck] = useState(false);
   const [previewSizeLevel, setPreviewSizeLevel] = useState(2);
@@ -36,7 +37,7 @@ export default function TemplateWorkspace({ step, onStep, template, schedule, re
   const warnings = [...new Set([...schedule.warnings, ...findOverlaps(schedule)])];
   const currentLayout = layout?.key === exportKey ? layout : null;
   const canDownload = !busy && !exporting && !issues.length && currentLayout?.ready && !currentLayout.overflow && !currentLayout.error;
-  const exportStatus = busy ? 'Reading schedule…' : issues.length ? issues[0] : currentLayout?.error ? 'Preview could not load. Try another design.' : currentLayout?.overflow ? 'Classes don’t fit. Shorten names or choose another design.' : !currentLayout?.ready ? 'Preparing preview…' : '';
+  const exportStatus = busy ? 'Reading schedule…' : issues.length ? issues[0] : currentLayout?.error ? 'Preview could not load. Try another design.' : currentLayout?.overflow ? 'Classes don’t fit. Reduce the top margin, shorten names or choose another design.' : !currentLayout?.ready ? 'Preparing preview…' : '';
   useEffect(() => {
     active.current = true;
     return () => { active.current = false; if (lastUrl.current) URL.revokeObjectURL(lastUrl.current); };
@@ -105,9 +106,9 @@ export default function TemplateWorkspace({ step, onStep, template, schedule, re
   }
 
   const sizeClass = previewSizeLevel === 1 ? 'preview-size-sm' : previewSizeLevel === 3 ? 'preview-size-lg' : 'preview-size-md';
-  const preview = <div className={`flow-preview-art ${sizeClass}`}>
+  const preview = <><div className={`flow-preview-art ${sizeClass}`}>
     <button type="button" aria-label="Enlarge wallpaper" aria-haspopup="dialog" onClick={() => { setEnlarged(true); trackEvent('wallpaper_preview_enlarged', templateProperties(template)); }} className="flow-wallpaper">
-      <WallpaperCanvas schedule={shownSchedule} template={template} resolution={resolution} onLayout={updateLayout} className="block h-auto w-full" label={`${template.name} ${hasSchedule ? 'with your classes' : 'with sample classes'}`} />
+      <WallpaperCanvas schedule={shownSchedule} template={template} resolution={resolution} showClock={showClock} onLayout={updateLayout} className="block h-auto w-full" label={`${template.name} ${hasSchedule ? 'with your classes' : 'with sample classes'}${showClock && resolution.id !== 'laptop' ? ', sample clock at 9:41 AM' : ''}`} />
       <span className="preview-enlarge" aria-hidden="true"><Maximize2 size={16} /></span>
     </button>
     <div className="preview-size-controls" aria-label="Preview size controls">
@@ -115,7 +116,12 @@ export default function TemplateWorkspace({ step, onStep, template, schedule, re
       <span className="preview-size-label">{previewSizeLevel === 1 ? 'S' : previewSizeLevel === 2 ? 'M' : 'L'}</span>
       <button type="button" aria-label="Increase preview size" disabled={previewSizeLevel >= 3} onClick={() => setPreviewSizeLevel((s) => Math.min(3, s + 1))} className="preview-size-btn"><Plus size={13} aria-hidden="true" /></button>
     </div>
-  </div>;
+  </div>
+    {resolution.id !== 'laptop' && <div className="preview-clock-control">
+      <label className="appearance-switch"><input type="checkbox" aria-describedby="clock-preview-note" checked={showClock} onChange={(event) => setShowClock(event.target.checked)} />Show sample clock</label>
+      <span id="clock-preview-note">Preview only</span>
+    </div>}
+  </>;
 
   return <>
     {step === 'classes' ? <div className="classes-layout">
@@ -141,10 +147,10 @@ export default function TemplateWorkspace({ step, onStep, template, schedule, re
         {exportStatus && <div className="export-status" role="status" id="wallpaper-export-status"><p>{exportStatus}</p>{(issues.length > 0 || currentLayout?.overflow) && <button type="button" className="text-link" onClick={() => onStep('classes')}>Fix class details</button>}{currentLayout?.error && <button type="button" className="text-link" onClick={() => onStep('design')}>Change design</button>}</div>}
         {exportResult?.key === exportKey && <a className="text-link save-again" href={exportResult.url} download={exportResult.filename} onClick={() => trackEvent('wallpaper_download_repeated', { ...templateProperties(template), schedule_source: scheduleSource })}>Save PNG again</a>}
         <div className="wallpaper-edit-actions"><button type="button" className="button-secondary" onClick={() => onStep('classes')}><Pencil size={16} aria-hidden="true" />Edit classes</button><button type="button" className="button-secondary" onClick={() => onStep('design')}><LayoutTemplate size={16} aria-hidden="true" />Change design</button></div>
-        <details className="flow-customize" open={customizing} onToggle={(event) => { setCustomizing(event.currentTarget.open); setPreviewStuck(false); }}><summary className="disclosure-summary"><span><SlidersHorizontal size={16} aria-hidden="true" />Customize appearance</span><ChevronDown className="disclosure-icon size-4" aria-hidden="true" /></summary><TemplateControls template={template} onChange={onAppearanceChange} onReset={onResetAppearance} /></details>
+        <details className="flow-customize" open={customizing} onToggle={(event) => { setCustomizing(event.currentTarget.open); setPreviewStuck(false); }}><summary className="disclosure-summary"><span><SlidersHorizontal size={16} aria-hidden="true" />Customize appearance</span><ChevronDown className="disclosure-icon size-4" aria-hidden="true" /></summary><TemplateControls template={template} enablePlacement onChange={onAppearanceChange} onReset={onResetAppearance} /></details>
       </section>
     </div>}
-    {enlarged && <WallpaperViewer resolution={resolution} onClose={() => setEnlarged(false)}><WallpaperCanvas schedule={shownSchedule} template={template} resolution={resolution} className="block h-auto w-full" label={`${template.name} enlarged wallpaper`} /></WallpaperViewer>}
+    {enlarged && <WallpaperViewer resolution={resolution} onClose={() => setEnlarged(false)}><WallpaperCanvas schedule={shownSchedule} template={template} resolution={resolution} showClock={showClock} className="block h-auto w-full" label={`${template.name} enlarged wallpaper${showClock && resolution.id !== 'laptop' ? ', sample clock at 9:41 AM' : ''}`} /></WallpaperViewer>}
     <Toast message={message} kind={messageKind} onClose={dismissNotification} />
   </>;
 }

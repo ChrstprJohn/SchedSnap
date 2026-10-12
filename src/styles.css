@@ -239,6 +239,13 @@
 .appearance-select { flex-shrink: 0; width: 200px; }
 .appearance-select select { width: 100%; height: 44px; }
 .appearance-reset { display: inline-flex; align-items: center; min-height: 36px; margin-top: 4px; font-size: 13px; }
+.preview-clock-control { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 4px 12px; font-size: 13px; }
+.preview-clock-control span { color: var(--color-muted); }
+.placement-note { font-size: 13px; line-height: 1.5; color: var(--color-muted); }
+.top-margin-control { clear: both; padding-block: 16px 8px; }
+.top-margin-label { display: flex; justify-content: space-between; gap: 12px; font-size: 14px; }
+.top-margin-label output { color: var(--color-muted); font-variant-numeric: tabular-nums; }
+.top-margin-control input[type='range'] { display: block; width: 100%; min-height: 44px; margin: 0; accent-color: var(--color-accent); cursor: pointer; }
 @container (max-width: 600px) {
   .class-meeting-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
@@ -426,10 +433,21 @@
 .wallpaper-flow:not([data-device='mobile']) .flow-preview-art.preview-size-lg { --preview-width-scale: 1; --preview-frame-height: min(800px, var(--preview-available-height)); }
 .wallpaper-flow:not([data-device='mobile']) .flow-wallpaper { width: min(calc(100% * var(--preview-width-scale)), calc((var(--preview-frame-height) - var(--preview-frame-padding) * 2) * var(--wallpaper-ratio-value))); height: auto; min-width: 0; max-height: 100%; aspect-ratio: var(--wallpaper-ratio); }
 .wallpaper-flow:not([data-device='mobile']) .flow-wallpaper canvas { width: 100%; height: auto; max-height: none; }
+.wallpaper-flow[data-device='laptop'] .download-layout { grid-template-columns: minmax(0, 640px) minmax(0, 380px); gap: 40px; }
+.wallpaper-flow[data-device='laptop'] .flow-preview-art { height: auto; min-height: 0; padding: 20px 20px 64px; }
+.wallpaper-flow[data-device='laptop'] .flow-wallpaper { width: 100%; max-height: none; }
+.wallpaper-flow[data-device='laptop'] .preview-size-sm .flow-wallpaper { width: 80%; }
+.wallpaper-flow[data-device='laptop'] .preview-size-lg { padding-inline: 8px; }
 @media (max-width: 767px) {
   .wallpaper-flow:not([data-device='mobile']) .flow-preview-art { --preview-frame-padding: 12px; --preview-frame-height: max(240px, 40svh); }
   .wallpaper-flow:not([data-device='mobile']) .flow-preview-art.preview-size-sm { --preview-frame-height: max(180px, 26svh); }
   .wallpaper-flow:not([data-device='mobile']) .flow-preview-art.preview-size-lg { --preview-frame-height: max(340px, 56svh); }
+  .top-margin-control input { scroll-margin-top: calc(56px + 40svh + 100px); }
+  .wallpaper-flow[data-device='laptop'] .download-layout .flow-preview-art { height: auto; min-height: 0; padding: 12px; }
+  .wallpaper-flow[data-device='laptop'] .download-layout .flow-wallpaper { width: 100%; height: auto; min-width: 0; max-height: none; aspect-ratio: var(--wallpaper-ratio); }
+  .wallpaper-flow[data-device='laptop'] .download-layout .flow-wallpaper canvas { width: 100%; height: auto; max-height: none; }
+  .wallpaper-flow[data-device='laptop'] .download-layout .preview-size-controls { display: none; }
+  .wallpaper-flow[data-device='laptop'] .top-margin-control input { scroll-margin-top: calc(56px + 56vw + 48px); }
 }
 
 .wallpaper-skeleton { background-image: linear-gradient(100deg, #e8edf0 25%, #f5f7f8 45%, #e8edf0 65%); background-size: 200% 100%; animation: wallpaper-loading 1.4s ease-in-out infinite; }

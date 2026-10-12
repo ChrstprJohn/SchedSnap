@@ -1,5 +1,5 @@
 import { particleStyles } from '../../utils/wallpaperParticles.js';
-import { schedulePosition } from '../../utils/canvasHelpers.js';
+import { schedulePosition, scheduleTopMargin } from '../../utils/canvasHelpers.js';
 import { ChevronDown } from 'lucide-react';
 import { colorInputValue, wallpaperFonts, mascotPosition } from '../../utils/wallpaperTheme.js';
 
@@ -27,18 +27,26 @@ function AppearanceColor({ colorKey, template, onChange, toggleKey }) {
   </div>;
 }
 
-export default function TemplateControls({ template, onChange, onReset }) {
+export default function TemplateControls({ template, onChange, onReset, enablePlacement = false }) {
   const fixedBackground = Boolean(template.image && template.layout !== 'mascot');
   return <aside aria-label="Template appearance" className="template-settings">
+    {(enablePlacement || (template.device && template.device !== 'mobile')) && <fieldset className="appearance-group">
+      <legend>Schedule placement</legend>
+      {enablePlacement && <div className="top-margin-control">
+        <div className="top-margin-label"><label htmlFor="schedule-top-margin">Top margin</label><output htmlFor="schedule-top-margin">+{scheduleTopMargin(template)}%</output></div>
+        <input id="schedule-top-margin" type="range" min="0" max="20" step="1" value={scheduleTopMargin(template)} aria-valuetext={`${scheduleTopMargin(template)}% extra space above the schedule`} aria-describedby="top-margin-note" onChange={(event) => onChange('topMargin', Number(event.target.value))} />
+        <p id="top-margin-note" className="placement-note">Add space above the schedule.{template.device !== 'laptop' && ' Clock space stays clear.'}</p>
+      </div>}
+      {template.device && template.device !== 'mobile' && <div className="appearance-row">
+        <label className="appearance-label" htmlFor="schedule-position">Schedule position</label>
+        <div className="field-select appearance-select"><select id="schedule-position" className="field-input" value={schedulePosition(template)} onChange={(event) => onChange('schedulePosition', event.target.value)}><option value="left">Left</option><option value="center">Center</option><option value="right">Right</option></select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>
+      </div>}
+    </fieldset>}
     <fieldset className="appearance-group">
       <legend>Wallpaper</legend>
       {template.layout === 'mascot' && <div className="appearance-row">
         <label className="appearance-label" htmlFor="mascot-position">Character position</label>
         <div className="field-select appearance-select"><select id="mascot-position" className="field-input" value={mascotPosition(template)} onChange={(event) => onChange('mascotPosition', event.target.value)}><option value="left">Left</option><option value="center">Center</option><option value="right">Right</option></select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>
-      </div>}
-      {template.device && template.device !== 'mobile' && (template.device !== 'laptop' || template.layout === 'mascot') && <div className="appearance-row">
-        <label className="appearance-label" htmlFor="schedule-position">Schedule position</label>
-        <div className="field-select appearance-select"><select id="schedule-position" className="field-input" value={schedulePosition(template)} onChange={(event) => onChange('schedulePosition', event.target.value)}><option value="left">Left</option>{template.device !== 'laptop' && <option value="center">Center</option>}<option value="right">Right</option></select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>
       </div>}
       {template.device === 'tablet' && <div className="appearance-row">
         <label className="appearance-label" htmlFor="tablet-orientation">Orientation</label>

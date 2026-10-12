@@ -347,16 +347,45 @@ function drawScheduleCards(ctx, template, layout) {
 }
 
 export function schedulePosition(template) {
+  if (template.device === 'mobile') return 'center';
+  if (['left', 'center', 'right'].includes(template.schedulePosition)) return template.schedulePosition;
   if (template.device === 'laptop') {
     if (template.layout !== 'mascot') return 'center';
-    if (['left', 'right'].includes(template.schedulePosition)) return template.schedulePosition;
     if (template.mascotPosition === 'center') return 'center';
     if (template.mascotPosition) return mascotPosition(template) === 'left' ? 'right' : 'left';
     return template.mascotSide === 'left' ? 'right' : 'left';
   }
-  if (['left', 'center', 'right'].includes(template.schedulePosition)) return template.schedulePosition;
   if (template.layout !== 'mascot') return 'center';
   return ['left', 'center', 'right'][(Number(template.edition || 1) - 1) % 3];
+}
+
+export function scheduleTopMargin(template) {
+  const value = Number(template.topMargin || 0);
+  return Number.isFinite(value) ? Math.max(0, Math.min(20, value)) : 0;
+}
+
+// Preview only: exports call drawWallpaper without this sample clock.
+export function drawSampleClock(canvas, template) {
+  const ctx = canvas.getContext('2d');
+  ctx.save();
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.textAlign = 'left';
+  ctx.textBaseline = 'alphabetic';
+  ctx.fillStyle = template.ink;
+  ctx.shadowColor = 'rgba(255,255,255,0.8)';
+  ctx.shadowBlur = canvas.height * 0.004;
+  font(ctx, canvas.height * 0.09, 600, 'DM Sans Variable');
+  const timeWidth = ctx.measureText('9:41').width;
+  font(ctx, canvas.height * 0.028, 600, 'DM Sans Variable');
+  const periodWidth = ctx.measureText('AM').width;
+  const gap = canvas.height * 0.012;
+  const x = (canvas.width - timeWidth - gap - periodWidth) / 2;
+  const y = canvas.height * 0.16;
+  font(ctx, canvas.height * 0.09, 600, 'DM Sans Variable');
+  ctx.fillText('9:41', x, y);
+  font(ctx, canvas.height * 0.028, 600, 'DM Sans Variable');
+  ctx.fillText('AM', x + timeWidth + gap, y);
+  ctx.restore();
 }
 
 function drawDeviceWallpaper(canvas, { schedule, template, resolution, backgroundImage }) {
@@ -374,8 +403,11 @@ function drawDeviceWallpaper(canvas, { schedule, template, resolution, backgroun
   const placement = mascotPosition(template);
   // Explicit placements sharing the schedule column use a protected footer.
   const footerCharacter = hasCharacter && (placement === 'center' || (template.mascotPosition && ((placement === 'left' && position !== 'right') || (placement === 'right' && position !== 'left'))));
-  const columnWidth = width * (landscape ? 0.65 : 0.9);
-  const availableHeight = height * (landscape ? footerCharacter ? 0.6 : 0.88 : hasCharacter ? 0.62 : 0.82);
+  const columnWidth = width * (landscape ? 0.65 : 0.82);
+  const topOffset = height * scheduleTopMargin(template) / 100;
+  const minTop = resolution.id === 'tablet' ? height * 0.22 : 0;
+  const baseTop = Math.max(minTop, landscape ? footerCharacter ? height * 0.06 : 0 : height * 0.16);
+  const availableHeight = Math.min(height * (landscape ? footerCharacter ? 0.6 : 0.88 : hasCharacter ? 0.62 : 0.82), height * 0.965 - baseTop) - topOffset;
   const count = groupSchedule(schedule).length;
   const designWidth = 1400;
   const layoutOptions = { top: 180, width: 1244, timeWidth: 310, roomWidth: 210, minCardHeight: 130 };
@@ -392,7 +424,8 @@ function drawDeviceWallpaper(canvas, { schedule, template, resolution, backgroun
   const margin = width * 0.05;
   const columnX = position === 'left' ? margin : position === 'right' ? width - columnWidth - margin : (width - columnWidth) / 2;
   const x = columnX + (columnWidth - designWidth * scale) / 2;
-  const y = landscape ? footerCharacter ? height * 0.06 : (height - contentHeight) / 2 : height * 0.16;
+  const y = Math.max(baseTop, landscape && !footerCharacter ? (height - contentHeight - topOffset) / 2 : baseTop) + topOffset;
+  layout.overflow ||= y + contentHeight > height * 0.965;
   const scheduleBounds = { x: x + 78 * scale, y, width: layoutOptions.width * scale, height: contentHeight };
   ctx.save(); ctx.translate(x, y); ctx.scale(scale, scale);
   drawHeading(ctx, template, 100, designWidth);
@@ -433,8 +466,9 @@ export function drawWallpaper(canvas, { schedule, template, resolution = mobileR
   ctx.scale(resolution.width / 1080, resolution.height / 2400);
   ctx.textBaseline = 'alphabetic';
   drawBackground(ctx, template, backgroundImage);
-  const layout = layoutSchedule(ctx, schedule, template);
-  drawHeading(ctx, template);
+  const topOffset = 2400 * scheduleTopMargin(template) / 100;
+  const layout = topOffset ? layoutSchedule(ctx, schedule, template, 2400, { top: 760 + topOffset }) : layoutSchedule(ctx, schedule, template);
+  drawHeading(ctx, template, 650 + topOffset);
   if (layout.overflow) {
     ctx.fillStyle = template.ink; textFont(38, 600); ctx.fillText('Your schedule needs more room.', 90, 1060);
     textFont(28); ctx.fillText('Shorten subject names or reduce the details.', 90, 1120);
