@@ -87,7 +87,7 @@ export function createAnalyzeHandler({ env = process.env, generate, usage = crea
     response.json = (body) => sendJson({ ...body, usage: dailyUsage });
     if (!dailyUsage.allowed) {
       response.setHeader('Retry-After', String(Math.max(1, Math.ceil((dailyUsage.resetsAt - Date.now()) / 1000))));
-      return fail(response, 429, 'DAILY_IMPORT_LIMIT', 'You have used all 10 AI imports for today on this internet connection. Try again after midnight Philippine time, or enter classes manually.');
+      return fail(response, 429, 'DAILY_IMPORT_LIMIT', 'You have used all 10 AI imports for today. Try again after midnight, or enter classes manually.');
     }
 
     try {
