@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { useTemplates } from '../lib/catalogContext.js';
 import { designCollections } from '../config/collections.js';
+import { mascotStyles } from '../config/mascotStyles.js';
 import { loadVisitCount } from '../lib/visits.js';
 
-const COLLECTION_COUNT = designCollections.filter(({ id }) => id !== 'all').length;
+const COLLECTION_COUNT = [...designCollections, ...mascotStyles].filter(({ id }) => id !== 'all').length;
 const COUNT_DURATION = 1200;
 const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
