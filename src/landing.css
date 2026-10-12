@@ -205,6 +205,8 @@
   .device-showcase-tablet .collection-showcase { grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); }
   .device-showcase .collection-showcase .collection-image { display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; align-items: center; gap: 8px; width: min(100%, 664px); justify-self: center; }
   .device-showcase .collection-image picture { grid-column: 2; grid-row: 1; width: 100%; max-width: 560px; aspect-ratio: 4 / 3; max-height: none; }
+  .device-showcase-mobile .collection-image picture,
+  .device-showcase-tablet .collection-image picture { aspect-ratio: 7 / 6; }
   .device-showcase .showcase-image-arrow { display: inline-flex; grid-row: 1; }
   .device-showcase .showcase-image-previous { grid-column: 1; }
   .device-showcase .showcase-image-next { grid-column: 3; }
