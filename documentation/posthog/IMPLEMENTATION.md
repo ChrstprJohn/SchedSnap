@@ -6,7 +6,7 @@
 
 `analytics.js` reads `VITE_POSTHOG_TOKEN` and `VITE_POSTHOG_HOST`. A missing token skips initialization. The host falls back to `https://us.i.posthog.com`. SDK initialization and custom capture calls are wrapped in error handling so tracking failures do not interrupt the wallpaper creator.
 
-[cookieConsent.js](../../src/lib/cookieConsent.js) stores `granted` or `denied` in `schedsnap-cookie-consent-v1` local storage and synchronizes changes across tabs. Missing or invalid choices leave analytics off. Blocked storage remembers the current visit only. The public cookie notice appears until either choice is made; `/privacy#cookies` provides persistent settings. Withdrawal opts out of SDK capture and persistence, and `before_send` drops events while consent is absent. Reacceptance reuses the initialized client and records the current pageview. The essential admin sign-in cookie is independent.
+[cookieConsent.js](../../src/lib/cookieConsent.js) stores `granted` or `denied` in `schedsnap-cookie-consent-v1` local storage and synchronizes changes across tabs. Missing or invalid choices leave analytics off. Blocked storage remembers the current visit only. The public cookie notice appears until either choice is made; `/cookies` provides persistent settings. Withdrawal opts out of SDK capture and persistence, and `before_send` drops events while consent is absent. Reacceptance reuses the initialized client and records the current pageview. The essential admin sign-in cookie is independent.
 
 | Configuration | Current behavior |
 | --- | --- |

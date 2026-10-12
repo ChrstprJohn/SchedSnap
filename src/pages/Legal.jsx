@@ -1,37 +1,51 @@
-import { useEffect, useSyncExternalStore } from 'react';
-import { Link, useLocation } from 'react-router';
+import { useSyncExternalStore } from 'react';
+import { Link } from 'react-router';
 import { analyticsEnabled } from '../lib/analytics.js';
 import { getCookieConsent, getServerCookieConsent, setCookieConsent, subscribeCookieConsent } from '../lib/cookieConsent.js';
 import './legal.css';
 
 export default function Legal({ kind }) {
   const privacy = kind === 'privacy';
-  const { hash } = useLocation();
+  const cookies = kind === 'cookies';
   const consent = useSyncExternalStore(subscribeCookieConsent, getCookieConsent, getServerCookieConsent);
-  useEffect(() => {
-    if (privacy && hash === '#cookies') document.getElementById('cookies')?.scrollIntoView({ behavior: 'instant' });
-  }, [privacy, hash]);
+
   return <article className="legal-page">
-    <header><p className="legal-eyebrow">SchedSnap</p><h1>{privacy ? 'Privacy Policy' : 'Terms of Use'}</h1><p className="text-muted">Updated October {privacy ? '12' : '11'}, 2026</p></header>
-    <nav aria-label="Legal pages"><Link to="/terms" aria-current={!privacy ? 'page' : undefined}>Terms of Use</Link><Link to="/privacy" aria-current={privacy ? 'page' : undefined}>Privacy Policy</Link></nav>
-    {privacy ? <>
-      <section><h2>Schedule images and classes</h2><p>Choosing an image prepares a preview in your browser. Clicking Import classes sends the image through our server to Google Gemini to extract schedule details. SchedSnap does not intentionally save uploaded schedule images or extracted classes to its application storage. Your current schedule stays in the page’s memory and is cleared when you reload or leave it.</p><p>Before uploading, crop out names, student IDs, contact details, grades, and other personal or confidential information. You can enter classes manually instead, without sending a schedule image to Gemini.</p></section>
-      <section><h2>Google Gemini processing</h2><p>Google handles submitted images and responses under its own terms. For unpaid API services, Google may use inputs and outputs to improve its products, and human reviewers may review them. Paid API services have different data-use rules and may retain data for safety and security purposes. SchedSnap’s statement that it does not save images does not describe Google’s retention.</p><p><a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener noreferrer">Read Google Gemini’s data-use terms</a>.</p></section>
-      <section><h2>Website analytics</h2><p>When configured and you accept analytics, we use PostHog to measure page visits and actions such as selecting a template, importing classes, and downloading a wallpaper. Events can include template IDs, device type, class counts, file type and size, and technical information. PostHog may use browser storage or cookies for identifiers. Session recording is disabled, and automatically collected page text and element attributes are masked.</p><p>Our analytics events do not intentionally include uploaded image contents, class names, or room details. Hosting and service providers may also process IP addresses and request metadata for delivery, security, and operation.</p></section>
-      <section id="cookies"><h2>Cookies and browser storage</h2><p>Optional PostHog analytics cookies and browser identifiers are enabled only after you accept analytics. Rejecting them leaves the wallpaper creator available. You can change your choice below; rejecting after accepting stops analytics and clears the active analytics identifiers.</p><p>We remember your choice in local storage under <code>schedsnap-cookie-consent-v1</code> so the notice does not appear again in this browser. Clearing site data or using another browser shows it again. If browser storage is blocked, your choice lasts only for the current visit.</p><p>The administrator sign-in uses an essential <code>schedsnap_admin</code> session cookie to secure access to the admin area. It is separate from optional analytics.</p>
+    <header><h1>{cookies ? 'Cookie Policy' : privacy ? 'Privacy Policy' : 'Terms of Use'}</h1><p className="text-muted">Updated October 12, 2026</p></header>
+    <nav aria-label="Legal pages">
+      <Link to="/terms" aria-current={kind === 'terms' ? 'page' : undefined}>Terms of Use</Link>
+      <Link to="/privacy" aria-current={privacy ? 'page' : undefined}>Privacy Policy</Link>
+      <Link to="/cookies" aria-current={cookies ? 'page' : undefined}>Cookies</Link>
+    </nav>
+    {cookies ? <>
+      <p className="legal-intro">Here’s how SchedSnap uses cookies and how you can choose which ones to allow.</p>
+      <section><h2>Essential cookies</h2><p>These cookies keep administrator sign-in secure. We also remember your cookie choice so you aren’t asked on every visit. These features are separate from optional cookies.</p></section>
+      <section><h2>Optional cookies</h2><p>With your permission, these cookies help us understand which pages and features people use. They help us improve SchedSnap. Rejecting them won’t stop you from creating or downloading wallpapers.</p></section>
+      <section><h2>Your cookie settings</h2><p>Accept or reject optional cookies below. You can change your choice here at any time. If you clear your browser’s site data or use another browser, you’ll be asked again.</p>
         {analyticsEnabled ? <>
-          <p role="status">{consent === 'granted' ? 'Analytics are allowed in this browser.' : consent === 'denied' ? 'Analytics are rejected in this browser.' : 'Analytics are off until you choose to allow them.'}</p>
-          <div className="legal-cookie-actions"><button type="button" className="button-secondary" aria-pressed={consent === 'denied'} onClick={() => setCookieConsent('denied')}>Reject analytics</button><button type="button" className="button-secondary" aria-pressed={consent === 'granted'} onClick={() => setCookieConsent('granted')}>Accept analytics</button></div>
-        </> : <p>Optional analytics are not configured on this site.</p>}
+          <p role="status">{consent === 'granted' ? 'Optional cookies are on.' : 'Optional cookies are off.'}</p>
+          <div className="legal-cookie-actions">
+            <button type="button" className="button-secondary" aria-pressed={consent === 'denied'} onClick={() => setCookieConsent('denied')}>Reject cookies</button>
+            <button type="button" className="button-secondary" aria-pressed={consent === 'granted'} onClick={() => setCookieConsent('granted')}>Accept cookies</button>
+          </div>
+        </> : <p>Optional cookies are currently off.</p>}
       </section>
-      <section><h2>Artwork and downloads</h2><p>Cloudinary hosts template artwork and catalog data. Public artwork requests are handled by Cloudinary. Wallpapers are rendered in your browser and downloaded to your device; downloading does not upload the finished wallpaper to our application storage.</p></section>
-      <section><h2>Your choices</h2><p>Use manual entry if you do not want to submit an image to Google. Remove unnecessary information before importing, and close or reload the creator to clear its current schedule. Your downloaded files remain on your device until you delete them. Third-party services apply their own privacy and retention policies.</p></section>
+      <section><h2>More about your privacy</h2><p>Read our <Link to="/privacy">Privacy Policy</Link> to learn how we handle schedule images and other information.</p></section>
+    </> : privacy ? <>
+      <p className="legal-intro">This policy explains what happens to your information when you create a wallpaper with SchedSnap.</p>
+      <section><h2>Your schedule</h2><p>You don’t need an account to create a wallpaper. Your classes and edits stay in the current page and are cleared when you reload or leave it. We don’t keep a saved history of your schedules.</p><p>Your wallpaper is created in your browser and downloaded to your device. We don’t upload the finished wallpaper to our storage.</p></section>
+      <section><h2>Importing a schedule image</h2><p>Selecting an image creates a preview in your browser. It is sent through our server to Google Gemini only when you choose Import classes. Gemini reads the image and returns the class details for you to review.</p><p>SchedSnap does not save uploaded schedule images or extracted classes to its application storage. Google’s handling of that data is described below. Crop out names, student IDs, contact details, grades, and other sensitive information before importing.</p><p>You can choose Enter manually instead. Manual entry does not send your schedule to Gemini.</p></section>
+      <section><h2>Google’s processing of images</h2><p>Google’s Gemini API terms apply to submitted images and responses. For unpaid services, Google may use them to improve its products, and human reviewers may review them. For paid services, Google does not use them for product improvement, but may retain them for safety, security, and legal requirements. Which rules apply depends on the service’s billing setup.</p><p><a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener noreferrer">Read Google’s data-use terms</a> before submitting sensitive information.</p></section>
+      <section><h2>Website usage</h2><p>If you accept optional cookies, we use PostHog to understand visits and actions such as choosing a design, importing classes, and downloading a wallpaper. This can include browser and device details, approximate location, template choices, class counts, and file type and size.</p><p>These usage reports do not include your uploaded image, class names, or room details. We don’t record your browsing session.</p><p>You can accept or reject optional cookies at any time on the <Link to="/cookies">Cookies page</Link>.</p></section>
+      <section><h2>Services that help run the site</h2><p>Vercel hosts SchedSnap, and Cloudinary serves template artwork. These providers may process IP addresses and request details to deliver and protect their services. Their own privacy and retention policies apply.</p></section>
+      <section><h2>Your choices</h2><p>Use manual entry to avoid sending an image to Google, remove personal information before importing, and reload or close the creator to clear your current schedule. Downloaded wallpapers remain on your device until you delete them.</p></section>
     </> : <>
-      <section><h2>Using SchedSnap</h2><p>SchedSnap helps you turn a class schedule into a wallpaper. Use it only with images and information you have permission to submit. Do not upload unlawful content, confidential documents, or information about others without permission, and do not misuse the service or bypass its limits.</p></section>
-      <section><h2>Importing with AI</h2><p>Clicking Import classes sends your selected image to Google Gemini. Review the Privacy Policy and <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener noreferrer">Google’s data-use terms</a> before submitting. AI extraction can make mistakes: check every subject, day, time, and room before downloading. Your institution’s official schedule remains the source of truth.</p><p>AI importing is intended for adults aged 18 or older under Google’s current API requirements. Manual entry does not use Gemini.</p></section>
-      <section><h2>Templates and output</h2><p>You keep any rights you already have in your submitted information. Template artwork may include material owned by its respective creators; using SchedSnap does not transfer ownership or grant commercial redistribution rights to that artwork. Only share or use downloaded wallpapers in ways you are authorized to.</p></section>
-      <section><h2>Availability and responsibility</h2><p>The service is provided as available. Features, templates, and third-party services may change or become unavailable. We do not guarantee uninterrupted operation or accurate AI extraction. To the extent allowed by applicable law, you are responsible for checking your output and keeping copies of files you need. These terms do not remove rights that applicable law gives you.</p></section>
-      <section><h2>Third-party services and updates</h2><p>Google Gemini, Cloudinary, PostHog, and hosting providers apply their own terms and policies to their services. We may update these terms as SchedSnap changes; the date above identifies the current version.</p></section>
+      <p className="legal-intro">These terms explain how you can use SchedSnap to create a schedule wallpaper.</p>
+      <section><h2>Using SchedSnap</h2><p>Use SchedSnap only with schedules and images you have permission to use. Don’t upload unlawful or confidential material, share someone else’s personal information without permission, or attempt to misuse the service or bypass its limits.</p></section>
+      <section><h2>Importing classes with AI</h2><p>Choosing Import classes sends your selected image to Google Gemini. Read our <Link to="/privacy">Privacy Policy</Link> and <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener noreferrer">Google’s Gemini API terms</a> before importing. AI can make mistakes, so check every subject, day, time, and room before downloading. Your institution’s official timetable remains the source of truth.</p><p>AI importing is for users aged 18 or older under Google’s API requirements. You can enter classes manually without using Gemini.</p></section>
+      <section><h2>Your information and downloads</h2><p>You keep any rights you have in your submitted information. SchedSnap does not claim ownership of your schedule. Save your downloaded wallpaper if you want to keep it; your current edits are cleared when you reload or leave the creator.</p></section>
+      <section><h2>Template artwork</h2><p>Template artwork may belong to its respective creators or rights holders. Downloading a wallpaper does not transfer ownership of that artwork or grant permission to sell or redistribute it. Only use or share it in ways you have permission to.</p></section>
+      <section><h2>Availability and responsibility</h2><p>SchedSnap is provided as available. Features and third-party services may change or become unavailable, and we cannot guarantee uninterrupted operation or accurate AI results. You are responsible for checking your wallpaper and keeping any files you need.</p><p>Nothing in these terms takes away rights or protections you have under applicable law.</p></section>
+      <section><h2>Updates to these terms</h2><p>We may update these terms when SchedSnap changes. The date above shows when this version was last updated. Google Gemini and the other services we use also have their own terms and policies.</p></section>
     </>}
     <footer><Link to="/services/schedule-wallpaper">Open wallpaper creator</Link></footer>
   </article>;

@@ -18,8 +18,6 @@ export default function App() {
   const isAdmin = pathname === '/admin' || pathname.startsWith('/admin/');
 
   useEffect(() => {
-    // The lazy-loaded policy scrolls to its cookie section after it mounts.
-    if (pathname === '/privacy' && hash === '#cookies') return;
     const section = hash === '#designs' ? document.getElementById('designs') : null;
     if (section) section.scrollIntoView({ behavior: 'instant' });
     else window.scrollTo({ top: 0, behavior: 'instant' });
@@ -37,6 +35,7 @@ export default function App() {
             <Route path="/admin/*" element={<Admin />} />
             <Route path="/terms" element={<Legal kind="terms" />} />
             <Route path="/privacy" element={<Legal kind="privacy" />} />
+            <Route path="/cookies" element={<Legal kind="cookies" />} />
             <Route path="/" element={<Home />} />
             <Route path="/wallpapers/:device" element={<DeviceGallery />} />
             <Route path="/services/schedule-wallpaper/*" element={<ScheduleWallpaper />} />
@@ -51,7 +50,7 @@ export default function App() {
         </Suspense>
       </main>
       {!isAdmin && !pathname.startsWith('/services/schedule-wallpaper') && <Footer />}
-      {!isAdmin && <CookieBanner />}
+      {!isAdmin && pathname !== '/cookies' && <CookieBanner />}
     </div>
   </CatalogProvider>);
 }

@@ -29,7 +29,7 @@ try {
     const markup = renderPage(path);
     if (path !== CREATOR_PATH && !markup.includes('<h1')) throw new Error(`No heading in prerendered ${path}`);
     let html = replaceSeoHead(shell, path).replace('<div id="root"></div>', () => `<div id="root">${markup}</div>`);
-    if (path === '/terms' || path === '/privacy') {
+    if (path === '/terms' || path === '/privacy' || path === '/cookies') {
       const css = manifest['src/pages/Legal.jsx']?.css || [];
       html = html.replace('</head>', () => `${css.map(file => `<link rel="stylesheet" href="/${file}" />`).join('\n')}\n</head>`);
     }

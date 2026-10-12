@@ -17,6 +17,10 @@ export const SEO_PAGES = {
     title: 'Privacy Policy — SchedSnap',
     description: 'Learn how SchedSnap handles schedule images, class details, analytics, and wallpaper downloads.',
   },
+  '/cookies': {
+    title: 'Cookie Policy — SchedSnap',
+    description: 'Learn how SchedSnap uses cookies and choose whether to accept or reject optional cookies. Change your cookie settings at any time.',
+  },
 };
 
 export function getPageSeo(pathname) {

@@ -9,11 +9,11 @@ export default function CookieBanner() {
   if (!analyticsEnabled || consent !== null) return null;
 
   return <section className="cookie-banner" aria-labelledby="cookie-banner-title">
-    <h2 id="cookie-banner-title">Your cookie choices</h2>
-    <p>We use optional analytics cookies to understand how SchedSnap is used. The wallpaper creator works whether you accept or reject them. <Link to="/privacy#cookies">Cookie policy</Link></p>
+    <h2 id="cookie-banner-title">Cookies on SchedSnap</h2>
+    <p>We use optional cookies to see how people use SchedSnap. You can reject them and still create wallpapers. <Link to="/cookies">Cookie policy</Link></p>
     <div className="cookie-banner-actions">
-      <button type="button" className="button-secondary" onClick={() => setCookieConsent('denied')}>Reject analytics</button>
-      <button type="button" className="button-secondary" onClick={() => setCookieConsent('granted')}>Accept analytics</button>
+      <button type="button" className="button-secondary" onClick={() => setCookieConsent('denied')}>Reject cookies</button>
+      <button type="button" className="button-secondary" onClick={() => setCookieConsent('granted')}>Accept cookies</button>
     </div>
   </section>;
 }
