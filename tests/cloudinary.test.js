@@ -2,6 +2,19 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import manifest from '../src/assets/cloudinaryManifest.js';
 import { cloudinaryAssetUrl } from '../src/utils/cloudinaryAssets.js';
+import { wallpaperTemplates } from '../src/assets/templates.js';
+
+test('every built-in artwork has Cloudinary delivery without local originals', () => {
+  for (const template of wallpaperTemplates) {
+    for (const path of [template.image, ...Object.values(template.deviceImages || {})].filter(Boolean)) {
+      const asset = manifest[path];
+      assert.ok(asset, `${template.id}: missing uploaded artwork ${path}`);
+      assert.match(asset.url, /^https:\/\/res\.cloudinary\.com\/[a-z0-9_-]+\/image\/upload\//i);
+      assert.ok(asset.width > 0 && asset.height > 0, path);
+      assert.match(cloudinaryAssetUrl(path), /^https:\/\/res\.cloudinary\.com\//);
+    }
+  }
+});
 
 test('unmapped images retain their local path', () => {
   assert.equal(cloudinaryAssetUrl('/unmapped.png', { width: 540, height: 1200 }), '/unmapped.png');

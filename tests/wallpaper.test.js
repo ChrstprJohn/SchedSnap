@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
+import cloudinaryManifest from '../src/assets/cloudinaryManifest.js';
 import { sampleSchedule } from '../src/assets/sampleSchedule.js';
 import { deviceResolutions, mascotTemplateSchedule, mobileResolution, templateSchedule, wallpaperTemplates } from '../src/assets/templates.js';
 import { mascotTemplates } from '../src/assets/mascotTemplates.js';
@@ -43,10 +44,16 @@ test('every illustrated variant has three correctly sized device assets and ever
     for (const [device, [width, height]] of Object.entries(devices)) {
       const expected = `/wallpapers/scenic/${template.id}/${device}.png`;
       assert.equal(template.deviceImages[device], expected);
-      const png = readFileSync(new URL(`../public${expected}`, import.meta.url));
-      assert.equal(png.subarray(1, 4).toString(), 'PNG');
-      assert.equal(png.readUInt32BE(16), width, `${template.id}/${device} width`);
-      assert.equal(png.readUInt32BE(20), height, `${template.id}/${device} height`);
+      const asset = cloudinaryManifest[expected];
+      assert.equal(asset.width, width, `${template.id}/${device} width`);
+      assert.equal(asset.height, height, `${template.id}/${device} height`);
+      const local = new URL(`../public${expected}`, import.meta.url);
+      if (existsSync(local)) {
+        const png = readFileSync(local);
+        assert.equal(png.subarray(1, 4).toString(), 'PNG');
+        assert.equal(png.readUInt32BE(16), width);
+        assert.equal(png.readUInt32BE(20), height);
+      }
     }
   }
 });
@@ -357,9 +364,15 @@ test('mascots keep a fixed size below every meeting, including denser schedules'
   }
 });
 
-test('every mascot template references a real square RGBA PNG asset', () => {
+test('every mascot template references an uploaded square PNG; local originals preserve alpha', () => {
   for (const template of [...mascotTemplates, ...littleFriendsTemplates]) {
-    const bytes = readFileSync(new URL(`../public${template.image}`, import.meta.url));
+    const asset = cloudinaryManifest[template.image];
+    assert.match(asset.url, /\.png$/);
+    assert.equal(asset.width, asset.height);
+    assert.ok(asset.width >= 1024, template.name);
+    const local = new URL(`../public${template.image}`, import.meta.url);
+    if (!existsSync(local)) continue;
+    const bytes = readFileSync(local);
     assert.equal(bytes.subarray(1, 4).toString(), 'PNG', template.name);
     assert.equal(bytes.readUInt32BE(16), bytes.readUInt32BE(20));
     assert.ok(bytes.readUInt32BE(16) >= 1024, template.name);

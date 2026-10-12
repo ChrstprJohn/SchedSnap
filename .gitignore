@@ -7,3 +7,22 @@ dist/
 *.local
 *.log
 coverage/
+
+# Cloudinary originals stay local; commit their delivery manifest and presets.
+/public/wallpapers/**/*.png
+/public/images/mascots/masters/*.png
+/public/images/pixel-mascots/masters/*.png
+/public/images/goofy-mascots/masters/*.png
+/public/images/doodle-mascots/masters/*.png
+
+# Generated source artwork and visual review captures.
+/output/**/*.png
+/output/**/*.webp
+/output/**/*.jpg
+/output/**/*.jpeg
+/.impeccable/**/*.png
+/.impeccable/**/*.webp
+/documentation/previews/**/*.png
+/documentation/previews/**/*.webp
+/src/assets/*.upload-tmp
+/output/cloudinary-upload-*.json

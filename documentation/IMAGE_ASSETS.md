@@ -1,5 +1,28 @@
 # Asset folders
 
+## Cloudinary delivery and local originals
+
+Wallpaper PNGs in `public/wallpapers/` and the four generated mascot packs'
+`masters/` directories are hosted on Cloudinary. Their local copies are ignored
+by Git and Vercel; `src/assets/cloudinaryManifest.js` and template presets remain
+tracked. `npm run build` also removes mapped originals from `dist/`, so builds
+made with local artwork do not deploy duplicate copies. Homepage, collection,
+brand, favicon, and workflow images still use local URLs and remain tracked.
+
+Generated source bitmaps under `output/` and visual review captures are ignored;
+prompt records and documentation remain tracked. Existing local files are kept.
+A fresh clone can build and run tests using the Cloudinary manifest, but artwork
+editing and `npm run assets:upload` require the original files from your local
+backup. Upload new artwork and commit its manifest entry before deploying it.
+
+To recover Vercel storage already consumed, remove obsolete deployments in the
+dashboard and shorten Settings → Security → Deployment Retention Policy. Keep
+the active production deployment and any rollback you still need. These source
+changes reduce future deployment sizes; they do not reclaim old deployments or
+remove large files from previous Git commits.
+
+## Local asset inventory
+
 Only active app images and their source originals remain in the asset folders.
 
 | Folder | Contents |
