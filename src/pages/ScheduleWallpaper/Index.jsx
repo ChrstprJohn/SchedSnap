@@ -194,7 +194,7 @@ export default function ScheduleWallpaper() {
   </section>;
 
   return <section className="page-wrap wallpaper-flow" data-device={device} style={{ '--wallpaper-ratio': `${resolution.width} / ${resolution.height}`, '--wallpaper-ratio-value': resolution.width / resolution.height }}>
-    {pendingDraft && <RestoreClassesDialog count={pendingDraft.schedule.classes.length} onRestore={() => {
+    {step === 'classes' && pendingDraft && <RestoreClassesDialog count={pendingDraft.schedule.classes.length} onRestore={() => {
       setSchedule(pendingDraft.schedule);
       setScheduleTitle(pendingDraft.title);
       setScheduleSource('draft');
