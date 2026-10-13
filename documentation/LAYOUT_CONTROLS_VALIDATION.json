@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-13T02:18:57.053Z",
+  "base": "https://schedsnap.chrbuilds.dev",
+  "filters": [
+    {
+      "width": 158,
+      "scroll": 158,
+      "page": 320,
+      "viewport": 320,
+      "more": true
+    },
+    {
+      "width": 228,
+      "scroll": 228,
+      "page": 390,
+      "viewport": 390,
+      "more": true
+    },
+    {
+      "width": 642,
+      "scroll": 642,
+      "page": 820,
+      "viewport": 820,
+      "more": true
+    },
+    {
+      "width": 990,
+      "scroll": 990,
+      "page": 1440,
+      "viewport": 1440,
+      "more": true
+    },
+    {
+      "width": 990,
+      "scroll": 990,
+      "page": 1920,
+      "viewport": 1920,
+      "more": true
+    }
+  ],
+  "tablet": {
+    "position": "center",
+    "cards": "glass",
+    "sideControls": true
+  },
+  "mobileBottomControl": true,
+  "landingCopy": true
+}

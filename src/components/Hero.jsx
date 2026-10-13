@@ -17,12 +17,11 @@ export default function Hero() {
       <div className="page-wrap hero-content">
         <div className="hero-copy">
           <h1 id="hero-heading" className="hero-heading">Your schedule.<br />On your screen.</h1>
-          <p className="hero-description">SchedSnap (Sched Snap) turns your class schedule into a phone wallpaper.</p>
+          <p className="hero-description">Turn your class schedule into a phone wallpaper.</p>
           <div className="hero-actions">
             <Link to="/services/schedule-wallpaper" className="button-primary hero-action" onClick={() => trackEvent('wallpaper_creation_started', { source: 'hero' })}>Create wallpaper <ArrowRight size={18} aria-hidden="true" /></Link>
             <button type="button" className="hero-browse" onClick={exploreDesigns}>Explore</button>
           </div>
-          <p className="hero-note">No account needed.</p>
         </div>
         <div className="hero-art">
           <img src="/images/hero/hero-phones-refreshed.png" alt="Three iPhones with soft bear, alpine dawn, and doodle capybara schedule wallpapers" width="1448" height="1086" fetchPriority="high" decoding="async" />

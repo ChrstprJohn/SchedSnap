@@ -1,0 +1,221 @@
+{
+  "checkedAt": "2026-10-13T02:04:42.174Z",
+  "url": "https://schedsnap.chrbuilds.dev/services/schedule-wallpaper?collection=little-friends&device=tablet",
+  "devices": [
+    {
+      "device": "desktop",
+      "filterPressed": "true",
+      "thumbnails": [
+        {
+          "name": "Stacked Pals",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 393,
+          "inspectError": ""
+        },
+        {
+          "name": "Corner Cuddle",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 538,
+          "inspectError": ""
+        },
+        {
+          "name": "Peekaboo Trio",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 454,
+          "inspectError": ""
+        },
+        {
+          "name": "Pink Reactions",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 402,
+          "inspectError": ""
+        },
+        {
+          "name": "Blush Buddies",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 435,
+          "inspectError": ""
+        },
+        {
+          "name": "Rosy Daydream",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 407,
+          "inspectError": ""
+        },
+        {
+          "name": "Sunny Bunny",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 749,
+          "inspectError": ""
+        },
+        {
+          "name": "Mango Smile",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 511,
+          "inspectError": ""
+        },
+        {
+          "name": "Honey Peek",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 494,
+          "inspectError": ""
+        },
+        {
+          "name": "Blue Buddy Club",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 1013,
+          "inspectError": ""
+        },
+        {
+          "name": "Aqua Postcards",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 1058,
+          "inspectError": ""
+        },
+        {
+          "name": "Sky Parade",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 934,
+          "inspectError": ""
+        }
+      ],
+      "modal": {
+        "width": 750,
+        "height": 1200,
+        "loaded": true
+      }
+    },
+    {
+      "device": "mobile",
+      "filterPressed": "true",
+      "thumbnails": [
+        {
+          "name": "Stacked Pals",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 393,
+          "inspectError": ""
+        },
+        {
+          "name": "Corner Cuddle",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 538,
+          "inspectError": ""
+        },
+        {
+          "name": "Peekaboo Trio",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 454,
+          "inspectError": ""
+        },
+        {
+          "name": "Pink Reactions",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 402,
+          "inspectError": ""
+        },
+        {
+          "name": "Blush Buddies",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 435,
+          "inspectError": ""
+        },
+        {
+          "name": "Rosy Daydream",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 407,
+          "inspectError": ""
+        },
+        {
+          "name": "Sunny Bunny",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 749,
+          "inspectError": ""
+        },
+        {
+          "name": "Mango Smile",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 511,
+          "inspectError": ""
+        },
+        {
+          "name": "Honey Peek",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 494,
+          "inspectError": ""
+        },
+        {
+          "name": "Blue Buddy Club",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 1013,
+          "inspectError": ""
+        },
+        {
+          "name": "Aqua Postcards",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 1058,
+          "inspectError": ""
+        },
+        {
+          "name": "Sky Parade",
+          "newBadge": "New",
+          "canvasWidth": 384,
+          "canvasHeight": 614,
+          "colorCount": 934,
+          "inspectError": ""
+        }
+      ],
+      "modal": {
+        "width": 750,
+        "height": 1200,
+        "loaded": true
+      }
+    }
+  ],
+  "errors": []
+}

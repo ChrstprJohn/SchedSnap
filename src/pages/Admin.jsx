@@ -4,6 +4,7 @@ import { Plus, LogOut, ArrowLeft, X, Menu, CheckCircle2, Pencil, Eye, EyeOff, Tr
 import { deviceResolutions, tabletLandscapeResolution } from '../assets/templates.js';
 import { sampleSchedule } from '../assets/sampleSchedule.js';
 import { designCollections, galleryCategories, matchesGalleryCategory } from '../config/collections.js';
+import CategoryFilters from '../components/CategoryFilters.jsx';
 
 import { WallpaperCanvas } from './ScheduleWallpaper/CanvasPreview.jsx';
 import TemplateControls from './ScheduleWallpaper/TemplateControls.jsx';
@@ -148,7 +149,7 @@ export default function Admin() {
       </div>
       <div className="admin-filter-row">
         <DevicePicker value={device} onChange={setDevice} label="Filter by device" />
-        <div className="template-filters" role="group" aria-label="Filter designs"><div className="template-category-list">{galleryCategories.map(item => <button key={item.id} className="template-category" aria-pressed={collection === item.id} onClick={() => setCollection(item.id)}>{item.name}</button>)}</div></div>
+        <div className="template-filters" role="group" aria-label="Filter designs"><CategoryFilters categories={galleryCategories} value={collection} onChange={setCollection} /></div>
       </div>
       {!catalog ? error ? <button className="button-secondary" onClick={load}>Retry loading library</button> : <div className={`admin-design-grid admin-grid-${device}`} aria-label="Loading designs" aria-busy="true">{Array.from({ length: 10 }, (_, i) => <div key={i} className="gallery-card-skeleton wallpaper-skeleton" aria-hidden="true" />)}</div> : visible.length === 0 ? <p className="admin-empty">No designs available.</p> : <div className={`admin-design-grid admin-grid-${device}`}>{visible.map(template => {
         return <article key={template.id} className="admin-design">
