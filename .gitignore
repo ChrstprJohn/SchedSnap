@@ -22,10 +22,23 @@ coverage/
 /output/**/*.jpeg
 /.impeccable/**/*.png
 /.impeccable/**/*.webp
-/documentation/previews/**/*.png
-/documentation/previews/**/*.webp
+/.impeccable/**/*.jpg
+/.impeccable/**/*.jpeg
+/documentation/**/*.png
+/documentation/**/*.webp
+/documentation/**/*.jpg
+/documentation/**/*.jpeg
 /src/assets/*.upload-tmp
 /output/cloudinary-upload-*.json
 
-.vercel
-.env*
+# Local scratch work, generated reports, and artwork download bundles.
+/tmp/
+/output/**/*.txt
+/output/**/*.zip
+/output/**/*.tar
+/output/**/*.tar.gz
+/output/**/*-deployments.json
+
+# Python caches from artwork utilities.
+__pycache__/
+*.py[cod]
