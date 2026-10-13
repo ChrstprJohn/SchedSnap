@@ -1,0 +1,859 @@
+{
+  "requirements": {
+    "references": 4,
+    "variantsPerReference": 3,
+    "devices": {
+      "mobile": [
+        1080,
+        2400
+      ],
+      "tablet": [
+        1600,
+        2560
+      ],
+      "laptop": [
+        1920,
+        1080
+      ]
+    },
+    "opaque": true
+  },
+  "validation": {
+    "assetCount": 36,
+    "expectedCount": 36,
+    "missing": [],
+    "invalidDimensions": [],
+    "nonOpaque": [],
+    "uniqueHashes": 36
+  },
+  "assets": [
+    {
+      "id": "sanrio-parade-candy",
+      "device": "mobile",
+      "reference": 1,
+      "group": "parade",
+      "variant": "candy",
+      "path": "public/wallpapers/scenic/sanrio-parade-candy/mobile.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1080,
+      "height": 2400,
+      "expectedDimensions": [
+        1080,
+        2400
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "c696156ed119bb2ab408546758f6f850b6298e46e18622ed11e0b8500c4b0965"
+    },
+    {
+      "id": "sanrio-parade-candy",
+      "device": "tablet",
+      "reference": 1,
+      "group": "parade",
+      "variant": "candy",
+      "path": "public/wallpapers/scenic/sanrio-parade-candy/tablet.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1600,
+      "height": 2560,
+      "expectedDimensions": [
+        1600,
+        2560
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "5c93a009b7bd5fd7b2ef44c9600813c1875618041071ff0ebb3269e170902790"
+    },
+    {
+      "id": "sanrio-parade-candy",
+      "device": "laptop",
+      "reference": 1,
+      "group": "parade",
+      "variant": "candy",
+      "path": "public/wallpapers/scenic/sanrio-parade-candy/laptop.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1920,
+      "height": 1080,
+      "expectedDimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "58aefdbedea0ae8cd9a5efddd34070ea7178d2fe17e8dc03033710e06b4a559b"
+    },
+    {
+      "id": "sanrio-parade-music",
+      "device": "mobile",
+      "reference": 1,
+      "group": "parade",
+      "variant": "music",
+      "path": "public/wallpapers/scenic/sanrio-parade-music/mobile.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1080,
+      "height": 2400,
+      "expectedDimensions": [
+        1080,
+        2400
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "01ecaaa7e3bd289020cf26ed8cd7f226f3282e1ff455718c1e9165a5d6ca0f62"
+    },
+    {
+      "id": "sanrio-parade-music",
+      "device": "tablet",
+      "reference": 1,
+      "group": "parade",
+      "variant": "music",
+      "path": "public/wallpapers/scenic/sanrio-parade-music/tablet.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1600,
+      "height": 2560,
+      "expectedDimensions": [
+        1600,
+        2560
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "cb90ab300f25567053b0514064a1c211e9eb02d3978615c6c7ae738353fc88e1"
+    },
+    {
+      "id": "sanrio-parade-music",
+      "device": "laptop",
+      "reference": 1,
+      "group": "parade",
+      "variant": "music",
+      "path": "public/wallpapers/scenic/sanrio-parade-music/laptop.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1920,
+      "height": 1080,
+      "expectedDimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "8290e6fec21a258bf8dc01ea3e7c337eeb5aebcfc5a0897d33b3c7d4683c0df1"
+    },
+    {
+      "id": "sanrio-parade-balloons",
+      "device": "mobile",
+      "reference": 1,
+      "group": "parade",
+      "variant": "balloons",
+      "path": "public/wallpapers/scenic/sanrio-parade-balloons/mobile.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1080,
+      "height": 2400,
+      "expectedDimensions": [
+        1080,
+        2400
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "e0959a52ff838586ec2f35fe6d26ceef375ca286c5de445e9e9f3f96123ba92d"
+    },
+    {
+      "id": "sanrio-parade-balloons",
+      "device": "tablet",
+      "reference": 1,
+      "group": "parade",
+      "variant": "balloons",
+      "path": "public/wallpapers/scenic/sanrio-parade-balloons/tablet.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1600,
+      "height": 2560,
+      "expectedDimensions": [
+        1600,
+        2560
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "627fef429d1d745657fe0356064d58b21b9c1e4e4f7781bf63e112819462b250"
+    },
+    {
+      "id": "sanrio-parade-balloons",
+      "device": "laptop",
+      "reference": 1,
+      "group": "parade",
+      "variant": "balloons",
+      "path": "public/wallpapers/scenic/sanrio-parade-balloons/laptop.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1920,
+      "height": 1080,
+      "expectedDimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "0c05237b48b0d35b18d4fb2a86b33cbfded9bc10a95625a8cd3a21c02d6b40bb"
+    },
+    {
+      "id": "sanrio-pixel-rose",
+      "device": "mobile",
+      "reference": 2,
+      "group": "pixel",
+      "variant": "rose",
+      "path": "public/wallpapers/scenic/sanrio-pixel-rose/mobile.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1080,
+      "height": 2400,
+      "expectedDimensions": [
+        1080,
+        2400
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "95b96e69203171803f4ffdc831c7e6230445de0ba1ba2ee05d6181c33eaea40a"
+    },
+    {
+      "id": "sanrio-pixel-rose",
+      "device": "tablet",
+      "reference": 2,
+      "group": "pixel",
+      "variant": "rose",
+      "path": "public/wallpapers/scenic/sanrio-pixel-rose/tablet.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1600,
+      "height": 2560,
+      "expectedDimensions": [
+        1600,
+        2560
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "596f11a1ec0a6b77ddf50d06e3374a80cdcac987a9dee780629da0252927536e"
+    },
+    {
+      "id": "sanrio-pixel-rose",
+      "device": "laptop",
+      "reference": 2,
+      "group": "pixel",
+      "variant": "rose",
+      "path": "public/wallpapers/scenic/sanrio-pixel-rose/laptop.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1920,
+      "height": 1080,
+      "expectedDimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "acec48d0adac9949bf6eab1f0904c11451c6c25a108ed37a542b7c5623fb8cd4"
+    },
+    {
+      "id": "sanrio-pixel-lilac",
+      "device": "mobile",
+      "reference": 2,
+      "group": "pixel",
+      "variant": "lilac",
+      "path": "public/wallpapers/scenic/sanrio-pixel-lilac/mobile.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1080,
+      "height": 2400,
+      "expectedDimensions": [
+        1080,
+        2400
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "3c46f1d90d464da26a2733953ad4a5152a44e75c81aa3990d90d848f2a280ef9"
+    },
+    {
+      "id": "sanrio-pixel-lilac",
+      "device": "tablet",
+      "reference": 2,
+      "group": "pixel",
+      "variant": "lilac",
+      "path": "public/wallpapers/scenic/sanrio-pixel-lilac/tablet.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1600,
+      "height": 2560,
+      "expectedDimensions": [
+        1600,
+        2560
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "921853c6cc6df8b62e8cb85f6f30a6af22ea55eede1ff91baaa71644873b22b2"
+    },
+    {
+      "id": "sanrio-pixel-lilac",
+      "device": "laptop",
+      "reference": 2,
+      "group": "pixel",
+      "variant": "lilac",
+      "path": "public/wallpapers/scenic/sanrio-pixel-lilac/laptop.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1920,
+      "height": 1080,
+      "expectedDimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "9db83358e2bdffc128a3e9ed13425d6ef0af440dade48c3fafb84a42f0292ca3"
+    },
+    {
+      "id": "sanrio-pixel-mint",
+      "device": "mobile",
+      "reference": 2,
+      "group": "pixel",
+      "variant": "mint",
+      "path": "public/wallpapers/scenic/sanrio-pixel-mint/mobile.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1080,
+      "height": 2400,
+      "expectedDimensions": [
+        1080,
+        2400
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "410b133ef0fca4d0b64b1c75eae7a611d9d59cf088307cf58fa4a74974f291bc"
+    },
+    {
+      "id": "sanrio-pixel-mint",
+      "device": "tablet",
+      "reference": 2,
+      "group": "pixel",
+      "variant": "mint",
+      "path": "public/wallpapers/scenic/sanrio-pixel-mint/tablet.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1600,
+      "height": 2560,
+      "expectedDimensions": [
+        1600,
+        2560
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "8ea4e5c5cd4b4d36d99c9dbeef5c2246e8318d11ea06f49bdc8ba010882d9f9e"
+    },
+    {
+      "id": "sanrio-pixel-mint",
+      "device": "laptop",
+      "reference": 2,
+      "group": "pixel",
+      "variant": "mint",
+      "path": "public/wallpapers/scenic/sanrio-pixel-mint/laptop.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1920,
+      "height": 1080,
+      "expectedDimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "cf289104424ee68eee64294fb63925e31628d6f499c2d1040b2ba1b1ed0e8ecc"
+    },
+    {
+      "id": "sanrio-tea-strawberry",
+      "device": "mobile",
+      "reference": 3,
+      "group": "tea",
+      "variant": "strawberry",
+      "path": "public/wallpapers/scenic/sanrio-tea-strawberry/mobile.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1080,
+      "height": 2400,
+      "expectedDimensions": [
+        1080,
+        2400
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "4b6717e9aed0c865385461da469693eefdef18c56212d42cfd46396d9d244eb0"
+    },
+    {
+      "id": "sanrio-tea-strawberry",
+      "device": "tablet",
+      "reference": 3,
+      "group": "tea",
+      "variant": "strawberry",
+      "path": "public/wallpapers/scenic/sanrio-tea-strawberry/tablet.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1600,
+      "height": 2560,
+      "expectedDimensions": [
+        1600,
+        2560
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "b16feb8c9d88a0040a414dbf006981985881a3d009a59632737e7393dc2bdeac"
+    },
+    {
+      "id": "sanrio-tea-strawberry",
+      "device": "laptop",
+      "reference": 3,
+      "group": "tea",
+      "variant": "strawberry",
+      "path": "public/wallpapers/scenic/sanrio-tea-strawberry/laptop.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1920,
+      "height": 1080,
+      "expectedDimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "6d1a0b3c6fbe60219298e0df18f5040709d2af8087946993477cf605436c880d"
+    },
+    {
+      "id": "sanrio-tea-patisserie",
+      "device": "mobile",
+      "reference": 3,
+      "group": "tea",
+      "variant": "patisserie",
+      "path": "public/wallpapers/scenic/sanrio-tea-patisserie/mobile.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1080,
+      "height": 2400,
+      "expectedDimensions": [
+        1080,
+        2400
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "a1895de467cd111a8fe02bd637101e88cdf3e3ac6cc107eccbaaa8df6985acc7"
+    },
+    {
+      "id": "sanrio-tea-patisserie",
+      "device": "tablet",
+      "reference": 3,
+      "group": "tea",
+      "variant": "patisserie",
+      "path": "public/wallpapers/scenic/sanrio-tea-patisserie/tablet.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1600,
+      "height": 2560,
+      "expectedDimensions": [
+        1600,
+        2560
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "6ba8b3684b0f03ee7a89db822b901f712770c0510d01580a91d363dc3ffe9af6"
+    },
+    {
+      "id": "sanrio-tea-patisserie",
+      "device": "laptop",
+      "reference": 3,
+      "group": "tea",
+      "variant": "patisserie",
+      "path": "public/wallpapers/scenic/sanrio-tea-patisserie/laptop.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1920,
+      "height": 1080,
+      "expectedDimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "5253549187faf3356951a37dd46a2069f0be440c7499bc142f6df3e541f92acc"
+    },
+    {
+      "id": "sanrio-tea-flowers",
+      "device": "mobile",
+      "reference": 3,
+      "group": "tea",
+      "variant": "flowers",
+      "path": "public/wallpapers/scenic/sanrio-tea-flowers/mobile.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1080,
+      "height": 2400,
+      "expectedDimensions": [
+        1080,
+        2400
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "d6bf4cc7f3b6cddcc4ee6d718fac88706889f07559f9fd556e2a0cd0b0849879"
+    },
+    {
+      "id": "sanrio-tea-flowers",
+      "device": "tablet",
+      "reference": 3,
+      "group": "tea",
+      "variant": "flowers",
+      "path": "public/wallpapers/scenic/sanrio-tea-flowers/tablet.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1600,
+      "height": 2560,
+      "expectedDimensions": [
+        1600,
+        2560
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "4252f39fc8b196a7dbe069e7c1feb2e4cf42a93016f7571e265a8e82a0c3003b"
+    },
+    {
+      "id": "sanrio-tea-flowers",
+      "device": "laptop",
+      "reference": 3,
+      "group": "tea",
+      "variant": "flowers",
+      "path": "public/wallpapers/scenic/sanrio-tea-flowers/laptop.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1920,
+      "height": 1080,
+      "expectedDimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "1dc17b8b4657b867359023d0ffcaac634be702bfe06794bfacc36741fac636bd"
+    },
+    {
+      "id": "sanrio-gingham-strawberry",
+      "device": "mobile",
+      "reference": 4,
+      "group": "gingham",
+      "variant": "strawberry",
+      "path": "public/wallpapers/scenic/sanrio-gingham-strawberry/mobile.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1080,
+      "height": 2400,
+      "expectedDimensions": [
+        1080,
+        2400
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "cd819f62b29b275499d0222ff7564a219c9c2fefa8ff4622cf60ce3278e80a9e"
+    },
+    {
+      "id": "sanrio-gingham-strawberry",
+      "device": "tablet",
+      "reference": 4,
+      "group": "gingham",
+      "variant": "strawberry",
+      "path": "public/wallpapers/scenic/sanrio-gingham-strawberry/tablet.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1600,
+      "height": 2560,
+      "expectedDimensions": [
+        1600,
+        2560
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "f2184040377b074d789494737009f1d3713da98a0ae3238b456009cb740172d1"
+    },
+    {
+      "id": "sanrio-gingham-strawberry",
+      "device": "laptop",
+      "reference": 4,
+      "group": "gingham",
+      "variant": "strawberry",
+      "path": "public/wallpapers/scenic/sanrio-gingham-strawberry/laptop.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1920,
+      "height": 1080,
+      "expectedDimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "d5613ce8751a410a9b4e00aef68f7b128e7993b79e286875fc465e87a47d2936"
+    },
+    {
+      "id": "sanrio-gingham-ribbon",
+      "device": "mobile",
+      "reference": 4,
+      "group": "gingham",
+      "variant": "ribbon",
+      "path": "public/wallpapers/scenic/sanrio-gingham-ribbon/mobile.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1080,
+      "height": 2400,
+      "expectedDimensions": [
+        1080,
+        2400
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "5e0645c3bcd7b8787cee4b9364294c1311a4ee816e7a0f086f0b2d4ad046e611"
+    },
+    {
+      "id": "sanrio-gingham-ribbon",
+      "device": "tablet",
+      "reference": 4,
+      "group": "gingham",
+      "variant": "ribbon",
+      "path": "public/wallpapers/scenic/sanrio-gingham-ribbon/tablet.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1600,
+      "height": 2560,
+      "expectedDimensions": [
+        1600,
+        2560
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "c9d2979cb07e0bdc52acc8a578ee181e5dd3ea9cb4e0b8ede56de14bed48fb83"
+    },
+    {
+      "id": "sanrio-gingham-ribbon",
+      "device": "laptop",
+      "reference": 4,
+      "group": "gingham",
+      "variant": "ribbon",
+      "path": "public/wallpapers/scenic/sanrio-gingham-ribbon/laptop.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1920,
+      "height": 1080,
+      "expectedDimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "ec1c8a231a9031ff29da56c7ac4a50bcf491b67660023e1f2781e4378f272bb2"
+    },
+    {
+      "id": "sanrio-gingham-daisy",
+      "device": "mobile",
+      "reference": 4,
+      "group": "gingham",
+      "variant": "daisy",
+      "path": "public/wallpapers/scenic/sanrio-gingham-daisy/mobile.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1080,
+      "height": 2400,
+      "expectedDimensions": [
+        1080,
+        2400
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "561597b19892631765aa1c45b4b871695e876c6910aebe0b5b5a1d4c4602acb7"
+    },
+    {
+      "id": "sanrio-gingham-daisy",
+      "device": "tablet",
+      "reference": 4,
+      "group": "gingham",
+      "variant": "daisy",
+      "path": "public/wallpapers/scenic/sanrio-gingham-daisy/tablet.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1600,
+      "height": 2560,
+      "expectedDimensions": [
+        1600,
+        2560
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "8be2cf2c76a09ee7f44ee7d49a921c45e5936903b843321e983e5c2f8f212e0f"
+    },
+    {
+      "id": "sanrio-gingham-daisy",
+      "device": "laptop",
+      "reference": 4,
+      "group": "gingham",
+      "variant": "daisy",
+      "path": "public/wallpapers/scenic/sanrio-gingham-daisy/laptop.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1920,
+      "height": 1080,
+      "expectedDimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsValid": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opaque": true,
+      "sha256": "ec96d0335f61cc2f013359749fcc1dacb4d877477d54f81a48b958d4f72cbf86"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-13T06:26:11.677Z",
+  "url": "http://localhost:5173/api/catalog",
+  "source": "shared remote catalog plus development-only Sanrio previews",
+  "remoteRevision": "360fbbf0-923c-4bc3-b7db-e681bdbd602b",
+  "remoteRecordCount": 217,
+  "remotePublishedCount": 216,
+  "remoteSanrioCount": 0,
+  "localCount": 228,
+  "localSanrioCount": 12,
+  "existingPublishedRecordsUnchanged": true,
+  "existingRecordsSha256": "546e10320c65ac08940e0873e1b87d809a7d0443edd2c9a7c633d8ef559df861",
+  "all12ExactlyOnce": true,
+  "catalogWritePerformed": false,
+  "sanrioCategoryEnabled": true,
+  "filterMatches12": true,
+  "uploadedDeviceImageCount": 36,
+  "likes": {
+    "getStatus": 200,
+    "publishedLikesCount": 216,
+    "sanrioLikesCount": 0,
+    "behavior": "Sanrio hearts disabled when no vote entry exists; successful likes request does not set gallery error",
+    "votesWritten": false
+  }
+}

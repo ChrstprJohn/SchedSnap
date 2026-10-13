@@ -1,0 +1,1450 @@
+{
+  "renderer": "src/utils/canvasHelpers.js drawWallpaper",
+  "backend": "@napi-rs/canvas with project DM Sans, non-hundred CSS weights rounded to nearest hundred for backend compatibility; browser UI preview unavailable",
+  "schedules": {
+    "sample": "one class per weekday",
+    "dense": "three classes per weekday, 15 meetings"
+  },
+  "reports": [
+    {
+      "id": "sanrio-gingham-daisy",
+      "device": "mobile",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-gingham-daisy-mobile-sample.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1112
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-gingham-daisy",
+      "device": "mobile",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-gingham-daisy-mobile-dense.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1465.1
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-gingham-daisy",
+      "device": "tablet",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-gingham-daisy-tablet-sample.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-gingham-daisy",
+      "device": "tablet",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-gingham-daisy-tablet-dense.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 2284.9885714285715
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-gingham-daisy",
+      "device": "laptop",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-gingham-daisy-laptop-sample.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 405.5314285714286,
+        "y": 18.45257142857141,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-gingham-daisy",
+      "device": "laptop",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-gingham-daisy-laptop-dense.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 669.0624177176253,
+        "y": 0,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-gingham-ribbon",
+      "device": "mobile",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-gingham-ribbon-mobile-sample.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1112
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-gingham-ribbon",
+      "device": "mobile",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-gingham-ribbon-mobile-dense.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1465.1
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-gingham-ribbon",
+      "device": "tablet",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-gingham-ribbon-tablet-sample.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-gingham-ribbon",
+      "device": "tablet",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-gingham-ribbon-tablet-dense.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 2284.9885714285715
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-gingham-ribbon",
+      "device": "laptop",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-gingham-ribbon-laptop-sample.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 405.5314285714286,
+        "y": 18.45257142857141,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-gingham-ribbon",
+      "device": "laptop",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-gingham-ribbon-laptop-dense.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 669.0624177176253,
+        "y": 0,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-gingham-strawberry",
+      "device": "mobile",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-gingham-strawberry-mobile-sample.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1112
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-gingham-strawberry",
+      "device": "mobile",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-gingham-strawberry-mobile-dense.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1465.1
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-gingham-strawberry",
+      "device": "tablet",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-gingham-strawberry-tablet-sample.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-gingham-strawberry",
+      "device": "tablet",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-gingham-strawberry-tablet-dense.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 2284.9885714285715
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-gingham-strawberry",
+      "device": "laptop",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-gingham-strawberry-laptop-sample.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 405.5314285714286,
+        "y": 18.45257142857141,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-gingham-strawberry",
+      "device": "laptop",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-gingham-strawberry-laptop-dense.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 669.0624177176253,
+        "y": 0,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-parade-balloons",
+      "device": "mobile",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-parade-balloons-mobile-sample.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1112
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-parade-balloons",
+      "device": "mobile",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-parade-balloons-mobile-dense.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1465.1
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-parade-balloons",
+      "device": "tablet",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-parade-balloons-tablet-sample.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-parade-balloons",
+      "device": "tablet",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-parade-balloons-tablet-dense.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 2284.9885714285715
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-parade-balloons",
+      "device": "laptop",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-parade-balloons-laptop-sample.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 405.5314285714286,
+        "y": 18.45257142857141,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-parade-balloons",
+      "device": "laptop",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-parade-balloons-laptop-dense.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 669.0624177176253,
+        "y": 0,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-parade-candy",
+      "device": "mobile",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-parade-candy-mobile-sample.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1112
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-parade-candy",
+      "device": "mobile",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-parade-candy-mobile-dense.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1465.1
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-parade-candy",
+      "device": "tablet",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-parade-candy-tablet-sample.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-parade-candy",
+      "device": "tablet",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-parade-candy-tablet-dense.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 2284.9885714285715
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-parade-candy",
+      "device": "laptop",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-parade-candy-laptop-sample.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 405.5314285714286,
+        "y": 18.45257142857141,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-parade-candy",
+      "device": "laptop",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-parade-candy-laptop-dense.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 669.0624177176253,
+        "y": 0,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-parade-music",
+      "device": "mobile",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-parade-music-mobile-sample.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1112
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-parade-music",
+      "device": "mobile",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-parade-music-mobile-dense.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1465.1
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-parade-music",
+      "device": "tablet",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-parade-music-tablet-sample.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-parade-music",
+      "device": "tablet",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-parade-music-tablet-dense.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 2284.9885714285715
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-parade-music",
+      "device": "laptop",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-parade-music-laptop-sample.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 405.5314285714286,
+        "y": 18.45257142857141,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-parade-music",
+      "device": "laptop",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-parade-music-laptop-dense.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 669.0624177176253,
+        "y": 0,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-pixel-lilac",
+      "device": "mobile",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-pixel-lilac-mobile-sample.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1112
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-pixel-lilac",
+      "device": "mobile",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-pixel-lilac-mobile-dense.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1465.1
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-pixel-lilac",
+      "device": "tablet",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-pixel-lilac-tablet-sample.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-pixel-lilac",
+      "device": "tablet",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-pixel-lilac-tablet-dense.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 2284.9885714285715
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-pixel-lilac",
+      "device": "laptop",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-pixel-lilac-laptop-sample.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 405.5314285714286,
+        "y": 18.45257142857141,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-pixel-lilac",
+      "device": "laptop",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-pixel-lilac-laptop-dense.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 669.0624177176253,
+        "y": 0,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-pixel-mint",
+      "device": "mobile",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-pixel-mint-mobile-sample.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1112
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-pixel-mint",
+      "device": "mobile",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-pixel-mint-mobile-dense.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1465.1
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-pixel-mint",
+      "device": "tablet",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-pixel-mint-tablet-sample.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-pixel-mint",
+      "device": "tablet",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-pixel-mint-tablet-dense.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 2284.9885714285715
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-pixel-mint",
+      "device": "laptop",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-pixel-mint-laptop-sample.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 405.5314285714286,
+        "y": 18.45257142857141,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-pixel-mint",
+      "device": "laptop",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-pixel-mint-laptop-dense.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 669.0624177176253,
+        "y": 0,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-pixel-rose",
+      "device": "mobile",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-pixel-rose-mobile-sample.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1112
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-pixel-rose",
+      "device": "mobile",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-pixel-rose-mobile-dense.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1465.1
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-pixel-rose",
+      "device": "tablet",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-pixel-rose-tablet-sample.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-pixel-rose",
+      "device": "tablet",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-pixel-rose-tablet-dense.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 2284.9885714285715
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-pixel-rose",
+      "device": "laptop",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-pixel-rose-laptop-sample.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 405.5314285714286,
+        "y": 18.45257142857141,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-pixel-rose",
+      "device": "laptop",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-pixel-rose-laptop-dense.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 669.0624177176253,
+        "y": 0,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-tea-flowers",
+      "device": "mobile",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-tea-flowers-mobile-sample.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1112
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-tea-flowers",
+      "device": "mobile",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-tea-flowers-mobile-dense.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1465.1
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-tea-flowers",
+      "device": "tablet",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-tea-flowers-tablet-sample.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-tea-flowers",
+      "device": "tablet",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-tea-flowers-tablet-dense.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 2284.9885714285715
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-tea-flowers",
+      "device": "laptop",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-tea-flowers-laptop-sample.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 405.5314285714286,
+        "y": 18.45257142857141,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-tea-flowers",
+      "device": "laptop",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-tea-flowers-laptop-dense.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 669.0624177176253,
+        "y": 0,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-tea-patisserie",
+      "device": "mobile",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-tea-patisserie-mobile-sample.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1112
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-tea-patisserie",
+      "device": "mobile",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-tea-patisserie-mobile-dense.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1465.1
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-tea-patisserie",
+      "device": "tablet",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-tea-patisserie-tablet-sample.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-tea-patisserie",
+      "device": "tablet",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-tea-patisserie-tablet-dense.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 2284.9885714285715
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-tea-patisserie",
+      "device": "laptop",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-tea-patisserie-laptop-sample.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 405.5314285714286,
+        "y": 18.45257142857141,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-tea-patisserie",
+      "device": "laptop",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-tea-patisserie-laptop-dense.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 669.0624177176253,
+        "y": 0,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-tea-strawberry",
+      "device": "mobile",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-tea-strawberry-mobile-sample.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1112
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-tea-strawberry",
+      "device": "mobile",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-tea-strawberry-mobile-dense.png",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 365.3,
+        "width": 924,
+        "height": 1465.1
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-tea-strawberry",
+      "device": "tablet",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-tea-strawberry-tablet-sample.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-tea-strawberry",
+      "device": "tablet",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-tea-strawberry-tablet-dense.png",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 439.29600000000005,
+        "width": 1398.9668571428572,
+        "height": 2284.9885714285715
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 0
+      }
+    },
+    {
+      "id": "sanrio-tea-strawberry",
+      "device": "laptop",
+      "schedule": "sample",
+      "preview": "output/sanrio/qa/sanrio-tea-strawberry-laptop-sample.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 405.5314285714286,
+        "y": 18.45257142857141,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "preservedMeetings": 5,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    },
+    {
+      "id": "sanrio-tea-strawberry",
+      "device": "laptop",
+      "schedule": "dense",
+      "preview": "output/sanrio/qa/sanrio-tea-strawberry-laptop-dense.png",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 669.0624177176253,
+        "y": 0,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "preservedMeetings": 15,
+      "appearance": {
+        "verticalPosition": -35,
+        "bottomMargin": 8
+      }
+    }
+  ]
+}

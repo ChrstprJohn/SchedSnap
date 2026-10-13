@@ -2,8 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { galleryCategories, matchesGalleryCategory } from '../src/config/collections.js';
 
-test('shared gallery categories include the Onepiece collection and style filters', () => {
-  assert.deepEqual(galleryCategories.map(category => category.id), ['all', 'scenic', 'onepiece', 'little-friends', 'mascot', 'pattern', 'style-3d', 'style-pixel', 'style-doodle', 'style-flat']);
+test('shared gallery categories include the Sanrio and Onepiece collections and style filters', () => {
+  assert.deepEqual(galleryCategories.map(category => category.id), ['all', 'scenic', 'sanrio', 'onepiece', 'little-friends', 'mascot', 'pattern', 'style-3d', 'style-pixel', 'style-doodle', 'style-flat']);
 });
 
 test('catalog metadata matches parent collections and their style filters', () => {
