@@ -1,0 +1,76 @@
+{
+  "assets": [
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-dessert/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "a470a2c45e086cc1fee7439dd015ae509f7a5c029f932608d73bbbecd37a3ca2"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-dessert/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "398837e6e4f00f70dc74640c9026fe01635923c579687524926dcf0da571f4f0"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-dessert/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "2a44badf2cb0549687e3602844a389cd3f7a24770d69f1cf76e8395f4610387c"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-balloons/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "89b41c9bcdb4efefe8370a85fe3de1acabc18a8ba45b456c4a71d58080ce2715"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-balloons/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "e523eecbbd35460e940fcacba137960b197ae880e99d96d780f8924b1fa528dd"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-balloons/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "70381227892c0c9dbfe84e1f70e083afe7ab3d8160ae4c5dc79411cf12fe1aa7"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-friend-stack/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "49713de8c47b96110d7018497d0af52a8860d069a23390c40bd74114a9995574"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-friend-stack/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "a8ea468c7c8da28d34c42ef8ccec316d533ea26868b3161faedabf96b4c09aae"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-friend-stack/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "0025f1f1df96301ab2efaefaa7519f0233f6baca33234d071dc34ed1470ba1c8"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-tea-clouds/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "f9ee270ed2bd3ae46d801fa2a6a7f6cece2709e41a2be387dd2bc642b251e267"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-tea-clouds/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "0e7604a30b714b5a4a0d134d278541ab491faba4106b1fdd8bf6736b4b5b5e90"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-tea-clouds/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "0c353b55a377a8e5390f173abd9a2f249055913f1d370651431af4c75e10d35b"
+    }
+  ]
+}

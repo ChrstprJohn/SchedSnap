@@ -1,0 +1,78 @@
+{
+  "assets": [
+    {
+      "id": "domo-gingham-memory",
+      "device": "mobile",
+      "source": "Generated images are saved to C:\\Users\\Administrator\\.codex\\generated_images\\01a13585-629b-7550-bef7-df0260565b38 as C:\\Users\\Administrator\\.codex\\generated_images\\01a13585-629b-7550-bef7-df0260565b38\\exec-efa623c2-db5f-44bd-b2b5-f2e2c2bf5e0e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "path": "public/wallpapers/scenic/domo-gingham-memory/mobile.png"
+    },
+    {
+      "id": "domo-gingham-memory",
+      "device": "tablet",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13585-629b-7550-bef7-df0260565b38\\exec-d4b2748a-f6e1-434f-8132-bf69f01ab49d.png",
+      "path": "public/wallpapers/scenic/domo-gingham-memory/tablet.png"
+    },
+    {
+      "id": "domo-gingham-memory",
+      "device": "laptop",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13585-629b-7550-bef7-df0260565b38\\exec-6f1a5e35-ed8f-4e39-b98f-675317cf77cf.png",
+      "path": "public/wallpapers/scenic/domo-gingham-memory/laptop.png"
+    },
+    {
+      "id": "domo-lace-journal",
+      "device": "mobile",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13585-629b-7550-bef7-df0260565b38\\exec-9e25bd8e-d5bc-4d73-906b-b8c6afb013bb.png",
+      "path": "public/wallpapers/scenic/domo-lace-journal/mobile.png"
+    },
+    {
+      "id": "domo-lace-journal",
+      "device": "tablet",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13585-629b-7550-bef7-df0260565b38\\exec-a2cad40c-b336-404f-877c-04f8fab50f55.png",
+      "path": "public/wallpapers/scenic/domo-lace-journal/tablet.png"
+    },
+    {
+      "id": "domo-lace-journal",
+      "device": "laptop",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13585-629b-7550-bef7-df0260565b38\\exec-80af2872-2468-440a-9e5e-2a20e8a06cad.png",
+      "path": "public/wallpapers/scenic/domo-lace-journal/laptop.png"
+    },
+    {
+      "id": "domo-pixel-scrapbook",
+      "device": "mobile",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13585-629b-7550-bef7-df0260565b38\\exec-801b5ccb-36ee-4678-b569-27be94855141.png",
+      "path": "public/wallpapers/scenic/domo-pixel-scrapbook/mobile.png"
+    },
+    {
+      "id": "domo-pixel-scrapbook",
+      "device": "tablet",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13585-629b-7550-bef7-df0260565b38\\exec-07e6a8e3-9841-4363-a583-ff9d0bad215f.png",
+      "path": "public/wallpapers/scenic/domo-pixel-scrapbook/tablet.png"
+    },
+    {
+      "id": "domo-pixel-scrapbook",
+      "device": "laptop",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13585-629b-7550-bef7-df0260565b38\\exec-27e44462-e843-48a8-8e83-d310b8f82419.png",
+      "path": "public/wallpapers/scenic/domo-pixel-scrapbook/laptop.png"
+    }
+  ],
+  "designs": [
+    {
+      "id": "domo-gingham-memory",
+      "name": "Domo Gingham Memory",
+      "background": "#e9dfce",
+      "ink": "#422b20"
+    },
+    {
+      "id": "domo-lace-journal",
+      "name": "Domo Lace Journal",
+      "background": "#eee5d5",
+      "ink": "#4a3024"
+    },
+    {
+      "id": "domo-pixel-scrapbook",
+      "name": "Domo Pixel Scrapbook",
+      "background": "#e6d6ba",
+      "ink": "#3e2a1d"
+    }
+  ]
+}

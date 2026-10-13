@@ -1,0 +1,510 @@
+{
+  "generatedAt": "2026-10-13T14:01:05.690Z",
+  "provider": "built-in imagegen",
+  "assets": [
+    {
+      "id": "domo-star-stickers",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-star-stickers/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "sourceDimensions": {
+        "width": 841,
+        "height": 1870
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "28cd08fb266624ac9f02c1099e4660aad7cd199d46c0b03aa4a0315b71b6e0de"
+    },
+    {
+      "id": "domo-star-stickers",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-star-stickers/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "sourceDimensions": {
+        "width": 992,
+        "height": 1586
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "9aeed99bb5cd15d8eb599fdf44f608571417a5cbc7a250f03bb64e3bb6847912"
+    },
+    {
+      "id": "domo-star-stickers",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-star-stickers/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "4c518b4d1905c4d8c5c6be001d7aef32b2dafb02cc76e1c447a2fb86aae0bc1e"
+    },
+    {
+      "id": "domo-orbit-paper",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-orbit-paper/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "sourceDimensions": {
+        "width": 841,
+        "height": 1870
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "98bdfb07d3fdaaac6957c4fbedd3bd57a4a19dde0b0ab6d0cba5910f40ed4915"
+    },
+    {
+      "id": "domo-orbit-paper",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-orbit-paper/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "sourceDimensions": {
+        "width": 992,
+        "height": 1586
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "4b6983bb5577da3508f8c541a875d897208221738fe336970d145cd6853a2d2c"
+    },
+    {
+      "id": "domo-orbit-paper",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-orbit-paper/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "8626eb49f1440667a68b1c86f2bd3414d4c73d01809833cd3ff890437f340d24"
+    },
+    {
+      "id": "domo-velvet-cosmos",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-velvet-cosmos/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "sourceDimensions": {
+        "width": 841,
+        "height": 1870
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "94549a1f45b7513248aaccc4b74d41f96eb5d09b216642828a53fc66741c7b65"
+    },
+    {
+      "id": "domo-velvet-cosmos",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-velvet-cosmos/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "sourceDimensions": {
+        "width": 992,
+        "height": 1586
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "787c99bd1eb3b4467f20d845e937accc2bcbaa7580c5e429bb7c208c88a6724f"
+    },
+    {
+      "id": "domo-velvet-cosmos",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-velvet-cosmos/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "ca97c615cb5d5d7a9e78c0d1dbbc41bb9fb04b31f9589c41c7e80829776b8362"
+    },
+    {
+      "id": "domo-plaid-notes",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-plaid-notes/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "sourceDimensions": {
+        "width": 841,
+        "height": 1870
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "1da673c54c20ee501cfe767249485599d38506b6d595d3b919da2571356035c1"
+    },
+    {
+      "id": "domo-plaid-notes",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-plaid-notes/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "sourceDimensions": {
+        "width": 992,
+        "height": 1586
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "06a1b1087a3e69aa746263f14b5fedd7b3b362bd0f908d2ecf3c89aa54a551c9"
+    },
+    {
+      "id": "domo-plaid-notes",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-plaid-notes/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "be58d76c9156df29e6b49205a5770f32d47c20f69d529a8310ca7c1617128c6a"
+    },
+    {
+      "id": "domo-tartan-sketch",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-tartan-sketch/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "sourceDimensions": {
+        "width": 841,
+        "height": 1870
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "85154a70492418f0f5afb10275f9f0317b6ab8098e30d81c1a368365e9260eb3"
+    },
+    {
+      "id": "domo-tartan-sketch",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-tartan-sketch/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "sourceDimensions": {
+        "width": 992,
+        "height": 1586
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "0f09ad1b16a991dfb61121760b6d30e6962bbb06c6666771e4e73dbbb691580e"
+    },
+    {
+      "id": "domo-tartan-sketch",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-tartan-sketch/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "94b96155084e61d70837f04d22efe8cf0f2cd70b83fdb564a7169010b1bf1a78"
+    },
+    {
+      "id": "domo-gingham-cutout",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-gingham-cutout/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "sourceDimensions": {
+        "width": 841,
+        "height": 1870
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "ea108e9adf1594d0c945c1f929a60715793d891823b89d1642c9084f37c8405e"
+    },
+    {
+      "id": "domo-gingham-cutout",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-gingham-cutout/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "sourceDimensions": {
+        "width": 992,
+        "height": 1586
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "7a92a46223e88b6d1620731b5f2b0b100b63ccac3b535def59a7653142451ef3"
+    },
+    {
+      "id": "domo-gingham-cutout",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-gingham-cutout/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "98aac405864db36a27794aad31d1521f79ae6b5b1c565b42315c269171147441"
+    },
+    {
+      "id": "domo-caramel-outline",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-caramel-outline/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "sourceDimensions": {
+        "width": 841,
+        "height": 1870
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "685a8ebb03d292d8f7b0c1e8504f9caab219056961d6eacccab703ff160ee2bc"
+    },
+    {
+      "id": "domo-caramel-outline",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-caramel-outline/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "sourceDimensions": {
+        "width": 992,
+        "height": 1586
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "3cb29d9fa37fa29fd274ef2aec863f59ed3227af83a8430f405971ff169aafff"
+    },
+    {
+      "id": "domo-caramel-outline",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-caramel-outline/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "16e04a295cb75370983a6329ea5627a53ee92b41eed564ffe4b7b335b16c8dd7"
+    },
+    {
+      "id": "domo-chalk-stars",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-chalk-stars/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "sourceDimensions": {
+        "width": 841,
+        "height": 1870
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "089dc854de5a7b35d75b14a6ed3c66d2a894b91578bc906689dce92f39a9599c"
+    },
+    {
+      "id": "domo-chalk-stars",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-chalk-stars/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "sourceDimensions": {
+        "width": 992,
+        "height": 1586
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "d0fa76c0392aec40cca5af43fb3febb56836e0c39bff82a253b7d787459d98ce"
+    },
+    {
+      "id": "domo-chalk-stars",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-chalk-stars/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "70cab2313934e3aa6d029963fd65022c2a0e49954a2e52535c83eff316e84f63"
+    },
+    {
+      "id": "domo-cut-paper",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-cut-paper/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "sourceDimensions": {
+        "width": 841,
+        "height": 1870
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "5b0cd88719c3cf7a056a1e9aa68252811d8d8fe54199ffcbf5699be8c6771335"
+    },
+    {
+      "id": "domo-cut-paper",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-cut-paper/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "sourceDimensions": {
+        "width": 992,
+        "height": 1586
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "16aff9bd9200572ab83712c6e59acc23f94a6daa053d95f32701720cb361aaeb"
+    },
+    {
+      "id": "domo-cut-paper",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-cut-paper/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "640054b26819a9d0ccdfa00702e86be11eea5ece150729ce045ad6882c2ca59c"
+    },
+    {
+      "id": "domo-gingham-memory",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-gingham-memory/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "sourceDimensions": {
+        "width": 841,
+        "height": 1870
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "925cb299ef8931e199624cece0df5e6f66218d59d7280a3824310f42c8b5bc7f"
+    },
+    {
+      "id": "domo-gingham-memory",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-gingham-memory/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "sourceDimensions": {
+        "width": 992,
+        "height": 1586
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "de09e7f901d7814a6d683af0469b2b3a1a10f504390cd39cde71d28f33cd7256"
+    },
+    {
+      "id": "domo-gingham-memory",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-gingham-memory/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "ce73d68815bb3aad94c176edaaa9b75c433fe53dc4b089c4f6f7f6cd8072c0de"
+    },
+    {
+      "id": "domo-lace-journal",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-lace-journal/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "sourceDimensions": {
+        "width": 841,
+        "height": 1870
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "62bd6694198fbed52ee7fb32f7b805db2f30fe661cd7a1fa47c004b651ecdf96"
+    },
+    {
+      "id": "domo-lace-journal",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-lace-journal/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "sourceDimensions": {
+        "width": 992,
+        "height": 1586
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "0a2eac56606c636bc8ec5f97e6f8757db3f4757244a60117e398caf0422380a8"
+    },
+    {
+      "id": "domo-lace-journal",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-lace-journal/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "a3185a14b6deea112cd4bd6029b40899c9116616f0826afada98a7011453eeb8"
+    },
+    {
+      "id": "domo-pixel-scrapbook",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-pixel-scrapbook/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "sourceDimensions": {
+        "width": 841,
+        "height": 1870
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "deae0183dbb8bef5108ed2411f006ac13772afad6a2f5863106afd89ca941812"
+    },
+    {
+      "id": "domo-pixel-scrapbook",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-pixel-scrapbook/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "sourceDimensions": {
+        "width": 992,
+        "height": 1586
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "bf89a2054a96ad92ba656a182c3791c8b7394782151276b97d0c9a9cfb679378"
+    },
+    {
+      "id": "domo-pixel-scrapbook",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-pixel-scrapbook/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "09b6d295ef2d29b942e2b489c2c67f99a0668424fd58dc81edf26133ae001e44"
+    }
+  ]
+}

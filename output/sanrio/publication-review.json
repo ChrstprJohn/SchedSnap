@@ -1,332 +1,246 @@
 {
-  "generatedAt": "2026-10-13T06:25:01.811Z",
+  "generatedAt": "2026-10-13T10:55:45.318Z",
   "mode": "dry-run",
   "cloud": "djfyq0jyz",
   "catalogAsset": "schedsnap/admin/catalog.json",
   "warning": "This remote catalog is shared by localhost and any deployed app configured for the same Cloudinary cloud.",
-  "revision": "360fbbf0-923c-4bc3-b7db-e681bdbd602b",
-  "existingCount": 217,
-  "proposedCount": 229,
+  "revision": "8c3c1f4c-9781-4c5a-9342-90a589aaabd9",
+  "existingCount": 237,
+  "proposedCount": 241,
   "additions": [
     {
-      "id": "sanrio-parade-candy",
-      "name": "Candy Parade",
-      "description": "My Melody, Hello Kitty and Cinnamoroll carry pastel sweets beneath ribbon bunting.",
+      "id": "sanrio-strawberry-patchwork",
+      "name": "Strawberry Patchwork",
+      "description": "Stitched pink gingham panels frame miniature Sanrio friends and strawberries.",
       "status": "published",
-      "createdAt": "2026-10-13T05:33:33.306Z",
-      "publishedAt": "2026-10-13T06:25:01.811Z",
+      "createdAt": "2026-10-13T10:44:59.633Z",
+      "publishedAt": "2026-10-13T10:55:45.318Z",
       "collection": "sanrio",
-      "family": "sanrio-parade",
-      "background": "#fff7f7",
+      "family": "sanrio-stationery",
+      "background": "#fff5f8",
       "ink": "#583b49",
       "muted": "#7d5c6c",
       "surface": "rgba(255, 255, 255, 0.96)",
       "line": "rgba(88, 59, 73, 0.20)",
-      "image": "/wallpapers/scenic/sanrio-parade-candy/mobile.png",
+      "image": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888834/schedsnap/wallpapers/scenic/sanrio-strawberry-patchwork/mobile-8609c211717f375a.png",
       "deviceImages": {
-        "mobile": "/wallpapers/scenic/sanrio-parade-candy/mobile.png",
-        "tablet": "/wallpapers/scenic/sanrio-parade-candy/tablet.png",
-        "laptop": "/wallpapers/scenic/sanrio-parade-candy/laptop.png"
+        "mobile": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888834/schedsnap/wallpapers/scenic/sanrio-strawberry-patchwork/mobile-8609c211717f375a.png",
+        "tablet": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888838/schedsnap/wallpapers/scenic/sanrio-strawberry-patchwork/tablet-35a410c344e2b6f1.png",
+        "laptop": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888829/schedsnap/wallpapers/scenic/sanrio-strawberry-patchwork/laptop-ec49f1163b494364.png"
       },
       "containerStyle": "solid",
       "containerShape": "rounded",
+      "containerFill": false,
       "bottomMargin": 0,
       "verticalPosition": -35,
       "particleStyle": "none"
     },
     {
-      "id": "sanrio-parade-music",
-      "name": "Ribbon Music Parade",
-      "description": "My Melody plays the trumpet while Hello Kitty and Cinnamoroll join a ribbon-trimmed marching band.",
+      "id": "sanrio-melody-bedtime",
+      "name": "Melody Bedtime",
+      "description": "Little bedtime scenes of My Melody with bows, pillows, and sleepy stars.",
       "status": "published",
-      "createdAt": "2026-10-13T05:37:06.346Z",
-      "publishedAt": "2026-10-13T06:25:01.811Z",
+      "createdAt": "2026-10-13T10:49:19.464Z",
+      "publishedAt": "2026-10-13T10:55:45.318Z",
       "collection": "sanrio",
-      "family": "sanrio-parade",
-      "background": "#fff8f2",
+      "family": "sanrio-stationery",
+      "background": "#fff5f8",
       "ink": "#583b49",
       "muted": "#7d5c6c",
       "surface": "rgba(255, 255, 255, 0.96)",
       "line": "rgba(88, 59, 73, 0.20)",
-      "image": "/wallpapers/scenic/sanrio-parade-music/mobile.png",
+      "image": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888814/schedsnap/wallpapers/scenic/sanrio-melody-bedtime/mobile-36911a8038e7ab6f.png",
       "deviceImages": {
-        "mobile": "/wallpapers/scenic/sanrio-parade-music/mobile.png",
-        "tablet": "/wallpapers/scenic/sanrio-parade-music/tablet.png",
-        "laptop": "/wallpapers/scenic/sanrio-parade-music/laptop.png"
+        "mobile": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888814/schedsnap/wallpapers/scenic/sanrio-melody-bedtime/mobile-36911a8038e7ab6f.png",
+        "tablet": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888814/schedsnap/wallpapers/scenic/sanrio-melody-bedtime/tablet-e8e74ba3d6fe22f6.png",
+        "laptop": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888813/schedsnap/wallpapers/scenic/sanrio-melody-bedtime/laptop-b3b4cd925412fbe7.png"
       },
       "containerStyle": "solid",
       "containerShape": "rounded",
+      "containerFill": false,
       "bottomMargin": 0,
       "verticalPosition": -35,
       "particleStyle": "none"
     },
     {
-      "id": "sanrio-parade-balloons",
-      "name": "Balloon Parade",
-      "description": "Heart and star balloons accompany My Melody, Hello Kitty and Cinnamoroll in a soft pink parade.",
+      "id": "sanrio-pastel-scrapbook",
+      "name": "Pastel Scrapbook",
+      "description": "My Melody and Cinnamoroll decorate a soft pink paper scrapbook border.",
       "status": "published",
-      "createdAt": "2026-10-13T05:42:05.495Z",
-      "publishedAt": "2026-10-13T06:25:01.811Z",
+      "createdAt": "2026-10-13T10:46:00.468Z",
+      "publishedAt": "2026-10-13T10:55:45.318Z",
       "collection": "sanrio",
-      "family": "sanrio-parade",
-      "background": "#fff8f5",
+      "family": "sanrio-stationery",
+      "background": "#fff5f8",
       "ink": "#583b49",
       "muted": "#7d5c6c",
       "surface": "rgba(255, 255, 255, 0.96)",
       "line": "rgba(88, 59, 73, 0.20)",
-      "image": "/wallpapers/scenic/sanrio-parade-balloons/mobile.png",
+      "image": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888824/schedsnap/wallpapers/scenic/sanrio-pastel-scrapbook/mobile-52c82655c0d2a5df.png",
       "deviceImages": {
-        "mobile": "/wallpapers/scenic/sanrio-parade-balloons/mobile.png",
-        "tablet": "/wallpapers/scenic/sanrio-parade-balloons/tablet.png",
-        "laptop": "/wallpapers/scenic/sanrio-parade-balloons/laptop.png"
+        "mobile": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888824/schedsnap/wallpapers/scenic/sanrio-pastel-scrapbook/mobile-52c82655c0d2a5df.png",
+        "tablet": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888827/schedsnap/wallpapers/scenic/sanrio-pastel-scrapbook/tablet-3ebd0a41fab32553.png",
+        "laptop": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888819/schedsnap/wallpapers/scenic/sanrio-pastel-scrapbook/laptop-b5fbe101989f8854.png"
       },
       "containerStyle": "solid",
       "containerShape": "rounded",
+      "containerFill": false,
       "bottomMargin": 0,
       "verticalPosition": -35,
       "particleStyle": "none"
     },
     {
-      "id": "sanrio-pixel-rose",
-      "name": "Rose Ribbon Kitty",
-      "description": "Pixel Hello Kitty rests beside rose ribbons and pale polka dots.",
+      "id": "sanrio-melody-piano-stationery",
+      "name": "Melody and Piano",
+      "description": "Tiny lace frames hold My Melody and My Sweet Piano on dotted stationery.",
       "status": "published",
-      "createdAt": "2026-10-13T05:40:19.004Z",
-      "publishedAt": "2026-10-13T06:25:01.811Z",
+      "createdAt": "2026-10-13T10:46:20.764Z",
+      "publishedAt": "2026-10-13T10:55:45.318Z",
       "collection": "sanrio",
-      "family": "sanrio-pixel",
-      "background": "#fff2f5",
+      "family": "sanrio-stationery",
+      "background": "#fff5f8",
       "ink": "#583b49",
       "muted": "#7d5c6c",
       "surface": "rgba(255, 255, 255, 0.96)",
       "line": "rgba(88, 59, 73, 0.20)",
-      "image": "/wallpapers/scenic/sanrio-pixel-rose/mobile.png",
+      "image": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888818/schedsnap/wallpapers/scenic/sanrio-melody-piano-stationery/mobile-07790a677278bc91.png",
       "deviceImages": {
-        "mobile": "/wallpapers/scenic/sanrio-pixel-rose/mobile.png",
-        "tablet": "/wallpapers/scenic/sanrio-pixel-rose/tablet.png",
-        "laptop": "/wallpapers/scenic/sanrio-pixel-rose/laptop.png"
-      },
-      "pixelArt": true,
-      "containerStyle": "solid",
-      "containerShape": "rounded",
-      "bottomMargin": 0,
-      "verticalPosition": -35,
-      "particleStyle": "none"
-    },
-    {
-      "id": "sanrio-pixel-lilac",
-      "name": "Lilac Ribbon Kitty",
-      "description": "A lilac bow, soft ribbons and pixel Hello Kitty decorate pale dotted stationery.",
-      "status": "published",
-      "createdAt": "2026-10-13T05:40:19.004Z",
-      "publishedAt": "2026-10-13T06:25:01.811Z",
-      "collection": "sanrio",
-      "family": "sanrio-pixel",
-      "background": "#f8f2fc",
-      "ink": "#583b49",
-      "muted": "#7d5c6c",
-      "surface": "rgba(255, 255, 255, 0.96)",
-      "line": "rgba(88, 59, 73, 0.20)",
-      "image": "/wallpapers/scenic/sanrio-pixel-lilac/mobile.png",
-      "deviceImages": {
-        "mobile": "/wallpapers/scenic/sanrio-pixel-lilac/mobile.png",
-        "tablet": "/wallpapers/scenic/sanrio-pixel-lilac/tablet.png",
-        "laptop": "/wallpapers/scenic/sanrio-pixel-lilac/laptop.png"
-      },
-      "pixelArt": true,
-      "containerStyle": "solid",
-      "containerShape": "rounded",
-      "bottomMargin": 0,
-      "verticalPosition": -35,
-      "particleStyle": "none"
-    },
-    {
-      "id": "sanrio-pixel-mint",
-      "name": "Mint Ribbon Kitty",
-      "description": "Pixel Hello Kitty pairs mint ribbons with a quiet pastel polka-dot background.",
-      "status": "published",
-      "createdAt": "2026-10-13T05:40:19.004Z",
-      "publishedAt": "2026-10-13T06:25:01.811Z",
-      "collection": "sanrio",
-      "family": "sanrio-pixel",
-      "background": "#f2faf5",
-      "ink": "#583b49",
-      "muted": "#7d5c6c",
-      "surface": "rgba(255, 255, 255, 0.96)",
-      "line": "rgba(88, 59, 73, 0.20)",
-      "image": "/wallpapers/scenic/sanrio-pixel-mint/mobile.png",
-      "deviceImages": {
-        "mobile": "/wallpapers/scenic/sanrio-pixel-mint/mobile.png",
-        "tablet": "/wallpapers/scenic/sanrio-pixel-mint/tablet.png",
-        "laptop": "/wallpapers/scenic/sanrio-pixel-mint/laptop.png"
-      },
-      "pixelArt": true,
-      "containerStyle": "solid",
-      "containerShape": "rounded",
-      "bottomMargin": 0,
-      "verticalPosition": -35,
-      "particleStyle": "none"
-    },
-    {
-      "id": "sanrio-tea-strawberry",
-      "name": "Strawberry Tea",
-      "description": "My Melody and Hello Kitty share strawberry tea and tiny cakes beneath cream lace curtains.",
-      "status": "published",
-      "createdAt": "2026-10-13T05:48:27.983Z",
-      "publishedAt": "2026-10-13T06:25:01.811Z",
-      "collection": "sanrio",
-      "family": "sanrio-tea",
-      "background": "#fff8f3",
-      "ink": "#583b49",
-      "muted": "#7d5c6c",
-      "surface": "rgba(255, 255, 255, 0.96)",
-      "line": "rgba(88, 59, 73, 0.20)",
-      "image": "/wallpapers/scenic/sanrio-tea-strawberry/mobile.png",
-      "deviceImages": {
-        "mobile": "/wallpapers/scenic/sanrio-tea-strawberry/mobile.png",
-        "tablet": "/wallpapers/scenic/sanrio-tea-strawberry/tablet.png",
-        "laptop": "/wallpapers/scenic/sanrio-tea-strawberry/laptop.png"
+        "mobile": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888818/schedsnap/wallpapers/scenic/sanrio-melody-piano-stationery/mobile-07790a677278bc91.png",
+        "tablet": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888820/schedsnap/wallpapers/scenic/sanrio-melody-piano-stationery/tablet-c5dc63f5a4f17625.png",
+        "laptop": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888836/schedsnap/wallpapers/scenic/sanrio-melody-piano-stationery/laptop-d54169d585df8823.png"
       },
       "containerStyle": "solid",
       "containerShape": "rounded",
-      "bottomMargin": 0,
-      "verticalPosition": -35,
-      "particleStyle": "none"
-    },
-    {
-      "id": "sanrio-tea-patisserie",
-      "name": "Patisserie Tea",
-      "description": "My Melody and Hello Kitty enjoy pastries and teacups on blush-striped lace stationery.",
-      "status": "published",
-      "createdAt": "2026-10-13T05:48:27.983Z",
-      "publishedAt": "2026-10-13T06:25:01.811Z",
-      "collection": "sanrio",
-      "family": "sanrio-tea",
-      "background": "#fff8f3",
-      "ink": "#583b49",
-      "muted": "#7d5c6c",
-      "surface": "rgba(255, 255, 255, 0.96)",
-      "line": "rgba(88, 59, 73, 0.20)",
-      "image": "/wallpapers/scenic/sanrio-tea-patisserie/mobile.png",
-      "deviceImages": {
-        "mobile": "/wallpapers/scenic/sanrio-tea-patisserie/mobile.png",
-        "tablet": "/wallpapers/scenic/sanrio-tea-patisserie/tablet.png",
-        "laptop": "/wallpapers/scenic/sanrio-tea-patisserie/laptop.png"
-      },
-      "containerStyle": "solid",
-      "containerShape": "rounded",
-      "bottomMargin": 0,
-      "verticalPosition": -35,
-      "particleStyle": "none"
-    },
-    {
-      "id": "sanrio-tea-flowers",
-      "name": "Flower Tea",
-      "description": "A tiny floral tea party with My Melody, Hello Kitty and delicate lace borders.",
-      "status": "published",
-      "createdAt": "2026-10-13T05:48:27.983Z",
-      "publishedAt": "2026-10-13T06:25:01.811Z",
-      "collection": "sanrio",
-      "family": "sanrio-tea",
-      "background": "#fff8f3",
-      "ink": "#583b49",
-      "muted": "#7d5c6c",
-      "surface": "rgba(255, 255, 255, 0.96)",
-      "line": "rgba(88, 59, 73, 0.20)",
-      "image": "/wallpapers/scenic/sanrio-tea-flowers/mobile.png",
-      "deviceImages": {
-        "mobile": "/wallpapers/scenic/sanrio-tea-flowers/mobile.png",
-        "tablet": "/wallpapers/scenic/sanrio-tea-flowers/tablet.png",
-        "laptop": "/wallpapers/scenic/sanrio-tea-flowers/laptop.png"
-      },
-      "containerStyle": "solid",
-      "containerShape": "rounded",
-      "bottomMargin": 0,
-      "verticalPosition": -35,
-      "particleStyle": "none"
-    },
-    {
-      "id": "sanrio-gingham-strawberry",
-      "name": "Strawberry Gingham",
-      "description": "Hello Kitty faces, strawberries and tiny bows frame pale pink gingham.",
-      "status": "published",
-      "createdAt": "2026-10-13T05:33:39.663Z",
-      "publishedAt": "2026-10-13T06:25:01.811Z",
-      "collection": "sanrio",
-      "family": "sanrio-gingham",
-      "background": "#fff4f6",
-      "ink": "#583b49",
-      "muted": "#7d5c6c",
-      "surface": "rgba(255, 255, 255, 0.96)",
-      "line": "rgba(88, 59, 73, 0.20)",
-      "image": "/wallpapers/scenic/sanrio-gingham-strawberry/mobile.png",
-      "deviceImages": {
-        "mobile": "/wallpapers/scenic/sanrio-gingham-strawberry/mobile.png",
-        "tablet": "/wallpapers/scenic/sanrio-gingham-strawberry/tablet.png",
-        "laptop": "/wallpapers/scenic/sanrio-gingham-strawberry/laptop.png"
-      },
-      "containerStyle": "solid",
-      "containerShape": "rounded",
-      "bottomMargin": 0,
-      "verticalPosition": -35,
-      "particleStyle": "none"
-    },
-    {
-      "id": "sanrio-gingham-ribbon",
-      "name": "Ribbon Gingham",
-      "description": "Hello Kitty, soft ribbons and small hearts sit along the edges of blush gingham.",
-      "status": "published",
-      "createdAt": "2026-10-13T05:40:01.218Z",
-      "publishedAt": "2026-10-13T06:25:01.811Z",
-      "collection": "sanrio",
-      "family": "sanrio-gingham",
-      "background": "#fff4f6",
-      "ink": "#583b49",
-      "muted": "#7d5c6c",
-      "surface": "rgba(255, 255, 255, 0.96)",
-      "line": "rgba(88, 59, 73, 0.20)",
-      "image": "/wallpapers/scenic/sanrio-gingham-ribbon/mobile.png",
-      "deviceImages": {
-        "mobile": "/wallpapers/scenic/sanrio-gingham-ribbon/mobile.png",
-        "tablet": "/wallpapers/scenic/sanrio-gingham-ribbon/tablet.png",
-        "laptop": "/wallpapers/scenic/sanrio-gingham-ribbon/laptop.png"
-      },
-      "containerStyle": "solid",
-      "containerShape": "rounded",
-      "bottomMargin": 0,
-      "verticalPosition": -35,
-      "particleStyle": "none"
-    },
-    {
-      "id": "sanrio-gingham-daisy",
-      "name": "Daisy Gingham",
-      "description": "Hello Kitty faces and butter-yellow daisies decorate quiet pink checks.",
-      "status": "published",
-      "createdAt": "2026-10-13T05:42:12.974Z",
-      "publishedAt": "2026-10-13T06:25:01.811Z",
-      "collection": "sanrio",
-      "family": "sanrio-gingham",
-      "background": "#fff4f6",
-      "ink": "#583b49",
-      "muted": "#7d5c6c",
-      "surface": "rgba(255, 255, 255, 0.96)",
-      "line": "rgba(88, 59, 73, 0.20)",
-      "image": "/wallpapers/scenic/sanrio-gingham-daisy/mobile.png",
-      "deviceImages": {
-        "mobile": "/wallpapers/scenic/sanrio-gingham-daisy/mobile.png",
-        "tablet": "/wallpapers/scenic/sanrio-gingham-daisy/tablet.png",
-        "laptop": "/wallpapers/scenic/sanrio-gingham-daisy/laptop.png"
-      },
-      "containerStyle": "solid",
-      "containerShape": "rounded",
+      "containerFill": false,
       "bottomMargin": 0,
       "verticalPosition": -35,
       "particleStyle": "none"
     }
   ],
-  "skippedExistingIds": [],
-  "preservedExistingRecordsSha256": "3cca7dd045cd3d6652a21deb32de5bceb62febf92fdf463923bb44f81b86df49",
+  "skippedExistingIds": [
+    "sanrio-melody-dream",
+    "sanrio-kitty-vanity",
+    "sanrio-plush-pals",
+    "sanrio-friends-gingham",
+    "sanrio-kitty-nursery",
+    "sanrio-melody-lace",
+    "sanrio-melody-peek",
+    "sanrio-melody-corner",
+    "sanrio-parade-candy",
+    "sanrio-parade-music",
+    "sanrio-parade-balloons",
+    "sanrio-pixel-rose",
+    "sanrio-pixel-lilac",
+    "sanrio-pixel-mint",
+    "sanrio-tea-strawberry",
+    "sanrio-tea-patisserie",
+    "sanrio-tea-flowers",
+    "sanrio-gingham-strawberry",
+    "sanrio-gingham-ribbon",
+    "sanrio-gingham-daisy"
+  ],
+  "preservedExistingRecordsSha256": "a0d421a399e418f947dc3b612ab51575c26c2c836c941e0865221e71849d470f",
   "existingDates": [
+    {
+      "id": "sanrio-melody-dream",
+      "createdAt": "2026-10-13T10:32:23.801Z",
+      "publishedAt": "2026-10-13T10:39:22.515Z"
+    },
+    {
+      "id": "sanrio-kitty-vanity",
+      "createdAt": "2026-10-13T10:35:49.081Z",
+      "publishedAt": "2026-10-13T10:39:22.515Z"
+    },
+    {
+      "id": "sanrio-plush-pals",
+      "createdAt": "2026-10-13T10:33:01.680Z",
+      "publishedAt": "2026-10-13T10:39:22.515Z"
+    },
+    {
+      "id": "sanrio-friends-gingham",
+      "createdAt": "2026-10-13T10:33:07.546Z",
+      "publishedAt": "2026-10-13T10:39:22.515Z"
+    },
+    {
+      "id": "sanrio-kitty-nursery",
+      "createdAt": "2026-10-13T09:53:15.353Z",
+      "publishedAt": "2026-10-13T10:01:28.771Z"
+    },
+    {
+      "id": "sanrio-melody-lace",
+      "createdAt": "2026-10-13T09:53:11.882Z",
+      "publishedAt": "2026-10-13T10:01:28.771Z"
+    },
+    {
+      "id": "sanrio-melody-peek",
+      "createdAt": "2026-10-13T09:53:17.176Z",
+      "publishedAt": "2026-10-13T10:01:28.771Z"
+    },
+    {
+      "id": "sanrio-melody-corner",
+      "createdAt": "2026-10-13T09:53:08.098Z",
+      "publishedAt": "2026-10-13T10:01:28.771Z"
+    },
+    {
+      "id": "sanrio-parade-candy",
+      "createdAt": "2026-10-13T05:33:33.306Z",
+      "publishedAt": "2026-10-13T08:15:22.703Z"
+    },
+    {
+      "id": "sanrio-parade-music",
+      "createdAt": "2026-10-13T05:37:06.346Z",
+      "publishedAt": "2026-10-13T08:15:22.703Z"
+    },
+    {
+      "id": "sanrio-parade-balloons",
+      "createdAt": "2026-10-13T05:42:05.495Z",
+      "publishedAt": "2026-10-13T08:15:22.703Z"
+    },
+    {
+      "id": "sanrio-pixel-rose",
+      "createdAt": "2026-10-13T05:40:19.004Z",
+      "publishedAt": "2026-10-13T08:15:22.703Z"
+    },
+    {
+      "id": "sanrio-pixel-lilac",
+      "createdAt": "2026-10-13T05:40:19.004Z",
+      "publishedAt": "2026-10-13T08:15:22.703Z"
+    },
+    {
+      "id": "sanrio-pixel-mint",
+      "createdAt": "2026-10-13T05:40:19.004Z",
+      "publishedAt": "2026-10-13T08:15:22.703Z"
+    },
+    {
+      "id": "sanrio-tea-strawberry",
+      "createdAt": "2026-10-13T05:48:27.983Z",
+      "publishedAt": "2026-10-13T08:15:22.703Z"
+    },
+    {
+      "id": "sanrio-tea-patisserie",
+      "createdAt": "2026-10-13T05:48:27.983Z",
+      "publishedAt": "2026-10-13T08:15:22.703Z"
+    },
+    {
+      "id": "sanrio-tea-flowers",
+      "createdAt": "2026-10-13T05:48:27.983Z",
+      "publishedAt": "2026-10-13T08:15:22.703Z"
+    },
+    {
+      "id": "sanrio-gingham-strawberry",
+      "createdAt": "2026-10-13T05:33:39.663Z",
+      "publishedAt": "2026-10-13T08:15:22.703Z"
+    },
+    {
+      "id": "sanrio-gingham-ribbon",
+      "createdAt": "2026-10-13T05:40:01.218Z",
+      "publishedAt": "2026-10-13T08:15:22.703Z"
+    },
+    {
+      "id": "sanrio-gingham-daisy",
+      "createdAt": "2026-10-13T05:42:12.974Z",
+      "publishedAt": "2026-10-13T08:15:22.703Z"
+    },
     {
       "id": "op-sunset-voyage",
       "createdAt": "2026-10-13T02:51:06.601Z",
@@ -1148,7 +1062,7 @@
       "id": "notebook-hours"
     }
   ],
-  "categoriesWillSyncToLocalDefinitions": true,
+  "categoriesWillSyncToLocalDefinitions": false,
   "categoriesBefore": [
     {
       "id": "all",
@@ -1157,6 +1071,10 @@
     {
       "id": "scenic",
       "name": "Illustrated"
+    },
+    {
+      "id": "sanrio",
+      "name": "Sanrio"
     },
     {
       "id": "onepiece",
@@ -1238,6 +1156,330 @@
     }
   ],
   "uploads": [
+    {
+      "path": "/wallpapers/scenic/sanrio-strawberry-patchwork/mobile.png",
+      "sha256": "8609c211717f375a9a9cad1f3485846ddb93f5c0d1b0a71b8d87c2adf6eb6729",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-strawberry-patchwork/tablet.png",
+      "sha256": "35a410c344e2b6f173885177f304cd3c30c17edbf70e0ad5ae9c0db7b71bc351",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-strawberry-patchwork/laptop.png",
+      "sha256": "ec49f1163b49436489c693174c4b5b546ba041b4f6392764693942ed75635518",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-melody-bedtime/mobile.png",
+      "sha256": "36911a8038e7ab6f4ba6754ec56e41608ad62a82af73cffc6e597fcbbdefce88",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-melody-bedtime/tablet.png",
+      "sha256": "e8e74ba3d6fe22f6a13457b6b6272fb54b15f53c98768314af80bdf8d42604c0",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-melody-bedtime/laptop.png",
+      "sha256": "b3b4cd925412fbe71f5a56bda83180c48d7666d0ee1e75262f2dde064c25f0fa",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-pastel-scrapbook/mobile.png",
+      "sha256": "52c82655c0d2a5df0efa4a9f52d4a518e1e48ee32887ddddc233d1d100d3e082",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-pastel-scrapbook/tablet.png",
+      "sha256": "3ebd0a41fab32553686345adbcb3da88781989b55d9b400b0a83dd131563c277",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-pastel-scrapbook/laptop.png",
+      "sha256": "b5fbe101989f88544d744625c4deac7e4611955251d8c6e0d83de8b4fd5e9aed",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-melody-piano-stationery/mobile.png",
+      "sha256": "07790a677278bc91ea459e6e0f456d7ea4139f174a02b5237eac2564db193670",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-melody-piano-stationery/tablet.png",
+      "sha256": "c5dc63f5a4f1762556c9e7ce9c912152d33df9e27a64f00ac293ecbf41eefebd",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-melody-piano-stationery/laptop.png",
+      "sha256": "d54169d585df8823e6f6da8352515a877973fa6e28ea1e3c57857e6a4bf160a5",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-melody-dream/mobile.png",
+      "sha256": "461fafdde4e25fb74bcd40b49acb80f29bc66f49d63dca100871e2c7466f9d89",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-melody-dream/tablet.png",
+      "sha256": "66e96d1f2b43894fcaa788a545ef4ed37bf928704d8d1c8e94ee8e9487720360",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-melody-dream/laptop.png",
+      "sha256": "33fefed8b87c4fa44b21ecc1705ec6ef707f755cb2349f5238bd2f898e8849f1",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-kitty-vanity/mobile.png",
+      "sha256": "e197f395f16486d3919176f6893631f470f00e8667b11d8489f5f10ec4df5f2d",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-kitty-vanity/tablet.png",
+      "sha256": "de2f2eb5cdbb96dbb6ccb9fd2a6c925ccc8e3bdb77848c66cb00cbc1f802ce14",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-kitty-vanity/laptop.png",
+      "sha256": "17b63abf095bceb12be7d7f5559732ca1e9983350168cd6e9b63bc45915a042b",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-plush-pals/mobile.png",
+      "sha256": "e35e8c97688c9fa458826651f3ac2a4ff7dbdfdd61063ca421c101c1f9877142",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-plush-pals/tablet.png",
+      "sha256": "ca7bf9a69a08e8b8d9119d940fc2a21332917bc94bec127fc634d0e3aba2534b",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-plush-pals/laptop.png",
+      "sha256": "e3451eb907ea36d3289e20ac5b2e012eb9f3d5aedc6bd674064d5a71e9140117",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-friends-gingham/mobile.png",
+      "sha256": "7e61e4799875e9ea75ea1d4d10ce6e6ff2fce2ab78fe08da01b868ce8120c3f4",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-friends-gingham/tablet.png",
+      "sha256": "b83a29b13bf7bb6c2509add02d8dc59555bb3f05cc8e95e7c57caf171c53a753",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-friends-gingham/laptop.png",
+      "sha256": "5a1afb546812b84902c95a1f3226c863b48593c6249ee11c85461caa0210ce91",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-kitty-nursery/mobile.png",
+      "sha256": "712675d38d4dce64ba842a450ede6edc0f7029a6de9a2dcee2a9f3a212018b67",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-kitty-nursery/tablet.png",
+      "sha256": "0f8e64fd4634de0b9af320f6367c3bb72d5181b5a69101975996d724559cab47",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-kitty-nursery/laptop.png",
+      "sha256": "aaa92b7d22743b3c30a29b91620a1e981a0a6a301371bab410bccfcaa9ba08f8",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-melody-lace/mobile.png",
+      "sha256": "2ef98c5f7e9e96b1db073c76205fa03f2fc4ee9aac7aa43da432ccd04f90232a",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-melody-lace/tablet.png",
+      "sha256": "4e8a34009cc3b2650bb9a5437f6f061dacd12831a5962f3f84a9c153461faea9",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-melody-lace/laptop.png",
+      "sha256": "06f514ff4ff504a8d63b34cb2d6e0cdfac2b288e89fb60e68fd6eca62b5d7c9f",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-melody-peek/mobile.png",
+      "sha256": "acb925217b91a0bb54029d1a98e95e9e8ef48889d3d7ef68d56a8507fe2bb5da",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-melody-peek/tablet.png",
+      "sha256": "0eb5a3113613d9262f23d093d8ef0e8caa6b134c7e21f09ba506eb0cf892ea29",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-melody-peek/laptop.png",
+      "sha256": "be03786a071b08927224cb83ee0a7771531dfb0a35f84ad99e6fee68df47c4ae",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-melody-corner/mobile.png",
+      "sha256": "41de568b362068bc6548113d2bd9f8e451ab637ed0907dcc07c8b4845c66fa6a",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-melody-corner/tablet.png",
+      "sha256": "eb358c3a0f0a533abb35b3286295871ef5d1ce46a39b9e0fd35ab421d0cdd284",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "uploaded": true
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-melody-corner/laptop.png",
+      "sha256": "085c875459286b9294a11a1e8d5eb1d3e6e94a1816e0fce8717965d88c592f2a",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "uploaded": true
+    },
     {
       "path": "/wallpapers/scenic/sanrio-parade-candy/mobile.png",
       "sha256": "c696156ed119bb2ab408546758f6f850b6298e46e18622ed11e0b8500c4b0965",

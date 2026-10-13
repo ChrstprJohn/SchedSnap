@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { ArrowRight, ChevronDown, Download, LayoutTemplate, Maximize2, Pencil, SlidersHorizontal } from 'lucide-react';
+import { ArrowRight, ChevronDown, Download, Heart, LayoutTemplate, Maximize2, Pencil, SlidersHorizontal } from 'lucide-react';
 import { getScheduleIssues } from '../../../shared/scheduleSchema.js';
 import { canvasBlob, drawWallpaper, findOverlaps } from '../../utils/canvasHelpers.js';
 import { prepareWallpaperAssets } from '../../utils/wallpaperAssets.js';
@@ -12,6 +12,7 @@ import TemplateControls from './TemplateControls.jsx';
 import Editor from './Editor.jsx';
 import Uploader from './Uploader.jsx';
 import Toast from '../../components/Toast.jsx';
+import useDesignLikes from '../../lib/useDesignLikes.js';
 
 export default function TemplateWorkspace({ step, onStep, template, defaultTemplate, schedule, resolution, scheduleSource, onScheduleSourceChange, onScheduleChange, onAppearanceChange, onResetAppearance, image, onImage, busy, onError, onAnalyze, importUsage, usageUnavailable, onSample, importOpen, onImportOpenChange: setImportOpen, onTitleChange, canCancelEntry, onCancelEntryChange: setCanCancelEntry, onCancelImport, imagePickerRef: imagePicker, preparingImage, onPreparingImageChange: setPreparingImage }) {
   const [enlarged, setEnlarged] = useState(false);
@@ -22,6 +23,8 @@ export default function TemplateWorkspace({ step, onStep, template, defaultTempl
   const [layout, setLayout] = useState(null);
   const [exporting, setExporting] = useState(false);
   const [exportResult, setExportResult] = useState(null);
+  const { likes, pending: pendingLikes, error: likeError, refresh: refreshLikes, toggle: toggleLike } = useDesignLikes();
+  const vote = likes[template.id];
   const [message, setMessage] = useState('');
   const [messageKind, setMessageKind] = useState('success');
   const lastUrl = useRef(null);
@@ -93,7 +96,7 @@ export default function TemplateWorkspace({ step, onStep, template, defaultTempl
       if (lastUrl.current) URL.revokeObjectURL(lastUrl.current);
       const url = URL.createObjectURL(blob);
       lastUrl.current = url;
-      setExportResult({ url, filename, key: exportKey });
+      setExportResult({ url, filename, key: exportKey, templateId: template.id });
       setMessageKind('success');
       setMessage(
         inApp
@@ -139,6 +142,14 @@ export default function TemplateWorkspace({ step, onStep, template, defaultTempl
         <button type="button" onClick={download} disabled={!canDownload} aria-describedby={exportStatus ? 'wallpaper-export-status' : undefined} className="button-primary download-wallpaper"><Download size={18} aria-hidden="true" />{exporting ? 'Creating PNG…' : 'Download wallpaper'}</button>
         {exportStatus && <div className="export-status" role="status" id="wallpaper-export-status"><p>{exportStatus}</p>{(issues.length > 0 || currentLayout?.overflow) && <button type="button" className="text-link" onClick={() => onStep('classes')}>Fix class details</button>}{currentLayout?.error && <button type="button" className="text-link" onClick={() => onStep('design')}>Change design</button>}</div>}
         {exportResult?.key === exportKey && <a className="text-link save-again" href={exportResult.url} download={exportResult.filename} onClick={() => trackEvent('wallpaper_download_repeated', { ...templateProperties(template), schedule_source: scheduleSource })}>Save PNG again</a>}
+        {exportResult?.templateId === template.id && <section className="download-heart-prompt" aria-labelledby="download-heart-title">
+          <h3 id="download-heart-title">Love this design?</h3>
+          <p>Give it a heart to help others find it.</p>
+          <button type="button" className="template-heart download-heart-button" aria-pressed={vote?.liked || false} disabled={!vote} onClick={() => toggleLike(template.id)}>
+            <Heart size={18} fill={vote?.liked ? 'currentColor' : 'none'} aria-hidden="true" />{vote?.liked ? 'Hearted' : 'Heart this design'}<span>{vote ? `${vote.count.toLocaleString()} ${vote.count === 1 ? 'heart' : 'hearts'}` : likeError ? 'Hearts unavailable' : 'Loading hearts…'}</span>
+          </button>
+          {likeError && <div className="download-heart-error" role="alert"><span>{likeError}</span><button type="button" className="text-link" disabled={!!pendingLikes} onClick={() => refreshLikes(true)}>Retry</button></div>}
+        </section>}
         <div className="wallpaper-edit-actions"><button type="button" className="button-secondary" onClick={() => onStep('classes')}><Pencil size={16} aria-hidden="true" />Edit classes</button><button type="button" className="button-secondary" onClick={() => onStep('design')}><LayoutTemplate size={16} aria-hidden="true" />Change design</button></div>
         <details className="flow-customize" open={customizing} onToggle={(event) => { setCustomizing(event.currentTarget.open); setPreviewStuck(false); }}><summary className="disclosure-summary"><span><SlidersHorizontal size={16} aria-hidden="true" />Customize appearance</span><ChevronDown className="disclosure-icon size-4" aria-hidden="true" /></summary><TemplateControls template={template} defaultTemplate={defaultTemplate} enablePlacement onChange={onAppearanceChange} onReset={onResetAppearance} /></details>
       </section>

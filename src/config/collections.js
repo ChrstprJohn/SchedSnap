@@ -4,6 +4,7 @@ export const designCollections = [
   { id: 'all', name: 'All designs' },
   { id: 'scenic', name: 'Illustrated' },
   { id: 'sanrio', name: 'Sanrio' },
+  { id: 'domo', name: 'Domo' },
   { id: 'onepiece', name: 'Onepiece' },
   { id: 'little-friends', name: 'Chiikawa inspired' },
   { id: 'mascot', name: 'Mascots' },

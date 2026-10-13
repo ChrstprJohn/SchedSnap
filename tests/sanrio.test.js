@@ -24,9 +24,9 @@ test('immutable uploaded backgrounds can be published without requiring a new cl
   }
 });
 
-test('Sanrio supplies twenty-four selectable designs in nine families with 72 uploaded device compositions', () => {
-  assert.equal(sanrioTemplates.length, 24);
-  assert.equal(new Set(sanrioTemplates.map(template => template.id)).size, 24);
+test('Sanrio supplies thirty-six selectable designs in thirteen families with 108 uploaded device compositions', () => {
+  assert.equal(sanrioTemplates.length, 36);
+  assert.equal(new Set(sanrioTemplates.map(template => template.id)).size, 36);
   assert.equal(designCollections.find(collection => collection.id === 'sanrio')?.name, 'Sanrio');
   assert.equal(galleryCategories.filter(category => category.id === 'sanrio').length, 1);
   const families = new Map();
@@ -61,21 +61,21 @@ test('Sanrio supplies twenty-four selectable designs in nine families with 72 up
       } else hashes.add(asset.publicId);
     }
   }
-  assert.deepEqual(Object.fromEntries(families), { 'sanrio-stationery': 4, 'sanrio-melody': 4, 'sanrio-nursery': 2, 'sanrio-plush': 1, 'sanrio-friends': 1, 'sanrio-parade': 3, 'sanrio-pixel': 3, 'sanrio-tea': 3, 'sanrio-gingham': 3 });
-  assert.equal(hashes.size, 72);
+  assert.deepEqual(Object.fromEntries(families), { 'sanrio-cinnamon-bow': 3, 'sanrio-cinnamon-flower': 3, 'sanrio-cinnamon-lace': 3, 'sanrio-cinnamon-ribbon': 3, 'sanrio-stationery': 4, 'sanrio-melody': 4, 'sanrio-nursery': 2, 'sanrio-plush': 1, 'sanrio-friends': 1, 'sanrio-parade': 3, 'sanrio-pixel': 3, 'sanrio-tea': 3, 'sanrio-gingham': 3 });
+  assert.equal(hashes.size, 108);
   assert.equal(templateSchema.safeParse({
     ...sanrioTemplates[0], status: 'published',
     deviceImages: { ...sanrioTemplates[0].deviceImages, tablet: undefined },
   }).success, false, 'Publishing still requires three device backgrounds');
 });
 
-test('Sanrio paths, creation dates and all prompts match the sixteen source provenance records', () => {
-  const records = ['parade', 'pixel', 'tea', 'gingham', 'kitty-nursery', 'melody-lace', 'melody-peek', 'melody-corner', 'melody-dream', 'kitty-vanity', 'plush-pals', 'friends-gingham', 'strawberry-patchwork', 'melody-bedtime', 'pastel-scrapbook', 'melody-piano-stationery'].flatMap(group => {
+test('Sanrio paths, creation dates and all prompts match the twenty source provenance records', () => {
+  const records = ['cinnamon-bow', 'cinnamon-flower', 'cinnamon-lace', 'cinnamon-ribbon', 'parade', 'pixel', 'tea', 'gingham', 'kitty-nursery', 'melody-lace', 'melody-peek', 'melody-corner', 'melody-dream', 'kitty-vanity', 'plush-pals', 'friends-gingham', 'strawberry-patchwork', 'melody-bedtime', 'pastel-scrapbook', 'melody-piano-stationery'].flatMap(group => {
     const doc = JSON.parse(readFileSync(new URL(`../documentation/sanrio-${group}-prompts.json`, import.meta.url), 'utf8'));
     return doc.assets.map(asset => ({ ...asset, path: '/' + (asset.destination || asset.output).replace(/^public\//, ''),
       createdAt: asset.createdAt || doc.createdAt || doc.generatedAt }));
   });
-  assert.equal(records.length, 72);
+  assert.equal(records.length, 108);
   for (const template of sanrioTemplates) {
     const mobile = records.find(record => record.path === template.image);
     assert.equal(template.createdAt, mobile.createdAt, template.id);
@@ -105,7 +105,7 @@ test('Sanrio gallery samples match on mobile, tablet and laptop and load each de
   try {
     for (const [device, resolution] of Object.entries(deviceResolutions)) {
       const originalCopies = structuredClone(sanrioTemplates);
-      const expectedBounds = render(customizeWallpaperTemplate(galleryPreviewTemplate(sanrioTemplates[0]), {}, device), resolution).scheduleBounds;
+      const expectedBounds = render({ ...customizeWallpaperTemplate(galleryPreviewTemplate(sanrioTemplates[0]), {}, device), schedulePosition: 'center' }, resolution).scheduleBounds;
       for (const original of sanrioTemplates) {
         assert.equal(matchesGalleryCategory(original, 'sanrio'), true);
         assert.equal(matchesGalleryCategory(original, 'all'), true);
@@ -116,7 +116,10 @@ test('Sanrio gallery samples match on mobile, tablet and laptop and load each de
         assert.equal(image.source, cloudinaryAssetUrl(original.deviceImages[device], original.pixelArt ? undefined : resolution));
         const result = render(template, resolution);
         assert.equal(result.overflow, false, `${original.id}/${device}`);
-        assert.deepEqual(result.scheduleBounds, expectedBounds, `${original.id}/${device}`);
+        const bounds = device === 'laptop' && original.family.startsWith('sanrio-cinnamon-')
+          ? render({ ...customizeWallpaperTemplate(galleryPreviewTemplate(sanrioTemplates[0]), {}, device), schedulePosition: 'left' }, resolution).scheduleBounds
+          : expectedBounds;
+        assert.deepEqual(result.scheduleBounds, bounds, `${original.id}/${device}`);
       }
       assert.deepEqual(sanrioTemplates, originalCopies, 'Gallery preview must not mutate editor defaults');
     }

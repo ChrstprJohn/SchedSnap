@@ -96,6 +96,8 @@ components:
 
 # Design System: SchedSnap
 
+Back to top is a 48px slate icon button fixed at the right side near the vertical midpoint, below modal and notice layers. The optional post-download heart prompt sits inline below Save PNG again, using the established rose heart state and restrained dividers. Sort designs uses a labeled native select above the gallery with Featured and Most hearts options.
+
 ## Overview
 
 The established visual direction pairs a creamy product scene with a quiet white/slate application around colorful wallpapers. Concise DM Sans copy and generous spacing give students room to choose and review. A generated transparent navy abstract S mark is the shared brand signature.

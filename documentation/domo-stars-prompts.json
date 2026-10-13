@@ -1,0 +1,60 @@
+{
+  "provider": "built-in imagegen",
+  "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-750d2331-18de-41a6-8d23-48daa3d001af.png",
+  "assets": [
+    {
+      "id": "domo-star-stickers",
+      "device": "mobile",
+      "prompt": "Use case: stylized-concept. Create one opaque full-bleed Domo schedule wallpaper, exact 1080 x 2400 pixels, mobile portrait. Reference input is style/composition inspiration only. Variant Star Stickers: deep chocolate brown matte paper field, cream and taupe cut-paper five-point stars confined to tiny upper corners and lower footer; adorable brown Domo with black dot eyes and vivid red rectangular mouth with white triangular teeth, bold black outline and ivory sticker border, waving at bottom right. Small retro Saturn planet in top right. Keep central 65% of canvas completely quiet solid brown for timetable overlay. Character and cluster only in bottom 20%, no decorative objects crossing center. Clean handmade scrapbook illustration, refined restrained composition. No text, UI, boxes, schedule, badges, logo, watermark, device frame. Match reference warmth and simplicity but create a fresh composition.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1357a-80a6-7902-b504-80308c0bac9f\\exec-e238a45d-cb9d-44d6-9b53-86461e75d66c.png"
+    },
+    {
+      "id": "domo-star-stickers",
+      "device": "tablet",
+      "prompt": "Use case: stylized-concept. Generate one opaque full-bleed Domo wallpaper, exact 1600 x 2560 pixels for tablet. Style reference inspiration: brown celestial sticker scrapbook. Design domo-star-stickers: deep chocolate matte paper; cream and taupe paper stars; waving Domo sticker bottom right; tiny retro Saturn top right. Domo has rectangular brown rounded body, black dot eyes, red rectangular mouth with white triangular teeth. Refined warm handmade artwork. Keep central 65% completely quiet uninterrupted brown, generous timetable space. All ornaments confined to outer corners and bottom 18%; character small, no more than 18% canvas height, complete silhouette. Recompose specifically for this device aspect ratio. No text, UI, boxes, schedule, logo, watermark, frame.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1357a-80a6-7902-b504-80308c0bac9f\\exec-4b2a1a94-a385-4bda-953c-ed841fed2ffa.png"
+    },
+    {
+      "id": "domo-star-stickers",
+      "device": "laptop",
+      "prompt": "Use case: stylized-concept. Generate one opaque full-bleed Domo wallpaper, exact 1920 x 1080 pixels for laptop. Style reference inspiration: brown celestial sticker scrapbook. Design domo-star-stickers: deep chocolate matte paper; cream and taupe paper stars; waving Domo sticker bottom right; tiny retro Saturn top right. Domo has rectangular brown rounded body, black dot eyes, red rectangular mouth with white triangular teeth. Refined warm handmade artwork. Keep central 65% completely quiet uninterrupted brown, generous timetable space. All ornaments confined to outer corners and bottom 18%; character small, no more than 18% canvas height, complete silhouette. Recompose specifically for wide landscape desktop. No text, UI, boxes, schedule, logo, watermark, frame.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1357a-80a6-7902-b504-80308c0bac9f\\exec-94293c9a-fc0d-47c0-9822-6e2d7c04df81.png"
+    },
+    {
+      "id": "domo-orbit-paper",
+      "device": "mobile",
+      "prompt": "Use case: stylized-concept. Generate one opaque full-bleed Domo wallpaper, exact 1080 x 2400 pixels for mobile. Style reference inspiration: brown celestial scrapbook. Design domo-orbit-paper: warm cocoa paper collage; terracotta and ivory folded paper stars; small Domo sticker sitting on a crescent moon at lower left; fine cream orbital arcs at outer lower corners. Domo has rectangular brown rounded body, black dot eyes, red rectangular mouth with white triangular teeth. Refined warm handmade layered paper artwork. Keep central 65% completely quiet uninterrupted cocoa brown, generous timetable space. All ornaments confined to outer corners and bottom 18%; character small, no more than 16% canvas height, complete silhouette. Recompose specifically for tall mobile aspect. No text, UI, boxes, schedule, logo, watermark, frame.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1357a-80a6-7902-b504-80308c0bac9f\\exec-ae2e63cb-0510-4ab4-b774-ce5fccafb00f.png"
+    },
+    {
+      "id": "domo-orbit-paper",
+      "device": "tablet",
+      "prompt": "Use case: stylized-concept. Generate one opaque full-bleed Domo wallpaper, exact 1600 x 2560 pixels for tablet. Style reference inspiration: brown celestial scrapbook. Design domo-orbit-paper: warm cocoa paper collage; terracotta and ivory folded paper stars; small Domo sticker sitting on a crescent moon at lower left; fine cream orbital arcs at outer lower corners. Domo has rectangular brown rounded body, black dot eyes, red rectangular mouth with white triangular teeth. Refined warm handmade layered paper artwork. Keep central 65% completely quiet uninterrupted cocoa brown, generous timetable space. All ornaments confined to outer corners and bottom 18%; character small, no more than 16% canvas height, complete silhouette. Recompose specifically for tablet portrait aspect. No text, UI, boxes, schedule, logo, watermark, frame.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1357a-80a6-7902-b504-80308c0bac9f\\exec-f784d336-3d13-487c-9f7f-6c08887afb37.png"
+    },
+    {
+      "id": "domo-orbit-paper",
+      "device": "laptop",
+      "prompt": "Use case: stylized-concept. Generate one opaque full-bleed Domo wallpaper, exact 1920 x 1080 pixels for laptop. Style reference inspiration: brown celestial scrapbook. Design domo-orbit-paper: warm cocoa paper collage; terracotta and ivory folded paper stars; small Domo sticker sitting on a crescent moon at lower left; fine cream orbital arcs at outer lower corners. Domo has rectangular brown rounded body, black dot eyes, red rectangular mouth with white triangular teeth. Refined warm handmade layered paper artwork. Keep central 65% completely quiet uninterrupted cocoa brown, generous timetable space. All ornaments confined to outer corners and bottom 18%; character small, no more than 16% canvas height, complete silhouette. Recompose specifically for wide landscape desktop aspect. No text, UI, boxes, schedule, logo, watermark, frame.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1357a-80a6-7902-b504-80308c0bac9f\\exec-b49f897f-6f69-4f95-982e-561c5c1881b6.png"
+    },
+    {
+      "id": "domo-velvet-cosmos",
+      "device": "mobile",
+      "prompt": "Use case: stylized-concept. Generate one opaque full-bleed Domo wallpaper, exact 1080 x 2400 pixels for mobile. Style reference inspiration: brown celestial scrapbook. Design domo-velvet-cosmos: espresso brown velvet grain; muted antique gold embroidered stars at outer corners; plush felt Domo with soft stitched edge waving at bottom right; tiny antique gold Saturn in upper left. Domo has rectangular brown rounded body, black dot eyes, red rectangular mouth with white triangular teeth. Refined luxurious tactile felt-and-velvet handmade illustration, warm dark brown. Keep central 65% completely quiet uninterrupted espresso brown, generous timetable space. All ornaments confined to outer corners and bottom 18%; character small, no more than 16% canvas height, complete silhouette. Recompose specifically for tall mobile aspect. No text, UI, boxes, schedule, logo, watermark, frame.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1357a-80a6-7902-b504-80308c0bac9f\\exec-34fc6f76-9b1e-4050-9b3f-bfd7e8384d7a.png"
+    },
+    {
+      "id": "domo-velvet-cosmos",
+      "device": "tablet",
+      "prompt": "Use case: stylized-concept. Generate one opaque full-bleed Domo wallpaper, exact 1600 x 2560 pixels for tablet. Style reference inspiration: brown celestial scrapbook. Design domo-velvet-cosmos: espresso brown velvet grain; muted antique gold embroidered stars at outer corners; plush felt Domo with soft stitched edge waving at bottom right; tiny antique gold Saturn in upper left. Domo has rectangular brown rounded body, black dot eyes, red rectangular mouth with white triangular teeth. Refined luxurious tactile felt-and-velvet handmade illustration, warm dark brown. Keep central 65% completely quiet uninterrupted espresso brown, generous timetable space. All ornaments confined to outer corners and bottom 18%; character small, no more than 16% canvas height, complete silhouette. Recompose specifically for tablet portrait aspect. No text, UI, boxes, schedule, logo, watermark, frame.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1357a-80a6-7902-b504-80308c0bac9f\\exec-4c481194-98e3-41b7-b514-5686d6be00a9.png"
+    },
+    {
+      "id": "domo-velvet-cosmos",
+      "device": "laptop",
+      "prompt": "Use case: stylized-concept. Generate one opaque full-bleed Domo wallpaper, exact 1920 x 1080 pixels for laptop. Style reference inspiration: brown celestial scrapbook. Design domo-velvet-cosmos: espresso brown velvet grain; muted antique gold embroidered stars at outer corners; plush felt Domo with soft stitched edge waving at bottom right; tiny antique gold Saturn in upper left. Domo has rectangular brown rounded body, black dot eyes, red rectangular mouth with white triangular teeth. Refined luxurious tactile felt-and-velvet handmade illustration, warm dark brown. Keep central 65% completely quiet uninterrupted espresso brown, generous timetable space. All ornaments confined to outer corners and bottom 18%; character small, no more than 16% canvas height, complete silhouette. Recompose specifically for wide landscape desktop aspect. No text, UI, boxes, schedule, logo, watermark, frame.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1357a-80a6-7902-b504-80308c0bac9f\\exec-d3c7ed0c-ae98-4138-a94d-f6a81b6db2ed.png"
+    }
+  ]
+}

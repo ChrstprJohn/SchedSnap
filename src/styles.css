@@ -477,6 +477,16 @@
 .template-heart:hover:not(:disabled) { background: #fff1f2; color: #be123c; }
 .template-heart[aria-pressed='true'] { color: #be123c; }
 .gallery-like-error { display: flex; align-items: center; gap: .75rem; margin-bottom: 1rem; color: #783c2e; font-size: .875rem; }
+.gallery-sort { display: flex; align-items: center; justify-content: flex-end; gap: 12px; margin: 0 0 20px; font-size: .875rem; color: var(--color-muted); }
+.gallery-sort select { min-height: 44px; max-width: 100%; border: 1px solid var(--color-line); border-radius: 8px; padding: 8px 32px 8px 12px; background: var(--color-paper); color: var(--color-ink); }
+.download-heart-prompt { margin-top: 24px; padding-block: 20px; border-block: 1px solid var(--color-line); }
+.download-heart-prompt h3 { font-size: 16px; font-weight: 600; }
+.download-heart-prompt p { margin-top: 4px; font-size: 14px; color: var(--color-muted); }
+.download-heart-button { display: flex; flex-wrap: wrap; justify-content: flex-start; margin-top: 12px; padding-inline: 12px; gap: 8px; background: var(--color-soft); font-weight: 600; }
+.download-heart-button span { font-weight: 400; }
+.download-heart-error { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; color: #783c2e; font-size: 14px; }
+.back-to-top { position: fixed; z-index: 35; right: max(12px, env(safe-area-inset-right)); top: calc(50% - 24px); display: grid; place-items: center; width: 48px; height: 48px; border-radius: 12px; background: var(--color-ink); color: var(--color-paper); box-shadow: 0 4px 12px rgb(15 23 42 / 18%); }
+.back-to-top:hover { background: #334155; }
 @media (prefers-reduced-motion: reduce) { .template-heart { transition: none; } }
 .template-new-badge { position: absolute; top: .65rem; right: .65rem; z-index: 1; padding: .25rem .55rem; border: 1px solid #d7e5be; border-radius: 999px; background: #f0f6df; color: #344522; font-size: .6875rem; font-weight: 700; line-height: 1.2; pointer-events: none; }
 .template-category-list.category-filters { position: relative; overflow: visible; }

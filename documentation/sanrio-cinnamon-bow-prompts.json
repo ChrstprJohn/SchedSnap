@@ -1,0 +1,108 @@
+{
+  "provider": "builtin image_gen",
+  "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-bb44a17d-ae0b-45bf-bbcb-effe1eca1580.png",
+  "normalization": "proportional contain; no cropping or stretching",
+  "assets": [
+    {
+      "i": 0,
+      "source": "output/sanrio/sanrio-cinnamon-bow-stars-mobile-final-generated.png",
+      "prompt": "Use case: precise-object-edit. Fix only the size of bottom Cinnamoroll character in this mobile wallpaper. Scale character, bows and held yellow star down to 70% of their current size while keeping him centered nearbottom, so entire ears and body visibly fit with generous side margins and character occupies bottom20% maximum. Fill vacated area with matching blue white gingham. Keep exact same character drawing/colors/pose, valance, all stars, style and clean contrast. Preserve tallportrait9:20. No other edits. No text UI screenshot controls.",
+      "device": "mobile",
+      "id": "sanrio-cinnamon-bow-stars",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-bow-stars/mobile.png",
+      "createdAt": "2026-10-13T13:45:22.469Z",
+      "width": 1080,
+      "height": 2400,
+      "originalPrompt": "Use case: stylized-concept. Generate a new polished Sanrio Cinnamoroll wallpaper inspired accurately by reference blue gingham, delicate thin warm gray-blue linework, fluffy white long ears, powder-blue ear bows with lace and pink cheeks. Variant Bow Stars: seated smiling Cinnamoroll wearing blue lace bows, holding one small yellow star at very bottom. Opaque full bleed portrait mobile 1080x2400, ratio9:20. Upper70% quiet blue white gingham for later schedule, scalloped powder blue valance very top with centered heart bow, sparse yellow stars. Character entire silhouette lower20%, ears intact. Crisp defined pastel outlines, clean flat soft fills, recognizable face, NOT washed-out white veil. No text letters clocks schedules logos UI watermark screenshot controls or device frame. Reference is style/composition only; produce fresh finished artwork.",
+      "originalSource": "output/sanrio/sanrio-cinnamon-bow-stars-mobile-generated.png"
+    },
+    {
+      "i": 1,
+      "source": "output/sanrio/sanrio-cinnamon-bow-stars-tablet-generated.png",
+      "prompt": "Use case: stylized-concept. Generate a new polished Sanrio Cinnamoroll wallpaper inspired accurately by reference blue gingham, delicate thin warm gray-blue linework, fluffy white long ears, powder-blue ear bows with lace and pink cheeks. Variant Bow Stars: seated smiling Cinnamoroll wearing blue lace bows, holding one small yellow star at very bottom. Opaque full bleed portrait tablet1600x2560 ratio5:8. Upper70%quiet, full character lower20%. Upper70% quiet blue white gingham for later schedule, scalloped powder blue valance very top with centered heart bow, sparse yellow stars. Character entire silhouette lower20%, ears intact. Crisp defined pastel outlines, clean flat soft fills, recognizable face, NOT washed-out white veil. No text letters clocks schedules logos UI watermark screenshot controls or device frame. Reference is style/composition only; produce fresh finished artwork.",
+      "device": "tablet",
+      "id": "sanrio-cinnamon-bow-stars",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-bow-stars/tablet.png",
+      "createdAt": "2026-10-13T13:43:06.726Z",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "i": 2,
+      "source": "output/sanrio/sanrio-cinnamon-bow-stars-laptop-generated.png",
+      "prompt": "Use case: stylized-concept. Generate a new polished Sanrio Cinnamoroll wallpaper inspired accurately by reference blue gingham, delicate thin warm gray-blue linework, fluffy white long ears, powder-blue ear bows with lace and pink cheeks. Variant Bow Stars: seated smiling Cinnamoroll wearing blue lace bows, holding one small yellow star at very bottom. Opaque full bleed landscape laptop1920x1080 ratio16:9. Left65%quiet gingham for schedule; entire character rightmost25%at bottom; scalloped valance alongtop. Upper70% quiet blue white gingham for later schedule, scalloped powder blue valance very top with centered heart bow, sparse yellow stars. Character entire silhouette bottom right within rightmost25%, ears intact. Crisp defined pastel outlines, clean flat soft fills, recognizable face, NOT washed-out white veil. No text letters clocks schedules logos UI watermark screenshot controls or device frame. Reference is style/composition only; produce fresh finished artwork.",
+      "device": "laptop",
+      "id": "sanrio-cinnamon-bow-stars",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-bow-stars/laptop.png",
+      "createdAt": "2026-10-13T13:43:06.899Z",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "i": 3,
+      "source": "output/sanrio/sanrio-cinnamon-bow-rainbow-mobile-generated.png",
+      "prompt": "Use case: stylized-concept. New Sanrio Cinnamoroll Bow Rainbow wallpaper, portrait1080x2400 ratio9:20, opaque full bleed. Accurately use reference's powder-blue white gingham, dainty scalloped top valance with blue heart bow, thin warm gray-blue outlines and fluffy long-eared white character with blue lace ear bows and pink cheeks. Fresh variant: cheerful seated Cinnamoroll holding pastel heart bow, tiny soft pink cream blue rainbow sweeping along bottom behind character. Sharper clean high quality illustration with clearly defined linework, subtle pastel fills, no washed-out translucent veil. Upper70%quiet unobstructed gingham, entire small character including ears within bottom20%; rainbow confined bottom10%. Few tiny yellow stars nearouteredges only. No text logos letters schedule clocks UI device frames watermark or screenshot icons. Reference only guides style; new independent composition.",
+      "device": "mobile",
+      "id": "sanrio-cinnamon-bow-rainbow",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-bow-rainbow/mobile.png",
+      "createdAt": "2026-10-13T13:43:07.088Z",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "i": 4,
+      "source": "output/sanrio/sanrio-cinnamon-bow-rainbow-tablet-generated.png",
+      "prompt": "Use case: stylized-concept. New Sanrio Cinnamoroll Bow Rainbow wallpaper, portrait1600x2560 ratio5:8, opaque full bleed. Accurately use reference's powder-blue white gingham, dainty scalloped top valance with blue heart bow, thin warm gray-blue outlines and fluffy long-eared white character with blue lace ear bows and pink cheeks. Fresh variant: cheerful seated Cinnamoroll holding pastel heart bow, tiny soft pink cream blue rainbow sweeping along bottom behind character. Sharper clean high quality illustration with clearly defined linework, subtle pastel fills, no washed-out translucent veil. Upper70%quiet unobstructed gingham, entire small character including ears within bottom20%; rainbow confined bottom10%. Few tiny yellow stars nearouteredges only. No text logos letters schedule clocks UI device frames watermark or screenshot icons. Reference only guides style; new independent composition.",
+      "device": "tablet",
+      "id": "sanrio-cinnamon-bow-rainbow",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-bow-rainbow/tablet.png",
+      "createdAt": "2026-10-13T13:43:07.297Z",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "i": 5,
+      "source": "output/sanrio/sanrio-cinnamon-bow-rainbow-laptop-generated.png",
+      "prompt": "Use case: stylized-concept. New Sanrio Cinnamoroll Bow Rainbow wallpaper, landscape1920x1080 ratio16:9, opaque full bleed. Accurately use reference's powder-blue white gingham, dainty scalloped top valance with blue heart bow, thin warm gray-blue outlines and fluffy long-eared white character with blue lace ear bows and pink cheeks. Fresh variant: cheerful seated Cinnamoroll holding pastel heart bow, tiny soft pink cream blue rainbow sweeping along bottom behind character. Sharper clean high quality illustration with clearly defined linework, subtle pastel fills, no washed-out translucent veil. Left65%quiet unobstructed gingham, entire character in rightmost25%lower corner; rainbow confined bottom10%. Few tiny yellow stars nearouteredges only. No text logos letters schedule clocks UI device frames watermark or screenshot icons. Reference only guides style; new independent composition.",
+      "device": "laptop",
+      "id": "sanrio-cinnamon-bow-rainbow",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-bow-rainbow/laptop.png",
+      "createdAt": "2026-10-13T13:43:07.453Z",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "i": 6,
+      "source": "output/sanrio/sanrio-cinnamon-bow-lace-mobile-generated.png",
+      "prompt": "Use case: stylized-concept. New Sanrio Cinnamoroll Bow Lace wallpaper portrait1080x2400 ratio9:20, opaque full bleed. Reference style accurately: powder-blue white gingham, thin warm gray-blue soft but CRISP lines, fluffy white long-eared Cinnamoroll, blue oval eyes pink cheeks and tiny w mouth, blue ear bows with delicate cream lace. Fresh variant: sleepy Cinnamoroll resting his chin on folded paws over a small scalloped lace pillow, his ears stretched gently sideways, dainty blue heart bow above him. Top edge narrow scalloped blue fabric valance with intricate cream lace trim and one centered blue heart bow, very subtle lace accents alongbottom. Upper70%quiet unobstructed gingham for timetable. Full character and pillow within lower20%. Sparse tiny yellow stars nearedges only. Enhance definition and pastel contrast, no white fog or washed-out veil. New independent finished composition, not pasted screenshot. No text letters clocks timetable UI watermark logos deviceframe screenshot buttons.",
+      "device": "mobile",
+      "id": "sanrio-cinnamon-bow-lace",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-bow-lace/mobile.png",
+      "createdAt": "2026-10-13T13:43:07.620Z",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "i": 7,
+      "source": "output/sanrio/sanrio-cinnamon-bow-lace-tablet-generated.png",
+      "prompt": "Use case: stylized-concept. New Sanrio Cinnamoroll Bow Lace wallpaper portrait1600x2560 ratio5:8, opaque full bleed. Reference style accurately: powder-blue white gingham, thin warm gray-blue soft but CRISP lines, fluffy white long-eared Cinnamoroll, blue oval eyes pink cheeks and tiny w mouth, blue ear bows with delicate cream lace. Fresh variant: sleepy Cinnamoroll resting his chin on folded paws over a small scalloped lace pillow, his ears stretched gently sideways, dainty blue heart bow above him. Top edge narrow scalloped blue fabric valance with intricate cream lace trim and one centered blue heart bow, very subtle lace accents alongbottom. Upper70%quiet unobstructed gingham for timetable. Full character and pillow within lower20%. Sparse tiny yellow stars nearedges only. Enhance definition and pastel contrast, no white fog or washed-out veil. New independent finished composition, not pasted screenshot. No text letters clocks timetable UI watermark logos deviceframe screenshot buttons.",
+      "device": "tablet",
+      "id": "sanrio-cinnamon-bow-lace",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-bow-lace/tablet.png",
+      "createdAt": "2026-10-13T13:43:07.812Z",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "i": 8,
+      "source": "output/sanrio/sanrio-cinnamon-bow-lace-laptop-generated.png",
+      "prompt": "Use case: stylized-concept. New Sanrio Cinnamoroll Bow Lace wallpaper landscape1920x1080 ratio16:9, opaque full bleed. Reference style accurately: powder-blue white gingham, thin warm gray-blue soft but CRISP lines, fluffy white long-eared Cinnamoroll, blue oval eyes pink cheeks and tiny w mouth, blue ear bows with delicate cream lace. Fresh variant: sleepy Cinnamoroll resting his chin on folded paws over a small scalloped lace pillow, his ears stretched gently sideways, dainty blue heart bow above him. Top edge narrow scalloped blue fabric valance with intricate cream lace trim and one centered blue heart bow, very subtle lace accents alongbottom. Left65%quiet unobstructed gingham for timetable. Full character in rightmost25%atbottom, not center. Sparse tiny yellow stars nearedges only. Enhance definition and pastel contrast, no white fog or washed-out veil. New independent finished composition, not pasted screenshot. No text letters clocks timetable UI watermark logos deviceframe screenshot buttons.",
+      "device": "laptop",
+      "id": "sanrio-cinnamon-bow-lace",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-bow-lace/laptop.png",
+      "createdAt": "2026-10-13T13:43:07.968Z",
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "designs": [
+    {
+      "id": "domo-star-stickers",
+      "name": "Star Stickers",
+      "background": "#54351f",
+      "ink": "#fff0d9",
+      "muted": "#dfc3a3",
+      "surface": "#fff4dfd9",
+      "line": "#87664b"
+    },
+    {
+      "id": "domo-orbit-paper",
+      "name": "Orbit Paper",
+      "background": "#684329",
+      "ink": "#fff0db",
+      "muted": "#dac0a4",
+      "surface": "#fff4dfd9",
+      "line": "#947255"
+    },
+    {
+      "id": "domo-velvet-cosmos",
+      "name": "Velvet Cosmos",
+      "background": "#35231b",
+      "ink": "#fff2dc",
+      "muted": "#d9bc92",
+      "surface": "#fff4dfd9",
+      "line": "#81654a"
+    }
+  ],
+  "assets": [
+    {
+      "id": "domo-star-stickers",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-star-stickers/mobile.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1357a-80a6-7902-b504-80308c0bac9f\\exec-e238a45d-cb9d-44d6-9b53-86461e75d66c.png"
+    },
+    {
+      "id": "domo-star-stickers",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-star-stickers/tablet.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1357a-80a6-7902-b504-80308c0bac9f\\exec-4b2a1a94-a385-4bda-953c-ed841fed2ffa.png"
+    },
+    {
+      "id": "domo-star-stickers",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-star-stickers/laptop.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1357a-80a6-7902-b504-80308c0bac9f\\exec-94293c9a-fc0d-47c0-9822-6e2d7c04df81.png"
+    },
+    {
+      "id": "domo-orbit-paper",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-orbit-paper/mobile.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1357a-80a6-7902-b504-80308c0bac9f\\exec-ae2e63cb-0510-4ab4-b774-ce5fccafb00f.png"
+    },
+    {
+      "id": "domo-orbit-paper",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-orbit-paper/tablet.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1357a-80a6-7902-b504-80308c0bac9f\\exec-f784d336-3d13-487c-9f7f-6c08887afb37.png"
+    },
+    {
+      "id": "domo-orbit-paper",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-orbit-paper/laptop.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1357a-80a6-7902-b504-80308c0bac9f\\exec-b49f897f-6f69-4f95-982e-561c5c1881b6.png"
+    },
+    {
+      "id": "domo-velvet-cosmos",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-velvet-cosmos/mobile.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1357a-80a6-7902-b504-80308c0bac9f\\exec-34fc6f76-9b1e-4050-9b3f-bfd7e8384d7a.png"
+    },
+    {
+      "id": "domo-velvet-cosmos",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-velvet-cosmos/tablet.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1357a-80a6-7902-b504-80308c0bac9f\\exec-4c481194-98e3-41b7-b514-5686d6be00a9.png"
+    },
+    {
+      "id": "domo-velvet-cosmos",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-velvet-cosmos/laptop.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1357a-80a6-7902-b504-80308c0bac9f\\exec-d3c7ed0c-ae98-4138-a94d-f6a81b6db2ed.png"
+    }
+  ]
+}

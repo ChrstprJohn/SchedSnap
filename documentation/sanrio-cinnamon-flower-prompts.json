@@ -1,0 +1,114 @@
+{
+  "provider": "builtin image_gen",
+  "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-0b6d140b-1207-491b-897d-d7733a25d32e.png",
+  "assets": [
+    {
+      "id": "sanrio-cinnamon-flower-hug",
+      "device": "mobile",
+      "prompt": "Use case: stylized-concept. Create ONE full opaque portrait mobile wallpaper, target 1080x2400 aspect ratio 9:20. Reference supplied image for faithful blue crayon/colored-pencil handmade illustration style: pale blue and white gingham, textured blue outlines, fluffy white Cinnamoroll with very long floppy ears, blue oval eyes, tiny curved mouth, pink cheeks. Variant Flower Hug: Cinnamoroll sitting at bottom center hugging a single five-petal blue flower, two blue flowers atop head. Entire character within lower 20% with ears spreading along bottom, upper 75% quiet gingham for schedule overlay. Sharper clean high-resolution colored-pencil texture and readable medium-blue outlines, retain pastel palette without fog or washed-out veil. No text, logo, schedule, clocks, badges, UI, watermarks, black circular screenshot icon, device frame. Do not copy screenshot controls. Wallpaper art alone.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13577-7184-72e0-917d-0966ddb336b5\\exec-6b2d928c-7ee6-485a-85db-e5bf731be92c.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-flower-hug/mobile.png",
+      "createdAt": "2026-10-13T13:43:21.782Z",
+      "dimensions": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "id": "sanrio-cinnamon-flower-hug",
+      "device": "tablet",
+      "prompt": "Use case:stylized-concept. Generate ONE opaque fullbleed portrait tablet1600x2560 aspectratio5:8 wallpaper. Inputimage reference for faithful tactile colored-pencil/crayon art style, pale blue white gingham. White fluffy Cinnamoroll long drooping ears, blueovaleyes, tinycurvedmouth, pinkcheeks. Flower Hug: sitting hugging one five-petal blue flower, two flowers on head. Entire character in lower20%, ears spreading alongbottom, upper75%quiet pale gingham. Crisp handmade mediumblue pencil contours with visible paper grain; sharp highresolution, pastel colors yet clearcontrast, no fog/washedoutveil. Nevertext schedules clocks logos watermarks screenshoticons UI deviceframe. Artworkalone. Distinctcomposition forthisdevice, intactcharacter.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13577-7184-72e0-917d-0966ddb336b5\\exec-8ce2f14d-b18c-46e0-b133-063c273addc9.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-flower-hug/tablet.png",
+      "createdAt": "2026-10-13T13:43:21.782Z",
+      "dimensions": [
+        1600,
+        2560
+      ]
+    },
+    {
+      "id": "sanrio-cinnamon-flower-hug",
+      "device": "laptop",
+      "prompt": "Use case:stylized-concept. Generate ONE opaque fullbleed wide landscape laptop1920x1080 aspectratio16:9 wallpaper. Inputimage reference for faithful tactile colored-pencil/crayon art style, pale blue white gingham. White fluffy Cinnamoroll long drooping ears, blueovaleyes, tinycurvedmouth, pinkcheeks. Flower Hug: sitting hugging one five-petal blue flower, two flowers on head. Entire character in rightmost25%near bottom; left65%quiet empty pale gingham, upperarea quiet. Crisp handmade mediumblue pencil contours with visible paper grain; sharp highresolution, pastel colors yet clearcontrast, no fog/washedoutveil. Nevertext schedules clocks logos watermarks screenshoticons UI deviceframe. Artworkalone. Distinctcomposition forthisdevice, intactcharacter.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13577-7184-72e0-917d-0966ddb336b5\\exec-f4d84a84-d698-4a0f-9a18-41f54a67d283.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-flower-hug/laptop.png",
+      "createdAt": "2026-10-13T13:43:21.782Z",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "sanrio-cinnamon-flower-garden",
+      "device": "mobile",
+      "prompt": "Use case:stylized-concept. Generate ONE opaque fullbleed portrait 1080x2400 aspect ratio9:20 wallpaper. Inputimage reference for faithful tactile colored-pencil/crayon art style, pale blue white gingham. White fluffy Cinnamoroll long drooping ears, blueovaleyes, tinycurvedmouth, pinkcheeks. Flower Garden: sitting happily between three tiny blue flowers growing along bottom, holding a small flower sprig. Entire character in lower20%, ears spreading alongbottom, upper75%quiet pale gingham. Crisp handmade mediumblue pencil contours with visible paper grain; sharp highresolution, pastel colors yet clearcontrast, no fog/washedoutveil. Nevertext schedules clocks logos watermarks screenshoticons UI deviceframe. Artworkalone. Distinctcomposition forthisdevice, intactcharacter.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13577-7184-72e0-917d-0966ddb336b5\\exec-e18ed909-62bf-4d6c-a1ac-2ccf340f65fa.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-flower-garden/mobile.png",
+      "createdAt": "2026-10-13T13:43:21.782Z",
+      "dimensions": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "id": "sanrio-cinnamon-flower-garden",
+      "device": "tablet",
+      "prompt": "Use case:stylized-concept. Generate ONE opaque fullbleed portrait tablet1600x2560 aspectratio5:8 wallpaper. Inputimage reference for faithful tactile colored-pencil/crayon art style, pale blue white gingham. White fluffy Cinnamoroll long drooping ears, blueovaleyes, tinycurvedmouth, pinkcheeks. Flower Garden: sitting happily between three tiny blue flowers growing along bottom, holding a small flower sprig. Entire character in lower20%, ears spreading alongbottom, upper75%quiet pale gingham. Crisp handmade mediumblue pencil contours with visible paper grain; sharp highresolution, pastel colors yet clearcontrast, no fog/washedoutveil. Nevertext schedules clocks logos watermarks screenshoticons UI deviceframe. Artworkalone. Distinctcomposition forthisdevice, intactcharacter.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13577-7184-72e0-917d-0966ddb336b5\\exec-e13f3cb7-1626-42e1-a16c-399c2f1a0d34.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-flower-garden/tablet.png",
+      "createdAt": "2026-10-13T13:43:21.782Z",
+      "dimensions": [
+        1600,
+        2560
+      ]
+    },
+    {
+      "id": "sanrio-cinnamon-flower-garden",
+      "device": "laptop",
+      "prompt": "Use case:stylized-concept. Generate ONE opaque fullbleed wide landscape laptop1920x1080 aspectratio16:9 wallpaper. Inputimage reference for faithful tactile colored-pencil/crayon art style, pale blue white gingham. White fluffy Cinnamoroll long drooping ears, blueovaleyes, tinycurvedmouth, pinkcheeks. Flower Garden: sitting happily between three tiny blue flowers growing along bottom, holding a small flower sprig. Entire character in rightmost25%near bottom; left65%quiet empty pale gingham, upperarea quiet. Crisp handmade mediumblue pencil contours with visible paper grain; sharp highresolution, pastel colors yet clearcontrast, no fog/washedoutveil. Nevertext schedules clocks logos watermarks screenshoticons UI deviceframe. Artworkalone. Distinctcomposition forthisdevice, intactcharacter.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13577-7184-72e0-917d-0966ddb336b5\\exec-62290b54-da53-4616-a896-6b65ed21a885.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-flower-garden/laptop.png",
+      "createdAt": "2026-10-13T13:43:21.782Z",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "sanrio-cinnamon-flower-wreath",
+      "device": "mobile",
+      "prompt": "Use case:stylized-concept. Generate ONE opaque fullbleed portrait 1080x2400 aspect ratio9:20 wallpaper. Inputimage reference for faithful tactile colored-pencil/crayon art style, pale blue white gingham. White fluffy Cinnamoroll long drooping ears, blueovaleyes, tinycurvedmouth, pinkcheeks. Flower Wreath: shy seated pose with paws together, small blue flower wreath on head and small blue petal cluster nearby. Entire character in lower20%, ears spreading alongbottom, upper75%quiet pale gingham. Crisp handmade mediumblue pencil contours with visible paper grain; sharp highresolution, pastel colors yet clearcontrast, no fog/washedoutveil. Nevertext schedules clocks logos watermarks screenshoticons UI deviceframe. Artworkalone. Distinctcomposition forthisdevice, intactcharacter.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13577-7184-72e0-917d-0966ddb336b5\\exec-5d7593f1-336c-470a-ba65-6f3436dbb018.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-flower-wreath/mobile.png",
+      "createdAt": "2026-10-13T13:43:21.782Z",
+      "dimensions": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "id": "sanrio-cinnamon-flower-wreath",
+      "device": "tablet",
+      "prompt": "Use case:stylized-concept. Generate ONE opaque fullbleed portrait tablet1600x2560 aspectratio5:8 wallpaper. Inputimage reference for faithful tactile colored-pencil/crayon art style, pale blue white gingham. White fluffy Cinnamoroll long drooping ears, blueovaleyes, tinycurvedmouth, pinkcheeks. Flower Wreath: shy seated pose with paws together, small blue flower wreath on head and small blue petal cluster nearby. Entire character in lower20%, ears spreading alongbottom, upper75%quiet pale gingham. Crisp handmade mediumblue pencil contours with visible paper grain; sharp highresolution, pastel colors yet clearcontrast, no fog/washedoutveil. Nevertext schedules clocks logos watermarks screenshoticons UI deviceframe. Artworkalone. Distinctcomposition forthisdevice, intactcharacter.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13577-7184-72e0-917d-0966ddb336b5\\exec-9279e1e1-09eb-433e-9330-b168d04f66ab.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-flower-wreath/tablet.png",
+      "createdAt": "2026-10-13T13:43:21.782Z",
+      "dimensions": [
+        1600,
+        2560
+      ]
+    },
+    {
+      "id": "sanrio-cinnamon-flower-wreath",
+      "device": "laptop",
+      "prompt": "Use case:stylized-concept. Generate ONE opaque fullbleed wide landscape laptop1920x1080 aspectratio16:9 wallpaper. Inputimage reference for faithful tactile colored-pencil/crayon art style, pale blue white gingham. White fluffy Cinnamoroll long drooping ears, blueovaleyes, tinycurvedmouth, pinkcheeks. Flower Wreath: shy seated pose with paws together, small blue flower wreath on head and small blue petal cluster nearby. Entire character in rightmost25%near bottom; left65%quiet empty pale gingham, upperarea quiet. Crisp handmade mediumblue pencil contours with visible paper grain; sharp highresolution, pastel colors yet clearcontrast, no fog/washedoutveil. Nevertext schedules clocks logos watermarks screenshoticons UI deviceframe. Artworkalone. Distinctcomposition forthisdevice, intactcharacter.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13577-7184-72e0-917d-0966ddb336b5\\exec-65abeda6-f77a-43b5-86a6-c61b25b004a4.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-flower-wreath/laptop.png",
+      "createdAt": "2026-10-13T13:43:21.782Z",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    }
+  ]
+}

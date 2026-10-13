@@ -1,0 +1,69 @@
+{
+  "provider": "built-in image_gen",
+  "reference": "codex-clipboard-a3bcd338-bc3c-4a31-82e1-0b43e0bcc012.png",
+  "assets": [
+    {
+      "id": "domo-gingham-memory",
+      "device": "mobile",
+      "prompt": "Use case: stylized-concept. Asset type: SchedSnap wallpaper. Create Domo Gingham Memory, a warm cocoa and oat scrapbook collage inspired by the supplied reference. New portrait mobile composition 1080x2400 (9:20). Tiny photographic brown Domo plush cutouts with black bead eyes and red toothy mouths clustered entirely in bottom 15%, vintage chocolate gingham torn fabric along narrow outer margins, a small fabric bow upper right. Center 65% and upper-middle uninterrupted pale oatmeal linen, extremely subtle texture low contrast for dense timetable. Tasteful nostalgic sepia tangible paper edges. Opaque full bleed artwork only, no text, letters, schedule, cards, UI, badges, watermark, device frame. Strong distinct plush material.",
+      "source": "Generated images are saved to C:\\Users\\Administrator\\.codex\\generated_images\\01a13585-629b-7550-bef7-df0260565b38 as C:\\Users\\Administrator\\.codex\\generated_images\\01a13585-629b-7550-bef7-df0260565b38\\exec-efa623c2-db5f-44bd-b2b5-f2e2c2bf5e0e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "path": "public/wallpapers/scenic/domo-gingham-memory/mobile.png"
+    },
+    {
+      "id": "domo-gingham-memory",
+      "device": "tablet",
+      "prompt": "Use case: stylized-concept. Asset type: SchedSnap wallpaper. New Domo wallpaper 1600x2560 portrait 5:8. Reference image is style inspiration only. Style: photographic brown Domo plush collage, vintage chocolate gingham torn fabric outer margins and small gingham bow, warm cocoa oat palette. Composition: two tiny plush cutouts at bottom left and bottom right. Keep center 65% and upper-middle uninterrupted pale oatmeal paper, extremely subtle texture and low contrast for dense timetable. Domo has brown rectangular round body, black eyes, red rectangular mouth with white triangular teeth. Opaque full bleed artwork only. No text, letters, schedule, cards, UI, badges, watermark, device frame. Do not duplicate source collage; compose freshly for this aspect ratio.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13585-629b-7550-bef7-df0260565b38\\exec-d4b2748a-f6e1-434f-8132-bf69f01ab49d.png",
+      "path": "public/wallpapers/scenic/domo-gingham-memory/tablet.png"
+    },
+    {
+      "id": "domo-gingham-memory",
+      "device": "laptop",
+      "prompt": "Use case: stylized-concept. Asset type: SchedSnap wallpaper. New Domo wallpaper 1920x1080 landscape 16:9. Reference image is style inspiration only. Style: photographic brown Domo plush collage, vintage chocolate gingham torn fabric outer margins and small gingham bow, warm cocoa oat palette. Composition: small plush cutouts in lower left and lower right, narrow gingham side strips. Keep center 65% and upper-middle uninterrupted pale oatmeal paper, extremely subtle texture and low contrast for dense timetable. Domo has brown rectangular round body, black eyes, red rectangular mouth with white triangular teeth. Opaque full bleed artwork only. No text, letters, schedule, cards, UI, badges, watermark, device frame. Do not duplicate source collage; compose freshly for this aspect ratio.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13585-629b-7550-bef7-df0260565b38\\exec-6f1a5e35-ed8f-4e39-b98f-675317cf77cf.png",
+      "path": "public/wallpapers/scenic/domo-gingham-memory/laptop.png"
+    },
+    {
+      "id": "domo-lace-journal",
+      "device": "mobile",
+      "prompt": "Use case: stylized-concept. Asset type: SchedSnap wallpaper. New Domo wallpaper 1080x2400 portrait 9:20. Reference image style inspiration only. Style: cozy antique journal, fine ivory lace trims and soft satin chocolate bows, a small hand drawn Domo illustration on aged paper, elegant quiet cream caramel palette. Composition: small Domo drawing in bottom right and a tiny lace bow at top left. Center 65% and upper middle uninterrupted pale ivory paper, extremely subtle texture low contrast for dense timetable. Brown Domo with black eyes red rectangular mouth white triangular teeth. Opaque full bleed. No text, letters, schedule, cards, UI, badges, watermark, device frame. Fresh aspect-specific composition.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13585-629b-7550-bef7-df0260565b38\\exec-9e25bd8e-d5bc-4d73-906b-b8c6afb013bb.png",
+      "path": "public/wallpapers/scenic/domo-lace-journal/mobile.png"
+    },
+    {
+      "id": "domo-lace-journal",
+      "device": "tablet",
+      "prompt": "Use case: stylized-concept. Asset type: SchedSnap wallpaper. New Domo wallpaper 1600x2560 portrait 5:8. Reference image style inspiration only. Style: cozy antique journal, fine ivory lace trims and soft satin chocolate bows, a small hand drawn Domo illustration on aged paper, elegant quiet cream caramel palette. Composition: small Domo drawing lower left and miniature bow lower right. Center 65% and upper middle uninterrupted pale ivory paper, extremely subtle texture low contrast for dense timetable. Brown Domo with black eyes red rectangular mouth white triangular teeth. Opaque full bleed. No text, letters, schedule, cards, UI, badges, watermark, device frame. Fresh aspect-specific composition.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13585-629b-7550-bef7-df0260565b38\\exec-a2cad40c-b336-404f-877c-04f8fab50f55.png",
+      "path": "public/wallpapers/scenic/domo-lace-journal/tablet.png"
+    },
+    {
+      "id": "domo-lace-journal",
+      "device": "laptop",
+      "prompt": "Use case: stylized-concept. Asset type: SchedSnap wallpaper. New Domo wallpaper 1920x1080 landscape 16:9. Reference image style inspiration only. Style: cozy antique journal, fine ivory lace trims and soft satin chocolate bows, a small hand drawn Domo illustration on aged paper, elegant quiet cream caramel palette. Composition: small Domo drawing bottom right, lace ribbons limited to far left and right edges. Center 65% and upper middle uninterrupted pale ivory paper, extremely subtle texture low contrast for dense timetable. Brown Domo with black eyes red rectangular mouth white triangular teeth. Opaque full bleed. No text, letters, schedule, cards, UI, badges, watermark, device frame. Fresh aspect-specific composition.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13585-629b-7550-bef7-df0260565b38\\exec-80af2872-2468-440a-9e5e-2a20e8a06cad.png",
+      "path": "public/wallpapers/scenic/domo-lace-journal/laptop.png"
+    },
+    {
+      "id": "domo-pixel-scrapbook",
+      "device": "mobile",
+      "prompt": "Use case: stylized-concept. Asset type: SchedSnap wallpaper. New Domo wallpaper 1080x2400 portrait 9:20. Reference image style inspiration only. Style: deliberate crisp pixel art Domo stickers, limited chocolate brown black cream crimson pixel clusters, subtle kraft paper with tiny gingham tape tabs, playful nostalgic scrapbook. Composition: tiny pixel Domo stickers entirely bottom 15%, tiny tape upper corners. Center 65% and upper middle uninterrupted pale oatmeal kraft paper, extremely subtle texture low contrast for dense timetable. Brown Domo with black pixel eyes red rectangular pixel mouth white triangular pixel teeth. Pixel stickers must have hard crisp pixel clusters, no smooth illustrated outlines. Opaque full bleed. No text, letters, schedule, cards, UI, badges, watermark, device frame. Fresh aspect-specific composition.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13585-629b-7550-bef7-df0260565b38\\exec-801b5ccb-36ee-4678-b569-27be94855141.png",
+      "path": "public/wallpapers/scenic/domo-pixel-scrapbook/mobile.png"
+    },
+    {
+      "id": "domo-pixel-scrapbook",
+      "device": "tablet",
+      "prompt": "Use case: stylized-concept. Asset type: SchedSnap wallpaper. New Domo wallpaper 1600x2560 portrait 5:8. Reference image style inspiration only. Style: deliberate crisp pixel art Domo stickers, limited chocolate brown black cream crimson pixel clusters, subtle kraft paper with tiny gingham tape tabs, playful nostalgic scrapbook. Composition: tiny pixel Domo stickers along bottom corners and little tape upper corners. Center 65% and upper middle uninterrupted pale oatmeal kraft paper, extremely subtle texture low contrast for dense timetable. Brown Domo with black pixel eyes red rectangular pixel mouth white triangular pixel teeth. Pixel stickers must have hard crisp pixel clusters, no smooth illustrated outlines. Opaque full bleed. No text, letters, schedule, cards, UI, badges, watermark, device frame. Fresh aspect-specific composition.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13585-629b-7550-bef7-df0260565b38\\exec-07e6a8e3-9841-4363-a583-ff9d0bad215f.png",
+      "path": "public/wallpapers/scenic/domo-pixel-scrapbook/tablet.png"
+    },
+    {
+      "id": "domo-pixel-scrapbook",
+      "device": "laptop",
+      "prompt": "Use case: stylized-concept. Asset type: SchedSnap wallpaper. New Domo wallpaper 1920x1080 landscape 16:9. Reference image style inspiration only. Style: deliberate crisp pixel art Domo stickers, limited chocolate brown black cream crimson pixel clusters, subtle kraft paper with tiny gingham tape tabs, playful nostalgic scrapbook. Composition: tiny pixel Domo stickers bottom left and bottom right, tiny tape far upper corners. Center 65% and upper middle uninterrupted pale oatmeal kraft paper, extremely subtle texture low contrast for dense timetable. Brown Domo with black pixel eyes red rectangular pixel mouth white triangular pixel teeth. Pixel stickers must have hard crisp pixel clusters, no smooth illustrated outlines. Opaque full bleed. No text, letters, schedule, cards, UI, badges, watermark, device frame. Fresh aspect-specific composition.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13585-629b-7550-bef7-df0260565b38\\exec-27e44462-e843-48a8-8e83-d310b8f82419.png",
+      "path": "public/wallpapers/scenic/domo-pixel-scrapbook/laptop.png"
+    }
+  ]
+}

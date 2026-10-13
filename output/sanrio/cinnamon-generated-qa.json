@@ -1,0 +1,941 @@
+{
+  "backend": "native Canvas; DM Sans weights rounded to nearest hundred for native parser",
+  "reports": [
+    {
+      "id": "sanrio-cinnamon-bow-stars",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-bow-stars",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-bow-stars",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1180.8
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-bow-stars",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2257.1554285714283
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-bow-stars",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-bow-stars",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-bow-rainbow",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-bow-rainbow",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-bow-rainbow",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1180.8
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-bow-rainbow",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2257.1554285714283
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-bow-rainbow",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-bow-rainbow",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-bow-lace",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-bow-lace",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-bow-lace",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1180.8
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-bow-lace",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2257.1554285714283
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-bow-lace",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-bow-lace",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-flower-hug",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-flower-hug",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-flower-hug",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1180.8
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-flower-hug",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2257.1554285714283
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-flower-hug",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-flower-hug",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-flower-garden",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-flower-garden",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-flower-garden",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1180.8
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-flower-garden",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2257.1554285714283
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-flower-garden",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-flower-garden",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-flower-wreath",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-flower-wreath",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-flower-wreath",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1180.8
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-flower-wreath",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2257.1554285714283
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-flower-wreath",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-flower-wreath",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-lace-nap",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-lace-nap",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-lace-nap",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1180.8
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-lace-nap",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2257.1554285714283
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-lace-nap",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-lace-nap",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-lace-hydrangea",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-lace-hydrangea",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-lace-hydrangea",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1180.8
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-lace-hydrangea",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2257.1554285714283
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-lace-hydrangea",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-lace-hydrangea",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-lace-cloud",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-lace-cloud",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-lace-cloud",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1180.8
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-lace-cloud",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2257.1554285714283
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-lace-cloud",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-lace-cloud",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-sit",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-sit",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-sit",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1180.8
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-sit",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2257.1554285714283
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-sit",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-sit",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-cloud",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-cloud",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-cloud",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1180.8
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-cloud",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2257.1554285714283
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-cloud",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-cloud",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-heart",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-heart",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-heart",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1180.8
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-heart",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2257.1554285714283
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-heart",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-heart",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    }
+  ]
+}

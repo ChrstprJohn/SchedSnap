@@ -1,0 +1,74 @@
+{
+  "provider": "built-in image_gen",
+  "assets": [
+    {
+      "id": "sanrio-cinnamon-ribbon-cloud",
+      "device": "mobile",
+      "source": "output/sanrio/sanrio-cinnamon-ribbon-cloud-mobile-source.png",
+      "prompt": "Use case: stylized-concept. Generate a new Sanrio Cinnamoroll wallpaper inspired closely by the attached style reference, not its screenshot. Mobile portrait 1080x2400 composition. Clean opaque baby blue background, sparse powder blue tiny bows and dots. White fluffy long-eared Cinnamoroll with blue oval eyes, pink cheeks, tiny w-mouth, thin clear muted blue outlines; sitting and resting on one small white cloud. Match reference's flat cute stationery illustration accurately but improve crisp clarity, remove faded haze. Complete body and ears visible within bottom 20%, generous margin, upper75% quiet for schedule. No text, logos, watermarks, UI, clock, schedule or screenshot corners. Full bleed artwork.",
+      "createdAt": "2026-10-13T13:46:14.193Z",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-ribbon-cloud/mobile.png"
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-cloud",
+      "device": "tablet",
+      "prompt": "Use case: stylized-concept. New Sanrio Cinnamoroll wallpaper with the attached image as style reference only. Portrait tablet 1600x2560 composition. Clean opaque baby blue background, sparse powder blue tiny bows and dots, clear gentle contrast without haze. White fluffy long-eared Cinnamoroll blue oval eyes pink cheeks tiny w-mouth with thin muted blue outline, resting on a little white cloud. Accurately match reference flat cute stationery drawing, sharper quality. Whole character and ears inside bottom20%, upper75% quiet for timetable. No text logos watermark UI clock timetable or screen corners. Full bleed.",
+      "source": "output/sanrio/sanrio-cinnamon-ribbon-cloud-tablet-source.png",
+      "createdAt": "2026-10-13T13:48:06.609Z",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-ribbon-cloud/tablet.png"
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-cloud",
+      "device": "laptop",
+      "prompt": "Use case: stylized-concept. New Sanrio Cinnamoroll wallpaper, landscape laptop 1920x1080 composition. Attached image is STYLE reference, redraw independently for wide screen. Opaque baby blue ground with sparse powderblue bows and dots. White fluffy Cinnamoroll long ears, blue oval eyes, pink cheeks, tiny w mouth, thin clear mutedblue outline, resting on a small white cloud. Match flat cute stationery illustration accurately, crisp edges with stronger clarity not washed out. Character entire body and ears visible with margins in rightmost25%, left65% spacious quiet background for schedule. No text logos watermark UI clock schedule screen corners. Full bleed.",
+      "source": "output/sanrio/sanrio-cinnamon-ribbon-cloud-laptop-source.png",
+      "createdAt": "2026-10-13T13:48:52.619Z",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-ribbon-cloud/laptop.png"
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-heart",
+      "device": "mobile",
+      "prompt": "Use case: stylized-concept. New Sanrio Cinnamoroll wallpaper, mobile portrait1080x2400 composition. Attached image is style reference only. Opaque clean babyblue ground sparse powderblue small bows and tiny dots. White fluffy Cinnamoroll long ears, blue oval eyes, pink cheeks, thin mutedblue outline, sitting sweetly holding a little heart-shaped powderblue bow. Fullbody and ears comfortably inside bottom20%, upper75% quiet timetable space. Match reference's flat gentle stationery drawing accurately, enhance crisp line definition and colors, no mist or faded veil. No text logos watermarks UI clocks schedule screen corners. Full bleed.",
+      "source": "output/sanrio/sanrio-cinnamon-ribbon-heart-mobile-source.png",
+      "createdAt": "2026-10-13T13:49:39.863Z",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/mobile.png"
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-heart",
+      "device": "tablet",
+      "prompt": "Use case: stylized-concept. New Sanrio Cinnamoroll wallpaper tablet portrait1600x2560 composition. Attached image STYLE reference. Clean opaque babyblue ground, sparse powderblue ribbon bows and dots. White fluffy long-eared Cinnamoroll blue ovaleyes pinkcheeks tinyw mouth with thin clear mutedblue outlines, sitting sweetly holding a little heart-shaped powderblue bow. Entirebody and long ears with generous margins inside bottom20%, upper75% quiet for schedule. Accurately match flat gentle stationery drawing in reference, sharper clean colors and outline, no fog haze fade. No text logos watermark UI clock schedule screenshotcorners. Fullbleed.",
+      "source": "output/sanrio/sanrio-cinnamon-ribbon-heart-tablet-source.png",
+      "createdAt": "2026-10-13T13:50:28.594Z",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/tablet.png"
+    },
+    {
+      "id": "sanrio-cinnamon-ribbon-heart",
+      "device": "laptop",
+      "prompt": "Use case: stylized-concept. New Sanrio Cinnamoroll wallpaper landscape laptop1920x1080 composition. Attached reference establishes artstyle only; independent widescreen drawing. Clean opaque babyblue ground with sparse powderblue ribbon bows tiny dots. White fluffy Cinnamoroll longears blue ovaleyes pinkcheeks tinyw mouth, thin clear mutedblue outline, sitting holding little heart-shaped powderblue bow. Wholebody and ears visible with margins exclusively rightmost25%; left65% quiet schedule space. Accurate cute flat stationery art matchingreference with enhanced crisp clarity, no haze or washedout veil. No text logo watermark UI schedule clock screenshotcorners. Fullbleed.",
+      "source": "output/sanrio/sanrio-cinnamon-ribbon-heart-laptop-source.png",
+      "createdAt": "2026-10-13T13:51:12.631Z",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/laptop.png"
+    },
+    {
+      "device": "mobile",
+      "prompt": "Use case: illustration-story. Asset type: opaque mobile wallpaper 1080x2400 portrait 9:20. Input image reference only: closely match its baby-blue pastel ground, powder-blue bows and tiny dots, delicate clean blue outline and white fluffy long-eared Cinnamoroll with small blue oval eyes, pink cheeks, tiny w-shaped smile. Generate a new high-quality Cinnamon Ribbon Sit composition. Seated Cinnamoroll full visible body in bottom20%, fluffy paw held beside cheek, white shape outlined clear muted cornflower-blue, ears entirely visible, sparse blue bows along outer margins. Upper75% quiet very pale blue with tiny sparse dots for class schedule; no large central motifs. Preserve gentle flat pastel art, sharpen linework and details, stronger visible outline than washed-out screenshot, no gray fog or faded overlay. Full-bleed opaque artwork only no text logos UI controls clocks schedules watermarks frame. Generate exact1080x2400.",
+      "source": "output/sanrio/sanrio-cinnamon-ribbon-sit-mobile-source.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-ribbon-sit/mobile.png",
+      "createdAt": "2026-10-13T13:52:03.626Z"
+    },
+    {
+      "device": "tablet",
+      "prompt": "Use case: illustration-story. Asset type: opaque tablet portrait wallpaper1600x2560 aspect5:8. Inputimage reference only. Independently compose Cinnamon Ribbon Sit matching baby-blue background, sparse powder-blue bows dots, crisp delicate cornflower-blue outlines, fluffy white Cinnamoroll with long ears blueoval eyes pinkcheeks tinywsmile. Seated full-body Cinnamoroll at bottom18%, onepawagainst cheek; ears fullyvisible. Tinybowsnearouterbottomcorners, small dottedwhite floor atbottom. Upper76%quietpale blue sparselydotted for schedule. New tablet composition preserving reference flat pastel handdrawn style but clear highquality lines, no fadedveil. Full bleed opaque art no text logos UI clocks schedules watermarks screenshoticons. Exact1600x2560.",
+      "source": "output/sanrio/sanrio-cinnamon-ribbon-sit-tablet-source.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-ribbon-sit/tablet.png",
+      "createdAt": "2026-10-13T13:52:03.824Z"
+    },
+    {
+      "device": "laptop",
+      "prompt": "Use case: illustration-story. Opaque laptop landscape wallpaper1920x1080 16:9. Reference style only: soft flat baby-blue Cinnamoroll art with crisp mutedcornflower blue outlines, powderblue bows tiny dots, white fluffy puppy long ears smallblue eyes pinkcheeks tinywsmile. Independently compose Cinnamon Ribbon Sit. Seated fullbody Cinnamoroll withonepawagainstcheek only lower rightmost28%, intactlong ears andbody. Tiny bluebows outerright/topedge; bottomrightsmallwhite dotted floor. Left65%entirecanvas quietverypaleblue sparse tiny dots clear for schedule. Preserve pastelreference but sharpqualityvisibleblue outlines no washedveil. Fullbleedopaqueart no textlogos clocks UI scheduleswatermarks icons deviceframe. Exact1920x1080.",
+      "source": "output/sanrio/sanrio-cinnamon-ribbon-sit-laptop-source.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-ribbon-sit/laptop.png",
+      "createdAt": "2026-10-13T13:52:03.997Z"
+    }
+  ]
+}

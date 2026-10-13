@@ -20,15 +20,18 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
   const designResolution = () => deviceResolutions[device];
   const [category, setCategory] = useState(() => galleryCategories.some((item) => item.id === initialCategory) ? initialCategory : 'all');
   const [preview, setPreview] = useState(null);
+  const [sort, setSort] = useState('featured');
   const { likes, pending, error: likeError, refresh: refreshLikes, toggle: toggleLike } = useDesignLikes();
   const visibleTemplates = wallpaperTemplates.filter((item) =>
     matchesGalleryCategory(item, category));
-  const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(visibleTemplates.length, `${category}:${device}`);
+  if (sort === 'hearts') visibleTemplates.sort((a, b) => (likes[b.id]?.count ?? -1) - (likes[a.id]?.count ?? -1));
+  const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(visibleTemplates.length, `${category}:${device}:${sort}`);
   return <div>
     <div role="group" aria-label="Filter designs" className="template-filters">
       {showDeviceFilter && <DevicePicker value={device} onChange={onDeviceChange} label="Filter by device" />}
       <CategoryFilters categories={galleryCategories} value={category} controls="template-gallery" onChange={id => { if (category !== id) { setCategory(id); trackEvent('collection_filtered', { collection: id }); } }} />
     </div>
+    <div className="gallery-sort"><label htmlFor="template-sort">Sort designs</label><select id="template-sort" value={sort} onChange={event => setSort(event.target.value)}><option value="featured">Featured</option><option value="hearts">Most hearts</option></select></div>
     {likeError && <div className="gallery-like-error" role="alert"><span>{likeError}</span><button type="button" className="text-link" onClick={() => refreshLikes(true)} disabled={!!pending}>Retry</button></div>}
     <div id="template-gallery" role="group" aria-label={`${galleryCategories.find((collection) => collection.id === category).name} gallery`} className={`template-grid template-grid-${device}`}>
       {loading && Array.from({ length: 10 }, (_, i) => <div key={`skeleton-${i}`} className="gallery-card-skeleton wallpaper-skeleton" aria-hidden="true" />)}

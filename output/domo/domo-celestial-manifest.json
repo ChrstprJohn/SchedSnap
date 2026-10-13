@@ -1,0 +1,132 @@
+{
+  "generatedAt": "2026-10-13T13:51:57.831Z",
+  "provider": "built-in imagegen",
+  "assets": [
+    {
+      "id": "domo-star-stickers",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-star-stickers/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "sourceDimensions": {
+        "width": 841,
+        "height": 1870
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "28cd08fb266624ac9f02c1099e4660aad7cd199d46c0b03aa4a0315b71b6e0de"
+    },
+    {
+      "id": "domo-star-stickers",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-star-stickers/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "sourceDimensions": {
+        "width": 992,
+        "height": 1586
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "9aeed99bb5cd15d8eb599fdf44f608571417a5cbc7a250f03bb64e3bb6847912"
+    },
+    {
+      "id": "domo-star-stickers",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-star-stickers/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "4c518b4d1905c4d8c5c6be001d7aef32b2dafb02cc76e1c447a2fb86aae0bc1e"
+    },
+    {
+      "id": "domo-orbit-paper",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-orbit-paper/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "sourceDimensions": {
+        "width": 841,
+        "height": 1870
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "98bdfb07d3fdaaac6957c4fbedd3bd57a4a19dde0b0ab6d0cba5910f40ed4915"
+    },
+    {
+      "id": "domo-orbit-paper",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-orbit-paper/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "sourceDimensions": {
+        "width": 992,
+        "height": 1586
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "4b6983bb5577da3508f8c541a875d897208221738fe336970d145cd6853a2d2c"
+    },
+    {
+      "id": "domo-orbit-paper",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-orbit-paper/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "8626eb49f1440667a68b1c86f2bd3414d4c73d01809833cd3ff890437f340d24"
+    },
+    {
+      "id": "domo-velvet-cosmos",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-velvet-cosmos/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "sourceDimensions": {
+        "width": 841,
+        "height": 1870
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "94549a1f45b7513248aaccc4b74d41f96eb5d09b216642828a53fc66741c7b65"
+    },
+    {
+      "id": "domo-velvet-cosmos",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-velvet-cosmos/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "sourceDimensions": {
+        "width": 992,
+        "height": 1586
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "787c99bd1eb3b4467f20d845e937accc2bcbaa7580c5e429bb7c208c88a6724f"
+    },
+    {
+      "id": "domo-velvet-cosmos",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-velvet-cosmos/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "ca97c615cb5d5d7a9e78c0d1dbbc41bb9fb04b31f9589c41c7e80829776b8362"
+    }
+  ]
+}

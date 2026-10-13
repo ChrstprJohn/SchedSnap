@@ -1,0 +1,112 @@
+{
+  "templates": [
+    {
+      "id": "domo-plaid-notes",
+      "name": "Domo Plaid Notes",
+      "description": "Warm notebook plaid with playful paper stickers",
+      "background": "#ead4b9",
+      "ink": "#42291b",
+      "muted": "#6b4936",
+      "surface": "#fffaf0d9",
+      "line": "#62453135",
+      "collection": "scenic",
+      "family": "domo",
+      "image": "/wallpapers/scenic/domo-plaid-notes/mobile.png",
+      "deviceImages": {
+        "mobile": "/wallpapers/scenic/domo-plaid-notes/mobile.png",
+        "tablet": "/wallpapers/scenic/domo-plaid-notes/tablet.png",
+        "laptop": "/wallpapers/scenic/domo-plaid-notes/laptop.png"
+      },
+      "createdAt": "2026-10-13T13:48:07.137Z"
+    },
+    {
+      "id": "domo-tartan-sketch",
+      "name": "Domo Tartan Sketch",
+      "description": "Pencil Domo doodles on oatmeal paper with tartan edges",
+      "background": "#eee0c9",
+      "ink": "#432c20",
+      "muted": "#765440",
+      "surface": "#fffaf0d9",
+      "line": "#62453135",
+      "collection": "scenic",
+      "family": "domo",
+      "image": "/wallpapers/scenic/domo-tartan-sketch/mobile.png",
+      "deviceImages": {
+        "mobile": "/wallpapers/scenic/domo-tartan-sketch/mobile.png",
+        "tablet": "/wallpapers/scenic/domo-tartan-sketch/tablet.png",
+        "laptop": "/wallpapers/scenic/domo-tartan-sketch/laptop.png"
+      },
+      "createdAt": "2026-10-13T13:48:07.137Z"
+    },
+    {
+      "id": "domo-gingham-cutout",
+      "name": "Domo Gingham Cutout",
+      "description": "Torn gingham paper and cheerful Domo cutouts",
+      "background": "#efddbf",
+      "ink": "#43291a",
+      "muted": "#72513b",
+      "surface": "#fffaf0d9",
+      "line": "#62453135",
+      "collection": "scenic",
+      "family": "domo",
+      "image": "/wallpapers/scenic/domo-gingham-cutout/mobile.png",
+      "deviceImages": {
+        "mobile": "/wallpapers/scenic/domo-gingham-cutout/mobile.png",
+        "tablet": "/wallpapers/scenic/domo-gingham-cutout/tablet.png",
+        "laptop": "/wallpapers/scenic/domo-gingham-cutout/laptop.png"
+      },
+      "createdAt": "2026-10-13T13:48:07.137Z"
+    }
+  ],
+  "assets": [
+    {
+      "id": "domo-plaid-notes",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-plaid-notes/mobile.png"
+    },
+    {
+      "id": "domo-plaid-notes",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-plaid-notes/tablet.png"
+    },
+    {
+      "id": "domo-plaid-notes",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-plaid-notes/laptop.png"
+    },
+    {
+      "id": "domo-tartan-sketch",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-tartan-sketch/mobile.png"
+    },
+    {
+      "id": "domo-tartan-sketch",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-tartan-sketch/tablet.png"
+    },
+    {
+      "id": "domo-tartan-sketch",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-tartan-sketch/laptop.png"
+    },
+    {
+      "id": "domo-gingham-cutout",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-gingham-cutout/mobile.png"
+    },
+    {
+      "id": "domo-gingham-cutout",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-gingham-cutout/tablet.png"
+    },
+    {
+      "id": "domo-gingham-cutout",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-gingham-cutout/laptop.png"
+    }
+  ],
+  "qa": {
+    "montage": "output/domo/plaid-preview.png",
+    "result": "Nine assets inspected together. Characters intact, no text/UI/watermark. Quiet center maintained; plaid-notes mobile footer is larger than other styles and should be checked with dense schedule."
+  }
+}

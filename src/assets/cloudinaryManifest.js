@@ -3121,5 +3121,257 @@ export default {
     "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888838/schedsnap/wallpapers/scenic/sanrio-strawberry-patchwork/tablet-35a410c344e2b6f1.png",
     "width": 1600,
     "height": 2560
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-bow-lace/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-bow-lace/laptop-e062f1133efb3f8f",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899828/schedsnap/wallpapers/scenic/sanrio-cinnamon-bow-lace/laptop-e062f1133efb3f8f.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-bow-lace/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-bow-lace/mobile-6f7f8c4c278a0274",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899828/schedsnap/wallpapers/scenic/sanrio-cinnamon-bow-lace/mobile-6f7f8c4c278a0274.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-bow-lace/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-bow-lace/tablet-37ef245166740f3f",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899829/schedsnap/wallpapers/scenic/sanrio-cinnamon-bow-lace/tablet-37ef245166740f3f.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-bow-rainbow/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-bow-rainbow/laptop-f639c84f50bdce29",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899826/schedsnap/wallpapers/scenic/sanrio-cinnamon-bow-rainbow/laptop-f639c84f50bdce29.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-bow-rainbow/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-bow-rainbow/mobile-163cadaefee25189",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899832/schedsnap/wallpapers/scenic/sanrio-cinnamon-bow-rainbow/mobile-163cadaefee25189.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-bow-stars/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-bow-stars/laptop-73d3a756529bcde2",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899836/schedsnap/wallpapers/scenic/sanrio-cinnamon-bow-stars/laptop-73d3a756529bcde2.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-bow-stars/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-bow-stars/mobile-996512b18078979d",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899834/schedsnap/wallpapers/scenic/sanrio-cinnamon-bow-stars/mobile-996512b18078979d.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-bow-stars/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-bow-stars/tablet-14ffbfda458d30bf",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899837/schedsnap/wallpapers/scenic/sanrio-cinnamon-bow-stars/tablet-14ffbfda458d30bf.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-bow-rainbow/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-bow-rainbow/tablet-2f984dad1888ac87",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899838/schedsnap/wallpapers/scenic/sanrio-cinnamon-bow-rainbow/tablet-2f984dad1888ac87.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-flower-garden/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-garden/mobile-da33fb4a8a27208e",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899848/schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-garden/mobile-da33fb4a8a27208e.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-flower-garden/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-garden/tablet-251d66fd851a0dba",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899850/schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-garden/tablet-251d66fd851a0dba.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-flower-garden/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-garden/laptop-917c47e754a81e33",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899853/schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-garden/laptop-917c47e754a81e33.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-flower-hug/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-hug/mobile-42933d814b504d25",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899853/schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-hug/mobile-42933d814b504d25.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-flower-hug/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-hug/laptop-e969cf47c4685db1",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899865/schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-hug/laptop-e969cf47c4685db1.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-flower-wreath/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-wreath/mobile-a9674614c4233a87",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899869/schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-wreath/mobile-a9674614c4233a87.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-flower-wreath/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-wreath/laptop-a71f06f3f46af264",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899866/schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-wreath/laptop-a71f06f3f46af264.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-flower-hug/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-hug/tablet-62c3bdada5538161",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899864/schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-hug/tablet-62c3bdada5538161.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-lace-cloud/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-cloud/laptop-586338ab0dfabf2e",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899874/schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-cloud/laptop-586338ab0dfabf2e.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-lace-cloud/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-cloud/mobile-2ddef1515bab23d8",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899877/schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-cloud/mobile-2ddef1515bab23d8.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-flower-wreath/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-wreath/tablet-06bf917eaf88b26f",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899882/schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-wreath/tablet-06bf917eaf88b26f.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-lace-cloud/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-cloud/tablet-7d780461d3949002",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899885/schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-cloud/tablet-7d780461d3949002.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-lace-hydrangea/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-hydrangea/laptop-2b08854034aaf1e6",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899887/schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-hydrangea/laptop-2b08854034aaf1e6.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-lace-nap/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-nap/laptop-c419bef45baec7a5",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899891/schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-nap/laptop-c419bef45baec7a5.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-lace-hydrangea/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-hydrangea/mobile-5fc1c9bd962a064e",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899889/schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-hydrangea/mobile-5fc1c9bd962a064e.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-lace-hydrangea/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-hydrangea/tablet-ed3d8bcdf482aafc",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899899/schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-hydrangea/tablet-ed3d8bcdf482aafc.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-lace-nap/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-nap/tablet-36d3c1d41a5da35b",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899904/schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-nap/tablet-36d3c1d41a5da35b.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-ribbon-cloud/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-cloud/mobile-1db60393419bffe2",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899904/schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-cloud/mobile-1db60393419bffe2.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/laptop-1cf6d8213236f7b6",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899908/schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/laptop-1cf6d8213236f7b6.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-ribbon-cloud/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-cloud/laptop-58395e835ffc28fc",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899900/schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-cloud/laptop-58395e835ffc28fc.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/mobile-b8115326d6d9756a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899910/schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/mobile-b8115326d6d9756a.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-ribbon-cloud/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-cloud/tablet-bef31c5b217f2bef",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899906/schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-cloud/tablet-bef31c5b217f2bef.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-ribbon-sit/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-sit/laptop-099434183523fdc7",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899913/schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-sit/laptop-099434183523fdc7.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-lace-nap/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-nap/mobile-f69d2e1ad9260b29",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899900/schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-nap/mobile-f69d2e1ad9260b29.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-ribbon-sit/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-sit/tablet-c42af64705bc8815",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899916/schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-sit/tablet-c42af64705bc8815.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-ribbon-sit/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-sit/mobile-a6ad8191ba7844ae",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899914/schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-sit/mobile-a6ad8191ba7844ae.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/tablet-a0a9e633228a6523",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899912/schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/tablet-a0a9e633228a6523.png",
+    "width": 1600,
+    "height": 2560
   }
 };

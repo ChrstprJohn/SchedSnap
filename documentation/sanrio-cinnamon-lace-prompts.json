@@ -1,0 +1,97 @@
+{
+  "provider": "builtin-image_gen",
+  "reference": "codex-clipboard-2e68312c-a48f-4685-98fd-4cbc49a1e6c8.png",
+  "assets": [
+    {
+      "id": "sanrio-cinnamon-lace-nap",
+      "device": "mobile",
+      "source": "output/sanrio/sanrio-cinnamon-lace-nap-mobile-generated.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-lace-nap/mobile.png",
+      "createdAt": "2026-10-13T13:44:53.092Z",
+      "prompt": "Use case: stylized-concept. Create a newly illustrated opaque Cinnamoroll wallpaper, mobile portrait 1080x2400. Reference image is style and composition guidance only: match white ground with soft powder-blue regular polka dots, delicate fine white lace down the left edge, pale blue hydrangeas, very cute white long-eared Sanrio Cinnamoroll sleeping on a pillow. Variant Lace Nap: Cinnamoroll lies curled on a pale blue scalloped pillow, both long ears fully visible, tiny pink cheeks, closed curved eyes; hydrangea cluster bottom-left. All character art confined to lower 22%, upper 70% quiet dots for schedule space. Refined gentle hand-painted stationery illustration, softly shaded but clearly resolved blue-gray outlines, visible saturated pastel accents, high quality crisp detail; no washed-out fog veil. Full bleed, no blank border. No text, schedule, clock, logo, UI, watermarks, screenshot controls. Preserve character identity. Do not copy screenshot controls.",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "id": "sanrio-cinnamon-lace-nap",
+      "device": "tablet",
+      "source": "output/sanrio/sanrio-cinnamon-lace-nap-tablet-generated.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-lace-nap/tablet.png",
+      "createdAt": "2026-10-13T13:44:53.097Z",
+      "prompt": "Use case: stylized-concept. Create a newly illustrated opaque Cinnamoroll wallpaper, tablet portrait 1600x2560. Reference image is style and composition guidance only: match white ground with soft powder-blue regular polka dots, delicate fine white lace down the left edge, pale blue hydrangeas, very cute white long-eared Sanrio Cinnamoroll sleeping on a pillow. Variant Lace Nap: Cinnamoroll lies curled on a pale blue scalloped pillow, both long ears fully visible, tiny pink cheeks, closed curved eyes; hydrangea clusters lower corners, delicate lace on both outer edges. All character art confined to lower 22%, upper 70% quiet dots for schedule space. Refined gentle hand-painted stationery illustration, softly shaded but clearly resolved blue-gray outlines, visible saturated pastel accents, high quality crisp detail; no washed-out fog veil. Full bleed, no blank border. No text, schedule, clock, logo, UI, watermarks, screenshot controls. Preserve character identity. Do not copy screenshot controls.",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "id": "sanrio-cinnamon-lace-nap",
+      "device": "laptop",
+      "source": "output/sanrio/sanrio-cinnamon-lace-nap-laptop-generated.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-lace-nap/laptop.png",
+      "createdAt": "2026-10-13T13:44:53.100Z",
+      "prompt": "Use case: stylized-concept. Create a newly illustrated opaque Cinnamoroll wallpaper, laptop landscape 1920x1080. Reference image is style and composition guidance only: match white ground with soft powder-blue regular polka dots, delicate fine white lace down the left edge, pale blue hydrangeas, very cute white long-eared Sanrio Cinnamoroll sleeping on a pillow. Variant Lace Nap: Cinnamoroll lies curled on a pale blue scalloped pillow, both long ears fully visible, tiny pink cheeks, closed curved eyes; hydrangea cluster bottom-right beside pillow. All character art confined to bottom-right quarter, left 65% and upper 70% quiet dots for schedule space. Refined gentle hand-painted stationery illustration, softly shaded but clearly resolved blue-gray outlines, visible saturated pastel accents, high quality crisp detail; no washed-out fog veil. Full bleed, no blank border. No text, schedule, clock, logo, UI, watermarks, screenshot controls. Preserve character identity. Do not copy screenshot controls.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "sanrio-cinnamon-lace-hydrangea",
+      "device": "mobile",
+      "source": "output/sanrio/sanrio-cinnamon-lace-hydrangea-mobile-generated.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-lace-hydrangea/mobile.png",
+      "createdAt": "2026-10-13T13:44:53.105Z",
+      "prompt": "Use case: stylized-concept. Create a newly illustrated opaque Cinnamoroll wallpaper, mobile portrait 1080x2400. Reference image is style and composition guidance only: match white ground with soft powder-blue regular polka dots, delicate fine white lace down the left edge, pale blue hydrangeas, very cute white long-eared Sanrio Cinnamoroll sleeping on a pillow. Variant Lace Hydrangea: Cinnamoroll lies on his belly with front paws tucked beneath his round face on a white pillow with blue lace ruffle, both long ears fully visible, tiny pink cheeks, drowsy curved eyes; rich pale blue hydrangea bouquets frame both lower corners, left lace edge is scalloped botanical lace. All character art confined to lower 22%, upper 70% quiet dots for schedule space. Refined gentle hand-painted stationery illustration, softly shaded but clearly resolved blue-gray outlines, visible saturated pastel accents, high quality crisp detail; no washed-out fog veil. Full bleed, no blank border. No text, schedule, clock, logo, UI, watermarks, screenshot controls. Preserve character identity. Do not copy screenshot controls.",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "id": "sanrio-cinnamon-lace-hydrangea",
+      "device": "tablet",
+      "source": "output/sanrio/sanrio-cinnamon-lace-hydrangea-tablet-generated.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-lace-hydrangea/tablet.png",
+      "createdAt": "2026-10-13T13:44:53.109Z",
+      "prompt": "Use case: stylized-concept. Create a newly illustrated opaque Cinnamoroll wallpaper, tablet portrait 1600x2560. Reference image is style and composition guidance only: match white ground with soft powder-blue regular polka dots, delicate fine white lace down the left edge, pale blue hydrangeas, very cute white long-eared Sanrio Cinnamoroll sleeping on a pillow. Variant Lace Hydrangea: Cinnamoroll lies on his belly with front paws tucked beneath his round face on a white pillow with blue lace ruffle, both long ears fully visible, tiny pink cheeks, drowsy curved eyes; rich pale blue hydrangea bouquets frame both lower corners, both outer edges have fine scalloped botanical lace. All character art confined to lower 22%, upper 70% quiet dots for schedule space. Refined gentle hand-painted stationery illustration, softly shaded but clearly resolved blue-gray outlines, visible saturated pastel accents, high quality crisp detail; no washed-out fog veil. Full bleed, no blank border. No text, schedule, clock, logo, UI, watermarks, screenshot controls. Preserve character identity. Do not copy screenshot controls.",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "id": "sanrio-cinnamon-lace-hydrangea",
+      "device": "laptop",
+      "source": "output/sanrio/sanrio-cinnamon-lace-hydrangea-laptop-generated.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-lace-hydrangea/laptop.png",
+      "createdAt": "2026-10-13T13:44:53.113Z",
+      "prompt": "Use case: stylized-concept. Create a newly illustrated opaque Cinnamoroll wallpaper, laptop landscape 1920x1080. Reference image is style and composition guidance only: match white ground with soft powder-blue regular polka dots, delicate fine white lace down the left edge, pale blue hydrangeas, very cute white long-eared Sanrio Cinnamoroll sleeping on a pillow. Variant Lace Hydrangea: Cinnamoroll lies on his belly with front paws tucked beneath his round face on a white pillow with blue lace ruffle, both long ears fully visible, tiny pink cheeks, drowsy curved eyes; rich pale blue hydrangea bouquets frame the pillow only in lower-right, left lace edge is scalloped botanical lace. All character and floral art confined to bottom-right quarter, left 65% and upper 70% quiet dots for schedule space. Refined gentle hand-painted stationery illustration, softly shaded but clearly resolved blue-gray outlines, visible saturated pastel accents, high quality crisp detail; no washed-out fog veil. Full bleed, no blank border. No text, schedule, clock, logo, UI, watermarks, screenshot controls. Preserve character identity. Do not copy screenshot controls.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "sanrio-cinnamon-lace-cloud",
+      "device": "mobile",
+      "source": "output/sanrio/sanrio-cinnamon-lace-cloud-mobile-generated.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-lace-cloud/mobile.png",
+      "createdAt": "2026-10-13T13:44:53.117Z",
+      "prompt": "Use case: stylized-concept. Create a newly illustrated opaque Cinnamoroll wallpaper, mobile portrait 1080x2400. Reference image is style and composition guidance only: match white ground with soft powder-blue regular polka dots, delicate fine white lace down the left edge, pale blue hydrangeas, very cute white long-eared Sanrio Cinnamoroll sleeping on a pillow. Variant Lace Cloud: Cinnamoroll rests sideways on a fluffy cloud-shaped white pillow with pale blue piping, one cheek resting on front paws, both long ears fully visible, tiny pink cheeks, gentle sleepy curved eyes; small hydrangea sprigs at the bottom edge and intricate white lace scallops along left edge. All character art confined to lower 22%, upper 70% quiet dots for schedule space. Refined gentle hand-painted stationery illustration, softly shaded but clearly resolved blue-gray outlines, visible saturated pastel accents, high quality crisp detail; no washed-out fog veil. Full bleed, no blank border. No text, schedule, clock, logo, UI, watermarks, screenshot controls. Preserve character identity. Do not copy screenshot controls.",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "id": "sanrio-cinnamon-lace-cloud",
+      "device": "tablet",
+      "source": "output/sanrio/sanrio-cinnamon-lace-cloud-tablet-generated.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-lace-cloud/tablet.png",
+      "createdAt": "2026-10-13T13:44:53.121Z",
+      "prompt": "Use case: stylized-concept. Create a newly illustrated opaque Cinnamoroll wallpaper, tablet portrait 1600x2560. Reference image is style and composition guidance only: match white ground with soft powder-blue regular polka dots, delicate fine white lace down the left edge, pale blue hydrangeas, very cute white long-eared Sanrio Cinnamoroll sleeping on a pillow. Variant Lace Cloud: Cinnamoroll rests sideways on a fluffy cloud-shaped white pillow with pale blue piping, one cheek resting on front paws, both long ears fully visible, tiny pink cheeks, gentle sleepy curved eyes; small hydrangea sprigs at the bottom edge and intricate white lace scallops along both narrow side edges. All character art confined to lower 22%, upper 70% quiet dots for schedule space. Refined gentle hand-painted stationery illustration, softly shaded but clearly resolved blue-gray outlines, visible saturated pastel accents, high quality crisp detail; no washed-out fog veil. Full bleed, no blank border. No text, schedule, clock, logo, UI, watermarks, screenshot controls. Preserve character identity. Do not copy screenshot controls.",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "id": "sanrio-cinnamon-lace-cloud",
+      "device": "laptop",
+      "source": "output/sanrio/sanrio-cinnamon-lace-cloud-laptop-generated.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-lace-cloud/laptop.png",
+      "createdAt": "2026-10-13T13:44:53.123Z",
+      "prompt": "Use case: stylized-concept. Create a newly illustrated opaque Cinnamoroll wallpaper, laptop landscape 1920x1080. Reference image is style and composition guidance only: match white ground with soft powder-blue regular polka dots, delicate fine white lace down the left edge, pale blue hydrangeas, very cute white long-eared Sanrio Cinnamoroll sleeping on a pillow. Variant Lace Cloud: Cinnamoroll rests sideways on a fluffy cloud-shaped white pillow with pale blue piping, one cheek resting on front paws, both long ears fully visible, tiny pink cheeks, gentle sleepy curved eyes; small hydrangea sprigs surrounding bottom-right pillow and intricate white lace scallops along left edge. All character art confined to bottom-right quarter, left 65% and upper 70% quiet dots for schedule space. Refined gentle hand-painted stationery illustration, softly shaded but clearly resolved blue-gray outlines, visible saturated pastel accents, high quality crisp detail; no washed-out fog veil. Full bleed, no blank border. No text, schedule, clock, logo, UI, watermarks, screenshot controls. Preserve character identity. Do not copy screenshot controls.",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "normalization": "Proportional contain on white-blue ground; no crop or stretch"
+}

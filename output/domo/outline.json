@@ -1,0 +1,70 @@
+{
+  "designs": [
+    {
+      "id": "domo-caramel-outline",
+      "name": "Caramel Outline",
+      "background": "#704313",
+      "ink": "#fff0d7"
+    },
+    {
+      "id": "domo-chalk-stars",
+      "name": "Chalk Stars",
+      "background": "#624637",
+      "ink": "#fff0d7"
+    },
+    {
+      "id": "domo-cut-paper",
+      "name": "Cut Paper",
+      "background": "#78522e",
+      "ink": "#fff0d7"
+    }
+  ],
+  "assets": [
+    {
+      "id": "domo-caramel-outline",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-caramel-outline/mobile.png"
+    },
+    {
+      "id": "domo-caramel-outline",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-caramel-outline/tablet.png"
+    },
+    {
+      "id": "domo-caramel-outline",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-caramel-outline/laptop.png"
+    },
+    {
+      "id": "domo-chalk-stars",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-chalk-stars/mobile.png"
+    },
+    {
+      "id": "domo-chalk-stars",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-chalk-stars/tablet.png"
+    },
+    {
+      "id": "domo-chalk-stars",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-chalk-stars/laptop.png"
+    },
+    {
+      "id": "domo-cut-paper",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-cut-paper/mobile.png"
+    },
+    {
+      "id": "domo-cut-paper",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-cut-paper/tablet.png"
+    },
+    {
+      "id": "domo-cut-paper",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-cut-paper/laptop.png"
+    }
+  ],
+  "normalization": "Parent to normalize exact device dimensions"
+}

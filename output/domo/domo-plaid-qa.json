@@ -1,0 +1,239 @@
+{
+  "backend": "Native Canvas with DM Sans weights rounded to hundreds",
+  "reports": [
+    {
+      "id": "domo-plaid-notes",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "domo-plaid-notes",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "domo-plaid-notes",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1180.8
+      }
+    },
+    {
+      "id": "domo-plaid-notes",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2257.1554285714283
+      }
+    },
+    {
+      "id": "domo-plaid-notes",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 405.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "domo-plaid-notes",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 669.0624177176253,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    },
+    {
+      "id": "domo-tartan-sketch",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "domo-tartan-sketch",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "domo-tartan-sketch",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1180.8
+      }
+    },
+    {
+      "id": "domo-tartan-sketch",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2257.1554285714283
+      }
+    },
+    {
+      "id": "domo-tartan-sketch",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 405.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "domo-tartan-sketch",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 669.0624177176253,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    },
+    {
+      "id": "domo-gingham-cutout",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "domo-gingham-cutout",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "domo-gingham-cutout",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1180.8
+      }
+    },
+    {
+      "id": "domo-gingham-cutout",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2257.1554285714283
+      }
+    },
+    {
+      "id": "domo-gingham-cutout",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 405.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "domo-gingham-cutout",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 669.0624177176253,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    }
+  ]
+}

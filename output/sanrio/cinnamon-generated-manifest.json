@@ -1,0 +1,220 @@
+{
+  "assets": [
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-bow-stars/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "996512b18078979d27a93d746449d43e8a28d1ab669727f0d4836399e2bb09f6"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-bow-stars/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "14ffbfda458d30bf71d4753913e271e35ab35856166f7b5041d37552b308dff5"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-bow-stars/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "73d3a756529bcde25b645e2626f16af71e4faf841632d1bb8cd101ddfa1a28ae"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-bow-rainbow/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "163cadaefee25189042d27e2bb7cb71fc86de46e2082096617b8edce979c3287"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-bow-rainbow/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "2f984dad1888ac879d039899240043ec953ac791e58d6477a8a00d6bfedf985a"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-bow-rainbow/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "f639c84f50bdce299767dbad489444fc0207483de91a21c42d62f8f4ee1c8a02"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-bow-lace/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "6f7f8c4c278a0274480b9eff7cb99730449c373ca57322ffa27982df712eb9c2"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-bow-lace/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "37ef245166740f3fb34dd60bd4a0a46b538d3a6e33e7edd9f0a960133c0ac23b"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-bow-lace/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "e062f1133efb3f8f91c882001686060883292d1176df37d96a947cc576a8615f"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-flower-hug/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "42933d814b504d254a472fb21617c9f5adeab18ba6501eb3cb5e76703f0e1794"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-flower-hug/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "62c3bdada55381611d59f591b3f3380b4986db5c57b6703a77a4e6c492cc9b1f"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-flower-hug/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "e969cf47c4685db159c95dfb6a09dab8a2281b400876143b7ca3f223ffeb4e2a"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-flower-garden/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "da33fb4a8a27208efd2a8a5c80776433ad827a1c0e88d895b189168e9bf4be46"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-flower-garden/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "251d66fd851a0dba91d35e754369fa3db1f22aaa0bfd165eef2bc7c72a141452"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-flower-garden/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "917c47e754a81e3384ece896b487029a4bb01bdf602a6f5946abb053d5561ab9"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-flower-wreath/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "a9674614c4233a8703628687348d80e0656a639d1a40e6f6a5af3a252d988e78"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-flower-wreath/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "06bf917eaf88b26fd2ccc9a4e28ff26c5629beadd7fb27fac72f2ac427344c71"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-flower-wreath/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "a71f06f3f46af264a29335f7444b30e895c5c860a811e7491c58c4ac240538d9"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-lace-nap/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "f69d2e1ad9260b298f250ae1317fc2905f7d3c00c6bb790c425d0226c3c7b332"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-lace-nap/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "36d3c1d41a5da35b9d489f2d98789e195c03c4d984af06278f81d75b5451fea8"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-lace-nap/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "c419bef45baec7a5af841e3ff04e873261fa5b4013f2c2a8a868f0999c9a0298"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-lace-hydrangea/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "5fc1c9bd962a064e442302c1f7d61346ed0368a5656a4a050c83672c829f5679"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-lace-hydrangea/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "ed3d8bcdf482aafcb60d2307b44b1e16b959982c136b0939bc23ec2fb74f3c5c"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-lace-hydrangea/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "2b08854034aaf1e644ac883e0e226dbdcab5ea150b2a5712c7ee4f53d50a3255"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-lace-cloud/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "2ddef1515bab23d8adec105b1ac98dd3d3c6e01b0b36c02abb73d5714e320566"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-lace-cloud/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "7d780461d394900257fe73ee8a32f7e3a4c7c69a1642ad21b742cd609a45dd5f"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-lace-cloud/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "586338ab0dfabf2e1e5c882125fdf387b80df45942ec6bc88d14abf266b0c500"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-ribbon-sit/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "a6ad8191ba7844ae3ff447666e15e6dcfa1b1dce4d50bebcdddc51b5d1272877"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-ribbon-sit/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "c42af64705bc881578b7a5fc3b70c6c7894327dad072e7f652ca9fa8f995685f"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-ribbon-sit/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "099434183523fdc75387dffecd8ba87882a7c78f2a06e1ca572b53a7776952e8"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-ribbon-cloud/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "1db60393419bffe257a1e75772bf866e9289efd2a3e7b27803c97bcfe6b5d002"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-ribbon-cloud/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "bef31c5b217f2bef088a890b6a7c9663be031dfbb833376e674456c2fe375749"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-ribbon-cloud/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "58395e835ffc28fc4ea5ed0cedaa2cbd44c58cc8a5fc1515d6991c84c7cbe832"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "b8115326d6d9756a54f638c50cce5d753110c8b92c817c76538e54135f03775e"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "a0a9e633228a65231e219b60ba2f37b9f193a63b94631b22fbf7fa16d6a0c24c"
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "1cf6d8213236f7b698db353afa3ee3fc4db88780dede498352b56bf1b99b9934"
+    }
+  ]
+}
