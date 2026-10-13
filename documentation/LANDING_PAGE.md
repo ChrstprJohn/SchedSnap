@@ -22,7 +22,7 @@ A full-width warm cream, three-column row directly below the hero shows **Total 
 
 ## How it works
 
-A white section immediately before **Find your style.** fades in from the cream statistics with a 24–40px masked blur, matching the hero-to-statistics treatment. It explains the three-step journey: **Choose a design**, **Add your classes**, and **Download wallpaper**. Three open illustrated columns become a centered vertical list at 640px and below. The ordered list keeps the sequence accessible; illustrations are decorative because adjacent text explains each step. Images use lazy loading, reserved dimensions, and transparent WebP exports totaling approximately 117 KB. The assets live in `public/images/how-it-works/`; exact built-in imagegen prompts and source paths are recorded in [HOW_IT_WORKS_ASSETS.json](HOW_IT_WORKS_ASSETS.json).
+A white section immediately before **Find your style.** fades in from the cream statistics with a 24–40px masked blur, matching the hero-to-statistics treatment. It explains the three-step journey: **Choose a design**, **Add your classes**, and **Customize and download**. Three open illustrated columns become a centered vertical list at 640px and below. The ordered list keeps the sequence accessible; illustrations are decorative because adjacent text explains each step. Images use lazy loading, reserved dimensions, and transparent WebP exports with alpha retained. The assets live in `public/images/how-it-works/`; exact built-in imagegen prompts and source paths are recorded in [HOW_IT_WORKS_ASSETS.json](HOW_IT_WORKS_ASSETS.json).
 
 ## Device showcases
 

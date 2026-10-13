@@ -12,10 +12,10 @@ const steps = [
     height: 512,
   },
   {
-    title: 'Download wallpaper',
-    description: 'Download your PNG and set it as your lock screen. Your week, always in view.',
+    title: 'Customize and download',
+    description: 'Adjust the colors and layout, then download your PNG and set it as your lock screen.',
     image: '/images/how-it-works/download-wallpaper.webp',
-    height: 720,
+    height: 576,
   },
 ];
 

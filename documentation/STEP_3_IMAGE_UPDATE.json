@@ -1,0 +1,6 @@
+{
+  "mode": "built-in image_gen",
+  "asset": "public/images/how-it-works/download-wallpaper.webp",
+  "source": "output/imagegen/marketing/how-it-works/customize-download.png",
+  "prompt": "Use case: precise-object-edit. Asset type: transparent landing-page Step 3 illustration for SchedSnap. Edit target: the supplied download-wallpaper image. Primary request: communicate both customizing a wallpaper and downloading it. Preserve the existing navy 3D phone, class timetable, cream-orange bear mascot, sage round download medallion and soft clay-rendered style. Add one compact cream floating customization palette beside the phone's upper-left edge, with three large circular color swatches (navy, peach, sage) and two simple horizontal adjustment sliders with navy round knobs. No new text on the palette. Keep all existing phone screen text and artwork as intact as possible. Keep the download medallion visible at lower right. Balance the full composition for a small marketing illustration, phone still dominant, generous transparent margins, isolated cutout on a genuinely transparent background. No scene background, watermark, title, extra phones or extra objects. Overall canvas landscape 4:3; do not crop any elements."
+}

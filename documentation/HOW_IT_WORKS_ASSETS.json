@@ -19,7 +19,8 @@
     },
     {
       "path": "public/images/how-it-works/download-wallpaper.webp",
-      "source": "output/imagegen/marketing/how-it-works/download-wallpaper-actual.png",
+      "source": "output/imagegen/marketing/how-it-works/customize-download.png",
+      "latestEdit": "STEP_3_IMAGE_UPDATE.json",
       "prompt": "Use case: compositing. Asset type: SchedSnap How it works Download wallpaper illustration. Input image 1 is the EDIT TARGET and absolute authority for composition; image 2 is the supporting insert, an actual Canvas export of the current Bear Mode wallpaper from the product. Change ONLY the wallpaper displayed inside the phone screen of input 1. Keep the EXACT navy phone body, its position, existing gentle three-quarter angle, dimensions, notch, rounded screen bounds, side buttons, matte clay rendering, soft light, shadows and small sage circular download token with navy arrow at lower right. Preserve all transparent outer space, keep the original portrait composition. Replace the old generic ivory screen with image 2's real midnight navy Bear Mode wallpaper: generous upper clock space, cream Class Schedule title, five slender navy translucent outlined pill rows with cream circular weekday badges M T W TH F, small real times, course codes and rooms in columns, and the exact big cream-and-orange waving bear from image 2 in the lower-left footer. Faithfully map the entire actual export inside the existing phone display in perspective. Keep the Class Schedule title readable at illustration scale, real row arrangement, bear likeness and original wallpaper proportions. Preserve the quiet illustration quality, no new objects, no interface buttons, no clock overlay, no additional background, no watermarks. Output genuine transparent background.",
       "referenceTemplateIds": [
         "mascot-bear"
@@ -27,6 +28,6 @@
     }
   ],
   "references": "Actual Canvas exports from the current template definitions and sampleSchedule, captured with drawWallpaper. Generated illustrations adapt these exports to the existing perspective.",
-  "encoding": "768x512 choose and 768x720 download; WebP quality 90 with alpha retained. Original assets backed up in output/imagegen/marketing/how-it-works/*-previous.webp.",
+  "encoding": "768x512 choose and 768x576 customize/download; WebP quality 90 with alpha retained. Original assets backed up in output/imagegen/marketing/how-it-works/*-previous.webp.",
   "verification": "output/imagegen/marketing/how-it-works/verification.json"
 }
