@@ -15,6 +15,12 @@ export function mascotPosition(template) {
   return ['left', 'center', 'right'].includes(template.mascotPosition) ? template.mascotPosition : template.mascotSide === 'right' ? 'right' : 'left';
 }
 
+export function galleryPreviewTemplate(template) {
+  // Samples share one placement so artwork can be compared across designs.
+  return { ...template, topMargin: 0, bottomMargin: 0, leftMargin: 0, rightMargin: 0,
+    leftMarginEnabled: false, rightMarginEnabled: false, horizontalPosition: 0, verticalPosition: 0 };
+}
+
 export function customizeWallpaperTemplate(template, settings = {}, device = template?.device) {
   if (!template) return template;
   const tabletPortrait = device === 'tablet' && (settings.orientation || template.orientation) !== 'landscape';
