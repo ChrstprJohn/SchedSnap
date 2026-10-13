@@ -3373,5 +3373,257 @@ export default {
     "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791899912/schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/tablet-a0a9e633228a6523.png",
     "width": 1600,
     "height": 2560
+  },
+  "/wallpapers/scenic/domo-caramel-outline/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-caramel-outline/tablet-3cb29d9fa37fa29f",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903112/schedsnap/wallpapers/scenic/domo-caramel-outline/tablet-3cb29d9fa37fa29f.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/domo-caramel-outline/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-caramel-outline/laptop-16e04a295cb75370",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903112/schedsnap/wallpapers/scenic/domo-caramel-outline/laptop-16e04a295cb75370.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/domo-caramel-outline/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-caramel-outline/mobile-685a8ebb03d292d8",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903112/schedsnap/wallpapers/scenic/domo-caramel-outline/mobile-685a8ebb03d292d8.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/domo-cut-paper/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-cut-paper/laptop-640054b26819a9d0",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903119/schedsnap/wallpapers/scenic/domo-cut-paper/laptop-640054b26819a9d0.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/domo-chalk-stars/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-chalk-stars/mobile-089dc854de5a7b35",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903116/schedsnap/wallpapers/scenic/domo-chalk-stars/mobile-089dc854de5a7b35.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/domo-chalk-stars/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-chalk-stars/laptop-70cab2313934e3aa",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903115/schedsnap/wallpapers/scenic/domo-chalk-stars/laptop-70cab2313934e3aa.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/domo-cut-paper/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-cut-paper/mobile-5b0cd88719c3cf7a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903127/schedsnap/wallpapers/scenic/domo-cut-paper/mobile-5b0cd88719c3cf7a.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/domo-cut-paper/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-cut-paper/tablet-16aff9bd9200572a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903131/schedsnap/wallpapers/scenic/domo-cut-paper/tablet-16aff9bd9200572a.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/domo-chalk-stars/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-chalk-stars/tablet-d0fa76c0392aec40",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903132/schedsnap/wallpapers/scenic/domo-chalk-stars/tablet-d0fa76c0392aec40.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/domo-gingham-cutout/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-gingham-cutout/mobile-ea108e9adf1594d0",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903136/schedsnap/wallpapers/scenic/domo-gingham-cutout/mobile-ea108e9adf1594d0.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/domo-gingham-cutout/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-gingham-cutout/laptop-98aac405864db36a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903138/schedsnap/wallpapers/scenic/domo-gingham-cutout/laptop-98aac405864db36a.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/domo-gingham-cutout/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-gingham-cutout/tablet-7a92a46223e88b6d",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903145/schedsnap/wallpapers/scenic/domo-gingham-cutout/tablet-7a92a46223e88b6d.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/domo-gingham-memory/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-gingham-memory/laptop-ce73d68815bb3aad",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903151/schedsnap/wallpapers/scenic/domo-gingham-memory/laptop-ce73d68815bb3aad.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/domo-gingham-memory/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-gingham-memory/mobile-925cb299ef8931e1",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903153/schedsnap/wallpapers/scenic/domo-gingham-memory/mobile-925cb299ef8931e1.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/domo-lace-journal/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-lace-journal/laptop-a3185a14b6deea11",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903157/schedsnap/wallpapers/scenic/domo-lace-journal/laptop-a3185a14b6deea11.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/domo-orbit-paper/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-orbit-paper/laptop-8626eb49f1440667",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903170/schedsnap/wallpapers/scenic/domo-orbit-paper/laptop-8626eb49f1440667.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/domo-lace-journal/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-lace-journal/mobile-62bd6694198fbed5",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903172/schedsnap/wallpapers/scenic/domo-lace-journal/mobile-62bd6694198fbed5.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/domo-gingham-memory/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-gingham-memory/tablet-de09e7f901d7814a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903172/schedsnap/wallpapers/scenic/domo-gingham-memory/tablet-de09e7f901d7814a.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/domo-lace-journal/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-lace-journal/tablet-0a2eac56606c636b",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903180/schedsnap/wallpapers/scenic/domo-lace-journal/tablet-0a2eac56606c636b.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/domo-orbit-paper/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-orbit-paper/mobile-98bdfb07d3fdaaac",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903181/schedsnap/wallpapers/scenic/domo-orbit-paper/mobile-98bdfb07d3fdaaac.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/domo-orbit-paper/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-orbit-paper/tablet-4b6983bb5577da35",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903185/schedsnap/wallpapers/scenic/domo-orbit-paper/tablet-4b6983bb5577da35.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/domo-pixel-scrapbook/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-pixel-scrapbook/laptop-09b6d295ef2d29b9",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903189/schedsnap/wallpapers/scenic/domo-pixel-scrapbook/laptop-09b6d295ef2d29b9.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/domo-plaid-notes/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-plaid-notes/laptop-be58d76c9156df29",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903194/schedsnap/wallpapers/scenic/domo-plaid-notes/laptop-be58d76c9156df29.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/domo-plaid-notes/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-plaid-notes/mobile-1da673c54c20ee50",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903202/schedsnap/wallpapers/scenic/domo-plaid-notes/mobile-1da673c54c20ee50.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/domo-pixel-scrapbook/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-pixel-scrapbook/tablet-bf89a2054a96ad92",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903202/schedsnap/wallpapers/scenic/domo-pixel-scrapbook/tablet-bf89a2054a96ad92.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/domo-pixel-scrapbook/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-pixel-scrapbook/mobile-deae0183dbb8bef5",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903196/schedsnap/wallpapers/scenic/domo-pixel-scrapbook/mobile-deae0183dbb8bef5.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/domo-star-stickers/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-star-stickers/laptop-4c518b4d1905c4d8",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903206/schedsnap/wallpapers/scenic/domo-star-stickers/laptop-4c518b4d1905c4d8.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/domo-plaid-notes/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-plaid-notes/tablet-06a1b1087a3e69aa",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903207/schedsnap/wallpapers/scenic/domo-plaid-notes/tablet-06a1b1087a3e69aa.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/domo-star-stickers/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-star-stickers/mobile-28cd08fb266624ac",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903211/schedsnap/wallpapers/scenic/domo-star-stickers/mobile-28cd08fb266624ac.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/domo-star-stickers/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-star-stickers/tablet-9aeed99bb5cd15d8",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903214/schedsnap/wallpapers/scenic/domo-star-stickers/tablet-9aeed99bb5cd15d8.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/domo-tartan-sketch/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-tartan-sketch/laptop-94b96155084e61d7",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903215/schedsnap/wallpapers/scenic/domo-tartan-sketch/laptop-94b96155084e61d7.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/domo-tartan-sketch/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-tartan-sketch/mobile-85154a70492418f0",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903221/schedsnap/wallpapers/scenic/domo-tartan-sketch/mobile-85154a70492418f0.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/domo-velvet-cosmos/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-velvet-cosmos/mobile-94549a1f45b75132",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903229/schedsnap/wallpapers/scenic/domo-velvet-cosmos/mobile-94549a1f45b75132.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/domo-velvet-cosmos/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-velvet-cosmos/laptop-ca97c615cb5d5d7a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903229/schedsnap/wallpapers/scenic/domo-velvet-cosmos/laptop-ca97c615cb5d5d7a.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/domo-tartan-sketch/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-tartan-sketch/tablet-0f09ad1b16a991df",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903232/schedsnap/wallpapers/scenic/domo-tartan-sketch/tablet-0f09ad1b16a991df.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/domo-velvet-cosmos/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-velvet-cosmos/tablet-787c99bd1eb3b446",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791903234/schedsnap/wallpapers/scenic/domo-velvet-cosmos/tablet-787c99bd1eb3b446.png",
+    "width": 1600,
+    "height": 2560
   }
 };

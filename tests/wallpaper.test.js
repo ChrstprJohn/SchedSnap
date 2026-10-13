@@ -12,6 +12,7 @@ import { onepieceTemplates } from '../src/assets/onepieceTemplates.js';
 import { onepieceAdventureTemplates } from '../src/assets/onepieceAdventureTemplates.js';
 import { onepieceReferenceTemplates } from '../src/assets/onepieceReferenceTemplates.js';
 import { sanrioTemplates } from '../src/assets/sanrioTemplates.js';
+import { domoTemplates } from '../src/assets/domoTemplates.js';
 import { scenicFamilies } from '../src/config/collections.js';
 import { drawWallpaper, drawSampleClock, findOverlaps, formatTime, formatWallpaperTime, groupSchedule, layoutSchedule, schedulePosition, scheduleTopMargin, wrapText } from '../src/utils/canvasHelpers.js';
 import { getScheduleIssues } from '../shared/scheduleSchema.js';
@@ -98,7 +99,7 @@ test('all templates fit sample data and dense data is explicitly rejected', () =
 });
 
 test('the existing collections are preserved alongside device-specific illustrated designs', () => {
-  assert.equal(wallpaperTemplates.length, 40 + patternTemplates.length + scenicTemplates.length + onepieceTemplates.length + onepieceAdventureTemplates.length + onepieceReferenceTemplates.length + sanrioTemplates.length + 61);
+  assert.equal(wallpaperTemplates.length, 40 + patternTemplates.length + scenicTemplates.length + onepieceTemplates.length + onepieceAdventureTemplates.length + onepieceReferenceTemplates.length + sanrioTemplates.length + domoTemplates.length + 61);
   assert.ok(wallpaperTemplates.filter(template => template.image && template.layout !== 'mascot')
     .every(template => ['mobile', 'tablet', 'laptop'].every(device => template.deviceImages?.[device])));
   assert.equal(new Set(wallpaperTemplates.map((template) => template.id)).size, wallpaperTemplates.length);
