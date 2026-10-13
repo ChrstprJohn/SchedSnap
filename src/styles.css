@@ -245,6 +245,12 @@
 .top-margin-control { clear: both; padding-block: 16px 8px; }
 .top-margin-label { display: flex; justify-content: space-between; gap: 12px; font-size: 14px; }
 .top-margin-label output { color: var(--color-muted); font-variant-numeric: tabular-nums; }
+.position-value { display: inline-flex; align-items: center; justify-content: flex-end; gap: 8px; }
+.position-label { align-items: center; flex-wrap: wrap; }
+.position-label .position-value { margin-left: auto; }
+.position-reset { min-width: 44px; min-height: 44px; padding: 0 6px; color: var(--color-ink); font-size: 12px; font-weight: 600; border-radius: 8px; }
+.position-reset:hover:not(:disabled) { background: var(--color-soft); }
+.position-reset:disabled { color: var(--color-muted); opacity: 0.5; }
 .top-margin-control input[type='range'] { display: block; width: 100%; min-height: 44px; margin: 0; accent-color: var(--color-accent); cursor: pointer; }
 @container (max-width: 600px) {
   .class-meeting-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }

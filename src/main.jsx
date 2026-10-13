@@ -19,6 +19,7 @@ import '@fontsource/dm-serif-display/400.css';
 import '@fontsource/dm-serif-display/400-italic.css';
 import '@fontsource/great-vibes/400.css';
 import './styles.css';
+import './cute-fonts.css';
 import App from './App.jsx';
 import './lib/analytics.js';
 
