@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowRight, Check, Heart, X } from 'lucide-react';
 import { deviceResolutions, mascotTemplateSchedule, templateSchedule } from '../../assets/templates.js';
 import useInfiniteGallery from '../../lib/useInfiniteGallery.js';
@@ -11,27 +11,59 @@ import DevicePicker from '../../components/DevicePicker.jsx';
 import CategoryFilters from '../../components/CategoryFilters.jsx';
 import { isNewTemplate } from '../../utils/templateFreshness.js';
 import useDesignLikes from '../../lib/useDesignLikes.js';
+import { searchWallpaperTemplates } from '../../utils/wallpaperSearch.js';
 
 const previewSchedule = (template) => template.layout === 'mascot' ? mascotTemplateSchedule : templateSchedule;
 
-export default function TemplateGallery({ selectedId, settings = {}, schedule, scheduleTitle = 'Class Schedule', onSelect, initialCategory = 'all', device = 'mobile', onDeviceChange, showDeviceFilter = true }) {
+export default function TemplateGallery({ selectedId, settings = {}, schedule, scheduleTitle = 'Class Schedule', onSelect, initialCategory = 'all', device = 'mobile', onDeviceChange, showDeviceFilter = true, searchQuery = '', onClearSearch }) {
   const { templates: wallpaperTemplates, loading, error } = useCatalogStatus();
   const thumbnailWidth = device === 'laptop' ? 480 : device === 'tablet' ? 384 : 270;
   const designResolution = () => deviceResolutions[device];
   const [category, setCategory] = useState(() => galleryCategories.some((item) => item.id === initialCategory) ? initialCategory : 'all');
   const [preview, setPreview] = useState(null);
   const { likes, pending, error: likeError, refresh: refreshLikes, toggle: toggleLike } = useDesignLikes();
-  const visibleTemplates = wallpaperTemplates.filter((item) =>
-    matchesGalleryCategory(item, category));
-  const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(visibleTemplates.length, `${category}:${device}`);
+
+  const isSearching = Boolean(searchQuery && searchQuery.trim());
+  const activeCategory = isSearching ? 'all' : category;
+
+  const visibleTemplates = useMemo(() => {
+    if (isSearching) {
+      return searchWallpaperTemplates(wallpaperTemplates, searchQuery);
+    }
+    return wallpaperTemplates.filter((item) => matchesGalleryCategory(item, category));
+  }, [wallpaperTemplates, searchQuery, isSearching, category]);
+
+  const filterKey = `${isSearching ? `search:${searchQuery.trim()}` : category}:${device}`;
+  const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(visibleTemplates.length, filterKey);
+
+  const activeCategoryName = galleryCategories.find((collection) => collection.id === activeCategory)?.name || 'Design';
+
   return <div>
     <div role="group" aria-label="Filter designs" className="template-filters">
       {showDeviceFilter && <DevicePicker value={device} onChange={onDeviceChange} label="Filter by device" />}
-      <CategoryFilters categories={galleryCategories} value={category} controls="template-gallery" onChange={id => { if (category !== id) { setCategory(id); trackEvent('collection_filtered', { collection: id }); } }} />
+      <CategoryFilters categories={galleryCategories} value={activeCategory} controls="template-gallery" onChange={id => {
+        if (isSearching && onClearSearch) {
+          onClearSearch();
+        }
+        if (category !== id) {
+          setCategory(id);
+          trackEvent('collection_filtered', { collection: id });
+        }
+      }} />
     </div>
     {likeError && <div className="gallery-like-error" role="alert"><span>{likeError}</span><button type="button" className="text-link" onClick={() => refreshLikes(true)} disabled={!!pending}>Retry</button></div>}
-    <div id="template-gallery" role="group" aria-label={`${galleryCategories.find((collection) => collection.id === category).name} gallery`} className={`template-grid template-grid-${device}`}>
+    <div id="template-gallery" role="group" aria-label={`${activeCategoryName} gallery`} className={`template-grid template-grid-${device}`}>
       {loading && Array.from({ length: 10 }, (_, i) => <div key={`skeleton-${i}`} className="gallery-card-skeleton wallpaper-skeleton" aria-hidden="true" />)}
+      {!loading && isSearching && visibleTemplates.length === 0 && (
+        <div className="gallery-empty-state" role="status">
+          <p>No designs found matching &ldquo;{searchQuery.trim()}&rdquo;</p>
+          {onClearSearch && (
+            <button type="button" className="button-secondary" onClick={onClearSearch}>
+              Clear search
+            </button>
+          )}
+        </div>
+      )}
       {visibleTemplates.slice(0, galleryCount).map((original) => { const base = schedule?.classes.length ? original : galleryPreviewTemplate(original); const item = { ...customizeWallpaperTemplate(base, settings[original.id], device), scheduleTitle, device }; const isNew = isNewTemplate(original); const fullResolution = designResolution(item); const thumbnailResolution = { ...fullResolution, width: thumbnailWidth, height: Math.round(thumbnailWidth * fullResolution.height / fullResolution.width) }; const vote = likes[item.id]; const openPreview = () => { setPreview(item); trackEvent('template_previewed', templateProperties(item)); }; return <div key={item.id} className="template-card min-w-0">
         <button type="button" aria-label={`Preview ${item.name}${isNew ? ', New design' : ''}`} aria-haspopup="dialog" onClick={openPreview} className="template-option block w-full rounded-xl text-left">
         <div className={`template-art w-full overflow-hidden rounded-xl ${selectedId === item.id ? 'outline-2 -outline-offset-2 outline-ink' : ''}`}>
@@ -49,7 +81,7 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
     </div>
     {loading && <p role="status" className="sr-only">Loading designs…</p>}
     {!loading && error && <p role="alert">{error}</p>}
-    {hasMore && <div ref={sentinel} className="gallery-load-more"><button className="button-secondary" onClick={loadMore}>Load more designs</button></div>}
+    {!loading && visibleTemplates.length > 0 && hasMore && <div ref={sentinel} className="gallery-load-more"><button className="button-secondary" onClick={loadMore}>Load more designs</button></div>}
     {preview && <DesignPreview template={preview} schedule={schedule} resolution={designResolution(preview)} onClose={() => setPreview(null)} onSelect={() => onSelect(preview.id)} />}
   </div>;
 }
