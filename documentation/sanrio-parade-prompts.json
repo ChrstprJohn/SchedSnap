@@ -1,0 +1,148 @@
+{
+  "provider": "built-in image_gen",
+  "reference": "C:/Users/Administrator/.codex/attachments/9e3de9e5-9bce-463a-aca3-b781338ff769/image-1.png",
+  "assets": [
+    {
+      "theme": "candy",
+      "device": "mobile",
+      "prompt": "Use case: illustration-story. Asset type: opaque PNG full-bleed Sanrio wallpaper, MOBILE PORTRAIT, exactly 1080 x 2400 pixels. Primary request: new candy parade composition in the artistic style of the reference image visible above: delicate vintage flat Sanrio stationery, very fine warm sepia contour lines, muted pastel dusty rose and pale mint on an almost-white blush cream ground, no painterly gradients or dimensional effects. My Melody in her recognizable pink hood with white face, long pink ears, small oval brown eyes, tiny yellow nose and a striped pink bow leads a miniature candy parade along the bottom, accompanied by recognizable Hello Kitty with red-pink left-ear bow and Cinnamoroll with long white floppy ears. Full little bodies visible. They carry peppermint candies, tiny lollipops and a miniature candy cart. Keep characters small, entirely within the bottom 18% of canvas. A slim pink-and-white diamond-check floor along the bottom 5%. Fine triangular dusty pink bunting with mint bow knots only in the top 6% corners. Preserve the distinctive extremely restrained linework and soft printed stationery palette of the reference. Huge quiet low-contrast blush central area, clear from 9% to 79% height, for a schedule supplied later. Decorative candy confetti only at outer lower edges. Composition tailored to tall phone with wide uninterrupted empty middle. Artwork only: absolutely no text, letters, numbers, labels, words, logo, UI, timetable, badge, watermark, signature, plaque or device frame. Opaque background.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133bf-0fc9-7ac3-98e3-ab398a83ff12\\exec-8cf8142a-3e5a-4ae9-b52e-8946e393b8c0.png",
+      "destination": "public/wallpapers/scenic/sanrio-parade-candy/mobile.png",
+      "requiredDimensions": [
+        1080,
+        2400
+      ],
+      "sizing": "Independently generated device composition; normalized pixels via Lanczos, no crop.",
+      "createdAt": "2026-10-13T05:33:33.306Z",
+      "creationTimeSource": "Generated source PNG last modification time in UTC"
+    },
+    {
+      "theme": "candy",
+      "device": "tablet",
+      "prompt": "Use case: illustration-story. Asset type: opaque PNG full-bleed Sanrio wallpaper, TABLET PORTRAIT, exactly 1600 x 2560 pixels. Primary request: new candy parade composition in the artistic style of the reference image visible above: delicate vintage flat Sanrio stationery, very fine warm sepia contour lines, muted pastel dusty rose and pale mint on an almost-white blush cream ground, no painterly gradients or dimensional effects. My Melody in her recognizable pink hood with white face, long pink ears, small oval brown eyes, tiny yellow nose and a striped pink bow leads a miniature candy parade along the bottom, accompanied by recognizable Hello Kitty with red-pink left-ear bow and Cinnamoroll with long white floppy ears. Full little bodies visible. They carry peppermint candies, tiny lollipops and a miniature candy cart. Keep characters small, entirely within the bottom 18% of canvas. A slim pink-and-white diamond-check floor along the bottom 5%. Fine triangular dusty pink bunting with mint bow knots only in the top 6% corners. Preserve the distinctive extremely restrained linework and soft printed stationery palette of the reference. Huge quiet low-contrast blush central area, clear from 9% to 79% height, for a schedule supplied later. Decorative candy confetti only at outer lower edges. Composition newly composed for broad portrait tablet, distribute My Melody lower left, candy cart lower center, Hello Kitty and Cinnamoroll lower right across generous width; wide uninterrupted empty middle, no stretched phone art. Artwork only: absolutely no text, letters, numbers, labels, words, logo, UI, timetable, badge, watermark, signature, plaque or device frame. Opaque background.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133bf-0fc9-7ac3-98e3-ab398a83ff12\\exec-772b3305-b474-4f41-8050-b64fc57cb58e.png",
+      "destination": "public/wallpapers/scenic/sanrio-parade-candy/tablet.png",
+      "requiredDimensions": [
+        1600,
+        2560
+      ],
+      "sizing": "Independently generated device composition; normalized pixels via Lanczos, no crop.",
+      "createdAt": "2026-10-13T05:34:35.719Z",
+      "creationTimeSource": "Generated source PNG last modification time in UTC"
+    },
+    {
+      "theme": "candy",
+      "device": "laptop",
+      "prompt": "Use case: illustration-story. Asset type: opaque PNG full-bleed Sanrio wallpaper, LAPTOP / DESKTOP LANDSCAPE, exactly 1920 x 1080 pixels, 16:9. Primary request: new candy parade composition in the artistic style of the reference image visible above: delicate vintage flat Sanrio stationery, very fine warm sepia contour lines, muted pastel dusty rose and pale mint on an almost-white blush cream ground, no painterly gradients or dimensional effects. My Melody in her recognizable pink hood with white face, long pink ears, small oval brown eyes, tiny yellow nose and a striped pink bow leads a miniature candy parade along the bottom, accompanied by recognizable Hello Kitty with red-pink left-ear bow and Cinnamoroll with long white floppy ears. Full little bodies visible. They carry peppermint candies, tiny lollipops and a miniature candy cart. Keep characters small, entirely within the bottom 18% of canvas. A slim pink-and-white diamond-check floor along the bottom 5%. Fine triangular dusty pink bunting with mint bow knots only in the top 6% corners. Preserve the distinctive extremely restrained linework and soft printed stationery palette of the reference. Huge quiet low-contrast blush central area, clear from 9% to 79% height, for a schedule supplied later. Decorative candy confetti only at outer lower edges. Entirely new wide landscape composition with small My Melody and candy cart at bottom left, Hello Kitty and Cinnamoroll at bottom right, spread tiny wrapped candies across the low edge; uninterrupted broad blank central field with no stretched portrait art. Artwork only: absolutely no text, letters, numbers, labels, words, logo, UI, timetable, badge, watermark, signature, plaque or device frame. Opaque background.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133bf-0fc9-7ac3-98e3-ab398a83ff12\\exec-a715489b-a163-4287-ad14-a354c8669563.png",
+      "destination": "public/wallpapers/scenic/sanrio-parade-candy/laptop.png",
+      "requiredDimensions": [
+        1920,
+        1080
+      ],
+      "sizing": "Independently generated device composition; normalized pixels via Lanczos, no crop.",
+      "createdAt": "2026-10-13T05:35:28.830Z",
+      "creationTimeSource": "Generated source PNG last modification time in UTC"
+    },
+    {
+      "theme": "music",
+      "device": "mobile",
+      "prompt": "Use case: illustration-story. Asset type: opaque PNG full-bleed Sanrio wallpaper, MOBILE PORTRAIT, exactly 1080 x 2400 pixels. Primary request: create a new ribbon music parade design matching the attached reference #1's flat vintage Sanrio stationery artistic style, fine warm sepia contour ink, no 3D, no painterly effects. Palette: muted dusty pink rose, pale mint, warm cream, pale gold details. My Melody recognizable pink hood with long ears, white face, oval brown eyes, tiny yellow nose, cream flower on hood; wears a little striped rose marching skirt and plays a tiny mint trumpet. Hello Kitty recognizable white face, tiny yellow nose, six whiskers, left-ear dusty pink bow, wears a pink striped bow and carries a cream snare drum with pale gold sticks. Cinnamoroll white long floppy ears and blue oval eyes plays a small pale mint accordion. Their full little bodies arranged across the bottom 17% with tiny scattered musical notes and satin ribbons only near lower peripheral edges. New music motif distinct from candy parade. Slim pink diamond-check floor along bottom 5%. Fine rose and cream triangular bunting with mint bows only top 6% corners; no central ornament or plaque. Huge almost-white blush empty center clear from 10% through 78% height, low contrast schedule area. Entirely tailored to a tall portrait phone, not screenshot. No text, letters, numbers, words, logo, timetable, UI, badges, watermark, signature, title or device frame. Artwork only, opaque.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133bf-0fc9-7ac3-98e3-ab398a83ff12\\exec-27c6e8e8-a258-4a9a-a461-cf049386fae5.png",
+      "destination": "public/wallpapers/scenic/sanrio-parade-music/mobile.png",
+      "requiredDimensions": [
+        1080,
+        2400
+      ],
+      "sizing": "Independently generated device composition; normalized pixels via Lanczos, no crop.",
+      "createdAt": "2026-10-13T05:37:06.346Z",
+      "creationTimeSource": "Generated source PNG last modification time in UTC"
+    },
+    {
+      "theme": "music",
+      "device": "tablet",
+      "prompt": "Edit/recompose the first supplied image into a new TABLET PORTRAIT composition exactly 1600 x 2560 pixels. First image is the music parade design; second image is the original art style reference. Preserve the exact music parade identity, soft flat vintage stationery style, sepia lines, My Melody pink hood with cream flower playing mint trumpet, Hello Kitty drumming with striped rose skirt and pink ear bow, Cinnamoroll with long ears playing mint accordion, rose/mint/cream palette, fine bunting, ribbon flourishes and bottom pink diamond floor. Newly arrange all three complete small characters across the broad bottom 17%, leave large quiet cream-blush schedule field clear at 10%-78% height. Wider tablet composition, separately designed rather than stretch or crop the portrait phone. Bunting stays top corners. All artwork opaque, full bleed. No words, letters, logo, UI, numbers, timetable, title plaque, watermark, badge or frame.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133bf-0fc9-7ac3-98e3-ab398a83ff12\\exec-c569f3af-b0b4-4a90-9800-d4a3056914d9.png",
+      "inputImages": [
+        "C:\\Users\\Administrator\\.codex\\generated_images\\01a133bf-0fc9-7ac3-98e3-ab398a83ff12\\exec-27c6e8e8-a258-4a9a-a461-cf049386fae5.png",
+        "C:/Users/Administrator/.codex/attachments/9e3de9e5-9bce-463a-aca3-b781338ff769/image-1.png"
+      ],
+      "destination": "public/wallpapers/scenic/sanrio-parade-music/tablet.png",
+      "requiredDimensions": [
+        1600,
+        2560
+      ],
+      "sizing": "Independently generated device composition; normalized pixels via Lanczos, no crop.",
+      "createdAt": "2026-10-13T05:38:24.903Z",
+      "creationTimeSource": "Generated source PNG last modification time in UTC"
+    },
+    {
+      "theme": "music",
+      "device": "laptop",
+      "prompt": "Edit/recompose the first supplied image into an independently designed LAPTOP / DESKTOP LANDSCAPE composition, exactly 1920 x 1080 pixels, 16:9 wide horizontal. First image is the music parade design; second image is the original art style reference. Preserve the music parade identity, vintage flat stationery style, fine sepia lines, pink/cream/mint palette: My Melody in pink hood and cream flower playing mint trumpet, Hello Kitty with rose ear bow and striped pink skirt drumming, Cinnamoroll with long white ears playing mint accordion. A small My Melody at bottom-left beside a winding ribbon; small Hello Kitty and Cinnamoroll at bottom-right; miniature notes and ribbons only on outer bottom edge. COMPLETE CHARACTERS entirely within bottom 18% height, very small relative to the entire wide image, do not occupy lower third. Slim pale pink diamond floor bottom 4%. Bunting only top 6% corners. Wide expansive almost-white blush schedule field absolutely clear across x 12%-88%, y 10%-78%. New wide arrangement with increased spacing, not stretch or crop the phone. All artwork opaque full bleed. No text, letters, logo, UI, numbers, timetable, title plaque, watermark, badge, signature or device frame.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133bf-0fc9-7ac3-98e3-ab398a83ff12\\exec-1f002a80-2fb7-4e9e-ae8b-6713440a0d87.png",
+      "inputImages": [
+        "C:\\Users\\Administrator\\.codex\\generated_images\\01a133bf-0fc9-7ac3-98e3-ab398a83ff12\\exec-27c6e8e8-a258-4a9a-a461-cf049386fae5.png",
+        "C:/Users/Administrator/.codex/attachments/9e3de9e5-9bce-463a-aca3-b781338ff769/image-1.png"
+      ],
+      "destination": "public/wallpapers/scenic/sanrio-parade-music/laptop.png",
+      "requiredDimensions": [
+        1920,
+        1080
+      ],
+      "sizing": "Independently generated device composition; normalized pixels via Lanczos, no crop.",
+      "createdAt": "2026-10-13T05:40:09.233Z",
+      "creationTimeSource": "Generated source PNG last modification time in UTC"
+    },
+    {
+      "theme": "balloons",
+      "device": "mobile",
+      "prompt": "Use case: illustration-story. Asset type: opaque full-bleed PNG Sanrio wallpaper, MOBILE PORTRAIT, exactly 1080 x 2400 pixels. New balloon parade variant: match the original reference #1 flat vintage Sanrio stationery aesthetic, delicate very fine warm sepia outlines, gently muted dusty rose pink, pale mint green, cream and warm ivory. No dimensional lighting or painterly effects. Recognizable My Melody wears her pink hood, long ears, a small mint bow and striped pink parade dress, carrying two small pink heart-shaped balloons; Hello Kitty white cat with yellow nose, brown oval eyes, no mouth, six whiskers and dusty rose ear bow carries a small mint star balloon; Cinnamoroll with long floppy white ears, blue oval eyes and curled tail rides a tiny rose striped balloon wagon. Full small bodies visible and all heads/balloons stay within bottom 20% of canvas, no balloons floating in the center. Distinct from candy and music versions. Slim pink/cream diamond floor along bottom 5%. Pink and cream triangular bunting with pale mint bows in top 6% corners only. Vast near-white blush-cream field clear from 10%-76% height, quiet low contrast space for a schedule supplied later. Tiny dotted sparkles only outer lower edges. Tall portrait composition specifically for phone. Artwork only: no letters, words, numbers, logos, timetable, UI, watermark, signature, titles, plaque, badge or device frame. Entire image opaque.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133bf-0fc9-7ac3-98e3-ab398a83ff12\\exec-f7b4fcd7-23ad-438d-9ffe-01eacb4e4e64.png",
+      "destination": "public/wallpapers/scenic/sanrio-parade-balloons/mobile.png",
+      "requiredDimensions": [
+        1080,
+        2400
+      ],
+      "sizing": "Independently generated device composition; normalized pixels via Lanczos, no crop.",
+      "createdAt": "2026-10-13T05:42:05.495Z",
+      "creationTimeSource": "Generated source PNG last modification time in UTC"
+    },
+    {
+      "theme": "balloons",
+      "device": "tablet",
+      "prompt": "Edit/recompose first supplied balloon-parade design into a separately designed TABLET PORTRAIT wallpaper exactly 1600 x 2560 pixels. Second supplied image is original reference for artistic style. Preserve first image's exact soft flat vintage Sanrio stationery style, very fine sepia outlines, pale rose/mint/cream colors and recognizable characters: My Melody pink hood with mint bow holding two pink heart balloons, Hello Kitty pink ear bow and striped skirt holding mint star balloon, Cinnamoroll blue eyes long white ears in a rose-striped tiny balloon wagon. Newly arrange the same tiny characters and all balloons along broad tablet lower edge within bottom 20% height, whole bodies visible. Slim pink diamond floor bottom 5%, fine bunting with mint corner bows top 6%, sparse lower edge sparkles. Make expansive blush ivory center absolutely clear from 10%-76% height for the schedule; all balloons low, not floating across center. New broad portrait tablet spacing, do not stretch or crop phone art. Opaque full bleed. No text, letters, numbers, labels, words, logo, timetable, UI, badge, watermark, signature, title plaque or device frame.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133bf-0fc9-7ac3-98e3-ab398a83ff12\\exec-05761b22-faea-4bf4-8deb-42639de7c41e.png",
+      "inputImages": [
+        "C:\\Users\\Administrator\\.codex\\generated_images\\01a133bf-0fc9-7ac3-98e3-ab398a83ff12\\exec-f7b4fcd7-23ad-438d-9ffe-01eacb4e4e64.png",
+        "C:/Users/Administrator/.codex/attachments/9e3de9e5-9bce-463a-aca3-b781338ff769/image-1.png"
+      ],
+      "destination": "public/wallpapers/scenic/sanrio-parade-balloons/tablet.png",
+      "requiredDimensions": [
+        1600,
+        2560
+      ],
+      "sizing": "Independently generated device composition; normalized pixels via Lanczos, no crop.",
+      "createdAt": "2026-10-13T05:43:34.135Z",
+      "creationTimeSource": "Generated source PNG last modification time in UTC"
+    },
+    {
+      "theme": "balloons",
+      "device": "laptop",
+      "prompt": "Edit/recompose first supplied balloon-parade design into an independently designed LAPTOP / DESKTOP LANDSCAPE wallpaper exactly 1920 x 1080 pixels, 16:9 horizontal. Second supplied image is original reference for artistic style. Preserve first image's exact soft flat vintage Sanrio stationery style, very fine sepia outlines, pale rose/mint/cream colors and recognizable characters: My Melody pink hood with mint bow holding two pink heart balloons at lower left, Hello Kitty pink ear bow and striped skirt holding mint star balloon beside Cinnamoroll blue eyes long white ears in a rose-striped tiny balloon wagon at lower right. Character ears distinct and full bodies visible. All figures and their balloons must be tiny and entirely within bottom 20% height. Do not make characters fill lower third; reduce them so wide central schedule area stays completely blank across x 12%-88%, y 10%-77%. Huge uninterrupted soft cream-blush center. Slim pink diamond floor bottom 4%, fine bunting and pale mint bows only top 6% corners, sparse tiny lower edge sparkles. New wide layout with increased spacing, not stretch or crop phone art. Opaque full bleed. No text, letters, numbers, labels, words, logos, timetable, UI, badge, watermark, signature, title plaque or device frame.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133bf-0fc9-7ac3-98e3-ab398a83ff12\\exec-270fbb91-7a11-4fd1-80b2-ff5f358c93bc.png",
+      "inputImages": [
+        "C:\\Users\\Administrator\\.codex\\generated_images\\01a133bf-0fc9-7ac3-98e3-ab398a83ff12\\exec-f7b4fcd7-23ad-438d-9ffe-01eacb4e4e64.png",
+        "C:/Users/Administrator/.codex/attachments/9e3de9e5-9bce-463a-aca3-b781338ff769/image-1.png"
+      ],
+      "destination": "public/wallpapers/scenic/sanrio-parade-balloons/laptop.png",
+      "requiredDimensions": [
+        1920,
+        1080
+      ],
+      "sizing": "Independently generated device composition; normalized pixels via Lanczos, no crop.",
+      "createdAt": "2026-10-13T05:47:18.777Z",
+      "creationTimeSource": "Generated source PNG last modification time in UTC"
+    }
+  ]
+}
