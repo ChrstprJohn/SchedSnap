@@ -1,6 +1,6 @@
 import { days } from '../../shared/scheduleSchema.js';
 import { mobileResolution } from '../assets/templates.js';
-import { colorInputValue, mascotPosition } from './wallpaperTheme.js';
+import { colorInputValue, mascotPosition, wallpaperFontScale } from './wallpaperTheme.js';
 import { drawParticles } from './wallpaperParticles.js';
 
 export function formatTime(value) {
@@ -70,7 +70,8 @@ export function layoutSchedule(ctx, schedule, template, height = 2400, options =
   const top = options.top ?? 760;
   const limit = options.limit ?? (template.layout === 'mascot' ? height - 660 : height - 150);
   let result;
-  for (let size = 42; size >= 28; size -= 2) {
+  for (let baseSize = 42; baseSize >= 28; baseSize -= 2) {
+    const size = baseSize * wallpaperFontScale(template);
     const subjectLineHeight = size * 1.2;
     const detailLineHeight = size * 0.65 * 1.25;
     const timeLineHeight = size * 0.65 * 1.3;
@@ -305,7 +306,7 @@ function drawScheduleCards(ctx, template, layout) {
     const badgeRadius = Math.min(plan.dayRadius, (plan.height - 28) / 2);
     ctx.beginPath(); ctx.arc(dayX, dayY, badgeRadius, 0, Math.PI * 2); ctx.fill(); ctx.restore();
     ctx.textAlign = 'center'; ctx.fillStyle = template.ink;
-    textFont((initialDays[plan.day].length > 1 ? 44 : 58) * badgeRadius / 65, 750);
+    textFont((initialDays[plan.day].length > 1 ? 44 : 58) * badgeRadius / 65 * wallpaperFontScale(template), 750);
     ctx.save();
     const dayLabel = initialDays[plan.day];
     ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';

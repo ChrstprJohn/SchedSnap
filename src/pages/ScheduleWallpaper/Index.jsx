@@ -233,7 +233,7 @@ export default function ScheduleWallpaper() {
         {choosingImage && <button type="button" className="button-secondary import-change" aria-label={preparingImage ? 'Preparing image' : 'Change image'} disabled={busy || preparingImage} onClick={() => imagePicker.current?.openPicker()}><ImageUp size={16} aria-hidden="true" />{preparingImage ? 'Preparing…' : <><span className="import-change-desktop">Change image</span><span className="import-change-mobile">Change</span></>}</button>}
       </div>
     </header>
-    {template ? <TemplateWorkspace
+    {template ? <TemplateWorkspace defaultTemplate={customizeWallpaperTemplate(wallpaperTemplates.find(item => item.id === templateId), {}, device)}
       step={step} onStep={openStep}
       template={template} schedule={schedule} resolution={resolution} onScheduleChange={changeSchedule}
       scheduleSource={scheduleSource} onScheduleSourceChange={setScheduleSource}

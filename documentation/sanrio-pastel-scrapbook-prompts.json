@@ -1,0 +1,27 @@
+{
+  "provider": "built-in image_gen",
+  "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-056af8a2-7621-4c36-8563-1d8eada0a680.png",
+  "assets": [
+    {
+      "device": "mobile",
+      "prompt": "Use case: illustration-story. Asset type: mobile wallpaper for a class schedule. Recompose attached pastel Sanrio scrapbook reference into a clean opaque PNG exactly1080x2400 portrait9:20. Soft washed cream, nearwhite blushpink delicate thin pink outlines. Quiet very pale cream central paper, decorative marbledpink ribbon waves narrowly along outer edges, tiny strawberries musicnotes hearts clouds and scalloped lace paper scraps only in margin. Tiny MyMelody with cupcake inside a bowarched frame at bottomleft; Cinnamoroll whitepuppy blueeyes resting above two pinklittlefriends at bottomright; small MyMelodyflowerbow motif nearby. Confine ALL characterfeatures andarchedframe entirely to lowest20% ofcanvas. Main middle x12%-88% y18%-72% must be empty pale cream paper reserved for readable timetable; edges only faint accents. Blank paperframes no writing. Preserve reference softpastel scrapbook style but no computer window, titlebar, buttons, blackcorner cursor, text, words, letters, watermark, logos, schedules, boxes, UI. Newly compose mobile independently. Art only.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a134ad-661b-7883-ad4c-88a5fcd0cc96\\exec-057aa964-270f-462a-987e-a580407cf81d.png",
+      "destination": "public/wallpapers/scenic/sanrio-pastel-scrapbook/mobile.png",
+      "createdAt": "2026-10-13T10:46:00.468Z"
+    },
+    {
+      "device": "tablet",
+      "prompt": "Use case: illustration-story. Asset type: tablet portrait wallpaper for class schedule. Recompose attached pastel Sanrio scrapbook reference into separate clean opaque PNG exactly1600x2560 portrait5:8. Very washed cream nearwhite blushpink delicate thin pink outlines. Quiet almostwhite central paper; narrow marbledpink ribbon waves along outermostedges; tiny strawberry musicnote heart cloud and scalloped lacepaperblank scraps at edges. Small MyMelody with cupcake inside bowarchedframe bottomleft, Cinnamoroll whitepuppy pastelblueeyes resting above two pinkfriends bottomright, tinyMyMelodyflowerbow nearby. Entire character miniatures andbowarchedframe confined strictly bottom20% ofcanvas, not middle; make tiny relative to wide tablet. Keep central x12%-88% y18%-72% plain almostwhite cream and free of features for timetable. Preserve soft scrapbook reference feeling. OMIT every referenceword, letter, writing, watermark, logo, computerwindow titlebar buttons, blackcornercursor, UI, schedule, cards. Blank decorativepaper only. Newly compose spacious tablet art independently.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a134ad-661b-7883-ad4c-88a5fcd0cc96\\exec-27ba3563-0fd7-4617-8de2-2c9b8844208a.png",
+      "destination": "public/wallpapers/scenic/sanrio-pastel-scrapbook/tablet.png",
+      "createdAt": "2026-10-13T10:47:08.964Z"
+    },
+    {
+      "device": "laptop",
+      "prompt": "Use case: illustration-story. Asset type: laptop landscape wallpaper for class schedule. Recompose attached pastel Sanrio scrapbook reference as separately composed clean opaque PNG exactly1920x1080 landscape16:9. Very washed cream nearwhite blushpink delicate thin pink outlines. Quiet broad nearwhite central paper covering middle80%; narrow marbledpink ribbon waves along outermost edges and corners, tiny strawberries musicnotes hearts clouds with blankscallopedlacepaper accents only margins. SMALL character miniatures confined far-right edge and bottom corners: tinyMyMelody withcupcake insidebowarchedframe at farright top, Cinnamoroll whitepuppy blueeyes resting above two pinkfriends at bottomright, smallMyMelodyflowerbow leftbottom corner. Character features must stay OUTSIDE central x12%-88% y18%-72%; frame and puppy no widerthan12%ofcanvas. Preserve softly faded scrapbook reference style. No referencewords orletters, writing, watermarks, logos, computerwindow titlebar buttons, blackcornercursor, UI, schedules, cards. Allpaper blank. New widecomposition ratherthan croppedportrait.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a134ad-661b-7883-ad4c-88a5fcd0cc96\\exec-efaae3ce-e4e1-4c32-8d44-500e44343836.png",
+      "destination": "public/wallpapers/scenic/sanrio-pastel-scrapbook/laptop.png",
+      "createdAt": "2026-10-13T10:48:48.843Z"
+    }
+  ]
+}

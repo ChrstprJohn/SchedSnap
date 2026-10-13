@@ -24,9 +24,9 @@ test('immutable uploaded backgrounds can be published without requiring a new cl
   }
 });
 
-test('Sanrio supplies sixteen selectable designs in six families with 48 uploaded device compositions', () => {
-  assert.equal(sanrioTemplates.length, 16);
-  assert.equal(new Set(sanrioTemplates.map(template => template.id)).size, 16);
+test('Sanrio supplies twenty-four selectable designs in nine families with 72 uploaded device compositions', () => {
+  assert.equal(sanrioTemplates.length, 24);
+  assert.equal(new Set(sanrioTemplates.map(template => template.id)).size, 24);
   assert.equal(designCollections.find(collection => collection.id === 'sanrio')?.name, 'Sanrio');
   assert.equal(galleryCategories.filter(category => category.id === 'sanrio').length, 1);
   const families = new Map();
@@ -61,22 +61,21 @@ test('Sanrio supplies sixteen selectable designs in six families with 48 uploade
       } else hashes.add(asset.publicId);
     }
   }
-  assert.deepEqual([...families.keys()], ['sanrio-nursery', 'sanrio-melody', 'sanrio-parade', 'sanrio-pixel', 'sanrio-tea', 'sanrio-gingham']);
-  assert.deepEqual([...families.values()], [1, 3, 3, 3, 3, 3]);
-  assert.equal(hashes.size, 48);
+  assert.deepEqual(Object.fromEntries(families), { 'sanrio-stationery': 4, 'sanrio-melody': 4, 'sanrio-nursery': 2, 'sanrio-plush': 1, 'sanrio-friends': 1, 'sanrio-parade': 3, 'sanrio-pixel': 3, 'sanrio-tea': 3, 'sanrio-gingham': 3 });
+  assert.equal(hashes.size, 72);
   assert.equal(templateSchema.safeParse({
     ...sanrioTemplates[0], status: 'published',
     deviceImages: { ...sanrioTemplates[0].deviceImages, tablet: undefined },
   }).success, false, 'Publishing still requires three device backgrounds');
 });
 
-test('Sanrio paths, creation dates and all prompts match the eight source provenance records', () => {
-  const records = ['parade', 'pixel', 'tea', 'gingham', 'kitty-nursery', 'melody-lace', 'melody-peek', 'melody-corner'].flatMap(group => {
+test('Sanrio paths, creation dates and all prompts match the sixteen source provenance records', () => {
+  const records = ['parade', 'pixel', 'tea', 'gingham', 'kitty-nursery', 'melody-lace', 'melody-peek', 'melody-corner', 'melody-dream', 'kitty-vanity', 'plush-pals', 'friends-gingham', 'strawberry-patchwork', 'melody-bedtime', 'pastel-scrapbook', 'melody-piano-stationery'].flatMap(group => {
     const doc = JSON.parse(readFileSync(new URL(`../documentation/sanrio-${group}-prompts.json`, import.meta.url), 'utf8'));
     return doc.assets.map(asset => ({ ...asset, path: '/' + (asset.destination || asset.output).replace(/^public\//, ''),
       createdAt: asset.createdAt || doc.createdAt || doc.generatedAt }));
   });
-  assert.equal(records.length, 48);
+  assert.equal(records.length, 72);
   for (const template of sanrioTemplates) {
     const mobile = records.find(record => record.path === template.image);
     assert.equal(template.createdAt, mobile.createdAt, template.id);

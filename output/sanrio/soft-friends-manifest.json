@@ -1,0 +1,76 @@
+{
+  "assets": [
+    {
+      "path": "public/wallpapers/scenic/sanrio-melody-dream/mobile.png",
+      "sha256": "461fafdde4e25fb74bcd40b49acb80f29bc66f49d63dca100871e2c7466f9d89",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-melody-dream/tablet.png",
+      "sha256": "66e96d1f2b43894fcaa788a545ef4ed37bf928704d8d1c8e94ee8e9487720360",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-melody-dream/laptop.png",
+      "sha256": "33fefed8b87c4fa44b21ecc1705ec6ef707f755cb2349f5238bd2f898e8849f1",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-kitty-vanity/mobile.png",
+      "sha256": "e197f395f16486d3919176f6893631f470f00e8667b11d8489f5f10ec4df5f2d",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-kitty-vanity/tablet.png",
+      "sha256": "de2f2eb5cdbb96dbb6ccb9fd2a6c925ccc8e3bdb77848c66cb00cbc1f802ce14",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-kitty-vanity/laptop.png",
+      "sha256": "17b63abf095bceb12be7d7f5559732ca1e9983350168cd6e9b63bc45915a042b",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-plush-pals/mobile.png",
+      "sha256": "e35e8c97688c9fa458826651f3ac2a4ff7dbdfdd61063ca421c101c1f9877142",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-plush-pals/tablet.png",
+      "sha256": "ca7bf9a69a08e8b8d9119d940fc2a21332917bc94bec127fc634d0e3aba2534b",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-plush-pals/laptop.png",
+      "sha256": "e3451eb907ea36d3289e20ac5b2e012eb9f3d5aedc6bd674064d5a71e9140117",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-friends-gingham/mobile.png",
+      "sha256": "7e61e4799875e9ea75ea1d4d10ce6e6ff2fce2ab78fe08da01b868ce8120c3f4",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-friends-gingham/tablet.png",
+      "sha256": "b83a29b13bf7bb6c2509add02d8dc59555bb3f05cc8e95e7c57caf171c53a753",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-friends-gingham/laptop.png",
+      "sha256": "5a1afb546812b84902c95a1f3226c863b48593c6249ee11c85461caa0210ce91",
+      "dimensionsValid": true,
+      "opaque": true
+    }
+  ]
+}

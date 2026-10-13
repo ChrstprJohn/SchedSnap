@@ -9,7 +9,19 @@ export const wallpaperFonts = [
   { value: 'Lato', label: 'Lato' },
   { value: 'DM Serif Display', label: 'DM Serif Display' },
   { value: 'Georgia', label: 'Georgia' },
+  { value: 'Quicksand', label: 'Quicksand · rounded' },
+  { value: 'Nunito', label: 'Nunito · soft' },
+  { value: 'Itim', label: 'Itim · handwritten' },
 ];
+
+export function wallpaperFontScale(template) {
+  const value = Number(template.fontScale ?? 1);
+  return Number.isFinite(value) ? Math.min(1.2, Math.max(1, value)) : 1;
+}
+
+export function snapSchedulePosition(value, dragging = false, defaultValue = 0) {
+  return dragging && Math.abs(value - defaultValue) <= 5 ? defaultValue : value;
+}
 
 export function mascotPosition(template) {
   return ['left', 'center', 'right'].includes(template.mascotPosition) ? template.mascotPosition : template.mascotSide === 'right' ? 'right' : 'left';

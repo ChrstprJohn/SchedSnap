@@ -1,0 +1,27 @@
+{
+  "provider": "built-in image_gen",
+  "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-1e0b2190-822e-4069-bb1f-b290991b027a.png",
+  "assets": [
+    {
+      "device": "mobile",
+      "prompt": "Use case: illustration-story. Opaque mobile wallpaper exact1080x2400 portrait9:20. Referenceimage1 onlyforstyleandcharacters. Independently compose Strawberry Patchwork wallpaper: warm printed cream and softpink fabric, small gingham/dotted panels with delicate stitched seams and scalloped lace. Major centralpanel x12%-88%,y18%-74% almostplain palecream/blush fabric for five-day schedule. Small miniature character panels ONLY in bottom20% and outertopcorners, each character no more than12% canvasheight: HelloKitty redpinkbow holdingflowers at bottomleft, MyMelodypinkhood strawberrycup bottomright, Kuromiblackhood readingpurplebook bottomcenter, sleeping Cinnamoroll blueandpinkpillows bottomedge, Pochaccoblackears drinkingcup tiny topcorner. Tiny strawberries daisies hearts at peripheral stitch intersections. Match warm faded vintage pastel print and fine darkbrown outlines of reference. Do NOT copyreference's giantcharacters or fill centerwithillustrations. Allcharacters recognizable, intact, small. No Zzz or P or letters,text,logos,UI,scheduleboxes,watermark,deviceframe. Fullbleedopaque art exact1080x2400.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a134ad-1172-7560-82b5-0e23f2fbdaad\\exec-e1d4b333-f6ce-4c18-aad1-c8952b64fc91.png",
+      "destination": "public/wallpapers/scenic/sanrio-strawberry-patchwork/mobile.png",
+      "createdAt": "2026-10-13T10:44:59.633Z"
+    },
+    {
+      "device": "tablet",
+      "prompt": "Use case: illustration-story. Opaque tablet portraitwallpaperexact1600x2560 aspect5:8. Referenceimage1 character/styleguideonly. Recompose Strawberry Patchwork for widerportrait: vintagecream/blushpink softprintedfabric, gingham and tinywhitepolkadot stitchedpatches, pinkdashedseams scallopedlace outeredges. Large central x12%-88% y17%-75% palealmostplain fabricpanel emptyforreadable timetable. Place verysmall miniature Sanriocharacterpanels in outertopcornersandbottom18%-22%: HelloKittypinkbow holdingflowerbouquet, MyMelodypinkhood strawberrycup, Kuromiblackhood readingpurplebook, sleepingCinnamoroll withblueandpinkpillows, Pochaccodrinking smallplaincup. Each entirecharacter no morethan13% canvasheight, bottomvignettes spread acrosswidth ratherthanstacked. Tiny printedstrawberries/daisies/hearts sparse atperipheral seams. Warmfaded pastelprint withfinebrownoutline matchingreference. Nocharacterordarkforms incenter; doNOTcopygiantreferencepanelcharacters. Fullbleed opaque illustration only, noZzz/P/letters/text/logo/UI/watermark/badges/timetable/deviceframe. Exact1600x2560.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a134ad-1172-7560-82b5-0e23f2fbdaad\\exec-54fcca25-2788-43db-82db-427eacd14392.png",
+      "destination": "public/wallpapers/scenic/sanrio-strawberry-patchwork/tablet.png",
+      "createdAt": "2026-10-13T10:45:53.980Z"
+    },
+    {
+      "device": "laptop",
+      "prompt": "Use case: illustration-story. Opaque laptopwallpaper exact1920x1080 landscape16:9. Image1 styleandcharacterreferenceonly. Independently compose wide Strawberry Patchwork inwarmfaded vintagecream/pinkfabric withsmall ginghamandpolkadot patches, finethinpinkstitchedseams laceouteredges. Mainmiddle x12%-88%,y18%-74% almostplain palecream fabricpanelforscheduletext. Verysmall charactervignettes inoutercorners and bottom20% only: HelloKittypinkbow holdingdaisybouquet farbottomleft, MyMelodypinkhood strawberrycup nearbybottomleft, sleepingCinnamorollblue/pinkpillows bottomcenteredge, Kuromiblackhood readingpurplebook farbottomright, Pochaccodrinkingplaincup nearbybottomright. Eachminiaturecharacter max15% canvasheight and completelyintact. Topcorners tiny strawberry/daisy stitchedpatches only. Cute vintageprintfinebrownoutlines matchesreference. Neverputcharactersinmiddle or copytallreferencecomposition; do notstretch/crop. Fullbleed opaque art, noZzz/P/letters/text/logo/UI/watermark/timetableboxes/badges/frame. Exact1920x1080.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a134ad-1172-7560-82b5-0e23f2fbdaad\\exec-723649a3-c90c-4db7-b906-68757d56f73a.png",
+      "destination": "public/wallpapers/scenic/sanrio-strawberry-patchwork/laptop.png",
+      "createdAt": "2026-10-13T10:47:08.713Z"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "provider": "built-in image_gen",
+  "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-12bdd82e-7ad1-441c-8646-d38788ec08f1.png",
+  "assets": [
+    {
+      "device": "mobile",
+      "prompt": "Use case illustration-story. Generate opaque fullbleed MOBILE portrait wallpaper1080x2400, exact9:20, from this reference style. Verysoft pale pink and white pin dots; broad scalloped pale pink valance top7%, scalloped loweredge. Tiny ornate scalloped frames forming a little stationery border along bottom20%: My Sweet Piano fluffy pinklamb in a verticalpinkstripe frame, small blueearmouse in a laceoval, littlemakeup brushes/lipgloss in a scallopedlabel, MyMelody withlarge pinkbow in a laceheart, MyMelody cuddling teddy in a tiny creamframe. A few tiny bows nearouteredges. Preserve the washedpastel Sanrio dressingtable-stationery style. All figures/frames small, mainuppermiddle x10%-90% y15%-74% empty almostwhite pinkdots, ready for a schedule addedlater. No words including My Melody & Piano, no label, letters, watermark, logo, blackcornerarrow/screenshot symbols, schedule, UI or phoneframe. Reference only not a screenshotcopy. Modest miniatures only atbottom andcorners; no large centralcharacter.",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a133b2-fbf2-7071-8830-0bd2ac1e4851/exec-3b61197e-60d7-4844-8993-2819975006aa.png",
+      "destination": "public/wallpapers/scenic/sanrio-melody-piano-stationery/mobile.png",
+      "createdAt": "2026-10-13T10:46:20.764Z",
+      "originalDimensions": [
+        841,
+        1870
+      ],
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "sizing": "Independent composition; proportional contain resize with matching minimal edge padding."
+    },
+    {
+      "device": "tablet",
+      "prompt": "Use case illustration-story. Generate independentlycomposed opaque portraitTABLET wallpaper1600x2560 exact5:8 from this reference style. Verywashed pastel pink andwhite tiny pindots, broad pinkscallopedvalance top6% andthin scallopedloweredge. A miniature stationery showcase across bottom18%: MySweetPiano fluffy pinklamb insideverticalstripe scalloped frame, tiny blueearedmouse in laceoval, smallcosmetics/brushes in blankscalloped label, MyMelody pinkhoodbigbow in smalllaceheart, MyMelodycuddlingteddy in smallcreamframe. Smallbows only atouteredges. Reference soft mutedflat illustration, romanticpastel stationery. Huge uppermiddle x10%-90%, y14%-75% quiet almostwhite dotpaper for schedule; allfigures littleminiaturesbelow78%height, do not enlarge centralframes. No words/MyMelody&Piano/text/label/letters/watermark/logo/screenshoticons/UI/schedule/frame. Artwork only tablet tailored composition no phonecrop.",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a133b2-fbf2-7071-8830-0bd2ac1e4851/exec-96600a73-ba11-4938-bd6b-fdf05427a888.png",
+      "destination": "public/wallpapers/scenic/sanrio-melody-piano-stationery/tablet.png",
+      "createdAt": "2026-10-13T10:46:52.791Z",
+      "originalDimensions": [
+        992,
+        1586
+      ],
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "sizing": "Independent composition; proportional contain resize with matching minimal edge padding."
+    },
+    {
+      "device": "laptop",
+      "prompt": "Use case illustration-story. Generate independentlycomposed opaque fullbleed LAPTOP1920x1080 exact16:9, based on reference. Washed pastel blush pink white pin dots, pinkscallopedvalance top5% andthin scallopedbottom. Tiny romantic laceframes as stationary border: MySweetPiano fluffy pinklamb in verticalstripe scallopedframe leftbottomcorner, small blueearmouse in oval leftouteredge, littlecosmeticbrushes blanklabel nearbottomleft, MyMelodypinkhoodlargepinkbow in smalllaceheart rightbottomcorner, MyMelodycuddlingteddy in anotherlittleframe nearby. Miniatureillustrations occupyouter13%left/right andbottom18%, never the maincenter x17%-83% y13%-82% which stays verylight plain dots for timetable. Preserve reference gentle mutedlineart, bows andpaledelicatecreamframe details. No text/labels/letters/MyMelody&Piano/watermark/logo/screenshotarrow/UI/schedule/deviceframe. Wide recomposition no croppedphone.",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a133b2-fbf2-7071-8830-0bd2ac1e4851/exec-f3ad7cd7-7692-4869-b891-f3eaed2cf839.png",
+      "destination": "public/wallpapers/scenic/sanrio-melody-piano-stationery/laptop.png",
+      "createdAt": "2026-10-13T10:47:41.290Z",
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sizing": "Independent composition; proportional contain resize with matching minimal edge padding."
+    }
+  ]
+}

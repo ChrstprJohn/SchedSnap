@@ -1,7 +1,8 @@
 import { particleStyles } from '../../utils/wallpaperParticles.js';
+import { useRef } from 'react';
 import { schedulePosition, scheduleMovement, tabletBoxSpacing } from '../../utils/canvasHelpers.js';
 import { ChevronDown } from 'lucide-react';
-import { colorInputValue, wallpaperFonts, mascotPosition } from '../../utils/wallpaperTheme.js';
+import { colorInputValue, wallpaperFonts, mascotPosition, wallpaperFontScale, snapSchedulePosition } from '../../utils/wallpaperTheme.js';
 
 const colorFields = {
   background: { label: 'Background', colors: ['#dce8cb', '#f5daca', '#d8cbef', '#192f4b'] },
@@ -27,19 +28,21 @@ function AppearanceColor({ colorKey, template, onChange, toggleKey }) {
   </div>;
 }
 
-export default function TemplateControls({ template, onChange, onReset, enablePlacement = false }) {
+export default function TemplateControls({ template, onChange, onReset, defaultTemplate = {}, enablePlacement = false }) {
   const fixedBackground = Boolean(template.image && template.layout !== 'mascot');
+  const dragging = useRef({});
   return <aside aria-label="Template appearance" className="template-settings">
     {(enablePlacement || (template.device && template.device !== 'mobile')) && <fieldset className="appearance-group">
       <legend>Schedule placement</legend>
       {['horizontal', 'vertical'].map(axis => {
         const value = scheduleMovement(template, axis);
+        const defaultValue = scheduleMovement(defaultTemplate, axis);
         const direction = axis === 'horizontal' ? value < 0 ? 'Left' : 'Right' : value < 0 ? 'Up' : 'Down';
-        const description = value === 0 ? 'Default position' : `${direction} ${Math.abs(value)}%`;
+        const description = value === defaultValue ? 'Default position' : `${direction} ${Math.abs(value)}%`;
         const id = `schedule-${axis}-position`;
         return <div key={axis} className="top-margin-control">
-          <div className="top-margin-label"><label htmlFor={id}>{axis === 'horizontal' ? 'Horizontal position' : 'Vertical position'}</label><output htmlFor={id}>{description}</output></div>
-          <input id={id} type="range" min="-100" max="100" step="1" value={value} aria-valuetext={description} onChange={event => onChange(`${axis}Position`, Number(event.target.value))} />
+          <div className="top-margin-label position-label"><label htmlFor={id}>{axis === 'horizontal' ? 'Horizontal position' : 'Vertical position'}</label><span className="position-value"><output htmlFor={id}>{description}</output><button type="button" className="position-reset" aria-label={`Reset ${axis} position`} disabled={value === defaultValue} onClick={() => onChange(`${axis}Position`, defaultValue)}>Reset</button></span></div>
+          <input id={id} type="range" min="-100" max="100" step="1" value={value} aria-valuetext={description} onPointerDown={() => { dragging.current[axis] = true; }} onPointerUp={() => { dragging.current[axis] = false; }} onPointerCancel={() => { dragging.current[axis] = false; }} onBlur={() => { dragging.current[axis] = false; }} onChange={event => onChange(`${axis}Position`, snapSchedulePosition(Number(event.target.value), dragging.current[axis], defaultValue))} />
         </div>;
       })}
       <p className="placement-note">Move the title and classes together. Their size stays the same.</p>
@@ -82,6 +85,10 @@ export default function TemplateControls({ template, onChange, onReset, enablePl
     </fieldset>
     <fieldset className="appearance-group">
       <legend>Schedule Text</legend>
+      <div className="appearance-row">
+        <label className="appearance-label" htmlFor="appearance-font-size">Font size</label>
+        <div className="field-select appearance-select"><select id="appearance-font-size" className="field-input" value={wallpaperFontScale(template)} onChange={event => onChange('fontScale', Number(event.target.value))}><option value="1">Standard</option><option value="1.1">Larger · 110%</option><option value="1.2">Largest · 120%</option></select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>
+      </div>
       <div className="appearance-row">
         <label className="appearance-label" htmlFor="appearance-font">Font family</label>
         <div className="field-select appearance-select">
