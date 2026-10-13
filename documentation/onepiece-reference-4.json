@@ -1,0 +1,90 @@
+{
+  "reference": "image-4",
+  "referencePath": "C:/Users/picar/AppData/Local/Temp/codex-clipboard-83b58191-2c06-4524-babc-c807bd14fc24.png",
+  "generator": "built-in image_gen",
+  "createdAt": "2026-10-12T15:37:15.499Z",
+  "normalization": "Each device composed separately; proportional Lanczos resizing with minimal aspect crop to exact device dimensions.",
+  "variants": [
+    {
+      "id": "onepiece-blue-buddy-club",
+      "device": "mobile",
+      "width": 1080,
+      "height": 2400,
+      "prompt": "Use case: stylized-concept. Create one opaque full bleed mobile wallpaper 1080x2400 PNG for a timetable app. Reference image is style inspiration only: pastel cyan background, a small neat colorful comic grid of cute rounded animals, sketchy dark brown contours, blushing cheeks, flat pastel colors. New design 'Blue Buddy Club': bottom 23% has a 2 row by 4 column gallery of eight distinct expressive tiny cute bunny, cat, bear, chick and hamster friends in blue pink yellow and cream square panels. Keep upper 77% entirely quiet solid pale cyan for schedule readability. Grid near bottom with modest margins, all art below bottom quarter. No words, lettering, logo, watermark, timetable, badges, UI or device frame. Actual rectangular image, no rounded outside corners. Match soft cute hand-drawn visual language of reference while making a new artwork.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a130b9-2780-7d21-aecc-fc68964edb12\\exec-1872da75-c79a-4664-94c0-a32278af4b1b.png",
+      "destination": "public/wallpapers/scenic/onepiece-blue-buddy-club/mobile.png"
+    },
+    {
+      "id": "onepiece-blue-buddy-club",
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "prompt": "Use case: stylized-concept. One full bleed opaque tablet wallpaper 1600x2560 PNG for a timetable app. Reference image is ONLY a visual style reference: adorable flat Japanese stationery animal doodles, irregular dark brown outlines, pastel colors, round heavy forms, pink blushing cheeks and tiny expressive faces. New design 'blue-buddy-club': eight tiny different expressive bunny, bear, cat, hamster and chick friends in a 2 row by 4 column comic grid along the bottom 22%. Solid uniform pale cyan background. Keep upper 77% completely quiet empty solid color for schedule; all decorative artwork near bottom. Same theme and character language on each device, deliberately composed for this aspect ratio. No text, letters, title, logos, watermark, timetable, UI, badges, device frame, or rounded outer image corners. Crisp polished hand-drawn simple illustration.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a130b9-2780-7d21-aecc-fc68964edb12\\exec-dc390318-3a76-4ac7-8933-b50fa0f198f9.png",
+      "destination": "public/wallpapers/scenic/onepiece-blue-buddy-club/tablet.png"
+    },
+    {
+      "id": "onepiece-blue-buddy-club",
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "prompt": "Use case: stylized-concept. One full bleed opaque laptop wallpaper 1920x1080 PNG for a timetable app. Reference image is ONLY a visual style reference: adorable flat Japanese stationery animal doodles, irregular dark brown outlines, pastel colors, round heavy forms, pink blushing cheeks and tiny expressive faces. New design 'blue-buddy-club': eight tiny different expressive bunny, bear, cat, hamster and chick friends in a 4 row by 2 column comic grid in the rightmost 22%; left 73% is clear. Solid uniform pale cyan background. Keep left 73% and top margin quiet empty solid color for schedule; decoration only at right edge. Same theme and character language on each device, deliberately composed for this aspect ratio. No text, letters, title, logos, watermark, timetable, UI, badges, device frame, or rounded outer image corners. Crisp polished hand-drawn simple illustration.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a130b9-2780-7d21-aecc-fc68964edb12\\exec-8c5e8c49-847e-41af-b51e-17dc265b3626.png",
+      "destination": "public/wallpapers/scenic/onepiece-blue-buddy-club/laptop.png"
+    },
+    {
+      "id": "onepiece-aqua-postcards",
+      "device": "mobile",
+      "width": 1080,
+      "height": 2400,
+      "prompt": "Use case: stylized-concept. One full bleed opaque mobile wallpaper 1080x2400 PNG for a timetable app. Reference image is ONLY a visual style reference: adorable flat Japanese stationery animal doodles, irregular dark brown outlines, pastel colors, round heavy forms, pink blushing cheeks and tiny expressive faces. New design 'aqua-postcards': six tiny cheerful bunny, kitten, bear, chick and hamster friends in tilted individual blue pink cream postcard panels along bottom 22%. Solid uniform soft aqua background. Keep upper 77% completely quiet empty solid color for schedule; all decorative artwork near bottom. Same theme and character language on each device, deliberately composed for this aspect ratio. No text, letters, title, logos, watermark, timetable, UI, badges, device frame, or rounded outer image corners. Crisp polished hand-drawn simple illustration.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a130b9-2780-7d21-aecc-fc68964edb12\\exec-adfcbeb5-a6be-4fa9-a6ca-4da8ca76facf.png",
+      "destination": "public/wallpapers/scenic/onepiece-aqua-postcards/mobile.png"
+    },
+    {
+      "id": "onepiece-aqua-postcards",
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "prompt": "Use case: stylized-concept. One full bleed opaque tablet wallpaper 1600x2560 PNG for a timetable app. Reference image is ONLY a visual style reference: adorable flat Japanese stationery animal doodles, irregular dark brown outlines, pastel colors, round heavy forms, pink blushing cheeks and tiny expressive faces. New design 'aqua-postcards': six tiny cheerful bunny, kitten, bear, chick and hamster friends in tilted individual blue pink cream postcard panels along bottom 22%. Solid uniform soft aqua background. Keep upper 77% completely quiet empty solid color for schedule; all decorative artwork near bottom. Same theme and character language on each device, deliberately composed for this aspect ratio. No text, letters, title, logos, watermark, timetable, UI, badges, device frame, or rounded outer image corners. Crisp polished hand-drawn simple illustration.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a130b9-2780-7d21-aecc-fc68964edb12\\exec-f7415e20-c511-41a7-b752-88d99269c47c.png",
+      "destination": "public/wallpapers/scenic/onepiece-aqua-postcards/tablet.png"
+    },
+    {
+      "id": "onepiece-aqua-postcards",
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "prompt": "Use case: stylized-concept. One full bleed opaque laptop wallpaper 1920x1080 PNG for a timetable app. Reference image is ONLY a visual style reference: adorable flat Japanese stationery animal doodles, irregular dark brown outlines, pastel colors, round heavy forms, pink blushing cheeks and tiny expressive faces. New design 'aqua-postcards': six tiny cheerful bunny, kitten, bear, chick and hamster friends in tilted individual blue pink cream postcard panels in rightmost 22%; left 73% is clear. Solid uniform soft aqua background. Keep left 73% and top margin quiet empty solid color for schedule; decoration only at right edge. Same theme and character language on each device, deliberately composed for this aspect ratio. No text, letters, title, logos, watermark, timetable, UI, badges, device frame, or rounded outer image corners. Crisp polished hand-drawn simple illustration.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a130b9-2780-7d21-aecc-fc68964edb12\\exec-87dbb112-6c4c-4d38-9684-b030705b5e93.png",
+      "destination": "public/wallpapers/scenic/onepiece-aqua-postcards/laptop.png"
+    },
+    {
+      "id": "onepiece-sky-parade",
+      "device": "mobile",
+      "width": 1080,
+      "height": 2400,
+      "prompt": "Use case: stylized-concept. One full bleed opaque mobile wallpaper 1080x2400 PNG for a timetable app. Reference image is ONLY a visual style reference: adorable flat Japanese stationery animal doodles, irregular dark brown outlines, pastel colors, round heavy forms, pink blushing cheeks and tiny expressive faces. New design 'sky-parade': eight excited blushing bunny, bear, kitten, chick and hamster friends in a 2 row by 4 column grid of blue yellow lavender and peach comic squares across bottom 22%. Solid uniform pastel sky blue background. Keep upper 77% completely quiet empty solid color for schedule; all decorative artwork near bottom. Same theme and character language on each device, deliberately composed for this aspect ratio. No text, letters, title, logos, watermark, timetable, UI, badges, device frame, or rounded outer image corners. Crisp polished hand-drawn simple illustration.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a130b9-2780-7d21-aecc-fc68964edb12\\exec-933ea9d7-daa1-497b-a133-1a96805411d3.png",
+      "destination": "public/wallpapers/scenic/onepiece-sky-parade/mobile.png"
+    },
+    {
+      "id": "onepiece-sky-parade",
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "prompt": "Use case: stylized-concept. One full bleed opaque tablet wallpaper 1600x2560 PNG for a timetable app. Reference image is ONLY a visual style reference: adorable flat Japanese stationery animal doodles, irregular dark brown outlines, pastel colors, round heavy forms, pink blushing cheeks and tiny expressive faces. New design 'sky-parade': eight excited blushing bunny, bear, kitten, chick and hamster friends in a 2 row by 4 column grid of blue yellow lavender and peach comic squares across bottom 22%. Solid uniform pastel sky blue background. Keep upper 77% completely quiet empty solid color for schedule; all decorative artwork near bottom. Same theme and character language on each device, deliberately composed for this aspect ratio. No text, letters, title, logos, watermark, timetable, UI, badges, device frame, or rounded outer image corners. Crisp polished hand-drawn simple illustration.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a130b9-2780-7d21-aecc-fc68964edb12\\exec-a323effd-ac8e-4aae-8606-ac273067471c.png",
+      "destination": "public/wallpapers/scenic/onepiece-sky-parade/tablet.png"
+    },
+    {
+      "id": "onepiece-sky-parade",
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "prompt": "Use case: stylized-concept. One full bleed opaque laptop wallpaper 1920x1080 PNG for a timetable app. Reference image is ONLY a visual style reference: adorable flat Japanese stationery animal doodles, irregular dark brown outlines, pastel colors, round heavy forms, pink blushing cheeks and tiny expressive faces. New design 'sky-parade': eight excited blushing bunny, bear, kitten, chick and hamster friends in a 4 row by 2 column grid of blue yellow lavender and peach comic squares in rightmost 22%; left 73% is clear. Solid uniform pastel sky blue background. Keep left 73% and top margin quiet empty solid color for schedule; decoration only at right edge. Same theme and character language on each device, deliberately composed for this aspect ratio. No text, letters, title, logos, watermark, timetable, UI, badges, device frame, or rounded outer image corners. Crisp polished hand-drawn simple illustration.",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a130b9-2780-7d21-aecc-fc68964edb12\\exec-9ab0b310-ae39-4a56-b09a-0a4f819e0bab.png",
+      "destination": "public/wallpapers/scenic/onepiece-sky-parade/laptop.png"
+    }
+  ]
+}

@@ -1,0 +1,1351 @@
+{
+  "checkedAt": "2026-10-12T15:41:28.891Z",
+  "templateCount": 12,
+  "assetCount": 36,
+  "assets": [
+    {
+      "id": "onepiece-stacked-pals",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/onepiece-stacked-pals/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-stacked-pals",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/onepiece-stacked-pals/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-stacked-pals",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/onepiece-stacked-pals/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-corner-cuddle",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/onepiece-corner-cuddle/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-corner-cuddle",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/onepiece-corner-cuddle/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-corner-cuddle",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/onepiece-corner-cuddle/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-peekaboo-trio",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/onepiece-peekaboo-trio/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-peekaboo-trio",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/onepiece-peekaboo-trio/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-peekaboo-trio",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/onepiece-peekaboo-trio/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-pink-reactions",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/onepiece-pink-reactions/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-pink-reactions",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/onepiece-pink-reactions/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-pink-reactions",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/onepiece-pink-reactions/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-blush-buddies",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/onepiece-blush-buddies/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-blush-buddies",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/onepiece-blush-buddies/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-blush-buddies",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/onepiece-blush-buddies/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-rosy-daydream",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/onepiece-rosy-daydream/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-rosy-daydream",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/onepiece-rosy-daydream/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-rosy-daydream",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/onepiece-rosy-daydream/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-sunny-bunny",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/onepiece-sunny-bunny/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-sunny-bunny",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/onepiece-sunny-bunny/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-sunny-bunny",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/onepiece-sunny-bunny/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-mango-smile",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/onepiece-mango-smile/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-mango-smile",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/onepiece-mango-smile/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-mango-smile",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/onepiece-mango-smile/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-honey-peek",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/onepiece-honey-peek/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-honey-peek",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/onepiece-honey-peek/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-honey-peek",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/onepiece-honey-peek/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-blue-buddy-club",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/onepiece-blue-buddy-club/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-blue-buddy-club",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/onepiece-blue-buddy-club/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-blue-buddy-club",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/onepiece-blue-buddy-club/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-aqua-postcards",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/onepiece-aqua-postcards/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-aqua-postcards",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/onepiece-aqua-postcards/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-aqua-postcards",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/onepiece-aqua-postcards/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-sky-parade",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/onepiece-sky-parade/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-sky-parade",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/onepiece-sky-parade/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "onepiece-sky-parade",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/onepiece-sky-parade/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    }
+  ],
+  "renders": [
+    {
+      "id": "onepiece-stacked-pals",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1674
+    },
+    {
+      "id": "onepiece-corner-cuddle",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1674
+    },
+    {
+      "id": "onepiece-peekaboo-trio",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1674
+    },
+    {
+      "id": "onepiece-pink-reactions",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1674
+    },
+    {
+      "id": "onepiece-blush-buddies",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1674
+    },
+    {
+      "id": "onepiece-rosy-daydream",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1674
+    },
+    {
+      "id": "onepiece-sunny-bunny",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1674
+    },
+    {
+      "id": "onepiece-mango-smile",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1674
+    },
+    {
+      "id": "onepiece-honey-peek",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1674
+    },
+    {
+      "id": "onepiece-blue-buddy-club",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1674
+    },
+    {
+      "id": "onepiece-aqua-postcards",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1674
+    },
+    {
+      "id": "onepiece-sky-parade",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1674
+    },
+    {
+      "id": "onepiece-stacked-pals",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1941.0000000000002
+    },
+    {
+      "id": "onepiece-corner-cuddle",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1941.0000000000002
+    },
+    {
+      "id": "onepiece-peekaboo-trio",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1941.0000000000002
+    },
+    {
+      "id": "onepiece-pink-reactions",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1941.0000000000002
+    },
+    {
+      "id": "onepiece-blush-buddies",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1941.0000000000002
+    },
+    {
+      "id": "onepiece-rosy-daydream",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1941.0000000000002
+    },
+    {
+      "id": "onepiece-sunny-bunny",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1941.0000000000002
+    },
+    {
+      "id": "onepiece-mango-smile",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1941.0000000000002
+    },
+    {
+      "id": "onepiece-honey-peek",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1941.0000000000002
+    },
+    {
+      "id": "onepiece-blue-buddy-club",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1941.0000000000002
+    },
+    {
+      "id": "onepiece-aqua-postcards",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1941.0000000000002
+    },
+    {
+      "id": "onepiece-sky-parade",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1941.0000000000002
+    },
+    {
+      "id": "onepiece-stacked-pals",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "onepiece-corner-cuddle",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "onepiece-peekaboo-trio",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "onepiece-pink-reactions",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "onepiece-blush-buddies",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "onepiece-rosy-daydream",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "onepiece-sunny-bunny",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "onepiece-mango-smile",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "onepiece-honey-peek",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "onepiece-blue-buddy-club",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "onepiece-aqua-postcards",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "onepiece-sky-parade",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "onepiece-stacked-pals",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "onepiece-corner-cuddle",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "onepiece-peekaboo-trio",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "onepiece-pink-reactions",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "onepiece-blush-buddies",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "onepiece-rosy-daydream",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "onepiece-sunny-bunny",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "onepiece-mango-smile",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "onepiece-honey-peek",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "onepiece-blue-buddy-club",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "onepiece-aqua-postcards",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "onepiece-sky-parade",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "onepiece-stacked-pals",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "onepiece-corner-cuddle",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "onepiece-peekaboo-trio",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "onepiece-pink-reactions",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "onepiece-blush-buddies",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "onepiece-rosy-daydream",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "onepiece-sunny-bunny",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "onepiece-mango-smile",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "onepiece-honey-peek",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "onepiece-blue-buddy-club",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "onepiece-aqua-postcards",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "onepiece-sky-parade",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "onepiece-stacked-pals",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 79.35428571428571,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "onepiece-corner-cuddle",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 79.35428571428571,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "onepiece-peekaboo-trio",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 79.35428571428571,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "onepiece-pink-reactions",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 79.35428571428571,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "onepiece-blush-buddies",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 79.35428571428571,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "onepiece-rosy-daydream",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 79.35428571428571,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "onepiece-sunny-bunny",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 79.35428571428571,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "onepiece-mango-smile",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 79.35428571428571,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "onepiece-honey-peek",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 79.35428571428571,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "onepiece-blue-buddy-club",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 79.35428571428571,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "onepiece-aqua-postcards",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 79.35428571428571,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "onepiece-sky-parade",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 79.35428571428571,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    }
+  ],
+  "browserErrors": [],
+  "visualReview": {
+    "orphanCheck": "No matching onepiece-review or samson-nextjs node processes remain.",
+    "status": "pass-with-composition-limit",
+    "findings": [
+      "Solid white timetable cards keep dark illustration lines out of schedule text on mobile, tablet, and laptop sample/dense previews.",
+      "Background characters intentionally extend behind lower schedule cards in several designs. Opaque cards partially cover illustration features; reference-inspired large-face composition is preserved.",
+      "All 72 renders have no schedule overflow; all 36 backgrounds are exact RGB PNG device sizes."
+    ]
+  }
+}

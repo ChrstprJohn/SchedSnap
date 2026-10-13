@@ -1861,5 +1861,509 @@ export default {
     "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791715982/schedsnap/images/pixel-mascots/masters/pixel-sunflower-d2d29dee9002038a.png",
     "width": 1254,
     "height": 1254
+  },
+  "/wallpapers/scenic/onepiece-aqua-postcards/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-aqua-postcards/mobile-100361192e10b0be",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819559/schedsnap/wallpapers/scenic/onepiece-aqua-postcards/mobile-100361192e10b0be.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-aqua-postcards/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-aqua-postcards/laptop-05737c339be64c5e",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819559/schedsnap/wallpapers/scenic/onepiece-aqua-postcards/laptop-05737c339be64c5e.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-aqua-postcards/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-aqua-postcards/tablet-f33c3f7c6da1b7bb",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819559/schedsnap/wallpapers/scenic/onepiece-aqua-postcards/tablet-f33c3f7c6da1b7bb.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-blue-buddy-club/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-blue-buddy-club/laptop-b54791fbe04fcbb0",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819559/schedsnap/wallpapers/scenic/onepiece-blue-buddy-club/laptop-b54791fbe04fcbb0.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-blush-buddies/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-blush-buddies/mobile-d199d141d2a04c90",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819560/schedsnap/wallpapers/scenic/onepiece-blush-buddies/mobile-d199d141d2a04c90.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-blush-buddies/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-blush-buddies/laptop-5b78413d7c224cb3",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819560/schedsnap/wallpapers/scenic/onepiece-blush-buddies/laptop-5b78413d7c224cb3.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-blue-buddy-club/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-blue-buddy-club/mobile-66c11b92900d58bf",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819560/schedsnap/wallpapers/scenic/onepiece-blue-buddy-club/mobile-66c11b92900d58bf.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-blue-buddy-club/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-blue-buddy-club/tablet-5170f1c936eadc8a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819560/schedsnap/wallpapers/scenic/onepiece-blue-buddy-club/tablet-5170f1c936eadc8a.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-blush-buddies/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-blush-buddies/tablet-92a8ed803e7c5d0d",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819561/schedsnap/wallpapers/scenic/onepiece-blush-buddies/tablet-92a8ed803e7c5d0d.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-corner-cuddle/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-corner-cuddle/laptop-a2e39f40476070bd",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819561/schedsnap/wallpapers/scenic/onepiece-corner-cuddle/laptop-a2e39f40476070bd.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-corner-cuddle/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-corner-cuddle/mobile-70b1680b0fdd2e9f",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819561/schedsnap/wallpapers/scenic/onepiece-corner-cuddle/mobile-70b1680b0fdd2e9f.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-corner-cuddle/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-corner-cuddle/tablet-bf8c6438162be2b3",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819562/schedsnap/wallpapers/scenic/onepiece-corner-cuddle/tablet-bf8c6438162be2b3.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-honey-peek/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-honey-peek/laptop-73fac4f937688839",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819562/schedsnap/wallpapers/scenic/onepiece-honey-peek/laptop-73fac4f937688839.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-honey-peek/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-honey-peek/mobile-e6491c84eba42141",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819562/schedsnap/wallpapers/scenic/onepiece-honey-peek/mobile-e6491c84eba42141.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-honey-peek/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-honey-peek/tablet-70176dbea0332382",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819563/schedsnap/wallpapers/scenic/onepiece-honey-peek/tablet-70176dbea0332382.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-mango-smile/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-mango-smile/mobile-b8858c731741b806",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819563/schedsnap/wallpapers/scenic/onepiece-mango-smile/mobile-b8858c731741b806.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-mango-smile/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-mango-smile/laptop-8ea5d9866eac119c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819563/schedsnap/wallpapers/scenic/onepiece-mango-smile/laptop-8ea5d9866eac119c.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-peekaboo-trio/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-peekaboo-trio/mobile-11a441eb408628ae",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819564/schedsnap/wallpapers/scenic/onepiece-peekaboo-trio/mobile-11a441eb408628ae.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-peekaboo-trio/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-peekaboo-trio/laptop-4db8307dfa85f5c5",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819564/schedsnap/wallpapers/scenic/onepiece-peekaboo-trio/laptop-4db8307dfa85f5c5.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-peekaboo-trio/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-peekaboo-trio/tablet-6830b66e55850e17",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819564/schedsnap/wallpapers/scenic/onepiece-peekaboo-trio/tablet-6830b66e55850e17.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-mango-smile/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-mango-smile/tablet-7dd344a180b60b8b",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819564/schedsnap/wallpapers/scenic/onepiece-mango-smile/tablet-7dd344a180b60b8b.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-pink-reactions/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-pink-reactions/mobile-78655a90d6479aa2",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819565/schedsnap/wallpapers/scenic/onepiece-pink-reactions/mobile-78655a90d6479aa2.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-rosy-daydream/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-rosy-daydream/laptop-e360765434139fa3",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819565/schedsnap/wallpapers/scenic/onepiece-rosy-daydream/laptop-e360765434139fa3.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-pink-reactions/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-pink-reactions/laptop-efc9cd657a1b4f52",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819565/schedsnap/wallpapers/scenic/onepiece-pink-reactions/laptop-efc9cd657a1b4f52.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-pink-reactions/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-pink-reactions/tablet-d10c9e049b80130f",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819565/schedsnap/wallpapers/scenic/onepiece-pink-reactions/tablet-d10c9e049b80130f.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-sky-parade/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-sky-parade/laptop-4b3d210525eab755",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819566/schedsnap/wallpapers/scenic/onepiece-sky-parade/laptop-4b3d210525eab755.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-rosy-daydream/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-rosy-daydream/tablet-41e4fd6cee8c875c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819566/schedsnap/wallpapers/scenic/onepiece-rosy-daydream/tablet-41e4fd6cee8c875c.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-rosy-daydream/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-rosy-daydream/mobile-892b5836b4c22b3b",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819566/schedsnap/wallpapers/scenic/onepiece-rosy-daydream/mobile-892b5836b4c22b3b.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-sky-parade/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-sky-parade/mobile-161469c4e60eadd7",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819567/schedsnap/wallpapers/scenic/onepiece-sky-parade/mobile-161469c4e60eadd7.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-sky-parade/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-sky-parade/tablet-4fb91b06bd2e364c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819567/schedsnap/wallpapers/scenic/onepiece-sky-parade/tablet-4fb91b06bd2e364c.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-stacked-pals/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-stacked-pals/laptop-93a043ffc256899e",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819567/schedsnap/wallpapers/scenic/onepiece-stacked-pals/laptop-93a043ffc256899e.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-stacked-pals/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-stacked-pals/mobile-1f4a8747c6c34488",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819568/schedsnap/wallpapers/scenic/onepiece-stacked-pals/mobile-1f4a8747c6c34488.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-stacked-pals/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-stacked-pals/tablet-611574c70ddc9b71",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819568/schedsnap/wallpapers/scenic/onepiece-stacked-pals/tablet-611574c70ddc9b71.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-sunny-bunny/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-sunny-bunny/laptop-37e3017dbd9b05cd",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819568/schedsnap/wallpapers/scenic/onepiece-sunny-bunny/laptop-37e3017dbd9b05cd.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-sunny-bunny/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-sunny-bunny/mobile-d8f18153fdbe088c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819569/schedsnap/wallpapers/scenic/onepiece-sunny-bunny/mobile-d8f18153fdbe088c.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-sunny-bunny/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-sunny-bunny/tablet-7aab316146449241",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819569/schedsnap/wallpapers/scenic/onepiece-sunny-bunny/tablet-7aab316146449241.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-coral-dawn/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-coral-dawn/laptop-8526d4c8b343c7b3",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819670/schedsnap/wallpapers/scenic/onepiece-coral-dawn/laptop-8526d4c8b343c7b3.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-azure-crew-sprint/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-azure-crew-sprint/mobile-34fe2b9254714a79",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819670/schedsnap/wallpapers/scenic/onepiece-azure-crew-sprint/mobile-34fe2b9254714a79.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-azure-crew-sprint/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-azure-crew-sprint/tablet-b74c510df070b1de",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819671/schedsnap/wallpapers/scenic/onepiece-azure-crew-sprint/tablet-b74c510df070b1de.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-azure-crew-sprint/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-azure-crew-sprint/laptop-5a724728473c99d4",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819671/schedsnap/wallpapers/scenic/onepiece-azure-crew-sprint/laptop-5a724728473c99d4.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-coral-dawn/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-coral-dawn/mobile-929a9e5af8775f37",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819672/schedsnap/wallpapers/scenic/onepiece-coral-dawn/mobile-929a9e5af8775f37.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-coral-dawn/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-coral-dawn/tablet-ebca772ae8f8d34d",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819672/schedsnap/wallpapers/scenic/onepiece-coral-dawn/tablet-ebca772ae8f8d34d.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-cumulus-meadow/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-cumulus-meadow/laptop-3fcee406a57c75ef",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819673/schedsnap/wallpapers/scenic/onepiece-cumulus-meadow/laptop-3fcee406a57c75ef.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-cumulus-meadow/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-cumulus-meadow/mobile-e8cf0a35f9c613dc",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819673/schedsnap/wallpapers/scenic/onepiece-cumulus-meadow/mobile-e8cf0a35f9c613dc.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-golden-cloud-rest/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-golden-cloud-rest/laptop-1d2ab3921a9db613",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819674/schedsnap/wallpapers/scenic/onepiece-golden-cloud-rest/laptop-1d2ab3921a9db613.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-cumulus-meadow/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-cumulus-meadow/tablet-7971d0d33b30deb5",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819674/schedsnap/wallpapers/scenic/onepiece-cumulus-meadow/tablet-7971d0d33b30deb5.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-golden-cloud-rest/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-golden-cloud-rest/mobile-c5fed9b67255c676",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819674/schedsnap/wallpapers/scenic/onepiece-golden-cloud-rest/mobile-c5fed9b67255c676.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-golden-cloud-rest/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-golden-cloud-rest/tablet-26bbd4215cd624ff",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819676/schedsnap/wallpapers/scenic/onepiece-golden-cloud-rest/tablet-26bbd4215cd624ff.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-moonlit-crew-sprint/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-moonlit-crew-sprint/laptop-5af38e38c6571025",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819676/schedsnap/wallpapers/scenic/onepiece-moonlit-crew-sprint/laptop-5af38e38c6571025.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-moonlit-crew-sprint/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-moonlit-crew-sprint/tablet-ea482c86f92d8d5c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819677/schedsnap/wallpapers/scenic/onepiece-moonlit-crew-sprint/tablet-ea482c86f92d8d5c.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-moonlit-crew-sprint/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-moonlit-crew-sprint/mobile-bd5aab34ab6e74ff",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819677/schedsnap/wallpapers/scenic/onepiece-moonlit-crew-sprint/mobile-bd5aab34ab6e74ff.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-moonlit-merry/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-moonlit-merry/laptop-b486169bccdb2d14",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819678/schedsnap/wallpapers/scenic/onepiece-moonlit-merry/laptop-b486169bccdb2d14.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-moonlit-merry/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-moonlit-merry/mobile-5e8e36d27b55a2ce",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819678/schedsnap/wallpapers/scenic/onepiece-moonlit-merry/mobile-5e8e36d27b55a2ce.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-sea-breeze-overlook/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-sea-breeze-overlook/laptop-58988c437dfb8132",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819679/schedsnap/wallpapers/scenic/onepiece-sea-breeze-overlook/laptop-58988c437dfb8132.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-sea-breeze-overlook/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-sea-breeze-overlook/mobile-e25b02c0f11ff1b6",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819679/schedsnap/wallpapers/scenic/onepiece-sea-breeze-overlook/mobile-e25b02c0f11ff1b6.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-moonlit-merry/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-moonlit-merry/tablet-6332da9b8e56f800",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819679/schedsnap/wallpapers/scenic/onepiece-moonlit-merry/tablet-6332da9b8e56f800.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-sunny-wake/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-sunny-wake/laptop-550ff97ac0c82bd2",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819681/schedsnap/wallpapers/scenic/onepiece-sunny-wake/laptop-550ff97ac0c82bd2.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-sea-breeze-overlook/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-sea-breeze-overlook/tablet-1018e640985c122a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819681/schedsnap/wallpapers/scenic/onepiece-sea-breeze-overlook/tablet-1018e640985c122a.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-sunny-wake/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-sunny-wake/mobile-4cb81a037ae3779a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819681/schedsnap/wallpapers/scenic/onepiece-sunny-wake/mobile-4cb81a037ae3779a.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-sunny-wake/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-sunny-wake/tablet-d79f59bbf14801ad",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819681/schedsnap/wallpapers/scenic/onepiece-sunny-wake/tablet-d79f59bbf14801ad.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-sunset-crew-sprint/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-sunset-crew-sprint/laptop-bd7fdbafa7232d06",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819683/schedsnap/wallpapers/scenic/onepiece-sunset-crew-sprint/laptop-bd7fdbafa7232d06.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-sunset-crew-sprint/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-sunset-crew-sprint/mobile-17d3368c9bcfed29",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819683/schedsnap/wallpapers/scenic/onepiece-sunset-crew-sprint/mobile-17d3368c9bcfed29.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-sunset-crew-sprint/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-sunset-crew-sprint/tablet-594ed8ce5a407914",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819683/schedsnap/wallpapers/scenic/onepiece-sunset-crew-sprint/tablet-594ed8ce5a407914.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-midnight-blades/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-midnight-blades/laptop-622c336238d8359a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819825/schedsnap/wallpapers/scenic/onepiece-midnight-blades/laptop-622c336238d8359a.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-sage-santoryu/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-sage-santoryu/mobile-72349e83e7aea368",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819826/schedsnap/wallpapers/scenic/onepiece-sage-santoryu/mobile-72349e83e7aea368.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-sage-santoryu/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-sage-santoryu/laptop-9e93b4f9bcb300ca",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819828/schedsnap/wallpapers/scenic/onepiece-sage-santoryu/laptop-9e93b4f9bcb300ca.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-sage-santoryu/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-sage-santoryu/tablet-4380fa7fb2a8b89a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819828/schedsnap/wallpapers/scenic/onepiece-sage-santoryu/tablet-4380fa7fb2a8b89a.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-wado-parchment/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-wado-parchment/laptop-994cb482af7b76e1",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819829/schedsnap/wallpapers/scenic/onepiece-wado-parchment/laptop-994cb482af7b76e1.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/onepiece-wado-parchment/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-wado-parchment/tablet-d8dfdf88ecef7a55",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819831/schedsnap/wallpapers/scenic/onepiece-wado-parchment/tablet-d8dfdf88ecef7a55.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-wado-parchment/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-wado-parchment/mobile-c5d343d5cc30b1c1",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819831/schedsnap/wallpapers/scenic/onepiece-wado-parchment/mobile-c5d343d5cc30b1c1.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/onepiece-midnight-blades/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-midnight-blades/tablet-40ec562c6509df67",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819826/schedsnap/wallpapers/scenic/onepiece-midnight-blades/tablet-40ec562c6509df67.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/onepiece-midnight-blades/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/onepiece-midnight-blades/mobile-2647607e1aabb2d4",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791819842/schedsnap/wallpapers/scenic/onepiece-midnight-blades/mobile-2647607e1aabb2d4.png",
+    "width": 1080,
+    "height": 2400
   }
 };

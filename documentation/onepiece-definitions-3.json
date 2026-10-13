@@ -1,0 +1,68 @@
+[
+  {
+    "id": "onepiece-sunny-bunny",
+    "name": "Sunny Bunny",
+    "description": "Oversized cheerful hand drawn animal face on a sunny solid backdrop",
+    "background": "#f6c313",
+    "ink": "#432d25",
+    "muted": "#694636",
+    "line": "#9b683e",
+    "surface": "#ffffff",
+    "family": "onepiece",
+    "collection": "little-friends",
+    "image": "/wallpapers/scenic/onepiece-sunny-bunny/mobile.png",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/onepiece-sunny-bunny/mobile.png",
+      "tablet": "/wallpapers/scenic/onepiece-sunny-bunny/tablet.png",
+      "laptop": "/wallpapers/scenic/onepiece-sunny-bunny/laptop.png"
+    },
+    "particleStyle": "none",
+    "createdAt": "2026-10-12T15:36:25.779Z",
+    "schedulePosition": "left",
+    "containerStyle": "solid"
+  },
+  {
+    "id": "onepiece-mango-smile",
+    "name": "Mango Smile",
+    "description": "Oversized cheerful hand drawn animal face on a sunny solid backdrop",
+    "background": "#ffbd59",
+    "ink": "#432d25",
+    "muted": "#694636",
+    "line": "#9b683e",
+    "surface": "#ffffff",
+    "family": "onepiece",
+    "collection": "little-friends",
+    "image": "/wallpapers/scenic/onepiece-mango-smile/mobile.png",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/onepiece-mango-smile/mobile.png",
+      "tablet": "/wallpapers/scenic/onepiece-mango-smile/tablet.png",
+      "laptop": "/wallpapers/scenic/onepiece-mango-smile/laptop.png"
+    },
+    "particleStyle": "none",
+    "createdAt": "2026-10-12T15:36:25.779Z",
+    "schedulePosition": "left",
+    "containerStyle": "solid"
+  },
+  {
+    "id": "onepiece-honey-peek",
+    "name": "Honey Peek",
+    "description": "Oversized cheerful hand drawn animal face on a sunny solid backdrop",
+    "background": "#f8d461",
+    "ink": "#432d25",
+    "muted": "#694636",
+    "line": "#9b683e",
+    "surface": "#ffffff",
+    "family": "onepiece",
+    "collection": "little-friends",
+    "image": "/wallpapers/scenic/onepiece-honey-peek/mobile.png",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/onepiece-honey-peek/mobile.png",
+      "tablet": "/wallpapers/scenic/onepiece-honey-peek/tablet.png",
+      "laptop": "/wallpapers/scenic/onepiece-honey-peek/laptop.png"
+    },
+    "particleStyle": "none",
+    "createdAt": "2026-10-12T15:36:25.779Z",
+    "schedulePosition": "left",
+    "containerStyle": "solid"
+  }
+]

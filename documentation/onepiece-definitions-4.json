@@ -1,0 +1,65 @@
+[
+  {
+    "id": "onepiece-blue-buddy-club",
+    "name": "Blue Buddy Club",
+    "description": "A pastel cyan comic grid of little animal friends",
+    "collection": "little-friends",
+    "background": "#b9e7ef",
+    "ink": "#3d383b",
+    "muted": "#5a4850",
+    "surface": "#ffffff",
+    "line": "#96bdc4",
+    "image": "/wallpapers/scenic/onepiece-blue-buddy-club/mobile.png",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/onepiece-blue-buddy-club/mobile.png",
+      "tablet": "/wallpapers/scenic/onepiece-blue-buddy-club/tablet.png",
+      "laptop": "/wallpapers/scenic/onepiece-blue-buddy-club/laptop.png"
+    },
+    "schedulePosition": "left",
+    "particleStyle": "none",
+    "createdAt": "2026-10-12T15:37:48.995Z",
+    "containerStyle": "solid"
+  },
+  {
+    "id": "onepiece-aqua-postcards",
+    "name": "Aqua Postcards",
+    "description": "Cheerful friends in pastel postcard panels",
+    "collection": "little-friends",
+    "background": "#b8e9e1",
+    "ink": "#3d383b",
+    "muted": "#5a4850",
+    "surface": "#ffffff",
+    "line": "#96bdc4",
+    "image": "/wallpapers/scenic/onepiece-aqua-postcards/mobile.png",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/onepiece-aqua-postcards/mobile.png",
+      "tablet": "/wallpapers/scenic/onepiece-aqua-postcards/tablet.png",
+      "laptop": "/wallpapers/scenic/onepiece-aqua-postcards/laptop.png"
+    },
+    "schedulePosition": "left",
+    "particleStyle": "none",
+    "createdAt": "2026-10-12T15:37:48.995Z",
+    "containerStyle": "solid"
+  },
+  {
+    "id": "onepiece-sky-parade",
+    "name": "Sky Parade",
+    "description": "A joyful parade of colorful animal portraits",
+    "collection": "little-friends",
+    "background": "#bde3f5",
+    "ink": "#3d383b",
+    "muted": "#5a4850",
+    "surface": "#ffffff",
+    "line": "#96bdc4",
+    "image": "/wallpapers/scenic/onepiece-sky-parade/mobile.png",
+    "deviceImages": {
+      "mobile": "/wallpapers/scenic/onepiece-sky-parade/mobile.png",
+      "tablet": "/wallpapers/scenic/onepiece-sky-parade/tablet.png",
+      "laptop": "/wallpapers/scenic/onepiece-sky-parade/laptop.png"
+    },
+    "schedulePosition": "left",
+    "particleStyle": "none",
+    "createdAt": "2026-10-12T15:37:48.995Z",
+    "containerStyle": "solid"
+  }
+]

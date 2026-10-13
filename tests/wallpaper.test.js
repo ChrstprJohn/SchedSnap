@@ -8,6 +8,8 @@ import { mascotTemplates } from '../src/assets/mascotTemplates.js';
 import { littleFriendsTemplates } from '../src/assets/littleFriendsTemplates.js';
 import { patternTemplates } from '../src/assets/patternTemplates.js';
 import { scenicTemplates } from '../src/assets/scenicTemplates.js';
+import { onepieceTemplates } from '../src/assets/onepieceTemplates.js';
+import { onepieceAdventureTemplates } from '../src/assets/onepieceAdventureTemplates.js';
 import { scenicFamilies } from '../src/config/collections.js';
 import { drawWallpaper, drawSampleClock, findOverlaps, formatTime, formatWallpaperTime, groupSchedule, layoutSchedule, schedulePosition, scheduleTopMargin, wrapText } from '../src/utils/canvasHelpers.js';
 import { getScheduleIssues } from '../shared/scheduleSchema.js';
@@ -94,7 +96,7 @@ test('all templates fit sample data and dense data is explicitly rejected', () =
 });
 
 test('the existing collections are preserved alongside device-specific illustrated designs', () => {
-  assert.equal(wallpaperTemplates.length, 40 + patternTemplates.length + scenicTemplates.length + 61);
+  assert.equal(wallpaperTemplates.length, 40 + patternTemplates.length + scenicTemplates.length + onepieceTemplates.length + onepieceAdventureTemplates.length + 61);
   assert.ok(wallpaperTemplates.filter(template => template.image && template.layout !== 'mascot')
     .every(template => ['mobile', 'tablet', 'laptop'].every(device => template.deviceImages?.[device])));
   assert.equal(new Set(wallpaperTemplates.map((template) => template.id)).size, wallpaperTemplates.length);
@@ -439,11 +441,11 @@ test('tablet and laptop schedules preserve every meeting, fit the screen and sta
 });
 
 
-test('laptop backgrounds center the schedule and character presets reserve the opposite side or center footer', () => {
+test('laptop backgrounds honor schedule alignment and character presets reserve the opposite side or center footer', () => {
   for (const template of wallpaperTemplates) {
     const laptop = { ...template, device: 'laptop' };
     if (template.layout !== 'mascot') {
-      assert.equal(schedulePosition(laptop), 'center');
+      assert.equal(schedulePosition(laptop), template.schedulePosition || 'center');
       for (const position of ['left', 'center', 'right']) assert.equal(schedulePosition({ ...laptop, schedulePosition: position }), position);
     } else {
       const characterPosition = template.mascotPosition || template.mascotSide || 'left';

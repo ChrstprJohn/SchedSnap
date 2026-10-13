@@ -1,0 +1,195 @@
+{
+  "referenceImage": "C:/Users/picar/.codex/attachments/38c65669-8a2e-4b77-9ae1-d677b2adc3c4/image-3.png",
+  "provider": "built-in image_gen",
+  "createdAt": "2026-10-12T15:33:36.359Z",
+  "useCase": "stylized-concept",
+  "referenceRole": "Visual style and composition reference, inspected before generation; no screenshot UI retained.",
+  "variants": [
+    {
+      "id": "onepiece-azure-crew-sprint",
+      "name": "Azure Crew Sprint",
+      "description": "cobalt-blue enormous sky, soft painterly cream towering cumulus clouds near bottom horizon, sandy golden ground.",
+      "background": "#17487d",
+      "ink": "#ffffff",
+      "muted": "#d6e5ed",
+      "surface": "#102c568c",
+      "line": "#eaf4ff40",
+      "schedulePosition": "center",
+      "collection": "onepiece",
+      "assets": [
+        {
+          "device": "mobile",
+          "path": "public/wallpapers/scenic/onepiece-azure-crew-sprint/mobile.png",
+          "prompt": "Use case: stylized-concept. Create a new opaque full-bleed schedule wallpaper, exact 1080 x 2400 portrait mobile composition. Variant name Azure Crew Sprint, collection Onepiece. Reference style described: vintage hand-painted anime cel background, cobalt-blue enormous sky, soft painterly cream towering cumulus clouds near horizon, sandy golden ground, tiny adventurous anime pirate crew running along the bottom horizon. Feature Luffy with straw hat and red open vest plus four tiny crewmates in distinct running poses confined to bottom 18 percent; joyful side-view sprint. The upper 70 percent and middle must be empty softly textured deep azure sky, low contrast with no character or clouds in schedule reading area. Clouds cluster only along bottom corners. Nostalgic brush texture, restrained graphic flat shading, clear silhouettes. Artwork only. No text at all, logo, title, schedule, UI, Save button, white border, rounded card, watermark, frame, badges. This is artwork matching the reference aesthetic, not a screenshot.",
+          "sourcePath": "C:/Users/picar/.codex/generated_images/01a130b8-8bf3-7842-8c92-ef3dcc3e7979/exec-f936a00c-67fb-40ef-95f8-cfdb0d421e6c.png",
+          "sourceDimensions": [
+            841,
+            1870
+          ],
+          "dimensions": [
+            1080,
+            2400
+          ],
+          "normalization": "LANCZOS sizing only; native output within 1% of exact ratio; independent generated composition for device.",
+          "visualQA": "Inspected generated image: clear middle, distinct crew silhouettes at bottom, no text or UI, opaque full bleed."
+        },
+        {
+          "device": "tablet",
+          "path": "public/wallpapers/scenic/onepiece-azure-crew-sprint/tablet.png",
+          "prompt": "Use case: stylized-concept. Create a new opaque full-bleed tablet schedule wallpaper, exact 1600 x 2560 portrait composition. Variant Azure Crew Sprint, Onepiece collection. Scene: cobalt-blue enormous sky, soft painterly cream towering cumulus clouds near bottom horizon, sandy golden ground. Luffy wearing straw hat and red open vest plus four tiny crewmates sprint joyfully in distinct side-view running poses across bottom horizon. Nostalgic adventure, clear silhouettes. Style is vintage hand-painted anime cel background, soft painterly texture, restrained flat graphic shading. Confine all characters, clouds, sand, and adventure details to the bottom 20 percent and outer corners. Upper 70 percent and center are generous empty softly textured low-contrast sky for a readable timetable; the tablet composition must be designed for this aspect ratio with no stretched or copied layout. Keep five tiny runners clearly separate and visible on bottom horizon. Artwork only, no text, title, lettering, logos, timetable, UI, button, white border, rounded card, watermark, frame, badges.",
+          "sourcePath": "C:/Users/picar/.codex/generated_images/01a130b8-8bf3-7842-8c92-ef3dcc3e7979/exec-f330b096-3b88-4935-b18a-0353742564b7.png",
+          "sourceDimensions": [
+            992,
+            1586
+          ],
+          "dimensions": [
+            1600,
+            2560
+          ],
+          "normalization": "LANCZOS sizing only; native output within 1% of exact ratio; independent generated composition for device.",
+          "visualQA": "Inspected generated image: clear middle, distinct crew silhouettes at bottom, no text or UI, opaque full bleed."
+        },
+        {
+          "device": "laptop",
+          "path": "public/wallpapers/scenic/onepiece-azure-crew-sprint/laptop.png",
+          "prompt": "Use case: stylized-concept. Create a new opaque full-bleed laptop schedule wallpaper, exact 1920 x 1080 wide landscape composition. Variant Azure Crew Sprint, Onepiece collection. Scene: cobalt-blue enormous sky, soft painterly cream towering cumulus clouds near bottom horizon, sandy golden ground. Luffy wearing straw hat and red open vest plus four tiny crewmates sprint joyfully in distinct side-view running poses across bottom horizon. Nostalgic adventure, clear silhouettes. Style is vintage hand-painted anime cel background, soft painterly texture, restrained flat graphic shading. Confine all characters, clouds, sand, and adventure details to the bottom 20 percent and outer corners. Upper 70 percent and center are generous empty softly textured low-contrast sky for a readable timetable; the laptop composition must be designed for this aspect ratio with no stretched or copied layout. Keep five tiny runners clearly separate and visible on bottom horizon. Artwork only, no text, title, lettering, logos, timetable, UI, button, white border, rounded card, watermark, frame, badges.",
+          "sourcePath": "C:/Users/picar/.codex/generated_images/01a130b8-8bf3-7842-8c92-ef3dcc3e7979/exec-1dcc4a23-53a3-4497-9a98-cb7347eed909.png",
+          "sourceDimensions": [
+            1672,
+            941
+          ],
+          "dimensions": [
+            1920,
+            1080
+          ],
+          "normalization": "LANCZOS sizing only; native output within 1% of exact ratio; independent generated composition for device.",
+          "visualQA": "Inspected generated image: clear middle, distinct crew silhouettes at bottom, no text or UI, opaque full bleed."
+        }
+      ]
+    },
+    {
+      "id": "onepiece-sunset-crew-sprint",
+      "name": "Sunset Crew Sprint",
+      "description": "warm peach coral sunset sky softly graduating to pale ochre at the bottom, cream cumulus clouds near low horizon and golden sand.",
+      "background": "#dc917b",
+      "ink": "#40291f",
+      "muted": "#634436",
+      "surface": "#fff5dfb3",
+      "line": "#70402f40",
+      "schedulePosition": "center",
+      "collection": "onepiece",
+      "assets": [
+        {
+          "device": "mobile",
+          "path": "public/wallpapers/scenic/onepiece-sunset-crew-sprint/mobile.png",
+          "prompt": "Use case: stylized-concept. Create a new opaque full-bleed mobile schedule wallpaper, exact 1080 x 2400 tall portrait composition. Variant Sunset Crew Sprint, Onepiece collection. Scene: warm peach coral sunset sky softly graduating to pale ochre at the bottom, cream cumulus clouds near low horizon and golden sand. Luffy wearing straw hat and red open vest plus four tiny crewmates sprint joyfully in distinct side-view running poses across bottom horizon, warm long evening shadows and nostalgic adventure. Style is vintage hand-painted anime cel background, soft painterly texture, restrained flat graphic shading. Confine all characters, clouds, sand, and adventure details to the bottom 20 percent and outer corners. Upper 70 percent and center are generous empty softly textured low-contrast sky for a readable timetable; the mobile composition must be designed for this aspect ratio with no stretched or copied layout. Keep five tiny runners clearly separate and visible on bottom horizon. Artwork only, no text, title, lettering, logos, timetable, UI, button, white border, rounded card, watermark, frame, badges.",
+          "sourcePath": "C:/Users/picar/.codex/generated_images/01a130b8-8bf3-7842-8c92-ef3dcc3e7979/exec-7dc62189-0591-41ad-8451-522b25edc1a1.png",
+          "sourceDimensions": [
+            841,
+            1870
+          ],
+          "dimensions": [
+            1080,
+            2400
+          ],
+          "normalization": "LANCZOS sizing only; native output within 1% of exact ratio; independent generated composition for device.",
+          "visualQA": "Inspected generated image: clear middle, distinct crew silhouettes at bottom, no text or UI, opaque full bleed."
+        },
+        {
+          "device": "tablet",
+          "path": "public/wallpapers/scenic/onepiece-sunset-crew-sprint/tablet.png",
+          "prompt": "Use case: stylized-concept. Create a new opaque full-bleed tablet schedule wallpaper, exact 1600 x 2560 portrait composition. Variant Sunset Crew Sprint, Onepiece collection. Scene: warm peach coral sunset sky softly graduating to pale ochre at the bottom, cream cumulus clouds near low horizon and golden sand. Luffy wearing straw hat and red open vest plus four tiny crewmates sprint joyfully in distinct side-view running poses across bottom horizon, warm long evening shadows and nostalgic adventure. Style is vintage hand-painted anime cel background, soft painterly texture, restrained flat graphic shading. Confine all characters, clouds, sand, and adventure details to the bottom 20 percent and outer corners. Upper 70 percent and center are generous empty softly textured low-contrast sky for a readable timetable; the tablet composition must be designed for this aspect ratio with no stretched or copied layout. Keep five tiny runners clearly separate and visible on bottom horizon. Artwork only, no text, title, lettering, logos, timetable, UI, button, white border, rounded card, watermark, frame, badges.",
+          "sourcePath": "C:/Users/picar/.codex/generated_images/01a130b8-8bf3-7842-8c92-ef3dcc3e7979/exec-eccd9d0a-c24f-4fd6-84a5-61ed096eb264.png",
+          "sourceDimensions": [
+            992,
+            1586
+          ],
+          "dimensions": [
+            1600,
+            2560
+          ],
+          "normalization": "LANCZOS sizing only; native output within 1% of exact ratio; independent generated composition for device.",
+          "visualQA": "Inspected generated image: clear middle, distinct crew silhouettes at bottom, no text or UI, opaque full bleed."
+        },
+        {
+          "device": "laptop",
+          "path": "public/wallpapers/scenic/onepiece-sunset-crew-sprint/laptop.png",
+          "prompt": "Use case: stylized-concept. Create a new opaque full-bleed laptop schedule wallpaper, exact 1920 x 1080 wide landscape composition. Variant Sunset Crew Sprint, Onepiece collection. Scene: warm peach coral sunset sky softly graduating to pale ochre at the bottom, cream cumulus clouds near low horizon and golden sand. Luffy wearing straw hat and red open vest plus four tiny crewmates sprint joyfully in distinct side-view running poses across bottom horizon, warm long evening shadows and nostalgic adventure. Style is vintage hand-painted anime cel background, soft painterly texture, restrained flat graphic shading. Confine all characters, clouds, sand, and adventure details to the bottom 20 percent and outer corners. Upper 70 percent and center are generous empty softly textured low-contrast sky for a readable timetable; the laptop composition must be designed for this aspect ratio with no stretched or copied layout. Keep five tiny runners clearly separate and visible on bottom horizon. Artwork only, no text, title, lettering, logos, timetable, UI, button, white border, rounded card, watermark, frame, badges.",
+          "sourcePath": "C:/Users/picar/.codex/generated_images/01a130b8-8bf3-7842-8c92-ef3dcc3e7979/exec-f60342e0-c2e5-402e-aa41-65e6568319f4.png",
+          "sourceDimensions": [
+            1672,
+            941
+          ],
+          "dimensions": [
+            1920,
+            1080
+          ],
+          "normalization": "LANCZOS sizing only; native output within 1% of exact ratio; independent generated composition for device.",
+          "visualQA": "Inspected generated image: clear middle, distinct crew silhouettes at bottom, no text or UI, opaque full bleed."
+        }
+      ]
+    },
+    {
+      "id": "onepiece-moonlit-crew-sprint",
+      "name": "Moonlit Crew Sprint",
+      "description": "indigo twilight sky softly graduating to muted blue near the bottom, silver-blue towering cumulus clouds along low horizon, soft moonlit pale sand.",
+      "background": "#263e67",
+      "ink": "#ffffff",
+      "muted": "#d6e0f4",
+      "surface": "#15294f99",
+      "line": "#eaf4ff40",
+      "schedulePosition": "center",
+      "collection": "onepiece",
+      "assets": [
+        {
+          "device": "mobile",
+          "path": "public/wallpapers/scenic/onepiece-moonlit-crew-sprint/mobile.png",
+          "prompt": "Use case: stylized-concept. Create a new opaque full-bleed mobile schedule wallpaper, exact 1080 x 2400 tall portrait composition. Variant Moonlit Crew Sprint, Onepiece collection. Scene: indigo twilight sky softly graduating to muted blue near the bottom, silver-blue towering cumulus clouds along low horizon, soft moonlit pale sand. Small crescent moon at upper outer corner. Luffy wearing straw hat and red open vest plus four tiny crewmates sprint joyfully in distinct side-view running poses across bottom horizon, tranquil nighttime adventure. No stars in the quiet middle. Style is vintage hand-painted anime cel background, soft painterly texture, restrained flat graphic shading. Confine all characters, clouds, sand, and adventure details to the bottom 20 percent and outer corners. Upper 70 percent and center are generous empty softly textured low-contrast sky for a readable timetable; the mobile composition must be designed for this aspect ratio with no stretched or copied layout. Keep five tiny runners clearly separate and visible on bottom horizon. Artwork only, no text, title, lettering, logos, timetable, UI, button, white border, rounded card, watermark, frame, badges.",
+          "sourcePath": "C:/Users/picar/.codex/generated_images/01a130b8-8bf3-7842-8c92-ef3dcc3e7979/exec-4afc3511-2a36-43c6-ab9c-cbccd0d554e7.png",
+          "sourceDimensions": [
+            841,
+            1870
+          ],
+          "dimensions": [
+            1080,
+            2400
+          ],
+          "normalization": "LANCZOS sizing only; native output within 1% of exact ratio; independent generated composition for device.",
+          "visualQA": "Inspected generated image: clear middle, distinct crew silhouettes at bottom, no text or UI, opaque full bleed."
+        },
+        {
+          "device": "tablet",
+          "path": "public/wallpapers/scenic/onepiece-moonlit-crew-sprint/tablet.png",
+          "prompt": "Use case: stylized-concept. Create a new opaque full-bleed tablet schedule wallpaper, exact 1600 x 2560 portrait composition. Variant Moonlit Crew Sprint, Onepiece collection. Scene: indigo twilight sky softly graduating to muted blue near the bottom, silver-blue towering cumulus clouds along low horizon, soft moonlit pale sand. Small crescent moon at upper outer corner. Luffy wearing straw hat and red open vest plus four tiny crewmates sprint joyfully in distinct side-view running poses across bottom horizon, tranquil nighttime adventure. No stars in the quiet middle. Style is vintage hand-painted anime cel background, soft painterly texture, restrained flat graphic shading. Confine all characters, clouds, sand, and adventure details to the bottom 20 percent and outer corners. Upper 70 percent and center are generous empty softly textured low-contrast sky for a readable timetable; the tablet composition must be designed for this aspect ratio with no stretched or copied layout. Keep five tiny runners clearly separate and visible on bottom horizon. Artwork only, no text, title, lettering, logos, timetable, UI, button, white border, rounded card, watermark, frame, badges.",
+          "sourcePath": "C:/Users/picar/.codex/generated_images/01a130b8-8bf3-7842-8c92-ef3dcc3e7979/exec-0b5c7c00-146b-4c2c-8aa6-a5ff8b8f0e42.png",
+          "sourceDimensions": [
+            992,
+            1586
+          ],
+          "dimensions": [
+            1600,
+            2560
+          ],
+          "normalization": "LANCZOS sizing only; native output within 1% of exact ratio; independent generated composition for device.",
+          "visualQA": "Inspected generated image: clear middle, distinct crew silhouettes at bottom, no text or UI, opaque full bleed."
+        },
+        {
+          "device": "laptop",
+          "path": "public/wallpapers/scenic/onepiece-moonlit-crew-sprint/laptop.png",
+          "prompt": "Use case: stylized-concept. Create a new opaque full-bleed laptop schedule wallpaper, exact 1920 x 1080 wide landscape composition. Variant Moonlit Crew Sprint, Onepiece collection. Scene: indigo twilight sky softly graduating to muted blue near the bottom, silver-blue towering cumulus clouds along low horizon, soft moonlit pale sand. Small crescent moon at upper outer corner. Luffy wearing straw hat and red open vest plus four tiny crewmates sprint joyfully in distinct side-view running poses across bottom horizon, tranquil nighttime adventure. No stars in the quiet middle. Style is vintage hand-painted anime cel background, soft painterly texture, restrained flat graphic shading. Confine all characters, clouds, sand, and adventure details to the bottom 20 percent and outer corners. Upper 70 percent and center are generous empty softly textured low-contrast sky for a readable timetable; the laptop composition must be designed for this aspect ratio with no stretched or copied layout. Keep five tiny runners clearly separate and visible on bottom horizon. Artwork only, no text, title, lettering, logos, timetable, UI, button, white border, rounded card, watermark, frame, badges.",
+          "sourcePath": "C:/Users/picar/.codex/generated_images/01a130b8-8bf3-7842-8c92-ef3dcc3e7979/exec-8a1d98e4-5243-4c34-b635-cec9a156c4ef.png",
+          "sourceDimensions": [
+            1672,
+            941
+          ],
+          "dimensions": [
+            1920,
+            1080
+          ],
+          "normalization": "LANCZOS sizing only; native output within 1% of exact ratio; independent generated composition for device.",
+          "visualQA": "Inspected generated image: clear middle, distinct crew silhouettes at bottom, no text or UI, opaque full bleed."
+        }
+      ]
+    }
+  ]
+}

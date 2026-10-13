@@ -26,3 +26,6 @@ coverage/
 /documentation/previews/**/*.webp
 /src/assets/*.upload-tmp
 /output/cloudinary-upload-*.json
+
+.vercel
+.env*
