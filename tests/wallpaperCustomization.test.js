@@ -24,14 +24,14 @@ test('modest font enlargement preserves meetings and fits all sample device layo
   for (const resolution of Object.values(deviceResolutions)) {
     const render = fontScale => drawWallpaper({ getContext: () => ctx }, { schedule: templateSchedule, template: { ...sanrioTemplates[0], fontScale }, resolution });
     const before = render(1);
-    for (const scale of [1.1, 1.2]) {
+    for (const scale of [1.1, 1.2, 1.3, 1.4, 1.5, 1.6]) {
       const after = render(scale);
       assert.equal(after.overflow, false);
       assert.ok(after.size > before.size);
       assert.equal(after.plans.reduce((n, p) => n + p.entries.length, 0), 5);
     }
   }
-  assert.equal(wallpaperFontScale({ fontScale: 10 }), 1.2);
+  assert.equal(wallpaperFontScale({ fontScale: 10 }), 1.6);
 });
 
 test('pointer dragging snaps near default while keyboard steps stay precise', () => {
