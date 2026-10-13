@@ -11,13 +11,14 @@ import { scenicTemplates } from '../src/assets/scenicTemplates.js';
 import { onepieceTemplates } from '../src/assets/onepieceTemplates.js';
 import { onepieceAdventureTemplates } from '../src/assets/onepieceAdventureTemplates.js';
 import { onepieceReferenceTemplates } from '../src/assets/onepieceReferenceTemplates.js';
+import { sanrioTemplates } from '../src/assets/sanrioTemplates.js';
 import { scenicFamilies } from '../src/config/collections.js';
 import { drawWallpaper, drawSampleClock, findOverlaps, formatTime, formatWallpaperTime, groupSchedule, layoutSchedule, schedulePosition, scheduleTopMargin, wrapText } from '../src/utils/canvasHelpers.js';
 import { getScheduleIssues } from '../shared/scheduleSchema.js';
 import { colorInputValue, customizeWallpaperTemplate } from '../src/utils/wallpaperTheme.js';
 import { isNewTemplate, NEW_TEMPLATE_WINDOW_MS } from '../src/utils/templateFreshness.js';
 
-const measurementContext = { font: '', measureText(text) { const size = Number(this.font.match(/(\d+(\.\d+)?)px/)?.[1] || 36); return { width: text.length * size * 0.52 }; } };
+const measurementContext = { font: '', translate() {}, measureText(text) { const size = Number(this.font.match(/(\d+(\.\d+)?)px/)?.[1] || 36); return { width: text.length * size * 0.52 }; } };
 
 test('new pattern variants cover all supported prints and expire their New badge after seven days', () => {
   const variants = patternTemplates.slice(6);
@@ -97,7 +98,7 @@ test('all templates fit sample data and dense data is explicitly rejected', () =
 });
 
 test('the existing collections are preserved alongside device-specific illustrated designs', () => {
-  assert.equal(wallpaperTemplates.length, 40 + patternTemplates.length + scenicTemplates.length + onepieceTemplates.length + onepieceAdventureTemplates.length + onepieceReferenceTemplates.length + 61);
+  assert.equal(wallpaperTemplates.length, 40 + patternTemplates.length + scenicTemplates.length + onepieceTemplates.length + onepieceAdventureTemplates.length + onepieceReferenceTemplates.length + sanrioTemplates.length + 61);
   assert.ok(wallpaperTemplates.filter(template => template.image && template.layout !== 'mascot')
     .every(template => ['mobile', 'tablet', 'laptop'].every(device => template.deviceImages?.[device])));
   assert.equal(new Set(wallpaperTemplates.map((template) => template.id)).size, wallpaperTemplates.length);

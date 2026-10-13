@@ -1,0 +1,27 @@
+{
+  "provider": "built-in image_gen",
+  "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-7d5ef1cd-83b3-4a79-b8ab-1825bb3a4062.png",
+  "assets": [
+    {
+      "device": "mobile",
+      "prompt": "Use case: illustration-story. Asset type: opaque mobile wallpaper1080x2400 portrait9:20. Input1 style/subject reference only. Create separately composed sleepy My Melody Dream: extremely soft almost white blush-pink background with faint white polka dots and pastel pink low contrast linework exactly matching reference's dreamy washed pink style. Closed-eye My Melody resting on small white cloud bed in lowest18%-22% of canvas, long floppy pink ears adorned with tiny striped and dotted bows and little heart accents, hands softly held near cheek. Small winged heart, crescent moons and stars in outer bottom corners; subtle pink rainbow arc touches bottom corner. Central upper and middle x8%-92%,y8%-77% remains empty ultra-pale dots for schedule. Subject fully intact, modest size, clear facial form. Full bleed opaque artwork only, no Zzz, letters, text, logo, UI, schedule, badges, watermark or device frame. Exact1080x2400.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a134ad-1172-7560-82b5-0e23f2fbdaad\\exec-623ec065-d9a8-4063-a0ba-c1145fe3884a.png",
+      "destination": "public/wallpapers/scenic/sanrio-melody-dream/mobile.png",
+      "createdAt": "2026-10-13T10:32:23.801Z"
+    },
+    {
+      "device": "tablet",
+      "prompt": "Use case: illustration-story. Asset type: opaque tablet portrait wallpaper1600x2560 aspect5:8. Input1 subject/style reference only. Independently compose dreamy sleeping My Melody wallpaper in extremely pale blush nearly white pink, faint white polka dots, gentle pastel pink linework and soft flat cute illustration matching reference. Sleeping closed-eye My Melody on a little cloud bed, floppy ears decorated striped bow on one ear and dotted bow on other with small hearts, hands nestled near cheek. Place intact character only in lowest20% of tablet canvas, toward left of center; tiny winged heart at bottom right, very subtle crescent moon/star motifs and soft rainbow arcs near bottom outer corners. Main schedule space x8%-92%,y7%-76% empty quiet almost-white blush dots. Recompose for tablet width, don't stretch or crop phone. Opaque full bleed artwork only. No Zzz, lettering,text,logos,watermarks,UI,timetables,badges,deviceframes. Exact1600x2560.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a134ad-1172-7560-82b5-0e23f2fbdaad\\exec-81fba655-1a0a-41ff-95f0-d6a2efb0928a.png",
+      "destination": "public/wallpapers/scenic/sanrio-melody-dream/tablet.png",
+      "createdAt": "2026-10-13T10:33:08.595Z"
+    },
+    {
+      "device": "laptop",
+      "prompt": "Use case: illustration-story. Asset type: opaque laptop schedule wallpaper1920x1080 wide16:9. Image1 style/subject reference only. Independently recompose sleeping My Melody Dream for horizontal wallpaper: extremely pale blush pink almost white flat background, very faint white polka dots, reference's washed soft pastel pink outlines. Place small intact sleeping My Melody resting on a white cloud bed in far LOWER RIGHT x82%-98%,y68%-96%; closed eyes, pink floppy ears with a striped bow and dotted bow and heart accents, hands cuddled by cheek. Very small winged heart in far lower left, sparse tiny moon/star/bow motifs at outer bottom edge, subtle pink rainbow arc touching a corner. Keep central x8%-80%,y8%-88% essentially blank pale pink dots for timetable, all decorative forms outside center. Subject recognizable, no cropping/stretched portrait art. Full bleed opaque artwork only, no Zzz, letters,text,logo,UI,schedule,badges,watermark,deviceframe. Exact1920x1080.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a134ad-1172-7560-82b5-0e23f2fbdaad\\exec-c1eb66d0-9a83-451a-8310-e7b761e212ee.png",
+      "destination": "public/wallpapers/scenic/sanrio-melody-dream/laptop.png",
+      "createdAt": "2026-10-13T10:34:00.407Z"
+    }
+  ]
+}

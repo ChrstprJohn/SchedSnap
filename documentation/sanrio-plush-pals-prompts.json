@@ -1,0 +1,27 @@
+{
+  "provider": "built-in image_gen",
+  "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-65ee8c4b-37ad-4f31-a54a-1429a9172825.png",
+  "assets": [
+    {
+      "device": "mobile",
+      "prompt": "Use case: illustration-story. Asset type: mobile full background schedule wallpaper. Recompose attached reference as clean opaque PNG exactly1080x2400 portrait9:20. Very pale near-white blush pink with subtle white polka dots and soft flat plush illustration. Top8% a faint pink striped scalloped curtain edged in white lace, centered small white ribbon bow. Bottom7% a pale pink gingham band with narrow white lace. At bottom center just above gingham, white plush Pochacco puppy with muted grey floppy ears lies beside white Hello Kitty plush with pale pink bow, both little paws visible. Fine grey dashed stitch outlines and pink blush, close fidelity to reference. Entire pair including ears and bow strictly within bottom22% of canvas, small enough not to touch central timetable zone. Uppermiddle70% quiet uninterrupted lowcontrast polkadot background. Newly compose for mobile. Artwork only no text, schedules, cards, UI, logos, watermark, cursor or device frames.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a134ad-661b-7883-ad4c-88a5fcd0cc96\\exec-1a67f341-2a64-4bad-a8eb-bd57829ea94f.png",
+      "destination": "public/wallpapers/scenic/sanrio-plush-pals/mobile.png",
+      "createdAt": "2026-10-13T10:33:01.680Z"
+    },
+    {
+      "device": "tablet",
+      "prompt": "Use case: illustration-story. Asset type: tablet full background schedule wallpaper. Recompose attached reference as separate clean opaque PNG exactly1600x2560 portrait5:8. Very pale near-white blush pink with subtle white polka dots, gentle lowcontrast soft flat plush illustration. Top7% faint pink striped scalloped curtain edged in white lace with centered small white ribbon bow. Bottom6% pale pink gingham band and narrow white lace. At bottom center directly above gingham, small white plush Pochacco puppy with muted grey floppy ears lying beside white Hello Kitty plush with pale pink bow, little paws visible; delicate dashed grey stitch outlines and pink blush match reference. Entire pair including ears and bow MUST remain strictly in bottom20% of tablet, use small broad pair occupying about55% width. Spacious uppermiddle72% quiet uninterrupted very pale polkadot field for schedule. New tablet composition, do not crop or stretch mobile. Artwork only no text, schedules, cards, UI, logos, watermark, cursor or frames.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a134ad-661b-7883-ad4c-88a5fcd0cc96\\exec-9bf1ccb4-462b-44d9-afa6-b33813c53a43.png",
+      "destination": "public/wallpapers/scenic/sanrio-plush-pals/tablet.png",
+      "createdAt": "2026-10-13T10:33:43.192Z"
+    },
+    {
+      "device": "laptop",
+      "prompt": "Use case: illustration-story. Asset type: laptop full background schedule wallpaper. Recompose attached reference as separate clean opaque PNG exactly1920x1080 landscape16:9. Very pale near-white blushpink subtle white polka dots; delicate lowcontrast flat plush illustration. Top8% faint pink striped scalloped curtain edge with white lace and a small centered white ribbon bow. Bottom7% pale pink gingham band and narrow white lace. At LOWER RIGHT only, small white plush Pochacco puppy with muted grey floppy ears lies beside white Hello Kitty plush with pale pink bow; both little paws visible, fine dashed grey stitch outlines, pink blush. Entire pair including ears/bow fits rightmost25% width and bottom22% height, directly above bottomgingham. Left75% and broad center remain quiet uninterrupted pale polkadot field for timetable. New wide composition, no crop/stretch of portrait. Match reference. Artwork only no text, schedules, cards, UI, logos, watermark, cursor or device frame.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a134ad-661b-7883-ad4c-88a5fcd0cc96\\exec-a9342330-1c2d-42a3-9b03-9f5f119a488d.png",
+      "destination": "public/wallpapers/scenic/sanrio-plush-pals/laptop.png",
+      "createdAt": "2026-10-13T10:34:27.826Z"
+    }
+  ]
+}

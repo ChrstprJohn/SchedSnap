@@ -1,6 +1,6 @@
 import { days } from '../../shared/scheduleSchema.js';
 import { mobileResolution } from '../assets/templates.js';
-import { colorInputValue, mascotPosition } from './wallpaperTheme.js';
+import { colorInputValue, mascotPosition, wallpaperFontScale } from './wallpaperTheme.js';
 import { drawParticles } from './wallpaperParticles.js';
 
 export function formatTime(value) {
@@ -70,11 +70,12 @@ export function layoutSchedule(ctx, schedule, template, height = 2400, options =
   const top = options.top ?? 760;
   const limit = options.limit ?? (template.layout === 'mascot' ? height - 660 : height - 150);
   let result;
-  for (let size = 42; size >= 28; size -= 2) {
+  for (let baseSize = 42; baseSize >= 28; baseSize -= 2) {
+    const size = baseSize * wallpaperFontScale(template);
     const subjectLineHeight = size * 1.2;
     const detailLineHeight = size * 0.65 * 1.25;
     const timeLineHeight = size * 0.65 * 1.3;
-    const detailGap = 6, entryGap = size >= 38 ? 20 : 8, groupGap = 16;
+    const detailGap = 6, entryGap = size >= 38 ? 20 : 8, groupGap = options.groupGap ?? 16;
     const cardPadding = size >= 38 ? 40 : 28;
     const codeGap = size >= 38 ? 4 : 2;
     const codeLineHeight = size * (size >= 38 ? 1.2 : 1.05), roomLineHeight = size * 0.8 * 1.25;
@@ -305,7 +306,7 @@ function drawScheduleCards(ctx, template, layout) {
     const badgeRadius = Math.min(plan.dayRadius, (plan.height - 28) / 2);
     ctx.beginPath(); ctx.arc(dayX, dayY, badgeRadius, 0, Math.PI * 2); ctx.fill(); ctx.restore();
     ctx.textAlign = 'center'; ctx.fillStyle = template.ink;
-    textFont((initialDays[plan.day].length > 1 ? 44 : 58) * badgeRadius / 65, 750);
+    textFont((initialDays[plan.day].length > 1 ? 44 : 58) * badgeRadius / 65 * wallpaperFontScale(template), 750);
     ctx.save();
     const dayLabel = initialDays[plan.day];
     ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
@@ -380,6 +381,11 @@ export function scheduleMovement(template, axis) {
   return Number.isFinite(value) ? Math.max(-100, Math.min(100, value)) : 0;
 }
 
+export function tabletBoxSpacing(template) {
+  const value = Number(template.tabletBoxSpacing ?? 40);
+  return Number.isFinite(value) ? Math.max(0, Math.min(100, value)) : 40;
+}
+
 function movementShift(position, before, after) {
   return position / 100 * Math.max(0, position < 0 ? before : after);
 }
@@ -432,8 +438,9 @@ function drawDeviceWallpaper(canvas, { schedule, template, resolution, backgroun
   const availableHeight = Math.min(height * (landscape ? footerCharacter ? 0.6 : 0.88 : hasCharacter ? 0.62 : 0.82), height * 0.965 - baseTop);
   const count = groupSchedule(schedule).length;
   const designWidth = 1400;
-  const layoutOptions = { top: 180, width: 1244, timeWidth: 310, roomWidth: 210, minCardHeight: 130 };
-  let scale = Math.min(columnWidth / designWidth, availableHeight / (240 + count * 146));
+  const groupGap = resolution.id === 'tablet' ? tabletBoxSpacing(template) : 16;
+  const layoutOptions = { top: 180, width: 1244, timeWidth: 310, roomWidth: 210, minCardHeight: 130, groupGap };
+  let scale = Math.min(columnWidth / designWidth, availableHeight / (240 + count * 146 + Math.max(0, count - 1) * (groupGap - 16)));
   const logicalHeight = availableHeight / scale;
   let layout = layoutSchedule(ctx, schedule, template, logicalHeight, { ...layoutOptions, limit: logicalHeight - 60 });
   if (layout.overflow) {

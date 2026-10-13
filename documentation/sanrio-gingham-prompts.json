@@ -1,0 +1,96 @@
+{
+  "provider": "built-in image_gen",
+  "assets": [
+    {
+      "id": "sanrio-gingham-strawberry",
+      "device": "mobile",
+      "prompt": "Use case: stylized-concept. Asset type: opaque full-bleed Sanrio class-schedule wallpaper, exactly 1080 x 2400 pixels portrait. Input image: style reference only. Create a NEW composition matching reference #4's pastel pink and white gingham, delicate thin warm brown outlines, flat soft Sanrio stationery illustration, authentic white Hello Kitty faces with three whiskers each side, black-brown oval eyes, little yellow nose, no mouth and pink bow at her left ear (viewer right), tiny pink bows, daisies with buttery yellow centers, strawberries and small hearts. Variant name: Strawberry Gingham. Main background very pale blush and white low-contrast gingham. Arrange charming sparse Kitty heads, strawberries, bows and daisies primarily as top and bottom borders and narrow side edge decorations. Leave the central 70% large, uninterrupted, extremely faint and quiet for a timetable overlay; no large character in central area. Preserve reference handdrawn flat softness and restrained colors, don't make 3D or glossy. Different arrangement than reference. Entire artwork only, no text, labels, logo, license line, watermark, timetable, dates, typography, UI or device frame. One single finished wallpaper, not a contact sheet. Exact portrait canvas 1080x2400.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133b2-fbf2-7071-8830-0bd2ac1e4851\\exec-0a5ec8f6-9cb4-44c5-9122-e9db25bfc3ba.png",
+      "width": 1080,
+      "height": 2400,
+      "output": "public/wallpapers/scenic/sanrio-gingham-strawberry/mobile.png",
+      "createdAt": "2026-10-13T05:33:39.663Z",
+      "creationTimeSource": "Generated source PNG last modification time in UTC"
+    },
+    {
+      "id": "sanrio-gingham-strawberry",
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "prompt": "Use case: stylized-concept. Asset type: opaque full-bleed Sanrio class-schedule wallpaper, exactly 1600 x 2560 pixels portrait tablet. Input image: style reference only. Create a NEW composition matching reference #4's pastel pink and white gingham, delicate thin warm brown outlines, flat soft Sanrio stationery illustration, authentic white Hello Kitty faces with three whiskers each side, black-brown oval eyes, little yellow nose, no mouth and pink bow at her left ear (viewer right), tiny pink bows, daisies with buttery yellow centers, strawberries and small hearts. Variant name: Strawberry Gingham. Main background very pale blush and white low-contrast gingham. Arrange charming sparse Kitty heads, strawberries, bows and daisies primarily as top and bottom borders and narrow side edge decorations. Leave the central 70% large, uninterrupted, extremely faint and quiet for a timetable overlay; no large character in central area. Preserve reference handdrawn flat softness and restrained colors, don't make 3D or glossy. Different arrangement than reference. Entire artwork only, no text, labels, logo, license line, watermark, timetable, dates, typography, UI or device frame. One single finished wallpaper, not a contact sheet. Exact tablet portrait canvas 1600x2560. Adapt the arrangement to the wider tablet: a pair of small Kitty heads in the two upper corners, tiny bows and strawberries along the outer edges, a few Kitty heads along the lower border; broad central blank region. This is a dedicated tablet composition of the same Strawberry Gingham variant.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133b2-fbf2-7071-8830-0bd2ac1e4851\\exec-e2bfe58a-c4e7-4d08-8435-bad38f8a411e.png",
+      "output": "public/wallpapers/scenic/sanrio-gingham-strawberry/tablet.png",
+      "createdAt": "2026-10-13T05:37:30.459Z"
+    },
+    {
+      "id": "sanrio-gingham-strawberry",
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "prompt": "Use case: stylized-concept. Asset type: Sanrio schedule wallpaper, opaque full bleed PNG, exactly 1920x1080 pixels. Input images are artistic style references; create a fresh device composition, preserving corresponding variant palette and character forms. Strawberry Gingham: rosy pink and white checks with Hello Kitty faces, strawberries, daisies, pink bows and tiny hearts. Same palette and flat brown outlines as the supplied generated mobile. LANDSCAPE: independently composed wide 16:9 wallpaper. Motifs along left and right margins and the lower corners, very slim top border, central 70% clear faint gingham. Wide quiet space suitable for five-day timetable. Four tiny Kitty faces distributed near corners, complete intact ears, bows and whiskers. Hello Kitty must have authentic white face, three fine whiskers each side, little brown oval eyes, yellow nose, NO mouth, bow on her left ear (viewer right). Delicate flat handdrawn pastel stationery, no 3D, no gloss or heavy outlines. Soft low contrast gingham, sparse recognizable edge decorations, ample negative space. Artwork only: NO text, labels, logos, watermark, timetable, dates, UI or device frames. One single wallpaper, no collage or grid. Exact 1920x1080 canvas.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133b2-fbf2-7071-8830-0bd2ac1e4851\\exec-1dcef0bc-599c-4c09-b631-169414a9c6cc.png",
+      "output": "public/wallpapers/scenic/sanrio-gingham-strawberry/laptop.png",
+      "createdAt": "2026-10-13T05:38:19.833Z"
+    },
+    {
+      "id": "sanrio-gingham-ribbon",
+      "device": "mobile",
+      "width": 1080,
+      "height": 2400,
+      "prompt": "Use case: stylized-concept. Asset type: Sanrio schedule wallpaper, opaque full bleed PNG, exactly 1080x2400 pixels. Input images are artistic style references; create a fresh device composition, preserving corresponding variant palette and character forms. Ribbon Gingham: palest blush pink and ivory gingham, prominent small pairs of pink ribbon bows and tiny hearts with a few smaller Hello Kitty heads and tiny white daisies, a couple strawberries. Distinct bow-dominant arrangement, softly dusty rose bows with simple warm brown outlines, inspired by reference #4. TALL PORTRAIT MOBILE: small Kitty heads at top and bottom corners, tiny motifs along narrow side margins, central 70% quiet. Hello Kitty must have authentic white face, three fine whiskers each side, little brown oval eyes, yellow nose, NO mouth, bow on her left ear (viewer right). Delicate flat handdrawn pastel stationery, no 3D, no gloss or heavy outlines. Soft low contrast gingham, sparse recognizable edge decorations, ample negative space. Artwork only: NO text, labels, logos, watermark, timetable, dates, UI or device frames. One single wallpaper, no collage or grid. Exact 1080x2400 canvas.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133b2-fbf2-7071-8830-0bd2ac1e4851\\exec-58fe89b6-02ea-4237-9a3b-7b8ddc05495e.png",
+      "output": "public/wallpapers/scenic/sanrio-gingham-ribbon/mobile.png",
+      "createdAt": "2026-10-13T05:40:01.218Z"
+    },
+    {
+      "id": "sanrio-gingham-ribbon",
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "prompt": "Use case: stylized-concept. Asset type: Sanrio schedule wallpaper, opaque full bleed PNG, exactly 1600x2560 pixels. Input images are artistic style references; create a fresh device composition, preserving corresponding variant palette and character forms. Ribbon Gingham: palest blush pink and ivory gingham, prominent small pairs of pink ribbon bows and tiny hearts with a few smaller Hello Kitty heads and tiny white daisies, a couple strawberries. Distinct bow-dominant arrangement, softly dusty rose bows with simple warm brown outlines, inspired by reference #4. PORTRAIT TABLET: independently composed wider portrait layout; small Kitty heads at upper and lower corners, tiny bows and motifs along narrow side margins. Central 70% quiet. Hello Kitty must have authentic white face, three fine whiskers each side, little brown oval eyes, yellow nose, NO mouth, bow on her left ear (viewer right). Delicate flat handdrawn pastel stationery, no 3D, no gloss or heavy outlines. Soft low contrast gingham, sparse recognizable edge decorations, ample negative space. Artwork only: NO text, labels, logos, watermark, timetable, dates, UI or device frames. One single wallpaper, no collage or grid. Exact 1600x2560 canvas.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133b2-fbf2-7071-8830-0bd2ac1e4851\\exec-a6f10112-3556-4f9e-8c99-0f36a483f848.png",
+      "output": "public/wallpapers/scenic/sanrio-gingham-ribbon/tablet.png",
+      "createdAt": "2026-10-13T05:40:54.620Z"
+    },
+    {
+      "id": "sanrio-gingham-ribbon",
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "prompt": "Use case: stylized-concept. Asset type: Sanrio schedule wallpaper, opaque full bleed PNG, exactly 1920x1080 pixels. Input images are artistic style references; create a fresh device composition, preserving corresponding variant palette and character forms. Ribbon Gingham: palest blush pink and ivory gingham, prominent small pairs of pink ribbon bows and tiny hearts with a few smaller Hello Kitty heads and tiny white daisies, a couple strawberries. Distinct bow-dominant arrangement, softly dusty rose bows with simple warm brown outlines, inspired by reference #4. LANDSCAPE: independently composed wide 16:9 wallpaper. Motifs along left and right margins and the lower corners, very slim top border, central 70% clear faint gingham. Wide quiet space suitable for five-day timetable. Four tiny Kitty faces distributed near corners, complete intact ears, bows and whiskers. Hello Kitty must have authentic white face, three fine whiskers each side, little brown oval eyes, yellow nose, NO mouth, bow on her left ear (viewer right). Delicate flat handdrawn pastel stationery, no 3D, no gloss or heavy outlines. Soft low contrast gingham, sparse recognizable edge decorations, ample negative space. Artwork only: NO text, labels, logos, watermark, timetable, dates, UI or device frames. One single wallpaper, no collage or grid. Exact 1920x1080 canvas.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133b2-fbf2-7071-8830-0bd2ac1e4851\\exec-cb8a4145-2690-429b-a3a7-085eca01a203.png",
+      "output": "public/wallpapers/scenic/sanrio-gingham-ribbon/laptop.png",
+      "createdAt": "2026-10-13T05:41:47.394Z"
+    },
+    {
+      "id": "sanrio-gingham-daisy",
+      "device": "mobile",
+      "width": 1080,
+      "height": 2400,
+      "prompt": "Use case: stylized-concept. Asset type: Sanrio schedule wallpaper, opaque full bleed PNG, exactly 1080x2400 pixels. Input images are artistic style references; create a fresh device composition, preserving corresponding variant palette and character forms. Daisy Gingham: extremely pale strawberry-milk pink and warm white gingham, small Hello Kitty heads with soft pink bows and abundant little white daisies with butter yellow centers, tiny pink hearts and a few strawberries. Distinct flower-dominant arrangement, same flat thin warm brown outlines and washed pastel style as reference #4. TALL PORTRAIT MOBILE: small Kitty heads at top and bottom corners, tiny motifs along narrow side margins, central 70% quiet. Hello Kitty must have authentic white face, three fine whiskers each side, little brown oval eyes, yellow nose, NO mouth, bow on her left ear (viewer right). Delicate flat handdrawn pastel stationery, no 3D, no gloss or heavy outlines. Soft low contrast gingham, sparse recognizable edge decorations, ample negative space. Artwork only: NO text, labels, logos, watermark, timetable, dates, UI or device frames. One single wallpaper, no collage or grid. Exact 1080x2400 canvas.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133b2-fbf2-7071-8830-0bd2ac1e4851\\exec-2f81d430-5a5e-4942-86e8-3465a0f3a97a.png",
+      "output": "public/wallpapers/scenic/sanrio-gingham-daisy/mobile.png",
+      "createdAt": "2026-10-13T05:42:12.974Z"
+    },
+    {
+      "id": "sanrio-gingham-daisy",
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "prompt": "Use case: stylized-concept. Asset type: Sanrio schedule wallpaper, opaque full bleed PNG, exactly 1600x2560 pixels. Input images are artistic style references; create a fresh device composition, preserving corresponding variant palette and character forms. Daisy Gingham: extremely pale strawberry-milk pink and warm white gingham, small Hello Kitty heads with soft pink bows and abundant little white daisies with butter yellow centers, tiny pink hearts and a few strawberries. Distinct flower-dominant arrangement, same flat thin warm brown outlines and washed pastel style as reference #4. PORTRAIT TABLET: independently composed wider portrait layout; small Kitty heads at upper and lower corners, tiny bows and motifs along narrow side margins. Central 70% quiet. Hello Kitty must have authentic white face, three fine whiskers each side, little brown oval eyes, yellow nose, NO mouth, bow on her left ear (viewer right). Delicate flat handdrawn pastel stationery, no 3D, no gloss or heavy outlines. Soft low contrast gingham, sparse recognizable edge decorations, ample negative space. Artwork only: NO text, labels, logos, watermark, timetable, dates, UI or device frames. One single wallpaper, no collage or grid. Exact 1600x2560 canvas.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133b2-fbf2-7071-8830-0bd2ac1e4851\\exec-32d14080-740e-41a7-bdfd-d9ddbc93b81c.png",
+      "output": "public/wallpapers/scenic/sanrio-gingham-daisy/tablet.png",
+      "createdAt": "2026-10-13T05:43:04.813Z"
+    },
+    {
+      "id": "sanrio-gingham-daisy",
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "prompt": "Use case: stylized-concept. Asset type: Sanrio schedule wallpaper, opaque full bleed PNG, exactly 1920x1080 pixels. Input images are artistic style references; create a fresh device composition, preserving corresponding variant palette and character forms. Daisy Gingham: extremely pale strawberry-milk pink and warm white gingham, small Hello Kitty heads with soft pink bows and abundant little white daisies with butter yellow centers, tiny pink hearts and a few strawberries. Distinct flower-dominant arrangement, same flat thin warm brown outlines and washed pastel style as reference #4. LANDSCAPE: independently composed wide 16:9 wallpaper. Motifs along left and right margins and the lower corners, very slim top border, central 70% clear faint gingham. Wide quiet space suitable for five-day timetable. Four tiny Kitty faces distributed near corners, complete intact ears, bows and whiskers. Hello Kitty must have authentic white face, three fine whiskers each side, little brown oval eyes, yellow nose, NO mouth, bow on her left ear (viewer right). Delicate flat handdrawn pastel stationery, no 3D, no gloss or heavy outlines. Soft low contrast gingham, sparse recognizable edge decorations, ample negative space. Artwork only: NO text, labels, logos, watermark, timetable, dates, UI or device frames. One single wallpaper, no collage or grid. Exact 1920x1080 canvas.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133b2-fbf2-7071-8830-0bd2ac1e4851\\exec-6e69486d-4177-40df-8ff6-cb562a5000e7.png",
+      "output": "public/wallpapers/scenic/sanrio-gingham-daisy/laptop.png",
+      "createdAt": "2026-10-13T05:43:42.425Z"
+    }
+  ]
+}

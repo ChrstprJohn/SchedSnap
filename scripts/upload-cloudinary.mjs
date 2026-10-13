@@ -32,8 +32,33 @@ if (existsSync(pendingManifest)) {
 const packManifests = uploadPacks ? await Promise.all(packNames.map(async name => ({ name,
   data: JSON.parse(await readFile(resolve(root, 'public/images', name, 'manifest.json'), 'utf8')),
 }))) : [];
-const paths = [...new Set(uploadPacks ? packManifests.flatMap(({ data }) => data.assets.map(asset => asset.master))
-  : wallpaperTemplates.flatMap((template) => [template.image, ...Object.values(template.deviceImages || {})].filter(Boolean)))].sort();
+const artworkManifestIndex = process.argv.indexOf('--artwork-manifest');
+let scopedPaths;
+if (artworkManifestIndex !== -1) {
+  if (uploadPacks) throw new Error('Use either --artwork-manifest or --mascot-packs.');
+  const manifestFile = process.argv[artworkManifestIndex + 1];
+  if (!manifestFile || manifestFile.startsWith('--')) throw new Error('Pass a verified artwork manifest after --artwork-manifest.');
+  const artwork = JSON.parse(await readFile(resolve(root, manifestFile), 'utf8'));
+  if (!Array.isArray(artwork.assets) || !artwork.assets.length) throw new Error('Artwork manifest must contain assets.');
+  scopedPaths = [];
+  for (const asset of artwork.assets) {
+    if (!/^public\/wallpapers\/scenic\/[a-z0-9-]+\/(mobile|tablet|laptop)\.png$/.test(asset.path)
+      || !asset.dimensionsValid || !asset.opaque || !/^[a-f0-9]{64}$/.test(asset.sha256)) {
+      throw new Error('Artwork manifest contains an unverified or unexpected background.');
+    }
+    const bytes = await readFile(resolve(root, asset.path));
+    const expected = { mobile: [1080, 2400], tablet: [1600, 2560], laptop: [1920, 1080] }[asset.path.split('/').at(-1).slice(0, -4)];
+    if (createHash('sha256').update(bytes).digest('hex') !== asset.sha256
+      || bytes.subarray(0, 8).toString('hex') !== '89504e470d0a1a0a'
+      || bytes.readUInt32BE(16) !== expected[0] || bytes.readUInt32BE(20) !== expected[1]) {
+      throw new Error(`Artwork changed or has invalid dimensions: ${asset.path}`);
+    }
+    scopedPaths.push('/' + asset.path.slice('public/'.length));
+  }
+  if (new Set(scopedPaths).size !== scopedPaths.length) throw new Error('Artwork manifest contains duplicate paths.');
+}
+const paths = [...new Set(scopedPaths || (uploadPacks ? packManifests.flatMap(({ data }) => data.assets.map(asset => asset.master))
+  : wallpaperTemplates.flatMap((template) => [template.image, ...Object.values(template.deviceImages || {})].filter(Boolean))))].sort();
 const dryRun = process.argv.includes('--dry-run');
 let uploaded = 0;
 let manifestWrites = Promise.resolve();

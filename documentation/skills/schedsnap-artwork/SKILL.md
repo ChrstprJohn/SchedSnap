@@ -110,6 +110,12 @@ node scripts/upload-cloudinary.mjs --mascot-packs
 # Images referenced by wallpaperTemplates: backgrounds and character references.
 node scripts/upload-cloudinary.mjs --dry-run
 node scripts/upload-cloudinary.mjs
+
+# Upload only backgrounds listed in a verified inspection manifest.
+# Entries require public/wallpapers/scenic/<id>/<device>.png paths,
+# opaque/dimensionsValid flags and a SHA256 matching current PNG bytes.
+node scripts/upload-cloudinary.mjs --artwork-manifest output/sanrio/manifest.json --dry-run
+node scripts/upload-cloudinary.mjs --artwork-manifest output/sanrio/manifest.json
 ```
 
 Choose the appropriate pair; both are resumable. Existing content-hashed IDs are skipped. A dry run still requires configuration and reads local files, but does not upload. The uploader uses multipart `FormData`, a signed timestamp, `overwrite: false`, and four concurrent requests. IDs look like `schedsnap/images/doodle-mascots/masters/capybara-tea-<16-character-content-hash>` or `schedsnap/wallpapers/scenic/tea-garden/mobile-<hash>`.

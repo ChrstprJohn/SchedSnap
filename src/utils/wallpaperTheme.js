@@ -9,7 +9,22 @@ export const wallpaperFonts = [
   { value: 'Lato', label: 'Lato' },
   { value: 'DM Serif Display', label: 'DM Serif Display' },
   { value: 'Georgia', label: 'Georgia' },
+  { value: 'Quicksand', label: 'Quicksand · rounded' },
+  { value: 'Nunito', label: 'Nunito · soft' },
+  { value: 'Itim', label: 'Itim · handwritten' },
+  { value: 'Fredoka', label: 'Fredoka · playful' },
+  { value: 'Baloo 2', label: 'Baloo 2 · bubbly' },
+  { value: 'Patrick Hand', label: 'Patrick Hand · handwritten' },
 ];
+
+export function wallpaperFontScale(template) {
+  const value = Number(template.fontScale ?? 1);
+  return Number.isFinite(value) ? Math.min(1.6, Math.max(1, value)) : 1;
+}
+
+export function snapSchedulePosition(value, dragging = false, defaultValue = 0) {
+  return dragging && Math.abs(value - defaultValue) <= 5 ? defaultValue : value;
+}
 
 export function mascotPosition(template) {
   return ['left', 'center', 'right'].includes(template.mascotPosition) ? template.mascotPosition : template.mascotSide === 'right' ? 'right' : 'left';
@@ -23,11 +38,12 @@ export function galleryPreviewTemplate(template) {
 
 export function customizeWallpaperTemplate(template, settings = {}, device = template?.device) {
   if (!template) return template;
-  const tabletPortrait = device === 'tablet' && (settings.orientation || template.orientation) !== 'landscape';
+  const tabletPortrait = device === 'tablet';
   if (!tabletPortrait && !Object.keys(settings).length) return template;
-  const defaults = tabletPortrait ? { schedulePosition: 'center', containerStyle: 'glass' } : {};
+  const defaults = tabletPortrait ? { schedulePosition: 'center', containerStyle: 'glass', tabletBoxSpacing: 40 } : {};
   // Device defaults precede the user's explicit appearance choices.
   const customized = { ...template, ...defaults, ...settings };
+  if (tabletPortrait) customized.orientation = 'portrait';
   if (settings.ink) customized.muted = settings.ink;
   // Full wallpaper artwork is fixed; animal cutouts and native patterns are separate.
   if (template.image && template.layout !== 'mascot') {

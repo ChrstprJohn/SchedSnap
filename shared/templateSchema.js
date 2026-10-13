@@ -1,13 +1,13 @@
 import { z } from 'zod';
-import { generatedMasterUrl } from './generatedArtwork.js';
+import { generatedMasterUrl, generatedBackgroundUrl } from './generatedArtwork.js';
 const color = z.string().max(60).regex(/^(#[a-f0-9]{3,8}|rgba?\([\d.,%\s]+\))$/i);
-const artwork = z.string().max(500).refine(value => /^\/wallpapers\/[a-z0-9/_.-]+$/i.test(value) || /^\/images\/(mascots|pixel-mascots|goofy-mascots|doodle-mascots)\/masters\/[a-z0-9_-]+\.png$/i.test(value) || generatedMasterUrl.test(value) || /^https:\/\/res\.cloudinary\.com\/[a-z0-9_-]+\/image\/upload\/(?:v\d+\/)?schedsnap\/admin\/artwork\/[a-z0-9_-]+\.(png|jpg|webp)$/i.test(value), 'Use uploaded artwork.');
+const artwork = z.string().max(500).refine(value => /^\/wallpapers\/[a-z0-9/_.-]+$/i.test(value) || /^\/images\/(mascots|pixel-mascots|goofy-mascots|doodle-mascots)\/masters\/[a-z0-9_-]+\.png$/i.test(value) || generatedMasterUrl.test(value) || generatedBackgroundUrl.test(value) || /^https:\/\/res\.cloudinary\.com\/[a-z0-9_-]+\/image\/upload\/(?:v\d+\/)?schedsnap\/admin\/artwork\/[a-z0-9_-]+\.(png|jpg|webp)$/i.test(value), 'Use uploaded artwork.');
 export const templateSchema = z.object({
   id: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).max(80),
   name: z.string().trim().min(1, 'Enter a title for this design.').max(80), description: z.string().max(240).optional(),
   status: z.enum(['draft', 'published', 'hidden']),
   createdAt: z.iso.datetime().optional(), publishedAt: z.iso.datetime().optional(),
-  collection: z.enum(['scenic', 'onepiece', 'mascot', 'little-friends', 'pattern', 'original']).optional(),
+  collection: z.enum(['scenic', 'sanrio', 'onepiece', 'mascot', 'little-friends', 'pattern', 'original']).optional(),
   family: z.string().max(80).optional(),
   background: color, ink: color, muted: color, surface: color, line: color,
   image: artwork.optional(), deviceImages: z.object({ mobile: artwork.optional(), tablet: artwork.optional(), laptop: artwork.optional() }).optional(),
@@ -17,9 +17,11 @@ export const templateSchema = z.object({
   edition: z.union([z.number(), z.string().max(30)]).optional(),
   pattern: z.enum(['checker', 'grid', 'ruled', 'circle', 'dots', 'stripes', 'diamonds', 'waves', 'frame']).optional(),
   patternColor: color.optional(), gradient: z.array(color).min(2).max(6).optional(), overlay: color.optional(),
-  fontFamily: z.enum(['DM Sans Variable', 'Geist Variable', 'Poppins', 'Inter Variable', 'Roboto Variable', 'Open Sans Variable', 'Montserrat Variable', 'Lato', 'DM Serif Display', 'Georgia']).optional(),
+  fontFamily: z.enum(['DM Sans Variable', 'Geist Variable', 'Poppins', 'Inter Variable', 'Roboto Variable', 'Open Sans Variable', 'Montserrat Variable', 'Lato', 'DM Serif Display', 'Georgia', 'Quicksand', 'Nunito', 'Itim', 'Fredoka', 'Baloo 2', 'Patrick Hand']).optional(),
+  fontScale: z.number().min(1).max(1.6).optional(),
   containerStyle: z.enum(['glass', 'solid']).optional(), containerShape: z.enum(['pill', 'rounded']).optional(),
   containerFill: z.boolean().optional(), containerBorder: z.boolean().optional(), showSeparators: z.boolean().optional(),
+  tabletBoxSpacing: z.number().min(0).max(100).optional(),
   schedulePosition: z.enum(['left', 'center', 'right']).optional(), orientation: z.enum(['portrait', 'landscape']).optional(),
   topMargin: z.number().min(0).max(20).optional(), bottomMargin: z.number().min(0).max(20).optional(),
   leftMargin: z.number().min(0).max(20).optional(), rightMargin: z.number().min(0).max(20).optional(),
