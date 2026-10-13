@@ -18,8 +18,8 @@ const sizes = { mobile: [1080, 2400], tablet: [1600, 2560], laptop: [1920, 1080]
 // This publisher only appends missing Sanrio IDs. Existing records are copied
 // untouched, including administrator replacements and all immutable dates.
 export async function preparePublication(catalog, cloud, now = new Date().toISOString()) {
-  if (sanrioTemplates.length !== 12 || new Set(sanrioTemplates.map(t => t.id)).size !== 12) {
-    throw new Error('Expected exactly 12 unique Sanrio definitions.');
+  if (!sanrioTemplates.length || new Set(sanrioTemplates.map(t => t.id)).size !== sanrioTemplates.length) {
+    throw new Error('Expected unique Sanrio definitions.');
   }
   const existing = new Set(catalog.templates.map(t => t.id));
   const additions = [];
@@ -43,7 +43,12 @@ export async function preparePublication(catalog, cloud, now = new Date().toISOS
         && uploaded.url?.startsWith(`https://res.cloudinary.com/${cloud}/image/upload/`));
       uploads.push({ path, sha256, dimensions, uploaded: valid });
     }
-    if (!existing.has(candidate.id)) additions.push(candidate);
+    if (!existing.has(candidate.id)) {
+      // Immutable delivery URLs work in already-deployed clients as well as
+      // local previews; each one was verified against its exact source above.
+      const deviceImages = Object.fromEntries(Object.entries(candidate.deviceImages).map(([device, path]) => [device, manifest[path]?.url || path]));
+      additions.push(templateSchema.parse({ ...candidate, image: deviceImages.mobile, deviceImages }));
+    }
   }
   const proposed = { ...catalog, templates: [...additions, ...catalog.templates] };
   const review = {
@@ -73,13 +78,13 @@ async function main() {
   const output = resolve(root, 'output/sanrio');
   await mkdir(output, { recursive: true });
   await writeFile(resolve(output, 'publication-review.json'), JSON.stringify(review, null, 2) + '\n');
-  console.log(`Sanrio review: ${review.existingCount} preserved, ${review.additions.length} additions, ${review.pendingUploadCount}/36 uploads pending.`);
+  console.log(`Sanrio review: ${review.existingCount} preserved, ${review.additions.length} additions, ${review.pendingUploadCount}/${review.uploads.length} uploads pending.`);
   console.log(`Catalog revision: ${review.revision}; shared Cloudinary catalog. Review saved to output/sanrio/publication-review.json.`);
   if (!publish) return;
   const index = args.indexOf('--expect-revision');
   if (index < 0 || args[index + 1] !== catalog.revision) throw new Error('Publication requires --expect-revision matching the reviewed catalog revision.');
   if (review.pendingUploadCount) throw new Error('Upload every current device asset before publication.');
-  if (!review.additions.length) { console.log('All 12 Sanrio IDs already exist; no write performed.'); return; }
+  if (!review.additions.length) { console.log('All Sanrio IDs already exist; no write performed.'); return; }
   const latest = await store.read(true);
   if (latest.revision !== catalog.revision || digest(latest.templates) !== digest(catalog.templates)
     || digest(latest.categories) !== digest(catalog.categories)) throw new Error('Catalog changed since review; rerun the dry run.');

@@ -1,0 +1,65 @@
+{
+  "design": "sanrio-melody-lace",
+  "provider": "built-in image_gen",
+  "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-14174bb8-8978-469c-9877-9d2edeeb3a07.png",
+  "generatedAt": "2026-10-13 09:55:28 UTC",
+  "normalization": "Proportional sharp resize with contain to exact device dimensions, no crop/stretch; maximum 1px background padding caused by generator aspect rounding.",
+  "variants": [
+    {
+      "device": "mobile",
+      "width": 1080,
+      "height": 2400,
+      "source": "C:/Users/Administrator/.codex/generated_images/01a134ad-3be9-7182-b4d8-37fe4918b58d/exec-32544c03-7f72-41f9-ab74-c939ee4fdc7d.png",
+      "prompt": "Generate a new opaque fullbleed Sanrio My Melody schedule wallpaper, using the attached image as a visual reference only. Exact canvas 1080 x 2400 pixels, aspect ratio 9:20 portrait. Pale blush pink background with evenly spaced soft white polka dots. Delicate white scalloped eyelet lace border along the top and bottom edges, pink tiny stitching, like the reference. Small complete My Melody rabbit with pink hood, long ears, tiny white flower bow, white face, gentle expression and a little pink dress placed in the lower right, full body intact with comfortable edge margin, taking only the bottom 18% of the image. Rest of upper-middle remains uninterrupted low-contrast pink dots for a timetable overlay. Flat cute softly outlined pastel illustration, close visual palette to reference. Artwork only. No writing, text, timetable, boxes, UI, labels, logo, watermark, black circular screenshot symbol, device frame or collage. Generate a properly recomposed portrait wallpaper, not an enlarged screenshot. No transparency.",
+      "output": "public/wallpapers/scenic/sanrio-melody-lace/mobile.png"
+    },
+    {
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "source": "C:/Users/Administrator/.codex/generated_images/01a134ad-3be9-7182-b4d8-37fe4918b58d/exec-59f6e2ef-f919-4a85-82e7-2f577c926110.png",
+      "prompt": "Generate a new opaque fullbleed Sanrio My Melody schedule wallpaper, using the attached image as a visual reference only. Exact canvas 1600 x 2560 pixels, aspect ratio 5:8 portrait tablet. Pale blush pink background with evenly spaced soft white polka dots. Delicate white scalloped eyelet lace border along the top and bottom edges, tiny pink stitching, like the reference. A small complete My Melody rabbit with pink hood, long ears, tiny white flower bow, white face, gentle expression and pink dress sits in the bottom right, full body intact with comfortable edge margins, confined to lower 18% of canvas. Broad upper-middle remains uninterrupted low-contrast pink dots for a five-day tablet schedule overlay. Flat cute softly outlined pastel illustration close to reference palette. Artwork only. No writing, text, timetable, boxes, UI, labels, logo, watermark, black circular screenshot symbol, device frame or collage. Independently compose for tablet portrait; do not stretch the reference phone layout. No transparency.",
+      "output": "public/wallpapers/scenic/sanrio-melody-lace/tablet.png"
+    },
+    {
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "source": "C:/Users/Administrator/.codex/generated_images/01a134ad-3be9-7182-b4d8-37fe4918b58d/exec-784edb69-9b30-4dcd-aa41-2607df55862d.png",
+      "prompt": "Generate a new opaque fullbleed Sanrio My Melody schedule wallpaper, using attached image as a visual reference only. Exact canvas 1920 x 1080 pixels, aspect ratio 16:9 horizontal laptop. Pale blush pink background with evenly spaced soft white polka dots. A delicate narrow white scalloped eyelet lace border runs along the top and bottom edges with pink tiny stitching. Small complete My Melody rabbit with pink hood, long ears, white flower bow, white face, gentle expression and pink dress placed in far lower right, entire body intact and comfortable edge margin, character occupying only lower-right outer 15% width and lower 28% height. The entire center and left 80% width and upper-middle remain low contrast uninterrupted dots so a dense horizontal schedule can overlay. Flat cute softly outlined pastel illustration close visual palette to reference. Independently recompose horizontally, do not stretch or crop the portrait reference. Artwork only: no writing, text, timetable, boxes, UI, labels, logo, watermark, black circular screenshot symbol, device frame or collage. No transparency.",
+      "output": "public/wallpapers/scenic/sanrio-melody-lace/laptop.png"
+    }
+  ],
+  "assets": [
+    {
+      "device": "mobile",
+      "width": 1080,
+      "height": 2400,
+      "source": "C:/Users/Administrator/.codex/generated_images/01a134ad-3be9-7182-b4d8-37fe4918b58d/exec-32544c03-7f72-41f9-ab74-c939ee4fdc7d.png",
+      "prompt": "Generate a new opaque fullbleed Sanrio My Melody schedule wallpaper, using the attached image as a visual reference only. Exact canvas 1080 x 2400 pixels, aspect ratio 9:20 portrait. Pale blush pink background with evenly spaced soft white polka dots. Delicate white scalloped eyelet lace border along the top and bottom edges, pink tiny stitching, like the reference. Small complete My Melody rabbit with pink hood, long ears, tiny white flower bow, white face, gentle expression and a little pink dress placed in the lower right, full body intact with comfortable edge margin, taking only the bottom 18% of the image. Rest of upper-middle remains uninterrupted low-contrast pink dots for a timetable overlay. Flat cute softly outlined pastel illustration, close visual palette to reference. Artwork only. No writing, text, timetable, boxes, UI, labels, logo, watermark, black circular screenshot symbol, device frame or collage. Generate a properly recomposed portrait wallpaper, not an enlarged screenshot. No transparency.",
+      "output": "public/wallpapers/scenic/sanrio-melody-lace/mobile.png",
+      "destination": "public/wallpapers/scenic/sanrio-melody-lace/mobile.png",
+      "createdAt": "2026-10-13T09:53:11.882Z"
+    },
+    {
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "source": "C:/Users/Administrator/.codex/generated_images/01a134ad-3be9-7182-b4d8-37fe4918b58d/exec-59f6e2ef-f919-4a85-82e7-2f577c926110.png",
+      "prompt": "Generate a new opaque fullbleed Sanrio My Melody schedule wallpaper, using the attached image as a visual reference only. Exact canvas 1600 x 2560 pixels, aspect ratio 5:8 portrait tablet. Pale blush pink background with evenly spaced soft white polka dots. Delicate white scalloped eyelet lace border along the top and bottom edges, tiny pink stitching, like the reference. A small complete My Melody rabbit with pink hood, long ears, tiny white flower bow, white face, gentle expression and pink dress sits in the bottom right, full body intact with comfortable edge margins, confined to lower 18% of canvas. Broad upper-middle remains uninterrupted low-contrast pink dots for a five-day tablet schedule overlay. Flat cute softly outlined pastel illustration close to reference palette. Artwork only. No writing, text, timetable, boxes, UI, labels, logo, watermark, black circular screenshot symbol, device frame or collage. Independently compose for tablet portrait; do not stretch the reference phone layout. No transparency.",
+      "output": "public/wallpapers/scenic/sanrio-melody-lace/tablet.png",
+      "destination": "public/wallpapers/scenic/sanrio-melody-lace/tablet.png",
+      "createdAt": "2026-10-13T09:53:53.536Z"
+    },
+    {
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "source": "C:/Users/Administrator/.codex/generated_images/01a134ad-3be9-7182-b4d8-37fe4918b58d/exec-784edb69-9b30-4dcd-aa41-2607df55862d.png",
+      "prompt": "Generate a new opaque fullbleed Sanrio My Melody schedule wallpaper, using attached image as a visual reference only. Exact canvas 1920 x 1080 pixels, aspect ratio 16:9 horizontal laptop. Pale blush pink background with evenly spaced soft white polka dots. A delicate narrow white scalloped eyelet lace border runs along the top and bottom edges with pink tiny stitching. Small complete My Melody rabbit with pink hood, long ears, white flower bow, white face, gentle expression and pink dress placed in far lower right, entire body intact and comfortable edge margin, character occupying only lower-right outer 15% width and lower 28% height. The entire center and left 80% width and upper-middle remain low contrast uninterrupted dots so a dense horizontal schedule can overlay. Flat cute softly outlined pastel illustration close visual palette to reference. Independently recompose horizontally, do not stretch or crop the portrait reference. Artwork only: no writing, text, timetable, boxes, UI, labels, logo, watermark, black circular screenshot symbol, device frame or collage. No transparency.",
+      "output": "public/wallpapers/scenic/sanrio-melody-lace/laptop.png",
+      "destination": "public/wallpapers/scenic/sanrio-melody-lace/laptop.png",
+      "createdAt": "2026-10-13T09:54:32.796Z"
+    }
+  ]
+}

@@ -10,12 +10,13 @@ for (const path of ['.env.local', '.env']) {
 const store = createCatalogStore(process.env);
 const before = await store.read(true);
 const ids = new Set(sanrioTemplates.map(t => t.id));
-assert.equal(before.templates.filter(t => ids.has(t.id)).length, 12);
+const count = before.templates.filter(t => ids.has(t.id)).length;
+assert.ok(count > 0);
 const templates = before.templates.map(t => ids.has(t.id) ? templateSchema.parse({ ...t, containerFill: false }) : t);
 // Keep all original fields and dates; schema validation must never strip data.
 for (let i = 0; i < templates.length; i++) assert.deepEqual(templates[i], ids.has(before.templates[i].id) ? { ...before.templates[i], containerFill: false } : before.templates[i]);
 if (!process.argv.includes('--publish')) {
-  process.stdout.write(`Reviewed 12 Sanrio fill defaults; revision ${before.revision}. Use --publish --expect-revision ${before.revision}.\n`);
+  process.stdout.write(`Reviewed ${count} Sanrio fill defaults; revision ${before.revision}. Use --publish --expect-revision ${before.revision}.\n`);
 } else {
   assert.equal(process.argv[process.argv.indexOf('--expect-revision') + 1], before.revision, 'Catalog revision changed; review again.');
   const fresh = await store.read(true);
