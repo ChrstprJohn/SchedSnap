@@ -11,6 +11,7 @@ import DevicePicker from '../../components/DevicePicker.jsx';
 import CategoryFilters from '../../components/CategoryFilters.jsx';
 import { isNewTemplate } from '../../utils/templateFreshness.js';
 import useDesignLikes from '../../lib/useDesignLikes.js';
+import { sortTemplatesByLikes } from '../../utils/sortTemplatesByLikes.js';
 
 const previewSchedule = (template) => template.layout === 'mascot' ? mascotTemplateSchedule : templateSchedule;
 
@@ -21,8 +22,8 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
   const [category, setCategory] = useState(() => galleryCategories.some((item) => item.id === initialCategory) ? initialCategory : 'all');
   const [preview, setPreview] = useState(null);
   const { likes, pending, error: likeError, refresh: refreshLikes, toggle: toggleLike } = useDesignLikes();
-  const visibleTemplates = wallpaperTemplates.filter((item) =>
-    matchesGalleryCategory(item, category));
+  const visibleTemplates = sortTemplatesByLikes(wallpaperTemplates.filter((item) =>
+    matchesGalleryCategory(item, category)), likes);
   const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(visibleTemplates.length, `${category}:${device}`);
   return <div>
     <div role="group" aria-label="Filter designs" className="template-filters">
