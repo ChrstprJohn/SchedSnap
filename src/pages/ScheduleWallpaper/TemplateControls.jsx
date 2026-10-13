@@ -1,5 +1,5 @@
 import { particleStyles } from '../../utils/wallpaperParticles.js';
-import { schedulePosition, scheduleMovement } from '../../utils/canvasHelpers.js';
+import { schedulePosition, scheduleMovement, tabletBoxSpacing } from '../../utils/canvasHelpers.js';
 import { ChevronDown } from 'lucide-react';
 import { colorInputValue, wallpaperFonts, mascotPosition } from '../../utils/wallpaperTheme.js';
 
@@ -63,6 +63,10 @@ export default function TemplateControls({ template, onChange, onReset, enablePl
     </fieldset>
     <fieldset className="appearance-group">
       <legend>Day containers</legend>
+      {template.device === 'tablet' && <div className="top-margin-control">
+        <div className="top-margin-label"><label htmlFor="tablet-box-spacing">Space between boxes</label><output htmlFor="tablet-box-spacing">{tabletBoxSpacing(template)}</output></div>
+        <input id="tablet-box-spacing" type="range" min="0" max="100" step="1" value={tabletBoxSpacing(template)} aria-valuetext={`${tabletBoxSpacing(template)} spacing units`} onChange={event => onChange('tabletBoxSpacing', Number(event.target.value))} />
+      </div>}
       <div className="appearance-row">
         <label className="appearance-label" htmlFor="container-style">Finish</label>
         <div className="field-select appearance-select"><select id="container-style" className="field-input" value={template.containerStyle || 'glass'} onChange={(event) => onChange('containerStyle', event.target.value)}><option value="glass">Frosted glass</option><option value="solid">Solid</option></select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>

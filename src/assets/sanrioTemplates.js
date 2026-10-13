@@ -22,6 +22,7 @@ export const sanrioTemplates = designs.map(([id, name, description, family, back
   surface: 'rgba(255, 255, 255, 0.96)',
   line: 'rgba(88, 59, 73, 0.20)',
   containerStyle: 'solid',
+  containerFill: false,
   containerShape: 'rounded',
   verticalPosition: -35,
   bottomMargin: 0,

@@ -20,6 +20,7 @@ export const templateSchema = z.object({
   fontFamily: z.enum(['DM Sans Variable', 'Geist Variable', 'Poppins', 'Inter Variable', 'Roboto Variable', 'Open Sans Variable', 'Montserrat Variable', 'Lato', 'DM Serif Display', 'Georgia']).optional(),
   containerStyle: z.enum(['glass', 'solid']).optional(), containerShape: z.enum(['pill', 'rounded']).optional(),
   containerFill: z.boolean().optional(), containerBorder: z.boolean().optional(), showSeparators: z.boolean().optional(),
+  tabletBoxSpacing: z.number().min(0).max(100).optional(),
   schedulePosition: z.enum(['left', 'center', 'right']).optional(), orientation: z.enum(['portrait', 'landscape']).optional(),
   topMargin: z.number().min(0).max(20).optional(), bottomMargin: z.number().min(0).max(20).optional(),
   leftMargin: z.number().min(0).max(20).optional(), rightMargin: z.number().min(0).max(20).optional(),
