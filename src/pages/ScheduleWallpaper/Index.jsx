@@ -193,7 +193,7 @@ export default function ScheduleWallpaper() {
     <Link to="/services/schedule-wallpaper" className="button-primary mt-6">Choose template</Link>
   </section>;
 
-  return <section className="page-wrap wallpaper-flow" data-device={device} style={{ '--wallpaper-ratio': `${resolution.width} / ${resolution.height}`, '--wallpaper-ratio-value': resolution.width / resolution.height }}>
+  return <section className="page-wrap wallpaper-flow" data-device={device} data-orientation={resolution.width > resolution.height ? 'landscape' : 'portrait'} style={{ '--wallpaper-ratio': `${resolution.width} / ${resolution.height}`, '--wallpaper-ratio-value': resolution.width / resolution.height }}>
     {step === 'classes' && pendingDraft && <RestoreClassesDialog count={pendingDraft.schedule.classes.length} onRestore={() => {
       setSchedule(pendingDraft.schedule);
       setScheduleTitle(pendingDraft.title);

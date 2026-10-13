@@ -1,5 +1,5 @@
 import { particleStyles } from '../../utils/wallpaperParticles.js';
-import { schedulePosition, scheduleTopMargin, scheduleBottomMargin } from '../../utils/canvasHelpers.js';
+import { schedulePosition, scheduleMovement } from '../../utils/canvasHelpers.js';
 import { ChevronDown } from 'lucide-react';
 import { colorInputValue, wallpaperFonts, mascotPosition } from '../../utils/wallpaperTheme.js';
 
@@ -32,30 +32,21 @@ export default function TemplateControls({ template, onChange, onReset, enablePl
   return <aside aria-label="Template appearance" className="template-settings">
     {(enablePlacement || (template.device && template.device !== 'mobile')) && <fieldset className="appearance-group">
       <legend>Schedule placement</legend>
-      {enablePlacement && <div className="top-margin-control">
-        <div className="top-margin-label"><label htmlFor="schedule-top-margin">Top margin</label><output htmlFor="schedule-top-margin">+{scheduleTopMargin(template)}%</output></div>
-        <input id="schedule-top-margin" type="range" min="0" max="20" step="1" value={scheduleTopMargin(template)} aria-valuetext={`${scheduleTopMargin(template)}% extra space above the schedule`} aria-describedby="top-margin-note" onChange={(event) => onChange('topMargin', Number(event.target.value))} />
-        <p id="top-margin-note" className="placement-note">Add space above the schedule.{template.device !== 'laptop' && ' Clock space stays clear.'}</p>
-      </div>}
-      {enablePlacement && template.device === 'mobile' && <div className="top-margin-control">
-        <div className="top-margin-label"><label htmlFor="schedule-bottom-margin">Bottom margin</label><output htmlFor="schedule-bottom-margin">+{scheduleBottomMargin(template)}%</output></div>
-        <input id="schedule-bottom-margin" type="range" min="0" max="20" step="1" value={scheduleBottomMargin(template)} aria-valuetext={`${scheduleBottomMargin(template)}% extra space below the schedule`} aria-describedby="bottom-margin-note" onChange={event => onChange('bottomMargin', Number(event.target.value))} />
-        <p id="bottom-margin-note" className="placement-note">Reserve space below the schedule.</p>
-      </div>}
+      {['horizontal', 'vertical'].map(axis => {
+        const value = scheduleMovement(template, axis);
+        const direction = axis === 'horizontal' ? value < 0 ? 'Left' : 'Right' : value < 0 ? 'Up' : 'Down';
+        const description = value === 0 ? 'Default position' : `${direction} ${Math.abs(value)}%`;
+        const id = `schedule-${axis}-position`;
+        return <div key={axis} className="top-margin-control">
+          <div className="top-margin-label"><label htmlFor={id}>{axis === 'horizontal' ? 'Horizontal position' : 'Vertical position'}</label><output htmlFor={id}>{description}</output></div>
+          <input id={id} type="range" min="-100" max="100" step="1" value={value} aria-valuetext={description} onChange={event => onChange(`${axis}Position`, Number(event.target.value))} />
+        </div>;
+      })}
+      <p className="placement-note">Move the title and classes together. Their size stays the same.</p>
       {template.device && template.device !== 'mobile' && <div className="appearance-row">
         <label className="appearance-label" htmlFor="schedule-position">Schedule position</label>
         <div className="field-select appearance-select"><select id="schedule-position" className="field-input" value={schedulePosition(template)} onChange={(event) => onChange('schedulePosition', event.target.value)}><option value="left">Left</option><option value="center">Center</option><option value="right">Right</option></select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>
       </div>}
-      {template.device === 'tablet' && ['left', 'right'].map(side => {
-        const key = `${side}Margin`;
-        const enabled = template[`${key}Enabled`] === true;
-        const value = template[key] || 0;
-        const label = `${side === 'left' ? 'Left' : 'Right'} margin`;
-        return <div key={side} className="top-margin-control">
-          <div className="top-margin-label"><label className="appearance-switch"><input type="checkbox" checked={enabled} onChange={event => onChange(`${key}Enabled`, event.target.checked)} />{label}</label><output htmlFor={`schedule-${side}-margin`}>{value}%</output></div>
-          <input id={`schedule-${side}-margin`} aria-label={label} type="range" min="0" max="20" step="1" value={value} disabled={!enabled} onChange={event => onChange(key, Number(event.target.value))} />
-        </div>;
-      })}
     </fieldset>}
     <fieldset className="appearance-group">
       <legend>Wallpaper</legend>

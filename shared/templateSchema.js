@@ -24,6 +24,7 @@ export const templateSchema = z.object({
   topMargin: z.number().min(0).max(20).optional(), bottomMargin: z.number().min(0).max(20).optional(),
   leftMargin: z.number().min(0).max(20).optional(), rightMargin: z.number().min(0).max(20).optional(),
   leftMarginEnabled: z.boolean().optional(), rightMarginEnabled: z.boolean().optional(),
+  horizontalPosition: z.number().min(-100).max(100).optional(), verticalPosition: z.number().min(-100).max(100).optional(),
   particleStyle: z.enum(['auto', 'none', 'hearts', 'sparkles', 'stars', 'paws', 'petals', 'bubbles']).optional(),
 }).superRefine((t, ctx) => {
   if (t.status !== 'published') return;

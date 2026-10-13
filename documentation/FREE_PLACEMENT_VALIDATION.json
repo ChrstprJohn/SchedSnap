@@ -1,0 +1,401 @@
+{
+  "checkedAt": "2026-10-13T03:13:49.988Z",
+  "base": "http://127.0.0.1:5187",
+  "results": [
+    {
+      "device": "mobile",
+      "axis": "horizontal",
+      "value": -70,
+      "before": {
+        "x": 270,
+        "y": 325,
+        "size": 44,
+        "cardWidth": 460.5,
+        "width": 540,
+        "height": 1200
+      },
+      "after": {
+        "x": 242.70000076293945,
+        "y": 325,
+        "size": 44,
+        "cardWidth": 460.5,
+        "width": 540,
+        "height": 1200
+      }
+    },
+    {
+      "device": "mobile",
+      "axis": "horizontal",
+      "value": 70,
+      "before": {
+        "x": 270,
+        "y": 325,
+        "size": 44,
+        "cardWidth": 460.5,
+        "width": 540,
+        "height": 1200
+      },
+      "after": {
+        "x": 297.29999923706055,
+        "y": 325,
+        "size": 44,
+        "cardWidth": 460.5,
+        "width": 540,
+        "height": 1200
+      }
+    },
+    {
+      "device": "mobile",
+      "axis": "horizontal",
+      "value": 0,
+      "before": {
+        "x": 270,
+        "y": 325,
+        "size": 44,
+        "cardWidth": 460.5,
+        "width": 540,
+        "height": 1200
+      },
+      "after": {
+        "x": 270,
+        "y": 325,
+        "size": 44,
+        "cardWidth": 460.5,
+        "width": 540,
+        "height": 1200
+      }
+    },
+    {
+      "device": "mobile",
+      "axis": "vertical",
+      "value": -70,
+      "before": {
+        "x": 270,
+        "y": 325,
+        "size": 44,
+        "cardWidth": 460.5,
+        "width": 540,
+        "height": 1200
+      },
+      "after": {
+        "x": 270,
+        "y": 128.3000030517578,
+        "size": 44,
+        "cardWidth": 460.5,
+        "width": 540,
+        "height": 1200
+      }
+    },
+    {
+      "device": "mobile",
+      "axis": "vertical",
+      "value": 70,
+      "before": {
+        "x": 270,
+        "y": 325,
+        "size": 44,
+        "cardWidth": 460.5,
+        "width": 540,
+        "height": 1200
+      },
+      "after": {
+        "x": 270,
+        "y": 526.6000061035156,
+        "size": 44,
+        "cardWidth": 460.5,
+        "width": 540,
+        "height": 1200
+      }
+    },
+    {
+      "device": "mobile",
+      "axis": "vertical",
+      "value": 0,
+      "before": {
+        "x": 270,
+        "y": 325,
+        "size": 44,
+        "cardWidth": 460.5,
+        "width": 540,
+        "height": 1200
+      },
+      "after": {
+        "x": 270,
+        "y": 325,
+        "size": 44,
+        "cardWidth": 460.5,
+        "width": 540,
+        "height": 1200
+      }
+    },
+    {
+      "device": "mobile",
+      "exportMatchesPreview": true
+    },
+    {
+      "device": "tablet",
+      "axis": "horizontal",
+      "value": -70,
+      "before": {
+        "x": 375.0000050291419,
+        "y": 307.92858246713877,
+        "size": 38.65714333951473,
+        "cardWidth": 545.1535782311112,
+        "width": 750,
+        "height": 1200
+      },
+      "after": {
+        "x": 303.7650039419532,
+        "y": 307.92858246713877,
+        "size": 38.65714333951473,
+        "cardWidth": 545.1535782311112,
+        "width": 750,
+        "height": 1200
+      }
+    },
+    {
+      "device": "tablet",
+      "axis": "horizontal",
+      "value": 70,
+      "before": {
+        "x": 375.0000050291419,
+        "y": 307.92858246713877,
+        "size": 38.65714333951473,
+        "cardWidth": 545.1535782311112,
+        "width": 750,
+        "height": 1200
+      },
+      "after": {
+        "x": 446.23500015586615,
+        "y": 307.92858246713877,
+        "size": 38.65714333951473,
+        "cardWidth": 545.1535782311112,
+        "width": 750,
+        "height": 1200
+      }
+    },
+    {
+      "device": "tablet",
+      "axis": "horizontal",
+      "value": 0,
+      "before": {
+        "x": 375.0000050291419,
+        "y": 307.92858246713877,
+        "size": 38.65714333951473,
+        "cardWidth": 545.1535782311112,
+        "width": 750,
+        "height": 1200
+      },
+      "after": {
+        "x": 375.0000050291419,
+        "y": 307.92858246713877,
+        "size": 38.65714333951473,
+        "cardWidth": 545.1535782311112,
+        "width": 750,
+        "height": 1200
+      }
+    },
+    {
+      "device": "tablet",
+      "axis": "vertical",
+      "value": -70,
+      "before": {
+        "x": 375.0000050291419,
+        "y": 307.92858246713877,
+        "size": 38.65714333951473,
+        "cardWidth": 545.1535782311112,
+        "width": 750,
+        "height": 1200
+      },
+      "after": {
+        "x": 375.0000050291419,
+        "y": 123.12857154756784,
+        "size": 38.65714333951473,
+        "cardWidth": 545.1535782311112,
+        "width": 750,
+        "height": 1200
+      }
+    },
+    {
+      "device": "tablet",
+      "axis": "vertical",
+      "value": 70,
+      "before": {
+        "x": 375.0000050291419,
+        "y": 307.92858246713877,
+        "size": 38.65714333951473,
+        "cardWidth": 545.1535782311112,
+        "width": 750,
+        "height": 1200
+      },
+      "after": {
+        "x": 375.0000050291419,
+        "y": 640.3735602274537,
+        "size": 38.65714333951473,
+        "cardWidth": 545.1535782311112,
+        "width": 750,
+        "height": 1200
+      }
+    },
+    {
+      "device": "tablet",
+      "axis": "vertical",
+      "value": 0,
+      "before": {
+        "x": 375.0000050291419,
+        "y": 307.92858246713877,
+        "size": 38.65714333951473,
+        "cardWidth": 545.1535782311112,
+        "width": 750,
+        "height": 1200
+      },
+      "after": {
+        "x": 375.0000050291419,
+        "y": 307.92858246713877,
+        "size": 38.65714333951473,
+        "cardWidth": 545.1535782311112,
+        "width": 750,
+        "height": 1200
+      }
+    },
+    {
+      "device": "tablet",
+      "defaultWidth": 432,
+      "largeWidth": 448
+    },
+    {
+      "device": "tablet",
+      "exportMatchesPreview": true
+    },
+    {
+      "device": "laptop",
+      "axis": "horizontal",
+      "value": -70,
+      "before": {
+        "x": 360.00000643730164,
+        "y": 101.96571660041809,
+        "size": 39.22285795211792,
+        "cardWidth": 553.1314399838448,
+        "width": 960,
+        "height": 540
+      },
+      "after": {
+        "x": 302.06400656700134,
+        "y": 101.96571660041809,
+        "size": 39.22285795211792,
+        "cardWidth": 553.1314399838448,
+        "width": 960,
+        "height": 540
+      }
+    },
+    {
+      "device": "laptop",
+      "axis": "horizontal",
+      "value": 70,
+      "before": {
+        "x": 360.00000643730164,
+        "y": 101.96571660041809,
+        "size": 39.22285795211792,
+        "cardWidth": 553.1314399838448,
+        "width": 960,
+        "height": 540
+      },
+      "after": {
+        "x": 585.9360110759735,
+        "y": 101.96571660041809,
+        "size": 39.22285795211792,
+        "cardWidth": 553.1314399838448,
+        "width": 960,
+        "height": 540
+      }
+    },
+    {
+      "device": "laptop",
+      "axis": "horizontal",
+      "value": 0,
+      "before": {
+        "x": 360.00000643730164,
+        "y": 101.96571660041809,
+        "size": 39.22285795211792,
+        "cardWidth": 553.1314399838448,
+        "width": 960,
+        "height": 540
+      },
+      "after": {
+        "x": 360.00000643730164,
+        "y": 101.96571660041809,
+        "size": 39.22285795211792,
+        "cardWidth": 553.1314399838448,
+        "width": 960,
+        "height": 540
+      }
+    },
+    {
+      "device": "laptop",
+      "axis": "vertical",
+      "value": -70,
+      "before": {
+        "x": 360.00000643730164,
+        "y": 101.96571660041809,
+        "size": 39.22285795211792,
+        "cardWidth": 553.1314399838448,
+        "width": 960,
+        "height": 540
+      },
+      "after": {
+        "x": 360.00000643730164,
+        "y": 61.78971600532532,
+        "size": 39.22285795211792,
+        "cardWidth": 553.1314399838448,
+        "width": 960,
+        "height": 540
+      }
+    },
+    {
+      "device": "laptop",
+      "axis": "vertical",
+      "value": 70,
+      "before": {
+        "x": 360.00000643730164,
+        "y": 101.96571660041809,
+        "size": 39.22285795211792,
+        "cardWidth": 553.1314399838448,
+        "width": 960,
+        "height": 540
+      },
+      "after": {
+        "x": 360.00000643730164,
+        "y": 128.9117157459259,
+        "size": 39.22285795211792,
+        "cardWidth": 553.1314399838448,
+        "width": 960,
+        "height": 540
+      }
+    },
+    {
+      "device": "laptop",
+      "axis": "vertical",
+      "value": 0,
+      "before": {
+        "x": 360.00000643730164,
+        "y": 101.96571660041809,
+        "size": 39.22285795211792,
+        "cardWidth": 553.1314399838448,
+        "width": 960,
+        "height": 540
+      },
+      "after": {
+        "x": 360.00000643730164,
+        "y": 101.96571660041809,
+        "size": 39.22285795211792,
+        "cardWidth": 553.1314399838448,
+        "width": 960,
+        "height": 540
+      }
+    },
+    {
+      "device": "laptop",
+      "exportMatchesPreview": true
+    }
+  ]
+}
