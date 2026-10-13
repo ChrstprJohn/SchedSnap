@@ -1,0 +1,34 @@
+{
+  "provider": "built-in imagegen",
+  "reference": "C:/Users/picar/AppData/Local/Temp/codex-clipboard-5959fa86-3ef0-4b5e-91a2-0926501aaf9c.png",
+  "normalization": "Independently generated device compositions, Lanczos to exact dimensions.",
+  "assets": [
+    {
+      "id": "op-fruit-amethyst",
+      "device": "mobile",
+      "prompt": "Create a NEW One Piece Devil Fruit-inspired wallpaper using the attached reference as visual style: giant interlocking rounded purple spiral fruit curls, thick near-black plum outlines, textured amethyst ink and subtle paper grain. Variant 'Amethyst Gum-Gum': rich violet with lilac highlights, organic curls varied not geometric circles. MOBILE portrait 1080x2400 aspect 9:20. Full bleed opaque artwork only, no rounded card frame/border/text/logo/watermark/UI/timetable. Keep spirals softer and lower contrast in central 65 percent for schedule readability, bold black organic outlines around outer edges, retain all-over patterned identity. Flat hand-painted illustration, close to reference. Output one image only.",
+      "sourcePath": "C:/Users/picar/.codex/generated_images/01a13323-a8f9-7eb3-917d-55b7893a47b8/exec-6f28066b-1e96-45d1-8fee-3847960cbc5e.png",
+      "output": "public/wallpapers/scenic/op-fruit-amethyst/mobile.png",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "id": "op-fruit-amethyst",
+      "device": "tablet",
+      "prompt": "NEW One Piece Devil Fruit-inspired full-background wallpaper in style of reference: interlocking rounded organic spirals and fruit curls, thick dark plum hand-painted outlines, visible fine ink and paper grain. 'Amethyst Gum-Gum' palette: rich violet with lilac highlights. TABLET 1600x2560 portrait 5:8. Independently compose for this device, coherent same variant motif and palette across sizes. Full bleed opaque, dense all-over organic curl pattern. Quieter lower-contrast central 65 percent supports schedule overlay, bolder spirals near perimeter. Large varied asymmetrical curl shapes, rich illustrative reference style. Artwork only no words, text, letters, logo, timetable, UI, watermark, border, device frame, rounded card corners. One image only.",
+      "sourcePath": "C:\\Users\\picar\\.codex\\generated_images\\01a13323-a8f9-7eb3-917d-55b7893a47b8\\exec-bd368393-ecca-44fd-afe8-46747cbea1e7.png",
+      "output": "public/wallpapers/scenic/op-fruit-amethyst/tablet.png",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "id": "op-fruit-amethyst",
+      "device": "laptop",
+      "prompt": "NEW One Piece Devil Fruit-inspired full-background wallpaper in style of reference: interlocking rounded organic spirals and fruit curls, thick dark plum hand-painted outlines, visible fine ink and paper grain. 'Amethyst Gum-Gum' palette: rich violet with lilac highlights. LAPTOP 1920x1080 landscape 16:9. Independently compose for this device, coherent same variant motif and palette across sizes. Full bleed opaque, dense all-over organic curl pattern. Quieter lower-contrast central 65 percent supports schedule overlay, bolder spirals near perimeter. Large varied asymmetrical curl shapes, rich illustrative reference style. Artwork only no words, text, letters, logo, timetable, UI, watermark, border, device frame, rounded card corners. One image only.",
+      "sourcePath": "C:\\Users\\picar\\.codex\\generated_images\\01a13323-a8f9-7eb3-917d-55b7893a47b8\\exec-dc767822-916e-4616-beda-4c2880214de0.png",
+      "output": "public/wallpapers/scenic/op-fruit-amethyst/laptop.png",
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}

@@ -1,0 +1,1486 @@
+{
+  "checkedAt": "2026-10-13T03:09:50.856Z",
+  "templateCount": 12,
+  "assetCount": 36,
+  "assets": [
+    {
+      "id": "op-sunset-voyage",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/op-sunset-voyage/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-sunset-voyage",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/op-sunset-voyage/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-sunset-voyage",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/op-sunset-voyage/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-sunset-harbor",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/op-sunset-harbor/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-sunset-harbor",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/op-sunset-harbor/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-sunset-harbor",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/op-sunset-harbor/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-sunset-dawn",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/op-sunset-dawn/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-sunset-dawn",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/op-sunset-dawn/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-sunset-dawn",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/op-sunset-dawn/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-zoro-emerald",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/op-zoro-emerald/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-zoro-emerald",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/op-zoro-emerald/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-zoro-emerald",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/op-zoro-emerald/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-zoro-moonlit",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/op-zoro-moonlit/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-zoro-moonlit",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/op-zoro-moonlit/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-zoro-moonlit",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/op-zoro-moonlit/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-zoro-golden-blade",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/op-zoro-golden-blade/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-zoro-golden-blade",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/op-zoro-golden-blade/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-zoro-golden-blade",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/op-zoro-golden-blade/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-chopper-cow-cuddle",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/op-chopper-cow-cuddle/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-chopper-cow-cuddle",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/op-chopper-cow-cuddle/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-chopper-cow-cuddle",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/op-chopper-cow-cuddle/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-chopper-sakura",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/op-chopper-sakura/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-chopper-sakura",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/op-chopper-sakura/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-chopper-sakura",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/op-chopper-sakura/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-chopper-sweet-dream",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/op-chopper-sweet-dream/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-chopper-sweet-dream",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/op-chopper-sweet-dream/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-chopper-sweet-dream",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/op-chopper-sweet-dream/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-fruit-amethyst",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/op-fruit-amethyst/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-fruit-amethyst",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/op-fruit-amethyst/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-fruit-amethyst",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/op-fruit-amethyst/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-fruit-flame",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/op-fruit-flame/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-fruit-flame",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/op-fruit-flame/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-fruit-flame",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/op-fruit-flame/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-fruit-op-op",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/op-fruit-op-op/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-fruit-op-op",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/op-fruit-op-op/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "colorType": 2,
+      "valid": true
+    },
+    {
+      "id": "op-fruit-op-op",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/op-fruit-op-op/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "colorType": 2,
+      "valid": true
+    }
+  ],
+  "renders": [
+    {
+      "id": "op-sunset-voyage",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1674,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "op-sunset-harbor",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1674,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "op-sunset-dawn",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1674,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "op-zoro-emerald",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1506,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 394,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "op-zoro-moonlit",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1506,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 394,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "op-zoro-golden-blade",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1506,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 394,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "op-chopper-cow-cuddle",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1506,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 394,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "op-chopper-sakura",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1506,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 394,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "op-chopper-sweet-dream",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1506,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 394,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "op-fruit-amethyst",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1674,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "op-fruit-flame",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1674,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "op-fruit-op-op",
+      "device": "mobile",
+      "mode": "sample",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1674,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "op-sunset-voyage",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1941.0000000000002,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1379.0000000000002
+      }
+    },
+    {
+      "id": "op-sunset-harbor",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1941.0000000000002,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1379.0000000000002
+      }
+    },
+    {
+      "id": "op-sunset-dawn",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1941.0000000000002,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1379.0000000000002
+      }
+    },
+    {
+      "id": "op-zoro-emerald",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1773.0000000000002,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 394,
+        "width": 924,
+        "height": 1379.0000000000002
+      }
+    },
+    {
+      "id": "op-zoro-moonlit",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1773.0000000000002,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 394,
+        "width": 924,
+        "height": 1379.0000000000002
+      }
+    },
+    {
+      "id": "op-zoro-golden-blade",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1773.0000000000002,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 394,
+        "width": 924,
+        "height": 1379.0000000000002
+      }
+    },
+    {
+      "id": "op-chopper-cow-cuddle",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1773.0000000000002,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 394,
+        "width": 924,
+        "height": 1379.0000000000002
+      }
+    },
+    {
+      "id": "op-chopper-sakura",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1773.0000000000002,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 394,
+        "width": 924,
+        "height": 1379.0000000000002
+      }
+    },
+    {
+      "id": "op-chopper-sweet-dream",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1773.0000000000002,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 394,
+        "width": 924,
+        "height": 1379.0000000000002
+      }
+    },
+    {
+      "id": "op-fruit-amethyst",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1941.0000000000002,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1379.0000000000002
+      }
+    },
+    {
+      "id": "op-fruit-flame",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1941.0000000000002,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1379.0000000000002
+      }
+    },
+    {
+      "id": "op-fruit-op-op",
+      "device": "mobile",
+      "mode": "dense",
+      "width": 1080,
+      "height": 2400,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1941.0000000000002,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1379.0000000000002
+      }
+    },
+    {
+      "id": "op-sunset-voyage",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "op-sunset-harbor",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "op-sunset-dawn",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "op-zoro-emerald",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 460.80000000000007,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "op-zoro-moonlit",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 460.80000000000007,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "op-zoro-golden-blade",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 460.80000000000007,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "op-chopper-cow-cuddle",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 460.80000000000007,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "op-chopper-sakura",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 460.80000000000007,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "op-chopper-sweet-dream",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 460.80000000000007,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "op-fruit-amethyst",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "op-fruit-flame",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "op-fruit-op-op",
+      "device": "tablet",
+      "mode": "sample",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "op-sunset-voyage",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "op-sunset-harbor",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "op-sunset-dawn",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "op-zoro-emerald",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 460.80000000000007,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "op-zoro-moonlit",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 460.80000000000007,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "op-zoro-golden-blade",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 460.80000000000007,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "op-chopper-cow-cuddle",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 460.80000000000007,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "op-chopper-sakura",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 460.80000000000007,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "op-chopper-sweet-dream",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 183.7165714285713,
+        "y": 460.80000000000007,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "op-fruit-amethyst",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "op-fruit-flame",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "op-fruit-op-op",
+      "device": "tablet",
+      "mode": "dense",
+      "width": 1600,
+      "height": 2560,
+      "overflow": false,
+      "size": 42,
+      "bottom": 1429.25,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1674.768
+      }
+    },
+    {
+      "id": "op-sunset-voyage",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "op-sunset-harbor",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "op-sunset-dawn",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "op-zoro-emerald",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 39.18857142857141,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "op-zoro-moonlit",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 39.18857142857141,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "op-zoro-golden-blade",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 39.18857142857141,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "op-chopper-cow-cuddle",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 39.18857142857141,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "op-chopper-sakura",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 39.18857142857141,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "op-chopper-sweet-dream",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 39.18857142857141,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "op-fruit-amethyst",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 405.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "op-fruit-flame",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 405.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "op-fruit-op-op",
+      "device": "laptop",
+      "mode": "sample",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 42,
+      "bottom": 894,
+      "scheduleBounds": {
+        "x": 405.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "op-sunset-voyage",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 79.35428571428571,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "op-sunset-harbor",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 79.35428571428571,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "op-sunset-dawn",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 79.35428571428571,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "op-zoro-emerald",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 3.7542857142857144,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "op-zoro-moonlit",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 3.7542857142857144,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "op-zoro-golden-blade",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 3.7542857142857144,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "op-chopper-cow-cuddle",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 3.7542857142857144,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "op-chopper-sakura",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 3.7542857142857144,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "op-chopper-sweet-dream",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 3.7542857142857144,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "op-fruit-amethyst",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 405.5314285714286,
+        "y": 79.35428571428571,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "op-fruit-flame",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 405.5314285714286,
+        "y": 79.35428571428571,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    },
+    {
+      "id": "op-fruit-op-op",
+      "device": "laptop",
+      "mode": "dense",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "size": 30,
+      "bottom": 973.4999999999999,
+      "scheduleBounds": {
+        "x": 405.5314285714286,
+        "y": 79.35428571428571,
+        "width": 1108.9371428571428,
+        "height": 921.2914285714286
+      }
+    }
+  ],
+  "browserErrors": []
+}
