@@ -1,5 +1,9 @@
-// Twelve generated Sanrio designs; artwork is independently composed for every device.
+// Generated Sanrio designs; artwork is independently composed for every device.
 const designs = [
+  ["sanrio-melody-dream","Melody Dream","Sleepy My Melody rests among blush clouds and little winged hearts.","sanrio-melody","#fff6fa","2026-10-13T10:32:23.801Z"],
+  ["sanrio-kitty-vanity","Kitty Vanity","Hello Kitty holds a little mirror beside a teddy and soft rose trim.","sanrio-nursery","#fff7fb","2026-10-13T10:35:49.081Z"],
+  ["sanrio-plush-pals","Plush Pals","Pochacco and Hello Kitty plush pals rest beneath a lace curtain.","sanrio-plush","#fff7fb","2026-10-13T10:33:01.680Z"],
+  ["sanrio-friends-gingham","Friends Gingham","Sanrio friends peek around the edges of soft pink gingham.","sanrio-friends","#fff2f7","2026-10-13T10:33:07.546Z"],
   ["sanrio-kitty-nursery","Kitty Nursery","Hello Kitty plush and nursery toys on quiet blush gingham.","sanrio-nursery","#fff9fc","2026-10-13T09:53:15.353Z"],
   ["sanrio-melody-lace","Melody Lace","My Melody and scalloped lace on pale pink polka dots.","sanrio-melody","#fff0f6","2026-10-13T09:53:11.882Z"],
   ["sanrio-melody-peek","Melody Peek","My Melody peeks above the bottom edge with a rose lace bow.","sanrio-melody","#fff3f7","2026-10-13T09:53:17.176Z"],

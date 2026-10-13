@@ -1,0 +1,54 @@
+{
+  "provider": "built-in image_gen",
+  "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-2bb395f1-3f3f-4567-85e2-afc804bbd76b.png",
+  "assets": [
+    {
+      "device": "mobile",
+      "prompt": "Use case: illustration-story. Generate one opaque fullbleed mobile wallpaper exactly1080x2400 (9:20 portrait), reference style inspiration. Pale pink and white gingham with soft muted grey character outlines. Sanrio friends peeking in from edges: Kuromi black jesterhood pink skull, Hello Kitty pinkbow, Pompompurin yellowbrownberet, Cinnamoroll white long blue-eyed floppy ears, My Melody pinkhood bluebow, Pochacco whitepuppy blackear. Each shown recognizable head with little paws. Layout has pairs at upper outer corners and bottom corners, plus tiny faces near lower outer sides, all main heads confined to top12% or bottom22% and outer8% edges; leave large quiet uninterrupted rectangle across center x12%-88%,y18%-74% for a timetable. Tiny butteryellow stars, pale pink hearts and bows at outer edges only. Match reference gentle flat illustration, large pale check pattern, no shadows. Artwork only, no text, lettering, logo, watermark, UI or schedule.",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a133b2-fbf2-7071-8830-0bd2ac1e4851/exec-3665d6d8-55a0-42c4-9274-914e853fc813.png",
+      "destination": "public/wallpapers/scenic/sanrio-friends-gingham/mobile.png",
+      "createdAt": "2026-10-13T10:33:07.546Z",
+      "originalDimensions": [
+        841,
+        1870
+      ],
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "sizing": "Independent composition; proportional contain resize with matching minimal edge padding."
+    },
+    {
+      "device": "tablet",
+      "prompt": "Use case: illustration-story. Generate one opaque fullbleed portrait TABLET wallpaper exactly1600x2560 (5:8), independently composed from reference. Pale pink/white large gingham with soft muted grey flat character outlines. Sanrio friends peek with head and tiny paws from edges: Kuromi blackjesterhood pinkskull, HelloKitty pinkbow, Pompompurin yellow brownberet, Cinnamoroll white long floppy ears blueeyes, MyMelody pinkhoodbluebow, Pochacco whitepuppy blackear. New arrangement suited to portrait tablet, tiny heads in very upper corners/top10% and a cute row of full heads/paws along bottom18%, with remaining little faces confined to farthest outer8% sides near bottom. Keep large quiet central x12%-88%,y17%-75% area free of characters. Small pale yellow stars and lightpink bows/hearts around edges only. Preserve reference washed soft outlines, pastel/checkstyle. No text, lettering, logo, watermark, UI, schedule or frame. Exactrequestedratio artwork only.",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a133b2-fbf2-7071-8830-0bd2ac1e4851/exec-9f9a6977-a6c5-4e6c-9461-1edcd14ecc56.png",
+      "destination": "public/wallpapers/scenic/sanrio-friends-gingham/tablet.png",
+      "createdAt": "2026-10-13T10:33:20.068Z",
+      "originalDimensions": [
+        992,
+        1586
+      ],
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "sizing": "Independent composition; proportional contain resize with matching minimal edge padding."
+    },
+    {
+      "device": "laptop",
+      "prompt": "Use case: illustration-story. Generate one opaque fullbleed 1920x1080 LAPTOP wallpaper exact16:9 landscape, independently composed Sanrio friends pinkgingham background based on reference. Recognizable flat gentle muted grey outlines: Kuromi blackjesterhood pinkskull, HelloKitty pinkbow, Pompompurin yellow brownberet, Cinnamoroll white floppy ears blueeyes, MyMelody pinkhoodbluebow, Pochacco whitepuppy blackear, headandtinypaws only. Arrange little heads peeking at extreme outerleftandright edges, with pair along eachbottomcorner and restsmalltopcorners, all within outer13% width and top10%/bottom18% height. Leave huge clear central rectangle x17%-83% y15%-84% softly pale pinkandwhitegingham for five-day schedule. Small butteryellowstars lightpinkhearts bows at peripheral edges. No text lettering watermark logo UI schedule frame. Match reference softwashedpink largechecks rather than bright saturated style. Do not crop phone composition; independently landscape.",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a133b2-fbf2-7071-8830-0bd2ac1e4851/exec-081f33ee-7a67-48af-875f-b4f5018ca864.png",
+      "destination": "public/wallpapers/scenic/sanrio-friends-gingham/laptop.png",
+      "createdAt": "2026-10-13T10:33:29.024Z",
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sizing": "Independent composition; proportional contain resize with matching minimal edge padding."
+    }
+  ]
+}

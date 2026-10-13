@@ -1,0 +1,317 @@
+{
+  "backend": "native Canvas; DM Sans weights rounded to nearest hundred for native parser",
+  "reports": [
+    {
+      "id": "sanrio-melody-dream",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "sanrio-melody-dream",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "sanrio-melody-dream",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "sanrio-melody-dream",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2284.9885714285715
+      }
+    },
+    {
+      "id": "sanrio-melody-dream",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 405.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "sanrio-melody-dream",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 669.0624177176253,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    },
+    {
+      "id": "sanrio-kitty-vanity",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "sanrio-kitty-vanity",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "sanrio-kitty-vanity",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "sanrio-kitty-vanity",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2284.9885714285715
+      }
+    },
+    {
+      "id": "sanrio-kitty-vanity",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 405.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "sanrio-kitty-vanity",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 669.0624177176253,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    },
+    {
+      "id": "sanrio-plush-pals",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "sanrio-plush-pals",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "sanrio-plush-pals",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "sanrio-plush-pals",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2284.9885714285715
+      }
+    },
+    {
+      "id": "sanrio-plush-pals",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 405.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "sanrio-plush-pals",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 669.0624177176253,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    },
+    {
+      "id": "sanrio-friends-gingham",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "sanrio-friends-gingham",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "sanrio-friends-gingham",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "sanrio-friends-gingham",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2284.9885714285715
+      }
+    },
+    {
+      "id": "sanrio-friends-gingham",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 405.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "sanrio-friends-gingham",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 669.0624177176253,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    }
+  ]
+}

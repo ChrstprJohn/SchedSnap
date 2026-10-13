@@ -2953,5 +2953,89 @@ export default {
     "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791885611/schedsnap/wallpapers/scenic/sanrio-melody-peek/tablet-0eb5a3113613d926.png",
     "width": 1600,
     "height": 2560
+  },
+  "/wallpapers/scenic/sanrio-kitty-vanity/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-kitty-vanity/laptop-17b63abf095bceb1",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791887895/schedsnap/wallpapers/scenic/sanrio-kitty-vanity/laptop-17b63abf095bceb1.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/sanrio-friends-gingham/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-friends-gingham/laptop-5a1afb546812b849",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791887899/schedsnap/wallpapers/scenic/sanrio-friends-gingham/laptop-5a1afb546812b849.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/sanrio-friends-gingham/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-friends-gingham/tablet-b83a29b13bf7bb6c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791887899/schedsnap/wallpapers/scenic/sanrio-friends-gingham/tablet-b83a29b13bf7bb6c.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/sanrio-friends-gingham/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-friends-gingham/mobile-7e61e4799875e9ea",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791887899/schedsnap/wallpapers/scenic/sanrio-friends-gingham/mobile-7e61e4799875e9ea.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/sanrio-kitty-vanity/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-kitty-vanity/mobile-e197f395f16486d3",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791887899/schedsnap/wallpapers/scenic/sanrio-kitty-vanity/mobile-e197f395f16486d3.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/sanrio-melody-dream/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-melody-dream/tablet-66e96d1f2b43894f",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791887903/schedsnap/wallpapers/scenic/sanrio-melody-dream/tablet-66e96d1f2b43894f.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/sanrio-melody-dream/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-melody-dream/laptop-33fefed8b87c4fa4",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791887905/schedsnap/wallpapers/scenic/sanrio-melody-dream/laptop-33fefed8b87c4fa4.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/sanrio-kitty-vanity/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-kitty-vanity/tablet-de2f2eb5cdbb96db",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791887907/schedsnap/wallpapers/scenic/sanrio-kitty-vanity/tablet-de2f2eb5cdbb96db.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/sanrio-plush-pals/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-plush-pals/laptop-e3451eb907ea36d3",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791887907/schedsnap/wallpapers/scenic/sanrio-plush-pals/laptop-e3451eb907ea36d3.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/sanrio-melody-dream/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-melody-dream/mobile-461fafdde4e25fb7",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791887908/schedsnap/wallpapers/scenic/sanrio-melody-dream/mobile-461fafdde4e25fb7.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/sanrio-plush-pals/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-plush-pals/mobile-e35e8c97688c9fa4",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791887909/schedsnap/wallpapers/scenic/sanrio-plush-pals/mobile-e35e8c97688c9fa4.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/sanrio-plush-pals/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-plush-pals/tablet-ca7bf9a69a08e8b8",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791887911/schedsnap/wallpapers/scenic/sanrio-plush-pals/tablet-ca7bf9a69a08e8b8.png",
+    "width": 1600,
+    "height": 2560
   }
 };
