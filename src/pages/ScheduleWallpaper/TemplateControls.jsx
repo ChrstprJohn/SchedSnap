@@ -54,10 +54,6 @@ export default function TemplateControls({ template, onChange, onReset, enablePl
         <label className="appearance-label" htmlFor="mascot-position">Character position</label>
         <div className="field-select appearance-select"><select id="mascot-position" className="field-input" value={mascotPosition(template)} onChange={(event) => onChange('mascotPosition', event.target.value)}><option value="left">Left</option><option value="center">Center</option><option value="right">Right</option></select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>
       </div>}
-      {template.device === 'tablet' && <div className="appearance-row">
-        <label className="appearance-label" htmlFor="tablet-orientation">Orientation</label>
-        <div className="field-select appearance-select"><select id="tablet-orientation" className="field-input" value={template.orientation || 'portrait'} onChange={(event) => onChange('orientation', event.target.value)}><option value="portrait">Portrait</option><option value="landscape">Landscape</option></select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>
-      </div>}
       {fixedBackground ? <p className="text-xs leading-relaxed text-muted">Background artwork stays fixed.</p> : <AppearanceColor colorKey="background" template={template} onChange={onChange} />}
       {editablePatterns.has(template.pattern) && <AppearanceColor colorKey="patternColor" template={template} onChange={onChange} />}
     </fieldset>
