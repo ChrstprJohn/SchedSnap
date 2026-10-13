@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, ImageUp } from 'lucide-react';
+import { ArrowLeft, ImageUp, Search, X } from 'lucide-react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router';
 import Toast from '../../components/Toast.jsx';
 import RestoreClassesDialog from '../../components/RestoreClassesDialog.jsx';
@@ -39,6 +39,7 @@ export default function ScheduleWallpaper() {
   const [image, setImage] = useState(null);
   const [importOpen, setImportOpen] = useState(false);
   const [scheduleTitle, setScheduleTitle] = useState('Class Schedule');
+  const [searchQuery, setSearchQuery] = useState('');
   const [pendingDraft, setPendingDraft] = useState(() => {
     try { return readDraft(window.sessionStorage); } catch { return null; }
   });
@@ -206,6 +207,29 @@ export default function ScheduleWallpaper() {
     <header className="wallpaper-flow-header" data-importing={choosingImage}>
       <h1 tabIndex={-1} ref={heading}>{step === 'design' ? 'Choose a design' : step === 'classes' ? 'Add your classes' : 'Your wallpaper'}</h1>
       <div className="wallpaper-flow-header-actions">
+        {step === 'design' && (
+          <div className="wallpaper-search-wrap" role="search">
+            <input
+              type="text"
+              className="wallpaper-search-input"
+              placeholder="Search designs..."
+              aria-label="Search designs"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+            {searchQuery && (
+              <button
+                type="button"
+                className="wallpaper-search-clear"
+                aria-label="Clear search"
+                onClick={() => setSearchQuery('')}
+              >
+                <X size={14} aria-hidden="true" />
+              </button>
+            )}
+            <Search className="wallpaper-search-icon" size={16} aria-hidden="true" />
+          </div>
+        )}
         {choosingImage && <button type="button" className="button-secondary import-change" aria-label={preparingImage ? 'Preparing image' : 'Change image'} disabled={busy || preparingImage} onClick={() => imagePicker.current?.openPicker()}><ImageUp size={16} aria-hidden="true" />{preparingImage ? 'Preparing…' : <><span className="import-change-desktop">Change image</span><span className="import-change-mobile">Change</span></>}</button>}
       </div>
     </header>
@@ -225,7 +249,7 @@ export default function ScheduleWallpaper() {
       onError={(message) => { setError(message); setSuccess(''); }} onAnalyze={analyze} importUsage={importUsage} usageUnavailable={usageUnavailable}
       onSample={() => { setSchedule(structuredClone(sampleSchedule)); setScheduleSource('sample'); trackEvent('sample_schedule_loaded', templateProperties(template)); dismissNotification(); }}
     /> : <>
-      <TemplateGallery device={device} onDeviceChange={changeDevice} initialCategory={search.get('collection')} selectedId={selectedId} settings={templateSettings} schedule={schedule} scheduleTitle={scheduleTitle} resolution={resolution} onSelect={selectTemplate} />
+      <TemplateGallery device={device} onDeviceChange={changeDevice} initialCategory={search.get('collection')} selectedId={selectedId} settings={templateSettings} schedule={schedule} scheduleTitle={scheduleTitle} resolution={resolution} onSelect={selectTemplate} searchQuery={searchQuery} onClearSearch={() => setSearchQuery('')} />
     </>}
     <Toast message={error || success} kind={error ? 'error' : 'success'} onClose={dismissNotification} />
   </section>;
