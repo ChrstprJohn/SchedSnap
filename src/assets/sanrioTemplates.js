@@ -1,5 +1,9 @@
 // Generated Sanrio designs; artwork is independently composed for every device.
 const designs = [
+  ["sanrio-strawberry-patchwork","Strawberry Patchwork","Stitched pink gingham panels frame miniature Sanrio friends and strawberries.","sanrio-stationery","#fff5f8","2026-10-13T10:44:59.633Z"],
+  ["sanrio-melody-bedtime","Melody Bedtime","Little bedtime scenes of My Melody with bows, pillows, and sleepy stars.","sanrio-stationery","#fff5f8","2026-10-13T10:49:19.464Z"],
+  ["sanrio-pastel-scrapbook","Pastel Scrapbook","My Melody and Cinnamoroll decorate a soft pink paper scrapbook border.","sanrio-stationery","#fff5f8","2026-10-13T10:46:00.468Z"],
+  ["sanrio-melody-piano-stationery","Melody and Piano","Tiny lace frames hold My Melody and My Sweet Piano on dotted stationery.","sanrio-stationery","#fff5f8","2026-10-13T10:46:20.764Z"],
   ["sanrio-melody-dream","Melody Dream","Sleepy My Melody rests among blush clouds and little winged hearts.","sanrio-melody","#fff6fa","2026-10-13T10:32:23.801Z"],
   ["sanrio-kitty-vanity","Kitty Vanity","Hello Kitty holds a little mirror beside a teddy and soft rose trim.","sanrio-nursery","#fff7fb","2026-10-13T10:35:49.081Z"],
   ["sanrio-plush-pals","Plush Pals","Pochacco and Hello Kitty plush pals rest beneath a lace curtain.","sanrio-plush","#fff7fb","2026-10-13T10:33:01.680Z"],

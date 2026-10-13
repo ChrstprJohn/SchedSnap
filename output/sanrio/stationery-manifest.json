@@ -1,0 +1,76 @@
+{
+  "assets": [
+    {
+      "path": "public/wallpapers/scenic/sanrio-strawberry-patchwork/mobile.png",
+      "sha256": "8609c211717f375a9a9cad1f3485846ddb93f5c0d1b0a71b8d87c2adf6eb6729",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-strawberry-patchwork/tablet.png",
+      "sha256": "35a410c344e2b6f173885177f304cd3c30c17edbf70e0ad5ae9c0db7b71bc351",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-strawberry-patchwork/laptop.png",
+      "sha256": "ec49f1163b49436489c693174c4b5b546ba041b4f6392764693942ed75635518",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-melody-bedtime/mobile.png",
+      "sha256": "36911a8038e7ab6f4ba6754ec56e41608ad62a82af73cffc6e597fcbbdefce88",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-melody-bedtime/tablet.png",
+      "sha256": "e8e74ba3d6fe22f6a13457b6b6272fb54b15f53c98768314af80bdf8d42604c0",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-melody-bedtime/laptop.png",
+      "sha256": "b3b4cd925412fbe71f5a56bda83180c48d7666d0ee1e75262f2dde064c25f0fa",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-pastel-scrapbook/mobile.png",
+      "sha256": "52c82655c0d2a5df0efa4a9f52d4a518e1e48ee32887ddddc233d1d100d3e082",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-pastel-scrapbook/tablet.png",
+      "sha256": "3ebd0a41fab32553686345adbcb3da88781989b55d9b400b0a83dd131563c277",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-pastel-scrapbook/laptop.png",
+      "sha256": "b5fbe101989f88544d744625c4deac7e4611955251d8c6e0d83de8b4fd5e9aed",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-melody-piano-stationery/mobile.png",
+      "sha256": "07790a677278bc91ea459e6e0f456d7ea4139f174a02b5237eac2564db193670",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-melody-piano-stationery/tablet.png",
+      "sha256": "c5dc63f5a4f1762556c9e7ce9c912152d33df9e27a64f00ac293ecbf41eefebd",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-melody-piano-stationery/laptop.png",
+      "sha256": "d54169d585df8823e6f6da8352515a877973fa6e28ea1e3c57857e6a4bf160a5",
+      "dimensionsValid": true,
+      "opaque": true
+    }
+  ]
+}

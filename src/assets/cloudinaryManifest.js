@@ -3037,5 +3037,89 @@ export default {
     "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791887911/schedsnap/wallpapers/scenic/sanrio-plush-pals/tablet-ca7bf9a69a08e8b8.png",
     "width": 1600,
     "height": 2560
+  },
+  "/wallpapers/scenic/sanrio-melody-bedtime/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-melody-bedtime/laptop-b3b4cd925412fbe7",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888813/schedsnap/wallpapers/scenic/sanrio-melody-bedtime/laptop-b3b4cd925412fbe7.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/sanrio-melody-bedtime/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-melody-bedtime/mobile-36911a8038e7ab6f",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888814/schedsnap/wallpapers/scenic/sanrio-melody-bedtime/mobile-36911a8038e7ab6f.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/sanrio-melody-bedtime/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-melody-bedtime/tablet-e8e74ba3d6fe22f6",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888814/schedsnap/wallpapers/scenic/sanrio-melody-bedtime/tablet-e8e74ba3d6fe22f6.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/sanrio-melody-piano-stationery/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-melody-piano-stationery/mobile-07790a677278bc91",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888818/schedsnap/wallpapers/scenic/sanrio-melody-piano-stationery/mobile-07790a677278bc91.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/sanrio-pastel-scrapbook/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-pastel-scrapbook/laptop-b5fbe101989f8854",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888819/schedsnap/wallpapers/scenic/sanrio-pastel-scrapbook/laptop-b5fbe101989f8854.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/sanrio-melody-piano-stationery/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-melody-piano-stationery/tablet-c5dc63f5a4f17625",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888820/schedsnap/wallpapers/scenic/sanrio-melody-piano-stationery/tablet-c5dc63f5a4f17625.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/sanrio-pastel-scrapbook/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-pastel-scrapbook/mobile-52c82655c0d2a5df",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888824/schedsnap/wallpapers/scenic/sanrio-pastel-scrapbook/mobile-52c82655c0d2a5df.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/sanrio-pastel-scrapbook/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-pastel-scrapbook/tablet-3ebd0a41fab32553",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888827/schedsnap/wallpapers/scenic/sanrio-pastel-scrapbook/tablet-3ebd0a41fab32553.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/sanrio-strawberry-patchwork/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-strawberry-patchwork/laptop-ec49f1163b494364",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888829/schedsnap/wallpapers/scenic/sanrio-strawberry-patchwork/laptop-ec49f1163b494364.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/sanrio-strawberry-patchwork/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-strawberry-patchwork/mobile-8609c211717f375a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888834/schedsnap/wallpapers/scenic/sanrio-strawberry-patchwork/mobile-8609c211717f375a.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/sanrio-melody-piano-stationery/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-melody-piano-stationery/laptop-d54169d585df8823",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888836/schedsnap/wallpapers/scenic/sanrio-melody-piano-stationery/laptop-d54169d585df8823.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/sanrio-strawberry-patchwork/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/sanrio-strawberry-patchwork/tablet-35a410c344e2b6f1",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888838/schedsnap/wallpapers/scenic/sanrio-strawberry-patchwork/tablet-35a410c344e2b6f1.png",
+    "width": 1600,
+    "height": 2560
   }
 };

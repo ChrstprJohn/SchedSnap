@@ -1,0 +1,89 @@
+{
+  "verifiedAt": "2026-10-13T10:57:35.896Z",
+  "published": 240,
+  "sanrio": 24,
+  "newDesigns": [
+    {
+      "id": "sanrio-strawberry-patchwork",
+      "name": "Strawberry Patchwork",
+      "transparent": true
+    },
+    {
+      "id": "sanrio-melody-bedtime",
+      "name": "Melody Bedtime",
+      "transparent": true
+    },
+    {
+      "id": "sanrio-pastel-scrapbook",
+      "name": "Pastel Scrapbook",
+      "transparent": true
+    },
+    {
+      "id": "sanrio-melody-piano-stationery",
+      "name": "Melody and Piano",
+      "transparent": true
+    }
+  ],
+  "images": [
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888834/schedsnap/wallpapers/scenic/sanrio-strawberry-patchwork/mobile-8609c211717f375a.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888838/schedsnap/wallpapers/scenic/sanrio-strawberry-patchwork/tablet-35a410c344e2b6f1.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888829/schedsnap/wallpapers/scenic/sanrio-strawberry-patchwork/laptop-ec49f1163b494364.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888814/schedsnap/wallpapers/scenic/sanrio-melody-bedtime/mobile-36911a8038e7ab6f.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888814/schedsnap/wallpapers/scenic/sanrio-melody-bedtime/tablet-e8e74ba3d6fe22f6.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888813/schedsnap/wallpapers/scenic/sanrio-melody-bedtime/laptop-b3b4cd925412fbe7.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888824/schedsnap/wallpapers/scenic/sanrio-pastel-scrapbook/mobile-52c82655c0d2a5df.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888827/schedsnap/wallpapers/scenic/sanrio-pastel-scrapbook/tablet-3ebd0a41fab32553.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888819/schedsnap/wallpapers/scenic/sanrio-pastel-scrapbook/laptop-b5fbe101989f8854.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888818/schedsnap/wallpapers/scenic/sanrio-melody-piano-stationery/mobile-07790a677278bc91.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888820/schedsnap/wallpapers/scenic/sanrio-melody-piano-stationery/tablet-c5dc63f5a4f17625.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791888836/schedsnap/wallpapers/scenic/sanrio-melody-piano-stationery/laptop-d54169d585df8823.png",
+      "status": 200,
+      "type": "image/png"
+    }
+  ]
+}
