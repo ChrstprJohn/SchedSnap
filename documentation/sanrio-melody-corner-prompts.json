@@ -1,0 +1,30 @@
+{
+  "provider": "built-in image_gen",
+  "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-2ef50d32-cf37-4b14-b55c-4949a1d60b19.png",
+  "assets": [
+    {
+      "device": "mobile",
+      "prompt": "Use case: illustration-story. Create one opaque full-bleed 1080 x 2400 portrait phone wallpaper based closely on this reference: pale blush pink, evenly spaced medium white polka dots, My Melody peeking in at bottom-right with pink hood, floppy ears, gentle brown outline and large cream lace bow with tiny rose embroidery. Reference image is style/composition inspiration. Preserve the soft simple illustration and character identity. Keep upper 72% quiet with only faint polka dots, reserve bottom 25% for her face and bow. Face intact and readable, partial body at bottom allowed. No text, logos, watermark, black screenshot icon, schedule, UI, border, frame. Output exact requested aspect ratio, artwork only.",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a133b2-fbf2-7071-8830-0bd2ac1e4851/exec-9aac65df-ffe4-44f7-8e18-7ff4dd8b4b52.png",
+      "destination": "public/wallpapers/scenic/sanrio-melody-corner/mobile.png",
+      "sizing": "Independently generated composition, proportional contain resizing with at most minimal blush padding.",
+      "createdAt": "2026-10-13T09:53:08.098Z"
+    },
+    {
+      "device": "tablet",
+      "prompt": "Use case: illustration-story. Create one opaque fullbleed portrait TABLET wallpaper 1600 x 2560 based on reference: pale blush pink, medium white evenly spaced polka dots, My Melody peeking up at bottom-right with pink hood floppy ears and a large cream scalloped lace bow with tiny rose embroidery, soft gentle brown outline. Independently recompose for wider portrait tablet. Keep upper 75% quiet faint dots for timetable. Character lower-right 25%, entire face and bow intact, partial body bottom allowed. No text, logo, watermark, black screenshot icon, schedule, UI or frame. Exact 5:8 aspect ratio. Artwork only.",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a133b2-fbf2-7071-8830-0bd2ac1e4851/exec-5f720445-c612-4288-ac2f-743e673da968.png",
+      "destination": "public/wallpapers/scenic/sanrio-melody-corner/tablet.png",
+      "sizing": "Independently generated composition, proportional contain resizing with at most minimal blush padding.",
+      "createdAt": "2026-10-13T09:53:53.866Z"
+    },
+    {
+      "device": "laptop",
+      "prompt": "Use case: illustration-story. Create one opaque fullbleed 1920 x 1080 widescreen LAPTOP wallpaper based on reference: extremely pale blush pink, medium white evenly spaced polka dots, My Melody peeking up in bottom-right with pink hood floppy ears and cream scalloped lace bow with tiny rose embroidery, soft gentle brown outline. New independent wide composition, NOT cropped phone: keep large quiet central/left area for timetable; My Melody face and bow entirely in lower-right quarter, below 70% height and to right of 78% width, tiny body cropped only at bottom. Preserve reference softness and character identity. No text, logo, watermark, black screenshot icon, schedule, UI or frame. Exact16:9 ratio. Artwork only.",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a133b2-fbf2-7071-8830-0bd2ac1e4851/exec-b2d293f0-9eef-4d15-8bf9-041c5b4f8421.png",
+      "destination": "public/wallpapers/scenic/sanrio-melody-corner/laptop.png",
+      "sizing": "Independently generated composition, proportional contain resizing with at most minimal blush padding.",
+      "createdAt": "2026-10-13T09:54:26.352Z"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import manifest from '../src/assets/cloudinaryManifest.js';
 import { signCloud } from './catalogStore.js';
-import { generatedMasterId, generatedMasterUrl } from '../shared/generatedArtwork.js';
+import { generatedMasterId, generatedMasterUrl, generatedBackgroundUrl } from '../shared/generatedArtwork.js';
 
 export function artworkIds(template, env) {
   return [...new Set([template.image, ...Object.values(template.deviceImages || {})].filter(Boolean).map(path => {
@@ -14,7 +14,7 @@ export function artworkIds(template, env) {
     const prefix = `/${env.CLOUDINARY_CLOUD_NAME}/image/upload/`;
     if (!url.pathname.startsWith(prefix)) throw new Error('Artwork belongs to another account.');
     const id = url.pathname.slice(prefix.length).replace(/^v\d+\//, '').replace(/\.(png|jpg|webp)$/i, '');
-    if (!/^schedsnap\/admin\/artwork\/[a-z0-9_-]+$/i.test(id) && !(generatedMasterId.test(id) && generatedMasterUrl.test(path))) throw new Error('Unexpected artwork identifier.');
+    if (!/^schedsnap\/admin\/artwork\/[a-z0-9_-]+$/i.test(id) && !(generatedMasterId.test(id) && generatedMasterUrl.test(path)) && !generatedBackgroundUrl.test(path)) throw new Error('Unexpected artwork identifier.');
     return id;
   }))];
 }

@@ -1,0 +1,317 @@
+{
+  "backend": "native Canvas; DM Sans weights rounded to nearest hundred for native parser",
+  "reports": [
+    {
+      "id": "sanrio-kitty-nursery",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "sanrio-kitty-nursery",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "sanrio-kitty-nursery",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "sanrio-kitty-nursery",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2284.9885714285715
+      }
+    },
+    {
+      "id": "sanrio-kitty-nursery",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 405.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "sanrio-kitty-nursery",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 669.0624177176253,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    },
+    {
+      "id": "sanrio-melody-lace",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "sanrio-melody-lace",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "sanrio-melody-lace",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "sanrio-melody-lace",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2284.9885714285715
+      }
+    },
+    {
+      "id": "sanrio-melody-lace",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 405.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "sanrio-melody-lace",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 669.0624177176253,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    },
+    {
+      "id": "sanrio-melody-peek",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "sanrio-melody-peek",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "sanrio-melody-peek",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "sanrio-melody-peek",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2284.9885714285715
+      }
+    },
+    {
+      "id": "sanrio-melody-peek",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 405.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "sanrio-melody-peek",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 669.0624177176253,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    },
+    {
+      "id": "sanrio-melody-corner",
+      "device": "mobile",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      }
+    },
+    {
+      "id": "sanrio-melody-corner",
+      "device": "mobile",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      }
+    },
+    {
+      "id": "sanrio-melody-corner",
+      "device": "tablet",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1072.8411428571428
+      }
+    },
+    {
+      "id": "sanrio-melody-corner",
+      "device": "tablet",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 2284.9885714285715
+      }
+    },
+    {
+      "id": "sanrio-melody-corner",
+      "device": "laptop",
+      "schedule": "sample",
+      "overflow": false,
+      "meetings": 5,
+      "bounds": {
+        "x": 405.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      }
+    },
+    {
+      "id": "sanrio-melody-corner",
+      "device": "laptop",
+      "schedule": "dense",
+      "overflow": false,
+      "meetings": 15,
+      "bounds": {
+        "x": 669.0624177176253,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      }
+    }
+  ]
+}

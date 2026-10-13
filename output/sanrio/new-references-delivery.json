@@ -1,0 +1,89 @@
+{
+  "verifiedAt": "2026-10-13T10:02:04.258Z",
+  "published": 232,
+  "sanrio": 16,
+  "newDesigns": [
+    {
+      "id": "sanrio-kitty-nursery",
+      "name": "Kitty Nursery",
+      "transparent": true
+    },
+    {
+      "id": "sanrio-melody-lace",
+      "name": "Melody Lace",
+      "transparent": true
+    },
+    {
+      "id": "sanrio-melody-peek",
+      "name": "Melody Peek",
+      "transparent": true
+    },
+    {
+      "id": "sanrio-melody-corner",
+      "name": "Melody Corner",
+      "transparent": true
+    }
+  ],
+  "images": [
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791885599/schedsnap/wallpapers/scenic/sanrio-kitty-nursery/mobile-712675d38d4dce64.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791885601/schedsnap/wallpapers/scenic/sanrio-kitty-nursery/tablet-0f8e64fd4634de0b.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791885597/schedsnap/wallpapers/scenic/sanrio-kitty-nursery/laptop-aaa92b7d22743b3c.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791885606/schedsnap/wallpapers/scenic/sanrio-melody-lace/mobile-2ef98c5f7e9e96b1.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791885609/schedsnap/wallpapers/scenic/sanrio-melody-lace/tablet-4e8a34009cc3b265.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791885604/schedsnap/wallpapers/scenic/sanrio-melody-lace/laptop-06f514ff4ff504a8.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791885611/schedsnap/wallpapers/scenic/sanrio-melody-peek/mobile-acb925217b91a0bb.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791885611/schedsnap/wallpapers/scenic/sanrio-melody-peek/tablet-0eb5a3113613d926.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791885610/schedsnap/wallpapers/scenic/sanrio-melody-peek/laptop-be03786a071b0892.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791885602/schedsnap/wallpapers/scenic/sanrio-melody-corner/mobile-41de568b362068bc.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791885605/schedsnap/wallpapers/scenic/sanrio-melody-corner/tablet-eb358c3a0f0a533a.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791885598/schedsnap/wallpapers/scenic/sanrio-melody-corner/laptop-085c875459286b92.png",
+      "status": 200,
+      "type": "image/png"
+    }
+  ]
+}

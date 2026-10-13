@@ -23,11 +23,12 @@ export function galleryPreviewTemplate(template) {
 
 export function customizeWallpaperTemplate(template, settings = {}, device = template?.device) {
   if (!template) return template;
-  const tabletPortrait = device === 'tablet' && (settings.orientation || template.orientation) !== 'landscape';
+  const tabletPortrait = device === 'tablet';
   if (!tabletPortrait && !Object.keys(settings).length) return template;
   const defaults = tabletPortrait ? { schedulePosition: 'center', containerStyle: 'glass' } : {};
   // Device defaults precede the user's explicit appearance choices.
   const customized = { ...template, ...defaults, ...settings };
+  if (tabletPortrait) customized.orientation = 'portrait';
   if (settings.ink) customized.muted = settings.ink;
   // Full wallpaper artwork is fixed; animal cutouts and native patterns are separate.
   if (template.image && template.layout !== 'mascot') {

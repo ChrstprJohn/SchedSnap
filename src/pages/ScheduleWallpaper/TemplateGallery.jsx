@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, Check, Heart, X } from 'lucide-react';
-import { deviceResolutions, tabletLandscapeResolution, mascotTemplateSchedule, templateSchedule } from '../../assets/templates.js';
+import { deviceResolutions, mascotTemplateSchedule, templateSchedule } from '../../assets/templates.js';
 import useInfiniteGallery from '../../lib/useInfiniteGallery.js';
 import { useCatalogStatus } from '../../lib/catalogContext.js';
 import { WallpaperCanvas } from './CanvasPreview.jsx';
@@ -17,7 +17,7 @@ const previewSchedule = (template) => template.layout === 'mascot' ? mascotTempl
 export default function TemplateGallery({ selectedId, settings = {}, schedule, scheduleTitle = 'Class Schedule', onSelect, initialCategory = 'all', device = 'mobile', onDeviceChange, showDeviceFilter = true }) {
   const { templates: wallpaperTemplates, loading, error } = useCatalogStatus();
   const thumbnailWidth = device === 'laptop' ? 480 : device === 'tablet' ? 384 : 270;
-  const designResolution = (item) => device === 'tablet' && item.orientation === 'landscape' ? tabletLandscapeResolution : deviceResolutions[device];
+  const designResolution = () => deviceResolutions[device];
   const [category, setCategory] = useState(() => galleryCategories.some((item) => item.id === initialCategory) ? initialCategory : 'all');
   const [preview, setPreview] = useState(null);
   const { likes, pending, error: likeError, refresh: refreshLikes, toggle: toggleLike } = useDesignLikes();

@@ -7,7 +7,7 @@ import { readDraft, saveDraft } from '../../lib/scheduleDraft.js';
 import { api } from '../../lib/api.js';
 import { loadImportUsage, rememberImportUsage } from '../../lib/importUsage.js';
 import { templateProperties, trackEvent } from '../../lib/analytics.js';
-import { deviceResolutions, tabletLandscapeResolution } from '../../assets/templates.js';
+import { deviceResolutions } from '../../assets/templates.js';
 import { useTemplates, useCatalogStatus } from '../../lib/catalogContext.js';
 import { sampleSchedule } from '../../assets/sampleSchedule.js';
 import { scheduleSchema } from '../../../shared/scheduleSchema.js';
@@ -33,7 +33,7 @@ export default function ScheduleWallpaper() {
     return `${pathname}?${params}`;
   }
   const [templateSettings, setTemplateSettings] = useState({});
-  const resolution = device === 'tablet' && templateSettings[templateId]?.orientation === 'landscape' ? tabletLandscapeResolution : deviceResolutions[device];
+  const resolution = deviceResolutions[device];
   const [schedule, setSchedule] = useState({ classes: [], warnings: [] });
   const [scheduleSource, setScheduleSource] = useState('unknown');
   const [image, setImage] = useState(null);

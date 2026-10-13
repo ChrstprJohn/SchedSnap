@@ -1,0 +1,76 @@
+{
+  "id": "sanrio-kitty-nursery",
+  "provider": "built-in image_gen",
+  "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-b3e66c57-fa24-4664-b1a8-c3967e547db9.png",
+  "assets": [
+    {
+      "device": "mobile",
+      "prompt": "Use case: illustration-story. Asset type: opaque mobile schedule wallpaper, exact 1080 x 2400 pixels portrait aspect 9:20. Input image1 is a style and subject reference only. Create an independently composed Hello Kitty nursery wallpaper with an extremely pale blush gingham background, powder pink bows, fluffy Hello Kitty plush wearing a pink bow, tiny teddy bear, rocking horse, pacifier, baby bottle, apple and soft stars in the reference's washed pastel gentle grey outline style. Keep the central upper and middle area x15%-85%, y12%-70% almost entirely empty pale gingham for readable schedule text; large Kitty plush and nursery toys arranged along bottom y75%-98%, very small bows and stars at outermost edges and top corners. Soft low contrast pink and light grey outlines, neat flat illustration with white plush. Full bleed opaque artwork only, no text including HELLO KITTY, no lettering, no logos, no schedule boxes, no dates, no UI, no watermark, no device frame. Do not copy the reference's busy center. Output exact requested resolution.",
+      "generatedSource": "C:\\Users\\Administrator\\.codex\\generated_images\\01a134ad-1172-7560-82b5-0e23f2fbdaad\\exec-1e4ae5c5-fcbd-4f7c-a0ea-b96f35fe18bf.png",
+      "output": "public/wallpapers/scenic/sanrio-kitty-nursery/mobile.png",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "sourceDimensions": [
+        841,
+        1870
+      ],
+      "savedDimensions": [
+        1080,
+        2400
+      ],
+      "hasAlpha": false,
+      "normalization": "Proportional contain resize with subpixel aspect-rounding edge padding only; no cropping or stretching",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a134ad-1172-7560-82b5-0e23f2fbdaad\\exec-1e4ae5c5-fcbd-4f7c-a0ea-b96f35fe18bf.png",
+      "destination": "public/wallpapers/scenic/sanrio-kitty-nursery/mobile.png",
+      "createdAt": "2026-10-13T09:53:15.353Z"
+    },
+    {
+      "device": "tablet",
+      "prompt": "Use case: illustration-story. Asset type: opaque tablet portrait schedule wallpaper exact 1600 x 2560 pixels aspect 5:8. Input image1 style/subject reference only. Independently compose a wider portrait pale blush nursery wallpaper using very faint pink gingham and gentle light grey outlines, Hello Kitty plush with pink bow, tiny teddy bear, rocking horse, bows, pacifier, apple and soft stars. Keep x12%-88%, y10%-74% almost empty soft gingham for a tablet timetable; put a large intact plush Kitty bottom left below75%, rocking horse and teddy in bottom right below78%, tiny bows only outer corners, sparse very small stars outer side margins. Artwork matches the reference's washed powder pink/white pastel softness and white plush forms. Do not stretch mobile composition. Full bleed opaque illustration, no text including HELLO KITTY, no letters, logo, timetable, UI, badges, watermark, frame. Output exactly1600x2560.",
+      "generatedSource": "C:\\Users\\Administrator\\.codex\\generated_images\\01a134ad-1172-7560-82b5-0e23f2fbdaad\\exec-210b5dba-e5a9-4595-aa76-8ea7194cc06c.png",
+      "output": "public/wallpapers/scenic/sanrio-kitty-nursery/tablet.png",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "sourceDimensions": [
+        992,
+        1586
+      ],
+      "savedDimensions": [
+        1600,
+        2560
+      ],
+      "hasAlpha": false,
+      "normalization": "Proportional contain resize with subpixel aspect-rounding edge padding only; no cropping or stretching",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a134ad-1172-7560-82b5-0e23f2fbdaad\\exec-210b5dba-e5a9-4595-aa76-8ea7194cc06c.png",
+      "destination": "public/wallpapers/scenic/sanrio-kitty-nursery/tablet.png",
+      "createdAt": "2026-10-13T09:54:22.811Z"
+    },
+    {
+      "device": "laptop",
+      "prompt": "Use case: illustration-story. Asset type: opaque laptop schedule wallpaper exact1920x1080 pixels wide16:9. Image1 is style and subject reference only. Independently recompose its very pale blush gingham nursery theme for landscape: Hello Kitty fluffy white plush with pastel pink bow nestled in far lower-left corner x0%-18%, little teddy and rocking horse with pink accents near far lower-right corner x83%-100%, sparse small bows and stars along outer top corners and bottom border. Pacifier, baby bottle, apple toy subtle on bottom edge. Keep x20%-80%, y10%-88% almost completely empty ultra-pale gingham for timetable; no large characters in central schedule area. Soft flat cute illustrations with exceptionally gentle grey outlines, pastel powderpink white near-ivory washed softness. Full bleed opaque background, no text or HELLO KITTY lettering, no logo, no UI, no timetable boxes, no badges, watermark, device frame. No stretching or cropping a phone composition. Output exactly1920x1080.",
+      "generatedSource": "C:\\Users\\Administrator\\.codex\\generated_images\\01a134ad-1172-7560-82b5-0e23f2fbdaad\\exec-d34ff238-a5ec-4999-889d-d6e08e15eb3f.png",
+      "output": "public/wallpapers/scenic/sanrio-kitty-nursery/laptop.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "savedDimensions": [
+        1920,
+        1080
+      ],
+      "hasAlpha": false,
+      "normalization": "Proportional contain resize with subpixel aspect-rounding edge padding only; no cropping or stretching",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a134ad-1172-7560-82b5-0e23f2fbdaad\\exec-d34ff238-a5ec-4999-889d-d6e08e15eb3f.png",
+      "destination": "public/wallpapers/scenic/sanrio-kitty-nursery/laptop.png",
+      "createdAt": "2026-10-13T09:55:28.346Z"
+    }
+  ]
+}

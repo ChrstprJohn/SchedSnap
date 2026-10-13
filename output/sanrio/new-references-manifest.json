@@ -1,0 +1,76 @@
+{
+  "assets": [
+    {
+      "path": "public/wallpapers/scenic/sanrio-kitty-nursery/mobile.png",
+      "sha256": "712675d38d4dce64ba842a450ede6edc0f7029a6de9a2dcee2a9f3a212018b67",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-kitty-nursery/tablet.png",
+      "sha256": "0f8e64fd4634de0b9af320f6367c3bb72d5181b5a69101975996d724559cab47",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-kitty-nursery/laptop.png",
+      "sha256": "aaa92b7d22743b3c30a29b91620a1e981a0a6a301371bab410bccfcaa9ba08f8",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-melody-lace/mobile.png",
+      "sha256": "2ef98c5f7e9e96b1db073c76205fa03f2fc4ee9aac7aa43da432ccd04f90232a",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-melody-lace/tablet.png",
+      "sha256": "4e8a34009cc3b2650bb9a5437f6f061dacd12831a5962f3f84a9c153461faea9",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-melody-lace/laptop.png",
+      "sha256": "06f514ff4ff504a8d63b34cb2d6e0cdfac2b288e89fb60e68fd6eca62b5d7c9f",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-melody-peek/mobile.png",
+      "sha256": "acb925217b91a0bb54029d1a98e95e9e8ef48889d3d7ef68d56a8507fe2bb5da",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-melody-peek/tablet.png",
+      "sha256": "0eb5a3113613d9262f23d093d8ef0e8caa6b134c7e21f09ba506eb0cf892ea29",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-melody-peek/laptop.png",
+      "sha256": "be03786a071b08927224cb83ee0a7771531dfb0a35f84ad99e6fee68df47c4ae",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-melody-corner/mobile.png",
+      "sha256": "41de568b362068bc6548113d2bd9f8e451ab637ed0907dcc07c8b4845c66fa6a",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-melody-corner/tablet.png",
+      "sha256": "eb358c3a0f0a533abb35b3286295871ef5d1ce46a39b9e0fd35ab421d0cdd284",
+      "dimensionsValid": true,
+      "opaque": true
+    },
+    {
+      "path": "public/wallpapers/scenic/sanrio-melody-corner/laptop.png",
+      "sha256": "085c875459286b9294a11a1e8d5eb1d3e6e94a1816e0fce8717965d88c592f2a",
+      "dimensionsValid": true,
+      "opaque": true
+    }
+  ]
+}

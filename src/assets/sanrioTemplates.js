@@ -1,5 +1,9 @@
 // Twelve generated Sanrio designs; artwork is independently composed for every device.
 const designs = [
+  ["sanrio-kitty-nursery","Kitty Nursery","Hello Kitty plush and nursery toys on quiet blush gingham.","sanrio-nursery","#fff9fc","2026-10-13T09:53:15.353Z"],
+  ["sanrio-melody-lace","Melody Lace","My Melody and scalloped lace on pale pink polka dots.","sanrio-melody","#fff0f6","2026-10-13T09:53:11.882Z"],
+  ["sanrio-melody-peek","Melody Peek","My Melody peeks above the bottom edge with a rose lace bow.","sanrio-melody","#fff3f7","2026-10-13T09:53:17.176Z"],
+  ["sanrio-melody-corner","Melody Corner","My Melody and a floral lace bow peek into a quiet dotted corner.","sanrio-melody","#fff3f7","2026-10-13T09:53:08.098Z"],
   ['sanrio-parade-candy', 'Candy Parade', 'My Melody, Hello Kitty and Cinnamoroll carry pastel sweets beneath ribbon bunting.', 'sanrio-parade', '#fff7f7', '2026-10-13T05:33:33.306Z'],
   ['sanrio-parade-music', 'Ribbon Music Parade', 'My Melody plays the trumpet while Hello Kitty and Cinnamoroll join a ribbon-trimmed marching band.', 'sanrio-parade', '#fff8f2', '2026-10-13T05:37:06.346Z'],
   ['sanrio-parade-balloons', 'Balloon Parade', 'Heart and star balloons accompany My Melody, Hello Kitty and Cinnamoroll in a soft pink parade.', 'sanrio-parade', '#fff8f5', '2026-10-13T05:42:05.495Z'],
@@ -22,6 +26,7 @@ export const sanrioTemplates = designs.map(([id, name, description, family, back
   surface: 'rgba(255, 255, 255, 0.96)',
   line: 'rgba(88, 59, 73, 0.20)',
   containerStyle: 'solid',
+  containerFill: false,
   containerShape: 'rounded',
   verticalPosition: -35,
   bottomMargin: 0,

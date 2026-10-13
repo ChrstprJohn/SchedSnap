@@ -11,10 +11,22 @@ import { cloudinaryAssetUrl } from '../src/utils/cloudinaryAssets.js';
 import { prepareWallpaperAssets } from '../src/utils/wallpaperAssets.js';
 import { galleryPreviewTemplate, customizeWallpaperTemplate } from '../src/utils/wallpaperTheme.js';
 import { drawWallpaper } from '../src/utils/canvasHelpers.js';
+import { artworkIds } from '../server/deleteArtwork.js';
 
-test('Sanrio supplies twelve selectable designs in four families with 36 uploaded device compositions', () => {
-  assert.equal(sanrioTemplates.length, 12);
-  assert.equal(new Set(sanrioTemplates.map(template => template.id)).size, 12);
+test('immutable uploaded backgrounds can be published without requiring a new client manifest', () => {
+  const deviceImages = Object.fromEntries(['mobile', 'tablet', 'laptop'].map(device => [device, `https://res.cloudinary.com/example/image/upload/v123/schedsnap/wallpapers/scenic/sanrio-melody-lace/${device}-0123456789abcdef.png`]));
+  const template = { ...sanrioTemplates[0], status: 'published', image: deviceImages.mobile, deviceImages };
+  assert.equal(templateSchema.safeParse(template).success, true);
+  assert.equal(artworkIds(template, { CLOUDINARY_CLOUD_NAME: 'example' }).length, 3);
+  assert.throws(() => artworkIds(template, { CLOUDINARY_CLOUD_NAME: 'foreign' }), /another account/);
+  for (const image of [deviceImages.mobile.replace('-0123456789abcdef', ''), deviceImages.mobile.replace('https:', 'http:'), deviceImages.mobile.replace('res.cloudinary.com', 'example.com')]) {
+    assert.equal(templateSchema.safeParse({ ...template, image, deviceImages: { ...deviceImages, mobile: image } }).success, false);
+  }
+});
+
+test('Sanrio supplies sixteen selectable designs in six families with 48 uploaded device compositions', () => {
+  assert.equal(sanrioTemplates.length, 16);
+  assert.equal(new Set(sanrioTemplates.map(template => template.id)).size, 16);
   assert.equal(designCollections.find(collection => collection.id === 'sanrio')?.name, 'Sanrio');
   assert.equal(galleryCategories.filter(category => category.id === 'sanrio').length, 1);
   const families = new Map();
@@ -49,22 +61,22 @@ test('Sanrio supplies twelve selectable designs in four families with 36 uploade
       } else hashes.add(asset.publicId);
     }
   }
-  assert.deepEqual([...families.keys()], ['sanrio-parade', 'sanrio-pixel', 'sanrio-tea', 'sanrio-gingham']);
-  assert.deepEqual([...families.values()], [3, 3, 3, 3]);
-  assert.equal(hashes.size, 36);
+  assert.deepEqual([...families.keys()], ['sanrio-nursery', 'sanrio-melody', 'sanrio-parade', 'sanrio-pixel', 'sanrio-tea', 'sanrio-gingham']);
+  assert.deepEqual([...families.values()], [1, 3, 3, 3, 3, 3]);
+  assert.equal(hashes.size, 48);
   assert.equal(templateSchema.safeParse({
     ...sanrioTemplates[0], status: 'published',
     deviceImages: { ...sanrioTemplates[0].deviceImages, tablet: undefined },
   }).success, false, 'Publishing still requires three device backgrounds');
 });
 
-test('Sanrio paths, creation dates and all prompts match the four source provenance records', () => {
-  const records = ['parade', 'pixel', 'tea', 'gingham'].flatMap(group => {
+test('Sanrio paths, creation dates and all prompts match the eight source provenance records', () => {
+  const records = ['parade', 'pixel', 'tea', 'gingham', 'kitty-nursery', 'melody-lace', 'melody-peek', 'melody-corner'].flatMap(group => {
     const doc = JSON.parse(readFileSync(new URL(`../documentation/sanrio-${group}-prompts.json`, import.meta.url), 'utf8'));
     return doc.assets.map(asset => ({ ...asset, path: '/' + (asset.destination || asset.output).replace(/^public\//, ''),
       createdAt: asset.createdAt || doc.createdAt || doc.generatedAt }));
   });
-  assert.equal(records.length, 36);
+  assert.equal(records.length, 48);
   for (const template of sanrioTemplates) {
     const mobile = records.find(record => record.path === template.image);
     assert.equal(template.createdAt, mobile.createdAt, template.id);

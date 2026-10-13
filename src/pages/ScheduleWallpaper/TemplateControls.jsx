@@ -1,5 +1,5 @@
 import { particleStyles } from '../../utils/wallpaperParticles.js';
-import { schedulePosition, scheduleMovement } from '../../utils/canvasHelpers.js';
+import { schedulePosition, scheduleMovement, tabletBoxSpacing } from '../../utils/canvasHelpers.js';
 import { ChevronDown } from 'lucide-react';
 import { colorInputValue, wallpaperFonts, mascotPosition } from '../../utils/wallpaperTheme.js';
 
@@ -54,15 +54,15 @@ export default function TemplateControls({ template, onChange, onReset, enablePl
         <label className="appearance-label" htmlFor="mascot-position">Character position</label>
         <div className="field-select appearance-select"><select id="mascot-position" className="field-input" value={mascotPosition(template)} onChange={(event) => onChange('mascotPosition', event.target.value)}><option value="left">Left</option><option value="center">Center</option><option value="right">Right</option></select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>
       </div>}
-      {template.device === 'tablet' && <div className="appearance-row">
-        <label className="appearance-label" htmlFor="tablet-orientation">Orientation</label>
-        <div className="field-select appearance-select"><select id="tablet-orientation" className="field-input" value={template.orientation || 'portrait'} onChange={(event) => onChange('orientation', event.target.value)}><option value="portrait">Portrait</option><option value="landscape">Landscape</option></select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>
-      </div>}
       {fixedBackground ? <p className="text-xs leading-relaxed text-muted">Background artwork stays fixed.</p> : <AppearanceColor colorKey="background" template={template} onChange={onChange} />}
       {editablePatterns.has(template.pattern) && <AppearanceColor colorKey="patternColor" template={template} onChange={onChange} />}
     </fieldset>
     <fieldset className="appearance-group">
       <legend>Day containers</legend>
+      {template.device === 'tablet' && <div className="top-margin-control">
+        <div className="top-margin-label"><label htmlFor="tablet-box-spacing">Space between boxes</label><output htmlFor="tablet-box-spacing">{tabletBoxSpacing(template)}</output></div>
+        <input id="tablet-box-spacing" type="range" min="0" max="100" step="1" value={tabletBoxSpacing(template)} aria-valuetext={`${tabletBoxSpacing(template)} spacing units`} onChange={event => onChange('tabletBoxSpacing', Number(event.target.value))} />
+      </div>}
       <div className="appearance-row">
         <label className="appearance-label" htmlFor="container-style">Finish</label>
         <div className="field-select appearance-select"><select id="container-style" className="field-input" value={template.containerStyle || 'glass'} onChange={(event) => onChange('containerStyle', event.target.value)}><option value="glass">Frosted glass</option><option value="solid">Solid</option></select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>
