@@ -1,0 +1,102 @@
+{
+  "provider": "built-in image_gen",
+  "createdAt": "2026-10-14T06:37:24.000Z",
+  "assets": [
+    {
+      "id": "meep-tongue",
+      "reference": "codex-clipboard-d46c00bf-c7c1-453d-b8ae-7228e1721f72.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a133b2-fbf2-7071-8830-0bd2ac1e4851/exec-20307f88-5d02-45c3-a79a-0388f3ef1c65.png",
+      "prompt": "Use case: background-extraction. Edit target: this exact supplied Meep screenshot. Remove only the white background to make a transparent PNG cutout of this SAME character. Preserve the exact face silhouette, expression, features, colors, positions, proportions and accessories from the reference. Keep its modest original screenshot softness, faint slightly fuzzy outlines, simple low-detail cream-to-yellow shading and nostalgic emoticon appearance. Do NOT enhance quality, sharpen, add detail, add texture, boost contrast, add glossy highlights, deepen bevels, turn it into a new 3D render, or reinterpret the design. White parts INSIDE eyes and accessories must stay opaque. Keep the entire face and any halo, sweat drops, brows or hearts visible with transparent padding. Remove the white surrounding field and diffuse grey background shadow; retain subtle existing shading within the face. One faithful expression only, no body, no new objects, no text, no watermark; real transparent alpha."
+    },
+    {
+      "id": "meep-unsure",
+      "reference": "codex-clipboard-460320cc-c1a5-4073-85af-36151a42c01c.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a133b2-fbf2-7071-8830-0bd2ac1e4851/exec-ed5d3ca9-51b2-4694-b9d0-ea8d4d0ec689.png",
+      "prompt": "Use case: background-extraction. Edit target: this exact supplied Meep screenshot. Remove only the white background to make a transparent PNG cutout of this SAME character. Preserve the exact face silhouette, expression, features, colors, positions, proportions and accessories from the reference. Keep its modest original screenshot softness, faint slightly fuzzy outlines, simple low-detail cream-to-yellow shading and nostalgic emoticon appearance. Do NOT enhance quality, sharpen, add detail, add texture, boost contrast, add glossy highlights, deepen bevels, turn it into a new 3D render, or reinterpret the design. White parts INSIDE eyes and accessories must stay opaque. Keep the entire face and any halo, sweat drops, brows or hearts visible with transparent padding. Remove the white surrounding field and diffuse grey background shadow; retain subtle existing shading within the face. One faithful expression only, no body, no new objects, no text, no watermark; real transparent alpha."
+    },
+    {
+      "id": "meep-sweat",
+      "reference": "codex-clipboard-51a06a01-700a-496f-8ca3-69bce19d5cdd.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a133b2-fbf2-7071-8830-0bd2ac1e4851/exec-48fb7665-b965-4cd4-b937-91f2fa8be2e2.png",
+      "prompt": "Use case: background-extraction. Edit target: this exact supplied Meep screenshot. Remove only the white background to make a transparent PNG cutout of this SAME character. Preserve the exact face silhouette, expression, features, colors, positions, proportions and accessories from the reference. Keep its modest original screenshot softness, faint slightly fuzzy outlines, simple low-detail cream-to-yellow shading and nostalgic emoticon appearance. Do NOT enhance quality, sharpen, add detail, add texture, boost contrast, add glossy highlights, deepen bevels, turn it into a new 3D render, or reinterpret the design. White parts INSIDE eyes and accessories must stay opaque. Keep the entire face and any halo, sweat drops, brows or hearts visible with transparent padding. Remove the white surrounding field and diffuse grey background shadow; retain subtle existing shading within the face. One faithful expression only, no body, no new objects, no text, no watermark; real transparent alpha."
+    },
+    {
+      "id": "meep-angry",
+      "reference": "codex-clipboard-f90d5c68-c3da-4f52-8839-d77b60e49741.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a133b2-fbf2-7071-8830-0bd2ac1e4851/exec-78af764c-5246-4c27-ad2e-099a35c61457.png",
+      "prompt": "Use case: background-extraction. Edit target: this exact supplied Meep screenshot. Remove only the white background to make a transparent PNG cutout of this SAME character. Preserve the exact face silhouette, expression, features, colors, positions, proportions and accessories from the reference. Keep its modest original screenshot softness, faint slightly fuzzy outlines, simple low-detail cream-to-yellow shading and nostalgic emoticon appearance. Do NOT enhance quality, sharpen, add detail, add texture, boost contrast, add glossy highlights, deepen bevels, turn it into a new 3D render, or reinterpret the design. White parts INSIDE eyes and accessories must stay opaque. Keep the entire face and any halo, sweat drops, brows or hearts visible with transparent padding. Remove the white surrounding field and diffuse grey background shadow; retain subtle existing shading within the face. One faithful expression only, no body, no new objects, no text, no watermark; real transparent alpha."
+    },
+    {
+      "id": "meep-dizzy",
+      "reference": "codex-clipboard-ef7b51d0-5ad2-4d17-bad0-3aaf8be13007.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a133b2-fbf2-7071-8830-0bd2ac1e4851/exec-8b35ac9f-fdc9-4e1e-bb77-dc0a97394c1d.png",
+      "prompt": "Use case: background-extraction. Edit target: this exact supplied Meep screenshot. Remove only the white background to make a transparent PNG cutout of this SAME character. Preserve the exact face silhouette, expression, features, colors, positions, proportions and accessories from the reference. Keep its modest original screenshot softness, faint slightly fuzzy outlines, simple low-detail cream-to-yellow shading and nostalgic emoticon appearance. Do NOT enhance quality, sharpen, add detail, add texture, boost contrast, add glossy highlights, deepen bevels, turn it into a new 3D render, or reinterpret the design. White parts INSIDE eyes and accessories must stay opaque. Keep the entire face and any halo, sweat drops, brows or hearts visible with transparent padding. Remove the white surrounding field and diffuse grey background shadow; retain subtle existing shading within the face. One faithful expression only, no body, no new objects, no text, no watermark; real transparent alpha."
+    },
+    {
+      "id": "meep-surprised",
+      "reference": "codex-clipboard-85206269-89d3-488f-95f2-3985482a008a.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a133b2-fbf2-7071-8830-0bd2ac1e4851/exec-9012ff1e-775e-4270-b895-c3acce7b861c.png",
+      "prompt": "Use case: background-extraction. Edit target: this exact supplied Meep screenshot. Remove only the white background to make a transparent PNG cutout of this SAME character. Preserve the exact face silhouette, expression, features, colors, positions, proportions and accessories from the reference. Keep its modest original screenshot softness, faint slightly fuzzy outlines, simple low-detail cream-to-yellow shading and nostalgic emoticon appearance. Do NOT enhance quality, sharpen, add detail, add texture, boost contrast, add glossy highlights, deepen bevels, turn it into a new 3D render, or reinterpret the design. White parts INSIDE eyes and accessories must stay opaque. Keep the entire face and any halo, sweat drops, brows or hearts visible with transparent padding. Remove the white surrounding field and diffuse grey background shadow; retain subtle existing shading within the face. One faithful expression only, no body, no new objects, no text, no watermark; real transparent alpha."
+    },
+    {
+      "id": "meep-laughing-tongue",
+      "reference": "codex-clipboard-28c68bb0-1f59-4267-8111-0bb3518b1880.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a133b2-fbf2-7071-8830-0bd2ac1e4851/exec-02d88b89-27e6-4d85-b548-a9f73d6f7c74.png",
+      "prompt": "Use case: background-extraction. Edit target: this exact supplied Meep screenshot. Remove only the white background to make a transparent PNG cutout of this SAME character. Preserve the exact face silhouette, expression, features, colors, positions, proportions and accessories from the reference. Keep its modest original screenshot softness, faint slightly fuzzy outlines, simple low-detail cream-to-yellow shading and nostalgic emoticon appearance. Do NOT enhance quality, sharpen, add detail, add texture, boost contrast, add glossy highlights, deepen bevels, turn it into a new 3D render, or reinterpret the design. White parts INSIDE eyes and accessories must stay opaque. Keep the entire face and any halo, sweat drops, brows or hearts visible with transparent padding. Remove the white surrounding field and diffuse grey background shadow; retain subtle existing shading within the face. One faithful expression only, no body, no new objects, no text, no watermark; real transparent alpha."
+    },
+    {
+      "id": "meep-heart-eyes",
+      "reference": "codex-clipboard-6257fe67-5017-4327-a16a-0870d1250d4f.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a133b2-fbf2-7071-8830-0bd2ac1e4851/exec-4a3a076d-fa0f-472a-bba8-c38bf088bbb1.png",
+      "prompt": "Use case: background-extraction. Edit target: this exact supplied Meep screenshot. Remove only the white background to make a transparent PNG cutout of this SAME character. Preserve the exact face silhouette, expression, features, colors, positions, proportions and accessories from the reference. Keep its modest original screenshot softness, faint slightly fuzzy outlines, simple low-detail cream-to-yellow shading and nostalgic emoticon appearance. Do NOT enhance quality, sharpen, add detail, add texture, boost contrast, add glossy highlights, deepen bevels, turn it into a new 3D render, or reinterpret the design. White parts INSIDE eyes and accessories must stay opaque. Keep the entire face and any halo, sweat drops, brows or hearts visible with transparent padding. Remove the white surrounding field and diffuse grey background shadow; retain subtle existing shading within the face. One faithful expression only, no body, no new objects, no text, no watermark; real transparent alpha."
+    },
+    {
+      "id": "meep-blush",
+      "reference": "codex-clipboard-27fb9c50-e839-4897-8479-89876a6b6313.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a133b2-fbf2-7071-8830-0bd2ac1e4851/exec-02b786ad-aa95-4058-a9ac-ab3ac5306c59.png",
+      "prompt": "Use case: background-extraction. Edit target: this exact supplied Meep screenshot. Remove only the white background to make a transparent PNG cutout of this SAME character. Preserve the exact face silhouette, expression, features, colors, positions, proportions and accessories from the reference. Keep its modest original screenshot softness, faint slightly fuzzy outlines, simple low-detail cream-to-yellow shading and nostalgic emoticon appearance. Do NOT enhance quality, sharpen, add detail, add texture, boost contrast, add glossy highlights, deepen bevels, turn it into a new 3D render, or reinterpret the design. White parts INSIDE eyes and accessories must stay opaque. Keep the entire face and any halo, sweat drops, brows or hearts visible with transparent padding. Remove the white surrounding field and diffuse grey background shadow; retain subtle existing shading within the face. One faithful expression only, no body, no new objects, no text, no watermark; real transparent alpha."
+    },
+    {
+      "id": "meep-angel",
+      "reference": "codex-clipboard-6a1ebef9-f144-4772-a390-505e89f663ea.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a133b2-fbf2-7071-8830-0bd2ac1e4851/exec-49154a73-466a-4eca-8777-5a52992dad47.png",
+      "prompt": "Use case: background-extraction. Edit target: this exact supplied Meep screenshot. Remove only the white background to make a transparent PNG cutout of this SAME character. Preserve the exact face silhouette, expression, features, colors, positions, proportions and accessories from the reference. Keep its modest original screenshot softness, faint slightly fuzzy outlines, simple low-detail cream-to-yellow shading and nostalgic emoticon appearance. Do NOT enhance quality, sharpen, add detail, add texture, boost contrast, add glossy highlights, deepen bevels, turn it into a new 3D render, or reinterpret the design. White parts INSIDE eyes and accessories must stay opaque. Keep the entire face and any halo, sweat drops, brows or hearts visible with transparent padding. Remove the white surrounding field and diffuse grey background shadow; retain subtle existing shading within the face. One faithful expression only, no body, no new objects, no text, no watermark; real transparent alpha."
+    },
+    {
+      "id": "meep-happy-tears",
+      "reference": "codex-clipboard-3dee9952-46f4-41e8-a7c2-16530c126851.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a133b2-fbf2-7071-8830-0bd2ac1e4851/exec-76c35b37-00dc-4f62-9d15-1cb768d51ece.png",
+      "prompt": "Use case: background-extraction. Edit target: this exact supplied Meep screenshot. Remove only the white background to make a transparent PNG cutout of this SAME character. Preserve the exact face silhouette, expression, features, colors, positions, proportions and accessories from the reference. Keep its modest original screenshot softness, faint slightly fuzzy outlines, simple low-detail cream-to-yellow shading and nostalgic emoticon appearance. Do NOT enhance quality, sharpen, add detail, add texture, boost contrast, add glossy highlights, deepen bevels, turn it into a new 3D render, or reinterpret the design. White parts INSIDE eyes and accessories must stay opaque. Keep the entire face and any halo, sweat drops, brows or hearts visible with transparent padding. Remove the white surrounding field and diffuse grey background shadow; retain subtle existing shading within the face. One faithful expression only, no body, no new objects, no text, no watermark; real transparent alpha."
+    },
+    {
+      "id": "meep-giddy",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133b2-fbf2-7071-8830-0bd2ac1e4851\\exec-52f52f6f-d52e-463c-b08a-5f672899fe8b.png",
+      "prompt": "Use case: background-extraction. Edit target: this exact supplied Meep screenshot. Remove only the white background to make a transparent PNG cutout of this SAME character. Preserve the exact face silhouette, expression, features, colors, positions, proportions and accessories from the reference. Keep its modest original screenshot softness, faint slightly fuzzy outlines, simple low-detail cream-to-yellow shading and nostalgic emoticon appearance. Do NOT enhance quality, sharpen, add detail, add texture, boost contrast, add glossy highlights, deepen bevels, turn it into a new 3D render, or reinterpret the design. White parts INSIDE eyes and accessories must stay opaque. Keep the entire face and any halo, sweat drops, brows or hearts visible with transparent padding. Remove the white surrounding field and diffuse grey background shadow; retain subtle existing shading within the face. One faithful expression only, no body, no new objects, no text, no watermark; real transparent alpha. Keep a generous fully transparent 8% margin on all four sides. No stray detached pixels or background debris.",
+      "reference": "codex-clipboard-c49ba1a2-aa43-4a1b-a716-b85a27c7e74d.png"
+    },
+    {
+      "id": "meep-puffed-cheeks",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133b2-fbf2-7071-8830-0bd2ac1e4851\\exec-5e030992-e59c-4a5c-97d3-e0589cbc3b8d.png",
+      "prompt": "Use case: background-extraction. Edit target: this exact supplied Meep screenshot. Remove only the white background to make a transparent PNG cutout of this SAME character. Preserve the exact face silhouette, expression, features, colors, positions, proportions and accessories from the reference. Keep its modest original screenshot softness, faint slightly fuzzy outlines, simple low-detail cream-to-yellow shading and nostalgic emoticon appearance. Do NOT enhance quality, sharpen, add detail, add texture, boost contrast, add glossy highlights, deepen bevels, turn it into a new 3D render, or reinterpret the design. White parts INSIDE eyes and accessories must stay opaque. Keep the entire face and any halo, sweat drops, brows or hearts visible with transparent padding. Remove the white surrounding field and diffuse grey background shadow; retain subtle existing shading within the face. One faithful expression only, no body, no new objects, no text, no watermark; real transparent alpha. Keep a generous fully transparent 8% margin on all four sides. No stray detached pixels or background debris.",
+      "reference": "codex-clipboard-949ffef3-1f2c-4cfa-a1c6-8d1ae9b88d46.png"
+    },
+    {
+      "id": "meep-smile",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133b2-fbf2-7071-8830-0bd2ac1e4851\\exec-ba82cf09-0561-4c24-88e3-479d2bc9a251.png",
+      "prompt": "Use case: background-extraction. Edit target: the supplied Meep screenshot. Make a faithful transparent cutout of this EXACT face. Change only the white surrounding background to real transparency and remove the surrounding grey drop shadow and screenshot border. Preserve identical soft low-detail yellow/cream gradient, faint fuzzy outline, expression, proportions and feature positions. Do not sharpen, enhance, increase contrast, add details or highlights, deepen shading, modernize or make a polished 3D render. Retain the original screenshot softness and simple emoticon art style. One face only, no body, no text. Entire silhouette and eye strokes intact, generous 8% transparent padding on every side, no stray detached background pixels.",
+      "reference": "codex-clipboard-95ed4b9d-30b1-4855-84df-3200c6bddcc0.png"
+    },
+    {
+      "id": "meep-unamused",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133b2-fbf2-7071-8830-0bd2ac1e4851\\exec-cbc4cd30-67f9-4e76-847e-358dce7d471c.png",
+      "prompt": "Use case: background-extraction. Edit target: the supplied Meep screenshot. Make a faithful transparent cutout of this EXACT face. Change only the white surrounding background to real transparency and remove the surrounding grey drop shadow and screenshot border. Preserve identical soft low-detail yellow/cream gradient, faint fuzzy outline, expression, proportions and feature positions. Do not sharpen, enhance, increase contrast, add details or highlights, deepen shading, modernize or make a polished 3D render. Retain the original screenshot softness and simple emoticon art style. One face only, no body, no text. Entire silhouette and eye strokes intact, generous 8% transparent padding on every side, no stray detached background pixels.",
+      "reference": "codex-clipboard-6944b3aa-30c6-4863-acbd-da99a0625a39.png"
+    },
+    {
+      "id": "meep-wink",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133b2-fbf2-7071-8830-0bd2ac1e4851\\exec-3fa3ca50-74ee-41f9-a5a6-c5397a0ee359.png",
+      "prompt": "Use case: background-extraction. Edit target: the supplied Meep screenshot. Make a faithful transparent cutout of this EXACT face. Change only the white surrounding background to real transparency and remove the surrounding grey drop shadow and screenshot border. Preserve identical soft low-detail yellow/cream gradient, faint fuzzy outline, expression, proportions and feature positions. Do not sharpen, enhance, increase contrast, add details or highlights, deepen shading, modernize or make a polished 3D render. Retain the original screenshot softness and simple emoticon art style. One face only, no body, no text. Entire silhouette and eye strokes intact, generous 8% transparent padding on every side, no stray detached background pixels.",
+      "reference": "codex-clipboard-cd077d98-9b45-4ff6-88b3-a782dbd6e0b2.png"
+    }
+  ]
+}
