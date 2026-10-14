@@ -4,6 +4,7 @@ export const designCollections = [
   { id: 'all', name: 'All designs' },
   { id: 'scenic', name: 'Illustrated' },
   { id: 'sanrio', name: 'Sanrio' },
+  { id: 'we-bare-bears', name: 'We Bare Bears' },
   { id: 'domo', name: 'Domo' },
   { id: 'chikawa', name: 'Chiikawa' },
   { id: 'ghibli', name: 'Ghibli' },

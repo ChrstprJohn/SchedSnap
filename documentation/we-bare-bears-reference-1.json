@@ -1,0 +1,103 @@
+{
+  "collection": "We Bare Bears",
+  "reference": "user attachment 1: sparse off-white background with cartoon bears peeking at edges",
+  "provider": "built-in image_gen",
+  "createdAt": "2026-10-13T14:15:33Z",
+  "promptBase": "Full-bleed, device-specific clean flat 2D cartoon line-art fan art clearly recognizable as We Bare Bears: Ice Bear white with tiny black eyes and nose and stoic face; Grizz warm brown, rounder and expressive; Panda white with black eye patches, black ears and arms. Sparse bears along outer edges, quiet center for schedule. Opaque softly warm solid background. No text, logos, watermark, UI, frame, gradients, photorealism, or 3D.",
+  "resampling": "Lanczos resize to exact schedsnap-artwork dimensions after image generation; no device image was stretched from another format.",
+  "designs": [
+    {
+      "id": "wbb-edge-peek-a",
+      "name": "Edge Peek Trio A",
+      "concept": "Stoic white Ice Bear at upper left, expressive round brown Grizz at mid-right, Panda with black eye patches peeking up at lower left; sparse warm off-white background.",
+      "assets": {
+        "mobile": {
+          "path": "public/wallpapers/scenic/wbb-edge-peek-a/mobile.png",
+          "width": 1080,
+          "height": 2400,
+          "mode": "RGB",
+          "opaque": true,
+          "sha256": "f89394661c228a3f0e6ba1cdf9d5b33ceb7311fb0603884a7c27119e70f883e7"
+        },
+        "tablet": {
+          "path": "public/wallpapers/scenic/wbb-edge-peek-a/tablet.png",
+          "width": 1600,
+          "height": 2560,
+          "mode": "RGB",
+          "opaque": true,
+          "sha256": "fede027022eb58be7e48b18f7c47230a3ce1dfa0a02c2f832ca803974152089f"
+        },
+        "laptop": {
+          "path": "public/wallpapers/scenic/wbb-edge-peek-a/laptop.png",
+          "width": 1920,
+          "height": 1080,
+          "mode": "RGB",
+          "opaque": true,
+          "sha256": "25eb4c150a0372cc0a8b36ee883a24a16024df43986604de1d5371b4f3b66303"
+        }
+      }
+    },
+    {
+      "id": "wbb-edge-peek-b",
+      "name": "Edge Peek Trio B",
+      "concept": "Ice Bear peeking down from upper right, round brown Grizz at lower left, Panda with black eye patches and round ears at upper left; minimal warm ivory background.",
+      "assets": {
+        "mobile": {
+          "path": "public/wallpapers/scenic/wbb-edge-peek-b/mobile.png",
+          "width": 1080,
+          "height": 2400,
+          "mode": "RGB",
+          "opaque": true,
+          "sha256": "99e19ba9b1028ca6a74037599e24c55913f72bfe2f2a3e42c70b3a991724a67c"
+        },
+        "tablet": {
+          "path": "public/wallpapers/scenic/wbb-edge-peek-b/tablet.png",
+          "width": 1600,
+          "height": 2560,
+          "mode": "RGB",
+          "opaque": true,
+          "sha256": "0a4c7b1dbbd93707ad7a302941d8d85b8d486ad88f5145d84a57fc5c964daabe"
+        },
+        "laptop": {
+          "path": "public/wallpapers/scenic/wbb-edge-peek-b/laptop.png",
+          "width": 1920,
+          "height": 1080,
+          "mode": "RGB",
+          "opaque": true,
+          "sha256": "46607cde5307cbd368c8d9946ec03a9b0304212c8dd8ed8ea3910a2ad93c565d"
+        }
+      }
+    },
+    {
+      "id": "wbb-edge-peek-c",
+      "name": "Edge Peek Trio C",
+      "concept": "Cheerful Grizz leaning from right edge, Panda peeking from lower right, calm Ice Bear peeking from upper left; pale oat paper background and fine sketch-like linework.",
+      "assets": {
+        "mobile": {
+          "path": "public/wallpapers/scenic/wbb-edge-peek-c/mobile.png",
+          "width": 1080,
+          "height": 2400,
+          "mode": "RGB",
+          "opaque": true,
+          "sha256": "e4617ff3ac81ae9965642bd2db81d3be7dec72181407f547bc75a8c041f4fab9"
+        },
+        "tablet": {
+          "path": "public/wallpapers/scenic/wbb-edge-peek-c/tablet.png",
+          "width": 1600,
+          "height": 2560,
+          "mode": "RGB",
+          "opaque": true,
+          "sha256": "eaeb3324a1bb4a415034209804a69d6fe9fecbf191563d1f764499b80c866def"
+        },
+        "laptop": {
+          "path": "public/wallpapers/scenic/wbb-edge-peek-c/laptop.png",
+          "width": 1920,
+          "height": 1080,
+          "mode": "RGB",
+          "opaque": true,
+          "sha256": "74396189d9bac9cabe3187876d388d3b8bb6a47aac489a7620af07b1e0e5422d"
+        }
+      }
+    }
+  ]
+}

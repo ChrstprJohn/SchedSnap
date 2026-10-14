@@ -18,25 +18,13 @@ function StatValue({ display, total, exact = false }) {
   return <dd><span aria-hidden="true">{display}{exact ? '' : '+'}</span><span className="sr-only">{total.toLocaleString('en-US')}{exact ? ' recorded pageviews' : ' or more'}</span></dd>;
 }
 
-export default function LandingStats() {
-  const TEMPLATE_COUNT = useTemplates().length;
-  const sectionRef = useRef(null);
+function useCountProgress(ready) {
   const [progress, setProgress] = useState(0);
-  const [visits, setVisits] = useState(null);
-  const reducedMotion = useSyncExternalStore(subscribeToMotion, prefersReducedMotion, () => true);
-
   useEffect(() => {
-    let active = true;
-    loadVisitCount().then(count => { if (active) setVisits(count); });
-    return () => { active = false; };
-  }, []);
-
-  useEffect(() => {
-    let frame = null;
+    if (!ready) return;
+    let frame;
     let startedAt;
-    let started = false;
-    const countUp = (now) => {
-      frame = null;
+    const countUp = now => {
       if (prefersReducedMotion()) {
         setProgress(1);
         return;
@@ -46,17 +34,35 @@ export default function LandingStats() {
       setProgress(1 - (1 - elapsed) ** 3);
       if (elapsed < 1) frame = requestAnimationFrame(countUp);
     };
+    frame = requestAnimationFrame(countUp);
+    return () => cancelAnimationFrame(frame);
+  }, [ready]);
+  return progress;
+}
+
+export default function LandingStats() {
+  const TEMPLATE_COUNT = useTemplates().length;
+  const sectionRef = useRef(null);
+  const [entered, setEntered] = useState(false);
+  const [visits, setVisits] = useState(null);
+  const reducedMotion = useSyncExternalStore(subscribeToMotion, prefersReducedMotion, () => true);
+  const progress = useCountProgress(entered && TEMPLATE_COUNT > 0);
+  const visitProgress = useCountProgress(entered && visits !== null);
+
+  useEffect(() => {
+    let active = true;
+    loadVisitCount().then(count => { if (active) setVisits(count); });
+    return () => { active = false; };
+  }, []);
+
+  useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
-      if (started || !entry.isIntersecting || entry.intersectionRatio < 0.25) return;
-      started = true;
+      if (!entry.isIntersecting || entry.intersectionRatio < 0.25) return;
+      setEntered(true);
       observer.disconnect();
-      frame = requestAnimationFrame(countUp);
     }, { threshold: 0.25 });
     observer.observe(sectionRef.current);
-    return () => {
-      observer.disconnect();
-      if (frame !== null) cancelAnimationFrame(frame);
-    };
+    return () => observer.disconnect();
   }, []);
 
   const displayedProgress = reducedMotion ? 1 : progress;
@@ -66,7 +72,7 @@ export default function LandingStats() {
       <dl className="page-wrap">
         <div className="landing-stat">
           <dt>Total pageviews</dt>
-          {visits === null ? <dd><span aria-hidden="true">—</span><span className="sr-only">Pageview count unavailable</span></dd> : <StatValue display={new Intl.NumberFormat('en-US', { notation: 'compact', maximumFractionDigits: 1 }).format(Math.round(visits * displayedProgress))} total={visits} exact />}
+          {visits === null ? <dd><span aria-hidden="true">—</span><span className="sr-only">Pageview count unavailable</span></dd> : <StatValue display={new Intl.NumberFormat('en-US', { notation: 'compact', maximumFractionDigits: 1 }).format(Math.round(visits * (reducedMotion ? 1 : visitProgress)))} total={visits} exact />}
         </div>
         <div className="landing-stat"><dt>Total templates</dt><StatValue display={Math.round(TEMPLATE_COUNT * displayedProgress)} total={TEMPLATE_COUNT} /></div>
         <div className="landing-stat"><dt>Collections</dt><StatValue display={Math.round(COLLECTION_COUNT * displayedProgress)} total={COLLECTION_COUNT} /></div>
