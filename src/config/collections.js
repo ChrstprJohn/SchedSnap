@@ -7,6 +7,7 @@ export const designCollections = [
   { id: 'domo', name: 'Domo' },
   { id: 'onepiece', name: 'Onepiece' },
   { id: 'little-friends', name: 'Chiikawa inspired' },
+  { id: 'chikawa', name: 'Chikawa' },
   { id: 'mascot', name: 'Mascots' },
   { id: 'pattern', name: 'Patterns & prints' },
 ];

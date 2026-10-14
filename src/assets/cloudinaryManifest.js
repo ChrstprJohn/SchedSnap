@@ -3835,5 +3835,257 @@ export default {
     "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791937001/schedsnap/wallpapers/scenic/domo-golden-paper/tablet-7f6564ea76d9a2e2.png",
     "width": 1600,
     "height": 2560
+  },
+  "/wallpapers/scenic/chikawa-blossom-field-watercolor-ref1/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-blossom-field-watercolor-ref1/mobile-e4af98f01a86b687",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948357/schedsnap/wallpapers/scenic/chikawa-blossom-field-watercolor-ref1/mobile-e4af98f01a86b687.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/chikawa-blossom-field-watercolor-ref1/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-blossom-field-watercolor-ref1/tablet-6a3fcc2e80fcd28e",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948359/schedsnap/wallpapers/scenic/chikawa-blossom-field-watercolor-ref1/tablet-6a3fcc2e80fcd28e.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/chikawa-blossom-field-watercolor-ref1/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-blossom-field-watercolor-ref1/laptop-7c5c68554b7c0e7a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948362/schedsnap/wallpapers/scenic/chikawa-blossom-field-watercolor-ref1/laptop-7c5c68554b7c0e7a.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/chikawa-blossom-field-cel-ref1/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-blossom-field-cel-ref1/mobile-fd9ce734adea3a6d",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948353/schedsnap/wallpapers/scenic/chikawa-blossom-field-cel-ref1/mobile-fd9ce734adea3a6d.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/chikawa-blossom-field-cel-ref1/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-blossom-field-cel-ref1/tablet-94e89c0573d405d0",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948354/schedsnap/wallpapers/scenic/chikawa-blossom-field-cel-ref1/tablet-94e89c0573d405d0.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/chikawa-blossom-field-cel-ref1/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-blossom-field-cel-ref1/laptop-2d8777880abd62fe",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948353/schedsnap/wallpapers/scenic/chikawa-blossom-field-cel-ref1/laptop-2d8777880abd62fe.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/chikawa-blossom-field-paper-cut-ref1/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-blossom-field-paper-cut-ref1/mobile-b07398028ddfccb7",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948361/schedsnap/wallpapers/scenic/chikawa-blossom-field-paper-cut-ref1/mobile-b07398028ddfccb7.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/chikawa-blossom-field-paper-cut-ref1/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-blossom-field-paper-cut-ref1/tablet-14365d1fb671262a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948356/schedsnap/wallpapers/scenic/chikawa-blossom-field-paper-cut-ref1/tablet-14365d1fb671262a.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/chikawa-blossom-field-paper-cut-ref1/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-blossom-field-paper-cut-ref1/laptop-7a16444a9dc989a8",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948354/schedsnap/wallpapers/scenic/chikawa-blossom-field-paper-cut-ref1/laptop-7a16444a9dc989a8.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/chikawa-peek-doodle/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-peek-doodle/mobile-6fcda10325065a7d",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948375/schedsnap/wallpapers/scenic/chikawa-peek-doodle/mobile-6fcda10325065a7d.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/chikawa-peek-doodle/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-peek-doodle/tablet-25e846d3ec5cf077",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948377/schedsnap/wallpapers/scenic/chikawa-peek-doodle/tablet-25e846d3ec5cf077.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/chikawa-peek-doodle/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-peek-doodle/laptop-fe271c9863f9c493",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948375/schedsnap/wallpapers/scenic/chikawa-peek-doodle/laptop-fe271c9863f9c493.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/chikawa-peek-watercolor/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-peek-watercolor/mobile-3813242ee8937882",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948383/schedsnap/wallpapers/scenic/chikawa-peek-watercolor/mobile-3813242ee8937882.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/chikawa-peek-watercolor/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-peek-watercolor/tablet-fd977e7c1554f136",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948386/schedsnap/wallpapers/scenic/chikawa-peek-watercolor/tablet-fd977e7c1554f136.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/chikawa-peek-watercolor/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-peek-watercolor/laptop-5c2425f295b268f7",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948381/schedsnap/wallpapers/scenic/chikawa-peek-watercolor/laptop-5c2425f295b268f7.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/chikawa-peek-paper/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-peek-paper/mobile-ef18afd81f1980e8",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948379/schedsnap/wallpapers/scenic/chikawa-peek-paper/mobile-ef18afd81f1980e8.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/chikawa-peek-paper/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-peek-paper/tablet-01c32aec29c0a29b",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948386/schedsnap/wallpapers/scenic/chikawa-peek-paper/tablet-01c32aec29c0a29b.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/chikawa-peek-paper/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-peek-paper/laptop-c43986212a2a493b",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948379/schedsnap/wallpapers/scenic/chikawa-peek-paper/laptop-c43986212a2a493b.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/chikawa-woodland-path/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-woodland-path/mobile-662a04956717b503",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948388/schedsnap/wallpapers/scenic/chikawa-woodland-path/mobile-662a04956717b503.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/chikawa-woodland-path/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-woodland-path/tablet-ec633308beeaacbd",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948406/schedsnap/wallpapers/scenic/chikawa-woodland-path/tablet-ec633308beeaacbd.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/chikawa-woodland-path/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-woodland-path/laptop-d9a94139c5b0aaf7",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948394/schedsnap/wallpapers/scenic/chikawa-woodland-path/laptop-d9a94139c5b0aaf7.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/chikawa-forest-picnic/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-forest-picnic/mobile-a3b006783d998f7c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948374/schedsnap/wallpapers/scenic/chikawa-forest-picnic/mobile-a3b006783d998f7c.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/chikawa-forest-picnic/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-forest-picnic/tablet-3f4833643020b2f7",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948399/schedsnap/wallpapers/scenic/chikawa-forest-picnic/tablet-3f4833643020b2f7.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/chikawa-forest-picnic/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-forest-picnic/laptop-7d307fb2580602e7",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948377/schedsnap/wallpapers/scenic/chikawa-forest-picnic/laptop-7d307fb2580602e7.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/chikawa-firefly-grove/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-firefly-grove/mobile-13f4e8035d1311d3",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948369/schedsnap/wallpapers/scenic/chikawa-firefly-grove/mobile-13f4e8035d1311d3.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/chikawa-firefly-grove/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-firefly-grove/tablet-ff5d7e3379d95ea8",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948372/schedsnap/wallpapers/scenic/chikawa-firefly-grove/tablet-ff5d7e3379d95ea8.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/chikawa-firefly-grove/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-firefly-grove/laptop-6f215eeb8a58c7d0",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948370/schedsnap/wallpapers/scenic/chikawa-firefly-grove/laptop-6f215eeb8a58c7d0.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/chikawa-cloud-country-watercolor/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-cloud-country-watercolor/mobile-359dc2e47e0b4ce5",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948366/schedsnap/wallpapers/scenic/chikawa-cloud-country-watercolor/mobile-359dc2e47e0b4ce5.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/chikawa-cloud-country-watercolor/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-cloud-country-watercolor/tablet-8bb840f43a19a4ac",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948366/schedsnap/wallpapers/scenic/chikawa-cloud-country-watercolor/tablet-8bb840f43a19a4ac.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/chikawa-cloud-country-watercolor/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-cloud-country-watercolor/laptop-ab16ab7bd9bb9ea4",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948373/schedsnap/wallpapers/scenic/chikawa-cloud-country-watercolor/laptop-ab16ab7bd9bb9ea4.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/chikawa-cloud-country-anime/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-cloud-country-anime/mobile-fcfd35d31c17bad9",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948361/schedsnap/wallpapers/scenic/chikawa-cloud-country-anime/mobile-fcfd35d31c17bad9.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/chikawa-cloud-country-anime/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-cloud-country-anime/tablet-c31b612a7ea987f0",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948363/schedsnap/wallpapers/scenic/chikawa-cloud-country-anime/tablet-c31b612a7ea987f0.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/chikawa-cloud-country-anime/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-cloud-country-anime/laptop-020429c24089218b",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948359/schedsnap/wallpapers/scenic/chikawa-cloud-country-anime/laptop-020429c24089218b.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/chikawa-cloud-country-screenprint/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-cloud-country-screenprint/mobile-e917cca613a4326d",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948388/schedsnap/wallpapers/scenic/chikawa-cloud-country-screenprint/mobile-e917cca613a4326d.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/chikawa-cloud-country-screenprint/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-cloud-country-screenprint/tablet-31f107b347edc544",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948364/schedsnap/wallpapers/scenic/chikawa-cloud-country-screenprint/tablet-31f107b347edc544.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/chikawa-cloud-country-screenprint/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/chikawa-cloud-country-screenprint/laptop-fb91561147e82afd",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948362/schedsnap/wallpapers/scenic/chikawa-cloud-country-screenprint/laptop-fb91561147e82afd.png",
+    "width": 1920,
+    "height": 1080
   }
 };

@@ -8,6 +8,7 @@ import { onepieceAdventureTemplates } from './onepieceAdventureTemplates.js';
 import { onepieceReferenceTemplates } from './onepieceReferenceTemplates.js';
 import { sanrioTemplates } from './sanrioTemplates.js';
 import { domoTemplates } from './domoTemplates.js';
+import { chikawaTemplates } from './chikawaTemplates.js';
 
 export const mobileResolution = { id: 'mobile', width: 1080, height: 2400 };
 export const deviceResolutions = { mobile: mobileResolution, tablet: { id: 'tablet', width: 1600, height: 2560 }, laptop: { id: 'laptop', width: 1920, height: 1080 } };
@@ -18,6 +19,7 @@ export const tabletLandscapeResolution = { ...deviceResolutions.tablet, width: d
 export const wallpaperTemplates = [
   ...domoTemplates,
   ...sanrioTemplates,
+  ...chikawaTemplates,
   ...onepieceReferenceTemplates,
   ...onepieceTemplates,
   ...onepieceAdventureTemplates,

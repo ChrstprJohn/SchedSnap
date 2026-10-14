@@ -1,0 +1,155 @@
+{
+  "theme": "Chiikawa",
+  "reference": "User supplied reference image #2: minimal warm-white edge-peeking composition, thin quiet border accent, large open center; supplied character references used for identity cues.",
+  "generator": "built-in image_gen",
+  "generatedAt": "2026-10-13",
+  "processing": "Each device composition generated independently; source output resized with Lanczos to exact dimensions and saved as opaque RGB PNG.",
+  "designs": [
+    {
+      "slug": "chikawa-peek-doodle",
+      "name": "Little Edge Doodles",
+      "style": "Hand-drawn doodle, fine dark pencil contour, simple strokes, blush cheeks, sparse twinkles, thin pale lavender border accent.",
+      "layout": "Top: Chiikawa and Hachiware peek down; bottom corners: Usagi and a tiny Chiikawa peek up."
+    },
+    {
+      "slug": "chikawa-peek-watercolor",
+      "name": "Soft Blossom Peeks",
+      "style": "Soft translucent watercolor, creamy paper, delicate warm-gray outlines, pale peach and sage accents, whisper-thin sage border, sparse petals at margins.",
+      "layout": "Top: Hachiware and Chiikawa peek down; bottom corners: Usagi and a little Chiikawa peek up."
+    },
+    {
+      "slug": "chikawa-peek-paper",
+      "name": "Paper Garden Peeks",
+      "style": "Matte layered paper-cut illustration, smooth rounded cut edges, powder blue, butter yellow, coral accents, fine warm-gray perimeter line and corner dots.",
+      "layout": "Top: Chiikawa and Usagi peek down; bottom corners: Hachiware and Chiikawa peek up."
+    }
+  ],
+  "assets": [
+    {
+      "design": "chikawa-peek-doodle",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/chikawa-peek-doodle/mobile.png",
+      "dimensions": "1080x2400",
+      "format": "opaque RGB PNG",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a1358f-b8a1-7041-a0e6-687a10b8eab9\\exec-5375603f-c98b-429d-8bb4-a6ce722d5807.png",
+      "sourceDimensions": [
+        841,
+        1870
+      ],
+      "resampling": "Lanczos resize to exact target dimensions",
+      "prompt": "Create a finished full-bleed opaque wallpaper exactly for 1080x2400 (independently composed for mobile). Use supplied references: match the minimal warm-white composition from reference #2 (characters peek from top and bottom edges, large quiet center), and use other supplied character images for identity cues. Show the recognizable trio Chiikawa (tiny round white body, small rounded ears, rosy cheeks, simple black dot eyes and tiny mouth), Hachiware (small white cat, pointed ears, distinctive blue-gray split-color cap marking, rosy cheeks), and Usagi (butter-yellow cream bunny, very long upright ears, rosy cheeks, tiny buck teeth). Preserve these clear identity cues. Composition: Top: Chiikawa and Hachiware peek down; bottom corners: Usagi and a tiny Chiikawa peek up. Style: Hand-drawn doodle, fine dark pencil contour, simple strokes, blush cheeks, sparse twinkles, thin pale lavender border accent. Keep the central 82% completely plain warm ivory/white for schedule readability. Only tiny heads and ears at outer edges, never bodies in the center. No text, logo, letters, numbers, UI, schedule, device frame or watermark."
+    },
+    {
+      "design": "chikawa-peek-doodle",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/chikawa-peek-doodle/tablet.png",
+      "dimensions": "1600x2560",
+      "format": "opaque RGB PNG",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a1358f-b8a1-7041-a0e6-687a10b8eab9\\exec-b7db3e99-7109-4332-b02b-6987e3bbce52.png",
+      "sourceDimensions": [
+        992,
+        1586
+      ],
+      "resampling": "Lanczos resize to exact target dimensions",
+      "prompt": "Create a finished full-bleed opaque wallpaper exactly for 1600x2560 (independently composed for tablet). Use supplied references: match the minimal warm-white composition from reference #2 (characters peek from top and bottom edges, large quiet center), and use other supplied character images for identity cues. Show the recognizable trio Chiikawa (tiny round white body, small rounded ears, rosy cheeks, simple black dot eyes and tiny mouth), Hachiware (small white cat, pointed ears, distinctive blue-gray split-color cap marking, rosy cheeks), and Usagi (butter-yellow cream bunny, very long upright ears, rosy cheeks, tiny buck teeth). Preserve these clear identity cues. Composition: Top: Chiikawa and Hachiware peek down; bottom corners: Usagi and a tiny Chiikawa peek up. Style: Hand-drawn doodle, fine dark pencil contour, simple strokes, blush cheeks, sparse twinkles, thin pale lavender border accent. Keep the central 82% completely plain warm ivory/white for schedule readability. Only tiny heads and ears at outer edges, never bodies in the center. No text, logo, letters, numbers, UI, schedule, device frame or watermark."
+    },
+    {
+      "design": "chikawa-peek-doodle",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/chikawa-peek-doodle/laptop.png",
+      "dimensions": "1920x1080",
+      "format": "opaque RGB PNG",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a1358f-b8a1-7041-a0e6-687a10b8eab9\\exec-61d7ce1f-da74-4f48-a5be-2caf051a3978.png",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "resampling": "Lanczos resize to exact target dimensions",
+      "prompt": "Create a finished full-bleed opaque wallpaper exactly for 1920x1080 (independently composed for laptop). Use supplied references: match the minimal warm-white composition from reference #2 (characters peek from top and bottom edges, large quiet center), and use other supplied character images for identity cues. Show the recognizable trio Chiikawa (tiny round white body, small rounded ears, rosy cheeks, simple black dot eyes and tiny mouth), Hachiware (small white cat, pointed ears, distinctive blue-gray split-color cap marking, rosy cheeks), and Usagi (butter-yellow cream bunny, very long upright ears, rosy cheeks, tiny buck teeth). Preserve these clear identity cues. Composition: Upper left and right edges: Chiikawa and Hachiware peek down; lower left and right edges: Usagi and a tiny Chiikawa peek up. Style: Hand-drawn doodle, fine dark pencil contour, simple strokes, blush cheeks, sparse twinkles, thin pale lavender border accent. Keep the central 84% completely plain warm ivory/white for schedule readability. Only tiny heads and ears at outer edges, never bodies in the center. No text, logo, letters, numbers, UI, schedule, device frame or watermark."
+    },
+    {
+      "design": "chikawa-peek-watercolor",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/chikawa-peek-watercolor/mobile.png",
+      "dimensions": "1080x2400",
+      "format": "opaque RGB PNG",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a1358f-b8a1-7041-a0e6-687a10b8eab9\\exec-0ab5f613-8586-4c79-8cc6-c3c65f94abb7.png",
+      "sourceDimensions": [
+        841,
+        1870
+      ],
+      "resampling": "Lanczos resize to exact target dimensions",
+      "prompt": "Create a finished full-bleed opaque wallpaper exactly for 1080x2400 (independently composed for mobile). Use supplied references: match the minimal warm-white composition from reference #2 (characters peek from top and bottom edges, large quiet center), and use other supplied character images for identity cues. Show the recognizable trio Chiikawa (tiny round white body, small rounded ears, rosy cheeks, simple black dot eyes and tiny mouth), Hachiware (small white cat, pointed ears, distinctive blue-gray split-color cap marking, rosy cheeks), and Usagi (butter-yellow cream bunny, very long upright ears, rosy cheeks, tiny buck teeth). Preserve these clear identity cues. Composition: Top: Hachiware and Chiikawa peek down; bottom corners: Usagi and a little Chiikawa peek up. Style: Soft translucent watercolor, creamy paper, delicate warm-gray outlines, pale peach and sage accents, whisper-thin sage border, sparse petals at margins. Keep the central 82% completely plain warm ivory/white for schedule readability. Only tiny heads and ears at outer edges, never bodies in the center. No text, logo, letters, numbers, UI, schedule, device frame or watermark."
+    },
+    {
+      "design": "chikawa-peek-watercolor",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/chikawa-peek-watercolor/tablet.png",
+      "dimensions": "1600x2560",
+      "format": "opaque RGB PNG",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a1358f-b8a1-7041-a0e6-687a10b8eab9\\exec-2dfa790d-ea5d-42bc-aee2-b59fc552359a.png",
+      "sourceDimensions": [
+        992,
+        1586
+      ],
+      "resampling": "Lanczos resize to exact target dimensions",
+      "prompt": "Create a finished full-bleed opaque wallpaper exactly for 1600x2560 (independently composed for tablet). Use supplied references: match the minimal warm-white composition from reference #2 (characters peek from top and bottom edges, large quiet center), and use other supplied character images for identity cues. Show the recognizable trio Chiikawa (tiny round white body, small rounded ears, rosy cheeks, simple black dot eyes and tiny mouth), Hachiware (small white cat, pointed ears, distinctive blue-gray split-color cap marking, rosy cheeks), and Usagi (butter-yellow cream bunny, very long upright ears, rosy cheeks, tiny buck teeth). Preserve these clear identity cues. Composition: Top: Hachiware and Chiikawa peek down; bottom corners: Usagi and a little Chiikawa peek up. Style: Soft translucent watercolor, creamy paper, delicate warm-gray outlines, pale peach and sage accents, whisper-thin sage border, sparse petals at margins. Keep the central 82% completely plain warm ivory/white for schedule readability. Only tiny heads and ears at outer edges, never bodies in the center. No text, logo, letters, numbers, UI, schedule, device frame or watermark."
+    },
+    {
+      "design": "chikawa-peek-watercolor",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/chikawa-peek-watercolor/laptop.png",
+      "dimensions": "1920x1080",
+      "format": "opaque RGB PNG",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a1358f-b8a1-7041-a0e6-687a10b8eab9\\exec-6035ce40-8264-4fe9-a9e9-ceb4c292df6f.png",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "resampling": "Lanczos resize to exact target dimensions",
+      "prompt": "Create a finished full-bleed opaque wallpaper exactly for 1920x1080 (independently composed for laptop). Use supplied references: match the minimal warm-white composition from reference #2 (characters peek from top and bottom edges, large quiet center), and use other supplied character images for identity cues. Show the recognizable trio Chiikawa (tiny round white body, small rounded ears, rosy cheeks, simple black dot eyes and tiny mouth), Hachiware (small white cat, pointed ears, distinctive blue-gray split-color cap marking, rosy cheeks), and Usagi (butter-yellow cream bunny, very long upright ears, rosy cheeks, tiny buck teeth). Preserve these clear identity cues. Composition: Upper left and right edges: Hachiware and Chiikawa peek down; lower left and right edges: Usagi and a little Chiikawa peek up. Style: Soft translucent watercolor, creamy paper, delicate warm-gray outlines, pale peach and sage accents, whisper-thin sage border, sparse petals at margins. Keep the central 84% completely plain warm ivory/white for schedule readability. Only tiny heads and ears at outer edges, never bodies in the center. No text, logo, letters, numbers, UI, schedule, device frame or watermark."
+    },
+    {
+      "design": "chikawa-peek-paper",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/chikawa-peek-paper/mobile.png",
+      "dimensions": "1080x2400",
+      "format": "opaque RGB PNG",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a1358f-b8a1-7041-a0e6-687a10b8eab9\\exec-fae9987a-9eeb-4e78-a192-37b852e467a0.png",
+      "sourceDimensions": [
+        841,
+        1870
+      ],
+      "resampling": "Lanczos resize to exact target dimensions",
+      "prompt": "Create a finished full-bleed opaque wallpaper exactly for 1080x2400 (independently composed for mobile). Use supplied references: match the minimal warm-white composition from reference #2 (characters peek from top and bottom edges, large quiet center), and use other supplied character images for identity cues. Show the recognizable trio Chiikawa (tiny round white body, small rounded ears, rosy cheeks, simple black dot eyes and tiny mouth), Hachiware (small white cat, pointed ears, distinctive blue-gray split-color cap marking, rosy cheeks), and Usagi (butter-yellow cream bunny, very long upright ears, rosy cheeks, tiny buck teeth). Preserve these clear identity cues. Composition: Top: Chiikawa and Usagi peek down; bottom corners: Hachiware and Chiikawa peek up. Style: Matte layered paper-cut illustration, smooth rounded cut edges, powder blue, butter yellow, coral accents, fine warm-gray perimeter line and corner dots. Keep the central 82% completely plain warm ivory/white for schedule readability. Only tiny heads and ears at outer edges, never bodies in the center. No text, logo, letters, numbers, UI, schedule, device frame or watermark."
+    },
+    {
+      "design": "chikawa-peek-paper",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/chikawa-peek-paper/tablet.png",
+      "dimensions": "1600x2560",
+      "format": "opaque RGB PNG",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a1358f-b8a1-7041-a0e6-687a10b8eab9\\exec-833bdab3-846c-4f14-88d0-e8815868b267.png",
+      "sourceDimensions": [
+        992,
+        1586
+      ],
+      "resampling": "Lanczos resize to exact target dimensions",
+      "prompt": "Create a finished full-bleed opaque wallpaper exactly for 1600x2560 (independently composed for tablet). Use supplied references: match the minimal warm-white composition from reference #2 (characters peek from top and bottom edges, large quiet center), and use other supplied character images for identity cues. Show the recognizable trio Chiikawa (tiny round white body, small rounded ears, rosy cheeks, simple black dot eyes and tiny mouth), Hachiware (small white cat, pointed ears, distinctive blue-gray split-color cap marking, rosy cheeks), and Usagi (butter-yellow cream bunny, very long upright ears, rosy cheeks, tiny buck teeth). Preserve these clear identity cues. Composition: Top: Chiikawa and Usagi peek down; bottom corners: Hachiware and Chiikawa peek up. Style: Matte layered paper-cut illustration, smooth rounded cut edges, powder blue, butter yellow, coral accents, fine warm-gray perimeter line and corner dots. Keep the central 82% completely plain warm ivory/white for schedule readability. Only tiny heads and ears at outer edges, never bodies in the center. No text, logo, letters, numbers, UI, schedule, device frame or watermark."
+    },
+    {
+      "design": "chikawa-peek-paper",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/chikawa-peek-paper/laptop.png",
+      "dimensions": "1920x1080",
+      "format": "opaque RGB PNG",
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a1358f-b8a1-7041-a0e6-687a10b8eab9\\exec-3882dfa8-543a-4b8d-9735-f8b445f34ba0.png",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "resampling": "Lanczos resize to exact target dimensions",
+      "prompt": "Create a finished full-bleed opaque wallpaper exactly for 1920x1080 (independently composed for laptop). Use supplied references: match the minimal warm-white composition from reference #2 (characters peek from top and bottom edges, large quiet center), and use other supplied character images for identity cues. Show the recognizable trio Chiikawa (tiny round white body, small rounded ears, rosy cheeks, simple black dot eyes and tiny mouth), Hachiware (small white cat, pointed ears, distinctive blue-gray split-color cap marking, rosy cheeks), and Usagi (butter-yellow cream bunny, very long upright ears, rosy cheeks, tiny buck teeth). Preserve these clear identity cues. Composition: Upper left and right edges: Chiikawa and Usagi peek down; lower left and right edges: Hachiware and Chiikawa peek up. Style: Matte layered paper-cut illustration, smooth rounded cut edges, powder blue, butter yellow, coral accents, fine warm-gray perimeter line and corner dots. Keep the central 84% completely plain warm ivory/white for schedule readability. Only tiny heads and ears at outer edges, never bodies in the center. No text, logo, letters, numbers, UI, schedule, device frame or watermark."
+    }
+  ]
+}

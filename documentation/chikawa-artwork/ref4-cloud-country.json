@@ -1,0 +1,29 @@
+{
+  "title": "Reference 4 \u2014 blue sky and cloud hillside",
+  "reference": "C:/Users/picar/AppData/Local/Temp/codex-clipboard-1a072f9b-344d-4f2a-a3e2-6a07fb0da34f.png",
+  "identityReferences": [
+    "C:/Users/picar/AppData/Local/Temp/codex-clipboard-f74c6b47-fb1e-4e32-92c7-e0a6d27af9df.png",
+    "C:/Users/picar/AppData/Local/Temp/codex-clipboard-047d5edf-f210-42d4-a881-c083ea73c6ac.png"
+  ],
+  "referenceUse": "Blue sky, large white clouds and green hillside composition only; trio identity from the attached character reference images.",
+  "designs": [
+    "chikawa-cloud-country-watercolor",
+    "chikawa-cloud-country-anime",
+    "chikawa-cloud-country-screenprint"
+  ],
+  "formats": {
+    "mobile": [
+      1080,
+      2400
+    ],
+    "tablet": [
+      1600,
+      2560
+    ],
+    "laptop": [
+      1920,
+      1080
+    ]
+  },
+  "qa": "Mobile review: all three characters retain recognizable identity cues and the reference hillside/cloud composition. Dimensions/modes/hash checks are recorded in approved-artwork-manifest.json."
+}

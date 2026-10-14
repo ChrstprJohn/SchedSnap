@@ -1,0 +1,259 @@
+{
+  "theme": "Chiikawa",
+  "reviewedAt": "2026-10-14T03:24:26.000Z",
+  "review": "Visual QA confirmed all 12 designs match their assigned reference composition and recognizable trio cues; all files are opaque PNGs at exact device dimensions.",
+  "assets": [
+    {
+      "path": "public/wallpapers/scenic/chikawa-blossom-field-watercolor-ref1/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "e4af98f01a86b687aea647296e81853ffd570458d6b9c78f5a3bda74cae08c81"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-blossom-field-watercolor-ref1/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "6a3fcc2e80fcd28e0f16fcc7a8968d478a46a02734c2afc337c82e29c76a3c22"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-blossom-field-watercolor-ref1/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "7c5c68554b7c0e7a4f30d81606ae19a54997286fc5e8ece04e88c573fa7a0cbc"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-blossom-field-cel-ref1/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "fd9ce734adea3a6d08ce58bc9375ae546f82a96a1784e18b4122c063ec977cb7"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-blossom-field-cel-ref1/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "94e89c0573d405d0d9b46f5e6f80d4384cb30ec984cc2e0c92ed15a996f3cf03"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-blossom-field-cel-ref1/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "2d8777880abd62fec61d8b82e27dd1d048e20ffc7f49d9499d9f8b309102a090"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-blossom-field-paper-cut-ref1/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "b07398028ddfccb7dec86dbadd695247ed5fc005c2307f8c270da96fa52230b5"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-blossom-field-paper-cut-ref1/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "14365d1fb671262af5f05e8b6ce71b4ec525df29d8b12e00b5ee1c92efff9b60"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-blossom-field-paper-cut-ref1/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "7a16444a9dc989a83a4fe13aa3903e388bb76d87ee7dce2bd72a202b4236a183"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-peek-doodle/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "6fcda10325065a7d8e328ea823d55b2cb5fe3fad8c394873ac0d6830c5ab3b51"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-peek-doodle/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "25e846d3ec5cf07715000cdd1df337b2beaf177f81495613621eed3a3f4d534a"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-peek-doodle/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "fe271c9863f9c493a72a4f54ce099327029e2efb4165ae78ca9589e19f70cbfd"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-peek-watercolor/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "3813242ee8937882484daada618b4de1a49441e5425a6ff3866367ca23d97552"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-peek-watercolor/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "fd977e7c1554f136d58680ad89e5ce78f508f2f79e7e7dae5adbfb9ea1c11124"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-peek-watercolor/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "5c2425f295b268f74a8418bc9d02f4da59eb2be4f665e0527960fe96ff9b5a49"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-peek-paper/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "ef18afd81f1980e8133ae18a7cb80269e9025ca82301d1b2f9ad7a275bd938d4"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-peek-paper/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "01c32aec29c0a29b600d39394521a4ed4b0cd71bb7973bec8619f766b9b75466"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-peek-paper/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "c43986212a2a493b24a1fb822708d8edfbb721e0993fb76cf59bb7532cfe94dc"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-woodland-path/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "662a04956717b5034790ea73efa19fdd7e7b6f7b42c94fe454255d0df6126a79"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-woodland-path/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "ec633308beeaacbdd669935d8d648ddeecc4c0605fdb3a56de987302daa907ac"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-woodland-path/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "d9a94139c5b0aaf732da7b12ffee0b53ea5fd9325d818eb20aaa1b2bad264cd0"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-forest-picnic/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "a3b006783d998f7c726d5aab4be6b8db4b6dfda55693a32812e68717eb261f0c"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-forest-picnic/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "3f4833643020b2f7913ffe80aa1ce56fbfe6d09bf239d94ec98cfcbfcafc9078"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-forest-picnic/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "7d307fb2580602e71ae08526d5c55b591f5c0694727bec6a151dbaf41a38198b"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-firefly-grove/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "13f4e8035d1311d3a12b586e8c1a412e6ed512c8c72b7b9623b0b8abba35fe90"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-firefly-grove/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "ff5d7e3379d95ea86cf39c10498a476c9b006b6dd6da9386372f4977e4d28022"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-firefly-grove/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "6f215eeb8a58c7d0bd733ee592bbfe6b8985fffd7807f2797e004d0ccfab8dcd"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-cloud-country-watercolor/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "359dc2e47e0b4ce53c0a2120a2a6ac41a7426896398aa7aaf89498620a741d33"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-cloud-country-watercolor/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "8bb840f43a19a4ac5d9d9f8cea6fbb9e5527255c1ff0b990a899c8eac6160a3f"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-cloud-country-watercolor/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "ab16ab7bd9bb9ea422d487913da61fe7a2c5a4d4efac6233b39984a002e48f9a"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-cloud-country-anime/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "fcfd35d31c17bad9a692859fb7977c1b22ceadb05d2052164bb5d30bdb124cde"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-cloud-country-anime/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "c31b612a7ea987f0bac45eec6dd716e7c886e42265413534d6c70ec49e084e80"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-cloud-country-anime/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "020429c24089218b5969925c7e0eb92dd1a4cd3deb0920212fd682bfd88f68d2"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-cloud-country-screenprint/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "e917cca613a4326dcb72d6b3eb66f331c7b1ac958e0f7707af8c1c49cc86b064"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-cloud-country-screenprint/tablet.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "31f107b347edc54441c7486bf5a96bd288dfd79c3f352c44e470c09b51198480"
+    },
+    {
+      "path": "public/wallpapers/scenic/chikawa-cloud-country-screenprint/laptop.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "likenessApproved": true,
+      "sha256": "fb91561147e82afd4a861deb25b16d669e5108bc512f8598d58f4ff2ae6e1599"
+    }
+  ]
+}
