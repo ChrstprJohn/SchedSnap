@@ -3835,5 +3835,117 @@ export default {
     "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791937001/schedsnap/wallpapers/scenic/domo-golden-paper/tablet-7f6564ea76d9a2e2.png",
     "width": 1600,
     "height": 2560
+  },
+  "/images/goofy-mascots/masters/meep-tongue.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/meep-tongue-f829db5a7b678a60",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791964329/schedsnap/images/goofy-mascots/masters/meep-tongue-f829db5a7b678a60.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/goofy-mascots/masters/meep-unsure.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/meep-unsure-87a85c6fda451996",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791964331/schedsnap/images/goofy-mascots/masters/meep-unsure-87a85c6fda451996.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/goofy-mascots/masters/meep-sweat.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/meep-sweat-1cfd0b87d085728a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791964333/schedsnap/images/goofy-mascots/masters/meep-sweat-1cfd0b87d085728a.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/goofy-mascots/masters/meep-angry.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/meep-angry-cb40253b095ed1a3",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791964334/schedsnap/images/goofy-mascots/masters/meep-angry-cb40253b095ed1a3.png",
+    "width": 1312,
+    "height": 1199
+  },
+  "/images/goofy-mascots/masters/meep-dizzy.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/meep-dizzy-6c5ca02d388b841b",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791964336/schedsnap/images/goofy-mascots/masters/meep-dizzy-6c5ca02d388b841b.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/goofy-mascots/masters/meep-surprised.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/meep-surprised-d5604e1ccfccf4dc",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791964338/schedsnap/images/goofy-mascots/masters/meep-surprised-d5604e1ccfccf4dc.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/goofy-mascots/masters/meep-laughing-tongue.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/meep-laughing-tongue-a39f54c28a28c978",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791964341/schedsnap/images/goofy-mascots/masters/meep-laughing-tongue-a39f54c28a28c978.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/goofy-mascots/masters/meep-heart-eyes.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/meep-heart-eyes-12ab899c4526f069",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791964343/schedsnap/images/goofy-mascots/masters/meep-heart-eyes-12ab899c4526f069.png",
+    "width": 1241,
+    "height": 1267
+  },
+  "/images/goofy-mascots/masters/meep-blush.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/meep-blush-cdf2895041397ba2",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791964344/schedsnap/images/goofy-mascots/masters/meep-blush-cdf2895041397ba2.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/goofy-mascots/masters/meep-angel.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/meep-angel-11a282c6fe522dd6",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791964346/schedsnap/images/goofy-mascots/masters/meep-angel-11a282c6fe522dd6.png",
+    "width": 1272,
+    "height": 1236
+  },
+  "/images/goofy-mascots/masters/meep-happy-tears.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/meep-happy-tears-d69836020b65d4d8",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791964348/schedsnap/images/goofy-mascots/masters/meep-happy-tears-d69836020b65d4d8.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/goofy-mascots/masters/meep-giddy.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/meep-giddy-fa251999091685f6",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791964350/schedsnap/images/goofy-mascots/masters/meep-giddy-fa251999091685f6.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/goofy-mascots/masters/meep-puffed-cheeks.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/meep-puffed-cheeks-196db148a2943da6",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791964352/schedsnap/images/goofy-mascots/masters/meep-puffed-cheeks-196db148a2943da6.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/goofy-mascots/masters/meep-smile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/meep-smile-04a2a94f85e29057",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791965562/schedsnap/images/goofy-mascots/masters/meep-smile-04a2a94f85e29057.png",
+    "width": 1265,
+    "height": 1244
+  },
+  "/images/goofy-mascots/masters/meep-unamused.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/meep-unamused-e5ece1599c37570e",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791965564/schedsnap/images/goofy-mascots/masters/meep-unamused-e5ece1599c37570e.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "/images/goofy-mascots/masters/meep-wink.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/images/goofy-mascots/masters/meep-wink-2ed1597a6f29436c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791965565/schedsnap/images/goofy-mascots/masters/meep-wink-2ed1597a6f29436c.png",
+    "width": 1254,
+    "height": 1254
   }
 };

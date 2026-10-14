@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { galleryCategories, matchesGalleryCategory } from '../src/config/collections.js';
 
 test('shared gallery categories include the Sanrio and Onepiece collections and style filters', () => {
-  assert.deepEqual(galleryCategories.map(category => category.id), ['all', 'scenic', 'sanrio', 'domo', 'onepiece', 'little-friends', 'mascot', 'pattern', 'style-3d', 'style-pixel', 'style-doodle', 'style-flat']);
+  assert.deepEqual(galleryCategories.map(category => category.id), ['all', 'scenic', 'sanrio', 'domo', 'onepiece', 'little-friends', 'mascot', 'meep', 'pattern', 'style-3d', 'style-pixel', 'style-doodle', 'style-flat']);
 });
 
 test('catalog metadata matches parent collections and their style filters', () => {
@@ -16,4 +16,6 @@ test('catalog metadata matches parent collections and their style filters', () =
   assert.equal(matchesGalleryCategory({ collection: 'scenic' }, 'scenic'), true);
   assert.equal(matchesGalleryCategory({ collection: 'onepiece' }, 'onepiece'), true);
   assert.equal(matchesGalleryCategory({ collection: 'onepiece' }, 'scenic'), false);
+  assert.equal(matchesGalleryCategory({ collection: 'meep', layout: 'mascot' }, 'meep'), true);
+  assert.equal(matchesGalleryCategory({ collection: 'meep', layout: 'mascot' }, 'mascot'), false);
 });
