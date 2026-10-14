@@ -382,8 +382,8 @@ export function scheduleMovement(template, axis) {
 }
 
 export function tabletBoxSpacing(template) {
-  const value = Number(template.tabletBoxSpacing ?? 40);
-  return Number.isFinite(value) ? Math.max(0, Math.min(100, value)) : 40;
+  const value = Number(template.tabletBoxSpacing ?? 80);
+  return Number.isFinite(value) ? Math.max(0, Math.min(300, value)) : 80;
 }
 
 function movementShift(position, before, after) {

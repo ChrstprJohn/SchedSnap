@@ -1,0 +1,312 @@
+{
+  "provider": "builtin image_gen",
+  "references": [
+    {
+      "id": "sanrio-kuromi-claw",
+      "name": "Kuromi Claw",
+      "reference": "f90ec050-a0fc-4a99-aed0-9a1035c9ab62",
+      "style": "Faithfully match reference flat stationery illustration, pale white graph paper, scalloped alternating pale lavender and white canopy, lavender claw machine rails, multiple miniature Kuromi plush dolls with charcoal jester ears pink bows skulls, pink polkadot lace pillows, reading poses, tiny lavender Baku, pale yellow stars and pink dots. Keep main doll cluster toward bottom and claw detail along right edge; miniature expressions and props same visual language. Fine muted lavender-gray contours crisp resolved details."
+    },
+    {
+      "id": "sanrio-kuromi-grey-grid",
+      "name": "Kuromi Grey Grid",
+      "reference": "af1fab3f-e9e1-4e83-962e-1f192d29e6c9",
+      "style": "Faithfully match muted monochrome gray and white reference repeating Kuromi head pattern: flat charcoal-gray scalloped jester hood silhouette with round ear tips, white rounded face, small oval eyes tilted different rotations, tiny skull on hood, gray fivepoint stars and circles on white thin palegray graphpaper. Handdrawn soft graphic silhouettes, medium clear gray contrast, subtle pattern consistent across whole canvas, fine grids. Exact subject pattern not random othercharacters. Omit reference tiny lettering and screenshot icons."
+    },
+    {
+      "id": "sanrio-kuromi-flower",
+      "name": "Kuromi Flower",
+      "reference": "e4c027e9-3fe9-4d01-ae8a-e3fb25cb4cb3",
+      "style": "Faithfully match soft flat pastel reference: almostwhite coollavender ground, lavender-gray Kuromi jester hood pinkskull and large pinkbow byleft ear, whiteface one dark oval eye andoneclosedeyelash winking, small pinknose and pursedmouth, holding bouquet of cream pale blue pink flowers; few tiny pink outlinehearts. Soft handpainted rounded gray contours and light papertexture. Clear resolvededges ratherthan faded fog. Keepexactwinking expression bouquet andbow."
+    },
+    {
+      "id": "sanrio-kuromi-cozy",
+      "name": "Kuromi Cozy",
+      "reference": "df8c20f3-da7a-4be3-9015-086e4a4e9d76",
+      "style": "Faithfully match warmcream papertexture reference: charcoal grayjester hood Kuromi pinkskull whiteface pinkcheeks oneeyeclosed andotherdarkoval, lying prone pawunderchin onpale lavender oval matwithcream scallopedlace border; little lavenderBaku restsbeside her. Smallpurple hearts and fourpointstarssparse, lavendercream ginghambottomstrip. Delicate warmgray fine outlines andflat pastel coloring. RetaincompleteKuromi andBaku cozyposes. No name text."
+    }
+  ],
+  "assets": [
+    {
+      "id": "sanrio-kuromi-grey-grid",
+      "device": "mobile",
+      "prompt": "Edit Image1 only: soften the drawing finish so it feels naturally hand-drawn, matching Image2 reference's modest human-made stationery illustration. LOCK exact composition, character count, faces expressions poses silhouette body proportions, props, motif placements, palette, background and schedule-empty areas. Add very subtle colored-pencil/pastel texture inside existing flat fills, gently uneven line pressure and tiny natural pencil wobble, soften overly precise contours slightly. Keep restrained simple flat colors and readable outlines; no glossy finish, complex shading, new motifs, extra heads, heavy grain, blur, haze, sharpening or 3D. Preserve all original scene content and aspect ratio1080x2400. Image2 is style reference only, do not copy its layout or lettering. Artwork remains fullbleed opaque, no text UI logos clocks schedules watermark. This is the SAME Kuromi Grey Grid design, gentle handmade finish only.",
+      "source": "output/sanrio/kuromi/sanrio-kuromi-grey-grid-mobile-handmade-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-kuromi-grey-grid/mobile.png",
+      "createdAt": "2026-10-13T22:21:56.486Z",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "originalDimensions": [
+        841,
+        1870
+      ],
+      "edits": [
+        {
+          "source": "output/sanrio/kuromi/sanrio-kuromi-grey-grid-mobile-master.png",
+          "prompt": "Use case: illustration-story. ONE 1080x2400 portrait9:20 opaque wallpaper. Accurately reproduce supplied reference's ALL-OVER GREY KUROMI HEAD PATTERN. Faithfully match muted monochrome gray and white reference repeating Kuromi head pattern: flat charcoal-gray scalloped jester hood silhouette with round ear tips, white rounded face, small oval eyes tilted different rotations, tiny skull on hood, gray fivepoint stars and circles on white thin palegray graphpaper. Handdrawn soft graphic silhouettes, medium clear gray contrast, subtle pattern consistent across whole canvas, fine grids. Exact subject pattern not random othercharacters. Omit reference tiny lettering and screenshot icons. Uniform motif density across ENTIRE canvas, center upper middle left and right. Interleaved rotated Kuromi heads every row with gray stars and circles, faint white graphpaper grid. Do NOT create a border design or empty center, do NOT leave a schedule blank panel: actual app draws translucent white class boxes itself. Use approximately 3 motifcolumns acrossportraitwidth, 6motifrows. Preserve stylizedheadshape roundtips scallopedhood whitefaces skullsymbol sameasreference, slightly clearer highresolution gray outlines. No words text logos clocks UI watermark screenshotcontrols. Fullbleedpattern same design only, no othervariants."
+        }
+      ],
+      "updatedAt": "2026-10-13T22:45:51.007Z"
+    },
+    {
+      "id": "sanrio-kuromi-flower",
+      "device": "mobile",
+      "prompt": "Edit Image1 only: soften the drawing finish so it feels naturally hand-drawn, matching Image2 reference's modest human-made stationery illustration. LOCK exact composition, character count, faces expressions poses silhouette body proportions, props, motif placements, palette, background and schedule-empty areas. Add very subtle colored-pencil/pastel texture inside existing flat fills, gently uneven line pressure and tiny natural pencil wobble, soften overly precise contours slightly. Keep restrained simple flat colors and readable outlines; no glossy finish, complex shading, new motifs, extra heads, heavy grain, blur, haze, sharpening or 3D. Preserve all original scene content and aspect ratio1080x2400. Image2 is style reference only, do not copy its layout or lettering. Artwork remains fullbleed opaque, no text UI logos clocks schedules watermark. This is the SAME Kuromi Flower design, gentle handmade finish only.",
+      "source": "output/sanrio/kuromi/sanrio-kuromi-flower-mobile-handmade-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-kuromi-flower/mobile.png",
+      "createdAt": "2026-10-13T22:11:46.373Z",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "originalDimensions": [
+        841,
+        1870
+      ],
+      "edits": [
+        {
+          "source": "output/sanrio/kuromi/sanrio-kuromi-flower-mobile-master.png",
+          "prompt": "Use case: illustration-story. Generate ONE new 1080x2400 portrait9:20 opaque schedule wallpaper, design Kuromi Flower. Attached image is the subject and art style reference. Faithfully match soft flat pastel reference: almostwhite coollavender ground, lavender-gray Kuromi jester hood pinkskull and large pinkbow byleft ear, whiteface one dark oval eye andoneclosedeyelash winking, small pinknose and pursedmouth, holding bouquet of cream pale blue pink flowers; few tiny pink outlinehearts. Soft handpainted rounded gray contours and light papertexture. Clear resolvededges ratherthan faded fog. Keepexactwinking expression bouquet andbow. Accurately preserve the reference aesthetic and character details, improve crisp resolution without changing medium. Recompose for this device: main characters restricted to bottom22% and outer edges; upper70% quiet for timetable. For repeating pattern preserve pattern throughout, keep contrast soft enough for overlaid schedule. No additional variant, no new theme. Fullbleed art only, no words lettering logos clocks UI badges watermarks screenshot corners; entire figures and ears visible with margin."
+        }
+      ],
+      "updatedAt": "2026-10-13T22:46:48.437Z"
+    },
+    {
+      "id": "sanrio-kuromi-cozy",
+      "device": "mobile",
+      "prompt": "Edit Image1 only: soften the drawing finish so it feels naturally hand-drawn, matching Image2 reference's modest human-made stationery illustration. LOCK exact composition, character count, faces expressions poses silhouette body proportions, props, motif placements, palette, background and schedule-empty areas. Add very subtle colored-pencil/pastel texture inside existing flat fills, gently uneven line pressure and tiny natural pencil wobble, soften overly precise contours slightly. Keep restrained simple flat colors and readable outlines; no glossy finish, complex shading, new motifs, extra heads, heavy grain, blur, haze, sharpening or 3D. Preserve all original scene content and aspect ratio1080x2400. Image2 is style reference only, do not copy its layout or lettering. Artwork remains fullbleed opaque, no text UI logos clocks schedules watermark. This is the SAME Kuromi Cozy design, gentle handmade finish only.",
+      "source": "output/sanrio/kuromi/sanrio-kuromi-cozy-mobile-handmade-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-kuromi-cozy/mobile.png",
+      "createdAt": "2026-10-13T22:12:29.845Z",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "originalDimensions": [
+        842,
+        1869
+      ],
+      "edits": [
+        {
+          "source": "output/sanrio/kuromi/sanrio-kuromi-cozy-mobile-master.png",
+          "prompt": "Use case: illustration-story. Generate ONE new 1080x2400 portrait9:20 opaque schedule wallpaper, design Kuromi Cozy. Attached image is the subject and art style reference. Faithfully match warmcream papertexture reference: charcoal grayjester hood Kuromi pinkskull whiteface pinkcheeks oneeyeclosed andotherdarkoval, lying prone pawunderchin onpale lavender oval matwithcream scallopedlace border; little lavenderBaku restsbeside her. Smallpurple hearts and fourpointstarssparse, lavendercream ginghambottomstrip. Delicate warmgray fine outlines andflat pastel coloring. RetaincompleteKuromi andBaku cozyposes. No name text. Accurately preserve the reference aesthetic and character details, improve crisp resolution without changing medium. Recompose for this device: main characters restricted to bottom22% and outer edges; upper70% quiet for timetable. For repeating pattern preserve pattern throughout, keep contrast soft enough for overlaid schedule. No additional variant, no new theme. Fullbleed art only, no words lettering logos clocks UI badges watermarks screenshot corners; entire figures and ears visible with margin."
+        }
+      ],
+      "updatedAt": "2026-10-13T22:47:52.041Z"
+    },
+    {
+      "id": "sanrio-kuromi-claw",
+      "device": "mobile",
+      "prompt": "Edit Image1 only: soften the drawing finish so it feels naturally hand-drawn, matching Image2 reference's modest human-made stationery illustration. LOCK exact composition, character count, faces expressions poses silhouette body proportions, props, motif placements, palette, background and schedule-empty areas. Add very subtle colored-pencil/pastel texture inside existing flat fills, gently uneven line pressure and tiny natural pencil wobble, soften overly precise contours slightly. Keep restrained simple flat colors and readable outlines; no glossy finish, complex shading, new motifs, extra heads, heavy grain, blur, haze, sharpening or 3D. Preserve all original scene content and aspect ratio1080x2400. Image2 is style reference only, do not copy its layout or lettering. Artwork remains fullbleed opaque, no text UI logos clocks schedules watermark. This is the SAME Kuromi Claw design, gentle handmade finish only.",
+      "source": "output/sanrio/kuromi/sanrio-kuromi-claw-mobile-handmade-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-kuromi-claw/mobile.png",
+      "createdAt": "2026-10-13T22:13:22.204Z",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "originalDimensions": [
+        841,
+        1870
+      ],
+      "edits": [
+        {
+          "source": "output/sanrio/kuromi/sanrio-kuromi-claw-mobile-master.png",
+          "prompt": "Use case: illustration-story. Generate ONE new 1080x2400 portrait9:20 opaque schedule wallpaper, design Kuromi Claw. Attached image is the subject and art style reference. Faithfully match reference flat stationery illustration, pale white graph paper, scalloped alternating pale lavender and white canopy, lavender claw machine rails, multiple miniature Kuromi plush dolls with charcoal jester ears pink bows skulls, pink polkadot lace pillows, reading poses, tiny lavender Baku, pale yellow stars and pink dots. Keep main doll cluster toward bottom and claw detail along right edge; miniature expressions and props same visual language. Fine muted lavender-gray contours crisp resolved details. Accurately preserve the reference aesthetic and character details, improve crisp resolution without changing medium. Recompose for this device: main characters restricted to bottom22% and outer edges; upper70% quiet for timetable. For repeating pattern preserve pattern throughout, keep contrast soft enough for overlaid schedule. No additional variant, no new theme. Fullbleed art only, no words lettering logos clocks UI badges watermarks screenshot corners; entire figures and ears visible with margin."
+        }
+      ],
+      "updatedAt": "2026-10-13T22:44:33.175Z"
+    },
+    {
+      "id": "sanrio-kuromi-claw",
+      "device": "tablet",
+      "prompt": "Edit Image1 only: gentler handmade stationery drawing finish like Image2 reference. Preserve exact composition, characters, expressions poses silhouette proportions allprops motifpositions and palette; no new charactersorpatterns. Very subtle colored-pencil texture inside existing flatfills, naturally uneven linepressure and slight handdrawn contourwobble, softmatte pastelcolors. Human-drawn simple illustration ratherthan precision vector. No heavygrain blur fog gradients glossyshading 3D or sharpening. Image2 styleonly do notuseitslayout orlettering. Keep aspectratio1600x2560 portraittablet and clear timetableareas. Entireartwork opaque fullbleed no text clocks UI schedules logos watermark. Same Kuromi Claw design with subtle handmade finish only.",
+      "source": "output/sanrio/kuromi/sanrio-kuromi-claw-tablet-handmade-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-kuromi-claw/tablet.png",
+      "createdAt": "2026-10-13T22:15:05.354Z",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "originalDimensions": [
+        992,
+        1586
+      ],
+      "edits": [
+        {
+          "source": "output/sanrio/kuromi/sanrio-kuromi-claw-tablet-master.png",
+          "prompt": "Use case: illustration-story. ONE opaque 1600x2560 portrait5:8 tablet wallpaper, Kuromi Claw. Reference supplied for accurate art style and subject. Faithfully match reference flat stationery illustration, pale white graph paper, scalloped alternating pale lavender and white canopy, lavender claw machine rails, multiple miniature Kuromi plush dolls with charcoal jester ears pink bows skulls, pink polkadot lace pillows, reading poses, tiny lavender Baku, pale yellow stars and pink dots. Keep main doll cluster toward bottom and claw detail along right edge; miniature expressions and props same visual language. Fine muted lavender-gray contours crisp resolved details. Same design as reference, no extra thematic variants. Independently redraw composition for wider portrait tablet. Place intact figures and mainprops bottom22% and outeredge, leave upper70% quiet for timetable; repeating gridpattern keeps distributed originalmotifs lowercontrast but visible. Preserve shapes poses expressions palette materials of reference, crisp resolved edges no faded fog. Fullbleed art no wording typography logos UI clocks schedules watermarks badges screenshoticons. Entirecharacters ears pawsvisible insidecanvas."
+        }
+      ],
+      "updatedAt": "2026-10-13T22:50:06.652Z"
+    },
+    {
+      "id": "sanrio-kuromi-grey-grid",
+      "device": "tablet",
+      "prompt": "Edit this grey Kuromi pattern tablet wallpaper. Keep same handmade pencil/crayon texture, grey/white palette, graphpaper, stars circles and rotated Kuromi head motifs. Re-layout the SAME pattern so every Kuromi head INCLUDING both entire jester ears and round ear tips is fully INSIDE the canvas. No cropped heads or ears touching any edge. Use slightly smaller motifs in interleaved rows with at least4%margin from all edges. All-over evenly distributed pattern including center; do not create blankcenter orborderpanel. Preserve cute expressions skull symbols and subtle handmade quality, no enhancing digitalpolish. Opaque1600x2560 portrait5:8 fullbleed, no text UI schedules clockslogoswatermark.",
+      "source": "output/sanrio-kuromi-grey-grid-tablet-corrected-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-kuromi-grey-grid/tablet.png",
+      "createdAt": "2026-10-13T22:22:35.343Z",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "originalDimensions": [
+        992,
+        1586
+      ],
+      "edits": [
+        {
+          "source": "output/sanrio/kuromi/sanrio-kuromi-grey-grid-tablet-master.png",
+          "prompt": "Use case: illustration-story. ONE 1600x2560 portrait5:8 opaque wallpaper. Accurately reproduce supplied reference's ALL-OVER GREY KUROMI HEAD PATTERN. Faithfully match muted monochrome gray and white reference repeating Kuromi head pattern: flat charcoal-gray scalloped jester hood silhouette with round ear tips, white rounded face, small oval eyes tilted different rotations, tiny skull on hood, gray fivepoint stars and circles on white thin palegray graphpaper. Handdrawn soft graphic silhouettes, medium clear gray contrast, subtle pattern consistent across whole canvas, fine grids. Exact subject pattern not random othercharacters. Omit reference tiny lettering and screenshot icons. Uniform motif density across ENTIRE canvas, center upper middle left and right. Interleaved rotated Kuromi heads every row with gray stars and circles, faint white graphpaper grid. Do NOT create a border design or empty center, do NOT leave a schedule blank panel: actual app draws translucent white class boxes itself. Use approximately 3 motifcolumns acrossportraitwidth, 6motifrows. Preserve stylizedheadshape roundtips scallopedhood whitefaces skullsymbol sameasreference, slightly clearer highresolution gray outlines. No words text logos clocks UI watermark screenshotcontrols. Fullbleedpattern same design only, no othervariants."
+        },
+        {
+          "source": "output/sanrio/kuromi/sanrio-kuromi-grey-grid-tablet-handmade-master.png",
+          "prompt": "Edit Image1 only: gentler handmade stationery drawing finish like Image2 reference. Preserve exact composition, characters, expressions poses silhouette proportions allprops motifpositions and palette; no new charactersorpatterns. Very subtle colored-pencil texture inside existing flatfills, naturally uneven linepressure and slight handdrawn contourwobble, softmatte pastelcolors. Human-drawn simple illustration ratherthan precision vector. No heavygrain blur fog gradients glossyshading 3D or sharpening. Image2 styleonly do notuseitslayout orlettering. Keep aspectratio1600x2560 portraittablet and clear timetableareas. Entireartwork opaque fullbleed no text clocks UI schedules logos watermark. Same Kuromi Grey Grid design with subtle handmade finish only."
+        }
+      ],
+      "updatedAt": "2026-10-14T00:28:04.998Z"
+    },
+    {
+      "id": "sanrio-kuromi-flower",
+      "device": "tablet",
+      "prompt": "Edit Image1 only: gentler handmade stationery drawing finish like Image2 reference. Preserve exact composition, characters, expressions poses silhouette proportions allprops motifpositions and palette; no new charactersorpatterns. Very subtle colored-pencil texture inside existing flatfills, naturally uneven linepressure and slight handdrawn contourwobble, softmatte pastelcolors. Human-drawn simple illustration ratherthan precision vector. No heavygrain blur fog gradients glossyshading 3D or sharpening. Image2 styleonly do notuseitslayout orlettering. Keep aspectratio1600x2560 portraittablet and clear timetableareas. Entireartwork opaque fullbleed no text clocks UI schedules logos watermark. Same Kuromi Flower design with subtle handmade finish only.",
+      "source": "output/sanrio/kuromi/sanrio-kuromi-flower-tablet-handmade-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-kuromi-flower/tablet.png",
+      "createdAt": "2026-10-13T22:27:32.437Z",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "originalDimensions": [
+        992,
+        1586
+      ],
+      "generationPrompt": "Use case: illustration-story. ONE opaque 1600x2560 portrait5:8 tablet wallpaper, Kuromi Flower. Reference supplied for accurate art style and subject. Faithfully match soft flat pastel reference: almostwhite coollavender ground, lavender-gray Kuromi jester hood pinkskull and large pinkbow byleft ear, whiteface one dark oval eye andoneclosedeyelash winking, small pinknose and pursedmouth, holding bouquet of cream pale blue pink flowers; few tiny pink outlinehearts. Soft handpainted rounded gray contours and light papertexture. Clear resolvededges ratherthan faded fog. Keepexactwinking expression bouquet andbow. Same design as reference, no extra thematic variants. Independently redraw composition for wider portrait tablet. Place intact figures and mainprops bottom22% and outeredge, leave upper70% quiet for timetable; repeating gridpattern keeps distributed originalmotifs lowercontrast but visible. Preserve shapes poses expressions palette materials of reference, crisp resolved edges no faded fog. Fullbleed art no wording typography logos UI clocks schedules watermarks badges screenshoticons. Entirecharacters ears pawsvisible insidecanvas.",
+      "edits": [
+        {
+          "source": "output/sanrio/kuromi/sanrio-kuromi-flower-tablet-master.png",
+          "prompt": "Edit Image1 tablet wallpaper only. Preserve exactly the large bottom Kuromi flower figure, winking face, bouquet, pinkbow, skull, body tail, her size andposition, lavender/gray pastelcolors handpaintedtexture andoutlinequality. Remove ALL small Kuromi head motifs and all little backgroundflower motifs. Replace theirareas with uniform plain verypale cool lavender background like Image2reference, no gradient/tilepattern. Retain only THREE small pinkoutlineheart accents near bottom largefigure, not filling upperarea. Upper75%completelyquietpale lavender. No newcharacters motifs lettering text UI logoswatermarks. Opaqueportraittablet1600x2560, preservecompositionexactly exceptbackgroundcleanup."
+        }
+      ],
+      "updatedAt": "2026-10-13T22:51:43.365Z"
+    },
+    {
+      "id": "sanrio-kuromi-cozy",
+      "device": "tablet",
+      "prompt": "Edit Image1 only: gentler handmade stationery drawing finish like Image2 reference. Preserve exact composition, characters, expressions poses silhouette proportions allprops motifpositions and palette; no new charactersorpatterns. Very subtle colored-pencil texture inside existing flatfills, naturally uneven linepressure and slight handdrawn contourwobble, softmatte pastelcolors. Human-drawn simple illustration ratherthan precision vector. No heavygrain blur fog gradients glossyshading 3D or sharpening. Image2 styleonly do notuseitslayout orlettering. Keep aspectratio1600x2560 portraittablet and clear timetableareas. Entireartwork opaque fullbleed no text clocks UI schedules logos watermark. Same Kuromi Cozy design with subtle handmade finish only.",
+      "source": "output/sanrio/kuromi/sanrio-kuromi-cozy-tablet-handmade-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-kuromi-cozy/tablet.png",
+      "createdAt": "2026-10-13T22:16:42.933Z",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "originalDimensions": [
+        992,
+        1586
+      ],
+      "edits": [
+        {
+          "source": "output/sanrio/kuromi/sanrio-kuromi-cozy-tablet-master.png",
+          "prompt": "Use case: illustration-story. ONE opaque 1600x2560 portrait5:8 tablet wallpaper, Kuromi Cozy. Reference supplied for accurate art style and subject. Faithfully match warmcream papertexture reference: charcoal grayjester hood Kuromi pinkskull whiteface pinkcheeks oneeyeclosed andotherdarkoval, lying prone pawunderchin onpale lavender oval matwithcream scallopedlace border; little lavenderBaku restsbeside her. Smallpurple hearts and fourpointstarssparse, lavendercream ginghambottomstrip. Delicate warmgray fine outlines andflat pastel coloring. RetaincompleteKuromi andBaku cozyposes. No name text. Same design as reference, no extra thematic variants. Independently redraw composition for wider portrait tablet. Place intact figures and mainprops bottom22% and outeredge, leave upper70% quiet for timetable; repeating gridpattern keeps distributed originalmotifs lowercontrast but visible. Preserve shapes poses expressions palette materials of reference, crisp resolved edges no faded fog. Fullbleed art no wording typography logos UI clocks schedules watermarks badges screenshoticons. Entirecharacters ears pawsvisible insidecanvas."
+        }
+      ],
+      "updatedAt": "2026-10-13T22:52:21.023Z"
+    },
+    {
+      "id": "sanrio-kuromi-claw",
+      "device": "laptop",
+      "prompt": "Edit Image1 landscape artwork finish only. Preserve EXACT widecomposition positions scales proportions, allcharacters faces expressions poses props, background motifdensity, schedule-emptyarea and soft originalpalette. Image2 styleonly shows simpler humanmade art. Add subtle penciltexture in existingflatfills and faint papergrain, slight linepressurevariation and barelyunevenhanddrawn contours. Gentler simpler matte pastel rendering, no overenhanced digitalvector polish. Keep colors light and soft, no contrastboost or darkening. No newmotifs heads characters, blur/haze, glossyshading intricate photorealtexture gradients 3D or sharpening. Same Kuromi Claw art. Preserve1920x1080 landscape aspectratio. Opaque fullbleed no letteringtext logos UI clocks schedulewatermark.",
+      "source": "output/sanrio/kuromi/sanrio-kuromi-claw-laptop-handmade-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-kuromi-claw/laptop.png",
+      "createdAt": "2026-10-13T22:19:03.794Z",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "edits": [
+        {
+          "source": "output/sanrio/kuromi/sanrio-kuromi-claw-laptop-master.png",
+          "prompt": "Use case: illustration-story. ONE opaque1920x1080 landscape16:9 laptop wallpaper Kuromi Claw. Inputstyleandsubject reference only. Faithfully match reference flat stationery illustration, pale white graph paper, scalloped alternating pale lavender and white canopy, lavender claw machine rails, multiple miniature Kuromi plush dolls with charcoal jester ears pink bows skulls, pink polkadot lace pillows, reading poses, tiny lavender Baku, pale yellow stars and pink dots. Keep main doll cluster toward bottom and claw detail along right edge; miniature expressions and props same visual language. Fine muted lavender-gray contours crisp resolved details. Landscapeadaptation: intact samecharacters andprops occupyrightmost30% mainlybottom, left65%quiet for timetable; canopy/scaffold canframeouteredges. No otherstylisticvariant. Accurately match reference shapes expressions palette and medium, improve resolution crispdetails, no blurring/fogoverlay. Recompose independentlyfor widescreen; no stretchingportraitart. Opaque fullbleed artwork no textletteringlogos UI clocks schedulewatermarksbadges screenshoticons. Completecharacterbody/ears visible insidecanvas."
+        }
+      ],
+      "updatedAt": "2026-10-13T22:55:17.536Z"
+    },
+    {
+      "id": "sanrio-kuromi-grey-grid",
+      "device": "laptop",
+      "prompt": "Edit Image1 landscape artwork finish only. Preserve EXACT widecomposition positions scales proportions, allcharacters faces expressions poses props, background motifdensity, schedule-emptyarea and soft originalpalette. Image2 styleonly shows simpler humanmade art. Add subtle penciltexture in existingflatfills and faint papergrain, slight linepressurevariation and barelyunevenhanddrawn contours. Gentler simpler matte pastel rendering, no overenhanced digitalvector polish. Keep colors light and soft, no contrastboost or darkening. No newmotifs heads characters, blur/haze, glossyshading intricate photorealtexture gradients 3D or sharpening. Same Kuromi Grey Grid art. Preserve1920x1080 landscape aspectratio. Opaque fullbleed no letteringtext logos UI clocks schedulewatermark.",
+      "source": "output/sanrio/kuromi/sanrio-kuromi-grey-grid-laptop-handmade-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-kuromi-grey-grid/laptop.png",
+      "createdAt": "2026-10-13T22:19:49.807Z",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "edits": [
+        {
+          "source": "output/sanrio/kuromi/sanrio-kuromi-grey-grid-laptop-master.png",
+          "prompt": "Use case: illustration-story. ONE opaque1920x1080 landscape16:9 laptop wallpaper Kuromi Grey Grid. Inputstyleandsubject reference only. Faithfully match muted monochrome gray and white reference repeating Kuromi head pattern: flat charcoal-gray scalloped jester hood silhouette with round ear tips, white rounded face, small oval eyes tilted different rotations, tiny skull on hood, gray fivepoint stars and circles on white thin palegray graphpaper. Handdrawn soft graphic silhouettes, medium clear gray contrast, subtle pattern consistent across whole canvas, fine grids. Exact subject pattern not random othercharacters. Omit reference tiny lettering and screenshot icons. ALL-OVER repeating pattern uniformly distributed across entire canvas including center and left, just like reference. Do not make a blank center or border-only pattern. Small medium repeated Kuromi heads rotated in interleaved rows with stars andcircles. Schedule willhavewhite translucentboxes, no blankpanelneeded. No otherstylisticvariant. Accurately match reference shapes expressions palette and medium, improve resolution crispdetails, no blurring/fogoverlay. Recompose independentlyfor widescreen; no stretchingportraitart. Opaque fullbleed artwork no textletteringlogos UI clocks schedulewatermarksbadges screenshoticons. Completecharacterbody/ears visible insidecanvas."
+        }
+      ],
+      "updatedAt": "2026-10-13T22:54:00.807Z"
+    },
+    {
+      "id": "sanrio-kuromi-flower",
+      "device": "laptop",
+      "prompt": "Edit Image1 landscape artwork finish only. Preserve EXACT widecomposition positions scales proportions, allcharacters faces expressions poses props, background motifdensity, schedule-emptyarea and soft originalpalette. Image2 styleonly shows simpler humanmade art. Add subtle penciltexture in existingflatfills and faint papergrain, slight linepressurevariation and barelyunevenhanddrawn contours. Gentler simpler matte pastel rendering, no overenhanced digitalvector polish. Keep colors light and soft, no contrastboost or darkening. No newmotifs heads characters, blur/haze, glossyshading intricate photorealtexture gradients 3D or sharpening. Same Kuromi Flower art. Preserve1920x1080 landscape aspectratio. Opaque fullbleed no letteringtext logos UI clocks schedulewatermark.",
+      "source": "output/sanrio/kuromi/sanrio-kuromi-flower-laptop-handmade-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-kuromi-flower/laptop.png",
+      "createdAt": "2026-10-13T22:20:19.878Z",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "edits": [
+        {
+          "source": "output/sanrio/kuromi/sanrio-kuromi-flower-laptop-master.png",
+          "prompt": "Use case: illustration-story. ONE opaque1920x1080 landscape16:9 laptop wallpaper Kuromi Flower. Inputstyleandsubject reference only. Faithfully match soft flat pastel reference: almostwhite coollavender ground, lavender-gray Kuromi jester hood pinkskull and large pinkbow byleft ear, whiteface one dark oval eye andoneclosedeyelash winking, small pinknose and pursedmouth, holding bouquet of cream pale blue pink flowers; few tiny pink outlinehearts. Soft handpainted rounded gray contours and light papertexture. Clear resolvededges ratherthan faded fog. Keepexactwinking expression bouquet andbow. Landscapeadaptation: intact samecharacters andprops occupyrightmost30% mainlybottom, left65%quiet for timetable; canopy/scaffold canframeouteredges. No otherstylisticvariant. Accurately match reference shapes expressions palette and medium, improve resolution crispdetails, no blurring/fogoverlay. Recompose independentlyfor widescreen; no stretchingportraitart. Opaque fullbleed artwork no textletteringlogos UI clocks schedulewatermarksbadges screenshoticons. Completecharacterbody/ears visible insidecanvas."
+        }
+      ],
+      "updatedAt": "2026-10-13T22:55:55.845Z"
+    },
+    {
+      "id": "sanrio-kuromi-cozy",
+      "device": "laptop",
+      "prompt": "Edit Image1 landscape artwork finish only. Preserve EXACT widecomposition positions scales proportions, allcharacters faces expressions poses props, background motifdensity, schedule-emptyarea and soft originalpalette. Image2 styleonly shows simpler humanmade art. Add subtle penciltexture in existingflatfills and faint papergrain, slight linepressurevariation and barelyunevenhanddrawn contours. Gentler simpler matte pastel rendering, no overenhanced digitalvector polish. Keep colors light and soft, no contrastboost or darkening. No newmotifs heads characters, blur/haze, glossyshading intricate photorealtexture gradients 3D or sharpening. Same Kuromi Cozy art. Preserve1920x1080 landscape aspectratio. Opaque fullbleed no letteringtext logos UI clocks schedulewatermark.",
+      "source": "output/sanrio/kuromi/sanrio-kuromi-cozy-laptop-handmade-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-kuromi-cozy/laptop.png",
+      "createdAt": "2026-10-13T22:20:48.579Z",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "edits": [
+        {
+          "source": "output/sanrio/kuromi/sanrio-kuromi-cozy-laptop-master.png",
+          "prompt": "Use case: illustration-story. ONE opaque1920x1080 landscape16:9 laptop wallpaper Kuromi Cozy. Inputstyleandsubject reference only. Faithfully match warmcream papertexture reference: charcoal grayjester hood Kuromi pinkskull whiteface pinkcheeks oneeyeclosed andotherdarkoval, lying prone pawunderchin onpale lavender oval matwithcream scallopedlace border; little lavenderBaku restsbeside her. Smallpurple hearts and fourpointstarssparse, lavendercream ginghambottomstrip. Delicate warmgray fine outlines andflat pastel coloring. RetaincompleteKuromi andBaku cozyposes. No name text. Landscapeadaptation: intact samecharacters andprops occupyrightmost30% mainlybottom, left65%quiet for timetable; canopy/scaffold canframeouteredges. No otherstylisticvariant. Accurately match reference shapes expressions palette and medium, improve resolution crispdetails, no blurring/fogoverlay. Recompose independentlyfor widescreen; no stretchingportraitart. Opaque fullbleed artwork no textletteringlogos UI clocks schedulewatermarksbadges screenshoticons. Completecharacterbody/ears visible insidecanvas."
+        }
+      ],
+      "updatedAt": "2026-10-13T22:56:32.086Z"
+    }
+  ]
+}

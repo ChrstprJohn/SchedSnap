@@ -1,0 +1,244 @@
+{
+  "provider": "builtin image_gen",
+  "references": [
+    {
+      "id": "sanrio-cinnamon-pastel-stack",
+      "name": "Cinnamon Pastel Stack",
+      "reference": "cb250e43-fb69-469d-bbb5-815cf5331750",
+      "style": "Faithfully match soft pastel hand-drawn reference: white Cinnamoroll with blue oval eyes and pink cheeks sitting at top of vertical stack of five fluffy long-eared puppy friends, cream peach butter-yellow mocha colors; little flower accessories and pastelpink yellow lavender stars. Soft warm beige colored-pencil contour lines and flatgentlefill, verypale coolblueground. Keep samegroup arrangement and cuteexpressions, entirestackclear smaller atbottom portrait/rightlandscape."
+    },
+    {
+      "id": "sanrio-cinnamon-bear-panels",
+      "name": "Cinnamon Bear Panels",
+      "reference": "8dffd42a-0b8e-4d96-9858-1faf87d82aea",
+      "style": "Faithfully match hand-drawn crayon/pencil reference: white Cinnamoroll blue ovaleyes one winking expression andone surprised littlepinkmouth, pinkheart cheeks, warmtan roughpencil outlines. Small honey-colored teddy bears with pale bluebow, looselydrawn comicpanel frames thincharcoal; pale babyblue checkedpaper, little pawprints and pastelstars. Keep paired Cinnamoroll faces and teddies inbottom/rightcomicpanels, quiet centralupperarea. Same playful roughdrawing style, no captions or OKlettering."
+    },
+    {
+      "id": "sanrio-cinnamon-chalk-cloud",
+      "name": "Cinnamon Chalk Cloud",
+      "reference": "ab56829a-2e18-4bcc-8934-22b36c29c963",
+      "style": "Faithfully match soft chalk/pastel-on-paper reference: babyblue softlytextured ground, fluffy white Cinnamoroll with wide longcurled ears, handdrawn softblue unevencontours, blue ovaleyes rosy roundcheeks tiny surprised roundmouth, roundedlittlewhite paws andbody floatingonsmallcloud. Faintfewstaroutlineaccents. Visible gentlepapergrain and chalktexture, naturally imperfect softlines, no crispvectoredges, no sharp digitalpolish, no heavy dirty noise or fogoverlay."
+    },
+    {
+      "id": "sanrio-cinnamon-mocha-pair",
+      "name": "Cinnamon Mocha Pair",
+      "reference": "16150c75-7eec-4c5d-8c7f-29785a3ac2a3",
+      "style": "Faithfully match verysimple flat pastelreference: white Cinnamoroll face onright withskyblue ovaleyes pinkcheeks tinywsmile; mocha-brown fluffyfriend onleft withdarkbrownovaleyes openpinkmouth andtwo pinkfivepetalflower accessories. Warmtan roundedoutlines, whitebackground. Headspeekupfrombottomedge close together sameexpression andflowerdetails. Subtle human-made linepressurevariation only, simpleflatfills no complexshading glossygradient or overttexture. Preserve cuteclosepair composition."
+    }
+  ],
+  "assets": [
+    {
+      "id": "sanrio-cinnamon-chalk-cloud",
+      "device": "mobile",
+      "prompt": "Usecase: illustration-story. ONE opaque1080x2400 portrait9:20 mobilewallpaper Cinnamon Chalk Cloud. Inputimage referencefor accurate artstyle andsubjects only. Faithfully match soft chalk/pastel-on-paper reference: babyblue softlytextured ground, fluffy white Cinnamoroll with wide longcurled ears, handdrawn softblue unevencontours, blue ovaleyes rosy roundcheeks tiny surprised roundmouth, roundedlittlewhite paws andbody floatingonsmallcloud. Faintfewstaroutlineaccents. Visible gentlepapergrain and chalktexture, naturally imperfect softlines, no crispvectoredges, no sharp digitalpolish, no heavy dirty noise or fogoverlay. Keep original gentle handmade feel: slightly uneven pencilpressure softflat color faintpapertexture, no enhancingdigitalpolish sharpvectors photorealism gloss orstrongshading. Same reference design only, no additionalvariants ornewmotifs. Recompose for portrait: group/characters mainlybottom25% (stack canusebottom32%), upper65-70%quiet for timetable. Pairdesign facespeekfrombottomedge likereference; comic panels nearbottom keepblackframes andpairedfaces. Preservecharacterexpressions recognizablefaces ears accessorydetail. Fullbleedopaqueart no words letteringlogos clocks schedules UI watermark screenshotcorners. Do notcopy screenshot controls.",
+      "source": "output/sanrio/cinnamon-reference/sanrio-cinnamon-chalk-cloud-mobile-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-chalk-cloud/mobile.png",
+      "createdAt": "2026-10-13T23:18:42.930Z",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "originalDimensions": [
+        841,
+        1870
+      ]
+    },
+    {
+      "id": "sanrio-cinnamon-mocha-pair",
+      "device": "mobile",
+      "prompt": "Usecase: illustration-story. ONE opaque1080x2400 portrait9:20 mobilewallpaper Cinnamon Mocha Pair. Inputimage referencefor accurate artstyle andsubjects only. Faithfully match verysimple flat pastelreference: white Cinnamoroll face onright withskyblue ovaleyes pinkcheeks tinywsmile; mocha-brown fluffyfriend onleft withdarkbrownovaleyes openpinkmouth andtwo pinkfivepetalflower accessories. Warmtan roundedoutlines, whitebackground. Headspeekupfrombottomedge close together sameexpression andflowerdetails. Subtle human-made linepressurevariation only, simpleflatfills no complexshading glossygradient or overttexture. Preserve cuteclosepair composition. Keep original gentle handmade feel: slightly uneven pencilpressure softflat color faintpapertexture, no enhancingdigitalpolish sharpvectors photorealism gloss orstrongshading. Same reference design only, no additionalvariants ornewmotifs. Recompose for portrait: group/characters mainlybottom25% (stack canusebottom32%), upper65-70%quiet for timetable. Pairdesign facespeekfrombottomedge likereference; comic panels nearbottom keepblackframes andpairedfaces. Preservecharacterexpressions recognizablefaces ears accessorydetail. Fullbleedopaqueart no words letteringlogos clocks schedules UI watermark screenshotcorners. Do notcopy screenshot controls.",
+      "source": "output/sanrio/cinnamon-reference/sanrio-cinnamon-mocha-pair-mobile-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-mocha-pair/mobile.png",
+      "createdAt": "2026-10-13T23:19:02.438Z",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "originalDimensions": [
+        841,
+        1870
+      ]
+    },
+    {
+      "id": "sanrio-cinnamon-bear-panels",
+      "device": "mobile",
+      "prompt": "Edit supplied artwork only. Move and scale the EXISTING comicpanel cluster (two Cinnamoroll scenes plus teddy bears and thinblackpanelframes) together so ENTIRE cluster fitsbottom24%(y76%-100%). Allcharacterfaces below76%height. Upper75%justexistingquietpalebluechecks andfewpawprints nearouteredges. Preserve exactscenecontent faces expressions teddybows palette andsoftcrayon/pencilstyle. No extra objects, no digitallypolishededges. Preserve allotherdetails andthehumanmade look. Same design; no newvariants. Keepopaque fullcanvas 1080x2400portrait9:20. No text UI schedules clocks logoswatermark.",
+      "source": "output/sanrio/cinnamon-reference/sanrio-cinnamon-bear-panels-mobile-revised-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-bear-panels/mobile.png",
+      "createdAt": "2026-10-13T23:19:53.238Z",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "originalDimensions": [
+        841,
+        1870
+      ],
+      "edits": [
+        {
+          "source": "output/sanrio/cinnamon-reference/sanrio-cinnamon-bear-panels-mobile-master.png",
+          "prompt": "Usecase: illustration-story. ONE opaque1080x2400 portrait9:20 mobilewallpaper Cinnamon Bear Panels. Inputimage referencefor accurate artstyle andsubjects only. Faithfully match hand-drawn crayon/pencil reference: white Cinnamoroll blue ovaleyes one winking expression andone surprised littlepinkmouth, pinkheart cheeks, warmtan roughpencil outlines. Small honey-colored teddy bears with pale bluebow, looselydrawn comicpanel frames thincharcoal; pale babyblue checkedpaper, little pawprints and pastelstars. Keep paired Cinnamoroll faces and teddies inbottom/rightcomicpanels, quiet centralupperarea. Same playful roughdrawing style, no captions or OKlettering. Keep original gentle handmade feel: slightly uneven pencilpressure softflat color faintpapertexture, no enhancingdigitalpolish sharpvectors photorealism gloss orstrongshading. Same reference design only, no additionalvariants ornewmotifs. Recompose for portrait: group/characters mainlybottom25% (stack canusebottom32%), upper65-70%quiet for timetable. Pairdesign facespeekfrombottomedge likereference; comic panels nearbottom keepblackframes andpairedfaces. Preservecharacterexpressions recognizablefaces ears accessorydetail. Fullbleedopaqueart no words letteringlogos clocks schedules UI watermark screenshotcorners. Do notcopy screenshot controls."
+        }
+      ],
+      "updatedAt": "2026-10-13T23:37:08.569Z"
+    },
+    {
+      "id": "sanrio-cinnamon-pastel-stack",
+      "device": "mobile",
+      "prompt": "Edit supplied artwork only. Move the ENTIRE existing five-friend stack and little friend down and reduce its size together enough to fit ONLY inside bottom24% of image (y76%-98%). Keep all five same faces poses colors flower accessories, entire ears insidecanvas with5%side margin. Upper75%contains onlyexistingblueground andsparsestars, absolutely nocharacters. Restoreblue/starbackground wheregroupwas. Keep cuteexpressions originalflatpastels unevenpencillines, no detail enhancement. Preserve allotherdetails andthehumanmade look. Same design; no newvariants. Keepopaque fullcanvas 1080x2400portrait9:20. No text UI schedules clocks logoswatermark.",
+      "source": "output/sanrio/cinnamon-reference/sanrio-cinnamon-pastel-stack-mobile-revised-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-pastel-stack/mobile.png",
+      "createdAt": "2026-10-13T23:20:44.972Z",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "originalDimensions": [
+        841,
+        1870
+      ],
+      "edits": [
+        {
+          "source": "output/sanrio/cinnamon-reference/sanrio-cinnamon-pastel-stack-mobile-master.png",
+          "prompt": "Usecase: illustration-story. ONE opaque1080x2400 portrait9:20 mobilewallpaper Cinnamon Pastel Stack. Inputimage referencefor accurate artstyle andsubjects only. Faithfully match soft pastel hand-drawn reference: white Cinnamoroll with blue oval eyes and pink cheeks sitting at top of vertical stack of five fluffy long-eared puppy friends, cream peach butter-yellow mocha colors; little flower accessories and pastelpink yellow lavender stars. Soft warm beige colored-pencil contour lines and flatgentlefill, verypale coolblueground. Keep samegroup arrangement and cuteexpressions, entirestackclear smaller atbottom portrait/rightlandscape. Keep original gentle handmade feel: slightly uneven pencilpressure softflat color faintpapertexture, no enhancingdigitalpolish sharpvectors photorealism gloss orstrongshading. Same reference design only, no additionalvariants ornewmotifs. Recompose for portrait: group/characters mainlybottom25% (stack canusebottom32%), upper65-70%quiet for timetable. Pairdesign facespeekfrombottomedge likereference; comic panels nearbottom keepblackframes andpairedfaces. Preservecharacterexpressions recognizablefaces ears accessorydetail. Fullbleedopaqueart no words letteringlogos clocks schedules UI watermark screenshotcorners. Do notcopy screenshot controls."
+        }
+      ],
+      "updatedAt": "2026-10-13T23:36:32.763Z"
+    },
+    {
+      "id": "sanrio-cinnamon-chalk-cloud",
+      "device": "tablet",
+      "prompt": "Edit supplied artwork only. Remove the two flatblue vertical sidebars only. Extend existing middle pale blue chalk/pastel paper texture seamlessly across ENTIRE width. Keep sameCinnamoroll posefaceearsbodycloud andposition exactly, keepexistingfaintstars. Fullbleedcontinuouspaper texture no seams/bars/panels. Preserve softnaturaldrawn contourgrain no sharpeningenhancement. Preserve allotherdetails andthehumanmade look. Same design; no newvariants. Keepopaque fullcanvas 1600x2560portrait5:8. No text UI schedules clocks logoswatermark.",
+      "source": "output/sanrio/cinnamon-reference/sanrio-cinnamon-chalk-cloud-tablet-revised-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-chalk-cloud/tablet.png",
+      "createdAt": "2026-10-13T23:22:44.643Z",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "originalDimensions": [
+        992,
+        1586
+      ],
+      "edits": [
+        {
+          "source": "output/sanrio/cinnamon-reference/sanrio-cinnamon-chalk-cloud-tablet-master.png",
+          "prompt": "Usecase: illustration-story. ONE opaque1600x2560 portrait5:8 tabletwallpaper Cinnamon Chalk Cloud. Attachedreference styleandsubject accuratelymatch. Faithfully match soft chalk/pastel-on-paper reference: babyblue softlytextured ground, fluffy white Cinnamoroll with wide longcurled ears, handdrawn softblue unevencontours, blue ovaleyes rosy roundcheeks tiny surprised roundmouth, roundedlittlewhite paws andbody floatingonsmallcloud. Faintfewstaroutlineaccents. Visible gentlepapergrain and chalktexture, naturally imperfect softlines, no crispvectoredges, no sharp digitalpolish, no heavy dirty noise or fogoverlay. Preserve originalhumanmade gentle pastels, handdrawn pencilcontours natural linepressure faintpapertexture; avoid digitalvectorpolish sharpening glossyshading complextexture. Same onedesign asreference only. Independentlycompose forwiderportraittablet: charactergroupmainlybottom25%, stack canusebottom30%; quiet upper65-70%fortimetable. MochaPairfacespeekfrombottomlikereference; comicpanels fitlower area and preservepairedCinnamoroll+teddies. No newvariants/motifs. Entirefigurativeart/intactears unlessintentionalbottomfacepeek. Opaque fullbleed, no words lettering logos UI schedules clockswatermarks screenshoticons."
+        }
+      ],
+      "updatedAt": "2026-10-13T23:35:39.266Z"
+    },
+    {
+      "id": "sanrio-cinnamon-bear-panels",
+      "device": "tablet",
+      "prompt": "Usecase: illustration-story. ONE opaque1600x2560 portrait5:8 tabletwallpaper Cinnamon Bear Panels. Attachedreference styleandsubject accuratelymatch. Faithfully match hand-drawn crayon/pencil reference: white Cinnamoroll blue ovaleyes one winking expression andone surprised littlepinkmouth, pinkheart cheeks, warmtan roughpencil outlines. Small honey-colored teddy bears with pale bluebow, looselydrawn comicpanel frames thincharcoal; pale babyblue checkedpaper, little pawprints and pastelstars. Keep paired Cinnamoroll faces and teddies inbottom/rightcomicpanels, quiet centralupperarea. Same playful roughdrawing style, no captions or OKlettering. Preserve originalhumanmade gentle pastels, handdrawn pencilcontours natural linepressure faintpapertexture; avoid digitalvectorpolish sharpening glossyshading complextexture. Same onedesign asreference only. Independentlycompose forwiderportraittablet: charactergroupmainlybottom25%, stack canusebottom30%; quiet upper65-70%fortimetable. MochaPairfacespeekfrombottomlikereference; comicpanels fitlower area and preservepairedCinnamoroll+teddies. No newvariants/motifs. Entirefigurativeart/intactears unlessintentionalbottomfacepeek. Opaque fullbleed, no words lettering logos UI schedules clockswatermarks screenshoticons.",
+      "source": "output/sanrio/cinnamon-reference/sanrio-cinnamon-bear-panels-tablet-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-bear-panels/tablet.png",
+      "createdAt": "2026-10-13T23:23:53.773Z",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "originalDimensions": [
+        992,
+        1586
+      ]
+    },
+    {
+      "id": "sanrio-cinnamon-pastel-stack",
+      "device": "tablet",
+      "prompt": "Usecase: illustration-story. ONE opaque1600x2560 portrait5:8 tabletwallpaper Cinnamon Pastel Stack. Attachedreference styleandsubject accuratelymatch. Faithfully match soft pastel hand-drawn reference: white Cinnamoroll with blue oval eyes and pink cheeks sitting at top of vertical stack of five fluffy long-eared puppy friends, cream peach butter-yellow mocha colors; little flower accessories and pastelpink yellow lavender stars. Soft warm beige colored-pencil contour lines and flatgentlefill, verypale coolblueground. Keep samegroup arrangement and cuteexpressions, entirestackclear smaller atbottom portrait/rightlandscape. Preserve originalhumanmade gentle pastels, handdrawn pencilcontours natural linepressure faintpapertexture; avoid digitalvectorpolish sharpening glossyshading complextexture. Same onedesign asreference only. Independentlycompose forwiderportraittablet: charactergroupmainlybottom25%, stack canusebottom30%; quiet upper65-70%fortimetable. MochaPairfacespeekfrombottomlikereference; comicpanels fitlower area and preservepairedCinnamoroll+teddies. No newvariants/motifs. Entirefigurativeart/intactears unlessintentionalbottomfacepeek. Opaque fullbleed, no words lettering logos UI schedules clockswatermarks screenshoticons.",
+      "source": "output/sanrio/cinnamon-reference/sanrio-cinnamon-pastel-stack-tablet-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-pastel-stack/tablet.png",
+      "createdAt": "2026-10-13T23:24:18.197Z",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "originalDimensions": [
+        992,
+        1586
+      ]
+    },
+    {
+      "id": "sanrio-cinnamon-mocha-pair",
+      "device": "tablet",
+      "prompt": "Usecase: illustration-story. ONE opaque1600x2560 portrait5:8 tabletwallpaper Cinnamon Mocha Pair. Attachedreference styleandsubject accuratelymatch. Faithfully match verysimple flat pastelreference: white Cinnamoroll face onright withskyblue ovaleyes pinkcheeks tinywsmile; mocha-brown fluffyfriend onleft withdarkbrownovaleyes openpinkmouth andtwo pinkfivepetalflower accessories. Warmtan roundedoutlines, whitebackground. Headspeekupfrombottomedge close together sameexpression andflowerdetails. Subtle human-made linepressurevariation only, simpleflatfills no complexshading glossygradient or overttexture. Preserve cuteclosepair composition. Preserve originalhumanmade gentle pastels, handdrawn pencilcontours natural linepressure faintpapertexture; avoid digitalvectorpolish sharpening glossyshading complextexture. Same onedesign asreference only. Independentlycompose forwiderportraittablet: charactergroupmainlybottom25%, stack canusebottom30%; quiet upper65-70%fortimetable. MochaPairfacespeekfrombottomlikereference; comicpanels fitlower area and preservepairedCinnamoroll+teddies. No newvariants/motifs. Entirefigurativeart/intactears unlessintentionalbottomfacepeek. Opaque fullbleed, no words lettering logos UI schedules clockswatermarks screenshoticons.",
+      "source": "output/sanrio/cinnamon-reference/sanrio-cinnamon-mocha-pair-tablet-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-mocha-pair/tablet.png",
+      "createdAt": "2026-10-13T23:25:16.314Z",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "originalDimensions": [
+        992,
+        1586
+      ]
+    },
+    {
+      "id": "sanrio-cinnamon-bear-panels",
+      "device": "laptop",
+      "prompt": "Usecase: illustration-story. ONE opaque1920x1080 landscape16:9 laptopwallpaper Cinnamon Bear Panels. Reference accuratehandmade styleandsubject. Faithfully match hand-drawn crayon/pencil reference: white Cinnamoroll blue ovaleyes one winking expression andone surprised littlepinkmouth, pinkheart cheeks, warmtan roughpencil outlines. Small honey-colored teddy bears with pale bluebow, looselydrawn comicpanel frames thincharcoal; pale babyblue checkedpaper, little pawprints and pastelstars. Keep paired Cinnamoroll faces and teddies inbottom/rightcomicpanels, quiet centralupperarea. Same playful roughdrawing style, no captions or OKlettering. Independentlycomposewide versionofSAMEreference design, no other stylisticvariants. Maincharacters/stack/comicpanels onlyrightmost30% mainlybottom, left65%quietclearschedulearea, sparseoriginalsmallmotif accents nearoutercorners. Pairfacespeekfrombottomrightlikereference, preservebothfacesandflowers. Intactexpressions, ears andprops. Softflat pastels faintpaper/penciltexture naturallyunevenlines, simplehumanmadeappearance; no digitalvectorpolish photorealism heavyshading gloss orsharpening. Don't stretchportrait. Fullbleedopaqueart no wordstext logos UI clocks schedules watermark screenshoticons.",
+      "source": "output/sanrio/cinnamon-reference/sanrio-cinnamon-bear-panels-laptop-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-bear-panels/laptop.png",
+      "createdAt": "2026-10-13T23:27:01.767Z",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "originalDimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "id": "sanrio-cinnamon-mocha-pair",
+      "device": "laptop",
+      "prompt": "Usecase: illustration-story. ONE opaque1920x1080 landscape16:9 laptopwallpaper Cinnamon Mocha Pair. Reference accuratehandmade styleandsubject. Faithfully match verysimple flat pastelreference: white Cinnamoroll face onright withskyblue ovaleyes pinkcheeks tinywsmile; mocha-brown fluffyfriend onleft withdarkbrownovaleyes openpinkmouth andtwo pinkfivepetalflower accessories. Warmtan roundedoutlines, whitebackground. Headspeekupfrombottomedge close together sameexpression andflowerdetails. Subtle human-made linepressurevariation only, simpleflatfills no complexshading glossygradient or overttexture. Preserve cuteclosepair composition. Independentlycomposewide versionofSAMEreference design, no other stylisticvariants. Maincharacters/stack/comicpanels onlyrightmost30% mainlybottom, left65%quietclearschedulearea, sparseoriginalsmallmotif accents nearoutercorners. Pairfacespeekfrombottomrightlikereference, preservebothfacesandflowers. Intactexpressions, ears andprops. Softflat pastels faintpaper/penciltexture naturallyunevenlines, simplehumanmadeappearance; no digitalvectorpolish photorealism heavyshading gloss orsharpening. Don't stretchportrait. Fullbleedopaqueart no wordstext logos UI clocks schedules watermark screenshoticons.",
+      "source": "output/sanrio/cinnamon-reference/sanrio-cinnamon-mocha-pair-laptop-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-mocha-pair/laptop.png",
+      "createdAt": "2026-10-13T23:27:26.401Z",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "originalDimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "id": "sanrio-cinnamon-chalk-cloud",
+      "device": "laptop",
+      "prompt": "Usecase: illustration-story. ONE opaque1920x1080 landscape16:9 laptopwallpaper Cinnamon Chalk Cloud. Reference accuratehandmade styleandsubject. Faithfully match soft chalk/pastel-on-paper reference: babyblue softlytextured ground, fluffy white Cinnamoroll with wide longcurled ears, handdrawn softblue unevencontours, blue ovaleyes rosy roundcheeks tiny surprised roundmouth, roundedlittlewhite paws andbody floatingonsmallcloud. Faintfewstaroutlineaccents. Visible gentlepapergrain and chalktexture, naturally imperfect softlines, no crispvectoredges, no sharp digitalpolish, no heavy dirty noise or fogoverlay. Independentlycomposewide versionofSAMEreference design, no other stylisticvariants. Maincharacters/stack/comicpanels onlyrightmost30% mainlybottom, left65%quietclearschedulearea, sparseoriginalsmallmotif accents nearoutercorners. Pairfacespeekfrombottomrightlikereference, preservebothfacesandflowers. Intactexpressions, ears andprops. Softflat pastels faintpaper/penciltexture naturallyunevenlines, simplehumanmadeappearance; no digitalvectorpolish photorealism heavyshading gloss orsharpening. Don't stretchportrait. Fullbleedopaqueart no wordstext logos UI clocks schedules watermark screenshoticons.",
+      "source": "output/sanrio/cinnamon-reference/sanrio-cinnamon-chalk-cloud-laptop-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-chalk-cloud/laptop.png",
+      "createdAt": "2026-10-13T23:28:21.306Z",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "originalDimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "id": "sanrio-cinnamon-pastel-stack",
+      "device": "laptop",
+      "prompt": "Usecase: illustration-story. ONE opaque1920x1080 landscape16:9 laptopwallpaper Cinnamon Pastel Stack. Reference accuratehandmade styleandsubject. Faithfully match soft pastel hand-drawn reference: white Cinnamoroll with blue oval eyes and pink cheeks sitting at top of vertical stack of five fluffy long-eared puppy friends, cream peach butter-yellow mocha colors; little flower accessories and pastelpink yellow lavender stars. Soft warm beige colored-pencil contour lines and flatgentlefill, verypale coolblueground. Keep samegroup arrangement and cuteexpressions, entirestackclear smaller atbottom portrait/rightlandscape. Independentlycomposewide versionofSAMEreference design, no other stylisticvariants. Maincharacters/stack/comicpanels onlyrightmost30% mainlybottom, left65%quietclearschedulearea, sparseoriginalsmallmotif accents nearoutercorners. Pairfacespeekfrombottomrightlikereference, preservebothfacesandflowers. Intactexpressions, ears andprops. Softflat pastels faintpaper/penciltexture naturallyunevenlines, simplehumanmadeappearance; no digitalvectorpolish photorealism heavyshading gloss orsharpening. Don't stretchportrait. Fullbleedopaqueart no wordstext logos UI clocks schedules watermark screenshoticons.",
+      "source": "output/sanrio/cinnamon-reference/sanrio-cinnamon-pastel-stack-laptop-master.png",
+      "destination": "public/wallpapers/scenic/sanrio-cinnamon-pastel-stack/laptop.png",
+      "createdAt": "2026-10-13T23:29:38.781Z",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "originalDimensions": [
+        1672,
+        941
+      ]
+    }
+  ]
+}

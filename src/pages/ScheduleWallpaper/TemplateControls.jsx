@@ -64,7 +64,7 @@ export default function TemplateControls({ template, onChange, onReset, defaultT
       <legend>Day containers</legend>
       {template.device === 'tablet' && <div className="top-margin-control">
         <div className="top-margin-label"><label htmlFor="tablet-box-spacing">Space between boxes</label><output htmlFor="tablet-box-spacing">{tabletBoxSpacing(template)}</output></div>
-        <input id="tablet-box-spacing" type="range" min="0" max="100" step="1" value={tabletBoxSpacing(template)} aria-valuetext={`${tabletBoxSpacing(template)} spacing units`} onChange={event => onChange('tabletBoxSpacing', Number(event.target.value))} />
+        <input id="tablet-box-spacing" type="range" min="0" max="300" step="1" value={tabletBoxSpacing(template)} aria-valuetext={`${tabletBoxSpacing(template)} spacing units`} onChange={event => onChange('tabletBoxSpacing', Number(event.target.value))} />
       </div>}
       <div className="appearance-row">
         <label className="appearance-label" htmlFor="container-style">Finish</label>

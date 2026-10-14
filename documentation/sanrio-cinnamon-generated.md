@@ -13,6 +13,6 @@ Each design has independently generated mobile (1080×2400), portrait tablet (16
 
 The 36 PNG exports are saved under `public/wallpapers/scenic/sanrio-cinnamon-*/`. Generated masters and review sheets remain under `output/sanrio/`. Both follow the existing image ignore policy. The committed delivery manifest records immutable Cloudinary URLs.
 
-New presets use blue schedule text and the existing white frosted-glass pill containers. Laptop schedules default to the left, keeping the characters visible on the right. Portrait tablets retain centered schedules and spacing 40; explicit customization remains available.
+New presets use blue schedule text and the existing white frosted-glass pill containers. Laptop schedules default to the left, keeping the characters visible on the right. Portrait tablets retain centered schedules and default spacing 80; the spacing control supports 0–300 and preserves explicit choices.
 
 Full prompts, source paths, timestamps, and device outputs are recorded in `sanrio-cinnamon-{bow,flower,lace,ribbon}-prompts.json`. Generated artwork and its catalog publication are separate steps: this batch stays in local preview until the user requests delivery. No push, pull request, or live catalog publication is authorized yet.
