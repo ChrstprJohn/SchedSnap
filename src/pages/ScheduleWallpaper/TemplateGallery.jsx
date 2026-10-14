@@ -5,7 +5,7 @@ import useInfiniteGallery from '../../lib/useInfiniteGallery.js';
 import { useCatalogStatus } from '../../lib/catalogContext.js';
 import { WallpaperCanvas } from './CanvasPreview.jsx';
 import { customizeWallpaperTemplate, galleryPreviewTemplate } from '../../utils/wallpaperTheme.js';
-import { galleryCategories, matchesGalleryCategory } from '../../config/collections.js';
+import { designGalleryCategories as galleryCategories, matchesDesignGalleryCategory as matchesGalleryCategory } from '../../utils/galleryCategories.js';
 import { templateProperties, trackEvent } from '../../lib/analytics.js';
 import DevicePicker from '../../components/DevicePicker.jsx';
 import CategoryFilters from '../../components/CategoryFilters.jsx';
@@ -20,9 +20,8 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
   const { templates: wallpaperTemplates, loading, error } = useCatalogStatus();
   const thumbnailWidth = device === 'laptop' ? 480 : device === 'tablet' ? 384 : 270;
   const designResolution = () => deviceResolutions[device];
-  const [category, setCategory] = useState(() => galleryCategories.some((item) => item.id === initialCategory) ? initialCategory : 'all');
+  const [category, setCategory] = useState(() => initialCategory === 'chikawa' ? 'little-friends' : galleryCategories.some((item) => item.id === initialCategory) ? initialCategory : 'all');
   const [preview, setPreview] = useState(null);
-  const [sort, setSort] = useState('featured');
   const { likes, pending, error: likeError, refresh: refreshLikes, toggle: toggleLike } = useDesignLikes();
   const isSearching = Boolean(searchQuery && searchQuery.trim());
   const activeCategory = isSearching ? 'all' : category;
@@ -31,10 +30,10 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
     const matching = isSearching
       ? searchWallpaperTemplates(wallpaperTemplates, searchQuery)
       : wallpaperTemplates.filter((item) => matchesGalleryCategory(item, category));
-    return sort === 'hearts' ? sortTemplatesByLikes(matching, likes) : matching;
-  }, [wallpaperTemplates, searchQuery, isSearching, category, likes, sort]);
+    return sortTemplatesByLikes(matching, likes);
+  }, [wallpaperTemplates, searchQuery, isSearching, category, likes]);
 
-  const filterKey = `${isSearching ? `search:${searchQuery.trim()}` : category}:${device}:${sort}`;
+  const filterKey = `${isSearching ? `search:${searchQuery.trim()}` : category}:${device}`;
   const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(visibleTemplates.length, filterKey);
 
   const activeCategoryName = galleryCategories.find((collection) => collection.id === activeCategory)?.name || 'Design';
@@ -51,7 +50,6 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
         }
       }} />
     </div>
-    <div className="gallery-sort"><label htmlFor="template-sort">Sort designs</label><select id="template-sort" value={sort} onChange={event => setSort(event.target.value)}><option value="featured">Featured</option><option value="hearts">Most hearts</option></select></div>
     {likeError && <div className="gallery-like-error" role="alert"><span>{likeError}</span><button type="button" className="text-link" onClick={() => refreshLikes(true)} disabled={!!pending}>Retry</button></div>}
     <div id="template-gallery" role="group" aria-label={`${activeCategoryName} gallery`} className={`template-grid template-grid-${device}`}>
       {loading && Array.from({ length: 10 }, (_, i) => <div key={`skeleton-${i}`} className="gallery-card-skeleton wallpaper-skeleton" aria-hidden="true" />)}

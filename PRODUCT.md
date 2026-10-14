@@ -1,6 +1,6 @@
 # SchedSnap
 
-Public pages offer a side Back to top button after scrolling beyond one viewport (at least 600px). It honors reduced motion and returns keyboard focus to the main content. After a PNG download starts, an optional inline heart prompt uses the same public votes as the gallery, allows undo, and provides retry on failure. The gallery offers Featured and Most hearts sorting within the selected collection and device, ranking all matching designs before pagination.
+Choose a design offers a side Back to top button after scrolling beyond one viewport (at least 600px). It honors reduced motion and returns keyboard focus to the main content. Other pages and editor steps omit it. After a PNG download starts, an optional inline heart prompt uses the same public votes as the gallery, allows undo, and provides retry on failure. The design gallery ranks matching designs by most hearts, then newest, before pagination, with no separate sort control. One Chiikawa filter includes both Chiikawa collections. Device dropdown options have 44px minimum touch targets.
 
 Saved class drafts remain pending while choosing a design or viewing a wallpaper preview. The restore-or-discard dialog appears only on Add your classes, where restoring retains the saved classes and title and discarding starts fresh.
 

@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowLeft, ImageUp, Search, X } from 'lucide-react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router';
 import Toast from '../../components/Toast.jsx';
+import BackToTop from '../../components/BackToTop.jsx';
 import RestoreClassesDialog from '../../components/RestoreClassesDialog.jsx';
 import { readDraft, saveDraft } from '../../lib/scheduleDraft.js';
 import { api } from '../../lib/api.js';
@@ -251,6 +252,7 @@ export default function ScheduleWallpaper() {
     /> : <>
       <TemplateGallery device={device} onDeviceChange={changeDevice} initialCategory={search.get('collection')} selectedId={selectedId} settings={templateSettings} schedule={schedule} scheduleTitle={scheduleTitle} resolution={resolution} onSelect={selectTemplate} searchQuery={searchQuery} onClearSearch={() => setSearchQuery('')} />
     </>}
+    {step === 'design' && <BackToTop />}
     <Toast message={error || success} kind={error ? 'error' : 'success'} onClose={dismissNotification} />
   </section>;
 }

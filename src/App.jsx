@@ -9,7 +9,6 @@ import { CatalogProvider } from './lib/catalog.jsx';
 import PageSeo from './components/PageSeo.jsx';
 import CookieBanner from './components/CookieBanner.jsx';
 import AdminSignIn from './components/AdminSignIn.jsx';
-import BackToTop from './components/BackToTop.jsx';
 
 const ScheduleWallpaper = lazy(() => import('./pages/ScheduleWallpaper/Index.jsx'));
 const Admin = lazy(() => import('./pages/Admin.jsx'));
@@ -55,7 +54,6 @@ export default function App() {
       </main>
       {!isAdmin && !pathname.startsWith('/services/schedule-wallpaper') && <Footer />}
       {!isAdmin && pathname !== '/cookies' && <CookieBanner />}
-      {!isAdmin && <BackToTop />}
     </div>
   </CatalogProvider>);
 }
