@@ -3443,5 +3443,194 @@ export default {
     "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791965565/schedsnap/images/goofy-mascots/masters/meep-wink-2ed1597a6f29436c.png",
     "width": 1254,
     "height": 1254
+  },
+  "/wallpapers/scenic/ghibli-forest-star/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-forest-star/laptop-f1daa34155c6030f",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969887/schedsnap/wallpapers/scenic/ghibli-forest-star/laptop-f1daa34155c6030f.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/ghibli-forest-star/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-forest-star/mobile-13d43f1a972107df",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969890/schedsnap/wallpapers/scenic/ghibli-forest-star/mobile-13d43f1a972107df.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/ghibli-forest-star/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-forest-star/tablet-170cf359734ecd08",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969895/schedsnap/wallpapers/scenic/ghibli-forest-star/tablet-170cf359734ecd08.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/ghibli-flower-grid/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-flower-grid/laptop-dfb673195f2fb4b9",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969896/schedsnap/wallpapers/scenic/ghibli-flower-grid/laptop-dfb673195f2fb4b9.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/ghibli-gingham-border/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-gingham-border/laptop-4a3ef60626443e36",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969898/schedsnap/wallpapers/scenic/ghibli-gingham-border/laptop-4a3ef60626443e36.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/ghibli-gingham-border/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-gingham-border/tablet-aead46290b3c5d9d",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969903/schedsnap/wallpapers/scenic/ghibli-gingham-border/tablet-aead46290b3c5d9d.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/ghibli-notebook-scrapbook/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-notebook-scrapbook/laptop-e5804c59f206e5a5",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969908/schedsnap/wallpapers/scenic/ghibli-notebook-scrapbook/laptop-e5804c59f206e5a5.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/ghibli-notebook-scrapbook/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-notebook-scrapbook/mobile-c6af47dc25473e06",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969913/schedsnap/wallpapers/scenic/ghibli-notebook-scrapbook/mobile-c6af47dc25473e06.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/ghibli-notebook-scrapbook/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-notebook-scrapbook/tablet-a220f3b9f5b6855a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791974743/schedsnap/wallpapers/scenic/ghibli-notebook-scrapbook/tablet-a220f3b9f5b6855a.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/ghibli-gingham-border/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-gingham-border/mobile-a9039ff56248e917",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969926/schedsnap/wallpapers/scenic/ghibli-gingham-border/mobile-a9039ff56248e917.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/ghibli-sage-collage/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-sage-collage/laptop-78dc158e239deb33",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969926/schedsnap/wallpapers/scenic/ghibli-sage-collage/laptop-78dc158e239deb33.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/ghibli-sage-collage/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-sage-collage/tablet-fd7ee8058603e216",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969933/schedsnap/wallpapers/scenic/ghibli-sage-collage/tablet-fd7ee8058603e216.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/ghibli-sage-collage/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-sage-collage/mobile-e9fe16404d62908f",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969939/schedsnap/wallpapers/scenic/ghibli-sage-collage/mobile-e9fe16404d62908f.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/ghibli-flower-grid/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-flower-grid/tablet-fb9da2b18f0c8609",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969940/schedsnap/wallpapers/scenic/ghibli-flower-grid/tablet-fb9da2b18f0c8609.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/ghibli-sage-wash/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-sage-wash/laptop-ad4126a7f609b2c6",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969940/schedsnap/wallpapers/scenic/ghibli-sage-wash/laptop-ad4126a7f609b2c6.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/ghibli-spiral-notes/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-spiral-notes/laptop-227e9c9498ac98af",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791974745/schedsnap/wallpapers/scenic/ghibli-spiral-notes/laptop-227e9c9498ac98af.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/ghibli-spiral-notes/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-spiral-notes/mobile-6390d90fba543482",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969948/schedsnap/wallpapers/scenic/ghibli-spiral-notes/mobile-6390d90fba543482.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/ghibli-spiral-notes/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-spiral-notes/tablet-225271cffede6759",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969952/schedsnap/wallpapers/scenic/ghibli-spiral-notes/tablet-225271cffede6759.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/ghibli-tilted-stamps/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-tilted-stamps/laptop-7f5a48b6340f4628",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969955/schedsnap/wallpapers/scenic/ghibli-tilted-stamps/laptop-7f5a48b6340f4628.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/ghibli-tilted-stamps/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-tilted-stamps/mobile-1c4fdbba65b601ea",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969958/schedsnap/wallpapers/scenic/ghibli-tilted-stamps/mobile-1c4fdbba65b601ea.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/ghibli-tilted-stamps/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-tilted-stamps/tablet-db09b284f07abe54",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969962/schedsnap/wallpapers/scenic/ghibli-tilted-stamps/tablet-db09b284f07abe54.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/ghibli-flower-grid/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-flower-grid/mobile-c9934031e2a0fbc7",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969965/schedsnap/wallpapers/scenic/ghibli-flower-grid/mobile-c9934031e2a0fbc7.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/ghibli-totoro-closeup/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-totoro-closeup/laptop-4c6c5bf503972466",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969965/schedsnap/wallpapers/scenic/ghibli-totoro-closeup/laptop-4c6c5bf503972466.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/ghibli-totoro-closeup/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-totoro-closeup/tablet-0e84781bdb60b171",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969970/schedsnap/wallpapers/scenic/ghibli-totoro-closeup/tablet-0e84781bdb60b171.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/ghibli-totoro-closeup/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-totoro-closeup/mobile-8547de67cce25c99",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969976/schedsnap/wallpapers/scenic/ghibli-totoro-closeup/mobile-8547de67cce25c99.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/ghibli-sage-wash/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-sage-wash/tablet-c573cde04c2c3e54",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969994/schedsnap/wallpapers/scenic/ghibli-sage-wash/tablet-c573cde04c2c3e54.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/ghibli-sage-wash/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-sage-wash/mobile-cc2877344a849dad",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791970036/schedsnap/wallpapers/scenic/ghibli-sage-wash/mobile-cc2877344a849dad.png",
+    "width": 1080,
+    "height": 2400
   }
 };

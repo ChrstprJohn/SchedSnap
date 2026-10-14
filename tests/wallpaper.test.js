@@ -6,6 +6,7 @@ import { sampleSchedule } from '../src/assets/sampleSchedule.js';
 import { deviceResolutions, mascotTemplateSchedule, mobileResolution, templateSchedule, wallpaperTemplates } from '../src/assets/templates.js';
 import { mascotTemplates } from '../src/assets/mascotTemplates.js';
 import { meepTemplates } from '../src/assets/meepTemplates.js';
+import { ghibliTemplates } from '../src/assets/ghibliTemplates.js';
 import { littleFriendsTemplates } from '../src/assets/littleFriendsTemplates.js';
 import { patternTemplates } from '../src/assets/patternTemplates.js';
 import { scenicTemplates } from '../src/assets/scenicTemplates.js';
@@ -98,7 +99,7 @@ test('all templates fit sample data and dense data is explicitly rejected', () =
 });
 
 test('the existing collections are preserved alongside device-specific illustrated designs', () => {
-  assert.equal(wallpaperTemplates.length, 40 + patternTemplates.length + scenicTemplates.length + chikawaReferenceTemplates.length + sanrioTemplates.length + domoTemplates.length + meepTemplates.length + 61);
+  assert.equal(wallpaperTemplates.length, 40 + patternTemplates.length + scenicTemplates.length + chikawaReferenceTemplates.length + sanrioTemplates.length + domoTemplates.length + meepTemplates.length + ghibliTemplates.length + 61);
   assert.ok(wallpaperTemplates.filter(template => template.image && template.layout !== 'mascot')
     .every(template => ['mobile', 'tablet', 'laptop'].every(device => template.deviceImages?.[device])));
   assert.equal(new Set(wallpaperTemplates.map((template) => template.id)).size, wallpaperTemplates.length);
