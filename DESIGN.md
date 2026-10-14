@@ -187,3 +187,5 @@ The mascot release adds 61 transparent cutouts, grouped by visual style: 3D (sof
 - **Don't** restore general-toolbox or future-service marketing.
 
 Public hearts sit below gallery artwork, beside the design title, as independent 44px minimum controls. Outlined hearts use the muted slate token; liked and hovered hearts use rose #be123c with hover surface #fff1f2. Counts use 13px text; counts have tabular numerals. The error treatment reuses #783c2e. Hearts and counts update immediately while votes save in the background. Hearts stay clickable; repeated clicks keep the latest choice, and failed saves restore the last confirmed state; unavailable counts show an em dash and an inline retry action. Existing preview buttons and New badges retain their behavior. Reduced motion disables heart transitions.
+
+Expanded filter pills share the device picker's wrapping flow; additional rows start at the toolbar's left edge. More and Less use plus and minus icons. Gallery search is 340px wide and 46px tall on desktop, and fills the content width on phones.

@@ -1,5 +1,5 @@
 import { useId, useLayoutEffect, useRef, useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { Minus, Plus } from 'lucide-react';
 import { fittingFilterCount } from '../utils/filterOverflow.js';
 
 export default function CategoryFilters({ categories, value, onChange, controls }) {
@@ -10,7 +10,7 @@ export default function CategoryFilters({ categories, value, onChange, controls 
   const [expanded, setExpanded] = useState(false);
   useLayoutEffect(() => {
     const measure = () => {
-      if (!root.current || !measurements.current) return;
+      if (expanded || !root.current || !measurements.current) return;
       const items = [...measurements.current.children];
       const moreWidth = items.pop().getBoundingClientRect().width;
       setCount(fittingFilterCount(root.current.clientWidth, items.map(item => item.getBoundingClientRect().width), moreWidth, 8));
@@ -20,14 +20,14 @@ export default function CategoryFilters({ categories, value, onChange, controls 
     measure();
     document.fonts.ready.then(measure);
     return () => observer.disconnect();
-  }, [categories]);
+  }, [categories, expanded]);
   const button = category => <button type="button" key={category.id} className="template-category" aria-pressed={value === category.id} aria-controls={controls} onClick={() => onChange(category.id)}>{category.name}</button>;
   return <div ref={root} id={id} className="template-category-list category-filters" data-expanded={expanded}>
     <div ref={measurements} className="category-measurements" aria-hidden="true">
       {categories.map(category => <span key={category.id} className="template-category">{category.name}</span>)}
-      <span className="template-category category-more-label">More<ChevronDown size={16} /></span>
+      <span className="template-category category-more-label">More<Plus size={16} /></span>
     </div>
     {(expanded ? categories : categories.slice(0, count)).map(button)}
-    {count < categories.length && <button type="button" className="template-category category-more-label" aria-expanded={expanded} aria-controls={id} aria-label={expanded ? 'Show fewer filters' : 'Show more filters'} data-active={categories.slice(count).some(category => category.id === value)} onClick={() => setExpanded(previous => !previous)}>{expanded ? 'Less' : 'More'}<ChevronDown size={16} aria-hidden="true" /></button>}
+    {count < categories.length && <button type="button" className="template-category category-more-label" aria-expanded={expanded} aria-controls={id} aria-label={expanded ? 'Show fewer filters' : 'Show more filters'} data-active={categories.slice(count).some(category => category.id === value)} onClick={() => setExpanded(previous => !previous)}>{expanded ? <>Less<Minus size={16} aria-hidden="true" /></> : <>More<Plus size={16} aria-hidden="true" /></>}</button>}
   </div>;
 }
