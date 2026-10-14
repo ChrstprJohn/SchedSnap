@@ -1,0 +1,42 @@
+{
+  "reviewedAt": "2026-10-14T03:30:56.344Z",
+  "previousRevision": "1451d9a1-a295-4739-9d4a-84791a1c996b",
+  "removedIds": [
+    "op-fruit-amethyst",
+    "op-fruit-flame",
+    "op-fruit-op-op",
+    "onepiece-stacked-pals",
+    "onepiece-corner-cuddle",
+    "onepiece-peekaboo-trio",
+    "onepiece-pink-reactions",
+    "onepiece-blush-buddies",
+    "onepiece-rosy-daydream",
+    "onepiece-sunny-bunny",
+    "onepiece-mango-smile",
+    "onepiece-honey-peek",
+    "onepiece-blue-buddy-club",
+    "onepiece-aqua-postcards",
+    "onepiece-sky-parade"
+  ],
+  "uploadedDesigns": [
+    "chikawa-pastel-pals",
+    "chikawa-sprinkle-friends",
+    "chikawa-cloud-repeat",
+    "chikawa-instant-friends",
+    "chikawa-photo-album",
+    "chikawa-blue-buddy-snap",
+    "chikawa-meadow-meetup",
+    "chikawa-sage-picnic",
+    "chikawa-daisy-day",
+    "chikawa-pink-plush-parade",
+    "chikawa-pink-present-party",
+    "chikawa-pink-starlight-friends"
+  ],
+  "preservedCount": 217,
+  "preservedSha256": "894e60ae3e74062539f6f8dfc0ca88cffd9dfb6b48db89a14af32ba2e653dc1f",
+  "total": 229,
+  "revision": "3c670d5d-7749-47c5-9b5f-8024eaee232f",
+  "verifiedAt": "2026-10-14T03:30:59.267Z",
+  "uploadedAssetCount": 36,
+  "unaffectedRecordsPreserved": true
+}

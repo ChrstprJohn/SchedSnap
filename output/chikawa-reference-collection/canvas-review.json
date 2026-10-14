@@ -1,0 +1,132 @@
+{
+  "renders": 216,
+  "overflowCount": 0,
+  "groups": [
+    {
+      "device": "mobile",
+      "density": "sample",
+      "position": "left",
+      "designs": 12,
+      "overflow": 0
+    },
+    {
+      "device": "mobile",
+      "density": "sample",
+      "position": "center",
+      "designs": 12,
+      "overflow": 0
+    },
+    {
+      "device": "mobile",
+      "density": "sample",
+      "position": "right",
+      "designs": 12,
+      "overflow": 0
+    },
+    {
+      "device": "mobile",
+      "density": "dense",
+      "position": "left",
+      "designs": 12,
+      "overflow": 0
+    },
+    {
+      "device": "mobile",
+      "density": "dense",
+      "position": "center",
+      "designs": 12,
+      "overflow": 0
+    },
+    {
+      "device": "mobile",
+      "density": "dense",
+      "position": "right",
+      "designs": 12,
+      "overflow": 0
+    },
+    {
+      "device": "tablet",
+      "density": "sample",
+      "position": "left",
+      "designs": 12,
+      "overflow": 0
+    },
+    {
+      "device": "tablet",
+      "density": "sample",
+      "position": "center",
+      "designs": 12,
+      "overflow": 0
+    },
+    {
+      "device": "tablet",
+      "density": "sample",
+      "position": "right",
+      "designs": 12,
+      "overflow": 0
+    },
+    {
+      "device": "tablet",
+      "density": "dense",
+      "position": "left",
+      "designs": 12,
+      "overflow": 0
+    },
+    {
+      "device": "tablet",
+      "density": "dense",
+      "position": "center",
+      "designs": 12,
+      "overflow": 0
+    },
+    {
+      "device": "tablet",
+      "density": "dense",
+      "position": "right",
+      "designs": 12,
+      "overflow": 0
+    },
+    {
+      "device": "laptop",
+      "density": "sample",
+      "position": "left",
+      "designs": 12,
+      "overflow": 0
+    },
+    {
+      "device": "laptop",
+      "density": "sample",
+      "position": "center",
+      "designs": 12,
+      "overflow": 0
+    },
+    {
+      "device": "laptop",
+      "density": "sample",
+      "position": "right",
+      "designs": 12,
+      "overflow": 0
+    },
+    {
+      "device": "laptop",
+      "density": "dense",
+      "position": "left",
+      "designs": 12,
+      "overflow": 0
+    },
+    {
+      "device": "laptop",
+      "density": "dense",
+      "position": "center",
+      "designs": 12,
+      "overflow": 0
+    },
+    {
+      "device": "laptop",
+      "density": "dense",
+      "position": "right",
+      "designs": 12,
+      "overflow": 0
+    }
+  ]
+}

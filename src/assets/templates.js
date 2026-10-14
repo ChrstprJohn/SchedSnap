@@ -3,9 +3,7 @@ import { littleFriendsTemplates } from './littleFriendsTemplates.js';
 import { patternTemplates } from './patternTemplates.js';
 import { scenicTemplates } from './scenicTemplates.js';
 import { generatedMascotTemplates } from './generatedMascotTemplates.js';
-import { onepieceTemplates } from './onepieceTemplates.js';
-import { onepieceAdventureTemplates } from './onepieceAdventureTemplates.js';
-import { onepieceReferenceTemplates } from './onepieceReferenceTemplates.js';
+import { chikawaReferenceTemplates } from './chikawaReferenceTemplates.js';
 import { sanrioTemplates } from './sanrioTemplates.js';
 import { domoTemplates } from './domoTemplates.js';
 
@@ -18,9 +16,7 @@ export const tabletLandscapeResolution = { ...deviceResolutions.tablet, width: d
 export const wallpaperTemplates = [
   ...domoTemplates,
   ...sanrioTemplates,
-  ...onepieceReferenceTemplates,
-  ...onepieceTemplates,
-  ...onepieceAdventureTemplates,
+  ...chikawaReferenceTemplates,
   ...generatedMascotTemplates,
   ...scenicTemplates,
   ...littleFriendsTemplates,
