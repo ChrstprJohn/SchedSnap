@@ -1,6 +1,8 @@
 // Reference-inspired artwork; schedules are rendered separately by Canvas.
 const createdAt = '2026-10-13T13:39:17.875Z';
 const designs = [
+  ["golden-paper","Golden Paper Domo","reference","#fff0c3","Golden Domo outlines and stars on warm textured paper.","2026-10-13T23:51:45.671Z"],
+  ["brown-face","Brown Domo Face","reference","#704a34","A simple handmade Domo face on warm brown.","2026-10-13T23:52:08.336Z"],
   ['star-stickers', 'Star Stickers', 'celestial', '#54351f', 'Cream stars and a waving Domo sticker'],
   ['orbit-paper', 'Orbit Paper', 'celestial', '#684329', 'Paper-cut planets and celestial Domo'],
   ['velvet-cosmos', 'Velvet Cosmos', 'celestial', '#35231b', 'Soft textile stars in a chocolate cosmos'],
@@ -15,15 +17,15 @@ const designs = [
   ['pixel-scrapbook', 'Pixel Scrapbook', 'scrapbook', '#e6d6ba', 'Pixel Domo stickers in a tactile scrapbook'],
 ];
 
-export const domoTemplates = designs.map(([slug, name, family, background, description]) => {
+export const domoTemplates = designs.map(([slug, name, family, background, description, designCreatedAt = createdAt]) => {
   const id = `domo-${slug}`;
-  const dark = family === 'celestial' || family === 'outline';
+  const dark = family === 'celestial' || family === 'outline' || slug === 'brown-face';
   const deviceImages = Object.fromEntries(['mobile', 'tablet', 'laptop'].map(device => [device, `/wallpapers/scenic/${id}/${device}.png`]));
   return {
     id, name, description, family: `domo-${family}`, collection: 'domo',
     background, ink: dark ? '#fff0d7' : '#38261d', muted: dark ? '#efd3ae' : '#624938',
     surface: dark ? '#38261d' : '#fff5e8', line: '#b99b80',
-    image: deviceImages.mobile, deviceImages, createdAt,
-    schedulePosition: 'center', particleStyle: 'none', containerStyle: 'solid',
+    image: deviceImages.mobile, deviceImages, createdAt: designCreatedAt,
+    schedulePosition: family === 'reference' ? 'left' : 'center', particleStyle: 'none', containerStyle: 'solid',
   };
 });

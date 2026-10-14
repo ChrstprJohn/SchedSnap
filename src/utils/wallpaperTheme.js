@@ -40,7 +40,7 @@ export function customizeWallpaperTemplate(template, settings = {}, device = tem
   if (!template) return template;
   const tabletPortrait = device === 'tablet';
   if (!tabletPortrait && !Object.keys(settings).length) return template;
-  const defaults = tabletPortrait ? { schedulePosition: 'center', containerStyle: 'glass', tabletBoxSpacing: 40 } : {};
+  const defaults = tabletPortrait ? { schedulePosition: 'center', containerStyle: 'glass', tabletBoxSpacing: 80 } : {};
   // Device defaults precede the user's explicit appearance choices.
   const customized = { ...template, ...defaults, ...settings };
   if (tabletPortrait) customized.orientation = 'portrait';

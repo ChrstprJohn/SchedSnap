@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { drawWallpaper } from '../src/utils/canvasHelpers.js';
+import { drawWallpaper, tabletBoxSpacing } from '../src/utils/canvasHelpers.js';
 import { sampleSchedule } from '../src/assets/sampleSchedule.js';
 
 test('box spacing separates tablet days in either orientation without changing other devices', () => {
@@ -15,5 +15,14 @@ test('box spacing separates tablet days in either orientation without changing o
     const gap = layout => layout.plans[1].y - layout.plans[0].y - layout.plans[0].height;
     if (resolution.id === 'tablet') assert.ok(gap(after) > gap(before));
     else assert.deepEqual(after, before);
+    if (resolution.id === 'tablet' && resolution.height > resolution.width) {
+      const spacious = render(300);
+      assert.equal(spacious.overflow, false);
+      assert.equal(spacious.plans.reduce((n, p) => n + p.entries.length, 0), 5);
+      assert.ok(gap(spacious) > gap(after));
+    }
   }
+  assert.equal(tabletBoxSpacing({}), 80);
+  assert.equal(tabletBoxSpacing({ tabletBoxSpacing: 240 }), 240);
+  assert.equal(tabletBoxSpacing({ tabletBoxSpacing: 999 }), 300);
 });

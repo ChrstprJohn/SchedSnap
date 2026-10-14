@@ -1,5 +1,13 @@
 // Generated Sanrio designs; artwork is independently composed for every device.
 const designs = [
+  ["sanrio-cinnamon-pastel-stack","Cinnamon Pastel Stack","Reference-inspired cinnamon pastel stack artwork with a gentle handmade pastel finish.","sanrio-cinnamon-reference","#f0f7fc","2026-10-13T23:20:44.972Z"],
+  ["sanrio-cinnamon-bear-panels","Cinnamon Bear Panels","Reference-inspired cinnamon bear panels artwork with a gentle handmade pastel finish.","sanrio-cinnamon-reference","#f0f7fc","2026-10-13T23:19:53.238Z"],
+  ["sanrio-cinnamon-chalk-cloud","Cinnamon Chalk Cloud","Reference-inspired cinnamon chalk cloud artwork with a gentle handmade pastel finish.","sanrio-cinnamon-reference","#f0f7fc","2026-10-13T23:18:42.930Z"],
+  ["sanrio-cinnamon-mocha-pair","Cinnamon Mocha Pair","Reference-inspired cinnamon mocha pair artwork with a gentle handmade pastel finish.","sanrio-cinnamon-reference","#ffffff","2026-10-13T23:19:02.438Z"],
+  ["sanrio-kuromi-claw","Kuromi Claw","Reference-inspired kuromi claw artwork in soft lavender, pink, and charcoal.","sanrio-kuromi","#f4f2f8","2026-10-13T22:13:22.204Z"],
+  ["sanrio-kuromi-grey-grid","Kuromi Grey Grid","Reference-inspired kuromi grey grid artwork in soft lavender, pink, and charcoal.","sanrio-kuromi","#f4f2f8","2026-10-13T22:21:56.486Z"],
+  ["sanrio-kuromi-flower","Kuromi Flower","Reference-inspired kuromi flower artwork in soft lavender, pink, and charcoal.","sanrio-kuromi","#f4f2f8","2026-10-13T22:11:46.373Z"],
+  ["sanrio-kuromi-cozy","Kuromi Cozy","Reference-inspired kuromi cozy artwork in soft lavender, pink, and charcoal.","sanrio-kuromi","#fff6e8","2026-10-13T22:12:29.845Z"],
   ["sanrio-cinnamon-bow-stars","Cinnamon Bow Stars","Cinnamoroll in a soft blue bow and gingham illustration.","sanrio-cinnamon-bow","#f1f8ff","2026-10-13T13:45:22.469Z"],
   ["sanrio-cinnamon-bow-rainbow","Cinnamon Bow Rainbow","Cinnamoroll in a soft blue bow and gingham illustration.","sanrio-cinnamon-bow","#f1f8ff","2026-10-13T13:43:07.088Z"],
   ["sanrio-cinnamon-bow-lace","Cinnamon Bow Lace","Cinnamoroll in a soft blue bow and gingham illustration.","sanrio-cinnamon-bow","#f1f8ff","2026-10-13T13:43:07.620Z"],
@@ -51,7 +59,7 @@ export const sanrioTemplates = designs.map(([id, name, description, family, back
   verticalPosition: -35,
   bottomMargin: 0,
   particleStyle: 'none',
-  ...(family.startsWith('sanrio-cinnamon-') ? { schedulePosition: 'left' } : {}),
+  ...(family.startsWith('sanrio-cinnamon-') || family === 'sanrio-kuromi' ? { schedulePosition: 'left' } : {}),
   ...(family === 'sanrio-pixel' ? { pixelArt: true } : {}),
   image: `/wallpapers/scenic/${id}/mobile.png`,
   deviceImages: Object.fromEntries(['mobile', 'tablet', 'laptop'].map(device => [

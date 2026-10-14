@@ -5,6 +5,7 @@ import { createPublicCatalogHandler } from '../api/catalog.js';
 import { createLikesHandler } from '../api/likes.js';
 import { MAX_BODY_BYTES } from '../shared/uploadLimits.js';
 import { sanrioTemplates } from '../src/assets/sanrioTemplates.js';
+import { domoTemplates } from '../src/assets/domoTemplates.js';
 
 // Runs only inside Vite's Node process. No credentials enter the browser bundle.
 export function localApiPlugin(env) {
@@ -14,7 +15,7 @@ export function localApiPlugin(env) {
       const analyze = createAnalyzeHandler({ env });
       const visits = createVisitsHandler({ env });
       const admin = createAdminHandler({ env });
-      const catalog = createPublicCatalogHandler({ env, previewTemplates: sanrioTemplates });
+      const catalog = createPublicCatalogHandler({ env, previewTemplates: [...sanrioTemplates, ...domoTemplates.filter(template => template.family === 'domo-reference')] });
       const likes = createLikesHandler({ env });
       server.middlewares.use(async (request, response, next) => {
         const path = request.url?.split('?')[0];

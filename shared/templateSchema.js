@@ -21,7 +21,7 @@ export const templateSchema = z.object({
   fontScale: z.number().min(1).max(1.6).optional(),
   containerStyle: z.enum(['glass', 'solid']).optional(), containerShape: z.enum(['pill', 'rounded']).optional(),
   containerFill: z.boolean().optional(), containerBorder: z.boolean().optional(), showSeparators: z.boolean().optional(),
-  tabletBoxSpacing: z.number().min(0).max(100).optional(),
+  tabletBoxSpacing: z.number().min(0).max(300).optional(),
   schedulePosition: z.enum(['left', 'center', 'right']).optional(), orientation: z.enum(['portrait', 'landscape']).optional(),
   topMargin: z.number().min(0).max(20).optional(), bottomMargin: z.number().min(0).max(20).optional(),
   leftMargin: z.number().min(0).max(20).optional(), rightMargin: z.number().min(0).max(20).optional(),

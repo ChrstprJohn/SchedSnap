@@ -1,0 +1,136 @@
+{
+  "provider": "builtin image_gen",
+  "references": [
+    {
+      "id": "domo-golden-paper",
+      "name": "Golden Paper Domo",
+      "reference": "f0fb6e39-0be2-4935-9ca3-db9e073928da",
+      "style": "Accurately match warm cream/yellow texturedpaper reference, orange ochre handdrawn outlines of rectangular rounded Domo with two roundeyes and huge jagged toothmouth, simplelimbs, cheerfulwavingposes and ochre outlined fivepointstars. Visible softpastel/crayon grain unevenlinepressure, flat warmcolors no 3D orperfectvectorpolish. Keep repeatingoversized Domo outlinefigures towardouteredges andbottom with stars sparsely."
+    },
+    {
+      "id": "domo-brown-face",
+      "name": "Brown Domo Face",
+      "reference": "94bd038e-cb9b-422a-b86f-6391d4155b6f",
+      "style": "Accurately match extremely simple reference Domo closeupface: flatwarm darkbrownpaper ground, two blackrounded doteyes, large redrounded rectangular openmouth with thick irregularblack handdrawnoutline and white triangular jaggedteeth topandbottom. Faceonly no fullbody limbs accessories othercharacters. Handmade slightlinewobble andsubtlemattepapertexture butmostlyplainflatbrown fill, no shading gradients 3D gloss digitalpolish. Preserve bold basicgeometry andplayful expression."
+    }
+  ],
+  "assets": [
+    {
+      "id": "domo-golden-paper",
+      "device": "mobile",
+      "prompt": "Usecase: illustration-story. ONE opaque1080x2400 portrait9:20 mobile Domo wallpaper. Attachedimage styleandsubjectreferenceaccuratelymatch. Accurately match warm cream/yellow texturedpaper reference, orange ochre handdrawn outlines of rectangular rounded Domo with two roundeyes and huge jagged toothmouth, simplelimbs, cheerfulwavingposes and ochre outlined fivepointstars. Visible softpastel/crayon grain unevenlinepressure, flat warmcolors no 3D orperfectvectorpolish. Keep repeatingoversized Domo outlinefigures towardouteredges andbottom with stars sparsely. Arrange same golden Domo outlines andstars alongbottom25% andoutercorners, upper70%quiettexturedcreamcenter for schedule; no central figure underneathclassboxes. Exactlyonereference-inspired design; noextra variants. Preserve natural handmadefinish softpencil/crayon texture, tinylinewobble, modestflatcolors; no overenhancement sharpeningdigitalvectorgloss complexshading. Fullbleed artwork no wordslogos UI clocks schedules watermark screenshoticons.",
+      "source": "output/domo/reference/domo-golden-paper-mobile-master.png",
+      "destination": "public/wallpapers/scenic/domo-golden-paper/mobile.png",
+      "createdAt": "2026-10-13T23:51:45.671Z",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "originalDimensions": [
+        841,
+        1870
+      ]
+    },
+    {
+      "id": "domo-brown-face",
+      "device": "mobile",
+      "prompt": "Edit supplied Domo face wallpaper positioning ONLY. Scale the entire existing eyes-and-mouth group down about20% and move it lower. Keep ALL black eyes and red mouth below76% imageheight, with fullmouth endingby97%height. Upper75%uninterruptedbrown field for classcards. Preserve sameblackdoteyes, redmouth, thickunevenblackoutline fourwhitejaggedteeth topandbottom, proportions expression handmadepenedges andplainwarmbrown mattepaper. No newfigures ormotifs, no enhancing gloss blur orshading. Restorematchingbrownbackground inoldfaceposition. Opaque1080x2400portrait exactaspectratio, no text UI schedule clockslogoswatermark.",
+      "source": "output/domo/reference/domo-brown-face-mobile-revised-master.png",
+      "destination": "public/wallpapers/scenic/domo-brown-face/mobile.png",
+      "createdAt": "2026-10-13T23:52:08.336Z",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "originalDimensions": [
+        841,
+        1870
+      ],
+      "edits": [
+        {
+          "source": "output/domo/reference/domo-brown-face-mobile-master.png",
+          "prompt": "Usecase: illustration-story. ONE opaque1080x2400 portrait9:20 mobile Domo wallpaper. Attachedimage styleandsubjectreferenceaccuratelymatch. Accurately match extremely simple reference Domo closeupface: flatwarm darkbrownpaper ground, two blackrounded doteyes, large redrounded rectangular openmouth with thick irregularblack handdrawnoutline and white triangular jaggedteeth topandbottom. Faceonly no fullbody limbs accessories othercharacters. Handmade slightlinewobble andsubtlemattepapertexture butmostlyplainflatbrown fill, no shading gradients 3D gloss digitalpolish. Preserve bold basicgeometry andplayful expression. Place same eye-and-mouth face group entirely in lowest25% ofcanvas, eyes above mouth; upper72%uninterruptedflatbrown for schedule. Maintainoriginaleye spacing toothgeometry andfaceproportions. Exactlyonereference-inspired design; noextra variants. Preserve natural handmadefinish softpencil/crayon texture, tinylinewobble, modestflatcolors; no overenhancement sharpeningdigitalvectorgloss complexshading. Fullbleed artwork no wordslogos UI clocks schedules watermark screenshoticons."
+        }
+      ],
+      "updatedAt": "2026-10-14T00:13:17.533Z"
+    },
+    {
+      "id": "domo-brown-face",
+      "device": "tablet",
+      "prompt": "Usecase: illustration-story. ONE opaque1600x2560 portrait5:8 tablet Domo wallpaper. Accurate attachedreference artstyle/subject. Accurately match extremely simple reference Domo closeupface: flatwarm darkbrownpaper ground, two blackrounded doteyes, large redrounded rectangular openmouth with thick irregularblack handdrawnoutline and white triangular jaggedteeth topandbottom. Faceonly no fullbody limbs accessories othercharacters. Handmade slightlinewobble andsubtlemattepapertexture butmostlyplainflatbrown fill, no shading gradients 3D gloss digitalpolish. Preserve bold basicgeometry andplayful expression. Place same black eyes and red toothmouth grouped entirelybottom25%; keeporiginalfaceproportions. Upper72%plainbrown for timetable; no extra Domofigures. Independentlycomposewiderportraittablet SAMEdesign; no extra variants. Soft handmade pencil/crayon with naturallyuneven lines andflatcolors, no enhanced digitalpolish gloss 3D photorealism complexshading. Fullbleedtexture withoutsidebarseams. No wordsletteringlogos clocks UI schedules watermark screenshotcontrols.",
+      "source": "output/domo/reference/domo-brown-face-tablet-master.png",
+      "destination": "public/wallpapers/scenic/domo-brown-face/tablet.png",
+      "createdAt": "2026-10-13T23:56:03.207Z",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "originalDimensions": [
+        992,
+        1586
+      ]
+    },
+    {
+      "id": "domo-golden-paper",
+      "device": "tablet",
+      "prompt": "Usecase: illustration-story. ONE opaque1600x2560 portrait5:8 tablet Domo wallpaper. Accurate attachedreference artstyle/subject. Accurately match warm cream/yellow texturedpaper reference, orange ochre handdrawn outlines of rectangular rounded Domo with two roundeyes and huge jagged toothmouth, simplelimbs, cheerfulwavingposes and ochre outlined fivepointstars. Visible softpastel/crayon grain unevenlinepressure, flat warmcolors no 3D orperfectvectorpolish. Keep repeatingoversized Domo outlinefigures towardouteredges andbottom with stars sparsely. Same oversized golden outlined Domofigures andstars mainlybottom25% andouteredges, upper70%quietcream paper for schedule. Independentlycomposewiderportraittablet SAMEdesign; no extra variants. Soft handmade pencil/crayon with naturallyuneven lines andflatcolors, no enhanced digitalpolish gloss 3D photorealism complexshading. Fullbleedtexture withoutsidebarseams. No wordsletteringlogos clocks UI schedules watermark screenshotcontrols.",
+      "source": "output/domo/reference/domo-golden-paper-tablet-master.png",
+      "destination": "public/wallpapers/scenic/domo-golden-paper/tablet.png",
+      "createdAt": "2026-10-13T23:57:11.353Z",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "originalDimensions": [
+        992,
+        1586
+      ]
+    },
+    {
+      "id": "domo-golden-paper",
+      "device": "laptop",
+      "prompt": "Edit this golden outline Domo laptop wallpaper only to correct the feet. Every Domo figure must have TWO short stubby legs/feet of matching length and width, connected naturally to bodybase and aligned to samegroundline appropriate for body's tilt. Remove stretchedlongloop foot shapes or uneven danglinglegs. Preserve wavingarms separately, faces jaggedmouth, warmgold outlines stars cream paper and handmadecrayon texture. In particular correct the uppercenter figure's overlylongrightfoot; makepairbalanced. If needed shift dominantbottomrightfigure slightly inward to keepbothfeet visible. Keep left scheduleareaquiet, preserveallotherdesign details andhandmadestyle. Opaque1920x1080 landscape, no newfigures text UI clockslogoswatermark.",
+      "source": "output/domo-golden-paper-laptop-corrected-master.png",
+      "destination": "public/wallpapers/scenic/domo-golden-paper/laptop.png",
+      "createdAt": "2026-10-14T00:02:14.689Z",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "edits": [
+        {
+          "source": "output/domo/reference/domo-golden-paper-laptop-master.png",
+          "prompt": "Usecase: illustration-story. ONE opaque1920x1080 landscape16:9 laptop Domo wallpaper. Attachedreferenceaccurate styleandsubject. Accurately match warm cream/yellow texturedpaper reference, orange ochre handdrawn outlines of rectangular rounded Domo with two roundeyes and huge jagged toothmouth, simplelimbs, cheerfulwavingposes and ochre outlined fivepointstars. Visible softpastel/crayon grain unevenlinepressure, flat warmcolors no 3D orperfectvectorpolish. Keep repeatingoversized Domo outlinefigures towardouteredges andbottom with stars sparsely. Same oversized goldenoutlinedDomofigures atbottomright/topright andoutercorners, sparsegoldstars; left65%quietcreamtexture schedulearea. Keepbodyposes andhugejaggedmouths samevisualstyle. Independentlyrecomposewidecanvasno stretching. Exactlysame onedesign, no extra variants. Handmade softmatte flatcolors naturaluneven outlines subtlepaper/crayongrain, no sharpening digitalvectorpolish gloss 3D shading. Fullbleed no wordsletteringlogos UI clocks schedules watermarks screenshotcontrols."
+        }
+      ],
+      "updatedAt": "2026-10-14T00:29:33.944Z"
+    },
+    {
+      "id": "domo-brown-face",
+      "device": "laptop",
+      "prompt": "Edit supplied Domo face wallpaper positioning ONLY. Scale/shift the entire existing eyes-and-mouth group together so ALL of it lies withinrightmost23% ofcanvas (x76%-98%), maintainingthe sameverticalcenter. Left75%uninterruptedbrown field for classcards. Preserve sameblackdoteyes, redmouth, thickunevenblackoutline fourwhitejaggedteeth topandbottom, proportions expression handmadepenedges andplainwarmbrown mattepaper. No newfigures ormotifs, no enhancing gloss blur orshading. Restorematchingbrownbackground inoldfaceposition. Opaque1920x1080landscape exactaspectratio, no text UI schedule clockslogoswatermark.",
+      "source": "output/domo/reference/domo-brown-face-laptop-revised-master.png",
+      "destination": "public/wallpapers/scenic/domo-brown-face/laptop.png",
+      "createdAt": "2026-10-14T00:02:35.168Z",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "edits": [
+        {
+          "source": "output/domo/reference/domo-brown-face-laptop-master.png",
+          "prompt": "Usecase: illustration-story. ONE opaque1920x1080 landscape16:9 laptop Domo wallpaper. Attachedreferenceaccurate styleandsubject. Accurately match extremely simple reference Domo closeupface: flatwarm darkbrownpaper ground, two blackrounded doteyes, large redrounded rectangular openmouth with thick irregularblack handdrawnoutline and white triangular jaggedteeth topandbottom. Faceonly no fullbody limbs accessories othercharacters. Handmade slightlinewobble andsubtlemattepapertexture butmostlyplainflatbrown fill, no shading gradients 3D gloss digitalpolish. Preserve bold basicgeometry andplayful expression. Place same facegroupof two black doteyes andlarge redjaggedmouth entirelyrightmost30%, facecenteredvertically withproperoriginalproportions. Left65%plainwarmbrown schedulearea. Faceonly withoutnewbodyfigures. Independentlyrecomposewidecanvasno stretching. Exactlysame onedesign, no extra variants. Handmade softmatte flatcolors naturaluneven outlines subtlepaper/crayongrain, no sharpening digitalvectorpolish gloss 3D shading. Fullbleed no wordsletteringlogos UI clocks schedules watermarks screenshotcontrols."
+        }
+      ],
+      "updatedAt": "2026-10-14T00:12:49.354Z"
+    }
+  ]
+}
