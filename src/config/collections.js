@@ -7,6 +7,7 @@ export const designCollections = [
   { id: 'we-bare-bears', name: 'We Bare Bears' },
   { id: 'domo', name: 'Domo' },
   { id: 'chikawa', name: 'Chiikawa' },
+  { id: 'ghibli', name: 'Ghibli' },
   { id: 'little-friends', name: 'Chiikawa inspired' },
   { id: 'mascot', name: 'Mascots' },
   { id: 'meep', name: 'Meep' },

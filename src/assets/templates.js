@@ -9,6 +9,7 @@ import { weBareBearsTemplates } from './weBareBearsTemplates.js';
 import { sanrioTemplates } from './sanrioTemplates.js';
 import { domoTemplates } from './domoTemplates.js';
 import { meepTemplates } from './meepTemplates.js';
+import { ghibliTemplates } from './ghibliTemplates.js';
 
 export const mobileResolution = { id: 'mobile', width: 1080, height: 2400 };
 export const deviceResolutions = { mobile: mobileResolution, tablet: { id: 'tablet', width: 1600, height: 2560 }, laptop: { id: 'laptop', width: 1920, height: 1080 } };
@@ -17,6 +18,7 @@ export const tabletLandscapeResolution = { ...deviceResolutions.tablet, width: d
 // Artwork and palette presets contain no student or course information.
 // Legacy heading/rows values remain as preset metadata; Canvas uses one shared layout.
 export const wallpaperTemplates = [
+  ...ghibliTemplates,
   ...weBareBearsTemplates,
   ...meepTemplates,
   ...domoTemplates,

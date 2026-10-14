@@ -12,12 +12,16 @@ function render(template, resolution) {
   return drawWallpaper({ getContext: () => ctx }, { schedule: templateSchedule, template, resolution });
 }
 
-test('all gallery phone samples share the same schedule bounds despite preset margins', () => {
+test('gallery phone samples share bounds while the close-up keeps its face clear', () => {
   const expected = render(galleryPreviewTemplate(wallpaperTemplates[0]), deviceResolutions.mobile).scheduleBounds;
   for (const original of wallpaperTemplates) {
     const result = render(galleryPreviewTemplate(original), deviceResolutions.mobile);
     assert.equal(result.overflow, false, original.id);
-    assert.deepEqual(result.scheduleBounds, expected, original.id);
+    if (original.family === 'ghibli-closeup') {
+      assert.ok(result.scheduleBounds.y < expected.y, original.id);
+      assert.deepEqual({ ...result.scheduleBounds, y: expected.y }, expected, original.id);
+      assert.equal(galleryPreviewTemplate(original).verticalPosition, original.verticalPosition);
+    } else assert.deepEqual(result.scheduleBounds, expected, original.id);
   }
 });
 
