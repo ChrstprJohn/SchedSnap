@@ -1,0 +1,136 @@
+{
+  "referenceImage": "C:/Users/picar/AppData/Local/Temp/codex-clipboard-7c0eed11-601a-4554-924f-983ab38ec4bd.png",
+  "referenceRole": "composition and mood only: solid dusty pink field with playful trio selfie/arms-up anchored at lower edge",
+  "collection": "We Bare Bears",
+  "generationMode": "built-in image_gen",
+  "generatedAt": "2026-10-13",
+  "dimensions": {
+    "mobile": "1080x2400",
+    "tablet": "1600x2560",
+    "laptop": "1920x1080"
+  },
+  "processing": "Generated distinct device aspect compositions, normalized pixel dimensions without cropping, converted to opaque RGB PNG. Verified dimensions and RGB mode.",
+  "designs": [
+    {
+      "id": "pink-selfie-pop",
+      "name": "Pink Selfie Pop",
+      "style": "Clean flat show-like 2D cartoon",
+      "palette": [
+        "dusty rose",
+        "warm brown",
+        "black and white"
+      ],
+      "prompts": {
+        "mobile": "Reference 3 inspiration; original We Bare Bears inspired trio selfie on solid muted pink. 9:20 portrait mobile. Clean flat friendly 2D show-like cartoon. Panda black-white with round black eye patches and ears, Grizzly brown round and expressive, Ice Bear white stoic with small black eyes/nose. The trio huddles across bottom edge, arms up, all faces/paws fully visible; small trio takes bottom 22%, broad upper pink negative space. No text, logo, watermark, device, frame or UI.",
+        "tablet": "Reference 3 mood and pink palette; Pink Polaroid Pals, original We Bare Bears inspired trio: black-white Panda with distinct eye patches, expressive round brown Grizzly, stoic white Ice Bear with small black features. Flat 2D clean cartoon translated into subtle cut-paper shapes. Solid dusty rose. Trio huddles at lower-right for selfie, small, leaving upper 72% and broad left center blank. Few tiny cream sparkle dots near them. 5:8 tablet. No text or logo/UI/frame.",
+        "laptop": "Reference 3 joyful trio and solid pink inspiration; wide 16:9 laptop. Original recognizable We Bare Bears inspired Panda (black-white with black eye patches), brown expressive round Grizzly, calm white Ice Bear (small black eyes and nose), clean flat 2D show-like cartoon, lightly textured pastel gouache. Selfie pose arms raised, anchored small at bottom-right. Keep broad left and upper area clean dusty pink for schedule. No text/logo/UI/frame/watermark."
+      },
+      "outputs": [
+        "public/wallpapers/scenic/wbb-pink-selfie-pop/mobile.png",
+        "public/wallpapers/scenic/wbb-pink-selfie-pop/tablet.png",
+        "public/wallpapers/scenic/wbb-pink-selfie-pop/laptop.png"
+      ]
+    },
+    {
+      "id": "paper-pals",
+      "name": "Paper Pals",
+      "style": "Soft cut-paper layers, subtle paper grain",
+      "palette": [
+        "dusty rose",
+        "cream",
+        "brown",
+        "black and white"
+      ],
+      "prompts": {
+        "mobile": "Use attachment 3 only: dusty pink We Bare Bears trio at the bottom edge. Mobile 9:20. Panda with black eye patches and ears, warm brown expressive Grizzly, calm white Ice Bear, all distinct, together at lower-right among a cream torn-paper corner and tiny heart doodles. Show-like clean 2D cartoon. Keep upper 78% and center clear pink; no text or writing, newspaper, lavender, solo bear, logo, UI, or watermark.",
+        "tablet": "Use attachment 3 only: dusty pink We Bare Bears trio at bottom. Portrait tablet 5:8. Distinct clean 2D characters: Panda with round ears/black eye patches, warm brown round Grizzly, stoic white Ice Bear; all faces unobscured. Small group lower-right peeking behind a cream torn-paper scrap with one tiny heart. Upper 75% and broad left-center blank pink. No lavender reader, no text/writing, no newspaper, logo, UI, watermark.",
+        "laptop": "Use attachment 3 only: dusty pink We Bare Bears trio at bottom. Landscape 16:9. Panda with bold black eye patches, brown expressive Grizzly, stoic white Ice Bear, clean recognizable 2D show-like art. Small trio peeking above one cream torn-paper corner at lower-right, one little heart; no face covered. Left 75% and top 78% clear pink. No text/writing, newspaper, lavender, logo, UI, watermark, border, or device."
+      },
+      "outputs": [
+        "public/wallpapers/scenic/wbb-paper-pals/mobile.png",
+        "public/wallpapers/scenic/wbb-paper-pals/tablet.png",
+        "public/wallpapers/scenic/wbb-paper-pals/laptop.png"
+      ],
+      "correctionVerification": "corrections/ref3-paper-pals/verification.json"
+    },
+    {
+      "id": "gouache-giggles",
+      "name": "Gouache Giggles",
+      "style": "Pastel gouache texture with flat 2D character forms",
+      "palette": [
+        "dusty rose",
+        "warm brown",
+        "black and white"
+      ],
+      "prompts": {
+        "mobile": "One finished 9:20 portrait mobile wallpaper, full-bleed solid dusty rose pink. Reference image 3 guides mood and the playful trio-at-bottom composition only. Clean flat 2D We Bare Bears television-cartoon style, gentle pastel gouache texture, crisp dark outlines. Exactly three recognizable friends grouped at the lower right, occupying the bottom 20%: Panda is white with black ears and obvious round black eye patches; cheerful warm-brown Grizzly; stoic white Ice Bear with tiny black eyes. They lean together for a selfie; Panda holds up a small plain black phone. All three faces are clearly visible and correctly colored. The upper 80% is uninterrupted dusty pink schedule space. No lavender, newspaper, reading, other characters, text, logos, watermark, border, frame, or interface.",
+        "tablet": "One finished 5:8 portrait tablet wallpaper, full-bleed solid dusty rose pink, using reference image 3 only for its playful trio-at-bottom composition. Clean flat 2D We Bare Bears television cartoon, gentle pastel gouache texture, crisp dark outlines. Exactly three recognizable friends grouped at the lower left under 22% of canvas height: Panda with black ears and unmistakable round black eye patches, cheerful warm-brown Grizzly stretching an arm around the others, and stoic white Ice Bear with tiny black eyes. Panda waves; all heads and faces unobscured. Leave broad pink space above and open space on the right for schedule. No lavender, newspaper, reading, other characters, text, logos, watermark, border, frame, or interface.",
+        "laptop": "One polished 16:9 landscape laptop wallpaper in clean flat 2D We Bare Bears television-cartoon style with subtle pastel gouache texture and crisp dark outlines. Full-bleed solid dusty rose pink. Exactly three recognizable friends pose together at the bottom right: Panda with unmistakable black eye patches and black ears, happy warm-brown Grizzly, and stoic white Ice Bear with tiny black eyes. Panda raises a small plain black phone for a selfie while Grizzly waves and Ice Bear poses calmly. Keep faces and upper bodies visible. Preserve broad uninterrupted pink schedule space across the left two thirds and upper half. No lavender, lone bear, newspaper, reading, extra characters, text, branding, watermark, frame, or interface."
+      },
+      "outputs": [
+        "public/wallpapers/scenic/wbb-gouache-giggles/mobile.png",
+        "public/wallpapers/scenic/wbb-gouache-giggles/tablet.png",
+        "public/wallpapers/scenic/wbb-gouache-giggles/laptop.png"
+      ],
+      "processing": "Each device was generated as a separate composition, then Lanczos-resized directly to the exact target dimensions and saved as opaque RGB PNG. No crop or stretch beyond the sub-0.1% aspect-ratio normalization.",
+      "correction": {
+        "reason": "Replaced the incorrect lavender Ice Bear reading/newspaper images with distinct dusty-pink trio selfie compositions after visual inspection.",
+        "provider": "built-in image_gen",
+        "generatedAt": "2026-10-14",
+        "sourceImages": {
+          "mobile": "output/we-bare-bears/corrections/ref3-gouache-giggles/mobile-source.png",
+          "tablet": "output/we-bare-bears/corrections/ref3-gouache-giggles/tablet-source.png",
+          "laptop": "output/we-bare-bears/corrections/ref3-gouache-giggles/laptop-source.png"
+        },
+        "visualReview": "All three device files show Panda with unmistakable black eye patches, brown Grizzly, and white stoic Ice Bear together on dusty rose. The compositions are distinct by device and preserve clear pink schedule space. No upload was performed.",
+        "assets": [
+          {
+            "device": "mobile",
+            "path": "public/wallpapers/scenic/wbb-gouache-giggles/mobile.png",
+            "size": [
+              1080,
+              2400
+            ],
+            "mode": "RGB",
+            "cornerRgb": [
+              235,
+              179,
+              189
+            ],
+            "sha256": "be93c8d47919c51e4dc1b0f45338f371e2772e9ef495ee25d894784e8ffe81c8"
+          },
+          {
+            "device": "tablet",
+            "path": "public/wallpapers/scenic/wbb-gouache-giggles/tablet.png",
+            "size": [
+              1600,
+              2560
+            ],
+            "mode": "RGB",
+            "cornerRgb": [
+              235,
+              181,
+              190
+            ],
+            "sha256": "ee4002b03bd4bb4cabb9dd4b09d7b6b9138c498a5e471b9bddd42a06cec0a229"
+          },
+          {
+            "device": "laptop",
+            "path": "public/wallpapers/scenic/wbb-gouache-giggles/laptop.png",
+            "size": [
+              1920,
+              1080
+            ],
+            "mode": "RGB",
+            "cornerRgb": [
+              236,
+              184,
+              193
+            ],
+            "sha256": "ad25e26c72d7e7c135b1edf15b0e7121acbc3099bd44ed7edf165b60f5fc5cae"
+          }
+        ]
+      }
+    }
+  ]
+}

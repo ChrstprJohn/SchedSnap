@@ -1,0 +1,119 @@
+{
+  "reference_image": "codex-clipboard-581915e9-173a-4192-8a9b-45476b1dac91.png",
+  "identity_reference": "codex-clipboard-71500f2b-22fa-451c-afc8-d53ef2464502.png",
+  "provider": "built-in imagegen",
+  "reference_role": "Reference1 repeat composition and palette; reference2 Hachiware identity",
+  "variants": [
+    {
+      "id": "chikawa-pastel-pals",
+      "description": "Pale watercolor Chiikawa, Hachiware and Usagi with blush hearts",
+      "palette": [
+        "ivory",
+        "soft blue",
+        "butter yellow",
+        "blush pink",
+        "gray"
+      ]
+    },
+    {
+      "id": "chikawa-sprinkle-friends",
+      "description": "Clean pencil Chiikawa trio with little flowers",
+      "palette": [
+        "ivory",
+        "soft blue",
+        "butter yellow",
+        "blush pink",
+        "gray"
+      ]
+    },
+    {
+      "id": "chikawa-cloud-repeat",
+      "description": "Soft paper printed Chiikawa trio with peach hearts",
+      "palette": [
+        "ivory",
+        "soft blue",
+        "butter yellow",
+        "blush pink",
+        "gray"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "chikawa-pastel-pals",
+      "device": "mobile",
+      "width": 1080,
+      "height": 2400,
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a1385f-3b22-7702-9c51-6d5633908ba4\\exec-2912f358-459b-4c8a-915a-345ec38cba71.png",
+      "prompt": "Use case illustration-story. ONE 1080x2400 mobile full bleed opaque wallpaper, no UI text cards frame watermark. Reference 1 exact small character repeat, reference 2 exact Hachiware face. Render AUTHENTIC NAGANO CHIIKAWA trio. ONLY these three accurate characters as repeated small full-body doodles: CHIIKAWA pure white ROUND EARS round body tiny paws dot black eyes w mouth and three pink cheek strokes; HACHIWARE white CAT with TWO BLUE TRIANGULAR POINTED EARS, connected BLUE forehead cap with middle dip, tiny black cheek whiskers, dot black eyes w mouth, blue tail; USAGI YELLOW CREAM rabbit with TWO LONG UPRIGHT YELLOW rabbit ears and pink insides. Never mix their features: WHITE characters cannot have long rabbit ears. No generic chick, no hair tuft, no substitutes. Keep likeness to reference, simple authentic flat character art. Delicate very pale watercolor on warm ivory with blush hearts. Even airy staggered repeat lightly rotated tiny motifs distributed over entire portrait with many vertical rows, center lower contrast. New independent pastel mobile composition. Repeat characters have distinct correct silhouettes; identify each as official Chiikawa,Hachiware,Usagi."
+    },
+    {
+      "id": "chikawa-pastel-pals",
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a1385f-3b22-7702-9c51-6d5633908ba4\\exec-d270abcd-40c9-4066-ba6e-d49d7f576505.png",
+      "prompt": "Use case illustration-story. ONE 1600x2560 tablet full bleed opaque wallpaper, no UI text cards frame watermark. Reference 1 exact small character repeat, reference 2 exact Hachiware face. Render AUTHENTIC NAGANO CHIIKAWA trio. ONLY these three accurate characters as repeated small full-body doodles: CHIIKAWA pure white ROUND EARS round body tiny paws dot black eyes w mouth and three pink cheek strokes; HACHIWARE white CAT with TWO BLUE TRIANGULAR POINTED EARS, connected BLUE forehead cap with middle dip, tiny black cheek whiskers, dot black eyes w mouth, blue tail; USAGI YELLOW CREAM rabbit with TWO LONG UPRIGHT YELLOW rabbit ears and pink insides. Never mix their features: WHITE characters cannot have long rabbit ears. No generic chick, no hair tuft, no substitutes. Keep likeness to reference, simple authentic flat character art. Delicate very pale watercolor on warm ivory with blush hearts. Even airy staggered repeat lightly rotated tiny motifs distributed over entire portrait with many vertical rows, center lower contrast. New independent pastel tablet composition. Repeat characters have distinct correct silhouettes; identify each as official Chiikawa,Hachiware,Usagi."
+    },
+    {
+      "id": "chikawa-pastel-pals",
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a1385f-3b22-7702-9c51-6d5633908ba4\\exec-b5ca383b-3878-4734-8022-2cc972171a5f.png",
+      "prompt": "Use case illustration-story. ONE 1920x1080 laptop full bleed opaque wallpaper, no UI text cards frame watermark. Reference 1 exact small character repeat, reference 2 exact Hachiware face. Render AUTHENTIC NAGANO CHIIKAWA trio. ONLY these three accurate characters as repeated small full-body doodles: CHIIKAWA pure white ROUND EARS round body tiny paws dot black eyes w mouth and three pink cheek strokes; HACHIWARE white CAT with TWO BLUE TRIANGULAR POINTED EARS, connected BLUE forehead cap with middle dip, tiny black cheek whiskers, dot black eyes w mouth, blue tail; USAGI YELLOW CREAM rabbit with TWO LONG UPRIGHT YELLOW rabbit ears and pink insides. Never mix their features: WHITE characters cannot have long rabbit ears. No generic chick, no hair tuft, no substitutes. Keep likeness to reference, simple authentic flat character art. Delicate very pale watercolor on warm ivory with blush hearts. Even airy staggered repeat lightly rotated tiny motifs distributed over entire wide landscape with many horizontal columns, center lower contrast. New independent pastel laptop composition. Repeat characters have distinct correct silhouettes; identify each as official Chiikawa,Hachiware,Usagi."
+    },
+    {
+      "id": "chikawa-sprinkle-friends",
+      "device": "mobile",
+      "width": 1080,
+      "height": 2400,
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a1385f-3b22-7702-9c51-6d5633908ba4\\exec-642ff10e-8ab9-4ed5-a5e6-bc1ecc6ba450.png",
+      "prompt": "Use case illustration-story. ONE 1080x2400 mobile full bleed opaque wallpaper, no UI text cards frame watermark. Reference 1 exact small character repeat, reference 2 exact Hachiware face. Render AUTHENTIC NAGANO CHIIKAWA trio. ONLY these three accurate characters as repeated small full-body doodles: CHIIKAWA pure white ROUND EARS round body tiny paws dot black eyes w mouth and three pink cheek strokes; HACHIWARE white CAT with TWO BLUE TRIANGULAR POINTED EARS, connected BLUE forehead cap with middle dip, tiny black cheek whiskers, dot black eyes w mouth, blue tail; USAGI YELLOW CREAM rabbit with TWO LONG UPRIGHT YELLOW rabbit ears and pink insides. Never mix their features: WHITE characters cannot have long rabbit ears. No generic chick, no hair tuft, no substitutes. Keep likeness to reference, simple authentic flat character art. Delicate fine clean gray pencil contours with flat soft butter yellow and blue fill and tiny blush star flower sprinkles. Even airy staggered repeat lightly rotated tiny motifs distributed over entire portrait with many vertical rows, center lower contrast. New independent sprinkle mobile composition. Repeat characters have distinct correct silhouettes; identify each as official Chiikawa,Hachiware,Usagi."
+    },
+    {
+      "id": "chikawa-sprinkle-friends",
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a1385f-3b22-7702-9c51-6d5633908ba4\\exec-b99d5259-c6f0-4f62-9bdf-6d7109630dca.png",
+      "prompt": "Use case illustration-story. ONE 1600x2560 tablet full bleed opaque wallpaper, no UI text cards frame watermark. Reference 1 exact small character repeat, reference 2 exact Hachiware face. Render AUTHENTIC NAGANO CHIIKAWA trio. ONLY these three accurate characters as repeated small full-body doodles: CHIIKAWA pure white ROUND EARS round body tiny paws dot black eyes w mouth and three pink cheek strokes; HACHIWARE white CAT with TWO BLUE TRIANGULAR POINTED EARS, connected BLUE forehead cap with middle dip, tiny black cheek whiskers, dot black eyes w mouth, blue tail; USAGI YELLOW CREAM rabbit with TWO LONG UPRIGHT YELLOW rabbit ears and pink insides. Never mix their features: WHITE characters cannot have long rabbit ears. No generic chick, no hair tuft, no substitutes. Keep likeness to reference, simple authentic flat character art. Delicate fine clean gray pencil contours with flat soft butter yellow and blue fill and tiny blush star flower sprinkles. Even airy staggered repeat lightly rotated tiny motifs distributed over entire portrait with many vertical rows, center lower contrast. New independent sprinkle tablet composition. Repeat characters have distinct correct silhouettes; identify each as official Chiikawa,Hachiware,Usagi."
+    },
+    {
+      "id": "chikawa-sprinkle-friends",
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a1385f-3b22-7702-9c51-6d5633908ba4\\exec-60b91d32-790b-44f3-a805-1ddca47f2b1a.png",
+      "prompt": "Use case illustration-story. ONE 1920x1080 laptop full bleed opaque wallpaper, no UI text cards frame watermark. Reference 1 exact small character repeat, reference 2 exact Hachiware face. Render AUTHENTIC NAGANO CHIIKAWA trio. ONLY these three accurate characters as repeated small full-body doodles: CHIIKAWA pure white ROUND EARS round body tiny paws dot black eyes w mouth and three pink cheek strokes; HACHIWARE white CAT with TWO BLUE TRIANGULAR POINTED EARS, connected BLUE forehead cap with middle dip, tiny black cheek whiskers, dot black eyes w mouth, blue tail; USAGI YELLOW CREAM rabbit with TWO LONG UPRIGHT YELLOW rabbit ears and pink insides. Never mix their features: WHITE characters cannot have long rabbit ears. No generic chick, no hair tuft, no substitutes. Keep likeness to reference, simple authentic flat character art. Delicate fine clean gray pencil contours with flat soft butter yellow and blue fill and tiny blush star flower sprinkles. Even airy staggered repeat lightly rotated tiny motifs distributed over entire wide landscape with many horizontal columns, center lower contrast. New independent sprinkle laptop composition. Repeat characters have distinct correct silhouettes; identify each as official Chiikawa,Hachiware,Usagi."
+    },
+    {
+      "id": "chikawa-cloud-repeat",
+      "device": "mobile",
+      "width": 1080,
+      "height": 2400,
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a1385f-3b22-7702-9c51-6d5633908ba4\\exec-c25aa7b5-911c-401d-9be4-5d36b9d80f50.png",
+      "prompt": "Use case illustration-story. ONE 1080x2400 mobile full bleed opaque wallpaper, no UI text cards frame watermark. Reference 1 exact small character repeat, reference 2 exact Hachiware face. Render AUTHENTIC NAGANO CHIIKAWA trio. ONLY these three accurate characters as repeated small full-body doodles: CHIIKAWA pure white ROUND EARS round body tiny paws dot black eyes w mouth and three pink cheek strokes; HACHIWARE white CAT with TWO BLUE TRIANGULAR POINTED EARS, connected BLUE forehead cap with middle dip, tiny black cheek whiskers, dot black eyes w mouth, blue tail; USAGI YELLOW CREAM rabbit with TWO LONG UPRIGHT YELLOW rabbit ears and pink insides. Never mix their features: WHITE characters cannot have long rabbit ears. No generic chick, no hair tuft, no substitutes. Keep likeness to reference, simple authentic flat character art. Delicate soft muted paper-print graphite contour with cream ground and tiny peach hearts. Even airy staggered repeat lightly rotated tiny motifs distributed over entire portrait with many vertical rows, center lower contrast. New independent cloud mobile composition. Repeat characters have distinct correct silhouettes; identify each as official Chiikawa,Hachiware,Usagi."
+    },
+    {
+      "id": "chikawa-cloud-repeat",
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a1385f-3b22-7702-9c51-6d5633908ba4\\exec-1763f7ff-ddbf-4909-8630-7042fff50246.png",
+      "prompt": "Use case illustration-story. ONE 1600x2560 tablet full bleed opaque wallpaper, no UI text cards frame watermark. Reference 1 exact small character repeat, reference 2 exact Hachiware face. Render AUTHENTIC NAGANO CHIIKAWA trio. ONLY these three accurate characters as repeated small full-body doodles: CHIIKAWA pure white ROUND EARS round body tiny paws dot black eyes w mouth and three pink cheek strokes; HACHIWARE white CAT with TWO BLUE TRIANGULAR POINTED EARS, connected BLUE forehead cap with middle dip, tiny black cheek whiskers, dot black eyes w mouth, blue tail; USAGI YELLOW CREAM rabbit with TWO LONG UPRIGHT YELLOW rabbit ears and pink insides. Never mix their features: WHITE characters cannot have long rabbit ears. No generic chick, no hair tuft, no substitutes. Keep likeness to reference, simple authentic flat character art. Delicate soft muted paper-print graphite contour with cream ground and tiny peach hearts. Even airy staggered repeat lightly rotated tiny motifs distributed over entire portrait with many vertical rows, center lower contrast. New independent cloud tablet composition. Repeat characters have distinct correct silhouettes; identify each as official Chiikawa,Hachiware,Usagi."
+    },
+    {
+      "id": "chikawa-cloud-repeat",
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "source": "C:\\Users\\picar\\.codex\\generated_images\\01a1385f-3b22-7702-9c51-6d5633908ba4\\exec-329135b0-4fae-4442-97de-987c1ede6223.png",
+      "prompt": "Use case illustration-story. ONE 1920x1080 laptop full bleed opaque wallpaper, no UI text cards frame watermark. Reference 1 exact small character repeat, reference 2 exact Hachiware face. Render AUTHENTIC NAGANO CHIIKAWA trio. ONLY these three accurate characters as repeated small full-body doodles: CHIIKAWA pure white ROUND EARS round body tiny paws dot black eyes w mouth and three pink cheek strokes; HACHIWARE white CAT with TWO BLUE TRIANGULAR POINTED EARS, connected BLUE forehead cap with middle dip, tiny black cheek whiskers, dot black eyes w mouth, blue tail; USAGI YELLOW CREAM rabbit with TWO LONG UPRIGHT YELLOW rabbit ears and pink insides. Never mix their features: WHITE characters cannot have long rabbit ears. No generic chick, no hair tuft, no substitutes. Keep likeness to reference, simple authentic flat character art. Delicate soft muted paper-print graphite contour with cream ground and tiny peach hearts. Even airy staggered repeat lightly rotated tiny motifs distributed over entire wide landscape with many horizontal columns, center lower contrast. New independent cloud laptop composition. Repeat characters have distinct correct silhouettes; identify each as official Chiikawa,Hachiware,Usagi."
+    }
+  ],
+  "quality_review": {
+    "status": "requires parent final likeness review",
+    "notes": "All nine compositions inspected; recognizable white round-ear Chiikawa, blue-cap cat Hachiware and yellow long-ear Usagi; Hachiware whiskers not consistently retained and must be considered in final approval. No uploads performed."
+  }
+}

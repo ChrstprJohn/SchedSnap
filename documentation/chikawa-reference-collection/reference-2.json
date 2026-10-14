@@ -1,0 +1,58 @@
+{
+  "collection": "Chikawa reference 2 wallpaper art",
+  "referenceImages": [
+    "C:/Users/picar/AppData/Local/Temp/codex-clipboard-581915e9-173a-4192-8a9b-45476b1dac91.png",
+    "C:/Users/picar/AppData/Local/Temp/codex-clipboard-71500f2b-22fa-451c-afc8-d53ef2464502.png",
+    "C:/Users/picar/AppData/Local/Temp/codex-clipboard-ec1c701d-5dfc-497c-9409-598753d4f4c7.png",
+    "C:/Users/picar/AppData/Local/Temp/codex-clipboard-127395c1-832e-47b8-801b-3e4c016ae0cd.png"
+  ],
+  "referenceRoles": {
+    "image2": "Primary mood and composition reference: pale gray repeating doodle field with scattered tilted snapshot cards showing the blue-and-white kitten. Used as loose guidance for a new wallpaper illustration.",
+    "images1_3_4": "Supporting character references for Chiikawa, Hachiware, Usagi, and their facial expressions."
+  },
+  "generation": {
+    "tool": "built-in image_gen",
+    "sourceFormat": "PNG",
+    "finalProcessing": "Each screen composition was fit with high-quality Lanczos resampling to the exact target pixel dimensions.",
+    "constraints": "Original wallpaper artwork featuring Chiikawa, Hachiware, and Usagi; pale gray doodle field and hand-drawn snapshot vignettes; no text, logos, UI controls, or watermarks.",
+    "outcome": "Nine screen-specific full-bleed PNGs generated and saved. Portrait center areas and landscape left/center areas remain pale and quiet for schedule overlay. Character cues: Chiikawa has a round white shape, tiny ears, dot eyes, tiny w mouth, and blush hatches; Hachiware has a white face, powder-blue head/ear cap, whiskers, and blush hatches; Usagi has a cream body and long upright pink-inner ears."
+  },
+  "designs": [
+    {
+      "id": "chikawa-instant-friends",
+      "name": "Instant Friends",
+      "description": "Warm ivory and pale gray doodle field with three tilted hand-drawn snapshot vignettes of Chiikawa, Hachiware, and Usagi along the lower portion.",
+      "palette": ["#F8F7F4", "#D9DADD", "#92BBD0", "#EDB5B9", "#F1DDC5"],
+      "prompt": "Create an original full-bleed wallpaper guided by the supplied reference set. Use reference image 2 for the pale repeating doodle field and tilted white snapshot-card composition, and references 1, 3, and 4 for Chiikawa, Hachiware, and Usagi. Render Chiikawa as a round white friend with tiny ears, dot eyes, tiny w mouth, and pink blush hatches; Hachiware as a white cat with a distinct powder-blue cap covering the head and ears, short whiskers, and pink cheek hatches; Usagi as a cream bunny with long upright pink-inner ears and a simple tiny face. Place three small tilted hand-drawn paper snapshots near the lower part, leaving the central schedule area quiet. No text, logos, UI controls, or watermarks.",
+      "assets": [
+        {"format":"mobile","dimensions":{"width":1080,"height":2400},"path":"public/wallpapers/scenic/chikawa-instant-friends/mobile.png","source":"tmp/chikawa-ref2-v2/chikawa-instant-friends-mobile.png","generationOutcome":"Portrait composition; trio snapshot vignettes low, center open."},
+        {"format":"tablet","dimensions":{"width":1600,"height":2560},"path":"public/wallpapers/scenic/chikawa-instant-friends/tablet.png","source":"tmp/chikawa-ref2-v2/chikawa-instant-friends-tablet.png","generationOutcome":"Portrait tablet composition; snapshots grouped below, center open."},
+        {"format":"laptop","dimensions":{"width":1920,"height":1080},"path":"public/wallpapers/scenic/chikawa-instant-friends/laptop.png","source":"tmp/chikawa-ref2-v2/chikawa-instant-friends-laptop.png","generationOutcome":"Landscape composition; character snapshots on the right, left and center open."}
+      ]
+    },
+    {
+      "id": "chikawa-photo-album",
+      "name": "Photo Album",
+      "description": "Silver-gray doodle pattern with scattered tilted paper snapshots showing different trio expressions and poses.",
+      "palette": ["#F7F7F6", "#D5D7DA", "#A3C6D7", "#EAB8BE", "#E8D8C7"],
+      "prompt": "Create an original wallpaper using the attached reference images directly for character identity and style. Image 2 guides its pale gray repeating doodle field and scattered tilted white snapshot cards with Hachiware; use images 1, 3, and 4 for Chiikawa, Hachiware, and Usagi. Make five small hand-drawn tilted paper snapshot vignettes with varied character expressions and gestures, with no writing or interface detail. Chiikawa: white round shape, tiny ears, dot eyes, w-shaped mouth, pink cheek hatches. Hachiware: white cat face under a clear powder-blue head/ear cap, whiskers, pink cheek hatches. Usagi: cream bunny with long upright pink-inner ears, tiny face. Keep the center quiet for a schedule overlay. No text, logos, UI controls, or watermarks.",
+      "assets": [
+        {"format":"mobile","dimensions":{"width":1080,"height":2400},"path":"public/wallpapers/scenic/chikawa-photo-album/mobile.png","source":"tmp/chikawa-ref2-v2/chikawa-photo-album-mobile.png","generationOutcome":"Portrait composition; small expression snapshots scattered around a calm center."},
+        {"format":"tablet","dimensions":{"width":1600,"height":2560},"path":"public/wallpapers/scenic/chikawa-photo-album/tablet.png","source":"tmp/chikawa-ref2-v2/chikawa-photo-album-tablet.png","generationOutcome":"Portrait tablet composition; vignettes sit near outer edges around a calm center."},
+        {"format":"laptop","dimensions":{"width":1920,"height":1080},"path":"public/wallpapers/scenic/chikawa-photo-album/laptop.png","source":"tmp/chikawa-ref2-v2/chikawa-photo-album-laptop.png","generationOutcome":"Landscape composition; snapshots on the right with a quiet left and center."}
+      ]
+    },
+    {
+      "id": "chikawa-blue-buddy-snap",
+      "name": "Blue Buddy Snap",
+      "description": "Cool pearl-blue doodle field with Hachiware featured among the trio in snapshot vignettes.",
+      "palette": ["#F3F7F8", "#D2DADD", "#82B4CA", "#EAB8BE", "#F0DEC6"],
+      "prompt": "Create original wallpaper artwork guided by all four attached references. Image 2 supplies the pale doodle field and snapshot-card composition; the other images supply the character details. Feature Hachiware prominently: round white cat with unmistakable powder-blue head and ear cap, white face, short whiskers, and pink blush hatches. Include Chiikawa (round white body, tiny ears, dot eyes, tiny w mouth, blush hatches) and Usagi (cream body, long upright pink-inner ears, simple face). Use three hand-drawn tilted snapshot vignettes against a cool pearl-gray field of faint doodles. Preserve the center on portrait and left/center on landscape for schedule overlay. No text, logos, UI controls, or watermarks.",
+      "assets": [
+        {"format":"mobile","dimensions":{"width":1080,"height":2400},"path":"public/wallpapers/scenic/chikawa-blue-buddy-snap/mobile.png","source":"tmp/chikawa-ref2-v2/chikawa-blue-buddy-snap-mobile.png","generationOutcome":"Portrait composition; Hachiware-forward snapshot cluster near the bottom; center open."},
+        {"format":"tablet","dimensions":{"width":1600,"height":2560},"path":"public/wallpapers/scenic/chikawa-blue-buddy-snap/tablet.png","source":"tmp/chikawa-ref2-v2/chikawa-blue-buddy-snap-tablet.png","generationOutcome":"Portrait tablet composition; Hachiware-forward vignettes low-right; center open."},
+        {"format":"laptop","dimensions":{"width":1920,"height":1080},"path":"public/wallpapers/scenic/chikawa-blue-buddy-snap/laptop.png","source":"tmp/chikawa-ref2-v2/chikawa-blue-buddy-snap-laptop.png","generationOutcome":"Landscape composition; Hachiware-forward vignettes right; left and center open."}
+      ]
+    }
+  ]
+}

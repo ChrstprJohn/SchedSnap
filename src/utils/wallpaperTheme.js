@@ -33,7 +33,9 @@ export function mascotPosition(template) {
 export function galleryPreviewTemplate(template) {
   // Samples share one placement so artwork can be compared across designs.
   return { ...template, topMargin: 0, bottomMargin: 0, leftMargin: 0, rightMargin: 0,
-    leftMarginEnabled: false, rightMarginEnabled: false, horizontalPosition: 0, verticalPosition: 0 };
+    leftMarginEnabled: false, rightMarginEnabled: false, horizontalPosition: 0,
+    // The close-up face needs its composed schedule placement in thumbnails too.
+    verticalPosition: template.family === 'ghibli-closeup' ? template.verticalPosition ?? 0 : 0 };
 }
 
 export function customizeWallpaperTemplate(template, settings = {}, device = template?.device) {

@@ -1,7 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { deviceResolutions, templateSchedule, wallpaperTemplates } from '../src/assets/templates.js';
-import { onepieceReferenceTemplates } from '../src/assets/onepieceReferenceTemplates.js';
 import { drawWallpaper } from '../src/utils/canvasHelpers.js';
 import { customizeWallpaperTemplate, galleryPreviewTemplate } from '../src/utils/wallpaperTheme.js';
 
@@ -13,20 +12,24 @@ function render(template, resolution) {
   return drawWallpaper({ getContext: () => ctx }, { schedule: templateSchedule, template, resolution });
 }
 
-test('all gallery phone samples share the same schedule bounds despite preset margins', () => {
+test('gallery phone samples share bounds while the close-up keeps its face clear', () => {
   const expected = render(galleryPreviewTemplate(wallpaperTemplates[0]), deviceResolutions.mobile).scheduleBounds;
   for (const original of wallpaperTemplates) {
     const result = render(galleryPreviewTemplate(original), deviceResolutions.mobile);
     assert.equal(result.overflow, false, original.id);
-    assert.deepEqual(result.scheduleBounds, expected, original.id);
+    if (original.family === 'ghibli-closeup') {
+      assert.ok(result.scheduleBounds.y < expected.y, original.id);
+      assert.deepEqual({ ...result.scheduleBounds, y: expected.y }, expected, original.id);
+      assert.equal(galleryPreviewTemplate(original).verticalPosition, original.verticalPosition);
+    } else assert.deepEqual(result.scheduleBounds, expected, original.id);
   }
 });
 
 test('portrait tablet samples align while explicit user placement remains available', () => {
-  const original = onepieceReferenceTemplates.find(template => template.id === 'op-zoro-emerald');
+  const original = wallpaperTemplates.find(template => template.collection === 'chikawa');
   const originalCopy = structuredClone(original);
   const expected = render(customizeWallpaperTemplate(galleryPreviewTemplate(original), {}, 'tablet'), deviceResolutions.tablet).scheduleBounds;
-  for (const template of onepieceReferenceTemplates) {
+  for (const template of wallpaperTemplates.filter(template => template.collection === 'chikawa')) {
     assert.deepEqual(render(customizeWallpaperTemplate(galleryPreviewTemplate(template), {}, 'tablet'), deviceResolutions.tablet).scheduleBounds, expected, template.id);
   }
   const moved = customizeWallpaperTemplate(galleryPreviewTemplate(original), { verticalPosition: 50 }, 'mobile');

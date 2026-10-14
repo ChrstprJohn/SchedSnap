@@ -1,0 +1,168 @@
+{
+  "title": "Reference 1 — sage blossom meadow",
+  "reference_usage": {
+    "scene_composition": "C:\\Users\\picar\\AppData\\Local\\Temp\\codex-clipboard-62783e49-8346-4b7b-bb5e-302682188bf7.png",
+    "character_identity_only": [
+      "C:\\Users\\picar\\AppData\\Local\\Temp\\codex-clipboard-f74c6b47-fb1e-4e32-92c7-e0a6d27af9df.png",
+      "C:\\Users\\picar\\AppData\\Local\\Temp\\codex-clipboard-047d5edf-f210-42d4-a881-c083ea73c6ac.png",
+      "C:\\Users\\picar\\AppData\\Local\\Temp\\codex-clipboard-1a072f9b-344d-4f2a-a3e2-6a07fb0da34f.png"
+    ],
+    "description": "Use only the sage-green meadow with scattered small pink blossoms as scene composition; no blue sky, trees, or hill panorama. Identity cues: Chiikawa round white with tiny ears and blush; Hachiware white cat with blue-gray split cap; Usagi butter-yellow long-eared rabbit with tiny buck teeth.",
+    "imagegen_reference_order": "The four attached images were provided together to ImageGen in conversation order; image #1 was called out as the sole scene reference, images #2–#4 for character identity."
+  },
+  "formats": {
+    "mobile": [
+      1080,
+      2400
+    ],
+    "tablet": [
+      1600,
+      2560
+    ],
+    "laptop": [
+      1920,
+      1080
+    ]
+  },
+  "styles": {
+    "watercolor": {
+      "visual_qa": "PASS: airy sage-green field, scattered pink blossoms, clear trio; no trees, blue sky, or hill panorama."
+    },
+    "cel": {
+      "visual_qa": "PASS: sage-green blossom meadow and clear trio. Landscape regenerated after first cel landscape introduced sky/hills."
+    },
+    "paper-cut": {
+      "visual_qa": "PASS: sage-green blossom meadow and clear trio. Tablet and laptop regenerated after first attempts introduced sky/clouds/hills."
+    }
+  },
+  "assets": [
+    {
+      "style": "watercolor",
+      "device": "mobile",
+      "path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\public\\wallpapers\\scenic\\chikawa-blossom-field-watercolor-ref1\\mobile.png",
+      "source_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\documentation\\chikawa-artwork\\sources\\ref1-blossom-field\\watercolor\\mobile-source.png",
+      "generated_source": "C:\\Users\\picar\\.codex\\generated_images\\01a1359f-c026-7c83-b321-72931c78cb1d\\exec-44d75adf-91be-44d6-b97a-cb64e08161b6.png",
+      "target_dimensions": [
+        1080,
+        2400
+      ],
+      "mode": "RGB",
+      "prompt_summary": "Portrait phone 9:20, delicate Japanese watercolor, airy sage-green blossom meadow, trio in lower center.",
+      "prompt": "PORTRAIT PHONE WALLPAPER composition for 1080x2400. Follow attached image #1 ONLY for scene: airy light sage-green meadow filled with scattered small soft pink blossoms, three little friends among flowers; bright gentle diffuse spring light, blossom specks throughout, no trees, no blue sky, no rolling hillside, no horizon panorama. Character identity from refs #2-4: Chiikawa tiny round white creature with tiny round ears/rosy cheeks; Hachiware white cat with pointed ears and clear blue-gray split head cap marking; Usagi butter-yellow rabbit with very long upright ears, rosy cheeks and tiny buck teeth. Clearly recognizable, individually distinct, full figures in central lower third. STYLE: delicate Japanese watercolor illustration, soft translucent washes, delicate pencil/ink face marks, pastel sage and blush. Portrait phone framing with airy field around trio, not a crop. No text, lettering, logos, border."
+    },
+    {
+      "style": "watercolor",
+      "device": "tablet",
+      "path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\public\\wallpapers\\scenic\\chikawa-blossom-field-watercolor-ref1\\tablet.png",
+      "source_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\documentation\\chikawa-artwork\\sources\\ref1-blossom-field\\watercolor\\tablet-source.png",
+      "generated_source": "C:\\Users\\picar\\.codex\\generated_images\\01a1359f-c026-7c83-b321-72931c78cb1d\\exec-6a5e1a76-d140-49a5-a6aa-9d21ddb1e159.png",
+      "target_dimensions": [
+        1600,
+        2560
+      ],
+      "mode": "RGB",
+      "prompt_summary": "Portrait tablet 5:8, delicate Japanese watercolor, sage field with scattered pink blossoms, trio center-lower.",
+      "prompt": "PORTRAIT TABLET WALLPAPER, 5:8 composition for 1600x2560. Match attached image #1 scene only: airy light sage-green field with scattered small pink blossoms, no tall trees, no blue sky, no hill panorama or sweeping horizon. Three familiar friends in full view near center-lower area. Use identity refs: Chiikawa small round white creature with little round ears and rosy cheeks; Hachiware white cat, pointed ears and unmistakable blue-gray split-color cap patch; Usagi butter-yellow long-eared rabbit with rosy cheeks and tiny buck teeth. Simple recognizable mascot proportions. STYLE delicate Japanese watercolor on textured paper, translucent sage washes, pink flower dabs, delicate dark face details. Compose natively for portrait tablet; blooms in foreground, open softly washed sage above. No text, logo, border."
+    },
+    {
+      "style": "watercolor",
+      "device": "laptop",
+      "path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\public\\wallpapers\\scenic\\chikawa-blossom-field-watercolor-ref1\\laptop.png",
+      "source_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\documentation\\chikawa-artwork\\sources\\ref1-blossom-field\\watercolor\\laptop-source.png",
+      "generated_source": "C:\\Users\\picar\\.codex\\generated_images\\01a1359f-c026-7c83-b321-72931c78cb1d\\exec-2cd86285-85a5-420e-ab9c-f17ecc8b3572.png",
+      "target_dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "prompt_summary": "Landscape laptop 16:9, Japanese watercolor, close sage meadow scattered with pink blossoms, trio center-right.",
+      "prompt": "WIDE 16:9 LAPTOP WALLPAPER intended for 1920x1080, independently composed. Scene exactly like attached image #1: soft airy light sage-green field with scattered small pink blossoms, three friends strolling among them; no tall trees, no blue sky, no hill panorama, no scenic horizon. Character cues from refs #2-4: tiny round white Chiikawa with tiny round ears/blush; white pointed-ear Hachiware with obvious blue-gray split cap marking; butter-yellow Usagi with long upright rabbit ears, blush, tiny buck teeth. Keep clearly recognizable and full bodies, trio arranged in center-right lower-middle. STYLE soft Japanese watercolor on paper, transparent pastel washes, sage and blush, gentle pencil marks. Wide carpet of low blossoms and green space stretching horizontally, bright pale sage air behind. No text, logo, or border."
+    },
+    {
+      "style": "cel",
+      "device": "mobile",
+      "path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\public\\wallpapers\\scenic\\chikawa-blossom-field-cel-ref1\\mobile.png",
+      "source_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\documentation\\chikawa-artwork\\sources\\ref1-blossom-field\\cel\\mobile-source.png",
+      "generated_source": "C:\\Users\\picar\\.codex\\generated_images\\01a1359f-c026-7c83-b321-72931c78cb1d\\exec-1e1b3a9c-f686-4042-9d55-6ef4e3e6b3be.png",
+      "target_dimensions": [
+        1080,
+        2400
+      ],
+      "mode": "RGB",
+      "prompt_summary": "Portrait phone 9:20, crisp Japanese cel and line art, airy sage-green meadow, small pink blossoms and recognizable trio.",
+      "prompt": "PORTRAIT PHONE WALLPAPER, light airy spring scene, 9:20 format intended 1080x2400. Use attached reference #1 for composition: open sage-green flower field scattered with small pink blossoms and three familiar friends. No blue sky, no tall trees, no hill panorama. Define trio from identity references: Chiikawa tiny round white creature with tiny round ears and rosy cheeks; Hachiware white cat with pointed ears and obvious blue-gray split head-cap patch; Usagi butter-yellow rabbit with long upright ears, pink cheeks and tiny buck teeth. Keep them clearly recognisable, full bodies grouped lower center. STYLE crisp Japanese cel / line art, dark clean hand ink, simple pastel shading, graceful calm. Pink blossoms float through sage background and foreground, generous sage breathing room above. No text, logos, border."
+    },
+    {
+      "style": "cel",
+      "device": "tablet",
+      "path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\public\\wallpapers\\scenic\\chikawa-blossom-field-cel-ref1\\tablet.png",
+      "source_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\documentation\\chikawa-artwork\\sources\\ref1-blossom-field\\cel\\tablet-source.png",
+      "generated_source": "C:\\Users\\picar\\.codex\\generated_images\\01a1359f-c026-7c83-b321-72931c78cb1d\\exec-c39349f9-1a79-4c02-b2ba-08b91dacd662.png",
+      "target_dimensions": [
+        1600,
+        2560
+      ],
+      "mode": "RGB",
+      "prompt_summary": "Portrait tablet 5:8, Japanese cel illustration, sage-green blossom field, trio in lower middle.",
+      "prompt": "Portrait TABLET wallpaper, 5:8 composition intended 1600x2560, compose natively. Scene per attachment #1: quiet airy light sage-green field sprinkled with little pink blossoms, trio among blooms. No trees, no blue sky, no hill panorama. Identity from other refs: Chiikawa tiny round white creature, small rounded ears and rosy cheeks; Hachiware white cat, pointed ears and distinct blue-gray split cap patch; Usagi butter-yellow long-eared rabbit with rosy cheeks and tiny buck teeth. Full figures, unmistakable differences. STYLE polished Japanese cel animation, confident clean dark linework, pastel flat fills and subtle shadows, simple fine grass. Trio central lower half; scattered flowers and sage breathing space. No text, logo, border."
+    },
+    {
+      "style": "cel",
+      "device": "laptop",
+      "path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\public\\wallpapers\\scenic\\chikawa-blossom-field-cel-ref1\\laptop.png",
+      "source_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\documentation\\chikawa-artwork\\sources\\ref1-blossom-field\\cel\\laptop-source.png",
+      "generated_source": "C:\\Users\\picar\\.codex\\generated_images\\01a1359f-c026-7c83-b321-72931c78cb1d\\exec-0e58ac50-b380-4341-84cf-0ddd10cf8a3c.png",
+      "target_dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "prompt_summary": "Landscape laptop 16:9, crisp Japanese cel line art, edge-to-edge sage blossom meadow, no sky/hills/trees.",
+      "prompt": "Landscape laptop wallpaper, 16:9. Entire background must be a flat airy light sage-green meadow plane with scattered small pink blossoms, matching the attached first reference. Do NOT show sky, clouds, horizon, hills, trees, forest, mountain, or distant landscape. The scene is viewed close within a flower meadow; pink blossoms and sage grass fill every part of the image edge to edge. Three cute recognizable friends grouped lower center: Chiikawa round white tiny-eared, blush cheek; Hachiware white pointed-ear cat with blue-gray split patch on head; Usagi butter-yellow rabbit with long upright ears and tiny buck teeth. Strong identity. Crisp Japanese cel line art with clean outlines and gentle flat pastel shading. Make the blossoms and sage meadow the sole environment. No text/logo/border."
+    },
+    {
+      "style": "paper-cut",
+      "device": "mobile",
+      "path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\public\\wallpapers\\scenic\\chikawa-blossom-field-paper-cut-ref1\\mobile.png",
+      "source_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\documentation\\chikawa-artwork\\sources\\ref1-blossom-field\\paper-cut\\mobile-source.png",
+      "generated_source": "C:\\Users\\picar\\.codex\\generated_images\\01a1359f-c026-7c83-b321-72931c78cb1d\\exec-fc9ad975-a0c1-4538-967b-49c421df3b8d.png",
+      "target_dimensions": [
+        1080,
+        2400
+      ],
+      "mode": "RGB",
+      "prompt_summary": "Portrait phone 9:20, layered paper-cut screenprint, sage meadow with scattered pink flowers and trio.",
+      "prompt": "Portrait PHONE wallpaper, intended 1080x2400; compose tall portrait from scratch. Match attachment #1: airy light sage-green field scattered with small pink blossoms around three friends. No tall trees, no blue sky, no hill panorama. Refs #2-4 for identity: Chiikawa small round white creature, tiny ears rosy cheeks; Hachiware white cat with definite blue-gray split head cap patch; Usagi butter-yellow rabbit with very long upright ears, rosy cheeks and two tiny buck teeth. Clearly recognizable full figures, centered lower middle. STYLE Japanese cel/line art, clean hand-drawn dark outlines, smooth pastel color blocks, subtle cel shading, fine simple grass. Fresh and cute, small blossoms scattered across field, soft sage space above. No text/logos/borders."
+    },
+    {
+      "style": "paper-cut",
+      "device": "tablet",
+      "path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\public\\wallpapers\\scenic\\chikawa-blossom-field-paper-cut-ref1\\tablet.png",
+      "source_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\documentation\\chikawa-artwork\\sources\\ref1-blossom-field\\paper-cut\\tablet-source.png",
+      "generated_source": "C:\\Users\\picar\\.codex\\generated_images\\01a1359f-c026-7c83-b321-72931c78cb1d\\exec-708fdaa8-910e-4e44-adfc-9d1f7a8e2d7f.png",
+      "target_dimensions": [
+        1600,
+        2560
+      ],
+      "mode": "RGB",
+      "prompt_summary": "Portrait tablet 5:8, paper-cut screenprint, close sage flower meadow filling background, trio center.",
+      "prompt": "Portrait tablet wallpaper 5:8. Background is ONLY an airy light sage-green flower meadow filled edge-to-edge with scattered tiny pink blossoms. Match attached reference #1. Absolutely no sky, clouds, horizon, hills, tall trees, or forest. Close-up meadow perspective with flowers at different sizes, all surroundings remain grassy sage. Trio full figure near center: Chiikawa round white tiny round ears rosy cheeks; Hachiware white cat pointed ears and clear blue-gray split cap marking; Usagi butter-yellow rabbit long upright ears and tiny buck teeth. Recognizable. Style layered paper-cut screenprint, gently textured paper, crisp clean cutout shapes and subtle misregistered outlines. Compose portrait 5:8 specifically; blossoms float across sage ground. No text/logo/border."
+    },
+    {
+      "style": "paper-cut",
+      "device": "laptop",
+      "path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\public\\wallpapers\\scenic\\chikawa-blossom-field-paper-cut-ref1\\laptop.png",
+      "source_path": "C:\\Users\\picar\\Desktop\\random_project\\SchedSnap\\documentation\\chikawa-artwork\\sources\\ref1-blossom-field\\paper-cut\\laptop-source.png",
+      "generated_source": "C:\\Users\\picar\\.codex\\generated_images\\01a1359f-c026-7c83-b321-72931c78cb1d\\exec-8c02863f-5284-491b-a26d-6ba39fad39a5.png",
+      "target_dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "prompt_summary": "Landscape laptop 16:9, paper-cut screenprint, edge-to-edge sage meadow with small pink blossoms, no sky or hills.",
+      "prompt": "Landscape 16:9 laptop wallpaper. Fill the entire background with a close sage-green blossom meadow exactly as the attached reference #1 suggests: light sage grass in every corner, small scattered pink blossoms everywhere, airy and luminous. No sky, cloud, horizon, hill, trees, forest, or distant scenery. Character trio full-bodied, centered slightly right in lower half, recognizable: Chiikawa small round white creature with tiny ears and blush; Hachiware white pointed-ear cat with visible blue-gray split cap patch; Usagi butter-yellow rabbit with long upright ears and tiny buck teeth. Style handcrafted paper-cut and screenprint: layered flat paper shapes, subtle grain, neat dark cut outlines, blush/sage/cream/blue-gray palette. Composition must stay within a meadow ground plane, blossoms across width, uncluttered. No lettering, logo, border."
+    }
+  ],
+  "upload_status": "Not uploaded to Cloudinary; local assets only.",
+  "excluded": "Earlier blue-sky/hillside drafts are excluded from this corrected reference-1 set."
+}

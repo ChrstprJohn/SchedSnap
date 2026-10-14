@@ -68,7 +68,7 @@ export function layoutSchedule(ctx, schedule, template, height = 2400, options =
   const subjectWidth = roomX - subjectX - 22;
   // Reserve the upper part of a portrait lock screen for its clock and date.
   const top = options.top ?? 760;
-  const limit = options.limit ?? (template.layout === 'mascot' ? height - 660 : height - 150);
+  const limit = options.limit ?? (template.layout === 'mascot' ? height - 660 : template.collection === 'ghibli' ? height * 0.77 : height - 150);
   let result;
   for (let baseSize = 42; baseSize >= 28; baseSize -= 2) {
     const size = baseSize * wallpaperFontScale(template);
@@ -435,7 +435,10 @@ function drawDeviceWallpaper(canvas, { schedule, template, resolution, backgroun
   const topOffset = height * scheduleTopMargin(template) / 100;
   const minTop = resolution.id === 'tablet' ? height * 0.22 : 0;
   const baseTop = Math.max(minTop, landscape ? footerCharacter ? height * 0.06 : 0 : height * 0.16);
-  const availableHeight = Math.min(height * (landscape ? footerCharacter ? 0.6 : 0.88 : hasCharacter ? 0.62 : 0.82), height * 0.965 - baseTop);
+  // Ghibli's portrait artwork occupies the footer; dense schedules retain
+  // their meetings while fitting above the character stamps and faces.
+  const availableHeight = Math.min(height * (landscape ? footerCharacter ? 0.6 : 0.88 : hasCharacter ? 0.62 : 0.82), height * 0.965 - baseTop,
+    template.collection === 'ghibli' && !landscape ? height * 0.77 - baseTop : Infinity);
   const count = groupSchedule(schedule).length;
   const designWidth = 1400;
   const groupGap = resolution.id === 'tablet' ? tabletBoxSpacing(template) : 16;
@@ -504,7 +507,7 @@ export function drawWallpaper(canvas, { schedule, template, resolution = mobileR
   const layout = layoutSchedule(ctx, schedule, template, 2400, verticalOffset ? { top: 760 + verticalOffset } : {});
   const headingY = 650 + verticalOffset;
   const moveX = movementShift(scheduleMovement(template, 'horizontal'), 78, 78);
-  const limit = template.layout === 'mascot' ? 1740 : 2250;
+  const limit = template.layout === 'mascot' ? 1740 : template.collection === 'ghibli' ? 2400 * 0.77 : 2250;
   const moveY = movementShift(scheduleMovement(template, 'vertical'), headingY - 88, limit - layout.bottom);
   ctx.save();
   if (moveX || moveY) ctx.translate(moveX, moveY);
