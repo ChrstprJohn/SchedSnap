@@ -86,6 +86,230 @@
         1208,
         1221
       ]
+    },
+    {
+      "id": "meep-tongue",
+      "master": "/images/goofy-mascots/masters/meep-tongue.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        155,
+        257,
+        1080,
+        1062
+      ]
+    },
+    {
+      "id": "meep-unsure",
+      "master": "/images/goofy-mascots/masters/meep-unsure.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        69,
+        147,
+        1172,
+        1107
+      ]
+    },
+    {
+      "id": "meep-sweat",
+      "master": "/images/goofy-mascots/masters/meep-sweat.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        31,
+        92,
+        1182,
+        1127
+      ]
+    },
+    {
+      "id": "meep-angry",
+      "master": "/images/goofy-mascots/masters/meep-angry.png",
+      "masterSize": [
+        1312,
+        1199
+      ],
+      "alphaBounds": [
+        55,
+        77,
+        1225,
+        1146
+      ]
+    },
+    {
+      "id": "meep-dizzy",
+      "master": "/images/goofy-mascots/masters/meep-dizzy.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        48,
+        150,
+        1201,
+        1091
+      ]
+    },
+    {
+      "id": "meep-surprised",
+      "master": "/images/goofy-mascots/masters/meep-surprised.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        82,
+        147,
+        1171,
+        1087
+      ]
+    },
+    {
+      "id": "meep-laughing-tongue",
+      "master": "/images/goofy-mascots/masters/meep-laughing-tongue.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        30,
+        116,
+        1242,
+        1145
+      ]
+    },
+    {
+      "id": "meep-heart-eyes",
+      "master": "/images/goofy-mascots/masters/meep-heart-eyes.png",
+      "masterSize": [
+        1241,
+        1267
+      ],
+      "alphaBounds": [
+        23,
+        120,
+        1210,
+        1079
+      ]
+    },
+    {
+      "id": "meep-blush",
+      "master": "/images/goofy-mascots/masters/meep-blush.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        76,
+        153,
+        1164,
+        1103
+      ]
+    },
+    {
+      "id": "meep-angel",
+      "master": "/images/goofy-mascots/masters/meep-angel.png",
+      "masterSize": [
+        1272,
+        1236
+      ],
+      "alphaBounds": [
+        64,
+        31,
+        1206,
+        1124
+      ]
+    },
+    {
+      "id": "meep-happy-tears",
+      "master": "/images/goofy-mascots/masters/meep-happy-tears.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        13,
+        140,
+        1243,
+        1108
+      ]
+    },
+    {
+      "id": "meep-giddy",
+      "master": "/images/goofy-mascots/masters/meep-giddy.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        85,
+        151,
+        1164,
+        1100
+      ]
+    },
+    {
+      "id": "meep-puffed-cheeks",
+      "master": "/images/goofy-mascots/masters/meep-puffed-cheeks.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        92,
+        163,
+        1160,
+        1093
+      ]
+    },
+    {
+      "id": "meep-smile",
+      "master": "/images/goofy-mascots/masters/meep-smile.png",
+      "masterSize": [
+        1265,
+        1244
+      ],
+      "alphaBounds": [
+        82,
+        135,
+        1178,
+        1096
+      ]
+    },
+    {
+      "id": "meep-unamused",
+      "master": "/images/goofy-mascots/masters/meep-unamused.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        61,
+        148,
+        1193,
+        1106
+      ]
+    },
+    {
+      "id": "meep-wink",
+      "master": "/images/goofy-mascots/masters/meep-wink.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        124,
+        187,
+        1126,
+        1057
+      ]
     }
   ]
 }

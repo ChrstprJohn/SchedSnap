@@ -76,6 +76,13 @@ Gallery and modal previews show Monday–Friday with one neutral Subject name an
 
 ## Background artwork
 
+### Chiikawa collection
+
+The `chikawa` collection contains 12 designs from four supplied references: pastel character repeats, instant-photo collages, green meadow scenes, and candy-pink friend crowds. Each design has an independently composed opaque mobile (1080 × 2400), tablet (1600 × 2560), and laptop (1920 × 1080) PNG, totaling 36 assets. Character review checks Chiikawa's white round ears, Hachiware's blue cat markings, and Usagi's yellow long ears.
+
+Definitions for this four-reference set are in `src/assets/chikawaReferenceTemplates.js`; prompts and source provenance are in `documentation/chikawa-reference-collection/reference-{1,2,3,4}.json`. Cloudinary uploads use only the inspected, content-hashed paths in `output/chikawa-reference-collection/manifest.json`. `scripts/publish-chikawa-reference.mjs` validates those hashes and delivery metadata before publishing, preserves other catalog records and dates, and removes the retired One Piece collection records. Historical source/provenance files are retained outside the active catalog. Other independently requested Chiikawa collections retain their separate definitions.
+
+
 ### Editable appearance and class hierarchy
 
 Each meeting centers a large bold course code above a smaller subject name; room text is separate on the right. Missing codes use the subject as the main label. Long codes, subjects, rooms and date details wrap without losing information. Gallery examples include CLASS 101, Subject name and Room 101, one meeting per weekday.

@@ -1,0 +1,156 @@
+{
+  "collection": "Chiikawa Pink Friends",
+  "referenceImage": "User attachment #4: candy-pink claw-machine-style group of cute friends; used for palette and lively crowd mood only. The literal machine frame and interface were excluded.",
+  "characterIdentityReferences": "Chiikawa (tiny round white friend with dot eyes, small w-shaped mouth and blush hatches), Hachiware (white kitten with a blue cap-shaped head patch, whiskers and pink cheeks), Usagi (cream long-eared bunny with pink inner ears and simple face).",
+  "exclusion": "Chiikawa characters only; no One Piece or other franchise references, names, characters, logos, text, claw-machine frame, or UI.",
+  "generationMode": "Built-in image_gen with reference images supplied; each device format generated as a separate composition.",
+  "generatedAt": "2026-10-13",
+  "processing": "Generated at near-target aspect ratios, then fit-cropped with Lanczos to exact requested dimensions. Exported opaque RGB PNG.",
+  "designs": [
+    {
+      "id": "chikawa-pink-plush-parade",
+      "name": "Pink Plush Parade",
+      "style": "Candy-pink pastel hand-drawn friend crowd with soft watercolor shading",
+      "concept": "A lively parade of Chiikawa (tiny white round creature, small round ears, dot eyes, tiny w-shaped mouth, blush hatch marks), Hachiware (white kitten with distinctive blue cap-shaped head markings, whiskers and pink cheeks), and Usagi (cream long-eared rabbit, pink inner ears, simple face), with little supporting Chiikawa friends clustered low.",
+      "prompts": [
+        {
+          "device": "mobile",
+          "prompt": "One portrait mobile wallpaper, design variant Pink Plush Parade. Character accuracy is essential: A lively parade of Chiikawa (tiny white round creature, small round ears, dot eyes, tiny w-shaped mouth, blush hatch marks), Hachiware (white kitten with distinctive blue cap-shaped head markings, whiskers and pink cheeks), and Usagi (cream long-eared rabbit, pink inner ears, simple face), with little supporting Chiikawa friends clustered low. Draw the signature cues faithfully in original cute clean hand-drawn art, no generic substitute animals. Reference image 4 is mood/palette/composition inspiration only: candy pink, cheerful friend crowd. Original new poses. Pale blush pink background, sparse pastel blue details, subtle watercolor shading; position the trio as small decorative friends around bottom corners/edges, preserve a broad quiet center for schedule overlay. Adapt composition naturally to mobile aspect ratio. No One Piece, no other franchises, no claw machine, no frame, no interface, absolutely no text or logos or watermark."
+        },
+        {
+          "device": "tablet",
+          "prompt": "One portrait tablet wallpaper, design variant Pink Plush Parade. Character accuracy is essential: A lively parade of Chiikawa (tiny white round creature, small round ears, dot eyes, tiny w-shaped mouth, blush hatch marks), Hachiware (white kitten with distinctive blue cap-shaped head markings, whiskers and pink cheeks), and Usagi (cream long-eared rabbit, pink inner ears, simple face), with little supporting Chiikawa friends clustered low. Draw the signature cues faithfully in original cute clean hand-drawn art, no generic substitute animals. Reference image 4 is mood/palette/composition inspiration only: candy pink, cheerful friend crowd. Original new poses. Pale blush pink background, sparse pastel blue details, subtle watercolor shading; position the trio as small decorative friends around bottom corners/edges, preserve a broad quiet center for schedule overlay. Adapt composition naturally to tablet aspect ratio. No One Piece, no other franchises, no claw machine, no frame, no interface, absolutely no text or logos or watermark."
+        },
+        {
+          "device": "laptop",
+          "prompt": "One wide landscape laptop wallpaper, design variant Pink Plush Parade. Character accuracy is essential: A lively parade of Chiikawa (tiny white round creature, small round ears, dot eyes, tiny w-shaped mouth, blush hatch marks), Hachiware (white kitten with distinctive blue cap-shaped head markings, whiskers and pink cheeks), and Usagi (cream long-eared rabbit, pink inner ears, simple face), with little supporting Chiikawa friends clustered low. Draw the signature cues faithfully in original cute clean hand-drawn art, no generic substitute animals. Reference image 4 is mood/palette/composition inspiration only: candy pink, cheerful friend crowd. Original new poses. Pale blush pink background, sparse pastel blue details, subtle watercolor shading; position the trio as small decorative friends around bottom corners/edges, preserve a broad quiet center for schedule overlay. Adapt composition naturally to laptop aspect ratio. No One Piece, no other franchises, no claw machine, no frame, no interface, absolutely no text or logos or watermark."
+        }
+      ],
+      "outputs": [
+        {
+          "device": "mobile",
+          "path": "public/wallpapers/scenic/chikawa-pink-plush-parade/mobile.png",
+          "size": "1080x2400",
+          "mimeType": "image/png",
+          "opaque": true,
+          "sourceGeneratedImage": "C:\\Users\\picar\\.codex\\generated_images\\01a13591-b96d-7050-a1cd-6a488a2ed849\\exec-10cfcb0b-15d0-4d88-9f57-3cb436d1d622.png"
+        },
+        {
+          "device": "tablet",
+          "path": "public/wallpapers/scenic/chikawa-pink-plush-parade/tablet.png",
+          "size": "1600x2560",
+          "mimeType": "image/png",
+          "opaque": true,
+          "sourceGeneratedImage": "C:\\Users\\picar\\.codex\\generated_images\\01a13591-b96d-7050-a1cd-6a488a2ed849\\exec-b36251df-d2e8-4c82-aac0-ea9be09613bf.png"
+        },
+        {
+          "device": "laptop",
+          "path": "public/wallpapers/scenic/chikawa-pink-plush-parade/laptop.png",
+          "size": "1920x1080",
+          "mimeType": "image/png",
+          "opaque": true,
+          "sourceGeneratedImage": "C:\\Users\\picar\\.codex\\generated_images\\01a13591-b96d-7050-a1cd-6a488a2ed849\\exec-5a15355c-39c8-4b15-a809-70f7bcfa97dc.png"
+        }
+      ]
+    },
+    {
+      "id": "chikawa-pink-present-party",
+      "name": "Pastel Present Party",
+      "style": "Candy-pink pastel hand-drawn friend crowd with soft watercolor shading",
+      "concept": "Chiikawa, the small white round-eared character with dot eyes, tiny w mouth and blush hatches; Hachiware, white cat with unmistakable blue split-cap forehead and whiskers; Usagi, cream rabbit with long upright pink-inner ears and simple face. They peek from behind pastel gifts along lower edges, joyful candy pink group mood.",
+      "prompts": [
+        {
+          "device": "mobile",
+          "prompt": "One portrait mobile wallpaper, design variant Pastel Present Party. Character accuracy is essential: Chiikawa, the small white round-eared character with dot eyes, tiny w mouth and blush hatches; Hachiware, white cat with unmistakable blue split-cap forehead and whiskers; Usagi, cream rabbit with long upright pink-inner ears and simple face. They peek from behind pastel gifts along lower edges, joyful candy pink group mood. Draw the signature cues faithfully in original cute clean hand-drawn art, no generic substitute animals. Reference image 4 is mood/palette/composition inspiration only: candy pink, cheerful friend crowd. Original new poses. Pale blush pink background, sparse pastel blue details, subtle watercolor shading; position the trio as small decorative friends around bottom corners/edges, preserve a broad quiet center for schedule overlay. Adapt composition naturally to mobile aspect ratio. No One Piece, no other franchises, no claw machine, no frame, no interface, absolutely no text or logos or watermark."
+        },
+        {
+          "device": "tablet",
+          "prompt": "One portrait tablet wallpaper, design variant Pastel Present Party. Character accuracy is essential: Chiikawa, the small white round-eared character with dot eyes, tiny w mouth and blush hatches; Hachiware, white cat with unmistakable blue split-cap forehead and whiskers; Usagi, cream rabbit with long upright pink-inner ears and simple face. They peek from behind pastel gifts along lower edges, joyful candy pink group mood. Draw the signature cues faithfully in original cute clean hand-drawn art, no generic substitute animals. Reference image 4 is mood/palette/composition inspiration only: candy pink, cheerful friend crowd. Original new poses. Pale blush pink background, sparse pastel blue details, subtle watercolor shading; position the trio as small decorative friends around bottom corners/edges, preserve a broad quiet center for schedule overlay. Adapt composition naturally to tablet aspect ratio. No One Piece, no other franchises, no claw machine, no frame, no interface, absolutely no text or logos or watermark."
+        },
+        {
+          "device": "laptop",
+          "prompt": "One wide landscape laptop wallpaper, design variant Pastel Present Party. Character accuracy is essential: Chiikawa, the small white round-eared character with dot eyes, tiny w mouth and blush hatches; Hachiware, white cat with unmistakable blue split-cap forehead and whiskers; Usagi, cream rabbit with long upright pink-inner ears and simple face. They peek from behind pastel gifts along lower edges, joyful candy pink group mood. Draw the signature cues faithfully in original cute clean hand-drawn art, no generic substitute animals. Reference image 4 is mood/palette/composition inspiration only: candy pink, cheerful friend crowd. Original new poses. Pale blush pink background, sparse pastel blue details, subtle watercolor shading; position the trio as small decorative friends around bottom corners/edges, preserve a broad quiet center for schedule overlay. Adapt composition naturally to laptop aspect ratio. No One Piece, no other franchises, no claw machine, no frame, no interface, absolutely no text or logos or watermark."
+        }
+      ],
+      "outputs": [
+        {
+          "device": "mobile",
+          "path": "public/wallpapers/scenic/chikawa-pink-present-party/mobile.png",
+          "size": "1080x2400",
+          "mimeType": "image/png",
+          "opaque": true,
+          "sourceGeneratedImage": "tmp\\chikawa-pink-audit\\present-mobile-corrected.png",
+          "correctionPrompt": "Remove black whiskers from round-ear Chiikawa; preserve pink blush hatch marks and all other composition, Hachiware whiskers, Usagi, gifts, balloons and watercolor finish."
+        },
+        {
+          "device": "tablet",
+          "path": "public/wallpapers/scenic/chikawa-pink-present-party/tablet.png",
+          "size": "1600x2560",
+          "mimeType": "image/png",
+          "opaque": true,
+          "sourceGeneratedImage": "C:\\Users\\picar\\.codex\\generated_images\\01a13591-b96d-7050-a1cd-6a488a2ed849\\exec-a3faab4b-2f6f-4494-96a5-fd5b8dfd473e.png"
+        },
+        {
+          "device": "laptop",
+          "path": "public/wallpapers/scenic/chikawa-pink-present-party/laptop.png",
+          "size": "1920x1080",
+          "mimeType": "image/png",
+          "opaque": true,
+          "sourceGeneratedImage": "C:\\Users\\picar\\.codex\\generated_images\\01a13591-b96d-7050-a1cd-6a488a2ed849\\exec-6904c617-28c2-4df9-85f4-7a76376bccfc.png"
+        }
+      ]
+    },
+    {
+      "id": "chikawa-pink-starlight-friends",
+      "name": "Dreamy Starlight Friends",
+      "style": "Candy-pink pastel hand-drawn friend crowd with soft watercolor shading",
+      "concept": "Clearly recognizable Chiikawa (white round body, tiny ears, dot eyes, tiny w mouth, rosy hatch cheeks), Hachiware (white kitten, blue cap-pattern on head, whiskers, blush cheeks), and Usagi (cream bunny with long pink-inner ears and simple face) relaxing among soft stars along the bottom corners.",
+      "prompts": [
+        {
+          "device": "mobile",
+          "prompt": "One portrait mobile wallpaper, design variant Dreamy Starlight Friends. Character accuracy is essential: Clearly recognizable Chiikawa (white round body, tiny ears, dot eyes, tiny w mouth, rosy hatch cheeks), Hachiware (white kitten, blue cap-pattern on head, whiskers, blush cheeks), and Usagi (cream bunny with long pink-inner ears and simple face) relaxing among soft stars along the bottom corners. Draw the signature cues faithfully in original cute clean hand-drawn art, no generic substitute animals. Reference image 4 is mood/palette/composition inspiration only: candy pink, cheerful friend crowd. Original new poses. Pale blush pink background, sparse pastel blue details, subtle watercolor shading; position the trio as small decorative friends around bottom corners/edges, preserve a broad quiet center for schedule overlay. Adapt composition naturally to mobile aspect ratio. No One Piece, no other franchises, no claw machine, no frame, no interface, absolutely no text or logos or watermark."
+        },
+        {
+          "device": "tablet",
+          "prompt": "One portrait tablet wallpaper, design variant Dreamy Starlight Friends. Character accuracy is essential: Clearly recognizable Chiikawa (white round body, tiny ears, dot eyes, tiny w mouth, rosy hatch cheeks), Hachiware (white kitten, blue cap-pattern on head, whiskers, blush cheeks), and Usagi (cream bunny with long pink-inner ears and simple face) relaxing among soft stars along the bottom corners. Draw the signature cues faithfully in original cute clean hand-drawn art, no generic substitute animals. Reference image 4 is mood/palette/composition inspiration only: candy pink, cheerful friend crowd. Original new poses. Pale blush pink background, sparse pastel blue details, subtle watercolor shading; position the trio as small decorative friends around bottom corners/edges, preserve a broad quiet center for schedule overlay. Adapt composition naturally to tablet aspect ratio. No One Piece, no other franchises, no claw machine, no frame, no interface, absolutely no text or logos or watermark."
+        },
+        {
+          "device": "laptop",
+          "prompt": "One wide landscape laptop wallpaper, design variant Dreamy Starlight Friends. Character accuracy is essential: Clearly recognizable Chiikawa (white round body, tiny ears, dot eyes, tiny w mouth, rosy hatch cheeks), Hachiware (white kitten, blue cap-pattern on head, whiskers, blush cheeks), and Usagi (cream bunny with long pink-inner ears and simple face) relaxing among soft stars along the bottom corners. Draw the signature cues faithfully in original cute clean hand-drawn art, no generic substitute animals. Reference image 4 is mood/palette/composition inspiration only: candy pink, cheerful friend crowd. Original new poses. Pale blush pink background, sparse pastel blue details, subtle watercolor shading; position the trio as small decorative friends around bottom corners/edges, preserve a broad quiet center for schedule overlay. Adapt composition naturally to laptop aspect ratio. No One Piece, no other franchises, no claw machine, no frame, no interface, absolutely no text or logos or watermark."
+        }
+      ],
+      "outputs": [
+        {
+          "device": "mobile",
+          "path": "public/wallpapers/scenic/chikawa-pink-starlight-friends/mobile.png",
+          "size": "1080x2400",
+          "mimeType": "image/png",
+          "opaque": true,
+          "sourceGeneratedImage": "C:\\Users\\picar\\.codex\\generated_images\\01a13591-b96d-7050-a1cd-6a488a2ed849\\exec-a3607e11-f84e-4979-9b21-cc6c38d1a163.png"
+        },
+        {
+          "device": "tablet",
+          "path": "public/wallpapers/scenic/chikawa-pink-starlight-friends/tablet.png",
+          "size": "1600x2560",
+          "mimeType": "image/png",
+          "opaque": true,
+          "sourceGeneratedImage": "C:\\Users\\picar\\.codex\\generated_images\\01a13591-b96d-7050-a1cd-6a488a2ed849\\exec-6ead0604-1123-46d0-a60b-06da7bfaed7b.png"
+        },
+        {
+          "device": "laptop",
+          "path": "public/wallpapers/scenic/chikawa-pink-starlight-friends/laptop.png",
+          "size": "1920x1080",
+          "mimeType": "image/png",
+          "opaque": true,
+          "sourceGeneratedImage": "C:\\Users\\picar\\.codex\\generated_images\\01a13591-b96d-7050-a1cd-6a488a2ed849\\exec-f3f9ec55-a7c3-4503-9932-3f418685a8b2.png"
+        }
+      ]
+    }
+  ],
+  "visualAudit": {
+    "auditedAt": "2026-10-14",
+    "status": "accepted",
+    "reviewedAssets": 9,
+    "notes": "All nine device assets individually viewed. Distinct mobile, tablet, and landscape compositions. Recognizable white round-ear Chiikawa, blue-cap Hachiware, cream long-ear Usagi. Corrected incorrect whiskers on Chiikawa in present-party mobile through built-in image_gen targeted edit. No franchise mismatch, text, watermark or machine UI found."
+  }
+}

@@ -3,12 +3,10 @@ import { littleFriendsTemplates } from './littleFriendsTemplates.js';
 import { patternTemplates } from './patternTemplates.js';
 import { scenicTemplates } from './scenicTemplates.js';
 import { generatedMascotTemplates } from './generatedMascotTemplates.js';
-import { onepieceTemplates } from './onepieceTemplates.js';
-import { onepieceAdventureTemplates } from './onepieceAdventureTemplates.js';
-import { onepieceReferenceTemplates } from './onepieceReferenceTemplates.js';
+import { chikawaTemplates } from './chikawaTemplates.js';
 import { sanrioTemplates } from './sanrioTemplates.js';
 import { domoTemplates } from './domoTemplates.js';
-import { chikawaTemplates } from './chikawaTemplates.js';
+import { meepTemplates } from './meepTemplates.js';
 
 export const mobileResolution = { id: 'mobile', width: 1080, height: 2400 };
 export const deviceResolutions = { mobile: mobileResolution, tablet: { id: 'tablet', width: 1600, height: 2560 }, laptop: { id: 'laptop', width: 1920, height: 1080 } };
@@ -17,12 +15,10 @@ export const tabletLandscapeResolution = { ...deviceResolutions.tablet, width: d
 // Artwork and palette presets contain no student or course information.
 // Legacy heading/rows values remain as preset metadata; Canvas uses one shared layout.
 export const wallpaperTemplates = [
+  ...meepTemplates,
   ...domoTemplates,
   ...sanrioTemplates,
   ...chikawaTemplates,
-  ...onepieceReferenceTemplates,
-  ...onepieceTemplates,
-  ...onepieceAdventureTemplates,
   ...generatedMascotTemplates,
   ...scenicTemplates,
   ...littleFriendsTemplates,

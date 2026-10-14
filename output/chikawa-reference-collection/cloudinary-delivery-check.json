@@ -1,0 +1,294 @@
+{
+  "verifiedAt": "2026-10-14T03:52:23.896Z",
+  "verifiedAssets": 36,
+  "results": [
+    {
+      "path": "/wallpapers/scenic/chikawa-pastel-pals/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948422/schedsnap/wallpapers/scenic/chikawa-pastel-pals/laptop-dfb01ba45cc46bed.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-pastel-pals/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948425/schedsnap/wallpapers/scenic/chikawa-pastel-pals/tablet-9d8af0fc8d9f4305.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-sprinkle-friends/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948435/schedsnap/wallpapers/scenic/chikawa-sprinkle-friends/mobile-e76cd708d2967741.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-pastel-pals/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948424/schedsnap/wallpapers/scenic/chikawa-pastel-pals/mobile-75365a7aba280c7d.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-cloud-repeat/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948414/schedsnap/wallpapers/scenic/chikawa-cloud-repeat/tablet-8b54fc164730d3a1.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-sprinkle-friends/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948433/schedsnap/wallpapers/scenic/chikawa-sprinkle-friends/laptop-f41908b023861cc4.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-cloud-repeat/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948413/schedsnap/wallpapers/scenic/chikawa-cloud-repeat/mobile-ff2af02960d4e27e.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-sprinkle-friends/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948436/schedsnap/wallpapers/scenic/chikawa-sprinkle-friends/tablet-cb12eb9c1b714aae.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-cloud-repeat/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948411/schedsnap/wallpapers/scenic/chikawa-cloud-repeat/laptop-dd510c65da4d12f7.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-instant-friends/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948417/schedsnap/wallpapers/scenic/chikawa-instant-friends/mobile-57434a2716cf02e3.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-instant-friends/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948418/schedsnap/wallpapers/scenic/chikawa-instant-friends/tablet-c3a7f74198580e33.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-instant-friends/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948418/schedsnap/wallpapers/scenic/chikawa-instant-friends/laptop-3fdabc8cffc2bd0b.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-photo-album/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948425/schedsnap/wallpapers/scenic/chikawa-photo-album/mobile-31a592d91edb07d6.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-photo-album/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948429/schedsnap/wallpapers/scenic/chikawa-photo-album/tablet-3f274b5978d53c32.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-photo-album/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948422/schedsnap/wallpapers/scenic/chikawa-photo-album/laptop-616795e722eef695.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-blue-buddy-snap/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948412/schedsnap/wallpapers/scenic/chikawa-blue-buddy-snap/mobile-03768a65b89567e6.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-blue-buddy-snap/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948413/schedsnap/wallpapers/scenic/chikawa-blue-buddy-snap/tablet-3fef40684ae75591.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-blue-buddy-snap/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948412/schedsnap/wallpapers/scenic/chikawa-blue-buddy-snap/laptop-6c5aebbb06c72ed6.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-meadow-meetup/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948420/schedsnap/wallpapers/scenic/chikawa-meadow-meetup/mobile-5c2f78f7b9fa2735.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-meadow-meetup/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948420/schedsnap/wallpapers/scenic/chikawa-meadow-meetup/tablet-d9eb4e3db8c3281a.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-meadow-meetup/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948419/schedsnap/wallpapers/scenic/chikawa-meadow-meetup/laptop-52599f18ea645852.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-sage-picnic/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948434/schedsnap/wallpapers/scenic/chikawa-sage-picnic/mobile-61fe0eb335dae204.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-sage-picnic/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948435/schedsnap/wallpapers/scenic/chikawa-sage-picnic/tablet-59c7da509501dc3f.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-sage-picnic/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948432/schedsnap/wallpapers/scenic/chikawa-sage-picnic/laptop-fba54a6e894c1d82.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-daisy-day/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948416/schedsnap/wallpapers/scenic/chikawa-daisy-day/mobile-1b495441c72fb1c5.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-daisy-day/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948415/schedsnap/wallpapers/scenic/chikawa-daisy-day/tablet-b8a0c235a3b7e185.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-daisy-day/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948415/schedsnap/wallpapers/scenic/chikawa-daisy-day/laptop-50eafa0d7daddfee.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-pink-plush-parade/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948428/schedsnap/wallpapers/scenic/chikawa-pink-plush-parade/mobile-b960d75c424bda37.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-pink-plush-parade/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948427/schedsnap/wallpapers/scenic/chikawa-pink-plush-parade/tablet-ecc4f870594559b5.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-pink-plush-parade/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948427/schedsnap/wallpapers/scenic/chikawa-pink-plush-parade/laptop-d8af8c522f04aed8.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-pink-present-party/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948429/schedsnap/wallpapers/scenic/chikawa-pink-present-party/mobile-bf4eeeabd0f0c34a.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-pink-present-party/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948431/schedsnap/wallpapers/scenic/chikawa-pink-present-party/tablet-f0f2ecabcbaf30a7.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-pink-present-party/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948429/schedsnap/wallpapers/scenic/chikawa-pink-present-party/laptop-a6ce35d3a33a77ff.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-pink-starlight-friends/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948430/schedsnap/wallpapers/scenic/chikawa-pink-starlight-friends/mobile-d2ca9590724fa6f5.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-pink-starlight-friends/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948433/schedsnap/wallpapers/scenic/chikawa-pink-starlight-friends/tablet-32bc6045c136df6d.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-pink-starlight-friends/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791948431/schedsnap/wallpapers/scenic/chikawa-pink-starlight-friends/laptop-9947d82b197dae78.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}

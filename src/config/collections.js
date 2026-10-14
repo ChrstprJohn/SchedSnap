@@ -5,10 +5,11 @@ export const designCollections = [
   { id: 'scenic', name: 'Illustrated' },
   { id: 'sanrio', name: 'Sanrio' },
   { id: 'domo', name: 'Domo' },
-  { id: 'onepiece', name: 'Onepiece' },
+  { id: 'chikawa', name: 'Chiikawa' },
   { id: 'little-friends', name: 'Chiikawa inspired' },
   { id: 'chikawa', name: 'Chikawa' },
   { id: 'mascot', name: 'Mascots' },
+  { id: 'meep', name: 'Meep' },
   { id: 'pattern', name: 'Patterns & prints' },
 ];
 

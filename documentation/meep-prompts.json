@@ -1,0 +1,36 @@
+{
+  "provider": "built-in image_gen",
+  "createdAt": "2026-10-14T03:11:36.000Z",
+  "assets": [
+    {
+      "id": "meep-tongue",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133b2-fbf2-7071-8830-0bd2ac1e4851\\exec-13c69314-fed4-47e3-9d1d-2d4f757d7905.png",
+      "prompt": "Use case: background-extraction. Edit target: attached Meep expression reference. Reproduce this SAME single yellow Meep face as a faithful high-resolution transparent character cutout. Preserve original early internet emoticon illustration, softly squashed rounded yellow bean face, subtle butter cream to warm golden bottom gradient, thin muted outline, restrained old-style bevel/shading, small dark olive-brown features. Exact expression: tiny olive dot eyes, straight little smile with pink tongue poking out, tongue center groove. Keep original proportions, asymmetry and charming simple slightly imperfect soft edges. No body, limbs, extra accessories, photorealism, dramatic lighting, overly polished modern 3D makeover, text or frame. Remove ONLY white background; real transparent alpha, include entire silhouette and accessories with modest padding. The grey drop shadow may be very faint and compact; no large floor or white matte. Output one character only, 1024px square.",
+      "reference": "codex-clipboard-d46c00bf-c7c1-453d-b8ae-7228e1721f72.png"
+    },
+    {
+      "id": "meep-unsure",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133b2-fbf2-7071-8830-0bd2ac1e4851\\exec-28745e05-c708-4b23-a74e-491afef57b8a.png",
+      "prompt": "Use case: background-extraction. Edit target: attached Meep expression reference. Reproduce this SAME single yellow Meep face as a faithful high-resolution transparent character cutout. Preserve original early internet emoticon illustration, softly squashed rounded yellow bean face, subtle butter cream to warm golden bottom gradient, thin muted outline, restrained old-style bevel/shading, small dark olive-brown features. Exact expression: uneven dot eyes and the small curved doubtful sideways mouth on the right. Keep original proportions, asymmetry and charming simple slightly imperfect soft edges. No body, limbs, extra accessories, photorealism, dramatic lighting, overly polished modern 3D makeover, text or frame. Remove ONLY white background; real transparent alpha, include entire silhouette and accessories with modest padding. The grey drop shadow may be very faint and compact; no large floor or white matte. Output one character only, 1024px square.",
+      "reference": "codex-clipboard-460320cc-c1a5-4073-85af-36151a42c01c.png"
+    },
+    {
+      "id": "meep-sweat",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133b2-fbf2-7071-8830-0bd2ac1e4851\\exec-d41bd14b-03bf-443c-af03-6f7bb7454308.png",
+      "prompt": "Use case: background-extraction. Edit target: attached Meep expression reference. Reproduce this SAME single yellow Meep face as a faithful high-resolution transparent character cutout. Preserve original early internet emoticon illustration, softly squashed rounded yellow bean face, subtle butter cream to warm golden bottom gradient, thin muted outline, restrained old-style bevel/shading, small dark olive-brown features. Exact expression: sad lowered small dark eyes and large blue teardrop sweat at upper left. Keep original proportions, asymmetry and charming simple slightly imperfect soft edges. No body, limbs, extra accessories, photorealism, dramatic lighting, overly polished modern 3D makeover, text or frame. Remove ONLY white background; real transparent alpha, include entire silhouette and accessories with modest padding. The grey drop shadow may be very faint and compact; no large floor or white matte. Output one character only, 1024px square.",
+      "reference": "codex-clipboard-51a06a01-700a-496f-8ca3-69bce19d5cdd.png"
+    },
+    {
+      "id": "meep-angry",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133b2-fbf2-7071-8830-0bd2ac1e4851\\exec-ff0ec256-fd08-4468-931c-eac85dae12ad.png",
+      "prompt": "Use case: background-extraction. Edit target: attached Meep expression reference. Reproduce this SAME single yellow Meep face as a faithful high-resolution transparent character cutout. Preserve original early internet emoticon illustration, softly squashed rounded yellow bean face, subtle butter cream to warm golden bottom gradient, thin muted outline, restrained old-style bevel/shading, small dark olive-brown features. Exact expression: two narrow closed horizontal eyes, tiny upside-down mouth and black angular anger symbol at upper left. Keep original proportions, asymmetry and charming simple slightly imperfect soft edges. No body, limbs, extra accessories, photorealism, dramatic lighting, overly polished modern 3D makeover, text or frame. Remove ONLY white background; real transparent alpha, include entire silhouette and accessories with modest padding. The grey drop shadow may be very faint and compact; no large floor or white matte. Output one character only, 1024px square.",
+      "reference": "codex-clipboard-f90d5c68-c3da-4f52-8839-d77b60e49741.png"
+    },
+    {
+      "id": "meep-dizzy",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a133b2-fbf2-7071-8830-0bd2ac1e4851\\exec-f3310697-f3e6-4841-b653-3be57d0f8c0e.png",
+      "prompt": "Use case: background-extraction. Edit target: attached Meep expression reference. Reproduce this SAME single yellow Meep face as a faithful high-resolution transparent character cutout. Preserve original early internet emoticon illustration, softly squashed rounded yellow bean face, subtle butter cream to warm golden bottom gradient, thin muted outline, restrained old-style bevel/shading, small dark olive-brown features. Exact expression: two chunky angular spiral eyes with small curved smiling mouth. Keep original proportions, asymmetry and charming simple slightly imperfect soft edges. No body, limbs, extra accessories, photorealism, dramatic lighting, overly polished modern 3D makeover, text or frame. Remove ONLY white background; real transparent alpha, include entire silhouette and accessories with modest padding. The grey drop shadow may be very faint and compact; no large floor or white matte. Output one character only, 1024px square.",
+      "reference": "codex-clipboard-ef7b51d0-5ad2-4d17-bad0-3aaf8be13007.png"
+    }
+  ]
+}
