@@ -4,6 +4,8 @@ import { patternTemplates } from './patternTemplates.js';
 import { scenicTemplates } from './scenicTemplates.js';
 import { generatedMascotTemplates } from './generatedMascotTemplates.js';
 import { chikawaTemplates } from './chikawaTemplates.js';
+import { chikawaReferenceTemplates } from './chikawaReferenceTemplates.js';
+import { weBareBearsTemplates } from './weBareBearsTemplates.js';
 import { sanrioTemplates } from './sanrioTemplates.js';
 import { domoTemplates } from './domoTemplates.js';
 import { meepTemplates } from './meepTemplates.js';
@@ -15,10 +17,12 @@ export const tabletLandscapeResolution = { ...deviceResolutions.tablet, width: d
 // Artwork and palette presets contain no student or course information.
 // Legacy heading/rows values remain as preset metadata; Canvas uses one shared layout.
 export const wallpaperTemplates = [
+  ...weBareBearsTemplates,
   ...meepTemplates,
   ...domoTemplates,
   ...sanrioTemplates,
-  ...chikawaTemplates,
+  ...chikawaReferenceTemplates,
+  ...chikawaTemplates.filter(template => !chikawaReferenceTemplates.some(reviewed => reviewed.id === template.id)),
   ...generatedMascotTemplates,
   ...scenicTemplates,
   ...littleFriendsTemplates,

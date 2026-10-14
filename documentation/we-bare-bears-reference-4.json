@@ -1,0 +1,102 @@
+{
+  "collection": "We Bare Bears",
+  "reference": "user attachment 4: cream stationery frame, subtle tiny paw/heart/star doodles, small trio grouped near bottom",
+  "provider": "built-in image_gen",
+  "createdAt": "2026-10-14T03:13:42Z",
+  "resampling": "Lanczos to exact schedsnap-artwork dimensions; each device was generated as an independent composition at its native aspect ratio.",
+  "designs": [
+    {
+      "id": "wbb-stationery-frame",
+      "name": "Stationery Frame",
+      "concept": "Warm cream stationery page with a single thin wavy taupe border, tiny paw, heart and star doodles at the margins, and the recognizable We Bare Bears trio seated together at the lower right. Clean flat show-like 2D cartoon, large blank center.",
+      "assets": {
+        "mobile": {
+          "path": "public/wallpapers/scenic/wbb-stationery-frame/mobile.png",
+          "width": 1080,
+          "height": 2400,
+          "mode": "RGB",
+          "opaque": true,
+          "sha256": "835561eac7e96d4dccaa636923d74fc1fb3a6ee0fe6f1813b6ac818f785dcd0a"
+        },
+        "tablet": {
+          "path": "public/wallpapers/scenic/wbb-stationery-frame/tablet.png",
+          "width": 1600,
+          "height": 2560,
+          "mode": "RGB",
+          "opaque": true,
+          "sha256": "a821539e44ca1f46a52663b8dee64581226da056a92d24dc018f6b4823fbcc38"
+        },
+        "laptop": {
+          "path": "public/wallpapers/scenic/wbb-stationery-frame/laptop.png",
+          "width": 1920,
+          "height": 1080,
+          "mode": "RGB",
+          "opaque": true,
+          "sha256": "03f9c33965c16a4e0d98b16c515b29dbb340e9baff1673b54e7bec9e223ddfc4"
+        }
+      }
+    },
+    {
+      "id": "wbb-keepsake-frame",
+      "name": "Keepsake Double Frame",
+      "concept": "Cream letter-paper with a fine double taupe line frame, sparse tiny paw and blush heart marks, plus the recognizable Panda, warm-brown Grizzly, and stoic white Ice Bear in a compact full-body group at lower right. Crisp flat 2D cartoon with warm stationery feel.",
+      "assets": {
+        "mobile": {
+          "path": "public/wallpapers/scenic/wbb-keepsake-frame/mobile.png",
+          "width": 1080,
+          "height": 2400,
+          "mode": "RGB",
+          "opaque": true,
+          "sha256": "f4d6232a615db8f2019ce44b995fb98951efa77602e62f6034a6a28a3f7422ea"
+        },
+        "tablet": {
+          "path": "public/wallpapers/scenic/wbb-keepsake-frame/tablet.png",
+          "width": 1600,
+          "height": 2560,
+          "mode": "RGB",
+          "opaque": true,
+          "sha256": "96d1cf5ded00c18103b139659df23592ab7eaab6ef7d2bc01055be32aa675170"
+        },
+        "laptop": {
+          "path": "public/wallpapers/scenic/wbb-keepsake-frame/laptop.png",
+          "width": 1920,
+          "height": 1080,
+          "mode": "RGB",
+          "opaque": true,
+          "sha256": "253fff6956deeba4146cfa460c871d20c8fad2aee5ae811968dd6c566bb10359"
+        }
+      }
+    },
+    {
+      "id": "wbb-gentle-postcard",
+      "name": "Gentle Bear Postcard",
+      "concept": "Warm cream paper with a delicate hand-drawn taupe border and tiny sepia paw, star, and heart doodles in outer corners; small recognizable trio at lower right. Clean flat show-like 2D cartoon with subtle paper texture and broad blank center.",
+      "assets": {
+        "mobile": {
+          "path": "public/wallpapers/scenic/wbb-gentle-postcard/mobile.png",
+          "width": 1080,
+          "height": 2400,
+          "mode": "RGB",
+          "opaque": true,
+          "sha256": "7ad6f541b20005063cbcf3b9e0ffe8b0e077ad0f18fff87540a4661891ea84b8"
+        },
+        "tablet": {
+          "path": "public/wallpapers/scenic/wbb-gentle-postcard/tablet.png",
+          "width": 1600,
+          "height": 2560,
+          "mode": "RGB",
+          "opaque": true,
+          "sha256": "9c1a1f3452c727b374c8a477e6003c74ccf3aca3642c317dfa886017feef733e"
+        },
+        "laptop": {
+          "path": "public/wallpapers/scenic/wbb-gentle-postcard/laptop.png",
+          "width": 1920,
+          "height": 1080,
+          "mode": "RGB",
+          "opaque": true,
+          "sha256": "9078046220d6929bf7df1516988be3361c7d1957424cf4266b7d874b7d07a3eb"
+        }
+      }
+    }
+  ]
+}

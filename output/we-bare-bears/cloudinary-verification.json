@@ -1,0 +1,294 @@
+{
+  "checked": 36,
+  "ok": true,
+  "results": [
+    {
+      "path": "/wallpapers/scenic/wbb-dusk-book-club/laptop.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-dusk-book-club/mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-dusk-book-club/tablet.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-edge-peek-a/laptop.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-edge-peek-a/mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-edge-peek-a/tablet.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-edge-peek-b/laptop.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-edge-peek-b/mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-edge-peek-b/tablet.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-edge-peek-c/laptop.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-edge-peek-c/mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-edge-peek-c/tablet.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-gentle-postcard/laptop.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-gentle-postcard/mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-gentle-postcard/tablet.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-gouache-giggles/laptop.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-gouache-giggles/mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-gouache-giggles/tablet.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-keepsake-frame/laptop.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-keepsake-frame/mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-keepsake-frame/tablet.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-lavender-panels/laptop.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-lavender-panels/mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-lavender-panels/tablet.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-lavender-reader/laptop.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-lavender-reader/mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-lavender-reader/tablet.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-paper-pals/laptop.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-paper-pals/mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-paper-pals/tablet.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-pink-selfie-pop/laptop.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-pink-selfie-pop/mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-pink-selfie-pop/tablet.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-stationery-frame/laptop.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-stationery-frame/mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-stationery-frame/tablet.png",
+      "status": 200,
+      "contentType": "image/png",
+      "cors": "*",
+      "width": 1600,
+      "height": 2560
+    }
+  ]
+}
