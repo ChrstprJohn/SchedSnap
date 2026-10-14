@@ -96,7 +96,7 @@ components:
 
 # Design System: SchedSnap
 
-Back to top is a 48px slate icon button fixed at the right side near the vertical midpoint, below modal and notice layers. The optional post-download heart prompt sits inline below Save PNG again, using the established rose heart state and restrained dividers. Sort designs uses a labeled native select above the gallery with Featured and Most hearts options.
+Back to top is a 48px slate icon button fixed at the right side near the vertical midpoint, below modal and notice layers, only on Choose a design. The optional post-download heart prompt sits inline below Save PNG again, using the established rose heart state and restrained dividers. The gallery sorts by most hearts then newest automatically. One Chiikawa filter covers both collections. Device dropdown options use 14px text, 44px minimum height, and a 176px minimum menu width.
 
 ## Overview
 

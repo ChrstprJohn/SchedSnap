@@ -423,8 +423,8 @@
 .device-picker .device-picker-chevron { transition: transform 160ms ease; }
 .device-picker[open] .device-picker-chevron { transform: rotate(180deg); }
 .device-picker summary:focus-visible { outline: 2px solid var(--color-ink); outline-offset: 2px; }
-.device-picker-menu { position: absolute; z-index: 20; top: calc(100% + 6px); left: 0; display: grid; min-width: 140px; padding: 4px; border: 1px solid var(--color-line); border-radius: 12px; background: var(--color-paper); box-shadow: 0 4px 12px rgb(15 23 42 / 8%); }
-.device-picker-menu button { display: flex; align-items: center; gap: 8px; min-height: 32px; padding: 5px 8px; border: 0; border-radius: 8px; background: transparent; color: var(--color-muted); font: inherit; font-size: 0.75rem; font-weight: 600; text-align: left; cursor: pointer; }
+.device-picker-menu { position: absolute; z-index: 20; top: calc(100% + 6px); left: 0; display: grid; min-width: 176px; padding: 6px; border: 1px solid var(--color-line); border-radius: 12px; background: var(--color-paper); box-shadow: 0 4px 12px rgb(15 23 42 / 8%); }
+.device-picker-menu button { display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 10px 12px; border: 0; border-radius: 8px; background: transparent; color: var(--color-muted); font: inherit; font-size: 0.875rem; font-weight: 600; text-align: left; cursor: pointer; }
 .device-picker-menu button:hover, .device-picker-menu button[aria-pressed="true"] { background: var(--color-soft); color: var(--color-ink); }
 .device-picker-menu button:focus-visible { outline: 2px solid var(--color-ink); outline-offset: -2px; }
 .device-picker-menu button > svg { width: 16px; height: 16px; flex: 0 0 auto; }
@@ -486,8 +486,6 @@
 .template-heart:hover:not(:disabled) { background: #fff1f2; color: #be123c; }
 .template-heart[aria-pressed='true'] { color: #be123c; }
 .gallery-like-error { display: flex; align-items: center; gap: .75rem; margin-bottom: 1rem; color: #783c2e; font-size: .875rem; }
-.gallery-sort { display: flex; align-items: center; justify-content: flex-end; gap: 12px; margin: 0 0 20px; font-size: .875rem; color: var(--color-muted); }
-.gallery-sort select { min-height: 44px; max-width: 100%; border: 1px solid var(--color-line); border-radius: 8px; padding: 8px 32px 8px 12px; background: var(--color-paper); color: var(--color-ink); }
 .download-heart-prompt { margin-top: 24px; padding-block: 20px; border-block: 1px solid var(--color-line); }
 .download-heart-prompt h3 { font-size: 16px; font-weight: 600; }
 .download-heart-prompt p { margin-top: 4px; font-size: 14px; color: var(--color-muted); }
