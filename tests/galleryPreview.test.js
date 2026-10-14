@@ -1,7 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { deviceResolutions, templateSchedule, wallpaperTemplates } from '../src/assets/templates.js';
-import { onepieceReferenceTemplates } from '../src/assets/onepieceReferenceTemplates.js';
 import { drawWallpaper } from '../src/utils/canvasHelpers.js';
 import { customizeWallpaperTemplate, galleryPreviewTemplate } from '../src/utils/wallpaperTheme.js';
 
@@ -23,10 +22,10 @@ test('all gallery phone samples share the same schedule bounds despite preset ma
 });
 
 test('portrait tablet samples align while explicit user placement remains available', () => {
-  const original = onepieceReferenceTemplates.find(template => template.id === 'op-zoro-emerald');
+  const original = wallpaperTemplates.find(template => template.collection === 'chikawa');
   const originalCopy = structuredClone(original);
   const expected = render(customizeWallpaperTemplate(galleryPreviewTemplate(original), {}, 'tablet'), deviceResolutions.tablet).scheduleBounds;
-  for (const template of onepieceReferenceTemplates) {
+  for (const template of wallpaperTemplates.filter(template => template.collection === 'chikawa')) {
     assert.deepEqual(render(customizeWallpaperTemplate(galleryPreviewTemplate(template), {}, 'tablet'), deviceResolutions.tablet).scheduleBounds, expected, template.id);
   }
   const moved = customizeWallpaperTemplate(galleryPreviewTemplate(original), { verticalPosition: 50 }, 'mobile');

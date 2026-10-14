@@ -1,0 +1,135 @@
+{
+  "collection": "Chikawa Meadow",
+  "referenceImage": 3,
+  "references": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "palette": [
+    "#C8DEA9",
+    "warm brown ink",
+    "ivory",
+    "pale aqua",
+    "butter cream"
+  ],
+  "sourceReference": "User-attached reference image 3: soft green meadow; sparse little clovers/grass; three friends grouped at the lower edge.",
+  "scheduleSafeArea": "Upper ~72% of portrait composition left mostly open, with sparse low-contrast field motifs.",
+  "outputDimensions": {
+    "mobile": "1080x2400",
+    "tablet": "1600x2560",
+    "laptop": "1920x1080"
+  },
+  "assets": [
+    {
+      "id": "chikawa-meadow-meetup",
+      "name": "Meadow Meetup",
+      "description": "Three original small round friends gather in a soft celadon meadow after play.",
+      "prompt": "Reference 3 inspires pale sage meadow, scattered tiny clovers/grass and low group. Characters are Chiikawa (round white, tiny rounded ears, dot eyes, w mouth, cheek hatches), Hachiware (white cat, powder-blue cap marking, whiskers, cheek hatches), and Usagi (cream bunny, long upright ears with pink interiors); recognizable identities, lower gathering, spacious widget-safe meadow.",
+      "palette": "#C8DEA9",
+      "provider": "built-in image_gen",
+      "correctedAt": "2026-10-14T03:22:56.592Z",
+      "likenessEdit": "Precise-object-edit: add two short dark side whisker strokes to EACH Hachiware cheek only, preserve Chiikawa and Usagi unchanged, preserve picnic/meadow composition and palette.",
+      "visualInspection": "All three corrected outputs individually inspected: Hachiware blue pointed ears and blue cap, two visible horizontal side whiskers per cheek separate from pink blush hatch marks. Chiikawa round ears and Usagi long pink-lined ears unchanged. RGB opaque PNGs normalized to exact device dimensions.",
+      "sourceOutputs": [
+        "exec-01e4e4c2-3ea4-4358-a0b1-b8d8f4bab196.png",
+        "exec-5d7e73a3-bcdb-4c56-985b-f1eea9b4a452.png",
+        "exec-febea821-adef-4bab-bb61-c7e976ca37a5.png"
+      ]
+    },
+    {
+      "id": "chikawa-sage-picnic",
+      "name": "Sage Picnic",
+      "description": "Three friends share berries and a tiny gingham picnic on a pale sage field.",
+      "prompt": "Reference 3 inspires soft green meadow. Chiikawa (round white, tiny ears, dot eyes, w mouth, pink cheek hatches), Hachiware (white cat, clear powder-blue split head cap, whiskers and cheek hatches), and Usagi (cream-yellow bunny, long upright pink-lined ears) share a small gingham picnic; distinct character features, open upper widget area.",
+      "palette": "#C8DEA9",
+      "provider": "built-in image_gen",
+      "correctedAt": "2026-10-14T03:22:56.593Z",
+      "likenessEdit": "Precise-object-edit: add two short dark side whisker strokes to EACH Hachiware cheek only, preserve Chiikawa and Usagi unchanged, preserve picnic/meadow composition and palette.",
+      "visualInspection": "All three corrected outputs individually inspected: Hachiware blue pointed ears and blue cap, two visible horizontal side whiskers per cheek separate from pink blush hatch marks. Chiikawa round ears and Usagi long pink-lined ears unchanged. RGB opaque PNGs normalized to exact device dimensions.",
+      "sourceOutputs": [
+        "exec-3849ef92-e833-4fb6-89ed-b6a75c166080.png",
+        "exec-2abcda25-7391-4444-af26-1a4d288568b6.png",
+        "exec-3430d37e-44c7-4451-8c16-7b6124590bac.png"
+      ]
+    },
+    {
+      "id": "chikawa-daisy-day",
+      "name": "Daisy Day",
+      "description": "Three friends admire oversized white daisies at the bottom of a spacious spring meadow.",
+      "prompt": "Generate an opaque full bleed 1080 x 2400 portrait mobile Chiikawa daisy meadow wallpaper. References are character likeness authority: image 1 meadow and trio, image 2 Hachiware faces. Cute flat pen illustration with light paper softness. Pale sage green meadow, sparse tiny white daisies and grass marks. Upper 70 percent calm spacious faint green with sparse flowers for timetable. At bottom three SMALL faithful canonical Chiikawa characters among a border of daisies, complete ears and bodies visible: Chiikawa white smoothly round body with TWO ROUND ears (not fluffy/scalloped), black simple eyes, tiny w mouth, pink hatched cheeks; Hachiware WHITE CAT with TWO POINTED BLUE ears joined to broad BLUE cap patch on head, WHITE forehead/face, exactly short black side WHISKERS; Usagi pale yellow rabbit with TWO LONG UPRIGHT ears and pink inner ears, pink cheek hatches. Match actual character design in attached reference exactly. Friendly simple expressions, no generic kawaii animals, no teal tuft, no sheep, no fur scallops, no huge sparkling eyes. Trio occupies bottom 25 percent and stays within margins. No text, logo, UI, schedule, device frame, badge, watermark. Independent narrow mobile composition, trio grouped compactly at bottom. Hachiware must have two visible short black whisker strokes on EACH cheek extending sideways, like the second reference. No flower wreath anywhere. Do not hide the blue cap or ears.",
+      "palette": "#C8DEA9",
+      "devicePrompts": {
+        "mobile": "Generate an opaque full bleed 1080 x 2400 portrait mobile Chiikawa daisy meadow wallpaper. References are character likeness authority: image 1 meadow and trio, image 2 Hachiware faces. Cute flat pen illustration with light paper softness. Pale sage green meadow, sparse tiny white daisies and grass marks. Upper 70 percent calm spacious faint green with sparse flowers for timetable. At bottom three SMALL faithful canonical Chiikawa characters among a border of daisies, complete ears and bodies visible: Chiikawa white smoothly round body with TWO ROUND ears (not fluffy/scalloped), black simple eyes, tiny w mouth, pink hatched cheeks; Hachiware WHITE CAT with TWO POINTED BLUE ears joined to broad BLUE cap patch on head, WHITE forehead/face, exactly short black side WHISKERS; Usagi pale yellow rabbit with TWO LONG UPRIGHT ears and pink inner ears, pink cheek hatches. Match actual character design in attached reference exactly. Friendly simple expressions, no generic kawaii animals, no teal tuft, no sheep, no fur scallops, no huge sparkling eyes. Trio occupies bottom 25 percent and stays within margins. No text, logo, UI, schedule, device frame, badge, watermark. Independent narrow mobile composition, trio grouped compactly at bottom. Hachiware must have two visible short black whisker strokes on EACH cheek extending sideways, like the second reference. No flower wreath anywhere. Do not hide the blue cap or ears.",
+        "tablet": "Generate an opaque full bleed 1600 x 2560 portrait tablet Chiikawa daisy meadow wallpaper. References are character likeness authority: image 1 meadow and trio, image 2 Hachiware faces. Cute flat pen illustration with light paper softness. Pale sage green meadow, sparse tiny white daisies and grass marks. Upper 70 percent calm spacious faint green with sparse flowers for timetable. At bottom three SMALL faithful canonical Chiikawa characters among a border of daisies, complete ears and bodies visible: Chiikawa white smoothly round body with TWO ROUND ears (not fluffy/scalloped), black simple eyes, tiny w mouth, pink hatched cheeks; Hachiware WHITE CAT with TWO POINTED BLUE ears joined to broad BLUE cap patch on head, WHITE forehead/face, exactly short black side WHISKERS; Usagi pale yellow rabbit with TWO LONG UPRIGHT ears and pink inner ears, pink cheek hatches. Match actual character design in attached reference exactly. Friendly simple expressions, no generic kawaii animals, no teal tuft, no sheep, no fur scallops, no huge sparkling eyes. Trio occupies bottom 25 percent and stays within margins. No text, logo, UI, schedule, device frame, badge, watermark. Independent tablet composition with wider trio spacing. Hachiware must have two visible short black whisker strokes on EACH cheek extending sideways, like the second reference. No flower wreath hiding the blue cap or ears.",
+        "laptop": "Generate an opaque full bleed 1920 x 1080 landscape desktop Chiikawa daisy meadow wallpaper. References are character likeness authority: image 1 meadow and trio, image 2 Hachiware faces. Cute flat pen illustration with light paper softness. Pale sage green meadow, sparse tiny white daisies and grass marks. Upper 60 percent calm spacious faint green with sparse flowers for timetable. At bottom three SMALL faithful canonical Chiikawa characters among a border of daisies, complete ears and bodies visible: Chiikawa white smoothly round body with TWO ROUND ears (not fluffy/scalloped), black simple eyes, tiny w mouth, pink hatched cheeks; Hachiware WHITE CAT with TWO POINTED BLUE ears joined to broad BLUE cap patch on head, WHITE forehead/face, exactly short black side WHISKERS; Usagi pale yellow rabbit with TWO LONG UPRIGHT ears and pink inner ears, pink cheek hatches. Match actual character design in attached reference exactly. Friendly simple expressions, no generic kawaii animals, no teal tuft, no sheep, no fur scallops, no huge sparkling eyes. Trio occupies bottom 35 percent and stays within margins. No text, logo, UI, schedule, device frame, badge, watermark. Independent WIDE landscape composition, trio clustered along bottom right, delicate daisies along entire bottom edge, quiet upper left for timetable. Hachiware must have two visible short black whisker strokes on EACH cheek extending sideways, like the second reference. No flower wreath hiding the blue cap or ears."
+      },
+      "provider": "built-in image_gen",
+      "correctedAt": "2026-10-14T03:10:57.714Z",
+      "visualInspection": "All three new outputs inspected individually: round white Chiikawa ears and smooth outline, blue pointed Hachiware ears/cap with visible side whiskers, yellow Usagi with long upright pink inner ears. Independent three compositions; RGB opaque PNGs normalized to exact device dimensions.",
+      "sourceOutputs": [
+        "exec-b9ded901-f2d4-4582-a252-468b0a79c2e5.png",
+        "exec-f6df9c50-ce13-42a2-9389-9c5f76fb20b2.png",
+        "exec-4af66680-7824-404c-bc7d-5678e1920ba3.png"
+      ]
+    }
+  ],
+  "generationOutcomes": "Each design has a separately composed mobile master, a separately generated tablet composition, and a separately generated landscape laptop composition. Laptop art was further revised using its mobile master as the character-identity reference to make the trio more recognizable; it was then normalized to 1920x1080. Tablet and laptop were not derived by cropping the mobile art. All 9 output dimensions were verified. Mobile compositions retain the generated trio with Chiikawa’s round white form and tiny face, Hachiware’s blue cap marking, and Usagi’s long pink-lined ears. Tablet and revised laptop prompts explicitly specify those identity features.",
+  "files": [
+    {
+      "id": "chikawa-meadow-meetup",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/chikawa-meadow-meetup/mobile.png",
+      "dimensions": "1080x2400"
+    },
+    {
+      "id": "chikawa-meadow-meetup",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/chikawa-meadow-meetup/tablet.png",
+      "dimensions": "1600x2560"
+    },
+    {
+      "id": "chikawa-meadow-meetup",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/chikawa-meadow-meetup/laptop.png",
+      "dimensions": "1920x1080"
+    },
+    {
+      "id": "chikawa-sage-picnic",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/chikawa-sage-picnic/mobile.png",
+      "dimensions": "1080x2400"
+    },
+    {
+      "id": "chikawa-sage-picnic",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/chikawa-sage-picnic/tablet.png",
+      "dimensions": "1600x2560"
+    },
+    {
+      "id": "chikawa-sage-picnic",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/chikawa-sage-picnic/laptop.png",
+      "dimensions": "1920x1080"
+    },
+    {
+      "id": "chikawa-daisy-day",
+      "device": "mobile",
+      "path": "/wallpapers/scenic/chikawa-daisy-day/mobile.png",
+      "dimensions": "1080x2400"
+    },
+    {
+      "id": "chikawa-daisy-day",
+      "device": "tablet",
+      "path": "/wallpapers/scenic/chikawa-daisy-day/tablet.png",
+      "dimensions": "1600x2560"
+    },
+    {
+      "id": "chikawa-daisy-day",
+      "device": "laptop",
+      "path": "/wallpapers/scenic/chikawa-daisy-day/laptop.png",
+      "dimensions": "1920x1080"
+    }
+  ]
+}
