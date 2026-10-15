@@ -1,0 +1,1265 @@
+{
+  "backend": "Native Canvas with project font; non-hundred CSS weights approximated for QA",
+  "renders": [
+    {
+      "id": "genshin-raiden-tea",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-raiden-tea-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 480,
+        "width": 924,
+        "height": 914
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-raiden-tea",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-raiden-tea-mobile-dense.png",
+      "overflow": true,
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-raiden-tea",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-raiden-tea-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 278.8574859287056,
+        "y": 675.84,
+        "width": 1362.2850281425888,
+        "height": 979.0054784240148
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-raiden-tea",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-raiden-tea-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 591.7728456418386,
+        "y": 675.84,
+        "width": 736.454308716323,
+        "height": 1167.3599999999997
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-raiden-tea",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-raiden-tea-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 222.62400000000002,
+        "width": 989.5131428571428,
+        "height": 634.752
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-raiden-tea",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-raiden-tea-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 65.82514285714291,
+        "width": 989.5131428571428,
+        "height": 948.3497142857142
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-raiden-bloom",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-raiden-bloom-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 480,
+        "width": 924,
+        "height": 914
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-raiden-bloom",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-raiden-bloom-mobile-dense.png",
+      "overflow": true,
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-raiden-bloom",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-raiden-bloom-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 278.8574859287056,
+        "y": 675.84,
+        "width": 1362.2850281425888,
+        "height": 979.0054784240148
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-raiden-bloom",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-raiden-bloom-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 591.7728456418386,
+        "y": 675.84,
+        "width": 736.454308716323,
+        "height": 1167.3599999999997
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-raiden-bloom",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-raiden-bloom-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 222.62400000000002,
+        "width": 989.5131428571428,
+        "height": 634.752
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-raiden-bloom",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-raiden-bloom-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 65.82514285714291,
+        "width": 989.5131428571428,
+        "height": 948.3497142857142
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-raiden-moon",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-raiden-moon-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 480,
+        "width": 924,
+        "height": 914
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-raiden-moon",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-raiden-moon-mobile-dense.png",
+      "overflow": true,
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-raiden-moon",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-raiden-moon-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 278.8574859287056,
+        "y": 675.84,
+        "width": 1362.2850281425888,
+        "height": 979.0054784240148
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-raiden-moon",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-raiden-moon-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 591.7728456418386,
+        "y": 675.84,
+        "width": 736.454308716323,
+        "height": 1167.3599999999997
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-raiden-moon",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-raiden-moon-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 222.62400000000002,
+        "width": 989.5131428571428,
+        "height": 634.752
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-raiden-moon",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-raiden-moon-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 65.82514285714291,
+        "width": 989.5131428571428,
+        "height": 948.3497142857142
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-furina-tea",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-furina-tea-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 480,
+        "width": 924,
+        "height": 914
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-furina-tea",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-furina-tea-mobile-dense.png",
+      "overflow": true,
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-furina-tea",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-furina-tea-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 278.8574859287056,
+        "y": 675.84,
+        "width": 1362.2850281425888,
+        "height": 979.0054784240148
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-furina-tea",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-furina-tea-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 591.7728456418386,
+        "y": 675.84,
+        "width": 736.454308716323,
+        "height": 1167.3599999999997
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-furina-tea",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-furina-tea-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 222.62400000000002,
+        "width": 989.5131428571428,
+        "height": 634.752
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-furina-tea",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-furina-tea-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 65.82514285714291,
+        "width": 989.5131428571428,
+        "height": 948.3497142857142
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-furina-bubble",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-furina-bubble-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 480,
+        "width": 924,
+        "height": 914
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-furina-bubble",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-furina-bubble-mobile-dense.png",
+      "overflow": true,
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-furina-bubble",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-furina-bubble-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 278.8574859287056,
+        "y": 675.84,
+        "width": 1362.2850281425888,
+        "height": 979.0054784240148
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-furina-bubble",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-furina-bubble-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 591.7728456418386,
+        "y": 675.84,
+        "width": 736.454308716323,
+        "height": 1167.3599999999997
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-furina-bubble",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-furina-bubble-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 222.62400000000002,
+        "width": 989.5131428571428,
+        "height": 634.752
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-furina-bubble",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-furina-bubble-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 65.82514285714291,
+        "width": 989.5131428571428,
+        "height": 948.3497142857142
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-furina-ribbon",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-furina-ribbon-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 480,
+        "width": 924,
+        "height": 914
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-furina-ribbon",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-furina-ribbon-mobile-dense.png",
+      "overflow": true,
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-furina-ribbon",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-furina-ribbon-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 278.8574859287056,
+        "y": 675.84,
+        "width": 1362.2850281425888,
+        "height": 979.0054784240148
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-furina-ribbon",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-furina-ribbon-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 591.7728456418386,
+        "y": 675.84,
+        "width": 736.454308716323,
+        "height": 1167.3599999999997
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-furina-ribbon",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-furina-ribbon-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 222.62400000000002,
+        "width": 989.5131428571428,
+        "height": 634.752
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-furina-ribbon",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-furina-ribbon-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 65.82514285714291,
+        "width": 989.5131428571428,
+        "height": 948.3497142857142
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-nahida-leaf",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-nahida-leaf-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 480,
+        "width": 924,
+        "height": 914
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-nahida-leaf",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-nahida-leaf-mobile-dense.png",
+      "overflow": true,
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-nahida-leaf",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-nahida-leaf-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 278.8574859287056,
+        "y": 675.84,
+        "width": 1362.2850281425888,
+        "height": 979.0054784240148
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-nahida-leaf",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-nahida-leaf-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 591.7728456418386,
+        "y": 675.84,
+        "width": 736.454308716323,
+        "height": 1167.3599999999997
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-nahida-leaf",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-nahida-leaf-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 222.62400000000002,
+        "width": 989.5131428571428,
+        "height": 634.752
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-nahida-leaf",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-nahida-leaf-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 65.82514285714291,
+        "width": 989.5131428571428,
+        "height": 948.3497142857142
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-nahida-clover",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-nahida-clover-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 480,
+        "width": 924,
+        "height": 914
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-nahida-clover",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-nahida-clover-mobile-dense.png",
+      "overflow": true,
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-nahida-clover",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-nahida-clover-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 278.8574859287056,
+        "y": 675.84,
+        "width": 1362.2850281425888,
+        "height": 979.0054784240148
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-nahida-clover",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-nahida-clover-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 591.7728456418386,
+        "y": 675.84,
+        "width": 736.454308716323,
+        "height": 1167.3599999999997
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-nahida-clover",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-nahida-clover-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 222.62400000000002,
+        "width": 989.5131428571428,
+        "height": 634.752
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-nahida-clover",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-nahida-clover-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 65.82514285714291,
+        "width": 989.5131428571428,
+        "height": 948.3497142857142
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-nahida-dream",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-nahida-dream-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 480,
+        "width": 924,
+        "height": 914
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-nahida-dream",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-nahida-dream-mobile-dense.png",
+      "overflow": true,
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-nahida-dream",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-nahida-dream-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 278.8574859287056,
+        "y": 675.84,
+        "width": 1362.2850281425888,
+        "height": 979.0054784240148
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-nahida-dream",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-nahida-dream-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 591.7728456418386,
+        "y": 675.84,
+        "width": 736.454308716323,
+        "height": 1167.3599999999997
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-nahida-dream",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-nahida-dream-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 222.62400000000002,
+        "width": 989.5131428571428,
+        "height": 634.752
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-nahida-dream",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-nahida-dream-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 65.82514285714291,
+        "width": 989.5131428571428,
+        "height": 948.3497142857142
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-columbina-moon",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-columbina-moon-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 480,
+        "width": 924,
+        "height": 914
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-columbina-moon",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-columbina-moon-mobile-dense.png",
+      "overflow": true,
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-columbina-moon",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-columbina-moon-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 278.8574859287056,
+        "y": 675.84,
+        "width": 1362.2850281425888,
+        "height": 979.0054784240148
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-columbina-moon",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-columbina-moon-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 591.7728456418386,
+        "y": 675.84,
+        "width": 736.454308716323,
+        "height": 1167.3599999999997
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-columbina-moon",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-columbina-moon-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 222.62400000000002,
+        "width": 989.5131428571428,
+        "height": 634.752
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-columbina-moon",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-columbina-moon-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 65.82514285714291,
+        "width": 989.5131428571428,
+        "height": 948.3497142857142
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-zhongli-tea",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-zhongli-tea-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 480,
+        "width": 924,
+        "height": 914
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-zhongli-tea",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-zhongli-tea-mobile-dense.png",
+      "overflow": true,
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-zhongli-tea",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-zhongli-tea-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 278.8574859287056,
+        "y": 675.84,
+        "width": 1362.2850281425888,
+        "height": 979.0054784240148
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-zhongli-tea",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-zhongli-tea-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 591.7728456418386,
+        "y": 675.84,
+        "width": 736.454308716323,
+        "height": 1167.3599999999997
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-zhongli-tea",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-zhongli-tea-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 222.62400000000002,
+        "width": 989.5131428571428,
+        "height": 634.752
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-zhongli-tea",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-zhongli-tea-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 65.82514285714291,
+        "width": 989.5131428571428,
+        "height": 948.3497142857142
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-neuvillette-tide",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-neuvillette-tide-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 480,
+        "width": 924,
+        "height": 914
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-neuvillette-tide",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-neuvillette-tide-mobile-dense.png",
+      "overflow": true,
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-neuvillette-tide",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-neuvillette-tide-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 278.8574859287056,
+        "y": 675.84,
+        "width": 1362.2850281425888,
+        "height": 979.0054784240148
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-neuvillette-tide",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-neuvillette-tide-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 591.7728456418386,
+        "y": 675.84,
+        "width": 736.454308716323,
+        "height": 1167.3599999999997
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-neuvillette-tide",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-neuvillette-tide-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 222.62400000000002,
+        "width": 989.5131428571428,
+        "height": 634.752
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-neuvillette-tide",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-neuvillette-tide-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 65.82514285714291,
+        "width": 989.5131428571428,
+        "height": 948.3497142857142
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-arlecchino-ember",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-arlecchino-ember-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 480,
+        "width": 924,
+        "height": 914
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-arlecchino-ember",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-arlecchino-ember-mobile-dense.png",
+      "overflow": true,
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-arlecchino-ember",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-arlecchino-ember-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 278.8574859287056,
+        "y": 675.84,
+        "width": 1362.2850281425888,
+        "height": 979.0054784240148
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-arlecchino-ember",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-arlecchino-ember-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 591.7728456418386,
+        "y": 675.84,
+        "width": 736.454308716323,
+        "height": 1167.3599999999997
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-arlecchino-ember",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-arlecchino-ember-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 222.62400000000002,
+        "width": 989.5131428571428,
+        "height": 634.752
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-arlecchino-ember",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-arlecchino-ember-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 65.82514285714291,
+        "width": 989.5131428571428,
+        "height": 948.3497142857142
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-flins-lantern",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-flins-lantern-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 480,
+        "width": 924,
+        "height": 914
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-flins-lantern",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-flins-lantern-mobile-dense.png",
+      "overflow": true,
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-flins-lantern",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-flins-lantern-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 278.8574859287056,
+        "y": 675.84,
+        "width": 1362.2850281425888,
+        "height": 979.0054784240148
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-flins-lantern",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-flins-lantern-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 591.7728456418386,
+        "y": 675.84,
+        "width": 736.454308716323,
+        "height": 1167.3599999999997
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-flins-lantern",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin/qa/genshin-flins-lantern-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 222.62400000000002,
+        "width": 989.5131428571428,
+        "height": 634.752
+      },
+      "meetings": 5,
+      "headingHidden": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-flins-lantern",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin/qa/genshin-flins-lantern-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 65.82514285714291,
+        "width": 989.5131428571428,
+        "height": 948.3497142857142
+      },
+      "meetings": 15,
+      "headingHidden": true,
+      "sampleClockShown": false
+    }
+  ]
+}

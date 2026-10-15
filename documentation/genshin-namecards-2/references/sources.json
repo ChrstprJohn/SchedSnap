@@ -1,0 +1,38 @@
+[
+  {
+    "character": "hutao",
+    "element": "Pyro",
+    "source": "https://enka.network/ui/UI_NameCardPic_Hutao_P.png",
+    "localReference": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\hutao.png"
+  },
+  {
+    "character": "navia",
+    "element": "Geo",
+    "source": "https://enka.network/ui/UI_NameCardPic_Navia_P.png",
+    "localReference": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\navia.png"
+  },
+  {
+    "character": "varesa",
+    "element": "Electro",
+    "source": "https://enka.network/ui/UI_NameCardPic_Varesa_P.png",
+    "localReference": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\varesa.png"
+  },
+  {
+    "character": "citlali",
+    "element": "Cryo",
+    "source": "https://enka.network/ui/UI_NameCardPic_Citlali_P.png",
+    "localReference": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\citlali.png"
+  },
+  {
+    "character": "skirk",
+    "element": "Cryo",
+    "source": "https://enka.network/ui/UI_NameCardPic_SkirkNew_P.png",
+    "localReference": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\skirk.png"
+  },
+  {
+    "character": "zhongli",
+    "element": "Geo",
+    "source": "https://enka.network/ui/UI_NameCardPic_Zhongli_P.png",
+    "localReference": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\zhongli.png"
+  }
+]

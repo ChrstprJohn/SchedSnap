@@ -1,0 +1,149 @@
+{
+  "provider": "built-in image_gen",
+  "character": "Flins",
+  "id": "genshin-flins-lantern",
+  "officialUrl": "https://ys.mihoyo.com/main/news/detail/158468",
+  "officialImageUrl": "https://fastcdn.mihoyo.com/content-v2/hk4e/158468/4fab6ebe88f0b2c92404f5f08e08e3b2_3025216100020250131.jpg",
+  "reference": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin\\references\\flins.jpg",
+  "referenceRole": "Official character identity only; typography, circles, bars, logos and backdrop discarded.",
+  "sizing": "Three independently generated device compositions; exported with scripts/package-sanrio-image.py unchanged, LANCZOS dimension normalization without cropping.",
+  "assets": [
+    {
+      "device": "mobile",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-992f633d-5d63-4afb-9fbf-5e8fc68f9a7e.png",
+      "size": [
+        1080,
+        2400
+      ],
+      "prompt": "Edit ONLY composition/scale of this mobile wallpaper. Preserve precisely this adorable chibi Flins identity, clothing, lantern, texture, pale-blue background and no-text design. Shrink complete character AND lantern AND all small accents together to HALF their current size (50% linear dimensions). Place entire artwork group down at bottom-right with comfortable margin. Topmost hair tip at70% of canvas height, bottom boots at94%, right edge at92%; whole artgroup max24%canvasheight. Upper68% must be entirely empty pale-blue paper, no hair, wisp, diamond or arc there. Do not change illustration style, pose or create extra decorative elements. Same 9:20 portrait aspect ratio, full-bleed opaque image. NO text, logos, watermark, frame, UI, cards, schedule.",
+      "id": "genshin-flins-lantern",
+      "destination": "public/wallpapers/scenic/genshin-flins-lantern/mobile.png",
+      "references": [
+        "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin\\references\\flins.jpg"
+      ],
+      "generationPrompt": "Use case: stylized-concept. Create a NEW opaque full-bleed mobile wallpaper, portrait aspect ratio 9:20, target1080x2400. Official Flins reference image is CHARACTER IDENTITY ONLY; discard ALL typography, logos, bars, circles, background pattern. Draw exactly one cute hand-drawn anime CHIBI Flins from Genshin Impact, oversized round head, tiny body, calm sweet expression, large golden eyes, messy blue-black hair with pale cyan tips, dark high-collared navy/black tailored gothic coat with silver diamond fastenings and muted purple accents, black gloves, tiny boots. He stands holding a small blue-violet gothic lantern. Simplify clothing while preserving recognizable official identity. Delicate dark-blue outlines, soft flat colors, tiny watercolor pencil texture, professional adorable chibi illustration. Background uniform bright pale mist-blue/soft gray paper #eef3f5, faint fine paper grain only. Entire character plus lantern and ALL accents must fit only in bottom30%: top of hair no higher than70% of fullcanvas, feet at95%, small full body positioned near x72%. Upper68% completely quiet empty background, top22% completely blank for clock/date. No drawing may touch above68%height. At lower edges beside character only2tiny lantern-spark/diamond doodles, one fine pale-blue arc just beside feet, one small pale lavender wisp by lantern. Lots of clean empty space. No scenery, dark cemetery, architecture, large circles, border, frame, floor horizon, extra character, text, title, letters, Class Schedule, timetable, cards, UI, logos, watermark. Output standalone wallpaper artwork only.",
+      "correctionPrompt": "Edit ONLY composition/scale of this mobile wallpaper. Preserve precisely this adorable chibi Flins identity, clothing, lantern, texture, pale-blue background and no-text design. Shrink complete character AND lantern AND all small accents together to HALF their current size (50% linear dimensions). Place entire artwork group down at bottom-right with comfortable margin. Topmost hair tip at70% of canvas height, bottom boots at94%, right edge at92%; whole artgroup max24%canvasheight. Upper68% must be entirely empty pale-blue paper, no hair, wisp, diamond or arc there. Do not change illustration style, pose or create extra decorative elements. Same 9:20 portrait aspect ratio, full-bleed opaque image. NO text, logos, watermark, frame, UI, cards, schedule.",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-64be9571-9fd4-47b4-b76d-0b23879fcb69.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-992f633d-5d63-4afb-9fbf-5e8fc68f9a7e.png",
+      "inspection": {
+        "visuallyInspected": true,
+        "noText": true,
+        "noUI": true,
+        "noScenery": true,
+        "identityMatchesOfficial": true,
+        "unclipped": true,
+        "coherentStyleAcrossDevices": true,
+        "compositionSafe": true,
+        "notes": "First output oversized; one placement correction. Topmost hair approx62.7%y accepted by coordinator because renderer protects upper60%. Clock/date area fully blank."
+      },
+      "finalSize": [
+        1080,
+        2400
+      ],
+      "dimensionsValid": true,
+      "opaque": true,
+      "mode": "RGB",
+      "sourceSize": [
+        841,
+        1870
+      ],
+      "sha256": "397bfbebb56333281547a737ff944ae0ac29e93bd54168d313ad6741214d5d05",
+      "finalPath": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\public\\wallpapers\\scenic\\genshin-flins-lantern\\mobile.png",
+      "sources": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-64be9571-9fd4-47b4-b76d-0b23879fcb69.png",
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-992f633d-5d63-4afb-9fbf-5e8fc68f9a7e.png"
+      ]
+    },
+    {
+      "device": "tablet",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-e26113a8-157e-4b9b-8142-cdc8f4dcb859.png",
+      "size": [
+        1600,
+        2560
+      ],
+      "prompt": "Edit only the scale/placement of this5:8portraittablet wallpaper. Keep exactillustration of Flins,lantern,clothing andpalepaperstyle. Shrink complete character+lantern+ALLaccents to70%current linear size andtranslate down/right. Topmost hair tip at70%fullimageheight,bootsat94%,rightedge95%. Entire illustration group maximum24%canvasheight,all art below68%y. Upper68%brightmistbluepaperblank. Samepaperbackground,characteridentity,pose,outlines,colorpalette,noextraelements. Do notmagnifycharacter. Opaque fullbleed5:8portrait target1600x2560; no text,title,UI,cards,logos,watermark.",
+      "id": "genshin-flins-lantern",
+      "destination": "public/wallpapers/scenic/genshin-flins-lantern/tablet.png",
+      "references": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-992f633d-5d63-4afb-9fbf-5e8fc68f9a7e.png"
+      ],
+      "generationPrompt": "Use case: stylized-concept. Create a NEW independently composed opaque full-bleed wallpaper using the provided mobile artwork as visualSTYLE AND CHARACTER reference. Preserve exactly its hand-drawn anime chibi Flins: largehead tinybody, sweet calm expression, goldeneyes, blue-black messy hair pale cyan tips, dark navy/black highcollared gothic tailoredcoat, silver diamond fastenings,purpledetails, blackgloves, tinyboots,holding smallblue-violetlantern. SAME delicate blueoutlines and softwatercolorpaperillustration. SAME uniform bright pale mistblue/graypaperbackground, only2tiny diamond/spark doodles,onefine arcbyfeet,onesmall palelavenderwisp bylantern. No scenery, ornate darkcemetery,frame,circles,text,title,letters,Class Schedule,timetable,cards,UI,logos,watermark. Whole character intact and unclipped. Device tabletportrait,5:8aspectratio,1600x2560. Treat reference as appearance only; newcomposition with a SMALL character group. All artwork limited to bottom27%ofcanvas: topofhairat73%height,feet94%,charactercenteraroundx76%. Entirecharacter PLUS lantern anddoodles ONLY below70%canvasheight. Upper68%completely blankpaper,top22%blankclockarea. Character group maximum23%canvasheight, donot enlarge tofillimage.",
+      "correctionPrompt": "Edit only the scale/placement of this5:8portraittablet wallpaper. Keep exactillustration of Flins,lantern,clothing andpalepaperstyle. Shrink complete character+lantern+ALLaccents to70%current linear size andtranslate down/right. Topmost hair tip at70%fullimageheight,bootsat94%,rightedge95%. Entire illustration group maximum24%canvasheight,all art below68%y. Upper68%brightmistbluepaperblank. Samepaperbackground,characteridentity,pose,outlines,colorpalette,noextraelements. Do notmagnifycharacter. Opaque fullbleed5:8portrait target1600x2560; no text,title,UI,cards,logos,watermark.",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-cfa9e947-2145-423f-a9b7-461fa144b8e8.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-e26113a8-157e-4b9b-8142-cdc8f4dcb859.png",
+      "inspection": {
+        "visuallyInspected": true,
+        "noText": true,
+        "noUI": true,
+        "noScenery": true,
+        "identityMatchesOfficial": true,
+        "unclipped": true,
+        "coherentStyleAcrossDevices": true,
+        "compositionSafe": true,
+        "notes": "First output top at58.5%y; one placement correction. Selected topmost hair approx61.3%y, above protected boundary; upper60%blank."
+      },
+      "finalSize": [
+        1600,
+        2560
+      ],
+      "dimensionsValid": true,
+      "opaque": true,
+      "mode": "RGB",
+      "sourceSize": [
+        992,
+        1586
+      ],
+      "sha256": "b2d1742be552c6cf59fbec8498c798e78e96b396b18ca29e0bb3cf6016ffa2fe",
+      "finalPath": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\public\\wallpapers\\scenic\\genshin-flins-lantern\\tablet.png",
+      "sources": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-cfa9e947-2145-423f-a9b7-461fa144b8e8.png",
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-e26113a8-157e-4b9b-8142-cdc8f4dcb859.png"
+      ]
+    },
+    {
+      "device": "laptop",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-83b03c23-7729-4167-bb88-9353133c06ff.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "prompt": "Use case: stylized-concept. Create a NEW independently composed opaque full-bleed wallpaper using the provided mobile artwork as visualSTYLE AND CHARACTER reference. Preserve exactly its hand-drawn anime chibi Flins: largehead tinybody, sweet calm expression, goldeneyes, blue-black messy hair pale cyan tips, dark navy/black highcollared gothic tailoredcoat, silver diamond fastenings,purpledetails, blackgloves, tinyboots,holding smallblue-violetlantern. SAME delicate blueoutlines and softwatercolorpaperillustration. SAME uniform bright pale mistblue/graypaperbackground, only2tiny diamond/spark doodles,onefine arcbyfeet,onesmall palelavenderwisp bylantern. No scenery, ornate darkcemetery,frame,circles,text,title,letters,Class Schedule,timetable,cards,UI,logos,watermark. Whole character intact and unclipped. Device laptoplandscape,16:9aspectratio,1920x1080. All artwork must fitwithinrightmost28% ofcanvas: leftmostlantern,wisp,hair,coat,doodle atx72%orlater,rightedge94%,feety94%,hairtopat35%. Character aroundx84%,y68%. Left68%entirelyblankbrightpaper, noartthere. Maincharacterpluslantern only22%canvaswidth. DeliberatelyverylargeemptypapertoLEFT.",
+      "id": "genshin-flins-lantern",
+      "destination": "public/wallpapers/scenic/genshin-flins-lantern/laptop.png",
+      "references": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-992f633d-5d63-4afb-9fbf-5e8fc68f9a7e.png"
+      ],
+      "generationPrompt": "Use case: stylized-concept. Create a NEW independently composed opaque full-bleed wallpaper using the provided mobile artwork as visualSTYLE AND CHARACTER reference. Preserve exactly its hand-drawn anime chibi Flins: largehead tinybody, sweet calm expression, goldeneyes, blue-black messy hair pale cyan tips, dark navy/black highcollared gothic tailoredcoat, silver diamond fastenings,purpledetails, blackgloves, tinyboots,holding smallblue-violetlantern. SAME delicate blueoutlines and softwatercolorpaperillustration. SAME uniform bright pale mistblue/graypaperbackground, only2tiny diamond/spark doodles,onefine arcbyfeet,onesmall palelavenderwisp bylantern. No scenery, ornate darkcemetery,frame,circles,text,title,letters,Class Schedule,timetable,cards,UI,logos,watermark. Whole character intact and unclipped. Device laptoplandscape,16:9aspectratio,1920x1080. All artwork must fitwithinrightmost28% ofcanvas: leftmostlantern,wisp,hair,coat,doodle atx72%orlater,rightedge94%,feety94%,hairtopat35%. Character aroundx84%,y68%. Left68%entirelyblankbrightpaper, noartthere. Maincharacterpluslantern only22%canvaswidth. DeliberatelyverylargeemptypapertoLEFT.",
+      "correctionPrompt": null,
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-83b03c23-7729-4167-bb88-9353133c06ff.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-83b03c23-7729-4167-bb88-9353133c06ff.png",
+      "inspection": {
+        "visuallyInspected": true,
+        "noText": true,
+        "noUI": true,
+        "noScenery": true,
+        "identityMatchesOfficial": true,
+        "unclipped": true,
+        "coherentStyleAcrossDevices": true,
+        "compositionSafe": true,
+        "notes": "All art including wisp and arc begins approx69.4%x, clears left65% protected area."
+      },
+      "finalSize": [
+        1920,
+        1080
+      ],
+      "dimensionsValid": true,
+      "opaque": true,
+      "mode": "RGB",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sha256": "1218ace9683787e281fb56537898a81555cb6fbfd07b5c8231ad7de528540cf9",
+      "finalPath": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\public\\wallpapers\\scenic\\genshin-flins-lantern\\laptop.png",
+      "sources": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-83b03c23-7729-4167-bb88-9353133c06ff.png"
+      ]
+    }
+  ]
+}

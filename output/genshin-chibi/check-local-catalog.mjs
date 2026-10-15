@@ -1,0 +1,1 @@
+const r=await fetch('http://127.0.0.1:5173/api/catalog');if(!r.ok)throw Error('Catalog HTTP '+r.status);const c=await r.json();const t=c.templates.filter(t=>t.family==='chibi-namecards');if(t.length!==7)throw Error('Expected seven designs, got '+t.length);console.log('Local catalog verified: '+t.length+' Genshin chibi designs');console.log(t.map(t=>t.id).join('\n'));

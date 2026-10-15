@@ -1,0 +1,182 @@
+{
+  "provider": "built-in image_gen",
+  "character": "Nahida",
+  "reference": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-0dc1caa5-6319-4d06-8a50-064f61efbd29.png",
+  "referenceRole": "identity reference only; ornate background and all UI discarded",
+  "styles": [
+    {
+      "id": "genshin-nahida-leaf",
+      "style": "Soft flat chibi illustration, clean thin moss outlines, matte flat colors, only one restrained cel shadow. Nahida standing holding one small leaf, cheerful.",
+      "background": "uniform very pale sage #edf3e7",
+      "accents": "two tiny leaves"
+    },
+    {
+      "id": "genshin-nahida-clover",
+      "style": "Restrained watercolor chibi illustration with clean silhouette, delicate pigment only inside character, light wash and faint paper texture. Nahida seated holding one small clover, sweet smile.",
+      "background": "uniform warm ivory #f5f3e8",
+      "accents": "two tiny clover marks"
+    },
+    {
+      "id": "genshin-nahida-dream",
+      "style": "Minimal ink sticker chibi illustration, confident slightly thicker green contour, simplified clean color blocks, narrow cream sticker edge. Nahida sleepy hugging a tiny leaf cushion, closed eyes.",
+      "background": "uniform pale mint #eaf3ef",
+      "accents": "two tiny leaf marks"
+    }
+  ],
+  "sizing": "Independent device compositions; final PNG pixel dimensions normalized using scripts/package-sanrio-image.py without cropping. Original assets preserved.",
+  "assets": [
+    {
+      "id": "genshin-nahida-leaf",
+      "device": "mobile",
+      "key": "leaf-mobile",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-c7abe90b-e823-4c0a-9d07-15bc8eecb7e8.png",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-ae8ac5aa-58ca-40cb-a7c7-45b7d17da069.png",
+      "prompt": "Use case: stylized-concept. Create ONE opaque full bleed PNG wallpaper exactly 1080x2400 pixels. Soft flat chibi illustration, clean thin moss outlines, matte flat colors, only one restrained cel shadow. Nahida standing holding one small leaf, cheerful. Recognizable Genshin Impact Nahida: white hair with pale green tips in side ponytail, green eyes, pointed ears, green leaf hair ornament, white and green leaf-shaped dress. Reference image 1 is identity reference ONLY; completely discard its ornate background and all its UI. Background: uniform very pale sage #edf3e7. Portrait: ALL character and cushion artwork confined to bottom 24%, below y=1824. Entire top 76% empty uninterrupted background. Small full body chibi centered within footer, fully visible with bottom margin. Add only two tiny leaves, confined to footer or far right artwork zone. Clean simple collectible anime chibi, modest detail, no ornate scenery. EMPTY schedule space is crucial. No text, letters, numbers, schedule, timetable, cards, headings, UI, logos, mockup, watermark, borders, frames, flowers, vines, dangling ornaments, glow, gradients or dense texture. Do not depict any reference timetable.",
+      "width": 1080,
+      "height": 2400,
+      "correctionPrompt": "Edit this wallpaper to exact output size 1080x2400 pixels, opaque PNG. Preserve Nahida identity, pose and current pale sage background. Shrink the entire intact character illustration uniformly so ALL its pixels and little leaf accents fit within bottom 24% of canvas, y=1824 through2399, leaving small bottom margin. Top76% must be plain sage, entirely empty. No cropping or stretching. Keep chibi fully visible. No text, UI, cards, headings, watermark. Match softly flat illustration. This is specifically a size and placement correction.",
+      "destination": "public/wallpapers/scenic/genshin-nahida-leaf/mobile.png",
+      "nativeDimensions": [
+        841,
+        1870
+      ],
+      "visualInspection": "Recognizable intact Nahida; clean low contrast field; no text or UI; portraits footer composition, laptop right composition."
+    },
+    {
+      "id": "genshin-nahida-leaf",
+      "device": "tablet",
+      "key": "leaf-tablet",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-f7683c61-5147-4b71-bfb9-3b8420367a08.png",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-38aad4d4-dcca-4264-8223-05f3ad2bf272.png",
+      "prompt": "Use case: stylized-concept. Create ONE opaque full bleed PNG wallpaper exactly 1600x2560 pixels. Soft flat chibi illustration, clean thin moss outlines, matte flat colors, only one restrained cel shadow. Nahida standing holding one small leaf, cheerful. Recognizable Genshin Impact Nahida: white hair with pale green tips in side ponytail, green eyes, pointed ears, green leaf hair ornament, white and green leaf-shaped dress. Reference image 1 is identity reference ONLY; completely discard its ornate background and all its UI. Background: uniform very pale sage #edf3e7. Portrait tablet composition independently arranged: ALL character and cushion artwork confined to bottom 24%, below y=1945. Entire top 76% empty uninterrupted background. Small full body chibi lower right within footer with ample breathing room. Add only two tiny leaves, confined to footer or far right artwork zone. Clean simple collectible anime chibi, modest detail. EMPTY schedule space is crucial. No text, letters, numbers, schedule, timetable, cards, headings, UI, logos, mockup, watermark, borders, frames, flowers, vines, dangling ornaments, glow, gradients or dense texture. Do not depict any reference timetable.",
+      "width": 1600,
+      "height": 2560,
+      "correctionPrompt": "Edit composition only. Keep canvas aspect ratio, character identity, pose, rendering style, colors and plain background. Uniformly reduce complete intact character and accent group to 70% its current size. Position at bottom right with margin. Every illustration pixel must be BELOW 70% canvas height. Top70% completely empty background. No crop, no stretching, no text/UI/new objects.",
+      "destination": "public/wallpapers/scenic/genshin-nahida-leaf/tablet.png",
+      "nativeDimensions": [
+        992,
+        1586
+      ],
+      "visualInspection": "Recognizable intact Nahida; clean low contrast field; no text or UI; portraits footer composition, laptop right composition."
+    },
+    {
+      "id": "genshin-nahida-leaf",
+      "device": "laptop",
+      "key": "leaf-laptop",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-71dcbf94-037e-4b06-b908-eb19910fd412.png",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-0b28ca3d-83f5-4b9f-99c7-b8ab8e870fa1.png",
+      "prompt": "Use case: stylized-concept. Create ONE opaque full bleed PNG wallpaper exactly 1920x1080 pixels. Soft flat chibi illustration, clean thin moss outlines, matte flat colors, only one restrained cel shadow. Nahida standing holding one small leaf, cheerful. Recognizable Genshin Impact Nahida: white hair with pale green tips in side ponytail, green eyes, pointed ears, green leaf hair ornament, white and green leaf-shaped dress. Reference image 1 is identity reference ONLY; completely discard its ornate background and all its UI. Background: uniform very pale sage #edf3e7. Landscape independently composed: character entirely in rightmost 28% (x above1382), centered vertically, fully visible. Left 65% completely empty uninterrupted background. Add only two tiny leaves, confined to footer or far right artwork zone. Clean simple collectible anime chibi, modest detail. EMPTY schedule space is crucial. No text, letters, numbers, schedule, timetable, cards, headings, UI, logos, mockup, watermark, borders, frames, flowers, vines, dangling ornaments, glow, gradients or dense texture. Do not depict any reference timetable.",
+      "width": 1920,
+      "height": 1080,
+      "correctionPrompt": "Edit composition only. Keep exact original canvas aspect ratio, character identity, pose, rendering style, colors and plain background. Uniformly reduce the complete intact character and accent group to 65% of its current size. Position group at far right with margin. Absolutely every illustration pixel must be RIGHT OF 70% canvas width. Left70% completely empty background. No crop, no stretching, no text/UI/new objects.",
+      "destination": "public/wallpapers/scenic/genshin-nahida-leaf/laptop.png",
+      "nativeDimensions": [
+        1672,
+        941
+      ],
+      "visualInspection": "Recognizable intact Nahida; clean low contrast field; no text or UI; portraits footer composition, laptop right composition."
+    },
+    {
+      "id": "genshin-nahida-clover",
+      "device": "mobile",
+      "key": "clover-mobile",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-7d301b81-c528-4f3d-ab74-5a61a77b053d.png",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-7d301b81-c528-4f3d-ab74-5a61a77b053d.png",
+      "prompt": "Use case: stylized-concept. Create ONE opaque full bleed PNG wallpaper exactly 1080x2400 pixels. Restrained watercolor chibi illustration with clean silhouette, delicate pigment only inside character, light wash and faint paper texture. Nahida seated holding one small clover, sweet smile. Recognizable Genshin Impact Nahida: white hair with pale green tips in side ponytail, green eyes, pointed ears, green leaf hair ornament, white and green leaf-shaped dress. Reference image 1 is identity reference ONLY; completely discard its ornate background and all its UI. Background: uniform warm ivory #f5f3e8. Portrait: ALL character and cushion artwork confined to bottom 24%, below y=1824. Entire top 76% empty uninterrupted background. Small full body chibi centered within footer, fully visible with bottom margin. Add only two tiny clover marks, confined to footer or far right artwork zone. Clean simple collectible anime chibi, modest detail. EMPTY schedule space is crucial. No text, letters, numbers, schedule, timetable, cards, headings, UI, logos, mockup, watermark, borders, frames, flowers, vines, dangling ornaments, glow, gradients or dense texture. Do not depict any reference timetable.",
+      "width": 1080,
+      "height": 2400,
+      "correctionPrompt": null,
+      "destination": "public/wallpapers/scenic/genshin-nahida-clover/mobile.png",
+      "nativeDimensions": [
+        841,
+        1870
+      ],
+      "visualInspection": "Recognizable intact Nahida; clean low contrast field; no text or UI; portraits footer composition, laptop right composition."
+    },
+    {
+      "id": "genshin-nahida-clover",
+      "device": "tablet",
+      "key": "clover-tablet",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-e6b95eee-1aa0-4ba3-8bf0-2c0b2c07968c.png",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-816fafe6-6f70-4d91-9432-5ef22b21ca3c.png",
+      "prompt": "Use case: stylized-concept. Create ONE opaque full bleed PNG wallpaper exactly 1600x2560 pixels. Restrained watercolor chibi illustration with clean silhouette, delicate pigment only inside character, light wash and faint paper texture. Nahida seated holding one small clover, sweet smile. Recognizable Genshin Impact Nahida: white hair with pale green tips in side ponytail, green eyes, pointed ears, green leaf hair ornament, white and green leaf-shaped dress. Reference image 1 is identity reference ONLY; completely discard its ornate background and all its UI. Background: uniform warm ivory #f5f3e8. Portrait tablet composition independently arranged: ALL character and cushion artwork confined to bottom 24%, below y=1945. Entire top 76% empty uninterrupted background. Small full body chibi lower right within footer with ample breathing room. Add only two tiny clover marks, confined to footer or far right artwork zone. Clean simple collectible anime chibi, modest detail. EMPTY schedule space is crucial. No text, letters, numbers, schedule, timetable, cards, headings, UI, logos, mockup, watermark, borders, frames, flowers, vines, dangling ornaments, glow, gradients or dense texture. Do not depict any reference timetable.",
+      "width": 1600,
+      "height": 2560,
+      "correctionPrompt": "Edit composition only. Keep canvas aspect ratio, character identity, pose, rendering style, colors and plain background. Uniformly reduce complete intact character and accent group to 70% its current size. Position at bottom right with margin. Every illustration pixel must be BELOW 70% canvas height. Top70% completely empty background. No crop, no stretching, no text/UI/new objects.",
+      "destination": "public/wallpapers/scenic/genshin-nahida-clover/tablet.png",
+      "nativeDimensions": [
+        992,
+        1586
+      ],
+      "visualInspection": "Recognizable intact Nahida; clean low contrast field; no text or UI; portraits footer composition, laptop right composition."
+    },
+    {
+      "id": "genshin-nahida-clover",
+      "device": "laptop",
+      "key": "clover-laptop",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-e45eb364-7766-40f1-b750-e0d917d27cf4.png",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-b97beb6a-83e3-494d-99ed-dcc1288b4019.png",
+      "prompt": "Use case: stylized-concept. Create ONE opaque full bleed PNG wallpaper exactly 1920x1080 pixels. Restrained watercolor chibi illustration with clean silhouette, delicate pigment only inside character, light wash and faint paper texture. Nahida seated holding one small clover, sweet smile. Recognizable Genshin Impact Nahida: white hair with pale green tips in side ponytail, green eyes, pointed ears, green leaf hair ornament, white and green leaf-shaped dress. Reference image 1 is identity reference ONLY; completely discard its ornate background and all its UI. Background: uniform warm ivory #f5f3e8. Landscape independently composed: character entirely in rightmost 28% (x above1382), centered vertically, fully visible. Left 65% completely empty uninterrupted background. Add only two tiny clover marks, confined to footer or far right artwork zone. Clean simple collectible anime chibi, modest detail. EMPTY schedule space is crucial. No text, letters, numbers, schedule, timetable, cards, headings, UI, logos, mockup, watermark, borders, frames, flowers, vines, dangling ornaments, glow, gradients or dense texture. Do not depict any reference timetable.",
+      "width": 1920,
+      "height": 1080,
+      "correctionPrompt": "Edit composition only. Keep exact original canvas aspect ratio, character identity, pose, rendering style, colors and plain background. Uniformly reduce the complete intact character and accent group to 65% of its current size. Position group at far right with margin. Absolutely every illustration pixel must be RIGHT OF 70% canvas width. Left70% completely empty background. No crop, no stretching, no text/UI/new objects.",
+      "destination": "public/wallpapers/scenic/genshin-nahida-clover/laptop.png",
+      "nativeDimensions": [
+        1672,
+        941
+      ],
+      "visualInspection": "Recognizable intact Nahida; clean low contrast field; no text or UI; portraits footer composition, laptop right composition."
+    },
+    {
+      "id": "genshin-nahida-dream",
+      "device": "mobile",
+      "key": "dream-mobile",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-28591dda-3e68-4761-a73e-1f414fbadc97.png",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-28591dda-3e68-4761-a73e-1f414fbadc97.png",
+      "prompt": "Use case: stylized-concept. Create ONE opaque full bleed PNG wallpaper exactly 1080x2400 pixels. Minimal ink sticker chibi illustration, confident slightly thicker green contour, simplified clean color blocks, narrow cream sticker edge. Nahida sleepy hugging a tiny leaf cushion, closed eyes. Recognizable Genshin Impact Nahida: white hair with pale green tips in side ponytail, green eyes, pointed ears, green leaf hair ornament, white and green leaf-shaped dress. Reference image 1 is identity reference ONLY; completely discard its ornate background and all its UI. Background: uniform pale mint #eaf3ef. Portrait: ALL character and cushion artwork confined to bottom 24%, below y=1824. Entire top 76% empty uninterrupted background. Small full body chibi centered within footer, fully visible with bottom margin. Add only two tiny leaf marks, confined to footer or far right artwork zone. Clean simple collectible anime chibi, modest detail. EMPTY schedule space is crucial. No text, letters, numbers, schedule, timetable, cards, headings, UI, logos, mockup, watermark, borders, frames, flowers, vines, dangling ornaments, glow, gradients or dense texture. Do not depict any reference timetable.",
+      "width": 1080,
+      "height": 2400,
+      "correctionPrompt": null,
+      "destination": "public/wallpapers/scenic/genshin-nahida-dream/mobile.png",
+      "nativeDimensions": [
+        841,
+        1870
+      ],
+      "visualInspection": "Recognizable intact Nahida; clean low contrast field; no text or UI; portraits footer composition, laptop right composition."
+    },
+    {
+      "id": "genshin-nahida-dream",
+      "device": "tablet",
+      "key": "dream-tablet",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-a7137836-4248-4bb3-93b5-28597adacbad.png",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-a7137836-4248-4bb3-93b5-28597adacbad.png",
+      "prompt": "Use case: stylized-concept. Create ONE opaque full bleed PNG wallpaper exactly 1600x2560 pixels. Minimal ink sticker chibi illustration, confident slightly thicker green contour, simplified clean color blocks, narrow cream sticker edge. Nahida sleepy hugging a tiny leaf cushion, closed eyes. Recognizable Genshin Impact Nahida: white hair with pale green tips in side ponytail, green eyes, pointed ears, green leaf hair ornament, white and green leaf-shaped dress. Reference image 1 is identity reference ONLY; completely discard its ornate background and all its UI. Background: uniform pale mint #eaf3ef. Portrait tablet composition independently arranged: ALL character and cushion artwork confined to bottom 24%, below y=1945. Entire top 76% empty uninterrupted background. Small full body chibi lower right within footer with ample breathing room. Add only two tiny leaf marks, confined to footer or far right artwork zone. Clean simple collectible anime chibi, modest detail. EMPTY schedule space is crucial. No text, letters, numbers, schedule, timetable, cards, headings, UI, logos, mockup, watermark, borders, frames, flowers, vines, dangling ornaments, glow, gradients or dense texture. Do not depict any reference timetable.",
+      "width": 1600,
+      "height": 2560,
+      "correctionPrompt": null,
+      "destination": "public/wallpapers/scenic/genshin-nahida-dream/tablet.png",
+      "nativeDimensions": [
+        992,
+        1586
+      ],
+      "visualInspection": "Recognizable intact Nahida; clean low contrast field; no text or UI; portraits footer composition, laptop right composition."
+    },
+    {
+      "id": "genshin-nahida-dream",
+      "device": "laptop",
+      "key": "dream-laptop",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-a3a4d836-8793-4cd6-879c-d88ff20af84e.png",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-cad963b9-eb1f-44ce-8443-19df838ebf5d.png",
+      "prompt": "Use case: stylized-concept. Create ONE opaque full bleed PNG wallpaper exactly 1920x1080 pixels. Minimal ink sticker chibi illustration, confident slightly thicker green contour, simplified clean color blocks, narrow cream sticker edge. Nahida sleepy hugging a tiny leaf cushion, closed eyes. Recognizable Genshin Impact Nahida: white hair with pale green tips in side ponytail, green eyes, pointed ears, green leaf hair ornament, white and green leaf-shaped dress. Reference image 1 is identity reference ONLY; completely discard its ornate background and all its UI. Background: uniform pale mint #eaf3ef. Landscape independently composed: character entirely in rightmost 28% (x above1382), centered vertically, fully visible. Left 65% completely empty uninterrupted background. Add only two tiny leaf marks, confined to footer or far right artwork zone. Clean simple collectible anime chibi, modest detail. EMPTY schedule space is crucial. No text, letters, numbers, schedule, timetable, cards, headings, UI, logos, mockup, watermark, borders, frames, flowers, vines, dangling ornaments, glow, gradients or dense texture. Do not depict any reference timetable.",
+      "width": 1920,
+      "height": 1080,
+      "correctionPrompt": "Edit composition only. Keep exact original canvas aspect ratio, character identity, pose, rendering style, colors and plain background. Uniformly reduce the complete intact character and accent group to 65% of its current size. Position group at far right with margin. Absolutely every illustration pixel must be RIGHT OF 70% canvas width. Left70% completely empty background. No crop, no stretching, no text/UI/new objects.",
+      "destination": "public/wallpapers/scenic/genshin-nahida-dream/laptop.png",
+      "nativeDimensions": [
+        1672,
+        941
+      ],
+      "visualInspection": "Recognizable intact Nahida; clean low contrast field; no text or UI; portraits footer composition, laptop right composition."
+    }
+  ]
+}

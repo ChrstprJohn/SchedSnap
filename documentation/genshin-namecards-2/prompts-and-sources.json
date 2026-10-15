@@ -1,0 +1,384 @@
+{
+  "createdAt": "2026-10-15T15:24:00.807Z",
+  "revision": "faithful official namecard adaptations",
+  "assets": [
+    {
+      "key": "hutao",
+      "id": "genshin-card-hutao-spirit",
+      "name": "Hu Tao · Spirit Soother",
+      "ref": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\hutao.png",
+      "element": "Pyro",
+      "symbol": "first (top) flame emblem",
+      "motif": "warm muted umber and brick red with peach amber flowing spirit ribbons, delicate red plum blossoms on thin branches, two or three golden flame butterflies. Replace the original smiling ghost completely with an elegant Pyro flame emblem in an amber seal; no ghost or face.",
+      "palette": [
+        "#644237",
+        "#fff1dc",
+        "#382923ed"
+      ],
+      "device": "mobile",
+      "w": 1080,
+      "h": 2400,
+      "prompt": "Create a faithful device-format adaptation of the OFFICIAL in-game Genshin Impact Hu Tao · Spirit Soother namecard shown in reference image 1. Output 1080x2400, mobile, exact aspect ratio 1080:2400, opaque full bleed.\nThis is an extension/recomposition of the existing official namecard, NOT a redesign. Closely preserve its flat game-art style, original line shapes, exact palette, existing motif identity, relative motif scale and restrained level of detail. Retain the original smiling pale golden spirit/ghost icon, its exact simple silhouette and friendly face as an existing official namecard graphic; keep original flame butterflies, plum sprigs, subtle background ribbons and warm brown-orange gradient. Do not replace the ghost with a flame seal or invent floral bouquets.\nFor this portrait screen, extend the original background above and below and move the main official motif toward the lower half as needed; use existing original small motifs sparingly at the edges, and leave the upper-center clock area comparatively calm.\nAdd ONE small, subtle Pyro emblem, faithfully shaped like the first (top) flame emblem in reference image 2, integrated in the same palette as an understated corner inlay or small decorative detail. It must be secondary to the official namecard motif. Reference image 2 is only an elemental icon key; do not copy its black background or other icons.\nDo not add new circles, seals, medallions, flowers, glowing effects, complex ornament or dramatic gradients beyond the original. Keep original namecard graphic faces/mascot symbols when they are part of its artwork; do not add any new character portrait, full-body person, chibi character or mascot. The standard app schedule can cover background art, so do not create a huge empty protected zone.\nNo text, UI, labels, schedule, clock, numbers, logos, watermarks, device frames or transparency.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-03c26086-6422-45b6-bce0-1268dfe5afea.png",
+      "destination": "public/wallpapers/scenic/genshin-card-hutao-spirit/mobile.png",
+      "provider": "built-in imagegen"
+    },
+    {
+      "key": "hutao",
+      "id": "genshin-card-hutao-spirit",
+      "name": "Hu Tao · Spirit Soother",
+      "ref": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\hutao.png",
+      "element": "Pyro",
+      "symbol": "first (top) flame emblem",
+      "motif": "warm muted umber and brick red with peach amber flowing spirit ribbons, delicate red plum blossoms on thin branches, two or three golden flame butterflies. Replace the original smiling ghost completely with an elegant Pyro flame emblem in an amber seal; no ghost or face.",
+      "palette": [
+        "#644237",
+        "#fff1dc",
+        "#382923ed"
+      ],
+      "device": "tablet",
+      "w": 1600,
+      "h": 2560,
+      "prompt": "Create a faithful device-format adaptation of the OFFICIAL in-game Genshin Impact Hu Tao · Spirit Soother namecard shown in reference image 1. Output 1600x2560, tablet, exact aspect ratio 1600:2560, opaque full bleed.\nThis is an extension/recomposition of the existing official namecard, NOT a redesign. Closely preserve its flat game-art style, original line shapes, exact palette, existing motif identity, relative motif scale and restrained level of detail. Retain the original smiling pale golden spirit/ghost icon, its exact simple silhouette and friendly face as an existing official namecard graphic; keep original flame butterflies, plum sprigs, subtle background ribbons and warm brown-orange gradient. Do not replace the ghost with a flame seal or invent floral bouquets.\nFor this portrait screen, extend the original background above and below and move the main official motif toward the lower half as needed; use existing original small motifs sparingly at the edges, and leave the upper-center clock area comparatively calm.\nAdd ONE small, subtle Pyro emblem, faithfully shaped like the first (top) flame emblem in reference image 2, integrated in the same palette as an understated corner inlay or small decorative detail. It must be secondary to the official namecard motif. Reference image 2 is only an elemental icon key; do not copy its black background or other icons.\nDo not add new circles, seals, medallions, flowers, glowing effects, complex ornament or dramatic gradients beyond the original. Keep original namecard graphic faces/mascot symbols when they are part of its artwork; do not add any new character portrait, full-body person, chibi character or mascot. The standard app schedule can cover background art, so do not create a huge empty protected zone.\nNo text, UI, labels, schedule, clock, numbers, logos, watermarks, device frames or transparency.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-795006be-c21b-40c3-8b51-545c6a80b945.png",
+      "destination": "public/wallpapers/scenic/genshin-card-hutao-spirit/tablet.png",
+      "provider": "built-in imagegen"
+    },
+    {
+      "key": "hutao",
+      "id": "genshin-card-hutao-spirit",
+      "name": "Hu Tao · Spirit Soother",
+      "ref": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\hutao.png",
+      "element": "Pyro",
+      "symbol": "first (top) flame emblem",
+      "motif": "warm muted umber and brick red with peach amber flowing spirit ribbons, delicate red plum blossoms on thin branches, two or three golden flame butterflies. Replace the original smiling ghost completely with an elegant Pyro flame emblem in an amber seal; no ghost or face.",
+      "palette": [
+        "#644237",
+        "#fff1dc",
+        "#382923ed"
+      ],
+      "device": "laptop",
+      "w": 1920,
+      "h": 1080,
+      "prompt": "Create a faithful device-format adaptation of the OFFICIAL in-game Genshin Impact Hu Tao · Spirit Soother namecard shown in reference image 1. Output 1920x1080, laptop, exact aspect ratio 1920:1080, opaque full bleed.\nThis is an extension/recomposition of the existing official namecard, NOT a redesign. Closely preserve its flat game-art style, original line shapes, exact palette, existing motif identity, relative motif scale and restrained level of detail. Retain the original smiling pale golden spirit/ghost icon, its exact simple silhouette and friendly face as an existing official namecard graphic; keep original flame butterflies, plum sprigs, subtle background ribbons and warm brown-orange gradient. Do not replace the ghost with a flame seal or invent floral bouquets.\nFor this horizontal screen, retain a layout very close to the original wide namecard and extend background naturally to the 16:9 format.\nAdd ONE small, subtle Pyro emblem, faithfully shaped like the first (top) flame emblem in reference image 2, integrated in the same palette as an understated corner inlay or small decorative detail. It must be secondary to the official namecard motif. Reference image 2 is only an elemental icon key; do not copy its black background or other icons.\nDo not add new circles, seals, medallions, flowers, glowing effects, complex ornament or dramatic gradients beyond the original. Keep original namecard graphic faces/mascot symbols when they are part of its artwork; do not add any new character portrait, full-body person, chibi character or mascot. The standard app schedule can cover background art, so do not create a huge empty protected zone.\nNo text, UI, labels, schedule, clock, numbers, logos, watermarks, device frames or transparency.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-65cb0448-df31-4243-b94d-45e1691d9b00.png",
+      "destination": "public/wallpapers/scenic/genshin-card-hutao-spirit/laptop.png",
+      "provider": "built-in imagegen"
+    },
+    {
+      "key": "navia",
+      "id": "genshin-card-navia-rosula",
+      "name": "Navia · Rosula",
+      "ref": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\navia.png",
+      "element": "Geo",
+      "symbol": "seventh (bottom) interlocking diamond emblem",
+      "motif": "honey gold and muted ochre, near-black brown parasol with gold scalloped trim, pale golden roses and elegant sweeping ribbon arcs. A Geo interlocking diamond seal incorporated into the parasol's central metalwork; only one parasol, a few roses, refined luminous diamond stars.",
+      "palette": [
+        "#9c742d",
+        "#fff5dd",
+        "#3d2c1deb"
+      ],
+      "device": "mobile",
+      "w": 1080,
+      "h": 2400,
+      "prompt": "Create a faithful device-format adaptation of the OFFICIAL in-game Genshin Impact Navia · Rosula namecard shown in reference image 1. Output 1080x2400, mobile, exact aspect ratio 1080:2400, opaque full bleed.\nThis is an extension/recomposition of the existing official namecard, NOT a redesign. Closely preserve its flat game-art style, original line shapes, exact palette, existing motif identity, relative motif scale and restrained level of detail. Retain the original dark brown tilted parasol with scalloped honey-gold edging, original rose linework, ribbon bows and diamond sparkle shapes, and amber-gold layered background. Do not reinvent the parasol or add ornate medallions.\nFor this portrait screen, extend the original background above and below and move the main official motif toward the lower half as needed; use existing original small motifs sparingly at the edges, and leave the upper-center clock area comparatively calm.\nAdd ONE small, subtle Geo emblem, faithfully shaped like the seventh (bottom) interlocking diamond emblem in reference image 2, integrated in the same palette as an understated corner inlay or small decorative detail. It must be secondary to the official namecard motif. Reference image 2 is only an elemental icon key; do not copy its black background or other icons.\nDo not add new circles, seals, medallions, flowers, glowing effects, complex ornament or dramatic gradients beyond the original. Keep original namecard graphic faces/mascot symbols when they are part of its artwork; do not add any new character portrait, full-body person, chibi character or mascot. The standard app schedule can cover background art, so do not create a huge empty protected zone.\nNo text, UI, labels, schedule, clock, numbers, logos, watermarks, device frames or transparency.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-896c6dcd-35a1-4e2f-8a43-d96b2f291b40.png",
+      "destination": "public/wallpapers/scenic/genshin-card-navia-rosula/mobile.png",
+      "provider": "built-in imagegen"
+    },
+    {
+      "key": "navia",
+      "id": "genshin-card-navia-rosula",
+      "name": "Navia · Rosula",
+      "ref": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\navia.png",
+      "element": "Geo",
+      "symbol": "seventh (bottom) interlocking diamond emblem",
+      "motif": "honey gold and muted ochre, near-black brown parasol with gold scalloped trim, pale golden roses and elegant sweeping ribbon arcs. A Geo interlocking diamond seal incorporated into the parasol's central metalwork; only one parasol, a few roses, refined luminous diamond stars.",
+      "palette": [
+        "#9c742d",
+        "#fff5dd",
+        "#3d2c1deb"
+      ],
+      "device": "tablet",
+      "w": 1600,
+      "h": 2560,
+      "prompt": "Create a faithful device-format adaptation of the OFFICIAL in-game Genshin Impact Navia · Rosula namecard shown in reference image 1. Output 1600x2560, tablet, exact aspect ratio 1600:2560, opaque full bleed.\nThis is an extension/recomposition of the existing official namecard, NOT a redesign. Closely preserve its flat game-art style, original line shapes, exact palette, existing motif identity, relative motif scale and restrained level of detail. Retain the original dark brown tilted parasol with scalloped honey-gold edging, original rose linework, ribbon bows and diamond sparkle shapes, and amber-gold layered background. Do not reinvent the parasol or add ornate medallions.\nFor this portrait screen, extend the original background above and below and move the main official motif toward the lower half as needed; use existing original small motifs sparingly at the edges, and leave the upper-center clock area comparatively calm.\nAdd ONE small, subtle Geo emblem, faithfully shaped like the seventh (bottom) interlocking diamond emblem in reference image 2, integrated in the same palette as an understated corner inlay or small decorative detail. It must be secondary to the official namecard motif. Reference image 2 is only an elemental icon key; do not copy its black background or other icons.\nDo not add new circles, seals, medallions, flowers, glowing effects, complex ornament or dramatic gradients beyond the original. Keep original namecard graphic faces/mascot symbols when they are part of its artwork; do not add any new character portrait, full-body person, chibi character or mascot. The standard app schedule can cover background art, so do not create a huge empty protected zone.\nNo text, UI, labels, schedule, clock, numbers, logos, watermarks, device frames or transparency.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-9472d4a5-6511-4426-89ea-e262cda90a70.png",
+      "destination": "public/wallpapers/scenic/genshin-card-navia-rosula/tablet.png",
+      "provider": "built-in imagegen"
+    },
+    {
+      "key": "navia",
+      "id": "genshin-card-navia-rosula",
+      "name": "Navia · Rosula",
+      "ref": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\navia.png",
+      "element": "Geo",
+      "symbol": "seventh (bottom) interlocking diamond emblem",
+      "motif": "honey gold and muted ochre, near-black brown parasol with gold scalloped trim, pale golden roses and elegant sweeping ribbon arcs. A Geo interlocking diamond seal incorporated into the parasol's central metalwork; only one parasol, a few roses, refined luminous diamond stars.",
+      "palette": [
+        "#9c742d",
+        "#fff5dd",
+        "#3d2c1deb"
+      ],
+      "device": "laptop",
+      "w": 1920,
+      "h": 1080,
+      "prompt": "Create a faithful device-format adaptation of the OFFICIAL in-game Genshin Impact Navia · Rosula namecard shown in reference image 1. Output 1920x1080, laptop, exact aspect ratio 1920:1080, opaque full bleed.\nThis is an extension/recomposition of the existing official namecard, NOT a redesign. Closely preserve its flat game-art style, original line shapes, exact palette, existing motif identity, relative motif scale and restrained level of detail. Retain the original dark brown tilted parasol with scalloped honey-gold edging, original rose linework, ribbon bows and diamond sparkle shapes, and amber-gold layered background. Do not reinvent the parasol or add ornate medallions.\nFor this horizontal screen, retain a layout very close to the original wide namecard and extend background naturally to the 16:9 format.\nAdd ONE small, subtle Geo emblem, faithfully shaped like the seventh (bottom) interlocking diamond emblem in reference image 2, integrated in the same palette as an understated corner inlay or small decorative detail. It must be secondary to the official namecard motif. Reference image 2 is only an elemental icon key; do not copy its black background or other icons.\nDo not add new circles, seals, medallions, flowers, glowing effects, complex ornament or dramatic gradients beyond the original. Keep original namecard graphic faces/mascot symbols when they are part of its artwork; do not add any new character portrait, full-body person, chibi character or mascot. The standard app schedule can cover background art, so do not create a huge empty protected zone.\nNo text, UI, labels, schedule, clock, numbers, logos, watermarks, device frames or transparency.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-6bd18da9-f246-45ff-866e-55164d5cef40.png",
+      "destination": "public/wallpapers/scenic/genshin-card-navia-rosula/laptop.png",
+      "provider": "built-in imagegen"
+    },
+    {
+      "key": "varesa",
+      "id": "genshin-card-varesa-powerhouse",
+      "name": "Varesa · Powerhouse",
+      "ref": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\varesa.png",
+      "element": "Electro",
+      "symbol": "fourth three-blade circular emblem",
+      "motif": "soft coral pink, rose outlines, warm milky pink and pale mint green, rounded clouds and elegant horn-like ribbon swoops, a few small heart accents. Remove every original face/head/plush eye. Center one Electro three-blade emblem as a mint inlay inside a pink ribbon rosette; playful graphic print, not medical signage.",
+      "palette": [
+        "#f4ced5",
+        "#653b58",
+        "#fff8f5eb"
+      ],
+      "device": "mobile",
+      "w": 1080,
+      "h": 2400,
+      "prompt": "Create a faithful device-format adaptation of the OFFICIAL in-game Genshin Impact Varesa · Powerhouse namecard shown in reference image 1. Output 1080x2400, mobile, exact aspect ratio 1080:2400, opaque full bleed.\nThis is an extension/recomposition of the existing official namecard, NOT a redesign. Closely preserve its flat game-art style, original line shapes, exact palette, existing motif identity, relative motif scale and restrained level of detail. Retain the original pastel coral-pink outlines, milky white rounded swoops, mint accents, original stylized mask/graphic face fragment and geometric plus/heart shapes as official namecard graphics. Do not replace the original graphic with generic clouds or a rosette.\nFor this portrait screen, extend the original background above and below and move the main official motif toward the lower half as needed; use existing original small motifs sparingly at the edges, and leave the upper-center clock area comparatively calm.\nAdd ONE small, subtle Electro emblem, faithfully shaped like the fourth three-blade circular emblem in reference image 2, integrated in the same palette as an understated corner inlay or small decorative detail. It must be secondary to the official namecard motif. Reference image 2 is only an elemental icon key; do not copy its black background or other icons.\nDo not add new circles, seals, medallions, flowers, glowing effects, complex ornament or dramatic gradients beyond the original. Keep original namecard graphic faces/mascot symbols when they are part of its artwork; do not add any new character portrait, full-body person, chibi character or mascot. The standard app schedule can cover background art, so do not create a huge empty protected zone.\nNo text, UI, labels, schedule, clock, numbers, logos, watermarks, device frames or transparency.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-05737d3d-6b96-438a-9838-eeb60727fc8c.png",
+      "destination": "public/wallpapers/scenic/genshin-card-varesa-powerhouse/mobile.png",
+      "provider": "built-in imagegen"
+    },
+    {
+      "key": "varesa",
+      "id": "genshin-card-varesa-powerhouse",
+      "name": "Varesa · Powerhouse",
+      "ref": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\varesa.png",
+      "element": "Electro",
+      "symbol": "fourth three-blade circular emblem",
+      "motif": "soft coral pink, rose outlines, warm milky pink and pale mint green, rounded clouds and elegant horn-like ribbon swoops, a few small heart accents. Remove every original face/head/plush eye. Center one Electro three-blade emblem as a mint inlay inside a pink ribbon rosette; playful graphic print, not medical signage.",
+      "palette": [
+        "#f4ced5",
+        "#653b58",
+        "#fff8f5eb"
+      ],
+      "device": "tablet",
+      "w": 1600,
+      "h": 2560,
+      "prompt": "Create a faithful device-format adaptation of the OFFICIAL in-game Genshin Impact Varesa · Powerhouse namecard shown in reference image 1. Output 1600x2560, tablet, exact aspect ratio 1600:2560, opaque full bleed.\nThis is an extension/recomposition of the existing official namecard, NOT a redesign. Closely preserve its flat game-art style, original line shapes, exact palette, existing motif identity, relative motif scale and restrained level of detail. Retain the original pastel coral-pink outlines, milky white rounded swoops, mint accents, original stylized mask/graphic face fragment and geometric plus/heart shapes as official namecard graphics. Do not replace the original graphic with generic clouds or a rosette.\nFor this portrait screen, extend the original background above and below and move the main official motif toward the lower half as needed; use existing original small motifs sparingly at the edges, and leave the upper-center clock area comparatively calm.\nAdd ONE small, subtle Electro emblem, faithfully shaped like the fourth three-blade circular emblem in reference image 2, integrated in the same palette as an understated corner inlay or small decorative detail. It must be secondary to the official namecard motif. Reference image 2 is only an elemental icon key; do not copy its black background or other icons.\nDo not add new circles, seals, medallions, flowers, glowing effects, complex ornament or dramatic gradients beyond the original. Keep original namecard graphic faces/mascot symbols when they are part of its artwork; do not add any new character portrait, full-body person, chibi character or mascot. The standard app schedule can cover background art, so do not create a huge empty protected zone.\nNo text, UI, labels, schedule, clock, numbers, logos, watermarks, device frames or transparency.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-c72b747a-48be-4788-b836-2e8891c97975.png",
+      "destination": "public/wallpapers/scenic/genshin-card-varesa-powerhouse/tablet.png",
+      "provider": "built-in imagegen"
+    },
+    {
+      "key": "varesa",
+      "id": "genshin-card-varesa-powerhouse",
+      "name": "Varesa · Powerhouse",
+      "ref": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\varesa.png",
+      "element": "Electro",
+      "symbol": "fourth three-blade circular emblem",
+      "motif": "soft coral pink, rose outlines, warm milky pink and pale mint green, rounded clouds and elegant horn-like ribbon swoops, a few small heart accents. Remove every original face/head/plush eye. Center one Electro three-blade emblem as a mint inlay inside a pink ribbon rosette; playful graphic print, not medical signage.",
+      "palette": [
+        "#f4ced5",
+        "#653b58",
+        "#fff8f5eb"
+      ],
+      "device": "laptop",
+      "w": 1920,
+      "h": 1080,
+      "prompt": "Create a faithful device-format adaptation of the OFFICIAL in-game Genshin Impact Varesa · Powerhouse namecard shown in reference image 1. Output 1920x1080, laptop, exact aspect ratio 1920:1080, opaque full bleed.\nThis is an extension/recomposition of the existing official namecard, NOT a redesign. Closely preserve its flat game-art style, original line shapes, exact palette, existing motif identity, relative motif scale and restrained level of detail. Retain the original pastel coral-pink outlines, milky white rounded swoops, mint accents, original stylized mask/graphic face fragment and geometric plus/heart shapes as official namecard graphics. Do not replace the original graphic with generic clouds or a rosette.\nFor this horizontal screen, retain a layout very close to the original wide namecard and extend background naturally to the 16:9 format.\nAdd ONE small, subtle Electro emblem, faithfully shaped like the fourth three-blade circular emblem in reference image 2, integrated in the same palette as an understated corner inlay or small decorative detail. It must be secondary to the official namecard motif. Reference image 2 is only an elemental icon key; do not copy its black background or other icons.\nDo not add new circles, seals, medallions, flowers, glowing effects, complex ornament or dramatic gradients beyond the original. Keep original namecard graphic faces/mascot symbols when they are part of its artwork; do not add any new character portrait, full-body person, chibi character or mascot. The standard app schedule can cover background art, so do not create a huge empty protected zone.\nNo text, UI, labels, schedule, clock, numbers, logos, watermarks, device frames or transparency.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-0da966c6-c770-4196-a1ff-fb9ba52fc1c6.png",
+      "destination": "public/wallpapers/scenic/genshin-card-varesa-powerhouse/laptop.png",
+      "provider": "built-in imagegen"
+    },
+    {
+      "key": "citlali",
+      "id": "genshin-card-citlali-opalstar",
+      "name": "Citlali · Opalstar",
+      "ref": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\citlali.png",
+      "element": "Cryo",
+      "symbol": "sixth snowflake emblem",
+      "motif": "indigo violet and lavender, angular woven textile geometry, stepped meanders, pale lavender stitched-paper edging and spaced glowing ring motifs. Remove creature head/face entirely. A Cryo six-point snowflake medallion integrated as a woven embroidered star motif with icy blue accents; restrained tribal geometry.",
+      "palette": [
+        "#433783",
+        "#f5f0ff",
+        "#292455ed"
+      ],
+      "device": "mobile",
+      "w": 1080,
+      "h": 2400,
+      "prompt": "Create a faithful device-format adaptation of the OFFICIAL in-game Genshin Impact Citlali · Opalstar namecard shown in reference image 1. Output 1080x2400, mobile, exact aspect ratio 1080:2400, opaque full bleed.\nThis is an extension/recomposition of the existing official namecard, NOT a redesign. Closely preserve its flat game-art style, original line shapes, exact palette, existing motif identity, relative motif scale and restrained level of detail. Retain the original large pale lavender stitched Itzpapa-style angular graphic including its original simple facial marks, blue woven bands, exact violet stepped geometry and spaced cyan ring accents. Do not replace the original motif with a snowflake flower.\nFor this portrait screen, extend the original background above and below and move the main official motif toward the lower half as needed; use existing original small motifs sparingly at the edges, and leave the upper-center clock area comparatively calm.\nAdd ONE small, subtle Cryo emblem, faithfully shaped like the sixth snowflake emblem in reference image 2, integrated in the same palette as an understated corner inlay or small decorative detail. It must be secondary to the official namecard motif. Reference image 2 is only an elemental icon key; do not copy its black background or other icons.\nDo not add new circles, seals, medallions, flowers, glowing effects, complex ornament or dramatic gradients beyond the original. Keep original namecard graphic faces/mascot symbols when they are part of its artwork; do not add any new character portrait, full-body person, chibi character or mascot. The standard app schedule can cover background art, so do not create a huge empty protected zone.\nNo text, UI, labels, schedule, clock, numbers, logos, watermarks, device frames or transparency.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-ead22c20-2de8-43f1-a0d3-83adf6969b13.png",
+      "destination": "public/wallpapers/scenic/genshin-card-citlali-opalstar/mobile.png",
+      "provider": "built-in imagegen"
+    },
+    {
+      "key": "citlali",
+      "id": "genshin-card-citlali-opalstar",
+      "name": "Citlali · Opalstar",
+      "ref": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\citlali.png",
+      "element": "Cryo",
+      "symbol": "sixth snowflake emblem",
+      "motif": "indigo violet and lavender, angular woven textile geometry, stepped meanders, pale lavender stitched-paper edging and spaced glowing ring motifs. Remove creature head/face entirely. A Cryo six-point snowflake medallion integrated as a woven embroidered star motif with icy blue accents; restrained tribal geometry.",
+      "palette": [
+        "#433783",
+        "#f5f0ff",
+        "#292455ed"
+      ],
+      "device": "tablet",
+      "w": 1600,
+      "h": 2560,
+      "prompt": "Create a faithful device-format adaptation of the OFFICIAL in-game Genshin Impact Citlali · Opalstar namecard shown in reference image 1. Output 1600x2560, tablet, exact aspect ratio 1600:2560, opaque full bleed.\nThis is an extension/recomposition of the existing official namecard, NOT a redesign. Closely preserve its flat game-art style, original line shapes, exact palette, existing motif identity, relative motif scale and restrained level of detail. Retain the original large pale lavender stitched Itzpapa-style angular graphic including its original simple facial marks, blue woven bands, exact violet stepped geometry and spaced cyan ring accents. Do not replace the original motif with a snowflake flower.\nFor this portrait screen, extend the original background above and below and move the main official motif toward the lower half as needed; use existing original small motifs sparingly at the edges, and leave the upper-center clock area comparatively calm.\nAdd ONE small, subtle Cryo emblem, faithfully shaped like the sixth snowflake emblem in reference image 2, integrated in the same palette as an understated corner inlay or small decorative detail. It must be secondary to the official namecard motif. Reference image 2 is only an elemental icon key; do not copy its black background or other icons.\nDo not add new circles, seals, medallions, flowers, glowing effects, complex ornament or dramatic gradients beyond the original. Keep original namecard graphic faces/mascot symbols when they are part of its artwork; do not add any new character portrait, full-body person, chibi character or mascot. The standard app schedule can cover background art, so do not create a huge empty protected zone.\nNo text, UI, labels, schedule, clock, numbers, logos, watermarks, device frames or transparency.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-55294470-62be-4bbc-bec7-189eb7f27025.png",
+      "destination": "public/wallpapers/scenic/genshin-card-citlali-opalstar/tablet.png",
+      "provider": "built-in imagegen"
+    },
+    {
+      "key": "citlali",
+      "id": "genshin-card-citlali-opalstar",
+      "name": "Citlali · Opalstar",
+      "ref": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\citlali.png",
+      "element": "Cryo",
+      "symbol": "sixth snowflake emblem",
+      "motif": "indigo violet and lavender, angular woven textile geometry, stepped meanders, pale lavender stitched-paper edging and spaced glowing ring motifs. Remove creature head/face entirely. A Cryo six-point snowflake medallion integrated as a woven embroidered star motif with icy blue accents; restrained tribal geometry.",
+      "palette": [
+        "#433783",
+        "#f5f0ff",
+        "#292455ed"
+      ],
+      "device": "laptop",
+      "w": 1920,
+      "h": 1080,
+      "prompt": "Create a faithful device-format adaptation of the OFFICIAL in-game Genshin Impact Citlali · Opalstar namecard shown in reference image 1. Output 1920x1080, laptop, exact aspect ratio 1920:1080, opaque full bleed.\nThis is an extension/recomposition of the existing official namecard, NOT a redesign. Closely preserve its flat game-art style, original line shapes, exact palette, existing motif identity, relative motif scale and restrained level of detail. Retain the original large pale lavender stitched Itzpapa-style angular graphic including its original simple facial marks, blue woven bands, exact violet stepped geometry and spaced cyan ring accents. Do not replace the original motif with a snowflake flower.\nFor this horizontal screen, retain a layout very close to the original wide namecard and extend background naturally to the 16:9 format.\nAdd ONE small, subtle Cryo emblem, faithfully shaped like the sixth snowflake emblem in reference image 2, integrated in the same palette as an understated corner inlay or small decorative detail. It must be secondary to the official namecard motif. Reference image 2 is only an elemental icon key; do not copy its black background or other icons.\nDo not add new circles, seals, medallions, flowers, glowing effects, complex ornament or dramatic gradients beyond the original. Keep original namecard graphic faces/mascot symbols when they are part of its artwork; do not add any new character portrait, full-body person, chibi character or mascot. The standard app schedule can cover background art, so do not create a huge empty protected zone.\nNo text, UI, labels, schedule, clock, numbers, logos, watermarks, device frames or transparency.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-85e5df19-ca7d-4e88-a7a0-0123b3720f0c.png",
+      "destination": "public/wallpapers/scenic/genshin-card-citlali-opalstar/laptop.png",
+      "provider": "built-in imagegen"
+    },
+    {
+      "key": "skirk",
+      "id": "genshin-card-skirk-lone-shadow",
+      "name": "Skirk · Lone Shadow",
+      "ref": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\skirk.png",
+      "element": "Cryo",
+      "symbol": "sixth snowflake emblem",
+      "motif": "deep aubergine night with prismatic lavender and ice-blue shards, angular shattered glass and long fluid white-violet ribbon arcs, sparse four-point stars. Remove all original hair, head, silhouette and eye motifs; replace focal figure with an abstract crystalline flower around an exact Cryo snowflake emblem. No human-shaped outline.",
+      "palette": [
+        "#20193d",
+        "#f2efff",
+        "#171932ed"
+      ],
+      "device": "mobile",
+      "w": 1080,
+      "h": 2400,
+      "prompt": "Create a faithful device-format adaptation of the OFFICIAL in-game Genshin Impact Skirk · Lone Shadow namecard shown in reference image 1. Output 1080x2400, mobile, exact aspect ratio 1080:2400, opaque full bleed.\nThis is an extension/recomposition of the existing official namecard, NOT a redesign. Closely preserve its flat game-art style, original line shapes, exact palette, existing motif identity, relative motif scale and restrained level of detail. Retain the original asymmetrical lavender and ice-blue fractured-glass layout, white flowing shape/hair motif from the official namecard, dark star field and four-point stars. Preserve the distinctive original drawing instead of replacing it with a generic crystal flower; no additional character illustration.\nFor this portrait screen, extend the original background above and below and move the main official motif toward the lower half as needed; use existing original small motifs sparingly at the edges, and leave the upper-center clock area comparatively calm.\nAdd ONE small, subtle Cryo emblem, faithfully shaped like the sixth snowflake emblem in reference image 2, integrated in the same palette as an understated corner inlay or small decorative detail. It must be secondary to the official namecard motif. Reference image 2 is only an elemental icon key; do not copy its black background or other icons.\nDo not add new circles, seals, medallions, flowers, glowing effects, complex ornament or dramatic gradients beyond the original. Keep original namecard graphic faces/mascot symbols when they are part of its artwork; do not add any new character portrait, full-body person, chibi character or mascot. The standard app schedule can cover background art, so do not create a huge empty protected zone.\nNo text, UI, labels, schedule, clock, numbers, logos, watermarks, device frames or transparency.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-9acb7c42-7050-44c4-942e-d99dabb3b28f.png",
+      "destination": "public/wallpapers/scenic/genshin-card-skirk-lone-shadow/mobile.png",
+      "provider": "built-in imagegen"
+    },
+    {
+      "key": "skirk",
+      "id": "genshin-card-skirk-lone-shadow",
+      "name": "Skirk · Lone Shadow",
+      "ref": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\skirk.png",
+      "element": "Cryo",
+      "symbol": "sixth snowflake emblem",
+      "motif": "deep aubergine night with prismatic lavender and ice-blue shards, angular shattered glass and long fluid white-violet ribbon arcs, sparse four-point stars. Remove all original hair, head, silhouette and eye motifs; replace focal figure with an abstract crystalline flower around an exact Cryo snowflake emblem. No human-shaped outline.",
+      "palette": [
+        "#20193d",
+        "#f2efff",
+        "#171932ed"
+      ],
+      "device": "tablet",
+      "w": 1600,
+      "h": 2560,
+      "prompt": "Create a faithful device-format adaptation of the OFFICIAL in-game Genshin Impact Skirk · Lone Shadow namecard shown in reference image 1. Output 1600x2560, tablet, exact aspect ratio 1600:2560, opaque full bleed.\nThis is an extension/recomposition of the existing official namecard, NOT a redesign. Closely preserve its flat game-art style, original line shapes, exact palette, existing motif identity, relative motif scale and restrained level of detail. Retain the original asymmetrical lavender and ice-blue fractured-glass layout, white flowing shape/hair motif from the official namecard, dark star field and four-point stars. Preserve the distinctive original drawing instead of replacing it with a generic crystal flower; no additional character illustration.\nFor this portrait screen, extend the original background above and below and move the main official motif toward the lower half as needed; use existing original small motifs sparingly at the edges, and leave the upper-center clock area comparatively calm.\nAdd ONE small, subtle Cryo emblem, faithfully shaped like the sixth snowflake emblem in reference image 2, integrated in the same palette as an understated corner inlay or small decorative detail. It must be secondary to the official namecard motif. Reference image 2 is only an elemental icon key; do not copy its black background or other icons.\nDo not add new circles, seals, medallions, flowers, glowing effects, complex ornament or dramatic gradients beyond the original. Keep original namecard graphic faces/mascot symbols when they are part of its artwork; do not add any new character portrait, full-body person, chibi character or mascot. The standard app schedule can cover background art, so do not create a huge empty protected zone.\nNo text, UI, labels, schedule, clock, numbers, logos, watermarks, device frames or transparency.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-96a1bae1-9e55-4b39-ac25-3d25c8d9a5f5.png",
+      "destination": "public/wallpapers/scenic/genshin-card-skirk-lone-shadow/tablet.png",
+      "provider": "built-in imagegen"
+    },
+    {
+      "key": "skirk",
+      "id": "genshin-card-skirk-lone-shadow",
+      "name": "Skirk · Lone Shadow",
+      "ref": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\skirk.png",
+      "element": "Cryo",
+      "symbol": "sixth snowflake emblem",
+      "motif": "deep aubergine night with prismatic lavender and ice-blue shards, angular shattered glass and long fluid white-violet ribbon arcs, sparse four-point stars. Remove all original hair, head, silhouette and eye motifs; replace focal figure with an abstract crystalline flower around an exact Cryo snowflake emblem. No human-shaped outline.",
+      "palette": [
+        "#20193d",
+        "#f2efff",
+        "#171932ed"
+      ],
+      "device": "laptop",
+      "w": 1920,
+      "h": 1080,
+      "prompt": "Create a faithful device-format adaptation of the OFFICIAL in-game Genshin Impact Skirk · Lone Shadow namecard shown in reference image 1. Output 1920x1080, laptop, exact aspect ratio 1920:1080, opaque full bleed.\nThis is an extension/recomposition of the existing official namecard, NOT a redesign. Closely preserve its flat game-art style, original line shapes, exact palette, existing motif identity, relative motif scale and restrained level of detail. Retain the original asymmetrical lavender and ice-blue fractured-glass layout, white flowing shape/hair motif from the official namecard, dark star field and four-point stars. Preserve the distinctive original drawing instead of replacing it with a generic crystal flower; no additional character illustration.\nFor this horizontal screen, retain a layout very close to the original wide namecard and extend background naturally to the 16:9 format.\nAdd ONE small, subtle Cryo emblem, faithfully shaped like the sixth snowflake emblem in reference image 2, integrated in the same palette as an understated corner inlay or small decorative detail. It must be secondary to the official namecard motif. Reference image 2 is only an elemental icon key; do not copy its black background or other icons.\nDo not add new circles, seals, medallions, flowers, glowing effects, complex ornament or dramatic gradients beyond the original. Keep original namecard graphic faces/mascot symbols when they are part of its artwork; do not add any new character portrait, full-body person, chibi character or mascot. The standard app schedule can cover background art, so do not create a huge empty protected zone.\nNo text, UI, labels, schedule, clock, numbers, logos, watermarks, device frames or transparency.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-02a95b81-0bca-4fe2-b469-f8d64157bdcf.png",
+      "destination": "public/wallpapers/scenic/genshin-card-skirk-lone-shadow/laptop.png",
+      "provider": "built-in imagegen"
+    },
+    {
+      "key": "zhongli",
+      "id": "genshin-card-zhongli-planet",
+      "name": "Zhongli · Planet Befall",
+      "ref": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\zhongli.png",
+      "element": "Geo",
+      "symbol": "seventh (bottom) interlocking diamond emblem",
+      "motif": "smoky bronze umber stone, warm amber and antique gold, sculptural interlocking square-diamond stone seal, a few fine diagonal golden falling light strokes, subtle abstract engraved geometric marks rather than readable text. Integrate exact Geo interlocking diamond symbol in the central stone seal. Calm monumental and simple.",
+      "palette": [
+        "#574333",
+        "#fff1ce",
+        "#2b241ded"
+      ],
+      "device": "mobile",
+      "w": 1080,
+      "h": 2400,
+      "prompt": "Create a faithful device-format adaptation of the OFFICIAL in-game Genshin Impact Zhongli · Planet Befall namecard shown in reference image 1. Output 1080x2400, mobile, exact aspect ratio 1080:2400, opaque full bleed.\nThis is an extension/recomposition of the existing official namecard, NOT a redesign. Closely preserve its flat game-art style, original line shapes, exact palette, existing motif identity, relative motif scale and restrained level of detail. Retain the original interlocking three-dimensional amber-gold square knot/stone seal and its exact geometric construction, sparse fine diagonal streaks, smoky bronze background and low-contrast archaic seal-like marks. Do not replace the emblem with a generic diamond medallion.\nFor this portrait screen, extend the original background above and below and move the main official motif toward the lower half as needed; use existing original small motifs sparingly at the edges, and leave the upper-center clock area comparatively calm.\nAdd ONE small, subtle Geo emblem, faithfully shaped like the seventh (bottom) interlocking diamond emblem in reference image 2, integrated in the same palette as an understated corner inlay or small decorative detail. It must be secondary to the official namecard motif. Reference image 2 is only an elemental icon key; do not copy its black background or other icons.\nDo not add new circles, seals, medallions, flowers, glowing effects, complex ornament or dramatic gradients beyond the original. Keep original namecard graphic faces/mascot symbols when they are part of its artwork; do not add any new character portrait, full-body person, chibi character or mascot. The standard app schedule can cover background art, so do not create a huge empty protected zone.\nNo text, UI, labels, schedule, clock, numbers, logos, watermarks, device frames or transparency.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-b3a4c9fb-d250-40dd-8610-dbb64af0990f.png",
+      "destination": "public/wallpapers/scenic/genshin-card-zhongli-planet/mobile.png",
+      "provider": "built-in imagegen"
+    },
+    {
+      "key": "zhongli",
+      "id": "genshin-card-zhongli-planet",
+      "name": "Zhongli · Planet Befall",
+      "ref": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\zhongli.png",
+      "element": "Geo",
+      "symbol": "seventh (bottom) interlocking diamond emblem",
+      "motif": "smoky bronze umber stone, warm amber and antique gold, sculptural interlocking square-diamond stone seal, a few fine diagonal golden falling light strokes, subtle abstract engraved geometric marks rather than readable text. Integrate exact Geo interlocking diamond symbol in the central stone seal. Calm monumental and simple.",
+      "palette": [
+        "#574333",
+        "#fff1ce",
+        "#2b241ded"
+      ],
+      "device": "tablet",
+      "w": 1600,
+      "h": 2560,
+      "prompt": "Create a faithful device-format adaptation of the OFFICIAL in-game Genshin Impact Zhongli · Planet Befall namecard shown in reference image 1. Output 1600x2560, tablet, exact aspect ratio 1600:2560, opaque full bleed.\nThis is an extension/recomposition of the existing official namecard, NOT a redesign. Closely preserve its flat game-art style, original line shapes, exact palette, existing motif identity, relative motif scale and restrained level of detail. Retain the original interlocking three-dimensional amber-gold square knot/stone seal and its exact geometric construction, sparse fine diagonal streaks, smoky bronze background and low-contrast archaic seal-like marks. Do not replace the emblem with a generic diamond medallion.\nFor this portrait screen, extend the original background above and below and move the main official motif toward the lower half as needed; use existing original small motifs sparingly at the edges, and leave the upper-center clock area comparatively calm.\nAdd ONE small, subtle Geo emblem, faithfully shaped like the seventh (bottom) interlocking diamond emblem in reference image 2, integrated in the same palette as an understated corner inlay or small decorative detail. It must be secondary to the official namecard motif. Reference image 2 is only an elemental icon key; do not copy its black background or other icons.\nDo not add new circles, seals, medallions, flowers, glowing effects, complex ornament or dramatic gradients beyond the original. Keep original namecard graphic faces/mascot symbols when they are part of its artwork; do not add any new character portrait, full-body person, chibi character or mascot. The standard app schedule can cover background art, so do not create a huge empty protected zone.\nNo text, UI, labels, schedule, clock, numbers, logos, watermarks, device frames or transparency.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-7a863dc0-bd4c-4b9a-92fe-62879e4a28fa.png",
+      "destination": "public/wallpapers/scenic/genshin-card-zhongli-planet/tablet.png",
+      "provider": "built-in imagegen"
+    },
+    {
+      "key": "zhongli",
+      "id": "genshin-card-zhongli-planet",
+      "name": "Zhongli · Planet Befall",
+      "ref": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin-namecards-2\\references\\zhongli.png",
+      "element": "Geo",
+      "symbol": "seventh (bottom) interlocking diamond emblem",
+      "motif": "smoky bronze umber stone, warm amber and antique gold, sculptural interlocking square-diamond stone seal, a few fine diagonal golden falling light strokes, subtle abstract engraved geometric marks rather than readable text. Integrate exact Geo interlocking diamond symbol in the central stone seal. Calm monumental and simple.",
+      "palette": [
+        "#574333",
+        "#fff1ce",
+        "#2b241ded"
+      ],
+      "device": "laptop",
+      "w": 1920,
+      "h": 1080,
+      "prompt": "Create a faithful device-format adaptation of the OFFICIAL in-game Genshin Impact Zhongli · Planet Befall namecard shown in reference image 1. Output 1920x1080, laptop, exact aspect ratio 1920:1080, opaque full bleed.\nThis is an extension/recomposition of the existing official namecard, NOT a redesign. Closely preserve its flat game-art style, original line shapes, exact palette, existing motif identity, relative motif scale and restrained level of detail. Retain the original interlocking three-dimensional amber-gold square knot/stone seal and its exact geometric construction, sparse fine diagonal streaks, smoky bronze background and low-contrast archaic seal-like marks. Do not replace the emblem with a generic diamond medallion.\nFor this horizontal screen, retain a layout very close to the original wide namecard and extend background naturally to the 16:9 format.\nAdd ONE small, subtle Geo emblem, faithfully shaped like the seventh (bottom) interlocking diamond emblem in reference image 2, integrated in the same palette as an understated corner inlay or small decorative detail. It must be secondary to the official namecard motif. Reference image 2 is only an elemental icon key; do not copy its black background or other icons.\nDo not add new circles, seals, medallions, flowers, glowing effects, complex ornament or dramatic gradients beyond the original. Keep original namecard graphic faces/mascot symbols when they are part of its artwork; do not add any new character portrait, full-body person, chibi character or mascot. The standard app schedule can cover background art, so do not create a huge empty protected zone.\nNo text, UI, labels, schedule, clock, numbers, logos, watermarks, device frames or transparency.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-bd6ff325-4055-4182-99df-3ea38b2b05b4.png",
+      "destination": "public/wallpapers/scenic/genshin-card-zhongli-planet/laptop.png",
+      "provider": "built-in imagegen"
+    }
+  ]
+}

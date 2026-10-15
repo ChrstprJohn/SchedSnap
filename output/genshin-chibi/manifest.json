@@ -1,0 +1,124 @@
+{
+  "assets": [
+    {
+      "path": "public/wallpapers/scenic/genshin-kaeya-atlas/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "54be402d6ea64a230fcb65debedf4cf37524e3d836724188fffe5c958c87fa2a"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-kaeya-atlas/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "cef18b47cdffbb21a42ed6f6304a279621e20dd6d5d5b933ce31a84977b008bc"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-kaeya-atlas/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "d05917967a7c13429817b88ed81637d43333632d82955a6425d866d9e008b255"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-tidal-sketches/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "d1d2434b1b92dccc4f22a972a4578d55b5324437a4a671411ada2c659fe95cde"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-tidal-sketches/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "dc22b4a08c50697b0dd5ee32f274aedccf590cf780ca5b89af7139a8be6b3b86"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-tidal-sketches/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "5a917de7449f3f487f77598c551af1928b9fe5d914f9fe350d8bdd4f1f942e18"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-celestial-promise/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "daca43b8bdaddb0152309b7ed61c5235e730ff436f4497c839cfc329ed89ca32"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-celestial-promise/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "7074da1c3eb58fb3960deea002a9ff06a3f4a42c1d7d4d1a86380bff44e2d9e3"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-celestial-promise/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "f3556ec4cdc1331116e3e0403eba0a57ba43a7b79ae68f78acc14be02333c272"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-paimon-starlight/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "eddf6ddf37211ee58a68fe940bb05ee34adb7a542a894012b4b677e22c2b7f1d"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-paimon-starlight/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "97eb3e51b4a67fa6e004625b4d921767ec8146a37bcf8c17dd1214ffa1b2e2f0"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-paimon-starlight/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "988f9b2973e4e6c5d2a443537865b8ac9fe991993ff294a1a5fffe70642ad6eb"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-teyvat-sketch-parade/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "a631ecbc142e99006f8d48c7f893e7d68020c2feb85e1ebd7171336b315e66b0"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-teyvat-sketch-parade/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "03eea0dd346451379a61a527ec6cbc2ea219deb0997a8c8755de8093115985f9"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-teyvat-sketch-parade/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "ba1e02f31325614f08696a467c1588d309e2c8f2db7d2e0affbf692d10e18256"
+    }
+  ]
+}

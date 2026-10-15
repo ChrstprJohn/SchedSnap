@@ -1,0 +1,187 @@
+{
+  "generatedAt": "2026-10-15T16:17:23.920Z",
+  "provider": "built-in imagegen",
+  "assetCount": 18,
+  "assets": [
+    {
+      "id": "genshin-card-hutao-spirit",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-card-hutao-spirit/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "325f1ee9e50ba83a5ad31f1af71419dae789d2b4fe83fc98f2cbabdd7fd918ac"
+    },
+    {
+      "id": "genshin-card-hutao-spirit",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-card-hutao-spirit/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "4e475d257e41a4166eddd58209e767f9f3eec4195fa43d621557fd349865c861"
+    },
+    {
+      "id": "genshin-card-hutao-spirit",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-card-hutao-spirit/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "9aac9e9995279c88f753260e01fd93eb5fd3584129be9fc3dda07033e4af29b9"
+    },
+    {
+      "id": "genshin-card-navia-rosula",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-card-navia-rosula/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "b1380dd369fa2c0454b5e4ea107045474bfb7bae0acc08bd6c6894510c3b1e94"
+    },
+    {
+      "id": "genshin-card-navia-rosula",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-card-navia-rosula/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "18b7fa715988a87ce7a9de02e73079e78144da7fb19b08522f6f407e3bf08819"
+    },
+    {
+      "id": "genshin-card-navia-rosula",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-card-navia-rosula/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "87bdbdca37e250f58fea8b56842cfcf2400b67612027de7592abfbb9bfce1cd7"
+    },
+    {
+      "id": "genshin-card-varesa-powerhouse",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-card-varesa-powerhouse/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "c66de3160305e3f9b7c339bc536514ba25f492cb06664a15c67ffe3f45ff7046"
+    },
+    {
+      "id": "genshin-card-varesa-powerhouse",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-card-varesa-powerhouse/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "f6853530854f8d3ebf5ba157f312fd33832b4fdad9d63e46ed0257343fa6f9af"
+    },
+    {
+      "id": "genshin-card-varesa-powerhouse",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-card-varesa-powerhouse/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "5a6293626e27685f0104e1db56fe52262778ea1b6bb26366d6f8335a9e88bff1"
+    },
+    {
+      "id": "genshin-card-citlali-opalstar",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-card-citlali-opalstar/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "25052ec4a33fc164124586bcd78d1901771e21c76af1c29646c0ef1446e64431"
+    },
+    {
+      "id": "genshin-card-citlali-opalstar",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-card-citlali-opalstar/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "e3f34ccb3316ed382b3ff36fbde375ef4e124577d62ab87ab4ec4727eea08dc3"
+    },
+    {
+      "id": "genshin-card-citlali-opalstar",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-card-citlali-opalstar/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "15e08ef49fdf7de393afad295885a97f3298c33feea4cfb4b08e1225143d1edf"
+    },
+    {
+      "id": "genshin-card-skirk-lone-shadow",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-card-skirk-lone-shadow/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "8fed0282fb285f851d92bae897a00293e042d3eadede953e13d39d6fc1272f1e"
+    },
+    {
+      "id": "genshin-card-skirk-lone-shadow",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-card-skirk-lone-shadow/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "fd67580e6484e80b6e449d90e0161435beb5ffd5b03eaccbc7ae4def798e13c1"
+    },
+    {
+      "id": "genshin-card-skirk-lone-shadow",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-card-skirk-lone-shadow/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "e547d39b082d67fe0ebac921c830953d8625439eb061b4f93d49fd302f493060"
+    },
+    {
+      "id": "genshin-card-zhongli-planet",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-card-zhongli-planet/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "74f15457ab25f64a9bc9dcbb65451acf2c61583b040dead0cc33408bccdd21d6"
+    },
+    {
+      "id": "genshin-card-zhongli-planet",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-card-zhongli-planet/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "24a9a3c27992b01c8ba18c73cedd56c44be49f4aad37c9bca81fb8658dc57755"
+    },
+    {
+      "id": "genshin-card-zhongli-planet",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-card-zhongli-planet/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "40d944dea1d2ae66f3b8ac0fa7bb9079a37273af6a2677b3c62da4fd9335a8ff"
+    }
+  ]
+}

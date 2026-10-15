@@ -1,0 +1,63 @@
+{
+  "provider": "built-in image_gen",
+  "referenceURL": "https://upload-os-bbs.hoyolab.com/upload/2024/04/17/44df2b396d66724ea352cbab15c55a87_3015813820825013635.jpg",
+  "referencePath": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\documentation\\genshin\\references\\arlecchino.png",
+  "referenceRole": "Official HoYoLAB-hosted promotional artwork, identity only; lettering and scenery discarded. JPEG decoded losslessly to PNG reference.",
+  "sizing": "Independently generated compositions, same generated mobile identity reference; existing package-sanrio-image.py exact pixel export without cropping.",
+  "assets": [
+    {
+      "id": "genshin-arlecchino-ember",
+      "device": "mobile",
+      "width": 1080,
+      "height": 2400,
+      "prompt": "Create one opaque full bleed mobile wallpaper 1080x2400. Official reference image1 is CHARACTER IDENTITY ONLY: Arlecchino from Genshin Impact. Draw one cute poised seated chibi Arlecchino holding a tiny red flower: white hair with unmistakable black streaks, asymmetrical fringe, tied low ponytail, black eyes with tiny red X pupils, tailored white black red suit with coattails, black hands, pointed black/red boots. Soft clean anime ink illustration with restrained cel shading, recognizable clothing simplified. Composition: very SMALL full body chibi centered entirely BELOW75% of canvas height; footer group height only20% of canvas. Top75% absolutely empty pale ash ivory paper for schedule, including blank clock space. Subtle background design: two tiny crimson petal doodles near lower edges, ONE faint thin angular corner line at bottom left, tiny flower beside feet. Opaque soft ivory paper field with faint texture. Artwork only. No text, headings, names, logos, timetable, cards, UI, mockup, watermark. No reference lettering. No ornate gothic backdrop, architecture, flames, glows, giant ornaments, borders, clutter. Do not enlarge character to fill canvas.",
+      "correctionPrompt": "Correct ONLY scale and position of entire illustration group. Preserve Arlecchino identity, hair, red X eyes, black hands, costume, seated pose holding flower, style and ivory paper. Make the ENTIRE character and every petal, flower, faint corner line and shadow exactly HALF their current height. Put this complete group at bottom center, fully intact. All visible artwork MUST START BELOW72% canvas height; top72% empty paper only. Do NOT crop. Do NOT stretch. Do NOT change canvas portrait aspect ratio. No text or UI. A tiny footer illustration is intended, not a large hero character.",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-89ca8fc2-1819-447b-872f-f59d6945275f.png",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-6225f38f-4651-40a9-9b73-2f7b892b5410.png",
+      "destination": "public/wallpapers/scenic/genshin-arlecchino-ember/mobile.png",
+      "nativeDimensions": [
+        841,
+        1870
+      ],
+      "sha256": "8e89d2e8b1f990915baa406f8f7a2722e54ce8033a811a634d75c52ffaadeeff",
+      "opaque": true,
+      "dimensionsValid": true
+    },
+    {
+      "id": "genshin-arlecchino-ember",
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "prompt": "Create ONE new independently composed opaque full bleed wallpaper exactly 1600x2560. Use reference1 generated mobile as exact chibi identity, pose, style and palette reference, NOT as image to stretch. Same recognizable Arlecchino: asymmetrical white hair with black fringe streaks, low ponytail, black eyes with red X pupils, tailored white black red suit/coattails, black hands, pointed boots, poised seated holding tiny red flower. Clean restrained anime ink and cel shading. Portrait tablet: recomposed small seated full body character at lower right, entire character and every doodle strictly below75% canvas height. Top75% plain quiet paper. Footer illustration height20%. Soft ivory ash paper with faint texture. Two tiny crimson petal doodles, one faint thin angular corner line inside artwork zone, tiny flower near feet. No extra objects, no ornate gothic scene, architecture, flame wall, glows, clutter, borders. Artwork only: absolutely no text, headings, names, schedule, cards, UI, logos, watermark. Reference2 official art is secondary identity check only; do not copy its lettering or background.",
+      "correctionPrompt": "Placement correction ONLY: uniformly shrink complete Arlecchino plus flower, petals, corner line and shadow group to HALF current height; anchor lower right with margin. Entire artwork group starts below75% canvas height. Top75% unchanged quiet ivory paper. Keep identity, pose, red X eyes, costume, black fringe, black hands, style. Entire character intact. No cropping/stretching. No new objects/text/UI.",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-4e75c5d2-b4ea-4ae8-8e46-52b47eb16d8e.png",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-179d8d36-481d-4eb7-bc5c-37c1c86b0fcf.png",
+      "destination": "public/wallpapers/scenic/genshin-arlecchino-ember/tablet.png",
+      "nativeDimensions": [
+        992,
+        1586
+      ],
+      "sha256": "b2905c151a240942b9cd8891076b1ce47dfd911d570418a7570533e0c2a6fbd8",
+      "opaque": true,
+      "dimensionsValid": true
+    },
+    {
+      "id": "genshin-arlecchino-ember",
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "prompt": "Create ONE new independently composed opaque full bleed wallpaper exactly 1920x1080. Use reference1 generated mobile as exact chibi identity, pose, style and palette reference, NOT as image to stretch. Same recognizable Arlecchino: asymmetrical white hair with black fringe streaks, low ponytail, black eyes with red X pupils, tailored white black red suit/coattails, black hands, pointed boots, poised seated holding tiny red flower. Clean restrained anime ink and cel shading. Landscape laptop: independently recompose seated full body character at far right, all character and decoration confined to rightmost25% canvas width, left70% plain quiet paper. Character width only20%canvas. Keep fully visible with margin, centered vertically. Soft ivory ash paper with faint texture. Two tiny crimson petal doodles, one faint thin angular corner line inside artwork zone, tiny flower near feet. No extra objects, no ornate gothic scene, architecture, flame wall, glows, clutter, borders. Artwork only: absolutely no text, headings, names, schedule, cards, UI, logos, watermark. Reference2 official art is secondary identity check only; do not copy its lettering or background.",
+      "correctionPrompt": "Placement correction ONLY: uniformly shrink complete Arlecchino plus flower, petals, corner line and shadow group to75% current width; shift toward right edge with margin. ALL artwork pixels must be RIGHT OF72% canvas width; left72% unchanged quiet ivory paper. Keep identity, seated pose, red X eyes, costume, black fringe, black hands, style. Entire character intact. No cropping/stretching. No new objects/text/UI.",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-cfec20f2-eeee-4c9e-b1c5-de4348247000.png",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-723d-7b21-96c3-aea9e96f5c39\\exec-8351b61a-b412-4157-9437-462dba6f212e.png",
+      "destination": "public/wallpapers/scenic/genshin-arlecchino-ember/laptop.png",
+      "nativeDimensions": [
+        1672,
+        941
+      ],
+      "sha256": "799b33b89811ce641a2ea0e08d7bab83c70ebdd0296e32731364e2a4680d4e45",
+      "opaque": true,
+      "dimensionsValid": true
+    }
+  ]
+}

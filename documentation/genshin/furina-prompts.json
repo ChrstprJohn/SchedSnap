@@ -1,0 +1,283 @@
+{
+  "character": "Furina",
+  "createdAt": "2026-10-13T13:47:59.987Z",
+  "generator": "built-in image_gen",
+  "assets": [
+    {
+      "id": "genshin-furina-tea",
+      "device": "mobile",
+      "width": 1080,
+      "height": 2400,
+      "prompt": "Use case: stylized-concept. Create ONE opaque full-bleed PNG background artwork at EXACTLY 1080x2400 pixels. Subject: one recognizable Genshin Impact Furina chibi, white hair with light blue strands, blue eyes, signature navy blue top hat with small blue ornament, navy and white elegant shorts costume and blue bow, Furina sitting demurely holding a tiny white teacup, cheerful relaxed smile. Style: Soft flat chibi illustration with clean rounded outlines and flat pastel fills, minimal two-tone cel shading, polished simple kawaii drawing. Backdrop: flat solid #edf3fa pale ice-blue, very subtle paper feel at most. Composition: Portrait. All character and accessory artwork must fit ENTIRELY within bottom 24% of canvas, below y=1824. Upper 76% is uniformly empty background. Character near bottom center, small full body, no clipping. Accents: only two small blue four-point sparkle doodles, clustered close to character in its permitted artwork area. Reference is identity inspiration only; remove every ornate element. Extremely simple, airy, restrained, useful as schedule wallpaper. BACKGROUND ARTWORK ONLY. Absolutely no lettering, words, numbers, heading, timetable, schedules, cards, panels, frame, UI, logo, watermark. No architecture, palace, scenery, flowers, borders, excessive floating details, additional characters or companion creatures. Keep character size small enough to preserve specified empty schedule area. Entire canvas opaque.",
+      "provider": "built-in image_gen",
+      "referenceRole": "Candidate inspected for Furina identity/style inspiration; not passed into initial generation. No reference schedule/layout retained.",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-85a9fcc4-7e2c-429c-833c-f3411e899da1.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-bb2733c4-4ee3-46ed-9016-107afc128db8.png",
+      "correctionCount": 1,
+      "finalPath": "public/wallpapers/scenic/genshin-furina-tea/mobile.png",
+      "normalization": "scripts/package-sanrio-image.py; independently generated device composition, matching ratio normalized without cropping; user authorized export sizing",
+      "visualInspection": {
+        "cleanBackground": true,
+        "noTextOrUI": true,
+        "completeSilhouette": true,
+        "scheduleClearance": "Updated renderer safe region: upper60% portrait, left58% laptop plus insets"
+      },
+      "correctionPrompt": "Edit this wallpaper only to correct size and placement. Deliver EXACTLY 1080x2400 pixels opaque PNG. Preserve Furina identity, sitting tea pose, simple line style, color and pale background. REDUCE the entire character plus two sparkle accents together proportionally so total artwork height is 470 pixels maximum (less than20% of canvas), place centered at bottom with 70pixel bottom padding. Highest artwork pixel below y=1840, so upper76% completely blank pale background. Do not stretch or crop character. No text, UI, cards, headings, logos. Flat background remains unchanged.",
+      "nativeDimensions": [
+        841,
+        1870
+      ],
+      "finalDimensions": [
+        1080,
+        2400
+      ],
+      "sha256": "3a6e1bae33868dd2bc33900cd9769d558a665b3efef5aa4787f3da9d9796e980",
+      "opaque": true
+    },
+    {
+      "id": "genshin-furina-tea",
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "prompt": "Use case: stylized-concept. Create ONE opaque full-bleed PNG background artwork at EXACTLY 1600x2560 pixels. Subject: one recognizable Genshin Impact Furina chibi, white hair with light blue strands, blue eyes, signature navy blue top hat with small blue ornament, navy and white elegant shorts costume and blue bow, Furina sitting demurely holding a tiny white teacup, cheerful relaxed smile. Style: Soft flat chibi illustration with clean rounded outlines and flat pastel fills, minimal two-tone cel shading, polished simple kawaii drawing. Backdrop: flat solid #edf3fa pale ice-blue, very subtle paper feel at most. Composition: Portrait tablet, independently compose this size. All character and accessory artwork must fit ENTIRELY within bottom 24% of canvas, below y=1945. Upper 76% is uniformly empty background. Small full body character near bottom right, no clipping. Accents: only two small blue four-point sparkle doodles, clustered close to character in its permitted artwork area. Reference is identity inspiration only; remove every ornate element. Extremely simple, airy, restrained, useful as schedule wallpaper. BACKGROUND ARTWORK ONLY. Absolutely no lettering, words, numbers, heading, timetable, schedules, cards, panels, frame, UI, logo, watermark. No architecture, palace, scenery, flowers, borders, excessive floating details, additional characters or companion creatures. Keep character size small enough to preserve specified empty schedule area. Entire canvas opaque.",
+      "provider": "built-in image_gen",
+      "referenceRole": "Candidate inspected for Furina identity/style inspiration; not passed into initial generation. No reference schedule/layout retained.",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-e28c9804-59df-499e-989f-36596dd5acd4.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-1add3d5f-2c61-42a6-af5b-24432d450d70.png",
+      "correctionCount": 1,
+      "finalPath": "public/wallpapers/scenic/genshin-furina-tea/tablet.png",
+      "normalization": "scripts/package-sanrio-image.py; independently generated device composition, matching ratio normalized without cropping; user authorized export sizing",
+      "visualInspection": {
+        "cleanBackground": true,
+        "noTextOrUI": true,
+        "completeSilhouette": true,
+        "scheduleClearance": "Updated renderer safe region: upper60% portrait, left58% laptop plus insets"
+      },
+      "correctionPrompt": "Edit only size/placement. EXACTLY 1600x2560 opaque PNG. Preserve Furina tea sitting identity and style. Proportionally REDUCE entire character and two sparkles together to height460px maximum; anchor bottom right with80px right/bottom padding. All artwork below y=1970; upper76% uniformly blank same pale blue. No cropping, stretching, added text or UI.",
+      "nativeDimensions": [
+        992,
+        1586
+      ],
+      "finalDimensions": [
+        1600,
+        2560
+      ],
+      "sha256": "4f0044c5f57f2b88139f65b5b1f6a5643bdcc7c8434a9b2d8d37d9d1c9cbb85a",
+      "opaque": true
+    },
+    {
+      "id": "genshin-furina-tea",
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "prompt": "Use case: stylized-concept. Create ONE opaque full-bleed PNG background artwork at EXACTLY 1920x1080 pixels. Subject: one recognizable Genshin Impact Furina chibi, white hair with light blue strands, blue eyes, signature navy blue top hat with small blue ornament, navy and white elegant shorts costume and blue bow, Furina sitting demurely holding a tiny white teacup, cheerful relaxed smile. Style: Soft flat chibi illustration with clean rounded outlines and flat pastel fills, minimal two-tone cel shading, polished simple kawaii drawing. Backdrop: flat solid #edf3fa pale ice-blue, very subtle paper feel at most. Composition: Landscape laptop, independently compose this size. Character and accessories entirely within rightmost 28%, x>1382. Left 65% is uniformly empty background. Full body chibi at right, no clipping. Accents: only two small blue four-point sparkle doodles, clustered close to character in its permitted artwork area. Reference is identity inspiration only; remove every ornate element. Extremely simple, airy, restrained, useful as schedule wallpaper. BACKGROUND ARTWORK ONLY. Absolutely no lettering, words, numbers, heading, timetable, schedules, cards, panels, frame, UI, logo, watermark. No architecture, palace, scenery, flowers, borders, excessive floating details, additional characters or companion creatures. Keep character size small enough to preserve specified empty schedule area. Entire canvas opaque.",
+      "provider": "built-in image_gen",
+      "referenceRole": "Candidate inspected for Furina identity/style inspiration; not passed into initial generation. No reference schedule/layout retained.",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-6b07d774-ba3f-472e-bde7-1b9d97426924.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-f770e5b6-6eff-4196-91f7-f2d5c27a9472.png",
+      "correctionCount": 1,
+      "finalPath": "public/wallpapers/scenic/genshin-furina-tea/laptop.png",
+      "normalization": "scripts/package-sanrio-image.py; independently generated device composition, matching ratio normalized without cropping; user authorized export sizing",
+      "visualInspection": {
+        "cleanBackground": true,
+        "noTextOrUI": true,
+        "completeSilhouette": true,
+        "scheduleClearance": "Updated renderer safe region: upper60% portrait, left58% laptop plus insets"
+      },
+      "correctionPrompt": "Edit only size/placement. EXACTLY1920x1080 opaque PNG. Preserve Furina tea sitting identity/style. Proportionally reduce character and two sparkles to width440px maximum; position centered vertically at right with70px right padding. All artwork entirely right of x=1400. Left72% uniformly blank same pale blue. No cropping/stretching/additional text/UI.",
+      "nativeDimensions": [
+        1672,
+        941
+      ],
+      "finalDimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "eb0c40a9e4a3e3cfafd54da97b7b94108335246d7014500b13cf99821c867bf3",
+      "opaque": true
+    },
+    {
+      "id": "genshin-furina-bubble",
+      "device": "mobile",
+      "width": 1080,
+      "height": 2400,
+      "prompt": "Use case: stylized-concept. Create ONE opaque full-bleed PNG background artwork at EXACTLY 1080x2400 pixels. Subject: one recognizable Genshin Impact Furina chibi, white hair with light blue strands, blue eyes, signature navy blue top hat with small blue ornament, navy and white elegant shorts costume and blue bow, Furina standing with a playful smile and raising one finger toward a tiny translucent bubble. Style: Restrained watercolor chibi illustration: delicate thin ink edges, soft transparent watercolor pigment only inside the character, mostly flat matte background, handmade gentle paper charm. Backdrop: flat solid #eef7f5 pale mint aqua, very subtle paper feel at most. Composition: Portrait. All character and accessory artwork must fit ENTIRELY within bottom 24% of canvas, below y=1824. Upper 76% is uniformly empty background. Character near bottom center, small full body, no clipping. Accents: only three tiny pale blue bubbles, clustered close to character in its permitted artwork area. Reference is identity inspiration only; remove every ornate element. Extremely simple, airy, restrained, useful as schedule wallpaper. BACKGROUND ARTWORK ONLY. Absolutely no lettering, words, numbers, heading, timetable, schedules, cards, panels, frame, UI, logo, watermark. No architecture, palace, scenery, flowers, borders, excessive floating details, additional characters or companion creatures. Keep character size small enough to preserve specified empty schedule area. Entire canvas opaque.",
+      "provider": "built-in image_gen",
+      "referenceRole": "Candidate inspected for Furina identity/style inspiration; not passed into initial generation. No reference schedule/layout retained.",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-3fd46aae-4d79-4e10-b128-56e260984ab3.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-d7fc8036-a5c3-4657-bdc7-c2ffbb2b09a4.png",
+      "correctionCount": 1,
+      "finalPath": "public/wallpapers/scenic/genshin-furina-bubble/mobile.png",
+      "normalization": "scripts/package-sanrio-image.py; independently generated device composition, matching ratio normalized without cropping; user authorized export sizing",
+      "visualInspection": {
+        "cleanBackground": true,
+        "noTextOrUI": true,
+        "completeSilhouette": true,
+        "scheduleClearance": "Updated renderer safe region: upper60% portrait, left58% laptop plus insets"
+      },
+      "correctionPrompt": "Edit only size/placement. Deliver exactly 1080x2400 opaque PNG. Preserve standing Furina bubble pose, recognizable identity, watercolor style and pale aqua background. Proportionally REDUCE all character/bubble/shadow artwork to height 430px maximum; position bottom center, with70px bottom padding. Highest artwork pixel belowy=1850, upper76% entirely blank background. Keep whole silhouette, no crop or stretching. No text/UI/cards/heading.",
+      "nativeDimensions": [
+        841,
+        1870
+      ],
+      "finalDimensions": [
+        1080,
+        2400
+      ],
+      "sha256": "da126c7c9dfdd6e6a5a2c9b2da55b39d26684aea08b5c54e0ce69d64e77f82e7",
+      "opaque": true
+    },
+    {
+      "id": "genshin-furina-bubble",
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "prompt": "Use case: stylized-concept. Create ONE opaque full-bleed PNG background artwork at EXACTLY 1600x2560 pixels. Subject: one recognizable Genshin Impact Furina chibi, white hair with light blue strands, blue eyes, signature navy blue top hat with small blue ornament, navy and white elegant shorts costume and blue bow, Furina standing with a playful smile and raising one finger toward a tiny translucent bubble. Style: Restrained watercolor chibi illustration: delicate thin ink edges, soft transparent watercolor pigment only inside the character, mostly flat matte background, handmade gentle paper charm. Backdrop: flat solid #eef7f5 pale mint aqua, very subtle paper feel at most. Composition: Portrait tablet, independently compose this size. All character and accessory artwork must fit ENTIRELY within bottom 24% of canvas, below y=1945. Upper 76% is uniformly empty background. Small full body character near bottom right, no clipping. Accents: only three tiny pale blue bubbles, clustered close to character in its permitted artwork area. Reference is identity inspiration only; remove every ornate element. Extremely simple, airy, restrained, useful as schedule wallpaper. BACKGROUND ARTWORK ONLY. Absolutely no lettering, words, numbers, heading, timetable, schedules, cards, panels, frame, UI, logo, watermark. No architecture, palace, scenery, flowers, borders, excessive floating details, additional characters or companion creatures. Keep character size small enough to preserve specified empty schedule area. Entire canvas opaque.",
+      "provider": "built-in image_gen",
+      "referenceRole": "Candidate inspected for Furina identity/style inspiration; not passed into initial generation. No reference schedule/layout retained.",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-f5320134-7dac-4100-ad20-6d4b1828f03d.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-37100470-8481-49fb-a504-853c78604b3a.png",
+      "correctionCount": 1,
+      "finalPath": "public/wallpapers/scenic/genshin-furina-bubble/tablet.png",
+      "normalization": "scripts/package-sanrio-image.py; independently generated device composition, matching ratio normalized without cropping; user authorized export sizing",
+      "visualInspection": {
+        "cleanBackground": true,
+        "noTextOrUI": true,
+        "completeSilhouette": true,
+        "scheduleClearance": "Updated renderer safe region: upper60% portrait, left58% laptop plus insets"
+      },
+      "correctionPrompt": "Edit only size/placement. Deliver exactly 1600x2560 opaque PNG. Preserve standing Furina bubble pose, recognizable identity, watercolor style and pale aqua background. Proportionally REDUCE all character/bubble/shadow artwork to height 470px maximum; position bottom right, with70px bottom padding. Highest artwork pixel belowy=1980, upper76% entirely blank background. Keep whole silhouette, no crop or stretching. No text/UI/cards/heading.",
+      "nativeDimensions": [
+        992,
+        1586
+      ],
+      "finalDimensions": [
+        1600,
+        2560
+      ],
+      "sha256": "f5495448dd9ff45d0e9bc123742f97bd114aa1f0c474b42784a482c40d3b957d",
+      "opaque": true
+    },
+    {
+      "id": "genshin-furina-bubble",
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "prompt": "Use case: stylized-concept. Create ONE opaque full-bleed PNG background artwork at EXACTLY 1920x1080 pixels. Subject: one recognizable Genshin Impact Furina chibi, white hair with light blue strands, blue eyes, signature navy blue top hat with small blue ornament, navy and white elegant shorts costume and blue bow, Furina standing with a playful smile and raising one finger toward a tiny translucent bubble. Style: Restrained watercolor chibi illustration: delicate thin ink edges, soft transparent watercolor pigment only inside the character, mostly flat matte background, handmade gentle paper charm. Backdrop: flat solid #eef7f5 pale mint aqua, very subtle paper feel at most. Composition: Landscape laptop, independently compose this size. Character and accessories entirely within rightmost 28%, x>1382. Left 65% is uniformly empty background. Full body chibi at right, no clipping. Accents: only three tiny pale blue bubbles, clustered close to character in its permitted artwork area. Reference is identity inspiration only; remove every ornate element. Extremely simple, airy, restrained, useful as schedule wallpaper. BACKGROUND ARTWORK ONLY. Absolutely no lettering, words, numbers, heading, timetable, schedules, cards, panels, frame, UI, logo, watermark. No architecture, palace, scenery, flowers, borders, excessive floating details, additional characters or companion creatures. Keep character size small enough to preserve specified empty schedule area. Entire canvas opaque.",
+      "provider": "built-in image_gen",
+      "referenceRole": "Candidate inspected for Furina identity/style inspiration; not passed into initial generation. No reference schedule/layout retained.",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-cf6151ad-b7fa-45be-ada6-61250f45e242.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-ebb731b0-a535-449d-be78-827c75aab5a6.png",
+      "correctionCount": 1,
+      "finalPath": "public/wallpapers/scenic/genshin-furina-bubble/laptop.png",
+      "normalization": "scripts/package-sanrio-image.py; independently generated device composition, matching ratio normalized without cropping; user authorized export sizing",
+      "visualInspection": {
+        "cleanBackground": true,
+        "noTextOrUI": true,
+        "completeSilhouette": true,
+        "scheduleClearance": "Updated renderer safe region: upper60% portrait, left58% laptop plus insets"
+      },
+      "correctionPrompt": "Edit only size/placement. Deliver exactly1920x1080 opaque PNG. Keep Furina standing bubble pose, recognizable white/blue-haired identity, watercolor style and pale aqua background. Proportionally REDUCE all character/bubbles/shadow artwork to width430px maximum; place vertically centered right with75px right padding. All artwork right of x=1400; left72% uniformly empty background. No crop/stretch/text/UI/cards/heading.",
+      "nativeDimensions": [
+        1672,
+        941
+      ],
+      "finalDimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "25d5f2d754fb505e69bd59a92ead1e5f3d70bcaf221805ef756c340fe1c8cce1",
+      "opaque": true
+    },
+    {
+      "id": "genshin-furina-ribbon",
+      "device": "mobile",
+      "width": 1080,
+      "height": 2400,
+      "prompt": "Use case: stylized-concept. Create ONE opaque full-bleed PNG background artwork at EXACTLY 1080x2400 pixels. Subject: one recognizable Genshin Impact Furina chibi, white hair with light blue strands, blue eyes, signature navy blue top hat with small blue ornament, navy and white elegant shorts costume and blue bow, Furina in a jaunty curtsy holding one end of her small blue ribbon bow, winking happily. Style: Minimal sticker-like chibi ink drawing, confidently simplified dark navy outlines, white sticker edge around character, flat solid colors, very sparse clean graphic illustration. Backdrop: flat solid #f1eff9 pale lavender, very subtle paper feel at most. Composition: Portrait. All character and accessory artwork must fit ENTIRELY within bottom 24% of canvas, below y=1824. Upper 76% is uniformly empty background. Character near bottom center, small full body, no clipping. Accents: only two tiny navy bow doodles, clustered close to character in its permitted artwork area. Reference is identity inspiration only; remove every ornate element. Extremely simple, airy, restrained, useful as schedule wallpaper. BACKGROUND ARTWORK ONLY. Absolutely no lettering, words, numbers, heading, timetable, schedules, cards, panels, frame, UI, logo, watermark. No architecture, palace, scenery, flowers, borders, excessive floating details, additional characters or companion creatures. Keep character size small enough to preserve specified empty schedule area. Entire canvas opaque.",
+      "provider": "built-in image_gen",
+      "referenceRole": "Candidate inspected for Furina identity/style inspiration; not passed into initial generation. No reference schedule/layout retained.",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-6f3ed87a-8622-47f5-b9ab-0785c77d51c8.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-6f3ed87a-8622-47f5-b9ab-0785c77d51c8.png",
+      "correctionCount": 0,
+      "finalPath": "public/wallpapers/scenic/genshin-furina-ribbon/mobile.png",
+      "normalization": "scripts/package-sanrio-image.py; independently generated device composition, matching ratio normalized without cropping; user authorized export sizing",
+      "visualInspection": {
+        "cleanBackground": true,
+        "noTextOrUI": true,
+        "completeSilhouette": true,
+        "scheduleClearance": "Updated renderer safe region: upper60% portrait, left58% laptop plus insets"
+      },
+      "nativeDimensions": [
+        841,
+        1870
+      ],
+      "finalDimensions": [
+        1080,
+        2400
+      ],
+      "sha256": "d9d17e811a81d12204e56f9d40ad1165269671a57ef538fb1b20d9ea36ec2e6d",
+      "opaque": true
+    },
+    {
+      "id": "genshin-furina-ribbon",
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "prompt": "Use case: stylized-concept. Create ONE opaque full-bleed PNG background artwork at EXACTLY 1600x2560 pixels. Subject: one recognizable Genshin Impact Furina chibi, white hair with light blue strands, blue eyes, signature navy blue top hat with small blue ornament, navy and white elegant shorts costume and blue bow, Furina in a jaunty curtsy holding one end of her small blue ribbon bow, winking happily. Style: Minimal sticker-like chibi ink drawing, confidently simplified dark navy outlines, white sticker edge around character, flat solid colors, very sparse clean graphic illustration. Backdrop: flat solid #f1eff9 pale lavender, very subtle paper feel at most. Composition: Portrait tablet, independently compose this size. All character and accessory artwork must fit ENTIRELY within bottom 24% of canvas, below y=1945. Upper 76% is uniformly empty background. Small full body character near bottom right, no clipping. Accents: only two tiny navy bow doodles, clustered close to character in its permitted artwork area. Reference is identity inspiration only; remove every ornate element. Extremely simple, airy, restrained, useful as schedule wallpaper. BACKGROUND ARTWORK ONLY. Absolutely no lettering, words, numbers, heading, timetable, schedules, cards, panels, frame, UI, logo, watermark. No architecture, palace, scenery, flowers, borders, excessive floating details, additional characters or companion creatures. Keep character size small enough to preserve specified empty schedule area. Entire canvas opaque.",
+      "provider": "built-in image_gen",
+      "referenceRole": "Candidate inspected for Furina identity/style inspiration; not passed into initial generation. No reference schedule/layout retained.",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-5c161a12-2497-4708-9ef7-f7532b538169.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-5c161a12-2497-4708-9ef7-f7532b538169.png",
+      "correctionCount": 0,
+      "finalPath": "public/wallpapers/scenic/genshin-furina-ribbon/tablet.png",
+      "normalization": "scripts/package-sanrio-image.py; independently generated device composition, matching ratio normalized without cropping; user authorized export sizing",
+      "visualInspection": {
+        "cleanBackground": true,
+        "noTextOrUI": true,
+        "completeSilhouette": true,
+        "scheduleClearance": "Updated renderer safe region: upper60% portrait, left58% laptop plus insets"
+      },
+      "nativeDimensions": [
+        992,
+        1586
+      ],
+      "finalDimensions": [
+        1600,
+        2560
+      ],
+      "sha256": "96c8f98d2ab3eb800996f89f8b3d11c3f33aaa33e0cdf599f3d6a7d0ed12bff1",
+      "opaque": true
+    },
+    {
+      "id": "genshin-furina-ribbon",
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "prompt": "Use case: stylized-concept. Create ONE opaque full-bleed PNG background artwork at EXACTLY 1920x1080 pixels. Subject: one recognizable Genshin Impact Furina chibi, white hair with light blue strands, blue eyes, signature navy blue top hat with small blue ornament, navy and white elegant shorts costume and blue bow, Furina in a jaunty curtsy holding one end of her small blue ribbon bow, winking happily. Style: Minimal sticker-like chibi ink drawing, confidently simplified dark navy outlines, white sticker edge around character, flat solid colors, very sparse clean graphic illustration. Backdrop: flat solid #f1eff9 pale lavender, very subtle paper feel at most. Composition: Landscape laptop, independently compose this size. Character and accessories entirely within rightmost 28%, x>1382. Left 65% is uniformly empty background. Full body chibi at right, no clipping. Accents: only two tiny navy bow doodles, clustered close to character in its permitted artwork area. Reference is identity inspiration only; remove every ornate element. Extremely simple, airy, restrained, useful as schedule wallpaper. BACKGROUND ARTWORK ONLY. Absolutely no lettering, words, numbers, heading, timetable, schedules, cards, panels, frame, UI, logo, watermark. No architecture, palace, scenery, flowers, borders, excessive floating details, additional characters or companion creatures. Keep character size small enough to preserve specified empty schedule area. Entire canvas opaque.",
+      "provider": "built-in image_gen",
+      "referenceRole": "Candidate inspected for Furina identity/style inspiration; not passed into initial generation. No reference schedule/layout retained.",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-9229e807-f3e4-40bc-9ba5-b2c1e4f13fd9.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-9229e807-f3e4-40bc-9ba5-b2c1e4f13fd9.png",
+      "correctionCount": 0,
+      "finalPath": "public/wallpapers/scenic/genshin-furina-ribbon/laptop.png",
+      "normalization": "scripts/package-sanrio-image.py; independently generated device composition, matching ratio normalized without cropping; user authorized export sizing",
+      "visualInspection": {
+        "cleanBackground": true,
+        "noTextOrUI": true,
+        "completeSilhouette": true,
+        "scheduleClearance": "Updated renderer safe region: upper60% portrait, left58% laptop plus insets"
+      },
+      "nativeDimensions": [
+        1672,
+        941
+      ],
+      "finalDimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "ce0ba6ca598fef1beb4276cb4ed486ad91e5142dfb9d0072cd9bfb7574f27c3b",
+      "opaque": true
+    }
+  ]
+}

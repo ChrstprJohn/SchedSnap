@@ -1,0 +1,56 @@
+{
+  "id": "genshin-celestial-promise",
+  "name": "Celestial Promise",
+  "provider": "built-in image_gen",
+  "reference": "C:/Users/QCU/AppData/Local/Temp/codex-clipboard-6f7ec337-d539-4b68-8cb7-857ba3af71c2.png",
+  "sourceDirectory": "C:/Users/QCU/.codex/generated_images/01a13fa6-5b14-7992-84f0-7c08a4754eb8/",
+  "sourceFiles": [
+    "exec-6af15768-3bbb-4f0d-95e8-91ebb7aa69b3.png",
+    "exec-bc3e3e97-d2c1-448a-b2d0-3e5d70bb8f76.png",
+    "exec-8fa5de44-72cd-4f37-93df-748d62ccdf68.png"
+  ],
+  "composition": "Three independently generated device compositions. Genshin celestial gate and sunset columns with chibi Lumine and Paimon at the foot; quiet upper space.",
+  "requestedSizes": {
+    "mobile": [
+      1080,
+      2400
+    ],
+    "tablet": [
+      1600,
+      2560
+    ],
+    "laptop": [
+      1920,
+      1080
+    ]
+  },
+  "originalSizes": {
+    "mobile": [
+      842,
+      1869
+    ],
+    "tablet": [
+      992,
+      1586
+    ],
+    "laptop": [
+      1672,
+      941
+    ]
+  },
+  "inspection": "Inspected all three actual output images: coherent silhouettes, no writing or UI, intact figures, airy sky for schedule area. PNG headers confirm exact mobile 1080x2400, tablet 1600x2560, laptop 1920x1080, color type 2 RGB (opaque).",
+  "palette": {
+    "background": "#ead5d4",
+    "ink": "#4f405f",
+    "muted": "#726279",
+    "surface": "#fffaf3db",
+    "line": "#8b748e3d"
+  },
+  "promptCore": "Hand-painted anime gouache, fine confident linework, subtle paper grain, peach ivory and dusty lavender sunset. Genshin ancient stone pillars frame far edges, celestial gate lower quarter, small chibi Lumine in white and pale blue beside floating Paimon with white hair, rose gold halo and navy star cape. Upper 70 percent quiet low contrast sky. Coherent architecture and clean silhouettes. Full bleed opaque artwork only; no text letters numbers schedule UI logo watermark border or device frame. Mobile portrait 1080x2400, tablet portrait 1600x2560 with gate at lower left, desktop landscape 1920x1080 with gate far lower left and characters lower right.",
+  "exactPrompts": {
+    "mobile": "Use case: stylized-concept. Create one full bleed opaque MOBILE wallpaper, exact 1080 by 2400 pixels portrait (9:20), titled concept 'Celestial Promise' but no text anywhere. Reference image is mood/composition inspiration: Genshin Impact celestial stone gate above clouds, ancient elegant tall columns, peach sunset and muted lavender. Transform into refined hand painted anime gouache art with deliberate graceful linework, restrained details, tactile subtle paper grain, clean coherent architecture, no synthetic glossy 3D. Schedule background: upper 70 percent is airy extremely pale peach-lilac sky, very low contrast, no distracting motifs there. Architectural columns frame the outer edges only; small sky gate and delicate stone path occupy lower quarter. At bottom right are small charming chibi Lumine (blonde bob, white and pale blue dress, flower hairpiece) and floating Paimon (white hair, tiny rose-gold halo, navy star cape), looking toward gate, clear anatomically coherent silhouettes. Tiny figures must remain at bottom. Gentle sunset light, visual warmth. Distinct composition designed for this portrait canvas, keep abundant calm middle. No text, letters, numbers, schedule, table, UI, watermark, logos, border or device mockup. Save a single image.",
+    "tablet": "Create single TABLET portrait opaque wallpaper 1600x2560 pixels, concept Celestial Promise Genshin Impact. Reference is style and environment input, not edit target. Elegant hand-painted anime gouache illustration, warm peach and cream clouds with soft dusty lilac sunset sky, subtle paper texture. Distinct tablet composition: almost empty pale atmospheric sky across middle and upper 70%, graceful ancient stone pillars cropped at distant far left and right outer edges, small intricately but coherently designed celestial gate at bottom left, terrace sweeping along bottom edge. Chibi Lumine in white-blue dress blonde bob with flower and floating chibi Paimon white hair rose-gold halo star cape at bottom right, small full body clean silhouettes, proportionate tiny hands, simple warm expressions. Fine confident ink and watercolor wash with editorial restraint, no 3D glossy rendering. Airy center supports timetable overlay, avoid high contrast motifs there. Full bleed art only, no text, letters, logo, watermark, frame, schedule, UI. A complete unique composition built for tablet portrait, not a stretched mobile picture.",
+    "laptop": "Create one 1920x1080 LANDSCAPE desktop opaque wallpaper 'Celestial Promise', no written title. Genshin Impact chibi theme, hand-painted anime gouache with delicate confident drawn linework, subtle paper texture and graceful limited details. Reference image inspires ancient celestial gate, floating columns, lavender-peach sunset clouds. Fresh wide composition specifically for desktop: expansive almost empty pale peach and ivory-lilac sky in central 70 percent and upper 75 percent, faint low contrast washes suitable behind a timetable. Stone columns cropped far left and far right, a small celestial door far lower left, hazy clouds and a slim terrace along bottom. At lower right chibi Lumine (blonde bob flower hairpin white and pale-blue dress) beside tiny floating Paimon (white bob rose-gold halo navy star cape), both full body and small occupying bottom 20 percent, naturally looking toward gate. Balanced negative space. Coherent architecture with no random seams or decorations, simple hands, clear silhouettes, lovingly illustrated fine line art, no glossy CGI or photorealism. Full bleed artwork only; no words, letters, numbers, logo, watermark, UI, timetable or device frame. Gentle sunset lighting, lovely restrained fan-art illustration."
+  },
+  "normalization": "Each independent generated composition was resized to required dimensions with Pillow LANCZOS and converted to RGB. No visual edits or shared cropping."
+}
