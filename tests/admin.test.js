@@ -24,8 +24,8 @@ test('direct environment password supports login and rotation without a setup co
   const invalid = response(); await createAdminHandler({ env: { ...direct, ADMIN_PASSWORD: 'short' } })(req('session'), invalid); assert.equal(invalid.code, 503);
 });
 test('partial background drafts save while publishing requires three distinct variants', () => {
-  const base = seedCatalog().templates.find(template => template.collection === 'scenic' && template.layout !== 'mascot');
-  assert.ok(base, 'The fixture needs a scenic background with device variants');
+  const base = seedCatalog().templates.find(template => template.deviceImages && template.layout !== 'mascot');
+  assert.ok(base, 'The fixture needs a background with device variants');
   const partial = { ...base, status: 'draft', deviceImages: { mobile: base.image } };
   assert.ok(templateSchema.safeParse(partial).success);
   assert.equal(templateSchema.safeParse({ ...partial, status: 'published' }).success, false);

@@ -26,7 +26,7 @@ export const littleFriendsTemplates = editions.map(([character, name, descriptio
   id: `little-friends-${character}`, name, description, background,
   ink: '#503b43', muted: '#503b43', accent: '#775563',
   surface: '#ffffff80', line: '#503b4345',
-  collection: 'little-friends', layout: 'mascot', mascot: character,
+  collection: 'chiikawa', layout: 'mascot', mascot: character,
   image: `/wallpapers/little-friends/${character}.png`,
   mascotSide: index % 2 ? 'right' : 'left',
   edition: String(index + 1).padStart(2, '0'),

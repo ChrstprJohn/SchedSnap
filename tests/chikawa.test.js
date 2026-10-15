@@ -14,7 +14,7 @@ test('Chiikawa has 12 unique designs, four reference families, and 36 current de
   const sizes = { mobile: [1080, 2400], tablet: [1600, 2560], laptop: [1920, 1080] };
   for (const template of chikawaTemplates) {
     templateSchema.parse({ ...template, status: 'published' });
-    assert.equal(template.collection, 'chikawa');
+    assert.equal(template.collection, 'chiikawa');
     families.set(template.family, (families.get(template.family) || 0) + 1);
     for (const [device, [width, height]] of Object.entries(sizes)) {
       const path = template.deviceImages[device];

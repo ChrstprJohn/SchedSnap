@@ -20,7 +20,7 @@ export const chikawaTemplates = designs.map(([id, name, description, family, bac
   const deviceImages = Object.fromEntries(devices.map(device => [device, `/wallpapers/scenic/${id}/${device}.png`]));
   return {
     id, name, description, family, background, ink, muted, surface, line,
-    collection: 'chikawa', createdAt,
+    collection: 'chiikawa', createdAt,
     containerStyle: 'solid', containerFill: true, containerShape: 'rounded',
     particleStyle: 'none', verticalPosition: -35,
     image: deviceImages.mobile, deviceImages,

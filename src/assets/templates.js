@@ -1,8 +1,5 @@
-import { mascotTemplates } from './mascotTemplates.js';
 import { littleFriendsTemplates } from './littleFriendsTemplates.js';
 import { patternTemplates } from './patternTemplates.js';
-import { scenicTemplates } from './scenicTemplates.js';
-import { generatedMascotTemplates } from './generatedMascotTemplates.js';
 import { chikawaTemplates } from './chikawaTemplates.js';
 import { chikawaReferenceTemplates } from './chikawaReferenceTemplates.js';
 import { weBareBearsTemplates } from './weBareBearsTemplates.js';
@@ -25,10 +22,7 @@ export const wallpaperTemplates = [
   ...sanrioTemplates,
   ...chikawaReferenceTemplates,
   ...chikawaTemplates.filter(template => !chikawaReferenceTemplates.some(reviewed => reviewed.id === template.id)),
-  ...generatedMascotTemplates,
-  ...scenicTemplates,
   ...littleFriendsTemplates,
-  ...mascotTemplates,
   ...patternTemplates,
 ];
 

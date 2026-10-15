@@ -1,20 +1,16 @@
-import { mascotStyles, getMascotStyle } from './mascotStyles.js';
 
 export const designCollections = [
   { id: 'all', name: 'All designs' },
-  { id: 'scenic', name: 'Illustrated' },
   { id: 'sanrio', name: 'Sanrio' },
   { id: 'we-bare-bears', name: 'We Bare Bears' },
   { id: 'domo', name: 'Domo' },
-  { id: 'chikawa', name: 'Chiikawa' },
+  { id: 'chiikawa', name: 'chiikawa' },
   { id: 'ghibli', name: 'Ghibli' },
-  { id: 'little-friends', name: 'Chiikawa inspired' },
-  { id: 'mascot', name: 'Mascots' },
   { id: 'meep', name: 'Meep' },
   { id: 'pattern', name: 'Patterns & prints' },
 ];
 
-export const getTemplateCollection = (template) => template.collection || 'original';
+export const getTemplateCollection = (template) => (['chikawa', 'little-friends'].includes(template.collection) ? 'chiikawa' : template.collection) || 'original';
 
 export const scenicFamilies = [
   { id: 'tropical-botanical', name: 'Tropical botanicals' },
@@ -33,10 +29,8 @@ export const scenicFamilies = [
 ];
 
 // Styles are gallery filters; stored designs retain their parent collection.
-export const galleryCategories = [...designCollections, ...mascotStyles.filter(style => style.id !== 'all').map(style => ({ id: `style-${style.id}`, name: style.name }))];
+export const galleryCategories = [...designCollections];
 
 export function matchesGalleryCategory(template, category) {
-  return category === 'all' || (category.startsWith('style-')
-    ? getMascotStyle(template) === category.slice(6)
-    : getTemplateCollection(template) === category);
+  return category === 'all' || getTemplateCollection(template) === (['chikawa', 'little-friends'].includes(category) ? 'chiikawa' : category);
 }

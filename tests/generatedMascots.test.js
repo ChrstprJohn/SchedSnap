@@ -11,7 +11,7 @@ test('61 new templates use unique uploaded cutouts and valid published presets',
   for (const template of generatedMascotTemplates) {
     assert.equal(templateSchema.safeParse({ ...template, status: 'published' }).success, true, template.id);
     assert.match(template.image, /\/masters\/[^/]+\.png$/);
-    assert.ok(manifest[template.image]?.url.startsWith('https://res.cloudinary.com/'), template.id);
+    assert.equal(manifest[template.image], undefined, template.id);
     assert.equal(template.deviceImages, undefined);
     assert.equal(template.pixelArt, template.mascotStyle === 'pixel');
   }
