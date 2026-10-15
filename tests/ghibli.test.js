@@ -8,9 +8,9 @@ import { drawWallpaper } from '../src/utils/canvasHelpers.js';
 import { deviceResolutions } from '../src/assets/templates.js';
 import { customizeWallpaperTemplate,galleryPreviewTemplate } from '../src/utils/wallpaperTheme.js';
 
-test('nine Ghibli references have unique templates and three uploaded device compositions each', () => {
-  assert.equal(ghibliTemplates.length,9);
-  assert.equal(new Set(ghibliTemplates.map(t=>t.id)).size,9);
+test('thirteen Ghibli designs have unique templates and three uploaded device compositions each', () => {
+  assert.equal(ghibliTemplates.length,13);
+  assert.equal(new Set(ghibliTemplates.map(t=>t.id)).size,13);
   const paths=[];
   for(const t of ghibliTemplates){
     const template=templateSchema.parse({...t,status:'published'});
@@ -24,7 +24,7 @@ test('nine Ghibli references have unique templates and three uploaded device com
       assert.equal(templateSchema.safeParse({...template,image:manifest[template.image].url,deviceImages:Object.fromEntries(Object.entries(template.deviceImages).map(([d,p])=>[d,manifest[p].url]))}).success,true);
     }
   }
-  assert.equal(new Set(paths).size,27);
+  assert.equal(new Set(paths).size,39);
 });
 
 test('dense portrait schedules preserve fifteen meetings above the Ghibli artwork footer', () => {

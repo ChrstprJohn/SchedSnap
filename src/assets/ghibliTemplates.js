@@ -1,6 +1,12 @@
 // One handmade reference composition per design, drawn for each device format.
 const createdAt = '2026-10-14T08:46:20.000Z';
+const newDesignsCreatedAt = '2026-10-15T12:06:51.350Z';
+const newDesignSlugs = ['umbrella-friends', 'olive-umbrella', 'ink-totoro'];
 const designs = [
+  ['umbrella-friends', 'Umbrella Friends', '#f5f4ef'],
+  ['olive-umbrella', 'Olive Umbrella', '#ffffff'],
+  ['ink-totoro', 'Totoro Ink Sketch', '#f5f5f5'],
+  ['jiji-sage-paper', 'Jiji Sage Paper', '#e0e3c9'],
   ['sage-collage', 'Sage Sticker Collage', '#e8ddcb'],
   ['flower-grid', 'Flower Grid', '#f8f0e4'],
   ['gingham-border', 'Gingham Border', '#f5eddf'],
@@ -14,14 +20,14 @@ const designs = [
 
 export const ghibliTemplates = designs.map(([slug, name, background]) => {
   const id = `ghibli-${slug}`;
-  const ink = slug === 'totoro-closeup' ? '#172015' : '#3f503b';
+  const ink = slug === 'totoro-closeup' ? '#172015' : slug === 'ink-totoro' ? '#252525' : slug === 'umbrella-friends' ? '#34495c' : '#3f503b';
   return {
     id, name, description: 'Soft handmade Ghibli stationery for your timetable',
-    collection: 'ghibli', family: slug === 'totoro-closeup' ? 'ghibli-closeup' : 'ghibli-stationery',
+    collection: 'ghibli', family: (slug === 'totoro-closeup' || newDesignSlugs.includes(slug)) ? 'ghibli-closeup' : 'ghibli-stationery',
     background, ink, muted: ink, surface: '#faf5e8', line: '#879277',
     containerStyle: 'glass', containerFill: true, containerShape: 'pill',
-    particleStyle: 'none', schedulePosition: 'left', createdAt,
-    ...(slug === 'totoro-closeup' ? { verticalPosition: -40 } : {}),
+    particleStyle: 'none', schedulePosition: 'left', createdAt: newDesignSlugs.includes(slug) ? newDesignsCreatedAt : slug === 'jiji-sage-paper' ? '2026-10-15T11:49:16.278Z' : createdAt,
+    ...((slug === 'totoro-closeup' || newDesignSlugs.includes(slug)) ? { verticalPosition: -40 } : {}),
     image: `/wallpapers/scenic/${id}/mobile.png`,
     deviceImages: Object.fromEntries(['mobile', 'tablet', 'laptop'].map(device => [device, `/wallpapers/scenic/${id}/${device}.png`])),
   };

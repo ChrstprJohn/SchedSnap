@@ -13,7 +13,7 @@ function render(template, resolution) {
 }
 
 test('gallery phone samples share bounds while the close-up keeps its face clear', () => {
-  const expected = render(galleryPreviewTemplate(wallpaperTemplates[0]), deviceResolutions.mobile).scheduleBounds;
+  const expected = render(galleryPreviewTemplate(wallpaperTemplates.find(template => template.family !== 'ghibli-closeup')), deviceResolutions.mobile).scheduleBounds;
   for (const original of wallpaperTemplates) {
     const result = render(galleryPreviewTemplate(original), deviceResolutions.mobile);
     assert.equal(result.overflow, false, original.id);
