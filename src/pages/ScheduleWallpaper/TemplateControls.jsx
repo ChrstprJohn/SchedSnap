@@ -86,6 +86,9 @@ export default function TemplateControls({ template, onChange, onReset, defaultT
     <fieldset className="appearance-group">
       <legend>Schedule Text</legend>
       <div className="appearance-row">
+        <label className="appearance-label appearance-switch"><input type="checkbox" checked={template.showTitle !== false} onChange={event => onChange('showTitle', event.target.checked)} />Show title</label>
+      </div>
+      <div className="appearance-row">
         <label className="appearance-label" htmlFor="appearance-font-size">Font size</label>
         <div className="field-select appearance-select"><select id="appearance-font-size" className="field-input" value={wallpaperFontScale(template)} onChange={event => onChange('fontScale', Number(event.target.value))}>{[100, 110, 120, 130, 140, 150, 160].map(percent => <option key={percent} value={percent / 100}>{percent === 100 ? 'Standard · 100%' : `${percent}%`}</option>)}</select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>
       </div>

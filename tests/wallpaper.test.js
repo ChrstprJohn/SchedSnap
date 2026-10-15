@@ -589,6 +589,23 @@ test('top margin moves the title and all meetings below the sample clock, preser
   assert.equal(scheduleTopMargin({ topMargin: 'invalid' }), 0);
 });
 
+test('title visibility applies to every device without hiding classes or changing placement', () => {
+  const text = [];
+  const ctx = { ...measurementContext, scale() {}, translate() {}, fillRect() {}, beginPath() {}, roundRect() {}, arc() {}, fill() {}, stroke() {}, moveTo() {}, lineTo() {}, bezierCurveTo() {}, save() {}, restore() {}, fillText(value) { text.push(value); } };
+  const canvas = { getContext() { return ctx; } };
+  for (const resolution of [mobileResolution, deviceResolutions.tablet, deviceResolutions.laptop]) {
+    const template = { ...patternTemplates[0], scheduleTitle: 'My Week' };
+    text.length = 0;
+    const visible = drawWallpaper(canvas, { schedule: sampleSchedule, template, resolution });
+    assert.ok(text.includes('My Week'), resolution.id);
+    text.length = 0;
+    const hidden = drawWallpaper(canvas, { schedule: sampleSchedule, template: { ...template, showTitle: false }, resolution });
+    assert.ok(!text.includes('My Week'), resolution.id);
+    assert.ok(text.length > 0, 'class details remain visible');
+    assert.deepEqual(hidden.plans, visible.plans, 'hiding the title does not move classes');
+  }
+});
+
 test('sample clock uses the actual preview dimensions and resets the wallpaper transform', () => {
   const draws = [], transforms = [];
   const ctx = { ...measurementContext, save() {}, restore() {}, setTransform(...args) { transforms.push(args); }, fillText(value, x, y) { draws.push({ value, x, y, font: this.font }); } };
@@ -598,6 +615,7 @@ test('sample clock uses the actual preview dimensions and resets the wallpaper t
   assert.ok(draws.every(draw => draw.y === 192));
   assert.match(draws[0].font, /108px/);
   assert.match(draws[1].font, /33.6px/);
-  const right = draws[1].x + 33.6 * 2 * 0.52;
-  assert.ok(Math.abs((draws[0].x + right) / 2 - 270) < 0.001, 'time and AM together are horizontally centered');
+  const timeWidth = 108 * 4 * 0.52;
+  assert.ok(Math.abs(draws[0].x + timeWidth / 2 - 270) < 0.001, 'large time digits are horizontally centered independently of AM');
+  assert.ok(Math.abs(draws[1].x - (draws[0].x + timeWidth + 1200 * 0.012)) < 0.001, 'AM sits beside the centered time');
 });

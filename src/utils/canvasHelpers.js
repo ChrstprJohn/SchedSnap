@@ -220,6 +220,7 @@ function drawBackground(ctx, template, image, width = 1080, height = 2400) {
 }
 
 function drawHeading(ctx, template, y = 650, width = 1080) {
+  if (template.showTitle === false) return;
   ctx.save();
   ctx.fillStyle = template.ink; ctx.textAlign = 'center';
   font(ctx, 88, 750, template.fontFamily);
@@ -402,10 +403,8 @@ export function drawSampleClock(canvas, template) {
   ctx.shadowBlur = canvas.height * 0.004;
   font(ctx, canvas.height * 0.09, 600, 'DM Sans Variable');
   const timeWidth = ctx.measureText('9:41').width;
-  font(ctx, canvas.height * 0.028, 600, 'DM Sans Variable');
-  const periodWidth = ctx.measureText('AM').width;
   const gap = canvas.height * 0.012;
-  const x = (canvas.width - timeWidth - gap - periodWidth) / 2;
+  const x = (canvas.width - timeWidth) / 2;
   const y = canvas.height * 0.16;
   font(ctx, canvas.height * 0.09, 600, 'DM Sans Variable');
   ctx.fillText('9:41', x, y);

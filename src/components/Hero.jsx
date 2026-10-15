@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="page-wrap hero-content">
         <div className="hero-copy">
           <h1 id="hero-heading" className="hero-heading">Your schedule.<br />On your screen.</h1>
-          <p className="hero-description">Turn your class schedule into a phone wallpaper.</p>
+          <p className="hero-description">Upload your class schedule and turn it into a wallpaper for free.</p>
           <div className="hero-actions">
             <Link to="/services/schedule-wallpaper" className="button-primary hero-action" onClick={() => trackEvent('wallpaper_creation_started', { source: 'hero' })}>Create wallpaper <ArrowRight size={18} aria-hidden="true" /></Link>
             <button type="button" className="hero-browse" onClick={exploreDesigns}>Explore</button>

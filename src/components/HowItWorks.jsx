@@ -1,19 +1,19 @@
 const steps = [
   {
     title: 'Choose a design',
-    description: 'Find a wallpaper that feels like you, from soft patterns to little companions.',
+    description: 'Select your phone, tablet, or laptop, then choose a wallpaper design for your class schedule.',
     image: '/images/how-it-works/choose-design.webp',
     height: 512,
   },
   {
     title: 'Add your classes',
-    description: 'Upload your schedule or enter your classes, then check the details.',
+    description: 'Upload an image of your timetable or enter classes manually. Review your subjects, days, times, and rooms.',
     image: '/images/how-it-works/add-classes.webp',
     height: 512,
   },
   {
     title: 'Customize and download',
-    description: 'Adjust the colors and layout, then download your PNG and set it as your lock screen.',
+    description: 'Adjust the colors and layout, download your PNG, and set it as your lock screen or desktop wallpaper.',
     image: '/images/how-it-works/download-wallpaper.webp',
     height: 576,
   },
@@ -25,7 +25,7 @@ export default function HowItWorks() {
       <div className="page-wrap">
         <div className="how-it-works-heading">
           <h2 id="how-it-works-heading">How it works</h2>
-          <p>A few simple steps. A schedule that stays with you.</p>
+          <p>Turn your class schedule into a wallpaper in three simple steps.</p>
         </div>
         <ol className="how-it-works-steps">
           {steps.map(({ title, description, image, height }, index) => (

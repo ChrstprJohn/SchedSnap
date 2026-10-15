@@ -1,4 +1,4 @@
-const CACHE_MS = 5 * 60 * 1000;
+const CACHE_MS = 60 * 1000;
 const RETRY_MS = 30 * 1000;
 const VISITS_QUERY = `SELECT count() AS visits
 FROM events
@@ -49,7 +49,6 @@ export function createVisitsHandler({ env = process.env, fetcher = fetch, now = 
       await pending;
     }
     if (cached.visits === null) return response.status(503).json({ visits: null });
-    response.setHeader('Cache-Control', 'public, max-age=0, s-maxage=300, stale-while-revalidate=300');
     return response.status(200).json({ visits: cached.visits });
   };
 }

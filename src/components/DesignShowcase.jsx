@@ -22,9 +22,9 @@ const collections = [
   { id: 'pattern', name: 'Patterns', description: 'Checks, dots, and stripes.', artwork: 'a peach checkerboard schedule' },
 ];
 const devices = [
-  { id: 'mobile', title: 'For mobile.', label: 'Phone', description: 'Keep your week close, right on your lock screen.' },
-  { id: 'tablet', title: 'For tablet.', label: 'Tablet', description: 'Your favorite styles, in portrait and landscape.' },
-  { id: 'laptop', title: 'For laptop.', label: 'Laptop', description: 'A wider view of your week, with room to make it yours.' },
+  { id: 'mobile', title: 'For mobile.', label: 'Phone', description: 'See your class times and rooms on your phone’s lock screen without opening an app.' },
+  { id: 'tablet', title: 'For tablet.', label: 'Tablet', description: 'Keep your class times and rooms on your tablet’s wallpaper for a quick reference while studying.' },
+  { id: 'laptop', title: 'For laptop.', label: 'Laptop', description: 'Browse desktop wallpaper designs that keep your weekly class schedule visible while you study.' },
 ];
 const assetPath = (device, collection) => `/images/collections/refreshed/${device}/${device === 'laptop' && collection === 'pattern' ? 'pattern-blue' : collection}.png`;
 

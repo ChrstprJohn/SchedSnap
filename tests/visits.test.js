@@ -55,7 +55,7 @@ test('counts every SchedSnap production pageview without deduplicating sessions'
   } }));
   assert.equal(response.statusCode, 200);
   assert.deepEqual(response.body, { visits: 42 });
-  assert.match(response.headers['Cache-Control'], /s-maxage=300/);
+  assert.equal(response.headers['Cache-Control'], 'no-store');
   assert.ok(!JSON.stringify(response.body).includes('server-secret'));
 });
 
@@ -68,7 +68,7 @@ test('the EU ingestion host maps to the private EU query host', async () => {
   assert.deepEqual(response.body, { visits: 0 });
 });
 
-test('concurrent requests and cached reads share one query, then refresh after five minutes', async () => {
+test('concurrent requests and cached reads share one query, then refresh after one minute', async () => {
   let calls = 0;
   let clock = 1000;
   const handler = createVisitsHandler({ env, now: () => clock, fetcher: async () => {
@@ -79,7 +79,7 @@ test('concurrent requests and cached reads share one query, then refresh after f
   assert.deepEqual(responses.map(response => response.body.visits), [1, 1, 1]);
   assert.equal((await read(handler)).body.visits, 1);
   assert.equal(calls, 1);
-  clock += 300001;
+  clock += 60001;
   assert.equal((await read(handler)).body.visits, 2);
   assert.equal(calls, 2);
 });
@@ -142,4 +142,45 @@ test('browser failures return unavailable, then retry after the short backoff', 
   assert.equal(calls, 1);
   clock += 30001;
   assert.equal(await loadVisitCount(), 0);
+});
+
+test('browser refreshes after one minute and bypasses HTTP caches', async t => {
+  let clock = 1000;
+  let calls = 0;
+  t.mock.method(Date, 'now', () => clock);
+  t.mock.method(globalThis, 'fetch', async (_url, options) => {
+    assert.equal(options.cache, 'no-store');
+    calls++;
+    return { ok: true, json: async () => ({ visits: calls }) };
+  });
+  const { loadVisitCount } = await import('../src/lib/visits.js?test=refresh');
+  assert.equal(await loadVisitCount(), 1);
+  clock += 59000;
+  assert.equal(await loadVisitCount(), 1);
+  clock += 1001;
+  assert.equal(await loadVisitCount(), 2);
+  assert.equal(calls, 2);
+});
+
+test('cached pageviews survive reloads, refresh successfully, and remain available on failure', async t => {
+  let stored = '584';
+  const storageDescriptor = Object.getOwnPropertyDescriptor(globalThis, 'localStorage');
+  Object.defineProperty(globalThis, 'localStorage', { configurable: true, value: { getItem: () => stored, setItem: (_key, value) => { stored = value; } } });
+  t.after(() => {
+    if (storageDescriptor) Object.defineProperty(globalThis, 'localStorage', storageDescriptor);
+    else delete globalThis.localStorage;
+  });
+  let clock = 1000;
+  t.mock.method(Date, 'now', () => clock);
+  t.mock.method(globalThis, 'fetch', async () => ({ ok: true, json: async () => ({ visits: 600 }) }));
+  const { getCachedVisitCount, loadVisitCount } = await import('../src/lib/visits.js?test=stale');
+  assert.equal(getCachedVisitCount(), 584);
+  assert.equal(await loadVisitCount(), 600);
+  assert.equal(stored, '600');
+  clock += 300001;
+  t.mock.method(globalThis, 'fetch', async () => { throw new Error('Offline'); });
+  assert.equal(await loadVisitCount(), 600);
+  stored = '-1';
+  const fresh = await import('../src/lib/visits.js?test=invalid-cache');
+  assert.equal(fresh.getCachedVisitCount(), null);
 });

@@ -17,6 +17,7 @@ import useDesignLikes from '../../lib/useDesignLikes.js';
 export default function TemplateWorkspace({ step, onStep, template, defaultTemplate, schedule, resolution, scheduleSource, onScheduleSourceChange, onScheduleChange, onAppearanceChange, onResetAppearance, image, onImage, busy, onError, onAnalyze, importUsage, usageUnavailable, onSample, importOpen, onImportOpenChange: setImportOpen, onTitleChange, canCancelEntry, onCancelEntryChange: setCanCancelEntry, onCancelImport, imagePickerRef: imagePicker, preparingImage, onPreparingImageChange: setPreparingImage }) {
   const [enlarged, setEnlarged] = useState(false);
   const [showClock, setShowClock] = useState(true);
+  const previewClock = step !== 'classes' && showClock;
   const [customizing, setCustomizing] = useState(false);
   const [previewStuck, setPreviewStuck] = useState(false);
   const [reviewVersion, setReviewVersion] = useState(0);
@@ -109,11 +110,11 @@ export default function TemplateWorkspace({ step, onStep, template, defaultTempl
 
   const preview = <><div className="flow-preview-art preview-size-md">
     <button type="button" aria-label="Enlarge wallpaper" aria-haspopup="dialog" onClick={() => { setEnlarged(true); trackEvent('wallpaper_preview_enlarged', templateProperties(template)); }} className="flow-wallpaper">
-      <WallpaperCanvas schedule={shownSchedule} template={template} resolution={resolution} showClock={showClock} onLayout={updateLayout} className="block h-auto w-full" label={`${template.name} ${hasSchedule ? 'with your classes' : 'with sample classes'}${showClock && resolution.id !== 'laptop' ? ', sample clock at 9:41 AM' : ''}`} />
+      <WallpaperCanvas schedule={shownSchedule} template={template} resolution={resolution} showClock={previewClock} onLayout={updateLayout} className="block h-auto w-full" label={`${template.name} ${hasSchedule ? 'with your classes' : 'with sample classes'}${previewClock && resolution.id !== 'laptop' ? ', sample clock at 9:41 AM' : ''}`} />
       <span className="preview-enlarge" aria-hidden="true"><Maximize2 size={16} /></span>
     </button>
   </div>
-    {resolution.id !== 'laptop' && <div className="preview-clock-control">
+    {step !== 'classes' && resolution.id !== 'laptop' && <div className="preview-clock-control">
       <label className="appearance-switch"><input type="checkbox" aria-describedby="clock-preview-note" checked={showClock} onChange={(event) => setShowClock(event.target.checked)} />Show sample clock</label>
       <span id="clock-preview-note">Preview only</span>
     </div>}
@@ -154,7 +155,7 @@ export default function TemplateWorkspace({ step, onStep, template, defaultTempl
         <details className="flow-customize" open={customizing} onToggle={(event) => { setCustomizing(event.currentTarget.open); setPreviewStuck(false); }}><summary className="disclosure-summary"><span><SlidersHorizontal size={16} aria-hidden="true" />Customize appearance</span><ChevronDown className="disclosure-icon size-4" aria-hidden="true" /></summary><TemplateControls template={template} defaultTemplate={defaultTemplate} enablePlacement onChange={onAppearanceChange} onReset={onResetAppearance} /></details>
       </section>
     </div>}
-    {enlarged && <WallpaperViewer resolution={resolution} onClose={() => setEnlarged(false)}><WallpaperCanvas schedule={shownSchedule} template={template} resolution={resolution} showClock={showClock} className="block h-auto w-full" label={`${template.name} enlarged wallpaper${showClock && resolution.id !== 'laptop' ? ', sample clock at 9:41 AM' : ''}`} /></WallpaperViewer>}
+    {enlarged && <WallpaperViewer resolution={resolution} onClose={() => setEnlarged(false)}><WallpaperCanvas schedule={shownSchedule} template={template} resolution={resolution} showClock={previewClock} className="block h-auto w-full" label={`${template.name} enlarged wallpaper${previewClock && resolution.id !== 'laptop' ? ', sample clock at 9:41 AM' : ''}`} /></WallpaperViewer>}
     <Toast message={message} kind={messageKind} onClose={dismissNotification} />
   </>;
 }

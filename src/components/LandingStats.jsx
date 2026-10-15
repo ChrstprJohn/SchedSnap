@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { useTemplates } from '../lib/catalogContext.js';
 import { galleryCategories } from '../config/collections.js';
 
-import { loadVisitCount } from '../lib/visits.js';
+import { getCachedVisitCount, loadVisitCount } from '../lib/visits.js';
 
 const COLLECTION_COUNT = galleryCategories.filter(({ id }) => id !== 'all').length;
 const COUNT_DURATION = 1200;
@@ -14,8 +14,8 @@ function subscribeToMotion(onChange) {
   return () => query.removeEventListener('change', onChange);
 }
 
-function StatValue({ display, total, exact = false }) {
-  return <dd><span aria-hidden="true">{display}{exact ? '' : '+'}</span><span className="sr-only">{total.toLocaleString('en-US')}{exact ? ' recorded pageviews' : ' or more'}</span></dd>;
+function StatValue({ display, total }) {
+  return <dd><span aria-hidden="true">{display}</span><span className="sr-only">{total.toLocaleString('en-US')}</span></dd>;
 }
 
 function useCountProgress(ready) {
@@ -44,15 +44,26 @@ export default function LandingStats() {
   const TEMPLATE_COUNT = useTemplates().length;
   const sectionRef = useRef(null);
   const [entered, setEntered] = useState(false);
-  const [visits, setVisits] = useState(null);
+  const [visits, setVisits] = useState(getCachedVisitCount);
   const reducedMotion = useSyncExternalStore(subscribeToMotion, prefersReducedMotion, () => true);
   const progress = useCountProgress(entered && TEMPLATE_COUNT > 0);
-  const visitProgress = useCountProgress(entered && visits !== null);
 
   useEffect(() => {
     let active = true;
-    loadVisitCount().then(count => { if (active) setVisits(count); });
-    return () => { active = false; };
+    const refresh = () => {
+      if (document.hidden) return;
+      loadVisitCount().then(count => { if (active && count !== null) setVisits(count); });
+    };
+    refresh();
+    const timer = setInterval(refresh, 30000);
+    document.addEventListener('visibilitychange', refresh);
+    window.addEventListener('focus', refresh);
+    return () => {
+      active = false;
+      clearInterval(timer);
+      document.removeEventListener('visibilitychange', refresh);
+      window.removeEventListener('focus', refresh);
+    };
   }, []);
 
   useEffect(() => {
@@ -72,9 +83,9 @@ export default function LandingStats() {
       <dl className="page-wrap">
         <div className="landing-stat">
           <dt>Total pageviews</dt>
-          {visits === null ? <dd><span aria-hidden="true">—</span><span className="sr-only">Pageview count unavailable</span></dd> : <StatValue display={new Intl.NumberFormat('en-US', { notation: 'compact', maximumFractionDigits: 1 }).format(Math.round(visits * (reducedMotion ? 1 : visitProgress)))} total={visits} exact />}
+          {visits === null ? <dd><span aria-hidden="true">—</span><span className="sr-only">Pageview count unavailable</span></dd> : <StatValue display={new Intl.NumberFormat('en-US', { notation: 'compact', maximumFractionDigits: 1 }).format(Math.round(visits * displayedProgress)).toLowerCase()} total={visits} />}
         </div>
-        <div className="landing-stat"><dt>Total templates</dt><StatValue display={Math.round(TEMPLATE_COUNT * displayedProgress)} total={TEMPLATE_COUNT} /></div>
+        <div className="landing-stat"><dt>Total templates</dt><StatValue display={`${Math.round(TEMPLATE_COUNT * displayedProgress)}+`} total={TEMPLATE_COUNT} /></div>
         <div className="landing-stat"><dt>Collections</dt><StatValue display={Math.round(COLLECTION_COUNT * displayedProgress)} total={COLLECTION_COUNT} /></div>
       </dl>
     </section>
