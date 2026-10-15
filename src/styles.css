@@ -110,10 +110,12 @@
 .wallpaper-flow-header[data-importing='true'] h1 { flex: 1; min-width: 0; }
 .wallpaper-flow-header .import-change { flex-shrink: 0; }
 .wallpaper-flow-header-actions { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
-.wallpaper-search-wrap { position: relative; display: flex; align-items: center; width: 340px; max-width: 100%; }
+.wallpaper-flow-header-actions:has(.wallpaper-search-wrap) { min-width: 0; max-width: 100%; }
+.wallpaper-search-wrap { position: relative; display: flex; align-items: center; width: 420px; max-width: 100%; }
 .wallpaper-search-input { width: 100%; height: 46px; padding: 0 40px 0 16px; border: 1px solid var(--color-line); border-radius: 9999px; background: white; font-size: 16px; color: var(--color-ink); outline: none; transition: border-color 150ms ease, box-shadow 150ms ease; }
 .wallpaper-search-input:focus { border-color: var(--color-accent); box-shadow: 0 0 0 2px rgba(15, 23, 42, 0.15); }
 .wallpaper-search-input::placeholder { color: var(--color-muted); }
+.wallpaper-search-input::-webkit-search-cancel-button { appearance: none; }
 .wallpaper-search-icon { position: absolute; right: 14px; pointer-events: none; color: var(--color-muted); }
 .wallpaper-search-wrap:has(.wallpaper-search-clear) .wallpaper-search-input { padding-right: 58px; }
 .wallpaper-search-clear { position: absolute; right: 36px; display: flex; align-items: center; justify-content: center; width: 18px; height: 18px; padding: 0; border: 0; border-radius: 50%; background: var(--color-line); color: var(--color-muted); cursor: pointer; transition: background 150ms ease, color 150ms ease; }

@@ -1,0 +1,66 @@
+{
+  "id": "genshin-card-arlecchino-fate",
+  "provider": "built-in imagegen",
+  "useCase": "stylized-concept",
+  "references": [
+    "C:\\Users\\QCU\\AppData\\Local\\Temp\\codex-clipboard-39210c5d-5205-4d05-ae32-c8a205ab6380.png",
+    "C:\\Users\\QCU\\AppData\\Local\\Temp\\codex-clipboard-48a0821f-40f3-4939-974d-aaca062b6e0d.png"
+  ],
+  "referenceRoles": [
+    "Arlecchino namecard pattern and palette",
+    "Only first top symbol: Pyro flame swirl"
+  ],
+  "prompts": {
+    "mobile": "Use case: stylized-concept. Create one polished opaque full bleed mobile wallpaper, exact aspect 1080:2400 (9:20), flat graphic Genshin Arlecchino namecard inspired by image 1. Reference image 1 supplies palette and four-wing ornamental motif; image 2 supplies ONLY FIRST top flame-swirl Pyro emblem. Silver-gray backdrop, understated overlapping angular blade planes and fine arcs, charcoal black and crimson four-wing diamond-centered ornament, red flames along bottom edge with sparing orange accents. Recompose for wallpaper: top 22% nearly blank pale silver for clock/date, upper middle through 60% quiet low contrast for schedule. Main four-wing motif entirely in bottom 35% centered around 78% height, edged flames below. Integrate exactly one faithful small Pyro flame-swirl emblem from TOP of image 2 inside a crimson and silver ornamental medallion at lower right below 88% height. Sparse subtle geometry only at outer edges. Sharp elegant graphic shapes, restrained satin-paper texture, no 3D. Artwork only. NO humans, characters, faces, silhouettes, chibi, text, words, numbers, headings, timetable, cards, UI, logos, watermarks, device frame. No other element symbols. Keep background fully opaque.",
+    "tablet": "Use case: stylized-concept. Generate an INDEPENDENT recomposition at tablet portrait 1600:2560 aspect 5:8. Image 1 is the approved mobile STYLE only, image 2 original namecard, image 3 ONLY top Pyro flame swirl emblem. Preserve pale silver-gray flat angular blades, thin arcs, charcoal black/crimson four-wing diamond-centered ornament and bottom crimson/orange flames. Wider spacious tablet composition: top22% blank pale silver, center upper60% extremely quiet low contrast for app schedule. All black/crimson main four-wing ornament confined to bottom35%, centered 79% height, flame band at bottom. ONE faithful Pyro flame-swirl emblem in crimson/silver medallion near lower right 90% height. Outer-edge pale geometric accents. Do not stretch or crop mobile; create new layout. Opaque full bleed, elegant crisp graphic satin paper. No human figures, faces, silhouettes, characters, chibi, text, words, numbers, headings, timetable/cards/UI, logos, watermark, frame, other element emblems.",
+    "laptop": "Use case: stylized-concept. Generate INDEPENDENT landscape laptop wallpaper 1920:1080 aspect16:9. Image1 approved mobile STYLE, image2 original namecard pattern, image3 ONLY FIRST TOP Pyro flame-swirl emblem. Flat sophisticated silver-gray angular blade graphic with charcoal black/crimson diamond-centered FOUR wing motif; crimson/orange flames. NEW landscape arrangement: left62% completely calm low contrast pale silver-gray for schedule. Fine subdued gray arcs or faint blades at extreme left edges only. Main black and crimson four-wing ornament occupies right35%, centered x82%,y48%; keep all high contrast ornament to right of65%. Bottom-right crimson and charcoal flame band confined to right35%. Exactly ONE faithful Pyro flame swirl emblem inside silver and crimson medallion near x88%,y83%. No central competing symbols. Spacious left negative space, sharp graphic satin-paper texture. Do not stretch/crop portrait. Fully opaque full bleed ART ONLY. No humans, characters, faces, silhouettes,chibi,text,words,numbers,headings,timetable/cards/UI,logos,watermarks,deviceframes, other elemental icons.",
+    "laptopPlacementEdit": "Precise placement edit of this landscape image. Preserve palette, four-wing ornament, Pyro medallion, paper texture and16:9 aspect. Change ONLY placement of bottom crimson/orange flames and dark blade field: pull them into rightmost35% so no black/crimson/orange touches x0-65% at ANY y, including bottom edge. Left65% must remain pale lowcontrast silver full height with faint thin gray arcs only. Main wing and medallion stay right. Opaque art, no characters/text/UI."
+  },
+  "sources": {
+    "mobile": "C:\\Users\\QCU\\.codex\\generated_images\\01a1390f-a9d8-79d2-976b-24837dddb83c\\exec-d31d4247-3a8b-4074-af31-f078583314d2.png",
+    "tablet": "C:\\Users\\QCU\\.codex\\generated_images\\01a1390f-a9d8-79d2-976b-24837dddb83c\\exec-183cc8b8-dc5d-401b-89f3-695ec345fd98.png",
+    "laptop": "C:\\Users\\QCU\\.codex\\generated_images\\01a1390f-a9d8-79d2-976b-24837dddb83c\\exec-139cf380-5660-488e-9120-c380996176e6.png",
+    "laptopOriginal": "C:\\Users\\QCU\\.codex\\generated_images\\01a1390f-a9d8-79d2-976b-24837dddb83c\\exec-1ff31da5-61c3-405e-8db7-5ce4fed5c5d4.png"
+  },
+  "inspection": {
+    "method": "Visual inspection of references and all generated compositions",
+    "characterFree": true,
+    "textFree": true,
+    "onePyroEmblem": true,
+    "remainingConcerns": [
+      "Mobile wing tips begin around51% height; tablet wing tips around55%. Actual dense schedule overlay needs checking.",
+      "Laptop placement edit inspected separately."
+    ],
+    "laptopPlacementEdit": "Flames now confined to right third; left62% light and legible, with some gray geometry near bottom right of reading field."
+  },
+  "assets": [
+    {
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-card-arlecchino-fate/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "f5cdf91abc4f862773f592faadef595d05f4ae40f0c68783c64cbf3e09bf0233"
+    },
+    {
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-card-arlecchino-fate/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "6f79555fa6c62664c32eab1a8155e05a06031786b513c03a8186f3d0c180ba2c"
+    },
+    {
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-card-arlecchino-fate/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "3745bf21038af0bfdacc3391c324a656ee6fe13f71d1c715900587a5b66666fb"
+    }
+  ],
+  "sizing": "Existing package-sanrio-image.py; matching aspect ratio normalization without crop; independent device compositions."
+}

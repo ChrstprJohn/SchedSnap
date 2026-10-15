@@ -2,6 +2,29 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { searchWallpaperTemplates, scoreSearchPattern } from '../src/utils/wallpaperSearch.js';
 
+test('searches collection ids, display names and style categories without duplicating results', () => {
+  const templates = [
+    { id: 'hu-tao', name: 'Hu Tao · Cozy Nap', collection: 'genshin' },
+    { id: 'bear', name: 'Quiet Afternoon', collection: 'we-bare-bears' },
+    { id: 'pixel', name: 'Tiny Friend', collection: 'mascot', layout: 'mascot', mascotStyle: 'pixel' },
+    { id: 'other', name: 'Notebook Hours' },
+  ];
+  assert.deepEqual(searchWallpaperTemplates(templates, ' GENSHIN '), [templates[0]]);
+  assert.deepEqual(searchWallpaperTemplates(templates, 'We Bare Bears'), [templates[1]]);
+  assert.deepEqual(searchWallpaperTemplates(templates, 'Pixel art'), [templates[2]]);
+  assert.deepEqual(searchWallpaperTemplates([{ ...templates[0], name: 'Genshin Nap' }], 'genshin').length, 1);
+});
+
+test('Genshin search includes every design in the real Genshin collection', async () => {
+  const { wallpaperTemplates } = await import('../src/assets/templates.js');
+  const results = searchWallpaperTemplates(wallpaperTemplates, 'genshin');
+  const genshin = wallpaperTemplates.filter(template => template.collection === 'genshin');
+  assert.ok(genshin.length > 0);
+  for (const template of genshin) assert.ok(results.includes(template), template.name);
+  const fullNameResults = searchWallpaperTemplates(wallpaperTemplates, 'Genshin Impact');
+  for (const template of genshin) assert.ok(fullNameResults.includes(template), template.name);
+});
+
 test('empty or whitespace query returns all templates in original order', () => {
   const templates = [
     { id: '1', name: 'Notebook Hours' },

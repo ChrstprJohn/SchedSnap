@@ -1,0 +1,108 @@
+{
+  "createdAt": "2026-10-15T13:08:17.261Z",
+  "provider": "image_gen",
+  "references": [
+    "codex-clipboard-64d24d1f-06e5-47a7-ac0f-7ee04f6c78c5.png",
+    "codex-clipboard-06ebbbdf-5098-4281-8d8b-1f6f2cd1269d.png"
+  ],
+  "assets": [
+    {
+      "id": "genshin-kaeya-atlas",
+      "device": "mobile",
+      "path": "C:/Users/QCU/source/repos/SchedSnap/public/wallpapers/scenic/genshin-kaeya-atlas/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13fa6-2da6-7533-9dab-e7e2eef730a4\\exec-3a1dd2b6-08a5-4ebb-b020-b172384264a8.png",
+      "originalWidth": 841,
+      "originalHeight": 1870,
+      "opaque": true,
+      "dimensionsValid": true
+    },
+    {
+      "id": "genshin-kaeya-atlas",
+      "device": "tablet",
+      "path": "C:/Users/QCU/source/repos/SchedSnap/public/wallpapers/scenic/genshin-kaeya-atlas/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13fa6-2da6-7533-9dab-e7e2eef730a4\\exec-3c7fe2ee-8587-4577-84c7-764973a4805b.png",
+      "originalWidth": 992,
+      "originalHeight": 1586,
+      "opaque": true,
+      "dimensionsValid": true
+    },
+    {
+      "id": "genshin-kaeya-atlas",
+      "device": "laptop",
+      "path": "C:/Users/QCU/source/repos/SchedSnap/public/wallpapers/scenic/genshin-kaeya-atlas/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13fa6-2da6-7533-9dab-e7e2eef730a4\\exec-84a9873c-6f9c-4174-89cd-4ff2ec7ea5e7.png",
+      "originalWidth": 1672,
+      "originalHeight": 941,
+      "opaque": true,
+      "dimensionsValid": true
+    },
+    {
+      "id": "genshin-tidal-sketches",
+      "device": "mobile",
+      "path": "C:/Users/QCU/source/repos/SchedSnap/public/wallpapers/scenic/genshin-tidal-sketches/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13fa6-2da6-7533-9dab-e7e2eef730a4\\exec-911c0555-02e2-4ed8-8de2-6dcf3fd3e165.png",
+      "originalWidth": 841,
+      "originalHeight": 1870,
+      "opaque": true,
+      "dimensionsValid": true
+    },
+    {
+      "id": "genshin-tidal-sketches",
+      "device": "tablet",
+      "path": "C:/Users/QCU/source/repos/SchedSnap/public/wallpapers/scenic/genshin-tidal-sketches/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13fa6-2da6-7533-9dab-e7e2eef730a4\\exec-0508a628-7b5a-4e8c-a4d1-e77092068ee9.png",
+      "originalWidth": 992,
+      "originalHeight": 1586,
+      "opaque": true,
+      "dimensionsValid": true
+    },
+    {
+      "id": "genshin-tidal-sketches",
+      "device": "laptop",
+      "path": "C:/Users/QCU/source/repos/SchedSnap/public/wallpapers/scenic/genshin-tidal-sketches/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13fa6-2da6-7533-9dab-e7e2eef730a4\\exec-738f4def-d41f-4664-b5fd-6f1d58216d7b.png",
+      "originalWidth": 1672,
+      "originalHeight": 941,
+      "opaque": true,
+      "dimensionsValid": true
+    }
+  ],
+  "prompts": [
+    {
+      "key": "1m",
+      "prompt": "Create a premium Genshin Impact fan-art wallpaper based on this reference, in a new composition. Mobile portrait 1080x2400 pixels, 9:20 ratio. Muted ivory paper with subtle pale blue cartographic swirls and delicate weathered map contours only at outer edges. Bottom 18%: a small hand-drawn blue-pencil chibi Kaeya, expressive wink, recognizable long dark blue hair and eyepatch, with tiny teacup and feather motifs. Charming deliberate uneven ink strokes, authentic restrained sketchbook illustration, limited slate-blue/cream palette, no glossy rendering. Keep central 80% width and upper 76% height very quiet pale cream for a class schedule. Full bleed opaque artwork only, NO text, letters, labels, watermark, schedule, panels, borders or device. Character intact with safe margin."
+    },
+    {
+      "key": "1t",
+      "prompt": "Create a premium Genshin Impact fan-art wallpaper based on this reference, in a new composition. 1600x2560 pixels, tablet portrait, 5:8 aspect ratio, little Kaeya in lower left, teacup lower right, map contours near left and right perimeter. Muted ivory paper with subtle pale blue cartographic swirls and delicate weathered map contours only at outer edges. Bottom 18%: a small hand-drawn blue-pencil chibi Kaeya, expressive wink, recognizable long dark blue hair and eyepatch, with tiny teacup and feather motifs. Charming deliberate uneven ink strokes, authentic restrained sketchbook illustration, limited slate-blue/cream palette, no glossy rendering. Keep central 80% width and upper 76% height very quiet pale cream for a class schedule. Full bleed opaque artwork only, NO text, letters, labels, watermark, schedule, panels, borders or device. Character intact with safe margin."
+    },
+    {
+      "key": "1l",
+      "prompt": "Create a premium Genshin Impact fan-art wallpaper based on this reference, in a new composition. 1920x1080 pixels, desktop landscape, 16:9 aspect ratio, Kaeya occupies lower right 18 percent of width, tiny teacup in lower left, huge quiet pale cream middle. Muted ivory paper with subtle pale blue cartographic swirls and delicate weathered map contours only at outer edges. Bottom 18%: a small hand-drawn blue-pencil chibi Kaeya, expressive wink, recognizable long dark blue hair and eyepatch, with tiny teacup and feather motifs. Charming deliberate uneven ink strokes, authentic restrained sketchbook illustration, limited slate-blue/cream palette, no glossy rendering. Keep central 80% width and upper 76% height very quiet pale cream for a class schedule. Full bleed opaque artwork only, NO text, letters, labels, watermark, schedule, panels, borders or device. Character intact with safe margin."
+    },
+    {
+      "key": "2m",
+      "prompt": "Create premium Genshin Impact fan-art wallpaper, handmade gouache and colored pencil inspired by supplied beach doodle reference. 1080x2400 mobile portrait 9:20, sea in top 14%, tiny sand portraits down in bottom 18%. Sunlit warm peach sand covering most image, shallow turquoise water with a fine irregular white foam ribbon only near upper edge. Two tiny charming sand-line portraits of Aether (braided hair) and Paimon (halo, bob hair), carefully drawn into sand near lower perimeter, with one indigo shell, one warm conch and a few light footprints at extreme bottom. Recognizable cute chibi faces, clean simple anatomy, intentional few organic strokes and painterly dry edges, limited coherent palette. Quiet smooth warm sand throughout central 76% for schedule legibility. Distinct fresh composition, airy editorial wallpaper, no generic fantasy sparkle clutter. Opaque full bleed artwork only. No text, letters, names, watermark, schedule, UI, cards, borders or device."
+    },
+    {
+      "key": "2t",
+      "prompt": "Create premium Genshin Impact fan-art wallpaper, handmade gouache and colored pencil inspired by supplied beach doodle reference. 1600x2560 tablet portrait 5:8, sweeping narrow sea strip top-left, tiny portraits spaced at lower corners. Sunlit warm peach sand covering most image, shallow turquoise water with a fine irregular white foam ribbon only near upper edge. Two tiny charming sand-line portraits of Aether (braided hair) and Paimon (halo, bob hair), carefully drawn into sand near lower perimeter, with one indigo shell, one warm conch and a few light footprints at extreme bottom. Recognizable cute chibi faces, clean simple anatomy, intentional few organic strokes and painterly dry edges, limited coherent palette. Quiet smooth warm sand throughout central 76% for schedule legibility. Distinct fresh composition, airy editorial wallpaper, no generic fantasy sparkle clutter. Opaque full bleed artwork only. No text, letters, names, watermark, schedule, UI, cards, borders or device."
+    },
+    {
+      "key": "2l",
+      "prompt": "Create premium Genshin Impact fan-art wallpaper, handmade gouache and colored pencil inspired by supplied beach doodle reference. 1920x1080 desktop landscape 16:9. Sea ribbon runs shallowly along top edge, small Aether sand portrait bottom-left and small Paimon sand portrait bottom-right, broad empty warm sand middle. Sunlit warm peach sand covering most image, shallow turquoise water with a fine irregular white foam ribbon only near upper edge. Two tiny charming sand-line portraits of Aether (braided hair) and Paimon (halo, bob hair), carefully drawn into sand near lower perimeter, with one indigo shell, one warm conch and a few light footprints at extreme bottom. Recognizable cute chibi faces, clean simple anatomy, intentional few organic strokes and painterly dry edges, limited coherent palette. Quiet smooth warm sand throughout central 76% for schedule legibility. Distinct fresh composition, airy editorial wallpaper, no generic fantasy sparkle clutter. Opaque full bleed artwork only. No text, letters, names, watermark, schedule, UI, cards, borders or device."
+    }
+  ]
+}

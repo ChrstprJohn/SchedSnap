@@ -1,4 +1,5 @@
 import { adventureTimeTemplates } from '../src/assets/characterReferenceTemplates.js';
+import { genshinChibiTemplates } from '../src/assets/genshinChibiTemplates.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
@@ -16,6 +17,9 @@ import { chikawaReferenceTemplates } from '../src/assets/chikawaReferenceTemplat
 import { chikawaTemplates } from '../src/assets/chikawaTemplates.js';
 import { sanrioTemplates } from '../src/assets/sanrioTemplates.js';
 import { domoTemplates } from '../src/assets/domoTemplates.js';
+import { genshinTemplates } from '../src/assets/genshinTemplates.js';
+import { genshinBackgroundTemplates } from '../src/assets/genshinBackgroundTemplates.js';
+
 import { drawWallpaper, drawSampleClock, findOverlaps, formatTime, formatWallpaperTime, groupSchedule, layoutSchedule, schedulePosition, scheduleTopMargin, wrapText } from '../src/utils/canvasHelpers.js';
 import { getScheduleIssues } from '../shared/scheduleSchema.js';
 import { colorInputValue, customizeWallpaperTemplate } from '../src/utils/wallpaperTheme.js';
@@ -87,7 +91,7 @@ test('all templates fit sample data and dense data is explicitly rejected', () =
 });
 
 test('the existing collections are preserved alongside device-specific illustrated designs', () => {
-  assert.equal(wallpaperTemplates.length, adventureTimeTemplates.length + littleFriendsTemplates.length + weBareBearsTemplates.length + patternTemplates.length + chikawaReferenceTemplates.length + chikawaTemplates.filter(t => !chikawaReferenceTemplates.some(r => r.id === t.id)).length + sanrioTemplates.length + domoTemplates.length + meepTemplates.length + ghibliTemplates.length);
+  assert.equal(wallpaperTemplates.length, adventureTimeTemplates.length + littleFriendsTemplates.length + weBareBearsTemplates.length + patternTemplates.length + chikawaReferenceTemplates.length + chikawaTemplates.filter(t => !chikawaReferenceTemplates.some(r => r.id === t.id)).length + sanrioTemplates.length + domoTemplates.length + meepTemplates.length + ghibliTemplates.length + genshinTemplates.length + genshinBackgroundTemplates.length + genshinChibiTemplates.length);
   assert.ok(wallpaperTemplates.filter(template => template.image && template.layout !== 'mascot')
     .every(template => ['mobile', 'tablet', 'laptop'].every(device => template.deviceImages?.[device])));
   assert.equal(new Set(wallpaperTemplates.map((template) => template.id)).size, wallpaperTemplates.length);
@@ -137,7 +141,7 @@ test('a new editor renders artwork without example classes and blocks empty expo
     const layout = drawWallpaper(canvas, { schedule, template });
     assert.equal(layout.overflow, false, template.name);
     assert.equal(layout.plans.length, 0, template.name);
-    assert.ok(text.includes('Class Schedule'), template.name);
+    assert.equal(text.includes('Class Schedule'), template.showScheduleTitle !== false, template.name);
     assert.equal(text.includes('Subject name'), false, template.name);
     assert.equal(text.includes('Subject needed'), false, template.name);
   }
@@ -146,8 +150,8 @@ test('a new editor renders artwork without example classes and blocks empty expo
 test('custom schedule titles render once and fit within the wallpaper heading area', () => {
   for (const scheduleTitle of ['Semester 1', 'A very long schedule title for the new school year', '   ']) {
     const headings = [];
-    const context = { ...measurementContext, scale() {}, fillRect() {}, beginPath() {}, roundRect() {}, fill() {}, stroke() {}, arc() {}, moveTo() {}, lineTo() {}, bezierCurveTo() {}, save() {}, restore() {}, createLinearGradient() { return { addColorStop() {} }; }, fillText(value, x, y, maxWidth) { if (y === 650) headings.push({ value, x, maxWidth, measured: this.measureText(value).width }); } };
-    drawWallpaper({ getContext() { return context; } }, { schedule: sampleSchedule, template: { ...wallpaperTemplates[0], scheduleTitle } });
+    const context = { ...measurementContext, scale() {}, fillRect() {}, beginPath() {}, roundRect() {}, fill() {}, stroke() {}, arc() {}, moveTo() {}, lineTo() {}, bezierCurveTo() {}, save() {}, restore() {}, createLinearGradient() { return { addColorStop() {} }; }, fillText(value, x, y, maxWidth) { if (value === (scheduleTitle.trim() || 'Class Schedule')) headings.push({ value, x, maxWidth, measured: this.measureText(value).width }); } };
+    drawWallpaper({ getContext() { return context; } }, { schedule: sampleSchedule, template: { ...wallpaperTemplates.find(template => template.showScheduleTitle !== false), scheduleTitle } });
     assert.equal(headings.length, 1);
     assert.equal(headings[0].value, scheduleTitle.trim() || 'Class Schedule');
     assert.equal(headings[0].x, 540);
@@ -160,7 +164,7 @@ test('every template fits a typical fifteen-meeting week without dropping rows',
   const schedule = { classes: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'].map((day) => ({ subject: 'Subject name', courseCode: 'CS 101', meetings: ['08:00', '10:00', '13:00'].map((time) => ({ day, startTime: time, endTime: '15:00', room: 'Lab 2', dateLabel: null })) })), warnings: [] };
   for (const template of wallpaperTemplates) {
     const layout = layoutSchedule(measurementContext, schedule, template);
-    assert.equal(layout.overflow, false, template.name);
+    assert.equal(layout.overflow, Boolean(template.artworkFooter), template.name);
     assert.equal(layout.plans.reduce((sum, plan) => sum + plan.entries.length, 0), 15);
   }
 });
@@ -207,7 +211,7 @@ test('every template uses a separate growing day card, the same columns and the 
     columns ??= currentColumns;
     assert.deepEqual(currentColumns, columns, template.name);
     assert.equal(rectangles.length, layout.plans.length);
-    assert.equal(text.filter((value) => value === 'Class Schedule').length, 1);
+    assert.equal(text.filter((value) => value === 'Class Schedule').length, template.showScheduleTitle === false ? 0 : 1);
     for (const [index, plan] of layout.plans.entries()) {
       assert.equal(rectangles[index].height, plan.height);
       assert.equal(rectangles[index].y, plan.y);

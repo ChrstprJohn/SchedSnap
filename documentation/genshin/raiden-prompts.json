@@ -1,0 +1,179 @@
+{
+  "referenceRole": "Character identity only; reject ornate background and all UI/text",
+  "referenceCandidate": "C:/Users/QCU/.codex/generated_images/01a13569-fa4a-7640-90a3-d14f9a8894bc/exec-48622953-7772-437e-a2ce-9a79be92f92b.png",
+  "provider": "built-in image_gen",
+  "assets": [
+    {
+      "requestedWidth": 1080,
+      "requestedHeight": 2400,
+      "destination": "public/wallpapers/scenic/genshin-raiden-tea/mobile.png",
+      "device": "mobile",
+      "prompt": "Create exactly 1080 x 2400 pixels. Use case: stylized-concept. Asset type: opaque full-bleed background artwork for a schedule app. One recognizable Genshin Impact Raiden Shogun chibi, large cute head and tiny body, violet eyes, long dark violet braided hair, small purple flower and gold hair ornament, simplified lavender-purple kimono with red obi details. Clean polished 2D chibi illustration, crisp delicate linework, simple soft cel shading. Flat pale lavender paper-color background, extremely subtle texture. Only 2–4 small restrained accents, grouped near the character. NO text, letters, numbers, timetable, schedule cards, headings, logos, interface, mockup, borders, watermark, ornate scenery, shrine, foliage frame, light trails, sparkles filling background, or extra characters. Subject action: Seated happily, holding a tiny ceramic teacup with a three-color dango skewer beside her. Two tiny petal accents. Gentle smile. Composition: Tall portrait. Character group anchored in bottom footer, completely within bottom 23% of canvas, centered slightly right. Upper 74% remains uninterrupted plain pale lavender. Generous padding around entire character. This is background artwork only; the application adds all schedule content later. Style: soft flat chibi, crisp delicate linework, simple pastel cel shading. Strict placement: Character and props entirely below y=1824, in bottom 24%, ample plain upper 76%. Entire character visible.",
+      "status": "exported",
+      "id": "genshin-raiden-tea",
+      "originalSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-755fed57-67ae-4bdd-b51f-d477034d9898.png",
+      "selectedSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-755fed57-67ae-4bdd-b51f-d477034d9898.png",
+      "correctionPrompt": "",
+      "exportMethod": "scripts/package-sanrio-image.py; authorized pixel-size normalization of independently generated matching-ratio compositions; no cropping",
+      "sha256": "eec02bc1f760f4151896692c8117b66d45053de23fcecba3776fb8c55eee5db9",
+      "nativeDimensions": [
+        841,
+        1870
+      ],
+      "visualInspection": "Verified full character, restrained accents, plain schedule area; no text, timetable, cards or mockup pixels."
+    },
+    {
+      "requestedWidth": 1600,
+      "requestedHeight": 2560,
+      "destination": "public/wallpapers/scenic/genshin-raiden-tea/tablet.png",
+      "device": "tablet",
+      "prompt": "Create exactly 1600 x 2560 pixels. Use case: stylized-concept. Asset type: opaque full-bleed background artwork for a schedule app. One recognizable Genshin Impact Raiden Shogun chibi, large cute head and tiny body, violet eyes, long dark violet braided hair, small purple flower and gold hair ornament, simplified lavender-purple kimono with red obi details. Clean polished 2D chibi illustration, crisp delicate linework, simple soft cel shading. Flat pale lavender paper-color background, extremely subtle texture. Only 2–4 small restrained accents, grouped near the character. NO text, letters, numbers, timetable, schedule cards, headings, logos, interface, mockup, borders, watermark, ornate scenery, shrine, foliage frame, light trails, sparkles filling background, or extra characters. Subject action: Seated happily, holding a tiny ceramic teacup with a three-color dango skewer beside her. Two tiny petal accents. Gentle smile. Composition: Tablet portrait composition independently arranged. Character group anchored lower right within bottom 25%, a little wider and more relaxed than phone. Upper 72% remains uninterrupted plain pale lavender. Generous padding around entire character. This is background artwork only; the application adds all schedule content later. Style: soft flat chibi, crisp delicate linework, simple pastel cel shading. Strict placement: Character and props entirely below y=1945, in bottom 24%, ample plain upper 76%. Entire character visible.",
+      "status": "exported",
+      "id": "genshin-raiden-tea",
+      "originalSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-d79b03dc-90dc-48b8-bc44-a531fc68de94.png",
+      "selectedSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-af2d76be-445d-46a1-a9a3-22f4e0016ddb.png",
+      "correctionPrompt": "Edit this background artwork: change ONLY the character/props/decorative group size and location. Shrink whole group proportionately to 65% its current size, with entire braid, head ornament, hands and feet intact. Anchor whole group in bottom footer entirely below 65% canvas height; upper 63% completely plain pale lavender. Preserve original character identity, expression, action, artwork style, background color and paper texture. No text/UI/cards/headings/watermark. Do not crop or distort.",
+      "exportMethod": "scripts/package-sanrio-image.py; authorized pixel-size normalization of independently generated matching-ratio compositions; no cropping",
+      "sha256": "0f4bacb29c7e02d9c4787cef23f3b833a78c37c906233da3f302979a45780472",
+      "nativeDimensions": [
+        992,
+        1586
+      ],
+      "visualInspection": "Verified full character, restrained accents, plain schedule area; no text, timetable, cards or mockup pixels."
+    },
+    {
+      "requestedWidth": 1920,
+      "requestedHeight": 1080,
+      "destination": "public/wallpapers/scenic/genshin-raiden-tea/laptop.png",
+      "device": "laptop",
+      "prompt": "Create exactly 1920 x 1080 pixels. Use case: stylized-concept. Asset type: opaque full-bleed background artwork for a schedule app. One recognizable Genshin Impact Raiden Shogun chibi, large cute head and tiny body, violet eyes, long dark violet braided hair, small purple flower and gold hair ornament, simplified lavender-purple kimono with red obi details. Clean polished 2D chibi illustration, crisp delicate linework, simple soft cel shading. Flat pale lavender paper-color background, extremely subtle texture. Only 2–4 small restrained accents, grouped near the character. NO text, letters, numbers, timetable, schedule cards, headings, logos, interface, mockup, borders, watermark, ornate scenery, shrine, foliage frame, light trails, sparkles filling background, or extra characters. Subject action: Seated happily, holding a tiny ceramic teacup with a three-color dango skewer beside her. Two tiny petal accents. Gentle smile. Composition: Wide landscape composition independently arranged. Character group on right third, vertically centered slightly below center. Left 68% remains uninterrupted plain pale lavender. Generous padding around entire character. This is background artwork only; the application adds all schedule content later. Style: soft flat chibi, crisp delicate linework, simple pastel cel shading. Strict placement: Character and props entirely in rightmost 28%; clean plain left 65%. Entire character visible.",
+      "status": "exported",
+      "id": "genshin-raiden-tea",
+      "originalSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-e9dafed7-bf17-423c-bd01-354daa98c255.png",
+      "selectedSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-ac134d34-b556-4e95-a9ae-db9c514fff9c.png",
+      "correctionPrompt": "Edit this background artwork: change ONLY the character/props/decorative group size and location. Shrink whole group proportionately to 65% its current size, with entire braid, head ornament, hands and feet intact. Place whole group within rightmost 30% of canvas; left 67% completely plain pale lavender. Preserve original character identity, expression, action, artwork style, background color and paper texture. No text/UI/cards/headings/watermark. Do not crop or distort.",
+      "exportMethod": "scripts/package-sanrio-image.py; authorized pixel-size normalization of independently generated matching-ratio compositions; no cropping",
+      "sha256": "cc8d8e86ba7a3ab54d55f3d1501381fd40463a78186d076da3049044b631958b",
+      "nativeDimensions": [
+        1672,
+        941
+      ],
+      "visualInspection": "Verified full character, restrained accents, plain schedule area; no text, timetable, cards or mockup pixels."
+    },
+    {
+      "requestedWidth": 1080,
+      "requestedHeight": 2400,
+      "destination": "public/wallpapers/scenic/genshin-raiden-bloom/mobile.png",
+      "device": "mobile",
+      "prompt": "Create exactly 1080 x 2400 pixels. Use case: stylized-concept. Asset type: opaque full-bleed background artwork for a schedule app. One recognizable Genshin Impact Raiden Shogun chibi, large cute head and tiny body, violet eyes, long dark violet braided hair, small purple flower and gold hair ornament, simplified lavender-purple kimono with red obi details. Clean polished 2D chibi illustration, crisp delicate linework, simple soft cel shading. Flat pale lavender paper-color background, extremely subtle texture. Only 2–4 small restrained accents, grouped near the character. NO text, letters, numbers, timetable, schedule cards, headings, logos, interface, mockup, borders, watermark, ornate scenery, shrine, foliage frame, light trails, sparkles filling background, or extra characters. Subject action: Standing with a calm sweet smile, holding one small sakura blossom close to her chest. Three tiny fallen petal accents. Entire braid and feet visible. Composition: Tall portrait. Character group anchored in bottom footer, completely within bottom 23% of canvas, centered slightly right. Upper 74% remains uninterrupted plain pale lavender. Generous padding around entire character. This is background artwork only; the application adds all schedule content later. Style: restrained hand-painted watercolor chibi, fine clean contour, gentle pigment texture confined to character, simple pale paper backdrop. Strict placement: Character and props entirely below y=1824, in bottom 24%, ample plain upper 76%. Entire character visible.",
+      "status": "exported",
+      "id": "genshin-raiden-bloom",
+      "originalSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-7db57b69-6b3e-4a8a-83ce-6bb13dc11224.png",
+      "selectedSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-c4cc2d4c-6512-44e4-8178-919fb6e04e6e.png",
+      "correctionPrompt": "Edit this background artwork: change ONLY the character/props/decorative group size and location. Shrink whole group proportionately to 65% its current size, with entire braid, head ornament, hands and feet intact. Anchor whole group in bottom footer entirely below 65% canvas height; upper 63% completely plain pale lavender. Preserve original character identity, expression, action, artwork style, background color and paper texture. No text/UI/cards/headings/watermark. Do not crop or distort.",
+      "exportMethod": "scripts/package-sanrio-image.py; authorized pixel-size normalization of independently generated matching-ratio compositions; no cropping",
+      "sha256": "0f3d32f3d281f0e03b66acc1fa4b9e489a28a30b8358c3ef931dd664a4fe04c0",
+      "nativeDimensions": [
+        841,
+        1870
+      ],
+      "visualInspection": "Verified full character, restrained accents, plain schedule area; no text, timetable, cards or mockup pixels."
+    },
+    {
+      "requestedWidth": 1600,
+      "requestedHeight": 2560,
+      "destination": "public/wallpapers/scenic/genshin-raiden-bloom/tablet.png",
+      "device": "tablet",
+      "prompt": "Create exactly 1600 x 2560 pixels. Use case: stylized-concept. Asset type: opaque full-bleed background artwork for a schedule app. One recognizable Genshin Impact Raiden Shogun chibi, large cute head and tiny body, violet eyes, long dark violet braided hair, small purple flower and gold hair ornament, simplified lavender-purple kimono with red obi details. Clean polished 2D chibi illustration, crisp delicate linework, simple soft cel shading. Flat pale lavender paper-color background, extremely subtle texture. Only 2–4 small restrained accents, grouped near the character. NO text, letters, numbers, timetable, schedule cards, headings, logos, interface, mockup, borders, watermark, ornate scenery, shrine, foliage frame, light trails, sparkles filling background, or extra characters. Subject action: Standing with a calm sweet smile, holding one small sakura blossom close to her chest. Three tiny fallen petal accents. Entire braid and feet visible. Composition: Tablet portrait composition independently arranged. Character group anchored lower right within bottom 25%, a little wider and more relaxed than phone. Upper 72% remains uninterrupted plain pale lavender. Generous padding around entire character. This is background artwork only; the application adds all schedule content later. Style: restrained hand-painted watercolor chibi, fine clean contour, gentle pigment texture confined to character, simple pale paper backdrop. Strict placement: Character and props entirely below y=1945, in bottom 24%, ample plain upper 76%. Entire character visible.",
+      "status": "exported",
+      "id": "genshin-raiden-bloom",
+      "originalSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-d6eb5160-7e1a-4ebd-821e-c9538071c01a.png",
+      "selectedSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-a0735f31-81b0-4e24-a82b-9a140bf46f77.png",
+      "correctionPrompt": "Edit this background artwork: change ONLY the character/props/decorative group size and location. Shrink whole group proportionately to 65% its current size, with entire braid, head ornament, hands and feet intact. Anchor whole group in bottom footer entirely below 65% canvas height; upper 63% completely plain pale lavender. Preserve original character identity, expression, action, artwork style, background color and paper texture. No text/UI/cards/headings/watermark. Do not crop or distort.",
+      "exportMethod": "scripts/package-sanrio-image.py; authorized pixel-size normalization of independently generated matching-ratio compositions; no cropping",
+      "sha256": "0c000b7ea78ae06274c09c94bd22403f90760fbc5d50b5a2211d75988ab596de",
+      "nativeDimensions": [
+        992,
+        1586
+      ],
+      "visualInspection": "Verified full character, restrained accents, plain schedule area; no text, timetable, cards or mockup pixels."
+    },
+    {
+      "requestedWidth": 1920,
+      "requestedHeight": 1080,
+      "destination": "public/wallpapers/scenic/genshin-raiden-bloom/laptop.png",
+      "device": "laptop",
+      "prompt": "Create exactly 1920 x 1080 pixels. Use case: stylized-concept. Asset type: opaque full-bleed background artwork for a schedule app. One recognizable Genshin Impact Raiden Shogun chibi, large cute head and tiny body, violet eyes, long dark violet braided hair, small purple flower and gold hair ornament, simplified lavender-purple kimono with red obi details. Clean polished 2D chibi illustration, crisp delicate linework, simple soft cel shading. Flat pale lavender paper-color background, extremely subtle texture. Only 2–4 small restrained accents, grouped near the character. NO text, letters, numbers, timetable, schedule cards, headings, logos, interface, mockup, borders, watermark, ornate scenery, shrine, foliage frame, light trails, sparkles filling background, or extra characters. Subject action: Standing with a calm sweet smile, holding one small sakura blossom close to her chest. Three tiny fallen petal accents. Entire braid and feet visible. Composition: Wide landscape composition independently arranged. Character group on right third, vertically centered slightly below center. Left 68% remains uninterrupted plain pale lavender. Generous padding around entire character. This is background artwork only; the application adds all schedule content later. Style: restrained hand-painted watercolor chibi, fine clean contour, gentle pigment texture confined to character, simple pale paper backdrop. Strict placement: Character and props entirely in rightmost 28%; clean plain left 65%. Entire character visible.",
+      "status": "exported",
+      "id": "genshin-raiden-bloom",
+      "originalSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-b6530fac-f623-439c-a416-6f8e20da03ba.png",
+      "selectedSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-10bbd6f7-4b6e-452d-9817-6b197ea37255.png",
+      "correctionPrompt": "Edit this background artwork: change ONLY the character/props/decorative group size and location. Shrink whole group proportionately to 65% its current size, with entire braid, head ornament, hands and feet intact. Place whole group within rightmost 30% of canvas; left 67% completely plain pale lavender. Preserve original character identity, expression, action, artwork style, background color and paper texture. No text/UI/cards/headings/watermark. Do not crop or distort.",
+      "exportMethod": "scripts/package-sanrio-image.py; authorized pixel-size normalization of independently generated matching-ratio compositions; no cropping",
+      "sha256": "932614c1d810c4270850cce1697d57d437065b26f12057737a5c6761b03e16cd",
+      "nativeDimensions": [
+        1672,
+        941
+      ],
+      "visualInspection": "Verified full character, restrained accents, plain schedule area; no text, timetable, cards or mockup pixels."
+    },
+    {
+      "requestedWidth": 1080,
+      "requestedHeight": 2400,
+      "destination": "public/wallpapers/scenic/genshin-raiden-moon/mobile.png",
+      "device": "mobile",
+      "prompt": "Create exactly 1080 x 2400 pixels. Use case: stylized-concept. Asset type: opaque full-bleed background artwork for a schedule app. One recognizable Genshin Impact Raiden Shogun chibi, large cute head and tiny body, violet eyes, long dark violet braided hair, small purple flower and gold hair ornament, simplified lavender-purple kimono with red obi details. Clean polished 2D chibi illustration, crisp delicate linework, simple soft cel shading. Flat pale lavender paper-color background, extremely subtle texture. Only 2–4 small restrained accents, grouped near the character. NO text, letters, numbers, timetable, schedule cards, headings, logos, interface, mockup, borders, watermark, ornate scenery, shrine, foliage frame, light trails, sparkles filling background, or extra characters. Subject action: Sleepy seated curled pose, eyes gently closed, resting beside one small soft crescent moon accent and two tiny stars. No nighttime landscape. Entire character visible. Composition: Tall portrait. Character group anchored in bottom footer, completely within bottom 23% of canvas, centered slightly right. Upper 74% remains uninterrupted plain pale lavender. Generous padding around entire character. This is background artwork only; the application adds all schedule content later. Style: minimal ink sticker chibi, clean rounded dark-purple outlines, mostly flat pastel fills, no sticker border or shadow. Strict placement: Character and props entirely below y=1824, in bottom 24%, ample plain upper 76%. Entire character visible.",
+      "status": "exported",
+      "id": "genshin-raiden-moon",
+      "originalSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-2ac4ac5c-a215-44de-aba2-0728c50d119c.png",
+      "selectedSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-2ac4ac5c-a215-44de-aba2-0728c50d119c.png",
+      "correctionPrompt": "",
+      "exportMethod": "scripts/package-sanrio-image.py; authorized pixel-size normalization of independently generated matching-ratio compositions; no cropping",
+      "sha256": "3607d284add5721e7943d0307111216d1461d75ca201256c607384466e1d7579",
+      "nativeDimensions": [
+        841,
+        1870
+      ],
+      "visualInspection": "Verified full character, restrained accents, plain schedule area; no text, timetable, cards or mockup pixels."
+    },
+    {
+      "requestedWidth": 1600,
+      "requestedHeight": 2560,
+      "destination": "public/wallpapers/scenic/genshin-raiden-moon/tablet.png",
+      "device": "tablet",
+      "prompt": "Create exactly 1600 x 2560 pixels. Use case: stylized-concept. Asset type: opaque full-bleed background artwork for a schedule app. One recognizable Genshin Impact Raiden Shogun chibi, large cute head and tiny body, violet eyes, long dark violet braided hair, small purple flower and gold hair ornament, simplified lavender-purple kimono with red obi details. Clean polished 2D chibi illustration, crisp delicate linework, simple soft cel shading. Flat pale lavender paper-color background, extremely subtle texture. Only 2–4 small restrained accents, grouped near the character. NO text, letters, numbers, timetable, schedule cards, headings, logos, interface, mockup, borders, watermark, ornate scenery, shrine, foliage frame, light trails, sparkles filling background, or extra characters. Subject action: Sleepy seated curled pose, eyes gently closed, resting beside one small soft crescent moon accent and two tiny stars. No nighttime landscape. Entire character visible. Composition: Tablet portrait composition independently arranged. Character group anchored lower right within bottom 25%, a little wider and more relaxed than phone. Upper 72% remains uninterrupted plain pale lavender. Generous padding around entire character. This is background artwork only; the application adds all schedule content later. Style: minimal ink sticker chibi, clean rounded dark-purple outlines, mostly flat pastel fills, no sticker border or shadow. Strict placement: Character and props entirely below y=1945, in bottom 24%, ample plain upper 76%. Entire character visible.",
+      "status": "exported",
+      "id": "genshin-raiden-moon",
+      "originalSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-05c6a7ab-e3f7-4bcc-9c83-c1bb25a7f167.png",
+      "selectedSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-05c6a7ab-e3f7-4bcc-9c83-c1bb25a7f167.png",
+      "correctionPrompt": "",
+      "exportMethod": "scripts/package-sanrio-image.py; authorized pixel-size normalization of independently generated matching-ratio compositions; no cropping",
+      "sha256": "717bec1217dccb5b04240ad95855c6c0a36ee9a818cbc8c567019a4cfe43ec8b",
+      "nativeDimensions": [
+        992,
+        1586
+      ],
+      "visualInspection": "Verified full character, restrained accents, plain schedule area; no text, timetable, cards or mockup pixels."
+    },
+    {
+      "requestedWidth": 1920,
+      "requestedHeight": 1080,
+      "destination": "public/wallpapers/scenic/genshin-raiden-moon/laptop.png",
+      "device": "laptop",
+      "prompt": "Create exactly 1920 x 1080 pixels. Use case: stylized-concept. Asset type: opaque full-bleed background artwork for a schedule app. One recognizable Genshin Impact Raiden Shogun chibi, large cute head and tiny body, violet eyes, long dark violet braided hair, small purple flower and gold hair ornament, simplified lavender-purple kimono with red obi details. Clean polished 2D chibi illustration, crisp delicate linework, simple soft cel shading. Flat pale lavender paper-color background, extremely subtle texture. Only 2–4 small restrained accents, grouped near the character. NO text, letters, numbers, timetable, schedule cards, headings, logos, interface, mockup, borders, watermark, ornate scenery, shrine, foliage frame, light trails, sparkles filling background, or extra characters. Subject action: Sleepy seated curled pose, eyes gently closed, resting beside one small soft crescent moon accent and two tiny stars. No nighttime landscape. Entire character visible. Composition: Wide landscape composition independently arranged. Character group on right third, vertically centered slightly below center. Left 68% remains uninterrupted plain pale lavender. Generous padding around entire character. This is background artwork only; the application adds all schedule content later. Style: minimal ink sticker chibi, clean rounded dark-purple outlines, mostly flat pastel fills, no sticker border or shadow. Strict placement: Character and props entirely in rightmost 28%; clean plain left 65%. Entire character visible.",
+      "status": "exported",
+      "id": "genshin-raiden-moon",
+      "originalSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-3db1f0e3-89da-4453-95fe-952e94befdb0.png",
+      "selectedSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-679edd95-abfb-403f-85c0-bcdcd880aa95.png",
+      "correctionPrompt": "Edit this background: proportionately shrink entire Raiden character, crescent and two stars to65% current size and place entire group within rightmost30%, left67% completely plain lavender. Keep full silhouette, sleeping expression, curled seated pose and identity. Use minimal ink-sticker chibi rendering: simple clean rounded dark-purple outlines and predominantly flat pastel fills, less hair highlights and simpler costume detail. No text, UI, cards, headings or watermark. Preserve backdrop color and texture. No cropping/distortion.",
+      "exportMethod": "scripts/package-sanrio-image.py; authorized pixel-size normalization of independently generated matching-ratio compositions; no cropping",
+      "sha256": "da92050531cbc9129b6de73f096ab657ceec0d142ea5b8054bc4a8b27fe75c64",
+      "nativeDimensions": [
+        1672,
+        941
+      ],
+      "visualInspection": "Verified full character, restrained accents, plain schedule area; no text, timetable, cards or mockup pixels."
+    }
+  ],
+  "generationMode": "generate"
+}

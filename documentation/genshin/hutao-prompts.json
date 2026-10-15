@@ -1,0 +1,448 @@
+{
+  "provider": "built-in image_gen",
+  "character": "Hu Tao",
+  "reference": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-8d7a91ed-9505-4019-941f-f8fe89531042.png",
+  "referenceRole": "Identity only; ornate scenery, headings, cards and all UI discarded.",
+  "styles": [
+    {
+      "id": "genshin-hutao-ghost",
+      "style": "Soft flat chibi hugging one friendly ghost",
+      "background": "pale blush"
+    },
+    {
+      "id": "genshin-hutao-plum",
+      "style": "Restrained watercolor chibi holding one plum blossom",
+      "background": "warm ivory rose paper"
+    },
+    {
+      "id": "genshin-hutao-nap",
+      "style": "Minimal ink sticker chibi sleepy with one ghost pillow",
+      "background": "pale dusty rose"
+    }
+  ],
+  "sizing": "Independent mobile/tablet/laptop compositions, exact dimensions normalized with unchanged scripts/package-sanrio-image.py without cropping; originals preserved.",
+  "assets": [
+    {
+      "id": "genshin-hutao-ghost",
+      "device": "mobile",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-88c2ac3b-8586-43b3-8b87-3c0297ef381e.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-88c2ac3b-8586-43b3-8b87-3c0297ef381e.png",
+      "size": [
+        1080,
+        2400
+      ],
+      "destination": "public/wallpapers/scenic/genshin-hutao-ghost/mobile.png",
+      "refs": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-8d7a91ed-9505-4019-941f-f8fe89531042.png"
+      ],
+      "reused": true,
+      "prompt": "Use case: stylized-concept. Create a NEW independently composed opaque full-bleed 1080x2400 portrait 9:20 wallpaper for SchedSnap. Reference image is identity only: discard ALL scenery, text, cards, borders. Subject: exactly one adorable Genshin Impact Hu Tao, long dark brown hair, reddish eyes, signature dark traditional hat with red plum blossom and dark traditional coat, entire body visible. Soft flat chibi illustration, clean delicate outlines, minimal cel shading. Hu Tao happily hugs one tiny friendly white ghost. Pale blush solid background. Two tiny subdued red petal accents beside her only. Composition: Keep upper 76% completely empty uniform background. Entire character, hair, hat and accessory fit within the bottom 24%, small full-body chibi centered around x70%, y86%, with bottom padding. Do not enlarge the character. No frame, scenery, lanterns, buildings, floor, glow, particles, timetable, headings, letters, logos, watermark, UI or Class Schedule text. No additional characters. Simple clean background is essential.",
+      "sources": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-88c2ac3b-8586-43b3-8b87-3c0297ef381e.png"
+      ],
+      "inspection": {
+        "visuallyInspected": true,
+        "identityMatches": true,
+        "entireCharacterVisible": true,
+        "noHeading": true,
+        "noTimetable": true,
+        "noCards": true,
+        "noUI": true,
+        "noLogoOrWatermark": true,
+        "noScenery": true,
+        "compositionSafe": true,
+        "clockDateAreaBlank": true
+      },
+      "finalSize": [
+        1080,
+        2400
+      ],
+      "dimensionsValid": true,
+      "opaque": true,
+      "mode": "RGB",
+      "sourceSize": [
+        841,
+        1870
+      ],
+      "sha256": "1b311e17f01ec1045a7aacd6d6cc30579816fc8b0b6072b4539f018740908a19",
+      "finalPath": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\public\\wallpapers\\scenic\\genshin-hutao-ghost\\mobile.png"
+    },
+    {
+      "id": "genshin-hutao-ghost",
+      "device": "tablet",
+      "refs": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-1df4c738-f08f-437c-b9b9-c15328f2ed59.png"
+      ],
+      "prompt": "Edit ONLY placement and scale of this tablet portrait5:8 wallpaper. Keep same Hu Tao happily hugging one little white ghost, chibi identity, dark hat/redplumflower,darkcoat,longbrown hair, reddish eyes, colors and softflatillustration. Shrink complete character/ghost/petal group to70%itscurrentlinear size; place downinbottomright. All hair/hat/accessory/petals mustbe strictlybelow68%fullcanvasheight, feet at95%,rightedge94%. Upper67%completelyblankpaleblushbackground. No text,logos,frame,scenery,UI,cards,timetable. Same5:8portraitfullbleedopaque image,target1600x2560. Do not enlargecharacter.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-4331af45-37aa-4f40-af09-8349c7b4f03e.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-4331af45-37aa-4f40-af09-8349c7b4f03e.png",
+      "size": [
+        1600,
+        2560
+      ],
+      "destination": "public/wallpapers/scenic/genshin-hutao-ghost/tablet.png",
+      "sources": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-1df4c738-f08f-437c-b9b9-c15328f2ed59.png",
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-4331af45-37aa-4f40-af09-8349c7b4f03e.png"
+      ],
+      "inspection": {
+        "visuallyInspected": true,
+        "identityMatches": true,
+        "entireCharacterVisible": true,
+        "noHeading": true,
+        "noTimetable": true,
+        "noCards": true,
+        "noUI": true,
+        "noLogoOrWatermark": true,
+        "noScenery": true,
+        "compositionSafe": true,
+        "clockDateAreaBlank": true
+      },
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-1df4c738-f08f-437c-b9b9-c15328f2ed59.png",
+      "originalGenerationPrompt": "Use case: stylized-concept. Create a NEW independently composed opaque full-bleed 1600x2560 portrait 5:8 wallpaper for SchedSnap. Reference image is identity only: discard ALL scenery, text, cards, borders. Subject: exactly one adorable Genshin Impact Hu Tao, long dark brown hair, reddish eyes, signature dark traditional hat with red plum blossom and dark traditional coat, entire body visible. Soft flat chibi illustration, clean delicate outlines, minimal cel shading. Hu Tao happily hugs one tiny friendly white ghost. Pale blush solid background. Two tiny subdued red petal accents beside her only. Composition: Keep upper 76% completely empty uniform background. Entire character, hair, hat and accessory fit within the bottom 24%, small full-body chibi centered around x70%, y86%, with bottom padding. Do not enlarge the character. No frame, scenery, lanterns, buildings, floor, glow, particles, timetable, headings, letters, logos, watermark, UI or Class Schedule text. No additional characters. Simple clean background is essential.",
+      "finalSize": [
+        1600,
+        2560
+      ],
+      "dimensionsValid": true,
+      "opaque": true,
+      "mode": "RGB",
+      "sourceSize": [
+        992,
+        1586
+      ],
+      "sha256": "1aa657d22e447daa94782b6c58e4d94daa4aabdb2756693553d4d020d83d5af3",
+      "finalPath": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\public\\wallpapers\\scenic\\genshin-hutao-ghost\\tablet.png"
+    },
+    {
+      "id": "genshin-hutao-ghost",
+      "device": "laptop",
+      "refs": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-88c2ac3b-8586-43b3-8b87-3c0297ef381e.png"
+      ],
+      "prompt": "Use case: stylized-concept. Generate a NEW independently composed fullbleed opaque 1920x1080 landscape16:9 wallpaper. Reference is CHARACTER IDENTITY ONLY, discard ALL ornate scenery, text andcards. ONE cute anime chibi Hu Tao from Genshin Impact, largeheadtinybody, long darkbrown hair, reddish eyes, signature darkhatwithredplumblossom, darktraditional coat,fullbodyunclipped. Soft flat chibi with clean outlines and muted cel shading. Hu Tao happily hugs one tiny friendly white ghost, playful wink, sitting with feet visible. Uniform pale blush background, two tiny mutedred petals besideher. Composition: entirecharacter/hat/hair/accessoryandALLdoodles strictlywithinrightmost28%ofcanvas, leftmostartx72%, rightedge95%, bottom95%. Left70%mustremain completelyblankuniformbackground; mainfigure only22%canvaswidth. Simplecleanbackground,faintpapergrainonly. No scenery,architecture,lanterns,largeflowers,frames,borders,glow,particles,additionalcharacters,text,letters,title,Class Schedule,timetable,cards,UI,logo,watermark.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-75f90a72-7f20-4f49-ae1f-78de8ff5c9ec.png",
+      "correctionPrompt": "Edit ONLY scale and placement of this 16:9landscape Hu Tao wallpaper. Preserveexactchibiidentity,pose,hat,hair,clothes,accessory,style,colors,backgroundandpetals. Shrink complete character/accessory/petal group to60%currentlinear size andplacefullyonright. Entireartgroupincludingeveryhairtipandpetal must startat72%imagewidth orlater, rightedge95%,bottom94%. Left70%completelyquietuninterruptedbackground. Noartleftof70%x. Keepwholefigureunclipped. Do notenlargefigure. No newelements. No text,title,heading,cards,UI,logo,watermark,frame,scenery. Fullbleedopaqueimage,sameaspectratio.",
+      "correctionSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-fa12c81a-55ca-48f5-9835-cf8ace0977a7.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-fa12c81a-55ca-48f5-9835-cf8ace0977a7.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "destination": "public/wallpapers/scenic/genshin-hutao-ghost/laptop.png",
+      "sources": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-75f90a72-7f20-4f49-ae1f-78de8ff5c9ec.png",
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-fa12c81a-55ca-48f5-9835-cf8ace0977a7.png"
+      ],
+      "inspection": {
+        "visuallyInspected": true,
+        "identityMatches": true,
+        "entireCharacterVisible": true,
+        "noHeading": true,
+        "noTimetable": true,
+        "noCards": true,
+        "noUI": true,
+        "noLogoOrWatermark": true,
+        "noScenery": true,
+        "compositionSafe": true,
+        "clockDateAreaBlank": false
+      },
+      "finalSize": [
+        1920,
+        1080
+      ],
+      "dimensionsValid": true,
+      "opaque": true,
+      "mode": "RGB",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sha256": "85cecb2b0028a336cb1487a44658a69c50dd2405d9258d7b764b4f7efc1b79f3",
+      "finalPath": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\public\\wallpapers\\scenic\\genshin-hutao-ghost\\laptop.png"
+    },
+    {
+      "id": "genshin-hutao-plum",
+      "device": "mobile",
+      "refs": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-8d7a91ed-9505-4019-941f-f8fe89531042.png"
+      ],
+      "prompt": "Use case: stylized-concept. Generate a NEW independently composed fullbleed opaque 1080x2400 portrait9:20 wallpaper. Reference is CHARACTER IDENTITY ONLY, discard ALL ornate scenery, text andcards. ONE cute anime chibi Hu Tao from Genshin Impact, largeheadtinybody, long darkbrown hair, reddish eyes, signature darkhatwithredplumblossom, darktraditional coat,fullbodyunclipped. Restrained delicate watercolor chibi on pale warm ivory rose paper. Hu Tao quietly sits holding ONE small plum blossom. Fine softbrown outlines, muted pigment washes, minimal shading, calm reddish eyes. Two tiny rose petals besideheronly. Composition: deliberatelySMALL complete character group ONLYinbottom27%ofcanvas. Topmosthatflower/hair at70%imageheightorLOWER, feet95%,centerx73%. ALLartandaccents mustbe BELOW68%imageheight. Upper67%totallyblankpaper, top22%blankclockarea. Groupmustnotexceed25%canvasheight. Simplecleanbackground,faintpapergrainonly. No scenery,architecture,lanterns,largeflowers,frames,borders,glow,particles,additionalcharacters,text,letters,title,Class Schedule,timetable,cards,UI,logo,watermark.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-85622c03-e7d6-4bcc-883e-f65a235d54f4.png",
+      "correctionPrompt": "Edit ONLY scale and placement of this portrait 9:20 Hu Tao wallpaper. Preserveexactchibiidentity,pose,hat,hair,clothes,accessory,style,colors,backgroundandpetals. Shrink complete character/accessory/petalgroup to60%currentlinear size and moveDOWN/RIGHT. Topmosthat/flower/hair at70%fullcanvasheight; bottomfeet94%,rightedge94%. ALL artandaccentpetals STRICTLYbelow68%y. Upper67%completelyblankbackground. Groupmaximum24%fullcanvasheight. Keepwholefigureunclipped. Do notenlargefigure. No newelements. No text,title,heading,cards,UI,logo,watermark,frame,scenery. Fullbleedopaqueimage,sameaspectratio.",
+      "correctionSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-24686af6-99ba-401b-9ac1-05d419f556e3.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-24686af6-99ba-401b-9ac1-05d419f556e3.png",
+      "size": [
+        1080,
+        2400
+      ],
+      "destination": "public/wallpapers/scenic/genshin-hutao-plum/mobile.png",
+      "sources": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-85622c03-e7d6-4bcc-883e-f65a235d54f4.png",
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-24686af6-99ba-401b-9ac1-05d419f556e3.png"
+      ],
+      "inspection": {
+        "visuallyInspected": true,
+        "identityMatches": true,
+        "entireCharacterVisible": true,
+        "noHeading": true,
+        "noTimetable": true,
+        "noCards": true,
+        "noUI": true,
+        "noLogoOrWatermark": true,
+        "noScenery": true,
+        "compositionSafe": true,
+        "clockDateAreaBlank": true
+      },
+      "finalSize": [
+        1080,
+        2400
+      ],
+      "dimensionsValid": true,
+      "opaque": true,
+      "mode": "RGB",
+      "sourceSize": [
+        841,
+        1870
+      ],
+      "sha256": "bd622b6a79d9e0b7a0e123a4f079f6c27542795b96943c6cdc6f46804ef7253a",
+      "finalPath": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\public\\wallpapers\\scenic\\genshin-hutao-plum\\mobile.png"
+    },
+    {
+      "id": "genshin-hutao-plum",
+      "device": "tablet",
+      "refs": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-8d7a91ed-9505-4019-941f-f8fe89531042.png"
+      ],
+      "prompt": "Use case: stylized-concept. Generate a NEW independently composed fullbleed opaque 1600x2560 portrait5:8 wallpaper. Reference is CHARACTER IDENTITY ONLY, discard ALL ornate scenery, text andcards. ONE cute anime chibi Hu Tao from Genshin Impact, largeheadtinybody, long darkbrown hair, reddish eyes, signature darkhatwithredplumblossom, darktraditional coat,fullbodyunclipped. Restrained delicate watercolor chibi on pale warm ivory rose paper. Hu Tao quietly sits holding ONE small plum blossom. Fine softbrown outlines, muted pigment washes, minimal shading, calm reddish eyes. Two tiny rose petals besideheronly. Composition: deliberatelySMALL complete character group ONLYinbottom27%ofcanvas. Topmosthatflower/hair at70%imageheightorLOWER, feet95%,centerx73%. ALLartandaccents mustbe BELOW68%imageheight. Upper67%totallyblankpaper, top22%blankclockarea. Groupmustnotexceed25%canvasheight. Simplecleanbackground,faintpapergrainonly. No scenery,architecture,lanterns,largeflowers,frames,borders,glow,particles,additionalcharacters,text,letters,title,Class Schedule,timetable,cards,UI,logo,watermark.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-2b71af5f-f06d-4bd0-ab9a-f580ffd7e212.png",
+      "correctionPrompt": "Edit ONLY scale and placement of this portrait 5:8 Hu Tao wallpaper. Preserveexactchibiidentity,pose,hat,hair,clothes,accessory,style,colors,backgroundandpetals. Shrink complete character/accessory/petalgroup to60%currentlinear size and moveDOWN/RIGHT. Topmosthat/flower/hair at70%fullcanvasheight; bottomfeet94%,rightedge94%. ALL artandaccentpetals STRICTLYbelow68%y. Upper67%completelyblankbackground. Groupmaximum24%fullcanvasheight. Keepwholefigureunclipped. Do notenlargefigure. No newelements. No text,title,heading,cards,UI,logo,watermark,frame,scenery. Fullbleedopaqueimage,sameaspectratio.",
+      "correctionSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-f954fb85-b06d-40e0-8da8-8fa6c75a3426.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-f4633e77-5bbf-43bc-ac57-83fdb4782360.png",
+      "secondCorrectionPrompt": "Placement edit ONLY. Same watercolor Hu Tao plum tablet5:8portraitbackground. Shrink whole HuTao/hair/hat/flower/two petal group to65%currentlinear size. MovecompletegroupDOWN. Highesthat tip exactly70%fullimageheight;lowestpetal95%,rightedge93%. All visiblecharacterandpetals entirelybelow68%fullcanvasheight. Upper67%absolutelyblankivorypaper. Preserveidentity,style,pose,colors,no newelements,no text/UI. Donotenlargefigure.",
+      "size": [
+        1600,
+        2560
+      ],
+      "destination": "public/wallpapers/scenic/genshin-hutao-plum/tablet.png",
+      "sources": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-2b71af5f-f06d-4bd0-ab9a-f580ffd7e212.png",
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-f954fb85-b06d-40e0-8da8-8fa6c75a3426.png",
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-f4633e77-5bbf-43bc-ac57-83fdb4782360.png"
+      ],
+      "inspection": {
+        "visuallyInspected": true,
+        "identityMatches": true,
+        "entireCharacterVisible": true,
+        "noHeading": true,
+        "noTimetable": true,
+        "noCards": true,
+        "noUI": true,
+        "noLogoOrWatermark": true,
+        "noScenery": true,
+        "compositionSafe": true,
+        "clockDateAreaBlank": true
+      },
+      "finalSize": [
+        1600,
+        2560
+      ],
+      "dimensionsValid": true,
+      "opaque": true,
+      "mode": "RGB",
+      "sourceSize": [
+        992,
+        1586
+      ],
+      "sha256": "3bd4261810d10f85fc9b4e285f23701b4de7d189bf4fbc71337facc0c31da3f0",
+      "finalPath": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\public\\wallpapers\\scenic\\genshin-hutao-plum\\tablet.png"
+    },
+    {
+      "id": "genshin-hutao-plum",
+      "device": "laptop",
+      "refs": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-8d7a91ed-9505-4019-941f-f8fe89531042.png"
+      ],
+      "prompt": "Use case: stylized-concept. Generate a NEW independently composed fullbleed opaque 1920x1080 landscape16:9 wallpaper. Reference is CHARACTER IDENTITY ONLY, discard ALL ornate scenery, text andcards. ONE cute anime chibi Hu Tao from Genshin Impact, largeheadtinybody, long darkbrown hair, reddish eyes, signature darkhatwithredplumblossom, darktraditional coat,fullbodyunclipped. Restrained delicate watercolor chibi on pale warm ivory rose paper. Hu Tao quietly sits holding ONE small plum blossom. Fine softbrown outlines, muted pigment washes, minimal shading, calm reddish eyes. Two tiny rose petals besideheronly. Composition: entirecharacter/hat/hair/accessoryandALLdoodles strictlywithinrightmost28%ofcanvas, leftmostartx72%, rightedge95%, bottom95%. Left70%mustremain completelyblankuniformbackground; mainfigure only22%canvaswidth. Simplecleanbackground,faintpapergrainonly. No scenery,architecture,lanterns,largeflowers,frames,borders,glow,particles,additionalcharacters,text,letters,title,Class Schedule,timetable,cards,UI,logo,watermark.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-c6593b49-f194-468b-8154-1567c51b99c3.png",
+      "correctionPrompt": "Edit ONLY scale and placement of this 16:9landscape Hu Tao wallpaper. Preserveexactchibiidentity,pose,hat,hair,clothes,accessory,style,colors,backgroundandpetals. Shrink complete character/accessory/petal group to60%currentlinear size andplacefullyonright. Entireartgroupincludingeveryhairtipandpetal must startat72%imagewidth orlater, rightedge95%,bottom94%. Left70%completelyquietuninterruptedbackground. Noartleftof70%x. Keepwholefigureunclipped. Do notenlargefigure. No newelements. No text,title,heading,cards,UI,logo,watermark,frame,scenery. Fullbleedopaqueimage,sameaspectratio.",
+      "correctionSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-af98e3c2-515b-4f95-91bb-c239f136c2d3.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-77e2b540-2723-4c64-8ce9-17fc710601f6.png",
+      "secondCorrectionPrompt": "PlacementeditONLY. Same16:9landscapeHuTaowatercolorplumbackground. Shrinkcompletefigureandpetals to70%currentlinearsize. Placeveryfarright: leftmosthairtip/petalat76%fullcanvaswidth, rightedge95%,feet94%. EntirefigureandALLpetals strictlywithinrightmost24%, absolutelynoartleftof74%x. Left73%entirelyblankivorypaper. Preservecharacteridentity,pose,style,colors,no newelements,no text/UI. Do notenlargefigure.",
+      "size": [
+        1920,
+        1080
+      ],
+      "destination": "public/wallpapers/scenic/genshin-hutao-plum/laptop.png",
+      "sources": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-c6593b49-f194-468b-8154-1567c51b99c3.png",
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-af98e3c2-515b-4f95-91bb-c239f136c2d3.png",
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-77e2b540-2723-4c64-8ce9-17fc710601f6.png"
+      ],
+      "inspection": {
+        "visuallyInspected": true,
+        "identityMatches": true,
+        "entireCharacterVisible": true,
+        "noHeading": true,
+        "noTimetable": true,
+        "noCards": true,
+        "noUI": true,
+        "noLogoOrWatermark": true,
+        "noScenery": true,
+        "compositionSafe": true,
+        "clockDateAreaBlank": false
+      },
+      "finalSize": [
+        1920,
+        1080
+      ],
+      "dimensionsValid": true,
+      "opaque": true,
+      "mode": "RGB",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sha256": "2b5d2ec4b3edf1c19592e55d12344295c704c2956f1d87990dc2504340e24eed",
+      "finalPath": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\public\\wallpapers\\scenic\\genshin-hutao-plum\\laptop.png"
+    },
+    {
+      "id": "genshin-hutao-nap",
+      "device": "mobile",
+      "refs": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-8d7a91ed-9505-4019-941f-f8fe89531042.png"
+      ],
+      "prompt": "Use case: stylized-concept. Generate a NEW independently composed fullbleed opaque 1080x2400 portrait9:20 wallpaper. Reference is CHARACTER IDENTITY ONLY, discard ALL ornate scenery, text andcards. ONE cute anime chibi Hu Tao from Genshin Impact, largeheadtinybody, long darkbrown hair, reddish eyes, signature darkhatwithredplumblossom, darktraditional coat,fullbodyunclipped. Minimal ink sticker chibi, simple darkbrown contours, clean simplified shapes, limited mutedcolors, narrowcreamstickeredge. Sleepy Hu Tao with closedeyes curls withONE tiny ghost-shaped pillow. Uniform pale dustyrosebackground. One little plum petal and one tiny curved sleepy doodle nearheronly. Composition: deliberatelySMALL complete character group ONLYinbottom27%ofcanvas. Topmosthatflower/hair at70%imageheightorLOWER, feet95%,centerx73%. ALLartandaccents mustbe BELOW68%imageheight. Upper67%totallyblankpaper, top22%blankclockarea. Groupmustnotexceed25%canvasheight. Simplecleanbackground,faintpapergrainonly. No scenery,architecture,lanterns,largeflowers,frames,borders,glow,particles,additionalcharacters,text,letters,title,Class Schedule,timetable,cards,UI,logo,watermark.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-e67cab8b-e823-4cfe-8319-cff08e627842.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-e67cab8b-e823-4cfe-8319-cff08e627842.png",
+      "size": [
+        1080,
+        2400
+      ],
+      "destination": "public/wallpapers/scenic/genshin-hutao-nap/mobile.png",
+      "sources": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-e67cab8b-e823-4cfe-8319-cff08e627842.png"
+      ],
+      "inspection": {
+        "visuallyInspected": true,
+        "identityMatches": true,
+        "entireCharacterVisible": true,
+        "noHeading": true,
+        "noTimetable": true,
+        "noCards": true,
+        "noUI": true,
+        "noLogoOrWatermark": true,
+        "noScenery": true,
+        "compositionSafe": true,
+        "clockDateAreaBlank": true
+      },
+      "finalSize": [
+        1080,
+        2400
+      ],
+      "dimensionsValid": true,
+      "opaque": true,
+      "mode": "RGB",
+      "sourceSize": [
+        841,
+        1870
+      ],
+      "sha256": "326036b27836c0d739ec46737595e92fbe5c80a2080b1342f99a8419676356e0",
+      "finalPath": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\public\\wallpapers\\scenic\\genshin-hutao-nap\\mobile.png"
+    },
+    {
+      "id": "genshin-hutao-nap",
+      "device": "tablet",
+      "refs": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-8d7a91ed-9505-4019-941f-f8fe89531042.png"
+      ],
+      "prompt": "Use case: stylized-concept. Generate a NEW independently composed fullbleed opaque 1600x2560 portrait5:8 wallpaper. Reference is CHARACTER IDENTITY ONLY, discard ALL ornate scenery, text andcards. ONE cute anime chibi Hu Tao from Genshin Impact, largeheadtinybody, long darkbrown hair, reddish eyes, signature darkhatwithredplumblossom, darktraditional coat,fullbodyunclipped. Minimal ink sticker chibi, simple darkbrown contours, clean simplified shapes, limited mutedcolors, narrowcreamstickeredge. Sleepy Hu Tao with closedeyes curls withONE tiny ghost-shaped pillow. Uniform pale dustyrosebackground. One little plum petal and one tiny curved sleepy doodle nearheronly. Composition: deliberatelySMALL complete character group ONLYinbottom27%ofcanvas. Topmosthatflower/hair at70%imageheightorLOWER, feet95%,centerx73%. ALLartandaccents mustbe BELOW68%imageheight. Upper67%totallyblankpaper, top22%blankclockarea. Groupmustnotexceed25%canvasheight. Simplecleanbackground,faintpapergrainonly. No scenery,architecture,lanterns,largeflowers,frames,borders,glow,particles,additionalcharacters,text,letters,title,Class Schedule,timetable,cards,UI,logo,watermark.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-eb4ae887-5153-4b3e-9e8c-c709de481e80.png",
+      "correctionPrompt": "Edit ONLY scale and placement of this portrait 5:8 Hu Tao wallpaper. Preserveexactchibiidentity,pose,hat,hair,clothes,accessory,style,colors,backgroundandpetals. Shrink complete character/accessory/petalgroup to60%currentlinear size and moveDOWN/RIGHT. Topmosthat/flower/hair at70%fullcanvasheight; bottomfeet94%,rightedge94%. ALL artandaccentpetals STRICTLYbelow68%y. Upper67%completelyblankbackground. Groupmaximum24%fullcanvasheight. Keepwholefigureunclipped. Do notenlargefigure. No newelements. No text,title,heading,cards,UI,logo,watermark,frame,scenery. Fullbleedopaqueimage,sameaspectratio.",
+      "correctionSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-12f2e2c1-a7ba-455d-b83b-1b19f61cbef6.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-12f2e2c1-a7ba-455d-b83b-1b19f61cbef6.png",
+      "size": [
+        1600,
+        2560
+      ],
+      "destination": "public/wallpapers/scenic/genshin-hutao-nap/tablet.png",
+      "sources": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-eb4ae887-5153-4b3e-9e8c-c709de481e80.png",
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-12f2e2c1-a7ba-455d-b83b-1b19f61cbef6.png"
+      ],
+      "inspection": {
+        "visuallyInspected": true,
+        "identityMatches": true,
+        "entireCharacterVisible": true,
+        "noHeading": true,
+        "noTimetable": true,
+        "noCards": true,
+        "noUI": true,
+        "noLogoOrWatermark": true,
+        "noScenery": true,
+        "compositionSafe": true,
+        "clockDateAreaBlank": true
+      },
+      "finalSize": [
+        1600,
+        2560
+      ],
+      "dimensionsValid": true,
+      "opaque": true,
+      "mode": "RGB",
+      "sourceSize": [
+        992,
+        1586
+      ],
+      "sha256": "8f626c9bd51580c6583968def3130fca1f1ea70290d018dee2fd3aef4ea21809",
+      "finalPath": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\public\\wallpapers\\scenic\\genshin-hutao-nap\\tablet.png"
+    },
+    {
+      "id": "genshin-hutao-nap",
+      "device": "laptop",
+      "refs": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-8d7a91ed-9505-4019-941f-f8fe89531042.png"
+      ],
+      "prompt": "Use case: stylized-concept. Generate a NEW independently composed fullbleed opaque 1920x1080 landscape16:9 wallpaper. Reference is CHARACTER IDENTITY ONLY, discard ALL ornate scenery, text andcards. ONE cute anime chibi Hu Tao from Genshin Impact, largeheadtinybody, long darkbrown hair, reddish eyes, signature darkhatwithredplumblossom, darktraditional coat,fullbodyunclipped. Minimal ink sticker chibi, simple darkbrown contours, clean simplified shapes, limited mutedcolors, narrowcreamstickeredge. Sleepy Hu Tao with closedeyes curls withONE tiny ghost-shaped pillow. Uniform pale dustyrosebackground. One little plum petal and one tiny curved sleepy doodle nearheronly. Composition: entirecharacter/hat/hair/accessoryandALLdoodles strictlywithinrightmost28%ofcanvas, leftmostartx72%, rightedge95%, bottom95%. Left70%mustremain completelyblankuniformbackground; mainfigure only22%canvaswidth. Simplecleanbackground,faintpapergrainonly. No scenery,architecture,lanterns,largeflowers,frames,borders,glow,particles,additionalcharacters,text,letters,title,Class Schedule,timetable,cards,UI,logo,watermark.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-884321bf-56c4-42ce-9aa0-41f954d6de7c.png",
+      "correctionPrompt": "Edit ONLY scale and placement of this 16:9landscape Hu Tao wallpaper. Preserveexactchibiidentity,pose,hat,hair,clothes,accessory,style,colors,backgroundandpetals. Shrink complete character/accessory/petal group to60%currentlinear size andplacefullyonright. Entireartgroupincludingeveryhairtipandpetal must startat72%imagewidth orlater, rightedge95%,bottom94%. Left70%completelyquietuninterruptedbackground. Noartleftof70%x. Keepwholefigureunclipped. Do notenlargefigure. No newelements. No text,title,heading,cards,UI,logo,watermark,frame,scenery. Fullbleedopaqueimage,sameaspectratio.",
+      "correctionSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-3a76ca98-a4a5-4167-83ea-ef6e818ba0d0.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-3a76ca98-a4a5-4167-83ea-ef6e818ba0d0.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "destination": "public/wallpapers/scenic/genshin-hutao-nap/laptop.png",
+      "sources": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-884321bf-56c4-42ce-9aa0-41f954d6de7c.png",
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13589-c4ec-7313-9d2d-c1cf222a2be2\\exec-3a76ca98-a4a5-4167-83ea-ef6e818ba0d0.png"
+      ],
+      "inspection": {
+        "visuallyInspected": true,
+        "identityMatches": true,
+        "entireCharacterVisible": true,
+        "noHeading": true,
+        "noTimetable": true,
+        "noCards": true,
+        "noUI": true,
+        "noLogoOrWatermark": true,
+        "noScenery": true,
+        "compositionSafe": true,
+        "clockDateAreaBlank": false
+      },
+      "finalSize": [
+        1920,
+        1080
+      ],
+      "dimensionsValid": true,
+      "opaque": true,
+      "mode": "RGB",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "sha256": "c5006238950e3480d5e52f6b818134230634fff30ed8d5c1c6d6b39227af0667",
+      "finalPath": "C:\\Users\\QCU\\source\\repos\\SchedSnap\\public\\wallpapers\\scenic\\genshin-hutao-nap\\laptop.png"
+    }
+  ]
+}

@@ -41,8 +41,8 @@ export function galleryPreviewTemplate(template) {
 export function customizeWallpaperTemplate(template, settings = {}, device = template?.device) {
   if (!template) return template;
   const tabletPortrait = device === 'tablet';
-  if (!tabletPortrait && !Object.keys(settings).length) return template;
-  const defaults = tabletPortrait ? { schedulePosition: 'center', containerStyle: 'glass', tabletBoxSpacing: 80 } : {};
+  if (!tabletPortrait && (template.collection !== 'genshin' || template.containerStyle === 'glass') && !Object.keys(settings).length) return template;
+  const defaults = { ...(template.collection === 'genshin' ? { containerStyle: 'glass' } : {}), ...(tabletPortrait ? { schedulePosition: 'center', containerStyle: 'glass', tabletBoxSpacing: 80 } : {}) };
   // Device defaults precede the user's explicit appearance choices.
   const customized = { ...template, ...defaults, ...settings };
   if (tabletPortrait) customized.orientation = 'portrait';

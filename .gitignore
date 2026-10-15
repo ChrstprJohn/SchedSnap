@@ -37,6 +37,8 @@ coverage/
 /output/**/*.zip
 /output/**/*.tar
 /output/**/*.tar.gz
+/output/genshin/drafts/
+/output/genshin-backgrounds/drafts/
 /output/**/*-deployments.json
 
 # Python caches from artwork utilities.

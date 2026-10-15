@@ -8,6 +8,10 @@ import { sanrioTemplates } from './sanrioTemplates.js';
 import { domoTemplates } from './domoTemplates.js';
 import { meepTemplates } from './meepTemplates.js';
 import { ghibliTemplates } from './ghibliTemplates.js';
+import { genshinTemplates } from './genshinTemplates.js';
+import { genshinBackgroundTemplates } from './genshinBackgroundTemplates.js';
+import { genshinChibiTemplates } from './genshinChibiTemplates.js';
+
 
 export const mobileResolution = { id: 'mobile', width: 1080, height: 2400 };
 export const deviceResolutions = { mobile: mobileResolution, tablet: { id: 'tablet', width: 1600, height: 2560 }, laptop: { id: 'laptop', width: 1920, height: 1080 } };
@@ -21,6 +25,10 @@ export const wallpaperTemplates = [
   ...weBareBearsTemplates,
   ...meepTemplates,
   ...domoTemplates,
+  ...genshinTemplates,
+  ...genshinBackgroundTemplates,
+  ...genshinChibiTemplates,
+
   ...sanrioTemplates,
   ...chikawaReferenceTemplates,
   ...chikawaTemplates.filter(template => !chikawaReferenceTemplates.some(reviewed => reviewed.id === template.id)),

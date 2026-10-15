@@ -1,0 +1,384 @@
+{
+  "assets": [
+    {
+      "path": "/wallpapers/scenic/genshin-raiden-tea/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957480/schedsnap/wallpapers/scenic/genshin-raiden-tea/mobile-eec02bc1f760f415.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-raiden-tea/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957480/schedsnap/wallpapers/scenic/genshin-raiden-tea/tablet-0f4bacb29c7e02d9.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-raiden-tea/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957479/schedsnap/wallpapers/scenic/genshin-raiden-tea/laptop-cc8d8e86ba7a3ab5.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-raiden-bloom/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957476/schedsnap/wallpapers/scenic/genshin-raiden-bloom/mobile-0f3d32f3d281f0e0.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-raiden-bloom/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957476/schedsnap/wallpapers/scenic/genshin-raiden-bloom/tablet-0c000b7ea78ae062.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-raiden-bloom/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957475/schedsnap/wallpapers/scenic/genshin-raiden-bloom/laptop-932614c1d810c427.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-raiden-moon/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957478/schedsnap/wallpapers/scenic/genshin-raiden-moon/mobile-3607d284add5721e.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-raiden-moon/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957479/schedsnap/wallpapers/scenic/genshin-raiden-moon/tablet-717bec1217dccb5b.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-raiden-moon/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957476/schedsnap/wallpapers/scenic/genshin-raiden-moon/laptop-da92050531cbc912.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-furina-tea/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957465/schedsnap/wallpapers/scenic/genshin-furina-tea/mobile-3a6e1bae33868dd2.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-furina-tea/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957466/schedsnap/wallpapers/scenic/genshin-furina-tea/tablet-4f0044c5f57f2b88.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-furina-tea/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957465/schedsnap/wallpapers/scenic/genshin-furina-tea/laptop-eb0c40a9e4a3e3cf.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-furina-bubble/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957464/schedsnap/wallpapers/scenic/genshin-furina-bubble/mobile-da126c7c9dfdd6e6.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-furina-bubble/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957463/schedsnap/wallpapers/scenic/genshin-furina-bubble/tablet-f5495448dd9ff45d.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-furina-bubble/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957463/schedsnap/wallpapers/scenic/genshin-furina-bubble/laptop-25d5f2d754fb505e.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-furina-ribbon/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957465/schedsnap/wallpapers/scenic/genshin-furina-ribbon/mobile-d9d17e811a81d122.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-furina-ribbon/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957465/schedsnap/wallpapers/scenic/genshin-furina-ribbon/tablet-96c8f98d2ab3eb80.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-furina-ribbon/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957463/schedsnap/wallpapers/scenic/genshin-furina-ribbon/laptop-ce0ba6ca598fef1b.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-nahida-leaf/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957473/schedsnap/wallpapers/scenic/genshin-nahida-leaf/mobile-73aa643c61b3721a.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-nahida-leaf/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957473/schedsnap/wallpapers/scenic/genshin-nahida-leaf/tablet-0724e29a31c75a1b.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-nahida-leaf/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957472/schedsnap/wallpapers/scenic/genshin-nahida-leaf/laptop-2af1b8b1dcaf5511.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-nahida-clover/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957469/schedsnap/wallpapers/scenic/genshin-nahida-clover/mobile-27dd4611dfbd5337.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-nahida-clover/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957471/schedsnap/wallpapers/scenic/genshin-nahida-clover/tablet-29bcacee63fa6090.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-nahida-clover/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957469/schedsnap/wallpapers/scenic/genshin-nahida-clover/laptop-e9a2597ba9d3bf7a.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-nahida-dream/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957471/schedsnap/wallpapers/scenic/genshin-nahida-dream/mobile-a58fac0c53c983fc.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-nahida-dream/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957471/schedsnap/wallpapers/scenic/genshin-nahida-dream/tablet-dc67440288258b31.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-nahida-dream/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791957470/schedsnap/wallpapers/scenic/genshin-nahida-dream/laptop-5e570e58dee5728a.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-columbina-moon/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791956017/schedsnap/wallpapers/scenic/genshin-columbina-moon/mobile-1958dbeaa17713d1.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-columbina-moon/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791956021/schedsnap/wallpapers/scenic/genshin-columbina-moon/tablet-c241e720a39a2699.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-columbina-moon/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791956016/schedsnap/wallpapers/scenic/genshin-columbina-moon/laptop-ff2328b0b323b673.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-zhongli-tea/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791956024/schedsnap/wallpapers/scenic/genshin-zhongli-tea/mobile-7b7bb69758919fa7.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-zhongli-tea/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791956024/schedsnap/wallpapers/scenic/genshin-zhongli-tea/tablet-52e0cc189edc2375.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-zhongli-tea/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791956024/schedsnap/wallpapers/scenic/genshin-zhongli-tea/laptop-1195920d6e566453.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-neuvillette-tide/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791956022/schedsnap/wallpapers/scenic/genshin-neuvillette-tide/mobile-f4dfaf7d34c1c536.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-neuvillette-tide/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791956022/schedsnap/wallpapers/scenic/genshin-neuvillette-tide/tablet-857275edb054f633.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-neuvillette-tide/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791956021/schedsnap/wallpapers/scenic/genshin-neuvillette-tide/laptop-9ab718e0222dccca.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-arlecchino-ember/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791956016/schedsnap/wallpapers/scenic/genshin-arlecchino-ember/mobile-8e89d2e8b1f99091.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-arlecchino-ember/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791956016/schedsnap/wallpapers/scenic/genshin-arlecchino-ember/tablet-b2905c151a240942.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-arlecchino-ember/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791956015/schedsnap/wallpapers/scenic/genshin-arlecchino-ember/laptop-799b33b89811ce64.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-flins-lantern/mobile.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791956020/schedsnap/wallpapers/scenic/genshin-flins-lantern/mobile-397bfbebb5633328.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-flins-lantern/tablet.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791956019/schedsnap/wallpapers/scenic/genshin-flins-lantern/tablet-b2d1742be552c6cf.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    },
+    {
+      "path": "/wallpapers/scenic/genshin-flins-lantern/laptop.png",
+      "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791956021/schedsnap/wallpapers/scenic/genshin-flins-lantern/laptop-1218ace9683787e2.png",
+      "status": 200,
+      "png": true,
+      "canvasCors": true,
+      "dimensionsVerified": true,
+      "hashVerified": true
+    }
+  ],
+  "previousEntriesPreserved": 446,
+  "newEntries": 42
+}

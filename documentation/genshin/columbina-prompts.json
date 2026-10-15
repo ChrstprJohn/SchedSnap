@@ -1,0 +1,59 @@
+{
+  "character": "Columbina",
+  "provider": "built-in imagegen",
+  "reference": {
+    "page": "https://wiki.hoyolab.com/pc/genshin/entry/9121?lang=en-us",
+    "image": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/041c4d6ada7be783b6e7d3d37a4f902d_1413776735054866630.png",
+    "local": "documentation/genshin/references/columbina.png",
+    "role": "Official identity reference; original user image guides chibi style, not baked schedule"
+  },
+  "assets": [
+    {
+      "id": "genshin-columbina-moon",
+      "device": "mobile",
+      "width": 1080,
+      "height": 2400,
+      "prompt": "Use case: stylized-concept. Create one clean cute Genshin Impact Columbina chibi wallpaper BACKGROUND ARTWORK ONLY for mobile, portrait 1080x2400 composition,9:20. Official character artwork provided is identity reference only, do not imitate its complex swirling background or mature proportions. Recognizable full-body hand-drawn anime chibi: long dark violet-black hair with magenta underneath, feather/wing hair ornaments, white and pale blue flowing costume with ribbon details matching reference. Tiny seated pose, gentle closed eyes, holding a little white feather close to her chest. Cute large head, tiny body, delicate clean line art, restrained cel/watercolor shading, entire silhouette visible. Pale pearl-lavender paper background with a VERY subtle soft blue wash near bottom. Add a LITTLE visual decoration: a small silver-blue crescent near lower left, two small feather doodles near lower corners, three tiny pale diamond star marks near the character and a fine incomplete curved moon arc at bottom only. Calm designed stationery feeling, elegant and simple, no ornate border, no flowers or scenery or visual noise. Layout is critical: ONE SMALL CHIBI group confined to bottom quarter of wallpaper, roughly x35%-65%,y74%-94%, never large or centered in page. Upper72% almost entirely empty even-toned quiet background for editable class schedule. Top22%reserved for phone clock/date, completely blank center. Decorations only in lower corners/bottom quarter; no marks beneath schedule. Full bleed opaque PNG. ABSOLUTELY NO TEXT, NUMBERS, TITLE, CLASS SCHEDULE, TIMETABLE, CARDS, PANELS, UI, CLOCK, PHONE MOCKUP, LOGO, WATERMARK. Keep generous clear margin at all edges.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-c7d17b63-3ab8-435d-92d2-5459c2c2c7cd.png",
+      "finalPath": "public/wallpapers/scenic/genshin-columbina-moon/mobile.png",
+      "inspection": {
+        "noTextOrUI": true,
+        "opaque": true,
+        "completeSilhouette": true,
+        "clockAreaClear": true
+      }
+    },
+    {
+      "id": "genshin-columbina-moon",
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "prompt": "Use case: stylized-concept. Independently recompose the supplied Columbina mobile wallpaper into one tablet background at 1600x2560. Reference is the character identity, drawing style, pose, pearl-lavender paper palette and small celestial decorations. Preserve exact cute closed-eye chibi, dark purple-magenta longhair, whitefeatherheadornament,white-bluecostume,littlefeatherin hands. Keep clean simple paper background and a LITTLE restrained lower decoration: one small crescent,two feather doodles,3tiny stars,andone incompletefine moonarc nearcharacter only. Reduce complexwateryribbons aroundfeet; this must feel clean and designed, no busy illustrations. Composition portrait5:8. Top24% reserved for the tablet clock/date. Upper70% quiet and empty. Small complete character group within x35%-65%,y74%-95%,never above70%height. Recompose for this aspect ratio, do not stretch or crop existingcomposition. Fullbodychibi withbighead,tinybody,completefeetandhair visible. All otherareas lowcontrastandunobstructed,2-3subtle accents only nearperimeter ofartgroup. FullbleedopaquePNG. NO TEXT,WORDS,TITLE,CLASS SCHEDULE,NUMBERS,TIMETABLE,CARDS,UI,CLOCK,PHONEFRAME,LOGO,WATERMARK.",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-d35424c3-4647-472f-8420-cd601074f3a2.png",
+      "finalPath": "public/wallpapers/scenic/genshin-columbina-moon/tablet.png",
+      "inspection": {
+        "noTextOrUI": true,
+        "opaque": true,
+        "completeSilhouette": true,
+        "clockAreaClear": true
+      }
+    },
+    {
+      "id": "genshin-columbina-moon",
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "prompt": "Use case: stylized-concept. Independently recompose the supplied Columbina mobile wallpaper into one laptop background at 1920x1080. Reference is the character identity, drawing style, pose, pearl-lavender paper palette and small celestial decorations. Preserve exact cute closed-eye chibi, dark purple-magenta longhair, whitefeatherheadornament,white-bluecostume,littlefeatherin hands. Keep clean simple paper background and a LITTLE restrained lower decoration: one small crescent,two feather doodles,3tiny stars,andone incompletefine moonarc nearcharacter only. Reduce complexwateryribbons aroundfeet; this must feel clean and designed, no busy illustrations. Composition landscape16:9. Entire left67% is quiet empty paper for the timetable. Small complete character group within rightmost30%,x70%-94%,y40%-85%. Character plus moon,feathers,andfinearc arranged as a compact vignette at bottomright; don'tputart belowtimetable onleft. Recompose for this aspect ratio, do not stretch or crop existingcomposition. Fullbodychibi withbighead,tinybody,completefeetandhair visible. All otherareas lowcontrastandunobstructed,2-3subtle accents only nearperimeter ofartgroup. FullbleedopaquePNG. NO TEXT,WORDS,TITLE,CLASS SCHEDULE,NUMBERS,TIMETABLE,CARDS,UI,CLOCK,PHONEFRAME,LOGO,WATERMARK.",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-6e6744d0-6f9e-4cc9-8724-d576bf7e35ba.png",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13569-fa4a-7640-90a3-d14f9a8894bc\\exec-7e7f7376-ad01-4c13-8d7d-4ae1473aad18.png",
+      "correctionPrompt": "Edit only the placement and size of the existing complete illustrated vignette (Columbina, feathers, crescent, fine curved arc, all stars, and blue wash around feet). Preserve the exact character, seated pose, face, hair, outfit, drawing style, paper background, and colors. Shrink that entire vignette uniformly to 75% of its current size, and anchor it near the lower right with about 4% right padding and 8% bottom padding. Every non-background mark must be confined to the rightmost 30% of the canvas, entirely to the RIGHT of x=70% width; all the left 68% must be quiet blank pearl-lavender paper, including lower left and middle. Do not add or remove characters, do not crop. Keep the same 16:9 landscape composition intended for 1920x1080. No text, timetable, cards, clock, UI, logo or watermark.",
+      "finalPath": "public/wallpapers/scenic/genshin-columbina-moon/laptop.png",
+      "inspection": {
+        "noTextOrUI": true,
+        "completeSilhouette": true,
+        "scheduleAreaClear": true
+      }
+    }
+  ],
+  "exportSizing": "Independently generated device compositions; matching aspect ratios normalized to exact delivery dimensions with existing package-sanrio-image.py, without cropping."
+}
