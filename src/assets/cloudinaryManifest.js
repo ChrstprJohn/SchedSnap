@@ -2793,6 +2793,69 @@ export default {
     "width": 1600,
     "height": 2560
   },
+  "/wallpapers/scenic/adventure-lemongrab/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-lemongrab/tablet-8018c135c2fc1728",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792079087/schedsnap/wallpapers/scenic/adventure-lemongrab/tablet-8018c135c2fc1728.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/adventure-lumpy-space/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-lumpy-space/laptop-2e76847b4d8ffd6c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792079087/schedsnap/wallpapers/scenic/adventure-lumpy-space/laptop-2e76847b4d8ffd6c.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/adventure-lumpy-space/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-lumpy-space/mobile-b66f8bdf3b491cdf",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792079088/schedsnap/wallpapers/scenic/adventure-lumpy-space/mobile-b66f8bdf3b491cdf.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/adventure-lumpy-space/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-lumpy-space/tablet-65b4532a38b6766d",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792079089/schedsnap/wallpapers/scenic/adventure-lumpy-space/tablet-65b4532a38b6766d.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/adventure-lemongrab/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-lemongrab/mobile-a83bf3ec0f98a99d",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792079090/schedsnap/wallpapers/scenic/adventure-lemongrab/mobile-a83bf3ec0f98a99d.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/adventure-meadow-bugs/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-meadow-bugs/tablet-2d7c4a457019ec14",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792079095/schedsnap/wallpapers/scenic/adventure-meadow-bugs/tablet-2d7c4a457019ec14.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/adventure-meadow-bugs/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-meadow-bugs/laptop-d7ec6079e29b1454",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792079095/schedsnap/wallpapers/scenic/adventure-meadow-bugs/laptop-d7ec6079e29b1454.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/adventure-meadow-bugs/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-meadow-bugs/mobile-fd0b8d7a087c32e3",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792079096/schedsnap/wallpapers/scenic/adventure-meadow-bugs/mobile-fd0b8d7a087c32e3.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/adventure-lemongrab/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-lemongrab/laptop-0400bac10ceca34e",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792079289/schedsnap/wallpapers/scenic/adventure-lemongrab/laptop-0400bac10ceca34e.png",
+    "width": 1920,
+    "height": 1080
+  },
   "/wallpapers/scenic/genshin-arlecchino-ember/laptop.png": {
     "cloud": "djfyq0jyz",
     "publicId": "schedsnap/wallpapers/scenic/genshin-arlecchino-ember/laptop-799b33b89811ce64",

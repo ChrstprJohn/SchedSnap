@@ -1,0 +1,88 @@
+{
+  "provider": "built-in image_gen",
+  "assets": [
+    {
+      "slug": "adventure-lumpy-space",
+      "name": "Lumpy Space Princess",
+      "device": "mobile",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-17eb0b5f-d885-4ee9-97f0-3af5de1f1ece.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-6b18d164-4946-4a94-96ef-f8ac3f829140.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful Adventure Time wallpaper. Exact reference1 Lumpy Space Princess minimalist face on uniform muted lavender. A yellow five-point forehead star with thin irregular dark edge, two black dot eyes below, and the exact puckered sideways cheek/mouth black curve. Same little tilted star and original eye spacing and lip gesture. No outer body outline or arms, no extra face, no text. Keep reference's flat cartoon colors and natural contour. 1080x2400 mobile portrait. All face elements including star entirely within bottom18%, y80%-97%, centered as a small graphic no wider than38%. Top78% completely plain lavender. Small artwork and broad quiet timetable area are mandatory; do not enlarge art to fill empty space. Separate device composition, not stretched. Keep natural original hand-drawn contour and exact palette. No schedule, text, typography, UI, logos, watermark, frames, realistic shading, polished 3D or added decorations."
+    },
+    {
+      "slug": "adventure-lumpy-space",
+      "name": "Lumpy Space Princess",
+      "device": "tablet",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-17eb0b5f-d885-4ee9-97f0-3af5de1f1ece.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-8918c8e7-2b0b-467a-92e3-4a2210464b8b.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful Adventure Time wallpaper. Exact reference1 Lumpy Space Princess minimalist face on uniform muted lavender. A yellow five-point forehead star with thin irregular dark edge, two black dot eyes below, and the exact puckered sideways cheek/mouth black curve. Same little tilted star and original eye spacing and lip gesture. No outer body outline or arms, no extra face, no text. Keep reference's flat cartoon colors and natural contour. 1600x2560 tablet portrait. All face elements including star entirely within bottom18%, y80%-97%, centered as a small graphic no wider than38%. Top78% completely plain lavender. Small artwork and broad quiet timetable area are mandatory; do not enlarge art to fill empty space. Separate device composition, not stretched. Keep natural original hand-drawn contour and exact palette. No schedule, text, typography, UI, logos, watermark, frames, realistic shading, polished 3D or added decorations."
+    },
+    {
+      "slug": "adventure-lumpy-space",
+      "name": "Lumpy Space Princess",
+      "device": "laptop",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-17eb0b5f-d885-4ee9-97f0-3af5de1f1ece.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-c427ee4d-4d8e-4ce7-9143-5f8a8b5d3c34.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful Adventure Time wallpaper. Exact reference1 Lumpy Space Princess minimalist face on uniform muted lavender. A yellow five-point forehead star with thin irregular dark edge, two black dot eyes below, and the exact puckered sideways cheek/mouth black curve. Same little tilted star and original eye spacing and lip gesture. No outer body outline or arms, no extra face, no text. Keep reference's flat cartoon colors and natural contour. 1920x1080 wide landscape. All face elements including star entirely within rightmost20%, x77%-97%, y62%-95%. Left74% plain lavender. Small artwork and broad quiet timetable area are mandatory; do not enlarge art to fill empty space. Separate device composition, not stretched. Keep natural original hand-drawn contour and exact palette. No schedule, text, typography, UI, logos, watermark, frames, realistic shading, polished 3D or added decorations."
+    },
+    {
+      "slug": "adventure-lemongrab",
+      "name": "Lemongrab",
+      "device": "mobile",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-319c8d0c-ae21-443c-9e56-6ebf3c4b333f.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-d43a044d-1cc0-4176-bc40-c4725e510836.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful Adventure Time wallpaper. Exact reference2 Adventure Time Lemongrab minimalist face on flat BRIGHT LEMON YELLOW. Two narrow horizontal white oval eyes, each tall black vertical slit pupil, subtle tiny lower eyelid lines, very long angular thin outlined pointed nose slanting down toward right between eyes and mouth. Large open dark olive oval mouth, small rounded white teeth top and bottom, muted ochre tongue. Preserve original offbeat drawing, eye/nose/mouth proportions and sparse thin contours. No body/head boundary. 1080x2400 mobile portrait. Complete face INCLUDING long pointed nose strictly inside bottom18%, y80%-97%, centered, max38% width. Top78% entirely plain neon lemon yellow. Small artwork and broad quiet timetable area are mandatory; do not enlarge art to fill empty space. Separate device composition, not stretched. Keep natural original hand-drawn contour and exact palette. No schedule, text, typography, UI, logos, watermark, frames, realistic shading, polished 3D or added decorations."
+    },
+    {
+      "slug": "adventure-lemongrab",
+      "name": "Lemongrab",
+      "device": "tablet",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-319c8d0c-ae21-443c-9e56-6ebf3c4b333f.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-1dc84c19-acbf-4fb5-a0e9-9cf426907608.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful Adventure Time wallpaper. Exact reference2 Adventure Time Lemongrab minimalist face on flat BRIGHT LEMON YELLOW. Two narrow horizontal white oval eyes, each tall black vertical slit pupil, subtle tiny lower eyelid lines, very long angular thin outlined pointed nose slanting down toward right between eyes and mouth. Large open dark olive oval mouth, small rounded white teeth top and bottom, muted ochre tongue. Preserve original offbeat drawing, eye/nose/mouth proportions and sparse thin contours. No body/head boundary. 1600x2560 tablet portrait. Complete face INCLUDING long pointed nose strictly inside bottom18%, y80%-97%, centered, max38% width. Top78% entirely plain neon lemon yellow. Small artwork and broad quiet timetable area are mandatory; do not enlarge art to fill empty space. Separate device composition, not stretched. Keep natural original hand-drawn contour and exact palette. No schedule, text, typography, UI, logos, watermark, frames, realistic shading, polished 3D or added decorations."
+    },
+    {
+      "slug": "adventure-lemongrab",
+      "name": "Lemongrab",
+      "device": "laptop",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-319c8d0c-ae21-443c-9e56-6ebf3c4b333f.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-2b6ed9a8-e8ae-499b-a75c-705a40d85d2f.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful Adventure Time wallpaper. Exact reference2 Adventure Time Lemongrab minimalist face on flat BRIGHT LEMON YELLOW. Two narrow horizontal white oval eyes, each tall black vertical slit pupil, subtle tiny lower eyelid lines, very long angular thin outlined pointed nose slanting down toward right between eyes and mouth. Large open dark olive oval mouth, small rounded white teeth top and bottom, muted ochre tongue. Preserve original offbeat drawing, eye/nose/mouth proportions and sparse thin contours. No body/head boundary. 1920x1080 wide landscape. Complete face INCLUDING pointed nose strictly inside x77%-97%, y62%-95%. Left74% entirely plain lemon yellow. Small artwork and broad quiet timetable area are mandatory; do not enlarge art to fill empty space. Separate device composition, not stretched. Keep natural original hand-drawn contour and exact palette. No schedule, text, typography, UI, logos, watermark, frames, realistic shading, polished 3D or added decorations.",
+      "priorSource": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-be672e42-9f89-4b15-8c02-bb4bf5ef1382.png",
+      "repairPrompt": "Precise placement-only edit. Preserve exact existing Lemongrab face, thin angular pointed nose, white horizontal eyes with vertical slit pupils, dark olive open mouth and small white teeth. Preserve bright yellow background. Reduce the entire face to 65% of current size and move RIGHT so ALL artwork pixels including the left white eye and the entire long pointed nose remain strictly within rightmost23% x75%-98%, vertically in lower half y65%-95%. Left72% must be absolutely blank yellow. Do not add or change face details, no body, text or UI. Same 1920x1080 wide landscape wallpaper."
+    },
+    {
+      "slug": "adventure-meadow-bugs",
+      "name": "Meadow Bug Friends",
+      "device": "mobile",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-5d98447e-5d58-4612-bdd2-520cfdc2228f.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-d987cfd9-fad8-4974-a553-943b636d8b8a.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful Adventure Time wallpaper. Exact reference3 playful Adventure Time-style spring meadow. Chartreuse lime-green flat paperlike field with sparsely spaced muted olive short triple grass strokes. Small round yellow friendly bee with two dark charcoal stripes, two pale wings, tiny smiling dot face and tiny feet; red-orange ladybug with charcoal purple head and three large dark spots; one delicate pale white butterfly with slim dark purple body. Soft naturally uneven thin cartoon contours, subtle simple colored-pencil fill, reference's restrained childlike cel aesthetic. No flowers, scenery, realistic insects, glossy effects. 1080x2400 mobile portrait. Bee and ladybug are a small footer pair ENTIRELY within bottom18%, y80%-97%. Small white butterfly in very top-left corner within x3%-15%, y2%-8%. Keep center x7%-93%, y14%-77% almost plain lime green with only VERY FAINT tiny sparse grass ticks for readable schedule. No insects in center. Small artwork and broad quiet timetable area are mandatory; do not enlarge art to fill empty space. Separate device composition, not stretched. Keep natural original hand-drawn contour and exact palette. No schedule, text, typography, UI, logos, watermark, frames, realistic shading, polished 3D or added decorations."
+    },
+    {
+      "slug": "adventure-meadow-bugs",
+      "name": "Meadow Bug Friends",
+      "device": "tablet",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-5d98447e-5d58-4612-bdd2-520cfdc2228f.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-1d3d9cac-a057-45b0-96bf-0c4834c027f6.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful Adventure Time wallpaper. Exact reference3 playful Adventure Time-style spring meadow. Chartreuse lime-green flat paperlike field with sparsely spaced muted olive short triple grass strokes. Small round yellow friendly bee with two dark charcoal stripes, two pale wings, tiny smiling dot face and tiny feet; red-orange ladybug with charcoal purple head and three large dark spots; one delicate pale white butterfly with slim dark purple body. Soft naturally uneven thin cartoon contours, subtle simple colored-pencil fill, reference's restrained childlike cel aesthetic. No flowers, scenery, realistic insects, glossy effects. 1600x2560 tablet portrait. Bee and ladybug are a small footer pair ENTIRELY within bottom18%, y80%-97%. Small white butterfly in very top-left corner within x3%-15%, y2%-8%. Keep center x7%-93%, y14%-77% almost plain lime green with only VERY FAINT tiny sparse grass ticks for readable schedule. No insects in center. Small artwork and broad quiet timetable area are mandatory; do not enlarge art to fill empty space. Separate device composition, not stretched. Keep natural original hand-drawn contour and exact palette. No schedule, text, typography, UI, logos, watermark, frames, realistic shading, polished 3D or added decorations."
+    },
+    {
+      "slug": "adventure-meadow-bugs",
+      "name": "Meadow Bug Friends",
+      "device": "laptop",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-5d98447e-5d58-4612-bdd2-520cfdc2228f.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-9414ee34-ed71-4c8d-96a1-d77ce214de81.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful Adventure Time wallpaper. Exact reference3 playful Adventure Time-style spring meadow. Chartreuse lime-green flat paperlike field with sparsely spaced muted olive short triple grass strokes. Small round yellow friendly bee with two dark charcoal stripes, two pale wings, tiny smiling dot face and tiny feet; red-orange ladybug with charcoal purple head and three large dark spots; one delicate pale white butterfly with slim dark purple body. Soft naturally uneven thin cartoon contours, subtle simple colored-pencil fill, reference's restrained childlike cel aesthetic. No flowers, scenery, realistic insects, glossy effects. 1920x1080 wide landscape. Bee and ladybug a tiny group entirely within rightmost22%, x76%-98%, y60%-95%; butterfly near upper right within x82%-95%, y5%-18%. Left72% almost plain lime green, only very faint sparse grass ticks for readable timetable. Small artwork and broad quiet timetable area are mandatory; do not enlarge art to fill empty space. Separate device composition, not stretched. Keep natural original hand-drawn contour and exact palette. No schedule, text, typography, UI, logos, watermark, frames, realistic shading, polished 3D or added decorations."
+    }
+  ]
+}
