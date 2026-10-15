@@ -1,6 +1,10 @@
 // Original device-specific We Bare Bears fan-art wallpaper backgrounds.
 // The schedule and all course data are composed by Canvas at render time.
 const designs = [
+  ['wbb-ice-bear-minimal', 'Ice Bear Minimal', 'A quiet ivory field with Ice Bear’s simple hand-drawn face.', '#fffbf1', '#252525', '#55524c', '#d8cfc3', '2026-10-15T13:09:05.273Z'],
+  ['wbb-panda-minimal', 'Panda Minimal', 'Panda’s gentle smile and soft charcoal patches on white.', '#ffffff', '#252525', '#555555', '#dddddd', '2026-10-15T13:09:05.273Z'],
+  ['wbb-grizzly-minimal', 'Grizzly Minimal', 'Grizzly’s happy face on a flat warm terracotta field.', '#ad7457', '#211a16', '#3e2d24', '#d1aa91', '2026-10-15T13:09:05.273Z'],
+  ['wbb-paw-trio', 'Bear Paw Trio', 'Three little bear paws in charcoal, ochre and white.', '#ffffff', '#252525', '#555555', '#dddddd', '2026-10-15T13:09:05.273Z'],
   ['wbb-edge-peek-a', 'Edge Peek Trio A', 'Ice Bear, Grizzly, and Panda peek in from the edges of warm ivory paper.', '#fff8ec', '#37312d', '#766b63', '#d8cfc3', '2026-10-13T14:15:33.000Z'],
   ['wbb-edge-peek-b', 'Edge Peek Trio B', 'Three familiar faces peek from opposite corners across a quiet cream field.', '#fff8ec', '#37312d', '#766b63', '#d8cfc3', '2026-10-13T14:15:30.710Z'],
   ['wbb-edge-peek-c', 'Edge Peek Trio C', 'Soft sketch-like bear peeks add a little warmth around the pale oat center.', '#faf4e9', '#37312d', '#766b63', '#d8cfc3', '2026-10-13T14:15:41.057Z'],
@@ -20,6 +24,7 @@ export const weBareBearsTemplates = designs.map(([id, name, description, backgro
   name,
   description,
   collection: 'we-bare-bears',
+  ...(['wbb-ice-bear-minimal', 'wbb-panda-minimal', 'wbb-grizzly-minimal', 'wbb-paw-trio'].includes(id) ? { family: 'wbb-minimal', verticalPosition: -40, schedulePosition: 'left', containerStyle: 'glass', containerShape: 'pill', containerFill: true, particleStyle: 'none' } : {}),
   background,
   ink,
   muted,

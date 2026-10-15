@@ -2498,5 +2498,299 @@ export default {
     "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792066476/schedsnap/wallpapers/scenic/ghibli-ink-totoro/tablet-8884f34b9efeeffd.png",
     "width": 1600,
     "height": 2560
+  },
+  "/wallpapers/scenic/ghibli-leaf-rain-friend/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-leaf-rain-friend/laptop-f1981c956855f05e",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792068721/schedsnap/wallpapers/scenic/ghibli-leaf-rain-friend/laptop-f1981c956855f05e.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/ghibli-cream-ink-frame/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-cream-ink-frame/tablet-2c13afb58b688ac2",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792068723/schedsnap/wallpapers/scenic/ghibli-cream-ink-frame/tablet-2c13afb58b688ac2.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/ghibli-cream-ink-frame/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-cream-ink-frame/mobile-2a433f2a5339ab58",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792068724/schedsnap/wallpapers/scenic/ghibli-cream-ink-frame/mobile-2a433f2a5339ab58.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/ghibli-cream-ink-frame/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-cream-ink-frame/laptop-b0f67279eaf12dcf",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792068724/schedsnap/wallpapers/scenic/ghibli-cream-ink-frame/laptop-b0f67279eaf12dcf.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/ghibli-leaf-rain-friend/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-leaf-rain-friend/mobile-ccf03ce9fc0397ff",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792068727/schedsnap/wallpapers/scenic/ghibli-leaf-rain-friend/mobile-ccf03ce9fc0397ff.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/ghibli-leaf-rain-friend/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-leaf-rain-friend/tablet-3700ca6a1bb0cfed",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792068727/schedsnap/wallpapers/scenic/ghibli-leaf-rain-friend/tablet-3700ca6a1bb0cfed.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/ghibli-silver-totoro-peek/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-silver-totoro-peek/laptop-a712bbf73e16bb46",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792068730/schedsnap/wallpapers/scenic/ghibli-silver-totoro-peek/laptop-a712bbf73e16bb46.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/ghibli-silver-totoro-peek/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-silver-totoro-peek/mobile-49d6c81f498b8243",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792068730/schedsnap/wallpapers/scenic/ghibli-silver-totoro-peek/mobile-49d6c81f498b8243.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/ghibli-silver-totoro-peek/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-silver-totoro-peek/tablet-d278e308090ce1c1",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792068731/schedsnap/wallpapers/scenic/ghibli-silver-totoro-peek/tablet-d278e308090ce1c1.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/wbb-ice-bear-minimal/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/wbb-ice-bear-minimal/laptop-2a94b8a7846a31fd",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792070559/schedsnap/wallpapers/scenic/wbb-ice-bear-minimal/laptop-2a94b8a7846a31fd.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/wbb-grizzly-minimal/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/wbb-grizzly-minimal/mobile-b6bc4c8d77bc8707",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792070561/schedsnap/wallpapers/scenic/wbb-grizzly-minimal/mobile-b6bc4c8d77bc8707.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/wbb-grizzly-minimal/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/wbb-grizzly-minimal/laptop-605f42d166fa13e5",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792070561/schedsnap/wallpapers/scenic/wbb-grizzly-minimal/laptop-605f42d166fa13e5.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/wbb-grizzly-minimal/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/wbb-grizzly-minimal/tablet-f9aa2ac80203a8e9",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792070562/schedsnap/wallpapers/scenic/wbb-grizzly-minimal/tablet-f9aa2ac80203a8e9.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/wbb-ice-bear-minimal/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/wbb-ice-bear-minimal/mobile-164ba65f8df47cbb",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792070562/schedsnap/wallpapers/scenic/wbb-ice-bear-minimal/mobile-164ba65f8df47cbb.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/wbb-ice-bear-minimal/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/wbb-ice-bear-minimal/tablet-e3b81075bed1a119",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792070563/schedsnap/wallpapers/scenic/wbb-ice-bear-minimal/tablet-e3b81075bed1a119.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/wbb-panda-minimal/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/wbb-panda-minimal/tablet-ecf3acb79cda9c78",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792070565/schedsnap/wallpapers/scenic/wbb-panda-minimal/tablet-ecf3acb79cda9c78.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/wbb-panda-minimal/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/wbb-panda-minimal/laptop-37e7bbc82c8ed22b",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792070565/schedsnap/wallpapers/scenic/wbb-panda-minimal/laptop-37e7bbc82c8ed22b.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/wbb-panda-minimal/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/wbb-panda-minimal/mobile-ac88fd96b4e36216",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792070565/schedsnap/wallpapers/scenic/wbb-panda-minimal/mobile-ac88fd96b4e36216.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/wbb-paw-trio/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/wbb-paw-trio/mobile-fa3dafd08f40d925",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792070566/schedsnap/wallpapers/scenic/wbb-paw-trio/mobile-fa3dafd08f40d925.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/wbb-paw-trio/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/wbb-paw-trio/laptop-85fdadcd9f509220",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792070566/schedsnap/wallpapers/scenic/wbb-paw-trio/laptop-85fdadcd9f509220.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/wbb-paw-trio/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/wbb-paw-trio/tablet-19a009b8cf5eb7a2",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792070567/schedsnap/wallpapers/scenic/wbb-paw-trio/tablet-19a009b8cf5eb7a2.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/adventure-finn-smile/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-finn-smile/laptop-4769490fea3931c4",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073241/schedsnap/wallpapers/scenic/adventure-finn-smile/laptop-4769490fea3931c4.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/adventure-finn-smile/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-finn-smile/mobile-f8c47afd5eb4922f",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073242/schedsnap/wallpapers/scenic/adventure-finn-smile/mobile-f8c47afd5eb4922f.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/adventure-finn-smile/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-finn-smile/tablet-420d99dbbbd2f29d",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073242/schedsnap/wallpapers/scenic/adventure-finn-smile/tablet-420d99dbbbd2f29d.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/adventure-bmo/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-bmo/laptop-0020efbe7081ad98",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073243/schedsnap/wallpapers/scenic/adventure-bmo/laptop-0020efbe7081ad98.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/adventure-flame-princess/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-flame-princess/laptop-78569e80e308a2bb",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073243/schedsnap/wallpapers/scenic/adventure-flame-princess/laptop-78569e80e308a2bb.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/adventure-flame-princess/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-flame-princess/mobile-a2945ddeffdf8382",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073245/schedsnap/wallpapers/scenic/adventure-flame-princess/mobile-a2945ddeffdf8382.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/adventure-jake-face/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-jake-face/mobile-87d8a21468b28b2f",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073246/schedsnap/wallpapers/scenic/adventure-jake-face/mobile-87d8a21468b28b2f.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/adventure-jake-face/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-jake-face/tablet-cbde8e53a4d7ddbe",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073248/schedsnap/wallpapers/scenic/adventure-jake-face/tablet-cbde8e53a4d7ddbe.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/adventure-marceline/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-marceline/laptop-bfcc69c49205b679",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073250/schedsnap/wallpapers/scenic/adventure-marceline/laptop-bfcc69c49205b679.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/adventure-marceline/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-marceline/mobile-dc704036f98eedd4",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073251/schedsnap/wallpapers/scenic/adventure-marceline/mobile-dc704036f98eedd4.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/domo-desk-peek/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-desk-peek/laptop-86258e161ecda74e",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073252/schedsnap/wallpapers/scenic/domo-desk-peek/laptop-86258e161ecda74e.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/adventure-jake-face/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-jake-face/laptop-a3cee80edd6f97ad",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073250/schedsnap/wallpapers/scenic/adventure-jake-face/laptop-a3cee80edd6f97ad.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/domo-desk-peek/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-desk-peek/mobile-93189e969fd6822d",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073253/schedsnap/wallpapers/scenic/domo-desk-peek/mobile-93189e969fd6822d.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/domo-desk-peek/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-desk-peek/tablet-3fb0a76f046a7e4a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073254/schedsnap/wallpapers/scenic/domo-desk-peek/tablet-3fb0a76f046a7e4a.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/domo-taped-glasses/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-taped-glasses/mobile-510f48e326a208c1",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073256/schedsnap/wallpapers/scenic/domo-taped-glasses/mobile-510f48e326a208c1.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/domo-taped-glasses/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-taped-glasses/tablet-44daca20b8c91b5e",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073258/schedsnap/wallpapers/scenic/domo-taped-glasses/tablet-44daca20b8c91b5e.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/domo-taped-glasses/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/domo-taped-glasses/laptop-812532b8e271739a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073258/schedsnap/wallpapers/scenic/domo-taped-glasses/laptop-812532b8e271739a.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/adventure-flame-princess/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-flame-princess/tablet-9705ee0241d77453",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073259/schedsnap/wallpapers/scenic/adventure-flame-princess/tablet-9705ee0241d77453.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/adventure-marceline/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-marceline/tablet-bc5cd781f5cfe167",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073673/schedsnap/wallpapers/scenic/adventure-marceline/tablet-bc5cd781f5cfe167.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/adventure-bmo/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-bmo/mobile-42c02b511794465a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073673/schedsnap/wallpapers/scenic/adventure-bmo/mobile-42c02b511794465a.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/adventure-bmo/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/adventure-bmo/tablet-656f5c9fb937e275",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073676/schedsnap/wallpapers/scenic/adventure-bmo/tablet-656f5c9fb937e275.png",
+    "width": 1600,
+    "height": 2560
   }
 };

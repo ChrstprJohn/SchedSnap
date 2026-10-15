@@ -1,3 +1,4 @@
+import { adventureTimeTemplates } from './characterReferenceTemplates.js';
 import { littleFriendsTemplates } from './littleFriendsTemplates.js';
 import { patternTemplates } from './patternTemplates.js';
 import { chikawaTemplates } from './chikawaTemplates.js';
@@ -15,6 +16,7 @@ export const tabletLandscapeResolution = { ...deviceResolutions.tablet, width: d
 // Artwork and palette presets contain no student or course information.
 // Legacy heading/rows values remain as preset metadata; Canvas uses one shared layout.
 export const wallpaperTemplates = [
+  ...adventureTimeTemplates,
   ...ghibliTemplates,
   ...weBareBearsTemplates,
   ...meepTemplates,

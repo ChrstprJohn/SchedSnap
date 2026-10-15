@@ -4,6 +4,7 @@ export const designCollections = [
   { id: 'sanrio', name: 'Sanrio' },
   { id: 'we-bare-bears', name: 'We Bare Bears' },
   { id: 'domo', name: 'Domo' },
+  { id: 'adventure-time', name: 'Adventure Time' },
   { id: 'chiikawa', name: 'chiikawa' },
   { id: 'ghibli', name: 'Ghibli' },
   { id: 'meep', name: 'Meep' },

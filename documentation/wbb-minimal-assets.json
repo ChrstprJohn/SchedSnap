@@ -1,0 +1,136 @@
+{
+  "assets": [
+    {
+      "id": "wbb-ice-bear-minimal",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/wbb-ice-bear-minimal/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "164ba65f8df47cbb40bef05625b95a6192504597a62f6ae4866d21a402bd553f",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "wbb-ice-bear-minimal",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/wbb-ice-bear-minimal/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "e3b81075bed1a119babdf9a654ef0031116191480b3a4e39e199eedd8cf1d066",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "wbb-ice-bear-minimal",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/wbb-ice-bear-minimal/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "2a94b8a7846a31fd782055007b33fa8837688608ab9c0a6d75bbab1f3c1c1697",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "wbb-panda-minimal",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/wbb-panda-minimal/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "ac88fd96b4e36216af0f10b7339254529555bcc1d49e146fad98df23ce212ac6",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "wbb-panda-minimal",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/wbb-panda-minimal/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "ecf3acb79cda9c78a50b882647aa6c4676e0e9d291879c63da0fe32a2afc3d54",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "wbb-panda-minimal",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/wbb-panda-minimal/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "37e7bbc82c8ed22b4b9432dcfe18f5ea1c7b3cbad0533bfe16e7676144501508",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "wbb-grizzly-minimal",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/wbb-grizzly-minimal/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "b6bc4c8d77bc8707aed0c7e31c296e44b0645a333a80ceb0683f83fc3762584f",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "wbb-grizzly-minimal",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/wbb-grizzly-minimal/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "f9aa2ac80203a8e9a3f8a18326c4a5b7f216517514e75c1fac1daefb1a1e5a7a",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "wbb-grizzly-minimal",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/wbb-grizzly-minimal/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "605f42d166fa13e5265fddac79ec12e23891e0c77782a2939d23e8b9eeeda084",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "wbb-paw-trio",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/wbb-paw-trio/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "fa3dafd08f40d9254633139f12acf7a67627b4ce96b1fe9e17b3441a65e3ffa9",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "wbb-paw-trio",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/wbb-paw-trio/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "19a009b8cf5eb7a2e87474e9325cb3ed5252bf3edac37498b0066feff5b5a69c",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "wbb-paw-trio",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/wbb-paw-trio/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "85fdadcd9f509220fe533ca8b5f63acf098c9e7451bf135765d5741f7084dcc7",
+      "visuallyReviewed": true
+    }
+  ]
+}
