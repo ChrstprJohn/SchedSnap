@@ -1,3 +1,4 @@
+import { domoReferenceAdditions } from './characterReferenceTemplates.js';
 // Reference-inspired artwork; schedules are rendered separately by Canvas.
 const createdAt = '2026-10-13T13:39:17.875Z';
 const designs = [
@@ -17,7 +18,7 @@ const designs = [
   ['pixel-scrapbook', 'Pixel Scrapbook', 'scrapbook', '#e6d6ba', 'Pixel Domo stickers in a tactile scrapbook'],
 ];
 
-export const domoTemplates = designs.map(([slug, name, family, background, description, designCreatedAt = createdAt]) => {
+export const domoTemplates = [...domoReferenceAdditions, ...designs.map(([slug, name, family, background, description, designCreatedAt = createdAt]) => {
   const id = `domo-${slug}`;
   const dark = family === 'celestial' || family === 'outline' || slug === 'brown-face';
   const deviceImages = Object.fromEntries(['mobile', 'tablet', 'laptop'].map(device => [device, `/wallpapers/scenic/${id}/${device}.png`]));
@@ -28,4 +29,4 @@ export const domoTemplates = designs.map(([slug, name, family, background, descr
     image: deviceImages.mobile, deviceImages, createdAt: designCreatedAt,
     schedulePosition: family === 'reference' ? 'left' : 'center', particleStyle: 'none', containerStyle: 'solid',
   };
-});
+})];

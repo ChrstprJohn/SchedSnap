@@ -1,0 +1,235 @@
+{
+  "assets": [
+    {
+      "id": "domo-desk-peek",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-desk-peek/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "93189e969fd6822d909c24ec51c7f20826dd13da512064a6e6aa833d3fadc62f",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "domo-desk-peek",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-desk-peek/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "3fb0a76f046a7e4a37317ed906f69db506463d9975afa0290fb3daf5f5691992",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "domo-desk-peek",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-desk-peek/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "86258e161ecda74e4518016a0c8815692c3fc987442064cd7b3510398b20b1e3",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "domo-taped-glasses",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/domo-taped-glasses/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "510f48e326a208c1d9c41e895badecb9abeb9d2a22fe34be4fd1b052c9fb0366",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "domo-taped-glasses",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/domo-taped-glasses/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "44daca20b8c91b5e725ed615a5f5fca1660437b46b10e75f8892c6a00cd494fd",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "domo-taped-glasses",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/domo-taped-glasses/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "812532b8e271739a08db1b5c137eaa86dfa862762fc86d2004ea0fd2f3a021dc",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "adventure-jake-face",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/adventure-jake-face/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "87d8a21468b28b2fab2475f96c1df713bd380e93724514c6c51fd2cbcec611ca",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "adventure-jake-face",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/adventure-jake-face/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "cbde8e53a4d7ddbedc5e64d4bf4319810e2752104a573f8fc52ca8e3288174fd",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "adventure-jake-face",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/adventure-jake-face/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "a3cee80edd6f97ada8cb01e67ce99b3a028f01a2c40877ef37333e645f6f1593",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "adventure-finn-smile",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/adventure-finn-smile/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "f8c47afd5eb4922f76163833223ba3a33d621df1f0876cb9b6f88a46eb16461b",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "adventure-finn-smile",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/adventure-finn-smile/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "420d99dbbbd2f29d7f60016148b370f84c77c0e85719590e09e09ba1cf575293",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "adventure-finn-smile",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/adventure-finn-smile/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "4769490fea3931c4588a3ff15f99071f9c305f510262b867bc6491fb36cfcb5c",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "adventure-marceline",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/adventure-marceline/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "dc704036f98eedd461750538a04c9888be3e56b7c459273ad637cb880f9d4cc4",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "adventure-marceline",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/adventure-marceline/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "bc5cd781f5cfe1671c6649f01ccec37ce4f435042a9e43fdd71dc36aa71a5048",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "adventure-marceline",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/adventure-marceline/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "bfcc69c49205b67946ed4175ba7adabbe8d276b528cb7433eb05e11634d01032",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "adventure-flame-princess",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/adventure-flame-princess/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "a2945ddeffdf83823d1e4f784372f31ea0c63fc607698771e3e2fea306a0a99f",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "adventure-flame-princess",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/adventure-flame-princess/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "9705ee0241d77453849ed1bc1341a6e9d56c055b5f87815eb02829bc1b123a15",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "adventure-flame-princess",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/adventure-flame-princess/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "78569e80e308a2bbd480250595b2c5f06e95e8f99899d324958809daa4532c29",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "adventure-bmo",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/adventure-bmo/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "42c02b511794465a80667b67b1715f49e1b264abe1f6cd7932c32043948cf0b7",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "adventure-bmo",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/adventure-bmo/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "656f5c9fb937e2755d484d156c1b3cdb5d135afb067e6c878a77300977c3a1b2",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "adventure-bmo",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/adventure-bmo/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "0020efbe7081ad981433f6e63116d483b295857f9080afa5cb854b88c5b16bc1",
+      "visuallyReviewed": true
+    }
+  ]
+}

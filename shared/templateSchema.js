@@ -7,7 +7,7 @@ export const templateSchema = z.object({
   name: z.string().trim().min(1, 'Enter a title for this design.').max(80), description: z.string().max(240).optional(),
   status: z.enum(['draft', 'published', 'hidden']),
   createdAt: z.iso.datetime().optional(), publishedAt: z.iso.datetime().optional(),
-  collection: z.enum(['scenic', 'sanrio', 'we-bare-bears', 'domo', 'chiikawa', 'chikawa', 'ghibli', 'mascot', 'meep', 'little-friends', 'pattern', 'original']).optional(),
+  collection: z.enum(['scenic', 'sanrio', 'we-bare-bears', 'domo', 'adventure-time', 'chiikawa', 'chikawa', 'ghibli', 'mascot', 'meep', 'little-friends', 'pattern', 'original']).optional(),
   family: z.string().max(80).optional(),
   background: color, ink: color, muted: color, surface: color, line: color,
   image: artwork.optional(), deviceImages: z.object({ mobile: artwork.optional(), tablet: artwork.optional(), laptop: artwork.optional() }).optional(),

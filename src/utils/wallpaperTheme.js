@@ -35,7 +35,7 @@ export function galleryPreviewTemplate(template) {
   return { ...template, topMargin: 0, bottomMargin: 0, leftMargin: 0, rightMargin: 0,
     leftMarginEnabled: false, rightMarginEnabled: false, horizontalPosition: 0,
     // The close-up face needs its composed schedule placement in thumbnails too.
-    verticalPosition: ['ghibli-closeup', 'wbb-minimal'].includes(template.family) ? template.verticalPosition ?? 0 : 0 };
+    verticalPosition: ['ghibli-closeup', 'wbb-minimal', 'reference-minimal'].includes(template.family) ? template.verticalPosition ?? 0 : 0 };
 }
 
 export function customizeWallpaperTemplate(template, settings = {}, device = template?.device) {

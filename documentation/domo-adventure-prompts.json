@@ -1,0 +1,200 @@
+{
+  "provider": "built-in image_gen",
+  "assets": [
+    {
+      "slug": "domo-desk-peek",
+      "name": "Domo Desk Peek",
+      "device": "mobile",
+      "collection": "domo",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-9886135c-8610-45f4-83ed-296ff8b631b7.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-6da8e119-af7a-4ed4-8971-9e0fc11fc4e5.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful cartoon timetable wallpaper. Reference1: small brown Domo peeking above a short thin dark horizontal line, rounded rectangular head, two black dot eyes, bright red rectangular mouth with small triangular white upper teeth, and two little oval brown hands resting on line. Same dark hand-inked contour, flat brown fill, quirky original proportions. Plain white background.  1080x2400 tall mobile portrait wallpaper. Draw the COMPLETE reference character/panel as a SMALL graphic centered near bottom, EVERY ART STROKE STRICTLY within bottom18% y80%-97%. Max graphic width38% of canvas; scale down enough to meet BOTH bounds. Top78% completely blank uniform matching background. Never enlarge art to fill blank space. Exact flat background #ffffff. No grain, gradient, lighting, frame, text, schedule, title, logo, watermark, UI, polished 3D, photorealism or extra decorations. Preserve natural original cartoon linework, color palette and recognizable shapes. A separately composed wallpaper for this aspect ratio, not a stretched reference. The small artwork and vast negative space are mandatory."
+    },
+    {
+      "slug": "domo-desk-peek",
+      "name": "Domo Desk Peek",
+      "device": "tablet",
+      "collection": "domo",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-9886135c-8610-45f4-83ed-296ff8b631b7.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-67d2465f-66b7-4146-a6f2-14caf00d0ed6.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful cartoon timetable wallpaper. Reference1: small brown Domo peeking above a short thin dark horizontal line, rounded rectangular head, two black dot eyes, bright red rectangular mouth with small triangular white upper teeth, and two little oval brown hands resting on line. Same dark hand-inked contour, flat brown fill, quirky original proportions. Plain white background.  1600x2560 tablet portrait wallpaper. Draw the COMPLETE reference character/panel as a SMALL graphic centered near bottom, EVERY ART STROKE STRICTLY within bottom18% y80%-97%. Max graphic width38% of canvas; scale down enough to meet BOTH bounds. Top78% completely blank uniform matching background. Never enlarge art to fill blank space. Exact flat background #ffffff. No grain, gradient, lighting, frame, text, schedule, title, logo, watermark, UI, polished 3D, photorealism or extra decorations. Preserve natural original cartoon linework, color palette and recognizable shapes. A separately composed wallpaper for this aspect ratio, not a stretched reference. The small artwork and vast negative space are mandatory."
+    },
+    {
+      "slug": "domo-desk-peek",
+      "name": "Domo Desk Peek",
+      "device": "laptop",
+      "collection": "domo",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-9886135c-8610-45f4-83ed-296ff8b631b7.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-19c21998-174c-415f-9d7c-bb690652bdbe.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful cartoon timetable wallpaper. Reference1: small brown Domo peeking above a short thin dark horizontal line, rounded rectangular head, two black dot eyes, bright red rectangular mouth with small triangular white upper teeth, and two little oval brown hands resting on line. Same dark hand-inked contour, flat brown fill, quirky original proportions. Plain white background. 1920x1080 wide landscape wallpaper. Draw the COMPLETE reference character/panel as a SMALL isolated graphic strictly within x77%-97% and y60%-95%. Keep ALL artwork including hairs, line and hands in that rightmost20%, never left of77%. Left74% absolutely blank matching background. Exact flat background #ffffff. No grain, gradient, lighting, frame, text, schedule, title, logo, watermark, UI, polished 3D, photorealism or extra decorations. Preserve natural original cartoon linework, color palette and recognizable shapes. A separately composed wallpaper for this aspect ratio, not a stretched reference. The small artwork and vast negative space are mandatory."
+    },
+    {
+      "slug": "domo-taped-glasses",
+      "name": "Domo Taped Glasses",
+      "device": "mobile",
+      "collection": "domo",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-3a7b07c9-7df9-4173-a453-fb4ee38b4979.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-5d9ef724-383f-4ef3-a4e4-ca8a164926b8.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful cartoon timetable wallpaper. Reference2: Domo face with thick black rectangular glasses, little white highlights at outer upper corners, WHITE folded tape wrapped over bridge, two round black eyes. Large red rectangle mouth with pointed white triangular teeth top AND bottom inside heavy uneven black border. Uniform dark reddish chocolate-brown background, no head/body outline. Keep exact glasses/tape and teeth proportions, bold organic cartoon contours.  1080x2400 tall mobile portrait wallpaper. Draw the COMPLETE reference character/panel as a SMALL graphic centered near bottom, EVERY ART STROKE STRICTLY within bottom18% y80%-97%. Max graphic width38% of canvas; scale down enough to meet BOTH bounds. Top78% completely blank uniform matching background. Never enlarge art to fill blank space. Exact flat background #783f29. No grain, gradient, lighting, frame, text, schedule, title, logo, watermark, UI, polished 3D, photorealism or extra decorations. Preserve natural original cartoon linework, color palette and recognizable shapes. A separately composed wallpaper for this aspect ratio, not a stretched reference. The small artwork and vast negative space are mandatory."
+    },
+    {
+      "slug": "domo-taped-glasses",
+      "name": "Domo Taped Glasses",
+      "device": "tablet",
+      "collection": "domo",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-3a7b07c9-7df9-4173-a453-fb4ee38b4979.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-fa73f440-d5b9-4ffc-a0f3-53ccf53da534.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful cartoon timetable wallpaper. Reference2: Domo face with thick black rectangular glasses, little white highlights at outer upper corners, WHITE folded tape wrapped over bridge, two round black eyes. Large red rectangle mouth with pointed white triangular teeth top AND bottom inside heavy uneven black border. Uniform dark reddish chocolate-brown background, no head/body outline. Keep exact glasses/tape and teeth proportions, bold organic cartoon contours.  1600x2560 tablet portrait wallpaper. Draw the COMPLETE reference character/panel as a SMALL graphic centered near bottom, EVERY ART STROKE STRICTLY within bottom18% y80%-97%. Max graphic width38% of canvas; scale down enough to meet BOTH bounds. Top78% completely blank uniform matching background. Never enlarge art to fill blank space. Exact flat background #783f29. No grain, gradient, lighting, frame, text, schedule, title, logo, watermark, UI, polished 3D, photorealism or extra decorations. Preserve natural original cartoon linework, color palette and recognizable shapes. A separately composed wallpaper for this aspect ratio, not a stretched reference. The small artwork and vast negative space are mandatory."
+    },
+    {
+      "slug": "domo-taped-glasses",
+      "name": "Domo Taped Glasses",
+      "device": "laptop",
+      "collection": "domo",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-3a7b07c9-7df9-4173-a453-fb4ee38b4979.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-1a498183-7e44-420d-b07c-f17501619cdf.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful cartoon timetable wallpaper. Reference2: Domo face with thick black rectangular glasses, little white highlights at outer upper corners, WHITE folded tape wrapped over bridge, two round black eyes. Large red rectangle mouth with pointed white triangular teeth top AND bottom inside heavy uneven black border. Uniform dark reddish chocolate-brown background, no head/body outline. Keep exact glasses/tape and teeth proportions, bold organic cartoon contours. 1920x1080 wide landscape wallpaper. Draw the COMPLETE reference character/panel as a SMALL isolated graphic strictly within x77%-97% and y60%-95%. Keep ALL artwork including hairs, line and hands in that rightmost20%, never left of77%. Left74% absolutely blank matching background. Exact flat background #783f29. No grain, gradient, lighting, frame, text, schedule, title, logo, watermark, UI, polished 3D, photorealism or extra decorations. Preserve natural original cartoon linework, color palette and recognizable shapes. A separately composed wallpaper for this aspect ratio, not a stretched reference. The small artwork and vast negative space are mandatory."
+    },
+    {
+      "slug": "adventure-jake-face",
+      "name": "Jake Face",
+      "device": "mobile",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-ca429b59-ada6-41e1-bcf6-05ce6370d55b.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-e5d4220b-4cb9-40a7-a44e-e1f8c32510ad.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful cartoon timetable wallpaper. Reference3 Adventure Time Jake minimal face: golden yellow uniform background, two huge black-rimmed white circular eyes, large smooth golden muzzle with two long curved hanging jowls, black oval nose, simple black mouth curve. Preserve exact face proportions, clean flat black/gold/white shapes and quirky hand-drawn curves. No ears, body or extra expression.  1080x2400 tall mobile portrait wallpaper. Draw the COMPLETE reference character/panel as a SMALL graphic centered near bottom, EVERY ART STROKE STRICTLY within bottom18% y80%-97%. Max graphic width38% of canvas; scale down enough to meet BOTH bounds. Top78% completely blank uniform matching background. Never enlarge art to fill blank space. Exact flat background #ffbc19. No grain, gradient, lighting, frame, text, schedule, title, logo, watermark, UI, polished 3D, photorealism or extra decorations. Preserve natural original cartoon linework, color palette and recognizable shapes. A separately composed wallpaper for this aspect ratio, not a stretched reference. The small artwork and vast negative space are mandatory."
+    },
+    {
+      "slug": "adventure-jake-face",
+      "name": "Jake Face",
+      "device": "tablet",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-ca429b59-ada6-41e1-bcf6-05ce6370d55b.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-6ebb8ada-42c6-4935-8a04-63226783b05e.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful cartoon timetable wallpaper. Reference3 Adventure Time Jake minimal face: golden yellow uniform background, two huge black-rimmed white circular eyes, large smooth golden muzzle with two long curved hanging jowls, black oval nose, simple black mouth curve. Preserve exact face proportions, clean flat black/gold/white shapes and quirky hand-drawn curves. No ears, body or extra expression.  1600x2560 tablet portrait wallpaper. Draw the COMPLETE reference character/panel as a SMALL graphic centered near bottom, EVERY ART STROKE STRICTLY within bottom18% y80%-97%. Max graphic width38% of canvas; scale down enough to meet BOTH bounds. Top78% completely blank uniform matching background. Never enlarge art to fill blank space. Exact flat background #ffbc19. No grain, gradient, lighting, frame, text, schedule, title, logo, watermark, UI, polished 3D, photorealism or extra decorations. Preserve natural original cartoon linework, color palette and recognizable shapes. A separately composed wallpaper for this aspect ratio, not a stretched reference. The small artwork and vast negative space are mandatory."
+    },
+    {
+      "slug": "adventure-jake-face",
+      "name": "Jake Face",
+      "device": "laptop",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-ca429b59-ada6-41e1-bcf6-05ce6370d55b.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-cd458506-79ed-4281-992f-c1bbf5d160b5.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful cartoon timetable wallpaper. Reference3 Adventure Time Jake minimal face: golden yellow uniform background, two huge black-rimmed white circular eyes, large smooth golden muzzle with two long curved hanging jowls, black oval nose, simple black mouth curve. Preserve exact face proportions, clean flat black/gold/white shapes and quirky hand-drawn curves. No ears, body or extra expression. 1920x1080 wide landscape wallpaper. Draw the COMPLETE reference character/panel as a SMALL isolated graphic strictly within x77%-97% and y60%-95%. Keep ALL artwork including hairs, line and hands in that rightmost20%, never left of77%. Left74% absolutely blank matching background. Exact flat background #ffbc19. No grain, gradient, lighting, frame, text, schedule, title, logo, watermark, UI, polished 3D, photorealism or extra decorations. Preserve natural original cartoon linework, color palette and recognizable shapes. A separately composed wallpaper for this aspect ratio, not a stretched reference. The small artwork and vast negative space are mandatory."
+    },
+    {
+      "slug": "adventure-finn-smile",
+      "name": "Finn Smile",
+      "device": "mobile",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-09c4f6da-6617-4c15-bbb0-9aa88008e462.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-1346d159-4d29-4ea7-924a-841be96a0660.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful cartoon timetable wallpaper. Reference4 Adventure Time Finn: simple wide horizontal peach oval face enclosed by slightly imperfect black contour, two round black dot eyes and one small happy curved black smile. White background. Exactly minimalist flat peach fill, no hair, hat outline, body or extra features.  1080x2400 tall mobile portrait wallpaper. Draw the COMPLETE reference character/panel as a SMALL graphic centered near bottom, EVERY ART STROKE STRICTLY within bottom18% y80%-97%. Max graphic width38% of canvas; scale down enough to meet BOTH bounds. Top78% completely blank uniform matching background. Never enlarge art to fill blank space. Exact flat background #ffffff. No grain, gradient, lighting, frame, text, schedule, title, logo, watermark, UI, polished 3D, photorealism or extra decorations. Preserve natural original cartoon linework, color palette and recognizable shapes. A separately composed wallpaper for this aspect ratio, not a stretched reference. The small artwork and vast negative space are mandatory."
+    },
+    {
+      "slug": "adventure-finn-smile",
+      "name": "Finn Smile",
+      "device": "tablet",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-09c4f6da-6617-4c15-bbb0-9aa88008e462.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-9c67ef05-c529-400c-9afc-2f921541c273.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful cartoon timetable wallpaper. Reference4 Adventure Time Finn: simple wide horizontal peach oval face enclosed by slightly imperfect black contour, two round black dot eyes and one small happy curved black smile. White background. Exactly minimalist flat peach fill, no hair, hat outline, body or extra features.  1600x2560 tablet portrait wallpaper. Draw the COMPLETE reference character/panel as a SMALL graphic centered near bottom, EVERY ART STROKE STRICTLY within bottom18% y80%-97%. Max graphic width38% of canvas; scale down enough to meet BOTH bounds. Top78% completely blank uniform matching background. Never enlarge art to fill blank space. Exact flat background #ffffff. No grain, gradient, lighting, frame, text, schedule, title, logo, watermark, UI, polished 3D, photorealism or extra decorations. Preserve natural original cartoon linework, color palette and recognizable shapes. A separately composed wallpaper for this aspect ratio, not a stretched reference. The small artwork and vast negative space are mandatory."
+    },
+    {
+      "slug": "adventure-finn-smile",
+      "name": "Finn Smile",
+      "device": "laptop",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-09c4f6da-6617-4c15-bbb0-9aa88008e462.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-4d02fc90-246f-4dc5-9ad5-4e034862315b.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful cartoon timetable wallpaper. Reference4 Adventure Time Finn: simple wide horizontal peach oval face enclosed by slightly imperfect black contour, two round black dot eyes and one small happy curved black smile. White background. Exactly minimalist flat peach fill, no hair, hat outline, body or extra features. 1920x1080 wide landscape wallpaper. Draw the COMPLETE reference character/panel as a SMALL isolated graphic strictly within x77%-97% and y60%-95%. Keep ALL artwork including hairs, line and hands in that rightmost20%, never left of77%. Left74% absolutely blank matching background. Exact flat background #ffffff. No grain, gradient, lighting, frame, text, schedule, title, logo, watermark, UI, polished 3D, photorealism or extra decorations. Preserve natural original cartoon linework, color palette and recognizable shapes. A separately composed wallpaper for this aspect ratio, not a stretched reference. The small artwork and vast negative space are mandatory."
+    },
+    {
+      "slug": "adventure-marceline",
+      "name": "Marceline Midnight",
+      "device": "mobile",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-040cae65-8e9a-4b59-867d-9acb3b0edbea.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-5dd5b2bd-3220-4aae-bcf5-1b5240ee3b52.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful cartoon timetable wallpaper. Reference5 Adventure Time Marceline close-up: flat midnight navy background and sweeping asymmetric long navy hair with muted blue edge, pale icy blue pointed face, black dot eyes, cheerful maroon/pink open mouth with TWO white vampire fangs, two red neck bite marks, small muted mauve shoulders. Preserve simple graphic cel-shaded shapes, original facial proportions and broad hair silhouette. No realism or added details.  1080x2400 tall mobile portrait wallpaper. Draw the COMPLETE reference character/panel as a SMALL graphic centered near bottom, EVERY ART STROKE STRICTLY within bottom18% y80%-97%. Max graphic width38% of canvas; scale down enough to meet BOTH bounds. Top78% completely blank uniform matching background. Never enlarge art to fill blank space. Exact flat background #10112d. No grain, gradient, lighting, frame, text, schedule, title, logo, watermark, UI, polished 3D, photorealism or extra decorations. Preserve natural original cartoon linework, color palette and recognizable shapes. A separately composed wallpaper for this aspect ratio, not a stretched reference. The small artwork and vast negative space are mandatory."
+    },
+    {
+      "slug": "adventure-marceline",
+      "name": "Marceline Midnight",
+      "device": "tablet",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-040cae65-8e9a-4b59-867d-9acb3b0edbea.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-e8f9db52-257d-4b96-9265-56a9455d00c1.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful cartoon timetable wallpaper. Reference5 Adventure Time Marceline close-up: flat midnight navy background and sweeping asymmetric long navy hair with muted blue edge, pale icy blue pointed face, black dot eyes, cheerful maroon/pink open mouth with TWO white vampire fangs, two red neck bite marks, small muted mauve shoulders. Preserve simple graphic cel-shaded shapes, original facial proportions and broad hair silhouette. No realism or added details.  1600x2560 tablet portrait wallpaper. Draw the COMPLETE reference character/panel as a SMALL graphic centered near bottom, EVERY ART STROKE STRICTLY within bottom18% y80%-97%. Max graphic width38% of canvas; scale down enough to meet BOTH bounds. Top78% completely blank uniform matching background. Never enlarge art to fill blank space. Exact flat background #10112d. No grain, gradient, lighting, frame, text, schedule, title, logo, watermark, UI, polished 3D, photorealism or extra decorations. Preserve natural original cartoon linework, color palette and recognizable shapes. A separately composed wallpaper for this aspect ratio, not a stretched reference. The small artwork and vast negative space are mandatory.",
+      "priorSource": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-f6ac5d3e-1348-4219-8fc9-3eb4c40b91da.png",
+      "repairPrompt": "Precise placement-only edit of the attached cartoon wallpaper. Keep the original uniform background, exact colors, facial details, proportions, organic contours and every existing feature. Reduce the COMPLETE character illustration to 60% of its current size, then center horizontally near bottom so ALL its pixels lie strictly within y80%-97%. Upper78% must be completely empty original background. Preserve Marceline's entire swept navy hair silhouette, pale blue face and neck, two white fangs, smiling mouth and two red bite marks. No new text, UI, frame or decorations. 1600x2560 tablet portrait. This edit changes only scale and placement, not artwork design."
+    },
+    {
+      "slug": "adventure-marceline",
+      "name": "Marceline Midnight",
+      "device": "laptop",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-040cae65-8e9a-4b59-867d-9acb3b0edbea.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-3450b1f4-398d-4db3-8818-5abdfacb71e8.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful cartoon timetable wallpaper. Reference5 Adventure Time Marceline close-up: flat midnight navy background and sweeping asymmetric long navy hair with muted blue edge, pale icy blue pointed face, black dot eyes, cheerful maroon/pink open mouth with TWO white vampire fangs, two red neck bite marks, small muted mauve shoulders. Preserve simple graphic cel-shaded shapes, original facial proportions and broad hair silhouette. No realism or added details. 1920x1080 wide landscape wallpaper. Draw the COMPLETE reference character/panel as a SMALL isolated graphic strictly within x77%-97% and y60%-95%. Keep ALL artwork including hairs, line and hands in that rightmost20%, never left of77%. Left74% absolutely blank matching background. Exact flat background #10112d. No grain, gradient, lighting, frame, text, schedule, title, logo, watermark, UI, polished 3D, photorealism or extra decorations. Preserve natural original cartoon linework, color palette and recognizable shapes. A separately composed wallpaper for this aspect ratio, not a stretched reference. The small artwork and vast negative space are mandatory."
+    },
+    {
+      "slug": "adventure-flame-princess",
+      "name": "Flame Princess",
+      "device": "mobile",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-70947c6a-1ce8-43af-8110-b49b473e2c75.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-d5b227f1-d231-47d6-af32-028f3d010210.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful cartoon timetable wallpaper. Reference6 Adventure Time Flame Princess: vivid flat orange-red field, bright golden yellow round pointed-chin face with long yellow neck, flame-orange side-swept hair, red diamond-shaped faceted forehead gem, round shiny black eyes with small yellow highlights, soft coral circular cheeks, simple happy black curve smile. Retain exact flat cartoon color relationships and recognizable proportions; no glowing effects, no realistic flames.  1080x2400 tall mobile portrait wallpaper. Draw the COMPLETE reference character/panel as a SMALL graphic centered near bottom, EVERY ART STROKE STRICTLY within bottom18% y80%-97%. Max graphic width38% of canvas; scale down enough to meet BOTH bounds. Top78% completely blank uniform matching background. Never enlarge art to fill blank space. Exact flat background #ff4b00. No grain, gradient, lighting, frame, text, schedule, title, logo, watermark, UI, polished 3D, photorealism or extra decorations. Preserve natural original cartoon linework, color palette and recognizable shapes. A separately composed wallpaper for this aspect ratio, not a stretched reference. The small artwork and vast negative space are mandatory."
+    },
+    {
+      "slug": "adventure-flame-princess",
+      "name": "Flame Princess",
+      "device": "tablet",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-70947c6a-1ce8-43af-8110-b49b473e2c75.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-08b3d190-bb12-4b5c-b0c1-cc52104fff5e.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful cartoon timetable wallpaper. Reference6 Adventure Time Flame Princess: vivid flat orange-red field, bright golden yellow round pointed-chin face with long yellow neck, flame-orange side-swept hair, red diamond-shaped faceted forehead gem, round shiny black eyes with small yellow highlights, soft coral circular cheeks, simple happy black curve smile. Retain exact flat cartoon color relationships and recognizable proportions; no glowing effects, no realistic flames.  1600x2560 tablet portrait wallpaper. Draw the COMPLETE reference character/panel as a SMALL graphic centered near bottom, EVERY ART STROKE STRICTLY within bottom18% y80%-97%. Max graphic width38% of canvas; scale down enough to meet BOTH bounds. Top78% completely blank uniform matching background. Never enlarge art to fill blank space. Exact flat background #ff4b00. No grain, gradient, lighting, frame, text, schedule, title, logo, watermark, UI, polished 3D, photorealism or extra decorations. Preserve natural original cartoon linework, color palette and recognizable shapes. A separately composed wallpaper for this aspect ratio, not a stretched reference. The small artwork and vast negative space are mandatory."
+    },
+    {
+      "slug": "adventure-flame-princess",
+      "name": "Flame Princess",
+      "device": "laptop",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-70947c6a-1ce8-43af-8110-b49b473e2c75.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-52635a99-10d0-46ae-8764-3d15d3f3ae9b.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful cartoon timetable wallpaper. Reference6 Adventure Time Flame Princess: vivid flat orange-red field, bright golden yellow round pointed-chin face with long yellow neck, flame-orange side-swept hair, red diamond-shaped faceted forehead gem, round shiny black eyes with small yellow highlights, soft coral circular cheeks, simple happy black curve smile. Retain exact flat cartoon color relationships and recognizable proportions; no glowing effects, no realistic flames. 1920x1080 wide landscape wallpaper. Draw the COMPLETE reference character/panel as a SMALL isolated graphic strictly within x77%-97% and y60%-95%. Keep ALL artwork including hairs, line and hands in that rightmost20%, never left of77%. Left74% absolutely blank matching background. Exact flat background #ff4b00. No grain, gradient, lighting, frame, text, schedule, title, logo, watermark, UI, polished 3D, photorealism or extra decorations. Preserve natural original cartoon linework, color palette and recognizable shapes. A separately composed wallpaper for this aspect ratio, not a stretched reference. The small artwork and vast negative space are mandatory."
+    },
+    {
+      "slug": "adventure-bmo",
+      "name": "BMO Playtime",
+      "device": "mobile",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-fa33959b-377e-4c92-abde-0f806244fdae.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-8a6cd6ff-589d-4cb1-86d1-ac97fcb187ee.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful cartoon timetable wallpaper. Reference7 Adventure Time BMO front panel: teal-green rounded rectangular game-console body, pale mint rounded screen with dot eyes and happy open mouth with white top tooth bar, dark green interior and pale bottom; dark green horizontal cartridge slot, blue circular button, yellow cross D-pad, cyan triangle, tiny green circle, large red circle, TWO small horizontal dark blue buttons below. Thick slightly uneven black contour, flat reference colors. All reference controls present, no letters or word BMO, no arms or legs. Teal background same as body, console border distinguishes it.  1080x2400 tall mobile portrait wallpaper. Draw the COMPLETE reference character/panel as a SMALL graphic centered near bottom, EVERY ART STROKE STRICTLY within bottom18% y80%-97%. Max graphic width38% of canvas; scale down enough to meet BOTH bounds. Top78% completely blank uniform matching background. Never enlarge art to fill blank space. Exact flat background #25a99d. No grain, gradient, lighting, frame, text, schedule, title, logo, watermark, UI, polished 3D, photorealism or extra decorations. Preserve natural original cartoon linework, color palette and recognizable shapes. A separately composed wallpaper for this aspect ratio, not a stretched reference. The small artwork and vast negative space are mandatory.",
+      "priorSource": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-06f48510-cf32-46d6-8107-687351513e6b.png",
+      "repairPrompt": "Precise placement-only edit of the attached cartoon wallpaper. Keep the original uniform background, exact colors, facial details, proportions, organic contours and every existing feature. Reduce the COMPLETE character illustration to 60% of its current size, then center horizontally near bottom so ALL its pixels lie strictly within y80%-97%. Upper78% must be completely empty original background. Preserve ALL BMO front panel buttons, mint smile screen, dark cartridge slot and teal body intact. Do not remove, add, distort or reorder buttons. No new text, UI, frame or decorations. 1080x2400 tall portrait. This edit changes only scale and placement, not artwork design."
+    },
+    {
+      "slug": "adventure-bmo",
+      "name": "BMO Playtime",
+      "device": "tablet",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-fa33959b-377e-4c92-abde-0f806244fdae.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-313c2f7e-835a-4328-8d3b-199fe3a92b8b.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful cartoon timetable wallpaper. Reference7 Adventure Time BMO front panel: teal-green rounded rectangular game-console body, pale mint rounded screen with dot eyes and happy open mouth with white top tooth bar, dark green interior and pale bottom; dark green horizontal cartridge slot, blue circular button, yellow cross D-pad, cyan triangle, tiny green circle, large red circle, TWO small horizontal dark blue buttons below. Thick slightly uneven black contour, flat reference colors. All reference controls present, no letters or word BMO, no arms or legs. Teal background same as body, console border distinguishes it.  1600x2560 tablet portrait wallpaper. Draw the COMPLETE reference character/panel as a SMALL graphic centered near bottom, EVERY ART STROKE STRICTLY within bottom18% y80%-97%. Max graphic width38% of canvas; scale down enough to meet BOTH bounds. Top78% completely blank uniform matching background. Never enlarge art to fill blank space. Exact flat background #25a99d. No grain, gradient, lighting, frame, text, schedule, title, logo, watermark, UI, polished 3D, photorealism or extra decorations. Preserve natural original cartoon linework, color palette and recognizable shapes. A separately composed wallpaper for this aspect ratio, not a stretched reference. The small artwork and vast negative space are mandatory.",
+      "priorSource": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-944675fb-6f64-4824-9d48-557cca6b6fb7.png",
+      "repairPrompt": "Precise placement-only edit of the attached cartoon wallpaper. Keep the original uniform background, exact colors, facial details, proportions, organic contours and every existing feature. Reduce the COMPLETE character illustration to 60% of its current size, then center horizontally near bottom so ALL its pixels lie strictly within y80%-97%. Upper78% must be completely empty original background. Preserve ALL BMO front panel buttons, mint smile screen, dark cartridge slot and teal body intact. Do not remove, add, distort or reorder buttons. No new text, UI, frame or decorations. 1600x2560 tablet portrait. This edit changes only scale and placement, not artwork design."
+    },
+    {
+      "slug": "adventure-bmo",
+      "name": "BMO Playtime",
+      "device": "laptop",
+      "collection": "adventure-time",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-fa33959b-377e-4c92-abde-0f806244fdae.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-3d33b474-b087-46ce-9e9b-6ae2e22ff2a9.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed reference-faithful cartoon timetable wallpaper. Reference7 Adventure Time BMO front panel: teal-green rounded rectangular game-console body, pale mint rounded screen with dot eyes and happy open mouth with white top tooth bar, dark green interior and pale bottom; dark green horizontal cartridge slot, blue circular button, yellow cross D-pad, cyan triangle, tiny green circle, large red circle, TWO small horizontal dark blue buttons below. Thick slightly uneven black contour, flat reference colors. All reference controls present, no letters or word BMO, no arms or legs. Teal background same as body, console border distinguishes it. 1920x1080 wide landscape wallpaper. Draw the COMPLETE reference character/panel as a SMALL isolated graphic strictly within x77%-97% and y60%-95%. Keep ALL artwork including hairs, line and hands in that rightmost20%, never left of77%. Left74% absolutely blank matching background. Exact flat background #25a99d. No grain, gradient, lighting, frame, text, schedule, title, logo, watermark, UI, polished 3D, photorealism or extra decorations. Preserve natural original cartoon linework, color palette and recognizable shapes. A separately composed wallpaper for this aspect ratio, not a stretched reference. The small artwork and vast negative space are mandatory."
+    }
+  ]
+}

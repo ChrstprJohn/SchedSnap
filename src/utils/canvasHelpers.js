@@ -3,7 +3,7 @@ import { mobileResolution } from '../assets/templates.js';
 import { colorInputValue, mascotPosition, wallpaperFontScale } from './wallpaperTheme.js';
 import { drawParticles } from './wallpaperParticles.js';
 
-const hasIllustratedFooter = template => template.collection === 'ghibli' || template.family === 'wbb-minimal';
+const hasIllustratedFooter = template => template.collection === 'ghibli' || ['wbb-minimal', 'reference-minimal'].includes(template.family);
 
 export function formatTime(value) {
   if (!value) return 'Time needed';
