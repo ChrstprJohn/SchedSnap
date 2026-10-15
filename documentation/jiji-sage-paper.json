@@ -1,0 +1,41 @@
+{
+  "provider": "built-in image_gen",
+  "reference": "C:/Users/Administrator/.codex/attachments/f12a4b9d-b9dd-4dd7-9b42-14a305247256/image-1.png",
+  "createdAt": "2026-10-15T11:50:54.715Z",
+  "artDirection": "Match pale sage and ivory fine-grain mottled paper, flat olive hand-stamped Jiji upper right, cream eyes, red spiral, lower corner apple, green and burgundy stars, olive spiral. Sparse imperfect stamped edges. No UI, text, rounded screenshot corners. Separate mobile/tablet/laptop compositions. Portrait center y14-77% empty; landscape left68% empty.",
+  "assets": [
+    {
+      "id": "ghibli-jiji-sage-paper",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/ghibli-jiji-sage-paper/mobile.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a13eb3-3f3b-7f23-bdb6-11d770fcf668/exec-178f8eae-01c3-48c1-82cc-b68e6e42cb87.png",
+      "width": 1080,
+      "height": 2400,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "a92a75cba3bfeb1a02b4594946d0e6f0899b2da623a429ae4de23315542099de"
+    },
+    {
+      "id": "ghibli-jiji-sage-paper",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/ghibli-jiji-sage-paper/tablet.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a13eb3-3f3b-7f23-bdb6-11d770fcf668/exec-7ecbab5e-4658-4dc2-88ab-4a07ab0bb46e.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "facc5c1cc5b938411f71dcf0c9447d62f6ed339f2b9f4c4ea23313cdb9603d63"
+    },
+    {
+      "id": "ghibli-jiji-sage-paper",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/ghibli-jiji-sage-paper/laptop.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a13eb3-3f3b-7f23-bdb6-11d770fcf668/exec-e90112aa-d3fb-4bab-8065-cb035ff42865.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "7249b93b22c58dd2ffeee6e9a73f27876b711b6b970b0352a442e7a4d70f7d0c"
+    }
+  ]
+}

@@ -2414,5 +2414,26 @@ export default {
     "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791970036/schedsnap/wallpapers/scenic/ghibli-sage-wash/mobile-cc2877344a849dad.png",
     "width": 1080,
     "height": 2400
+  },
+  "/wallpapers/scenic/ghibli-jiji-sage-paper/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-jiji-sage-paper/laptop-7249b93b22c58dd2",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792065072/schedsnap/wallpapers/scenic/ghibli-jiji-sage-paper/laptop-7249b93b22c58dd2.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/ghibli-jiji-sage-paper/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-jiji-sage-paper/mobile-a92a75cba3bfeb1a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792065076/schedsnap/wallpapers/scenic/ghibli-jiji-sage-paper/mobile-a92a75cba3bfeb1a.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/ghibli-jiji-sage-paper/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/ghibli-jiji-sage-paper/tablet-facc5c1cc5b93841",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792065077/schedsnap/wallpapers/scenic/ghibli-jiji-sage-paper/tablet-facc5c1cc5b93841.png",
+    "width": 1600,
+    "height": 2560
   }
 };
