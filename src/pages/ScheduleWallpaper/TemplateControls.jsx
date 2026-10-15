@@ -13,8 +13,9 @@ const colorFields = {
 };
 const editablePatterns = new Set(['checker', 'grid', 'ruled', 'circle', 'dots', 'stripes', 'diamonds', 'waves', 'frame']);
 
-function AppearanceColor({ colorKey, template, onChange, toggleKey }) {
-  const { label, colors: defaultColors } = colorFields[colorKey];
+function AppearanceColor({ colorKey, template, onChange, toggleKey, label: labelOverride }) {
+  const { label: defaultLabel, colors: defaultColors } = colorFields[colorKey];
+  const label = labelOverride || defaultLabel;
   const rawValue = template[colorKey] || (colorKey === 'patternColor' ? (template.pattern === 'circle' ? '#ad5b45' : template.line) : '#ffffff');
   const normalizedValue = colorInputValue(rawValue);
   const colors = defaultColors.slice(0, 3);
@@ -61,8 +62,8 @@ export default function TemplateControls({ template, onChange, onReset, defaultT
       {fixedBackground ? <p className="text-xs leading-relaxed text-muted">Background artwork stays fixed.</p> : <AppearanceColor colorKey="background" template={template} onChange={onChange} />}
       {editablePatterns.has(template.pattern) && <AppearanceColor colorKey="patternColor" template={template} onChange={onChange} />}
     </fieldset>
-    {(!timeline || template.device === 'tablet') && <fieldset className="appearance-group">
-      <legend>{timeline ? 'Timeline spacing' : 'Day containers'}</legend>
+    <fieldset className="appearance-group">
+      <legend>{timeline ? 'Timeline' : 'Day containers'}</legend>
       {template.device === 'tablet' && <div className="top-margin-control">
         <div className="top-margin-label"><label htmlFor="tablet-box-spacing">{timeline ? 'Space between days' : 'Space between boxes'}</label><output htmlFor="tablet-box-spacing">{tabletBoxSpacing(template)}</output></div>
         <input id="tablet-box-spacing" type="range" min="0" max="300" step="1" value={tabletBoxSpacing(template)} aria-valuetext={`${tabletBoxSpacing(template)} spacing units`} onChange={event => onChange('tabletBoxSpacing', Number(event.target.value))} />
@@ -84,7 +85,8 @@ export default function TemplateControls({ template, onChange, onReset, defaultT
       <AppearanceColor colorKey="surface" template={template} onChange={onChange} toggleKey="containerFill" />
       <AppearanceColor colorKey="line" template={template} onChange={onChange} toggleKey="containerBorder" />
       </>}
-    </fieldset>}
+      {timeline && <AppearanceColor colorKey="line" label="Dividers" template={template} onChange={onChange} />}
+    </fieldset>
     <fieldset className="appearance-group">
       <legend>Schedule Text</legend>
       <div className="appearance-row">

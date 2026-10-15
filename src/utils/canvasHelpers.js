@@ -55,29 +55,35 @@ function font(ctx, size, weight = 500, family = 'DM Sans Variable', italic = fal
 
 export function layoutSchedule(ctx, schedule, template, height = 2400, options = {}) {
   const timeline = options.timeline === true;
+  const compactTimeline = timeline && options.compactTimeline === true;
   const textFont = (size, weight = 500) => font(ctx, size, weight, template.fontFamily);
   const groups = groupSchedule(schedule);
-  const x = 78, width = options.width ?? 924;
+  const x = options.x ?? 78, width = options.width ?? 924;
   // Keep the leading badge area proportional to the mobile row, even when
   // tablet and laptop cards use a shorter minimum height.
   const badgeScale = Math.min(1, (options.minCardHeight ?? 170) / 170);
   const dayWidth = timeline ? 0 : 160 * badgeScale, dayInset = 14 * badgeScale;
   const dayRadius = 65 * badgeScale;
   const timeWidth = options.timeWidth ?? 276;
-  const timeX = timeline ? x + 94 : x + dayWidth + 26 * badgeScale, subjectX = timeX + timeWidth;
+  const timeX = timeline ? x + (compactTimeline ? 82 : 94) : x + dayWidth + 26 * badgeScale, subjectX = timeX + timeWidth;
   const roomWidth = options.roomWidth ?? 166, roomX = x + width - 32 - roomWidth;
   const subjectWidth = roomX - subjectX - 22;
   // Reserve the upper part of a portrait lock screen for its clock and date.
   const top = options.top ?? 760;
-  const limit = options.limit ?? (template.layout === 'mascot' ? height - 660 : template.collection === 'ghibli' ? height * 0.77 : height - 150);
+  const limit = options.limit ?? (template.layout === 'mascot' ? height - 660 : timeline ? height * 0.83 : template.collection === 'ghibli' ? height * 0.77 : height - 150);
   let result;
-  for (let baseSize = 42; baseSize >= 28; baseSize -= 2) {
+  for (let baseSize = compactTimeline ? 64 : timeline ? 56 : 42; baseSize >= 28; baseSize -= 2) {
     const size = baseSize * wallpaperFontScale(template);
+    if (compactTimeline && baseSize > 28) {
+      textFont(size * 0.78);
+      if (groups.some(group => group.entries.some(entry => [entry.startTime, entry.endTime].some(time => ctx.measureText(formatWallpaperTime(time)).width > timeWidth - 8)))) continue;
+    }
     const subjectLineHeight = size * 1.2;
     const detailLineHeight = size * 0.65 * 1.25;
-    const timeLineHeight = size * 0.65 * 1.3;
-    const detailGap = 6, entryGap = size >= 38 ? 20 : 8, groupGap = options.groupGap ?? 16;
-    const cardPadding = size >= 38 ? 40 : 28;
+    const timeLineHeight = size * (timeline ? 0.78 : 0.65) * 1.3;
+    const detailGap = 6, entryGap = compactTimeline ? 16 : timeline ? 28 : size >= 38 ? 20 : 8;
+    const groupGap = timeline ? 16 + (options.groupGap ?? 16) * 0.4 : options.groupGap ?? 16;
+    const cardPadding = compactTimeline ? 16 : size >= 38 ? 40 : 28;
     const codeGap = size >= 38 ? 4 : 2;
     const codeLineHeight = size * (size >= 38 ? 1.2 : 1.05), roomLineHeight = size * 0.8 * 1.25;
     const plans = groups.map((group) => {
@@ -85,7 +91,7 @@ export function layoutSchedule(ctx, schedule, template, height = 2400, options =
         const hasCode = Boolean(entry.courseCode?.trim());
         textFont(size, 750);
         const codeLines = hasCode ? wrapText(ctx, entry.courseCode, subjectWidth) : [];
-        let subjectSize = hasCode ? size * 0.65 : size;
+        let subjectSize = hasCode ? size * (timeline ? 0.75 : 0.65) : size;
         const subjectWeight = hasCode ? 500 : 650;
         const subjectText = entry.subject.replace(/\s+/g, ' ').trim();
         const minSubjectSize = subjectSize * 0.8;
@@ -113,11 +119,11 @@ export function layoutSchedule(ctx, schedule, template, height = 2400, options =
         const codeHeight = codeLines.length * codeLineHeight;
         const subjectHeight = subjectLines.length * entrySubjectLineHeight;
         const contentHeight = codeHeight + (hasCode ? codeGap : 0) + subjectHeight + (detailLines.length ? detailGap + detailLines.length * detailLineHeight : 0);
-        const entryHeight = Math.max(contentHeight, roomLines.length * roomLineHeight, timeLines.length * timeLineHeight);
+        const entryHeight = Math.max(contentHeight, roomLines.length * roomLineHeight, timeLines.length * timeLineHeight) + (timeline ? compactTimeline ? 12 : 32 : 0);
         return { ...entry, codeLines, subjectLines, detailLines, roomLines, timeLines, subjectSize, entrySubjectLineHeight, contentHeight, codeHeight, subjectHeight, entryHeight };
       });
       const contentHeight = entries.reduce((sum, entry) => sum + entry.entryHeight, 0) + Math.max(0, entries.length - 1) * entryGap;
-      const headerHeight = timeline ? size * 1.35 + 24 : 0;
+      const headerHeight = timeline ? size * 1.35 + (compactTimeline ? 12 : 24) : 0;
       return { day: group.day, entries, x, width, height: Math.max(options.minCardHeight ?? (timeline ? 130 : 170), contentHeight + cardPadding + headerHeight), headerHeight, contentHeight, dayWidth, dayInset, dayRadius, timeWidth, timeX, subjectX, subjectWidth, roomX, roomWidth };
     });
     // Cards keep their own height, while the mascot has a fixed protected footer.
@@ -139,12 +145,13 @@ export function layoutSchedule(ctx, schedule, template, height = 2400, options =
       bottom += plan.height + groupGap;
     }
     bottom = plans.length ? bottom - groupGap : top;
-    result = { plans, size, bottom, subjectLineHeight, codeLineHeight, roomLineHeight, detailLineHeight, timeLineHeight, overflow: bottom > limit };
+    result = { plans, size, bottom, subjectLineHeight, codeLineHeight, roomLineHeight, detailLineHeight, timeLineHeight, ...(timeline ? { limit } : {}), overflow: bottom > limit };
     if (!result.overflow) return result;
   }
   // A full week may need the earlier card start to preserve all meetings and
   // the protected character footer; the phone heading still stays below its clock.
   if (result.overflow && options.top === undefined) return layoutSchedule(ctx, schedule, template, height, { ...options, top: 680 });
+  if (result.overflow && timeline && options.limit === undefined && template.layout !== 'mascot') return layoutSchedule(ctx, schedule, template, height, { ...options, limit: height - 150 });
   return result;
 }
 
@@ -152,7 +159,8 @@ export function scheduleLayoutOptions(device) {
   return [
     { value: 'stacked', label: 'Stacked days', description: 'One day per row' },
     ...(['tablet', 'laptop'].includes(device) ? [{ value: 'day-cards', label: 'Day cards', description: 'Paired days with a timeline' }] : []),
-    ...(['mobile', 'tablet'].includes(device) ? [{ value: 'timeline', label: 'Timeline', description: 'Connected days, open rows' }] : []),
+    ...(['mobile', 'tablet'].includes(device) ? [{ value: 'timeline', label: 'Timeline', description: 'Connected days, clear rows' }] : []),
+    ...(device === 'laptop' ? [{ value: 'weekly', label: 'Weekly timetable', description: 'Weekdays and time blocks' }] : []),
   ];
 }
 
@@ -488,19 +496,123 @@ function drawTimeline(ctx, template, layout) {
     ctx.textAlign = 'left'; ctx.fillStyle = template.ink;
     font(ctx, layout.size * 1.3, 650, template.fontFamily);
     ctx.fillText(plan.day, plan.x + 80, plan.y);
-    for (const entry of plan.entries) {
+    for (const [entryIndex, entry] of plan.entries.entries()) {
+      const nextEntry = plan.entries[entryIndex + 1];
+      if (nextEntry || index < layout.plans.length - 1) {
+        ctx.save(); ctx.strokeStyle = template.line; ctx.globalAlpha = 0.8; ctx.lineWidth = 2;
+        const dividerY = nextEntry ? (entry.bottom + nextEntry.y) / 2 : entry.bottom + 12;
+        ctx.beginPath(); ctx.moveTo(plan.timeX, dividerY); ctx.lineTo(plan.x + plan.width - 16, dividerY); ctx.stroke(); ctx.restore();
+      }
       ctx.fillStyle = template.ink; font(ctx, layout.size, 750, template.fontFamily);
       entry.codeLines.forEach((line, i) => ctx.fillText(line, plan.subjectX, entry.codeY + i * layout.codeLineHeight));
       font(ctx, entry.subjectSize, entry.codeLines.length ? 500 : 650, template.fontFamily);
       entry.subjectLines.forEach((line, i) => ctx.fillText(line, plan.subjectX, entry.subjectY + i * entry.entrySubjectLineHeight));
       ctx.fillStyle = template.muted; font(ctx, layout.size * 0.65, 500, template.fontFamily);
       entry.detailLines.forEach((line, i) => ctx.fillText(line, plan.subjectX, entry.detailY + i * layout.detailLineHeight));
+      font(ctx, layout.size * 0.78, 500, template.fontFamily);
       entry.timeLines.forEach((line, i) => ctx.fillText(line, plan.timeX, entry.timeY + i * layout.timeLineHeight));
       ctx.fillStyle = template.ink; font(ctx, layout.size * 0.8, 650, template.fontFamily);
       entry.roomLines.forEach((line, i) => ctx.fillText(line, plan.roomX, entry.roomY + i * layout.roomLineHeight));
     }
   }
   ctx.restore();
+}
+
+function layoutWeeklyTimetable(ctx, schedule, template, height, options) {
+  const groups = groupSchedule(schedule);
+  const activeDays = [...days.slice(0, 5), ...days.slice(5).filter(day => groups.some(group => group.day === day))];
+  const minutes = time => time ? Number(time.slice(0, 2)) * 60 + Number(time.slice(3)) : NaN;
+  const entries = groups.flatMap(group => group.entries.map(entry => ({ ...entry, day: group.day, start: minutes(entry.startTime), end: minutes(entry.endTime) })));
+  const valid = entries.filter(entry => Number.isFinite(entry.start) && Number.isFinite(entry.end) && entry.end > entry.start);
+  const startMinute = Math.floor(Math.min(...valid.map(entry => entry.start), valid.length ? Infinity : 480) / 60) * 60;
+  const endMinute = Math.max(startMinute + 240, Math.ceil(Math.max(...valid.map(entry => entry.end), startMinute + 60) / 60) * 60);
+  const bodyHeight = Math.max(640, (endMinute - startMinute) / 60 * 80);
+  const headerHeight = 76, timeWidth = 150;
+  const dayWidth = (options.width - timeWidth) / activeDays.length;
+  const gap = 8 + 16 / 20;
+  const gridTop = options.top + headerHeight;
+  const plans = activeDays.map((day, index) => ({ day, x: 78 + timeWidth + index * dayWidth, y: options.top, width: dayWidth, height: headerHeight + bodyHeight, entries: [] }));
+  let overflow = valid.length !== entries.length;
+  for (const plan of plans) {
+    const meetings = valid.filter(entry => entry.day === plan.day).sort((a, b) => a.start - b.start || a.end - b.end);
+    let cluster = [], laneEnds = [], clusterEnd = -1;
+    const finishCluster = () => { for (const meeting of cluster) meeting.lanes = laneEnds.length; cluster = []; laneEnds = []; };
+    for (const meeting of meetings) {
+      if (meeting.start >= clusterEnd) finishCluster();
+      let lane = laneEnds.findIndex(end => end <= meeting.start);
+      if (lane < 0) lane = laneEnds.length;
+      laneEnds[lane] = meeting.end; meeting.lane = lane; cluster.push(meeting);
+      clusterEnd = Math.max(clusterEnd, meeting.end);
+    }
+    finishCluster();
+    for (const meeting of meetings) {
+      const laneWidth = (plan.width - gap * 2) / meeting.lanes;
+      const box = { x: plan.x + gap + meeting.lane * laneWidth, y: gridTop + (meeting.start - startMinute) / (endMinute - startMinute) * bodyHeight + 3, width: laneWidth - 4, height: (meeting.end - meeting.start) / (endMinute - startMinute) * bodyHeight - 6 };
+      let fitted;
+      for (let baseSize = 42; baseSize >= 28; baseSize -= 2) {
+        const size = baseSize * wallpaperFontScale(template), maxWidth = box.width - 24;
+        font(ctx, size, 750, template.fontFamily);
+        const codeLines = meeting.courseCode?.trim() ? wrapText(ctx, meeting.courseCode, maxWidth) : [];
+        const subjectSize = size * (codeLines.length ? 0.65 : 1);
+        font(ctx, subjectSize, 500, template.fontFamily);
+        const subjectChars = Array.from(meeting.subject);
+        const truncated = ctx.measureText(meeting.subject).width > maxWidth;
+        if (truncated) while (subjectChars.length && ctx.measureText(`${subjectChars.join('')}…`).width > maxWidth) subjectChars.pop();
+        font(ctx, size * 0.7, 500, template.fontFamily);
+        const timeLines = wrapText(ctx, `${formatWallpaperTime(meeting.startTime)}–${formatWallpaperTime(meeting.endTime)}`, maxWidth);
+        const roomLines = meeting.room ? wrapText(ctx, meeting.room, maxWidth) : [];
+        const detailLines = meeting.dateLabel ? wrapText(ctx, meeting.dateLabel, maxWidth) : [];
+        const subjectLines = codeLines.length ? [] : [subjectChars.join('') + (truncated ? '…' : '')];
+        const contentHeight = codeLines.length * size * 1.15 + subjectLines.length * subjectSize * 1.2 + (timeLines.length + roomLines.length + detailLines.length) * size * 0.85 + 12;
+        fitted = { ...meeting, ...box, size, subjectSize, codeLines, subjectLines, timeLines, roomLines, detailLines, contentHeight };
+        if (contentHeight <= box.height - 20 && maxWidth >= size * 2) break;
+      }
+      overflow ||= fitted.contentHeight > box.height - 20 || box.width < fitted.size * 2 + 24;
+      plan.entries.push(fitted);
+    }
+  }
+  overflow ||= valid.some(entry => !activeDays.includes(entry.day));
+  const bottom = gridTop + bodyHeight;
+  return { plans, size: 42, startMinute, endMinute, timeWidth, dayWidth, gridTop, headerHeight, bodyHeight, gridX: 78, gridWidth: options.width, top: options.top, bottom, overflow: overflow || bottom > (options.limit ?? height) };
+}
+
+function drawWeeklyTimetable(ctx, template, layout) {
+  const backdrop = frostedBackdrop(ctx, template);
+  const drawBox = box => {
+    const radius = template.containerShape === 'rounded' ? 12 : Math.min(30, box.height / 2);
+    if (backdrop) drawGlassCard(ctx, template, box, radius, backdrop);
+    else rectangle(ctx, box.x, box.y, box.width, box.height, radius, template.containerFill === false ? undefined : template.surface, template.containerBorder === false ? undefined : template.line);
+  };
+  ctx.save(); ctx.textBaseline = 'middle';
+  drawBox({ x: layout.gridX, y: layout.top, width: layout.gridWidth, height: layout.bottom - layout.top });
+  ctx.fillStyle = template.ink; ctx.textAlign = 'center'; font(ctx, 34, 650, template.fontFamily);
+  ctx.fillText('Time', layout.gridX + layout.timeWidth / 2, layout.top + layout.headerHeight / 2);
+  for (const plan of layout.plans) ctx.fillText(plan.day, plan.x + plan.width / 2, layout.top + layout.headerHeight / 2, plan.width - 16);
+  ctx.save(); ctx.strokeStyle = template.line; ctx.globalAlpha = 0.55; ctx.lineWidth = 1.5;
+  for (let minute = layout.startMinute; minute <= layout.endMinute; minute += 60) {
+    const y = layout.gridTop + (minute - layout.startMinute) / (layout.endMinute - layout.startMinute) * layout.bodyHeight;
+    ctx.beginPath(); ctx.moveTo(layout.gridX, y); ctx.lineTo(layout.gridX + layout.gridWidth, y); ctx.stroke();
+  }
+  for (const plan of layout.plans) { ctx.beginPath(); ctx.moveTo(plan.x, layout.top); ctx.lineTo(plan.x, layout.bottom); ctx.stroke(); }
+  ctx.restore(); ctx.fillStyle = template.ink; font(ctx, 26, 500, template.fontFamily);
+  for (let minute = layout.startMinute; minute < layout.endMinute; minute += 60) {
+    const label = formatWallpaperTime(`${String(Math.floor(minute / 60)).padStart(2, '0')}:${String(minute % 60).padStart(2, '0')}`);
+    const y = layout.gridTop + (minute - layout.startMinute) / (layout.endMinute - layout.startMinute) * layout.bodyHeight;
+    ctx.fillText(label, layout.gridX + layout.timeWidth / 2, y + 20);
+  }
+  for (const plan of layout.plans) for (const entry of plan.entries) {
+    drawBox(entry);
+    let y = entry.y + (entry.height - entry.contentHeight) / 2;
+    const center = entry.x + entry.width / 2;
+    ctx.textBaseline = 'top'; ctx.fillStyle = template.ink; font(ctx, entry.size, 750, template.fontFamily);
+    entry.codeLines.forEach(line => { ctx.fillText(line, center, y); y += entry.size * 1.15; });
+    font(ctx, entry.subjectSize, entry.codeLines.length ? 500 : 650, template.fontFamily);
+    entry.subjectLines.forEach(line => { ctx.fillText(line, center, y); y += entry.subjectSize * 1.2; });
+    y += 8; font(ctx, entry.size * 0.7, 500, template.fontFamily);
+    [...entry.timeLines, ...entry.roomLines, ...entry.detailLines].forEach(line => { ctx.fillText(line, center, y); y += entry.size * 0.85; });
+  }
+  ctx.restore();
+  if (backdrop) { backdrop.width = 0; backdrop.height = 0; }
 }
 
 export function schedulePosition(template) {
@@ -581,27 +693,30 @@ function drawDeviceWallpaper(canvas, { schedule, template, resolution, backgroun
   const hasCharacter = template.layout === 'mascot';
   const position = schedulePosition({ ...template, device: resolution.id });
   const placement = mascotPosition(template);
+  const selectedLayout = scheduleLayout(template, resolution.id);
+  const weekly = selectedLayout === 'weekly';
   // Explicit placements sharing the schedule column use a protected footer.
-  const footerCharacter = hasCharacter && (placement === 'center' || (template.mascotPosition && ((placement === 'left' && position !== 'right') || (placement === 'right' && position !== 'left'))));
+  const footerCharacter = hasCharacter && (weekly || placement === 'center' || (template.mascotPosition && ((placement === 'left' && position !== 'right') || (placement === 'right' && position !== 'left'))));
   const leftInset = resolution.id === 'tablet' ? width * scheduleSideMargin(template, 'left') / 100 : 0;
   const rightInset = resolution.id === 'tablet' ? width * scheduleSideMargin(template, 'right') / 100 : 0;
-  const selectedLayout = scheduleLayout(template, resolution.id);
   const dayCards = selectedLayout === 'day-cards';
   const timeline = selectedLayout === 'timeline';
-  const columnWidth = width * (dayCards && (!landscape || !hasCharacter) ? 0.94 : landscape ? 0.65 : 0.82);
+  const columnWidth = width * (weekly || dayCards && (!landscape || !hasCharacter) ? 0.94 : landscape ? 0.65 : 0.82);
   const topOffset = height * scheduleTopMargin(template) / 100;
   const minTop = resolution.id === 'tablet' ? height * 0.22 : 0;
   const baseTop = Math.max(minTop, landscape ? footerCharacter ? height * 0.06 : 0 : height * 0.16);
   // Ghibli's portrait artwork occupies the footer; dense schedules retain
   // their meetings while fitting above the character stamps and faces.
   const availableHeight = Math.min(height * (landscape ? footerCharacter ? 0.6 : 0.88 : hasCharacter ? 0.62 : 0.82), height * 0.965 - baseTop,
-    template.collection === 'ghibli' && !landscape ? height * 0.77 - baseTop : Infinity);
+    timeline && !landscape ? height * 0.62 : weekly ? height * 0.78 : Infinity,
+    template.collection === 'ghibli' && !landscape && selectedLayout === 'stacked' ? height * 0.77 - baseTop : Infinity);
   const count = dayCards ? Math.ceil(groupSchedule(schedule).length / 2) : groupSchedule(schedule).length;
-  const designWidth = dayCards ? 1900 : 1400;
+  const designWidth = dayCards || weekly ? 1900 : 1400;
   const groupGap = resolution.id === 'tablet' ? tabletBoxSpacing(template) : 16;
-  const layoutOptions = { top: 180, width: dayCards ? 1744 : 1244, timeWidth: 310, roomWidth: 210, minCardHeight: 130, groupGap, timeline };
-  const measureLayout = dayCards ? layoutDayCards : layoutSchedule;
+  const layoutOptions = { top: 180, width: dayCards || weekly ? 1744 : 1244, timeWidth: 310, roomWidth: 210, minCardHeight: 130, groupGap, timeline };
+  const measureLayout = weekly ? layoutWeeklyTimetable : dayCards ? layoutDayCards : layoutSchedule;
   let scale = Math.min(columnWidth / designWidth, availableHeight / (240 + count * 146 + Math.max(0, count - 1) * (groupGap - 16)));
+  if (weekly) scale = columnWidth / designWidth;
   const logicalHeight = availableHeight / scale;
   let layout = measureLayout(ctx, schedule, template, logicalHeight, { ...layoutOptions, limit: logicalHeight - 60 });
   if (layout.overflow) {
@@ -615,7 +730,7 @@ function drawDeviceWallpaper(canvas, { schedule, template, resolution, backgroun
   const columnX = position === 'left' ? margin : position === 'right' ? width - columnWidth - margin : (width - columnWidth) / 2;
   const baseX = columnX + (columnWidth - designWidth * scale) / 2 + leftInset - rightInset;
   const x = baseX + movementShift(scheduleMovement(template, 'horizontal'), baseX + 78 * scale, width - (baseX + (78 + layoutOptions.width) * scale));
-  const initialY = Math.max(baseTop, landscape && !footerCharacter ? (height - contentHeight) / 2 : baseTop);
+  const initialY = Math.max(baseTop, weekly ? height * 0.025 : landscape && !footerCharacter ? (height - contentHeight) / 2 : baseTop);
   const baseY = Math.max(0, Math.min(height * 0.965 - contentHeight, initialY + topOffset - height * scheduleBottomMargin(template) / 100));
   const y = baseY + movementShift(scheduleMovement(template, 'vertical'), baseY, height * 0.965 - (baseY + contentHeight));
   layout.overflow ||= y + contentHeight > height * 0.965 + 0.001;
@@ -625,6 +740,7 @@ function drawDeviceWallpaper(canvas, { schedule, template, resolution, backgroun
   if (layout.overflow) { ctx.fillStyle = template.ink; font(ctx, 32, 600, template.fontFamily); ctx.fillText('Your schedule needs more room.', 90, 400); }
   else if (dayCards) drawDayCards(ctx, template, layout);
   else if (timeline) drawTimeline(ctx, template, layout);
+  else if (weekly) drawWeeklyTimetable(ctx, template, layout);
   else drawScheduleCards(ctx, template, layout);
   ctx.restore();
   let art;
@@ -665,11 +781,15 @@ export function drawWallpaper(canvas, { schedule, template, resolution = mobileR
   const bottomOffset = 2400 * scheduleBottomMargin(template) / 100;
   const verticalOffset = topOffset - bottomOffset;
   const timeline = scheduleLayout(template, 'mobile') === 'timeline';
-  const layout = layoutSchedule(ctx, schedule, template, 2400, { ...(verticalOffset ? { top: 760 + verticalOffset } : {}), ...(timeline ? { timeline: true, timeWidth: 230 } : {}) });
-  const headingY = 650 + verticalOffset;
-  const moveX = movementShift(scheduleMovement(template, 'horizontal'), 78, 78);
-  const limit = template.layout === 'mascot' ? 1740 : template.collection === 'ghibli' ? 2400 * 0.77 : 2250;
-  const moveY = movementShift(scheduleMovement(template, 'vertical'), headingY - 88, limit - layout.bottom);
+  // Use the phone's narrow canvas for readable rows rather than card padding,
+  // while keeping the upper clock area clear.
+  const timelineTop = 640;
+  const layout = layoutSchedule(ctx, schedule, template, 2400, { ...(timeline ? { timeline: true, compactTimeline: true, x: 36, width: 1008, timeWidth: 230, roomWidth: 224, top: timelineTop + verticalOffset } : verticalOffset ? { top: 760 + verticalOffset } : {}) });
+  const headingY = (timeline ? timelineTop - 110 : 650) + verticalOffset;
+  const sideSpace = timeline ? 36 : 78;
+  const moveX = movementShift(scheduleMovement(template, 'horizontal'), timeline ? Math.max(0, sideSpace + 26 - layout.size * 0.5 - 2) : sideSpace, sideSpace);
+  const limit = template.layout === 'mascot' ? 1740 : timeline ? layout.limit : template.collection === 'ghibli' ? 2400 * 0.77 : 2250;
+  const moveY = movementShift(scheduleMovement(template, 'vertical'), timeline ? Math.max(0, headingY - 500) : headingY - 88, limit - layout.bottom);
   ctx.save();
   if (moveX || moveY) ctx.translate(moveX, moveY);
   drawHeading(ctx, template, headingY);
@@ -682,11 +802,12 @@ export function drawWallpaper(canvas, { schedule, template, resolution = mobileR
   if (timeline) drawTimeline(ctx, template, layout);
   else drawScheduleCards(ctx, template, layout);
   ctx.restore();
+  const scheduleBounds = { x: sideSpace + moveX, y: headingY - 88 + moveY, width: timeline ? 1008 : 924, height: layout.bottom - (headingY - 88) };
   if (template.layout === 'mascot') {
     const art = drawMascotFooter(ctx, template, backgroundImage);
-    if (art && ctx.bezierCurveTo) drawParticles(ctx, template, art, { x: 78 + moveX, y: 460 + moveY, width: 924, height: layout.bottom - 460 });
+    if (art && ctx.bezierCurveTo) drawParticles(ctx, template, art, timeline ? scheduleBounds : { x: 78 + moveX, y: 460 + moveY, width: 924, height: layout.bottom - 460 });
   }
-  return { ...layout, scheduleBounds: { x: 78 + moveX, y: headingY - 88 + moveY, width: 924, height: layout.bottom - (headingY - 88) } };
+  return { ...layout, scheduleBounds };
 }
 
 export function canvasBlob(canvas) {

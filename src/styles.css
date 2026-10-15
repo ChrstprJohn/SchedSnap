@@ -242,6 +242,8 @@
 .layout-miniature > span { border: 1px solid var(--color-muted); border-radius: 3px; }
 .layout-miniature-day-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .layout-miniature-day-cards > span:last-child { grid-column: 1 / -1; }
+.layout-miniature-weekly { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2px; }
+.layout-miniature-weekly > span { border-radius: 1px; }
 .schedule-layout-option:last-child:nth-child(3) { grid-column: 1 / -1; flex-wrap: nowrap; padding-right: 42px; }
 .layout-miniature-timeline { padding-left: 13px; flex-shrink: 0; }
 .layout-miniature-timeline > span { position: relative; border: 0; border-bottom: 1px solid var(--color-muted); border-radius: 0; }
@@ -529,4 +531,20 @@
 @media (min-width: 801px) {
   .wallpaper-flow[data-device='tablet'][data-orientation='portrait'] .flow-preview-art.preview-size-md { --preview-width-scale: 1; --preview-frame-height: min(800px, max(520px, calc(100svh - 160px))); }
   .wallpaper-flow[data-device='tablet'][data-orientation='portrait'] .flow-preview-art.preview-size-lg { --preview-width-scale: 1; --preview-frame-padding: 16px; --preview-frame-height: min(960px, max(620px, calc(100svh - 100px))); }
+}
+
+@media (max-width: 767px) {
+  .wallpaper-flow:not([data-device='laptop']) .download-layout:not([data-customizing='true']) .flow-preview-art {
+    --mobile-preview-height: max(340px, calc(100svh - 176px));
+    height: auto;
+    min-height: 0;
+    padding: 8px;
+  }
+  .wallpaper-flow:not([data-device='laptop']) .download-layout:not([data-customizing='true']) .flow-wallpaper {
+    width: min(100%, calc(var(--mobile-preview-height) * var(--wallpaper-ratio-value)));
+    height: auto;
+    min-width: 0;
+    max-height: none;
+    aspect-ratio: var(--wallpaper-ratio);
+  }
 }
