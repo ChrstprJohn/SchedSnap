@@ -8,6 +8,10 @@ import { sanrioTemplates } from '../src/assets/sanrioTemplates.js';
 import { domoTemplates } from '../src/assets/domoTemplates.js';
 import { meepTemplates } from '../src/assets/meepTemplates.js';
 import { ghibliTemplates } from '../src/assets/ghibliTemplates.js';
+import { genshinTemplates } from '../src/assets/genshinTemplates.js';
+import { genshinBackgroundTemplates } from '../src/assets/genshinBackgroundTemplates.js';
+import { genshinChibiTemplates } from '../src/assets/genshinChibiTemplates.js';
+
 
 // Runs only inside Vite's Node process. No credentials enter the browser bundle.
 export function localApiPlugin(env) {
@@ -17,7 +21,7 @@ export function localApiPlugin(env) {
       const analyze = createAnalyzeHandler({ env });
       const visits = createVisitsHandler({ env });
       const admin = createAdminHandler({ env });
-      const catalog = createPublicCatalogHandler({ env, previewTemplates: [...ghibliTemplates, ...meepTemplates, ...sanrioTemplates, ...domoTemplates.filter(template => template.family === 'domo-reference')] });
+      const catalog = createPublicCatalogHandler({ env, previewTemplates: [...genshinChibiTemplates, ...genshinTemplates, ...genshinBackgroundTemplates, ...ghibliTemplates, ...meepTemplates, ...sanrioTemplates, ...domoTemplates.filter(template => template.family === 'domo-reference')] });
       const likes = createLikesHandler({ env });
       server.middlewares.use(async (request, response, next) => {
         const path = request.url?.split('?')[0];

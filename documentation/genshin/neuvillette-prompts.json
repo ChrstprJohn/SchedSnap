@@ -1,0 +1,117 @@
+{
+  "id": "genshin-neuvillette-tide",
+  "character": "Neuvillette",
+  "createdAt": "2026-10-13T14:18:01.666Z",
+  "reference": {
+    "pageURL": "https://x.com/Genshin_7/status/1704709556784275957",
+    "imageURL": "https://pbs.twimg.com/media/F6hYS3tW0AAOROS.jpg",
+    "localPath": "documentation/genshin/references/neuvillette.jpg",
+    "publisher": "Official Japanese Genshin Impact account",
+    "role": "Character identity only; mobile transformed to chibi, tablet/laptop independently recomposed from mobile"
+  },
+  "normalization": "Existing scripts/package-sanrio-image.py; user-approved export sizing on independently generated matching device ratios; no cropping",
+  "assets": [
+    {
+      "device": "mobile",
+      "width": 1080,
+      "height": 2400,
+      "prompt": "Create one opaque PNG wallpaper artwork, mobile portrait1080x2400. Official reference image is ONLY Neuvillette character identity reference: long white hair swept back with blue streaks and small blue hornlike hair ornaments, lilac eyes, navy judicial long coat with white cravat/goldtrim/teal lining. Transform him into a sweet tiny chibi with bighead smallbody, calm friendly smile, holding a tiny clear glass ofwater in glovedhands. Soft flat clean handdrawn chibi style, gently rounded navy outlines, pastel cel shading. Full body entirelyvisible. Independently composed wallpaper: small character bottomcenter ENTIRELY BELOW75% height, character about20% canvasheight. Pale blue/ivory mattepaper background. Upper75% is lowcontrast clean quietspace; top22% clock/date safe and entirelyblank. Small restrained details only in bottomedges:2\u00e2\u20ac\u201c3 little dropletdoodles,one veryfaint curvedwaterline alongloweredge,smallwave nearfeet. No moredecorations. Art only:NO text,letters,numbers,heading,schedule,cards,timetable,panels,UI,logos,watermark,frame. No architecture,landscape,glow,ornateborders,magic effects or clutter. DO NOT copy reference text or referencebackground.",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-604beef7-b22d-4064-b804-dd32dab3e452.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-c2b602a2-f3af-4514-8d4e-47fcb1c4b1a3.png",
+      "corrections": [
+        {
+          "prompt": "Correct only placement/scale and water decorations. Preserve exactly this Neuvillette chibi identity,glassofwater,style andcolors. Portrait1080x2400 wallpaper. Make entire character75% smaller thancurrentlyshown; fullcharacter fits withinbottom25%canvas withsmallbottompadding. Topofhair must bebelow y=1800 (75%height). Upper75% completelyquiet blankpale bluepaper; top22% fullyblank clockspace. REDUCE bottomwaterdecoration: just3tiny dropletdoodles,a smallwavebelowfeet,andONE extremelyfaintthin curved waterlinebottomedge. Remove flowingwater arcs andmultipleboldripples. Keep chibi complete, no crop/stretch. No text,logo,UI,schedulecards.",
+          "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-212c9ce3-1547-4473-99f2-4ac975eefd9d.png"
+        },
+        {
+          "prompt": "Placement correction ONLY. Keep Neuvillette exactsamechibi identity,glassofwater,pose,lineart,colors,navycoat andpaperbackground. Mobileportrait1080x2400. Reduce WHOLEcharacter AND ALLwaterdecorations together to75%CURRENTsize, move towardBOTTOM: highestpixelofhair below64%imageheight; characterfeetnearbottomwithsmallpad. Upper64%mustcontainNOcharacter/hair/droplets/waves atall, onlyblankpale bluepaper; top22%fullyblankclock/date safe. Allwateraccents inbottom22%. No newobjects/text/UI,croporstretch.",
+          "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-c2b602a2-f3af-4514-8d4e-47fcb1c4b1a3.png",
+          "authorization": "Parent explicitly approved additional placement correction because dense schedule clearance insufficient"
+        }
+      ],
+      "artworkStartApprox": 0.657,
+      "finalPath": "public/wallpapers/scenic/genshin-neuvillette-tide/mobile.png",
+      "provider": "built-in image_gen",
+      "inspection": {
+        "identityConsistent": true,
+        "completeSilhouette": true,
+        "noTextUI": true,
+        "clockAreaClear": true,
+        "scheduleAreaClear": true
+      },
+      "nativeDimensions": [
+        841,
+        1870
+      ],
+      "finalDimensions": [
+        1080,
+        2400
+      ],
+      "sha256": "f4dfaf7d34c1c53651bc3f07e01b986cf79909eafe8ba6760dd847cf2ee85deb",
+      "opaque": true
+    },
+    {
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "prompt": "Recompose reference into a NEW tabletportrait1600x2560 opaque PNG wallpaper, do not stretch/cropphone image. Keep EXACT same Neuvillette chibi identity, longwhitehair withblue streaks,smallblue hairornaments,lilaceyes,navywhitegold judicialcoat,glassofwater,softflat outlines/colors/style. Entirebody intact. Independently compose character at BOTTOM RIGHT; character SMALL, totalheightonly20%ofcanvas; topofhair MUSTBE below75%height. Upper75% onlyquietflat pale blue/ivory paper. Top22% fullyblank clock/date safe. Atbottomedges addonly3tinydroplets,ONE veryfaint curvedwaterline,smallwaveunderfeet. Match reference restraint. No text/letters/numbers/headings/logos/UI/cards/timetable/frame, no architecture/landscape/glow/clutter. Not mockup. Artwork only.",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-cfa5565d-b859-4b77-8e5b-30d72719951c.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-9748f7ad-35f0-4688-a4a0-9d04d6413158.png",
+      "corrections": [
+        {
+          "prompt": "Adjust only position andscale of Neuvillette chibi and nearbydroplets/ripple. Keep sameidentity/glass/pose/style/colors/background. Tabletportrait1600x2560. The character must beentirely below y=1800 (70%canvasheight), NOT at60%. Move characterdown andproportionally reduce to totalheight500px atbottomright; keep wholebodyvisiblewith80pxbottompadding. Upper70%cleanquiet pale bluepaper; top22%completelyblank. Only3tinywaterdroplets,ONEveryfaintthinwaterlinebottom,andtinyrippleunderfeet; do notaddmore. No text/UI/cards/logos. No crop/stretch.",
+          "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-9748f7ad-35f0-4688-a4a0-9d04d6413158.png"
+        }
+      ],
+      "artworkStartApprox": 0.67,
+      "finalPath": "public/wallpapers/scenic/genshin-neuvillette-tide/tablet.png",
+      "provider": "built-in image_gen",
+      "inspection": {
+        "identityConsistent": true,
+        "completeSilhouette": true,
+        "noTextUI": true,
+        "clockAreaClear": true,
+        "scheduleAreaClear": true
+      },
+      "nativeDimensions": [
+        992,
+        1586
+      ],
+      "finalDimensions": [
+        1600,
+        2560
+      ],
+      "sha256": "857275edb054f6338990345d3a306991ef3f5e217b84f36e04c3389f5521d7fc",
+      "opaque": true
+    },
+    {
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "prompt": "Recompose reference into a NEW landscapelaptop1920x1080 opaque PNG wallpaper, do not stretch/cropphone image. Keep EXACT same Neuvillette chibi identity,longwhitehair withblue streaks,smallblue hairornaments,lilaceyes,navywhitegold judicialcoat,glassofwater,softflat outlines/colors/style. Entirebody intact. Character entirelyWITHIN RIGHTMOST28%, allhair/accessoriesfeet strictlyRIGHTOF72%width. Character centeredvertically at RIGHT withmodestedgepadding, totalartworkwidthmax24%canvas. Left70%only quietflat pale blue/ivory paper, fullyemptyforclockandschedule. Small details ONLY atlower-right edges nearcharacter:3tinydroplets,ONEveryfaint curvedwaterline,smallwaveunderfeet. No text/letters/numbers/headings/logos/UI/cards/timetable/frame,noarchitecture/landscape/glow/clutter. Notmockup. Artworkonly.",
+      "originalSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-d480bd3f-28a2-4442-a4f5-b9b81fb09e25.png",
+      "selectedSource": "C:\\Users\\QCU\\.codex\\generated_images\\01a1357a-3d67-7a83-b3f4-e9beb3678b64\\exec-d480bd3f-28a2-4442-a4f5-b9b81fb09e25.png",
+      "corrections": [],
+      "characterLeftApprox": 0.72,
+      "finalPath": "public/wallpapers/scenic/genshin-neuvillette-tide/laptop.png",
+      "provider": "built-in image_gen",
+      "inspection": {
+        "identityConsistent": true,
+        "completeSilhouette": true,
+        "noTextUI": true,
+        "clockAreaClear": true,
+        "scheduleAreaClear": true
+      },
+      "nativeDimensions": [
+        1672,
+        941
+      ],
+      "finalDimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "9ab718e0222dccca49a53540b3f94e02d258d8e6b45f945e71d3c7e6f545a689",
+      "opaque": true
+    }
+  ]
+}

@@ -222,12 +222,15 @@ function drawBackground(ctx, template, image, width = 1080, height = 2400) {
 }
 
 function drawHeading(ctx, template, y = 650, width = 1080) {
-  if (template.showTitle === false) return;
+  if (template.showTitle === false || template.showScheduleTitle === false) return;
   ctx.save();
-  ctx.fillStyle = template.ink; ctx.textAlign = 'center';
+  ctx.fillStyle = template.headingInk || template.ink; ctx.textAlign = 'center';
   font(ctx, 88, 750, template.fontFamily);
   const title = template.scheduleTitle?.trim() || 'Class Schedule';
   for (let size = 86; size >= 24 && ctx.measureText(title).width > width - 156; size -= 2) font(ctx, size, 750, template.fontFamily);
+  if (template.headingInk && template.headingInk !== template.ink) {
+    ctx.shadowColor = 'rgba(35,24,38,0.55)'; ctx.shadowBlur = 7; ctx.shadowOffsetY = 3;
+  }
   ctx.fillText(title, width / 2, y, width - 156);
   ctx.restore();
 }
@@ -280,9 +283,9 @@ function drawGlassCard(ctx, template, plan, radius, backdrop) {
   ctx.drawImage(backdrop, 0, 0);
   ctx.setTransform(matrix);
   const frost = ctx.createLinearGradient(plan.x, plan.y, plan.x, plan.y + plan.height);
-  frost.addColorStop(0, glassColor(tint, brightText ? 0.76 : 0.66));
-  frost.addColorStop(0.45, glassColor(tint, brightText ? 0.62 : 0.38));
-  frost.addColorStop(1, glassColor(tint, brightText ? 0.7 : 0.5));
+  frost.addColorStop(0, glassColor(tint, brightText ? 0.7 : 0.58));
+  frost.addColorStop(0.45, glassColor(tint, brightText ? 0.56 : 0.3));
+  frost.addColorStop(1, glassColor(tint, brightText ? 0.64 : 0.42));
   ctx.fillStyle = frost; ctx.fillRect(plan.x, plan.y, plan.width, plan.height);
   ctx.restore();
   if (template.containerBorder !== false) {
@@ -506,7 +509,7 @@ export function drawWallpaper(canvas, { schedule, template, resolution = mobileR
   const bottomOffset = 2400 * scheduleBottomMargin(template) / 100;
   const verticalOffset = topOffset - bottomOffset;
   const layout = layoutSchedule(ctx, schedule, template, 2400, verticalOffset ? { top: 760 + verticalOffset } : {});
-  const headingY = 650 + verticalOffset;
+  const headingY = (layout.plans[0]?.y ?? 760 + verticalOffset) - 110;
   const moveX = movementShift(scheduleMovement(template, 'horizontal'), 78, 78);
   const limit = template.layout === 'mascot' ? 1740 : hasIllustratedFooter(template) ? 2400 * 0.77 : 2250;
   const moveY = movementShift(scheduleMovement(template, 'vertical'), headingY - 88, limit - layout.bottom);

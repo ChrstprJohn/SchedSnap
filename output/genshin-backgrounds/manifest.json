@@ -1,0 +1,157 @@
+{
+  "generatedAt": "2026-10-14T07:25:26.729Z",
+  "provider": "built-in imagegen",
+  "assetCount": 15,
+  "assets": [
+    {
+      "id": "genshin-card-kazuha-maple",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-card-kazuha-maple/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "6ad3c43942c300714a768c7b6fcf83dcec4cce11cf2662d7ef43414a0d9c7975"
+    },
+    {
+      "id": "genshin-card-kazuha-maple",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-card-kazuha-maple/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "34e5b20839e5180263211494d1a720d9b34bd7466c0c8abffabe561b927a8fef"
+    },
+    {
+      "id": "genshin-card-kazuha-maple",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-card-kazuha-maple/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "af70f7d3e7b7c6cd52e2c6f33e403a2779880c1029faee5d74e24d95cacd0243"
+    },
+    {
+      "id": "genshin-card-mavuika-sun",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-card-mavuika-sun/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "609af79b2e3b94509ef350fc933b6a4bc41b0f49200fb128aedadffa5b1b722c"
+    },
+    {
+      "id": "genshin-card-mavuika-sun",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-card-mavuika-sun/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "3f4ede6d787852ae5468cd8a8f77a4804f873df52d300e3786478a40e83b0187"
+    },
+    {
+      "id": "genshin-card-mavuika-sun",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-card-mavuika-sun/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "5433c0cdc5a7e4e93e7cdb76f7274d5a22d77aeb49d0ab56a51ec279678e59fe"
+    },
+    {
+      "id": "genshin-card-arlecchino-fate",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-card-arlecchino-fate/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "f5cdf91abc4f862773f592faadef595d05f4ae40f0c68783c64cbf3e09bf0233"
+    },
+    {
+      "id": "genshin-card-arlecchino-fate",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-card-arlecchino-fate/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "6f79555fa6c62664c32eab1a8155e05a06031786b513c03a8186f3d0c180ba2c"
+    },
+    {
+      "id": "genshin-card-arlecchino-fate",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-card-arlecchino-fate/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "3745bf21038af0bfdacc3391c324a656ee6fe13f71d1c715900587a5b66666fb"
+    },
+    {
+      "id": "genshin-card-raiden-lightning",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-card-raiden-lightning/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "17843836f8b3b5f41bfa64aa7a766ca50e181dc79c6e7f68ce84e9dab90e93ed"
+    },
+    {
+      "id": "genshin-card-raiden-lightning",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-card-raiden-lightning/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "d9626e8e3e916bd8c96cc9d3b20fe1564b2453eb56c6f9a0075a7fb6000ec952"
+    },
+    {
+      "id": "genshin-card-raiden-lightning",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-card-raiden-lightning/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "6f7b49648983f63c4e9350aafbd1044a15bab03fccca0e27b80e11cc538572a1"
+    },
+    {
+      "id": "genshin-sky-welkin",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-sky-welkin/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "9e41bb84d6e77822b1d4ce38777ce7bbaefca9cf4950ad08111f3156852b473c"
+    },
+    {
+      "id": "genshin-sky-welkin",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-sky-welkin/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "9b88ce088efa11dcdc1d412075fc764fc5ef952e84262374a5b67390f45528c6"
+    },
+    {
+      "id": "genshin-sky-welkin",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-sky-welkin/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "2553839b20d0df3177020282c9cf6ad88975f5adc0c1793866c9cf20a9708b12"
+    }
+  ]
+}

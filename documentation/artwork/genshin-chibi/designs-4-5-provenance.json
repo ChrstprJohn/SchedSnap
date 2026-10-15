@@ -1,0 +1,85 @@
+{
+  "provider": "built-in image_gen",
+  "createdAt": "2026-10-15T13:12:04.975Z",
+  "reference4": "C:/Users/QCU/AppData/Local/Temp/codex-clipboard-3d0e8cf7-0615-486a-8e8e-184d5fb2187b.png",
+  "reference5": "C:/Users/QCU/AppData/Local/Temp/codex-clipboard-07896327-64e9-4d19-b5de-77d62bfefb41.png",
+  "referenceUse": "Style, palette, character identity and composition cues; original separately generated device compositions.",
+  "designs": [
+    {
+      "id": "genshin-paimon-starlight",
+      "name": "Paimon Starlight",
+      "palette": {
+        "background": "#f4eee3",
+        "ink": "#40415b",
+        "muted": "#7c7189",
+        "surface": "#fffaf2cc",
+        "line": "#9c8c9d50"
+      },
+      "brief": "Small full-body Paimon with white bob, purple eyes, rose-gold halo and navy starry cape; expert anime stationery linework, warm ivory paper, blush and lilac watercolor corners, golden stars. Vast quiet timetable center. Mobile bottom right waving; tablet bottom left hands near chest; laptop bottom right holding golden star."
+    },
+    {
+      "id": "genshin-teyvat-sketch-parade",
+      "name": "Teyvat Sketch Parade",
+      "palette": {
+        "background": "#eeece0",
+        "ink": "#344c64",
+        "muted": "#697d90",
+        "surface": "#fffdf5cc",
+        "line": "#788da450"
+      },
+      "brief": "Handmade monochrome steel-blue pencil on warm ivory fibrous paper. Bottom parade of Venti, Zhongli, Aether, floating Paimon and friendly qilin, faint floating-island map corner. Mobile walking left; tablet Venti seated playing lyre, others walking right; laptop figures spread panoramically. Extensive blank middle."
+    }
+  ],
+  "constraints": "Opaque full bleed artwork, correct complete anatomy, no text, schedule, UI, logos, watermark, frames or montage. Each format generated independently, then resized to exact required dimensions.",
+  "assets": [
+    {
+      "path": "C:/Users/QCU/source/repos/SchedSnap/public/wallpapers/scenic/genshin-paimon-starlight/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "pngColorType": 2,
+      "opaque": true,
+      "sha256": "eddf6ddf37211ee58a68fe940bb05ee34adb7a542a894012b4b677e22c2b7f1d"
+    },
+    {
+      "path": "C:/Users/QCU/source/repos/SchedSnap/public/wallpapers/scenic/genshin-paimon-starlight/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "pngColorType": 2,
+      "opaque": true,
+      "sha256": "b305aac12125449a6ec52e6768403524cb4059c32bb0ec3fcd7f61a46fd67558"
+    },
+    {
+      "path": "C:/Users/QCU/source/repos/SchedSnap/public/wallpapers/scenic/genshin-paimon-starlight/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "pngColorType": 2,
+      "opaque": true,
+      "sha256": "988f9b2973e4e6c5d2a443537865b8ac9fe991993ff294a1a5fffe70642ad6eb"
+    },
+    {
+      "path": "C:/Users/QCU/source/repos/SchedSnap/public/wallpapers/scenic/genshin-teyvat-sketch-parade/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "pngColorType": 2,
+      "opaque": true,
+      "sha256": "a631ecbc142e99006f8d48c7f893e7d68020c2feb85e1ebd7171336b315e66b0"
+    },
+    {
+      "path": "C:/Users/QCU/source/repos/SchedSnap/public/wallpapers/scenic/genshin-teyvat-sketch-parade/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "pngColorType": 2,
+      "opaque": true,
+      "sha256": "03eea0dd346451379a61a527ec6cbc2ea219deb0997a8c8755de8093115985f9"
+    },
+    {
+      "path": "C:/Users/QCU/source/repos/SchedSnap/public/wallpapers/scenic/genshin-teyvat-sketch-parade/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "pngColorType": 2,
+      "opaque": true,
+      "sha256": "ba1e02f31325614f08696a467c1588d309e2c8f2db7d2e0affbf692d10e18256"
+    }
+  ],
+  "validation": "Six PNG headers checked; exact device dimensions; RGB color type2 confirms opacity. All six visually inspected from generation results. Separate compositions retained during Lanczos size normalization."
+}

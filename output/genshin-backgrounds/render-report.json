@@ -1,0 +1,455 @@
+{
+  "backend": "Native Canvas with project font; non-hundred CSS weights approximated for QA",
+  "renders": [
+    {
+      "id": "genshin-card-kazuha-maple",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin-backgrounds/qa/genshin-card-kazuha-maple-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 590,
+        "width": 924,
+        "height": 749
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-card-kazuha-maple",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin-backgrounds/qa/genshin-card-kazuha-maple-mobile-dense.png",
+      "overflow": true,
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-kazuha-maple",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin-backgrounds/qa/genshin-card-kazuha-maple-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 278.8574859287056,
+        "y": 675.84,
+        "width": 1362.2850281425888,
+        "height": 1149.8386491557221
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-card-kazuha-maple",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin-backgrounds/qa/genshin-card-kazuha-maple-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 618.7685272866124,
+        "y": 675.84,
+        "width": 682.4629454267754,
+        "height": 1167.3599999999997
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-kazuha-maple",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin-backgrounds/qa/genshin-card-kazuha-maple-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 160.58057142857143,
+        "width": 989.5131428571428,
+        "height": 758.8388571428571
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-kazuha-maple",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin-backgrounds/qa/genshin-card-kazuha-maple-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 361.86241771762536,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-mavuika-sun",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin-backgrounds/qa/genshin-card-mavuika-sun-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 590,
+        "width": 924,
+        "height": 749
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-card-mavuika-sun",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin-backgrounds/qa/genshin-card-mavuika-sun-mobile-dense.png",
+      "overflow": true,
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-mavuika-sun",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin-backgrounds/qa/genshin-card-mavuika-sun-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 278.8574859287056,
+        "y": 675.84,
+        "width": 1362.2850281425888,
+        "height": 1149.8386491557221
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-card-mavuika-sun",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin-backgrounds/qa/genshin-card-mavuika-sun-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 618.7685272866124,
+        "y": 675.84,
+        "width": 682.4629454267754,
+        "height": 1167.3599999999997
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-mavuika-sun",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin-backgrounds/qa/genshin-card-mavuika-sun-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 160.58057142857143,
+        "width": 989.5131428571428,
+        "height": 758.8388571428571
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-mavuika-sun",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin-backgrounds/qa/genshin-card-mavuika-sun-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 361.86241771762536,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-arlecchino-fate",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin-backgrounds/qa/genshin-card-arlecchino-fate-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 590,
+        "width": 924,
+        "height": 749
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-card-arlecchino-fate",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin-backgrounds/qa/genshin-card-arlecchino-fate-mobile-dense.png",
+      "overflow": true,
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-arlecchino-fate",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin-backgrounds/qa/genshin-card-arlecchino-fate-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 278.8574859287056,
+        "y": 675.84,
+        "width": 1362.2850281425888,
+        "height": 1149.8386491557221
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-card-arlecchino-fate",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin-backgrounds/qa/genshin-card-arlecchino-fate-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 618.7685272866124,
+        "y": 675.84,
+        "width": 682.4629454267754,
+        "height": 1167.3599999999997
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-arlecchino-fate",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin-backgrounds/qa/genshin-card-arlecchino-fate-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 160.58057142857143,
+        "width": 989.5131428571428,
+        "height": 758.8388571428571
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-arlecchino-fate",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin-backgrounds/qa/genshin-card-arlecchino-fate-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 361.86241771762536,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-raiden-lightning",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin-backgrounds/qa/genshin-card-raiden-lightning-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 590,
+        "width": 924,
+        "height": 749
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-card-raiden-lightning",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin-backgrounds/qa/genshin-card-raiden-lightning-mobile-dense.png",
+      "overflow": true,
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-raiden-lightning",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin-backgrounds/qa/genshin-card-raiden-lightning-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 278.8574859287056,
+        "y": 675.84,
+        "width": 1362.2850281425888,
+        "height": 1149.8386491557221
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-card-raiden-lightning",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin-backgrounds/qa/genshin-card-raiden-lightning-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 618.7685272866124,
+        "y": 675.84,
+        "width": 682.4629454267754,
+        "height": 1167.3599999999997
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-raiden-lightning",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin-backgrounds/qa/genshin-card-raiden-lightning-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 160.58057142857143,
+        "width": 989.5131428571428,
+        "height": 758.8388571428571
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-raiden-lightning",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin-backgrounds/qa/genshin-card-raiden-lightning-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 361.86241771762536,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-sky-welkin",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin-backgrounds/qa/genshin-sky-welkin-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 590,
+        "width": 924,
+        "height": 749
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-sky-welkin",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin-backgrounds/qa/genshin-sky-welkin-mobile-dense.png",
+      "overflow": true,
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-sky-welkin",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin-backgrounds/qa/genshin-sky-welkin-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 278.8574859287056,
+        "y": 675.84,
+        "width": 1362.2850281425888,
+        "height": 1149.8386491557221
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-sky-welkin",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin-backgrounds/qa/genshin-sky-welkin-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 618.7685272866124,
+        "y": 675.84,
+        "width": 682.4629454267754,
+        "height": 1167.3599999999997
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-sky-welkin",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin-backgrounds/qa/genshin-sky-welkin-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 158.04342857142856,
+        "y": 160.58057142857143,
+        "width": 989.5131428571428,
+        "height": 758.8388571428571
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-sky-welkin",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin-backgrounds/qa/genshin-sky-welkin-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 361.86241771762536,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    }
+  ]
+}

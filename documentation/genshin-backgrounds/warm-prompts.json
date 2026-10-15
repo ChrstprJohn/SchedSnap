@@ -1,0 +1,165 @@
+{
+  "provider": "built-in image_gen",
+  "assets": [
+    {
+      "id": "genshin-card-kazuha-maple",
+      "device": "mobile",
+      "width": 1080,
+      "height": 2400,
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a1390e-c5aa-7ee2-86f1-40fce76fa8ec\\exec-89f08d37-1cf8-4c81-b935-661693a2ae44.png",
+      "prompt": "Use case: stylized-concept. Create ONE opaque full-bleed flat graphic Genshin Kazuha namecard-inspired wallpaper, portrait 1080x2400 aspect 9:20. Reference image 1 defines maple leaves, flowing gold luminous ribbons, warm brown terracotta orange cream palette. Reference image 2 supplies elemental symbols: use ONLY THIRD symbol top-to-bottom, Anemo symmetrical upward-curving feather wings joined around small pointed diamond base. Faithfully reproduce that single Anemo silhouette in gold as an ornament centered at x55%, y83%, intertwined with sweeping gold wind ribbons and orange maple leaves. Dense sweeping maple/ribbon artwork confined to bottom 35%; tiny edge accents allowed. Top 22% clock center perfectly quiet; upper and middle 60% calm uniform warm brown low contrast, broad empty center for future schedule overlay. Polished flat vector-like artwork with restrained soft gold glow, elegant bold maple silhouettes and smooth winding ribbons. No characters, faces, human silhouettes, people, chibi, text, letters, numbers, signature, logos, watermark, timetable, cards, UI, phone frame. Do not copy artist credit. Art only.",
+      "references": [
+        "C:\\Users\\QCU\\AppData\\Local\\Temp\\codex-clipboard-33e5a7af-56df-42a6-a72a-2b7acbaf03f9.png",
+        "C:\\Users\\QCU\\AppData\\Local\\Temp\\codex-clipboard-48a0821f-40f3-4939-974d-aaca062b6e0d.png"
+      ],
+      "destination": "public/wallpapers/scenic/genshin-card-kazuha-maple/mobile.png",
+      "inspection": {
+        "characters": false,
+        "text": false,
+        "faithfulElement": "Anemo winged diamond",
+        "scheduleSafe": "Clock center quiet. Main ornaments lower portrait/right landscape; some low contrast tonal edge motifs extend into middle."
+      },
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "6ad3c43942c300714a768c7b6fcf83dcec4cce11cf2662d7ef43414a0d9c7975"
+    },
+    {
+      "id": "genshin-card-kazuha-maple",
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a1390e-c5aa-7ee2-86f1-40fce76fa8ec\\exec-920cae24-5631-4628-8bb6-14188faf34b3.png",
+      "prompt": "Use case: stylized-concept. Create ONE opaque full-bleed flat graphic Genshin Kazuha namecard-inspired wallpaper, tablet portrait 1600x2560 aspect 5:8. Reference image 1 defines maple leaves, flowing gold luminous ribbons, warm brown terracotta orange cream palette. Reference image 2 supplies elemental symbols: use ONLY THIRD symbol top-to-bottom, Anemo symmetrical upward-curving feather wings joined around small pointed diamond base. Faithfully reproduce that single Anemo silhouette in gold as an ornament centered at x55%, y83%, intertwined with sweeping gold wind ribbons and orange maple leaves. Dense sweeping maple/ribbon artwork confined to bottom 35%; tiny edge accents allowed. Top 22% clock center perfectly quiet; upper and middle 60% calm uniform warm brown low contrast, broad empty center for future schedule overlay. Polished flat vector-like artwork with restrained soft gold glow, elegant bold maple silhouettes and smooth winding ribbons. No characters, faces, human silhouettes, people, chibi, text, letters, numbers, signature, logos, watermark, timetable, cards, UI, phone frame. Do not copy artist credit. Art only.\nRecompose independently for tablet, do not stretch or crop mobile. Reference image 1 now is approved mobile artwork to preserve design; image 2 maple style; image 3 elemental chart. Expand quiet area horizontally. Keep all bold motifs in bottom 35%, emblem y83%.",
+      "references": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a1390e-c5aa-7ee2-86f1-40fce76fa8ec\\exec-89f08d37-1cf8-4c81-b935-661693a2ae44.png",
+        "C:\\Users\\QCU\\AppData\\Local\\Temp\\codex-clipboard-33e5a7af-56df-42a6-a72a-2b7acbaf03f9.png",
+        "C:\\Users\\QCU\\AppData\\Local\\Temp\\codex-clipboard-48a0821f-40f3-4939-974d-aaca062b6e0d.png"
+      ],
+      "destination": "public/wallpapers/scenic/genshin-card-kazuha-maple/tablet.png",
+      "inspection": {
+        "characters": false,
+        "text": false,
+        "faithfulElement": "Anemo winged diamond",
+        "scheduleSafe": "Clock center quiet. Main ornaments lower portrait/right landscape; some low contrast tonal edge motifs extend into middle."
+      },
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "34e5b20839e5180263211494d1a720d9b34bd7466c0c8abffabe561b927a8fef"
+    },
+    {
+      "id": "genshin-card-kazuha-maple",
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a1390e-c5aa-7ee2-86f1-40fce76fa8ec\\exec-5d79106c-c505-4d6e-8185-1aebd38369e5.png",
+      "prompt": "Use case: stylized-concept. ONE independently recomposed landscape 1920x1080 aspect16:9 Kazuha namecard background only. Reference1 approved mobile maple-and-gold design, reference2 original maple graphic, reference3 elemental chart. Preserve warm brown terracotta orange gold cream palette, flat graphic polish, winding gold luminous ribbons and bold maple silhouettes. LEFT 62% calm nearly uniform warm brown empty space for schedule overlays. Main sweeping maple and gold wind ribbon ornament confined RIGHT35% with ONE faithful Anemo symbol THIRD in elemental chart, symmetrical curved feather wings joined to pointed diamond base, gold embedded inside ribbon loop at x83%y64%. Lower right clusters of maple leaves and wispy cloud bars. No dense motif traverses left62%. No characters, humans, silhouettes,faces,chibi,text,letters,numbers,signatures,logo,watermark,artist credit,timetable,cards,UI,deviceframe. Opaque fullbleed art. Recompose for wide canvas, do not stretch/crop mobile.",
+      "references": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a1390e-c5aa-7ee2-86f1-40fce76fa8ec\\exec-89f08d37-1cf8-4c81-b935-661693a2ae44.png",
+        "C:\\Users\\QCU\\AppData\\Local\\Temp\\codex-clipboard-33e5a7af-56df-42a6-a72a-2b7acbaf03f9.png",
+        "C:\\Users\\QCU\\AppData\\Local\\Temp\\codex-clipboard-48a0821f-40f3-4939-974d-aaca062b6e0d.png"
+      ],
+      "destination": "public/wallpapers/scenic/genshin-card-kazuha-maple/laptop.png",
+      "inspection": {
+        "characters": false,
+        "text": false,
+        "faithfulElement": "Anemo winged diamond",
+        "scheduleSafe": "Clock center quiet. Main ornaments lower portrait/right landscape; some low contrast tonal edge motifs extend into middle."
+      },
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "af70f7d3e7b7c6cd52e2c6f33e403a2779880c1029faee5d74e24d95cacd0243"
+    },
+    {
+      "id": "genshin-card-mavuika-sun",
+      "device": "mobile",
+      "width": 1080,
+      "height": 2400,
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a1390e-c5aa-7ee2-86f1-40fce76fa8ec\\exec-1f1c6103-5d9e-4966-8ea7-64eed088c8cb.png",
+      "prompt": "Use case: stylized-concept. Create ONE opaque full-bleed flat graphic Mavuika Sun-Crowned namecard background, mobile portrait1080x2400 ratio9:20. Reference1 defines authentic angular orange solar wheel, triangular rays, tribal flame ribbons, dark charcoal background and muted sage accents. Reference2 elemental chart: reproduce ONLY FIRST symbol Pyro flame swirl, faithful pointed flame silhouette and curled inner flame, no other elements. Integrate that one Pyro emblem as orange/sage cutout medallion inside angular solar wheel centered x62% y82%. Namecard artwork ONLY NO character. Bold main solar wheel and tribal flames contained bottom35%, starting below y65%. Top22% completely quiet for clock; upper-middle60% near-uniform dark charcoal with very faint tonal geometric texture, decoration only at extreme edges. Flat sharp stylized tribal ornament with orange/coral outlined wheel segments, dark cutouts and sage slivers, preserve reference palette and identity. No words,letters,numbers,timetable,cards,UI,phoneframe,characters,people,faces,human silhouettes,chibi,logo,watermark,signature. No all-seven-symbol chart. Premium clean graphic wallpaper.",
+      "references": [
+        "C:\\Users\\QCU\\AppData\\Local\\Temp\\codex-clipboard-e90808d8-7fea-4fe1-8b67-3db17955724d.png",
+        "C:\\Users\\QCU\\AppData\\Local\\Temp\\codex-clipboard-48a0821f-40f3-4939-974d-aaca062b6e0d.png"
+      ],
+      "destination": "public/wallpapers/scenic/genshin-card-mavuika-sun/mobile.png",
+      "inspection": {
+        "characters": false,
+        "text": false,
+        "faithfulElement": "Pyro flame swirl",
+        "scheduleSafe": "Clock center quiet. Main ornaments lower portrait/right landscape; some low contrast tonal edge motifs extend into middle."
+      },
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "609af79b2e3b94509ef350fc933b6a4bc41b0f49200fb128aedadffa5b1b722c"
+    },
+    {
+      "id": "genshin-card-mavuika-sun",
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a1390e-c5aa-7ee2-86f1-40fce76fa8ec\\exec-848c62a1-3b80-4463-b521-f9a5fe5f80e9.png",
+      "prompt": "Use case: stylized-concept. Create ONE opaque full-bleed flat graphic Mavuika Sun-Crowned namecard background, tablet portrait1600x2560 ratio5:8. Reference1 defines authentic angular orange solar wheel, triangular rays, tribal flame ribbons, dark charcoal background and muted sage accents. Reference2 elemental chart: reproduce ONLY FIRST symbol Pyro flame swirl, faithful pointed flame silhouette and curled inner flame, no other elements. Integrate that one Pyro emblem as orange/sage cutout medallion inside angular solar wheel centered x62% y82%. Namecard artwork ONLY NO character. Bold main solar wheel and tribal flames contained bottom35%, starting below y65%. Top22% completely quiet for clock; upper-middle60% near-uniform dark charcoal with very faint tonal geometric texture, decoration only at extreme edges. Flat sharp stylized tribal ornament with orange/coral outlined wheel segments, dark cutouts and sage slivers, preserve reference palette and identity. No words,letters,numbers,timetable,cards,UI,phoneframe,characters,people,faces,human silhouettes,chibi,logo,watermark,signature. No all-seven-symbol chart. Premium clean graphic wallpaper.\nRecompose independently for wider tablet. Reference1 now approved mobile design for consistency; reference2 original Sun-Crowned namecard; reference3 elemental chart. Preserve same solar wheel and faithful Pyro swirl. Main ornament stays exclusively bottom35%, upper65% quiet charcoal.",
+      "references": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a1390e-c5aa-7ee2-86f1-40fce76fa8ec\\exec-1f1c6103-5d9e-4966-8ea7-64eed088c8cb.png",
+        "C:\\Users\\QCU\\AppData\\Local\\Temp\\codex-clipboard-e90808d8-7fea-4fe1-8b67-3db17955724d.png",
+        "C:\\Users\\QCU\\AppData\\Local\\Temp\\codex-clipboard-48a0821f-40f3-4939-974d-aaca062b6e0d.png"
+      ],
+      "destination": "public/wallpapers/scenic/genshin-card-mavuika-sun/tablet.png",
+      "inspection": {
+        "characters": false,
+        "text": false,
+        "faithfulElement": "Pyro flame swirl",
+        "scheduleSafe": "Clock center quiet. Main ornaments lower portrait/right landscape; some low contrast tonal edge motifs extend into middle."
+      },
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "3f4ede6d787852ae5468cd8a8f77a4804f873df52d300e3786478a40e83b0187"
+    },
+    {
+      "id": "genshin-card-mavuika-sun",
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a1390e-c5aa-7ee2-86f1-40fce76fa8ec\\exec-639530c1-7014-43d1-bfbd-bdf39fc2df05.png",
+      "prompt": "Use case: stylized-concept. ONE independently recomposed Mavuika Sun-Crowned namecard background landscape1920x1080 aspect16:9. Reference1 approved mobile design, reference2 original angular solar wheel namecard, reference3 elemental chart. Preserve dark charcoal, orange coral fiery solar wheel, triangular rays, tribal flames, sage cream accents. LEFT62% calm nearly uniform darkcharcoal with ONLY very faint tone-on-tone geometric pattern so schedulecards readable. Entire bright solarwheel/flame ornament restricted RIGHT35%, wheelcenter x86%y62%. One faithful Pyro flame-swirl emblem from FIRST symbol in elementchart integrated into center solarwheel orange-on-charcoal. Flame ribbons curl down rightedge and bottomright without crossing left62%. Flat sharp graphic namecard art, opaque fullbleed. No characters,humans,faces,silhouettes,chibi,text,letters,numbers,signature,logo,watermark,UI,timetable,cards,deviceframe. No otherelement symbols. Do not stretch or crop mobile.",
+      "references": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a1390e-c5aa-7ee2-86f1-40fce76fa8ec\\exec-1f1c6103-5d9e-4966-8ea7-64eed088c8cb.png",
+        "C:\\Users\\QCU\\AppData\\Local\\Temp\\codex-clipboard-e90808d8-7fea-4fe1-8b67-3db17955724d.png",
+        "C:\\Users\\QCU\\AppData\\Local\\Temp\\codex-clipboard-48a0821f-40f3-4939-974d-aaca062b6e0d.png"
+      ],
+      "destination": "public/wallpapers/scenic/genshin-card-mavuika-sun/laptop.png",
+      "inspection": {
+        "characters": false,
+        "text": false,
+        "faithfulElement": "Pyro flame swirl",
+        "scheduleSafe": "Clock center quiet. Main ornaments lower portrait/right landscape; some low contrast tonal edge motifs extend into middle."
+      },
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "5433c0cdc5a7e4e93e7cdb76f7274d5a22d77aeb49d0ab56a51ec279678e59fe"
+    }
+  ]
+}

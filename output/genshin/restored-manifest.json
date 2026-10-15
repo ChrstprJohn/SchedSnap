@@ -1,0 +1,427 @@
+{
+  "generatedAt": "2026-10-14T05:54:35.366Z",
+  "provider": "built-in imagegen",
+  "assetCount": 42,
+  "assets": [
+    {
+      "id": "genshin-raiden-tea",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-raiden-tea/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "eec02bc1f760f4151896692c8117b66d45053de23fcecba3776fb8c55eee5db9"
+    },
+    {
+      "id": "genshin-raiden-tea",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-raiden-tea/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "0f4bacb29c7e02d9c4787cef23f3b833a78c37c906233da3f302979a45780472"
+    },
+    {
+      "id": "genshin-raiden-tea",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-raiden-tea/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "cc8d8e86ba7a3ab54d55f3d1501381fd40463a78186d076da3049044b631958b"
+    },
+    {
+      "id": "genshin-raiden-bloom",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-raiden-bloom/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "0f3d32f3d281f0e03b66acc1fa4b9e489a28a30b8358c3ef931dd664a4fe04c0"
+    },
+    {
+      "id": "genshin-raiden-bloom",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-raiden-bloom/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "0c000b7ea78ae06274c09c94bd22403f90760fbc5d50b5a2211d75988ab596de"
+    },
+    {
+      "id": "genshin-raiden-bloom",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-raiden-bloom/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "932614c1d810c4270850cce1697d57d437065b26f12057737a5c6761b03e16cd"
+    },
+    {
+      "id": "genshin-raiden-moon",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-raiden-moon/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "3607d284add5721e7943d0307111216d1461d75ca201256c607384466e1d7579"
+    },
+    {
+      "id": "genshin-raiden-moon",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-raiden-moon/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "717bec1217dccb5b04240ad95855c6c0a36ee9a818cbc8c567019a4cfe43ec8b"
+    },
+    {
+      "id": "genshin-raiden-moon",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-raiden-moon/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "da92050531cbc9129b6de73f096ab657ceec0d142ea5b8054bc4a8b27fe75c64"
+    },
+    {
+      "id": "genshin-furina-tea",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-furina-tea/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "3a6e1bae33868dd2bc33900cd9769d558a665b3efef5aa4787f3da9d9796e980"
+    },
+    {
+      "id": "genshin-furina-tea",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-furina-tea/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "4f0044c5f57f2b88139f65b5b1f6a5643bdcc7c8434a9b2d8d37d9d1c9cbb85a"
+    },
+    {
+      "id": "genshin-furina-tea",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-furina-tea/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "eb0c40a9e4a3e3cfafd54da97b7b94108335246d7014500b13cf99821c867bf3"
+    },
+    {
+      "id": "genshin-furina-bubble",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-furina-bubble/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "da126c7c9dfdd6e6a5a2c9b2da55b39d26684aea08b5c54e0ce69d64e77f82e7"
+    },
+    {
+      "id": "genshin-furina-bubble",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-furina-bubble/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "f5495448dd9ff45d0e9bc123742f97bd114aa1f0c474b42784a482c40d3b957d"
+    },
+    {
+      "id": "genshin-furina-bubble",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-furina-bubble/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "25d5f2d754fb505e69bd59a92ead1e5f3d70bcaf221805ef756c340fe1c8cce1"
+    },
+    {
+      "id": "genshin-furina-ribbon",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-furina-ribbon/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "d9d17e811a81d12204e56f9d40ad1165269671a57ef538fb1b20d9ea36ec2e6d"
+    },
+    {
+      "id": "genshin-furina-ribbon",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-furina-ribbon/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "96c8f98d2ab3eb800996f89f8b3d11c3f33aaa33e0cdf599f3d6a7d0ed12bff1"
+    },
+    {
+      "id": "genshin-furina-ribbon",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-furina-ribbon/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "ce0ba6ca598fef1beb4276cb4ed486ad91e5142dfb9d0072cd9bfb7574f27c3b"
+    },
+    {
+      "id": "genshin-nahida-leaf",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-nahida-leaf/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "73aa643c61b3721ab44cbeecc3b9962d0655630504d82cc7bf9212c3dd3e8f99"
+    },
+    {
+      "id": "genshin-nahida-leaf",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-nahida-leaf/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "0724e29a31c75a1ba9cd8c1a1a50a5832a75ee53aa3d0291b37345a596b58a11"
+    },
+    {
+      "id": "genshin-nahida-leaf",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-nahida-leaf/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "2af1b8b1dcaf55113b9017b9f6c5c67223ea49a37b7209e86bc54366f99c6aec"
+    },
+    {
+      "id": "genshin-nahida-clover",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-nahida-clover/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "27dd4611dfbd5337c1e520809de987482caa66e7340e4ea5d5ed76a5b404baca"
+    },
+    {
+      "id": "genshin-nahida-clover",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-nahida-clover/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "29bcacee63fa609037cf3296e458a896185e4f677a94cf838a46ad88a371d637"
+    },
+    {
+      "id": "genshin-nahida-clover",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-nahida-clover/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "e9a2597ba9d3bf7a898763cf5c6dcec78a7a51c7198a0372013f6ff37fae8db5"
+    },
+    {
+      "id": "genshin-nahida-dream",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-nahida-dream/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "a58fac0c53c983fccbe2f0819dc108ac87636439a83314f97587fabf06abbf51"
+    },
+    {
+      "id": "genshin-nahida-dream",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-nahida-dream/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "dc67440288258b31a961d2094b92765048d3834d3b84670c94caa6c6b581dfa3"
+    },
+    {
+      "id": "genshin-nahida-dream",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-nahida-dream/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "5e570e58dee5728ad84d71c2b6f4cdcea2fefde20e571e9be9c10146816542cb"
+    },
+    {
+      "id": "genshin-columbina-moon",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-columbina-moon/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "1958dbeaa17713d110de411f0d8f86e6bad5d4e46a3468651a5fea575988e457"
+    },
+    {
+      "id": "genshin-columbina-moon",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-columbina-moon/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "c241e720a39a26991768bf6693e73c29ceae6e4c0c146a394ee060b47ba98c76"
+    },
+    {
+      "id": "genshin-columbina-moon",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-columbina-moon/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "ff2328b0b323b673f2b1ca92e0a3977035c21890635a0f2f86dd6f9a9a409a65"
+    },
+    {
+      "id": "genshin-zhongli-tea",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-zhongli-tea/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "7b7bb69758919fa7daa4bcd602727228f93dd2fd9240613d82d3c00f5789a95a"
+    },
+    {
+      "id": "genshin-zhongli-tea",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-zhongli-tea/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "52e0cc189edc2375c180fcc1b1fb3abc2f1acd93e2b866166b1418013190d702"
+    },
+    {
+      "id": "genshin-zhongli-tea",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-zhongli-tea/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "1195920d6e566453ff6d62286ca197d188e39e9c5bd8aaec2a02594a8879e8e2"
+    },
+    {
+      "id": "genshin-neuvillette-tide",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-neuvillette-tide/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "f4dfaf7d34c1c53651bc3f07e01b986cf79909eafe8ba6760dd847cf2ee85deb"
+    },
+    {
+      "id": "genshin-neuvillette-tide",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-neuvillette-tide/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "857275edb054f6338990345d3a306991ef3f5e217b84f36e04c3389f5521d7fc"
+    },
+    {
+      "id": "genshin-neuvillette-tide",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-neuvillette-tide/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "9ab718e0222dccca49a53540b3f94e02d258d8e6b45f945e71d3c7e6f545a689"
+    },
+    {
+      "id": "genshin-arlecchino-ember",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-arlecchino-ember/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "8e89d2e8b1f990915baa406f8f7a2722e54ce8033a811a634d75c52ffaadeeff"
+    },
+    {
+      "id": "genshin-arlecchino-ember",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-arlecchino-ember/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "b2905c151a240942b9cd8891076b1ce47dfd911d570418a7570533e0c2a6fbd8"
+    },
+    {
+      "id": "genshin-arlecchino-ember",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-arlecchino-ember/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "799b33b89811ce641a2ea0e08d7bab83c70ebdd0296e32731364e2a4680d4e45"
+    },
+    {
+      "id": "genshin-flins-lantern",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-flins-lantern/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "397bfbebb56333281547a737ff944ae0ac29e93bd54168d313ad6741214d5d05"
+    },
+    {
+      "id": "genshin-flins-lantern",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-flins-lantern/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "b2d1742be552c6cf59fbec8498c798e78e96b396b18ca29e0bb3cf6016ffa2fe"
+    },
+    {
+      "id": "genshin-flins-lantern",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-flins-lantern/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "1218ace9683787e281fb56537898a81555cb6fbfd07b5c8231ad7de528540cf9"
+    }
+  ]
+}

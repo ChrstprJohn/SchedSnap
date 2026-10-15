@@ -1,0 +1,52 @@
+{
+  "provider": "built-in image_gen",
+  "id": "genshin-zhongli-tea",
+  "officialReferenceUrl": "https://genshin.hoyoverse.com/en/news/detail/6902",
+  "referenceDownloadUrl": "https://www.4gamer.net/games/486/G048621/20210428032/SS/014.jpg",
+  "referencePath": "documentation/genshin/references/zhongli.jpg",
+  "referenceNotes": "Official miHoYo full-body character art distributed to press; visible ©miHoYo attribution. Official announcement confirmed via web; its dynamic page did not expose image via parser.",
+  "assets": [
+    {
+      "device": "mobile",
+      "width": 1080,
+      "height": 2400,
+      "prompt": "Create portrait mobile wallpaper exactly1080x2400 pixels. Use case: stylized-concept. Opaque background artwork ONLY for a schedule wallpaper. Use attached official Zhongli illustration as identity reference only: one cute male Zhongli chibi with tousled dark brown hair and amber tips, amber eyes, diamond earring, long fitted dark brown/charcoal tailored coat with recognizable gold geometric trim, gloves, tiny boots. Calm friendly smile, seated cross-legged holding a tiny porcelain teacup in both hands; whole silhouette intact. Clean elegant hand-drawn chibi, simple soft cel shading, restrained detail, no excessive shiny highlights. Warm ivory/sand paper background. Subtle visual design: only three small muted amber diamond motifs near bottom/right edges, one VERY faint geometric corner line at lower edge, small pale stone/cloud shape near feet. These understated details give visual interest without a scene. No weapons, ornate scenery, dense patterns, glow, particles, text, letters,numbers,heading,timetable,cards,UI,logo,watermark,mockup,frame. Composition: top22% perfectly clear unmarked ivory for clock/date. Upper and middle65% plain quiet ivory for schedule. Character and ALL meaningful decoration are small, entirely confined to bottom25% (below75%canvas height) with comfortable bottom padding. Character height about20% canvas; center slightly right. Do not enlarge character to fill blank space. Full bleed opaque.",
+      "correctionPrompt": "Edit mobile wallpaper composition only. Reduce entire character,coat,teacup,stone/cloud,diamond and geometric line group proportionately to70% of current size and move to bottom footer. ALL hair and decorations must lie below65%canvasheight. Top65% completely plain ivory,top22% blank clock area. Keep full character, identity,pose,colors,linework,style,background texture unchanged. Do not crop/stretch. No text/UI.",
+      "destination": "public/wallpapers/scenic/genshin-zhongli-tea/mobile.png",
+      "status": "exported",
+      "originalSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-c55bd50f-37ba-40f4-98a8-7f9550e771fc.png",
+      "selectedSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-e8c75b48-bf9e-43ab-80a4-55a190fb7114.png",
+      "sha256": "7b7bb69758919fa7daa4bcd602727228f93dd2fd9240613d82d3c00f5789a95a",
+      "exportMethod": "scripts/package-sanrio-image.py; independently generated matching-ratio composition; authorized exact pixel export without cropping",
+      "inspection": "Entire silhouette visible, plain top22% clock/date area, portrait highest hair66-67%, laptop character begins66% and faint cloud62%; no text/UI."
+    },
+    {
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "prompt": "Create NEW independently recomposed tablet PORTRAIT wallpaper1600x2560. Use case: stylized-concept. Opaque background artwork ONLY for a schedule wallpaper. Use attached official Zhongli illustration as identity reference only: one cute male Zhongli chibi with tousled dark brown hair and amber tips, amber eyes, diamond earring, long fitted dark brown/charcoal tailored coat with recognizable gold geometric trim, gloves, tiny boots. Calm friendly smile, seated cross-legged holding a tiny porcelain teacup in both hands; whole silhouette intact. Clean elegant hand-drawn chibi, simple soft cel shading, restrained detail, no excessive shiny highlights. Warm ivory/sand paper background. Subtle visual design: only three small muted amber diamond motifs near bottom/right edges, one VERY faint geometric corner line at lower edge, small pale stone/cloud shape near feet. These understated details give visual interest without a scene. No weapons, ornate scenery, dense patterns, glow, particles, text, letters,numbers,heading,timetable,cards,UI,logo,watermark,mockup,frame. Reference mobile artwork defines SAME Zhongli identity,tea pose,palette,style. Tablet composition: top22% perfectly unmarked for clock/date. Top70% plain quiet ivory paper, ABSOLUTELY ALL hair,character,coat,props,stones,diamond motifs,corner line are below y=1850 (lower28%). Small seated character height20%canvas, centered at x1100,y2210, comfortably inside frame. No decoration in clock/schedule area. Do not enlarge subject.",
+      "correctionPrompt": "Edit composition ONLY: make Zhongli chibi character and ALL cloud/stone,diamond,corner-line accents 75% their present size, proportionately, and anchor at bottom right. Entire group including highest hair tip starts BELOW68% of image height; top65% completely plain ivory. Top22% perfectly blank clock region. Preserve seated tea pose,full silhouette,Zhongli identity,palette,linework,texture and quality. Do not crop/distort or add text/UI.",
+      "destination": "public/wallpapers/scenic/genshin-zhongli-tea/tablet.png",
+      "status": "exported",
+      "originalSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-895a8331-46af-48c3-9ad2-850602b21c28.png",
+      "selectedSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-328ddeff-72ac-4d1f-8e00-f0f98f742b34.png",
+      "sha256": "52e0cc189edc2375c180fcc1b1fb3abc2f1acd93e2b866166b1418013190d702",
+      "exportMethod": "scripts/package-sanrio-image.py; independently generated matching-ratio composition; authorized exact pixel export without cropping",
+      "inspection": "Entire silhouette visible, plain top22% clock/date area, portrait highest hair66-67%, laptop character begins66% and faint cloud62%; no text/UI."
+    },
+    {
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "prompt": "Create NEW independently recomposed LANDSCAPE laptop wallpaper1920x1080. Use case: stylized-concept. Opaque background artwork ONLY for a schedule wallpaper. Use attached official Zhongli illustration as identity reference only: one cute male Zhongli chibi with tousled dark brown hair and amber tips, amber eyes, diamond earring, long fitted dark brown/charcoal tailored coat with recognizable gold geometric trim, gloves, tiny boots. Calm friendly smile, seated cross-legged holding a tiny porcelain teacup in both hands; whole silhouette intact. Clean elegant hand-drawn chibi, simple soft cel shading, restrained detail, no excessive shiny highlights. Warm ivory/sand paper background. Subtle visual design: only three small muted amber diamond motifs near bottom/right edges, one VERY faint geometric corner line at lower edge, small pale stone/cloud shape near feet. These understated details give visual interest without a scene. No weapons, ornate scenery, dense patterns, glow, particles, text, letters,numbers,heading,timetable,cards,UI,logo,watermark,mockup,frame. Reference mobile artwork defines SAME Zhongli identity,tea pose,palette,style. Wide composition: left68% uninterrupted quiet plain ivory paper for schedule. ABSOLUTELY ALL character,coat,hair,stones,diamond motifs,corner line entirely within rightmost30% (x1350 through1880). Small seated chibi height42%canvas,centered at x1640,y660. Full body intact generous padding,no decoration on left. NOT a crop or stretch of phone.",
+      "correctionPrompt": "Edit composition ONLY: shrink ENTIRE Zhongli character,full coat tails,teacup,cloud/stone,diamonds,corner line together proportionately to60% of their current size. Place this compact group within rightmost30% of wide canvas (left boundary70%,right edge97%). NO clouds,coat tassels or lines may extend left of65%canvaswidth; left65% completely plain ivory. Character must be visibly smaller and moved right. Preserve full silhouette,face,tea pose,identity,style,palette,paper texture. No crop or distort,no text,UI,cards.",
+      "destination": "public/wallpapers/scenic/genshin-zhongli-tea/laptop.png",
+      "status": "exported",
+      "originalSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-64146605-cf11-4a2b-ae3f-6ddbbcb75544.png",
+      "selectedSource": "C:/Users/QCU/.codex/generated_images/01a1357a-0bcf-70c3-8ab1-40a1215f3ad4/exec-58a231bd-37c1-479a-a56a-375d3db48282.png",
+      "sha256": "1195920d6e566453ff6d62286ca197d188e39e9c5bd8aaec2a02594a8879e8e2",
+      "exportMethod": "scripts/package-sanrio-image.py; independently generated matching-ratio composition; authorized exact pixel export without cropping",
+      "inspection": "Entire silhouette visible, plain top22% clock/date area, portrait highest hair66-67%, laptop character begins66% and faint cloud62%; no text/UI."
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+import { galleryCategories, matchesGalleryCategory } from '../config/collections.js';
+
 /**
  * Normalizes a string for search comparison (lowercase, trims, strips diacritics).
  */
@@ -122,7 +124,7 @@ export function scoreSearchPattern(query, target) {
 }
 
 /**
- * Searches and ranks wallpaper templates based on pattern matching against title/name.
+ * Searches and ranks wallpaper templates by name, collection and gallery category.
  * Sorts from highest score (most relevant) to lowest score (least relevant).
  */
 export function searchWallpaperTemplates(templates, query) {
@@ -135,7 +137,9 @@ export function searchWallpaperTemplates(templates, query) {
   const scored = [];
   for (const template of templates) {
     const title = template.name || template.title || '';
-    const score = scoreSearchPattern(trimmed, title);
+    const categories = galleryCategories.filter(category => category.id !== 'all' && matchesGalleryCategory(template, category.id));
+    const categoryTerms = [template.collection, template.mascotStyle === 'pixel' ? 'pixel art' : template.mascotStyle, ...categories.flatMap(category => [category.id.replaceAll('-', ' '), category.name, ...(category.searchTerms || [])])];
+    const score = Math.max(scoreSearchPattern(trimmed, title), ...categoryTerms.map(term => scoreSearchPattern(trimmed, term) * 0.8));
     if (score > 0) {
       scored.push({ template, score });
     }

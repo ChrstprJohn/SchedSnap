@@ -1,0 +1,581 @@
+{
+  "backend": "Native Canvas with project font; non-hundred CSS weights approximated for QA",
+  "renders": [
+    {
+      "id": "genshin-card-hutao-spirit",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin-namecards-2/qa/genshin-card-hutao-spirit-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-card-hutao-spirit",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin-namecards-2/qa/genshin-card-hutao-spirit-mobile-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-hutao-spirit",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin-namecards-2/qa/genshin-card-hutao-spirit-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1360.7314285714285
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-card-hutao-spirit",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin-namecards-2/qa/genshin-card-hutao-spirit-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1982.7318857142857
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-hutao-spirit",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin-namecards-2/qa/genshin-card-hutao-spirit-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-hutao-spirit",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin-namecards-2/qa/genshin-card-hutao-spirit-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-navia-rosula",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin-namecards-2/qa/genshin-card-navia-rosula-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-card-navia-rosula",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin-namecards-2/qa/genshin-card-navia-rosula-mobile-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-navia-rosula",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin-namecards-2/qa/genshin-card-navia-rosula-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1360.7314285714285
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-card-navia-rosula",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin-namecards-2/qa/genshin-card-navia-rosula-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1982.7318857142857
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-navia-rosula",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin-namecards-2/qa/genshin-card-navia-rosula-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-navia-rosula",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin-namecards-2/qa/genshin-card-navia-rosula-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-varesa-powerhouse",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin-namecards-2/qa/genshin-card-varesa-powerhouse-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-card-varesa-powerhouse",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin-namecards-2/qa/genshin-card-varesa-powerhouse-mobile-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-varesa-powerhouse",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin-namecards-2/qa/genshin-card-varesa-powerhouse-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1360.7314285714285
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-card-varesa-powerhouse",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin-namecards-2/qa/genshin-card-varesa-powerhouse-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1982.7318857142857
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-varesa-powerhouse",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin-namecards-2/qa/genshin-card-varesa-powerhouse-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-varesa-powerhouse",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin-namecards-2/qa/genshin-card-varesa-powerhouse-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-citlali-opalstar",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin-namecards-2/qa/genshin-card-citlali-opalstar-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-card-citlali-opalstar",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin-namecards-2/qa/genshin-card-citlali-opalstar-mobile-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-citlali-opalstar",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin-namecards-2/qa/genshin-card-citlali-opalstar-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1360.7314285714285
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-card-citlali-opalstar",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin-namecards-2/qa/genshin-card-citlali-opalstar-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1982.7318857142857
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-citlali-opalstar",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin-namecards-2/qa/genshin-card-citlali-opalstar-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-citlali-opalstar",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin-namecards-2/qa/genshin-card-citlali-opalstar-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-skirk-lone-shadow",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin-namecards-2/qa/genshin-card-skirk-lone-shadow-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-card-skirk-lone-shadow",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin-namecards-2/qa/genshin-card-skirk-lone-shadow-mobile-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-skirk-lone-shadow",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin-namecards-2/qa/genshin-card-skirk-lone-shadow-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1360.7314285714285
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-card-skirk-lone-shadow",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin-namecards-2/qa/genshin-card-skirk-lone-shadow-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1982.7318857142857
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-skirk-lone-shadow",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin-namecards-2/qa/genshin-card-skirk-lone-shadow-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-skirk-lone-shadow",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin-namecards-2/qa/genshin-card-skirk-lone-shadow-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-zhongli-planet",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin-namecards-2/qa/genshin-card-zhongli-planet-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-card-zhongli-planet",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin-namecards-2/qa/genshin-card-zhongli-planet-mobile-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-zhongli-planet",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin-namecards-2/qa/genshin-card-zhongli-planet-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1360.7314285714285
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-card-zhongli-planet",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin-namecards-2/qa/genshin-card-zhongli-planet-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1982.7318857142857
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-zhongli-planet",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin-namecards-2/qa/genshin-card-zhongli-planet-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-card-zhongli-planet",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin-namecards-2/qa/genshin-card-zhongli-planet-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    }
+  ]
+}

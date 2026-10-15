@@ -1,0 +1,197 @@
+{
+  "provider": "built-in image_gen",
+  "createdAt": "2026-10-14T06:38:39.690Z",
+  "sizing": "Six independent compositions. Exact pixel export via existing package-sanrio-image.py, same aspect ratio, Lanczos normalization, no cropping.",
+  "referencesInspected": true,
+  "assets": [
+    {
+      "id": "genshin-card-raiden-lightning",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-card-raiden-lightning/mobile.png",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13917-3937-74a1-a22c-2a1dea7a4b37\\exec-79707f1d-f452-42e2-b4f0-51402caed05e.png",
+      "prompt": "Use case: stylized-concept. Generate original character-free Genshin Raiden inspired flat graphic namecard wallpaper, portrait 1080x2400 (9:20), full bleed opaque. References: first image palette and flowing graphic cloth thunder bands, sakura blossoms; second image use ONLY FOURTH symbol top to bottom, Electro three-bladed curved spiral, faithful shape. Deep navy central field, violet/lavender ribbons, maroon patterned bands, muted antique gold. Keep top 22 percent CENTER almost plain navy for clock, upper-middle center through 60 percent low contrast for schedule. ONE prominent round gold/violet Electro Vision disc below 65 percent, entirely visible, three curved spiral blades faithful to fourth symbol, not another elemental symbol. Graphic cloth flow and sakura motifs along outer edges and bottom, subtly patterned. Clean sophisticated flat vector-like illustration, minimal texture. NO characters, faces, bodies, silhouettes, chibi, letters, text, numbers, timetable, cards, headings, UI, logos, copyright marks, watermark, frames.",
+      "references": [
+        "C:/Users/QCU/AppData/Local/Temp/codex-clipboard-36b88fe8-16f3-41c8-b913-3a134e4c1d8c.png",
+        "C:/Users/QCU/AppData/Local/Temp/codex-clipboard-48a0821f-40f3-4939-974d-aaca062b6e0d.png"
+      ],
+      "width": 1080,
+      "height": 2400,
+      "inspection": {
+        "nativeVisualChecked": true,
+        "noCharacters": true,
+        "noTextOrUI": true,
+        "noWatermark": true,
+        "clockTopCenterQuiet": true,
+        "scheduleCenterQuiet": true,
+        "mainMotif": "Faithful three-bladed Electro disc below60%.",
+        "concerns": "Dense schedule overlays may cover minor perimeter decoration; main motif placement passes."
+      },
+      "sourceDimensions": [
+        841,
+        1870
+      ],
+      "dimensionsValid": true,
+      "opaque": true,
+      "mode": "RGB",
+      "sha256": "17843836f8b3b5f41bfa64aa7a766ca50e181dc79c6e7f68ce84e9dab90e93ed",
+      "sourceSha256": "1fe11a0f9ba0e5b71d3c063503e7bc4a253d075eb6dac1d0996c4d277c14ed38"
+    },
+    {
+      "id": "genshin-card-raiden-lightning",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-card-raiden-lightning/tablet.png",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13917-3937-74a1-a22c-2a1dea7a4b37\\exec-07e70169-4062-4f0d-848d-a61c32ef490d.png",
+      "prompt": "Use case: stylized-concept. Generate NEW independently recomposed tablet portrait1600x2560 aspect5:8 Raiden Electro flat graphic wallpaper. First image style reference only: navy,violet,maroon,antique gold flowing patterned cloth/thunder ribbons,sakura; never stretch/crop it. Second image fourth symbol from top Electro three curved spiral blades motif guide. Top22% central clock area plain navy; upper-middle central schedule area low contrast through60%. ONE fully visible gold/violet Electro round disc centered at77% height, sweeping gold/violet flow lower third, blossoms bottom corners, slim asymmetrical perimeter bands. Faithful three-bladed spiral. Fullbleed opaque. NO character,face,body,silhouette,chibi,text,letters,numbers,timetable,cards,heading,UI,logo,copyright,watermark.",
+      "references": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13917-3937-74a1-a22c-2a1dea7a4b37\\exec-79707f1d-f452-42e2-b4f0-51402caed05e.png",
+        "C:/Users/QCU/AppData/Local/Temp/codex-clipboard-48a0821f-40f3-4939-974d-aaca062b6e0d.png"
+      ],
+      "width": 1600,
+      "height": 2560,
+      "inspection": {
+        "nativeVisualChecked": true,
+        "noCharacters": true,
+        "noTextOrUI": true,
+        "noWatermark": true,
+        "clockTopCenterQuiet": true,
+        "scheduleCenterQuiet": true,
+        "mainMotif": "Faithful three-bladed Electro disc below60%.",
+        "concerns": "Dense schedule overlays may cover minor perimeter decoration; main motif placement passes."
+      },
+      "sourceDimensions": [
+        992,
+        1586
+      ],
+      "dimensionsValid": true,
+      "opaque": true,
+      "mode": "RGB",
+      "sha256": "d9626e8e3e916bd8c96cc9d3b20fe1564b2453eb56c6f9a0075a7fb6000ec952",
+      "sourceSha256": "4d1c5a09e7965744d14f691722a301513d1909e6cd808c2fb22da2c0320c2a9a"
+    },
+    {
+      "id": "genshin-card-raiden-lightning",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-card-raiden-lightning/laptop.png",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13917-3937-74a1-a22c-2a1dea7a4b37\\exec-8a7ad577-902a-4990-b83f-8f8a1c8b6fd4.png",
+      "prompt": "Use case: stylized-concept. NEW independently recomposed landscape1920x1080 aspect16:9 Raiden Electro flat graphic namecard wallpaper. First image STYLE only, do not stretch/crop. Navy,violet,maroon,antique gold,patterned flowing cloth/thunder ribbons,sakura. Second image FOURTH symbol from top Electro three curved spiral blades. Landscape: LEFT62% is spacious quiet nearly plain navy for schedule; top22% CENTER quiet navy for clock. ONE large fully visible faithful gold/violet Electro round Vision disc at x81%,y62%, entirely within RIGHT35%. Arrange bold gold/violet flow around disc and along bottom/perimeter; sakura bottomright and small far corners. All major motifs right side. Crisp flatgraphic illustration. Fullbleed opaque. No characters,faces,bodies,silhouettes,chibi,text,letters,numbers,timetable,cards,headings,UI,logo,copyright,watermark.",
+      "references": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13917-3937-74a1-a22c-2a1dea7a4b37\\exec-79707f1d-f452-42e2-b4f0-51402caed05e.png",
+        "C:/Users/QCU/AppData/Local/Temp/codex-clipboard-48a0821f-40f3-4939-974d-aaca062b6e0d.png"
+      ],
+      "width": 1920,
+      "height": 1080,
+      "inspection": {
+        "nativeVisualChecked": true,
+        "noCharacters": true,
+        "noTextOrUI": true,
+        "noWatermark": true,
+        "clockTopCenterQuiet": true,
+        "scheduleCenterQuiet": true,
+        "mainMotif": "Faithful three-bladed Electro disc within right35%.",
+        "concerns": "Dense schedule overlays may cover minor perimeter decoration; main motif placement passes."
+      },
+      "sourceDimensions": [
+        1672,
+        940
+      ],
+      "dimensionsValid": true,
+      "opaque": true,
+      "mode": "RGB",
+      "sha256": "6f7b49648983f63c4e9350aafbd1044a15bab03fccca0e27b80e11cc538572a1",
+      "sourceSha256": "278c478e0f74dd0fdedcb4d7f37a4893d53ecc014fb75dda2a3b9516db44877e"
+    },
+    {
+      "id": "genshin-sky-welkin",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-sky-welkin/mobile.png",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13917-3937-74a1-a22c-2a1dea7a4b37\\exec-af24db60-2711-4623-a7de-13eb1b164303.png",
+      "prompt": "Use case: stylized-concept. NEW original painterly anime background inspired by reference, portrait1080x2400 aspect9:20. Rich blue/lilac luminous night sky, gently painted soft cloud wisps ONLY perimeter, field of white fivepetal flowers filling lowerthird, TWO blue falling stars with short blue trails at upperright corner away from centerclock. Soft white luminous ribbon light curls around outerperimeter and bottom, no central crossings. Top22% CENTER and uppermiddle central area calm quiet lowcontrast blue for clock/schedule. Spacious dreamlike dusk sky, soft luminous petals, delicate brushwork. Character-free scenery. Fullbleed OPAQUE background. No people,characters,faces,bodies,silhouettes,chibi,figure,human,hands,feet. No letters,text,numbers,timetable,cards,headings,UI,logos,miHoYo copyrightmark,watermark,frame. Reference for mood only create new composition.",
+      "references": [
+        "C:/Users/QCU/AppData/Local/Temp/codex-clipboard-8ef172ad-1aa3-4cf4-bb1b-829820216cdc.png"
+      ],
+      "width": 1080,
+      "height": 2400,
+      "inspection": {
+        "nativeVisualChecked": true,
+        "noCharacters": true,
+        "noTextOrUI": true,
+        "noWatermark": true,
+        "clockTopCenterQuiet": true,
+        "scheduleCenterQuiet": true,
+        "mainMotif": "Two blue falling stars at upper-right; white flower field below, quiet sky center.",
+        "concerns": "Dense schedule overlays may cover minor perimeter decoration; main motif placement passes."
+      },
+      "sourceDimensions": [
+        841,
+        1870
+      ],
+      "dimensionsValid": true,
+      "opaque": true,
+      "mode": "RGB",
+      "sha256": "9e41bb84d6e77822b1d4ce38777ce7bbaefca9cf4950ad08111f3156852b473c",
+      "sourceSha256": "59f954998a1d9eebb888dd98b7c02c76e7773e53ba6fcb8620f7600f02a7c8ee"
+    },
+    {
+      "id": "genshin-sky-welkin",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-sky-welkin/tablet.png",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13917-3937-74a1-a22c-2a1dea7a4b37\\exec-65ac8383-926c-4023-a72b-b14c2cbf7472.png",
+      "prompt": "Use case: stylized-concept. NEW independently recomposed tablet portrait1600x2560 aspect5:8 painterly anime night sky wallpaper. Image is STYLE reference only; do not stretch/crop. Rich cobalt blue/lilac sky, calm generous lowcontrast CENTRAL upper/middle sky through60%, top22% CENTER quiet forclock. Soft pale blue/lilac clouds at sideperimeter, white fivepetal flowerfield lowerthird at sloping horizon, TWO blue falling stars at UPPERRIGHT corner away from clock, delicate soft white luminous ribbons curl along sideperimeter and bottom only. Original dreamlike luminous painterly brushwork matching reference mood. Character-free scenery, fullbleed OPAQUE. No people,characters,faces,bodies,silhouettes,chibi,hands,figures,text,letters,numbers,timetable,cards,headings,UI,logos,copyright,watermark,frame.",
+      "references": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13917-3937-74a1-a22c-2a1dea7a4b37\\exec-af24db60-2711-4623-a7de-13eb1b164303.png"
+      ],
+      "width": 1600,
+      "height": 2560,
+      "inspection": {
+        "nativeVisualChecked": true,
+        "noCharacters": true,
+        "noTextOrUI": true,
+        "noWatermark": true,
+        "clockTopCenterQuiet": true,
+        "scheduleCenterQuiet": true,
+        "mainMotif": "Two blue falling stars at upper-right; white flower field below, quiet sky center.",
+        "concerns": "Dense schedule overlays may cover minor perimeter decoration; main motif placement passes."
+      },
+      "sourceDimensions": [
+        992,
+        1586
+      ],
+      "dimensionsValid": true,
+      "opaque": true,
+      "mode": "RGB",
+      "sha256": "9b88ce088efa11dcdc1d412075fc764fc5ef952e84262374a5b67390f45528c6",
+      "sourceSha256": "367df36c6b25c96f2fdfc253e1e1085bfe71c8222c60ce278c224431382904fb"
+    },
+    {
+      "id": "genshin-sky-welkin",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-sky-welkin/laptop.png",
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a13917-3937-74a1-a22c-2a1dea7a4b37\\exec-5f1838fb-8f30-4b8b-8157-87891bd5c407.png",
+      "prompt": "Use case: stylized-concept. NEW independently recomposed landscape1920x1080 aspect16:9 painterly anime night sky wallpaper. First image STYLE reference only; never stretch/crop. Rich cobalt/lilac night sky calm and lowcontrast across LEFT62% for schedule, top22% CENTER quiet forclock. Landscape flow: white fivepetal flowerfield lowerthird, taller blossoms lowright foreground; soft pale clouds at farperimeter with mild lilac horizon. TWO blue falling stars with short trails at UPPERRIGHT, fully outside central clock andleft schedule. Soft luminous white ribbon only along outerright edge/bottomleft corner; no crossing leftupper schedule. Original dreamlike soft painterly anime brushwork. Fullbleed OPAQUE character-free scenery. No characters,people,faces,bodies,silhouettes,chibi,hands,figures,text,letters,numbers,timetable,cards,headings,UI,logos,copyright,watermark,frame.",
+      "references": [
+        "C:\\Users\\QCU\\.codex\\generated_images\\01a13917-3937-74a1-a22c-2a1dea7a4b37\\exec-af24db60-2711-4623-a7de-13eb1b164303.png"
+      ],
+      "width": 1920,
+      "height": 1080,
+      "inspection": {
+        "nativeVisualChecked": true,
+        "noCharacters": true,
+        "noTextOrUI": true,
+        "noWatermark": true,
+        "clockTopCenterQuiet": true,
+        "scheduleCenterQuiet": true,
+        "mainMotif": "Two blue falling stars at upper-right; white flower field below, quiet sky center.",
+        "concerns": "Dense schedule overlays may cover minor perimeter decoration; main motif placement passes."
+      },
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "dimensionsValid": true,
+      "opaque": true,
+      "mode": "RGB",
+      "sha256": "2553839b20d0df3177020282c9cf6ad88975f5adc0c1793866c9cf20a9708b12",
+      "sourceSha256": "824f8404efd01e23e6d4c5fed2bbc4df48e42be27ce8fda7c508b7c287ccdec2"
+    }
+  ]
+}
