@@ -14,9 +14,9 @@ if(!cloudConfigured(process.env))throw new Error('Cloudinary is not configured.'
 const store=createCatalogStore(process.env),catalog=await store.read(true);
 const existing=new Set(catalog.templates.map(t=>t.id)),publishedAt=new Date().toISOString();
 const onlyIndex=process.argv.indexOf('--only');
-const onlyId=onlyIndex<0?null:process.argv[onlyIndex+1];
-if(onlyIndex>=0&&!ghibliTemplates.some(t=>t.id===onlyId))throw new Error('Unknown Ghibli design ID.');
-const additions=ghibliTemplates.filter(t=>(!onlyId||t.id===onlyId)&&!existing.has(t.id)).map(t=>{
+const onlyIds=onlyIndex<0?null:(process.argv[onlyIndex+1]||'').split(',');
+if(onlyIds&&onlyIds.some(id=>!ghibliTemplates.some(t=>t.id===id)))throw new Error('Unknown Ghibli design ID.');
+const additions=ghibliTemplates.filter(t=>(!onlyIds||onlyIds.includes(t.id))&&!existing.has(t.id)).map(t=>{
  const deviceImages=Object.fromEntries(Object.entries(t.deviceImages).map(([device,path])=>{
   const asset=manifest[path];
   if(!asset?.url||asset.cloud!==process.env.CLOUDINARY_CLOUD_NAME)throw new Error(`Upload missing for ${path}.`);
