@@ -9,9 +9,11 @@ related_targets: ["src/utils/canvasHelpers.js","src/pages/ScheduleWallpaper/Sche
 
 Your wallpaper exposes layout choices above Customize appearance. Stacked days remains the default. Mobile offers Stacked days and Timeline; tablet offers Stacked days, Day cards, and Timeline; laptop offers Stacked days, Day cards, and Weekly timetable.
 
-Day cards pairs days in reading order, connects the dots beside meeting times, and uses a full-width final card when the number of occupied days is odd. Notes is removed. Timeline connects full weekday headings along a vertical rail and uses open meeting rows with horizontal divider lines instead of containers. Its type grows to use available space within bounded fitting limits. Mobile uses wider rows and compact gaps for larger readable text; tablet Timeline geometry is unchanged.
+Day cards pairs days in reading order, connects the dots beside meeting times, and uses a full-width final card when the number of occupied days is odd. Notes is removed. Timeline connects full weekday headings along a vertical rail and uses open meeting rows with horizontal divider lines instead of containers. Its type grows to use available space within bounded fitting limits. Mobile and tablet use wider portrait rows and compact gaps for larger readable text.
 
 On the 1080 × 2400 mobile canvas, Timeline rows start at x36 and span 1008px, with schedule top y640 and heading y530 before position adjustments. Base type fits from 64px down to 28px. Meeting gaps are 16px, added meeting padding is 12px, day padding is 16px, and the heading gap is 12px. The earlier phone editor preview enlargement remains in place.
+
+Portrait-tablet Timeline uses a 94% design column, yielding effective rows up to about 83.5% of canvas width before additional fitting, increased from about 72.9%. Its height budget is 68%, subject to existing artwork and footer limits. Tablet Timeline fits base type from 64px down to 28px with 20px meeting gaps, 16px day padding, and a 12px heading gap, retaining Space between days. Portrait upward movement keeps the heading top at least 18% down the canvas to protect the clock area. Landscape Timeline also uses compact rows, retaining its existing 65% design column.
 
 Mobile Timeline also reserves 224px for rooms to reduce wrapping. Horizontal movement includes the weekday ring radius and stroke in its bounds; vertical movement preserves a title baseline of at least y500 under ordinary offsets, keeping the sample clock area clear.
 
@@ -29,7 +31,7 @@ STORY: Choose a device-supported layout, distinguish subjects at a glance, adjus
 
 FIRST VIEWPORT: Retain the existing preview/download composition. Below Edit classes and Change design, show native radio choices with schematic thumbnails, then Customize appearance. Third choices occupy a full row.
 
-FORM: Precisely specified extension of the established Operate surface; no new identity or concept seed. Timeline follows connected weekday markers and separate time/subject/room columns. Weekly timetable follows the supplied weekday-column and time-axis reference. Honor the request to meet in the middle: occupy useful space and scale the schedule well while retaining room for the design background. Use balanced general margins rather than artwork-specific fitting. Portrait-tablet Timeline is capped at 62% of wallpaper height; mobile starts with an 83% bottom limit and uses available area for dense schedules before blocking overflow.
+FORM: Precisely specified extension of the established Operate surface; no new identity or concept seed. Timeline follows connected weekday markers and separate time/subject/room columns. Weekly timetable follows the supplied weekday-column and time-axis reference. Honor the request to meet in the middle: occupy useful space and scale the schedule well while retaining room for the design background. Use balanced general margins rather than artwork-specific fitting. Portrait-tablet Timeline uses a 94% design column and a 68% height budget, subject to artwork and footer limits; mobile starts with an 83% bottom limit and uses available area for dense schedules before blocking overflow.
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 
@@ -39,4 +41,6 @@ Tests cover weekday order, preserved meetings and weekends, connected meeting do
 
 Timeline divider follow-up: open rows replaced all meeting containers. Horizontal lines in the selected line color separate successive meetings, including across weekdays, with no trailing line after the final meeting. That change retained scale, spacing, typography, and the weekday rail; the later compact mobile update below supersedes its mobile geometry. The follow-up build, lint, and eight focused tests passed. The rendered capture is `.impeccable/review/timeline-dividers.png`.
 
-Compact mobile Timeline and layout-specific controls follow-up: build, lint, and 10 renderer tests passed, including a dense 10-meeting mobile schedule and preview/export equivalence. Tablet Timeline and the earlier phone editor preview enlargement remain unchanged. No new artwork or tokens were introduced.
+Compact mobile Timeline and layout-specific controls follow-up: build, lint, and 10 renderer tests passed, including a dense 10-meeting mobile schedule and preview/export equivalence. At this mobile follow-up, tablet Timeline was unchanged; the later tablet update supersedes that geometry. The earlier phone editor preview enlargement remains in place. No new artwork or tokens were introduced.
+
+Tablet Timeline space follow-up: 11 focused renderer tests passed after widening the portrait layout, increasing its height budget, compacting tablet rows, and protecting the clock zone. Existing tablet spacing controls, mobile geometry, and artwork are retained.

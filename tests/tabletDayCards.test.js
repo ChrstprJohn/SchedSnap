@@ -113,7 +113,7 @@ test('Timeline grows type for available space, separates multiple meetings, and 
     assert.equal(layout.overflow, false);
     assert.equal(containers.length, 0);
     assert.equal(lines.filter(line => line[1] === line[3]).length, 9);
-    for (const plan of layout.plans) assert.ok(plan.entries[1].y - plan.entries[0].bottom >= (resolution.id === 'mobile' ? 16 : 28));
+    for (const plan of layout.plans) assert.ok(plan.entries[1].y - plan.entries[0].bottom >= (resolution.id === 'mobile' ? 16 : 20));
   }
 });
 
@@ -141,6 +141,21 @@ test('mobile Timeline uses wider rows and larger type with compact readable gaps
     }
   }
   assert.deepEqual(render(sampleSchedule, { scheduleLayout: 'timeline' }, { ...mobile, width: 540, height: 1200 }).layout, layout);
+});
+
+test('tablet Timeline uses more width, larger type and compact rows within its wallpaper bounds', () => {
+  const { layout } = render(sampleSchedule, { scheduleLayout: 'timeline', verticalPosition: -35 });
+  assert.equal(layout.overflow, false);
+  assert.ok(layout.scheduleBounds.width > 1920 * 0.83);
+  assert.ok(layout.size >= 54);
+  assert.ok(layout.scheduleBounds.height <= 3072 * 0.68);
+  assert.ok(layout.scheduleBounds.y + layout.scheduleBounds.height <= 3072 * 0.965);
+  assert.ok(layout.scheduleBounds.y + 12 * layout.scheduleBounds.width / 1244 >= 3072 * 0.18);
+  for (const amount of [-100, 100]) {
+    const moved = render(sampleSchedule, { scheduleLayout: 'timeline', verticalPosition: amount }).layout;
+    assert.equal(moved.overflow, false);
+    assert.ok(moved.scheduleBounds.y + moved.scheduleBounds.height <= 3072 * 0.965 + 0.001);
+  }
 });
 
 test('weekly timetable places blocks by time, includes weekend days, and shares preview/export geometry', () => {

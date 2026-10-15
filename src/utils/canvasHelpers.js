@@ -81,7 +81,7 @@ export function layoutSchedule(ctx, schedule, template, height = 2400, options =
     const subjectLineHeight = size * 1.2;
     const detailLineHeight = size * 0.65 * 1.25;
     const timeLineHeight = size * (timeline ? 0.78 : 0.65) * 1.3;
-    const detailGap = 6, entryGap = compactTimeline ? 16 : timeline ? 28 : size >= 38 ? 20 : 8;
+    const detailGap = 6, entryGap = compactTimeline ? options.entryGap ?? 16 : timeline ? 28 : size >= 38 ? 20 : 8;
     const groupGap = timeline ? 16 + (options.groupGap ?? 16) * 0.4 : options.groupGap ?? 16;
     const cardPadding = compactTimeline ? 16 : size >= 38 ? 40 : 28;
     const codeGap = size >= 38 ? 4 : 2;
@@ -701,19 +701,19 @@ function drawDeviceWallpaper(canvas, { schedule, template, resolution, backgroun
   const rightInset = resolution.id === 'tablet' ? width * scheduleSideMargin(template, 'right') / 100 : 0;
   const dayCards = selectedLayout === 'day-cards';
   const timeline = selectedLayout === 'timeline';
-  const columnWidth = width * (weekly || dayCards && (!landscape || !hasCharacter) ? 0.94 : landscape ? 0.65 : 0.82);
+  const columnWidth = width * (weekly || timeline && !landscape || dayCards && (!landscape || !hasCharacter) ? 0.94 : landscape ? 0.65 : 0.82);
   const topOffset = height * scheduleTopMargin(template) / 100;
   const minTop = resolution.id === 'tablet' ? height * 0.22 : 0;
   const baseTop = Math.max(minTop, landscape ? footerCharacter ? height * 0.06 : 0 : height * 0.16);
   // Ghibli's portrait artwork occupies the footer; dense schedules retain
   // their meetings while fitting above the character stamps and faces.
   const availableHeight = Math.min(height * (landscape ? footerCharacter ? 0.6 : 0.88 : hasCharacter ? 0.62 : 0.82), height * 0.965 - baseTop,
-    timeline && !landscape ? height * 0.62 : weekly ? height * 0.78 : Infinity,
+    timeline && !landscape ? height * 0.68 : weekly ? height * 0.78 : Infinity,
     template.collection === 'ghibli' && !landscape && selectedLayout === 'stacked' ? height * 0.77 - baseTop : Infinity);
   const count = dayCards ? Math.ceil(groupSchedule(schedule).length / 2) : groupSchedule(schedule).length;
   const designWidth = dayCards || weekly ? 1900 : 1400;
   const groupGap = resolution.id === 'tablet' ? tabletBoxSpacing(template) : 16;
-  const layoutOptions = { top: 180, width: dayCards || weekly ? 1744 : 1244, timeWidth: 310, roomWidth: 210, minCardHeight: 130, groupGap, timeline };
+  const layoutOptions = { top: 180, width: dayCards || weekly ? 1744 : 1244, timeWidth: 310, roomWidth: 210, minCardHeight: 130, groupGap, timeline, ...(timeline ? { compactTimeline: true, entryGap: 20 } : {}) };
   const measureLayout = weekly ? layoutWeeklyTimetable : dayCards ? layoutDayCards : layoutSchedule;
   let scale = Math.min(columnWidth / designWidth, availableHeight / (240 + count * 146 + Math.max(0, count - 1) * (groupGap - 16)));
   if (weekly) scale = columnWidth / designWidth;
@@ -732,7 +732,8 @@ function drawDeviceWallpaper(canvas, { schedule, template, resolution, backgroun
   const x = baseX + movementShift(scheduleMovement(template, 'horizontal'), baseX + 78 * scale, width - (baseX + (78 + layoutOptions.width) * scale));
   const initialY = Math.max(baseTop, weekly ? height * 0.025 : landscape && !footerCharacter ? (height - contentHeight) / 2 : baseTop);
   const baseY = Math.max(0, Math.min(height * 0.965 - contentHeight, initialY + topOffset - height * scheduleBottomMargin(template) / 100));
-  const y = baseY + movementShift(scheduleMovement(template, 'vertical'), baseY, height * 0.965 - (baseY + contentHeight));
+  const upwardSpace = timeline && !landscape ? Math.max(0, baseY - (height * 0.18 - 12 * scale)) : baseY;
+  const y = baseY + movementShift(scheduleMovement(template, 'vertical'), upwardSpace, height * 0.965 - (baseY + contentHeight));
   layout.overflow ||= y + contentHeight > height * 0.965 + 0.001;
   const scheduleBounds = { x: x + 78 * scale, y, width: layoutOptions.width * scale, height: contentHeight };
   ctx.save(); ctx.translate(x, y); ctx.scale(scale, scale);
