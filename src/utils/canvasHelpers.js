@@ -526,13 +526,12 @@ function layoutWeeklyTimetable(ctx, schedule, template, height, options) {
   const valid = entries.filter(entry => Number.isFinite(entry.start) && Number.isFinite(entry.end) && entry.end > entry.start);
   const startMinute = Math.floor(Math.min(...valid.map(entry => entry.start), valid.length ? Infinity : 480) / 60) * 60;
   const endMinute = Math.max(startMinute + 240, Math.ceil(Math.max(...valid.map(entry => entry.end), startMinute + 60) / 60) * 60);
-  const bodyHeight = Math.max(640, (endMinute - startMinute) / 60 * 80);
-  const headerHeight = 76, timeWidth = 150;
+  const bodyHeight = Math.max(720, (endMinute - startMinute) / 60 * (options.hourHeight ?? 100));
+  const headerHeight = 76, timeWidth = 150, axisFooter = 24;
   const dayWidth = (options.width - timeWidth) / activeDays.length;
-  const gap = 8 + 16 / 20;
   const gridTop = options.top + headerHeight;
-  const plans = activeDays.map((day, index) => ({ day, x: 78 + timeWidth + index * dayWidth, y: options.top, width: dayWidth, height: headerHeight + bodyHeight, entries: [] }));
-  let overflow = valid.length !== entries.length;
+  const plans = activeDays.map((day, index) => ({ day, x: 78 + timeWidth + index * dayWidth, y: options.top, width: dayWidth, height: headerHeight + bodyHeight + axisFooter, entries: [] }));
+  let overflow = valid.length !== entries.length, contentOverflow = false;
   for (const plan of plans) {
     const meetings = valid.filter(entry => entry.day === plan.day).sort((a, b) => a.start - b.start || a.end - b.end);
     let cluster = [], laneEnds = [], clusterEnd = -1;
@@ -546,70 +545,85 @@ function layoutWeeklyTimetable(ctx, schedule, template, height, options) {
     }
     finishCluster();
     for (const meeting of meetings) {
-      const laneWidth = (plan.width - gap * 2) / meeting.lanes;
-      const box = { x: plan.x + gap + meeting.lane * laneWidth, y: gridTop + (meeting.start - startMinute) / (endMinute - startMinute) * bodyHeight + 3, width: laneWidth - 4, height: (meeting.end - meeting.start) / (endMinute - startMinute) * bodyHeight - 6 };
+      // Meetings are table cells: fill their day (or overlap lane) and meet
+      // exactly at the time boundaries, without floating-card gutters.
+      const laneWidth = plan.width / meeting.lanes;
+      const box = { x: plan.x + meeting.lane * laneWidth, y: gridTop + (meeting.start - startMinute) / (endMinute - startMinute) * bodyHeight, width: laneWidth, height: (meeting.end - meeting.start) / (endMinute - startMinute) * bodyHeight };
       let fitted;
       for (let baseSize = 42; baseSize >= 28; baseSize -= 2) {
         const size = baseSize * wallpaperFontScale(template), maxWidth = box.width - 24;
         font(ctx, size, 750, template.fontFamily);
         const codeLines = meeting.courseCode?.trim() ? wrapText(ctx, meeting.courseCode, maxWidth) : [];
-        const subjectSize = size * (codeLines.length ? 0.65 : 1);
+        const subjectSize = size * (codeLines.length ? 0.72 : 1);
         font(ctx, subjectSize, 500, template.fontFamily);
-        const subjectChars = Array.from(meeting.subject);
-        const truncated = ctx.measureText(meeting.subject).width > maxWidth;
-        if (truncated) while (subjectChars.length && ctx.measureText(`${subjectChars.join('')}…`).width > maxWidth) subjectChars.pop();
+        const subjectLines = wrapText(ctx, meeting.subject, maxWidth);
         font(ctx, size * 0.7, 500, template.fontFamily);
-        const timeLines = wrapText(ctx, `${formatWallpaperTime(meeting.startTime)}–${formatWallpaperTime(meeting.endTime)}`, maxWidth);
         const roomLines = meeting.room ? wrapText(ctx, meeting.room, maxWidth) : [];
         const detailLines = meeting.dateLabel ? wrapText(ctx, meeting.dateLabel, maxWidth) : [];
-        const subjectLines = codeLines.length ? [] : [subjectChars.join('') + (truncated ? '…' : '')];
-        const contentHeight = codeLines.length * size * 1.15 + subjectLines.length * subjectSize * 1.2 + (timeLines.length + roomLines.length + detailLines.length) * size * 0.85 + 12;
-        fitted = { ...meeting, ...box, size, subjectSize, codeLines, subjectLines, timeLines, roomLines, detailLines, contentHeight };
+        const subjectGap = codeLines.length ? 6 : 0;
+        const detailGap = roomLines.length || detailLines.length ? 8 : 0;
+        const contentHeight = codeLines.length * size * 1.15 + subjectGap + subjectLines.length * subjectSize * 1.2 + detailGap + (roomLines.length + detailLines.length) * size * 0.85;
+        fitted = { ...meeting, ...box, size, subjectSize, codeLines, subjectLines, roomLines, detailLines, subjectGap, detailGap, contentHeight };
         if (contentHeight <= box.height - 20 && maxWidth >= size * 2) break;
       }
-      overflow ||= fitted.contentHeight > box.height - 20 || box.width < fitted.size * 2 + 24;
+      const crowded = fitted.contentHeight > box.height - 20 || box.width < fitted.size * 2 + 24;
+      contentOverflow ||= crowded;
+      overflow ||= crowded;
       plan.entries.push(fitted);
     }
   }
   overflow ||= valid.some(entry => !activeDays.includes(entry.day));
-  const bottom = gridTop + bodyHeight;
-  return { plans, size: 42, startMinute, endMinute, timeWidth, dayWidth, gridTop, headerHeight, bodyHeight, gridX: 78, gridWidth: options.width, top: options.top, bottom, overflow: overflow || bottom > (options.limit ?? height) };
+  // A one-hour class can need more vertical room for its full subject name.
+  // Try one taller grid before the shared renderer fits it to the wallpaper.
+  if (contentOverflow && options.hourHeight === undefined && valid.every(entry => entry.end - entry.start >= 45)) return layoutWeeklyTimetable(ctx, schedule, template, height, { ...options, hourHeight: 160 });
+  const gridBottom = gridTop + bodyHeight, bottom = gridBottom + axisFooter;
+  return { plans, size: 42, startMinute, endMinute, timeWidth, dayWidth, gridTop, gridBottom, headerHeight, bodyHeight, gridX: 78, gridWidth: options.width, top: options.top, bottom, overflow: overflow || bottom > (options.limit ?? height) };
 }
 
 function drawWeeklyTimetable(ctx, template, layout) {
   const backdrop = frostedBackdrop(ctx, template);
-  const drawBox = box => {
-    const radius = template.containerShape === 'rounded' ? 12 : Math.min(30, box.height / 2);
-    if (backdrop) drawGlassCard(ctx, template, box, radius, backdrop);
-    else rectangle(ctx, box.x, box.y, box.width, box.height, radius, template.containerFill === false ? undefined : template.surface, template.containerBorder === false ? undefined : template.line);
+  const lineColor = colorInputValue(template.line);
+  const drawBox = (box, meeting = false) => {
+    const radius = meeting ? 0 : template.containerShape === 'rounded' ? 12 : 30;
+    if (backdrop) drawGlassCard(ctx, { ...template, containerBorder: false }, box, radius, backdrop);
+    else rectangle(ctx, box.x, box.y, box.width, box.height, radius, template.containerFill === false ? undefined : template.surface);
+    if (template.containerBorder !== false) {
+      ctx.save(); ctx.strokeStyle = lineColor; ctx.globalAlpha = meeting ? 0.85 : 0.7; ctx.lineWidth = meeting ? 2.5 : 2;
+      ctx.beginPath(); ctx.roundRect(box.x, box.y, box.width, box.height, radius); ctx.stroke(); ctx.restore();
+    }
   };
   ctx.save(); ctx.textBaseline = 'middle';
   drawBox({ x: layout.gridX, y: layout.top, width: layout.gridWidth, height: layout.bottom - layout.top });
   ctx.fillStyle = template.ink; ctx.textAlign = 'center'; font(ctx, 34, 650, template.fontFamily);
   ctx.fillText('Time', layout.gridX + layout.timeWidth / 2, layout.top + layout.headerHeight / 2);
   for (const plan of layout.plans) ctx.fillText(plan.day, plan.x + plan.width / 2, layout.top + layout.headerHeight / 2, plan.width - 16);
-  ctx.save(); ctx.strokeStyle = template.line; ctx.globalAlpha = 0.55; ctx.lineWidth = 1.5;
-  for (let minute = layout.startMinute; minute <= layout.endMinute; minute += 60) {
+  ctx.save(); ctx.strokeStyle = lineColor;
+  for (let minute = layout.startMinute; minute <= layout.endMinute; minute += 30) {
+    const hour = minute % 60 === 0;
+    ctx.globalAlpha = hour ? 0.6 : 0.3; ctx.lineWidth = hour ? 2 : 1;
+    ctx.setLineDash?.(hour ? [] : [6, 6]);
     const y = layout.gridTop + (minute - layout.startMinute) / (layout.endMinute - layout.startMinute) * layout.bodyHeight;
-    ctx.beginPath(); ctx.moveTo(layout.gridX, y); ctx.lineTo(layout.gridX + layout.gridWidth, y); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(layout.gridX + layout.timeWidth, y); ctx.lineTo(layout.gridX + layout.gridWidth, y); ctx.stroke();
   }
-  for (const plan of layout.plans) { ctx.beginPath(); ctx.moveTo(plan.x, layout.top); ctx.lineTo(plan.x, layout.bottom); ctx.stroke(); }
+  ctx.setLineDash?.([]); ctx.globalAlpha = 0.8; ctx.lineWidth = 2.5;
+  for (const plan of layout.plans) { ctx.beginPath(); ctx.moveTo(plan.x, layout.top); ctx.lineTo(plan.x, layout.gridBottom); ctx.stroke(); }
   ctx.restore(); ctx.fillStyle = template.ink; font(ctx, 26, 500, template.fontFamily);
-  for (let minute = layout.startMinute; minute < layout.endMinute; minute += 60) {
+  for (let minute = layout.startMinute; minute <= layout.endMinute; minute += 30) {
     const label = formatWallpaperTime(`${String(Math.floor(minute / 60)).padStart(2, '0')}:${String(minute % 60).padStart(2, '0')}`);
     const y = layout.gridTop + (minute - layout.startMinute) / (layout.endMinute - layout.startMinute) * layout.bodyHeight;
-    ctx.fillText(label, layout.gridX + layout.timeWidth / 2, y + 20);
+    ctx.fillText(label, layout.gridX + layout.timeWidth / 2, y);
   }
   for (const plan of layout.plans) for (const entry of plan.entries) {
-    drawBox(entry);
+    drawBox(entry, true);
     let y = entry.y + (entry.height - entry.contentHeight) / 2;
     const center = entry.x + entry.width / 2;
     ctx.textBaseline = 'top'; ctx.fillStyle = template.ink; font(ctx, entry.size, 750, template.fontFamily);
     entry.codeLines.forEach(line => { ctx.fillText(line, center, y); y += entry.size * 1.15; });
+    y += entry.subjectGap;
     font(ctx, entry.subjectSize, entry.codeLines.length ? 500 : 650, template.fontFamily);
     entry.subjectLines.forEach(line => { ctx.fillText(line, center, y); y += entry.subjectSize * 1.2; });
-    y += 8; font(ctx, entry.size * 0.7, 500, template.fontFamily);
-    [...entry.timeLines, ...entry.roomLines, ...entry.detailLines].forEach(line => { ctx.fillText(line, center, y); y += entry.size * 0.85; });
+    y += entry.detailGap; font(ctx, entry.size * 0.7, 500, template.fontFamily);
+    [...entry.roomLines, ...entry.detailLines].forEach(line => { ctx.fillText(line, center, y); y += entry.size * 0.85; });
   }
   ctx.restore();
   if (backdrop) { backdrop.width = 0; backdrop.height = 0; }

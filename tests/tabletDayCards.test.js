@@ -160,16 +160,25 @@ test('tablet Timeline uses more width, larger type and compact rows within its w
 
 test('weekly timetable places blocks by time, includes weekend days, and shares preview/export geometry', () => {
   const laptop = { id: 'laptop', width: 1920, height: 1080 };
-  const { layout, text } = render(sampleSchedule, { scheduleLayout: 'weekly' }, laptop);
+  const { layout, text, lines } = render(sampleSchedule, { scheduleLayout: 'weekly' }, laptop);
   assert.equal(layout.overflow, false);
   assert.equal(layout.plans.length, 5);
   assert.equal(layout.plans.flatMap(plan => plan.entries).length, 5);
   assert.ok(text.includes('Time') && text.includes('Monday') && text.includes('CS 101'));
   for (const plan of layout.plans) for (const entry of plan.entries) {
-    assert.ok(entry.x >= plan.x && entry.x + entry.width <= plan.x + plan.width);
-    assert.equal(entry.y - 3, layout.gridTop + (entry.start - layout.startMinute) / (layout.endMinute - layout.startMinute) * layout.bodyHeight);
+    assert.equal(entry.x, plan.x);
+    assert.equal(entry.width, plan.width);
+    assert.equal(entry.y, layout.gridTop + (entry.start - layout.startMinute) / (layout.endMinute - layout.startMinute) * layout.bodyHeight);
+    assert.ok(Math.abs(entry.y + entry.height - (layout.gridTop + (entry.end - layout.startMinute) / (layout.endMinute - layout.startMinute) * layout.bodyHeight)) < 0.001);
     assert.ok(entry.contentHeight <= entry.height - 20);
+    assert.equal(entry.subjectLines.join(' '), entry.subject);
+    assert.equal(entry.timeLines, undefined);
   }
+  assert.ok(text.includes('3:00 PM'));
+  assert.ok(text.includes('8:30 AM'));
+  assert.ok(!text.some(value => value.includes('AM–') || value.includes('PM–')));
+  const halfHourY = layout.gridTop + 30 / (layout.endMinute - layout.startMinute) * layout.bodyHeight;
+  assert.ok(lines.some(line => line[1] === halfHourY && line[3] === halfHourY));
   assert.deepEqual(render(sampleSchedule, { scheduleLayout: 'weekly' }, { ...laptop, width: 960, height: 540 }).layout, layout);
   const saturday = { subject: 'Research Lab', courseCode: 'IT 490', meetings: [{ day: 'Saturday', startTime: '09:00', endTime: '12:00', room: 'Lab 3' }] };
   const weekend = render({ classes: [...sampleSchedule.classes, saturday] }, { scheduleLayout: 'weekly' }, laptop).layout;
@@ -185,10 +194,25 @@ test('weekly timetable displays overlaps side by side, aligns adjacent classes, 
   const layout = render(schedule, { scheduleLayout: 'weekly' }, laptop).layout;
   assert.equal(layout.overflow, false);
   const [first, second, third] = layout.plans[0].entries;
-  assert.ok(first.x + first.width <= second.x);
+  assert.equal(first.x, layout.plans[0].x);
+  assert.equal(first.x + first.width, second.x);
+  assert.equal(second.x + second.width, layout.plans[0].x + layout.plans[0].width);
+  assert.equal(second.y + second.height, third.y);
   assert.equal(first.lanes, 2);
   assert.equal(second.lanes, 2);
   assert.equal(third.lanes, 1);
   assert.ok(third.width > first.width);
   assert.equal(render({ classes: [course('IT 401', '08:00', '08:05')] }, { scheduleLayout: 'weekly' }, laptop).layout.overflow, true);
+});
+
+test('weekly timetable gives one-hour classes enough room for subject names', () => {
+  const schedule = { classes: sampleSchedule.classes.map((course, index) => index ? course : { ...course, meetings: [{ ...course.meetings[0], endTime: '09:00' }] }) };
+  const resolution = { id: 'laptop', width: 1920, height: 1080 };
+  const { layout } = render(schedule, { scheduleLayout: 'weekly' }, resolution);
+  assert.equal(layout.overflow, false);
+  for (const entry of layout.plans.flatMap(plan => plan.entries)) {
+    assert.equal(entry.subjectLines.join(' '), entry.subject);
+    assert.ok(entry.contentHeight <= entry.height - 20);
+  }
+  assert.deepEqual(render(schedule, { scheduleLayout: 'weekly' }, { ...resolution, width: 960, height: 540 }).layout, layout);
 });
