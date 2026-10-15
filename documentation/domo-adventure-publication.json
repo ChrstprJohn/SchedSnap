@@ -1,0 +1,167 @@
+{
+  "verifiedAt": "2026-10-15T15:10:46.028Z",
+  "revision": "57921a2d-3dcd-4fc3-9ea3-16a4619394e0",
+  "verified": [
+    {
+      "id": "domo-desk-peek",
+      "collection": "domo",
+      "status": "published",
+      "publishedAt": "2026-10-15T15:09:01.907Z",
+      "deliveries": [
+        {
+          "device": "mobile",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073253/schedsnap/wallpapers/scenic/domo-desk-peek/mobile-93189e969fd6822d.png",
+          "status": 200
+        },
+        {
+          "device": "tablet",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073254/schedsnap/wallpapers/scenic/domo-desk-peek/tablet-3fb0a76f046a7e4a.png",
+          "status": 200
+        },
+        {
+          "device": "laptop",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073252/schedsnap/wallpapers/scenic/domo-desk-peek/laptop-86258e161ecda74e.png",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "domo-taped-glasses",
+      "collection": "domo",
+      "status": "published",
+      "publishedAt": "2026-10-15T15:09:01.907Z",
+      "deliveries": [
+        {
+          "device": "mobile",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073256/schedsnap/wallpapers/scenic/domo-taped-glasses/mobile-510f48e326a208c1.png",
+          "status": 200
+        },
+        {
+          "device": "tablet",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073258/schedsnap/wallpapers/scenic/domo-taped-glasses/tablet-44daca20b8c91b5e.png",
+          "status": 200
+        },
+        {
+          "device": "laptop",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073258/schedsnap/wallpapers/scenic/domo-taped-glasses/laptop-812532b8e271739a.png",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "adventure-jake-face",
+      "collection": "adventure-time",
+      "status": "published",
+      "publishedAt": "2026-10-15T15:09:01.907Z",
+      "deliveries": [
+        {
+          "device": "mobile",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073246/schedsnap/wallpapers/scenic/adventure-jake-face/mobile-87d8a21468b28b2f.png",
+          "status": 200
+        },
+        {
+          "device": "tablet",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073248/schedsnap/wallpapers/scenic/adventure-jake-face/tablet-cbde8e53a4d7ddbe.png",
+          "status": 200
+        },
+        {
+          "device": "laptop",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073250/schedsnap/wallpapers/scenic/adventure-jake-face/laptop-a3cee80edd6f97ad.png",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "adventure-finn-smile",
+      "collection": "adventure-time",
+      "status": "published",
+      "publishedAt": "2026-10-15T15:09:01.907Z",
+      "deliveries": [
+        {
+          "device": "mobile",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073242/schedsnap/wallpapers/scenic/adventure-finn-smile/mobile-f8c47afd5eb4922f.png",
+          "status": 200
+        },
+        {
+          "device": "tablet",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073242/schedsnap/wallpapers/scenic/adventure-finn-smile/tablet-420d99dbbbd2f29d.png",
+          "status": 200
+        },
+        {
+          "device": "laptop",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073241/schedsnap/wallpapers/scenic/adventure-finn-smile/laptop-4769490fea3931c4.png",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "adventure-marceline",
+      "collection": "adventure-time",
+      "status": "published",
+      "publishedAt": "2026-10-15T15:09:01.907Z",
+      "deliveries": [
+        {
+          "device": "mobile",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073251/schedsnap/wallpapers/scenic/adventure-marceline/mobile-dc704036f98eedd4.png",
+          "status": 200
+        },
+        {
+          "device": "tablet",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073673/schedsnap/wallpapers/scenic/adventure-marceline/tablet-bc5cd781f5cfe167.png",
+          "status": 200
+        },
+        {
+          "device": "laptop",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073250/schedsnap/wallpapers/scenic/adventure-marceline/laptop-bfcc69c49205b679.png",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "adventure-flame-princess",
+      "collection": "adventure-time",
+      "status": "published",
+      "publishedAt": "2026-10-15T15:09:01.907Z",
+      "deliveries": [
+        {
+          "device": "mobile",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073245/schedsnap/wallpapers/scenic/adventure-flame-princess/mobile-a2945ddeffdf8382.png",
+          "status": 200
+        },
+        {
+          "device": "tablet",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073259/schedsnap/wallpapers/scenic/adventure-flame-princess/tablet-9705ee0241d77453.png",
+          "status": 200
+        },
+        {
+          "device": "laptop",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073243/schedsnap/wallpapers/scenic/adventure-flame-princess/laptop-78569e80e308a2bb.png",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "adventure-bmo",
+      "collection": "adventure-time",
+      "status": "published",
+      "publishedAt": "2026-10-15T15:09:01.907Z",
+      "deliveries": [
+        {
+          "device": "mobile",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073673/schedsnap/wallpapers/scenic/adventure-bmo/mobile-42c02b511794465a.png",
+          "status": 200
+        },
+        {
+          "device": "tablet",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073676/schedsnap/wallpapers/scenic/adventure-bmo/tablet-656f5c9fb937e275.png",
+          "status": 200
+        },
+        {
+          "device": "laptop",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792073243/schedsnap/wallpapers/scenic/adventure-bmo/laptop-0020efbe7081ad98.png",
+          "status": 200
+        }
+      ]
+    }
+  ]
+}
