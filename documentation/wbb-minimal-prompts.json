@@ -1,0 +1,113 @@
+{
+  "provider": "built-in image_gen",
+  "assets": [
+    {
+      "slug": "wbb-ice-bear-minimal",
+      "name": "Ice Bear Minimal",
+      "device": "mobile",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-f2387863-522c-4efa-a652-b8cdcfbe3861.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-53ae4c81-5357-40f2-8e8c-e623cfd37904.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed We Bare Bears minimalist wallpaper based faithfully on the attached reference. Exact reference 1 minimal Ice Bear face. Uniform warm ivory background, same fill inside face, thin softly uneven charcoal sketch contours for rounded ears/top of head, two small black dot eyes, broad flat oval black nose, tiny muzzle contour and tiny neutral mouth. No body, no fur texture, no extra expression. Preserve charming subtle asymmetry and sparse hand-drawn line quality.  1080x2400 tall mobile portrait. Put the small complete face including ears centered near bottom; EVERY artwork stroke stays STRICTLY within bottom20%, y79%-97%. Face/group width at most45% of canvas. Top77% completely blank uniform background. Small artwork and expansive negative space are essential for a timetable overlay. DO NOT enlarge face to fill empty paper. Separate composition for this format, not stretched. Match reference's exact flat colors. NO text, timetable, title, numbers, branding, watermark, UI, frame, scenery, photorealism, glossy 3D, gradient or extra details."
+    },
+    {
+      "slug": "wbb-ice-bear-minimal",
+      "name": "Ice Bear Minimal",
+      "device": "tablet",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-f2387863-522c-4efa-a652-b8cdcfbe3861.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-3b4d63c6-413a-413e-97d8-21bb4a1e4166.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed We Bare Bears minimalist wallpaper based faithfully on the attached reference. Exact reference 1 minimal Ice Bear face. Uniform warm ivory background, same fill inside face, thin softly uneven charcoal sketch contours for rounded ears/top of head, two small black dot eyes, broad flat oval black nose, tiny muzzle contour and tiny neutral mouth. No body, no fur texture, no extra expression. Preserve charming subtle asymmetry and sparse hand-drawn line quality.  1600x2560 tablet portrait. Put the small complete face including ears centered near bottom; EVERY artwork stroke stays STRICTLY within bottom20%, y79%-97%. Face/group width at most45% of canvas. Top77% completely blank uniform background. Small artwork and expansive negative space are essential for a timetable overlay. DO NOT enlarge face to fill empty paper. Separate composition for this format, not stretched. Match reference's exact flat colors. NO text, timetable, title, numbers, branding, watermark, UI, frame, scenery, photorealism, glossy 3D, gradient or extra details."
+    },
+    {
+      "slug": "wbb-ice-bear-minimal",
+      "name": "Ice Bear Minimal",
+      "device": "laptop",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-f2387863-522c-4efa-a652-b8cdcfbe3861.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-6381cefc-2bbc-4a90-b09e-4fec0dd95f8d.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed We Bare Bears minimalist wallpaper based faithfully on the attached reference. Exact reference 1 minimal Ice Bear face. Uniform warm ivory background, same fill inside face, thin softly uneven charcoal sketch contours for rounded ears/top of head, two small black dot eyes, broad flat oval black nose, tiny muzzle contour and tiny neutral mouth. No body, no fur texture, no extra expression. Preserve charming subtle asymmetry and sparse hand-drawn line quality. 1920x1080 wide landscape. Put the complete small isolated face entirely within x76%-97%, y60%-94%. Left72% and upper half blank uniform background. Small artwork and expansive negative space are essential for a timetable overlay. DO NOT enlarge face to fill empty paper. Separate composition for this format, not stretched. Match reference's exact flat colors. NO text, timetable, title, numbers, branding, watermark, UI, frame, scenery, photorealism, glossy 3D, gradient or extra details."
+    },
+    {
+      "slug": "wbb-panda-minimal",
+      "name": "Panda Minimal",
+      "device": "mobile",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-f5bd686f-fcf8-4b08-b097-05d80beeeffc.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-124ed010-d0fd-481f-b7c8-6223b748d55a.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed We Bare Bears minimalist wallpaper based faithfully on the attached reference. Exact reference 2 minimal Panda face on pure white. Two separate rounded dark charcoal ears, two charcoal oval eye patches tilted inward with little black dot pupils, small oval black nose, tiny curved muzzle line and gently smiling mouth. No outer head outline, no body, flat restrained fills, subtly hand-inked imperfect edges, same original proportions.  1080x2400 tall mobile portrait. Put the small complete face including ears centered near bottom; EVERY artwork stroke stays STRICTLY within bottom20%, y79%-97%. Face/group width at most45% of canvas. Top77% completely blank uniform background. Small artwork and expansive negative space are essential for a timetable overlay. DO NOT enlarge face to fill empty paper. Separate composition for this format, not stretched. Match reference's exact flat colors. NO text, timetable, title, numbers, branding, watermark, UI, frame, scenery, photorealism, glossy 3D, gradient or extra details."
+    },
+    {
+      "slug": "wbb-panda-minimal",
+      "name": "Panda Minimal",
+      "device": "tablet",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-f5bd686f-fcf8-4b08-b097-05d80beeeffc.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-50e63319-e61c-43ff-ad6d-d39fb5b01ccc.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed We Bare Bears minimalist wallpaper based faithfully on the attached reference. Exact reference 2 minimal Panda face on pure white. Two separate rounded dark charcoal ears, two charcoal oval eye patches tilted inward with little black dot pupils, small oval black nose, tiny curved muzzle line and gently smiling mouth. No outer head outline, no body, flat restrained fills, subtly hand-inked imperfect edges, same original proportions.  1600x2560 tablet portrait. Put the small complete face including ears centered near bottom; EVERY artwork stroke stays STRICTLY within bottom20%, y79%-97%. Face/group width at most45% of canvas. Top77% completely blank uniform background. Small artwork and expansive negative space are essential for a timetable overlay. DO NOT enlarge face to fill empty paper. Separate composition for this format, not stretched. Match reference's exact flat colors. NO text, timetable, title, numbers, branding, watermark, UI, frame, scenery, photorealism, glossy 3D, gradient or extra details.",
+      "priorSource": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-a2393ba6-175c-4920-bea0-b4947788d6d7.png",
+      "repairPrompt": "Precise wallpaper repair. Preserve existing reference character appearance, linework, expression and proportions. Make ALL background uniformly pure white #ffffff (no cream tint), preserve exact character/paw colors and black contours. Reduce the entire face including ears to 70% of current size and move DOWN so ALL marks stay entirely within bottom20%, y78%-97%. Center horizontally. No marks above78%. Canvas 1600x2560 portrait. No text, UI, new decorations or extra paws. Exactly three small toe pads and one larger center pad per paw."
+    },
+    {
+      "slug": "wbb-panda-minimal",
+      "name": "Panda Minimal",
+      "device": "laptop",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-f5bd686f-fcf8-4b08-b097-05d80beeeffc.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-97286774-55c3-40a7-aed3-8d04f3cf3adc.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed We Bare Bears minimalist wallpaper based faithfully on the attached reference. Exact reference 2 minimal Panda face on pure white. Two separate rounded dark charcoal ears, two charcoal oval eye patches tilted inward with little black dot pupils, small oval black nose, tiny curved muzzle line and gently smiling mouth. No outer head outline, no body, flat restrained fills, subtly hand-inked imperfect edges, same original proportions. 1920x1080 wide landscape. Put the complete small isolated face entirely within x76%-97%, y60%-94%. Left72% and upper half blank uniform background. Small artwork and expansive negative space are essential for a timetable overlay. DO NOT enlarge face to fill empty paper. Separate composition for this format, not stretched. Match reference's exact flat colors. NO text, timetable, title, numbers, branding, watermark, UI, frame, scenery, photorealism, glossy 3D, gradient or extra details."
+    },
+    {
+      "slug": "wbb-grizzly-minimal",
+      "name": "Grizzly Minimal",
+      "device": "mobile",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-8d7a78e7-3916-478e-a27a-bc444d19c364.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-11f80835-bcf9-48bc-805e-26d45ad1d95b.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed We Bare Bears minimalist wallpaper based faithfully on the attached reference. Exact reference 3 cheerful Grizzly face with uniform muted terracotta-brown background and matching face fill. Thin loose black contour for ears and head crown, little black dot eyes, black oval nose, large open happy mouth with deep maroon interior, simple cream rounded upper teeth and dusty pink tongue. Preserve reference proportions and spontaneous organic black contours. No body, no added shading, no decorations.  1080x2400 tall mobile portrait. Put the small complete face including ears centered near bottom; EVERY artwork stroke stays STRICTLY within bottom20%, y79%-97%. Face/group width at most45% of canvas. Top77% completely blank uniform background. Small artwork and expansive negative space are essential for a timetable overlay. DO NOT enlarge face to fill empty paper. Separate composition for this format, not stretched. Match reference's exact flat colors. NO text, timetable, title, numbers, branding, watermark, UI, frame, scenery, photorealism, glossy 3D, gradient or extra details.",
+      "priorSource": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-84610d3b-92a5-49f9-9950-c7b8d25106ba.png",
+      "repairPrompt": "Precise wallpaper repair. Preserve existing reference character appearance, linework, expression and proportions. Replace ALL background with an absolutely uniform solid muted terracotta brown #ad7457, including interior of bear face (except eyes/nose/mouth). NO grain, mottling, gradient, lighting or shadow anywhere. Keep every existing face line and the maroon/cream/pink smile unchanged. Keep current artwork size and placement unchanged. Canvas 1080x2400 portrait. No text, UI, new decorations or extra paws. Exactly three small toe pads and one larger center pad per paw."
+    },
+    {
+      "slug": "wbb-grizzly-minimal",
+      "name": "Grizzly Minimal",
+      "device": "tablet",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-8d7a78e7-3916-478e-a27a-bc444d19c364.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-9ea23300-fca3-4706-9951-96c5c76823ff.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed We Bare Bears minimalist wallpaper based faithfully on the attached reference. Exact reference 3 cheerful Grizzly face with uniform muted terracotta-brown background and matching face fill. Thin loose black contour for ears and head crown, little black dot eyes, black oval nose, large open happy mouth with deep maroon interior, simple cream rounded upper teeth and dusty pink tongue. Preserve reference proportions and spontaneous organic black contours. No body, no added shading, no decorations.  1600x2560 tablet portrait. Put the small complete face including ears centered near bottom; EVERY artwork stroke stays STRICTLY within bottom20%, y79%-97%. Face/group width at most45% of canvas. Top77% completely blank uniform background. Small artwork and expansive negative space are essential for a timetable overlay. DO NOT enlarge face to fill empty paper. Separate composition for this format, not stretched. Match reference's exact flat colors. NO text, timetable, title, numbers, branding, watermark, UI, frame, scenery, photorealism, glossy 3D, gradient or extra details.",
+      "priorSource": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-c2bda46e-dc60-4389-88bd-32edc40d362b.png",
+      "repairPrompt": "Precise wallpaper repair. Preserve existing reference character appearance, linework, expression and proportions. Replace ALL background with an absolutely uniform solid muted terracotta brown #ad7457, including interior of bear face (except eyes/nose/mouth). NO grain, mottling, gradient, lighting or shadow anywhere. Keep every existing face line and the maroon/cream/pink smile unchanged. Reduce the entire face including ears to 70% of current size and move DOWN so ALL marks stay entirely within bottom20%, y78%-97%. Center horizontally. No marks above78%. Canvas 1600x2560 portrait. No text, UI, new decorations or extra paws. Exactly three small toe pads and one larger center pad per paw."
+    },
+    {
+      "slug": "wbb-grizzly-minimal",
+      "name": "Grizzly Minimal",
+      "device": "laptop",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-8d7a78e7-3916-478e-a27a-bc444d19c364.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-3982ce1f-2bb8-4c29-bf2e-68deccb0eddc.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed We Bare Bears minimalist wallpaper based faithfully on the attached reference. Exact reference 3 cheerful Grizzly face with uniform muted terracotta-brown background and matching face fill. Thin loose black contour for ears and head crown, little black dot eyes, black oval nose, large open happy mouth with deep maroon interior, simple cream rounded upper teeth and dusty pink tongue. Preserve reference proportions and spontaneous organic black contours. No body, no added shading, no decorations. 1920x1080 wide landscape. Put the complete small isolated face entirely within x76%-97%, y60%-94%. Left72% and upper half blank uniform background. Small artwork and expansive negative space are essential for a timetable overlay. DO NOT enlarge face to fill empty paper. Separate composition for this format, not stretched. Match reference's exact flat colors. NO text, timetable, title, numbers, branding, watermark, UI, frame, scenery, photorealism, glossy 3D, gradient or extra details.",
+      "priorSource": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-94d6f4cb-d7d1-43a6-baa0-b2b3ec96033e.png",
+      "repairPrompt": "Precise wallpaper repair. Preserve existing reference character appearance, linework, expression and proportions. Replace ALL background with an absolutely uniform solid muted terracotta brown #ad7457, including interior of bear face (except eyes/nose/mouth). NO grain, mottling, gradient, lighting or shadow anywhere. Keep every existing face line and the maroon/cream/pink smile unchanged. Keep current artwork size and placement unchanged. Canvas 1920x1080 landscape. No text, UI, new decorations or extra paws. Exactly three small toe pads and one larger center pad per paw."
+    },
+    {
+      "slug": "wbb-paw-trio",
+      "name": "Bear Paw Trio",
+      "device": "mobile",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-fc23b6de-60e0-4304-946c-3a875616406b.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-5248165a-980c-4b66-90be-e511fd71b51b.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed We Bare Bears minimalist wallpaper based faithfully on the attached reference. Exact reference 4 three simple upright oval bear paw soles side by side. Left dark olive-charcoal, middle warm ochre brown, right white. Each has exactly THREE small oval toe pads above ONE larger central oval pad. Pale cream pads in dark and brown paws, white pads in white paw. Organic rounded black outline, flat solid fills, no extra toes or shapes, no shadows. Match reference proportions and unpolished hand-drawn contour.  1080x2400 tall mobile portrait. Put the small three-paw group centered near bottom; EVERY artwork stroke stays STRICTLY within bottom20%, y79%-97%. Face/group width at most45% of canvas. Top77% completely blank uniform background. Small artwork and expansive negative space are essential for a timetable overlay. DO NOT enlarge face to fill empty paper. Separate composition for this format, not stretched. Match reference's exact flat colors. NO text, timetable, title, numbers, branding, watermark, UI, frame, scenery, photorealism, glossy 3D, gradient or extra details."
+    },
+    {
+      "slug": "wbb-paw-trio",
+      "name": "Bear Paw Trio",
+      "device": "tablet",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-fc23b6de-60e0-4304-946c-3a875616406b.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-630b70f5-31d8-494a-a142-5b6dd87267f4.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed We Bare Bears minimalist wallpaper based faithfully on the attached reference. Exact reference 4 three simple upright oval bear paw soles side by side. Left dark olive-charcoal, middle warm ochre brown, right white. Each has exactly THREE small oval toe pads above ONE larger central oval pad. Pale cream pads in dark and brown paws, white pads in white paw. Organic rounded black outline, flat solid fills, no extra toes or shapes, no shadows. Match reference proportions and unpolished hand-drawn contour.  1600x2560 tablet portrait. Put the small three-paw group centered near bottom; EVERY artwork stroke stays STRICTLY within bottom20%, y79%-97%. Face/group width at most45% of canvas. Top77% completely blank uniform background. Small artwork and expansive negative space are essential for a timetable overlay. DO NOT enlarge face to fill empty paper. Separate composition for this format, not stretched. Match reference's exact flat colors. NO text, timetable, title, numbers, branding, watermark, UI, frame, scenery, photorealism, glossy 3D, gradient or extra details.",
+      "priorSource": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-6fbd1698-0c35-4ea4-bcbd-662efb543b9d.png",
+      "repairPrompt": "Precise wallpaper repair. Preserve existing reference character appearance, linework, expression and proportions. Make ALL background uniformly pure white #ffffff (no cream tint), preserve exact character/paw colors and black contours. Keep current artwork size and placement unchanged. Canvas 1600x2560 portrait. No text, UI, new decorations or extra paws. Exactly three small toe pads and one larger center pad per paw."
+    },
+    {
+      "slug": "wbb-paw-trio",
+      "name": "Bear Paw Trio",
+      "device": "laptop",
+      "reference": "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-fc23b6de-60e0-4304-946c-3a875616406b.png",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-75744f80-1807-48eb-b2a1-0841737fc865.png",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed We Bare Bears minimalist wallpaper based faithfully on the attached reference. Exact reference 4 three simple upright oval bear paw soles side by side. Left dark olive-charcoal, middle warm ochre brown, right white. Each has exactly THREE small oval toe pads above ONE larger central oval pad. Pale cream pads in dark and brown paws, white pads in white paw. Organic rounded black outline, flat solid fills, no extra toes or shapes, no shadows. Match reference proportions and unpolished hand-drawn contour. 1920x1080 wide landscape. Put the complete small paw trio group entirely within x76%-97%, y60%-94%. Left72% and upper half blank uniform background. Small artwork and expansive negative space are essential for a timetable overlay. DO NOT enlarge face to fill empty paper. Separate composition for this format, not stretched. Match reference's exact flat colors. NO text, timetable, title, numbers, branding, watermark, UI, frame, scenery, photorealism, glossy 3D, gradient or extra details.",
+      "priorSource": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13eb3-3f3b-7f23-bdb6-11d770fcf668\\exec-ad3b7f6d-d8a5-4a7c-9efd-1b31278d1bf2.png",
+      "repairPrompt": "Precise wallpaper repair. Preserve existing reference character appearance, linework, expression and proportions. Make ALL background uniformly pure white #ffffff (no cream tint), preserve exact character/paw colors and black contours. Reduce complete three-paw group to 60% of current size and move RIGHT so every black stroke stays strictly within x76%-97%. Three paws remain side by side, no overlap, all complete. Left72% blank white. Canvas 1920x1080 landscape. No text, UI, new decorations or extra paws. Exactly three small toe pads and one larger center pad per paw."
+    }
+  ]
+}
