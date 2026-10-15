@@ -47,7 +47,7 @@ try {
   // Editor and admin routes must never fall back to the homepage's canonical/content.
   await writeFile(resolve(output, 'app.html'), replaceSeoHead(shell, `${CREATOR_PATH}/editor`));
   await writeFile(resolve(output, 'admin.html'), replaceSeoHead(shell, '/admin'));
-  const urls = Object.keys(SEO_PAGES).map(path => `  <url><loc>${SITE_URL}${path}</loc></url>`).join('\n');
+  const urls = Object.entries(SEO_PAGES).map(([path, page]) => `  <url><loc>${SITE_URL}${path}</loc>${page.lastModified ? `<lastmod>${page.lastModified}</lastmod>` : ''}</url>`).join('\n');
   await writeFile(resolve(output, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`);
   await writeFile(resolve(output, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
   console.log('SEO: prerendered public pages and generated sitemap.xml, robots.txt, and private route shells.');

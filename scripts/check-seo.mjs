@@ -16,7 +16,9 @@ for (const path of Object.keys(SEO_PAGES)) {
   if (path === '/') {
     const schema = JSON.parse(html.match(/id="website-schema" type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
     assert.equal(schema.alternateName, 'Sched Snap');
-    assert.ok(html.includes('SchedSnap (Sched Snap) turns your class schedule'));
+    assert.ok(html.includes('Upload your class schedule and turn it into a wallpaper for free.'));
+    assert.ok(html.includes('Frequently asked questions'));
+    assert.ok(html.includes('Can I turn a timetable screenshot into a wallpaper?'));
     assert.ok(html.includes('Your schedule.'));
     assert.ok(html.includes('href="/services/schedule-wallpaper"'));
     assert.ok(html.includes('How it works'));
@@ -35,6 +37,12 @@ assert.equal((sitemap.match(/<loc>/g) || []).length, Object.keys(SEO_PAGES).leng
 assert.ok(!sitemap.includes('/admin'));
 for (const [, url] of sitemap.matchAll(/<loc>(.*?)<\/loc>/g)) assert.ok(!url.includes('?'));
 assert.ok(!sitemap.includes('/wallpapers/'));
+for (const [path, page] of Object.entries(SEO_PAGES)) {
+  if (page.lastModified) {
+    assert.match(page.lastModified, /^\d{4}-\d{2}-\d{2}$/);
+    assert.ok(sitemap.includes(`<loc>${SITE_URL}${path}</loc><lastmod>${page.lastModified}</lastmod>`));
+  }
+}
 const robots = await readFile('dist/robots.txt', 'utf8');
 for (const file of ['favicon.png', 'favicon.ico', 'apple-touch-icon.png']) {
   assert.deepEqual(await readFile(resolve('dist', file)), await readFile(resolve('public', file)));
