@@ -1,6 +1,6 @@
 import { particleStyles } from '../../utils/wallpaperParticles.js';
 import { useRef } from 'react';
-import { schedulePosition, scheduleMovement, tabletBoxSpacing, scheduleLayout } from '../../utils/canvasHelpers.js';
+import { schedulePosition, scheduleMovement, tabletBoxSpacing } from '../../utils/canvasHelpers.js';
 import { ChevronDown } from 'lucide-react';
 import { colorInputValue, wallpaperFonts, mascotPosition, wallpaperFontScale, snapSchedulePosition } from '../../utils/wallpaperTheme.js';
 
@@ -13,9 +13,8 @@ const colorFields = {
 };
 const editablePatterns = new Set(['checker', 'grid', 'ruled', 'circle', 'dots', 'stripes', 'diamonds', 'waves', 'frame']);
 
-function AppearanceColor({ colorKey, template, onChange, toggleKey, label: labelOverride }) {
-  const { label: defaultLabel, colors: defaultColors } = colorFields[colorKey];
-  const label = labelOverride || defaultLabel;
+function AppearanceColor({ colorKey, template, onChange, toggleKey }) {
+  const { label, colors: defaultColors } = colorFields[colorKey];
   const rawValue = template[colorKey] || (colorKey === 'patternColor' ? (template.pattern === 'circle' ? '#ad5b45' : template.line) : '#ffffff');
   const normalizedValue = colorInputValue(rawValue);
   const colors = defaultColors.slice(0, 3);
@@ -31,7 +30,6 @@ function AppearanceColor({ colorKey, template, onChange, toggleKey, label: label
 
 export default function TemplateControls({ template, onChange, onReset, defaultTemplate = {}, enablePlacement = false }) {
   const fixedBackground = Boolean(template.image && template.layout !== 'mascot');
-  const timeline = scheduleLayout(template) === 'timeline';
   const dragging = useRef({});
   return <aside aria-label="Template appearance" className="template-settings">
     {(enablePlacement || (template.device && template.device !== 'mobile')) && <fieldset className="appearance-group">
@@ -63,9 +61,9 @@ export default function TemplateControls({ template, onChange, onReset, defaultT
       {editablePatterns.has(template.pattern) && <AppearanceColor colorKey="patternColor" template={template} onChange={onChange} />}
     </fieldset>
     <fieldset className="appearance-group">
-      <legend>{timeline ? 'Timeline' : 'Day containers'}</legend>
+      <legend>Day containers</legend>
       {template.device === 'tablet' && <div className="top-margin-control">
-        <div className="top-margin-label"><label htmlFor="tablet-box-spacing">{timeline ? 'Space between days' : 'Space between boxes'}</label><output htmlFor="tablet-box-spacing">{tabletBoxSpacing(template)}</output></div>
+        <div className="top-margin-label"><label htmlFor="tablet-box-spacing">Space between boxes</label><output htmlFor="tablet-box-spacing">{tabletBoxSpacing(template)}</output></div>
         <input id="tablet-box-spacing" type="range" min="0" max="300" step="1" value={tabletBoxSpacing(template)} aria-valuetext={`${tabletBoxSpacing(template)} spacing units`} onChange={event => onChange('tabletBoxSpacing', Number(event.target.value))} />
       </div>}
       <div className="appearance-row">
@@ -83,11 +81,7 @@ export default function TemplateControls({ template, onChange, onReset, defaultT
         </div>
       </div>
       <AppearanceColor colorKey="surface" template={template} onChange={onChange} toggleKey="containerFill" />
-      {!timeline && <AppearanceColor colorKey="line" template={template} onChange={onChange} toggleKey="containerBorder" />}
-      {timeline && <>
-        <div className="appearance-row"><label className="appearance-label appearance-switch"><input type="checkbox" checked={template.containerBorder !== false} onChange={event => onChange('containerBorder', event.target.checked)} />Day outline</label></div>
-        <AppearanceColor colorKey="line" label="Lines" template={template} onChange={onChange} />
-      </>}
+      <AppearanceColor colorKey="line" template={template} onChange={onChange} toggleKey="containerBorder" />
     </fieldset>
     <fieldset className="appearance-group">
       <legend>Schedule Text</legend>
