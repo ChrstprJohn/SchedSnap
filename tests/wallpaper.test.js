@@ -14,7 +14,6 @@ import { chikawaReferenceTemplates } from '../src/assets/chikawaReferenceTemplat
 import { chikawaTemplates } from '../src/assets/chikawaTemplates.js';
 import { sanrioTemplates } from '../src/assets/sanrioTemplates.js';
 import { domoTemplates } from '../src/assets/domoTemplates.js';
-import { scenicFamilies } from '../src/config/collections.js';
 import { drawWallpaper, drawSampleClock, findOverlaps, formatTime, formatWallpaperTime, groupSchedule, layoutSchedule, schedulePosition, scheduleTopMargin, wrapText } from '../src/utils/canvasHelpers.js';
 import { getScheduleIssues } from '../shared/scheduleSchema.js';
 import { colorInputValue, customizeWallpaperTemplate } from '../src/utils/wallpaperTheme.js';
@@ -41,25 +40,11 @@ test('new pattern variants cover all supported prints and expire their New badge
   }
 });
 
-test('every illustrated variant has three correctly sized device assets and every theme has at least three variants', () => {
-  assert.equal(scenicTemplates.length, 55);
-  const devices = Object.fromEntries(Object.values(deviceResolutions).map(({ id, width, height }) => [id, [width, height]]));
-  for (const family of scenicFamilies) assert.ok(scenicTemplates.filter((template) => template.family === family.id).length >= 3, family.id);
-  for (const template of scenicTemplates) {
-    assert.ok(!/kittens|sentinel|ranger|violet-watch/.test(template.id), template.id);
-    for (const [device, [width, height]] of Object.entries(devices)) {
-      const expected = `/wallpapers/scenic/${template.id}/${device}.png`;
-      assert.equal(template.deviceImages[device], expected);
-      const asset = cloudinaryManifest[expected];
-      assert.equal(asset.width, width, `${template.id}/${device} width`);
-      assert.equal(asset.height, height, `${template.id}/${device} height`);
-      const local = new URL(`../public${expected}`, import.meta.url);
-      if (existsSync(local)) {
-        const png = readFileSync(local);
-        assert.equal(png.subarray(1, 4).toString(), 'PNG');
-        assert.equal(png.readUInt32BE(16), width);
-        assert.equal(png.readUInt32BE(20), height);
-      }
+test('retired illustrated and mascot artwork is absent from the active library and delivery manifest', () => {
+  assert.ok(wallpaperTemplates.every(t => !['scenic', 'mascot'].includes(t.collection)));
+  for (const template of [...scenicTemplates, ...mascotTemplates]) {
+    for (const path of [template.image, ...Object.values(template.deviceImages || {})].filter(Boolean)) {
+      assert.equal(cloudinaryManifest[path], undefined, path);
     }
   }
 });
@@ -100,11 +85,11 @@ test('all templates fit sample data and dense data is explicitly rejected', () =
 });
 
 test('the existing collections are preserved alongside device-specific illustrated designs', () => {
-  assert.equal(wallpaperTemplates.length, 52 + patternTemplates.length + scenicTemplates.length + chikawaReferenceTemplates.length + chikawaTemplates.filter(t => !chikawaReferenceTemplates.some(r => r.id === t.id)).length + sanrioTemplates.length + domoTemplates.length + meepTemplates.length + ghibliTemplates.length + 61);
+  assert.equal(wallpaperTemplates.length, 32 + patternTemplates.length + chikawaReferenceTemplates.length + chikawaTemplates.filter(t => !chikawaReferenceTemplates.some(r => r.id === t.id)).length + sanrioTemplates.length + domoTemplates.length + meepTemplates.length + ghibliTemplates.length);
   assert.ok(wallpaperTemplates.filter(template => template.image && template.layout !== 'mascot')
     .every(template => ['mobile', 'tablet', 'laptop'].every(device => template.deviceImages?.[device])));
   assert.equal(new Set(wallpaperTemplates.map((template) => template.id)).size, wallpaperTemplates.length);
-  assert.equal(wallpaperTemplates.filter((template) => template.collection === 'scenic').length, scenicTemplates.length);
+  assert.equal(wallpaperTemplates.filter((template) => template.collection === 'scenic').length, 0);
   assert.equal(littleFriendsTemplates.length, 20);
   assert.equal(new Set(littleFriendsTemplates.map((template) => template.mascot)).size, 20);
   assert.equal(littleFriendsTemplates.filter((template) => template.mascotSide === 'left').length, 10);
@@ -328,7 +313,7 @@ test('actual mascot schedules grow Monday, fit subjects on one line and omit emp
     { subject: 'Long subject name that wraps onto another line', courseCode: 'CS 101', meetings: [{ day: 'Monday', startTime: '08:00', endTime: '09:30', room: 'Lab 2' }] },
     { subject: 'Another subject', courseCode: null, meetings: [{ day: 'Monday', startTime: '10:00', endTime: '11:30' }, { day: 'Tuesday', startTime: '13:00', endTime: '14:30' }, { day: 'Wednesday', startTime: '08:00', endTime: '09:30' }, { day: 'Friday', startTime: '10:00', endTime: '12:00' }] },
   ] };
-  for (const template of [...mascotTemplates, ...littleFriendsTemplates]) {
+  for (const template of littleFriendsTemplates) {
     const layout = layoutSchedule(measurementContext, actual, template);
     assert.equal(layout.overflow, false, template.name);
     assert.deepEqual(layout.plans.map((plan) => plan.day), ['Monday', 'Tuesday', 'Wednesday', 'Friday']);
@@ -350,7 +335,7 @@ test('mascots keep a fixed size below every meeting, including denser schedules'
     const first = course.meetings[0];
     course.meetings.push({ ...first, startTime: '10:00', endTime: '11:30' }, { ...first, startTime: '13:00', endTime: '14:30' });
   }
-  for (const template of [...mascotTemplates, ...littleFriendsTemplates]) {
+  for (const template of littleFriendsTemplates) {
     const image = { width: 1254, height: 1254, mascotBounds: { x: 80, y: 120, width: 920, height: 1100 } };
     const render = (schedule) => {
       const drawn = [], text = [];
@@ -371,7 +356,7 @@ test('mascots keep a fixed size below every meeting, including denser schedules'
 });
 
 test('every mascot template references an uploaded square PNG; local originals preserve alpha', () => {
-  for (const template of [...mascotTemplates, ...littleFriendsTemplates]) {
+  for (const template of littleFriendsTemplates) {
     const asset = cloudinaryManifest[template.image];
     assert.match(asset.url, /\.png$/);
     assert.equal(asset.width, asset.height);
@@ -394,7 +379,7 @@ test('appearance settings preserve image artwork and patterns and drive the shar
   assert.equal(customized.muted, settings.ink);
   assert.notEqual(base.background, settings.background);
   assert.equal(customizeWallpaperTemplate(base, {}), base);
-  const originalBase = { ...wallpaperTemplates.find(({ id }) => id === 'blue-contours'), overlay: 'rgba(10,19,38,0.65)' };
+  const originalBase = { ...scenicTemplates.find(({ id }) => id === 'blue-contours'), overlay: 'rgba(10,19,38,0.65)' };
   const original = customizeWallpaperTemplate(originalBase, settings);
   assert.equal(original.image, originalBase.image);
   assert.equal(original.overlay, originalBase.overlay);

@@ -20,7 +20,7 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
   const { templates: wallpaperTemplates, loading, error } = useCatalogStatus();
   const thumbnailWidth = device === 'laptop' ? 480 : device === 'tablet' ? 384 : 270;
   const designResolution = () => deviceResolutions[device];
-  const [category, setCategory] = useState(() => initialCategory === 'chikawa' ? 'little-friends' : galleryCategories.some((item) => item.id === initialCategory) ? initialCategory : 'all');
+  const [category, setCategory] = useState(() => ['chikawa', 'little-friends'].includes(initialCategory) ? 'chiikawa' : galleryCategories.some((item) => item.id === initialCategory) ? initialCategory : 'all');
   const [preview, setPreview] = useState(null);
   const { likes, pending, error: likeError, refresh: refreshLikes, toggle: toggleLike } = useDesignLikes();
   const isSearching = Boolean(searchQuery && searchQuery.trim());

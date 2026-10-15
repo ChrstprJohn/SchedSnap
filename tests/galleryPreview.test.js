@@ -26,10 +26,10 @@ test('gallery phone samples share bounds while the close-up keeps its face clear
 });
 
 test('portrait tablet samples align while explicit user placement remains available', () => {
-  const original = wallpaperTemplates.find(template => template.collection === 'chikawa');
+  const original = wallpaperTemplates.find(template => template.collection === 'chiikawa');
   const originalCopy = structuredClone(original);
   const expected = render(customizeWallpaperTemplate(galleryPreviewTemplate(original), {}, 'tablet'), deviceResolutions.tablet).scheduleBounds;
-  for (const template of wallpaperTemplates.filter(template => template.collection === 'chikawa')) {
+  for (const template of wallpaperTemplates.filter(template => template.collection === 'chiikawa')) {
     assert.deepEqual(render(customizeWallpaperTemplate(galleryPreviewTemplate(template), {}, 'tablet'), deviceResolutions.tablet).scheduleBounds, expected, template.id);
   }
   const moved = customizeWallpaperTemplate(galleryPreviewTemplate(original), { verticalPosition: 50 }, 'mobile');
