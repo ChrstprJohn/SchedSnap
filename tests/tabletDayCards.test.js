@@ -83,7 +83,7 @@ test('device layout choices expose mobile timeline, tablet all three, and laptop
   assert.ok(after.plans[2].y - after.plans[0].y - after.plans[0].height > before.plans[2].y - before.plans[0].y - before.plans[0].height);
 });
 
-test('Timeline preserves weekdays and times with connected rings and divider lines instead of containers', () => {
+test('Timeline groups each day in one container with a connected rail and preserves every meeting', () => {
   const allWeek = { classes: [...sampleSchedule.classes, ...['Saturday', 'Sunday'].map(day => ({ subject: 'Capstone seminar', courseCode: 'IT 490', meetings: [{ day, startTime: '08:00', endTime: '09:30', room: 'Lab 3', dateLabel: 'Oct 15–Dec 10' }] }))] };
   for (const resolution of [{ id: 'mobile', width: 1080, height: 2400 }, { id: 'tablet', width: 1600, height: 2560 }]) {
     const { layout, text, lines, rings, containers } = render(allWeek, { scheduleLayout: 'timeline' }, resolution);
@@ -91,8 +91,15 @@ test('Timeline preserves weekdays and times with connected rings and divider lin
     assert.equal(layout.plans.length, 7);
     assert.equal(rings.length, 7);
     assert.equal(lines.filter(line => line[0] === line[2]).length, 6);
-    assert.equal(lines.filter(line => line[1] === line[3]).length, 6);
-    assert.equal(containers.length, 0);
+    assert.equal(lines.filter(line => line[1] === line[3]).length, 0);
+    assert.equal(containers.length, 7);
+    for (const [index, box] of containers.entries()) {
+      const plan = layout.plans[index];
+      assert.ok(box[0] > plan.x + 26);
+      assert.ok(box[1] < plan.y);
+      assert.ok(box[0] < plan.timeX && box[0] + box[2] > plan.roomX + plan.roomWidth);
+      assert.ok(box[1] + box[3] >= plan.entries.at(-1).bottom);
+    }
     assert.ok(text.includes('Monday') && text.includes('Sunday') && !text.includes('Notes'));
     assert.deepEqual(layout.plans[0].entries[0].timeLines, ['8:00 AM', '9:30 AM']);
     assert.ok(layout.plans[0].timeX < layout.plans[0].subjectX && layout.plans[0].subjectX < layout.plans[0].roomX);
@@ -104,7 +111,7 @@ test('Timeline preserves weekdays and times with connected rings and divider lin
   }
 });
 
-test('Timeline grows type for available space, separates multiple meetings, and stays open without container settings', () => {
+test('Timeline keeps subject dividers inside each day and honors disabled fill and outline', () => {
   const twoMeetings = { classes: sampleSchedule.classes.map(course => ({ ...course, meetings: [...course.meetings, { ...course.meetings[0], startTime: '16:00', endTime: '17:30' }] })) };
   const larger = render(sampleSchedule, { scheduleLayout: 'timeline' }).layout;
   assert.ok(larger.timeLineHeight > render(sampleSchedule, { scheduleLayout: 'stacked' }).layout.timeLineHeight);
@@ -112,7 +119,10 @@ test('Timeline grows type for available space, separates multiple meetings, and 
     const { layout, containers, lines } = render(twoMeetings, { scheduleLayout: 'timeline', containerFill: false, containerBorder: false }, resolution);
     assert.equal(layout.overflow, false);
     assert.equal(containers.length, 0);
-    assert.equal(lines.filter(line => line[1] === line[3]).length, 9);
+    assert.equal(lines.filter(line => line[1] === line[3]).length, 5);
+    const visible = render(twoMeetings, { scheduleLayout: 'timeline' }, resolution);
+    assert.equal(visible.containers.length, 5);
+    assert.deepEqual(visible.layout, layout);
     for (const plan of layout.plans) assert.ok(plan.entries[1].y - plan.entries[0].bottom >= (resolution.id === 'mobile' ? 16 : 20));
   }
 });

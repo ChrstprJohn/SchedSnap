@@ -68,7 +68,7 @@ export default function TemplateControls({ template, onChange, onReset, defaultT
         <div className="top-margin-label"><label htmlFor="tablet-box-spacing">{timeline ? 'Space between days' : 'Space between boxes'}</label><output htmlFor="tablet-box-spacing">{tabletBoxSpacing(template)}</output></div>
         <input id="tablet-box-spacing" type="range" min="0" max="300" step="1" value={tabletBoxSpacing(template)} aria-valuetext={`${tabletBoxSpacing(template)} spacing units`} onChange={event => onChange('tabletBoxSpacing', Number(event.target.value))} />
       </div>}
-      {!timeline && <><div className="appearance-row">
+      <div className="appearance-row">
         <label className="appearance-label" htmlFor="container-style">Finish</label>
         <div className="field-select appearance-select"><select id="container-style" className="field-input" value={template.containerStyle || 'glass'} onChange={(event) => onChange('containerStyle', event.target.value)}><option value="glass">Frosted glass</option><option value="solid">Solid</option></select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>
       </div>
@@ -83,9 +83,11 @@ export default function TemplateControls({ template, onChange, onReset, defaultT
         </div>
       </div>
       <AppearanceColor colorKey="surface" template={template} onChange={onChange} toggleKey="containerFill" />
-      <AppearanceColor colorKey="line" template={template} onChange={onChange} toggleKey="containerBorder" />
+      {!timeline && <AppearanceColor colorKey="line" template={template} onChange={onChange} toggleKey="containerBorder" />}
+      {timeline && <>
+        <div className="appearance-row"><label className="appearance-label appearance-switch"><input type="checkbox" checked={template.containerBorder !== false} onChange={event => onChange('containerBorder', event.target.checked)} />Day outline</label></div>
+        <AppearanceColor colorKey="line" label="Lines" template={template} onChange={onChange} />
       </>}
-      {timeline && <AppearanceColor colorKey="line" label="Dividers" template={template} onChange={onChange} />}
     </fieldset>
     <fieldset className="appearance-group">
       <legend>Schedule Text</legend>

@@ -482,6 +482,15 @@ function drawDayCards(ctx, template, layout) {
 }
 
 function drawTimeline(ctx, template, layout) {
+  const backdrop = frostedBackdrop(ctx, template);
+  // Keep the connected weekday rail outside one shared container per day.
+  // Reuse the measured rows so grouping does not shrink the schedule text.
+  for (const plan of layout.plans) {
+    const box = { x: plan.x + 62, y: plan.y - 14, width: plan.width - 58, height: plan.height + 16 };
+    const corner = template.containerShape === 'rounded' ? 12 : 24;
+    if (backdrop) drawGlassCard(ctx, template, box, corner, backdrop);
+    else if (template.containerFill !== false || template.containerBorder !== false) rectangle(ctx, box.x, box.y, box.width, box.height, corner, template.containerFill === false ? undefined : template.surface, template.containerBorder === false ? undefined : template.line);
+  }
   ctx.save(); ctx.textBaseline = 'top';
   const radius = layout.size * 0.5;
   for (const [index, plan] of layout.plans.entries()) {
@@ -498,9 +507,9 @@ function drawTimeline(ctx, template, layout) {
     ctx.fillText(plan.day, plan.x + 80, plan.y);
     for (const [entryIndex, entry] of plan.entries.entries()) {
       const nextEntry = plan.entries[entryIndex + 1];
-      if (nextEntry || index < layout.plans.length - 1) {
+      if (nextEntry) {
         ctx.save(); ctx.strokeStyle = template.line; ctx.globalAlpha = 0.8; ctx.lineWidth = 2;
-        const dividerY = nextEntry ? (entry.bottom + nextEntry.y) / 2 : entry.bottom + 12;
+        const dividerY = (entry.bottom + nextEntry.y) / 2;
         ctx.beginPath(); ctx.moveTo(plan.timeX, dividerY); ctx.lineTo(plan.x + plan.width - 16, dividerY); ctx.stroke(); ctx.restore();
       }
       ctx.fillStyle = template.ink; font(ctx, layout.size, 750, template.fontFamily);
@@ -516,6 +525,7 @@ function drawTimeline(ctx, template, layout) {
     }
   }
   ctx.restore();
+  if (backdrop) { backdrop.width = 0; backdrop.height = 0; }
 }
 
 function layoutWeeklyTimetable(ctx, schedule, template, height, options) {
