@@ -9,6 +9,7 @@ import { templateProperties, trackEvent } from '../../lib/analytics.js';
 import { WallpaperCanvas } from './CanvasPreview.jsx';
 import WallpaperViewer from './WallpaperViewer.jsx';
 import TemplateControls from './TemplateControls.jsx';
+import ScheduleLayoutPicker from './ScheduleLayoutPicker.jsx';
 import Editor from './Editor.jsx';
 import Uploader from './Uploader.jsx';
 import Toast from '../../components/Toast.jsx';
@@ -152,6 +153,7 @@ export default function TemplateWorkspace({ step, onStep, template, defaultTempl
           {likeError && <div className="download-heart-error" role="alert"><span>{likeError}</span><button type="button" className="text-link" disabled={!!pendingLikes} onClick={() => refreshLikes(true)}>Retry</button></div>}
         </section>}
         <div className="wallpaper-edit-actions"><button type="button" className="button-secondary" onClick={() => onStep('classes')}><Pencil size={16} aria-hidden="true" />Edit classes</button><button type="button" className="button-secondary" onClick={() => onStep('design')}><LayoutTemplate size={16} aria-hidden="true" />Change design</button></div>
+        <ScheduleLayoutPicker template={template} onChange={onAppearanceChange} />
         <details className="flow-customize" open={customizing} onToggle={(event) => { setCustomizing(event.currentTarget.open); setPreviewStuck(false); }}><summary className="disclosure-summary"><span><SlidersHorizontal size={16} aria-hidden="true" />Customize appearance</span><ChevronDown className="disclosure-icon size-4" aria-hidden="true" /></summary><TemplateControls template={template} defaultTemplate={defaultTemplate} enablePlacement onChange={onAppearanceChange} onReset={onResetAppearance} /></details>
       </section>
     </div>}
