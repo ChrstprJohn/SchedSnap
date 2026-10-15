@@ -1,5 +1,7 @@
 # SchedSnap
 
+Your wallpaper offers a tablet-only Schedule layout choice above Customize appearance. Stacked days remains the default; Day cards arranges occupied days in two columns from left to right, then top to bottom, with full day headings, time above course code and subject, and rooms on the right. An odd number of occupied days leaves a blank lined Notes panel beside the final day; weekend classes stay in sequence. The choice shares existing per-design memory and Reset appearance behavior. Position, box spacing, typography, and container controls apply to both arrangements, and preview and PNG agree. Mobile and laptop ignore the tablet layout choice. See `documentation/TABLET_LAYOUTS.md` for verification.
+
 Choose a design offers a side Back to top button after scrolling beyond one viewport (at least 600px). It honors reduced motion and returns keyboard focus to the main content. Other pages and editor steps omit it. After a PNG download starts, an optional inline heart prompt uses the same public votes as the gallery, allows undo, and provides retry on failure. The design gallery ranks matching designs by most hearts, then newest, before pagination, with no separate sort control. One Chiikawa filter includes both Chiikawa collections. Device dropdown options have 44px minimum touch targets.
 
 Saved class drafts remain pending while choosing a design or viewing a wallpaper preview. The restore-or-discard dialog appears only on Add your classes, where restoring retains the saved classes and title and discarding starts fresh.
