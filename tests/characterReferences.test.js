@@ -9,12 +9,13 @@ import { drawWallpaper } from '../src/utils/canvasHelpers.js';
 import { deviceResolutions } from '../src/assets/templates.js';
 import { customizeWallpaperTemplate,galleryPreviewTemplate } from '../src/utils/wallpaperTheme.js';
 
-test('seven Domo and Adventure Time designs have unique templates and three uploaded device compositions each', () => {
-  assert.equal(characterTemplates.length,7);
-  assert.equal(new Set(characterTemplates.map(t=>t.id)).size,7);
+test('ten Domo and Adventure Time designs have unique templates and three uploaded device compositions each', () => {
+  assert.equal(characterTemplates.length,10);
+  assert.equal(new Set(characterTemplates.map(t=>t.id)).size,10);
   const paths=[];
   const review=JSON.parse(readFileSync(new URL('../documentation/domo-adventure-assets.json', import.meta.url)));
-  assert.equal(review.assets.length,21);
+  review.assets.push(...JSON.parse(readFileSync(new URL('../documentation/adventure-extra-assets.json',import.meta.url))).assets);
+  assert.equal(review.assets.length,30);
   for(const t of characterTemplates){
     const template=templateSchema.parse({...t,status:'published'});
     assert.equal(matchesGalleryCategory(template,template.collection),true);
@@ -30,7 +31,7 @@ test('seven Domo and Adventure Time designs have unique templates and three uplo
       assert.equal(templateSchema.safeParse({...template,image:manifest[template.image].url,deviceImages:Object.fromEntries(Object.entries(template.deviceImages).map(([d,p])=>[d,manifest[p].url]))}).success,true);
     }
   }
-  assert.equal(new Set(paths).size,21);
+  assert.equal(new Set(paths).size,30);
 });
 
 test('dense portrait schedules preserve fifteen meetings above the character artwork footer', () => {

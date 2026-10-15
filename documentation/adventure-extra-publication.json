@@ -1,0 +1,75 @@
+{
+  "verifiedAt": "2026-10-15T15:50:06.678Z",
+  "revision": "325ff7cf-f1de-4724-9a9f-bb1ed088ca96",
+  "verified": [
+    {
+      "id": "adventure-lumpy-space",
+      "collection": "adventure-time",
+      "status": "published",
+      "publishedAt": "2026-10-15T15:49:57.520Z",
+      "deliveries": [
+        {
+          "device": "mobile",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792079088/schedsnap/wallpapers/scenic/adventure-lumpy-space/mobile-b66f8bdf3b491cdf.png",
+          "status": 200
+        },
+        {
+          "device": "tablet",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792079089/schedsnap/wallpapers/scenic/adventure-lumpy-space/tablet-65b4532a38b6766d.png",
+          "status": 200
+        },
+        {
+          "device": "laptop",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792079087/schedsnap/wallpapers/scenic/adventure-lumpy-space/laptop-2e76847b4d8ffd6c.png",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "adventure-lemongrab",
+      "collection": "adventure-time",
+      "status": "published",
+      "publishedAt": "2026-10-15T15:49:57.520Z",
+      "deliveries": [
+        {
+          "device": "mobile",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792079090/schedsnap/wallpapers/scenic/adventure-lemongrab/mobile-a83bf3ec0f98a99d.png",
+          "status": 200
+        },
+        {
+          "device": "tablet",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792079087/schedsnap/wallpapers/scenic/adventure-lemongrab/tablet-8018c135c2fc1728.png",
+          "status": 200
+        },
+        {
+          "device": "laptop",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792079289/schedsnap/wallpapers/scenic/adventure-lemongrab/laptop-0400bac10ceca34e.png",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "adventure-meadow-bugs",
+      "collection": "adventure-time",
+      "status": "published",
+      "publishedAt": "2026-10-15T15:49:57.520Z",
+      "deliveries": [
+        {
+          "device": "mobile",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792079096/schedsnap/wallpapers/scenic/adventure-meadow-bugs/mobile-fd0b8d7a087c32e3.png",
+          "status": 200
+        },
+        {
+          "device": "tablet",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792079095/schedsnap/wallpapers/scenic/adventure-meadow-bugs/tablet-2d7c4a457019ec14.png",
+          "status": 200
+        },
+        {
+          "device": "laptop",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792079095/schedsnap/wallpapers/scenic/adventure-meadow-bugs/laptop-d7ec6079e29b1454.png",
+          "status": 200
+        }
+      ]
+    }
+  ]
+}
