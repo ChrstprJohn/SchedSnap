@@ -1,19 +1,20 @@
 import { useId, useLayoutEffect, useRef, useState } from 'react';
 import { Minus, Plus } from 'lucide-react';
-import { fittingFilterCount } from '../utils/filterOverflow.js';
+import { fittingFilterIndices } from '../utils/filterOverflow.js';
 
 export default function CategoryFilters({ categories, value, onChange, controls }) {
   const root = useRef(null);
   const measurements = useRef(null);
   const id = useId();
-  const [count, setCount] = useState(0);
+  const [visibleIndices, setVisibleIndices] = useState([]);
   const [expanded, setExpanded] = useState(false);
   useLayoutEffect(() => {
     const measure = () => {
       if (expanded || !root.current || !measurements.current) return;
       const items = [...measurements.current.children];
       const moreWidth = items.pop().getBoundingClientRect().width;
-      setCount(fittingFilterCount(root.current.clientWidth, items.map(item => item.getBoundingClientRect().width), moreWidth, 8));
+      const gap = parseFloat(getComputedStyle(root.current).columnGap) || 0;
+      setVisibleIndices(fittingFilterIndices(root.current.clientWidth, items.map(item => item.getBoundingClientRect().width), moreWidth, gap));
     };
     const observer = new ResizeObserver(measure);
     observer.observe(root.current);
@@ -27,7 +28,7 @@ export default function CategoryFilters({ categories, value, onChange, controls 
       {categories.map(category => <span key={category.id} className="template-category">{category.name}</span>)}
       <span className="template-category category-more-label">More<Plus size={16} /></span>
     </div>
-    {(expanded ? categories : categories.slice(0, count)).map(button)}
-    {count < categories.length && <button type="button" className="template-category category-more-label" aria-expanded={expanded} aria-controls={id} aria-label={expanded ? 'Show fewer filters' : 'Show more filters'} data-active={categories.slice(count).some(category => category.id === value)} onClick={() => setExpanded(previous => !previous)}>{expanded ? <>Less<Minus size={16} aria-hidden="true" /></> : <>More<Plus size={16} aria-hidden="true" /></>}</button>}
+    {(expanded ? categories : categories.filter((_, index) => visibleIndices.includes(index))).map(button)}
+    {visibleIndices.length < categories.length && <button type="button" className="template-category category-more-label" aria-expanded={expanded} aria-controls={id} aria-label={expanded ? 'Show fewer filters' : 'Show more filters'} data-active={categories.some((category, index) => !visibleIndices.includes(index) && category.id === value)} onClick={() => setExpanded(previous => !previous)}>{expanded ? <>Less<Minus size={16} aria-hidden="true" /></> : <>More<Plus size={16} aria-hidden="true" /></>}</button>}
   </div>;
 }

@@ -1,10 +1,12 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router';
-import { Plus, LogOut, ArrowLeft, X, Menu, CheckCircle2, Pencil, Eye, EyeOff, Trash2, RotateCcw, MoreVertical, UserRound, LayoutDashboard, PanelsTopLeft, ExternalLink, ChevronLeft, ChevronRight, ChevronDown, Save, Send, Minus, Maximize2 } from 'lucide-react';
+import { Download, Heart, Plus, LogOut, ArrowLeft, X, Menu, CheckCircle2, Pencil, Eye, EyeOff, Trash2, RotateCcw, MoreVertical, UserRound, LayoutDashboard, PanelsTopLeft, ExternalLink, ChevronLeft, ChevronRight, ChevronDown, Save, Send, Minus, Maximize2 } from 'lucide-react';
 import { deviceResolutions, tabletLandscapeResolution } from '../assets/templates.js';
 import { sampleSchedule } from '../assets/sampleSchedule.js';
 import { designCollections, galleryCategories, matchesGalleryCategory } from '../config/collections.js';
+import GalleryFilters from '../components/GalleryFilters.jsx';
 import CategoryFilters from '../components/CategoryFilters.jsx';
+import { sortTemplatesByLikes } from '../utils/sortTemplatesByLikes.js';
 import { WallpaperSearchField } from '../components/WallpaperSearch.jsx';
 import { searchWallpaperTemplates } from '../utils/wallpaperSearch.js';
 
@@ -17,7 +19,6 @@ import './admin.css';
 import BrandMark from '../components/BrandMark.jsx';
 import DevicePicker from '../components/DevicePicker.jsx';
 import useInfiniteGallery from '../lib/useInfiniteGallery.js';
-import useDesignDownloads from '../lib/useDesignDownloads.js';
 import AdminSignIn from '../components/AdminSignIn.jsx';
 
 async function request(action, body) {
@@ -27,7 +28,7 @@ async function request(action, body) {
   return data;
 }
 const blankTemplate = () => ({ id: '', name: '', description: '', collection: 'scenic', status: 'draft', background: '#eef2f6', ink: '#203e36', muted: '#486258', surface: '#ffffff', line: '#a5b9a7', fontFamily: 'DM Sans Variable', containerStyle: 'glass' });
-const statusFilters = [{ id: 'all', name: 'All' }, { id: 'published', name: 'Published' }, { id: 'hidden', name: 'Hidden' }];
+const statusFilters = [{ id: 'all', name: 'All' }, { id: 'published', name: 'Published' }, { id: 'hidden', name: 'Hidden' }, { id: 'draft', name: 'Draft' }];
 export default function Admin() {
   const [authenticated, setAuthenticated] = useState(null);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
@@ -77,6 +78,19 @@ export default function Admin() {
   const [searchQuery, setSearchQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState('all');
   const [device, setDevice] = useState('mobile');
+  const [sort, setSort] = useState('likes');
+  const [metrics, setMetrics] = useState({ likes: {}, downloads: {} });
+  const [metricsError, setMetricsError] = useState('');
+  const loadMetrics = useCallback(async () => {
+    try { setMetrics(await request('metrics')); setMetricsError(''); }
+    catch (failure) { setMetricsError(failure.message); }
+  }, []);
+  useEffect(() => {
+    if (!authenticated || section !== 'library') return;
+    queueMicrotask(loadMetrics);
+    window.addEventListener('focus', loadMetrics);
+    return () => window.removeEventListener('focus', loadMetrics);
+  }, [authenticated, section, loadMetrics]);
   const [deleting, setDeleting] = useState(null);
   const [hiding, setHiding] = useState(null);
   const [actionMenu, setActionMenu] = useState(null);
@@ -125,8 +139,8 @@ export default function Admin() {
     finally { setBusy(false); }
   }
   const normalizedSearch = searchQuery.trim().toLowerCase();
-  const filtered = searchWallpaperTemplates(catalog?.templates, searchQuery).filter(t => matchesGalleryCategory(t, collection)).filter(t => statusFilter === 'all' || (statusFilter === 'published' ? t.status === 'published' : t.status !== 'published'));
-  const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(filtered.length, `${collection}:${device}:${statusFilter}:${normalizedSearch}:${Boolean(editor)}`);
+  const filtered = sortTemplatesByLikes(searchWallpaperTemplates(catalog?.templates, searchQuery).filter(t => matchesGalleryCategory(t, collection)).filter(t => statusFilter === 'all' || t.status === statusFilter), metrics.likes, sort, metrics.downloads);
+  const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(filtered.length, `${collection}:${device}:${statusFilter}:${sort}:${normalizedSearch}:${Boolean(editor)}`);
   if (authenticated === null || !authenticated) return <AdminSignIn checking={authenticated === null} password={password} onPasswordChange={setPassword} onSubmit={login} busy={busy} error={error} />;
   const visible = filtered.slice(0, galleryCount);
   function openLibrary() {
@@ -140,7 +154,7 @@ export default function Admin() {
     <header className="admin-topbar"><button type="button" className="admin-mobile-menu-button" aria-label="Open navigation" aria-expanded={mobileSidebarOpen} aria-controls="admin-sidebar" onClick={() => setMobileSidebarOpen(true)}><Menu size={20} aria-hidden="true" /></button><div className="admin-topbar-copy"><h1>{editor ? (editor.isNew ? 'New design' : editor.template.name) : section === 'dashboard' ? 'Website analytics' : 'Template library'}</h1><p><span className="admin-topbar-description-full">{editor ? 'Set the artwork and appearance, then check your preview.' : section === 'dashboard' ? 'Track how your templates are being used.' : 'Upload artwork, preview every device, and choose what goes live.'}</span><span className="admin-topbar-description-short">{editor ? 'Artwork, appearance, and preview.' : section === 'dashboard' ? 'Template usage overview.' : 'Manage your designs.'}</span></p></div><details className="admin-profile admin-topbar-profile"><summary aria-label="Profile actions"><UserRound size={20} aria-hidden="true" /></summary><div className="admin-profile-menu"><Link to="/" target="_blank" rel="noopener noreferrer" onClick={event => { event.currentTarget.closest('details').open = false; }}><ExternalLink size={16} aria-hidden="true" />View website<span className="sr-only"> (opens in a new tab)</span></Link><button disabled={busy} onClick={logout}><LogOut size={16} aria-hidden="true" />Sign out</button></div></details></header>
     {error && <div className="admin-error" role="alert">{error} {catalog && reloadNeeded && <button className="text-link" disabled={busy} onClick={load}>Reload library</button>}</div>}
     {notice && <div className="admin-toast" role="status" aria-live="polite"><CheckCircle2 size={18} aria-hidden="true" /><span>{notice}</span><button type="button" className="admin-toast-close" aria-label="Dismiss notification" onClick={() => setNotice('')}><X size={16} aria-hidden="true" /></button></div>}
-    {section === 'dashboard' ? <><AdminDownloadStats templates={catalog?.templates || []} /><AdminDashboard /></> : editor ? <DesignEditor key={editor.key} initial={editor.template} isNew={editor.isNew} existingIds={catalog.templates.map(t => t.id)} busy={busy} onDirty={setEditorDirty} onBack={() => { setEditor(null); setEditorDirty(false); }} onSave={async template => {
+    {section === 'dashboard' ? <AdminDashboard /> : editor ? <DesignEditor key={editor.key} initial={editor.template} isNew={editor.isNew} existingIds={catalog.templates.map(t => t.id)} busy={busy} onDirty={setEditorDirty} onBack={() => { setEditor(null); setEditorDirty(false); }} onSave={async template => {
       setBusy(true); setError(''); setNotice('');
       try {
         const result = await request('save', { revision: catalog.revision, template, create: editor.isNew });
@@ -160,13 +174,13 @@ export default function Admin() {
     }} /> : <>
       <div className="admin-library-search">
         <WallpaperSearchField value={searchQuery} onChange={setSearchQuery} placeholder="Search templates" label="Search templates" iconLeft />
-        <div className="template-filters" role="group" aria-label="Filter by status">{statusFilters.map(option => <button type="button" key={option.id} className="template-category" aria-pressed={statusFilter === option.id} onClick={() => setStatusFilter(option.id)}>{option.name}</button>)}</div>
+        <GalleryFilters device={device} onDeviceChange={setDevice} sort={sort} onSortChange={setSort} extraActive={statusFilter !== 'all' || collection !== 'all'} onReset={() => { setDevice('mobile'); setSort('likes'); setStatusFilter('all'); setCollection('all'); }}>
+          <label>Status<span className="gallery-filter-select"><select aria-label="Status" value={statusFilter} onChange={event => setStatusFilter(event.target.value)}>{statusFilters.map(option => <option key={option.id} value={option.id}>{option.name}</option>)}</select><ChevronDown size={16} aria-hidden="true" /></span></label>
+        </GalleryFilters>
         <button className="button-primary admin-library-cta" disabled={busy || !catalog} onClick={() => setEditor({ key: crypto.randomUUID(), template: blankTemplate(), isNew: true })}><Plus size={18} />New design</button>
       </div>
-      <div className="admin-filter-row">
-        <DevicePicker value={device} onChange={setDevice} label="Filter by device" />
-        <div className="template-filters" role="group" aria-label="Filter designs"><CategoryFilters categories={galleryCategories} value={collection} onChange={setCollection} /></div>
-      </div>
+      <div className="template-filters" role="group" aria-label="Filter designs by category"><CategoryFilters categories={galleryCategories} value={collection} onChange={setCollection} /></div>
+      {metricsError && <p className="admin-error" role="alert">{metricsError} <button type="button" className="text-link" onClick={loadMetrics}>Retry stats</button></p>}
       {!catalog ? error ? <button className="button-secondary" onClick={load}>Retry loading library</button> : <div className={`admin-design-grid admin-grid-${device}`} aria-label="Loading designs" aria-busy="true">{Array.from({ length: 10 }, (_, i) => <div key={i} className="gallery-card-skeleton wallpaper-skeleton" aria-hidden="true" />)}</div> : visible.length === 0 ? <p className="admin-empty">No designs available.</p> : <div className={`admin-design-grid admin-grid-${device}`}>{visible.map(template => {
         return <article key={template.id} className="admin-design">
           <div className="admin-design-artwork">
@@ -175,6 +189,7 @@ export default function Admin() {
           </div>
           <div className="admin-design-footer">
           <div className="admin-design-info"><h2 title={template.name}>{template.name}</h2><div className="admin-design-meta"><span className="text-muted">{designCollections.find(c => c.id === (template.collection || 'original'))?.name}</span></div></div>
+          <span className="admin-design-stats"><span title="Downloads" aria-label={`${metrics.downloads[template.id] ?? 'Unavailable'} downloads`}><Download size={16} aria-hidden="true" /><span aria-hidden="true">{metrics.downloads[template.id]?.toLocaleString() ?? '—'}</span></span><span title="Hearts" aria-label={`${metrics.likes[template.id]?.count ?? 'Unavailable'} hearts`}><Heart className="admin-stat-heart" size={16} fill="currentColor" aria-hidden="true" /><span aria-hidden="true">{metrics.likes[template.id]?.count.toLocaleString() ?? '—'}</span></span></span>
           <div className="admin-design-actions"><button id={`actions-${template.id}`} className="admin-icon-action" aria-label={`Actions for ${template.name}`} title="Actions" aria-expanded={actionMenu === template.id} aria-controls={`action-list-${template.id}`} onClick={() => setActionMenu(actionMenu === template.id ? null : template.id)}><MoreVertical size={20} aria-hidden="true" /></button>{actionMenu === template.id && <div id={`action-list-${template.id}`} className="admin-action-menu" onClick={() => setActionMenu(null)}><button className="admin-icon-action" aria-label={`Edit ${template.name}`} title="Edit" disabled={busy || template.deletionPending} onClick={() => { setError(''); setEditor({ key: template.id, template, isNew: false }); }}><Pencil size={16} aria-hidden="true" />Edit</button><button className="admin-icon-action" aria-label={`${template.status === 'published' ? 'Hide' : 'Publish'} ${template.name}`} title={template.status === 'published' ? 'Hide' : 'Publish'} disabled={busy || template.deletionPending} onClick={async () => {
             if (template.status === 'published') { setError(''); setHiding(template); return; }
             if (template.status !== 'published' && !templateSchema.safeParse({ ...template, status: 'published' }).success) { setError(''); setEditor({ key: template.id, template, isNew: false }); return; }
@@ -189,15 +204,6 @@ export default function Admin() {
     {hiding && <HideDesignDialog template={hiding} busy={busy} onClose={() => setHiding(null)} onConfirm={async () => { const saved = await mutate('visibility', { id: hiding.id, status: 'hidden' }); setHiding(null); if (saved) setNotice('Design hidden.'); }} />}
     </div>
   </div>;
-}
-
-function AdminDownloadStats({ templates }) {
-  const { downloads, error, refresh } = useDesignDownloads();
-  const ranked = [...templates].sort((a, b) => (downloads[b.id] || 0) - (downloads[a.id] || 0));
-  return <section className="admin-download-stats" aria-labelledby="download-stats-title">
-    <header><div><h2 id="download-stats-title">Design downloads</h2><p>{Object.values(downloads).reduce((total, count) => total + count, 0).toLocaleString()} total downloads · all time</p></div><button type="button" className="button-secondary" onClick={refresh}>Refresh</button></header>
-    {error ? <p role="alert">{error}</p> : <div className="admin-download-table"><table><thead><tr><th scope="col">Design</th><th scope="col">Downloads</th></tr></thead><tbody>{ranked.map(template => <tr key={template.id}><th scope="row">{template.name}</th><td>{downloads[template.id]?.toLocaleString() ?? '—'}</td></tr>)}</tbody></table></div>}
-  </section>;
 }
 
 function AdminDashboard() {

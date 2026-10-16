@@ -1,7 +1,8 @@
 import { useEffect, useRef } from 'react';
-import { SlidersHorizontal } from 'lucide-react';
+import { ChevronDown, SlidersHorizontal } from 'lucide-react';
 
-export default function GalleryFilters({ device, onDeviceChange, sort, onSortChange, onReset }) {
+export default function GalleryFilters({ device, onDeviceChange, sort, onSortChange, onReset, children, extraActive = false }) {
+  const active = device !== 'mobile' || sort !== 'likes' || extraActive;
   const details = useRef(null);
   useEffect(() => {
     const dismiss = event => { if (!details.current?.contains(event.target)) details.current.open = false; };
@@ -10,11 +11,12 @@ export default function GalleryFilters({ device, onDeviceChange, sort, onSortCha
     document.addEventListener('keydown', escape);
     return () => { document.removeEventListener('pointerdown', dismiss); document.removeEventListener('keydown', escape); };
   }, []);
-  return <details className="gallery-filters-menu" ref={details}>
-    <summary aria-label="Filter and sort designs" title="Filter and sort designs"><SlidersHorizontal size={20} aria-hidden="true" /><span className="gallery-filter-label">Filters</span>{(device !== 'mobile' || sort !== 'likes') && <span className="gallery-filter-dot" aria-label="Filters applied" />}</summary>
+  return <details className="gallery-filters-menu" ref={details} data-active={active}>
+    <summary aria-label={`Filter and sort designs${active ? ', filters applied' : ''}`} title="Filter and sort designs"><SlidersHorizontal size={20} aria-hidden="true" /><span className="gallery-filter-label">Filters</span></summary>
     <div className="gallery-filters-panel">
-      <label>Device<select value={device} onChange={event => onDeviceChange(event.target.value)}><option value="mobile">Mobile</option><option value="tablet">Tablet</option><option value="laptop">Laptop</option></select></label>
-      <label>Sort by<select value={sort} onChange={event => onSortChange(event.target.value)}><option value="likes">Most hearts</option><option value="downloads">Most downloads</option><option value="newest">Release date · newest</option><option value="oldest">Release date · oldest</option></select></label>
+      <label>Device<span className="gallery-filter-select"><select aria-label="Device" value={device} onChange={event => onDeviceChange(event.target.value)}><option value="mobile">Mobile</option><option value="tablet">Tablet</option><option value="laptop">Laptop</option></select><ChevronDown size={16} aria-hidden="true" /></span></label>
+      <label>Sort by<span className="gallery-filter-select"><select aria-label="Sort by" value={sort} onChange={event => onSortChange(event.target.value)}><option value="likes">Most hearts</option><option value="downloads">Most downloads</option><option value="newest">Newest</option><option value="oldest">Oldest</option></select><ChevronDown size={16} aria-hidden="true" /></span></label>
+      {children}
       <button type="button" className="text-link" onClick={onReset}>Reset filters</button>
     </div>
   </details>;

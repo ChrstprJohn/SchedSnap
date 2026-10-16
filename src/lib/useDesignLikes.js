@@ -90,10 +90,12 @@ export default function useDesignLikes() {
         rememberLike(id, entry.confirmed);
         publish({ count: data.count + Number(entry.desired) - Number(data.liked), liked: entry.desired });
       }
+      return true;
     } catch (failure) {
       if (failure.response?.status === 428) { identified.current = false; cacheRevision++; cached = null; expires = 0; }
       publish(entry.confirmed);
       if (mounted.current) setError(failure.response?.data?.error?.message || 'Your like could not save. Try again.');
+      return false;
     } finally {
       saving.current.delete(id);
       if (mounted.current) setPending(saving.current.size);

@@ -1,3 +1,8 @@
+// Keep the increment atomic using commands allowed by the existing likes ACL.
+const incrementScript = `local count = tonumber(redis.call('HGET', KEYS[1], ARGV[1]) or '0') + 1
+redis.call('HSET', KEYS[1], ARGV[1], count)
+return count`;
+
 export function createDesignDownloads({ env = process.env, fetcher = fetch } = {}) {
   const configured = Boolean(env.UPSTASH_REDIS_REST_URL && env.UPSTASH_REDIS_REST_TOKEN);
   const local = new Map();
@@ -23,13 +28,15 @@ export function createDesignDownloads({ env = process.env, fetcher = fetch } = {
       ready();
       if (!configured) return Object.fromEntries(ids.map(id => [id, local.get(id) || 0]));
       if (!ids.length) return {};
-      const values = await command(['HMGET', 'schedsnap:downloads:counts', ...ids]);
-      if (!Array.isArray(values) || values.length !== ids.length) throw new Error('Invalid download counts');
-      return Object.fromEntries(ids.map((id, index) => [id, count(values[index])]));
+      const values = await command(['HGETALL', 'schedsnap:downloads:counts']);
+      if (!Array.isArray(values) || values.length % 2) throw new Error('Invalid download counts');
+      const fields = new Map();
+      for (let index = 0; index < values.length; index += 2) fields.set(values[index], count(values[index + 1]));
+      return Object.fromEntries(ids.map(id => [id, fields.get(id) ?? 0]));
     },
     async record(id) {
       ready();
-      const value = configured ? count(await command(['HINCRBY', 'schedsnap:downloads:counts', id, 1])) : (local.get(id) || 0) + 1;
+      const value = configured ? count(await command(['EVAL', incrementScript, '1', 'schedsnap:downloads:counts', id])) : (local.get(id) || 0) + 1;
       if (!configured) local.set(id, value);
       return value;
     },

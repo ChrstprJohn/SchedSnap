@@ -17,11 +17,15 @@ test('production requires persistent storage and increments atomically', async (
   const commands = [];
   const store = createDesignDownloads({ env: { UPSTASH_REDIS_REST_URL: 'https://redis.example', UPSTASH_REDIS_REST_TOKEN: 'token' }, fetcher: async (_url, options) => {
     commands.push(JSON.parse(options.body));
-    return { ok: true, json: async () => ({ result: commands.length === 1 ? 3 : ['3', null] }) };
+    return { ok: true, json: async () => ({ result: commands.length === 1 ? 3 : ['one', '3'] }) };
   } });
   assert.equal(await store.record('one'), 3);
-  assert.deepEqual(commands[0], ['HINCRBY', 'schedsnap:downloads:counts', 'one', 1]);
+  assert.equal(commands[0][0], 'EVAL');
+  assert.match(commands[0][1], /redis.call\('HGET'/);
+  assert.match(commands[0][1], /redis.call\('HSET'/);
+  assert.deepEqual(commands[0].slice(2), ['1', 'schedsnap:downloads:counts', 'one']);
   assert.deepEqual(await store.read(['one', 'two']), { one: 3, two: 0 });
+  assert.deepEqual(commands[1], ['HGETALL', 'schedsnap:downloads:counts']);
 });
 
 test('sort by hearts, downloads, and release date without mutating catalog', () => {

@@ -13,8 +13,9 @@ import ScheduleLayoutPicker from './ScheduleLayoutPicker.jsx';
 import Editor from './Editor.jsx';
 import Uploader from './Uploader.jsx';
 import Toast from '../../components/Toast.jsx';
-import { recordDesignDownload } from '../../lib/useDesignDownloads.js';
+import useDesignDownloads, { recordDesignDownload } from '../../lib/useDesignDownloads.js';
 import useDesignLikes from '../../lib/useDesignLikes.js';
+import DownloadThanksDialog from '../../components/DownloadThanksDialog.jsx';
 
 export default function TemplateWorkspace({ step, onStep, template, defaultTemplate, schedule, resolution, scheduleSource, onScheduleSourceChange, onScheduleChange, onAppearanceChange, onResetAppearance, image, onImage, busy, onError, onAnalyze, importUsage, usageUnavailable, onSample, importOpen, onImportOpenChange: setImportOpen, onTitleChange, canCancelEntry, onCancelEntryChange: setCanCancelEntry, onCancelImport, imagePickerRef: imagePicker, preparingImage, onPreparingImageChange: setPreparingImage }) {
   const [enlarged, setEnlarged] = useState(false);
@@ -26,8 +27,10 @@ export default function TemplateWorkspace({ step, onStep, template, defaultTempl
   const [layout, setLayout] = useState(null);
   const [exporting, setExporting] = useState(false);
   const [exportResult, setExportResult] = useState(null);
+  const [thankYouDesign, setThankYouDesign] = useState(null);
   const { likes, pending: pendingLikes, error: likeError, refresh: refreshLikes, toggle: toggleLike } = useDesignLikes();
   const vote = likes[template.id];
+  const { downloads, error: downloadError, refresh: refreshDownloads } = useDesignDownloads();
   const [message, setMessage] = useState('');
   const [messageKind, setMessageKind] = useState('success');
   const lastUrl = useRef(null);
@@ -75,6 +78,11 @@ export default function TemplateWorkspace({ step, onStep, template, defaultTempl
     requestAnimationFrame(() => imagePicker.current?.focusUpload());
   }
 
+  async function recordDownload() {
+    const saved = await recordDesignDownload(template.id);
+    if (saved && active.current) refreshDownloads();
+  }
+
   async function download() {
     if (!canDownload) return;
     setExporting(true);
@@ -94,13 +102,14 @@ export default function TemplateWorkspace({ step, onStep, template, defaultTempl
       const filename = `schedsnap-${template.id}-${resolution.width}x${resolution.height}.png`;
       stage = 'download';
       const { inApp } = downloadBlob(blob, filename);
-      void recordDesignDownload(template.id);
+      void recordDownload();
       trackEvent('wallpaper_download_started', { ...properties, download_method: inApp ? 'new_tab' : 'download_link', duration_ms: Math.round(performance.now() - started) });
       // Keep a fresh object URL for the "Save again" link
       if (lastUrl.current) URL.revokeObjectURL(lastUrl.current);
       const url = URL.createObjectURL(blob);
       lastUrl.current = url;
-      setExportResult({ url, filename, key: exportKey, templateId: template.id });
+      setExportResult({ url, filename, key: exportKey });
+      if (!vote?.liked) setThankYouDesign(template.id);
       setMessageKind('success');
       setMessage(
         inApp
@@ -143,23 +152,22 @@ export default function TemplateWorkspace({ step, onStep, template, defaultTempl
       <section className="download-options" aria-label="Download and customize">
         <h2>{template.name}</h2>
         <p className="download-meta">{schedule.classes.length} {schedule.classes.length === 1 ? 'class' : 'classes'} · {resolution.width} × {resolution.height} PNG</p>
+        <div className="download-design-stats" aria-label="Design totals">
+          <span title={downloadError || 'Total downloads'} aria-label={`${downloads[template.id]?.toLocaleString() ?? 'Unavailable'} downloads`}><Download size={18} aria-hidden="true" /><span aria-hidden="true">{downloads[template.id]?.toLocaleString() ?? '—'}</span></span>
+          <span className="download-design-hearts" data-liked={vote?.liked || false} title="Total hearts" aria-label={`${vote?.count.toLocaleString() ?? 'Unavailable'} hearts`}><Heart size={18} fill={vote?.liked ? 'currentColor' : 'none'} aria-hidden="true" /><span aria-hidden="true">{vote?.count.toLocaleString() ?? '—'}</span></span>
+          {downloadError && <button type="button" className="text-link" onClick={refreshDownloads}>Retry downloads</button>}
+          {likeError && <button type="button" className="text-link" disabled={!!pendingLikes} onClick={() => refreshLikes(true)}>Retry hearts</button>}
+        </div>
         <button type="button" onClick={download} disabled={!canDownload} aria-describedby={exportStatus ? 'wallpaper-export-status' : undefined} className="button-primary download-wallpaper"><Download size={18} aria-hidden="true" />{exporting ? 'Creating PNG…' : 'Download wallpaper'}</button>
         {exportStatus && <div className="export-status" role="status" id="wallpaper-export-status"><p>{exportStatus}</p>{(issues.length > 0 || currentLayout?.overflow) && <button type="button" className="text-link" onClick={() => onStep('classes')}>Fix class details</button>}{currentLayout?.error && <button type="button" className="text-link" onClick={() => onStep('design')}>Change design</button>}</div>}
-        {exportResult?.key === exportKey && <a className="text-link save-again" href={exportResult.url} download={exportResult.filename} onClick={() => { void recordDesignDownload(template.id); trackEvent('wallpaper_download_repeated', { ...templateProperties(template), schedule_source: scheduleSource }); }}>Save PNG again</a>}
-        {exportResult?.templateId === template.id && <section className="download-heart-prompt" aria-labelledby="download-heart-title">
-          <h3 id="download-heart-title">Love this design?</h3>
-          <p>Give it a heart to help others find it.</p>
-          <button type="button" className="template-heart download-heart-button" aria-pressed={vote?.liked || false} disabled={!vote} onClick={() => toggleLike(template.id)}>
-            <Heart size={18} fill={vote?.liked ? 'currentColor' : 'none'} aria-hidden="true" />{vote?.liked ? 'Hearted' : 'Heart this design'}<span>{vote ? `${vote.count.toLocaleString()} ${vote.count === 1 ? 'heart' : 'hearts'}` : likeError ? 'Hearts unavailable' : 'Loading hearts…'}</span>
-          </button>
-          {likeError && <div className="download-heart-error" role="alert"><span>{likeError}</span><button type="button" className="text-link" disabled={!!pendingLikes} onClick={() => refreshLikes(true)}>Retry</button></div>}
-        </section>}
+        {exportResult?.key === exportKey && <a className="text-link save-again" href={exportResult.url} download={exportResult.filename} onClick={() => { void recordDownload(); if (!vote?.liked) setThankYouDesign(template.id); trackEvent('wallpaper_download_repeated', { ...templateProperties(template), schedule_source: scheduleSource }); }}>Save PNG again</a>}
         <div className="wallpaper-edit-actions"><button type="button" className="button-secondary" onClick={() => onStep('classes')}><Pencil size={16} aria-hidden="true" />Edit classes</button><button type="button" className="button-secondary" onClick={() => onStep('design')}><LayoutTemplate size={16} aria-hidden="true" />Change design</button></div>
         <ScheduleLayoutPicker template={template} onChange={onAppearanceChange} />
         <details className="flow-customize customize-appearance" open={customizing} onToggle={(event) => { setCustomizing(event.currentTarget.open); setPreviewStuck(false); }}><summary className="disclosure-summary"><span><SlidersHorizontal size={16} aria-hidden="true" />Customize appearance</span><ChevronDown className="disclosure-icon size-4" aria-hidden="true" /></summary><TemplateControls template={template} defaultTemplate={defaultTemplate} enablePlacement onChange={onAppearanceChange} onReset={onResetAppearance} /></details>
       </section>
     </div>}
     {enlarged && <WallpaperViewer resolution={resolution} onClose={() => setEnlarged(false)}><WallpaperCanvas schedule={shownSchedule} template={template} resolution={resolution} showClock={previewClock} className="block h-auto w-full" label={`${template.name} enlarged wallpaper${previewClock && resolution.id !== 'laptop' ? ', sample clock at 9:41 AM' : ''}`} /></WallpaperViewer>}
+    {thankYouDesign === template.id && <DownloadThanksDialog name={template.name} vote={vote} pending={pendingLikes} error={likeError} onHeart={() => toggleLike(template.id)} onRetry={() => refreshLikes(true)} onClose={() => setThankYouDesign(null)} />}
     <Toast message={message} kind={messageKind} onClose={dismissNotification} />
   </>;
 }

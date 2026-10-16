@@ -9,6 +9,22 @@ import { generateDesignId } from '../shared/designId.js';
 import { artworkIds, createArtworkDeleter } from '../server/deleteArtwork.js';
 
 const env = { ADMIN_PASSWORD_HASH: hashPassword('a-long-test-password'), ADMIN_SESSION_SECRET: 'test-session-secret-that-is-long-enough', CLOUDINARY_CLOUD_NAME: 'test', CLOUDINARY_API_KEY: 'test-key', CLOUDINARY_API_SECRET: 'test-secret' };
+test('admin metrics require authentication and include hidden and draft designs', async () => {
+  const ids = ['published', 'hidden', 'draft'];
+  const handler = createAdminHandler({ env,
+    store: { read: async () => ({ templates: ids.map(id => ({ id, status: id })) }) },
+    downloads: { read: async requested => { assert.deepEqual(requested, ids); return { published: 5, hidden: 3, draft: 0 }; } },
+    likes: { read: async (requested, visitor) => { assert.deepEqual(requested, ids); assert.equal(visitor, null); return { hidden: { count: 2, liked: false } }; } },
+  });
+  let result = response();
+  await handler(req('metrics'), result);
+  assert.equal(result.code, 401);
+  result = response();
+  await handler(req('metrics', undefined, cookie()), result);
+  assert.equal(result.code, 200);
+  assert.equal(result.body.downloads.hidden, 3);
+  assert.equal(result.body.likes.hidden.count, 2);
+});
 function response() { return { headers: {}, setHeader(key, value) { this.headers[key] = value; }, status(code) { this.code = code; return this; }, json(body) { this.body = body; return this; } }; }
 function req(action, body, cookie) { return { method: body ? 'POST' : 'GET', url: `/api/admin?action=${action}`, headers: { host: 'localhost:5173', origin: 'http://localhost:5173', 'content-type': 'application/json', cookie }, body }; }
 const cookie = () => `schedsnap_admin=${createSession(env)}`;
