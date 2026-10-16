@@ -3,13 +3,16 @@ import { useSearchPlaceholder } from '../lib/useWallpaperSearch.js';
 
 export default function WallpaperSearch({ value, onChange }) {
   const placeholder = useSearchPlaceholder(value);
+  return <WallpaperSearchField value={value} onChange={onChange} placeholder={placeholder} iconLeft />;
+}
 
-  return <div className="wallpaper-search-wrap" role="search">
+export function WallpaperSearchField({ value, onChange, placeholder, label = 'Search designs or categories', iconLeft = false }) {
+  return <div className={`wallpaper-search-wrap${iconLeft ? ' wallpaper-search-left' : ''}`} role="search">
     <input
       type="search"
       className="wallpaper-search-input"
       placeholder={placeholder}
-      aria-label="Search designs or categories"
+      aria-label={label}
       value={value}
       onChange={event => onChange(event.target.value)}
     />

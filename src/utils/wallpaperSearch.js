@@ -1,4 +1,5 @@
 import { galleryCategories, matchesGalleryCategory } from '../config/collections.js';
+import { genshinKeywords } from '../../shared/templateKeywords.js';
 
 /**
  * Normalizes a string for search comparison (lowercase, trims, strips diacritics).
@@ -124,7 +125,7 @@ export function scoreSearchPattern(query, target) {
 }
 
 /**
- * Searches and ranks wallpaper templates by name, collection and gallery category.
+ * Searches and ranks wallpaper templates by name, collection and contextual keywords.
  * Sorts from highest score (most relevant) to lowest score (least relevant).
  */
 export function searchWallpaperTemplates(templates, query) {
@@ -139,7 +140,13 @@ export function searchWallpaperTemplates(templates, query) {
     const title = template.name || template.title || '';
     const categories = galleryCategories.filter(category => category.id !== 'all' && matchesGalleryCategory(template, category.id));
     const categoryTerms = [template.collection, template.mascotStyle === 'pixel' ? 'pixel art' : template.mascotStyle, ...categories.flatMap(category => [category.id.replaceAll('-', ' '), category.name, ...(category.searchTerms || [])])];
-    const score = Math.max(scoreSearchPattern(trimmed, title), ...categoryTerms.map(term => scoreSearchPattern(trimmed, term) * 0.8));
+    let score = Math.max(scoreSearchPattern(trimmed, title), ...categoryTerms.map(term => scoreSearchPattern(trimmed, term) * 0.8));
+    const keywords = (template.keywords ?? (template.collection === 'genshin' ? genshinKeywords(template) : '')).split(',').map(term => term.trim()).filter(Boolean);
+    if (keywords.length) {
+      const words = normalizeSearchText([title, template.description, template.family, ...categoryTerms, ...keywords].filter(Boolean).join(' ')).split(/\s+/);
+      const matchesContext = normalizeSearchText(trimmed).split(/\s+/).every(token => words.some(word => word.startsWith(token) || token === `${word}s`));
+      if (matchesContext) score = Math.max(score, 300);
+    }
     if (score > 0) {
       scored.push({ template, score });
     }

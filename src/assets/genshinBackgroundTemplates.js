@@ -1,3 +1,5 @@
+import { genshinKeywords } from '../../shared/templateKeywords.js';
+
 // Character-free namecard backgrounds with device-specific compositions.
 const designs = [
   ['genshin-namecard-xiao', 'Xiao · Mask', 'Official namecard motifs with a subtle Anemo Vision.', 'xiao', '#175466', '#e8fff9', '#103c50b3', '2026-10-16T00:55:05Z'],
@@ -31,4 +33,4 @@ export const genshinBackgroundTemplates = designs.map(([id, name, description, f
   showScheduleTitle: true, artworkFooter: false, schedulePosition: 'left', particleStyle: 'none',
   image: `/wallpapers/scenic/${id}/mobile.png`,
   deviceImages: Object.fromEntries(['mobile', 'tablet', 'laptop'].map(device => [device, `/wallpapers/scenic/${id}/${device}.png`])),
-}));
+})).map(template => ({ ...template, keywords: genshinKeywords(template) }));

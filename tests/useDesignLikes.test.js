@@ -7,7 +7,7 @@ const source = readFileSync(new URL('../src/lib/useDesignLikes.js', import.meta.
 const settle = () => new Promise(resolve => setImmediate(resolve));
 
 // Exercise the actual hook with controllable network replies and a small hook host.
-async function browser(identified = true) {
+async function browser(identified = true, read) {
   const slots = [];
   const requests = [];
   let cursor;
@@ -28,7 +28,7 @@ async function browser(identified = true) {
       return [slots[index], next => { slots[index] = typeof next === 'function' ? next(slots[index]) : next; render(); }];
     },
     api: {
-      get: async () => { reads++; return { data: { identified, likes: { first: { count: 7, liked: false }, second: { count: 2, liked: false } } } }; },
+      get: async () => { reads++; return read ? read() : { data: { identified, likes: { first: { count: 7, liked: false }, second: { count: 2, liked: false } } } }; },
       post: (_url, body) => new Promise((resolve, reject) => requests.push({ body, resolve: data => resolve({ data }), reject })),
     },
   };
@@ -39,6 +39,48 @@ async function browser(identified = true) {
   await settle();
   return { hook: () => hook, requests, reads: () => reads, unmount, api: context.api, load: context.loadLikes, advance: ms => { clock += ms; } };
 }
+
+test('initial ranking stays loading until likes arrive, then remains visible during refresh', async () => {
+  let release;
+  const page = await browser(true, () => new Promise(resolve => { release = resolve; }));
+  assert.equal(page.hook().loading, true);
+  release({ data: { identified: true, likes: { first: { count: 7, liked: false } } } });
+  await settle();
+  assert.equal(page.hook().loading, false);
+  assert.equal(page.hook().rankingLikes.first.count, 7);
+  const refreshing = page.hook().refresh(true);
+  assert.equal(page.hook().loading, false);
+  release({ data: { identified: true, likes: { first: { count: 8, liked: false } } } });
+  await refreshing;
+  assert.equal(page.hook().rankingLikes.first.count, 7);
+  page.unmount();
+});
+
+test('an initial likes failure ends the skeleton and allows retry', async () => {
+  const page = await browser(true, () => Promise.reject(new Error('Offline')));
+  assert.equal(page.hook().loading, false);
+  assert.ok(page.hook().error);
+  page.api.get = async () => ({ data: { identified: true, likes: { first: { count: 4, liked: false } } } });
+  await page.hook().refresh(true);
+  assert.equal(page.hook().loading, false);
+  assert.equal(page.hook().error, '');
+  assert.equal(page.hook().rankingLikes.first.count, 4);
+  page.unmount();
+});
+
+test('gallery ranking retains initial counts through optimistic votes, saves, and refreshes', async () => {
+  const page = await browser();
+  assert.equal(page.hook().rankingLikes.second.count, 2);
+  const saving = page.hook().toggle('second');
+  assert.equal(page.hook().likes.second.count, 3);
+  assert.equal(page.hook().rankingLikes.second.count, 2);
+  page.requests[0].resolve({ count: 20, liked: true });
+  await saving;
+  await page.hook().refresh();
+  assert.equal(page.hook().likes.second.count, 20);
+  assert.equal(page.hook().rankingLikes.second.count, 2);
+  page.unmount();
+});
 
 test('hearts and counts change before any network response, including first-cookie setup', async () => {
   const page = await browser(false);

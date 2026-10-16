@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const examples = ['Genshin Impact…', 'Sanrio…', 'Notebook Hours…', 'We Bare Bears…', 'Chiikawa…', 'Pixel art…', 'Patterns & prints…'];
+const examples = ['Genshin Impact…', 'Sanrio…', 'Notebook Hours…', 'We Bare Bears…', 'Chiikawa…', 'Patterns & prints…'];
 
 export function useSearchPlaceholder(value) {
   const [placeholder, setPlaceholder] = useState(examples[0]);

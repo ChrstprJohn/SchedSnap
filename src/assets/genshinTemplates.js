@@ -1,3 +1,5 @@
+import { genshinKeywords } from '../../shared/templateKeywords.js';
+
 // Clean Genshin chibi artwork; schedule content is drawn separately by Canvas.
 const designs = [
   ['genshin-hutao-nap', 'Hu Tao · Cozy Nap', 'Minimal ink sticker Hu Tao taking a quiet nap.', 'hutao', '#f5eeee', '#553c45', '2026-10-14T06:22:00Z'],
@@ -31,7 +33,7 @@ const designs = [
   ],
   [
     "genshin-arlecchino-ember",
-    "Arlecchino — Sketch Doodle",
+    "Arlecchino · Little Ember",
     "A poised chibi and tiny crimson petals on soft ash paper.",
     "arlecchino",
     "#f5f2f2",
@@ -56,4 +58,4 @@ export const genshinTemplates = designs.map(([id, name, description, family, bac
   particleStyle: 'none',
   image: `/wallpapers/scenic/${id}/mobile.png`,
   deviceImages: Object.fromEntries(['mobile', 'tablet', 'laptop'].map(device => [device, `/wallpapers/scenic/${id}/${device}.png`])),
-}));
+})).map(template => ({ ...template, keywords: genshinKeywords(template) }));

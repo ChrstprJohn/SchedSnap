@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import manifest from '../src/assets/cloudinaryManifest.js';
 import { genshinTemplates } from '../src/assets/genshinTemplates.js';
 import { genshinBackgroundTemplates } from '../src/assets/genshinBackgroundTemplates.js';
 import { sanrioTemplates } from '../src/assets/sanrioTemplates.js';
@@ -41,13 +41,14 @@ test('Genshin filter selects its own collection and schema preserves artwork set
   assert.equal(parsed.artworkFooter, true);
 });
 
-test('every selectable Genshin design has finished PNG artwork for all three devices', () => {
+test('every selectable Genshin design has Cloudinary PNG artwork for all three devices', () => {
   for (const template of genshinTemplates) {
     for (const resolution of Object.values(deviceResolutions)) {
-      const png = readFileSync(new URL(`../public${template.deviceImages[resolution.id]}`, import.meta.url));
-      assert.equal(png.subarray(0, 8).toString('hex'), '89504e470d0a1a0a', template.id);
-      assert.equal(png.readUInt32BE(16), resolution.width, template.id);
-      assert.equal(png.readUInt32BE(20), resolution.height, template.id);
+      const asset = manifest[template.deviceImages[resolution.id]];
+      assert.ok(asset, template.id);
+      assert.match(asset.url, /^https:\/\/res\.cloudinary\.com\/.*\.png$/);
+      assert.equal(asset.width, resolution.width, template.id);
+      assert.equal(asset.height, resolution.height, template.id);
     }
   }
 });

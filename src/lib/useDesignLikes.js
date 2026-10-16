@@ -26,6 +26,7 @@ function rememberLike(id, vote) {
 
 export default function useDesignLikes() {
   const [likes, setLikes] = useState({});
+  const [rankingLikes, setRankingLikes] = useState(null);
   const [pending, setPending] = useState(0);
   const [error, setError] = useState('');
   const identified = useRef(false);
@@ -44,6 +45,7 @@ export default function useDesignLikes() {
       identified.current = data.identified;
       currentLikes.current = data.likes;
       setLikes(data.likes);
+      setRankingLikes(previous => previous ?? data.likes);
       setError('');
     } catch {
       if (mounted.current && version.current === revision) setError('Likes could not load. Try again.');
@@ -98,5 +100,5 @@ export default function useDesignLikes() {
     }
   }
 
-  return { likes, pending, error, refresh, toggle };
+  return { likes, rankingLikes: rankingLikes ?? likes, loading: rankingLikes === null && !error, pending, error, refresh, toggle };
 }

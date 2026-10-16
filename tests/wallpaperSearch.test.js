@@ -20,9 +20,73 @@ test('Genshin search includes every design in the real Genshin collection', asyn
   const results = searchWallpaperTemplates(wallpaperTemplates, 'genshin');
   const genshin = wallpaperTemplates.filter(template => template.collection === 'genshin');
   assert.ok(genshin.length > 0);
-  for (const template of genshin) assert.ok(results.includes(template), template.name);
+  for (const template of genshin) {
+    assert.ok(results.includes(template), template.name);
+    assert.ok(template.keywords.includes('Genshin Impact'), template.id);
+    assert.ok(template.keywords.length <= 500, template.id);
+  }
   const fullNameResults = searchWallpaperTemplates(wallpaperTemplates, 'Genshin Impact');
   for (const template of genshin) assert.ok(fullNameResults.includes(template), template.name);
+});
+
+test('Genshin context keywords distinguish namecards from chibi wallpapers', async () => {
+  const { wallpaperTemplates } = await import('../src/assets/templates.js');
+  const genshin = wallpaperTemplates.filter(template => template.collection === 'genshin');
+  for (const query of ['background', 'wallpaper', 'Teyvat', 'anime']) {
+    const results = searchWallpaperTemplates(wallpaperTemplates, query);
+    for (const template of genshin) assert.ok(results.includes(template), `${query}: ${template.id}`);
+  }
+  const huTao = genshin.find(template => template.id === 'genshin-card-hutao-spirit');
+  const nap = genshin.find(template => template.id === 'genshin-hutao-nap');
+  for (const query of ['namecard', 'name card', 'banner', 'Hu Tao namecard', 'genshin impact banner']) {
+    const results = searchWallpaperTemplates(wallpaperTemplates, query);
+    assert.ok(results.includes(huTao), query);
+    assert.ok(!results.includes(nap), query);
+  }
+  assert.ok(searchWallpaperTemplates(wallpaperTemplates, 'chibi background').includes(nap));
+  assert.ok(!searchWallpaperTemplates(wallpaperTemplates, 'sanrio namecard').includes(huTao));
+  assert.equal(searchWallpaperTemplates(wallpaperTemplates, 'Hu Tao · Spirit Soother')[0], huTao);
+});
+
+test('character keywords cover Genshin chibi and namecards, including supporting characters', async () => {
+  const { wallpaperTemplates } = await import('../src/assets/templates.js');
+  const cases = [
+    ['character chibi', 'genshin-hutao-nap'],
+    ['character namecard', 'genshin-card-hutao-spirit'],
+    ['Hu Tao chibi', 'genshin-hutao-nap'],
+    ['Hu Tao namecard', 'genshin-card-hutao-spirit'],
+    ['Kaeya namecard', 'genshin-kaeya-atlas'],
+    ['Arlecchino namecard', 'genshin-original-kaeya-map'],
+    ['Arlecchino chibi', 'genshin-arlecchino-ember'],
+    ['Paimon chibi', 'genshin-tidal-sketches'],
+  ];
+  for (const [query, id] of cases) {
+    assert.ok(searchWallpaperTemplates(wallpaperTemplates, query).some(template => template.id === id), query);
+  }
+  assert.ok(!searchWallpaperTemplates(wallpaperTemplates, 'character namecard').some(template => template.id === 'genshin-sky-welkin'));
+});
+
+test('plural Genshin context keywords match their singular forms', async () => {
+  const { wallpaperTemplates } = await import('../src/assets/templates.js');
+  for (const [singular, plural] of [
+    ['namecard', 'namecards'], ['name card', 'name cards'], ['banner', 'banners'],
+    ['background', 'backgrounds'], ['wallpaper', 'wallpapers'], ['character', 'characters'],
+    ['Hu Tao namecard', 'Hu Tao namecards'], ['chibi background', 'chibi backgrounds'],
+  ]) {
+    const ids = query => searchWallpaperTemplates(wallpaperTemplates, query)
+      .filter(template => template.collection === 'genshin').map(template => template.id).sort();
+    assert.ok(ids(singular).length > 0, singular);
+    assert.deepEqual(ids(plural), ids(singular), plural);
+  }
+});
+
+test('admin keywords support phrases, character combinations and plurals in any collection', () => {
+  const template = { id: 'custom', name: 'Evening Study', collection: 'sanrio', keywords: 'moonlight, cozy background, sleepy cat' };
+  for (const query of ['moonlight', 'cozy background', 'Evening moonlight', 'sleepy cats']) {
+    assert.deepEqual(searchWallpaperTemplates([template], query), [template], query);
+  }
+  assert.deepEqual(searchWallpaperTemplates([{ ...template, keywords: '' }], 'moonlight'), []);
+  assert.deepEqual(searchWallpaperTemplates([{ ...template, collection: 'genshin', keywords: '' }], 'background'), []);
 });
 
 test('empty or whitespace query returns all templates in original order', () => {
@@ -96,9 +160,9 @@ test('ranks real templates appropriately when searching', async () => {
   const { wallpaperTemplates } = await import('../src/assets/templates.js');
   const results = searchWallpaperTemplates(wallpaperTemplates, 'cloud');
   assert.ok(results.length > 0);
-  // All results must have matching pattern in name
+  // Genshin descriptions provide context beyond the displayed title.
   for (const r of results) {
-    assert.ok(scoreSearchPattern('cloud', r.name) > 0);
+    assert.ok(scoreSearchPattern('cloud', r.name) > 0 || (r.collection === 'genshin' && r.description?.toLowerCase().includes('cloud')));
   }
   // The first result should be the highest score
   const firstScore = scoreSearchPattern('cloud', results[0].name);

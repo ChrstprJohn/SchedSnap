@@ -1,0 +1,31 @@
+{
+  "assets": [
+    {
+      "path": "public/wallpapers/scenic/genshin-card-hutao-spirit/mobile.png",
+      "sha256": "3e8a4c2f9a3d96d3ba12afe3d26e443903afdba4e3d006dbca04644ba814ab53",
+      "dimensionsValid": true,
+      "opaque": true,
+      "visuallyReviewed": true,
+      "width": 1080,
+      "height": 2400
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-card-hutao-spirit/tablet.png",
+      "sha256": "0af0722e033a07eb337365e58fda8e6638a7b930eaee5fcaa8663768e7873712",
+      "dimensionsValid": true,
+      "opaque": true,
+      "visuallyReviewed": true,
+      "width": 1600,
+      "height": 2560
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-card-hutao-spirit/laptop.png",
+      "sha256": "4d38b9c983dc63c07f80c340debc5626e4d2af89e580e833f5e8bc4bc5194c96",
+      "dimensionsValid": true,
+      "opaque": true,
+      "visuallyReviewed": true,
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}

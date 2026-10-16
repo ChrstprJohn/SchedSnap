@@ -5,6 +5,7 @@ const artwork = z.string().max(500).refine(value => /^\/wallpapers\/[a-z0-9/_.-]
 export const templateSchema = z.object({
   id: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).max(80),
   name: z.string().trim().min(1, 'Enter a title for this design.').max(80), description: z.string().max(240).optional(),
+  keywords: z.string().trim().max(500, 'Keep keywords under 500 characters.').optional(),
   status: z.enum(['draft', 'published', 'hidden']),
   createdAt: z.iso.datetime().optional(), publishedAt: z.iso.datetime().optional(),
   collection: z.enum(['scenic', 'sanrio', 'genshin', 'we-bare-bears', 'domo', 'adventure-time', 'chiikawa', 'chikawa', 'ghibli', 'mascot', 'meep', 'little-friends', 'pattern', 'original']).optional(),

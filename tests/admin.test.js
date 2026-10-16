@@ -23,6 +23,21 @@ test('direct environment password supports login and rotation without a setup co
   const wrong = response(); await handler(req('login', { password: 'wrong' }), wrong); assert.equal(wrong.code, 401);
   const invalid = response(); await createAdminHandler({ env: { ...direct, ADMIN_PASSWORD: 'short' } })(req('session'), invalid); assert.equal(invalid.code, 503);
 });
+test('design keywords survive authenticated save and public catalog delivery', async () => {
+  let catalog = seedCatalog();
+  const store = { read: async () => structuredClone(catalog), write: async next => { catalog = next; return next; } };
+  const handler = createAdminHandler({ env, store });
+  const template = { ...catalog.templates[0], keywords: 'moonlight, cozy background' };
+  let result = response();
+  await handler(req('save', { revision: catalog.revision, template }, cookie()), result);
+  assert.equal(result.code, 200);
+  assert.equal(catalog.templates.find(t => t.id === template.id).keywords, template.keywords);
+  result = response();
+  await createPublicCatalogHandler({ env, store })({ method: 'GET' }, result);
+  assert.equal(result.body.templates.find(t => t.id === template.id).keywords, template.keywords);
+  assert.equal(templateSchema.safeParse({ ...template, keywords: 'x'.repeat(501) }).success, false);
+});
+
 test('partial background drafts save while publishing requires three distinct variants', () => {
   const base = seedCatalog().templates.find(template => template.deviceImages && template.layout !== 'mascot');
   assert.ok(base, 'The fixture needs a background with device variants');
