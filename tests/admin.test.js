@@ -85,6 +85,26 @@ test('catalog saves reject stale revisions, foreign artwork, and incomplete devi
   result = response(); await handler(req('save', { revision: 'seed', template }, cookie()), result); assert.equal(result.code, 400);
   assert.equal(writes, 0);
 });
+
+test('edits can save and publish catalog designs outside the built-in collection without admitting arbitrary local artwork', async () => {
+  const deviceImages = Object.fromEntries(['mobile', 'tablet', 'laptop'].map(device => [device, `/wallpapers/scenic/catalog-only-design/${device}.png`]));
+  const original = { id: 'catalog-only-design', name: 'Catalog design', status: 'published', collection: 'genshin', background: '#ffffff', ink: '#172033', muted: '#172033', surface: '#ffffff', line: '#cccccc', image: deviceImages.mobile, deviceImages };
+  let catalog = { revision: 'seed', templates: [original] }, writes = 0;
+  const store = { read: async () => structuredClone(catalog), write: async next => { writes++; catalog = { ...next, revision: String(writes) }; return structuredClone(catalog); } };
+  const handler = createAdminHandler({ env, store });
+  for (const status of ['draft', 'published']) {
+    const result = response();
+    await handler(req('save', { revision: catalog.revision, template: { ...catalog.templates[0], name: 'Edited design', status, containerRadius: 15 } }, cookie()), result);
+    assert.equal(result.code, 200, result.body?.error?.message);
+    assert.equal(catalog.templates[0].status, status);
+    assert.deepEqual(catalog.templates[0].deviceImages, deviceImages);
+    assert.equal(catalog.templates[0].containerRadius, 15);
+  }
+  const result = response();
+  await handler(req('save', { revision: catalog.revision, template: { ...catalog.templates[0], status: 'draft', image: '/wallpapers/scenic/unknown/mobile.png' } }, cookie()), result);
+  assert.equal(result.code, 400);
+  assert.equal(writes, 2);
+});
 test('published designs and visibility persist; confirmed deletion removes artwork and catalog entry', async () => {
   let catalog = seedCatalog();
   const store = { read: async () => structuredClone(catalog), write: async next => { catalog = { ...next, revision: 'saved' }; return catalog; } };
@@ -191,4 +211,24 @@ test('generated Cloudinary masters validate, extract exact IDs and delete within
   }
   assert.equal(calls, 1);
   assert.throws(() => artworkIds({ image: image.replace('.png', '.jpg') }, env));
+});
+
+test('save draft and publish actions preserve scheduleLayout and showTitle, and admit elemental preview templates', async () => {
+  const { genshinElementalTemplates } = await import('../src/assets/genshinElementalTemplates.js');
+  let catalog = seedCatalog();
+  const store = { read: async () => structuredClone(catalog), write: async next => { catalog = { ...next, revision: 'saved' }; return catalog; } };
+  const handler = createAdminHandler({ env, store });
+
+  const elementalDraft = {
+    ...genshinElementalTemplates[0],
+    showTitle: false,
+    scheduleLayout: 'timeline',
+    status: 'draft',
+  };
+
+  const result = response();
+  await handler(req('save', { revision: 'seed', create: true, template: elementalDraft }, cookie()), result);
+  assert.equal(result.code, 200, result.body?.error?.message);
+  assert.equal(catalog.templates[0].showTitle, false);
+  assert.equal(catalog.templates[0].scheduleLayout, 'timeline');
 });

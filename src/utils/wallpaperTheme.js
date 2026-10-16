@@ -19,7 +19,14 @@ export const wallpaperFonts = [
 
 export function wallpaperFontScale(template) {
   const value = Number(template.fontScale ?? 1);
-  return Number.isFinite(value) ? Math.min(1.6, Math.max(1, value)) : 1;
+  return Number.isFinite(value) ? Math.min(1.6, Math.max(0.7, value)) : 1;
+}
+
+export function wallpaperCornerRadius(template) {
+  const layout = template.scheduleLayout || 'stacked';
+  const defaultRadius = layout === 'stacked' ? 50 : layout === 'grouped-list' ? 5 : 10;
+  const value = Number(template.containerRadius ?? defaultRadius);
+  return Number.isFinite(value) ? Math.max(0, Math.min(50, value)) : defaultRadius;
 }
 
 export function snapSchedulePosition(value, dragging = false, defaultValue = 0) {

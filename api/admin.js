@@ -3,6 +3,7 @@ import { authConfigured, createSession, isAuthenticated, sameOrigin, sessionCook
 import { cloudConfigured, createCatalogStore, signCloud } from '../server/catalogStore.js';
 import { templateSchema } from '../shared/templateSchema.js';
 import { wallpaperTemplates } from '../src/assets/templates.js';
+import { genshinElementalTemplates } from '../src/assets/genshinElementalTemplates.js';
 import { generateDesignId } from '../shared/designId.js';
 import { artworkIds, createArtworkDeleter } from '../server/deleteArtwork.js';
 
@@ -71,12 +72,13 @@ export function createAdminHandler({ env = process.env, store = createCatalogSto
         const parsed = templateSchema.safeParse(input);
         if (!parsed.success) return fail(400, parsed.error.issues[0].message);
         const template = parsed.data;
-        const paths = [template.image, ...Object.values(template.deviceImages || {})].filter(Boolean);
-        const existingPaths = new Set(wallpaperTemplates.flatMap(t => [t.image, ...Object.values(t.deviceImages || {})].filter(Boolean)));
-        if (paths.some(path => path.startsWith('/') ? !existingPaths.has(path) : !path.startsWith(`https://res.cloudinary.com/${env.CLOUDINARY_CLOUD_NAME}/image/upload/`))) return fail(400, 'Artwork must belong to this library.');
         const index = catalog.templates.findIndex(t => t.id === template.id);
         if (catalog.templates[index]?.deletionPending) return fail(409, 'This design is being deleted. Finish deletion before editing.');
         const previous = catalog.templates[index];
+        const paths = [template.image, ...Object.values(template.deviceImages || {})].filter(Boolean);
+        // Catalog-only designs and preview collections retain their stored artwork when edited or saved.
+        const existingPaths = new Set([...wallpaperTemplates, ...genshinElementalTemplates, ...catalog.templates].flatMap(t => [t.image, ...Object.values(t.deviceImages || {})].filter(Boolean)));
+        if (paths.some(path => path.startsWith('/') ? !existingPaths.has(path) : !path.startsWith(`https://res.cloudinary.com/${env.CLOUDINARY_CLOUD_NAME}/image/upload/`))) return fail(400, 'Artwork must belong to this library.');
         // Dates are server-owned: editing or re-publishing must not renew New.
         delete template.createdAt; delete template.publishedAt;
         if (previous?.createdAt) template.createdAt = previous.createdAt;

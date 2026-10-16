@@ -3355,15 +3355,15 @@ export default {
   },
   "/wallpapers/scenic/genshin-original-kaeya-map/laptop.png": {
     "cloud": "djfyq0jyz",
-    "publicId": "schedsnap/wallpapers/scenic/genshin-original-kaeya-map/laptop-17d1a98e127a19b1",
-    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792071221/schedsnap/wallpapers/scenic/genshin-original-kaeya-map/laptop-17d1a98e127a19b1.png",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-original-kaeya-map/laptop-2d1488d911e8e8b7",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792153645/schedsnap/wallpapers/scenic/genshin-original-kaeya-map/laptop-2d1488d911e8e8b7.png",
     "width": 1920,
     "height": 1080
   },
   "/wallpapers/scenic/genshin-original-sketch-parade/laptop.png": {
     "cloud": "djfyq0jyz",
-    "publicId": "schedsnap/wallpapers/scenic/genshin-original-sketch-parade/laptop-cb84911dcecc72be",
-    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792071222/schedsnap/wallpapers/scenic/genshin-original-sketch-parade/laptop-cb84911dcecc72be.png",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-original-sketch-parade/laptop-0d96fef8493f94c3",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792153645/schedsnap/wallpapers/scenic/genshin-original-sketch-parade/laptop-0d96fef8493f94c3.png",
     "width": 1920,
     "height": 1080
   },
@@ -3383,8 +3383,8 @@ export default {
   },
   "/wallpapers/scenic/genshin-original-kaeya-map/tablet.png": {
     "cloud": "djfyq0jyz",
-    "publicId": "schedsnap/wallpapers/scenic/genshin-original-kaeya-map/tablet-7c7d3949374cc216",
-    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792071223/schedsnap/wallpapers/scenic/genshin-original-kaeya-map/tablet-7c7d3949374cc216.png",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-original-kaeya-map/tablet-e24ffd5cdd3cf8c3",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792153646/schedsnap/wallpapers/scenic/genshin-original-kaeya-map/tablet-e24ffd5cdd3cf8c3.png",
     "width": 1600,
     "height": 2560
   },
@@ -3404,8 +3404,8 @@ export default {
   },
   "/wallpapers/scenic/genshin-original-sketch-parade/tablet.png": {
     "cloud": "djfyq0jyz",
-    "publicId": "schedsnap/wallpapers/scenic/genshin-original-sketch-parade/tablet-831ba873716cb9c4",
-    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792071225/schedsnap/wallpapers/scenic/genshin-original-sketch-parade/tablet-831ba873716cb9c4.png",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-original-sketch-parade/tablet-2baab30da3ddec21",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792153645/schedsnap/wallpapers/scenic/genshin-original-sketch-parade/tablet-2baab30da3ddec21.png",
     "width": 1600,
     "height": 2560
   },
@@ -3761,29 +3761,29 @@ export default {
   },
   "/wallpapers/scenic/genshin-chibi-columbina/laptop.png": {
     "cloud": "djfyq0jyz",
-    "publicId": "schedsnap/wallpapers/scenic/genshin-chibi-columbina/laptop-ca97f8349ede6ae0",
-    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792138535/schedsnap/wallpapers/scenic/genshin-chibi-columbina/laptop-ca97f8349ede6ae0.png",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-chibi-columbina/laptop-8054e729acef1bfa",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792151346/schedsnap/wallpapers/scenic/genshin-chibi-columbina/laptop-8054e729acef1bfa.png",
     "width": 1920,
     "height": 1080
   },
   "/wallpapers/scenic/genshin-chibi-columbina/mobile.png": {
     "cloud": "djfyq0jyz",
-    "publicId": "schedsnap/wallpapers/scenic/genshin-chibi-columbina/mobile-51905c8164040b6f",
-    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792138536/schedsnap/wallpapers/scenic/genshin-chibi-columbina/mobile-51905c8164040b6f.png",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-chibi-columbina/mobile-83b5f314b1c4245c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792151346/schedsnap/wallpapers/scenic/genshin-chibi-columbina/mobile-83b5f314b1c4245c.png",
     "width": 1080,
     "height": 2400
   },
   "/wallpapers/scenic/genshin-chibi-furina/laptop.png": {
     "cloud": "djfyq0jyz",
-    "publicId": "schedsnap/wallpapers/scenic/genshin-chibi-furina/laptop-afaa775a46f31c18",
-    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792138536/schedsnap/wallpapers/scenic/genshin-chibi-furina/laptop-afaa775a46f31c18.png",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-chibi-furina/laptop-208a4b561015d1fd",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792151346/schedsnap/wallpapers/scenic/genshin-chibi-furina/laptop-208a4b561015d1fd.png",
     "width": 1920,
     "height": 1080
   },
   "/wallpapers/scenic/genshin-chibi-columbina/tablet.png": {
     "cloud": "djfyq0jyz",
-    "publicId": "schedsnap/wallpapers/scenic/genshin-chibi-columbina/tablet-a37cf64f1ae5be13",
-    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792138536/schedsnap/wallpapers/scenic/genshin-chibi-columbina/tablet-a37cf64f1ae5be13.png",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-chibi-columbina/tablet-5c7c2056f02a230c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792151346/schedsnap/wallpapers/scenic/genshin-chibi-columbina/tablet-5c7c2056f02a230c.png",
     "width": 1600,
     "height": 2560
   },
@@ -3796,8 +3796,8 @@ export default {
   },
   "/wallpapers/scenic/genshin-chibi-furina/mobile.png": {
     "cloud": "djfyq0jyz",
-    "publicId": "schedsnap/wallpapers/scenic/genshin-chibi-furina/mobile-2570d77b985b0b23",
-    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792138537/schedsnap/wallpapers/scenic/genshin-chibi-furina/mobile-2570d77b985b0b23.png",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-chibi-furina/mobile-b62621bdcba70898",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792151347/schedsnap/wallpapers/scenic/genshin-chibi-furina/mobile-b62621bdcba70898.png",
     "width": 1080,
     "height": 2400
   },
@@ -3810,8 +3810,8 @@ export default {
   },
   "/wallpapers/scenic/genshin-chibi-furina/tablet.png": {
     "cloud": "djfyq0jyz",
-    "publicId": "schedsnap/wallpapers/scenic/genshin-chibi-furina/tablet-5133406bd36334a6",
-    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792138537/schedsnap/wallpapers/scenic/genshin-chibi-furina/tablet-5133406bd36334a6.png",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-chibi-furina/tablet-c14e74de0779ca3e",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792151347/schedsnap/wallpapers/scenic/genshin-chibi-furina/tablet-c14e74de0779ca3e.png",
     "width": 1600,
     "height": 2560
   },
@@ -3924,6 +3924,174 @@ export default {
     "cloud": "djfyq0jyz",
     "publicId": "schedsnap/wallpapers/scenic/genshin-chibi-zhongli/tablet-6499963980e79e15",
     "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792138543/schedsnap/wallpapers/scenic/genshin-chibi-zhongli/tablet-6499963980e79e15.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/snoopy-blue-meadow/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-blue-meadow/laptop-c8f2234fe253ede2",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143898/schedsnap/wallpapers/scenic/snoopy-blue-meadow/laptop-c8f2234fe253ede2.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/snoopy-blue-meadow/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-blue-meadow/mobile-604ed0c1c4afc237",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143898/schedsnap/wallpapers/scenic/snoopy-blue-meadow/mobile-604ed0c1c4afc237.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/snoopy-blue-meadow/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-blue-meadow/tablet-1d879a53689411c0",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143898/schedsnap/wallpapers/scenic/snoopy-blue-meadow/tablet-1d879a53689411c0.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/snoopy-dotted-peek/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-dotted-peek/laptop-4b4b646027b73ea8",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143898/schedsnap/wallpapers/scenic/snoopy-dotted-peek/laptop-4b4b646027b73ea8.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/snoopy-dotted-peek/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-dotted-peek/mobile-b1913d4480b36426",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143899/schedsnap/wallpapers/scenic/snoopy-dotted-peek/mobile-b1913d4480b36426.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/snoopy-heart-line/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-heart-line/mobile-ca7c934ce974d0b7",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143899/schedsnap/wallpapers/scenic/snoopy-heart-line/mobile-ca7c934ce974d0b7.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/snoopy-heart-line/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-heart-line/laptop-3cc15a0b4598fa54",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143899/schedsnap/wallpapers/scenic/snoopy-heart-line/laptop-3cc15a0b4598fa54.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/snoopy-heart-line/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-heart-line/tablet-fa3da2b8139f057c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143900/schedsnap/wallpapers/scenic/snoopy-heart-line/tablet-fa3da2b8139f057c.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/snoopy-looking-up/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-looking-up/mobile-fd01c68f34539c5b",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143900/schedsnap/wallpapers/scenic/snoopy-looking-up/mobile-fd01c68f34539c5b.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/snoopy-looking-up/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-looking-up/laptop-9d5f51f556cecd2f",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143900/schedsnap/wallpapers/scenic/snoopy-looking-up/laptop-9d5f51f556cecd2f.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/snoopy-dotted-peek/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-dotted-peek/tablet-3888cbca330e4af0",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143899/schedsnap/wallpapers/scenic/snoopy-dotted-peek/tablet-3888cbca330e4af0.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/snoopy-navy-cool/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-navy-cool/laptop-859263137502081c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143901/schedsnap/wallpapers/scenic/snoopy-navy-cool/laptop-859263137502081c.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/snoopy-navy-cool/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-navy-cool/mobile-67d0364f517c8187",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143901/schedsnap/wallpapers/scenic/snoopy-navy-cool/mobile-67d0364f517c8187.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/snoopy-navy-cool/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-navy-cool/tablet-23938cd23de70a78",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143901/schedsnap/wallpapers/scenic/snoopy-navy-cool/tablet-23938cd23de70a78.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/snoopy-looking-up/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-looking-up/tablet-ee526cd9d7f3423d",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143901/schedsnap/wallpapers/scenic/snoopy-looking-up/tablet-ee526cd9d7f3423d.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/snoopy-quiet-sketch/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-quiet-sketch/mobile-dd345d1e17f87a07",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143901/schedsnap/wallpapers/scenic/snoopy-quiet-sketch/mobile-dd345d1e17f87a07.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/snoopy-quiet-sketch/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-quiet-sketch/laptop-f658a66d73b1ae4c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143901/schedsnap/wallpapers/scenic/snoopy-quiet-sketch/laptop-f658a66d73b1ae4c.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/snoopy-quiet-sketch/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-quiet-sketch/tablet-657b02141a094990",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143902/schedsnap/wallpapers/scenic/snoopy-quiet-sketch/tablet-657b02141a094990.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/snoopy-shark-suit/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-shark-suit/mobile-5a63cc9ec2d0eb18",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143902/schedsnap/wallpapers/scenic/snoopy-shark-suit/mobile-5a63cc9ec2d0eb18.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/snoopy-shark-suit/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-shark-suit/laptop-8f851750e08e73bd",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143902/schedsnap/wallpapers/scenic/snoopy-shark-suit/laptop-8f851750e08e73bd.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/snoopy-shark-suit/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-shark-suit/tablet-893394428cbaa7d6",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143902/schedsnap/wallpapers/scenic/snoopy-shark-suit/tablet-893394428cbaa7d6.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/snoopy-sleepy-stripes/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-sleepy-stripes/laptop-31d1771997cf1a93",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143902/schedsnap/wallpapers/scenic/snoopy-sleepy-stripes/laptop-31d1771997cf1a93.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/snoopy-sleepy-stripes/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-sleepy-stripes/mobile-b469aacd484402e4",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143903/schedsnap/wallpapers/scenic/snoopy-sleepy-stripes/mobile-b469aacd484402e4.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/snoopy-sleepy-stripes/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/snoopy-sleepy-stripes/tablet-56ca19abf0ca71d0",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143903/schedsnap/wallpapers/scenic/snoopy-sleepy-stripes/tablet-56ca19abf0ca71d0.png",
     "width": 1600,
     "height": 2560
   }

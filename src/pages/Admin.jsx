@@ -138,8 +138,22 @@ export default function Admin() {
     {error && <div className="admin-error" role="alert">{error} {catalog && reloadNeeded && <button className="text-link" disabled={busy} onClick={load}>Reload library</button>}</div>}
     {notice && <div className="admin-toast" role="status" aria-live="polite"><CheckCircle2 size={18} aria-hidden="true" /><span>{notice}</span><button type="button" className="admin-toast-close" aria-label="Dismiss notification" onClick={() => setNotice('')}><X size={16} aria-hidden="true" /></button></div>}
     {section === 'dashboard' ? <AdminDashboard /> : editor ? <DesignEditor key={editor.key} initial={editor.template} isNew={editor.isNew} existingIds={catalog.templates.map(t => t.id)} busy={busy} onDirty={setEditorDirty} onBack={() => { setEditor(null); setEditorDirty(false); }} onSave={async template => {
-      if (await mutate('save', { template, create: editor.isNew })) { setEditor(null); setEditorDirty(false); setNotice(template.status === 'published' ? 'Design published. Allow a few minutes for the public gallery to refresh.' : 'Design saved.'); return true; }
-      return false;
+      setBusy(true); setError(''); setNotice('');
+      try {
+        const result = await request('save', { revision: catalog.revision, template, create: editor.isNew });
+        setCatalog(result);
+        setEditor(null); setEditorDirty(false);
+        setNotice(template.status === 'published' ? 'Design published. Allow a few minutes for the public gallery to refresh.' : 'Design saved.');
+        return true;
+      } catch (e) {
+        if (e.catalog) setCatalog(e.catalog);
+        setError(e.message);
+        setReloadNeeded(e.status === 409);
+        if (e.status === 401) setAuthenticated(false);
+        throw e;
+      } finally {
+        setBusy(false);
+      }
     }} /> : <>
       <div className="admin-library-search">
         <WallpaperSearchField value={searchQuery} onChange={setSearchQuery} placeholder="Search templates" label="Search templates" iconLeft />
@@ -322,8 +336,17 @@ function DesignEditor({ initial, isNew, existingIds, busy, onSave, onBack, onDir
     setError('');
     const next = { ...template, id: isNew ? generateDesignId(template.name, existingIds) : template.id, status };
     const result = templateSchema.safeParse(next);
-    if (!result.success) { const issue = result.error.issues[0]; showEditorError(['image', 'deviceImages'].includes(issue.path[0]) ? 'artwork' : 'details', issue.message); return; }
-    if (status === 'published' && (layout.fingerprint !== fingerprint || !layout.ready || layout.overflow || layout.error)) { showEditorError('preview', 'Wait for the preview to finish loading before publishing.'); return; }
+    if (!result.success) {
+      const issue = result.error.issues[0];
+      const section = ['image', 'deviceImages'].includes(issue.path[0]) ? 'artwork' : ['background', 'surface', 'ink', 'line', 'containerStyle', 'containerShape', 'containerRadius', 'containerFill', 'containerBorder', 'fontFamily', 'fontScale', 'tabletBoxSpacing', 'showTitle', 'showScheduleTitle', 'schedulePosition', 'horizontalPosition', 'verticalPosition', 'particleStyle'].includes(issue.path[0]) ? 'appearance' : 'details';
+      showEditorError(section, issue.message);
+      return;
+    }
+    if (status === 'published') {
+      if (layout.fingerprint === fingerprint && layout.overflow) { showEditorError('preview', 'This schedule does not fit. Adjust the design before publishing.'); return; }
+      if (layout.fingerprint === fingerprint && layout.error) { showEditorError('preview', layout.error); return; }
+      if (layout.fingerprint !== fingerprint || !layout.ready) { showEditorError('preview', 'Wait for the preview to finish loading before publishing.'); return; }
+    }
     savingRef.current = true;
     setSavingAction(status === 'published' ? 'publish' : 'draft');
     try { await onSave(next); }

@@ -1,0 +1,36 @@
+{
+  "assets": [
+    {
+      "path": "public/wallpapers/scenic/genshin-original-kaeya-map/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "e24ffd5cdd3cf8c38a94bdda921879a118723ad55b7d0207a75a7e42ce57f715"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-original-kaeya-map/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "2d1488d911e8e8b7838dcc8327485d1f1d9a637feed91a72d89b50b90b1dfd6e"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-original-sketch-parade/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "2baab30da3ddec2197c15939aeadfc12d9fdd6475bcc737d54d8dac27fc3d57a"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-original-sketch-parade/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "0d96fef8493f94c3de71d9fb42aeace39a4c154057a7c041a10eb1958d25238d"
+    }
+  ]
+}

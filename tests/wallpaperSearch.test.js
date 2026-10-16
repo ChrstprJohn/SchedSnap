@@ -66,6 +66,30 @@ test('character keywords cover Genshin chibi and namecards, including supporting
   assert.ok(!searchWallpaperTemplates(wallpaperTemplates, 'character namecard').some(template => template.id === 'genshin-sky-welkin'));
 });
 
+test('elemental vision keywords match their respective Genshin characters and are comma-separated', async () => {
+  const { genshinElementalTemplates } = await import('../src/assets/genshinElementalTemplates.js');
+
+  const visionCases = [
+    ['Anemo Vision', 'genshin-chibi-venti'],
+    ['Pyro Vision', 'genshin-chibi-mavuika'],
+    ['Geo Vision', 'genshin-chibi-zhongli'],
+    ['Electro Vision', 'genshin-chibi-raiden'],
+    ['Hydro Vision', 'genshin-chibi-furina'],
+    ['Cryo Vision', 'genshin-chibi-tsaritsa'],
+    ['Dendro Vision', 'genshin-chibi-nahida'],
+    ['Cryo Vision', 'genshin-chibi-columbina'],
+  ];
+
+  for (const [query, expectedId] of visionCases) {
+    const results = searchWallpaperTemplates(genshinElementalTemplates, query);
+    assert.ok(results.some(t => t.id === expectedId), `${query} should find ${expectedId}`);
+  }
+
+  for (const template of genshinElementalTemplates) {
+    assert.ok(template.keywords.includes(','), `Keywords in ${template.id} should be comma-separated`);
+  }
+});
+
 test('plural Genshin context keywords match their singular forms', async () => {
   const { wallpaperTemplates } = await import('../src/assets/templates.js');
   for (const [singular, plural] of [

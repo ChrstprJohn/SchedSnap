@@ -1,0 +1,42 @@
+{
+  "generator": "built-in image_gen",
+  "reference": "https://library.keqingmains.com/img/elements/hydro.png",
+  "assets": [
+    {
+      "name": "furina",
+      "dev": "mobile",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a14483-c742-7163-95be-a321cdf861a0\\exec-7f1fbfb7-bcc5-49b5-bc1b-d262266f381f.png",
+      "prompt": "Edit target image 1, Furina wallpaper. Replace ONLY its giant teardrop background emblem with the EXACT Hydro icon silhouette shown in reference image 2: two nested sweeping clockwise curved arcs, inner curled spiral, TWO detached circular dots on the left. Trace the reference silhouette faithfully, do not invent extra droplets or swirls. Recolor icon to the same low contrast pale blue tonal ink as old emblem. Reference image 2 is geometry ONLY, do not copy black or cyan background/color. Preserve Furina, pose, position, size, border, dessert bubbles, blue texture, all surrounding composition and original aspect ratio. Full bleed opaque PNG. No text."
+    },
+    {
+      "name": "furina",
+      "dev": "tablet",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a14483-c742-7163-95be-a321cdf861a0\\exec-00cf1336-0e73-432c-bfe7-b2a3630a25c1.png",
+      "prompt": "Edit target image 1, Furina wallpaper. Replace ONLY its giant teardrop background emblem with the EXACT Hydro icon silhouette shown in reference image 2: two nested sweeping clockwise curved arcs, inner curled spiral, TWO detached circular dots on the left. Trace the reference silhouette faithfully, do not invent extra droplets or swirls. Recolor icon to the same low contrast pale blue tonal ink as old emblem. Reference image 2 is geometry ONLY, do not copy black or cyan background/color. Preserve Furina, pose, position, size, border, dessert bubbles, blue texture, all surrounding composition and original aspect ratio. Full bleed opaque PNG. No text."
+    },
+    {
+      "name": "furina",
+      "dev": "laptop",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a14483-c742-7163-95be-a321cdf861a0\\exec-b2ee9209-9604-4eb4-9811-c83a4ceef648.png",
+      "prompt": "Edit target image 1, Furina wallpaper. Replace ONLY its giant teardrop background emblem with the EXACT Hydro icon silhouette shown in reference image 2: two nested sweeping clockwise curved arcs, inner curled spiral, TWO detached circular dots on the left. Trace the reference silhouette faithfully, do not invent extra droplets or swirls. Recolor icon to the same low contrast pale blue tonal ink as old emblem. Reference image 2 is geometry ONLY, do not copy black or cyan background/color. Preserve Furina, pose, position, size, border, dessert bubbles, blue texture, all surrounding composition and original aspect ratio. Full bleed opaque PNG. No text."
+    },
+    {
+      "name": "columbina",
+      "dev": "mobile",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a14483-c742-7163-95be-a321cdf861a0\\exec-b4225796-3a0e-44ef-93e9-0c7305c3d943.png",
+      "prompt": "Edit the supplied Columbina wallpaper. Remove ONLY the Hydro-like teardrop/flame and its dot from the large background design. Preserve and emphasize the beautiful crescent moon as a clean crescent, retaining existing sweeping celestial arcs. There should be NO Hydro emblem and NO waterdrop symbol anywhere. Preserve exact chibi character face, outfit, pose, size, position, mauve background texture, feathers, stars, flowers, empty schedule area, canvas aspect ratio and composition. No text."
+    },
+    {
+      "name": "columbina",
+      "dev": "tablet",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a14483-c742-7163-95be-a321cdf861a0\\exec-d3586e05-d2bc-439b-8dc8-8847093b0915.png",
+      "prompt": "Edit the supplied Columbina wallpaper. Remove ONLY the Hydro-like teardrop/flame and its dot from the large background design. Preserve and emphasize the beautiful crescent moon as a clean crescent, retaining existing sweeping celestial arcs. There should be NO Hydro emblem and NO waterdrop symbol anywhere. Preserve exact chibi character face, outfit, pose, size, position, mauve background texture, feathers, stars, flowers, empty schedule area, canvas aspect ratio and composition. No text."
+    },
+    {
+      "name": "columbina",
+      "dev": "laptop",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a14483-c742-7163-95be-a321cdf861a0\\exec-4f2b1a5f-3e7b-451f-bf23-266be936e697.png",
+      "prompt": "Edit the supplied Columbina wallpaper. Remove ONLY the Hydro-like teardrop/flame and its dot from the large background design. Preserve and emphasize the beautiful crescent moon as a clean crescent, retaining existing sweeping celestial arcs. There should be NO Hydro emblem and NO waterdrop symbol anywhere. Preserve exact chibi character face, outfit, pose, size, position, mauve background texture, feathers, stars, flowers, empty schedule area, canvas aspect ratio and composition. No text."
+    }
+  ]
+}

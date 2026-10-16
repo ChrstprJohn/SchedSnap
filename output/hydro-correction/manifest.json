@@ -1,0 +1,52 @@
+{
+  "assets": [
+    {
+      "path": "public/wallpapers/scenic/genshin-chibi-furina/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "b62621bdcba708984c7256a4fc437fa9d88ead64279aed86a0b9fd8aa39c5465"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-chibi-furina/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "c14e74de0779ca3e5c029ad5aa2055328a075394ed0816a8d029d0f260449a16"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-chibi-furina/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "208a4b561015d1fd4bf60ba89ce4c90b13d174d175d6e82b3038f565fdca2b47"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-chibi-columbina/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "83b5f314b1c4245c570b0aebb664d5def481edd1271fef0438df76b46c23e96f"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-chibi-columbina/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "5c7c2056f02a230c60893e42e7ba63a0aae5bb07c673bb568a3bd514254803da"
+    },
+    {
+      "path": "public/wallpapers/scenic/genshin-chibi-columbina/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "dimensionsValid": true,
+      "sha256": "8054e729acef1bfa93555602a73a47f0ba9668626cb2ab78aff60e603f79a0d1"
+    }
+  ]
+}
