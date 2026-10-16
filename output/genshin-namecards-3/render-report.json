@@ -1,0 +1,773 @@
+{
+  "backend": "Native Canvas with project font; non-hundred CSS weights approximated for QA",
+  "renders": [
+    {
+      "id": "genshin-namecard-xiao",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-xiao-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-namecard-xiao",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-xiao-mobile-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-xiao",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-xiao-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1360.7314285714285
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-namecard-xiao",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-xiao-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1982.7318857142857
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-xiao",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-xiao-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-xiao",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-xiao-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-gaming",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-gaming-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-namecard-gaming",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-gaming-mobile-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-gaming",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-gaming-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1360.7314285714285
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-namecard-gaming",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-gaming-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1982.7318857142857
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-gaming",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-gaming-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-gaming",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-gaming-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-ineffa",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-ineffa-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-namecard-ineffa",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-ineffa-mobile-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-ineffa",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-ineffa-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1360.7314285714285
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-namecard-ineffa",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-ineffa-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1982.7318857142857
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-ineffa",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-ineffa-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-ineffa",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-ineffa-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-kazuha",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-kazuha-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-namecard-kazuha",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-kazuha-mobile-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-kazuha",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-kazuha-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1360.7314285714285
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-namecard-kazuha",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-kazuha-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1982.7318857142857
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-kazuha",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-kazuha-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-kazuha",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-kazuha-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-cyno",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-cyno-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-namecard-cyno",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-cyno-mobile-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-cyno",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-cyno-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1360.7314285714285
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-namecard-cyno",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-cyno-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1982.7318857142857
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-cyno",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-cyno-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-cyno",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-cyno-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-ifa",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-ifa-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-namecard-ifa",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-ifa-mobile-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-ifa",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-ifa-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1360.7314285714285
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-namecard-ifa",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-ifa-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1982.7318857142857
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-ifa",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-ifa-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-ifa",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-ifa-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-iansan",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-iansan-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-namecard-iansan",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-iansan-mobile-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-iansan",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-iansan-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1360.7314285714285
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-namecard-iansan",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-iansan-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1982.7318857142857
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-iansan",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-iansan-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-iansan",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-iansan-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-kinich",
+      "device": "mobile",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-kinich-mobile-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1112
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-namecard-kinich",
+      "device": "mobile",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-kinich-mobile-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 78,
+        "y": 562,
+        "width": 924,
+        "height": 1465.1
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-kinich",
+      "device": "tablet",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-kinich-tablet-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1360.7314285714285
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": true
+    },
+    {
+      "id": "genshin-namecard-kinich",
+      "device": "tablet",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-kinich-tablet-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 260.5165714285714,
+        "y": 675.84,
+        "width": 1398.9668571428572,
+        "height": 1982.7318857142857
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-kinich",
+      "device": "laptop",
+      "kind": "sample",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-kinich-laptop-sample.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 165.5314285714286,
+        "y": 114.7885714285714,
+        "width": 1108.9371428571428,
+        "height": 850.4228571428572
+      },
+      "meetings": 5,
+      "headingShown": true,
+      "sampleClockShown": false
+    },
+    {
+      "id": "genshin-namecard-kinich",
+      "device": "laptop",
+      "kind": "dense",
+      "path": "output/genshin-namecards-3/qa/genshin-namecard-kinich-laptop-dense.png",
+      "overflow": false,
+      "scheduleBounds": {
+        "x": 429.0624177176254,
+        "y": 64.80000000000001,
+        "width": 581.8751645647492,
+        "height": 950.4
+      },
+      "meetings": 15,
+      "headingShown": true,
+      "sampleClockShown": false
+    }
+  ]
+}

@@ -1,5 +1,13 @@
 // Character-free namecard backgrounds with device-specific compositions.
 const designs = [
+  ['genshin-namecard-xiao', 'Xiao · Mask', 'Official namecard motifs with a subtle Anemo Vision.', 'xiao', '#175466', '#e8fff9', '#103c50b3', '2026-10-16T00:55:05Z'],
+  ['genshin-namecard-gaming', 'Gaming · Man Chai', 'Official namecard motifs with a subtle Pyro Vision.', 'gaming', '#8d2530', '#fff2d2', '#591a25b3', '2026-10-16T00:55:05Z'],
+  ['genshin-namecard-ineffa', 'Ineffa · Command', 'Official namecard motifs with a subtle Electro Vision.', 'ineffa', '#79b5e9', '#18384f', '#f4f8ffb3', '2026-10-16T00:55:05Z'],
+  ['genshin-namecard-kazuha', 'Kazuha · Autumn Maple-Viewing', 'Official namecard motifs with a subtle Anemo Vision.', 'kazuha', '#466965', '#fff0d8', '#203b38b3', '2026-10-16T00:55:05Z'],
+  ['genshin-namecard-cyno', 'Cyno · Silence', 'Official namecard motifs with a subtle Electro Vision.', 'cyno', '#30285c', '#f7ecff', '#211a44b3', '2026-10-16T00:55:05Z'],
+  ['genshin-namecard-ifa', 'Ifa · Bro', 'Official namecard motifs with a subtle Anemo Vision.', 'ifa', '#ace4d5', '#493947', '#fff8e8b3', '2026-10-16T00:55:05Z'],
+  ['genshin-namecard-iansan', 'Iansan · Unyielding', 'Official orange graphics with a subtle Electro Vision.', 'iansan', '#efa72e', '#513622', '#fff5deb3', '2026-10-16T00:55:05Z'],
+  ['genshin-namecard-kinich', 'Kinich · Ajaw', 'Official pixel landscape with a subtle Dendro Vision.', 'kinich', '#79ce92', '#244e50', '#e3f6c5b3', '2026-10-16T00:55:05Z'],
   ["genshin-card-hutao-spirit","Hu Tao · Spirit Soother","Faithful adaptation of Hu Tao · Spirit Soother's official namecard with a subtle Pyro emblem.","hutao","#644237","#fff1dc","#382923ed","2026-10-15T15:25:22.688Z"],
   ["genshin-card-navia-rosula","Navia · Rosula","Faithful adaptation of Navia · Rosula's official namecard with a subtle Geo emblem.","navia","#9c742d","#382b21","#fff3d6eb","2026-10-15T15:25:22.688Z"],
   ["genshin-card-varesa-powerhouse","Varesa · Powerhouse","Faithful adaptation of Varesa · Powerhouse's official namecard with a subtle Electro emblem.","varesa","#f4ced5","#653b58","#fff8f5eb","2026-10-15T15:25:22.688Z"],
@@ -15,6 +23,7 @@ const designs = [
 
 export const genshinBackgroundTemplates = designs.map(([id, name, description, family, background, ink, surface, createdAt = '2026-10-14T07:00:00Z']) => ({
   id, name, description, family, background, ink, surface: surface.slice(0, 7) + 'b3',
+  ...(family === 'kinich' ? { pixelArt: true } : {}),
   ...(family === 'navia' ? { headingInk: '#ffffff' } : family === 'varesa' ? { headingInk: '#000000' } : {}),
   createdAt,
   collection: 'genshin', muted: ink, line: ink + '45',

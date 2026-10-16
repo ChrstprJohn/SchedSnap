@@ -1,0 +1,247 @@
+{
+  "generatedAt": "2026-10-16T01:04:17.081Z",
+  "provider": "built-in imagegen",
+  "assetCount": 24,
+  "assets": [
+    {
+      "id": "genshin-namecard-xiao",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-namecard-xiao/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "7600e1bf7903fff11f2ecff8eb47f62c38ff15ac367673bbdcc7d2191fa24064"
+    },
+    {
+      "id": "genshin-namecard-xiao",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-namecard-xiao/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "e30d60b704fe4a62555372d6f3a37ca83d1cff71e21fed1f7931c8da16f238cb"
+    },
+    {
+      "id": "genshin-namecard-xiao",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-namecard-xiao/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "fbf63c3345aa893f751edaa78c2fcbe33323374953913a5ca91d9f1d1e20caa4"
+    },
+    {
+      "id": "genshin-namecard-gaming",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-namecard-gaming/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "80b44ceb3d7a02e5959aea5b2b7db42ca7ba9a835c5c3f36d3961a1c7af11fd1"
+    },
+    {
+      "id": "genshin-namecard-gaming",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-namecard-gaming/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "866c9516a9b80ca10e94cd32d7f7e9e3b57b23468bc018b0fcdc1c84ccfd099e"
+    },
+    {
+      "id": "genshin-namecard-gaming",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-namecard-gaming/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "471bb047b84cc540f4e05f75a2c03f08e369436172c4fe48e6e37212111dcf07"
+    },
+    {
+      "id": "genshin-namecard-ineffa",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-namecard-ineffa/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "49880c137994bff7694658659388520caa58f58edbe04d2d00fb7bc020551eee"
+    },
+    {
+      "id": "genshin-namecard-ineffa",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-namecard-ineffa/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "8b359288c44426a3842a4e81fe9fcd0c22ce27fbe4f3e39c5668c5db26872af0"
+    },
+    {
+      "id": "genshin-namecard-ineffa",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-namecard-ineffa/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "ccce4e0269447733d229e2d4981306742ad9df4e4d20acff84b3d3e907882532"
+    },
+    {
+      "id": "genshin-namecard-kazuha",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-namecard-kazuha/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "7b3d693d69d3b8eb0f2a96c9f7d0e73a378ba6cc392150557b6bde0863078ff4"
+    },
+    {
+      "id": "genshin-namecard-kazuha",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-namecard-kazuha/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "e9e76caa3a5f3f47583d0d2b9756c04225f543abcc58c7d11db2c2751c74ad3b"
+    },
+    {
+      "id": "genshin-namecard-kazuha",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-namecard-kazuha/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "cf7c6592a552e32d306b4f66803ff4809b9440c8bbc0f960d5a1c230c28d3961"
+    },
+    {
+      "id": "genshin-namecard-cyno",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-namecard-cyno/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "66319a7e8ff2ff1f657af41e5d2ec32561277c9d2bae4186ee3c2f39b9e989c3"
+    },
+    {
+      "id": "genshin-namecard-cyno",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-namecard-cyno/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "39f3184cd88f38e2ae6bbe70ed9031b428f90189111ecca79897387f5d1c991e"
+    },
+    {
+      "id": "genshin-namecard-cyno",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-namecard-cyno/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "ff6443f40339eb38d5f0917954d0c06d59dbe4058a70b7757d756c03fe5f815f"
+    },
+    {
+      "id": "genshin-namecard-ifa",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-namecard-ifa/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "48c73410781f5527c919391969f4fad4cba2143e4bdb9a5083fed36919e099a2"
+    },
+    {
+      "id": "genshin-namecard-ifa",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-namecard-ifa/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "b5e6ed62125ffa8852db1b4e8ee6a7cf8509a4799a3363dfdac2ac6191eb616a"
+    },
+    {
+      "id": "genshin-namecard-ifa",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-namecard-ifa/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "efc71caeae65816ea592552660b88737f3b1c9aab2ba98049b464ec287e6c6a1"
+    },
+    {
+      "id": "genshin-namecard-iansan",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-namecard-iansan/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "dfbff71ed244a9891dd0415b8d5f81fd59c8f09888a71ba7f0d0b5a6b7461f88"
+    },
+    {
+      "id": "genshin-namecard-iansan",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-namecard-iansan/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "b93c271eb20f07dfa32c46187bc05762581a621e23ecc8dcc0466a7892d24e30"
+    },
+    {
+      "id": "genshin-namecard-iansan",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-namecard-iansan/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "0e1ec0d3b863ccf429659bfb4707825b7a3819fc31b5f695b5568b881da7b747"
+    },
+    {
+      "id": "genshin-namecard-kinich",
+      "device": "mobile",
+      "path": "public/wallpapers/scenic/genshin-namecard-kinich/mobile.png",
+      "width": 1080,
+      "height": 2400,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "1a7e6791aa61cc8eefe74978b242b2835e0ca1b86acfb108f5f47182cefb1fd7"
+    },
+    {
+      "id": "genshin-namecard-kinich",
+      "device": "tablet",
+      "path": "public/wallpapers/scenic/genshin-namecard-kinich/tablet.png",
+      "width": 1600,
+      "height": 2560,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "3a3c5337c14106f839ba899cabe084ff1b4917054a06639ff52e53f907db00a8"
+    },
+    {
+      "id": "genshin-namecard-kinich",
+      "device": "laptop",
+      "path": "public/wallpapers/scenic/genshin-namecard-kinich/laptop.png",
+      "width": 1920,
+      "height": 1080,
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "fff7f7e80de978923b17d7494afc40af9419ca6620d0a68e19233ebcfafd31c2"
+    }
+  ]
+}

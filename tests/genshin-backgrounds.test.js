@@ -16,8 +16,8 @@ test('Genshin backgrounds appear in the main Genshin filter with schedule-safe s
   assert.equal(parsed.showScheduleTitle, true);
 });
 
-test('the eleven namecard and sky designs have all three exact opaque image assets', () => {
-  assert.equal(genshinBackgroundTemplates.length, 11);
+test('the nineteen namecard and sky designs have all three exact opaque image assets', () => {
+  assert.equal(genshinBackgroundTemplates.length, 19);
   assert.equal(genshinBackgroundTemplates.some(template => template.id.includes('columbina')), false);
   for (const template of genshinBackgroundTemplates) {
     assert.equal(template.collection, 'genshin');
