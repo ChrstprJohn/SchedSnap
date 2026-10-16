@@ -1,0 +1,41 @@
+{
+  "provider": "built-in image_gen",
+  "normalization": "User-authorized local Pillow ImageOps.fit LANCZOS to exact sizes. Independent compositions.",
+  "references": [
+    "User attached phone previews, style only",
+    "https://ys.mihoyo.com/main/m/news/detail/26543",
+    "https://www.hoyoverse.com/en-us/news/162178"
+  ],
+  "prompts": [
+    {
+      "character": "venti",
+      "device": "mobile",
+      "prompt": "Create ONE flat full-bleed mobile wallpaper 1080x2400. Reference image 1 is style inspiration ONLY: extract simple teal background, faint large tone-on-tone elemental symbols and SMALL compact chibi sticker; DO NOT copy phone mockup, words, clock, schedule or UI. Subject Venti from Genshin Impact, green feather beret with white flower, dark blue hair teal twin braids, green white outfit, small lyre, cute simple emote proportions big head tiny body. Clean dark outlines, only 2 flat shading tones, minimal costume details. Chibi occupies only 18% canvas height at x72% y32%. Solid muted teal #338e92 field. Single oversized faint Anemo wing emblem cropped into upper-right background, 8% contrast, smoothly integrated. Bottom55% quiet empty teal for live timetable. No text, grid, cards, borders, device, scenery, painterly rendering, texture, glow, flowers, sparkles, 3D, highly detailed eyes."
+    },
+    {
+      "character": "venti",
+      "device": "tablet",
+      "prompt": "Use case: stylized-concept. Generate ONE new 1600x2560 tablet wallpaper, not a mockup. Attached reference is style anchor ONLY: flat restrained color field, simple small 2D chibi sticker with bold dark clean outlines, minimal 2-tone cel shading. New subject Venti, iconic green feather hat, dark blue teal-tipped braids, white flower, green-white outfit, tiny lyre. Composition: compact 18% high sticker at upper-right x76% y28%, lower 55% quiet empty. Background solid muted #338e92; one giant low-contrast Anemo wing elemental Vision symbol cropped upper/right at 8% tonal contrast, smoothly integrated. Keep character recognizable but very simplified emote proportions, large head tiny body. No words, timetable, UI, clock, card, phone frame, landscapes, painterly rendering, texture, grain, lighting effects, ornate decorations, flowers, sparkles, 3D. All artwork full bleed opaque."
+    },
+    {
+      "character": "venti",
+      "device": "laptop",
+      "prompt": "Use case: stylized-concept. Generate ONE new 1920x1080 laptop wallpaper, not a mockup. Attached reference is style anchor ONLY: flat restrained color field, simple small 2D chibi sticker with bold dark clean outlines, minimal 2-tone cel shading. New subject Venti, iconic green feather hat, dark blue teal-tipped braids, white flower, green-white outfit, tiny lyre. Composition: landscape, compact 28% high sticker at far upper-right x87% y28%, broad center and lower 60% quiet. Background solid muted #338e92; one giant low-contrast Anemo wing elemental Vision symbol cropped upper/right at 8% tonal contrast, smoothly integrated. Keep character recognizable but very simplified emote proportions, large head tiny body. No words, timetable, UI, clock, card, phone frame, landscapes, painterly rendering, texture, grain, lighting effects, ornate decorations, flowers, sparkles, 3D. All artwork full bleed opaque."
+    },
+    {
+      "character": "columbina",
+      "device": "mobile",
+      "prompt": "Use case: stylized-concept. Generate ONE new 1080x2400 mobile wallpaper, not a mockup. Attached reference is style anchor ONLY: flat restrained color field, simple small 2D chibi sticker with bold dark clean outlines, minimal 2-tone cel shading. New subject Columbina, dark hair with pink streaks, eyes serenely closed, small white feather head ornaments, white dress with crimson accents. Composition: compact 18% high sticker upper-right x72% y32%, lower55% quiet empty. Background solid muted #9a808e; one giant low-contrast Hydro droplet and subtle crescent accent elemental Vision symbol cropped upper/right at 8% tonal contrast, smoothly integrated. Keep character recognizable but very simplified emote proportions, large head tiny body. No words, timetable, UI, clock, card, phone frame, landscapes, painterly rendering, texture, grain, lighting effects, ornate decorations, flowers, sparkles, 3D. All artwork full bleed opaque."
+    },
+    {
+      "character": "columbina",
+      "device": "tablet",
+      "prompt": "Use case: stylized-concept. Generate ONE new 1600x2560 tablet wallpaper, not a mockup. Attached reference is style anchor ONLY: flat restrained color field, simple small 2D chibi sticker with bold dark clean outlines, minimal 2-tone cel shading. New subject Columbina, dark hair with pink streaks, eyes serenely closed, small white feather head ornaments, white dress with crimson accents. Composition: compact 18% high sticker upper-right x76% y28%, lower55% quiet empty. Background solid muted #9a808e; one giant low-contrast Hydro droplet and subtle crescent accent elemental Vision symbol cropped upper/right at 8% tonal contrast, smoothly integrated. Keep character recognizable but very simplified emote proportions, large head tiny body. No words, timetable, UI, clock, card, phone frame, landscapes, painterly rendering, texture, grain, lighting effects, ornate decorations, flowers, sparkles, 3D. All artwork full bleed opaque."
+    },
+    {
+      "character": "columbina",
+      "device": "laptop",
+      "prompt": "Use case: stylized-concept. Generate ONE new 1920x1080 laptop wallpaper, not a mockup. Attached reference is style anchor ONLY: flat restrained color field, simple small 2D chibi sticker with bold dark clean outlines, minimal 2-tone cel shading. New subject Columbina, dark hair with pink streaks, eyes serenely closed, small white feather head ornaments, white dress with crimson accents. Composition: landscape, compact28% high sticker far upper-right x87% y28%, center and lower60% quiet. Background solid muted #9a808e; one giant low-contrast Hydro droplet and subtle crescent accent elemental Vision symbol cropped upper/right at 8% tonal contrast, smoothly integrated. Keep character recognizable but very simplified emote proportions, large head tiny body. No words, timetable, UI, clock, card, phone frame, landscapes, painterly rendering, texture, grain, lighting effects, ornate decorations, flowers, sparkles, 3D. All artwork full bleed opaque."
+    }
+  ]
+}
