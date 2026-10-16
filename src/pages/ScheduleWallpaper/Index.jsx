@@ -16,6 +16,7 @@ import { customizeWallpaperTemplate } from '../../utils/wallpaperTheme.js';
 import TemplateGallery from './TemplateGallery.jsx';
 import TemplateWorkspace from './TemplateWorkspace.jsx';
 import WallpaperSearch from '../../components/WallpaperSearch.jsx';
+import WallpaperLoading from '../../components/WallpaperLoading.jsx';
 import { useDebouncedSearch } from '../../lib/useWallpaperSearch.js';
 
 export default function ScheduleWallpaper() {
@@ -190,7 +191,7 @@ export default function ScheduleWallpaper() {
     } else openStep(step === 'classes' ? 'design' : 'classes');
   }
 
-  if (catalogStatus.loading) return <section className="page-wrap py-12" role="status">Loading designs…</section>;
+  if (catalogStatus.loading) return <WallpaperLoading />;
   if (catalogStatus.error && !wallpaperTemplates.length) return <section className="page-wrap py-12"><p role="alert">{catalogStatus.error}</p><button className="button-primary mt-6" onClick={() => window.location.reload()}>Try again</button></section>;
   if (templateId && !template) return <section className="page-wrap py-12">
     <h1 className="text-2xl font-semibold">Template not found</h1>

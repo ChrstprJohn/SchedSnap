@@ -1,0 +1,704 @@
+{
+  "inventoryCount": 471,
+  "missing": [
+    {
+      "path": "/wallpapers/scenic/sanrio-gingham-ribbon/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-gingham-ribbon/laptop-ec1c8a231a9031ff",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-gingham-daisy/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-gingham-daisy/laptop-ec96d0335f61cc2f",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-gingham-daisy/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-gingham-daisy/tablet-8be2cf2c76a09ee7",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-gingham-daisy/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-gingham-daisy/mobile-561597b198926317",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-gingham-strawberry/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-gingham-strawberry/laptop-d5613ce8751a410a",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-gingham-strawberry/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-gingham-strawberry/tablet-f2184040377b074d",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-parade-balloons/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-parade-balloons/laptop-0c05237b48b0d35b",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-parade-balloons/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-parade-balloons/mobile-e0959a52ff838586",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-gingham-strawberry/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-gingham-strawberry/mobile-cd819f62b29b2754",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-gingham-ribbon/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-gingham-ribbon/tablet-c9d2979cb07e0bdc",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-gingham-ribbon/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-gingham-ribbon/mobile-5e0645c3bcd7b878",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-parade-music/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-parade-music/laptop-8290e6fec21a258b",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-parade-balloons/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-parade-balloons/tablet-627fef429d1d7456",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-parade-music/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-parade-music/tablet-cb90ab300f255670",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-parade-music/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-parade-music/mobile-01ecaaa7e3bd2890",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-tea-flowers/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-tea-flowers/laptop-1dc17b8b4657b867",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-tea-flowers/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-tea-flowers/mobile-d6bf4cc7f3b6cddc",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-tea-flowers/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-tea-flowers/tablet-4252f39fc8b196a7",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-tea-patisserie/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-tea-patisserie/laptop-5253549187faf335",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-tea-strawberry/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-tea-strawberry/laptop-6d1a0b3c6fbe6021",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-tea-strawberry/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-tea-strawberry/mobile-4b6717e9aed0c865",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-tea-patisserie/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-tea-patisserie/mobile-a1895de467cd111a",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-tea-strawberry/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-tea-strawberry/tablet-b16feb8c9d88a004",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-tea-patisserie/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-tea-patisserie/tablet-6ba8b3684b0f03ee",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-melody-bedtime/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-melody-bedtime/laptop-b3b4cd925412fbe7",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-melody-bedtime/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-melody-bedtime/mobile-36911a8038e7ab6f",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-melody-bedtime/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-melody-bedtime/tablet-e8e74ba3d6fe22f6",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-strawberry-patchwork/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-strawberry-patchwork/laptop-ec49f1163b494364",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-strawberry-patchwork/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-strawberry-patchwork/mobile-8609c211717f375a",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-strawberry-patchwork/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-strawberry-patchwork/tablet-35a410c344e2b6f1",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-bow-stars/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-bow-stars/laptop-73d3a756529bcde2",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-bow-stars/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-bow-stars/mobile-996512b18078979d",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-bow-stars/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-bow-stars/tablet-14ffbfda458d30bf",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-flower-garden/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-garden/mobile-da33fb4a8a27208e",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-flower-garden/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-garden/tablet-251d66fd851a0dba",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-flower-garden/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-garden/laptop-917c47e754a81e33",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-flower-hug/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-hug/mobile-42933d814b504d25",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-flower-hug/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-hug/laptop-e969cf47c4685db1",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-flower-wreath/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-wreath/mobile-a9674614c4233a87",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-flower-wreath/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-wreath/laptop-a71f06f3f46af264",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-flower-hug/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-hug/tablet-62c3bdada5538161",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-lace-cloud/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-cloud/laptop-586338ab0dfabf2e",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-lace-cloud/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-cloud/mobile-2ddef1515bab23d8",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-flower-wreath/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-flower-wreath/tablet-06bf917eaf88b26f",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-lace-cloud/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-cloud/tablet-7d780461d3949002",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-lace-hydrangea/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-hydrangea/laptop-2b08854034aaf1e6",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-lace-nap/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-nap/laptop-c419bef45baec7a5",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-lace-hydrangea/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-hydrangea/mobile-5fc1c9bd962a064e",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-lace-hydrangea/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-hydrangea/tablet-ed3d8bcdf482aafc",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-lace-nap/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-nap/tablet-36d3c1d41a5da35b",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/laptop-1cf6d8213236f7b6",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/mobile-b8115326d6d9756a",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-lace-nap/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-lace-nap/mobile-f69d2e1ad9260b29",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-cinnamon-ribbon-heart/tablet-a0a9e633228a6523",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/domo-gingham-memory/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/domo-gingham-memory/laptop-ce73d68815bb3aad",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/domo-gingham-memory/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/domo-gingham-memory/mobile-925cb299ef8931e1",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/domo-lace-journal/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/domo-lace-journal/laptop-a3185a14b6deea11",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/domo-orbit-paper/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/domo-orbit-paper/laptop-8626eb49f1440667",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/domo-lace-journal/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/domo-lace-journal/mobile-62bd6694198fbed5",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/domo-gingham-memory/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/domo-gingham-memory/tablet-de09e7f901d7814a",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/domo-lace-journal/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/domo-lace-journal/tablet-0a2eac56606c636b",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/domo-orbit-paper/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/domo-orbit-paper/mobile-98bdfb07d3fdaaac",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/domo-orbit-paper/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/domo-orbit-paper/tablet-4b6983bb5577da35",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/domo-pixel-scrapbook/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/domo-pixel-scrapbook/laptop-09b6d295ef2d29b9",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/domo-pixel-scrapbook/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/domo-pixel-scrapbook/tablet-bf89a2054a96ad92",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/domo-pixel-scrapbook/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/domo-pixel-scrapbook/mobile-deae0183dbb8bef5",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/domo-velvet-cosmos/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/domo-velvet-cosmos/mobile-94549a1f45b75132",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/domo-velvet-cosmos/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/domo-velvet-cosmos/laptop-ca97c615cb5d5d7a",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/domo-velvet-cosmos/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/domo-velvet-cosmos/tablet-787c99bd1eb3b446",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-kuromi-claw/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-kuromi-claw/mobile-18164285deadd756",
+      "alternatives": [
+        {
+          "publicId": "schedsnap/wallpapers/scenic/sanrio-kuromi-claw/mobile-3add989bbdb9afdb",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791930248/schedsnap/wallpapers/scenic/sanrio-kuromi-claw/mobile-3add989bbdb9afdb.png"
+        }
+      ]
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-kuromi-claw/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-kuromi-claw/tablet-ad2281c1cba43d04",
+      "alternatives": [
+        {
+          "publicId": "schedsnap/wallpapers/scenic/sanrio-kuromi-claw/tablet-75d832919ad0debe",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791930249/schedsnap/wallpapers/scenic/sanrio-kuromi-claw/tablet-75d832919ad0debe.png"
+        }
+      ]
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-kuromi-claw/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-kuromi-claw/laptop-e797ad6e740d2d4f",
+      "alternatives": [
+        {
+          "publicId": "schedsnap/wallpapers/scenic/sanrio-kuromi-claw/laptop-fc56fa9677bc1a12",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791930249/schedsnap/wallpapers/scenic/sanrio-kuromi-claw/laptop-fc56fa9677bc1a12.png"
+        }
+      ]
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-kuromi-grey-grid/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-kuromi-grey-grid/mobile-3bf0aa7f96e4f33a",
+      "alternatives": [
+        {
+          "publicId": "schedsnap/wallpapers/scenic/sanrio-kuromi-grey-grid/mobile-bf935bcc70ab7cda",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791930262/schedsnap/wallpapers/scenic/sanrio-kuromi-grey-grid/mobile-bf935bcc70ab7cda.png"
+        }
+      ]
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-kuromi-grey-grid/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-kuromi-grey-grid/laptop-4dddfbd94c2f1dee",
+      "alternatives": [
+        {
+          "publicId": "schedsnap/wallpapers/scenic/sanrio-kuromi-grey-grid/laptop-0d4a743508dc2085",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791930263/schedsnap/wallpapers/scenic/sanrio-kuromi-grey-grid/laptop-0d4a743508dc2085.png"
+        }
+      ]
+    },
+    {
+      "path": "/wallpapers/scenic/sanrio-kuromi-grey-grid/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/sanrio-kuromi-grey-grid/tablet-6af1090895f02460",
+      "alternatives": [
+        {
+          "publicId": "schedsnap/wallpapers/scenic/sanrio-kuromi-grey-grid/tablet-52d8e40d8c2c5d2e",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791932350/schedsnap/wallpapers/scenic/sanrio-kuromi-grey-grid/tablet-52d8e40d8c2c5d2e.png"
+        },
+        {
+          "publicId": "schedsnap/wallpapers/scenic/sanrio-kuromi-grey-grid/tablet-69f7f935ce799375",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791930266/schedsnap/wallpapers/scenic/sanrio-kuromi-grey-grid/tablet-69f7f935ce799375.png"
+        }
+      ]
+    },
+    {
+      "path": "/wallpapers/scenic/domo-golden-paper/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/domo-golden-paper/mobile-ab47bc7411dfdcb6",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/domo-golden-paper/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/domo-golden-paper/laptop-5a3a9809beb3a931",
+      "alternatives": [
+        {
+          "publicId": "schedsnap/wallpapers/scenic/domo-golden-paper/laptop-4b77db51697bf53e",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791936993/schedsnap/wallpapers/scenic/domo-golden-paper/laptop-4b77db51697bf53e.png"
+        }
+      ]
+    },
+    {
+      "path": "/wallpapers/scenic/domo-golden-paper/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/domo-golden-paper/tablet-7f6564ea76d9a2e2",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-blossom-field-watercolor-ref1/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-blossom-field-watercolor-ref1/mobile-e4af98f01a86b687",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-blossom-field-watercolor-ref1/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-blossom-field-watercolor-ref1/tablet-6a3fcc2e80fcd28e",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-blossom-field-watercolor-ref1/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-blossom-field-watercolor-ref1/laptop-7c5c68554b7c0e7a",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-blossom-field-cel-ref1/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-blossom-field-cel-ref1/mobile-fd9ce734adea3a6d",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-blossom-field-cel-ref1/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-blossom-field-cel-ref1/tablet-94e89c0573d405d0",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-blossom-field-cel-ref1/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-blossom-field-cel-ref1/laptop-2d8777880abd62fe",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-blossom-field-paper-cut-ref1/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-blossom-field-paper-cut-ref1/mobile-b07398028ddfccb7",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-blossom-field-paper-cut-ref1/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-blossom-field-paper-cut-ref1/tablet-14365d1fb671262a",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-blossom-field-paper-cut-ref1/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-blossom-field-paper-cut-ref1/laptop-7a16444a9dc989a8",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-peek-doodle/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-peek-doodle/mobile-6fcda10325065a7d",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-peek-doodle/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-peek-doodle/tablet-25e846d3ec5cf077",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-peek-doodle/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-peek-doodle/laptop-fe271c9863f9c493",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-woodland-path/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-woodland-path/mobile-662a04956717b503",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-woodland-path/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-woodland-path/tablet-ec633308beeaacbd",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-woodland-path/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-woodland-path/laptop-d9a94139c5b0aaf7",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-firefly-grove/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-firefly-grove/mobile-13f4e8035d1311d3",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-firefly-grove/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-firefly-grove/tablet-ff5d7e3379d95ea8",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-firefly-grove/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-firefly-grove/laptop-6f215eeb8a58c7d0",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-cloud-country-watercolor/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-cloud-country-watercolor/mobile-359dc2e47e0b4ce5",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-cloud-country-watercolor/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-cloud-country-watercolor/tablet-8bb840f43a19a4ac",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-cloud-country-watercolor/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-cloud-country-watercolor/laptop-ab16ab7bd9bb9ea4",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-cloud-country-anime/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-cloud-country-anime/mobile-fcfd35d31c17bad9",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-cloud-country-anime/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-cloud-country-anime/tablet-c31b612a7ea987f0",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-cloud-country-anime/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-cloud-country-anime/laptop-020429c24089218b",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-cloud-country-screenprint/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-cloud-country-screenprint/mobile-e917cca613a4326d",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-cloud-country-screenprint/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-cloud-country-screenprint/tablet-31f107b347edc544",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/chikawa-cloud-country-screenprint/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/chikawa-cloud-country-screenprint/laptop-fb91561147e82afd",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-edge-peek-a/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/wbb-edge-peek-a/mobile-f89394661c228a3f",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-edge-peek-a/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/wbb-edge-peek-a/tablet-fede027022eb58be",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-edge-peek-a/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/wbb-edge-peek-a/laptop-25eb4c150a0372cc",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-edge-peek-c/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/wbb-edge-peek-c/mobile-e4617ff3ac81ae99",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-edge-peek-c/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/wbb-edge-peek-c/tablet-eaeb3324a1bb4a41",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/wbb-edge-peek-c/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/wbb-edge-peek-c/laptop-74396189d9bac9ca",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/ghibli-forest-star/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/ghibli-forest-star/laptop-f1daa34155c6030f",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/ghibli-forest-star/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/ghibli-forest-star/mobile-13d43f1a972107df",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/ghibli-forest-star/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/ghibli-forest-star/tablet-170cf359734ecd08",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/ghibli-flower-grid/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/ghibli-flower-grid/laptop-dfb673195f2fb4b9",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/ghibli-gingham-border/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/ghibli-gingham-border/laptop-4a3ef60626443e36",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/ghibli-gingham-border/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/ghibli-gingham-border/tablet-f4183bddd87e1a48",
+      "alternatives": [
+        {
+          "publicId": "schedsnap/wallpapers/scenic/ghibli-gingham-border/tablet-aead46290b3c5d9d",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969903/schedsnap/wallpapers/scenic/ghibli-gingham-border/tablet-aead46290b3c5d9d.png"
+        }
+      ]
+    },
+    {
+      "path": "/wallpapers/scenic/ghibli-notebook-scrapbook/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/ghibli-notebook-scrapbook/laptop-e5804c59f206e5a5",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/ghibli-notebook-scrapbook/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/ghibli-notebook-scrapbook/mobile-c6af47dc25473e06",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/ghibli-notebook-scrapbook/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/ghibli-notebook-scrapbook/tablet-a220f3b9f5b6855a",
+      "alternatives": [
+        {
+          "publicId": "schedsnap/wallpapers/scenic/ghibli-notebook-scrapbook/tablet-035dec98f272bd8a",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969922/schedsnap/wallpapers/scenic/ghibli-notebook-scrapbook/tablet-035dec98f272bd8a.png"
+        }
+      ]
+    },
+    {
+      "path": "/wallpapers/scenic/ghibli-gingham-border/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/ghibli-gingham-border/mobile-a9039ff56248e917",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/ghibli-flower-grid/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/ghibli-flower-grid/tablet-fb9da2b18f0c8609",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/ghibli-sage-wash/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/ghibli-sage-wash/laptop-ad4126a7f609b2c6",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/ghibli-spiral-notes/laptop.png",
+      "publicId": "schedsnap/wallpapers/scenic/ghibli-spiral-notes/laptop-227e9c9498ac98af",
+      "alternatives": [
+        {
+          "publicId": "schedsnap/wallpapers/scenic/ghibli-spiral-notes/laptop-973da2878181cc8c",
+          "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1791969944/schedsnap/wallpapers/scenic/ghibli-spiral-notes/laptop-973da2878181cc8c.png"
+        }
+      ]
+    },
+    {
+      "path": "/wallpapers/scenic/ghibli-spiral-notes/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/ghibli-spiral-notes/mobile-6390d90fba543482",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/ghibli-spiral-notes/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/ghibli-spiral-notes/tablet-225271cffede6759",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/ghibli-flower-grid/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/ghibli-flower-grid/mobile-c9934031e2a0fbc7",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/ghibli-sage-wash/tablet.png",
+      "publicId": "schedsnap/wallpapers/scenic/ghibli-sage-wash/tablet-c573cde04c2c3e54",
+      "alternatives": []
+    },
+    {
+      "path": "/wallpapers/scenic/ghibli-sage-wash/mobile.png",
+      "publicId": "schedsnap/wallpapers/scenic/ghibli-sage-wash/mobile-cc2877344a849dad",
+      "alternatives": []
+    }
+  ]
+}

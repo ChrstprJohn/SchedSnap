@@ -53,7 +53,7 @@ test('examples type and rotate every three seconds while the field is empty', t 
   const page = host(t, 'useSearchPlaceholder', '');
   assert.equal(page.result(), 'Genshin Impact…');
   t.mock.timers.tick(3000);
-  for (const example of ['Sanrio…', 'Notebook Hours…', 'We Bare Bears…', 'Chiikawa…', 'Pixel art…', 'Patterns & prints…']) {
+  for (const example of ['Sanrio…', 'Notebook Hours…', 'We Bare Bears…', 'Chiikawa…', 'Patterns & prints…']) {
     assert.equal(page.result(), example[0]);
     for (let i = 1; i < example.length; i++) t.mock.timers.tick(50);
     assert.equal(page.result(), example);

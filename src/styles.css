@@ -120,6 +120,10 @@
 .wallpaper-search-wrap:has(.wallpaper-search-clear) .wallpaper-search-input { padding-right: 58px; }
 .wallpaper-search-clear { position: absolute; right: 36px; display: flex; align-items: center; justify-content: center; width: 18px; height: 18px; padding: 0; border: 0; border-radius: 50%; background: var(--color-line); color: var(--color-muted); cursor: pointer; transition: background 150ms ease, color 150ms ease; }
 .wallpaper-search-clear:hover { background: var(--color-muted); color: white; }
+.wallpaper-search-left .wallpaper-search-icon { left: 14px; right: auto; }
+.wallpaper-search-left .wallpaper-search-input { padding-left: 40px; }
+.wallpaper-search-left .wallpaper-search-clear { right: 14px; }
+.wallpaper-search-left:has(.wallpaper-search-clear) .wallpaper-search-input { padding-right: 40px; }
 .gallery-empty-state { grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 48px 16px; text-align: center; color: var(--color-muted); font-size: 15px; }
 .import-change-mobile { display: none; }
 .template-filters { display: flex; flex-wrap: nowrap; align-items: center; gap: 8px; margin-bottom: 16px; }

@@ -451,7 +451,8 @@ function drawDeviceWallpaper(canvas, { schedule, template, resolution, backgroun
   const logicalHeight = availableHeight / scale;
   let layout = layoutSchedule(ctx, schedule, template, logicalHeight, { ...layoutOptions, limit: logicalHeight - 60 });
   if (layout.overflow) {
-    const expanded = layoutSchedule(ctx, schedule, template, 10000, { ...layoutOptions, limit: 9940 });
+    const expandedHeight = availableHeight / 0.42;
+    const expanded = layoutSchedule(ctx, schedule, template, expandedHeight, { ...layoutOptions, limit: expandedHeight - 60 });
     const fittedScale = Math.min(columnWidth / designWidth, availableHeight / (expanded.bottom + 60));
     // Keep every meeting and reject overcrowded schedules before text becomes tiny.
     if (!expanded.overflow && fittedScale >= 0.42) { scale = fittedScale; layout = expanded; }

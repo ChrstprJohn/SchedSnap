@@ -1,10 +1,12 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router';
-import { Plus, LogOut, ArrowLeft, X, Menu, CheckCircle2, Pencil, Eye, EyeOff, Trash2, RotateCcw, MoreVertical, UserRound, LayoutDashboard, PanelsTopLeft, ExternalLink, ChevronLeft, ChevronRight, ChevronDown, Search, Save, Send, Minus, Maximize2 } from 'lucide-react';
+import { Plus, LogOut, ArrowLeft, X, Menu, CheckCircle2, Pencil, Eye, EyeOff, Trash2, RotateCcw, MoreVertical, UserRound, LayoutDashboard, PanelsTopLeft, ExternalLink, ChevronLeft, ChevronRight, ChevronDown, Save, Send, Minus, Maximize2 } from 'lucide-react';
 import { deviceResolutions, tabletLandscapeResolution } from '../assets/templates.js';
 import { sampleSchedule } from '../assets/sampleSchedule.js';
 import { designCollections, galleryCategories, matchesGalleryCategory } from '../config/collections.js';
 import CategoryFilters from '../components/CategoryFilters.jsx';
+import { WallpaperSearchField } from '../components/WallpaperSearch.jsx';
+import { searchWallpaperTemplates } from '../utils/wallpaperSearch.js';
 
 import { WallpaperCanvas } from './ScheduleWallpaper/CanvasPreview.jsx';
 import TemplateControls from './ScheduleWallpaper/TemplateControls.jsx';
@@ -120,7 +122,7 @@ export default function Admin() {
     finally { setBusy(false); }
   }
   const normalizedSearch = searchQuery.trim().toLowerCase();
-  const filtered = catalog?.templates.filter(t => matchesGalleryCategory(t, collection) && (!normalizedSearch || [t.name, t.description, t.collection].some(value => value?.toLowerCase().includes(normalizedSearch)))) || [];
+  const filtered = searchWallpaperTemplates(catalog?.templates, searchQuery).filter(t => matchesGalleryCategory(t, collection));
   const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(filtered.length, `${collection}:${device}:${normalizedSearch}:${Boolean(editor)}`);
   if (authenticated === null || !authenticated) return <AdminSignIn checking={authenticated === null} password={password} onPasswordChange={setPassword} onSubmit={login} busy={busy} error={error} />;
   const visible = filtered.slice(0, galleryCount);
@@ -140,11 +142,7 @@ export default function Admin() {
       return false;
     }} /> : <>
       <div className="admin-library-search">
-        <div className="admin-library-search-field">
-          <Search size={17} aria-hidden="true" />
-          <label className="sr-only" htmlFor="admin-template-search">Search templates</label>
-          <input id="admin-template-search" type="search" value={searchQuery} onChange={event => setSearchQuery(event.target.value)} placeholder="Search templates" />
-        </div>
+        <WallpaperSearchField value={searchQuery} onChange={setSearchQuery} placeholder="Search templates" label="Search templates" iconLeft />
         <button className="button-primary admin-library-cta" disabled={busy || !catalog} onClick={() => setEditor({ key: crypto.randomUUID(), template: blankTemplate(), isNew: true })}><Plus size={18} />New design</button>
       </div>
       <div className="admin-filter-row">
@@ -343,6 +341,8 @@ function DesignEditor({ initial, isNew, existingIds, busy, onSave, onBack, onDir
       {error && errorSection === 'details' && <p className="admin-error" role="alert">{error}</p>}
       <label htmlFor="admin-design-title">Title<input id="admin-design-title" aria-describedby="admin-title-help" className="field-input" value={template.name} maxLength={80} onChange={e => { const name = e.target.value; setError(''); setTemplate(t => ({ ...t, name, ...(isNew ? { id: generateDesignId(name, existingIds) } : {}) })); }} /></label>
       <p id="admin-title-help" className="admin-title-help">{isNew ? 'Your design link is generated automatically from this title.' : 'Changing the title keeps the existing design link.'}</p>
+      <label htmlFor="admin-design-keywords">Keywords<input id="admin-design-keywords" className="field-input" value={template.keywords || ''} maxLength={500} aria-describedby="admin-keywords-help" placeholder="Hu Tao, namecard, background" onChange={event => change('keywords', event.target.value)} /></label>
+      <p id="admin-keywords-help" className="admin-title-help">Separate search terms with commas. Include character names, styles, and themes.</p>
       <label>Artwork type<select className="field-input" value={kind} onChange={e => changeKind(e.target.value)}><option value="background">Background · three devices</option><option value="mascot">Mascot · transparent cutout</option><option value="pattern">Pattern or solid color</option></select></label>
       <label>Collection<select className="field-input" value={template.collection || 'original'} onChange={e => change('collection', e.target.value)}>{designCollections.filter(c => c.id !== 'all').map(c => <option key={c.id} value={c.id}>{c.name}</option>)}</select></label>
     </fieldset></EditorSection><EditorSection title="Artwork" description={kind === 'pattern' ? 'Pattern and background' : kind === 'mascot' ? 'Character cutout' : 'Mobile, tablet, and laptop images'} open={openSections.artwork} onToggle={open => setOpenSections(s => ({ ...s, artwork: open }))}><fieldset disabled={blocked}><legend className="sr-only">Artwork</legend>

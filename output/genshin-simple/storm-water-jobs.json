@@ -1,0 +1,43 @@
+[
+  {
+    "character": "raiden",
+    "device": "tablet",
+    "prompt": "Create one independent tablet portrait wallpaper 1600x2560, matching referenced Raiden pilot's simple flat graphic style, muted violet field and faint oversized tonal Electro emblem. Same recognizable cute Raiden Shogun chibi with violet braid, flower ornament and purple kimono; bold dark outlines, flat two-tone shading, no white sticker border. Recompose for wider tablet: compact entire chibi at x78% y30%, only 20% canvas height. Lower 55% stays quiet and empty for timetable overlay. Opaque full bleed. No text, schedule, clock, UI, frames, scenery, painting, texture, glow, 3D or photorealism.",
+    "hint": "Generated images are saved to C:\\Users\\Admin\\.codex\\generated_images\\01a14373-d53c-7c03-b1da-d8f0c693cea5 as C:\\Users\\Admin\\.codex\\generated_images\\01a14373-d53c-7c03-b1da-d8f0c693cea5\\exec-4d0c2f9f-8c01-4852-84d9-fe49fc21cb65.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a14373-d53c-7c03-b1da-d8f0c693cea5\\exec-4d0c2f9f-8c01-4852-84d9-fe49fc21cb65.png"
+  },
+  {
+    "character": "raiden",
+    "device": "laptop",
+    "prompt": "Create one independent laptop LANDSCAPE 1920x1080 wallpaper, matching referenced Raiden pilot's simple flat graphic style, muted violet field and faint oversized tonal Electro emblem smoothly integrated. Same recognizable cute Raiden Shogun chibi with violet braid, flower ornament and purple kimono; bold dark outlines, flat two-tone shading, no white sticker border. Recompose for wide screen: compact entire chibi at x87% y28%, about 24% canvas height. Central x10–78% lower y40–95% stays quiet empty for timetable overlay. Opaque full bleed. No text, schedule, clock, UI, frames, scenery, painting, texture, glow, 3D or photorealism.",
+    "hint": "Generated images are saved to C:\\Users\\Admin\\.codex\\generated_images\\01a14373-d53c-7c03-b1da-d8f0c693cea5 as C:\\Users\\Admin\\.codex\\generated_images\\01a14373-d53c-7c03-b1da-d8f0c693cea5\\exec-522eaf62-ded8-4bbb-82ad-53be4deb75dc.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a14373-d53c-7c03-b1da-d8f0c693cea5\\exec-522eaf62-ded8-4bbb-82ad-53be4deb75dc.png"
+  },
+  {
+    "character": "furina",
+    "device": "tablet",
+    "prompt": "Create one tablet portrait wallpaper 1600x2560 using reference only for character identity, muted dusty blue and flat outlined chibi style. Same adorable Furina chibi, white hair, navy theatrical outfit and tiny blue top hat, full body, bold contours flat two-tone shading. Recompose for tablet with compact chibi at x78% y30%, 20% canvas height, quiet empty lower 55%. IMPORTANT replace the reference's three-blade swirl background emblem with one simple enormous faint WATER DROP outline, point at top round base, small inner water drop, tonal blue. No three blades, no Electro emblem. Smooth flat blue full bleed opaque. No text, UI, timetable, clock, scenery, painting, texture, glow or frame.",
+    "hint": "Generated images are saved to C:\\Users\\Admin\\.codex\\generated_images\\01a14373-d53c-7c03-b1da-d8f0c693cea5 as C:\\Users\\Admin\\.codex\\generated_images\\01a14373-d53c-7c03-b1da-d8f0c693cea5\\exec-bc556744-22aa-4a16-8583-210630dad1b7.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a14373-d53c-7c03-b1da-d8f0c693cea5\\exec-bc556744-22aa-4a16-8583-210630dad1b7.png"
+  },
+  {
+    "character": "furina",
+    "device": "laptop",
+    "prompt": "Create one laptop LANDSCAPE wallpaper 1920x1080 using reference only for character identity, muted dusty blue and flat outlined chibi style. Same adorable Furina chibi, white hair, navy theatrical outfit and tiny blue top hat, full body, bold contours flat two-tone shading. Independently recompose for wide laptop: compact chibi at x87% y27%, 25% canvas height; central x10–78% lower y40–95% quiet empty. IMPORTANT replace reference's three-blade swirl background emblem with one enormous faint WATER DROP outline, point at top round base, small inner water drop, tonal blue. No three blades, no Electro emblem. Smooth flat blue full bleed opaque. No text, UI, timetable, clock, scenery, painting, texture, glow or frame.",
+    "hint": "Generated images are saved to C:\\Users\\Admin\\.codex\\generated_images\\01a14373-d53c-7c03-b1da-d8f0c693cea5 as C:\\Users\\Admin\\.codex\\generated_images\\01a14373-d53c-7c03-b1da-d8f0c693cea5\\exec-5a162487-8399-46f1-b1ef-8548b63dfa76.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a14373-d53c-7c03-b1da-d8f0c693cea5\\exec-5a162487-8399-46f1-b1ef-8548b63dfa76.png"
+  },
+  {
+    "character": "furina",
+    "device": "mobile",
+    "prompt": "Edit this Furina mobile wallpaper: change ONLY the giant faint background emblem. Remove three-blade Electro swirl completely. Replace with enormous very faint simple Hydro WATER DROP outline with pointed top and rounded base and small inner water drop. Preserve Furina chibi exactly, muted blue flat background, compact upper-right placement and quiet lower half. No text, UI, timetable, clock, frame, texture or scenery. Portrait 1080x2400 opaque.",
+    "hint": "Generated images are saved to C:\\Users\\Admin\\.codex\\generated_images\\01a14373-d53c-7c03-b1da-d8f0c693cea5 as C:\\Users\\Admin\\.codex\\generated_images\\01a14373-d53c-7c03-b1da-d8f0c693cea5\\exec-5d96414c-a672-4875-9237-1e752bfbf847.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a14373-d53c-7c03-b1da-d8f0c693cea5\\exec-5d96414c-a672-4875-9237-1e752bfbf847.png"
+  },
+  {
+    "character": "raiden",
+    "device": "mobile",
+    "prompt": "Reference #2 style: simple flat muted violet field (#74668e), faint oversized Electro emblem; compact recognizable Raiden Shogun chibi upper right x76% y35%, bold outlines flat two-tone shading, violet braid flower ornament and kimono, quiet lower 55%. No text, UI, timetable, scenery, painting, texture or glow. Mobile portrait 1080x2400 opaque.",
+    "source": "C:/Users/Admin/.codex/generated_images/01a14373-d53c-7c03-b1da-d8f0c693cea5/exec-a3454141-015e-4b2c-a72c-df4d47345613.png"
+  }
+]
