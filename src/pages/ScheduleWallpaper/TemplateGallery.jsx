@@ -31,8 +31,8 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
     const matching = isSearching
       ? searchWallpaperTemplates(wallpaperTemplates, searchQuery)
       : wallpaperTemplates.filter((item) => matchesGalleryCategory(item, category));
-    return sortTemplatesByLikes(matching, rankingLikes);
-  }, [wallpaperTemplates, searchQuery, isSearching, category, rankingLikes]);
+    return sortTemplatesByLikes(matching.filter(item => !item.mobileOnly || device === 'mobile'), rankingLikes);
+  }, [wallpaperTemplates, searchQuery, isSearching, category, rankingLikes, device]);
 
   const filterKey = `${isSearching ? `search:${searchQuery.trim()}` : category}:${device}`;
   const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(visibleTemplates.length, filterKey);

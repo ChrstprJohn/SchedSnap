@@ -65,11 +65,11 @@ export default function ScheduleWallpaper() {
   const imagePicker = useRef(null);
   const lastTrackedStep = useRef(null);
   const template = useMemo(() => {
-    const preset = customizeWallpaperTemplate(wallpaperTemplates.find((item) => item.id === templateId), templateSettings[templateId], device);
+    const preset = customizeWallpaperTemplate(wallpaperTemplates.find((item) => item.id === templateId && (!item.mobileOnly || device === 'mobile')), templateSettings[templateId], device);
     return preset ? { ...preset, scheduleTitle, device } : undefined;
   }, [templateId, templateSettings, scheduleTitle, device, wallpaperTemplates]);
   const returnId = search.get('return');
-  const previousTemplate = wallpaperTemplates.find((item) => item.id === returnId);
+  const previousTemplate = wallpaperTemplates.find((item) => item.id === returnId && (!item.mobileOnly || device === 'mobile'));
   const selectedId = template?.id || previousTemplate?.id;
   const step = template ? search.get('step') === 'preview' ? 'preview' : 'classes' : 'design';
   const basePath = '/services/schedule-wallpaper';

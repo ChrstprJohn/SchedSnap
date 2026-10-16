@@ -12,6 +12,7 @@ import { ghibliTemplates } from './ghibliTemplates.js';
 import { genshinTemplates } from './genshinTemplates.js';
 import { genshinBackgroundTemplates } from './genshinBackgroundTemplates.js';
 import { genshinChibiTemplates } from './genshinChibiTemplates.js';
+import { hunterTemplates } from './hunterTemplates.js';
 
 
 export const mobileResolution = { id: 'mobile', width: 1080, height: 2400 };
@@ -30,6 +31,7 @@ export const wallpaperTemplates = [
   ...genshinTemplates,
   ...genshinBackgroundTemplates,
   ...genshinChibiTemplates,
+  ...hunterTemplates,
 
   ...sanrioTemplates,
   ...chikawaReferenceTemplates,

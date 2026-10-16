@@ -8,7 +8,8 @@ export const templateSchema = z.object({
   keywords: z.string().trim().max(500, 'Keep keywords under 500 characters.').optional(),
   status: z.enum(['draft', 'published', 'hidden']),
   createdAt: z.iso.datetime().optional(), publishedAt: z.iso.datetime().optional(),
-  collection: z.enum(['scenic', 'sanrio', 'snoopy', 'genshin', 'we-bare-bears', 'domo', 'adventure-time', 'chiikawa', 'chikawa', 'ghibli', 'mascot', 'meep', 'little-friends', 'pattern', 'original']).optional(),
+  collection: z.enum(['scenic', 'sanrio', 'snoopy', 'genshin', 'hunter-x-hunter', 'we-bare-bears', 'domo', 'adventure-time', 'chiikawa', 'chikawa', 'ghibli', 'mascot', 'meep', 'little-friends', 'pattern', 'original']).optional(),
+  mobileOnly: z.boolean().optional(),
   family: z.string().max(80).optional(),
   background: color, ink: color, muted: color, surface: color, line: color,
   headingInk: color.optional(),
@@ -38,7 +39,8 @@ export const templateSchema = z.object({
   if (t.status !== 'published') return;
   if (t.layout === 'mascot' && !t.image) ctx.addIssue({ code: 'custom', message: 'Upload a character image.', path: ['image'] });
   if (t.layout !== 'mascot' && !t.pattern && (t.image || t.deviceImages || t.collection === 'scenic')) {
-    const variants = ['mobile', 'tablet', 'laptop'].map(device => t.deviceImages?.[device]);
-    if (!t.image || variants.some(value => !value) || new Set(variants).size !== 3 || t.image !== t.deviceImages?.mobile) ctx.addIssue({ code: 'custom', message: 'Add a mobile, tablet, and laptop background to publish. You can save a draft while uploading.', path: ['deviceImages'] });
+    const devices = t.mobileOnly ? ['mobile'] : ['mobile', 'tablet', 'laptop'];
+    const variants = devices.map(device => t.deviceImages?.[device]);
+    if (!t.image || variants.some(value => !value) || new Set(variants).size !== devices.length || t.image !== t.deviceImages?.mobile) ctx.addIssue({ code: 'custom', message: t.mobileOnly ? 'Add a matching mobile background to publish.' : 'Add a mobile, tablet, and laptop background to publish. You can save a draft while uploading.', path: ['deviceImages'] });
   }
 });

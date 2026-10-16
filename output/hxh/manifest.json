@@ -1,0 +1,94 @@
+{
+  "assets": [
+    {
+      "path": "public/wallpapers/scenic/hxh-four-slash/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "5af8adf44d94bbce679c861e722980d7cb5deb7b592622c0b023dff0ddd3af32"
+    },
+    {
+      "path": "public/wallpapers/scenic/hxh-gon-chibi/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "296bc48b500eda723faa8fbb65567c86fe0e379c738f54c65db2405981a5af83"
+    },
+    {
+      "path": "public/wallpapers/scenic/hxh-gon-manga/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "f2bbba6aca87a9ce1eb4842eb78df7c1e80e2ba1f0c1df692e40d3656231f65f"
+    },
+    {
+      "path": "public/wallpapers/scenic/hxh-gon-plain/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "5805a0fa9d437c1a4be42e0fb03d9d1af1c61ea43e579cdaf46434f29f03ef67"
+    },
+    {
+      "path": "public/wallpapers/scenic/hxh-hisoka-manga/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "f279038369ba126941a3fce9f71e969674cb555dce937b4f4d4f1efb0c5075fa"
+    },
+    {
+      "path": "public/wallpapers/scenic/hxh-hisoka-plain/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "1aee44cab3e37525df1aec9086cda4b96884a5080d653266aac73b4b60405ae0"
+    },
+    {
+      "path": "public/wallpapers/scenic/hxh-killua-chibi/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "bbbac56f1cd0849d6612eba4ccd75205f4af37c482eee9718fe7d977449d24b3"
+    },
+    {
+      "path": "public/wallpapers/scenic/hxh-killua-manga/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "37b06bfa622fdb3c152db90716fd1b811c5e710bb539939e18e7c6e1665bd897"
+    },
+    {
+      "path": "public/wallpapers/scenic/hxh-killua-plain/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "542997d032dd368d78ce3b9d75a8402578b928ea260bbfcd830a4e7a59713527"
+    },
+    {
+      "path": "public/wallpapers/scenic/hxh-kurapika-chibi/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "0ee1a945407ad4dd7ca63167cff2427e66494c88cb08f0528ccc8d3c4976acba"
+    },
+    {
+      "path": "public/wallpapers/scenic/hxh-kurapika-manga/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "ea928e3f38f409ec44e6241b472d2eccbd08d44114bd32675e6d7ae14609c3e5"
+    },
+    {
+      "path": "public/wallpapers/scenic/hxh-kurapika-plain/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "d7145b630676206c873397bcfb3ddb8198239d483bd658a04db27772ddeffc17"
+    },
+    {
+      "path": "public/wallpapers/scenic/hxh-leorio-chibi/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "d26062849480c699712fb883c0245807c6c42659f6ebffc2db6883e3cedd51d6"
+    },
+    {
+      "path": "public/wallpapers/scenic/hxh-leorio-manga/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "7e15f3181a78d36bd42ea88b7670aa460a36122ece039789dece2c2b48a4a016"
+    },
+    {
+      "path": "public/wallpapers/scenic/hxh-phantom-troupe/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "c2f052f2dda10ec26d07a5008d8bbb05048a1014af50aef623e62ba19d21afd0"
+    }
+  ]
+}
