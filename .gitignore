@@ -10,6 +10,10 @@ coverage/
 
 # Cloudinary originals stay local; commit their delivery manifest and presets.
 /public/wallpapers/**/*.png
+# Keep the reviewed local Snoopy previews available on branch checkouts.
+!/public/wallpapers/scenic/snoopy-*/mobile.png
+!/public/wallpapers/scenic/snoopy-*/tablet.png
+!/public/wallpapers/scenic/snoopy-*/laptop.png
 /public/images/mascots/masters/*.png
 /public/images/pixel-mascots/masters/*.png
 /public/images/goofy-mascots/masters/*.png

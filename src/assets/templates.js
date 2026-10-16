@@ -6,6 +6,7 @@ import { chikawaReferenceTemplates } from './chikawaReferenceTemplates.js';
 import { weBareBearsTemplates } from './weBareBearsTemplates.js';
 import { sanrioTemplates } from './sanrioTemplates.js';
 import { domoTemplates } from './domoTemplates.js';
+import { snoopyTemplates } from './snoopyTemplates.js';
 import { meepTemplates } from './meepTemplates.js';
 import { ghibliTemplates } from './ghibliTemplates.js';
 import { genshinTemplates } from './genshinTemplates.js';
@@ -25,6 +26,7 @@ export const wallpaperTemplates = [
   ...weBareBearsTemplates,
   ...meepTemplates,
   ...domoTemplates,
+  ...snoopyTemplates,
   ...genshinTemplates,
   ...genshinBackgroundTemplates,
   ...genshinChibiTemplates,

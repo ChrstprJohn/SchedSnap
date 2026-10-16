@@ -2,6 +2,7 @@
 export const designCollections = [
   { id: 'all', name: 'All designs' },
   { id: 'sanrio', name: 'Sanrio' },
+  { id: 'snoopy', name: 'Snoopy', searchTerms: ['Peanuts', 'Woodstock'] },
   { id: 'genshin', name: 'Genshin', searchTerms: ['Genshin Impact'] },
   { id: 'we-bare-bears', name: 'We Bare Bears' },
   { id: 'domo', name: 'Domo' },
