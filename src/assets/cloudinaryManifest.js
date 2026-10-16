@@ -3590,5 +3590,173 @@ export default {
     "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792078749/schedsnap/wallpapers/scenic/genshin-card-zhongli-planet/tablet-24a9a3c27992b01c.png",
     "width": 1600,
     "height": 2560
+  },
+  "/wallpapers/scenic/genshin-namecard-gaming/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-gaming/laptop-471bb047b84cc540",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112556/schedsnap/wallpapers/scenic/genshin-namecard-gaming/laptop-471bb047b84cc540.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/genshin-namecard-cyno/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-cyno/tablet-39f3184cd88f38e2",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112556/schedsnap/wallpapers/scenic/genshin-namecard-cyno/tablet-39f3184cd88f38e2.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/genshin-namecard-cyno/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-cyno/laptop-ff6443f40339eb38",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112556/schedsnap/wallpapers/scenic/genshin-namecard-cyno/laptop-ff6443f40339eb38.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/genshin-namecard-cyno/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-cyno/mobile-66319a7e8ff2ff1f",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112556/schedsnap/wallpapers/scenic/genshin-namecard-cyno/mobile-66319a7e8ff2ff1f.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/genshin-namecard-gaming/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-gaming/mobile-80b44ceb3d7a02e5",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112558/schedsnap/wallpapers/scenic/genshin-namecard-gaming/mobile-80b44ceb3d7a02e5.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/genshin-namecard-gaming/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-gaming/tablet-866c9516a9b80ca1",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112558/schedsnap/wallpapers/scenic/genshin-namecard-gaming/tablet-866c9516a9b80ca1.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/genshin-namecard-iansan/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-iansan/laptop-0e1ec0d3b863ccf4",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112558/schedsnap/wallpapers/scenic/genshin-namecard-iansan/laptop-0e1ec0d3b863ccf4.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/genshin-namecard-iansan/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-iansan/mobile-dfbff71ed244a989",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112559/schedsnap/wallpapers/scenic/genshin-namecard-iansan/mobile-dfbff71ed244a989.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/genshin-namecard-iansan/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-iansan/tablet-b93c271eb20f07df",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112560/schedsnap/wallpapers/scenic/genshin-namecard-iansan/tablet-b93c271eb20f07df.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/genshin-namecard-ifa/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-ifa/laptop-efc71caeae65816e",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112560/schedsnap/wallpapers/scenic/genshin-namecard-ifa/laptop-efc71caeae65816e.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/genshin-namecard-ifa/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-ifa/mobile-48c73410781f5527",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112560/schedsnap/wallpapers/scenic/genshin-namecard-ifa/mobile-48c73410781f5527.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/genshin-namecard-ineffa/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-ineffa/laptop-ccce4e0269447733",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112561/schedsnap/wallpapers/scenic/genshin-namecard-ineffa/laptop-ccce4e0269447733.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/genshin-namecard-ineffa/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-ineffa/tablet-8b359288c44426a3",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112562/schedsnap/wallpapers/scenic/genshin-namecard-ineffa/tablet-8b359288c44426a3.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/genshin-namecard-kazuha/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-kazuha/mobile-7b3d693d69d3b8eb",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112563/schedsnap/wallpapers/scenic/genshin-namecard-kazuha/mobile-7b3d693d69d3b8eb.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/genshin-namecard-ineffa/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-ineffa/mobile-49880c137994bff7",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112562/schedsnap/wallpapers/scenic/genshin-namecard-ineffa/mobile-49880c137994bff7.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/genshin-namecard-ifa/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-ifa/tablet-b5e6ed62125ffa88",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112561/schedsnap/wallpapers/scenic/genshin-namecard-ifa/tablet-b5e6ed62125ffa88.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/genshin-namecard-kazuha/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-kazuha/tablet-e9e76caa3a5f3f47",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112564/schedsnap/wallpapers/scenic/genshin-namecard-kazuha/tablet-e9e76caa3a5f3f47.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/genshin-namecard-kazuha/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-kazuha/laptop-cf7c6592a552e32d",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112563/schedsnap/wallpapers/scenic/genshin-namecard-kazuha/laptop-cf7c6592a552e32d.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/genshin-namecard-kinich/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-kinich/tablet-3a3c5337c14106f8",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112566/schedsnap/wallpapers/scenic/genshin-namecard-kinich/tablet-3a3c5337c14106f8.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/genshin-namecard-kinich/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-kinich/mobile-1a7e6791aa61cc8e",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112566/schedsnap/wallpapers/scenic/genshin-namecard-kinich/mobile-1a7e6791aa61cc8e.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/genshin-namecard-kinich/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-kinich/laptop-fff7f7e80de97892",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112565/schedsnap/wallpapers/scenic/genshin-namecard-kinich/laptop-fff7f7e80de97892.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "/wallpapers/scenic/genshin-namecard-xiao/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-xiao/mobile-7600e1bf7903fff1",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112567/schedsnap/wallpapers/scenic/genshin-namecard-xiao/mobile-7600e1bf7903fff1.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/genshin-namecard-xiao/tablet.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-xiao/tablet-e30d60b704fe4a62",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112567/schedsnap/wallpapers/scenic/genshin-namecard-xiao/tablet-e30d60b704fe4a62.png",
+    "width": 1600,
+    "height": 2560
+  },
+  "/wallpapers/scenic/genshin-namecard-xiao/laptop.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/genshin-namecard-xiao/laptop-fbf63c3345aa893f",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792112570/schedsnap/wallpapers/scenic/genshin-namecard-xiao/laptop-fbf63c3345aa893f.png",
+    "width": 1920,
+    "height": 1080
   }
 };

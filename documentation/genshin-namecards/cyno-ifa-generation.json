@@ -1,0 +1,57 @@
+{
+  "provider": "built-in image_gen",
+  "references": [
+    "https://enka.network/ui/UI_NameCardPic_Cyno_P.png",
+    "https://enka.network/ui/UI_NameCardPic_Ifa_P.png"
+  ],
+  "jobs": [
+    {
+      "character": "cyno",
+      "device": "mobile",
+      "width": 1080,
+      "height": 2400,
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a14231-6d2b-7ed0-8fbc-0fd9ad44be26\\exec-a4726970-21b8-4fae-bafa-4fec8cac37fe.png",
+      "prompt": "Create a faithful device-format adaptation of the official Genshin Impact Cyno: Silence namecard reference. Preserve its flat restrained game-art style, purple-indigo lavender palette, large profile of Anubis jackal headdress, narrow gold lines, glyph-like decorative marks (existing graphic shapes only), subtle stars and circuit-like gold ornament. This is extension/recomposition, minimal redesign. Add one small understated Electro Vision emblem in a corner, secondary to official art. Opaque full bleed artwork. No text, UI, schedule, clock, numbers, watermark, new characters or realistic scenes. Quiet lower-contrast central space for schedule."
+    },
+    {
+      "character": "cyno",
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a14231-6d2b-7ed0-8fbc-0fd9ad44be26\\exec-f2084e58-40b9-4b1d-bccd-b6d7f3a7b47d.png",
+      "prompt": "Create a faithful device-format adaptation of the official Genshin Impact Cyno: Silence namecard reference. Preserve its flat restrained game-art style, purple-indigo lavender palette, large profile of Anubis jackal headdress, narrow gold lines, glyph-like decorative marks (existing graphic shapes only), subtle stars and circuit-like gold ornament. This is extension/recomposition, minimal redesign. Add one small understated Electro Vision emblem in a corner, secondary to official art. Opaque full bleed artwork. No text, UI, schedule, clock, numbers, watermark, new characters or realistic scenes. Quiet lower-contrast central space for schedule."
+    },
+    {
+      "character": "cyno",
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a14231-6d2b-7ed0-8fbc-0fd9ad44be26\\exec-6472dfdc-36e0-4418-a033-d2b191991e9f.png",
+      "prompt": "Create a faithful device-format adaptation of the official Genshin Impact Cyno: Silence namecard reference. Preserve its flat restrained game-art style, purple-indigo lavender palette, large profile of Anubis jackal headdress, narrow gold lines, glyph-like decorative marks (existing graphic shapes only), subtle stars and circuit-like gold ornament. This is extension/recomposition, minimal redesign. Add one small understated Electro Vision emblem in a corner, secondary to official art. Opaque full bleed artwork. No text, UI, schedule, clock, numbers, watermark, new characters or realistic scenes. Quiet lower-contrast central space for schedule."
+    },
+    {
+      "character": "ifa",
+      "device": "mobile",
+      "width": 1080,
+      "height": 2400,
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a14231-6d2b-7ed0-8fbc-0fd9ad44be26\\exec-0a1bbc44-d279-4568-8c55-6ed215377a0a.png",
+      "prompt": "Create a faithful device-format adaptation of the official Genshin Impact Ifa: Bro namecard reference. Preserve its flat pastel game-art style, mint/turquoise cream yellow diamond background, large round pink Cacucu bird mascot with orange crest and white bandage medical cross, stethoscope and scissors and tiny medical tag. Keep the official mascot exact friendly silhouette and motifs; minimal redesign. Add one small understated mint Anemo Vision emblem in a corner, secondary to the official art. Opaque full bleed artwork. No text, UI, schedule, clock, numbers, watermark, new characters or realistic scenes. Quiet lower-contrast central space for schedule."
+    },
+    {
+      "character": "ifa",
+      "device": "tablet",
+      "width": 1600,
+      "height": 2560,
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a14231-6d2b-7ed0-8fbc-0fd9ad44be26\\exec-5124040d-eb3f-4067-8161-fb27f236af61.png",
+      "prompt": "Create a faithful device-format adaptation of the official Genshin Impact Ifa: Bro namecard reference. Preserve its flat pastel game-art style, mint/turquoise cream yellow diamond background, large round pink Cacucu bird mascot with orange crest and white bandage medical cross, stethoscope and scissors and tiny medical tag. Keep the official mascot exact friendly silhouette and motifs; minimal redesign. Add one small understated mint Anemo Vision emblem in a corner, secondary to the official art. Opaque full bleed artwork. No text, UI, schedule, clock, numbers, watermark, new characters or realistic scenes. Quiet lower-contrast central space for schedule."
+    },
+    {
+      "character": "ifa",
+      "device": "laptop",
+      "width": 1920,
+      "height": 1080,
+      "source": "C:\\Users\\QCU\\.codex\\generated_images\\01a14231-6d2b-7ed0-8fbc-0fd9ad44be26\\exec-c2901789-8ed7-4a11-aa64-f89e4a06c3d4.png",
+      "prompt": "Create a faithful device-format adaptation of the official Genshin Impact Ifa: Bro namecard reference. Preserve its flat pastel game-art style, mint/turquoise cream yellow diamond background, large round pink Cacucu bird mascot with orange crest and white bandage medical cross, stethoscope and scissors and tiny medical tag. Keep the official mascot exact friendly silhouette and motifs; minimal redesign. Add one small understated mint Anemo Vision emblem in a corner, secondary to the official art. Opaque full bleed artwork. No text, UI, schedule, clock, numbers, watermark, new characters or realistic scenes. Quiet lower-contrast central space for schedule."
+    }
+  ]
+}

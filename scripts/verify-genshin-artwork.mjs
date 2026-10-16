@@ -16,9 +16,10 @@ const { createCanvas, loadImage, GlobalFonts } = require(require.resolve('@napi-
 if (!GlobalFonts.registerFromPath('node_modules/@fontsource-variable/dm-sans/files/dm-sans-latin-wght-normal.woff2', 'DM Sans Variable')) throw new Error('Project font unavailable.');
 const backgrounds = process.argv[3] === 'backgrounds';
 const namecards = process.argv[3] === 'namecards-2';
+const namecardsNew = process.argv[3] === 'namecards-3';
 const namecardIds = namecards ? new Set(JSON.parse(await readFile('documentation/genshin-namecards-2/prompts-and-sources.json', 'utf8')).assets.map(asset => asset.id)) : null;
-const templates = namecards ? genshinBackgroundTemplates.filter(template => namecardIds.has(template.id)) : backgrounds ? genshinBackgroundTemplates : genshinTemplates;
-const output = namecards ? 'output/genshin-namecards-2' : backgrounds ? 'output/genshin-backgrounds' : 'output/genshin';
+const templates = namecardsNew ? genshinBackgroundTemplates.filter(template => template.id.startsWith('genshin-namecard-')) : namecards ? genshinBackgroundTemplates.filter(template => namecardIds.has(template.id)) : backgrounds ? genshinBackgroundTemplates : genshinTemplates;
+const output = namecardsNew ? 'output/genshin-namecards-3' : namecards ? 'output/genshin-namecards-2' : backgrounds ? 'output/genshin-backgrounds' : 'output/genshin';
 await mkdir(`${output}/qa`, { recursive: true });
 const dense = { classes: Array.from({ length: 3 }, (_, index) => ({
   subject: ['Mathematics', 'Computer Science', 'Literature'][index], courseCode: `CLASS ${101 + index}`,
