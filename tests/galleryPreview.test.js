@@ -13,11 +13,11 @@ function render(template, resolution) {
 }
 
 test('gallery phone samples share bounds while the close-up keeps its face clear', () => {
-  const expected = render(galleryPreviewTemplate(wallpaperTemplates.find(template => !['ghibli-closeup', 'wbb-minimal', 'reference-minimal'].includes(template.family))), deviceResolutions.mobile).scheduleBounds;
+  const expected = render(galleryPreviewTemplate(wallpaperTemplates.find(template => !['ghibli-closeup', 'wbb-minimal', 'reference-minimal', 'snoopy-handmade'].includes(template.family))), deviceResolutions.mobile).scheduleBounds;
   for (const original of wallpaperTemplates) {
     const result = render(galleryPreviewTemplate(original), deviceResolutions.mobile);
     assert.equal(result.overflow, false, original.id);
-    if (['ghibli-closeup', 'wbb-minimal', 'reference-minimal'].includes(original.family)) {
+    if (['ghibli-closeup', 'wbb-minimal', 'reference-minimal', 'snoopy-handmade'].includes(original.family)) {
       assert.ok(result.scheduleBounds.y < expected.y, original.id);
       assert.deepEqual({ ...result.scheduleBounds, y: expected.y }, expected, original.id);
       assert.equal(galleryPreviewTemplate(original).verticalPosition, original.verticalPosition);

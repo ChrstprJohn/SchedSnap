@@ -2,10 +2,31 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createPublicCatalogHandler } from '../api/catalog.js';
 import { seedCatalog } from '../server/catalogStore.js';
+import { localApiPlugin } from '../development/apiPlugin.js';
+import { snoopyTemplates } from '../src/assets/snoopyTemplates.js';
 
 const env = { CLOUDINARY_CLOUD_NAME: 'preview-test', CLOUDINARY_API_KEY: 'test', CLOUDINARY_API_SECRET: 'test' };
 const response = () => ({ setHeader() {}, status(code) { this.code = code; return this; }, json(body) { this.body = body; return this; } });
 const expose = template => Object.fromEntries(Object.entries(template).filter(([key]) => key !== 'status'));
+
+test('Vite exposes local Snoopy artwork when the shared catalog does not contain it', async (t) => {
+  t.mock.method(globalThis, 'fetch', async (_url, options) => {
+    assert.equal(options?.method || 'GET', 'GET', 'preview must not write to Cloudinary');
+    return new Response(JSON.stringify({ revision: 'remote-test', templates: [{ id: 'remote-design', status: 'published' }] }), { status: 200 });
+  });
+  let middleware;
+  localApiPlugin(env).configureServer({ middlewares: { use(handler) { middleware = handler; } } });
+  const result = { setHeader() {}, end(body) { this.body = JSON.parse(body); } };
+  await middleware({ method: 'GET', url: '/api/catalog' }, result, () => assert.fail('Catalog request was not handled'));
+  assert.equal(result.statusCode, 200);
+  assert.ok(result.body.templates.some(template => template.id === 'remote-design'));
+  for (const design of snoopyTemplates) {
+    const records = result.body.templates.filter(template => template.id === design.id);
+    assert.equal(records.length, 1);
+    assert.deepEqual(records[0].deviceImages, design.deviceImages);
+    assert.ok(records[0].image.startsWith('/wallpapers/scenic/snoopy-'));
+  }
+});
 
 test('local previews append only missing IDs and preserve remote overrides, hidden records, and dates', async () => {
   const remote = [

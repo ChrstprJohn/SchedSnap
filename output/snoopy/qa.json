@@ -1,0 +1,626 @@
+[
+  {
+    "id": "snoopy-dotted-peek",
+    "device": "mobile",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 78,
+      "y": 112.39999999999998,
+      "width": 924,
+      "height": 1112
+    }
+  },
+  {
+    "id": "snoopy-dotted-peek",
+    "device": "mobile",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 78,
+      "y": 112.39999999999998,
+      "width": 924,
+      "height": 1465.1
+    }
+  },
+  {
+    "id": "snoopy-dotted-peek",
+    "device": "tablet",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 260.5165714285714,
+      "y": 135.168,
+      "width": 1398.9668571428572,
+      "height": 1360.7314285714285
+    }
+  },
+  {
+    "id": "snoopy-dotted-peek",
+    "device": "tablet",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 260.5165714285714,
+      "y": 135.168,
+      "width": 1398.9668571428572,
+      "height": 1982.7318857142857
+    }
+  },
+  {
+    "id": "snoopy-dotted-peek",
+    "device": "laptop",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 165.5314285714286,
+      "y": 22.957714285714275,
+      "width": 1108.9371428571428,
+      "height": 850.4228571428572
+    }
+  },
+  {
+    "id": "snoopy-dotted-peek",
+    "device": "laptop",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 429.0624177176254,
+      "y": 12.96,
+      "width": 581.8751645647492,
+      "height": 950.4
+    }
+  },
+  {
+    "id": "snoopy-blue-meadow",
+    "device": "mobile",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 78,
+      "y": 112.39999999999998,
+      "width": 924,
+      "height": 1112
+    }
+  },
+  {
+    "id": "snoopy-blue-meadow",
+    "device": "mobile",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 78,
+      "y": 112.39999999999998,
+      "width": 924,
+      "height": 1465.1
+    }
+  },
+  {
+    "id": "snoopy-blue-meadow",
+    "device": "tablet",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 260.5165714285714,
+      "y": 135.168,
+      "width": 1398.9668571428572,
+      "height": 1360.7314285714285
+    }
+  },
+  {
+    "id": "snoopy-blue-meadow",
+    "device": "tablet",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 260.5165714285714,
+      "y": 135.168,
+      "width": 1398.9668571428572,
+      "height": 1982.7318857142857
+    }
+  },
+  {
+    "id": "snoopy-blue-meadow",
+    "device": "laptop",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 165.5314285714286,
+      "y": 22.957714285714275,
+      "width": 1108.9371428571428,
+      "height": 850.4228571428572
+    }
+  },
+  {
+    "id": "snoopy-blue-meadow",
+    "device": "laptop",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 429.0624177176254,
+      "y": 12.96,
+      "width": 581.8751645647492,
+      "height": 950.4
+    }
+  },
+  {
+    "id": "snoopy-sleepy-stripes",
+    "device": "mobile",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 78,
+      "y": 112.39999999999998,
+      "width": 924,
+      "height": 1112
+    }
+  },
+  {
+    "id": "snoopy-sleepy-stripes",
+    "device": "mobile",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 78,
+      "y": 112.39999999999998,
+      "width": 924,
+      "height": 1465.1
+    }
+  },
+  {
+    "id": "snoopy-sleepy-stripes",
+    "device": "tablet",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 260.5165714285714,
+      "y": 135.168,
+      "width": 1398.9668571428572,
+      "height": 1360.7314285714285
+    }
+  },
+  {
+    "id": "snoopy-sleepy-stripes",
+    "device": "tablet",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 260.5165714285714,
+      "y": 135.168,
+      "width": 1398.9668571428572,
+      "height": 1982.7318857142857
+    }
+  },
+  {
+    "id": "snoopy-sleepy-stripes",
+    "device": "laptop",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 165.5314285714286,
+      "y": 22.957714285714275,
+      "width": 1108.9371428571428,
+      "height": 850.4228571428572
+    }
+  },
+  {
+    "id": "snoopy-sleepy-stripes",
+    "device": "laptop",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 429.0624177176254,
+      "y": 12.96,
+      "width": 581.8751645647492,
+      "height": 950.4
+    }
+  },
+  {
+    "id": "snoopy-quiet-sketch",
+    "device": "mobile",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 78,
+      "y": 112.39999999999998,
+      "width": 924,
+      "height": 1112
+    }
+  },
+  {
+    "id": "snoopy-quiet-sketch",
+    "device": "mobile",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 78,
+      "y": 112.39999999999998,
+      "width": 924,
+      "height": 1465.1
+    }
+  },
+  {
+    "id": "snoopy-quiet-sketch",
+    "device": "tablet",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 260.5165714285714,
+      "y": 135.168,
+      "width": 1398.9668571428572,
+      "height": 1360.7314285714285
+    }
+  },
+  {
+    "id": "snoopy-quiet-sketch",
+    "device": "tablet",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 260.5165714285714,
+      "y": 135.168,
+      "width": 1398.9668571428572,
+      "height": 1982.7318857142857
+    }
+  },
+  {
+    "id": "snoopy-quiet-sketch",
+    "device": "laptop",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 165.5314285714286,
+      "y": 22.957714285714275,
+      "width": 1108.9371428571428,
+      "height": 850.4228571428572
+    }
+  },
+  {
+    "id": "snoopy-quiet-sketch",
+    "device": "laptop",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 429.0624177176254,
+      "y": 12.96,
+      "width": 581.8751645647492,
+      "height": 950.4
+    }
+  },
+  {
+    "id": "snoopy-heart-line",
+    "device": "mobile",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 78,
+      "y": 112.39999999999998,
+      "width": 924,
+      "height": 1112
+    }
+  },
+  {
+    "id": "snoopy-heart-line",
+    "device": "mobile",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 78,
+      "y": 112.39999999999998,
+      "width": 924,
+      "height": 1465.1
+    }
+  },
+  {
+    "id": "snoopy-heart-line",
+    "device": "tablet",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 260.5165714285714,
+      "y": 135.168,
+      "width": 1398.9668571428572,
+      "height": 1360.7314285714285
+    }
+  },
+  {
+    "id": "snoopy-heart-line",
+    "device": "tablet",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 260.5165714285714,
+      "y": 135.168,
+      "width": 1398.9668571428572,
+      "height": 1982.7318857142857
+    }
+  },
+  {
+    "id": "snoopy-heart-line",
+    "device": "laptop",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 165.5314285714286,
+      "y": 22.957714285714275,
+      "width": 1108.9371428571428,
+      "height": 850.4228571428572
+    }
+  },
+  {
+    "id": "snoopy-heart-line",
+    "device": "laptop",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 429.0624177176254,
+      "y": 12.96,
+      "width": 581.8751645647492,
+      "height": 950.4
+    }
+  },
+  {
+    "id": "snoopy-shark-suit",
+    "device": "mobile",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 78,
+      "y": 112.39999999999998,
+      "width": 924,
+      "height": 1112
+    }
+  },
+  {
+    "id": "snoopy-shark-suit",
+    "device": "mobile",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 78,
+      "y": 112.39999999999998,
+      "width": 924,
+      "height": 1465.1
+    }
+  },
+  {
+    "id": "snoopy-shark-suit",
+    "device": "tablet",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 260.5165714285714,
+      "y": 135.168,
+      "width": 1398.9668571428572,
+      "height": 1360.7314285714285
+    }
+  },
+  {
+    "id": "snoopy-shark-suit",
+    "device": "tablet",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 260.5165714285714,
+      "y": 135.168,
+      "width": 1398.9668571428572,
+      "height": 1982.7318857142857
+    }
+  },
+  {
+    "id": "snoopy-shark-suit",
+    "device": "laptop",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 165.5314285714286,
+      "y": 22.957714285714275,
+      "width": 1108.9371428571428,
+      "height": 850.4228571428572
+    }
+  },
+  {
+    "id": "snoopy-shark-suit",
+    "device": "laptop",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 429.0624177176254,
+      "y": 12.96,
+      "width": 581.8751645647492,
+      "height": 950.4
+    }
+  },
+  {
+    "id": "snoopy-navy-cool",
+    "device": "mobile",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 78,
+      "y": 112.39999999999998,
+      "width": 924,
+      "height": 1112
+    }
+  },
+  {
+    "id": "snoopy-navy-cool",
+    "device": "mobile",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 78,
+      "y": 112.39999999999998,
+      "width": 924,
+      "height": 1465.1
+    }
+  },
+  {
+    "id": "snoopy-navy-cool",
+    "device": "tablet",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 260.5165714285714,
+      "y": 135.168,
+      "width": 1398.9668571428572,
+      "height": 1360.7314285714285
+    }
+  },
+  {
+    "id": "snoopy-navy-cool",
+    "device": "tablet",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 260.5165714285714,
+      "y": 135.168,
+      "width": 1398.9668571428572,
+      "height": 1982.7318857142857
+    }
+  },
+  {
+    "id": "snoopy-navy-cool",
+    "device": "laptop",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 165.5314285714286,
+      "y": 22.957714285714275,
+      "width": 1108.9371428571428,
+      "height": 850.4228571428572
+    }
+  },
+  {
+    "id": "snoopy-navy-cool",
+    "device": "laptop",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 429.0624177176254,
+      "y": 12.96,
+      "width": 581.8751645647492,
+      "height": 950.4
+    }
+  },
+  {
+    "id": "snoopy-looking-up",
+    "device": "mobile",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 78,
+      "y": 112.39999999999998,
+      "width": 924,
+      "height": 1112
+    }
+  },
+  {
+    "id": "snoopy-looking-up",
+    "device": "mobile",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 78,
+      "y": 112.39999999999998,
+      "width": 924,
+      "height": 1465.1
+    }
+  },
+  {
+    "id": "snoopy-looking-up",
+    "device": "tablet",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 260.5165714285714,
+      "y": 135.168,
+      "width": 1398.9668571428572,
+      "height": 1360.7314285714285
+    }
+  },
+  {
+    "id": "snoopy-looking-up",
+    "device": "tablet",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 260.5165714285714,
+      "y": 135.168,
+      "width": 1398.9668571428572,
+      "height": 1982.7318857142857
+    }
+  },
+  {
+    "id": "snoopy-looking-up",
+    "device": "laptop",
+    "schedule": "sample",
+    "overflow": false,
+    "meetings": 5,
+    "bounds": {
+      "x": 165.5314285714286,
+      "y": 22.957714285714275,
+      "width": 1108.9371428571428,
+      "height": 850.4228571428572
+    }
+  },
+  {
+    "id": "snoopy-looking-up",
+    "device": "laptop",
+    "schedule": "dense",
+    "overflow": false,
+    "meetings": 15,
+    "bounds": {
+      "x": 429.0624177176254,
+      "y": 12.96,
+      "width": 581.8751645647492,
+      "height": 950.4
+    }
+  }
+]

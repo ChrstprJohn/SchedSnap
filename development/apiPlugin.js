@@ -6,6 +6,7 @@ import { createLikesHandler } from '../api/likes.js';
 import { MAX_BODY_BYTES } from '../shared/uploadLimits.js';
 import { sanrioTemplates } from '../src/assets/sanrioTemplates.js';
 import { domoTemplates } from '../src/assets/domoTemplates.js';
+import { snoopyTemplates } from '../src/assets/snoopyTemplates.js';
 import { meepTemplates } from '../src/assets/meepTemplates.js';
 import { ghibliTemplates } from '../src/assets/ghibliTemplates.js';
 import { genshinTemplates } from '../src/assets/genshinTemplates.js';
@@ -22,7 +23,7 @@ export function localApiPlugin(env) {
       const analyze = createAnalyzeHandler({ env });
       const visits = createVisitsHandler({ env });
       const admin = createAdminHandler({ env });
-      const catalog = createPublicCatalogHandler({ env, previewTemplates: [...genshinElementalTemplates, ...genshinChibiTemplates, ...genshinTemplates, ...genshinBackgroundTemplates, ...ghibliTemplates, ...meepTemplates, ...sanrioTemplates, ...domoTemplates.filter(template => template.family === 'domo-reference')] });
+      const catalog = createPublicCatalogHandler({ env, previewTemplates: [...snoopyTemplates, ...genshinElementalTemplates, ...genshinChibiTemplates, ...genshinTemplates, ...genshinBackgroundTemplates, ...ghibliTemplates, ...meepTemplates, ...sanrioTemplates, ...domoTemplates.filter(template => template.family === 'domo-reference')] });
       const likes = createLikesHandler({ env });
       server.middlewares.use(async (request, response, next) => {
         const path = request.url?.split('?')[0];
