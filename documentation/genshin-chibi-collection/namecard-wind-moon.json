@@ -1,0 +1,47 @@
+{
+  "provider": "built-in image_gen edits",
+  "jobs": [
+    {
+      "c": "venti",
+      "d": "mobile",
+      "size": "1080x2400",
+      "prompt": "Edit image 1 only. Image 1 is the exact wallpaper to preserve; image 2 is the character's namecard motif reference ONLY. Add subtle Azure Sky namecard's large sweeping feather silhouette, elegant lyre strings and restrained corner lily shapes as flat tone-on-tone graphic background ornament at 6-10% contrast, mostly top/outer edges, very faint 3-4% in lower schedule field. Keep original muted palette (do not adopt reference colors), exact original chibi design, face, silhouette, size and location, existing elemental symbol, full bleed 1080x2400 aspect. Chibi remains only high-contrast subject. Lower center must remain quiet for readable live timetable. Aim richer than blank but restrained like a Genshin namecard, not ornate. Change background decoration only. No additional character/portrait, no text, no labels, no frame, no schedule, no UI, no glow, no painterly detail or texture.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a14363-ef1c-7ba0-8d8c-5bfa01155bd8\\exec-c808baed-2134-408b-a948-09f8435c665c.png"
+    },
+    {
+      "c": "venti",
+      "d": "tablet",
+      "size": "1600x2560",
+      "prompt": "Edit image 1 only. Image 1 is the exact wallpaper to preserve; image 2 is the character's namecard motif reference ONLY. Add subtle Azure Sky namecard's large sweeping feather silhouette, elegant lyre strings and restrained corner lily shapes as flat tone-on-tone graphic background ornament at 6-10% contrast, mostly top/outer edges, very faint 3-4% in lower schedule field. Keep original muted palette (do not adopt reference colors), exact original chibi design, face, silhouette, size and location, existing elemental symbol, full bleed 1600x2560 aspect. Chibi remains only high-contrast subject. Lower center must remain quiet for readable live timetable. Aim richer than blank but restrained like a Genshin namecard, not ornate. Change background decoration only. No additional character/portrait, no text, no labels, no frame, no schedule, no UI, no glow, no painterly detail or texture.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a14363-ef1c-7ba0-8d8c-5bfa01155bd8\\exec-facd289c-e30f-4d31-a048-400c5be9afe0.png"
+    },
+    {
+      "c": "venti",
+      "d": "laptop",
+      "size": "1920x1080",
+      "prompt": "Edit image 1 only. Image 1 is the exact wallpaper to preserve; image 2 is the character's namecard motif reference ONLY. Add subtle Azure Sky namecard's large sweeping feather silhouette, elegant lyre strings and restrained corner lily shapes as flat tone-on-tone graphic background ornament at 6-10% contrast, mostly top/outer edges, very faint 3-4% in lower schedule field. Keep original muted palette (do not adopt reference colors), exact original chibi design, face, silhouette, size and location, existing elemental symbol, full bleed 1920x1080 aspect. Chibi remains only high-contrast subject. Lower center must remain quiet for readable live timetable. Aim richer than blank but restrained like a Genshin namecard, not ornate. Change background decoration only. No additional character/portrait, no text, no labels, no frame, no schedule, no UI, no glow, no painterly detail or texture.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a14363-ef1c-7ba0-8d8c-5bfa01155bd8\\exec-5823d347-180e-4c4d-9057-8b23ba890b8b.png"
+    },
+    {
+      "c": "columbina",
+      "d": "mobile",
+      "size": "1080x2400",
+      "prompt": "Edit image 1 only. Image 1 is the exact wallpaper to preserve; image 2 is the character's namecard motif reference ONLY. Add subtle Someday namecard's sweeping moon arcs, feather/petal shapes, a few small four-point stars and bottom-edge stylized flowers; DO NOT copy the large human portrait as flat tone-on-tone graphic background ornament at 6-10% contrast, mostly top/outer edges, very faint 3-4% in lower schedule field. Keep original muted palette (do not adopt reference colors), exact original chibi design, face, silhouette, size and location, existing elemental symbol, full bleed 1080x2400 aspect. Chibi remains only high-contrast subject. Lower center must remain quiet for readable live timetable. Aim richer than blank but restrained like a Genshin namecard, not ornate. Change background decoration only. No additional character/portrait, no text, no labels, no frame, no schedule, no UI, no glow, no painterly detail or texture.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a14363-ef1c-7ba0-8d8c-5bfa01155bd8\\exec-0f7e810f-02a3-4f32-b95f-772b21c0d2b6.png"
+    },
+    {
+      "c": "columbina",
+      "d": "tablet",
+      "size": "1600x2560",
+      "prompt": "Edit image 1 only. Image 1 is the exact wallpaper to preserve; image 2 is the character's namecard motif reference ONLY. Add subtle Someday namecard's sweeping moon arcs, feather/petal shapes, a few small four-point stars and bottom-edge stylized flowers; DO NOT copy the large human portrait as flat tone-on-tone graphic background ornament at 6-10% contrast, mostly top/outer edges, very faint 3-4% in lower schedule field. Keep original muted palette (do not adopt reference colors), exact original chibi design, face, silhouette, size and location, existing elemental symbol, full bleed 1600x2560 aspect. Chibi remains only high-contrast subject. Lower center must remain quiet for readable live timetable. Aim richer than blank but restrained like a Genshin namecard, not ornate. Change background decoration only. No additional character/portrait, no text, no labels, no frame, no schedule, no UI, no glow, no painterly detail or texture.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a14363-ef1c-7ba0-8d8c-5bfa01155bd8\\exec-c6e35d43-fe10-4800-a75d-ce9594537a63.png"
+    },
+    {
+      "c": "columbina",
+      "d": "laptop",
+      "size": "1920x1080",
+      "prompt": "Edit image 1 only. Image 1 is the exact wallpaper to preserve; image 2 is the character's namecard motif reference ONLY. Add subtle Someday namecard's sweeping moon arcs, feather/petal shapes, a few small four-point stars and bottom-edge stylized flowers; DO NOT copy the large human portrait as flat tone-on-tone graphic background ornament at 6-10% contrast, mostly top/outer edges, very faint 3-4% in lower schedule field. Keep original muted palette (do not adopt reference colors), exact original chibi design, face, silhouette, size and location, existing elemental symbol, full bleed 1920x1080 aspect. Chibi remains only high-contrast subject. Lower center must remain quiet for readable live timetable. Aim richer than blank but restrained like a Genshin namecard, not ornate. Change background decoration only. No additional character/portrait, no text, no labels, no frame, no schedule, no UI, no glow, no painterly detail or texture.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a14363-ef1c-7ba0-8d8c-5bfa01155bd8\\exec-6a724bb0-4f55-476d-a4a6-d1fa137f56fd.png"
+    }
+  ]
+}
