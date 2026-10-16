@@ -26,6 +26,7 @@ async function request(action, body) {
   return data;
 }
 const blankTemplate = () => ({ id: '', name: '', description: '', collection: 'scenic', status: 'draft', background: '#eef2f6', ink: '#203e36', muted: '#486258', surface: '#ffffff', line: '#a5b9a7', fontFamily: 'DM Sans Variable', containerStyle: 'glass' });
+const statusFilters = [{ id: 'all', name: 'All' }, { id: 'published', name: 'Published' }, { id: 'hidden', name: 'Hidden' }];
 export default function Admin() {
   const [authenticated, setAuthenticated] = useState(null);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
@@ -73,6 +74,7 @@ export default function Admin() {
   const [editorDirty, setEditorDirty] = useState(false);
   const [collection, setCollection] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
+  const [statusFilter, setStatusFilter] = useState('all');
   const [device, setDevice] = useState('mobile');
   const [deleting, setDeleting] = useState(null);
   const [hiding, setHiding] = useState(null);
@@ -122,8 +124,8 @@ export default function Admin() {
     finally { setBusy(false); }
   }
   const normalizedSearch = searchQuery.trim().toLowerCase();
-  const filtered = searchWallpaperTemplates(catalog?.templates, searchQuery).filter(t => matchesGalleryCategory(t, collection));
-  const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(filtered.length, `${collection}:${device}:${normalizedSearch}:${Boolean(editor)}`);
+  const filtered = searchWallpaperTemplates(catalog?.templates, searchQuery).filter(t => matchesGalleryCategory(t, collection)).filter(t => statusFilter === 'all' || (statusFilter === 'published' ? t.status === 'published' : t.status !== 'published'));
+  const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(filtered.length, `${collection}:${device}:${statusFilter}:${normalizedSearch}:${Boolean(editor)}`);
   if (authenticated === null || !authenticated) return <AdminSignIn checking={authenticated === null} password={password} onPasswordChange={setPassword} onSubmit={login} busy={busy} error={error} />;
   const visible = filtered.slice(0, galleryCount);
   function openLibrary() {
@@ -157,6 +159,7 @@ export default function Admin() {
     }} /> : <>
       <div className="admin-library-search">
         <WallpaperSearchField value={searchQuery} onChange={setSearchQuery} placeholder="Search templates" label="Search templates" iconLeft />
+        <div className="template-filters" role="group" aria-label="Filter by status">{statusFilters.map(option => <button type="button" key={option.id} className="template-category" aria-pressed={statusFilter === option.id} onClick={() => setStatusFilter(option.id)}>{option.name}</button>)}</div>
         <button className="button-primary admin-library-cta" disabled={busy || !catalog} onClick={() => setEditor({ key: crypto.randomUUID(), template: blankTemplate(), isNew: true })}><Plus size={18} />New design</button>
       </div>
       <div className="admin-filter-row">
