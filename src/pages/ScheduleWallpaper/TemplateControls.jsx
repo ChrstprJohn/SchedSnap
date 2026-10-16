@@ -2,7 +2,7 @@ import { particleStyles } from '../../utils/wallpaperParticles.js';
 import { useRef } from 'react';
 import { schedulePosition, scheduleMovement, tabletBoxSpacing, scheduleLayout } from '../../utils/canvasHelpers.js';
 import { ChevronDown } from 'lucide-react';
-import { colorInputValue, wallpaperFonts, mascotPosition, wallpaperFontScale, snapSchedulePosition } from '../../utils/wallpaperTheme.js';
+import { colorInputValue, wallpaperFonts, mascotPosition, wallpaperFontScale, wallpaperCornerRadius, snapSchedulePosition } from '../../utils/wallpaperTheme.js';
 
 const colorFields = {
   background: { label: 'Background', colors: ['#dce8cb', '#f5daca', '#d8cbef', '#192f4b'] },
@@ -31,7 +31,9 @@ function AppearanceColor({ colorKey, template, onChange, toggleKey, label: label
 
 export default function TemplateControls({ template, onChange, onReset, defaultTemplate = {}, enablePlacement = false }) {
   const fixedBackground = Boolean(template.image && template.layout !== 'mascot');
-  const timeline = scheduleLayout(template) === 'timeline';
+  const timeline = ['timeline', 'grouped-list', 'day-columns'].includes(scheduleLayout(template));
+  const radius = wallpaperCornerRadius(template);
+  const defaultRadius = wallpaperCornerRadius({ ...template, containerRadius: undefined });
   const dragging = useRef({});
   return <aside aria-label="Template appearance" className="template-settings">
     {(enablePlacement || (template.device && template.device !== 'mobile')) && <fieldset className="appearance-group">
@@ -72,15 +74,9 @@ export default function TemplateControls({ template, onChange, onReset, defaultT
         <label className="appearance-label" htmlFor="container-style">Finish</label>
         <div className="field-select appearance-select"><select id="container-style" className="field-input" value={template.containerStyle || 'glass'} onChange={(event) => onChange('containerStyle', event.target.value)}><option value="glass">Frosted glass</option><option value="solid">Solid</option></select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>
       </div>
-      <div className="appearance-row">
-        <label className="appearance-label" htmlFor="appearance-shape">Shape</label>
-        <div className="field-select appearance-select">
-          <select id="appearance-shape" className="field-input" value={template.containerShape || 'pill'} onChange={(event) => onChange('containerShape', event.target.value)}>
-            <option value="pill">Pill</option>
-            <option value="rounded">Rounded rectangle</option>
-          </select>
-          <ChevronDown size={16} className="field-select-icon" aria-hidden="true" />
-        </div>
+      <div className="top-margin-control">
+        <div className="top-margin-label"><label htmlFor="appearance-shape">Corner radius</label><span className="position-value"><output htmlFor="appearance-shape">{radius}%</output><button type="button" className="position-reset" aria-label="Reset corner radius" disabled={radius === defaultRadius} onClick={() => onChange('containerRadius', undefined)}>Reset</button></span></div>
+        <input id="appearance-shape" type="range" min="0" max="50" step="1" value={radius} aria-valuetext={`${radius}% corner radius`} onChange={event => onChange('containerRadius', Number(event.target.value))} />
       </div>
       <AppearanceColor colorKey="surface" template={template} onChange={onChange} toggleKey="containerFill" />
       {!timeline && <AppearanceColor colorKey="line" template={template} onChange={onChange} toggleKey="containerBorder" />}
@@ -96,7 +92,7 @@ export default function TemplateControls({ template, onChange, onReset, defaultT
       </div>
       <div className="appearance-row">
         <label className="appearance-label" htmlFor="appearance-font-size">Font size</label>
-        <div className="field-select appearance-select"><select id="appearance-font-size" className="field-input" value={wallpaperFontScale(template)} onChange={event => onChange('fontScale', Number(event.target.value))}>{[100, 110, 120, 130, 140, 150, 160].map(percent => <option key={percent} value={percent / 100}>{percent === 100 ? 'Standard · 100%' : `${percent}%`}</option>)}</select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>
+        <div className="field-select appearance-select"><select id="appearance-font-size" className="field-input" value={wallpaperFontScale(template)} onChange={event => onChange('fontScale', Number(event.target.value))}>{[70, 80, 90, 100, 110, 120, 130, 140, 150, 160].map(percent => <option key={percent} value={percent / 100}>{percent === 100 ? 'Default · 100%' : `${percent}%`}</option>)}</select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>
       </div>
       <div className="appearance-row">
         <label className="appearance-label" htmlFor="appearance-font">Font family</label>

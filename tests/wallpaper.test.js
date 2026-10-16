@@ -271,8 +271,8 @@ test('container shape, border, fill and row separators apply to the shared wallp
   const plain = render({ containerBorder: false, containerFill: false });
   assert.equal(plain.strokes, 0);
   assert.equal(plain.fills, 1);
-  const rounded = render({ containerShape: 'rounded', showSeparators: true });
-  assert.equal(rounded.radii[0], 22);
+  const rounded = render({ containerRadius: 10, showSeparators: true });
+  assert.ok(Math.abs(rounded.radii[0] - Math.min(rounded.layout.plans[0].width, rounded.layout.plans[0].height) * 0.1) < 0.001);
   assert.equal(rounded.strokes, 2);
 });
 

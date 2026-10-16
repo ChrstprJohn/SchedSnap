@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>Timeline typography check</title>
+<style>body{font:16px system-ui;margin:24px;background:#e6e8ed;color:#172033}main{display:flex;gap:20px;align-items:start}figure{margin:0;width:260px}canvas{width:100%;height:auto}figcaption{margin-bottom:10px}</style>
+<h1>Timeline · font size and position</h1><main></main>
+<script type="module">
+import '/node_modules/@fontsource-variable/dm-sans/index.css';
+import {drawWallpaper} from '/src/utils/canvasHelpers.js';
+import {sampleSchedule} from '/src/assets/sampleSchedule.js';
+await document.fonts.load('500 40px "DM Sans Variable"');
+await document.fonts.load('700 40px "DM Sans Variable"');
+for (const [device,fontScale,verticalPosition] of [['mobile',0.7,0],['mobile',1,0],['tablet',1.6,-100],['tablet',1,100]]) {
+ const figure=document.createElement('figure'), caption=document.createElement('figcaption'), canvas=document.createElement('canvas');
+ caption.textContent=`${device} · ${fontScale*100}% · position ${verticalPosition}`;
+ figure.append(caption,canvas); document.querySelector('main').append(figure);
+ drawWallpaper(canvas,{schedule:sampleSchedule,template:{background:'#edf3fa',ink:'#172033',muted:'#526074',surface:'#ffffffb3',line:'#ccd4df',containerStyle:'solid',scheduleLayout:'timeline',fontScale,verticalPosition},resolution:device==='mobile'?{id:device,width:1080,height:2400}:{id:device,width:1600,height:2560}});
+}
+</script></html>

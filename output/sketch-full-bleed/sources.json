@@ -1,0 +1,29 @@
+{
+  "generator": "built-in image_gen",
+  "assets": [
+    {
+      "id": "genshin-original-kaeya-map",
+      "device": "tablet",
+      "prompt": "Edit this existing 5:8 portrait tablet wallpaper ONLY to remove baked-in flat-color pillarbox side bands. OUTPAINT the faint pale ivory/sage paper and low-contrast blue-gray atlas/map texture seamlessly across the FULL width to both canvas edges. There must be NO vertical boundary, rectangular inset, frame, flat-color side band, or discontinuity anywhere. Preserve the EXACT original pencil/doodle characters in the central bottom area: their identities, faces, every stroke, proportions, size, pose and placement unchanged. Do not enlarge, crop, relocate or redraw the character artwork. Extend only the quiet paper/background naturally into the side areas, subtle texture and restrained faint map lines/washes matching existing central artwork. Keep the entire upper and left areas very pale, low contrast and suitable for a timetable. Full-bleed opaque PNG at the SAME aspect ratio as input, intended 1600x2560. No text, UI, timetable, signatures or watermark.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a14483-c742-7163-95be-a321cdf861a0\\exec-1790db6f-15b2-4b8c-a32b-3e7a3f979863.png"
+    },
+    {
+      "id": "genshin-original-kaeya-map",
+      "device": "laptop",
+      "prompt": "Edit this existing 16:9 landscape laptop wallpaper ONLY to remove baked-in flat-color pillarbox side bands. OUTPAINT the faint pale ivory/sage paper and low-contrast blue-gray atlas/map texture seamlessly across the FULL width to both canvas edges. There must be NO vertical boundary, rectangular inset, frame, flat-color side band, or discontinuity anywhere. Preserve the EXACT original pencil/doodle characters in the central bottom area: their identities, faces, every stroke, proportions, size, pose and placement unchanged. Do not enlarge, crop, relocate or redraw the character artwork. Extend only the quiet paper/background naturally into the side areas, subtle texture and restrained faint map lines/washes matching existing central artwork. Keep the entire upper and left areas very pale, low contrast and suitable for a timetable. Full-bleed opaque PNG at the SAME aspect ratio as input, intended 1920x1080. No text, UI, timetable, signatures or watermark.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a14483-c742-7163-95be-a321cdf861a0\\exec-2af77980-678d-4c72-91f5-ddd80dafe5ee.png"
+    },
+    {
+      "id": "genshin-original-sketch-parade",
+      "device": "tablet",
+      "prompt": "Edit this existing 5:8 portrait tablet wallpaper ONLY to remove baked-in flat-color pillarbox side bands. OUTPAINT the faint warm ivory paper, soft faded gray-blue pencil/landscape washes texture seamlessly across the FULL width to both canvas edges. There must be NO vertical boundary, rectangular inset, frame, flat-color side band, or discontinuity anywhere. Preserve the EXACT original pencil/doodle characters in the central bottom area: their identities, faces, every stroke, proportions, size, pose and placement unchanged. Do not enlarge, crop, relocate or redraw the character artwork. Extend only the quiet paper/background naturally into the side areas, subtle texture and restrained faint map lines/washes matching existing central artwork. Keep the entire upper and left areas very pale, low contrast and suitable for a timetable. Full-bleed opaque PNG at the SAME aspect ratio as input, intended 1600x2560. No text, UI, timetable, signatures or watermark.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a14483-c742-7163-95be-a321cdf861a0\\exec-d1297fd9-3779-49cd-95b5-b91a062e3a68.png"
+    },
+    {
+      "id": "genshin-original-sketch-parade",
+      "device": "laptop",
+      "prompt": "Edit this existing 16:9 landscape laptop wallpaper ONLY to remove baked-in flat-color pillarbox side bands. OUTPAINT the faint warm ivory paper, soft faded gray-blue pencil/landscape washes texture seamlessly across the FULL width to both canvas edges. There must be NO vertical boundary, rectangular inset, frame, flat-color side band, or discontinuity anywhere. Preserve the EXACT original pencil/doodle characters in the central bottom area: their identities, faces, every stroke, proportions, size, pose and placement unchanged. Do not enlarge, crop, relocate or redraw the character artwork. Extend only the quiet paper/background naturally into the side areas, subtle texture and restrained faint map lines/washes matching existing central artwork. Keep the entire upper and left areas very pale, low contrast and suitable for a timetable. Full-bleed opaque PNG at the SAME aspect ratio as input, intended 1920x1080. No text, UI, timetable, signatures or watermark.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a14483-c742-7163-95be-a321cdf861a0\\exec-57b2a5d1-3fc0-4b97-a52b-69bf5fcff213.png"
+    }
+  ]
+}

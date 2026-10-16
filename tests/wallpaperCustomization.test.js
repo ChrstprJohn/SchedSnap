@@ -3,7 +3,31 @@ import assert from 'node:assert/strict';
 import { drawWallpaper } from '../src/utils/canvasHelpers.js';
 import { templateSchedule, deviceResolutions } from '../src/assets/templates.js';
 import { sanrioTemplates } from '../src/assets/sanrioTemplates.js';
-import { customizeWallpaperTemplate, snapSchedulePosition, wallpaperFontScale } from '../src/utils/wallpaperTheme.js';
+import { customizeWallpaperTemplate, snapSchedulePosition, wallpaperFontScale, wallpaperCornerRadius } from '../src/utils/wallpaperTheme.js';
+import { templateSchema } from '../shared/templateSchema.js';
+
+test('font size accepts 70–160 percent and defaults to 100 percent', () => {
+  assert.equal(wallpaperFontScale({}), 1);
+  assert.equal(wallpaperFontScale({ fontScale: NaN }), 1);
+  assert.equal(wallpaperFontScale({ fontScale: 0.1 }), 0.7);
+  for (const fontScale of [0.7, 0.8, 0.9, 1, 1.6]) {
+    assert.equal(wallpaperFontScale({ fontScale }), fontScale);
+    assert.equal(templateSchema.parse({ ...sanrioTemplates[0], status: 'draft', fontScale }).fontScale, fontScale);
+  }
+});
+
+test('corner radius is bounded to 0–50 percent and survives template validation', () => {
+  assert.equal(wallpaperCornerRadius({ containerRadius: -10 }), 0);
+  assert.equal(wallpaperCornerRadius({ containerRadius: 90 }), 50);
+  assert.equal(wallpaperCornerRadius({ containerRadius: NaN }), 50);
+  for (const [scheduleLayout, expected] of [['stacked', 50], ['grouped-list', 5], ['timeline', 10], ['day-columns', 10], ['day-cards', 10], ['weekly', 10]]) {
+    assert.equal(wallpaperCornerRadius({ scheduleLayout }), expected);
+    assert.equal(wallpaperCornerRadius({ scheduleLayout, containerRadius: 17 }), 17);
+    assert.equal(wallpaperCornerRadius({ scheduleLayout, containerRadius: undefined }), expected);
+  }
+  for (const containerRadius of [0, 15, 50]) assert.equal(templateSchema.parse({ ...sanrioTemplates[0], status: 'draft', containerRadius }).containerRadius, containerRadius);
+  for (const containerRadius of [-1, 51]) assert.equal(templateSchema.safeParse({ ...sanrioTemplates[0], status: 'draft', containerRadius }).success, false);
+});
 
 test('Sanrio uses white frosted pills, with explicit user choices preserved', () => {
   for (const template of sanrioTemplates) for (const device of Object.keys(deviceResolutions)) {

@@ -5,12 +5,12 @@ import { sampleSchedule } from '../src/assets/sampleSchedule.js';
 
 const template = { background: '#fafafa', ink: '#172033', muted: '#526074', surface: '#f8fafc', line: '#ccd4df', containerStyle: 'solid', scheduleLayout: 'day-cards' };
 function render(schedule = sampleSchedule, settings = {}, resolution = { id: 'tablet', width: 1600, height: 2560 }) {
-  const text = [];
+  const text = [], typography = [], strokes = [];
   const lines = [], rings = [], containers = [];
   let start;
-  const ctx = { measureText(value) { return { width: value.length * (parseFloat(this.font?.match(/([\d.]+)px/)?.[1]) || 30) * 0.55 }; }, scale() {}, translate() {}, fillRect() {}, fillText(value) { text.push(value); }, beginPath() {}, roundRect(...args) { containers.push(args); }, fill() {}, stroke() {}, arc(...args) { rings.push(args); }, save() {}, restore() {}, moveTo(x, y) { start = [x, y]; }, lineTo(x, y) { lines.push([...start, x, y]); } };
+  const ctx = { measureText(value) { return { width: value.length * (parseFloat(this.font?.match(/([\d.]+)px/)?.[1]) || 30) * 0.55 }; }, scale() {}, translate() {}, fillRect() {}, fillText(value) { text.push(value); typography.push({ text: value, font: this.font }); }, beginPath() {}, roundRect(...args) { containers.push(args); }, fill() {}, stroke() { strokes.push(this.strokeStyle); }, arc(...args) { rings.push(args); }, save() {}, restore() {}, moveTo(x, y) { start = [x, y]; }, lineTo(x, y) { lines.push([...start, x, y]); } };
   const layout = drawWallpaper({ getContext: () => ctx }, { schedule, template: { ...template, device: resolution.id, ...settings }, resolution });
-  return { layout, text, lines, rings, containers };
+  return { layout, text, lines, rings, containers, typography, strokes };
 }
 
 test('day cards preserve meetings, connect time dots, and expand Friday across the unused space', () => {
@@ -33,6 +33,44 @@ test('day cards preserve meetings, connect time dots, and expand Friday across t
     assert.deepEqual(line, [plan.x + 46, plan.entries[0].y + layout.smallLineHeight / 2, plan.x + 46, plan.entries.at(-1).y + layout.smallLineHeight / 2]);
   }
   assert.ok(text.includes('CS 101') && text.includes('Lab 2'));
+});
+
+test('Timeline vertical endpoints reach canvas margins at every font size with and without a title', () => {
+  for (const resolution of [{ id: 'mobile', width: 1080, height: 2400 }, { id: 'tablet', width: 1600, height: 2560 }]) {
+    const height = resolution.id === 'mobile' ? 2400 : 3072;
+    for (const fontScale of [0.7, 1, 1.6]) for (const showTitle of [true, false]) {
+      const settings = { scheduleLayout: 'timeline', fontScale, showTitle };
+      const schedule = { classes: [sampleSchedule.classes[0]] };
+      const top = render(schedule, { ...settings, verticalPosition: -100 }, resolution).layout;
+      const bottom = render(schedule, { ...settings, verticalPosition: 100 }, resolution).layout;
+      assert.equal(top.overflow, false);
+      assert.equal(bottom.overflow, false);
+      assert.ok(Math.abs(top.scheduleBounds.y - height * 0.025) < 0.001);
+      assert.ok(Math.abs(bottom.scheduleBounds.y + bottom.scheduleBounds.height - height * 0.975) < 0.001);
+      assert.equal(top.size, bottom.size);
+    }
+  }
+});
+
+test('Timeline typography gives day headings emphasis without overpowering course details', () => {
+  const { typography } = render(sampleSchedule, { scheduleLayout: 'timeline' });
+  const fontFor = text => typography.find(item => item.text === text)?.font;
+  assert.match(fontFor('Monday'), /^700 /);
+  assert.match(fontFor('CS 101'), /^650 /);
+  assert.match(fontFor('Lab 2'), /^500 /);
+});
+
+test('Timeline rebases its default to the old 70 percent size and scales down from there', () => {
+  const schedule = { classes: [sampleSchedule.classes[0]] };
+  for (const resolution of [{ id: 'mobile', width: 1080, height: 2400 }, { id: 'tablet', width: 1600, height: 2560 }]) {
+    const normal = render(schedule, { scheduleLayout: 'timeline' }, resolution).layout;
+    const smaller = render(schedule, { scheduleLayout: 'timeline', fontScale: 0.7 }, resolution).layout;
+    assert.ok(Math.abs(normal.size - 64 * 0.7) < 0.001);
+    assert.ok(Math.abs(smaller.size - normal.size * 0.7) < 0.001);
+    const { strokes } = render(schedule, { scheduleLayout: 'timeline', line: '#d04080', containerBorder: false }, resolution);
+    assert.ok(strokes.length > 0);
+    assert.ok(strokes.every(color => color === '#d04080'));
+  }
 });
 
 test('tablet card layout retains weekends and adapts its last open cell', () => {
@@ -67,9 +105,9 @@ test('tablet layout matches preview and export, honors movement, and blocks over
 test('device layout choices expose mobile timeline, tablet all three, and laptop day cards', () => {
   assert.equal(scheduleLayout({}), 'stacked');
   assert.equal(scheduleLayout({ scheduleLayout: 'unknown' }), 'stacked');
-  assert.deepEqual(scheduleLayoutOptions('mobile').map(o => o.value), ['stacked', 'timeline']);
-  assert.deepEqual(scheduleLayoutOptions('tablet').map(o => o.value), ['stacked', 'day-cards', 'timeline']);
-  assert.deepEqual(scheduleLayoutOptions('laptop').map(o => o.value), ['stacked', 'day-cards', 'weekly']);
+  assert.deepEqual(scheduleLayoutOptions('mobile').map(o => o.value), ['stacked', 'grouped-list', 'day-columns', 'timeline']);
+  assert.deepEqual(scheduleLayoutOptions('tablet').map(o => o.value), ['stacked', 'grouped-list', 'day-columns', 'day-cards', 'timeline']);
+  assert.deepEqual(scheduleLayoutOptions('laptop').map(o => o.value), ['stacked', 'grouped-list', 'day-cards', 'weekly']);
   const mobile = { id: 'mobile', width: 1080, height: 2400 }, laptop = { id: 'laptop', width: 1920, height: 1080 };
   assert.deepEqual(render(sampleSchedule, {}, mobile).layout, render(sampleSchedule, { scheduleLayout: 'stacked' }, mobile).layout);
   const laptopCards = render(sampleSchedule, {}, laptop).layout;
@@ -131,13 +169,13 @@ test('mobile Timeline uses wider rows and larger type with compact readable gaps
   const mobile = { id: 'mobile', width: 1080, height: 2400 };
   const { layout } = render(sampleSchedule, { scheduleLayout: 'timeline' }, mobile);
   assert.equal(layout.overflow, false);
-  assert.ok(layout.size >= 56);
+  assert.ok(layout.size >= 56 * 0.7);
   assert.equal(layout.plans[0].x, 36);
   assert.equal(layout.plans[0].width, 1008);
   assert.ok(layout.bottom <= layout.limit);
   const enlarged = render({ classes: [sampleSchedule.classes[0]] }, { scheduleLayout: 'timeline', fontScale: 1.6, verticalPosition: -35 }, mobile).layout;
   assert.equal(enlarged.overflow, false);
-  assert.ok(enlarged.scheduleBounds.y >= 412);
+  assert.ok(enlarged.scheduleBounds.y >= 60);
   for (const plan of enlarged.plans) for (const entry of plan.entries) assert.ok(entry.timeLines.every(line => line.length * enlarged.size * 0.78 * 0.55 <= plan.timeWidth - 8));
   const doubled = { classes: sampleSchedule.classes.map(course => ({ ...course, meetings: [...course.meetings, { ...course.meetings[0], startTime: '16:00', endTime: '17:30' }] })) };
   const dense = render(doubled, { scheduleLayout: 'timeline' }, mobile).layout;
@@ -157,14 +195,14 @@ test('tablet Timeline uses more width, larger type and compact rows within its w
   const { layout } = render(sampleSchedule, { scheduleLayout: 'timeline', verticalPosition: -35 });
   assert.equal(layout.overflow, false);
   assert.ok(layout.scheduleBounds.width > 1920 * 0.83);
-  assert.ok(layout.size >= 54);
+  assert.ok(layout.size >= 54 * 0.7);
   assert.ok(layout.scheduleBounds.height <= 3072 * 0.68);
   assert.ok(layout.scheduleBounds.y + layout.scheduleBounds.height <= 3072 * 0.965);
-  assert.ok(layout.scheduleBounds.y + 12 * layout.scheduleBounds.width / 1244 >= 3072 * 0.18);
+  assert.ok(layout.scheduleBounds.y >= 3072 * 0.025);
   for (const amount of [-100, 100]) {
     const moved = render(sampleSchedule, { scheduleLayout: 'timeline', verticalPosition: amount }).layout;
     assert.equal(moved.overflow, false);
-    assert.ok(moved.scheduleBounds.y + moved.scheduleBounds.height <= 3072 * 0.965 + 0.001);
+    assert.ok(moved.scheduleBounds.y + moved.scheduleBounds.height <= 3072 * 0.975 + 0.001);
   }
 });
 

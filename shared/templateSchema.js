@@ -20,9 +20,12 @@ export const templateSchema = z.object({
   pattern: z.enum(['checker', 'grid', 'ruled', 'circle', 'dots', 'stripes', 'diamonds', 'waves', 'frame']).optional(),
   patternColor: color.optional(), gradient: z.array(color).min(2).max(6).optional(), overlay: color.optional(),
   fontFamily: z.enum(['DM Sans Variable', 'Geist Variable', 'Poppins', 'Inter Variable', 'Roboto Variable', 'Open Sans Variable', 'Montserrat Variable', 'Lato', 'DM Serif Display', 'Georgia', 'Quicksand', 'Nunito', 'Itim', 'Fredoka', 'Baloo 2', 'Patrick Hand']).optional(),
-  fontScale: z.number().min(1).max(1.6).optional(),
+  fontScale: z.number().min(0.7).max(1.6).optional(),
+  showTitle: z.boolean().optional(),
   showScheduleTitle: z.boolean().optional(), artworkFooter: z.boolean().optional(),
+  scheduleLayout: z.enum(['stacked', 'grouped-list', 'day-columns', 'day-cards', 'timeline', 'weekly']).optional(),
   containerStyle: z.enum(['glass', 'solid']).optional(), containerShape: z.enum(['pill', 'rounded']).optional(),
+  containerRadius: z.number().min(0).max(50).optional(),
   containerFill: z.boolean().optional(), containerBorder: z.boolean().optional(), showSeparators: z.boolean().optional(),
   tabletBoxSpacing: z.number().min(0).max(300).optional(),
   schedulePosition: z.enum(['left', 'center', 'right']).optional(), orientation: z.enum(['portrait', 'landscape']).optional(),
@@ -34,7 +37,7 @@ export const templateSchema = z.object({
 }).superRefine((t, ctx) => {
   if (t.status !== 'published') return;
   if (t.layout === 'mascot' && !t.image) ctx.addIssue({ code: 'custom', message: 'Upload a character image.', path: ['image'] });
-  if (t.layout !== 'mascot' && (t.image || t.deviceImages || t.collection === 'scenic')) {
+  if (t.layout !== 'mascot' && !t.pattern && (t.image || t.deviceImages || t.collection === 'scenic')) {
     const variants = ['mobile', 'tablet', 'laptop'].map(device => t.deviceImages?.[device]);
     if (!t.image || variants.some(value => !value) || new Set(variants).size !== 3 || t.image !== t.deviceImages?.mobile) ctx.addIssue({ code: 'custom', message: 'Add a mobile, tablet, and laptop background to publish. You can save a draft while uploading.', path: ['deviceImages'] });
   }
