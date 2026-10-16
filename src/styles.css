@@ -507,8 +507,10 @@
 .wallpaper-skeleton { background-image: linear-gradient(100deg, #e8edf0 25%, #f5f7f8 45%, #e8edf0 65%); background-size: 200% 100%; animation: wallpaper-loading 1.4s ease-in-out infinite; }
 .gallery-card-skeleton { aspect-ratio: 1080 / 2400; border-radius: 12px; }
 .gallery-load-more { display: flex; justify-content: center; padding: 24px 0; }
+.gallery-load-spinner { width: 24px; height: 24px; border: 3px solid #d7dee2; border-top-color: var(--ink, #111); border-radius: 50%; animation: gallery-spin .8s linear infinite; }
+@keyframes gallery-spin { to { transform: rotate(360deg); } }
 @keyframes wallpaper-loading { to { background-position: -200% 0; } }
-@media (prefers-reduced-motion: reduce) { .wallpaper-skeleton { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .wallpaper-skeleton { animation: none; } .gallery-load-spinner { animation: none; } }
 
 @media (max-width: 640px) {
   .appearance-row { display: grid; grid-template-columns: minmax(64px, 1fr) minmax(0, 188px); gap: 10px; }
