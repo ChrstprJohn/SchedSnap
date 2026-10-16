@@ -423,3 +423,12 @@
 .admin-content-dashboard .admin-analytics-viewport,
 .admin-content-dashboard .admin-analytics-frame > p,
 .admin-content-dashboard .admin-analytics-skeleton { background: var(--analytics-background); }
+.admin-download-stats { margin-block: 24px; padding: 24px; background: white; border: 1px solid var(--color-line); border-radius: 16px; }
+.admin-download-stats header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; }
+.admin-download-stats h2 { font-weight: 650; font-size: 20px; }
+.admin-download-stats p { margin-top: 6px; color: var(--color-muted); }
+.admin-download-table { max-height: 360px; overflow: auto; margin-top: 20px; }
+.admin-download-table table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.admin-download-table th, .admin-download-table td { padding: 12px; border-bottom: 1px solid var(--color-line); text-align: left; }
+.admin-download-table thead { position: sticky; top: 0; background: white; }
+.admin-download-table td, .admin-download-table th:last-child { text-align: right; font-variant-numeric: tabular-nums; }

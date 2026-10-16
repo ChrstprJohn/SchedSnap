@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowRight, Check, Heart, X } from 'lucide-react';
+import { ArrowRight, Check, Download, Heart, X } from 'lucide-react';
 import { deviceResolutions, mascotTemplateSchedule, templateSchedule } from '../../assets/templates.js';
 import useInfiniteGallery from '../../lib/useInfiniteGallery.js';
 import { useCatalogStatus } from '../../lib/catalogContext.js';
@@ -7,7 +7,7 @@ import { WallpaperCanvas } from './CanvasPreview.jsx';
 import { customizeWallpaperTemplate, galleryPreviewTemplate } from '../../utils/wallpaperTheme.js';
 import { designGalleryCategories as galleryCategories, matchesDesignGalleryCategory as matchesGalleryCategory } from '../../utils/galleryCategories.js';
 import { templateProperties, trackEvent } from '../../lib/analytics.js';
-import DevicePicker from '../../components/DevicePicker.jsx';
+import useDesignDownloads from '../../lib/useDesignDownloads.js';
 import CategoryFilters from '../../components/CategoryFilters.jsx';
 import { isNewTemplate } from '../../utils/templateFreshness.js';
 import useDesignLikes from '../../lib/useDesignLikes.js';
@@ -16,13 +16,14 @@ import { searchWallpaperTemplates } from '../../utils/wallpaperSearch.js';
 
 const previewSchedule = (template) => template.layout === 'mascot' ? mascotTemplateSchedule : templateSchedule;
 
-export default function TemplateGallery({ selectedId, settings = {}, schedule, scheduleTitle = 'Class Schedule', onSelect, initialCategory = 'all', device = 'mobile', onDeviceChange, showDeviceFilter = true, searchQuery = '', onClearSearch }) {
+export default function TemplateGallery({ selectedId, settings = {}, schedule, scheduleTitle = 'Class Schedule', onSelect, initialCategory = 'all', device = 'mobile', sort = 'likes', searchQuery = '', onClearSearch }) {
   const { templates: wallpaperTemplates, loading: catalogLoading, error } = useCatalogStatus();
   const thumbnailWidth = device === 'laptop' ? 480 : device === 'tablet' ? 384 : 270;
   const designResolution = () => deviceResolutions[device];
   const [category, setCategory] = useState(() => ['chikawa', 'little-friends'].includes(initialCategory) ? 'chiikawa' : galleryCategories.some((item) => item.id === initialCategory) ? initialCategory : 'all');
   const [preview, setPreview] = useState(null);
   const { likes, rankingLikes, loading: likesLoading, pending, error: likeError, refresh: refreshLikes, toggle: toggleLike } = useDesignLikes();
+  const { downloads, error: downloadError, refresh: refreshDownloads } = useDesignDownloads();
   const loading = catalogLoading || likesLoading;
   const isSearching = Boolean(searchQuery && searchQuery.trim());
   const activeCategory = isSearching ? 'all' : category;
@@ -31,16 +32,15 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
     const matching = isSearching
       ? searchWallpaperTemplates(wallpaperTemplates, searchQuery)
       : wallpaperTemplates.filter((item) => matchesGalleryCategory(item, category));
-    return sortTemplatesByLikes(matching, rankingLikes);
-  }, [wallpaperTemplates, searchQuery, isSearching, category, rankingLikes]);
+    return sortTemplatesByLikes(matching, rankingLikes, sort, downloads);
+  }, [wallpaperTemplates, searchQuery, isSearching, category, rankingLikes, sort, downloads]);
 
-  const filterKey = `${isSearching ? `search:${searchQuery.trim()}` : category}:${device}`;
+  const filterKey = `${sort}:${isSearching ? `search:${searchQuery.trim()}` : category}:${device}`;
   const { count: galleryCount, hasMore, sentinel } = useInfiniteGallery(visibleTemplates.length, filterKey);
 
   const activeCategoryName = galleryCategories.find((collection) => collection.id === activeCategory)?.name || 'Design';
   return <div>
     <div role="group" aria-label="Filter designs" className="template-filters">
-      {showDeviceFilter && <DevicePicker value={device} onChange={onDeviceChange} label="Filter by device" />}
       <CategoryFilters categories={galleryCategories} value={activeCategory} controls="template-gallery" onChange={id => {
         if (isSearching && onClearSearch) {
           onClearSearch();
@@ -51,6 +51,7 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
         }
       }} />
     </div>
+    {downloadError && <div className="gallery-like-error" role="alert"><span>{downloadError}</span><button type="button" className="text-link" onClick={refreshDownloads}>Retry</button></div>}
     {likeError && <div className="gallery-like-error" role="alert"><span>{likeError}</span><button type="button" className="text-link" onClick={() => refreshLikes(true)} disabled={!!pending}>Retry</button></div>}
     <div id="template-gallery" role="group" aria-label={`${activeCategoryName} gallery`} aria-busy={loading} className={`template-grid template-grid-${device}`}>
       {loading && Array.from({ length: 10 }, (_, i) => <div key={`skeleton-${i}`} className="gallery-card-skeleton wallpaper-skeleton" aria-hidden="true" />)}
@@ -73,9 +74,10 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
         </button>
         <div className="template-card-caption">
           <button type="button" className="template-card-name" aria-haspopup="dialog" onClick={openPreview}>{item.name}{selectedId === item.id && <Check size={16} aria-label="Selected" />}</button>
+          <div className="template-card-stats"><span className="template-downloads" aria-label={`${downloads[item.id] === undefined ? "Unavailable" : downloads[item.id].toLocaleString()} downloads`} title="Downloads"><Download size={16} aria-hidden="true" /><span aria-hidden="true">{downloads[item.id]?.toLocaleString() ?? "—"}</span></span>
           <button type="button" className="template-heart" aria-pressed={vote?.liked || false} aria-label={`${vote?.liked ? 'Unlike' : 'Like'} ${item.name}${vote ? `, ${vote.count} ${vote.count === 1 ? 'like' : 'likes'}` : ', likes unavailable'}`} disabled={!vote} onClick={() => toggleLike(item.id)}>
             <Heart size={18} fill={vote?.liked ? 'currentColor' : 'none'} aria-hidden="true" /><span aria-hidden="true">{vote ? vote.count.toLocaleString() : '—'}</span>
-          </button>
+          </button></div>
         </div>
       </div>; })}
     </div>

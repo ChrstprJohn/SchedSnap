@@ -13,6 +13,7 @@ import ScheduleLayoutPicker from './ScheduleLayoutPicker.jsx';
 import Editor from './Editor.jsx';
 import Uploader from './Uploader.jsx';
 import Toast from '../../components/Toast.jsx';
+import { recordDesignDownload } from '../../lib/useDesignDownloads.js';
 import useDesignLikes from '../../lib/useDesignLikes.js';
 
 export default function TemplateWorkspace({ step, onStep, template, defaultTemplate, schedule, resolution, scheduleSource, onScheduleSourceChange, onScheduleChange, onAppearanceChange, onResetAppearance, image, onImage, busy, onError, onAnalyze, importUsage, usageUnavailable, onSample, importOpen, onImportOpenChange: setImportOpen, onTitleChange, canCancelEntry, onCancelEntryChange: setCanCancelEntry, onCancelImport, imagePickerRef: imagePicker, preparingImage, onPreparingImageChange: setPreparingImage }) {
@@ -93,6 +94,7 @@ export default function TemplateWorkspace({ step, onStep, template, defaultTempl
       const filename = `schedsnap-${template.id}-${resolution.width}x${resolution.height}.png`;
       stage = 'download';
       const { inApp } = downloadBlob(blob, filename);
+      void recordDesignDownload(template.id);
       trackEvent('wallpaper_download_started', { ...properties, download_method: inApp ? 'new_tab' : 'download_link', duration_ms: Math.round(performance.now() - started) });
       // Keep a fresh object URL for the "Save again" link
       if (lastUrl.current) URL.revokeObjectURL(lastUrl.current);
@@ -143,7 +145,7 @@ export default function TemplateWorkspace({ step, onStep, template, defaultTempl
         <p className="download-meta">{schedule.classes.length} {schedule.classes.length === 1 ? 'class' : 'classes'} · {resolution.width} × {resolution.height} PNG</p>
         <button type="button" onClick={download} disabled={!canDownload} aria-describedby={exportStatus ? 'wallpaper-export-status' : undefined} className="button-primary download-wallpaper"><Download size={18} aria-hidden="true" />{exporting ? 'Creating PNG…' : 'Download wallpaper'}</button>
         {exportStatus && <div className="export-status" role="status" id="wallpaper-export-status"><p>{exportStatus}</p>{(issues.length > 0 || currentLayout?.overflow) && <button type="button" className="text-link" onClick={() => onStep('classes')}>Fix class details</button>}{currentLayout?.error && <button type="button" className="text-link" onClick={() => onStep('design')}>Change design</button>}</div>}
-        {exportResult?.key === exportKey && <a className="text-link save-again" href={exportResult.url} download={exportResult.filename} onClick={() => trackEvent('wallpaper_download_repeated', { ...templateProperties(template), schedule_source: scheduleSource })}>Save PNG again</a>}
+        {exportResult?.key === exportKey && <a className="text-link save-again" href={exportResult.url} download={exportResult.filename} onClick={() => { void recordDesignDownload(template.id); trackEvent('wallpaper_download_repeated', { ...templateProperties(template), schedule_source: scheduleSource }); }}>Save PNG again</a>}
         {exportResult?.templateId === template.id && <section className="download-heart-prompt" aria-labelledby="download-heart-title">
           <h3 id="download-heart-title">Love this design?</h3>
           <p>Give it a heart to help others find it.</p>

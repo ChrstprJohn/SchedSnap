@@ -17,6 +17,7 @@ import './admin.css';
 import BrandMark from '../components/BrandMark.jsx';
 import DevicePicker from '../components/DevicePicker.jsx';
 import useInfiniteGallery from '../lib/useInfiniteGallery.js';
+import useDesignDownloads from '../lib/useDesignDownloads.js';
 import AdminSignIn from '../components/AdminSignIn.jsx';
 
 async function request(action, body) {
@@ -139,7 +140,7 @@ export default function Admin() {
     <header className="admin-topbar"><button type="button" className="admin-mobile-menu-button" aria-label="Open navigation" aria-expanded={mobileSidebarOpen} aria-controls="admin-sidebar" onClick={() => setMobileSidebarOpen(true)}><Menu size={20} aria-hidden="true" /></button><div className="admin-topbar-copy"><h1>{editor ? (editor.isNew ? 'New design' : editor.template.name) : section === 'dashboard' ? 'Website analytics' : 'Template library'}</h1><p><span className="admin-topbar-description-full">{editor ? 'Set the artwork and appearance, then check your preview.' : section === 'dashboard' ? 'Track how your templates are being used.' : 'Upload artwork, preview every device, and choose what goes live.'}</span><span className="admin-topbar-description-short">{editor ? 'Artwork, appearance, and preview.' : section === 'dashboard' ? 'Template usage overview.' : 'Manage your designs.'}</span></p></div><details className="admin-profile admin-topbar-profile"><summary aria-label="Profile actions"><UserRound size={20} aria-hidden="true" /></summary><div className="admin-profile-menu"><Link to="/" target="_blank" rel="noopener noreferrer" onClick={event => { event.currentTarget.closest('details').open = false; }}><ExternalLink size={16} aria-hidden="true" />View website<span className="sr-only"> (opens in a new tab)</span></Link><button disabled={busy} onClick={logout}><LogOut size={16} aria-hidden="true" />Sign out</button></div></details></header>
     {error && <div className="admin-error" role="alert">{error} {catalog && reloadNeeded && <button className="text-link" disabled={busy} onClick={load}>Reload library</button>}</div>}
     {notice && <div className="admin-toast" role="status" aria-live="polite"><CheckCircle2 size={18} aria-hidden="true" /><span>{notice}</span><button type="button" className="admin-toast-close" aria-label="Dismiss notification" onClick={() => setNotice('')}><X size={16} aria-hidden="true" /></button></div>}
-    {section === 'dashboard' ? <AdminDashboard /> : editor ? <DesignEditor key={editor.key} initial={editor.template} isNew={editor.isNew} existingIds={catalog.templates.map(t => t.id)} busy={busy} onDirty={setEditorDirty} onBack={() => { setEditor(null); setEditorDirty(false); }} onSave={async template => {
+    {section === 'dashboard' ? <><AdminDownloadStats templates={catalog?.templates || []} /><AdminDashboard /></> : editor ? <DesignEditor key={editor.key} initial={editor.template} isNew={editor.isNew} existingIds={catalog.templates.map(t => t.id)} busy={busy} onDirty={setEditorDirty} onBack={() => { setEditor(null); setEditorDirty(false); }} onSave={async template => {
       setBusy(true); setError(''); setNotice('');
       try {
         const result = await request('save', { revision: catalog.revision, template, create: editor.isNew });
@@ -188,6 +189,15 @@ export default function Admin() {
     {hiding && <HideDesignDialog template={hiding} busy={busy} onClose={() => setHiding(null)} onConfirm={async () => { const saved = await mutate('visibility', { id: hiding.id, status: 'hidden' }); setHiding(null); if (saved) setNotice('Design hidden.'); }} />}
     </div>
   </div>;
+}
+
+function AdminDownloadStats({ templates }) {
+  const { downloads, error, refresh } = useDesignDownloads();
+  const ranked = [...templates].sort((a, b) => (downloads[b.id] || 0) - (downloads[a.id] || 0));
+  return <section className="admin-download-stats" aria-labelledby="download-stats-title">
+    <header><div><h2 id="download-stats-title">Design downloads</h2><p>{Object.values(downloads).reduce((total, count) => total + count, 0).toLocaleString()} total downloads · all time</p></div><button type="button" className="button-secondary" onClick={refresh}>Refresh</button></header>
+    {error ? <p role="alert">{error}</p> : <div className="admin-download-table"><table><thead><tr><th scope="col">Design</th><th scope="col">Downloads</th></tr></thead><tbody>{ranked.map(template => <tr key={template.id}><th scope="row">{template.name}</th><td>{downloads[template.id]?.toLocaleString() ?? '—'}</td></tr>)}</tbody></table></div>}
+  </section>;
 }
 
 function AdminDashboard() {
