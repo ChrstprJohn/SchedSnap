@@ -26,7 +26,7 @@ const designs = [
 export const genshinBackgroundTemplates = designs.map(([id, name, description, family, background, ink, surface, createdAt = '2026-10-14T07:00:00Z']) => ({
   id, name, description, family, background, ink, surface: surface.slice(0, 7) + 'b3',
   ...(family === 'kinich' ? { pixelArt: true } : {}),
-  ...(family === 'navia' ? { headingInk: '#ffffff' } : family === 'varesa' ? { headingInk: '#000000' } : {}),
+  ...(family === 'navia' ? { headingInk: '#ffffff' } : {}),
   createdAt,
   collection: 'genshin', muted: ink, line: ink + '45',
   containerStyle: 'glass', containerShape: 'pill', containerFill: true,

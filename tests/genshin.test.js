@@ -98,16 +98,19 @@ test('Genshin mobile and tablet schedules use the standard wallpaper layout', ()
   }
 });
 
-test('Navia uses a white heading and Varesa uses black while class details retain their dark ink', () => {
-  for (const family of ['navia', 'varesa']) {
-    const headingInk = family === 'navia' ? '#ffffff' : '#000000';
-    const template = genshinBackgroundTemplates.find(item => item.family === family);
-    assert.equal(templateSchema.parse({ ...template, status: 'published' }).headingInk, headingInk);
-    for (const resolution of Object.values(deviceResolutions)) {
-      const { textPositions } = render(template, resolution);
-      assert.equal(textPositions.find(item => item.value === 'Class Schedule').color, headingInk);
-      assert.equal(textPositions.find(item => item.value === 'CLASS 101').color, template.ink);
-    }
+test('Navia uses a white heading and Varesa heading follows template ink or custom heading', () => {
+  const navia = genshinBackgroundTemplates.find(item => item.family === 'navia');
+  assert.equal(templateSchema.parse({ ...navia, status: 'published' }).headingInk, '#ffffff');
+  for (const resolution of Object.values(deviceResolutions)) {
+    const { textPositions } = render(navia, resolution);
+    assert.equal(textPositions.find(item => item.value === 'Class Schedule').color, '#ffffff');
+    assert.equal(textPositions.find(item => item.value === 'CLASS 101').color, navia.ink);
+  }
+  const varesa = genshinBackgroundTemplates.find(item => item.family === 'varesa');
+  for (const resolution of Object.values(deviceResolutions)) {
+    const { textPositions } = render(varesa, resolution);
+    assert.equal(textPositions.find(item => item.value === 'Class Schedule').color, varesa.headingInk || varesa.ink);
+    assert.equal(textPositions.find(item => item.value === 'CLASS 101').color, varesa.ink);
   }
 });
 

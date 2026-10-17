@@ -61,13 +61,35 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
     {likeError && <div className="gallery-like-error" role="alert"><span>{likeError}</span><button type="button" className="text-link" onClick={() => refreshLikes(true)} disabled={!!pending}>Retry</button></div>}
     <div id="template-gallery" role="group" aria-label={`${activeCategoryName} gallery`} aria-busy={loading} className={`template-grid template-grid-${device}`}>
       {loading && Array.from({ length: 10 }, (_, i) => <div key={`skeleton-${i}`} className="gallery-card-skeleton wallpaper-skeleton" aria-hidden="true" />)}
-      {!loading && isSearching && visibleTemplates.length === 0 && (
+      {!loading && visibleTemplates.length === 0 && (
         <div className="gallery-empty-state" role="status">
-          <p>No designs found matching &ldquo;{searchQuery.trim()}&rdquo;</p>
-          {onClearSearch && (
-            <button type="button" className="button-secondary" onClick={onClearSearch}>
-              Clear search
-            </button>
+          {isSearching ? (
+            <>
+              <p>No designs found matching &ldquo;{searchQuery.trim()}&rdquo;{device !== 'mobile' ? ` for ${device}` : ''}</p>
+              {onClearSearch && (
+                <button type="button" className="button-secondary" onClick={onClearSearch}>
+                  Clear search
+                </button>
+              )}
+            </>
+          ) : category !== 'all' ? (
+            <>
+              <p>No designs found in &ldquo;{activeCategoryName}&rdquo;{device !== 'mobile' ? ` for ${device}` : ''}</p>
+              {onCategoryChange && (
+                <button type="button" className="button-secondary" onClick={() => onCategoryChange('all')}>
+                  Clear filter
+                </button>
+              )}
+            </>
+          ) : (
+            <>
+              <p>No designs available{device !== 'mobile' ? ` for ${device}` : ''}.</p>
+              {device !== 'mobile' && onDeviceChange && (
+                <button type="button" className="button-secondary" onClick={() => onDeviceChange('mobile')}>
+                  Switch to mobile
+                </button>
+              )}
+            </>
           )}
         </div>
       )}
