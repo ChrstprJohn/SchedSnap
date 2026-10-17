@@ -31,9 +31,8 @@ node scripts/backfill-template-keywords.mjs --write
 New download events require a design ID and device: `mobile`, `tablet`, or `laptop`.
 Redis hash fields use `<design-id>:<device>`. A mobile download never increments the tablet or laptop field.
 
-Public cards, wallpaper details, and download sorting use the selected device's count.
-Admin cards and sorting also use the selected device; the library includes a device breakdown.
-Existing design-only fields remain untouched and appear separately as older downloads with no device recorded. They are not copied into any device bucket.
+Public cards, wallpaper details, and download sorting show a design's total downloads (all devices plus unassigned older counts). Admin cards and sorting use the same total; the library adds a device breakdown.
+Existing design-only fields remain untouched and appear separately as older downloads with no device recorded. They are not copied into any device bucket, but they still count toward each design's total.
 
 The existing Redis ACL-compatible atomic increment and request rate limit remain in use.
 The local API was verified against the existing storage: all three device reads and authenticated admin summaries succeeded; 29 older downloads were retained without a device assignment.

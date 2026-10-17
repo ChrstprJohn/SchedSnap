@@ -38,8 +38,8 @@ export function createDesignDownloads({ env = process.env, fetcher = fetch } = {
     summary,
     async read(ids, device) {
       if (device && !['mobile', 'tablet', 'laptop'].includes(device)) throw new Error('Invalid download device');
-      const result = await summary(ids);
-      return device ? result.byDevice[device] : result.downloads;
+      // Cards and details show a design's total downloads; device split stays in the admin breakdown.
+      return (await summary(ids)).downloads;
     },
     async record(id, device) {
       ready();

@@ -12,7 +12,7 @@ test('downloads count every save separately and keep designs separate', async ()
   assert.deepEqual(await store.read(['one', 'two']), { one: 2, two: 0 });
 });
 
-test('device counts are isolated and older totals remain unassigned', async () => {
+test('device counts are isolated, totals include every device, and older totals remain unassigned', async () => {
   const store = createDesignDownloads({ env: {} });
   await store.record('one');
   await store.record('one');
@@ -20,13 +20,13 @@ test('device counts are isolated and older totals remain unassigned', async () =
   await store.record('one', 'mobile');
   await store.record('one', 'tablet');
   await store.record('two', 'laptop');
-  assert.deepEqual(await store.read(['one', 'two'], 'mobile'), { one: 2, two: 0 });
-  assert.deepEqual(await store.read(['one', 'two'], 'tablet'), { one: 1, two: 0 });
-  assert.deepEqual(await store.read(['one', 'two'], 'laptop'), { one: 0, two: 1 });
+  assert.deepEqual(await store.read(['one', 'two']), { one: 5, two: 1 });
   const summary = await store.summary(['one', 'two']);
   assert.deepEqual(summary.downloads, { one: 5, two: 1 });
   assert.deepEqual(summary.unassigned, { one: 2, two: 0 });
   assert.equal(summary.byDevice.mobile.one, 2);
+  assert.equal(summary.byDevice.tablet.one, 1);
+  assert.equal(summary.byDevice.laptop.two, 1);
   await assert.rejects(store.record('one', 'unknown'));
 });
 
