@@ -7,9 +7,9 @@ const devices = [
   ['laptop', 'Laptop', Laptop],
 ];
 
-export default function DevicePicker({ value = 'mobile', onChange, label = 'Device' }) {
+export default function DevicePicker({ value = 'mobile', onChange, label = 'Device', options = devices }) {
   const pickerRef = useRef(null);
-  const selected = devices.find(([id]) => id === value) || devices[0];
+  const selected = options.find(([id]) => id === value) || options[0];
   const SelectedIcon = selected[2];
   useEffect(() => {
     const dismiss = event => {
@@ -31,7 +31,7 @@ export default function DevicePicker({ value = 'mobile', onChange, label = 'Devi
   return <details ref={pickerRef} className="device-picker">
     <summary aria-label={`${label}: ${selected[1]}`}><SelectedIcon aria-hidden="true" /><span>{selected[1]}</span><ChevronDown className="device-picker-chevron" aria-hidden="true" /></summary>
     <div className="device-picker-menu" role="menu" aria-label={label}>
-      {devices.map(([id, name, Icon]) => <button type="button" role="menuitem" key={id} aria-pressed={value === id} onClick={(event) => { onChange(id); event.currentTarget.closest('details').open = false; }}><Icon aria-hidden="true" /><span>{name}</span></button>)}
+      {options.map(([id, name, Icon]) => <button type="button" role="menuitem" key={id} aria-pressed={value === id} onClick={(event) => { onChange(id); event.currentTarget.closest('details').open = false; }}><Icon aria-hidden="true" /><span>{name}</span></button>)}
     </div>
   </details>;
 }

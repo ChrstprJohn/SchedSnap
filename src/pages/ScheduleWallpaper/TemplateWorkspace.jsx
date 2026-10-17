@@ -3,7 +3,7 @@ import { ArrowRight, ChevronDown, Download, Heart, Images, Maximize2, Pencil, Sl
 import { getScheduleIssues } from '../../../shared/scheduleSchema.js';
 import { canvasBlob, drawWallpaper, findOverlaps } from '../../utils/canvasHelpers.js';
 import { prepareWallpaperAssets } from '../../utils/wallpaperAssets.js';
-import { mascotTemplateSchedule, templateSchedule } from '../../assets/templates.js';
+import { galleryScheduleFor } from '../../assets/templates.js';
 import { downloadBlob } from '../../utils/downloadBlob.js';
 import { templateProperties, trackEvent } from '../../lib/analytics.js';
 import { WallpaperCanvas } from './CanvasPreview.jsx';
@@ -38,7 +38,7 @@ export default function TemplateWorkspace({ step, onStep, template, defaultTempl
   const previewAnchor = useRef(null);
   const active = useRef(true);
   const hasSchedule = !!schedule.classes.length;
-  const shownSchedule = hasSchedule ? schedule : template.layout === 'mascot' ? mascotTemplateSchedule : templateSchedule;
+  const shownSchedule = hasSchedule ? schedule : galleryScheduleFor(template);
   const exportKey = JSON.stringify([schedule, template, resolution]);
   const updateLayout = useCallback((next) => setLayout({ ...next, key: exportKey }), [exportKey]);
   const issues = getScheduleIssues(schedule);

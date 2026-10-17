@@ -929,17 +929,17 @@ export function drawWallpaper(canvas, { schedule, template, resolution = mobileR
   const flowLayout = timeline || reference;
   // Use the phone's narrow canvas for readable rows rather than card padding,
   // while keeping the upper clock area clear.
-  const timelineTop = 640;
+  const timelineTop = 760;
   const measureLayout = reference ? layoutReferenceSchedule : layoutSchedule;
   const layout = measureLayout(ctx, schedule, template, 2400, { columns: selectedLayout === 'day-columns', ...(flowLayout ? { timeline: true, compactTimeline: true, x: 36, width: 1008, timeWidth: 230, roomWidth: 224, top: timelineTop + verticalOffset } : verticalOffset ? { top: 760 + verticalOffset } : {}) });
-  const headingY = (flowLayout ? timelineTop - 110 : 650) + verticalOffset;
+  const headingY = 650 + verticalOffset;
   const sideSpace = flowLayout ? 36 : 78;
   const moveX = movementShift(scheduleMovement(template, 'horizontal'), timeline ? Math.max(0, sideSpace + 26 - layout.size * 0.5 - 2) : sideSpace, sideSpace);
   const limit = template.layout === 'mascot' ? 1740 : timeline ? layout.limit : hasIllustratedFooter(template) ? 2400 * 0.77 : 2250;
   const visibleTop = flowLayout && (template.showTitle === false || template.showScheduleTitle === false) ? (layout.plans[0]?.y ?? timelineTop) - 14 : headingY - 88;
   const visibleBottom = layout.bottom + (flowLayout ? 2 : 0);
   const movementLimit = flowLayout && template.layout !== 'mascot' ? 2340 : limit;
-  const moveY = movementShift(scheduleMovement(template, 'vertical'), visibleTop - (flowLayout ? 60 : 0), movementLimit - visibleBottom);
+  const moveY = movementShift(scheduleMovement(template, 'vertical'), Math.max(0, visibleTop - 480), movementLimit - visibleBottom);
   ctx.save();
   if (moveX || moveY) ctx.translate(moveX, moveY);
   drawHeading(ctx, template, headingY);

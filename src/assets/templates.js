@@ -52,3 +52,14 @@ export const templateSchedule = {
 };
 
 export const mascotTemplateSchedule = templateSchedule;
+
+export const dayColumnsPreviewSchedule = {
+  classes: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'].flatMap((day, dayIndex) =>
+    Array.from({ length: [4, 2, 3, 2, 3][dayIndex] }, (_, index) => ({
+      subject: 'Subject name', courseCode: `CLASS ${101 + dayIndex * 4 + index}`,
+      meetings: [{ day, startTime: ['08:00', '10:00', '13:00', '15:00'][index], endTime: ['09:30', '11:30', '14:30', '16:30'][index], room: `Room ${101 + index}`, dateLabel: null }],
+    }))),
+  warnings: [],
+};
+
+export const galleryScheduleFor = template => template.scheduleLayout === 'day-columns' ? dayColumnsPreviewSchedule : templateSchedule;

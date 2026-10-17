@@ -10,6 +10,7 @@ import { loadImportUsage, rememberImportUsage } from '../../lib/importUsage.js';
 import { templateProperties, trackEvent } from '../../lib/analytics.js';
 import { deviceResolutions } from '../../assets/templates.js';
 import { useTemplates, useCatalogStatus } from '../../lib/catalogContext.js';
+import { scheduleLayoutOptions } from '../../utils/canvasHelpers.js';
 import { sampleSchedule } from '../../assets/sampleSchedule.js';
 import { scheduleSchema } from '../../../shared/scheduleSchema.js';
 import { customizeWallpaperTemplate } from '../../utils/wallpaperTheme.js';
@@ -34,11 +35,16 @@ export default function ScheduleWallpaper() {
     const params = new URLSearchParams(query);
     params.set('device', device);
     if (search.get('sort')) params.set('sort', search.get('sort'));
+    params.set('layout', previewLayout);
     if (search.get('collection')) params.set('collection', search.get('collection'));
     return `${pathname}?${params}`;
   }
   const [templateSettings, setTemplateSettings] = useState({});
   const resolution = deviceResolutions[device];
+  const previewLayout = scheduleLayoutOptions(device).some(option => option.value === search.get('layout')) ? search.get('layout') : 'stacked';
+  function changeLayout(next) {
+    setSearch(previous => { const params = new URLSearchParams(previous); params.set('layout', next); return params; });
+  }
   const [schedule, setSchedule] = useState({ classes: [], warnings: [] });
   const [scheduleSource, setScheduleSource] = useState('unknown');
   const [image, setImage] = useState(null);
@@ -73,9 +79,9 @@ export default function ScheduleWallpaper() {
   const imagePicker = useRef(null);
   const lastTrackedStep = useRef(null);
   const template = useMemo(() => {
-    const preset = customizeWallpaperTemplate(wallpaperTemplates.find((item) => item.id === templateId && (!item.mobileOnly || device === 'mobile')), templateSettings[templateId], device);
+    const preset = customizeWallpaperTemplate(wallpaperTemplates.find((item) => item.id === templateId && (!item.mobileOnly || device === 'mobile')), { ...(search.has('layout') ? { scheduleLayout: previewLayout } : {}), ...templateSettings[templateId] }, device);
     return preset ? { ...preset, scheduleTitle, device } : undefined;
-  }, [templateId, templateSettings, scheduleTitle, device, wallpaperTemplates]);
+  }, [templateId, templateSettings, scheduleTitle, device, wallpaperTemplates, previewLayout, search]);
   const returnId = search.get('return');
   const previousTemplate = wallpaperTemplates.find((item) => item.id === returnId && (!item.mobileOnly || device === 'mobile'));
   const selectedId = template?.id || previousTemplate?.id;
@@ -228,7 +234,7 @@ export default function ScheduleWallpaper() {
       step={step} onStep={openStep}
       template={template} schedule={schedule} resolution={resolution} onScheduleChange={changeSchedule}
       scheduleSource={scheduleSource} onScheduleSourceChange={setScheduleSource}
-      onAppearanceChange={(key, value) => { setTemplateSettings((previous) => ({ ...previous, [templateId]: { ...previous[templateId], [key]: value } })); trackEvent('wallpaper_appearance_changed', { ...templateProperties(template), setting: key }); }}
+      onAppearanceChange={(key, value) => { if (key === 'scheduleLayout') changeLayout(value); else setTemplateSettings((previous) => ({ ...previous, [templateId]: { ...previous[templateId], [key]: value } })); trackEvent('wallpaper_appearance_changed', { ...templateProperties(template), setting: key }); }}
       onResetAppearance={() => { setTemplateSettings((previous) => ({ ...previous, [templateId]: {} })); trackEvent('wallpaper_appearance_reset', templateProperties(template)); }}
       image={image} busy={busy}
       importOpen={importOpen} onImportOpenChange={setImportOpen}
@@ -240,7 +246,7 @@ export default function ScheduleWallpaper() {
       onError={(message) => { setError(message); setSuccess(''); }} onAnalyze={analyze} importUsage={importUsage} usageUnavailable={usageUnavailable}
       onSample={() => { setSchedule(structuredClone(sampleSchedule)); setScheduleSource('sample'); trackEvent('sample_schedule_loaded', templateProperties(template)); dismissNotification(); }}
     /> : <>
-      <TemplateGallery sort={sort} onSortChange={changeSort} device={device} onDeviceChange={changeDevice} category={search.get('collection')} onCategoryChange={changeCategory} selectedId={selectedId} settings={templateSettings} schedule={schedule} scheduleTitle={scheduleTitle} resolution={resolution} onSelect={selectTemplate} searchQuery={debouncedSearchQuery} onClearSearch={() => setSearchQuery('')} />
+      <TemplateGallery previewLayout={previewLayout} onLayoutChange={changeLayout} sort={sort} onSortChange={changeSort} device={device} onDeviceChange={changeDevice} category={search.get('collection')} onCategoryChange={changeCategory} selectedId={selectedId} settings={templateSettings} schedule={schedule} scheduleTitle={scheduleTitle} resolution={resolution} onSelect={selectTemplate} searchQuery={debouncedSearchQuery} onClearSearch={() => setSearchQuery('')} />
     </>}
     {step === 'design' && <BackToTop />}
     <Toast message={error || success} kind={error ? 'error' : 'success'} onClose={dismissNotification} />
