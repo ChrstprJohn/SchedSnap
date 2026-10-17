@@ -357,7 +357,7 @@ function DesignEditor({ initial, isNew, existingIds, busy, onSave, onBack, onDir
     const result = templateSchema.safeParse(next);
     if (!result.success) {
       const issue = result.error.issues[0];
-      const section = ['image', 'deviceImages'].includes(issue.path[0]) ? 'artwork' : ['background', 'surface', 'ink', 'line', 'containerStyle', 'containerShape', 'containerRadius', 'containerFill', 'containerBorder', 'fontFamily', 'fontScale', 'tabletBoxSpacing', 'showTitle', 'showScheduleTitle', 'schedulePosition', 'horizontalPosition', 'verticalPosition', 'particleStyle'].includes(issue.path[0]) ? 'appearance' : 'details';
+      const section = ['image', 'deviceImages'].includes(issue.path[0]) ? 'artwork' : ['background', 'surface', 'ink', 'line', 'containerStyle', 'containerShape', 'containerRadius', 'containerOpacity', 'containerFill', 'containerBorder', 'fontFamily', 'fontScale', 'tabletBoxSpacing', 'showTitle', 'showScheduleTitle', 'schedulePosition', 'horizontalPosition', 'verticalPosition', 'particleStyle'].includes(issue.path[0]) ? 'appearance' : 'details';
       showEditorError(section, issue.message);
       return;
     }

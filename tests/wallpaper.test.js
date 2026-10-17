@@ -143,7 +143,7 @@ test('a new editor renders artwork without example classes and blocks empty expo
     const layout = drawWallpaper(canvas, { schedule, template });
     assert.equal(layout.overflow, false, template.name);
     assert.equal(layout.plans.length, 0, template.name);
-    assert.equal(text.includes('Class Schedule'), template.showScheduleTitle !== false, template.name);
+    assert.equal(text.includes('Class Schedule'), template.showScheduleTitle !== false && template.showTitle !== false, template.name);
     assert.equal(text.includes('Subject name'), false, template.name);
     assert.equal(text.includes('Subject needed'), false, template.name);
   }
@@ -213,7 +213,7 @@ test('every template uses a separate growing day card, the same columns and the 
     columns ??= currentColumns;
     assert.deepEqual(currentColumns, columns, template.name);
     assert.equal(rectangles.length, layout.plans.length);
-    assert.equal(text.filter((value) => value === 'Class Schedule').length, template.showScheduleTitle === false ? 0 : 1);
+    assert.equal(text.filter((value) => value === 'Class Schedule').length, template.showScheduleTitle === false || template.showTitle === false ? 0 : 1);
     for (const [index, plan] of layout.plans.entries()) {
       assert.equal(rectangles[index].height, plan.height);
       assert.equal(rectangles[index].y, plan.y);

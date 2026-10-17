@@ -1,5 +1,7 @@
 # Hunter × Hunter mobile collection
 
+Latest selection (2026-10-17): the four chibis use the plain textured source set from the user's Leorio screenshot, with centered tinted schedule cards below each character. This supersedes the chibi motif descriptions below. See `documentation/hxh-chibi-plain-layout.md` for sources, layout verification and pending upload status. The website remains local; no live catalog publication or deployment is authorized.
+
 15 opaque PNG wallpapers, each 1080 × 2400. Built-in imagegen generated each asset individually. Four subagents contributed; the environment allowed three child agents to run concurrently.
 
 ## Inventory

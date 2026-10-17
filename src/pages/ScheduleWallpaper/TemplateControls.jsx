@@ -2,7 +2,7 @@ import { particleStyles } from '../../utils/wallpaperParticles.js';
 import { useRef } from 'react';
 import { schedulePosition, scheduleMovement, tabletBoxSpacing, scheduleLayout } from '../../utils/canvasHelpers.js';
 import { ChevronDown } from 'lucide-react';
-import { colorInputValue, wallpaperFonts, mascotPosition, wallpaperFontScale, wallpaperCornerRadius, snapSchedulePosition } from '../../utils/wallpaperTheme.js';
+import { colorInputValue, wallpaperFonts, mascotPosition, wallpaperFontScale, wallpaperCornerRadius, wallpaperFillOpacity, snapSchedulePosition } from '../../utils/wallpaperTheme.js';
 
 const colorFields = {
   background: { label: 'Background', colors: ['#dce8cb', '#f5daca', '#d8cbef', '#192f4b'] },
@@ -79,6 +79,10 @@ export default function TemplateControls({ template, onChange, onReset, defaultT
         <input id="appearance-shape" type="range" min="0" max="50" step="1" value={radius} aria-valuetext={`${radius}% corner radius`} onChange={event => onChange('containerRadius', Number(event.target.value))} />
       </div>
       <AppearanceColor colorKey="surface" template={template} onChange={onChange} toggleKey="containerFill" />
+      <div className="top-margin-control">
+        <div className="top-margin-label"><label htmlFor="fill-opacity">Fill opacity</label><output htmlFor="fill-opacity">{wallpaperFillOpacity(template)}%</output></div>
+        <input id="fill-opacity" type="range" min="0" max="100" step="1" value={wallpaperFillOpacity(template)} disabled={template.containerFill === false} aria-valuetext={`${wallpaperFillOpacity(template)}% fill opacity`} onChange={event => onChange('containerOpacity', Number(event.target.value))} />
+      </div>
       {!timeline && <AppearanceColor colorKey="line" template={template} onChange={onChange} toggleKey="containerBorder" />}
       {timeline && <>
         <div className="appearance-row"><label className="appearance-label appearance-switch"><input type="checkbox" checked={template.containerBorder !== false} onChange={event => onChange('containerBorder', event.target.checked)} />Day outline</label></div>

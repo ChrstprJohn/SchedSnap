@@ -22,6 +22,11 @@ export function wallpaperFontScale(template) {
   return Number.isFinite(value) ? Math.min(1.6, Math.max(0.7, value)) : 1;
 }
 
+export function wallpaperFillOpacity(template) {
+  const value = Number(template.containerOpacity ?? 100);
+  return Number.isFinite(value) ? Math.max(0, Math.min(100, value)) : 100;
+}
+
 export function wallpaperCornerRadius(template) {
   const layout = template.scheduleLayout || 'stacked';
   const defaultRadius = layout === 'stacked' ? 50 : layout === 'grouped-list' ? 5 : 10;
@@ -39,10 +44,10 @@ export function mascotPosition(template) {
 
 export function galleryPreviewTemplate(template) {
   // Samples share one placement so artwork can be compared across designs.
-  return { ...template, topMargin: 0, bottomMargin: 0, leftMargin: 0, rightMargin: 0,
+  return { ...template, topMargin: template.collection === 'hunter-x-hunter' && template.family === 'chibi' ? template.topMargin ?? 0 : 0, bottomMargin: 0, leftMargin: 0, rightMargin: 0,
     leftMarginEnabled: false, rightMarginEnabled: false, horizontalPosition: 0,
-    // The close-up face needs its composed schedule placement in thumbnails too.
-    verticalPosition: ['ghibli-closeup', 'wbb-minimal', 'reference-minimal', 'chibi-elemental', 'snoopy-handmade'].includes(template.family) ? template.verticalPosition ?? 0 : 0 };
+    // Keep artwork-specific placement in thumbnails as well as the editor.
+    verticalPosition: (template.collection === 'hunter-x-hunter' && ['chibi', 'plain', 'manga'].includes(template.family)) || ['ghibli-closeup', 'wbb-minimal', 'reference-minimal', 'chibi-elemental', 'snoopy-handmade'].includes(template.family) ? template.verticalPosition ?? 0 : 0 };
 }
 
 export function customizeWallpaperTemplate(template, settings = {}, device = template?.device) {

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { ArrowRight, ChevronDown, Download, Heart, LayoutTemplate, Maximize2, Pencil, SlidersHorizontal } from 'lucide-react';
+import { ArrowRight, ChevronDown, Download, Heart, Images, Maximize2, Pencil, SlidersHorizontal } from 'lucide-react';
 import { getScheduleIssues } from '../../../shared/scheduleSchema.js';
 import { canvasBlob, drawWallpaper, findOverlaps } from '../../utils/canvasHelpers.js';
 import { prepareWallpaperAssets } from '../../utils/wallpaperAssets.js';
@@ -161,7 +161,7 @@ export default function TemplateWorkspace({ step, onStep, template, defaultTempl
         <button type="button" onClick={download} disabled={!canDownload} aria-describedby={exportStatus ? 'wallpaper-export-status' : undefined} className="button-primary download-wallpaper"><Download size={18} aria-hidden="true" />{exporting ? 'Creating PNG…' : 'Download wallpaper'}</button>
         {exportStatus && <div className="export-status" role="status" id="wallpaper-export-status"><p>{exportStatus}</p>{(issues.length > 0 || currentLayout?.overflow) && <button type="button" className="text-link" onClick={() => onStep('classes')}>Fix class details</button>}{currentLayout?.error && <button type="button" className="text-link" onClick={() => onStep('design')}>Change design</button>}</div>}
         {exportResult?.key === exportKey && <a className="text-link save-again" href={exportResult.url} download={exportResult.filename} onClick={() => { void recordDownload(); if (!vote?.liked) setThankYouDesign(template.id); trackEvent('wallpaper_download_repeated', { ...templateProperties(template), schedule_source: scheduleSource }); }}>Save PNG again</a>}
-        <div className="wallpaper-edit-actions"><button type="button" className="button-secondary" onClick={() => onStep('classes')}><Pencil size={16} aria-hidden="true" />Edit classes</button><button type="button" className="button-secondary" onClick={() => onStep('design')}><LayoutTemplate size={16} aria-hidden="true" />Change design</button></div>
+        <div className="wallpaper-edit-actions"><button type="button" className="button-secondary" onClick={() => onStep('classes')}><Pencil size={16} aria-hidden="true" />Edit classes</button><button type="button" className="button-secondary" onClick={() => onStep('design')}><Images size={16} aria-hidden="true" />Change design</button></div>
         <ScheduleLayoutPicker template={template} onChange={onAppearanceChange} />
         <details className="flow-customize customize-appearance" open={customizing} onToggle={(event) => { setCustomizing(event.currentTarget.open); setPreviewStuck(false); }}><summary className="disclosure-summary"><span><SlidersHorizontal size={16} aria-hidden="true" />Customize appearance</span><ChevronDown className="disclosure-icon size-4" aria-hidden="true" /></summary><TemplateControls template={template} defaultTemplate={defaultTemplate} enablePlacement onChange={onAppearanceChange} onReset={onResetAppearance} /></details>
       </section>

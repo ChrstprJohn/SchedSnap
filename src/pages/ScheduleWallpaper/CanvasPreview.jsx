@@ -32,7 +32,7 @@ export function WallpaperCanvas({ schedule, template, resolution, className = ''
     if (lazy && typeof IntersectionObserver !== 'undefined') {
       observer = new IntersectionObserver((entries) => {
         if (entries.some((entry) => entry.isIntersecting)) { observer.disconnect(); render(); }
-      }, { rootMargin: '400px' });
+      }, { rootMargin: '800px 0px' });
       observer.observe(canvas.current);
     } else render();
     return () => { cancelled = true; observer?.disconnect(); };

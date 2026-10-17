@@ -21,6 +21,13 @@ test('gallery phone samples share bounds while the close-up keeps its face clear
       assert.ok(result.scheduleBounds.y < expected.y, original.id);
       assert.deepEqual({ ...result.scheduleBounds, y: expected.y }, expected, original.id);
       assert.equal(galleryPreviewTemplate(original).verticalPosition, original.verticalPosition);
+    } else if (original.collection === 'hunter-x-hunter' && original.family === 'chibi') {
+      assert.ok(result.scheduleBounds.y > expected.y, original.id);
+      assert.equal(galleryPreviewTemplate(original).topMargin, original.topMargin, original.id);
+      assert.deepEqual(result.scheduleBounds, render(original, deviceResolutions.mobile).scheduleBounds, original.id);
+    } else if (original.collection === 'hunter-x-hunter' && ['plain', 'manga'].includes(original.family)) {
+      assert.ok(result.scheduleBounds.y < expected.y, original.id);
+      assert.deepEqual(result.scheduleBounds, render(original, deviceResolutions.mobile).scheduleBounds, original.id);
     } else assert.deepEqual(result.scheduleBounds, expected, original.id);
   }
 });

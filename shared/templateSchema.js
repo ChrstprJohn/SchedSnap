@@ -27,6 +27,7 @@ export const templateSchema = z.object({
   scheduleLayout: z.enum(['stacked', 'grouped-list', 'day-columns', 'day-cards', 'timeline', 'weekly']).optional(),
   containerStyle: z.enum(['glass', 'solid']).optional(), containerShape: z.enum(['pill', 'rounded']).optional(),
   containerRadius: z.number().min(0).max(50).optional(),
+  containerOpacity: z.number().min(0).max(100).optional(),
   containerFill: z.boolean().optional(), containerBorder: z.boolean().optional(), showSeparators: z.boolean().optional(),
   tabletBoxSpacing: z.number().min(0).max(300).optional(),
   schedulePosition: z.enum(['left', 'center', 'right']).optional(), orientation: z.enum(['portrait', 'landscape']).optional(),

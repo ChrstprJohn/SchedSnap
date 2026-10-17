@@ -36,6 +36,6 @@ export const scenicFamilies = [
 export const galleryCategories = [designCollections[0], { id: 'anime', name: 'Anime', searchTerms: ['anime wallpaper', 'manga'] }, ...designCollections.slice(1)];
 
 export function matchesGalleryCategory(template, category) {
-  if (category === 'anime') return ['hunter-x-hunter', 'genshin', 'ghibli', 'onepiece'].includes(getTemplateCollection(template));
+  if (category === 'anime') return ['hunter-x-hunter', 'ghibli', 'onepiece'].includes(getTemplateCollection(template));
   return category === 'all' || getTemplateCollection(template) === (['chikawa', 'little-friends'].includes(category) ? 'chiikawa' : category);
 }

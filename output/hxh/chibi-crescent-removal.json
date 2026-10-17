@@ -1,0 +1,28 @@
+{
+  "assets": [
+    {
+      "path": "public/wallpapers/scenic/hxh-gon-chibi/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "33b49f832614790557d47c4e6f06cbd1e7ad3782a27df47359c6143ab1d09730"
+    },
+    {
+      "path": "public/wallpapers/scenic/hxh-killua-chibi/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "c6fae3ad65f93a1380cba7a09d7b8e8df68862ac8d2930512d3ca493d07cfb5d"
+    },
+    {
+      "path": "public/wallpapers/scenic/hxh-kurapika-chibi/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "77ea08050780d87ab9506f8f9f8a4ce178d41da3e47affbbc27d521b3a1f25c9"
+    },
+    {
+      "path": "public/wallpapers/scenic/hxh-leorio-chibi/mobile.png",
+      "dimensionsValid": true,
+      "opaque": true,
+      "sha256": "62acc38c362c779e2e118a9ddbd42563149b58ee15b8f0537f3b57937b264e5f"
+    }
+  ]
+}

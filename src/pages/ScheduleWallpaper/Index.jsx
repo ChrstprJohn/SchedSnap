@@ -50,6 +50,9 @@ export default function ScheduleWallpaper() {
   function changeSort(next) {
     setSearch(previous => { const params = new URLSearchParams(previous); params.set('sort', next); return params; });
   }
+  function changeCategory(next) {
+    setSearch(previous => { const params = new URLSearchParams(previous); params.set('collection', next); return params; });
+  }
   const debouncedSearchQuery = useDebouncedSearch(searchQuery);
   const [pendingDraft, setPendingDraft] = useState(() => {
     try { return readDraft(window.sessionStorage); } catch { return null; }
@@ -238,7 +241,7 @@ export default function ScheduleWallpaper() {
       onError={(message) => { setError(message); setSuccess(''); }} onAnalyze={analyze} importUsage={importUsage} usageUnavailable={usageUnavailable}
       onSample={() => { setSchedule(structuredClone(sampleSchedule)); setScheduleSource('sample'); trackEvent('sample_schedule_loaded', templateProperties(template)); dismissNotification(); }}
     /> : <>
-      <TemplateGallery sort={sort} device={device} onDeviceChange={changeDevice} initialCategory={search.get('collection')} selectedId={selectedId} settings={templateSettings} schedule={schedule} scheduleTitle={scheduleTitle} resolution={resolution} onSelect={selectTemplate} searchQuery={debouncedSearchQuery} onClearSearch={() => setSearchQuery('')} />
+      <TemplateGallery sort={sort} device={device} onDeviceChange={changeDevice} category={search.get('collection')} onCategoryChange={changeCategory} selectedId={selectedId} settings={templateSettings} schedule={schedule} scheduleTitle={scheduleTitle} resolution={resolution} onSelect={selectTemplate} searchQuery={debouncedSearchQuery} onClearSearch={() => setSearchQuery('')} />
     </>}
     {step === 'design' && <BackToTop />}
     <Toast message={error || success} kind={error ? 'error' : 'success'} onClose={dismissNotification} />

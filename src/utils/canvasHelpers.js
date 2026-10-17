@@ -1,6 +1,6 @@
 import { days } from '../../shared/scheduleSchema.js';
 import { mobileResolution } from '../assets/templates.js';
-import { colorInputValue, mascotPosition, wallpaperFontScale, wallpaperCornerRadius } from './wallpaperTheme.js';
+import { colorInputValue, mascotPosition, wallpaperFontScale, wallpaperCornerRadius, wallpaperFillOpacity } from './wallpaperTheme.js';
 import { drawParticles } from './wallpaperParticles.js';
 
 const hasIllustratedFooter = template => template.collection === 'ghibli' || ['wbb-minimal', 'reference-minimal'].includes(template.family);
@@ -239,7 +239,7 @@ function drawReferenceSchedule(ctx, template, layout) {
   const panel = box => {
     const radius = containerCornerRadius(template, box);
     if (backdrop) drawGlassCard(ctx, template, box, radius, backdrop);
-    else if (template.containerFill !== false || template.containerBorder !== false) rectangle(ctx, box.x, box.y, box.width, box.height, radius, template.containerFill === false ? undefined : template.surface, template.containerBorder === false ? undefined : template.line);
+    else if (template.containerFill !== false || template.containerBorder !== false) rectangle(ctx, box.x, box.y, box.width, box.height, radius, template.containerFill === false ? undefined : template.surface, template.containerBorder === false ? undefined : template.line, wallpaperFillOpacity(template) / 100);
   };
   if (!columns && plans.length) panel({ x: plans[0].x, y: plans[0].y - 14, width: plans[0].width, height: layout.bottom - plans[0].y + 16 });
   ctx.save(); ctx.textBaseline = 'top';
@@ -343,9 +343,14 @@ function layoutDayCards(ctx, schedule, template, height, options) {
   return result;
 }
 
-function rectangle(ctx, x, y, width, height, radius, fill, stroke) {
+function rectangle(ctx, x, y, width, height, radius, fill, stroke, fillOpacity = 1) {
   ctx.beginPath(); ctx.roundRect(x, y, width, height, radius);
-  if (fill) { ctx.fillStyle = fill; ctx.fill(); }
+  if (fill && fillOpacity > 0) {
+    const alpha = ctx.globalAlpha ?? 1;
+    ctx.globalAlpha = alpha * fillOpacity;
+    ctx.fillStyle = fill; ctx.fill();
+    ctx.globalAlpha = alpha;
+  }
   if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = 1.5; ctx.stroke(); }
 }
 
@@ -449,7 +454,7 @@ function drawMascotFooter(ctx, template, image) {
 }
 
 function frostedBackdrop(ctx, template) {
-  if (template.containerStyle === 'solid' || template.containerFill === false || !ctx.canvas?.ownerDocument || !ctx.getTransform) return null;
+  if (template.containerStyle === 'solid' || template.containerFill === false || wallpaperFillOpacity(template) === 0 || !ctx.canvas?.ownerDocument || !ctx.getTransform) return null;
   const snapshot = ctx.canvas.ownerDocument.createElement('canvas');
   snapshot.width = ctx.canvas.width; snapshot.height = ctx.canvas.height;
   const target = snapshot.getContext('2d');
@@ -471,8 +476,9 @@ function drawGlassCard(ctx, template, plan, radius, backdrop) {
   const matrix = ctx.getTransform();
   const ink = colorInputValue(template.ink);
   const brightText = [1, 3, 5].reduce((sum, offset) => sum + parseInt(ink.slice(offset, offset + 2), 16), 0) / 3 > 160;
-  const tint = brightText ? template.background : template.surface;
+  const tint = template.surface;
   ctx.save();
+  ctx.globalAlpha *= wallpaperFillOpacity(template) / 100;
   ctx.beginPath(); ctx.roundRect(plan.x, plan.y, plan.width, plan.height, radius); ctx.clip();
   ctx.setTransform(1, 0, 0, 1, 0, 0);
   ctx.drawImage(backdrop, 0, 0);
@@ -501,7 +507,7 @@ function drawScheduleCards(ctx, template, layout) {
   for (const plan of layout.plans) {
     const radius = containerCornerRadius(template, plan);
     if (backdrop) drawGlassCard(ctx, template, plan, radius, backdrop);
-    else rectangle(ctx, plan.x, plan.y, plan.width, plan.height, radius, template.containerFill === false ? undefined : template.surface, template.containerBorder === false ? undefined : template.line);
+    else rectangle(ctx, plan.x, plan.y, plan.width, plan.height, radius, template.containerFill === false ? undefined : template.surface, template.containerBorder === false ? undefined : template.line, wallpaperFillOpacity(template) / 100);
     const dayX = plan.x + plan.dayWidth / 2 + plan.dayInset, dayY = plan.y + plan.height / 2;
     ctx.save(); ctx.fillStyle = template.ink; ctx.globalAlpha = 0.1;
     const badgeRadius = Math.min(plan.dayRadius, (plan.height - 28) / 2);
@@ -540,7 +546,7 @@ function drawDayCards(ctx, template, layout) {
   const card = plan => {
     const radius = containerCornerRadius(template, plan);
     if (backdrop) drawGlassCard(ctx, template, plan, radius, backdrop);
-    else rectangle(ctx, plan.x, plan.y, plan.width, plan.height, radius, template.containerFill === false ? undefined : template.surface, template.containerBorder === false ? undefined : template.line);
+    else rectangle(ctx, plan.x, plan.y, plan.width, plan.height, radius, template.containerFill === false ? undefined : template.surface, template.containerBorder === false ? undefined : template.line, wallpaperFillOpacity(template) / 100);
   };
   ctx.save(); ctx.textBaseline = 'top';
   for (const plan of layout.plans) {
@@ -593,7 +599,7 @@ function drawTimeline(ctx, template, layout) {
     const box = { x: plan.x + 62, y: plan.y - 14, width: plan.width - 58, height: plan.height + 16 };
     const corner = containerCornerRadius(template, box);
     if (backdrop) drawGlassCard(ctx, template, box, corner, backdrop);
-    else if (template.containerFill !== false || template.containerBorder !== false) rectangle(ctx, box.x, box.y, box.width, box.height, corner, template.containerFill === false ? undefined : template.surface, template.containerBorder === false ? undefined : template.line);
+    else if (template.containerFill !== false || template.containerBorder !== false) rectangle(ctx, box.x, box.y, box.width, box.height, corner, template.containerFill === false ? undefined : template.surface, template.containerBorder === false ? undefined : template.line, wallpaperFillOpacity(template) / 100);
   }
   ctx.save(); ctx.textBaseline = 'top';
   const radius = layout.size * 0.5;
@@ -700,7 +706,7 @@ function drawWeeklyTimetable(ctx, template, layout) {
   const drawBox = (box, meeting = false) => {
     const radius = containerCornerRadius(template, box);
     if (backdrop) drawGlassCard(ctx, { ...template, containerBorder: false }, box, radius, backdrop);
-    else rectangle(ctx, box.x, box.y, box.width, box.height, radius, template.containerFill === false ? undefined : template.surface);
+    else rectangle(ctx, box.x, box.y, box.width, box.height, radius, template.containerFill === false ? undefined : template.surface, undefined, wallpaperFillOpacity(template) / 100);
     if (template.containerBorder !== false) {
       ctx.save(); ctx.strokeStyle = lineColor; ctx.globalAlpha = meeting ? 0.85 : 0.7; ctx.lineWidth = meeting ? 2.5 : 2;
       ctx.beginPath(); ctx.roundRect(box.x, box.y, box.width, box.height, radius); ctx.stroke(); ctx.restore();

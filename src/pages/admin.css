@@ -442,6 +442,6 @@
 .admin-design-footer .admin-design-meta { grid-column: 1; grid-row: 2; margin: 0; }
 .admin-design-footer > .admin-design-stats { grid-column: 2 / 4; grid-row: 1; min-height: 20px; font-size: 12px; gap: 12px; margin-left: auto; }
 .admin-design-footer > .admin-design-actions { position: relative; grid-column: 3; grid-row: 2; align-self: center; justify-self: end; margin: -10px -14px -10px 0; }
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .admin-library-search { display: flex; }
 }

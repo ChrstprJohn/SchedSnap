@@ -4097,8 +4097,8 @@ export default {
   },
   "/wallpapers/scenic/hxh-gon-chibi/mobile.png": {
     "cloud": "djfyq0jyz",
-    "publicId": "schedsnap/wallpapers/scenic/hxh-gon-chibi/mobile-296bc48b500eda72",
-    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792167738/schedsnap/wallpapers/scenic/hxh-gon-chibi/mobile-296bc48b500eda72.png",
+    "publicId": "schedsnap/wallpapers/scenic/hxh-gon-chibi/mobile-ab1dcb1254fe8e10",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792206437/schedsnap/wallpapers/scenic/hxh-gon-chibi/mobile-ab1dcb1254fe8e10.png",
     "width": 1080,
     "height": 2400
   },
@@ -4125,8 +4125,8 @@ export default {
   },
   "/wallpapers/scenic/hxh-killua-chibi/mobile.png": {
     "cloud": "djfyq0jyz",
-    "publicId": "schedsnap/wallpapers/scenic/hxh-killua-chibi/mobile-bbbac56f1cd0849d",
-    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792167738/schedsnap/wallpapers/scenic/hxh-killua-chibi/mobile-bbbac56f1cd0849d.png",
+    "publicId": "schedsnap/wallpapers/scenic/hxh-killua-chibi/mobile-42e5582aefc4568c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792206438/schedsnap/wallpapers/scenic/hxh-killua-chibi/mobile-42e5582aefc4568c.png",
     "width": 1080,
     "height": 2400
   },
@@ -4160,8 +4160,8 @@ export default {
   },
   "/wallpapers/scenic/hxh-kurapika-chibi/mobile.png": {
     "cloud": "djfyq0jyz",
-    "publicId": "schedsnap/wallpapers/scenic/hxh-kurapika-chibi/mobile-0ee1a945407ad4dd",
-    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792167739/schedsnap/wallpapers/scenic/hxh-kurapika-chibi/mobile-0ee1a945407ad4dd.png",
+    "publicId": "schedsnap/wallpapers/scenic/hxh-kurapika-chibi/mobile-1f29d0aacfdd3826",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792206439/schedsnap/wallpapers/scenic/hxh-kurapika-chibi/mobile-1f29d0aacfdd3826.png",
     "width": 1080,
     "height": 2400
   },
@@ -4181,8 +4181,8 @@ export default {
   },
   "/wallpapers/scenic/hxh-leorio-chibi/mobile.png": {
     "cloud": "djfyq0jyz",
-    "publicId": "schedsnap/wallpapers/scenic/hxh-leorio-chibi/mobile-d26062849480c699",
-    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792167739/schedsnap/wallpapers/scenic/hxh-leorio-chibi/mobile-d26062849480c699.png",
+    "publicId": "schedsnap/wallpapers/scenic/hxh-leorio-chibi/mobile-2df360a4205bdd86",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792206440/schedsnap/wallpapers/scenic/hxh-leorio-chibi/mobile-2df360a4205bdd86.png",
     "width": 1080,
     "height": 2400
   },

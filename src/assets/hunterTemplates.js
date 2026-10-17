@@ -9,10 +9,10 @@ const designs = [
   ['killua-plain', 'Killua · Blue', 'plain', '#21445d', 'Killua Zoldyck, blue, slate blue, black, white, blue eyes, monochrome, manga portrait, minimalist, solid background'],
   ['kurapika-plain', 'Kurapika · Crimson', 'plain', '#741329', 'Kurapika Kurta, red, crimson, burgundy, black, white, scarlet eyes, monochrome, chain, manga portrait, minimalist, solid background'],
   ['hisoka-plain', 'Hisoka · Pink', 'plain', '#d92370', 'Hisoka Morow, pink, hot pink, black, white, golden eyes, amber eyes, monochrome, magician, manga portrait, minimalist, solid background'],
-  ['gon-chibi', 'Gon · Chibi', 'chibi', '#52684b', 'Gon Freecss, green, sage, olive, forest green, fishing rod, fishing float, leaves, nature, seated, cute, ribbon, swirl'],
-  ['killua-chibi', 'Killua · Chibi', 'chibi', '#7786a6', 'Killua Zoldyck, blue, slate blue, periwinkle, lavender, white hair, blue eyes, lightning, electric, seated, cute, ribbon, swirl'],
-  ['kurapika-chibi', 'Kurapika · Chibi', 'chibi', '#814d50', 'Kurapika Kurta, red, burgundy, gold, antique gold, blond, chain, chains, seated, cute, ribbon, swirl'],
-  ['leorio-chibi', 'Leorio · Chibi', 'chibi', '#355b6b', 'Leorio Paradinight, teal, navy, blue, brown, glasses, sunglasses, attache case, attaché case, briefcase, suit, seated, cute, ribbon, swirl'],
+  ['gon-chibi', 'Gon · Chibi', 'chibi', '#52684b', 'Gon Freecss, green, sage, olive green, amber eyes, seated, cute, plain, textured'],
+  ['killua-chibi', 'Killua · Chibi', 'chibi', '#7786a6', 'Killua Zoldyck, blue, slate blue, periwinkle, lavender, white hair, blue eyes, seated, cute, plain, textured'],
+  ['kurapika-chibi', 'Kurapika · Chibi', 'chibi', '#814d50', 'Kurapika Kurta, red, burgundy, gold, antique gold, blond, chain, chains, seated, cute'],
+  ['leorio-chibi', 'Leorio · Chibi', 'chibi', '#355b6b', 'Leorio Paradinight, teal, navy, blue, brown, glasses, sunglasses, attache case, attaché case, briefcase, suit, seated, cute'],
   ['phantom-troupe', 'Phantom Troupe', 'group', '#faf8f3', 'Phantom Troupe, Phantom gang, spider, Genei Ryodan, Chrollo, Machi, Shizuku, Nobunaga, Bonolenov, Uvogin, Phinks, Hisoka, Pakunoda, Franklin, Kortopi, Feitan, Shalnark, white, pink, coral, doodle, chibi, logo'],
   ['four-slash', 'Four Hunters · Slash', 'group', '#f4f1eb', 'Gon Freecss, Killua Zoldyck, Kurapika Kurta, Leorio Paradinight, black, white, gray, monochrome, grayscale, manga, diagonal, slash, panels, quartet'],
 ];
@@ -29,10 +29,19 @@ export const hunterTemplates = designs.map(([suffix, name, family, background, k
     containerStyle: 'solid', containerShape: 'rounded', containerFill: true,
     schedulePosition: 'center', particleStyle: 'none', showScheduleTitle: true,
     artworkFooter: false,
-    ...(family === 'chibi' ? {
-      containerStyle: 'glass', containerShape: 'pill', surface: '#ffffffb3',
-      ink: '#202834', muted: '#202834', line: '#20283445', verticalPosition: 100,
+    ...(['plain', 'manga'].includes(family) ? {
+      containerStyle: 'glass', containerShape: 'pill', fontScale: 0.9,
+      surface: ({ 'gon-manga': '#3e221a', 'leorio-manga': '#49351f', 'hisoka-plain': '#7a1648' })[suffix] || background,
+      containerOpacity: family === 'manga' ? 80 : 85,
+      verticalPosition: family === 'manga' ? -20 : -30, showTitle: family === 'manga',
     } : {}),
+    ...(family === 'chibi' ? {
+      containerStyle: 'glass', containerShape: 'pill', fontScale: 0.9, containerOpacity: 85,
+      surface: ({ 'gon-chibi': '#374c32', 'killua-chibi': '#25354b', 'kurapika-chibi': '#482c32', 'leorio-chibi': '#183b4b' })[suffix],
+      ink: '#fff8ed', muted: '#fff8ed', line: '#fff8ed55',
+      topMargin: 20, verticalPosition: 0, showTitle: false,
+    } : {}),
+    ...(id === 'hxh-gon-chibi' ? { headingInk: '#fff8ed' } : {}),
     image: `/wallpapers/scenic/${id}/mobile.png`,
     deviceImages: { mobile: `/wallpapers/scenic/${id}/mobile.png` },
   };
