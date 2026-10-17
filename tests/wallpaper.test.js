@@ -1,6 +1,7 @@
 import { snoopyTemplates } from '../src/assets/snoopyTemplates.js';
 import { adventureTimeTemplates } from '../src/assets/characterReferenceTemplates.js';
 import { genshinChibiTemplates } from '../src/assets/genshinChibiTemplates.js';
+import { hunterTemplates } from '../src/assets/hunterTemplates.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
@@ -92,9 +93,9 @@ test('all templates fit sample data and dense data is explicitly rejected', () =
 });
 
 test('the existing collections are preserved alongside device-specific illustrated designs', () => {
-  assert.equal(wallpaperTemplates.length, snoopyTemplates.length + adventureTimeTemplates.length + littleFriendsTemplates.length + weBareBearsTemplates.length + patternTemplates.length + chikawaReferenceTemplates.length + chikawaTemplates.filter(t => !chikawaReferenceTemplates.some(r => r.id === t.id)).length + sanrioTemplates.length + domoTemplates.length + meepTemplates.length + ghibliTemplates.length + genshinTemplates.length + genshinBackgroundTemplates.length + genshinChibiTemplates.length);
+  assert.equal(wallpaperTemplates.length, snoopyTemplates.length + adventureTimeTemplates.length + littleFriendsTemplates.length + weBareBearsTemplates.length + patternTemplates.length + chikawaReferenceTemplates.length + chikawaTemplates.filter(t => !chikawaReferenceTemplates.some(r => r.id === t.id)).length + sanrioTemplates.length + domoTemplates.length + meepTemplates.length + ghibliTemplates.length + genshinTemplates.length + genshinBackgroundTemplates.length + genshinChibiTemplates.length + hunterTemplates.length);
   assert.ok(wallpaperTemplates.filter(template => template.image && template.layout !== 'mascot')
-    .every(template => ['mobile', 'tablet', 'laptop'].every(device => template.deviceImages?.[device])));
+    .every(template => (template.mobileOnly ? ['mobile'] : ['mobile', 'tablet', 'laptop']).every(device => template.deviceImages?.[device])));
   assert.equal(new Set(wallpaperTemplates.map((template) => template.id)).size, wallpaperTemplates.length);
   assert.equal(wallpaperTemplates.filter((template) => template.collection === 'scenic').length, 0);
   assert.equal(littleFriendsTemplates.length, 20);
@@ -142,7 +143,7 @@ test('a new editor renders artwork without example classes and blocks empty expo
     const layout = drawWallpaper(canvas, { schedule, template });
     assert.equal(layout.overflow, false, template.name);
     assert.equal(layout.plans.length, 0, template.name);
-    assert.equal(text.includes('Class Schedule'), template.showScheduleTitle !== false, template.name);
+    assert.equal(text.includes('Class Schedule'), template.showScheduleTitle !== false && template.showTitle !== false, template.name);
     assert.equal(text.includes('Subject name'), false, template.name);
     assert.equal(text.includes('Subject needed'), false, template.name);
   }
@@ -212,7 +213,7 @@ test('every template uses a separate growing day card, the same columns and the 
     columns ??= currentColumns;
     assert.deepEqual(currentColumns, columns, template.name);
     assert.equal(rectangles.length, layout.plans.length);
-    assert.equal(text.filter((value) => value === 'Class Schedule').length, template.showScheduleTitle === false ? 0 : 1);
+    assert.equal(text.filter((value) => value === 'Class Schedule').length, template.showScheduleTitle === false || template.showTitle === false ? 0 : 1);
     for (const [index, plan] of layout.plans.entries()) {
       assert.equal(rectangles[index].height, plan.height);
       assert.equal(rectangles[index].y, plan.y);

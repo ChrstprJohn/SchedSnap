@@ -16,11 +16,11 @@ import { searchWallpaperTemplates } from '../../utils/wallpaperSearch.js';
 
 const previewSchedule = (template) => template.layout === 'mascot' ? mascotTemplateSchedule : templateSchedule;
 
-export default function TemplateGallery({ selectedId, settings = {}, schedule, scheduleTitle = 'Class Schedule', onSelect, initialCategory = 'all', device = 'mobile', sort = 'likes', searchQuery = '', onClearSearch }) {
+export default function TemplateGallery({ selectedId, settings = {}, schedule, scheduleTitle = 'Class Schedule', onSelect, category: selectedCategory = 'all', onCategoryChange, device = 'mobile', sort = 'likes', searchQuery = '', onClearSearch }) {
   const { templates: wallpaperTemplates, loading: catalogLoading, error } = useCatalogStatus();
   const thumbnailWidth = device === 'laptop' ? 480 : device === 'tablet' ? 384 : 270;
   const designResolution = () => deviceResolutions[device];
-  const [category, setCategory] = useState(() => ['chikawa', 'little-friends'].includes(initialCategory) ? 'chiikawa' : galleryCategories.some((item) => item.id === initialCategory) ? initialCategory : 'all');
+  const category = ['chikawa', 'little-friends'].includes(selectedCategory) ? 'chiikawa' : galleryCategories.some((item) => item.id === selectedCategory) ? selectedCategory : 'all';
   const [preview, setPreview] = useState(null);
   const { likes, rankingLikes, loading: likesLoading, pending, error: likeError, refresh: refreshLikes, toggle: toggleLike } = useDesignLikes();
   const { downloads, error: downloadError, refresh: refreshDownloads } = useDesignDownloads();
@@ -32,11 +32,11 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
     const matching = isSearching
       ? searchWallpaperTemplates(wallpaperTemplates, searchQuery)
       : wallpaperTemplates.filter((item) => matchesGalleryCategory(item, category));
-    return sortTemplatesByLikes(matching, rankingLikes, sort, downloads);
-  }, [wallpaperTemplates, searchQuery, isSearching, category, rankingLikes, sort, downloads]);
+    return sortTemplatesByLikes(matching.filter(item => !item.mobileOnly || device === 'mobile'), rankingLikes, sort, downloads);
+  }, [wallpaperTemplates, searchQuery, isSearching, category, rankingLikes, device, sort, downloads]);
 
   const filterKey = `${sort}:${isSearching ? `search:${searchQuery.trim()}` : category}:${device}`;
-  const { count: galleryCount, hasMore, sentinel } = useInfiniteGallery(visibleTemplates.length, filterKey);
+  const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(visibleTemplates.length, filterKey);
 
   const activeCategoryName = galleryCategories.find((collection) => collection.id === activeCategory)?.name || 'Design';
   return <div>
@@ -46,7 +46,7 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
           onClearSearch();
         }
         if (category !== id) {
-          setCategory(id);
+          onCategoryChange(id);
           trackEvent('collection_filtered', { collection: id });
         }
       }} />
@@ -83,7 +83,7 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
     </div>
     {loading && <p role="status" className="sr-only">Loading designs…</p>}
     {!loading && error && <p role="alert">{error}</p>}
-    {!loading && visibleTemplates.length > 0 && hasMore && <div ref={sentinel} className="gallery-load-more" role="status" aria-label="Loading more designs"><span className="gallery-load-spinner" aria-hidden="true" /></div>}
+    {!loading && visibleTemplates.length > 0 && hasMore && <div ref={sentinel} className="gallery-load-more"><button type="button" className="button-secondary" onClick={loadMore}>Load more designs</button></div>}
     {preview && <DesignPreview template={preview} schedule={schedule} resolution={designResolution(preview)} onClose={() => setPreview(null)} onSelect={() => onSelect(preview.id)} />}
   </div>;
 }

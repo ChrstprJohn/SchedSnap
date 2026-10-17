@@ -1,9 +1,25 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { galleryCategories, matchesGalleryCategory } from '../src/config/collections.js';
+import { genshinTemplates } from '../src/assets/genshinTemplates.js';
+import { searchWallpaperTemplates } from '../src/utils/wallpaperSearch.js';
 
 test('shared gallery categories include the artwork collections and style filters', () => {
-  assert.deepEqual(galleryCategories.map(category => category.id), ['all', 'sanrio', 'snoopy', 'genshin', 'we-bare-bears', 'domo', 'adventure-time', 'chiikawa', 'ghibli', 'meep', 'pattern']);
+  assert.deepEqual(galleryCategories.map(category => category.id), ['all', 'anime', 'sanrio', 'snoopy', 'genshin', 'hunter-x-hunter', 'we-bare-bears', 'domo', 'adventure-time', 'chiikawa', 'ghibli', 'meep', 'pattern']);
+});
+
+test('Anime groups anime collections without changing stored collections', () => {
+  for (const collection of ['hunter-x-hunter', 'ghibli', 'onepiece']) {
+    assert.equal(matchesGalleryCategory({ collection }, 'anime'), true);
+  }
+  for (const collection of ['genshin', 'pattern', 'snoopy', 'domo', 'mascot']) {
+    assert.equal(matchesGalleryCategory({ collection }, 'anime'), false);
+  }
+});
+
+test('Genshin remains searchable by anime without appearing in the Anime category', () => {
+  assert.ok(searchWallpaperTemplates(genshinTemplates, 'anime').length > 0);
+  assert.ok(genshinTemplates.every(template => !matchesGalleryCategory(template, 'anime')));
 });
 
 test('catalog metadata matches parent collections and their style filters', () => {

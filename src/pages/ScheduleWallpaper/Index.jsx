@@ -50,6 +50,9 @@ export default function ScheduleWallpaper() {
   function changeSort(next) {
     setSearch(previous => { const params = new URLSearchParams(previous); params.set('sort', next); return params; });
   }
+  function changeCategory(next) {
+    setSearch(previous => { const params = new URLSearchParams(previous); params.set('collection', next); return params; });
+  }
   const debouncedSearchQuery = useDebouncedSearch(searchQuery);
   const [pendingDraft, setPendingDraft] = useState(() => {
     try { return readDraft(window.sessionStorage); } catch { return null; }
@@ -71,11 +74,11 @@ export default function ScheduleWallpaper() {
   const imagePicker = useRef(null);
   const lastTrackedStep = useRef(null);
   const template = useMemo(() => {
-    const preset = customizeWallpaperTemplate(wallpaperTemplates.find((item) => item.id === templateId), templateSettings[templateId], device);
+    const preset = customizeWallpaperTemplate(wallpaperTemplates.find((item) => item.id === templateId && (!item.mobileOnly || device === 'mobile')), templateSettings[templateId], device);
     return preset ? { ...preset, scheduleTitle, device } : undefined;
   }, [templateId, templateSettings, scheduleTitle, device, wallpaperTemplates]);
   const returnId = search.get('return');
-  const previousTemplate = wallpaperTemplates.find((item) => item.id === returnId);
+  const previousTemplate = wallpaperTemplates.find((item) => item.id === returnId && (!item.mobileOnly || device === 'mobile'));
   const selectedId = template?.id || previousTemplate?.id;
   const step = template ? search.get('step') === 'preview' ? 'preview' : 'classes' : 'design';
   const basePath = '/services/schedule-wallpaper';
@@ -238,7 +241,7 @@ export default function ScheduleWallpaper() {
       onError={(message) => { setError(message); setSuccess(''); }} onAnalyze={analyze} importUsage={importUsage} usageUnavailable={usageUnavailable}
       onSample={() => { setSchedule(structuredClone(sampleSchedule)); setScheduleSource('sample'); trackEvent('sample_schedule_loaded', templateProperties(template)); dismissNotification(); }}
     /> : <>
-      <TemplateGallery sort={sort} device={device} onDeviceChange={changeDevice} initialCategory={search.get('collection')} selectedId={selectedId} settings={templateSettings} schedule={schedule} scheduleTitle={scheduleTitle} resolution={resolution} onSelect={selectTemplate} searchQuery={debouncedSearchQuery} onClearSearch={() => setSearchQuery('')} />
+      <TemplateGallery sort={sort} device={device} onDeviceChange={changeDevice} category={search.get('collection')} onCategoryChange={changeCategory} selectedId={selectedId} settings={templateSettings} schedule={schedule} scheduleTitle={scheduleTitle} resolution={resolution} onSelect={selectTemplate} searchQuery={debouncedSearchQuery} onClearSearch={() => setSearchQuery('')} />
     </>}
     {step === 'design' && <BackToTop />}
     <Toast message={error || success} kind={error ? 'error' : 'success'} onClose={dismissNotification} />

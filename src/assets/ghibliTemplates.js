@@ -14,14 +14,8 @@ const designs = [
   ['ink-totoro', 'Totoro Ink Sketch', '#f5f5f5'],
   ['jiji-sage-paper', 'Jiji Sage Paper', '#e0e3c9'],
   ['sage-collage', 'Sage Sticker Collage', '#e8ddcb'],
-  ['flower-grid', 'Flower Grid', '#f8f0e4'],
-  ['gingham-border', 'Gingham Border', '#f5eddf'],
-  ['forest-star', 'Forest Star Scrapbook', '#f7efe3'],
   ['tilted-stamps', 'Tilted Stamp Notes', '#f7efe3'],
-  ['spiral-notes', 'Spiral Forest Notes', '#f7efe3'],
-  ['sage-wash', 'Sage Wash Friends', '#e0e5ca'],
   ['totoro-closeup', 'Totoro Close-Up', '#797975'],
-  ['notebook-scrapbook', 'Notebook Scrapbook', '#f0e3bd'],
 ];
 
 export const ghibliTemplates = designs.map(([slug, name, background]) => {

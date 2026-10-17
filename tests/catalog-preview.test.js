@@ -4,6 +4,7 @@ import { createPublicCatalogHandler } from '../api/catalog.js';
 import { seedCatalog } from '../server/catalogStore.js';
 import { localApiPlugin } from '../development/apiPlugin.js';
 import { snoopyTemplates } from '../src/assets/snoopyTemplates.js';
+import { hunterTemplates } from '../src/assets/hunterTemplates.js';
 
 const env = { CLOUDINARY_CLOUD_NAME: 'preview-test', CLOUDINARY_API_KEY: 'test', CLOUDINARY_API_SECRET: 'test' };
 const response = () => ({ setHeader() {}, status(code) { this.code = code; return this; }, json(body) { this.body = body; return this; } });
@@ -25,6 +26,13 @@ test('Vite exposes local Snoopy artwork when the shared catalog does not contain
     assert.equal(records.length, 1);
     assert.deepEqual(records[0].deviceImages, design.deviceImages);
     assert.ok(records[0].image.startsWith('/wallpapers/scenic/snoopy-'));
+  }
+  for (const design of hunterTemplates) {
+    const records = result.body.templates.filter(template => template.id === design.id);
+    assert.equal(records.length, 1);
+    assert.equal(records[0].mobileOnly, true);
+    assert.equal(records[0].keywords, design.keywords);
+    assert.deepEqual(records[0].deviceImages, design.deviceImages);
   }
 });
 

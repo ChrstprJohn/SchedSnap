@@ -357,7 +357,7 @@ function DesignEditor({ initial, isNew, existingIds, busy, onSave, onBack, onDir
     const result = templateSchema.safeParse(next);
     if (!result.success) {
       const issue = result.error.issues[0];
-      const section = ['image', 'deviceImages'].includes(issue.path[0]) ? 'artwork' : ['background', 'surface', 'ink', 'line', 'containerStyle', 'containerShape', 'containerRadius', 'containerFill', 'containerBorder', 'fontFamily', 'fontScale', 'tabletBoxSpacing', 'showTitle', 'showScheduleTitle', 'schedulePosition', 'horizontalPosition', 'verticalPosition', 'particleStyle'].includes(issue.path[0]) ? 'appearance' : 'details';
+      const section = ['image', 'deviceImages'].includes(issue.path[0]) ? 'artwork' : ['background', 'surface', 'ink', 'line', 'containerStyle', 'containerShape', 'containerRadius', 'containerOpacity', 'containerFill', 'containerBorder', 'fontFamily', 'fontScale', 'tabletBoxSpacing', 'showTitle', 'showScheduleTitle', 'schedulePosition', 'horizontalPosition', 'verticalPosition', 'particleStyle'].includes(issue.path[0]) ? 'appearance' : 'details';
       showEditorError(section, issue.message);
       return;
     }
@@ -377,8 +377,15 @@ function DesignEditor({ initial, isNew, existingIds, busy, onSave, onBack, onDir
   const fingerprint = JSON.stringify(previewTemplate);
   const recordLayout = useCallback(value => setLayout({ ...value, fingerprint }), [fingerprint]);
   return <>
-    <div className="admin-editor-toolbar"><button className="tool-back admin-back" disabled={blocked} onClick={() => { if (!dirty || window.confirm('Discard your unsaved design changes? Uploaded artwork will remain in Cloudinary.')) onBack(); }}><ArrowLeft size={16} /><span>Back</span></button></div>
-    <div className="admin-editor" data-preview-stuck={previewStuck}><div className="admin-preview-toolbar admin-preview-mobile-heading"><h2>Live preview</h2><DevicePicker value={device} onChange={setDevice} label="Preview device" /></div><div ref={previewAnchor} className="admin-preview-anchor" aria-hidden="true" /><div className="admin-save-actions"><div className="admin-design-summary"><h2>{template.name || 'New design'}</h2><p>{resolution.width} × {resolution.height} PNG</p></div><button className="button-secondary" disabled={blocked} onClick={() => save(template.status === 'hidden' ? 'hidden' : 'draft')}><Save size={16} aria-hidden="true" />{savingAction === 'draft' ? 'Saving draft…' : 'Save draft'}</button><button className="button-primary" disabled={blocked} onClick={() => save('published')}><Send size={16} aria-hidden="true" />{savingAction === 'publish' ? 'Publishing…' : 'Publish design'}</button></div><div className="admin-editor-fields"><EditorSection title="Design details" description="Title, collection, and artwork type" open={openSections.details} onToggle={open => setOpenSections(s => ({ ...s, details: open }))}><fieldset disabled={blocked}>
+    <div className="admin-editor" data-preview-stuck={previewStuck}>
+      <div className="admin-editor-toolbar">
+        <button className="tool-back admin-back" disabled={blocked} onClick={() => { if (!dirty || window.confirm('Discard your unsaved design changes? Uploaded artwork will remain in Cloudinary.')) onBack(); }}><ArrowLeft size={16} /><span>Back</span></button>
+        <div className="admin-save-actions">
+          <button className="button-secondary" disabled={blocked} onClick={() => save(template.status === 'hidden' ? 'hidden' : 'draft')}><Save size={16} aria-hidden="true" />{savingAction === 'draft' ? 'Saving draft…' : 'Save draft'}</button>
+          <button className="button-primary" disabled={blocked} onClick={() => save('published')}><Send size={16} aria-hidden="true" />{savingAction === 'publish' ? 'Publishing…' : 'Publish design'}</button>
+        </div>
+      </div>
+      <div className="admin-preview-toolbar admin-preview-mobile-heading"><h2>Live preview</h2><DevicePicker value={device} onChange={setDevice} label="Preview device" /></div><div ref={previewAnchor} className="admin-preview-anchor" aria-hidden="true" /><div className="admin-editor-fields"><EditorSection title="Design details" description="Title, collection, and artwork type" open={openSections.details} onToggle={open => setOpenSections(s => ({ ...s, details: open }))}><fieldset disabled={blocked}>
       <legend className="sr-only">Design details</legend>
       {error && errorSection === 'details' && <p className="admin-error" role="alert">{error}</p>}
       <label htmlFor="admin-design-title">Title<input id="admin-design-title" aria-describedby="admin-title-help" className="field-input" value={template.name} maxLength={80} onChange={e => { const name = e.target.value; setError(''); setTemplate(t => ({ ...t, name, ...(isNew ? { id: generateDesignId(name, existingIds) } : {}) })); }} /></label>

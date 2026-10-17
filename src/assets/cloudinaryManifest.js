@@ -4094,5 +4094,110 @@ export default {
     "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792143903/schedsnap/wallpapers/scenic/snoopy-sleepy-stripes/tablet-56ca19abf0ca71d0.png",
     "width": 1600,
     "height": 2560
+  },
+  "/wallpapers/scenic/hxh-gon-chibi/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/hxh-gon-chibi/mobile-ab1dcb1254fe8e10",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792206437/schedsnap/wallpapers/scenic/hxh-gon-chibi/mobile-ab1dcb1254fe8e10.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/hxh-gon-plain/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/hxh-gon-plain/mobile-5805a0fa9d437c1a",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792167166/schedsnap/wallpapers/scenic/hxh-gon-plain/mobile-5805a0fa9d437c1a.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/hxh-gon-manga/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/hxh-gon-manga/mobile-f2bbba6aca87a9ce",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792167738/schedsnap/wallpapers/scenic/hxh-gon-manga/mobile-f2bbba6aca87a9ce.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/hxh-four-slash/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/hxh-four-slash/mobile-5af8adf44d94bbce",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792166472/schedsnap/wallpapers/scenic/hxh-four-slash/mobile-5af8adf44d94bbce.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/hxh-killua-chibi/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/hxh-killua-chibi/mobile-42e5582aefc4568c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792206438/schedsnap/wallpapers/scenic/hxh-killua-chibi/mobile-42e5582aefc4568c.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/hxh-hisoka-plain/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/hxh-hisoka-plain/mobile-1aee44cab3e37525",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792167166/schedsnap/wallpapers/scenic/hxh-hisoka-plain/mobile-1aee44cab3e37525.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/hxh-hisoka-manga/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/hxh-hisoka-manga/mobile-f279038369ba1269",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792167739/schedsnap/wallpapers/scenic/hxh-hisoka-manga/mobile-f279038369ba1269.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/hxh-killua-plain/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/hxh-killua-plain/mobile-542997d032dd368d",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792166474/schedsnap/wallpapers/scenic/hxh-killua-plain/mobile-542997d032dd368d.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/hxh-killua-manga/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/hxh-killua-manga/mobile-37b06bfa622fdb3c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792166474/schedsnap/wallpapers/scenic/hxh-killua-manga/mobile-37b06bfa622fdb3c.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/hxh-kurapika-chibi/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/hxh-kurapika-chibi/mobile-1f29d0aacfdd3826",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792206439/schedsnap/wallpapers/scenic/hxh-kurapika-chibi/mobile-1f29d0aacfdd3826.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/hxh-kurapika-manga/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/hxh-kurapika-manga/mobile-ea928e3f38f409ec",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792166474/schedsnap/wallpapers/scenic/hxh-kurapika-manga/mobile-ea928e3f38f409ec.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/hxh-kurapika-plain/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/hxh-kurapika-plain/mobile-d7145b630676206c",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792167167/schedsnap/wallpapers/scenic/hxh-kurapika-plain/mobile-d7145b630676206c.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/hxh-leorio-chibi/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/hxh-leorio-chibi/mobile-2df360a4205bdd86",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792206440/schedsnap/wallpapers/scenic/hxh-leorio-chibi/mobile-2df360a4205bdd86.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/hxh-phantom-troupe/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/hxh-phantom-troupe/mobile-c2f052f2dda10ec2",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792167168/schedsnap/wallpapers/scenic/hxh-phantom-troupe/mobile-c2f052f2dda10ec2.png",
+    "width": 1080,
+    "height": 2400
+  },
+  "/wallpapers/scenic/hxh-leorio-manga/mobile.png": {
+    "cloud": "djfyq0jyz",
+    "publicId": "schedsnap/wallpapers/scenic/hxh-leorio-manga/mobile-7e15f3181a78d36b",
+    "url": "https://res.cloudinary.com/djfyq0jyz/image/upload/v1792167740/schedsnap/wallpapers/scenic/hxh-leorio-manga/mobile-7e15f3181a78d36b.png",
+    "width": 1080,
+    "height": 2400
   }
 };
