@@ -38,8 +38,9 @@ export function createDesignDownloads({ env = process.env, fetcher = fetch } = {
     summary,
     async read(ids, device) {
       if (device && !['mobile', 'tablet', 'laptop'].includes(device)) throw new Error('Invalid download device');
-      // Cards and details show a design's total downloads; device split stays in the admin breakdown.
-      return (await summary(ids)).downloads;
+      // Cards and details show downloads for the device being viewed; the admin dashboard keeps the totals and device split.
+      const { downloads, byDevice } = await summary(ids);
+      return device ? byDevice[device] : downloads;
     },
     async record(id, device) {
       ready();

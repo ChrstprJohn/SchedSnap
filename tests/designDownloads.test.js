@@ -27,6 +27,8 @@ test('device counts are isolated, totals include every device, and older totals 
   assert.equal(summary.byDevice.mobile.one, 2);
   assert.equal(summary.byDevice.tablet.one, 1);
   assert.equal(summary.byDevice.laptop.two, 1);
+  assert.deepEqual(await store.read(['one', 'two'], 'mobile'), { one: 2, two: 0 });
+  assert.deepEqual(await store.read(['one', 'two'], 'laptop'), { one: 0, two: 1 });
   await assert.rejects(store.record('one', 'unknown'));
 });
 
