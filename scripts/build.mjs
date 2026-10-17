@@ -1,20 +1,19 @@
-import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
-import { dirname, resolve, sep } from 'node:path';
+import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { dirname, relative, resolve, sep } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { build } from 'vite';
 import react from '@vitejs/plugin-react';
 import { CREATOR_PATH, SEO_PAGES, SITE_URL } from '../shared/seo.js';
 import { replaceSeoHead } from './seo-html.mjs';
-import cloudinaryManifest from '../src/assets/cloudinaryManifest.js';
+import { isPublicDeploymentAsset } from './public-assets.mjs';
 
-await build({ build: { manifest: true } });
+await build({ build: { manifest: true, copyPublicDir: false } });
 const output = resolve('dist');
-// Vite copies local originals even when Git ignores them. Ship only CDN URLs.
-for (const path of Object.keys(cloudinaryManifest)) {
-  const target = resolve(output, path.slice(1));
-  if (!path.startsWith('/') || !target.startsWith(output + sep)) throw new Error(`Unsafe artwork output path: ${path}`);
-  await rm(target, { force: true });
-}
+const publicDirectory = resolve('public');
+// Copy delivery assets without first copying gigabytes of local source artwork.
+await cp(publicDirectory, output, { recursive: true,
+  filter: source => isPublicDeploymentAsset(relative(publicDirectory, source).split(sep).join('/')),
+});
 const manifest = JSON.parse(await readFile(resolve(output, '.vite/manifest.json'), 'utf8'));
 const renderDirectory = resolve(output, '.seo-render');
 if (dirname(renderDirectory) !== output) throw new Error('Unsafe prerender cleanup path');

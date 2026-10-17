@@ -40,6 +40,10 @@ React + Vite, Tailwind CSS, React Router, Lucide, Axios, GSAP, Zod and the Googl
 
 The production build prerenders homepage and legal content, generates public-page metadata, sitemap.xml, and robots.txt, and keeps admin/editor sessions out of search results. See [search visibility setup and content priorities](documentation/SEO.md).
 
+Wallpaper originals (`public/wallpapers/`) and mascot master folders stay local and are excluded from Git, CLI uploads, and production build output, including retired and unpublished artwork. Commit template metadata and `src/assets/cloudinaryManifest.js` after uploading artwork to Cloudinary. Keep landing-page delivery images, icons, and fonts in Git. `.gitignore` does not untrack previously committed files; use `git rm --cached` for originals already uploaded, preserving the local files. Old Git history does not need rewriting to reduce future deployment output. Local worktrees, transfer bundles, scratch files, and previous `dist/` builds are also excluded from CLI uploads.
+
+The landing page ships responsive WebP previews and an AVIF hero with a WebP fallback. With the local originals and Pillow (WebP/AVIF support) available, run `python scripts/optimize-landing-images.py` after replacing landing artwork, and commit the generated `*-560.webp`, `*-960.webp`, hero sizes, maker and brand derivatives. Landing PNG sources remain local; the build copies only delivery assets. The editor's full-resolution Cloudinary artwork and PNG downloads are independent of these marketing previews. The optional PostHog SDK downloads only after analytics consent is granted; withdrawing consent during that download prevents initialization.
+
 The current automated suite passes all 79 tests. Lint and production build pass. The latest hero and stats geometry check covers ten phone, landscape, tablet and desktop sizes from 320 to 1920px. The final visual review returned ship with no material fixes. The earlier workflow audit also checked template selection, class editing, appearance controls and branded PNG generation. See [completion evidence](documentation/COMPLETION_AUDIT.md).
 
 ## Documentation

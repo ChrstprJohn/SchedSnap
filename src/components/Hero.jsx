@@ -24,7 +24,10 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero-art">
-          <img src="/images/hero/hero-phones-stacked.png" alt="Three iPhones displaying stacked class schedules on Cinnamoroll, Totoro, and pastel gift wallpapers" width="1448" height="1086" fetchPriority="high" decoding="async" />
+          <picture>
+            <source type="image/avif" srcSet="/images/hero/hero-phones-stacked-640.avif 640w, /images/hero/hero-phones-stacked-768.avif 768w, /images/hero/hero-phones-stacked-960.avif 960w, /images/hero/hero-phones-stacked-1448.avif 1448w" sizes="(max-width: 800px) 100vw, (max-width: 1100px) 60vw, 640px" />
+            <img src="/images/hero/hero-phones-stacked-960.webp" srcSet="/images/hero/hero-phones-stacked-640.webp 640w, /images/hero/hero-phones-stacked-768.webp 768w, /images/hero/hero-phones-stacked-960.webp 960w, /images/hero/hero-phones-stacked-1448.webp 1448w" sizes="(max-width: 800px) 100vw, (max-width: 1100px) 60vw, 640px" alt="Three iPhones displaying stacked class schedules on Cinnamoroll, Totoro, and pastel gift wallpapers" width="1448" height="1086" fetchPriority="high" decoding="async" />
+          </picture>
         </div>
       </div>
     </section>

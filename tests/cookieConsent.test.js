@@ -8,7 +8,7 @@ const analyticsSource = readFileSync(new URL('../src/lib/analytics.js', import.m
 const key = 'schedsnap-cookie-consent-v1';
 
 // Run the actual browser modules with storage and the external SDK replaced.
-function browser({ stored, blocked = false, token = 'test-token' } = {}) {
+function browser({ stored, blocked = false, token = 'test-token', deferAnalytics = false } = {}) {
   const data = new Map(stored ? [[key, stored]] : []);
   const window = new EventTarget();
   window.localStorage = {
@@ -27,10 +27,16 @@ function browser({ stored, blocked = false, token = 'test-token' } = {}) {
     register() {},
     capture(event, properties) { if (!optedOut && config.before_send({ event, properties })) events.push(event); },
   };
-  const context = { window, Event, posthog, env: { VITE_POSTHOG_TOKEN: token, MODE: 'test' } };
+  let imports = 0;
+  let resolveAnalytics;
+  const context = { window, Event, importPosthog() {
+    imports++;
+    return deferAnalytics ? new Promise(resolve => { resolveAnalytics = resolve; }) : Promise.resolve({ default: posthog });
+  }, env: { VITE_POSTHOG_TOKEN: token, MODE: 'test' } };
   runInNewContext(consentSource.replaceAll('export ', '') + '\nglobalThis.consent = { getCookieConsent, setCookieConsent };', context);
-  runInNewContext(analyticsSource.replace(/^import .*;\r?$/gm, '').replaceAll('export ', '').replaceAll('import.meta.env', 'env') + '\nglobalThis.track = trackEvent;', context);
-  return { ...context, data, events, initializations: () => initializations, optedOut: () => optedOut, config: () => config };
+  runInNewContext(analyticsSource.replace(/^import .*;\r?$/gm, '').replaceAll("import('posthog-js')", 'importPosthog()').replaceAll('export ', '').replaceAll('import.meta.env', 'env') + '\nglobalThis.track = trackEvent;', context);
+  return { ...context, data, events, initializations: () => initializations, optedOut: () => optedOut, config: () => config,
+    imports: () => imports, resolveAnalytics: () => resolveAnalytics({ default: posthog }), settle: () => new Promise(setImmediate) };
 }
 
 test('no consent, rejection, and invalid stored choices never initialize analytics', () => {
@@ -38,13 +44,15 @@ test('no consent, rejection, and invalid stored choices never initialize analyti
     const page = browser({ stored });
     page.track('download');
     assert.equal(page.initializations(), 0);
+    assert.equal(page.imports(), 0);
     assert.deepEqual(page.events, []);
   }
 });
 
-test('acceptance persists across visits and withdrawal stops capture without reinitializing', () => {
+test('acceptance persists across visits and withdrawal stops capture without reinitializing', async () => {
   const page = browser();
   page.consent.setCookieConsent('granted');
+  await page.settle();
   assert.equal(page.data.get(key), 'granted');
   assert.equal(page.initializations(), 1);
   assert.equal(page.config().disable_session_recording, true);
@@ -60,11 +68,14 @@ test('acceptance persists across visits and withdrawal stops capture without rei
   page.consent.setCookieConsent('granted');
   assert.equal(page.initializations(), 1);
   assert.deepEqual(page.events, ['download', '$pageview']);
-  assert.equal(browser({ stored: page.data.get(key) }).initializations(), 1);
+  const returning = browser({ stored: page.data.get(key) });
+  await returning.settle();
+  assert.equal(returning.initializations(), 1);
 });
 
-test('storage changes in another tab and clearing site data revoke consent', () => {
+test('storage changes in another tab and clearing site data revoke consent', async () => {
   const page = browser({ stored: 'granted' });
+  await page.settle();
   for (const [name, value] of [[key, 'denied'], [null, null]]) {
     page.consent.setCookieConsent('granted');
     const event = new Event('storage');
@@ -75,16 +86,31 @@ test('storage changes in another tab and clearing site data revoke consent', () 
   }
 });
 
-test('blocked storage remembers the current visit and missing configuration stays inert', () => {
+test('blocked storage remembers the current visit and missing configuration stays inert', async () => {
   const page = browser({ blocked: true });
   page.consent.setCookieConsent('denied');
   assert.equal(page.consent.getCookieConsent(), 'denied');
   assert.equal(page.initializations(), 0);
   page.consent.setCookieConsent('granted');
+  await page.settle();
   assert.equal(page.consent.getCookieConsent(), 'granted');
   assert.equal(page.initializations(), 1);
   const unconfigured = browser({ token: '' });
   unconfigured.consent.setCookieConsent('granted');
   unconfigured.track('download');
   assert.equal(unconfigured.initializations(), 0);
+  assert.equal(unconfigured.imports(), 0);
+});
+
+test('revoking consent during the SDK download prevents initialization and shares one import', async () => {
+  const page = browser({ deferAnalytics: true });
+  page.consent.setCookieConsent('granted');
+  page.consent.setCookieConsent('granted');
+  assert.equal(page.imports(), 1);
+  page.consent.setCookieConsent('denied');
+  page.resolveAnalytics();
+  await page.settle();
+  assert.equal(page.initializations(), 0);
+  page.track('download');
+  assert.deepEqual(page.events, []);
 });

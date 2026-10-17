@@ -1,9 +1,14 @@
 # Runtime artwork is delivered by Cloudinary.
-/public/wallpapers/**/*.png
-/public/images/mascots/masters/*.png
-/public/images/pixel-mascots/masters/*.png
-/public/images/goofy-mascots/masters/*.png
-/public/images/doodle-mascots/masters/*.png
+/public/wallpapers/
+/public/images/mascots/masters/
+/public/images/pixel-mascots/masters/
+/public/images/goofy-mascots/masters/
+/public/images/doodle-mascots/masters/
+# Landing pages use the generated WebP/AVIF delivery images.
+/public/images/collections/catalog-mobile/*.png
+/public/images/collections/refreshed/**/*.png
+/public/images/hero/hero-phones-*.png
+/public/images/maker/maker-capybara-static.png
 
 # Source artwork, review evidence, and tests are not deployment inputs.
 .env
@@ -14,3 +19,13 @@
 /documentation/
 /tests/
 /src/assets/*.upload-tmp
+
+# Local build output and scratch copies must not enter CLI deployments.
+/dist/
+/tmp/
+/.worktrees/
+/*.b64
+/tmp-*
+*.log
+__pycache__/
+*.py[cod]

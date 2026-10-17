@@ -1,17 +1,24 @@
-import posthog from 'posthog-js';
 import { getCookieConsent, subscribeCookieConsent } from './cookieConsent.js';
 
 const token = import.meta.env?.VITE_POSTHOG_TOKEN;
 export const analyticsEnabled = Boolean(token);
 const siteProperties = { site_name: 'schedsnap', environment: import.meta.env?.MODE || 'development' };
 let initialized = false;
+let posthog;
+let loading;
 
-function applyCookieConsent() {
+async function applyCookieConsent() {
   if (!token) return;
   try {
     if (getCookieConsent() !== 'granted') {
       if (initialized) posthog.opt_out_capturing();
       return;
+    }
+    if (!posthog) {
+      loading ??= import('posthog-js').then(module => module.default);
+      posthog = await loading;
+      // Consent can be withdrawn while the optional SDK is downloading.
+      if (getCookieConsent() !== 'granted') return;
     }
     if (initialized) {
       if (posthog.has_opted_out_capturing()) {
@@ -43,7 +50,7 @@ function applyCookieConsent() {
       },
     });
     initialized = true;
-  } catch { /* Analytics availability must not interrupt the wallpaper creator. */ }
+  } catch { loading = undefined; /* A later consent change can retry a failed SDK load. */ }
 }
 
 if (typeof window !== 'undefined') {

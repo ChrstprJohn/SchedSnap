@@ -9,15 +9,17 @@ dist/
 coverage/
 
 # Cloudinary originals stay local; commit their delivery manifest and presets.
-/public/wallpapers/**/*.png
-# Keep the reviewed local Snoopy previews available on branch checkouts.
-!/public/wallpapers/scenic/snoopy-*/mobile.png
-!/public/wallpapers/scenic/snoopy-*/tablet.png
-!/public/wallpapers/scenic/snoopy-*/laptop.png
-/public/images/mascots/masters/*.png
-/public/images/pixel-mascots/masters/*.png
-/public/images/goofy-mascots/masters/*.png
-/public/images/doodle-mascots/masters/*.png
+/public/wallpapers/
+/public/images/mascots/masters/
+/public/images/pixel-mascots/masters/
+/public/images/goofy-mascots/masters/
+/public/images/doodle-mascots/masters/
+
+# Keep full-resolution landing PNGs local; commit responsive delivery images.
+/public/images/collections/catalog-mobile/*.png
+/public/images/collections/refreshed/**/*.png
+/public/images/hero/hero-phones-*.png
+/public/images/maker/maker-capybara-static.png
 
 # Generated source artwork and visual review captures.
 /output/**/*.png
@@ -37,6 +39,9 @@ coverage/
 
 # Local scratch work, generated reports, and artwork download bundles.
 /tmp/
+/.worktrees/
+/*.b64
+/tmp-*
 /output/**/*.txt
 /output/**/*.zip
 /output/**/*.tar

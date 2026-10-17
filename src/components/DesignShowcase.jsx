@@ -26,9 +26,10 @@ const devices = [
   { id: 'tablet', title: 'For tablet.', label: 'Tablet', description: 'Keep your class times and rooms on your tablet’s wallpaper for a quick reference while studying.' },
   { id: 'laptop', title: 'For laptop.', label: 'Laptop', description: 'Browse desktop wallpaper designs that keep your weekly class schedule visible while you study.' },
 ];
-const assetPath = (device, collection) => device === 'mobile'
-  ? `/images/collections/catalog-mobile/${collection}.png`
-  : `/images/collections/refreshed/${device}/${device === 'laptop' && collection === 'pattern' ? 'pattern-blue' : collection}.png`;
+const assetPath = (device, collection, width = 960) => device === 'mobile'
+  ? `/images/collections/catalog-mobile/${collection}-${width}.webp`
+  : `/images/collections/refreshed/${device}/${device === 'laptop' && collection === 'pattern' ? 'pattern-blue' : collection}-${width}.webp`;
+const imageSizes = '(max-width: 640px) calc(100vw - 136px), 480px';
 
 function DeviceShowcase({ device }) {
   const slides = collections;
@@ -67,6 +68,8 @@ function DeviceShowcase({ device }) {
     if (!isInView) return;
     const next = collections[(activeIndex + 1) % slideCount];
     const image = new Image();
+    image.sizes = imageSizes;
+    image.srcset = `${assetPath(device.id, next.id, 560)} 560w, ${assetPath(device.id, next.id)} 960w`;
     image.src = assetPath(device.id, next.id);
   }, [activeIndex, isInView, device.id, slideCount]);
 
@@ -81,13 +84,13 @@ function DeviceShowcase({ device }) {
           <figure className="collection-image">
             <button type="button" className="showcase-arrow showcase-image-arrow showcase-image-previous" aria-label={`Previous ${device.label.toLowerCase()} collection`} aria-controls={previewId} onClick={() => changeCollection(-1)}><ChevronLeft size={24} strokeWidth={1.5} aria-hidden="true" /></button>
             <picture key={collection.id}>
-              <img src={assetPath(device.id, collection.id)} alt={`${device.label}${device.id === 'tablet' ? ' portrait and landscape' : ''} schedule wallpaper preview in the ${collection.name} collection`} width={isPortrait ? 1122 : 1448} height={isPortrait ? 1402 : 1086} loading="lazy" decoding="async" />
+              <img src={assetPath(device.id, collection.id)} srcSet={`${assetPath(device.id, collection.id, 560)} 560w, ${assetPath(device.id, collection.id)} 960w`} sizes={imageSizes} alt={`${device.label}${device.id === 'tablet' ? ' portrait and landscape' : ''} schedule wallpaper preview in the ${collection.name} collection`} width={isPortrait ? 1122 : 1448} height={isPortrait ? 1402 : 1086} loading="lazy" decoding="async" />
             </picture>
             <button type="button" className="showcase-arrow showcase-image-arrow showcase-image-next" aria-label={`Next ${device.label.toLowerCase()} collection`} aria-controls={previewId} onClick={() => changeCollection(1)}><ChevronRight size={24} strokeWidth={1.5} aria-hidden="true" /></button>
           </figure>
           <div className="showcase-controls" aria-label={`Browse ${device.label.toLowerCase()} collections`}>
             <button type="button" className="showcase-arrow showcase-desktop-arrow" aria-label={`Previous ${device.label.toLowerCase()} collection`} aria-controls={previewId} onClick={() => changeCollection(-1)}><ChevronLeft size={24} strokeWidth={1.5} aria-hidden="true" /></button>
-            <div className="showcase-progress" aria-label={'Preview ' + (activeIndex + 1) + ' of ' + slideCount} style={{ '--rotation-duration': ROTATION_DELAY + 'ms' }}>
+            <div className="showcase-progress" role="img" aria-label={'Preview ' + (activeIndex + 1) + ' of ' + slideCount} style={{ '--rotation-duration': ROTATION_DELAY + 'ms' }}>
               {slides.map((item, index) => <span key={`${item.id}-${item.orientation || device.id}`} aria-hidden="true">{index === activeIndex && <span className="showcase-progress-fill" style={{ animationPlayState: isRotating ? 'running' : 'paused' }} />}</span>)}
             </div>
             <button type="button" className="showcase-arrow showcase-desktop-arrow" aria-label={`Next ${device.label.toLowerCase()} collection`} aria-controls={previewId} onClick={() => changeCollection(1)}><ChevronRight size={24} strokeWidth={1.5} aria-hidden="true" /></button>
