@@ -14,7 +14,7 @@ test('day-column examples have varied stacks without changing other layout sampl
   assert.equal(galleryScheduleFor({ scheduleLayout: 'stacked' }), templateSchedule);
 });
 
-test('all phone layouts share the title position and protect the clock from upward movement', () => {
+test('all phone layouts share the title position and reach the top of the screen on upward movement', () => {
   for (const verticalPosition of [0, -35, -100]) {
     const bounds = [];
     for (const { value } of scheduleLayoutOptions('mobile')) {
@@ -30,7 +30,8 @@ test('all phone layouts share the title position and protect the clock from upwa
         template: { background: '#fff', ink: '#123', muted: '#456', surface: '#fff', line: '#ddd', scheduleLayout: value, verticalPosition } });
       assert.equal(result.overflow, false, value);
       assert.deepEqual(headings, [650], value);
-      assert.ok(result.scheduleBounds.y >= 480, `${value} must remain below the clock`);
+      assert.ok(result.scheduleBounds.y >= 60, `${value} must remain on the screen`);
+      if (verticalPosition === -100) assert.equal(result.scheduleBounds.y, 60, `${value} must reach top of screen`);
       bounds.push(result.scheduleBounds.y);
     }
     assert.equal(new Set(bounds).size, 1, 'changing layouts must not shift the title');

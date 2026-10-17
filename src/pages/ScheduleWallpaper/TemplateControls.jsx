@@ -50,9 +50,9 @@ export default function TemplateControls({ template, onChange, onReset, defaultT
         </div>;
       })}
       <p className="placement-note">Move the title and classes together. Their size stays the same.</p>
-      {template.device && template.device !== 'mobile' && <div className="appearance-row">
+      {(enablePlacement || (template.device && template.device !== 'mobile')) && <div className="appearance-row">
         <label className="appearance-label" htmlFor="schedule-position">Schedule position</label>
-        <div className="field-select appearance-select"><select id="schedule-position" className="field-input" value={schedulePosition(template)} onChange={(event) => onChange('schedulePosition', event.target.value)}><option value="left">Left</option><option value="center">Center</option><option value="right">Right</option></select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>
+        <div className="field-select appearance-select"><select id="schedule-position" className="field-input" value={template.schedulePosition || schedulePosition(template)} onChange={(event) => onChange('schedulePosition', event.target.value)}><option value="left">Left</option><option value="center">Center</option><option value="right">Right</option></select><ChevronDown size={16} className="field-select-icon" aria-hidden="true" /></div>
       </div>}
     </fieldset>}
     <fieldset className="appearance-group">

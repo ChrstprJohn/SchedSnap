@@ -186,7 +186,31 @@ export default function Admin() {
         <span className="text-muted">{Object.values(metrics.unassigned || {}).reduce((sum, count) => sum + count, 0).toLocaleString()} older downloads · device not recorded</span>
       </div>
       {metricsError && <p className="admin-error" role="alert">{metricsError} <button type="button" className="text-link" onClick={loadMetrics}>Retry stats</button></p>}
-      {!catalog ? error ? <button className="button-secondary" onClick={load}>Retry loading library</button> : <div className={`admin-design-grid admin-grid-${device}`} aria-label="Loading designs" aria-busy="true">{Array.from({ length: 10 }, (_, i) => <div key={i} className="gallery-card-skeleton wallpaper-skeleton" aria-hidden="true" />)}</div> : visible.length === 0 ? <p className="admin-empty">No designs available.</p> : <div className={`admin-design-grid admin-grid-${device}`}>{visible.map(template => {
+      {!catalog ? error ? <button className="button-secondary" onClick={load}>Retry loading library</button> : <div className={`admin-design-grid admin-grid-${device}`} aria-label="Loading designs" aria-busy="true">{Array.from({ length: 10 }, (_, i) => <div key={i} className="gallery-card-skeleton wallpaper-skeleton" aria-hidden="true" />)}</div> : visible.length === 0 ? (
+        <div className="gallery-empty-state admin-empty" role="status">
+          {searchQuery.trim() ? (
+            <>
+              <p>No designs found matching &ldquo;{searchQuery.trim()}&rdquo;{device !== 'mobile' ? ` for ${device}` : ''}</p>
+              <button type="button" className="button-secondary" onClick={() => setSearchQuery('')}>Clear search</button>
+            </>
+          ) : collection !== 'all' ? (
+            <>
+              <p>No designs found in &ldquo;{galleryCategories.find(c => c.id === collection)?.name || collection}&rdquo;{device !== 'mobile' ? ` for ${device}` : ''}</p>
+              <button type="button" className="button-secondary" onClick={() => setCollection('all')}>Clear filter</button>
+            </>
+          ) : statusFilter !== 'all' ? (
+            <>
+              <p>No {statusFilter} designs found{device !== 'mobile' ? ` for ${device}` : ''}</p>
+              <button type="button" className="button-secondary" onClick={() => setStatusFilter('all')}>Clear filter</button>
+            </>
+          ) : (
+            <>
+              <p>No designs available{device !== 'mobile' ? ` for ${device}` : ''}.</p>
+              {device !== 'mobile' && <button type="button" className="button-secondary" onClick={() => setDevice('mobile')}>Switch to mobile</button>}
+            </>
+          )}
+        </div>
+      ) : <div className={`admin-design-grid admin-grid-${device}`}>{visible.map(template => {
         return <article key={template.id} className="admin-design">
           <div className="admin-design-artwork">
           <button className={`admin-design-preview admin-art-${device}`} aria-label={`Edit ${template.name}`} disabled={busy} onClick={() => setEditor({ key: template.id, template, isNew: false })}><WallpaperCanvas lazy schedule={sampleSchedule} template={{ ...template, device }} resolution={{ id: device, width: device === 'laptop' ? 480 : 270, height: Math.round((device === 'laptop' ? 480 : 270) * (device === 'tablet' && template.orientation === 'landscape' ? tabletLandscapeResolution : deviceResolutions[device]).height / (device === 'tablet' && template.orientation === 'landscape' ? tabletLandscapeResolution : deviceResolutions[device]).width) }} className="block w-full h-auto" label={`${template.name} preview`} /></button>
@@ -407,7 +431,7 @@ function DesignEditor({ initial, isNew, existingIds, busy, onSave, onBack, onDir
       })}
       {kind === 'mascot' && <label>Character corner<select className="field-input" value={template.mascotSide || 'right'} onChange={e => change('mascotSide', e.target.value)}><option value="left">Left</option><option value="right">Right</option></select></label>}
       <p className="text-muted">Uploads are stored in Cloudinary. Saving a draft keeps the design out of the public gallery.</p>
-    </fieldset></EditorSection><EditorSection title="Default appearance" description="Colors, day containers, and typography" open={openSections.appearance} onToggle={open => setOpenSections(s => ({ ...s, appearance: open }))}><fieldset disabled={blocked}><legend className="sr-only">Default appearance</legend><TemplateControls template={previewTemplate} onChange={change} onReset={() => setTemplate(t => ({ ...initial, id: t.id, name: t.name, image: t.image, deviceImages: t.deviceImages, status: t.status, collection: t.collection, layout: t.layout, pattern: t.pattern }))} /></fieldset></EditorSection></div>
+    </fieldset></EditorSection><EditorSection title="Default appearance" description="Colors, day containers, and typography" open={openSections.appearance} onToggle={open => setOpenSections(s => ({ ...s, appearance: open }))}><fieldset disabled={blocked}><legend className="sr-only">Default appearance</legend><TemplateControls template={previewTemplate} enablePlacement onChange={change} onReset={() => setTemplate(t => ({ ...initial, id: t.id, name: t.name, image: t.image, deviceImages: t.deviceImages, status: t.status, collection: t.collection, layout: t.layout, pattern: t.pattern }))} /></fieldset></EditorSection></div>
     <aside className="admin-preview"><div className="admin-preview-toolbar admin-preview-desktop-heading"><h2>Live preview</h2><DevicePicker value={device} onChange={setDevice} label="Preview device" /></div>{error && errorSection === 'preview' && <p className="admin-error" role="alert">{error}</p>}<div className={`admin-preview-canvas flow-preview-art admin-preview-${device} admin-preview-size-${previewSize} ${previewSize === 1 ? 'preview-size-sm' : previewSize === 3 ? 'preview-size-lg' : 'preview-size-md'}`} style={{ '--admin-wallpaper-ratio': resolution.width / resolution.height }}><button type="button" className="admin-preview-wallpaper flow-wallpaper" aria-label="Enlarge wallpaper preview" aria-haspopup="dialog" onClick={() => setEnlarged(true)}><WallpaperCanvas schedule={sampleSchedule} template={previewTemplate} resolution={resolution} onLayout={recordLayout} className="block w-full h-auto" label={`${template.name || 'New design'} ${device} preview`} /><span className="preview-enlarge" aria-hidden="true"><Maximize2 size={16} /></span></button><div className="preview-size-controls" role="group" aria-label="Preview size controls"><button type="button" className="preview-size-btn" aria-label="Decrease preview size" disabled={previewSize === 1} onClick={() => setPreviewSize(size => size - 1)}><Minus size={13} aria-hidden="true" /></button><span className="preview-size-label">{['S', 'M', 'L'][previewSize - 1]}</span><button type="button" className="preview-size-btn" aria-label="Increase preview size" disabled={previewSize === 3} onClick={() => setPreviewSize(size => size + 1)}><Plus size={13} aria-hidden="true" /></button></div></div>{layout.fingerprint === fingerprint && layout.overflow && <p className="admin-error" role="alert">This schedule does not fit. Adjust the design before publishing.</p>}<p className="text-muted">Sample classes. Uses the same renderer as the downloaded wallpaper.</p></aside></div>
     {enlarged && <WallpaperViewer resolution={resolution} onClose={() => setEnlarged(false)}><WallpaperCanvas schedule={sampleSchedule} template={previewTemplate} resolution={resolution} className="block h-auto w-full" label={`${template.name || 'New design'} enlarged preview`} /></WallpaperViewer>}
   </>;

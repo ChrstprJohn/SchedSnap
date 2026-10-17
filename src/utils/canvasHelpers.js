@@ -936,10 +936,11 @@ export function drawWallpaper(canvas, { schedule, template, resolution = mobileR
   const sideSpace = flowLayout ? 36 : 78;
   const moveX = movementShift(scheduleMovement(template, 'horizontal'), timeline ? Math.max(0, sideSpace + 26 - layout.size * 0.5 - 2) : sideSpace, sideSpace);
   const limit = template.layout === 'mascot' ? 1740 : timeline ? layout.limit : hasIllustratedFooter(template) ? 2400 * 0.77 : 2250;
-  const visibleTop = flowLayout && (template.showTitle === false || template.showScheduleTitle === false) ? (layout.plans[0]?.y ?? timelineTop) - 14 : headingY - 88;
+  const showTitle = template.showTitle !== false && template.showScheduleTitle !== false;
+  const visibleTop = showTitle ? headingY - 88 : (layout.plans[0]?.y ?? timelineTop) - (flowLayout ? 14 : 0);
   const visibleBottom = layout.bottom + (flowLayout ? 2 : 0);
   const movementLimit = flowLayout && template.layout !== 'mascot' ? 2340 : limit;
-  const moveY = movementShift(scheduleMovement(template, 'vertical'), Math.max(0, visibleTop - 480), movementLimit - visibleBottom);
+  const moveY = movementShift(scheduleMovement(template, 'vertical'), Math.max(0, visibleTop - 2400 * 0.025), movementLimit - visibleBottom);
   ctx.save();
   if (moveX || moveY) ctx.translate(moveX, moveY);
   drawHeading(ctx, template, headingY);
