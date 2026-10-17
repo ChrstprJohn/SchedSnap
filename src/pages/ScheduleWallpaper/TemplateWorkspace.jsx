@@ -30,7 +30,7 @@ export default function TemplateWorkspace({ step, onStep, template, defaultTempl
   const [thankYouDesign, setThankYouDesign] = useState(null);
   const { likes, pending: pendingLikes, error: likeError, refresh: refreshLikes, toggle: toggleLike } = useDesignLikes();
   const vote = likes[template.id];
-  const { downloads, error: downloadError, refresh: refreshDownloads } = useDesignDownloads();
+  const { downloads, error: downloadError, refresh: refreshDownloads } = useDesignDownloads(resolution.id);
   const [message, setMessage] = useState('');
   const [messageKind, setMessageKind] = useState('success');
   const lastUrl = useRef(null);
@@ -79,7 +79,7 @@ export default function TemplateWorkspace({ step, onStep, template, defaultTempl
   }
 
   async function recordDownload() {
-    const saved = await recordDesignDownload(template.id);
+    const saved = await recordDesignDownload(template.id, resolution.id);
     if (saved && active.current) refreshDownloads();
   }
 

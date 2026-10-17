@@ -10,6 +10,8 @@ export function createDownloadsHandler({ env = process.env, store = createCatalo
     const fail = (status, message) => response.status(status).json({ error: { message } });
     if (!['GET', 'POST'].includes(request.method)) return fail(405, 'Method not allowed.');
     try {
+      const device = request.method === 'POST' ? request.body?.device : new URL(request.url || '/api/downloads', 'http://localhost').searchParams.get('device');
+      if (!['mobile', 'tablet', 'laptop'].includes(device)) return fail(400, 'Choose a valid device.');
       if (request.method === 'POST') {
         if (!sameOrigin(request)) return fail(403, 'Download from the SchedSnap page.');
         if (!request.headers?.['content-type']?.startsWith('application/json')) return fail(415, 'Send JSON.');
@@ -19,9 +21,10 @@ export function createDownloadsHandler({ env = process.env, store = createCatalo
       const catalog = cloudConfigured(env) ? await store.read() : seedCatalog();
       const admin = request.method === 'GET' && isAuthenticated(request, env, Date.now());
       const ids = catalog.templates.filter(t => admin || t.status === 'published').map(t => t.id);
-      if (request.method === 'GET') return response.status(200).json({ downloads: await downloads.read(ids) });
+      if (request.method === 'GET') return response.status(200).json({ downloads: await downloads.read(ids, device), device });
       if (!ids.includes(request.body.id)) return fail(404, 'This design is no longer available.');
-      return response.status(200).json({ id: request.body.id, count: await downloads.record(request.body.id) });
+      if (device !== 'mobile' && catalog.templates.find(template => template.id === request.body.id)?.mobileOnly) return fail(400, 'This design is available for mobile only.');
+      return response.status(200).json({ id: request.body.id, device, count: await downloads.record(request.body.id, device) });
     } catch { return fail(503, 'Download counts are temporarily unavailable.'); }
   };
 }

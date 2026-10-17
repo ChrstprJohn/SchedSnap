@@ -23,21 +23,30 @@ export function createDesignDownloads({ env = process.env, fetcher = fetch } = {
     if (!Number.isSafeInteger(number) || number < 0) throw new Error('Invalid download count');
     return number;
   }
-  return {
-    async read(ids) {
+  async function summary(ids) {
       ready();
-      if (!configured) return Object.fromEntries(ids.map(id => [id, local.get(id) || 0]));
-      if (!ids.length) return {};
-      const values = await command(['HGETALL', 'schedsnap:downloads:counts']);
+      const values = configured && ids.length ? await command(['HGETALL', 'schedsnap:downloads:counts']) : [...local].flat();
       if (!Array.isArray(values) || values.length % 2) throw new Error('Invalid download counts');
       const fields = new Map();
       for (let index = 0; index < values.length; index += 2) fields.set(values[index], count(values[index + 1]));
-      return Object.fromEntries(ids.map(id => [id, fields.get(id) ?? 0]));
+      const byDevice = Object.fromEntries(['mobile', 'tablet', 'laptop'].map(device => [device, Object.fromEntries(ids.map(id => [id, fields.get(`${id}:${device}`) ?? 0]))]));
+      const unassigned = Object.fromEntries(ids.map(id => [id, fields.get(id) ?? 0]));
+      const downloads = Object.fromEntries(ids.map(id => [id, unassigned[id] + byDevice.mobile[id] + byDevice.tablet[id] + byDevice.laptop[id]]));
+      return { downloads, byDevice, unassigned };
+  }
+  return {
+    summary,
+    async read(ids, device) {
+      if (device && !['mobile', 'tablet', 'laptop'].includes(device)) throw new Error('Invalid download device');
+      const result = await summary(ids);
+      return device ? result.byDevice[device] : result.downloads;
     },
-    async record(id) {
+    async record(id, device) {
       ready();
-      const value = configured ? count(await command(['EVAL', incrementScript, '1', 'schedsnap:downloads:counts', id])) : (local.get(id) || 0) + 1;
-      if (!configured) local.set(id, value);
+      if (device && !['mobile', 'tablet', 'laptop'].includes(device)) throw new Error('Invalid download device');
+      const field = device ? `${id}:${device}` : id;
+      const value = configured ? count(await command(['EVAL', incrementScript, '1', 'schedsnap:downloads:counts', field])) : (local.get(field) || 0) + 1;
+      if (!configured) local.set(field, value);
       return value;
     },
   };

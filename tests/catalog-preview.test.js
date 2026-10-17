@@ -5,10 +5,11 @@ import { seedCatalog } from '../server/catalogStore.js';
 import { localApiPlugin } from '../development/apiPlugin.js';
 import { snoopyTemplates } from '../src/assets/snoopyTemplates.js';
 import { hunterTemplates } from '../src/assets/hunterTemplates.js';
+import { withTemplateKeywords } from '../shared/templateKeywords.js';
 
 const env = { CLOUDINARY_CLOUD_NAME: 'preview-test', CLOUDINARY_API_KEY: 'test', CLOUDINARY_API_SECRET: 'test' };
 const response = () => ({ setHeader() {}, status(code) { this.code = code; return this; }, json(body) { this.body = body; return this; } });
-const expose = template => Object.fromEntries(Object.entries(template).filter(([key]) => key !== 'status'));
+const expose = template => Object.fromEntries(Object.entries(withTemplateKeywords(template)).filter(([key]) => key !== 'status'));
 
 test('Vite exposes local Snoopy artwork when the shared catalog does not contain it', async (t) => {
   t.mock.method(globalThis, 'fetch', async (_url, options) => {
@@ -31,7 +32,7 @@ test('Vite exposes local Snoopy artwork when the shared catalog does not contain
     const records = result.body.templates.filter(template => template.id === design.id);
     assert.equal(records.length, 1);
     assert.equal(records[0].mobileOnly, true);
-    assert.equal(records[0].keywords, design.keywords);
+    assert.equal(records[0].keywords, withTemplateKeywords(design).keywords);
     assert.deepEqual(records[0].deviceImages, design.deviceImages);
   }
 });
@@ -59,7 +60,7 @@ test('local previews append only missing IDs and preserve remote overrides, hidd
 test('production/default handler does not expose local preview additions', async () => {
   const result = response();
   await createPublicCatalogHandler({ env, store: { read: async () => ({ templates: [{ id: 'remote-only', status: 'published' }] }) } })({ method: 'GET' }, result);
-  assert.deepEqual(result.body.templates, [{ id: 'remote-only' }]);
+  assert.deepEqual(result.body.templates, [expose({ id: 'remote-only' })]);
 });
 
 test('unconfigured local catalog keeps seeded designs once when also passed as previews', async () => {

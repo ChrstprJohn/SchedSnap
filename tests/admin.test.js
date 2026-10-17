@@ -13,7 +13,7 @@ test('admin metrics require authentication and include hidden and draft designs'
   const ids = ['published', 'hidden', 'draft'];
   const handler = createAdminHandler({ env,
     store: { read: async () => ({ templates: ids.map(id => ({ id, status: id })) }) },
-    downloads: { read: async requested => { assert.deepEqual(requested, ids); return { published: 5, hidden: 3, draft: 0 }; } },
+    downloads: { summary: async requested => { assert.deepEqual(requested, ids); return { downloads: { published: 5, hidden: 3, draft: 0 }, byDevice: { mobile: { published: 5, hidden: 3, draft: 0 }, tablet: {}, laptop: {} }, unassigned: {} }; } },
     likes: { read: async (requested, visitor) => { assert.deepEqual(requested, ids); assert.equal(visitor, null); return { hidden: { count: 2, liked: false } }; } },
   });
   let result = response();
@@ -23,6 +23,7 @@ test('admin metrics require authentication and include hidden and draft designs'
   await handler(req('metrics', undefined, cookie()), result);
   assert.equal(result.code, 200);
   assert.equal(result.body.downloads.hidden, 3);
+  assert.equal(result.body.byDevice.mobile.hidden, 3);
   assert.equal(result.body.likes.hidden.count, 2);
 });
 function response() { return { headers: {}, setHeader(key, value) { this.headers[key] = value; }, status(code) { this.code = code; return this; }, json(body) { this.body = body; return this; } }; }
@@ -47,10 +48,10 @@ test('design keywords survive authenticated save and public catalog delivery', a
   let result = response();
   await handler(req('save', { revision: catalog.revision, template }, cookie()), result);
   assert.equal(result.code, 200);
-  assert.equal(catalog.templates.find(t => t.id === template.id).keywords, template.keywords);
+  assert.ok(catalog.templates.find(t => t.id === template.id).keywords.startsWith(template.keywords));
   result = response();
   await createPublicCatalogHandler({ env, store })({ method: 'GET' }, result);
-  assert.equal(result.body.templates.find(t => t.id === template.id).keywords, template.keywords);
+  assert.ok(result.body.templates.find(t => t.id === template.id).keywords.startsWith(template.keywords));
   assert.equal(templateSchema.safeParse({ ...template, keywords: 'x'.repeat(501) }).success, false);
 });
 

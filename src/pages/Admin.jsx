@@ -79,7 +79,7 @@ export default function Admin() {
   const [statusFilter, setStatusFilter] = useState('all');
   const [device, setDevice] = useState('mobile');
   const [sort, setSort] = useState('likes');
-  const [metrics, setMetrics] = useState({ likes: {}, downloads: {} });
+  const [metrics, setMetrics] = useState({ likes: {}, downloads: {}, byDevice: {}, unassigned: {} });
   const [metricsError, setMetricsError] = useState('');
   const loadMetrics = useCallback(async () => {
     try { setMetrics(await request('metrics')); setMetricsError(''); }
@@ -139,7 +139,8 @@ export default function Admin() {
     finally { setBusy(false); }
   }
   const normalizedSearch = searchQuery.trim().toLowerCase();
-  const filtered = sortTemplatesByLikes(searchWallpaperTemplates(catalog?.templates, searchQuery).filter(t => matchesGalleryCategory(t, collection)).filter(t => statusFilter === 'all' || t.status === statusFilter), metrics.likes, sort, metrics.downloads);
+  const deviceDownloads = metrics.byDevice?.[device] || {};
+  const filtered = sortTemplatesByLikes(searchWallpaperTemplates(catalog?.templates, searchQuery).filter(t => matchesGalleryCategory(t, collection)).filter(t => statusFilter === 'all' || t.status === statusFilter), metrics.likes, sort, deviceDownloads);
   const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(filtered.length, `${collection}:${device}:${statusFilter}:${sort}:${normalizedSearch}:${Boolean(editor)}`);
   if (authenticated === null || !authenticated) return <AdminSignIn checking={authenticated === null} password={password} onPasswordChange={setPassword} onSubmit={login} busy={busy} error={error} />;
   const visible = filtered.slice(0, galleryCount);
@@ -180,6 +181,10 @@ export default function Admin() {
         <button className="button-primary admin-library-cta" disabled={busy || !catalog} onClick={() => setEditor({ key: crypto.randomUUID(), template: blankTemplate(), isNew: true })}><Plus size={18} />New design</button>
       </div>
       <div className="template-filters" role="group" aria-label="Filter designs by category"><CategoryFilters categories={galleryCategories} value={collection} onChange={setCollection} /></div>
+      <div className="admin-device-downloads" aria-label="Downloads by device">
+        {['mobile', 'tablet', 'laptop'].map(id => <span key={id}><strong>{id === 'mobile' ? 'Mobile' : id === 'tablet' ? 'Tablet' : 'Laptop'}</strong> {Object.values(metrics.byDevice?.[id] || {}).reduce((sum, count) => sum + count, 0).toLocaleString()} downloads</span>)}
+        <span className="text-muted">{Object.values(metrics.unassigned || {}).reduce((sum, count) => sum + count, 0).toLocaleString()} older downloads · device not recorded</span>
+      </div>
       {metricsError && <p className="admin-error" role="alert">{metricsError} <button type="button" className="text-link" onClick={loadMetrics}>Retry stats</button></p>}
       {!catalog ? error ? <button className="button-secondary" onClick={load}>Retry loading library</button> : <div className={`admin-design-grid admin-grid-${device}`} aria-label="Loading designs" aria-busy="true">{Array.from({ length: 10 }, (_, i) => <div key={i} className="gallery-card-skeleton wallpaper-skeleton" aria-hidden="true" />)}</div> : visible.length === 0 ? <p className="admin-empty">No designs available.</p> : <div className={`admin-design-grid admin-grid-${device}`}>{visible.map(template => {
         return <article key={template.id} className="admin-design">
@@ -189,7 +194,7 @@ export default function Admin() {
           </div>
           <div className="admin-design-footer">
           <div className="admin-design-info"><h2 title={template.name}>{template.name}</h2><div className="admin-design-meta"><span className="text-muted">{designCollections.find(c => c.id === (template.collection || 'original'))?.name}</span></div></div>
-          <span className="admin-design-stats"><span title="Downloads" aria-label={`${metrics.downloads[template.id] ?? 'Unavailable'} downloads`}><Download size={16} aria-hidden="true" /><span aria-hidden="true">{metrics.downloads[template.id]?.toLocaleString() ?? '—'}</span></span><span title="Hearts" aria-label={`${metrics.likes[template.id]?.count ?? 'Unavailable'} hearts`}><Heart className="admin-stat-heart" size={16} fill="currentColor" aria-hidden="true" /><span aria-hidden="true">{metrics.likes[template.id]?.count.toLocaleString() ?? '—'}</span></span></span>
+          <span className="admin-design-stats"><span title="Downloads" aria-label={`${deviceDownloads[template.id] ?? 'Unavailable'} downloads`}><Download size={16} aria-hidden="true" /><span aria-hidden="true">{deviceDownloads[template.id]?.toLocaleString() ?? '—'}</span></span><span title="Hearts" aria-label={`${metrics.likes[template.id]?.count ?? 'Unavailable'} hearts`}><Heart className="admin-stat-heart" size={16} fill="currentColor" aria-hidden="true" /><span aria-hidden="true">{metrics.likes[template.id]?.count.toLocaleString() ?? '—'}</span></span></span>
           <div className="admin-design-actions"><button id={`actions-${template.id}`} className="admin-icon-action" aria-label={`Actions for ${template.name}`} title="Actions" aria-expanded={actionMenu === template.id} aria-controls={`action-list-${template.id}`} onClick={() => setActionMenu(actionMenu === template.id ? null : template.id)}><MoreVertical size={20} aria-hidden="true" /></button>{actionMenu === template.id && <div id={`action-list-${template.id}`} className="admin-action-menu" onClick={() => setActionMenu(null)}><button className="admin-icon-action" aria-label={`Edit ${template.name}`} title="Edit" disabled={busy || template.deletionPending} onClick={() => { setError(''); setEditor({ key: template.id, template, isNew: false }); }}><Pencil size={16} aria-hidden="true" />Edit</button><button className="admin-icon-action" aria-label={`${template.status === 'published' ? 'Hide' : 'Publish'} ${template.name}`} title={template.status === 'published' ? 'Hide' : 'Publish'} disabled={busy || template.deletionPending} onClick={async () => {
             if (template.status === 'published') { setError(''); setHiding(template); return; }
             if (template.status !== 'published' && !templateSchema.safeParse({ ...template, status: 'published' }).success) { setError(''); setEditor({ key: template.id, template, isNew: false }); return; }

@@ -445,3 +445,5 @@
 @media (max-width: 800px) {
   .admin-library-search { display: flex; }
 }
+.admin-device-downloads { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding-block: 12px 20px; font-size: 13px; font-variant-numeric: tabular-nums; }
+.admin-device-downloads strong { font-weight: 650; }

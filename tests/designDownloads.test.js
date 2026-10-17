@@ -12,6 +12,53 @@ test('downloads count every save separately and keep designs separate', async ()
   assert.deepEqual(await store.read(['one', 'two']), { one: 2, two: 0 });
 });
 
+test('device counts are isolated and older totals remain unassigned', async () => {
+  const store = createDesignDownloads({ env: {} });
+  await store.record('one');
+  await store.record('one');
+  await store.record('one', 'mobile');
+  await store.record('one', 'mobile');
+  await store.record('one', 'tablet');
+  await store.record('two', 'laptop');
+  assert.deepEqual(await store.read(['one', 'two'], 'mobile'), { one: 2, two: 0 });
+  assert.deepEqual(await store.read(['one', 'two'], 'tablet'), { one: 1, two: 0 });
+  assert.deepEqual(await store.read(['one', 'two'], 'laptop'), { one: 0, two: 1 });
+  const summary = await store.summary(['one', 'two']);
+  assert.deepEqual(summary.downloads, { one: 5, two: 1 });
+  assert.deepEqual(summary.unassigned, { one: 2, two: 0 });
+  assert.equal(summary.byDevice.mobile.one, 2);
+  await assert.rejects(store.record('one', 'unknown'));
+});
+
+test('Redis writes use a device-specific field and old fields are never assigned to a device', async () => {
+  const commands = [];
+  const store = createDesignDownloads({ env: { UPSTASH_REDIS_REST_URL: 'https://redis.example', UPSTASH_REDIS_REST_TOKEN: 'token' }, fetcher: async (_url, options) => {
+    const command = JSON.parse(options.body); commands.push(command);
+    return { ok: true, json: async () => ({ result: command[0] === 'EVAL' ? 2 : ['one', '10', 'one:mobile', '2', 'one:tablet', '1'] }) };
+  } });
+  assert.equal(await store.record('one', 'mobile'), 2);
+  assert.equal(commands[0].at(-1), 'one:mobile');
+  const summary = await store.summary(['one']);
+  assert.equal(summary.downloads.one, 13);
+  assert.equal(summary.byDevice.laptop.one, 0);
+  assert.equal(summary.byDevice.mobile.one, 2);
+  assert.equal(summary.unassigned.one, 10);
+});
+
+test('download API requires a valid device and refuses unsupported design/device pairs', async () => {
+  const counts = createDesignDownloads({ env: {} });
+  const handler = createDownloadsHandler({ env: {}, downloads: counts, limiter: { allow: async () => true } });
+  const reply = () => ({ setHeader() {}, status(code) { this.code = code; return this; }, json(data) { this.data = data; } });
+  for (const device of [undefined, 'desktop', 'mobile:tablet']) {
+    const response = reply();
+    await handler({ method: 'POST', headers: {}, body: { id: 'one', device } }, response);
+    assert.equal(response.code, 400);
+  }
+  const response = reply();
+  await handler({ method: 'POST', headers: { origin: 'https://example.com', host: 'example.com', 'content-type': 'application/json' }, body: { id: 'hxh-gon-manga', device: 'tablet' } }, response);
+  assert.equal(response.code, 400);
+});
+
 test('production requires persistent storage and increments atomically', async () => {
   await assert.rejects(createDesignDownloads({ env: { NODE_ENV: 'production' } }).record('one'));
   const commands = [];
@@ -44,19 +91,19 @@ test('download endpoint validates origin, design status, and rate limits', async
   const handler = createDownloadsHandler({
     env: { CLOUDINARY_CLOUD_NAME: 'test', CLOUDINARY_API_KEY: 'key', CLOUDINARY_API_SECRET: 'secret' },
     store: { read: async () => ({ templates: [{ id: 'live', status: 'published' }, { id: 'hidden', status: 'hidden' }] }) },
-    downloads: { record: async () => ++writes, read: async ids => Object.fromEntries(ids.map(id => [id, 0])) },
+    downloads: { record: async (id, device) => { assert.equal(device, 'mobile'); return ++writes; }, read: async (ids, device) => { assert.equal(device, 'mobile'); return Object.fromEntries(ids.map(id => [id, 0])); } },
     limiter: { allow: async () => allowed },
   });
   async function send(id, origin = 'https://example.com', method = 'POST') {
     const response = { setHeader() {}, status(code) { this.code = code; return this; }, json(data) { this.data = data; return this; } };
-    await handler({ method, url: '/api/downloads', headers: { host: 'example.com', origin, 'content-type': 'application/json' }, body: { id } }, response);
+    await handler({ method, url: '/api/downloads?device=mobile', headers: { host: 'example.com', origin, 'content-type': 'application/json' }, body: { id, device: 'mobile' } }, response);
     return response;
   }
   assert.equal((await send('live')).code, 200);
   assert.equal((await send('live', 'https://other.com')).code, 403);
   assert.equal((await send('hidden')).code, 404);
   assert.equal((await send('../invalid')).code, 400);
-  assert.deepEqual((await send(undefined, undefined, 'GET')).data, { downloads: { live: 0 } });
+  assert.deepEqual((await send(undefined, undefined, 'GET')).data, { downloads: { live: 0 }, device: 'mobile' });
   allowed = false;
   assert.equal((await send('live')).code, 429);
   assert.equal(writes, 1);

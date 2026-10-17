@@ -26,7 +26,7 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
   const category = ['chikawa', 'little-friends'].includes(selectedCategory) ? 'chiikawa' : galleryCategories.some((item) => item.id === selectedCategory) ? selectedCategory : 'all';
   const [preview, setPreview] = useState(null);
   const { likes, rankingLikes, loading: likesLoading, pending, error: likeError, refresh: refreshLikes, toggle: toggleLike } = useDesignLikes();
-  const { downloads, error: downloadError, refresh: refreshDownloads } = useDesignDownloads();
+  const { downloads, error: downloadError, refresh: refreshDownloads } = useDesignDownloads(device);
   const loading = catalogLoading || likesLoading;
   const isSearching = Boolean(searchQuery && searchQuery.trim());
   const activeCategory = isSearching ? 'all' : category;

@@ -13,6 +13,7 @@ import { genshinTemplates } from './genshinTemplates.js';
 import { genshinBackgroundTemplates } from './genshinBackgroundTemplates.js';
 import { genshinChibiTemplates } from './genshinChibiTemplates.js';
 import { hunterTemplates } from './hunterTemplates.js';
+import { withTemplateKeywords } from '../../shared/templateKeywords.js';
 
 
 export const mobileResolution = { id: 'mobile', width: 1080, height: 2400 };
@@ -38,7 +39,7 @@ export const wallpaperTemplates = [
   ...chikawaTemplates.filter(template => !chikawaReferenceTemplates.some(reviewed => reviewed.id === template.id)),
   ...littleFriendsTemplates,
   ...patternTemplates,
-];
+].map(withTemplateKeywords);
 
 // Gallery examples show one neutral class per weekday; actual uploads are never
 // replaced with these examples and preserve every meeting.

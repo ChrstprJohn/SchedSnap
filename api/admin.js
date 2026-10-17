@@ -8,6 +8,7 @@ import { generateDesignId } from '../shared/designId.js';
 import { artworkIds, createArtworkDeleter } from '../server/deleteArtwork.js';
 import { createDesignDownloads } from '../server/designDownloads.js';
 import { createDesignLikes } from '../server/designLikes.js';
+import { withTemplateKeywords } from '../shared/templateKeywords.js';
 
 export function createAdminHandler({ env = process.env, store = createCatalogStore(env), now = () => Date.now(), destroyArtwork = createArtworkDeleter(env), resolveArtworkIds = template => artworkIds(template, env), downloads = createDesignDownloads({ env }), likes = createDesignLikes({ env }) } = {}) {
   const attempts = new Map();
@@ -27,8 +28,8 @@ export function createAdminHandler({ env = process.env, store = createCatalogSto
         try {
           const catalog = await store.read();
           const ids = catalog.templates.map(template => template.id);
-          const [downloadCounts, heartCounts] = await Promise.all([downloads.read(ids), likes.read(ids, null)]);
-          return response.status(200).json({ downloads: downloadCounts, likes: heartCounts });
+          const [downloadCounts, heartCounts] = await Promise.all([downloads.summary(ids), likes.read(ids, null)]);
+          return response.status(200).json({ ...downloadCounts, likes: heartCounts });
         } catch { return fail(503, 'Design stats could not load. Please retry.'); }
       }
       if (action === 'dashboard') {
@@ -81,7 +82,7 @@ export function createAdminHandler({ env = process.env, store = createCatalogSto
         const input = body.create === true ? { ...body.template, id: generateDesignId(body.template?.name, catalog.templates.map(t => t.id)) } : body.template;
         const parsed = templateSchema.safeParse(input);
         if (!parsed.success) return fail(400, parsed.error.issues[0].message);
-        const template = parsed.data;
+        const template = withTemplateKeywords(parsed.data);
         const index = catalog.templates.findIndex(t => t.id === template.id);
         if (catalog.templates[index]?.deletionPending) return fail(409, 'This design is being deleted. Finish deletion before editing.');
         const previous = catalog.templates[index];

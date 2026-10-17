@@ -271,3 +271,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) { .mobile-nav-panel { transition: none; } }
+@media (min-width: 641px) and (max-width: 1000px) {
+  .footer-content { grid-template-columns: 1fr; justify-items: center; gap: 24px; }
+  .footer-policies { justify-content: center; }
+  .footer-socials { justify-self: center; }
+}

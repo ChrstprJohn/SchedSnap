@@ -184,9 +184,9 @@ test('ranks real templates appropriately when searching', async () => {
   const { wallpaperTemplates } = await import('../src/assets/templates.js');
   const results = searchWallpaperTemplates(wallpaperTemplates, 'cloud');
   assert.ok(results.length > 0);
-  // Genshin descriptions provide context beyond the displayed title.
+  // Color, character and motif keywords provide context beyond the title.
   for (const r of results) {
-    assert.ok(scoreSearchPattern('cloud', r.name) > 0 || (r.collection === 'genshin' && r.description?.toLowerCase().includes('cloud')));
+    assert.ok(scoreSearchPattern('cloud', r.name) > 0 || r.description?.toLowerCase().includes('cloud') || r.keywords?.toLowerCase().includes('cloud'));
   }
   // The first result should be the highest score
   const firstScore = scoreSearchPattern('cloud', results[0].name);
