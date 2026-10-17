@@ -84,7 +84,7 @@ function DeviceShowcase({ device }) {
           <figure className="collection-image">
             <button type="button" className="showcase-arrow showcase-image-arrow showcase-image-previous" aria-label={`Previous ${device.label.toLowerCase()} collection`} aria-controls={previewId} onClick={() => changeCollection(-1)}><ChevronLeft size={24} strokeWidth={1.5} aria-hidden="true" /></button>
             <picture key={collection.id}>
-              <img src={assetPath(device.id, collection.id)} srcSet={`${assetPath(device.id, collection.id, 560)} 560w, ${assetPath(device.id, collection.id)} 960w`} sizes={imageSizes} alt={`${device.label}${device.id === 'tablet' ? ' portrait and landscape' : ''} schedule wallpaper preview in the ${collection.name} collection`} width={isPortrait ? 1122 : 1448} height={isPortrait ? 1402 : 1086} loading="lazy" decoding="async" />
+              <img src={assetPath(device.id, collection.id)} srcSet={`${assetPath(device.id, collection.id, 560)} 560w, ${assetPath(device.id, collection.id)} 960w`} sizes={imageSizes} alt={`${device.label}${device.id === 'tablet' ? ' portrait' : ''} schedule wallpaper preview in the ${collection.name} collection`} width={isPortrait ? 1122 : 1448} height={isPortrait ? 1402 : 1086} loading="lazy" decoding="async" />
             </picture>
             <button type="button" className="showcase-arrow showcase-image-arrow showcase-image-next" aria-label={`Next ${device.label.toLowerCase()} collection`} aria-controls={previewId} onClick={() => changeCollection(1)}><ChevronRight size={24} strokeWidth={1.5} aria-hidden="true" /></button>
           </figure>
