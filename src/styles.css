@@ -638,3 +638,7 @@
   .gallery-filter-row > .category-filters { flex-basis: 100%; margin-top: 4px; }
   .gallery-filter-row > .category-filters[data-expanded='true'] { display: flex; flex-wrap: wrap; width: 100%; }
 }
+@media (min-width: 641px) and (max-width: 1000px) {
+  .upload-alternatives { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .upload-alternatives .button-secondary { width: 100%; min-width: 0; padding-inline: 10px; gap: 6px; font-size: 13px; white-space: nowrap; }
+}
