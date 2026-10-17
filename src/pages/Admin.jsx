@@ -1,12 +1,13 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router';
-import { Download, Heart, Plus, LogOut, ArrowLeft, X, Menu, CheckCircle2, Pencil, Eye, EyeOff, Trash2, RotateCcw, MoreVertical, UserRound, LayoutDashboard, PanelsTopLeft, ExternalLink, ChevronLeft, ChevronRight, ChevronDown, Save, Send, Minus, Maximize2 } from 'lucide-react';
+import { Download, Heart, Plus, LogOut, ArrowLeft, X, Menu, CheckCircle2, Pencil, Eye, EyeOff, Trash2, RotateCcw, MoreVertical, UserRound, LayoutDashboard, PanelsTopLeft, ExternalLink, ChevronLeft, ChevronRight, ChevronDown, Save, Send, Minus, Maximize2, LayoutTemplate, ListFilter } from 'lucide-react';
 import { deviceResolutions, tabletLandscapeResolution } from '../assets/templates.js';
 import { sampleSchedule } from '../assets/sampleSchedule.js';
 import { designCollections, galleryCategories, matchesGalleryCategory } from '../config/collections.js';
-import GalleryFilters from '../components/GalleryFilters.jsx';
 import CategoryFilters from '../components/CategoryFilters.jsx';
+import SortPicker from '../components/SortPicker.jsx';
 import { sortTemplatesByLikes } from '../utils/sortTemplatesByLikes.js';
+import { scheduleLayoutOptions } from '../utils/canvasHelpers.js';
 import { WallpaperSearchField } from '../components/WallpaperSearch.jsx';
 import { searchWallpaperTemplates } from '../utils/wallpaperSearch.js';
 
@@ -19,6 +20,7 @@ import './admin.css';
 import BrandMark from '../components/BrandMark.jsx';
 import DevicePicker from '../components/DevicePicker.jsx';
 import useInfiniteGallery from '../lib/useInfiniteGallery.js';
+import useDesignDownloads from '../lib/useDesignDownloads.js';
 import AdminSignIn from '../components/AdminSignIn.jsx';
 
 async function request(action, body) {
@@ -29,6 +31,7 @@ async function request(action, body) {
 }
 const blankTemplate = () => ({ id: '', name: '', description: '', collection: 'scenic', status: 'draft', background: '#eef2f6', ink: '#203e36', muted: '#486258', surface: '#ffffff', line: '#a5b9a7', fontFamily: 'DM Sans Variable', containerStyle: 'glass' });
 const statusFilters = [{ id: 'all', name: 'All' }, { id: 'published', name: 'Published' }, { id: 'hidden', name: 'Hidden' }, { id: 'draft', name: 'Draft' }];
+const statusIcons = { all: ListFilter, published: CheckCircle2, hidden: EyeOff, draft: Pencil };
 export default function Admin() {
   const [authenticated, setAuthenticated] = useState(null);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
@@ -79,6 +82,8 @@ export default function Admin() {
   const [statusFilter, setStatusFilter] = useState('all');
   const [device, setDevice] = useState('mobile');
   const [sort, setSort] = useState('likes');
+  const [previewLayout, setPreviewLayout] = useState('stacked');
+  const { downloads, error: downloadError, refresh: refreshDownloads } = useDesignDownloads(device);
   const [metrics, setMetrics] = useState({ likes: {}, downloads: {}, byDevice: {}, unassigned: {} });
   const [metricsError, setMetricsError] = useState('');
   const loadMetrics = useCallback(async () => {
@@ -139,8 +144,7 @@ export default function Admin() {
     finally { setBusy(false); }
   }
   const normalizedSearch = searchQuery.trim().toLowerCase();
-  const downloadTotals = metrics.downloads || {};
-  const filtered = sortTemplatesByLikes(searchWallpaperTemplates(catalog?.templates, searchQuery).filter(t => matchesGalleryCategory(t, collection)).filter(t => statusFilter === 'all' || t.status === statusFilter), metrics.likes, sort, downloadTotals);
+  const filtered = sortTemplatesByLikes(searchWallpaperTemplates(catalog?.templates, searchQuery).filter(t => matchesGalleryCategory(t, collection)).filter(t => statusFilter === 'all' || t.status === statusFilter), metrics.likes, sort, downloads);
   const { count: galleryCount, hasMore, sentinel, loadMore } = useInfiniteGallery(filtered.length, `${collection}:${device}:${statusFilter}:${sort}:${normalizedSearch}:${Boolean(editor)}`);
   if (authenticated === null || !authenticated) return <AdminSignIn checking={authenticated === null} password={password} onPasswordChange={setPassword} onSubmit={login} busy={busy} error={error} />;
   const visible = filtered.slice(0, galleryCount);
@@ -175,17 +179,17 @@ export default function Admin() {
     }} /> : <>
       <div className="admin-library-search">
         <WallpaperSearchField value={searchQuery} onChange={setSearchQuery} placeholder="Search templates" label="Search templates" iconLeft />
-        <GalleryFilters device={device} onDeviceChange={setDevice} sort={sort} onSortChange={setSort} extraActive={statusFilter !== 'all' || collection !== 'all'} onReset={() => { setDevice('mobile'); setSort('likes'); setStatusFilter('all'); setCollection('all'); }}>
-          <label>Status<span className="gallery-filter-select"><select aria-label="Status" value={statusFilter} onChange={event => setStatusFilter(event.target.value)}>{statusFilters.map(option => <option key={option.id} value={option.id}>{option.name}</option>)}</select><ChevronDown size={16} aria-hidden="true" /></span></label>
-        </GalleryFilters>
         <button className="button-primary admin-library-cta" disabled={busy || !catalog} onClick={() => setEditor({ key: crypto.randomUUID(), template: blankTemplate(), isNew: true })}><Plus size={18} />New design</button>
       </div>
-      <div className="template-filters" role="group" aria-label="Filter designs by category"><CategoryFilters categories={galleryCategories} value={collection} onChange={setCollection} /></div>
-      <div className="admin-device-downloads" aria-label="Downloads by device">
-        {['mobile', 'tablet', 'laptop'].map(id => <span key={id}><strong>{id === 'mobile' ? 'Mobile' : id === 'tablet' ? 'Tablet' : 'Laptop'}</strong> {Object.values(metrics.byDevice?.[id] || {}).reduce((sum, count) => sum + count, 0).toLocaleString()} downloads</span>)}
-        <span className="text-muted">{Object.values(metrics.unassigned || {}).reduce((sum, count) => sum + count, 0).toLocaleString()} older downloads · device not recorded</span>
+      <div className="template-filters gallery-filter-row" role="group" aria-label="Filter designs">
+        <DevicePicker value={device} onChange={setDevice} label="Filter by device" />
+        <SortPicker value={sort} onChange={setSort} />
+        <DevicePicker value={previewLayout} onChange={setPreviewLayout} label="Preview schedule layout" options={scheduleLayoutOptions(device).map(option => [option.value, option.label, LayoutTemplate])} />
+        <DevicePicker value={statusFilter} onChange={setStatusFilter} label="Status" options={statusFilters.map(option => [option.id, option.name, statusIcons[option.id]])} />
+        <CategoryFilters categories={galleryCategories} value={collection} onChange={setCollection} />
       </div>
       {metricsError && <p className="admin-error" role="alert">{metricsError} <button type="button" className="text-link" onClick={loadMetrics}>Retry stats</button></p>}
+      {downloadError && <p className="admin-error" role="alert">{downloadError} <button type="button" className="text-link" onClick={refreshDownloads}>Retry downloads</button></p>}
       {!catalog ? error ? <button className="button-secondary" onClick={load}>Retry loading library</button> : <div className={`admin-design-grid admin-grid-${device}`} aria-label="Loading designs" aria-busy="true">{Array.from({ length: 10 }, (_, i) => <div key={i} className="gallery-card-skeleton wallpaper-skeleton" aria-hidden="true" />)}</div> : visible.length === 0 ? (
         <div className="gallery-empty-state admin-empty" role="status">
           {searchQuery.trim() ? (
@@ -213,12 +217,12 @@ export default function Admin() {
       ) : <div className={`admin-design-grid admin-grid-${device}`}>{visible.map(template => {
         return <article key={template.id} className="admin-design">
           <div className="admin-design-artwork">
-          <button className={`admin-design-preview admin-art-${device}`} aria-label={`Edit ${template.name}`} disabled={busy} onClick={() => setEditor({ key: template.id, template, isNew: false })}><WallpaperCanvas lazy schedule={sampleSchedule} template={{ ...template, device }} resolution={{ id: device, width: device === 'laptop' ? 480 : 270, height: Math.round((device === 'laptop' ? 480 : 270) * (device === 'tablet' && template.orientation === 'landscape' ? tabletLandscapeResolution : deviceResolutions[device]).height / (device === 'tablet' && template.orientation === 'landscape' ? tabletLandscapeResolution : deviceResolutions[device]).width) }} className="block w-full h-auto" label={`${template.name} preview`} /></button>
+          <button className={`admin-design-preview admin-art-${device}`} aria-label={`Edit ${template.name}`} disabled={busy} onClick={() => setEditor({ key: template.id, template, isNew: false })}><WallpaperCanvas lazy schedule={sampleSchedule} template={{ ...template, device, scheduleLayout: previewLayout }} resolution={{ id: device, width: device === 'laptop' ? 480 : 270, height: Math.round((device === 'laptop' ? 480 : 270) * (device === 'tablet' && template.orientation === 'landscape' ? tabletLandscapeResolution : deviceResolutions[device]).height / (device === 'tablet' && template.orientation === 'landscape' ? tabletLandscapeResolution : deviceResolutions[device]).width) }} className="block w-full h-auto" label={`${template.name} preview`} /></button>
           <span className={`admin-status admin-status-${template.status}`}>{template.status}</span>
           </div>
           <div className="admin-design-footer">
           <div className="admin-design-info"><h2 title={template.name}>{template.name}</h2><div className="admin-design-meta"><span className="text-muted">{designCollections.find(c => c.id === (template.collection || 'original'))?.name}</span></div></div>
-          <span className="admin-design-stats"><span title="Downloads" aria-label={`${downloadTotals[template.id] ?? 'Unavailable'} downloads`}><Download size={16} aria-hidden="true" /><span aria-hidden="true">{downloadTotals[template.id]?.toLocaleString() ?? '—'}</span></span><span title="Hearts" aria-label={`${metrics.likes[template.id]?.count ?? 'Unavailable'} hearts`}><Heart className="admin-stat-heart" size={16} fill="currentColor" aria-hidden="true" /><span aria-hidden="true">{metrics.likes[template.id]?.count.toLocaleString() ?? '—'}</span></span></span>
+          <span className="admin-design-stats"><span title="Downloads" aria-label={`${downloads[template.id] ?? 'Unavailable'} downloads`}><Download size={16} aria-hidden="true" /><span aria-hidden="true">{downloads[template.id]?.toLocaleString() ?? '—'}</span></span><span title="Hearts" aria-label={`${metrics.likes[template.id]?.count ?? 'Unavailable'} hearts`}><Heart className="admin-stat-heart" size={16} fill="currentColor" aria-hidden="true" /><span aria-hidden="true">{metrics.likes[template.id]?.count.toLocaleString() ?? '—'}</span></span></span>
           <div className="admin-design-actions"><button id={`actions-${template.id}`} className="admin-icon-action" aria-label={`Actions for ${template.name}`} title="Actions" aria-expanded={actionMenu === template.id} aria-controls={`action-list-${template.id}`} onClick={() => setActionMenu(actionMenu === template.id ? null : template.id)}><MoreVertical size={20} aria-hidden="true" /></button>{actionMenu === template.id && <div id={`action-list-${template.id}`} className="admin-action-menu" onClick={() => setActionMenu(null)}><button className="admin-icon-action" aria-label={`Edit ${template.name}`} title="Edit" disabled={busy || template.deletionPending} onClick={() => { setError(''); setEditor({ key: template.id, template, isNew: false }); }}><Pencil size={16} aria-hidden="true" />Edit</button><button className="admin-icon-action" aria-label={`${template.status === 'published' ? 'Hide' : 'Publish'} ${template.name}`} title={template.status === 'published' ? 'Hide' : 'Publish'} disabled={busy || template.deletionPending} onClick={async () => {
             if (template.status === 'published') { setError(''); setHiding(template); return; }
             if (template.status !== 'published' && !templateSchema.safeParse({ ...template, status: 'published' }).success) { setError(''); setEditor({ key: template.id, template, isNew: false }); return; }
