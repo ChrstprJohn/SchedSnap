@@ -1,4 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
+
+const subscribeToBrowser = () => () => {};
+const isInAppBrowser = () => detectInAppBrowser().detected;
 
 /**
  * Detects common in-app / WebView browsers where downloads are broken.
@@ -53,10 +56,8 @@ function openInBrowser() {
 }
 
 export default function InAppBrowserBanner() {
-  const [info] = useState(() => {
-    const result = detectInAppBrowser();
-    return result.detected ? result : null;
-  });
+  const detected = useSyncExternalStore(subscribeToBrowser, isInAppBrowser, () => false);
+  const info = detected ? detectInAppBrowser() : null;
   const [dismissed, setDismissed] = useState(false);
   const bannerRef = useRef(null);
 

@@ -31,7 +31,7 @@ export default function HowItWorks() {
           {steps.map(({ title, description, image, height }, index) => (
             <li key={title} className="how-it-works-step">
               <div className="how-it-works-art">
-                <img src={image} alt="" width="768" height={height} loading="lazy" decoding="async" />
+                <img src={image} srcSet={`${image.replace('.webp', '-560.webp')} 560w, ${image} 768w`} sizes={`(max-width: 640px) min(calc(100vw - 32px), ${Math.round(210 * 768 / height)}px), (max-width: 1200px) 28vw, 384px`} alt="" width="768" height={height} loading="lazy" decoding="async" />
               </div>
               <div className="how-it-works-copy">
                 <h3><span className="how-it-works-number" aria-hidden="true">{index + 1}</span>{title}</h3>

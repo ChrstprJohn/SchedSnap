@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import '../../wallpaper-fonts.css';
 import { ArrowLeft, ImageUp } from 'lucide-react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router';
 import Toast from '../../components/Toast.jsx';

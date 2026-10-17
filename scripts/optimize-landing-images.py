@@ -40,3 +40,14 @@ for source, widths in sources.items():
                 delivery_bytes += avif.stat().st_size
                 print(f'{avif.relative_to(ROOT)}: {avif.stat().st_size:,} bytes')
 print(f'{original_bytes:,} source bytes -> {delivery_bytes:,} bytes across all delivery sizes')
+
+# Keep the full-size tutorial artwork for desktop and supply smaller mobile files.
+for source in (PUBLIC / 'images/how-it-works').glob('*.webp'):
+    if source.stem.endswith('-560'):
+        continue
+    with Image.open(source) as original:
+        resized = original.resize((560, round(original.height * 560 / original.width)), Image.Resampling.LANCZOS)
+        destination = source.with_name(f'{source.stem}-560.webp')
+        resized.save(destination, 'WEBP', quality=85, method=6, exact=True)
+        assert destination.stat().st_size < source.stat().st_size, destination
+        print(f'{destination.relative_to(ROOT)}: {destination.stat().st_size:,} bytes')
