@@ -26,7 +26,9 @@ const devices = [
   { id: 'tablet', title: 'For tablet.', label: 'Tablet', description: 'Keep your class times and rooms on your tablet’s wallpaper for a quick reference while studying.' },
   { id: 'laptop', title: 'For laptop.', label: 'Laptop', description: 'Browse desktop wallpaper designs that keep your weekly class schedule visible while you study.' },
 ];
-const assetPath = (device, collection) => `/images/collections/refreshed/${device}/${device === 'laptop' && collection === 'pattern' ? 'pattern-blue' : collection}.png`;
+const assetPath = (device, collection) => device === 'mobile'
+  ? `/images/collections/catalog-mobile/${collection}.png`
+  : `/images/collections/refreshed/${device}/${device === 'laptop' && collection === 'pattern' ? 'pattern-blue' : collection}.png`;
 
 function DeviceShowcase({ device }) {
   const slides = collections;

@@ -24,7 +24,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero-art">
-          <img src="/images/hero/hero-phones-refreshed.png" alt="Three iPhones with soft bear, alpine dawn, and doodle capybara schedule wallpapers" width="1448" height="1086" fetchPriority="high" decoding="async" />
+          <img src="/images/hero/hero-phones-stacked.png" alt="Three iPhones displaying stacked class schedules on Cinnamoroll, Totoro, and pastel gift wallpapers" width="1448" height="1086" fetchPriority="high" decoding="async" />
         </div>
       </div>
     </section>
