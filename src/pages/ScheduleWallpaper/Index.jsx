@@ -15,6 +15,7 @@ import { scheduleSchema } from '../../../shared/scheduleSchema.js';
 import { customizeWallpaperTemplate } from '../../utils/wallpaperTheme.js';
 import TemplateGallery from './TemplateGallery.jsx';
 import TemplateWorkspace from './TemplateWorkspace.jsx';
+import GalleryFilters from '../../components/GalleryFilters.jsx';
 import WallpaperSearch from '../../components/WallpaperSearch.jsx';
 import WallpaperLoading from '../../components/WallpaperLoading.jsx';
 import { useDebouncedSearch } from '../../lib/useWallpaperSearch.js';
@@ -33,6 +34,7 @@ export default function ScheduleWallpaper() {
     const [pathname, query = ''] = path.split('?');
     const params = new URLSearchParams(query);
     params.set('device', device);
+    if (search.get('sort')) params.set('sort', search.get('sort'));
     if (search.get('collection')) params.set('collection', search.get('collection'));
     return `${pathname}?${params}`;
   }
@@ -44,6 +46,10 @@ export default function ScheduleWallpaper() {
   const [importOpen, setImportOpen] = useState(false);
   const [scheduleTitle, setScheduleTitle] = useState('Class Schedule');
   const [searchQuery, setSearchQuery] = useState('');
+  const sort = ['likes', 'downloads', 'newest', 'oldest'].includes(search.get('sort')) ? search.get('sort') : 'likes';
+  function changeSort(next) {
+    setSearch(previous => { const params = new URLSearchParams(previous); params.set('sort', next); return params; });
+  }
   const debouncedSearchQuery = useDebouncedSearch(searchQuery);
   const [pendingDraft, setPendingDraft] = useState(() => {
     try { return readDraft(window.sessionStorage); } catch { return null; }
@@ -212,7 +218,7 @@ export default function ScheduleWallpaper() {
     <header className="wallpaper-flow-header" data-importing={choosingImage}>
       <h1 tabIndex={-1} ref={heading}>{step === 'design' ? 'Choose a design' : step === 'classes' ? 'Add your classes' : 'Your wallpaper'}</h1>
       <div className="wallpaper-flow-header-actions">
-        {step === 'design' && <WallpaperSearch value={searchQuery} onChange={setSearchQuery} />}
+        {step === 'design' && <><WallpaperSearch value={searchQuery} onChange={setSearchQuery} /><GalleryFilters device={device} onDeviceChange={changeDevice} sort={sort} onSortChange={changeSort} onReset={() => setSearch(previous => { const params = new URLSearchParams(previous); params.set('device', 'mobile'); params.set('sort', 'likes'); return params; })} /></>}
         {choosingImage && <button type="button" className="button-secondary import-change" aria-label={preparingImage ? 'Preparing image' : 'Change image'} disabled={busy || preparingImage} onClick={() => imagePicker.current?.openPicker()}><ImageUp size={16} aria-hidden="true" />{preparingImage ? 'Preparing…' : <><span className="import-change-desktop">Change image</span><span className="import-change-mobile">Change</span></>}</button>}
       </div>
     </header>
@@ -232,7 +238,7 @@ export default function ScheduleWallpaper() {
       onError={(message) => { setError(message); setSuccess(''); }} onAnalyze={analyze} importUsage={importUsage} usageUnavailable={usageUnavailable}
       onSample={() => { setSchedule(structuredClone(sampleSchedule)); setScheduleSource('sample'); trackEvent('sample_schedule_loaded', templateProperties(template)); dismissNotification(); }}
     /> : <>
-      <TemplateGallery device={device} onDeviceChange={changeDevice} initialCategory={search.get('collection')} selectedId={selectedId} settings={templateSettings} schedule={schedule} scheduleTitle={scheduleTitle} resolution={resolution} onSelect={selectTemplate} searchQuery={debouncedSearchQuery} onClearSearch={() => setSearchQuery('')} />
+      <TemplateGallery sort={sort} device={device} onDeviceChange={changeDevice} initialCategory={search.get('collection')} selectedId={selectedId} settings={templateSettings} schedule={schedule} scheduleTitle={scheduleTitle} resolution={resolution} onSelect={selectTemplate} searchQuery={debouncedSearchQuery} onClearSearch={() => setSearchQuery('')} />
     </>}
     {step === 'design' && <BackToTop />}
     <Toast message={error || success} kind={error ? 'error' : 'success'} onClose={dismissNotification} />

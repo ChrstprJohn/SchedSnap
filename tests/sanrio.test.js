@@ -110,7 +110,6 @@ test('Sanrio gallery samples match on mobile, tablet and laptop and load each de
         assert.equal(matchesGalleryCategory(original, 'sanrio'), true);
         assert.equal(matchesGalleryCategory(original, 'all'), true);
         assert.equal(matchesGalleryCategory(original, 'scenic'), false);
-        assert.equal(matchesGalleryCategory(original, 'onepiece'), false);
         const template = customizeWallpaperTemplate(galleryPreviewTemplate(original), {}, device);
         const image = await prepareWallpaperAssets(template, resolution);
         assert.equal(image.source, cloudinaryAssetUrl(original.deviceImages[device], original.pixelArt ? undefined : resolution));

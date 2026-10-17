@@ -6,8 +6,10 @@ import { wallpaperTemplates } from '../src/assets/templates.js';
 import { genshinElementalTemplates } from '../src/assets/genshinElementalTemplates.js';
 import { generateDesignId } from '../shared/designId.js';
 import { artworkIds, createArtworkDeleter } from '../server/deleteArtwork.js';
+import { createDesignDownloads } from '../server/designDownloads.js';
+import { createDesignLikes } from '../server/designLikes.js';
 
-export function createAdminHandler({ env = process.env, store = createCatalogStore(env), now = () => Date.now(), destroyArtwork = createArtworkDeleter(env), resolveArtworkIds = template => artworkIds(template, env) } = {}) {
+export function createAdminHandler({ env = process.env, store = createCatalogStore(env), now = () => Date.now(), destroyArtwork = createArtworkDeleter(env), resolveArtworkIds = template => artworkIds(template, env), downloads = createDesignDownloads({ env }), likes = createDesignLikes({ env }) } = {}) {
   const attempts = new Map();
   let saving = false;
   return async function admin(request, response) {
@@ -21,6 +23,14 @@ export function createAdminHandler({ env = process.env, store = createCatalogSto
       const authenticated = isAuthenticated(request, env, now());
       if (action === 'session') return response.status(200).json({ authenticated });
       if (!authenticated) return fail(401, 'Sign in to manage designs.');
+      if (action === 'metrics') {
+        try {
+          const catalog = await store.read();
+          const ids = catalog.templates.map(template => template.id);
+          const [downloadCounts, heartCounts] = await Promise.all([downloads.read(ids), likes.read(ids, null)]);
+          return response.status(200).json({ downloads: downloadCounts, likes: heartCounts });
+        } catch { return fail(503, 'Design stats could not load. Please retry.'); }
+      }
       if (action === 'dashboard') {
         const embedUrl = env.POSTHOG_DASHBOARD_EMBED_URL || '';
         if (!embedUrl) return response.status(200).json({ embedUrl: '' });

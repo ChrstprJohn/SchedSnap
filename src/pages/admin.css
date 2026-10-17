@@ -7,6 +7,7 @@
 .admin-filter-row { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; }
 .admin-library-search { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; margin: 20px 0 12px; }
 .admin-library-search .admin-library-cta { flex-shrink: 0; }
+.admin-library-search .template-filters { flex: 0 1 auto; min-width: 0; margin-bottom: 0; }
 .admin-content .template-category { border: 1px solid var(--color-line); background: var(--color-paper); transition: background 160ms ease, border-color 160ms ease, color 160ms ease; }
 .admin-content .template-category:hover { border-color: var(--color-line); background: var(--color-soft); color: var(--color-ink); }
 .admin-content .template-category[aria-pressed='true'] { border-color: var(--color-ink); background: var(--color-ink); color: var(--color-paper); }
@@ -30,12 +31,12 @@
 .admin-design-preview:focus-visible { outline: 2px solid var(--color-ink); outline-offset: -3px; }
 .admin-design-artwork { position: relative; }
 .admin-design-artwork > .admin-status { position: absolute; top: 10px; right: 10px; pointer-events: none; box-shadow: 0 1px 5px #00000015; }
-.admin-design-footer { padding: 10px 12px; border-top: 1px solid var(--color-line); display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.admin-design-footer { position: relative; padding: 10px 12px; border-top: 1px solid var(--color-line); display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .admin-design-info { min-width: 0; flex: 1; }
 .admin-design-info h2 { font-size: 14px; line-height: 1.4; font-weight: 650; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
 .admin-design-meta { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-top: 4px; font-size: 12px; }
 .admin-design-meta > .text-muted { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.admin-status { font-size: 11px; padding: 3px 7px; background: var(--color-soft); border-radius: 4px; text-transform: capitalize; white-space: nowrap; }
+.admin-status { font-size: 13px; line-height: 1.4; font-weight: 600; padding: 5px 10px; background: var(--color-soft); border-radius: 4px; text-transform: capitalize; white-space: nowrap; }
 .admin-status-published { background: #e3efe6; color: #24583b; }
 .admin-status-draft { background: #faf0da; color: #735219; }
 .admin-design-actions { display: flex; justify-content: flex-end; gap: 0; flex-shrink: 0; margin-left: auto; margin-top: -6px; margin-right: -10px; align-self: flex-start; }
@@ -426,3 +427,21 @@
 .admin-content-dashboard .admin-analytics-viewport,
 .admin-content-dashboard .admin-analytics-frame > p,
 .admin-content-dashboard .admin-analytics-skeleton { background: var(--analytics-background); }
+
+.admin-library-search > .wallpaper-search-wrap { flex: 1 1 auto; min-width: 0; }
+.admin-library-search .gallery-filters-menu { margin-right: auto; }
+.admin-library-search .gallery-filters-panel { max-height: calc(100dvh - 160px); overflow-y: auto; }
+.admin-design-stats { display: inline-flex; flex-shrink: 0; align-items: center; gap: 12px; margin-left: auto; font-variant-numeric: tabular-nums; }
+.admin-design-stats > span { display: inline-flex; align-items: center; gap: 4px; }
+.admin-design-stats svg { flex-shrink: 0; }
+.admin-design-stats .admin-stat-heart { color: #be123c; }
+.admin-design-meta { flex-wrap: wrap; }
+.admin-design-footer { display: grid; grid-template-columns: minmax(0, 1fr) auto 28px; grid-template-rows: auto auto; align-items: center; column-gap: 10px; row-gap: 10px; padding: 14px 12px; }
+.admin-design-footer > .admin-design-info { display: contents; }
+.admin-design-info h2 { grid-column: 1; grid-row: 1; }
+.admin-design-footer .admin-design-meta { grid-column: 1; grid-row: 2; margin: 0; }
+.admin-design-footer > .admin-design-stats { grid-column: 2 / 4; grid-row: 1; min-height: 20px; font-size: 12px; gap: 12px; margin-left: auto; }
+.admin-design-footer > .admin-design-actions { position: relative; grid-column: 3; grid-row: 2; align-self: center; justify-self: end; margin: -10px -14px -10px 0; }
+@media (max-width: 767px) {
+  .admin-library-search { display: flex; }
+}
