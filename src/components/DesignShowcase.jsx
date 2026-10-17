@@ -3,7 +3,7 @@ import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { trackEvent } from '../lib/analytics.js';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
-const ROTATION_DELAY = 5000;
+const ROTATION_DELAY = 3000;
 const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 function subscribeToMotion(onChange) {
   const query = window.matchMedia('(prefers-reduced-motion: reduce)');

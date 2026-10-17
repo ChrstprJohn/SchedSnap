@@ -20,7 +20,7 @@ View more opens /services/schedule-wallpaper?device=mobile, tablet or laptop dir
 
 
 
-Each row rotates at five-second intervals while at least 25% visible. Hover, control focus, page visibility and offscreen gates pause the timer; reduced motion disables automatic cycling. Countdown timing pauses and resumes with rotation; manual navigation resets it. Chevrons retain 44px targets.
+Each row rotates at three-second intervals while at least 25% visible. Hover, control focus, page visibility and offscreen gates pause the timer; reduced motion disables automatic cycling. Countdown timing pauses and resumes with rotation; manual navigation resets it. Chevrons retain 44px targets.
 
 
 
