@@ -608,3 +608,14 @@
   .download-thanks-dialog[data-loved='true'] .download-thanks-icon svg { animation: none; }
   .download-thanks-dialog[data-loved='true'] .download-thanks-icon::after { display: none; }
 }
+.gallery-sort-picker { flex: 0 0 auto; }
+@media (max-width: 640px) {
+  .template-filters:has(.gallery-sort-picker) { flex-wrap: wrap; }
+  .template-filters:has(.gallery-sort-picker) > .device-picker { flex: 1 1 0; min-width: 0; }
+  .template-filters:has(.gallery-sort-picker) > .device-picker summary { display: flex; width: 100%; }
+  .template-filters:has(.gallery-sort-picker) > .device-picker summary > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .template-filters:has(.gallery-sort-picker) > .device-picker .device-picker-chevron { margin-left: auto; }
+  .gallery-sort-picker .device-picker-menu { left: auto; right: 0; }
+  .template-filters:has(.gallery-sort-picker) > .category-filters { flex-basis: 100%; margin-top: 4px; }
+  .template-filters:has(.gallery-sort-picker) > .category-filters[data-expanded='true'] { display: flex; flex-wrap: wrap; width: 100%; }
+}

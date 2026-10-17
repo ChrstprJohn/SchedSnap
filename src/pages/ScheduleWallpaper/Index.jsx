@@ -15,7 +15,6 @@ import { scheduleSchema } from '../../../shared/scheduleSchema.js';
 import { customizeWallpaperTemplate } from '../../utils/wallpaperTheme.js';
 import TemplateGallery from './TemplateGallery.jsx';
 import TemplateWorkspace from './TemplateWorkspace.jsx';
-import GalleryFilters from '../../components/GalleryFilters.jsx';
 import WallpaperSearch from '../../components/WallpaperSearch.jsx';
 import WallpaperLoading from '../../components/WallpaperLoading.jsx';
 import { useDebouncedSearch } from '../../lib/useWallpaperSearch.js';
@@ -221,7 +220,7 @@ export default function ScheduleWallpaper() {
     <header className="wallpaper-flow-header" data-importing={choosingImage}>
       <h1 tabIndex={-1} ref={heading}>{step === 'design' ? 'Choose a design' : step === 'classes' ? 'Add your classes' : 'Your wallpaper'}</h1>
       <div className="wallpaper-flow-header-actions">
-        {step === 'design' && <><WallpaperSearch value={searchQuery} onChange={setSearchQuery} /><GalleryFilters device={device} onDeviceChange={changeDevice} sort={sort} onSortChange={changeSort} onReset={() => setSearch(previous => { const params = new URLSearchParams(previous); params.set('device', 'mobile'); params.set('sort', 'likes'); return params; })} /></>}
+        {step === 'design' && <WallpaperSearch value={searchQuery} onChange={setSearchQuery} />}
         {choosingImage && <button type="button" className="button-secondary import-change" aria-label={preparingImage ? 'Preparing image' : 'Change image'} disabled={busy || preparingImage} onClick={() => imagePicker.current?.openPicker()}><ImageUp size={16} aria-hidden="true" />{preparingImage ? 'Preparing…' : <><span className="import-change-desktop">Change image</span><span className="import-change-mobile">Change</span></>}</button>}
       </div>
     </header>
@@ -241,7 +240,7 @@ export default function ScheduleWallpaper() {
       onError={(message) => { setError(message); setSuccess(''); }} onAnalyze={analyze} importUsage={importUsage} usageUnavailable={usageUnavailable}
       onSample={() => { setSchedule(structuredClone(sampleSchedule)); setScheduleSource('sample'); trackEvent('sample_schedule_loaded', templateProperties(template)); dismissNotification(); }}
     /> : <>
-      <TemplateGallery sort={sort} device={device} onDeviceChange={changeDevice} category={search.get('collection')} onCategoryChange={changeCategory} selectedId={selectedId} settings={templateSettings} schedule={schedule} scheduleTitle={scheduleTitle} resolution={resolution} onSelect={selectTemplate} searchQuery={debouncedSearchQuery} onClearSearch={() => setSearchQuery('')} />
+      <TemplateGallery sort={sort} onSortChange={changeSort} device={device} onDeviceChange={changeDevice} category={search.get('collection')} onCategoryChange={changeCategory} selectedId={selectedId} settings={templateSettings} schedule={schedule} scheduleTitle={scheduleTitle} resolution={resolution} onSelect={selectTemplate} searchQuery={debouncedSearchQuery} onClearSearch={() => setSearchQuery('')} />
     </>}
     {step === 'design' && <BackToTop />}
     <Toast message={error || success} kind={error ? 'error' : 'success'} onClose={dismissNotification} />

@@ -9,6 +9,8 @@ import { designGalleryCategories as galleryCategories, matchesDesignGalleryCateg
 import { templateProperties, trackEvent } from '../../lib/analytics.js';
 import useDesignDownloads from '../../lib/useDesignDownloads.js';
 import CategoryFilters from '../../components/CategoryFilters.jsx';
+import DevicePicker from '../../components/DevicePicker.jsx';
+import SortPicker from '../../components/SortPicker.jsx';
 import { isNewTemplate } from '../../utils/templateFreshness.js';
 import useDesignLikes from '../../lib/useDesignLikes.js';
 import { sortTemplatesByLikes } from '../../utils/sortTemplatesByLikes.js';
@@ -16,7 +18,7 @@ import { searchWallpaperTemplates } from '../../utils/wallpaperSearch.js';
 
 const previewSchedule = (template) => template.layout === 'mascot' ? mascotTemplateSchedule : templateSchedule;
 
-export default function TemplateGallery({ selectedId, settings = {}, schedule, scheduleTitle = 'Class Schedule', onSelect, category: selectedCategory = 'all', onCategoryChange, device = 'mobile', sort = 'likes', searchQuery = '', onClearSearch }) {
+export default function TemplateGallery({ selectedId, settings = {}, schedule, scheduleTitle = 'Class Schedule', onSelect, category: selectedCategory = 'all', onCategoryChange, device = 'mobile', onDeviceChange, sort = 'likes', onSortChange, searchQuery = '', onClearSearch }) {
   const { templates: wallpaperTemplates, loading: catalogLoading, error } = useCatalogStatus();
   const thumbnailWidth = device === 'laptop' ? 480 : device === 'tablet' ? 384 : 270;
   const designResolution = () => deviceResolutions[device];
@@ -41,6 +43,8 @@ export default function TemplateGallery({ selectedId, settings = {}, schedule, s
   const activeCategoryName = galleryCategories.find((collection) => collection.id === activeCategory)?.name || 'Design';
   return <div>
     <div role="group" aria-label="Filter designs" className="template-filters">
+      <DevicePicker value={device} onChange={onDeviceChange} label="Filter by device" />
+      <SortPicker value={sort} onChange={onSortChange} />
       <CategoryFilters categories={galleryCategories} value={activeCategory} controls="template-gallery" onChange={id => {
         if (isSearching && onClearSearch) {
           onClearSearch();
